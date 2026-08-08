@@ -9,3 +9,4 @@ requests
 lxml
 numpy
 torch
+rank-bm25
