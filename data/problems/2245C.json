@@ -1,0 +1,18 @@
+{
+    "id": "2245C",
+    "contest_id": 2245,
+    "problem_letter": "C",
+    "title": "C. MEXOR",
+    "statement": "\n\nYou are given a positive integer $$n$$ and a non-negative integer $$k$$. Construct a permutation $$p$$ of length $$n$$ such that the following condition is satisfied:\n\nNote that a permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$0$$ to $$n-1$$ in arbitrary order. For example, $$[1,2,0,4,3]$$ is a permutation, but $$[0,1,1]$$ is not a permutation ($$1$$ appears twice in the array), and $$[0,2,3]$$ is also not a permutation ($$n=3$$ but there is $$3$$ in the array).\n\n$$^{∗}$$The minimum excluded (MEX) of a collection of integers $$c_1, c_2, \\ldots, c_k$$ is defined as the smallest non-negative integer $$x$$ which does not occur in the collection $$c$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$, $$0 $\\leq k \\leq 10^9$$$).\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, if no such permutation exists, output \" NO \".\n\nOtherwise, first output \" YES \" on a single line. Then, output $$n$$ distinct integers $$p_0,p_1,\\ldots,p_{n-1}$$ ($$0 $\\leq p_i  \\lt  n$$$), representing the permutation $$p$$ you constructed. If there are multiple permutations satisfying the requirement, you may output any of them.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the first and second test cases, the only permutation of length $$1$$ is $$[0]$$, with $$f(0)=\\operatorname{mex}([0])=1$$.\n\nIn the fourth test case, it can be proven that no permutation of length $$4$$ exists such that $$f(0) \\oplus f(1) \\oplus f(2) \\oplus f(3)=8$$.\n\nIn the fifth test case, the values of $$f(i)$$ for $$0 $\\leq i  \\lt  n$$$ are as follows:\n\nSince $$f(0) \\oplus f(1) \\oplus f(2) \\oplus f(3) \\oplus f(4)=0\\oplus 1 \\oplus 1 \\oplus 4 \\oplus 5=1$$, $$p=[3,0,2,1,4]$$ is a valid permutation.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$, $$0 $\\leq k \\leq 10^9$$$). It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, if no such permutation exists, output \" NO \". Otherwise, first output \" YES \" on a single line. Then, output $$n$$ distinct integers $$p_0,p_1,\\ldots,p_{n-1}$$ ($$0 $\\leq p_i  \\lt  n$$$), representing the permutation $$p$$ you constructed. If there are multiple permutations satisfying the requirement, you may output any of them. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

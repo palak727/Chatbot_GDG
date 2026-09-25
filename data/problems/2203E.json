@@ -1,0 +1,21 @@
+{
+    "id": "2203E",
+    "contest_id": 2203,
+    "problem_letter": "E",
+    "title": "E. Probabilistic Card Game",
+    "statement": "Alice and Bob have a deck of cards, which is initially empty. They play a game that lasts for $$m$$ rounds. In the $$i$$-th round, the following events occur:\n\nLet $$a$$ be the value on Alice's card, $$b$$ be the value on Bob's card, and $$c$$ be the value on the randomly chosen card. Then Bob receives:\n\nAlice's goal in each round is to minimize Bob's expected score, while Bob's goal is to maximize it. What will be the expected score for Bob in each round if both Alice and Bob play optimally? Print the expected score modulo $$998\\,244\\,353$$.\n\nNote that the players minimize or maximize the real value of the expected score, not the result taken modulo $$998\\,244\\,353$$.\n\nThe first line contains a single integer ($$3 $\\leq m \\leq 2 \\cdot 10^5$$$) — the number of rounds.\n\nThe second line contains $$m$$ integers $$a_1, a_2, \\dots, a_m$$ ($$1 $\\leq a_i \\leq 10^{12}$$$; all $$a_i$$ are distinct).\n\nPrint $$m-2$$ integers: the $$i$$-th number should be equal to the expected score for Bob in the round $$i+2$$ with optimal play from both players modulo $$998\\,244\\,353$$ (i. e., let the expected score be an irreducible fraction $$\\frac{x}{y}$$; you need to output $$x $\\cdot y^{-1} \\bmod 998\\,244\\,353$$$, where $$y^{-1}$$ is such a number that $$y $\\cdot y^{-1} \\bmod 998\\,244\\,353 = 1$$$).\n\nNote that the players minimize or maximize the real value of the expected score, not the result taken modulo $$998\\,244\\,353$$.\n\nIn the first example, the answers are: $$0, $\\frac{1}{2}, \\frac{2}{3}$$$.\n\nIn the second example, the answers are: $$0, $\\frac{1}{2}, 1, \\frac{5}{4}$$$.\n\nIn the third example, the answers are: $$0, $\\frac{3}{2}, 2, \\frac{3}{2}, \\frac{8}{5}, \\frac{11}{6}, \\frac{11}{7}$$$.",
+    "input": "Input The first line contains a single integer ($$3 $\\leq m \\leq 2 \\cdot 10^5$$$) — the number of rounds. The second line contains $$m$$ integers $$a_1, a_2, \\dots, a_m$$ ($$1 $\\leq a_i \\leq 10^{12}$$$; all $$a_i$$ are distinct).",
+    "output": "Output Print $$m-2$$ integers: the $$i$$-th number should be equal to the expected score for Bob in the round $$i+2$$ with optimal play from both players modulo $$998\\,244\\,353$$ (i. e., let the expected score be an irreducible fraction $$\\frac{x}{y}$$; you need to output $$x $\\cdot y^{-1} \\bmod 998\\,244\\,353$$$, where $$y^{-1}$$ is such a number that $$y $\\cdot y^{-1} \\bmod 998\\,244\\,353 = 1$$$). Note that the players minimize or maximize the real value of the expected score, not the result taken modulo $$998\\,244\\,353$$.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "games",
+        "greedy",
+        "math",
+        "ternary search",
+        "*2200"
+    ],
+    "rating": 2200
+}

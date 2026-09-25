@@ -1,0 +1,20 @@
+{
+    "id": "2242C",
+    "contest_id": 2242,
+    "problem_letter": "C",
+    "title": "C. Unstable Elements",
+    "statement": "You are given a sorted array of integers $$[a_1, a_2, \\dots, a_n]$$. We can perform any number of operations of the following type on this array:\n\nFor example, consider the array $$[1, 1, 1, 2, 4, 4, 5]$$ (marked elements are shown in bold). If we delete all marked elements, we get $$[1, 1, 4]$$, and if we duplicate them, we get $$[1, 1, 1, 1, 2, 2, 4, 4, 4, 5, 5]$$.\n\nThe operations cannot be performed if the array becomes empty. After each operation, every element gets unmarked.\n\nWe call an array of integers $$b$$ reachable if it can be obtained from array $$a$$ by some number of the described operations. Your task is to count the number of reachable arrays of length $$k$$.\n\nThe first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of $$n$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$.\n\nFor each test case, output one integer — the number of reachable arrays $$b$$ of length $$k$$. It can be shown that, under the constraints of the problem, the answer fits into a standard $$32$$-bit integer type.\n\nIn the first example, the following sequence of operations can be performed:\n\nIn the second example, it is impossible to obtain an array of length $$5$$.\n\nIn the third example, the following sequence of operations can be performed:\n\nIn the fifth example, the arrays $$[1, 1, 2, 2, 2, 2]$$ and $$[2, 2, 2, 2, 2, 2]$$ can be obtained:\n\nIn the seventh example, the arrays $$[1, 1, 1, 3, 3, 3, 3]$$ and $$[3, 3, 3, 3, 3, 3, 3]$$ can be obtained.",
+    "input": "Input The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. Each test case consists of two lines: the first line contains two integers $$n$$ and $$k$$ ($$1 $\\leq n, k \\leq 3 \\cdot 10^5$$$); the second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_1 \\leq a_2 \\leq \\dots \\leq a_n \\leq n$$$). Note that the array is sorted. Additional constraint on the input: the sum of $$n$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output one integer — the number of reachable arrays $$b$$ of length $$k$$. It can be shown that, under the constraints of the problem, the answer fits into a standard $$32$$-bit integer type.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

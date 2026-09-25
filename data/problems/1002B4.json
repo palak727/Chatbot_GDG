@@ -1,0 +1,16 @@
+{
+    "id": "1002B4",
+    "contest_id": 1002,
+    "problem_letter": "B4",
+    "title": "B4. Distinguish four 2-qubit states - 2",
+    "statement": "You are given 2 qubits which are guaranteed to be in one of the four orthogonal states:\n\nYour task is to perform necessary operations and measurements to figure out which state it was and to return the index of that state (0 for , 1 for etc.). The state of the qubits after the operations does not matter.\n\nYou have to implement an operation which takes an array of 2 qubits as an input and returns an integer.\n\nYour code should have the following signature:",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1700"
+    ],
+    "rating": 1700
+}

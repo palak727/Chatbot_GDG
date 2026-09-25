@@ -1,0 +1,17 @@
+{
+    "id": "2167B",
+    "contest_id": 2167,
+    "problem_letter": "B",
+    "title": "B. Your Name",
+    "statement": "khba is writing his girlfriend's name. He has $$n$$ cubes, each with one lowercase Latin letter written on it. They are arranged in a row, forming a string $$s$$. His girlfriend's name is also a string $$t$$, consisting of $$n$$ lowercase Latin letters.\n\nTo prove his love, he must check whether it is possible to rearrange the letters of string $$s$$ so that it becomes her name $$t$$.\n\nThe first line contains an integer $$q$$ ($$1 $\\leq q \\leq 1000$$$) — the number of test cases.\n\nThe first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 20$$$).\n\nThe second line of each test case contains two distinct strings $$s$$ and $$t$$, each consisting of $$n$$ lowercase Latin letters.\n\nFor each test case, output \" YES \" if the letters of $$s$$ can be arranged to form $$t$$; otherwise, output \" NO \".\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \" and \" YES \" will be recognized as positive responses.\n\nIn the first example, the initial string is \" humitsa \", and the following operations can be performed:\n\nIn the second example, the initial string is \" orhi \", and the following operations can be performed:",
+    "input": "Input The first line contains an integer $$q$$ ($$1 $\\leq q \\leq 1000$$$) — the number of test cases. The first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 20$$$). The second line of each test case contains two distinct strings $$s$$ and $$t$$, each consisting of $$n$$ lowercase Latin letters.",
+    "output": "Output For each test case, output \" YES \" if the letters of $$s$$ can be arranged to form $$t$$; otherwise, output \" NO \". You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \" and \" YES \" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "sortings",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

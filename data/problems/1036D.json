@@ -1,0 +1,17 @@
+{
+    "id": "1036D",
+    "contest_id": 1036,
+    "problem_letter": "D",
+    "title": "D. Vasya and Arrays",
+    "statement": "Vasya has two arrays $$A$$ and $$B$$ of lengths $$n$$ and $$m$$, respectively.\n\nHe can perform the following operation arbitrary number of times (possibly zero): he takes some consecutive subsegment of the array and replaces it with a single element, equal to the sum of all elements on this subsegment. For example, from the array $$[1, 10, 100, 1000, 10000]$$ Vasya can obtain array $$[1, 1110, 10000]$$, and from array $$[1, 2, 3]$$ Vasya can obtain array $$[6]$$.\n\nTwo arrays $$A$$ and $$B$$ are considered equal if and only if they have the same length and for each valid $$i$$ $$A_i = B_i$$.\n\nVasya wants to perform some of these operations on array $$A$$, some on array $$B$$, in such a way that arrays $$A$$ and $$B$$ become equal. Moreover, the lengths of the resulting arrays should be maximal possible.\n\nHelp Vasya to determine the maximum length of the arrays that he can achieve or output that it is impossible to make arrays $$A$$ and $$B$$ equal.\n\nThe first line contains a single integer $$n~(1 $\\leq n \\leq 3 \\cdot 10^5)$$$ — the length of the first array.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\cdots, a_n~(1 $\\leq a_i \\leq 10^9)$$$ — elements of the array $$A$$.\n\nThe third line contains a single integer $$m~(1 $\\leq m \\leq 3 \\cdot 10^5)$$$ — the length of the second array.\n\nThe fourth line contains $$m$$ integers $$b_1, b_2, \\cdots, b_m~(1 $\\leq b_i \\leq 10^9)$$$ - elements of the array $$B$$.\n\nPrint a single integer — the maximum length of the resulting arrays after some operations were performed on arrays $$A$$ and $$B$$ in such a way that they became equal.\n\nIf there is no way to make array equal, print \" -1 \".",
+    "input": "Input The first line contains a single integer $$n~(1 $\\leq n \\leq 3 \\cdot 10^5)$$$ — the length of the first array. The second line contains $$n$$ integers $$a_1, a_2, \\cdots, a_n~(1 $\\leq a_i \\leq 10^9)$$$ — elements of the array $$A$$. The third line contains a single integer $$m~(1 $\\leq m \\leq 3 \\cdot 10^5)$$$ — the length of the second array. The fourth line contains $$m$$ integers $$b_1, b_2, \\cdots, b_m~(1 $\\leq b_i \\leq 10^9)$$$ - elements of the array $$B$$.",
+    "output": "Output Print a single integer — the maximum length of the resulting arrays after some operations were performed on arrays $$A$$ and $$B$$ in such a way that they became equal. If there is no way to make array equal, print \" -1 \".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "two pointers",
+        "*1600"
+    ],
+    "rating": 1600
+}

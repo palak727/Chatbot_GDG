@@ -1,0 +1,19 @@
+{
+    "id": "2207C",
+    "contest_id": 2207,
+    "problem_letter": "C",
+    "title": "C. Where's My Water?",
+    "statement": "\n\nLet $$n, h$$ be positive integers. Swampy the Alligator needs water for his bathtub, and you are tasked with getting it to him. Above his house, there is an $$h $\\times n$$$ grid of dirt and water tiles with $$n$$ columns numbered $$1, \\ldots, n$$. In column $$i$$, the bottom $$a_i$$ tiles are dirt, and the rest on top are water tiles.\n\nTo get water to Swampy, you can place a drain on any tile that isn't a dirt tile. Placing a drain takes away all water tiles that can access the drain by moving only down, left, or right on the grid without crossing any dirt tiles.\n\nFor example, placing the drain on the $$\\times$$ in the grid below will drain both the top left and top right water tiles and result in $$10$$ tiles being drained:\n\nWhat is the maximum amount of water you can get to Swampy after placing at most two drains? Note that water tiles that could have been taken by either drain are only counted once.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows.\n\nThe first line contains two integers $$n$$ and $$h$$ ($$1 $\\leq n \\leq 2000, 1 \\leq h \\leq 10^9$$$) — the number of columns and height of the grid.\n\nThe next line contains $$n$$ integers $$a_i$$ ($$1 $\\leq a_i \\leq h$$$) — the elevation of the dirt in column $$i$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2000$$.\n\nFor each test case, output a single integer — the maximum number of water tiles that can be obtained with at most two drains.\n\nIn the first test case, the grid is the example shown in the statement. It is possible to drain $$14$$ tiles of water by placing the drains as shown:\n\nIn the second test case, the grid is shown below:\n\nIt is possible to drain all $$43$$ tiles of water by placing the drains as shown:\n\nIn the third test case, the grid is a single dirt tile, and no drains may be placed. So, the answer is $$0$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows. The first line contains two integers $$n$$ and $$h$$ ($$1 $\\leq n \\leq 2000, 1 \\leq h \\leq 10^9$$$) — the number of columns and height of the grid. The next line contains $$n$$ integers $$a_i$$ ($$1 $\\leq a_i \\leq h$$$) — the elevation of the dirt in column $$i$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2000$$.",
+    "output": "Output For each test case, output a single integer — the maximum number of water tiles that can be obtained with at most two drains.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

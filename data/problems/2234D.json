@@ -1,0 +1,20 @@
+{
+    "id": "2234D",
+    "contest_id": 2234,
+    "problem_letter": "D",
+    "title": "D. XOR, Expression and Two Binary Numbers",
+    "statement": "You are given an integer $$k$$. There is a sequence of $$n$$-bit binary numbers $$a_1, a_2, \\ldots, a_{2^k + 1}$$. The numbers $$a_1$$ and $$a_{2^k + 1}$$ are given to you, and the others are unknown. Then the unknown numbers are filled in as follows over $$k$$ steps:\n\nIt can be shown that this process always fills all numbers completely.\n\nThis is what the process looks like for $$k = 2$$ and $$n = 3$$, where initially $$a_1 = \\texttt{010}, a_5 = \\texttt{110}$$:\n\nYou need to compute the following expression: $$x_1 $\\cdot y_1 + x_2 \\cdot y_2 + \\ldots + x_{2^k + 1} \\cdot y_{2^k + 1}$$$, where $$x_i$$ is the number of set bits in the $$i$$-th number, and $$y_i$$ is the number of zero bits in the $$i$$-th number.\n\n$$^{∗}$$$$x \\oplus y$$ denotes the bitwise exclusive OR of numbers $$x$$ and $$y$$\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n, k$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq k \\leq 30$$$) — the length of the binary numbers and the number determining the number of binary numbers in the sequence.\n\nThe second line of each test case contains a binary string $$s$$ of length $$n$$ ($$s_i \\in \\{\\texttt{0}, \\texttt{1}\\}$$) — the value of $$a_1$$.\n\nThe third line of each test case contains a binary string $$z$$ of length $$n$$ ($$z_i \\in \\{\\texttt{0}, \\texttt{1}\\}$$) — the value of $$a_{2^k + 1}$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.\n\nFor each test case, output one integer — the value of the expression from the statement.\n\nIn the first test case, the process was described in the statement. The resulting sequence of binary numbers is $$[\\texttt{010}, \\texttt{110}, \\texttt{100}, \\texttt{010}, \\texttt{110}]$$. Then the expression in the statement equals $$1 $\\cdot 2 + 2 \\cdot 1 + 1 \\cdot 2 + 1 \\cdot 2 + 2 \\cdot 1 = 10$$$.\n\nIn the second test case, at the first step we have $$a_2 = a_1 \\oplus a_3 = \\texttt{0} \\oplus \\texttt{0} = \\texttt{0}$$. Therefore, the resulting sequence of numbers is $$[\\texttt{0}, \\texttt{0}, \\texttt{0}]$$. For it, the value of the expression is zero.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n, k$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq k \\leq 30$$$) — the length of the binary numbers and the number determining the number of binary numbers in the sequence. The second line of each test case contains a binary string $$s$$ of length $$n$$ ($$s_i \\in \\{\\texttt{0}, \\texttt{1}\\}$$) — the value of $$a_1$$. The third line of each test case contains a binary string $$z$$ of length $$n$$ ($$z_i \\in \\{\\texttt{0}, \\texttt{1}\\}$$) — the value of $$a_{2^k + 1}$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.",
+    "output": "Output For each test case, output one integer — the value of the expression from the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "divide and conquer",
+        "dp",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

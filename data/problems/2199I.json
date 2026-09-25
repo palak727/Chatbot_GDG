@@ -1,0 +1,16 @@
+{
+    "id": "2199I",
+    "contest_id": 2199,
+    "problem_letter": "I",
+    "title": "I. Strange Process",
+    "statement": "You are given three arrays:\n\nWe perform the following process on these arrays. The process consists of $$m$$ stages. During the $$i$$-th stage, the following occurs:\n\nAn array of $$m$$ numbers from $$0$$ to $$n$$ is called achievable if it can be obtained as a result of this process as the array $$b$$.\n\nYour task is to count the number of achievable arrays.\n\nThe first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 10^4$$$).\n\nThe second line contains $$m$$ integers $$c_1, c_2, \\dots, c_m$$ ($$1 $\\leq c_i \\leq 50$$$).\n\nPrint one integer — the number of achievable arrays, taken modulo $$998244353$$.",
+    "input": "Input The first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 10^4$$$). The second line contains $$m$$ integers $$c_1, c_2, \\dots, c_m$$ ($$1 $\\leq c_i \\leq 50$$$).",
+    "output": "Output Print one integer — the number of achievable arrays, taken modulo $$998244353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "*3000"
+    ],
+    "rating": 3000
+}

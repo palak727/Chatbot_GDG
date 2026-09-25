@@ -1,0 +1,18 @@
+{
+    "id": "1033C",
+    "contest_id": 1033,
+    "problem_letter": "C",
+    "title": "C. Permutation Game",
+    "statement": "After a long day, Alice and Bob decided to play a little game. The game board consists of $$n$$ cells in a straight line, numbered from $$1$$ to $$n$$, where each cell contains a number $$a_i$$ between $$1$$ and $$n$$. Furthermore, no two cells contain the same number.\n\nA token is placed in one of the cells. They take alternating turns of moving the token around the board, with Alice moving first. The current player can move from cell $$i$$ to cell $$j$$ only if the following two conditions are satisfied:\n\nWhoever is unable to make a move, loses. For each possible starting position, determine who wins if they both play optimally. It can be shown that the game is always finite, i.e. there always is a winning strategy for one of the players.\n\nThe first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the number of numbers.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$). Furthermore, there are no pair of indices $$i $\\neq j$$$ such that $$a_i = a_j$$.\n\nPrint $$s$$ — a string of $$n$$ characters, where the $$i$$-th character represents the outcome of the game if the token is initially placed in the cell $$i$$. If Alice wins, then $$s_i$$ has to be equal to \" A \"; otherwise, $$s_i$$ has to be equal to \" B \".\n\nIn the first sample, if Bob puts the token on the number ( not position ):",
+    "input": "Input The first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the number of numbers. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$). Furthermore, there are no pair of indices $$i $\\neq j$$$ such that $$a_i = a_j$$.",
+    "output": "Output Print $$s$$ — a string of $$n$$ characters, where the $$i$$-th character represents the outcome of the game if the token is initially placed in the cell $$i$$. If Alice wins, then $$s_i$$ has to be equal to \" A \"; otherwise, $$s_i$$ has to be equal to \" B \".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "games",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2190B2",
+    "contest_id": 2190,
+    "problem_letter": "B2",
+    "title": "B2. Sub-RBS (Hard Version)",
+    "statement": "\n\nThis is the hard version of the problem. The difference between the versions is that in this version, you need to find the sum of scores over all subsequences of $$s$$; $$s$$ is not necessarily a regular bracket sequence , and the constraints on $$n$$ are lower .\n\nWe say that a bracket sequence $$a$$ is better than a bracket sequence $$b$$ if one of the following holds:\n\nFor an arbitrary bracket sequence $$t$$, we define its score in the following way:\n\nIn other words, the score of $$t$$ is the length of the longest regular bracket subsequence of $$t$$ which is better than $$t$$. If $$t$$ is not a regular bracket sequence, or if no regular subsequence better than $$t$$ exists, the score is $$0$$.\n\nYou are given a bracket sequence $$s$$ of length $$n$$. Find the sum of the scores of all non-empty subsequences of $$s$$ modulo $$998\\,244\\,353$$.\n\n$$^{∗}$$A regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting the characters $$\\texttt{1}$$ and $$\\texttt{+}$$ between the original characters of the sequence. For example:\n\n$$^{†}$$A sequence $$a$$ is a subsequence of a sequence $$b$$ if $$a$$ can be obtained from $$b$$ by the deletion of several (possibly, zero or all) element from arbitrary positions.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 30$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the length of the string $$s$$.\n\nThe second line of each test case contains a sequence $$s$$ of length $$n$$ consisting only of characters $$\\texttt{(}$$ and $$\\texttt{)}$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$100$$.\n\nFor each test case, print a single integer — the sum of the scores of all subsequences of $$s$$, modulo $$998\\,244\\,353$$.\n\nIn the first example, the only non-empty subsequence is $$g = \\texttt{(}$$. It is not a regular bracket sequence , so its score is $$0$$, and the total sum is also $$0$$.\n\nIn the second example, consider $$g = s = \\texttt{()()()}$$. It is a regular bracket sequence . We can choose $$r = \\texttt{(())}$$, which is a subsequence of $$g$$. The first index where $$r$$ and $$g$$ differ is $$i = 2$$. Since $$r_2 = \\texttt{(}$$ and $$g_2 = \\texttt{)}$$, $$r$$ is better than $$g$$. Hence, the score of $$g$$ is $$|r| = 4$$. All the other non-empty subsequences of $$s$$ have scores equal to $$0$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 30$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the length of the string $$s$$. The second line of each test case contains a sequence $$s$$ of length $$n$$ consisting only of characters $$\\texttt{(}$$ and $$\\texttt{)}$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$100$$.",
+    "output": "Output For each test case, print a single integer — the sum of the scores of all subsequences of $$s$$, modulo $$998\\,244\\,353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "games",
+        "implementation",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2230E",
+    "contest_id": 2230,
+    "problem_letter": "E",
+    "title": "E. Minimum Influence",
+    "statement": "Imagine that you are the owner of a news website and want to study how some selected news items affect your users.\n\nYou have $$n$$ news items, and for each of them, you have already determined two parameters: how much it touches politics $$p_i$$ and how much it touches culture $$c_i$$.\n\nYou also have $$m$$ users whose reaction to the news you want to study. For each person, you have already determined three parameters: tolerance to political news $$tp_j$$, tolerance to cultural news $$tc_j$$, and the \"zone of influence\" $$d_j$$.\n\nThe influence of politics $$I_p(i, j)$$ and culture $$I_c(i, j)$$ in news item $$i$$ on user $$j$$ can be calculated by the following formulas:\n\nIn other words, while the amount of politics $$p_i$$ is less than the tolerance level $$tp_j$$, it does not affect the user. Otherwise, the topic starts to irritate the user, but not more than up to $$tp_j + d_j$$. The same goes for culture.\n\nThe total influence of news item $$i$$ on user $$j$$ is $$I(i, j) = I_p(i, j) + I_c(i, j)$$.\n\nFor each user $$j$$, determine the minimum influence $$I(i, j)$$ among all news items $$i$$.\n\nThe first line contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of news items.\n\nThe second line contains $$n$$ integers $$p_1, p_2, \\dots, p_n$$ ($$0 $\\leq p_i \\leq 10^6$$$) — the amount of political content of each news item.\n\nThe third line contains $$n$$ integers $$c_1, c_2, \\dots, c_n$$ ($$0 $\\leq c_i \\leq 10^6$$$) — the amount of cultural content of each news item.\n\nThe fourth line contains one integer $$m$$ ($$1 $\\leq m \\leq 4 \\cdot 10^5$$$) — the number of users.\n\nThe fifth line contains $$m$$ integers $$tp_1, tp_2, \\dots, tp_m$$ ($$0 $\\leq tp_j \\leq 10^6$$$) — the political tolerance of each user.\n\nThe sixth line contains $$m$$ integers $$tc_1, tc_2, \\dots, tc_m$$ ($$0 $\\leq tc_j \\leq 10^6$$$) — the cultural tolerance of each user.\n\nThe seventh line contains $$m$$ integers $$d_1, d_2, \\dots, d_m$$ ($$0 $\\leq d_j \\leq 10^6$$$) — the zone of influence of each user.\n\nFor each user, output one integer — the minimum influence $$I(i, j)$$ among all news items.",
+    "input": "Input The first line contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of news items. The second line contains $$n$$ integers $$p_1, p_2, \\dots, p_n$$ ($$0 $\\leq p_i \\leq 10^6$$$) — the amount of political content of each news item. The third line contains $$n$$ integers $$c_1, c_2, \\dots, c_n$$ ($$0 $\\leq c_i \\leq 10^6$$$) — the amount of cultural content of each news item. The fourth line contains one integer $$m$$ ($$1 $\\leq m \\leq 4 \\cdot 10^5$$$) — the number of users. The fifth line contains $$m$$ integers $$tp_1, tp_2, \\dots, tp_m$$ ($$0 $\\leq tp_j \\leq 10^6$$$) — the political tolerance of each user. The sixth line contains $$m$$ integers $$tc_1, tc_2, \\dots, tc_m$$ ($$0 $\\leq tc_j \\leq 10^6$$$) — the cultural tolerance of each user. The seventh line contains $$m$$ integers $$d_1, d_2, \\dots, d_m$$ ($$0 $\\leq d_j \\leq 10^6$$$) — the zone of influence of each user.",
+    "output": "Output For each user, output one integer — the minimum influence $$I(i, j)$$ among all news items.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

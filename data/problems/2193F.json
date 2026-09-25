@@ -1,0 +1,17 @@
+{
+    "id": "2193F",
+    "contest_id": 2193,
+    "problem_letter": "F",
+    "title": "F. Pizza Delivery",
+    "statement": "Courier YF has earned the title of the best pizza delivery person GR. The manager does not like him, so he decided to give him a very difficult task. The manager provided him with $$n$$ coordinates of houses $$(x_i, y_i)$$ where he needs to deliver the pizza. He will deliver the pizza in the following way:\n\nEach move takes him exactly one second, and handing over the pizza to the customer takes $$0$$ seconds. The manager wants the delivery to be as fast as possible. You need to find the minimum delivery time for all GR pizzas. It is guaranteed that delivery is always possible.\n\nEach test consists of several test cases. The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains five integers $$n$$, $$Ax$$, $$Ay$$, $$Bx$$, $$By$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$, $$1 $\\leq Ax, Ay, Bx, By \\leq 10^9$$$) — the number of houses for delivery, as well as the coordinates of the start and end points.\n\nThe second line of each test case contains $$n$$ integers $$x_1, x_2, \\dots, x_n$$ ($$Ax \\lt x_i \\lt Bx$$).\n\nThe third line of each test case contains $$n$$ integers $$y_1, y_2, \\dots, y_n$$ ($$1 $\\leq y_i \\leq 10^9$$$).\n\nIt is guaranteed that the sum of the values of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output a single integer on a separate line — the minimum time required for pizza delivery.\n\nConsider the second test case:",
+    "input": "Input Each test consists of several test cases. The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of the test cases follows. The first line of each test case contains five integers $$n$$, $$Ax$$, $$Ay$$, $$Bx$$, $$By$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$, $$1 $\\leq Ax, Ay, Bx, By \\leq 10^9$$$) — the number of houses for delivery, as well as the coordinates of the start and end points. The second line of each test case contains $$n$$ integers $$x_1, x_2, \\dots, x_n$$ ($$Ax \\lt x_i \\lt Bx$$). The third line of each test case contains $$n$$ integers $$y_1, y_2, \\dots, y_n$$ ($$1 $\\leq y_i \\leq 10^9$$$). It is guaranteed that the sum of the values of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output a single integer on a separate line — the minimum time required for pizza delivery.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*1600"
+    ],
+    "rating": 1600
+}

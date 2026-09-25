@@ -10,7 +10,7 @@ import numpy as np
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
-from config import EMBEDDING_MODEL, FAISS_INDEX_PATH, METADATA_PATH
+from config import FAISS_INDEX_PATH, METADATA_PATH
 from src.indexer import load_index_from_disk
 from src.utils import extract_rating
 
@@ -29,6 +29,11 @@ def match_by_id(problems: list[dict], query: str) -> dict | None:
     return next((p for p in problems if p.get("id", "").upper() == pid), None)
 
 
+def is_problem_id_query(query: str) -> bool:
+    """Return whether the complete query is a Codeforces problem ID."""
+    return bool(re.fullmatch(r"\d+[A-Z]\d*", query.strip(), re.IGNORECASE))
+
+
 def match_by_title(problems: list[dict], query: str) -> dict | None:
     """Substring match on problem title."""
     q = query.lower().strip()
@@ -41,17 +46,19 @@ def filter_problems(
     problems: list[dict],
     tags: list[str] | None = None,
     rating_min: int = 800,
-    rating_max: int = 2400,
+    rating_max: int = 3500,
 ) -> list[dict]:
-    """Filter problems by tags and difficulty rating range."""
+    """Filter problems by all selected tags and an inclusive rating range."""
     filtered = []
     for p in problems:
         rating = p.get("rating") or extract_rating(p.get("tags", []))
-        if rating is not None and not (rating_min <= rating <= rating_max):
+        if rating is None:
+            continue
+        if not (rating_min <= rating <= rating_max):
             continue
         if tags:
             problem_tags = {t.lower() for t in p.get("tags", [])}
-            if not any(t.lower() in problem_tags for t in tags):
+            if not all(t.lower() in problem_tags for t in tags):
                 continue
         filtered.append(p)
     return filtered
@@ -151,9 +158,13 @@ class SearchEngine:
         )
         self.model = SentenceTransformer(model_name)
 
-        # Build BM25 index on tokenized statements and titles
+        # Repeat short topic fields so BM25 does not dilute them in long statements.
         corpus = [
-            tokenize(f"{p.get('title', '')} {p.get('statement', '')}")
+            tokenize(
+                f"{p.get('title', '')} {p.get('title', '')} {p.get('title', '')} "
+                f"{' '.join(p.get('tags', []))} {' '.join(p.get('tags', []))} "
+                f"{p.get('statement', '')} {p.get('input', '')} {p.get('output', '')}"
+            )
             for p in self.problems
         ]
         self.bm25 = BM25Okapi(corpus)
@@ -170,9 +181,16 @@ class SearchEngine:
         if not candidate_indices or self.bm25 is None or self.index is None or self.model is None:
             return []
 
-        # 1. FAISS Dense Retrieval
+        retrieval_k = min(len(candidate_indices), max(k * 20, 50))
+
+        # 1. FAISS Dense Retrieval. Fuse only the useful head of each list;
         dense_results = semantic_search(
-            query, self.index, self.problems, self.model, k=len(candidate_indices), candidate_indices=candidate_indices
+            query,
+            self.index,
+            self.problems,
+            self.model,
+            k=retrieval_k,
+            candidate_indices=candidate_indices,
         )
 
         # 2. BM25 Sparse Retrieval
@@ -182,19 +200,22 @@ class SearchEngine:
         # Filter BM25 scores for candidates only
         candidate_bm25 = [(idx, bm25_scores[idx]) for idx in candidate_indices]
         candidate_bm25.sort(key=lambda x: x[1], reverse=True)
+        candidate_bm25 = candidate_bm25[:retrieval_k]
 
         # 3. Reciprocal Rank Fusion (RRF)
-        rrf_scores: dict[int, float] = {idx: 0.0 for idx in candidate_indices}
+        rrf_scores: dict[int, float] = {}
 
         for rank, (problem, _) in enumerate(dense_results):
             p_idx = self.problems.index(problem)
-            rrf_scores[p_idx] += 1.0 / (rrf_k + rank + 1)
+            rrf_scores[p_idx] = rrf_scores.get(p_idx, 0.0) + 1.0 / (rrf_k + rank + 1)
 
         for rank, (p_idx, _) in enumerate(candidate_bm25):
-            rrf_scores[p_idx] += 1.0 / (rrf_k + rank + 1)
+            rrf_scores[p_idx] = rrf_scores.get(p_idx, 0.0) + 1.0 / (rrf_k + rank + 1)
 
         # Sort candidate indices by fused score
-        sorted_indices = sorted(rrf_scores.keys(), key=lambda idx: rrf_scores[idx], reverse=True)
+        sorted_indices = sorted(
+            rrf_scores.keys(), key=lambda idx: (-rrf_scores[idx], idx)
+        )
         return [self.problems[i] for i in sorted_indices[:k]]
 
     def search(
@@ -203,7 +224,7 @@ class SearchEngine:
         mode: str = "semantic",
         tags: list[str] | None = None,
         rating_min: int = 800,
-        rating_max: int = 2400,
+        rating_max: int = 3500,
         k: int = 5,
     ) -> list[dict]:
         self.load()
@@ -211,8 +232,12 @@ class SearchEngine:
 
         pool = filter_problems(self.problems, tags, rating_min, rating_max)
 
-        if mode == "exact_id":
-            result = match_by_id(pool, query) or match_by_id(self.problems, query)
+        # An empty query is an intentional browse request, not a semantic query.
+        if not query.strip():
+            return pool[:k]
+
+        if is_problem_id_query(query):
+            result = match_by_id(pool, query)
             return [result] if result else []
 
         # Exact ID and Title match priority
@@ -226,6 +251,21 @@ class SearchEngine:
 
         candidate_indices = [self.problems.index(p) for p in pool if p in self.problems]
         return self.hybrid_search(query, candidate_indices, k=k)
+
+    def find_problem_by_id(self, query: str) -> dict | None:
+        """Find an ID in the complete index, independent of active filters."""
+        self.load()
+        return match_by_id(self.problems, query)
+
+    def filter_count(
+        self,
+        tags: list[str] | None = None,
+        rating_min: int = 800,
+        rating_max: int = 3500,
+    ) -> int:
+        """Return the number of problems matching the active filters."""
+        self.load()
+        return len(filter_problems(self.problems, tags, rating_min, rating_max))
 
     def get_similar(self, problem: dict, k: int = 3) -> list[dict]:
         self.load()

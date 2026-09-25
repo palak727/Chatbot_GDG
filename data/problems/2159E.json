@@ -1,0 +1,17 @@
+{
+    "id": "2159E",
+    "contest_id": 2159,
+    "problem_letter": "E",
+    "title": "E. Super-Short-Polynomial-San",
+    "statement": "You are given three integers $$a,b,c$$.\n\nLet $$F(n)$$ be the polynomial of degree $$2n$$ defined as follows.\n\n$$$F(n)=\\left ({a x^2+b x+c}\\right) ^n$$$\n\nYou are asked to solve $$q$$ queries of the following kind.\n\nHowever, it might be too easy for you if this problem ends here. So here is a twist$$^{†}$$: You are asked to solve the queries online .\n\n$$^{∗}$$Here, $$[x^a]F(n)$$ denotes the coefficient of $$x^a$$ of the polynomial $$F(n)$$.\n\n$$^{†}$$I hope it isn't too hard for you after the twist. Even a toddler knows one way to solve it. You just have to optimize that method by a factor of $$8\\,000\\,000$$.\n\nThe first line contains three integers $$a$$, $$b$$, $$c$$ ($$1 $\\leq a,b,c \\leq 10^9+6$$$).\n\nThe second line contains the number of queries $$q$$ ($$1 $\\leq q \\leq 3 \\cdot 10^5$$$).\n\nEach of the $$q$$ following lines contains two integers $$n_i'$$ and $$k_i'$$ denoting the query in encrypted format.\n\nYou must decrypt the queries as follows.\n\nDo note that both the sum of $$n_i$$ and the sum of $$k_i$$ over all queries are not bounded .\n\nFor each query, print the answer modulo $$10^9+7$$ on a new line.\n\nThe decrypted example input is as follows.\n\nHere, the polynomial $$F(n)$$ corresponds to A084608 from OEIS. Don't worry about the link; there's nothing so useful there. Trust me.",
+    "input": "Input The first line contains three integers $$a$$, $$b$$, $$c$$ ($$1 $\\leq a,b,c \\leq 10^9+6$$$). The second line contains the number of queries $$q$$ ($$1 $\\leq q \\leq 3 \\cdot 10^5$$$). Each of the $$q$$ following lines contains two integers $$n_i'$$ and $$k_i'$$ denoting the query in encrypted format. You must decrypt the queries as follows. Let the answer to the $$i$$-th query modulo $$10^9+7$$ be $$ans_i$$. Here, $$ans_0$$ is defined to be $$0$$. Then, the values of $$n$$ and $$k$$ for the $$i$$-th query are $$n_i = n_i' \\oplus ans_{i-1}$$ and $$k_i = k_i' \\oplus ans_{i-1}$$ ($$0 $\\leq n_i \\leq 3\\cdot 10^5$$$, $$0 $\\leq k_i \\leq 2n_i$$$). Do note that both the sum of $$n_i$$ and the sum of $$k_i$$ over all queries are not bounded .",
+    "output": "Output For each query, print the answer modulo $$10^9+7$$ on a new line.",
+    "time_limit": "7 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "math",
+        "meet-in-the-middle",
+        "*3500"
+    ],
+    "rating": 3500
+}

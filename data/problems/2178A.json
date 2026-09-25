@@ -1,0 +1,17 @@
+{
+    "id": "2178A",
+    "contest_id": 2178,
+    "problem_letter": "A",
+    "title": "A. Yes or Yes",
+    "statement": "\n\nLast Christmas, your friend Fernando gifted you a string $$s$$ consisting only of the characters $$\\mathtt{Y}$$ and $$\\mathtt{N}$$, representing \"Yes\" and \"No\", respectively.\n\nYou can repeatedly apply the following operation on $$s$$:\n\nFormally, in each operation, you can choose an index $$i$$ ($$1 $\\leq i \\leq |s|-1$$$), remove the characters $$s_i$$ and $$s_{i+1}$$, then insert:\n\nNote that after each operation, the length of $$s$$ decreases by $$1$$.\n\nUnfortunately, Fernando does not want you to combine \"Yes OR Yes\", as he has experienced trauma relating to a certain song.\n\nDetermine whether it is possible to reduce $$s$$ to a single character by repeatedly applying the operation above, without ever combining two $$\\mathtt{Y}$$'s.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe only line of each test case contains the string $$s$$ ($$2$\\leq |s|\\leq 100$$$). It is guaranteed that $$s_i = \\mathtt{Y}$$ or $$\\mathtt{N}$$.\n\nFor each test case, print \" YES \" if the string can be reduced to a single character by repeatedly applying the described operation, and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the first test case, you cannot combine $$s_1$$ and $$s_2$$ since they are both $$\\mathtt{Y}$$. Thus, the answer is NO .\n\nIn the third test case, the following is a valid sequence of operations: $$\\mathtt{\\underline{NN}Y}\\to\\mathtt{\\underline{NY}}\\to\\mathtt{Y}$$. Thus, the answer is YES .\n\nIn the fourth test case, there are two possibilities for the first operation: $$\\mathtt{YY\\underline{YN}Y}\\to \\mathtt{YYYY}$$ or $$\\mathtt{YYY\\underline{NY}}\\to \\mathtt{YYYY}$$. However, in either case, it is not possible to perform any more operations without combining two $$\\mathtt{Y}$$'s. Thus, the answer is NO .\n\nIn the fifth test case, the following is a valid sequence of operations: $$\\mathtt{N\\underline{NN}NN}\\to\\mathtt{\\underline{NN}NN}\\to\\mathtt{N\\underline{NN}}\\to\\mathtt{\\underline{NN}}\\to\\mathtt{N}$$. Thus, the answer is YES .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The only line of each test case contains the string $$s$$ ($$2$\\leq |s|\\leq 100$$$). It is guaranteed that $$s_i = \\mathtt{Y}$$ or $$\\mathtt{N}$$.",
+    "output": "Output For each test case, print \" YES \" if the string can be reduced to a single character by repeatedly applying the described operation, and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2216B",
+    "contest_id": 2216,
+    "problem_letter": "B",
+    "title": "B. THU Packing Puzzle",
+    "statement": "There are three types of 2D blocks: T-shaped, H-shaped, and U-shaped. Their exact shapes are shown in the figure below:\n\n\n\nYou are given three non-negative integers $$c_T$$, $$c_H$$, and $$c_U$$, representing the numbers of T-shaped, H-shaped, and U-shaped blocks, respectively. Your task is to pack all $$(c_T + c_H + c_U)$$ blocks into an $$n $\\times 3$$$ grid, following these rules:\n\nYou have to find the minimum possible value of $$n$$ for which such a packing exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains three integers $$c_T$$, $$c_H$$, and $$c_U$$ ($$0$\\leq c_T,c_H,c_U\\leq 10^9$$$, $$c_T+c_H+c_U \\gt 0$$) — the numbers of T-shaped, H-shaped, and U-shaped blocks, respectively.\n\nFor each test case, output a single integer — the minimum possible value of $$n$$.\n\nThe optimal solutions for the first three test cases are listed below:\n\n",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains three integers $$c_T$$, $$c_H$$, and $$c_U$$ ($$0$\\leq c_T,c_H,c_U\\leq 10^9$$$, $$c_T+c_H+c_U \\gt 0$$) — the numbers of T-shaped, H-shaped, and U-shaped blocks, respectively.",
+    "output": "Output For each test case, output a single integer — the minimum possible value of $$n$$.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

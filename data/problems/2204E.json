@@ -1,0 +1,18 @@
+{
+    "id": "2204E",
+    "contest_id": 2204,
+    "problem_letter": "E",
+    "title": "E. Sum of Digits (and Again)",
+    "statement": "For a positive (strictly greater than $$0$$) integer $$x$$, the string $$S(x)$$ is formed through the following process:\n\nFor example:\n\nYou are given a string $$s$$ consisting of digits. Your task is to rearrange the characters in this string so that it forms the string $$S(x)$$ for some number $$x$$. Removing characters and/or adding new characters is not allowed. If the given string $$s$$ is already the string $$S(x)$$ for some number $$x$$, you may leave it unchanged.\n\nThe first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nEach test case consists of one string containing $$s$$ ($$1 $\\leq |s| \\leq 10^5$$$) — a sequence of digits.\n\nAdditional constraints on the input:\n\nFor each test case, output one string — $$s$$ after rearranging the characters. If there are multiple valid answers, output any of them.",
+    "input": "Input The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. Each test case consists of one string containing $$s$$ ($$1 $\\leq |s| \\leq 10^5$$$) — a sequence of digits. Additional constraints on the input: the sum of lengths of $$s$$ over all test cases does not exceed $$10^5$$; it is possible to rearrange the digits in $$s$$ to obtain $$S(x)$$ for some positive integer $$x$$.",
+    "output": "Output For each test case, output one string — $$s$$ after rearranging the characters. If there are multiple valid answers, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

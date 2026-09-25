@@ -1,0 +1,18 @@
+{
+    "id": "2264F",
+    "contest_id": 2264,
+    "problem_letter": "F",
+    "title": "F. Deranged Calculator",
+    "statement": "Hacks are disabled on this problem.\n\nWe are excited to introduce a new language for this Codeforces round: the Deranged Calculator language (DC).\n\nThe DC language is a simplified programming language with some weird constraints. It only supports a single expression on one line and only has a single positive integer $$n$$ as input. The syntax of the expression is similar to that of most programming languages (in fact, the expression is valid Python), but it is very limited:\n\nA derangement of $$n$$ numbers is a permutation of those numbers in which none of the numbers appears in its original position. For example, the derangements of the sequence $$[1, 2, 3]$$ are $$[2, 3, 1]$$ and $$[3, 1, 2]$$.\n\nYou are given a single integer $$k$$. Your job is to make a valid DC program that, for every integer $$n$$ ($$2 $\\leq n \\leq k$$$), calculates the number of derangements of the sequence $$[1, 2, \\ldots, n]$$, when $$n$$ is given as input to the DC program. The length of the program should not exceed $$10\\,000$$ characters.\n\nA local testing tool is provided to help you develop your solution. It can be found under Contest Materials.\n\nThe only line of input contains a single integer $$k$$ ($$k \\in \\{2,3,50\\}$$).\n\nYour DC program should output the correct number of derangements for all integers $$n$$ such that $$2 $\\leq n \\leq k$$$.\n\nOutput a valid DC expression on a single line. The expression should only consist of the characters round()+-*/ and the length of the expression should not exceed $$10\\,000$$ characters.\n\nYour expression will be run on all integers $$n$$ such that $$2 $\\leq n \\leq k$$$. For each such run, the DC expression should not divide by $$0$$ at any time, and its value must be the number of derangements of $$n$$.\n\nFor the first example, n-n/n is a valid DC program that calculates $$n-1$$. The number of derangements for $$n=2$$ is $$1$$, so this program correctly computes the answer for $$n=2$$.\n\nIn the second example, a slightly overcomplicated expression is used, which shows all the features of the language in action. For $$n=3$$, the value of the expression is: $$3+round(3-3 $\\cdot(\\frac{3}{3+3}))-3 = round(3 - \\frac{3}{2}) = round(\\frac{3}{2}) = round(1.5)=2$$$. It correctly calculates the number of derangements of the sequence $$[1,2,3]$$. For $$n=2$$ it can be verified that the value of the expression becomes $$1$$.",
+    "input": "Input The only line of input contains a single integer $$k$$ ($$k \\in \\{2,3,50\\}$$). Your DC program should output the correct number of derangements for all integers $$n$$ such that $$2 $\\leq n \\leq k$$$.",
+    "output": "Output Output a valid DC expression on a single line. The expression should only consist of the characters round()+-*/ and the length of the expression should not exceed $$10\\,000$$ characters. Your expression will be run on all integers $$n$$ such that $$2 $\\leq n \\leq k$$$. For each such run, the DC expression should not divide by $$0$$ at any time, and its value must be the number of derangements of $$n$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*2800"
+    ],
+    "rating": 2800
+}

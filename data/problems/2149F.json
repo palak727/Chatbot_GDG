@@ -1,0 +1,18 @@
+{
+    "id": "2149F",
+    "contest_id": 2149,
+    "problem_letter": "F",
+    "title": "F. Nezuko in the Clearing",
+    "statement": "Nezuko suddenly woke up on the number line at point $$0$$ and has $$h$$ health points. She wants to reach point $$d$$. In one turn, she can do exactly one of two things:\n\nEach movement decreases Nezuko's health; if the movement is the $$j$$-th consecutive movement, her health will decrease by $$j$$ points. If as a result of a move Nezuko's health drops to $$0$$ or below, she cannot make that move.\n\nFor example, if Nezuko initially had $$7$$ health points and $$d=4$$, her moves could look like this:\n\nFind the minimum number of turns required for her to reach point $$d$$.\n\nEach test consists of several test cases.\n\nThe first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The following describes the test cases.\n\nThe first line of each test case contains two integers $$h$$ and $$d$$ $$(1$\\leq h,d \\leq 10^9)$$$ — the number of health points and the destination point, respectively.\n\nFor each test case, output one number — the minimum number of turns required for Nezuko to reach point $$d$$.\n\nIn the first test case, $$h = 3$$, $$d = 2$$ the actions could be as follows:\n\nIn total, $$3$$ turns.\n\nIn the fourth test case, $$h = 2$$, $$d = 4$$ the actions could be as follows:\n\nIn total, $$7$$ turns.",
+    "input": "Input Each test consists of several test cases. The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The following describes the test cases. The first line of each test case contains two integers $$h$$ and $$d$$ $$(1$\\leq h,d \\leq 10^9)$$$ — the number of health points and the destination point, respectively.",
+    "output": "Output For each test case, output one number — the minimum number of turns required for Nezuko to reach point $$d$$.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "ternary search",
+        "*1900"
+    ],
+    "rating": 1900
+}

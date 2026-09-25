@@ -1,0 +1,16 @@
+{
+    "id": "2241C",
+    "contest_id": 2241,
+    "problem_letter": "C",
+    "title": "C. RemovevomeR",
+    "statement": "You are given a binary string $$s$$ consisting only of the characters $$\\texttt{0}$$ and $$\\texttt{1}$$.\n\nIn one operation, you can do the following:\n\nThe remaining parts of the string are then concatenated to form the new string $$s$$.\n\nFind the minimum possible length of the string $$s$$ that can be achieved after applying this operation any number of times (possibly zero).\n\n$$^{∗}$$A string $$a$$ is a substring of a string $$b$$ if $$a$$ can be obtained from $$b$$ by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\n$$^{†}$$A string $$a$$ of length $$m$$ is said to be palindrome if $$a_i = a_{m + 1 - i}$$ for all $$1 $\\leq i \\leq m$$$.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 100$$$) — the number of test cases. Description of each test case follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the length of the binary string $$s$$.\n\nThe second line of each test case contains a binary string $$s$$ of length $$n$$. It is guaranteed that each character of $$s$$ is either $$\\texttt{0}$$ or $$\\texttt{1}$$.\n\nFor each test case, print the minimum possible length of the string $$s$$ that can be achieved after applying the operation any number of times.\n\nIn the first test case, the initial string is $$\\texttt{0000}$$. We can perform the following sequence of operations:\n\nIn the second test case, the initial string is $$\\texttt{110}$$.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 100$$$) — the number of test cases. Description of each test case follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the length of the binary string $$s$$. The second line of each test case contains a binary string $$s$$ of length $$n$$. It is guaranteed that each character of $$s$$ is either $$\\texttt{0}$$ or $$\\texttt{1}$$.",
+    "output": "Output For each test case, print the minimum possible length of the string $$s$$ that can be achieved after applying the operation any number of times.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

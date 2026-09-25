@@ -1,0 +1,18 @@
+{
+    "id": "2170D",
+    "contest_id": 2170,
+    "problem_letter": "D",
+    "title": "D. Almost Roman",
+    "statement": "Let's define a value of a string, consisting of letters \" XVI \", as follows:\n\nYou are given a string of characters \" XVI? \" and asked $$q$$ queries about it.\n\nIn the $$i$$-th query, three integers are provided:\n\nWhat is the minimum value of the string that can be obtained if all question marks are replaced with the letters ' X ', ' V ', ' I ' so that the number of used letters does not exceed the number of available letters of each type?\n\nThe first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 3 \\cdot 10^5$$$) — the length of the string and the number of queries, respectively.\n\nThe second line contains a string consisting of $$n$$ characters ' X ', ' V ', ' I ' and/or ' ? '.\n\nThe $$i$$-th of the following $$q$$ lines contains three integers $$c_X, c_V$$, and $$c_I$$ ($$0 $\\leq c_X, c_V, c_I \\leq n$$$) — the number of available letters ' X ', ' V ' and ' I ' in the $$i$$-th query.\n\nAdditional constraints on the input:\n\nFor each query, print a single integer — the minimum value of the string that can be obtained by replacing all question marks with the available letters ' X ', ' V ', and/or ' I '.",
+    "input": "Input The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 3 \\cdot 10^5$$$) — the length of the string and the number of queries, respectively. The second line contains a string consisting of $$n$$ characters ' X ', ' V ', ' I ' and/or ' ? '. The $$i$$-th of the following $$q$$ lines contains three integers $$c_X, c_V$$, and $$c_I$$ ($$0 $\\leq c_X, c_V, c_I \\leq n$$$) — the number of available letters ' X ', ' V ' and ' I ' in the $$i$$-th query. Additional constraints on the input: the sum of $$n$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$; the sum of $$q$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$; $$c_X + c_V + c_I$$ is greater than or equal to the number of ' ? ' characters in the given string.",
+    "output": "Output For each query, print a single integer — the minimum value of the string that can be obtained by replacing all question marks with the available letters ' X ', ' V ', and/or ' I '.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

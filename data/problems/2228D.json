@@ -1,0 +1,18 @@
+{
+    "id": "2228D",
+    "contest_id": 2228,
+    "problem_letter": "D",
+    "title": "D. Sanae, Cross and Color",
+    "statement": "\n\nUpon the mountain, Sanae gazes at the stars. Faith, for her, is where winds encounter one another and choices diverge, and it is the point where all directions meet. For the glory of the Holy Cross, let us trace the sign of faith together.\n\nThere are $$n$$ distinct integer points in the plane, where the $$i$$-th point is located at $$(x_i,y_i)$$. To color the points, choose two integers $$k_1$$ and $$k_2$$ such that each of the four regions divided by the lines $$x=k_1+0.5$$ and $$y=k_2+0.5$$ contains at least one point . Each point $$(x,y)$$ is colored according to the region it lies in:\n\nFind the number of distinct colorings, where two colorings are considered distinct if and only if there exists at least one point colored differently, regardless of the choice of $$k_1$$ and $$k_2$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains an integer $$n$$ ($$4 $\\leq n \\leq 2 \\cdot 10^6$$$).\n\nThe following $$n$$ lines each contain two integers $$x_i$$, $$y_i$$ ($$1 $\\leq x_i, y_i \\leq n$$$), representing the coordinates of the $$i$$-th point.\n\nIt is guaranteed that the points are pairwise distinct in each test case.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^6$$$.\n\nFor each test case, output the number of distinct colorings.\n\nIn the first test case, no valid cross exists.\n\nIn the second test case, choosing $$x = y = 2$$ yields a valid coloring. It can be proved that this coloring is unique.\n\nIn the third test case, a valid coloring is shown in the legend.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains an integer $$n$$ ($$4 $\\leq n \\leq 2 \\cdot 10^6$$$). The following $$n$$ lines each contain two integers $$x_i$$, $$y_i$$ ($$1 $\\leq x_i, y_i \\leq n$$$), representing the coordinates of the $$i$$-th point. It is guaranteed that the points are pairwise distinct in each test case. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^6$$$.",
+    "output": "Output For each test case, output the number of distinct colorings.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

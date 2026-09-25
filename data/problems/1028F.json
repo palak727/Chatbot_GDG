@@ -1,0 +1,16 @@
+{
+    "id": "1028F",
+    "contest_id": 1028,
+    "problem_letter": "F",
+    "title": "F. Make Symmetrical",
+    "statement": "Consider a set of points $$A$$, initially it is empty. There are three types of queries:\n\nThe first line contains a single integer $$q$$ ($$1 $\\leq q \\leq 2 \\cdot 10^5$$$) — the number of queries.\n\nEach of the following $$q$$ lines describes a query and contains three integers $$t_i$$, $$x_i$$ and $$y_i$$ ($$ t_i \\in \\{1, 2, 3\\}$$, $$1 $\\leq x_i, y_i \\leq 112\\,904$$$) — the type of the query and the coordinates of the point. Type $$1$$ is addition of the point, type $$2$$ is removal of the point, type $$3$$ is the query to compute the minimum number of points required to make $$A$$ symmetrical.\n\nIt is guaranteed that there are no more than $$10^5$$ queries of type $$3$$ and no more than $$10^5$$ queries having type $$1$$ or $$2$$.\n\nFor each query of the third type output a line with a single integer — the answer to this query.\n\nThe first example is shown on the picture below.",
+    "input": "Input The first line contains a single integer $$q$$ ($$1 $\\leq q \\leq 2 \\cdot 10^5$$$) — the number of queries. Each of the following $$q$$ lines describes a query and contains three integers $$t_i$$, $$x_i$$ and $$y_i$$ ($$ t_i \\in \\{1, 2, 3\\}$$, $$1 $\\leq x_i, y_i \\leq 112\\,904$$$) — the type of the query and the coordinates of the point. Type $$1$$ is addition of the point, type $$2$$ is removal of the point, type $$3$$ is the query to compute the minimum number of points required to make $$A$$ symmetrical. It is guaranteed that there are no more than $$10^5$$ queries of type $$3$$ and no more than $$10^5$$ queries having type $$1$$ or $$2$$.",
+    "output": "Output For each query of the third type output a line with a single integer — the answer to this query.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2203B",
+    "contest_id": 2203,
+    "problem_letter": "B",
+    "title": "B. Beautiful Numbers",
+    "statement": "Let's define $$F(x)$$ as the sum of the digits of $$x$$. An integer $$x$$ is considered beautiful if $$F(F(x)) = F(x)$$.\n\nYou are given an integer $$x$$. In one move, you can choose any digit in the number and replace it with another. The resulting number cannot have leading zeros.\n\nYour task is to calculate the minimum number of moves (possibly zero) required to make the given number beautiful.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe only line of each test case contains a single integer $$x$$ ($$1 $\\leq x \\leq 10^{18}$$$).\n\nFor each test case, print a single integer — the minimum number of moves (possibly zero) required to make the given number beautiful.\n\nIn the first example, the given number is already beautiful.\n\nIn the second example, in one move, we can get the beautiful number $$3\\underline{3}$$ (the changed digit is underlined).\n\nIn the third example, in two moves, we can get the beautiful number $$\\underline{1}4\\underline{0}$$ (the changed digits are underlined).",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The only line of each test case contains a single integer $$x$$ ($$1 $\\leq x \\leq 10^{18}$$$).",
+    "output": "Output For each test case, print a single integer — the minimum number of moves (possibly zero) required to make the given number beautiful.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "fft",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

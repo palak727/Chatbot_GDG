@@ -1,0 +1,15 @@
+{
+    "id": "2206L",
+    "contest_id": 2206,
+    "problem_letter": "L",
+    "title": "L. Onion",
+    "statement": "Onions are widely used in cuisines around the world. This problem is about an \"onion peeling\" process in geometry.\n\nA set of points in a two-dimensional plane is convex if, for any pair of points $$p$$ and $$q$$ in the set, the line segment connecting $$p$$ and $$q$$ is entirely contained in the set. For a set of points $$S$$, its convex hull is the smallest convex set containing all points in $$S$$.\n\nYou are given four integers $$n$$, $$a$$, $$b$$, and $$k$$. You have a set $$S$$ of $$n$$ points, initialized as follows: $$$ S = \\{ (x, (ax + b) \\bmod n) \\mid x = 0, 1, \\ldots, n-1 \\}. $$$\n\nYou apply the following operation $$k$$ times: let $$H$$ be the convex hull of the set $$S$$, and then remove from $$S$$ all points that lie on the boundary of the convex hull $$H$$.\n\nNote that $$S$$ can become empty. In that case, its convex hull is also empty, and its area is zero.\n\nFor each operation, determine the doubled area of the convex hull $$H$$. It can be shown that this value is always an integer.\n\nThe input consists of a single line containing four integers $$n$$, $$a$$, $$b$$, and $$k$$ ($$1 $\\leq n \\leq 10^9$$$; $$0 $\\leq a, b  \\lt  n$$$; $$1 $\\leq k \\leq 300$$$).\n\nOutput $$k$$ lines. The $$i$$-th line should contain an integer representing the doubled area of the convex hull in the $$i$$-th operation.\n\nExplanation for the sample input/output #1\n\nFigure L.1 illustrates the points in $$S$$ and the boundary of the convex hull in the first operation. The area of the convex hull is $$4$$, and thus the doubled area is $$8$$.\n\nExplanation for the sample input/output #2\n\nFigure L.2 illustrates the boundaries in the first four operations. The set $$S$$ becomes empty after the fourth operation. The area for the fifth operation is $$0$$.",
+    "input": "Input The input consists of a single line containing four integers $$n$$, $$a$$, $$b$$, and $$k$$ ($$1 $\\leq n \\leq 10^9$$$; $$0 $\\leq a, b  \\lt  n$$$; $$1 $\\leq k \\leq 300$$$).",
+    "output": "Output Output $$k$$ lines. The $$i$$-th line should contain an integer representing the doubled area of the convex hull in the $$i$$-th operation.",
+    "time_limit": "10 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3500"
+    ],
+    "rating": 3500
+}

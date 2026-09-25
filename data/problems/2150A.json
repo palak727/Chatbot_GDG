@@ -1,0 +1,18 @@
+{
+    "id": "2150A",
+    "contest_id": 2150,
+    "problem_letter": "A",
+    "title": "A. Incremental Path",
+    "statement": "Hacks are disabled in this problem.\n\nThere is a strip containing $$10^9$$ cells, numbered from $$1$$ to $$10^9$$. Each cell is either black or white. Initially, $$m$$ distinct cells $$a_1, a_2, \\ldots, a_m$$ are black, and the others are white.\n\nIf a person is on some cell $$x$$, he might be given two types of commands:\n\nThere is a string $$s$$ of length $$n$$, consisting of $$n$$ commands. For each $$i$$ from $$1$$ to $$n$$ in order, a person\n\nYou wonder which cells are black at the end of the process. Print them in increasing order.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq m \\leq 10^5$$$) — the number of commands and the number of black cells at the beginning.\n\nThe second line of each test case contains a string $$s$$ of length $$n$$, consisting of characters $$\\texttt{A}$$ and $$\\texttt{B}$$, representing the commands.\n\nThe third line of each test case contains $$m$$ integers $$a_1, a_2, \\ldots, a_m$$ ($$1 $\\leq a_1  \\lt  a_2  \\lt  \\ldots  \\lt  a_m \\leq 10^9$$$) — the initial black cells.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$, and the sum of $$m$$ over all test cases does not exceed $$10^5$$.\n\nFor each test case, print two lines:\n\nIn the first test case, initially the only black cells are $$2$$ and $$5$$.\n\nPerson $$1$$:\n\nPerson $$2$$:\n\nPerson $$3$$:\n\nAt the end, the black cells are $$\\{2, 3, 5, 6\\}$$.\n\nIn the second test case, the three people end up in cells $$2$$, $$3$$, and $$6$$, respectively.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq m \\leq 10^5$$$) — the number of commands and the number of black cells at the beginning. The second line of each test case contains a string $$s$$ of length $$n$$, consisting of characters $$\\texttt{A}$$ and $$\\texttt{B}$$, representing the commands. The third line of each test case contains $$m$$ integers $$a_1, a_2, \\ldots, a_m$$ ($$1 $\\leq a_1  \\lt  a_2  \\lt  \\ldots  \\lt  a_m \\leq 10^9$$$) — the initial black cells. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$, and the sum of $$m$$ over all test cases does not exceed $$10^5$$.",
+    "output": "Output For each test case, print two lines: in the first line, print a single integer $$k$$: the number of black cells at the end; in the second line, print the labels of the black cells, in increasing order.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "hashing",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

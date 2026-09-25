@@ -1,0 +1,19 @@
+{
+    "id": "2210D",
+    "contest_id": 2210,
+    "problem_letter": "D",
+    "title": "D. A Simple RBS Problem",
+    "statement": "\n\nA bracket sequence is called regular if it is possible to obtain a correct arithmetic expression by inserting characters $$+$$ and $$1$$ into this sequence. For example, sequences (())() , () and (()(())) are regular, while )( , (() and (()))( are not. Let's call a regular bracket sequence RBS .\n\nYou can perform the following operation on any RBS string $$b$$ —\n\nMore formally, let $$m$$ be the length of $$b$$. You can perform the following operation on $$b$$:\n\nYou are given two strings $$s$$ and $$t$$ of length $$n$$ ($$n$$ is even ) such that both $$s$$ and $$t$$ are RBS.\n\nDetermine whether you can transform $$s$$ to $$t$$ using the above operation any number of times.\n\n$$^{∗}$$A string $$a$$ is a substring of a string $$b$$ if $$a$$ can be obtained from $$b$$ by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains an integer $$n$$ ($$4$\\leq n\\leq 5\\cdot 10^5$$$, $$n$$ is even ).\n\nThe second line of each test case contains a string $$s$$ of length $$n$$ such that $$s$$ is an RBS.\n\nThe third line of each test case contains a string $$t$$ of length $$n$$ such that $$t$$ is an RBS.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.\n\nFor each test case, print \" YES \" if $$s$$ can be transformed to $$t$$, and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the first test case, the two strings are already same.\n\nIn the third test case, we can choose $$l_1=1,r_1=4,l_2=5,r_2=6$$ and transform $$s$$ to $$t$$.\n\nHere is a visualization of the operation performed in this case —\n\n$$\\color{red}{(())}\\color{blue}{()}\\rightarrow\\color{blue}{()}\\color{red}{(())}$$",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains an integer $$n$$ ($$4$\\leq n\\leq 5\\cdot 10^5$$$, $$n$$ is even ). The second line of each test case contains a string $$s$$ of length $$n$$ such that $$s$$ is an RBS. The third line of each test case contains a string $$t$$ of length $$n$$ such that $$t$$ is an RBS. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.",
+    "output": "Output For each test case, print \" YES \" if $$s$$ can be transformed to $$t$$, and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "strings",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

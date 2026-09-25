@@ -1,0 +1,17 @@
+{
+    "id": "2176C",
+    "contest_id": 2176,
+    "problem_letter": "C",
+    "title": "C. Odd Process",
+    "statement": "You have $$n$$ coins with denominations $$a_1, a_2, \\ldots, a_n$$ and a natural number $$k$$. You also have a bag, which is initially empty, where you can place coins. You need to perform exactly $$k$$ actions. In each action, you take one coin from those you have left and put it in your bag. After that, you can no longer take that coin.\n\nAt the same time, you have a cat that loves even numbers, so every time the sum of the denominations of the coins in your bag becomes even, your cat empties the bag, meaning it takes all the coins to a place known only to it, and the bag is empty again. Note that the bag is emptied every time the sum becomes even during the process of adding coins, not just at the very last moment.\n\nLet your score be the sum of the denominations of the coins in the bag. Your task is to perform $$k$$ actions such that your final score is maximized. Find the answer for all $$1 $\\leq k \\leq n$$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of coins you have.\n\nThe second line of each test case contains $$n$$ natural numbers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the denominations of the coins.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output $$n$$ numbers — the maximum possible score that can be achieved by performing exactly $$k$$ actions for all $$k$$ from $$1$$ to $$n$$.\n\nIn the first set of input data, you have coins with denominations [$$1,1,1$$].\n\nIn the second set of input data, you have coins with denominations [$$1,2,3$$].",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of coins you have. The second line of each test case contains $$n$$ natural numbers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the denominations of the coins. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output $$n$$ numbers — the maximum possible score that can be achieved by performing exactly $$k$$ actions for all $$k$$ from $$1$$ to $$n$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

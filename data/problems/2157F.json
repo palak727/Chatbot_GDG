@@ -1,0 +1,20 @@
+{
+    "id": "2157F",
+    "contest_id": 2157,
+    "problem_letter": "F",
+    "title": "F. Git Gud",
+    "statement": "You are an adventurer working for the futuristic corporation RoboCorp. Your current skill level is an integer $$s$$ in the range $$[1, n]$$, but you don't know its exact value. Your goal is to reach skill $$\\geq n$$ by completing missions for RoboCorp, but each mission costs precious robocoins.\n\nYou can choose missions of any difficulty and any positive integer duration (in hours). However, the cost depends both on the new mission's length, and on how the new mission's difficulty compares to your most recent one.\n\nLet $$x$$ be the difficulty of your most recent mission. If you want to undertake a new mission of difficulty $$y$$ and duration $$l$$:\n\nYour skill improves only when you take on a mission whose difficulty exactly matches your current skill:\n\nAfter each mission, you still don't know your actual skill value.\n\nYou start with $$10^6$$ robocoins. Find a strategy (a sequence of missions) that does not exceed your budget and guarantees your skill becomes at least $$n$$, no matter what your initial skill was.\n\nThe input contains a single line with an integer $$n$$ ($$n = 4$$ or $$n = 250\\,000$$) — the target skill level (that is, by the end, your skill must be $$\\geq n$$).\n\nThere are exactly $$2$$ tests in this problem (including the example). The example has $$n = 4$$, and the other test has $$n = 250\\,000$$.\n\nHacks are not allowed in this problem.\n\nIn the first line, print a single integer $$k$$ ($$0 $\\leq k \\leq 10^6$$$) — the number of missions you plan to complete.\n\nThen, print $$k$$ lines. The $$i$$-th line must contain two integers $$y$$ and $$l$$ ($$1 $\\leq y, l \\leq 10^6$$$) — the difficulty and duration (in hours) of the $$i$$-th mission, respectively.\n\nIn the example, your target skill is $$n = 4$$. You can use the following strategy:\n\nIn total, you spend $$2007$$ robocoins, which is within your $$10^6$$-robocoin budget.\n\nNow we verify that this strategy always works:\n\nSo no matter what your starting skill is, you end with skill $$\\geq n$$.",
+    "input": "Input The input contains a single line with an integer $$n$$ ($$n = 4$$ or $$n = 250\\,000$$) — the target skill level (that is, by the end, your skill must be $$\\geq n$$). There are exactly $$2$$ tests in this problem (including the example). The example has $$n = 4$$, and the other test has $$n = 250\\,000$$. Hacks are not allowed in this problem.",
+    "output": "Output In the first line, print a single integer $$k$$ ($$0 $\\leq k \\leq 10^6$$$) — the number of missions you plan to complete. Then, print $$k$$ lines. The $$i$$-th line must contain two integers $$y$$ and $$l$$ ($$1 $\\leq y, l \\leq 10^6$$$) — the difficulty and duration (in hours) of the $$i$$-th mission, respectively.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "divide and conquer",
+        "math",
+        "ternary search",
+        "*2400"
+    ],
+    "rating": 2400
+}

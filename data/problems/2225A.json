@@ -1,0 +1,17 @@
+{
+    "id": "2225A",
+    "contest_id": 2225,
+    "problem_letter": "A",
+    "title": "A. A Number Between Two Others",
+    "statement": "You are given two integers $$x$$ and $$y$$ such that $$y  \\gt  x$$ and $$y \\bmod x = 0$$ (that is, $$y$$ is divisible by $$x$$).\n\nYour task is to determine whether there exists an integer $$z$$ such that\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nEach test case consists of a single line containing two integers $$x$$ and $$y$$ ($$1 $\\leq x  \\lt  y \\leq 10^{18}$$$; $$y \\bmod x = 0$$).\n\nFor each test case, print the answer as follows: if the required number $$z$$ exists, print YES ; otherwise, print NO . You may print each letter in any case.\n\nIn the second test case of the example, you can use $$z = 2$$.\n\nIn the third test case of the example, you can use $$z = 7407407340$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. Each test case consists of a single line containing two integers $$x$$ and $$y$$ ($$1 $\\leq x  \\lt  y \\leq 10^{18}$$$; $$y \\bmod x = 0$$).",
+    "output": "Output For each test case, print the answer as follows: if the required number $$z$$ exists, print YES ; otherwise, print NO . You may print each letter in any case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

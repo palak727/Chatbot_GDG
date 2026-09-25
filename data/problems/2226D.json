@@ -1,0 +1,19 @@
+{
+    "id": "2226D",
+    "contest_id": 2226,
+    "problem_letter": "D",
+    "title": "D. Reserved Reversals",
+    "statement": "\n\nYou are given an array $$a$$ consisting of $$n$$ positive integers.\n\nFor any segment of the array starting at position $$l$$ and ending at position $$r$$ ($$1 $\\leq l \\leq r \\leq n$$$), let $$m(l, r)$$ denote the minimum value in that segment, and $$M(l, r)$$ denote the maximum value in that segment. Formally,\n\n$$$ \\begin{aligned} m(l,r) &= $\\min(a_l, a_{l+1}, \\ldots, a_r),\\\\ M(l,r) &= \\max(a_l, a_{l+1}, \\ldots, a_r).\\\\ \\end{aligned} $$$$\n\nYou may perform the following operation any number of times (possibly zero):\n\nDetermine whether you can make the array $$a$$ non-decreasing $$^{∗}$$ by performing a series of operations.\n\n$$^{∗}$$An array $$[b_1, b_2, \\ldots, b_k]$$ is considered non-decreasing iff $$b_1 $\\leq b_2 \\leq \\ldots \\leq b_k$$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each testcase contains a single integer $$n$$ ($$1 $\\leq n \\leq 2\\cdot10^5$$$) — the length of the array $$a$$.\n\nThe second line of each testcase contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the elements of the array.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.\n\nFor each test case, print \" YES \" if you can make the array $$a$$ non-decreasing, and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nFor the first testcase, the array is already non-decreasing. Hence, output YES.\n\nFor the second testcase, let us choose $$l = 1$$ and $$r = 2$$. We can see that $$\\min(2, 1) + $\\max(2, 1) = 2 + 1 = 3$$$, which is odd. Thus, after simultaneously assigning $$a_i := a_{3-i}$$ for all $$1 $\\leq i \\leq 2$$$, we get $$a = [1, 2, 3]$$, which is non-decreasing.\n\nConsider the fourth testcase,\n\nFor the fifth testcase, note that it is impossible to choose indices $$l$$ and $$r$$ satisfying the conditions. Hence, output NO.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each testcase contains a single integer $$n$$ ($$1 $\\leq n \\leq 2\\cdot10^5$$$) — the length of the array $$a$$. The second line of each testcase contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the elements of the array. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.",
+    "output": "Output For each test case, print \" YES \" if you can make the array $$a$$ non-decreasing, and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

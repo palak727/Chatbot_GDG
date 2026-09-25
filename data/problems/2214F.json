@@ -1,0 +1,15 @@
+{
+    "id": "2214F",
+    "contest_id": 2214,
+    "problem_letter": "F",
+    "title": "F. Numbers",
+    "statement": "Output a number.",
+    "input": "",
+    "output": "Output Output a number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

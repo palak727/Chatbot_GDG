@@ -1,0 +1,19 @@
+{
+    "id": "2229F",
+    "contest_id": 2229,
+    "problem_letter": "F",
+    "title": "F. Load Unbalancing",
+    "statement": "\n\nNote the unusually low time limit.\n\nYou are given a sequence $$a$$ of length $$n$$, as well as an integer $$k$$.\n\nYou may first reorder the elements of $$a$$ however you like. Then, define $$f(a)$$ as follows:\n\nFind the maximum possible value of $$f(a)$$ among all rearrangements of $$a$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq k \\leq n \\leq 18$$$).\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$).\n\nIt is guaranteed that the sum of $$2^n$$ over all test cases does not exceed $$2^{18}$$.\n\nFor each test case, output a single integer — the maximum possible value of $$f(a)$$ among all rearrangements of $$a$$.\n\nIn the first test case of the second example, one optimal rearrangement of $$a$$ is $$[1, 4, 2, 5]$$. $$f(a)$$ is computed as follows:\n\nAfter this, $$f(a) = $\\max([8,4]) = 8$$$. It can be shown that the maximum achievable $$f(a)$$ is $$8$$.\n\nIn the third test case of the second example, one optimal rearrangement of $$a$$ is $$[3, 1, 2, 3, 5, 4, 3, 4]$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq k \\leq n \\leq 18$$$). The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$). It is guaranteed that the sum of $$2^n$$ over all test cases does not exceed $$2^{18}$$.",
+    "output": "Output For each test case, output a single integer — the maximum possible value of $$f(a)$$ among all rearrangements of $$a$$.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "dp",
+        "greedy",
+        "*2400"
+    ],
+    "rating": 2400
+}

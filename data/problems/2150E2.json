@@ -1,0 +1,20 @@
+{
+    "id": "2150E2",
+    "contest_id": 2150,
+    "problem_letter": "E2",
+    "title": "E2. Hidden Single (Version 2)",
+    "statement": "The two versions have different constraints on $$t$$, $$n$$, and the maximum number of queries, and solving one of the two versions does not necessarily solve the other. You may want to read both versions. Hacks are disabled in both versions.\n\nThis is an interactive problem.\n\nThere is a hidden array $$a_1, a_2, \\ldots, a_{2n-1}$$ containing all the numbers from $$1$$ to $$n$$, and all of them appear twice except one (which only appears once).\n\nYou can ask queries in the following format, where $$S$$ is a subset of $$\\{1, 2, \\ldots, 2n-1\\}$$ and $$x$$ is an integer in $$[1, n]$$:\n\nFind the number appearing exactly once, using at most $$925$$ queries. You don't need to find its position.\n\nNote that the interactor is not adaptive, which means that the hidden array does not depend on the queries you make.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 20$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$n = 300$$) — the maximum value in the hidden array $$a_1, a_2, \\ldots, a_{2n-1}$$.\n\nThere are exactly $$50$$ tests in this problem (including the example). The example has $$t = 1$$, and all the other tests have $$t = 20$$.\n\nFor each test case, first read a single integer $$n$$. If the integer you read is $$-1$$, it means that the answer to the previous test case was wrong, and you should exit immediately.\n\nYou may ask up to $$925$$ queries in each test case.\n\nTo ask a query, print a line in the format $$\\texttt{? x |S| S_1 S_2 ... S_|S|}$$ with $$1 $\\leq x \\leq n$$$, $$1 $\\leq S_1, S_2, \\ldots, S_{|S|} \\leq 2n-1$$$, and all the $$S_i$$ distinct.\n\nAs a response to the query, you will get $$1$$ if the answer is yes, $$0$$ if the answer is no, and $$-1$$ if you made an invalid query. You should exit immediately if you receive a $$-1$$.\n\nTo output an answer, you should print $$\\texttt{! y}$$, where $$y$$ is the number that appears exactly once. Printing the answer doesn't count as a query.\n\nSee the interaction example for more clarity.\n\nIf you ask too many queries, you ask a malformed query, or your answer is wrong, you will get $$\\texttt{Wrong answer}$$.\n\nAfter printing a query, do not forget to output the end of line and flush the output. Otherwise, you will get $$\\texttt{Idleness limit exceeded}$$. To do this, use:\n\nNote that the interactor is not adaptive, which means that the hidden arrays do not depend on the queries you make.\n\nIn the first test case, $$n = 300$$, so the hidden array has length $$2n-1 = 599$$.\n\nWe have asked $$1$$ query (printing the answer does not count as a query), which is less than the maximum allowed number of queries ($$925$$).",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 20$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$n = 300$$) — the maximum value in the hidden array $$a_1, a_2, \\ldots, a_{2n-1}$$. There are exactly $$50$$ tests in this problem (including the example). The example has $$t = 1$$, and all the other tests have $$t = 20$$.",
+    "output": "",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "divide and conquer",
+        "interactive",
+        "math",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

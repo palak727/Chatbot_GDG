@@ -1,0 +1,16 @@
+{
+    "id": "2172E",
+    "contest_id": 2172,
+    "problem_letter": "E",
+    "title": "E. Number Maze",
+    "statement": "At the \"Number Maze,\" a mysterious code master stands guard. He blocks the path and smiles, saying: \"Brave adventurer, passing through this gate will not be easy! An ancient numeric code, capable of being rearranged into numerous combinations, is in the code master's possession. The traveler must choose two numeric codes from these combinations and show their $$x$$A$$y$$B result, or the gate will trap the traveler here forever!\"\n\nThe rules of $$x$$A$$y$$B are as follows:\n\nFor example:\n\nYou are given a base numeric code $$n$$, which can be one of $$\\{12, 123, 1234\\}$$. Consider all possible permutations of the digits of $$n$$, sorted in ascending order. Let the $$j$$-th and $$k$$-th permutations (1-indexed) be the two numeric codes chosen by the traveler.\n\nYour task is to compare these two permutations and determine their $$x$$A$$y$$B result, according to the rules above.\n\nEach test contains multiple test cases. The first line contains a single integer $$t$$, representing the number of tests the code master will conduct. The description of the test cases follows.\n\nThe only line of each test case contains three integers $$n$$, $$j$$, and $$k$$, representing the base numeric code and the indices of the two permutations to be compared, respectively.\n\nFor each test case, output the result in the format $$x$$A$$y$$B , where $$x$$ and $$y$$ are integers.",
+    "input": "Input Each test contains multiple test cases. The first line contains a single integer $$t$$, representing the number of tests the code master will conduct. The description of the test cases follows. The only line of each test case contains three integers $$n$$, $$j$$, and $$k$$, representing the base numeric code and the indices of the two permutations to be compared, respectively. $$1$\\leq t \\leq 1000$$$ $$n \\in \\{12,123,1234\\}$$ Both $$j$$ and $$k$$ are valid indices of permutations of the digits of $$n$$.",
+    "output": "Output For each test case, output the result in the format $$x$$A$$y$$B , where $$x$$ and $$y$$ are integers.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

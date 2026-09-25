@@ -1,0 +1,16 @@
+{
+    "id": "2172A",
+    "contest_id": 2172,
+    "problem_letter": "A",
+    "title": "A. ASCII Art Contest",
+    "statement": "Three leading AI-powered creative assistants—Gemini, ChatGPT, and Claude—enter the first ever ASCII Art Contest, where they must impress a panel of human judges with their text-based masterpieces.\n\nEach participant receives a score between 80 and 100 (inclusive). The organizers want to announce the final standing only if the judges' opinions are \"close enough\"; otherwise, they will ask the judges to reconsider.\n\nGiven the three integer scores of Gemini, ChatGPT, and Claude, determine the contest result:\n\nA single line contains three integers $$g, c, \\ell$$, representing the scores of Gemini, ChatGPT, and Claude respectively.\n\nPrint the required answer in a line.",
+    "input": "Input A single line contains three integers $$g, c, \\ell$$, representing the scores of Gemini, ChatGPT, and Claude respectively. $$80$\\leq g, c, \\ell \\leq 100$$$",
+    "output": "Output Print the required answer in a line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

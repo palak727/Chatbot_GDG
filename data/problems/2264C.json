@@ -1,0 +1,18 @@
+{
+    "id": "2264C",
+    "contest_id": 2264,
+    "problem_letter": "C",
+    "title": "C. Madamant's Skating Dynasty",
+    "statement": "Madam Madamant is expecting a baby and already planning a skating dynasty in which every parent is a stronger skater than their children.\n\nFormally, Madamant has $$n$$ labeled skaters. Skater $$v$$ has an integer rating $$a_v$$, and all ratings are pairwise distinct. A possible dynasty is represented by a rooted tree on these skaters.\n\nLet $$r$$ be the root of the tree. For every skater $$v \\ne r$$, let $$p_v$$ be the parent of $$v$$. The dynasty is valid if $$a_v  \\lt  a_{p_v}$$ for every $$v \\ne r$$.\n\nThe cost of a valid dynasty is $$$ \\sum_{v \\ne r} (a_{p_v} - a_v). $$$\n\nTwo dynasties are different if their roots are different or if the parent of at least one skater is different.\n\nFind the sum of the costs of all valid dynasties Madamant can form, modulo $$998\\,244\\,353$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of skaters.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — their ratings.\n\nIt is guaranteed that all $$a_i$$ are pairwise distinct.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, print one integer — the sum of the costs of all valid dynasties, modulo $$998\\,244\\,353$$.\n\nIn the second test case, the skater with rating $$3$$ must be the root. The parent of the skater with rating $$2$$ must be the skater with rating $$3$$, while the skater with rating $$1$$ can choose either of the other skaters as their parent. The two valid dynasties have costs $$2$$ and $$3$$, so the answer is $$5$$.\n\nIn the fourth test case, there is only one valid dynasty. Its cost is $$10^9 - 1 = 999\\,999\\,999$$, whose remainder modulo $$998\\,244\\,353$$ is $$1\\,755\\,646$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of skaters. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — their ratings. It is guaranteed that all $$a_i$$ are pairwise distinct. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print one integer — the sum of the costs of all valid dynasties, modulo $$998\\,244\\,353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1038A",
+    "contest_id": 1038,
+    "problem_letter": "A",
+    "title": "A. Equality",
+    "statement": "You are given a string $$s$$ of length $$n$$, which consists only of the first $$k$$ letters of the Latin alphabet. All letters in string $$s$$ are uppercase.\n\nA subsequence of string $$s$$ is a string that can be derived from $$s$$ by deleting some of its symbols without changing the order of the remaining symbols. For example, \" ADE \" and \" BD \" are subsequences of \" ABCDE \", but \" DEA \" is not.\n\nA subsequence of $$s$$ called good if the number of occurences of each of the first $$k$$ letters of the alphabet is the same.\n\nFind the length of the longest good subsequence of $$s$$.\n\nThe first line of the input contains integers $$n$$ ($$1$\\leq n \\leq 10^5$$$) and $$k$$ ($$1 $\\leq k \\leq 26$$$).\n\nThe second line of the input contains the string $$s$$ of length $$n$$. String $$s$$ only contains uppercase letters from ' A ' to the $$k$$-th letter of Latin alphabet.\n\nPrint the only integer — the length of the longest good subsequence of string $$s$$.\n\nIn the first example, \" ACBCAB \" (\" AC AA BC C AB \") is one of the subsequences that has the same frequency of ' A ', ' B ' and ' C '. Subsequence \" CAB \" also has the same frequency of these letters, but doesn't have the maximum possible length.\n\nIn the second example, none of the subsequences can have ' D ', hence the answer is $$0$$.",
+    "input": "Input The first line of the input contains integers $$n$$ ($$1$\\leq n \\leq 10^5$$$) and $$k$$ ($$1 $\\leq k \\leq 26$$$). The second line of the input contains the string $$s$$ of length $$n$$. String $$s$$ only contains uppercase letters from ' A ' to the $$k$$-th letter of Latin alphabet.",
+    "output": "Output Print the only integer — the length of the longest good subsequence of string $$s$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2255D",
+    "contest_id": 2255,
+    "problem_letter": "D",
+    "title": "D. How Long Until Nothing Remains?",
+    "statement": "\n\nBefore her final sortie, Chtholly asks Willem three questions.\n\nThe first is this: if the end is inevitable, how long will it take until nothing remains?\n\nWillem cannot answer her directly. Instead, he writes down $$n$$ positive integers $$a_1,a_2,\\ldots,a_n$$.\n\nEach operation takes one second. In one operation, Willem does the following:\n\nFind the minimum number of seconds needed to make all $$n$$ integers equal to $$0$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains one integer $$n$$ ($$1$\\leq n\\le2\\cdot10^5$$$) — the number of integers.\n\nThe second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1$\\leq a_i\\le10^9$$$) — the initial integers.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.\n\nFor each test case, output a single integer — the minimum number of seconds needed to make all integers equal to $$0$$.\n\nIn the first test case, the only integer changes as $$3\\to1\\to0$$, so the answer is $$2$$.\n\nIn the second test case, an integer equal to $$1$$ becomes $$0$$ only when its index is chosen. Thus, at least $$3$$ seconds are necessary, and choosing every index once is sufficient.\n\nIn the third test case, an optimal sequence is:\n\nIn the fourth test case, an optimal sequence is $$[5,2]\\to[2,1]\\to[1,0]\\to[0,0]$$, where the chosen indices are $$1$$, $$2$$, and $$1$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains one integer $$n$$ ($$1$\\leq n\\le2\\cdot10^5$$$) — the number of integers. The second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1$\\leq a_i\\le10^9$$$) — the initial integers. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.",
+    "output": "Output For each test case, output a single integer — the minimum number of seconds needed to make all integers equal to $$0$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "*2300"
+    ],
+    "rating": 2300
+}

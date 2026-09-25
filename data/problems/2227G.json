@@ -1,0 +1,18 @@
+{
+    "id": "2227G",
+    "contest_id": 2227,
+    "problem_letter": "G",
+    "title": "G. Drowning",
+    "statement": "Yousef has an array $$a$$ consisting of $$n$$ positive integers.\n\nHe defines a reduction operation on any array $$c$$ of length $$|c| $\\geq 3$$$:\n\nThe new integer $$x$$ occupies the position previously held by the triplet, and the length of the array decreases by $$2$$.\n\nAn array is considered good if it can be reduced to a single element by performing the operation above zero or more times. Note that an array of length $$1$$ is always good.\n\nYousef wants you to count the number of pairs $$(l, r)$$ ($$1 $\\leq l \\leq r \\leq n$$$) such that the subarray $$a[l, r]$$ is good.\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of each test case follows.\n\nThe first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the size of the array.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the elements of the array.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output a single integer — the number of good subarrays.\n\nIn the first example, $$a = [10, 20, 10]$$. Subarrays $$[10]$$, $$[20]$$, and $$[10]$$ are all good ($$3$$ total). The subarray $$[10, 20, 10]$$ is not good. To reduce it, we must pick $$i=2$$. The condition $$a_1 + a_3  \\gt  a_2$$ becomes $$10 + 10  \\gt  20$$, which is $$20  \\gt  20$$ (false).\n\nIn the second example, $$a = [1, 1, 1, 1, 1]$$:",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of each test case follows. The first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the size of the array. The second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the elements of the array. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output a single integer — the number of good subarrays.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

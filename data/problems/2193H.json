@@ -1,0 +1,21 @@
+{
+    "id": "2193H",
+    "contest_id": 2193,
+    "problem_letter": "H",
+    "title": "H. Remove the Grail Tree",
+    "statement": "The Great Grail Tree has stood in the kingdom for $$315$$ years. It takes up a lot of space, so King Ila decided to get rid of it as soon as possible. The tree itself is an acyclic, connected, undirected graph with $$n$$ vertices, each having its own value $$a_v$$. The tree can be removed in the following way:\n\nEach test consists of several test case. The first line contains one integer $$t$$ ($$1$\\leq t\\leq 10^4$$$) — the number of test cases. The description of the test cases follows.\n\nThe first line contains the number $$n$$ ($$1$\\leq n\\leq 2\\cdot 10^5$$$) — the number of vertices in the Grail Tree.\n\nThe second line describes the array $$a$$ ($$1$\\leq a_i\\leq 10^9$$$) — the values of the vertices in the tree.\n\nNext, there are $$n - 1$$ lines, each containing 2 numbers $$v$$ and $$u$$ ($$1$\\leq v, u\\leq n, v\\neq u$$$), indicating that vertices $$v$$ and $$u$$ are connected by an edge in the tree.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2$\\cdot 10^5$$$.\n\nFor each test case, output \"YES\" if it is possible to completely remove the Grail Tree. Otherwise, output \"NO\". If the answer is \"YES\", output any sequence of removals.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "input": "Input Each test consists of several test case. The first line contains one integer $$t$$ ($$1$\\leq t\\leq 10^4$$$) — the number of test cases. The description of the test cases follows. The first line contains the number $$n$$ ($$1$\\leq n\\leq 2\\cdot 10^5$$$) — the number of vertices in the Grail Tree. The second line describes the array $$a$$ ($$1$\\leq a_i\\leq 10^9$$$) — the values of the vertices in the tree. Next, there are $$n - 1$$ lines, each containing 2 numbers $$v$$ and $$u$$ ($$1$\\leq v, u\\leq n, v\\neq u$$$), indicating that vertices $$v$$ and $$u$$ are connected by an edge in the tree. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2$\\cdot 10^5$$$.",
+    "output": "Output For each test case, output \"YES\" if it is possible to completely remove the Grail Tree. Otherwise, output \"NO\". If the answer is \"YES\", output any sequence of removals. You can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

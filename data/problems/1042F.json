@@ -1,0 +1,22 @@
+{
+    "id": "1042F",
+    "contest_id": 1042,
+    "problem_letter": "F",
+    "title": "F. Leaf Sets",
+    "statement": "You are given an undirected tree, consisting of $$n$$ vertices.\n\nThe vertex is called a leaf if it has exactly one vertex adjacent to it.\n\nThe distance between some pair of vertices is the number of edges in the shortest path between them.\n\nLet's call some set of leaves beautiful if the maximum distance between any pair of leaves in it is less or equal to $$k$$.\n\nYou want to split all leaves into non-intersecting beautiful sets. What is the minimal number of sets in such a split?\n\nThe first line contains two integers $$n$$ and $$k$$ ($$3 $\\leq n \\leq 10^6$$$, $$1 $\\leq k \\leq 10^6$$$) — the number of vertices in the tree and the maximum distance between any pair of leaves in each beautiful set.\n\nEach of the next $$n - 1$$ lines contains two integers $$v_i$$ and $$u_i$$ ($$1 $\\leq v_i, u_i \\leq n$$$) — the description of the $$i$$-th edge.\n\nIt is guaranteed that the given edges form a tree.\n\nPrint a single integer — the minimal number of beautiful sets the split can have.\n\nHere is the graph for the first example:",
+    "input": "Input The first line contains two integers $$n$$ and $$k$$ ($$3 $\\leq n \\leq 10^6$$$, $$1 $\\leq k \\leq 10^6$$$) — the number of vertices in the tree and the maximum distance between any pair of leaves in each beautiful set. Each of the next $$n - 1$$ lines contains two integers $$v_i$$ and $$u_i$$ ($$1 $\\leq v_i, u_i \\leq n$$$) — the description of the $$i$$-th edge. It is guaranteed that the given edges form a tree.",
+    "output": "Output Print a single integer — the minimal number of beautiful sets the split can have.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

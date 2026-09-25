@@ -1,0 +1,19 @@
+{
+    "id": "2260E",
+    "contest_id": 2260,
+    "problem_letter": "E",
+    "title": "E. Cyclic Balance",
+    "statement": "Consider a string $$t=t_1t_2\\ldots t_m$$ consisting of the characters 0 and 1 . We call the pairs of adjacent characters of the string $$t$$ the pairs $$t_1t_2, t_2t_3, \\ldots, t_{m-1}t_m$$, as well as the pair $$t_mt_1$$. The last pair connects the end of the string with its beginning, so exactly $$m$$ pairs are considered in total. If the string consists of only one character, the only pair that is considered is $$t_1 t_1$$.\n\nWe call a string $$t$$ cyclically balanced if, among its pairs of adjacent characters, the numbers of pairs 00 , 01 , 10 , and 11 are equal.\n\nThe cost of a binary string is the minimum number of characters that need to be inserted into it so that it becomes cyclically balanced. Characters may be inserted in any positions, including before the first and after the last character of the string. It is not allowed to delete or replace the original characters.\n\nYou are given a binary string $$s$$ and $$q$$ queries. In each query, indices $$l$$ and $$r$$ are given. Find the cost of the substring $$s_l s_{l+1}\\ldots s_r$$.\n\nThe first line contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 3 \\cdot 10^5$$$) — the length of the string and the number of queries.\n\nThe second line contains $$s$$ — a sequence of length $$n$$ consisting of the characters 0 and/or 1 .\n\nThen follow $$q$$ lines; the $$i$$-th of them contains two integers $$l_i$$ and $$r_i$$ ($$1 $\\leq l_i \\leq r_i \\leq n$$$) — the boundaries of the substring for the corresponding query.\n\nPrint $$q$$ integers: the $$i$$-th integer should be equal to the cost of the substring from the $$i$$-th query.",
+    "input": "Input The first line contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 3 \\cdot 10^5$$$) — the length of the string and the number of queries. The second line contains $$s$$ — a sequence of length $$n$$ consisting of the characters 0 and/or 1 . Then follow $$q$$ lines; the $$i$$-th of them contains two integers $$l_i$$ and $$r_i$$ ($$1 $\\leq l_i \\leq r_i \\leq n$$$) — the boundaries of the substring for the corresponding query.",
+    "output": "Output Print $$q$$ integers: the $$i$$-th integer should be equal to the cost of the substring from the $$i$$-th query.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "dp",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

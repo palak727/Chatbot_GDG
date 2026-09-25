@@ -1,0 +1,16 @@
+{
+    "id": "2209A",
+    "contest_id": 2209,
+    "problem_letter": "A",
+    "title": "A. Flip Flops",
+    "statement": "OtterZ set up a battle with $$n$$ monsters in order to increase his combat power. Each monster has a combat power $$a_i$$ and OtterZ has a combat power of $$c$$. He has $$k$$ flip flops and can perform the following operations:\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains three integers $$n$$, $$c$$ and $$k$$ ($$1 $\\leq n \\leq 100$$$, $$0 $\\leq c,k \\leq 10 ^ 9$$$).\n\nThe second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$0$\\leq a_i\\leq 10 ^ 9$$$).\n\nFor each test case, output an integer — the maximum possible combat power.\n\nIn the first test,OtterZ found a strong monster and ran away, with combat power $$12$$.\n\nIn the sixth test, OtterZ participated in the battle:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains three integers $$n$$, $$c$$ and $$k$$ ($$1 $\\leq n \\leq 100$$$, $$0 $\\leq c,k \\leq 10 ^ 9$$$). The second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$0$\\leq a_i\\leq 10 ^ 9$$$).",
+    "output": "Output For each test case, output an integer — the maximum possible combat power.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

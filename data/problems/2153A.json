@@ -1,0 +1,17 @@
+{
+    "id": "2153A",
+    "contest_id": 2153,
+    "problem_letter": "A",
+    "title": "A. Circle of Apple Trees",
+    "statement": "\n\nThere are $$n$$ apple trees arranged in a circle. Each tree bears exactly one apple, and the beauty of the apple on the $$i$$-th tree is given by $$b_i$$ for all $$1$\\leq i\\leq n$$$. You start in front of tree $$1$$.\n\nAt each tree, you may choose to either eat the apple or skip it. After making your choice, you move to the next tree: from tree $$i$$, you move to tree $$i+1$$ for $$1 $\\leq i \\leq n - 1$$$, and from tree $$n$$, you move back to tree $$1$$. This process continues indefinitely as you move through the trees in a cycle.\n\nHowever, you have a special condition: you may only eat an apple if its beauty is strictly greater than the beauty of the last apple you ate. For example, if $$b = [2, 1, 2, 3]$$ and you eat the apple on tree $$1$$ (beauty $$2$$), you cannot eat the apples on trees $$2$$ and $$3$$ because their beauties are not greater than $$2$$. However, you may eat the apple on tree $$4$$ since $$b_4 = 3  \\gt  2$$.\n\nNote that you are allowed to skip an apple when you first encounter it, and you can choose to eat it later on a subsequent cycle.\n\nYour task is to determine the maximum number of apples you can eat if you make optimal decisions on when to eat or skip each apple.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n\\leq 100$$$) — the number of apple trees.\n\nThe second line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$1$\\leq b_i\\leq n$$$) — the beauty of the apples on the trees.\n\nNote that there are no constraints on the sum of $$n$$ over all test cases.\n\nFor each test case, output a single integer representing the maximum number of apples you can eat.\n\nIn the first test case, since all apples have the same beauty, no matter which apple you eat first, you cannot eat any others afterward. Hence, the maximum number of apples that you can eat is $$1$$.\n\nIn the second test case, you can eat four apples as follows:\n\nIt can be proven that it is not possible to eat all five apples; hence, the maximum number of apples that you can eat is $$4$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n\\leq 100$$$) — the number of apple trees. The second line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$1$\\leq b_i\\leq n$$$) — the beauty of the apples on the trees. Note that there are no constraints on the sum of $$n$$ over all test cases.",
+    "output": "Output For each test case, output a single integer representing the maximum number of apples you can eat.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

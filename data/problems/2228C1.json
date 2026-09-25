@@ -1,0 +1,20 @@
+{
+    "id": "2228C1",
+    "contest_id": 2228,
+    "problem_letter": "C1",
+    "title": "C1. Cirno and Number (Easy Version)",
+    "statement": "\n\nThis is the easy version of the problem. The difference between the versions is that in this version, $$n=2$$. You can hack only if you solved all versions of this problem.\n\nYou are given a non-negative integer $$a$$ and a non-empty, strictly increasing sequence of digits $$d$$ of length $$n$$, where $$0 $\\leq d_i \\leq 9$$$.\n\nFind the minimum value of $$|a - b|$$ over all non-negative integers $$b$$ whose decimal representation contains only digits from $$d$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$a$$ and $$n$$ ($$0$\\leq a\\leq 10^{17}$$$, $$n=2$$).\n\nThe second line contains $$n$$ integers $$d_1,d_2,\\ldots,d_n$$. It is guaranteed that $$0$\\leq d_1 \\lt d_2 \\lt \\ldots \\lt d_n\\leq 9$$$.\n\nFor each test case, output the minimum value of $$|a - b|$$.\n\nIn the first test case, $$a=0$$, $$b=0$$, and $$|a - b|=0$$.\n\nIn the second test case, $$a=11$$, $$b=11$$, and $$|a - b|=0$$.\n\nIn the third test case, $$a=222$$, $$b=333$$, and $$|a - b|=111$$.\n\nIn the fourth test case, $$a=3333$$, $$b=777$$, and $$|a - b|=2556$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$a$$ and $$n$$ ($$0$\\leq a\\leq 10^{17}$$$, $$n=2$$). The second line contains $$n$$ integers $$d_1,d_2,\\ldots,d_n$$. It is guaranteed that $$0$\\leq d_1 \\lt d_2 \\lt \\ldots \\lt d_n\\leq 9$$$.",
+    "output": "Output For each test case, output the minimum value of $$|a - b|$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

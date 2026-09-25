@@ -1,0 +1,17 @@
+{
+    "id": "2254A",
+    "contest_id": 2254,
+    "problem_letter": "A",
+    "title": "A. Riptide",
+    "statement": "Alice, Bob, and Charlie are playing a game with tokens. They start with $$a$$, $$b$$, and $$c$$ tokens, respectively.\n\nThe game is played in rounds. Before the beginning of each round, they check the number of tokens everyone has:\n\nGiven the starting tokens $$a$$, $$b$$, and $$c$$, determine exactly how many rounds the game will last before it ends.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^3$$$) — the number of test cases.\n\nEach test case consists of a single line containing three integers $$a$$, $$b$$, and $$c$$ ($$1 $\\leq a, b, c \\leq 10$$$).\n\nFor each test case, output a single integer — the number of rounds the game will last before it ends.\n\nIn the first test case:\n\nThe game ended after $$1$$ round, so the answer is $$1$$.\n\nIn the second test case, the game is played as follows:\n\nThe game lasted $$2$$ rounds.\n\nIn the third test case, two players already have the same number of tokens. So the answer is $$0$$ since no rounds were played.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^3$$$) — the number of test cases. Each test case consists of a single line containing three integers $$a$$, $$b$$, and $$c$$ ($$1 $\\leq a, b, c \\leq 10$$$).",
+    "output": "Output For each test case, output a single integer — the number of rounds the game will last before it ends.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2154A",
+    "contest_id": 2154,
+    "problem_letter": "A",
+    "title": "A. Notelock",
+    "statement": "Teto is playing the hit rhythm game osu! . The game can be described by a binary string$$^{∗}$$ $$s$$ of length $$n$$ and a positive integer $$k$$ where the following will happen in order:\n\nYou dislike Teto (for some reason). So determine the minimum number of positions you need to protect to force her to leave $$s$$ unchanged.\n\n$$^{∗}$$A binary string is a string that only consists of characters $$\\mathtt{0}$$ and $$\\mathtt{1}$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe first line of each testcase contains integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 1000$$$; $$2 $\\leq k \\leq n$$$) — the length of $$s$$ and $$k$$.\n\nThe second line of each test case contains a binary string $$s$$ of length $$n$$ consisting of characters $$\\mathtt{0}$$ and $$\\mathtt{1}$$.\n\nThe sum of $$n$$ across all testcases does not exceed $$1000$$.\n\nFor each testcase, output the minimum number of positions you need to protect to force Teto to leave the string unchanged.\n\nFor the first testcase, you can protect the first element and have: $$s = \\mathtt{\\color{red}{1}1}$$. Now Teto cannot change $$s_1$$ because it is protected and cannot change $$s_2$$ because $$s_1 = \\mathtt{1}$$. It can be proven this is optimal.\n\nFor the second testcase, you can protect only the first element and have $$s = \\color{red}{\\mathtt{1}}\\mathtt{00001}$$. Teto cannot change $$s_1$$ because it is protected and she cannot change $$s_6$$ because there is $$\\mathtt{1}$$ in the previous $$k - 1$$ elements ($$\\color{blue}{\\mathtt{10000}}\\mathtt{1}$$).\n\nFor the fourth testcase, you must protect $$s_1,s_3,s_5,s_7$$ and have $$s = \\mathtt{\\color{red}{1}0\\color{red}{1}0\\color{red}{1}0\\color{red}{1}}$$. It can be shown that this is optimal. For example, if you did not protect $$s_3$$, then Teto can change it to $$\\mathtt{0}$$ ($$\\mathtt{\\color{red}{1}\\color{blue}{0}10\\color{red}{1}0\\color{red}{1}}$$)",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The first line of each testcase contains integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 1000$$$; $$2 $\\leq k \\leq n$$$) — the length of $$s$$ and $$k$$. The second line of each test case contains a binary string $$s$$ of length $$n$$ consisting of characters $$\\mathtt{0}$$ and $$\\mathtt{1}$$. The sum of $$n$$ across all testcases does not exceed $$1000$$.",
+    "output": "Output For each testcase, output the minimum number of positions you need to protect to force Teto to leave the string unchanged.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2205E",
+    "contest_id": 2205,
+    "problem_letter": "E",
+    "title": "E. Simons and Dividing the Rhythm",
+    "statement": "\n\nConsider that Simons is given an array $$a$$ of size $$m$$.\n\nSimons must operate on the array exactly once as follows:\n\nYou are given an array $$T$$ of size $$n$$. Count the number of arrays $$S$$ such that Simons can transform $$S$$ to $$T$$, modulo $$998\\,244\\,353$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 8000$$$). The description of the test cases follows.\n\nThe first line contains an integer $$n$$ ($$1$\\leq n\\leq 8000$$$) — the length of $$T$$.\n\nThe second line contains $$n$$ integers $$T_1,T_2,\\ldots,T_n$$ ($$1$\\leq T_i\\leq 8000$$$) — the elements of $$T$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$8000$$.\n\nFor each test case, output a single integer — the number of arrays $$S$$, modulo $$998\\,244\\,353$$.\n\nIn the first test case, we can see only the following arrays can be transformed to $$T$$:\n\nIn the second test case, we can see only the following arrays can be transformed to $$T$$:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 8000$$$). The description of the test cases follows. The first line contains an integer $$n$$ ($$1$\\leq n\\leq 8000$$$) — the length of $$T$$. The second line contains $$n$$ integers $$T_1,T_2,\\ldots,T_n$$ ($$1$\\leq T_i\\leq 8000$$$) — the elements of $$T$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$8000$$.",
+    "output": "Output For each test case, output a single integer — the number of arrays $$S$$, modulo $$998\\,244\\,353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "dsu",
+        "math",
+        "string suffix structures",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2147E",
+    "contest_id": 2147,
+    "problem_letter": "E",
+    "title": "E. Maximum OR Popcount",
+    "statement": "You are given an array of $$n$$ non-negative integers.\n\nYou want to answer given $$q$$ independent scenarios. In the $$i$$-th scenario, you are allowed to perform the following operation at most $$b_i$$ times:\n\nYour goal is to maximize the number of bits that are equal to $$1$$ in the bitwise OR of all numbers in the array. Find this number for each scenario.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 10^{5}$$$) — the size of the array and the number of scenarios.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 10^{9}$$$) — the elements of the array.\n\nThe $$i$$-th of the next $$q$$ lines contains a single integer $$b_i$$ ($$0 $\\leq b_i \\leq 10^{9}$$$) — the maximum number of operations allowed in the $$i$$-th scenario.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^{5}$$, and the sum of $$q$$ over all test cases does not exceed $$10^{5}$$.\n\nFor each test case, output $$q$$ lines, the $$i$$-th of them containing a single integer — the maximum possible number of bits equal to $$1$$ in the bitwise OR in the $$i$$-th scenario.\n\nVisualizer link\n\nIn the first test case:\n\nIn the second test case:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 10^{5}$$$) — the size of the array and the number of scenarios. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 10^{9}$$$) — the elements of the array. The $$i$$-th of the next $$q$$ lines contains a single integer $$b_i$$ ($$0 $\\leq b_i \\leq 10^{9}$$$) — the maximum number of operations allowed in the $$i$$-th scenario. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^{5}$$, and the sum of $$q$$ over all test cases does not exceed $$10^{5}$$.",
+    "output": "Output For each test case, output $$q$$ lines, the $$i$$-th of them containing a single integer — the maximum possible number of bits equal to $$1$$ in the bitwise OR in the $$i$$-th scenario.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "greedy",
+        "*2300"
+    ],
+    "rating": 2300
+}

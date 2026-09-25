@@ -1,0 +1,19 @@
+{
+    "id": "2164D",
+    "contest_id": 2164,
+    "problem_letter": "D",
+    "title": "D. Copy String",
+    "statement": "Given two strings $$s$$ and $$t$$ of length $$n$$, you aim to transform $$s$$ into $$t$$ through a series of the following operations:\n\nYour task is to achieve this transformation using the minimum number of operations . You also need to output the solution by printing the constructed string $$s'$$ after each operation. If the transformation cannot be achieved in less than or equal to $$k_{max}$$ operations, output -1 .\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$, $$k_{max}$$ ($$1 $\\leq n \\cdot k_{max} \\leq 10^6$$$) — the length of two strings and the maximum number of operations that can be used.\n\nThe second line of each test case contains one string $$s$$ of length $$n$$.\n\nThe third line of each test case contains one string $$t$$ of length $$n$$.\n\nIt is guaranteed that the sum of $$nk_{max}$$ over all test cases does not exceed $$10^6$$.\n\nIt is guaranteed that both $$s$$ and $$t$$ consist of lowercase Latin letters.\n\nFor each test case:\n\nIf there are multiple solutions, output any.\n\nIn the first test case, obviously $$s$$ can be transformed to $$t$$ in one operation.\n\nIn the second test case, initially $$s=t$$, so no operation is needed.\n\nIn the fourth test case, although $$s$$ can be transformed to $$t$$ in two operations, but $$k_{max}=1$$, so the answer is -1 .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$, $$k_{max}$$ ($$1 $\\leq n \\cdot k_{max} \\leq 10^6$$$) — the length of two strings and the maximum number of operations that can be used. The second line of each test case contains one string $$s$$ of length $$n$$. The third line of each test case contains one string $$t$$ of length $$n$$. It is guaranteed that the sum of $$nk_{max}$$ over all test cases does not exceed $$10^6$$. It is guaranteed that both $$s$$ and $$t$$ consist of lowercase Latin letters.",
+    "output": "Output For each test case: If you cannot achieve the transformation in less than or equal to $$k_{max}$$ operations, simply output -1 in one line. Otherwise, on the first line, output one integer $$k $\\leq k_{max}$$$ — the minimum number of operations. Then $$k$$ lines follow, each line contains one string of length $$n$$ — the string after each operation. If there are multiple solutions, output any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "strings",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

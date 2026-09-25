@@ -1,0 +1,16 @@
+{
+    "id": "1036B",
+    "contest_id": 1036,
+    "problem_letter": "B",
+    "title": "B. Diagonal Walking v.2",
+    "statement": "Mikhail walks on a Cartesian plane. He starts at the point $$(0, 0)$$, and in one move he can go to any of eight adjacent points. For example, if Mikhail is currently at the point $$(0, 0)$$, he can go to any of the following points in one move:\n\nIf Mikhail goes from the point $$(x1, y1)$$ to the point $$(x2, y2)$$ in one move, and $$x1 \\ne x2$$ and $$y1 \\ne y2$$, then such a move is called a diagonal move .\n\nMikhail has $$q$$ queries . For the $$i$$-th query Mikhail's target is to go to the point $$(n_i, m_i)$$ from the point $$(0, 0)$$ in exactly $$k_i$$ moves. Among all possible movements he want to choose one with the maximum number of diagonal moves . Your task is to find the maximum number of diagonal moves or find that it is impossible to go from the point $$(0, 0)$$ to the point $$(n_i, m_i)$$ in $$k_i$$ moves.\n\nNote that Mikhail can visit any point any number of times (even the destination point!).\n\nThe first line of the input contains one integer $$q$$ ($$1 $\\leq q \\leq 10^4$$$) — the number of queries.\n\nThen $$q$$ lines follow. The $$i$$-th of these $$q$$ lines contains three integers $$n_i$$, $$m_i$$ and $$k_i$$ ($$1 $\\leq n_i, m_i, k_i \\leq 10^{18}$$$) — $$x$$-coordinate of the destination point of the query, $$y$$-coordinate of the destination point of the query and the number of moves in the query, correspondingly.\n\nPrint $$q$$ integers. The $$i$$-th integer should be equal to -1 if Mikhail cannot go from the point $$(0, 0)$$ to the point $$(n_i, m_i)$$ in exactly $$k_i$$ moves described above. Otherwise the $$i$$-th integer should be equal to the the maximum number of diagonal moves among all possible movements.\n\nOne of the possible answers to the first test case: $$(0, 0) \\to (1, 0) \\to (1, 1) \\to (2, 2)$$.\n\nOne of the possible answers to the second test case: $$(0, 0) \\to (0, 1) \\to (1, 2) \\to (0, 3) \\to (1, 4) \\to (2, 3) \\to (3, 2) \\to (4, 3)$$.\n\nIn the third test case Mikhail cannot reach the point $$(10, 1)$$ in 9 moves.",
+    "input": "Input The first line of the input contains one integer $$q$$ ($$1 $\\leq q \\leq 10^4$$$) — the number of queries. Then $$q$$ lines follow. The $$i$$-th of these $$q$$ lines contains three integers $$n_i$$, $$m_i$$ and $$k_i$$ ($$1 $\\leq n_i, m_i, k_i \\leq 10^{18}$$$) — $$x$$-coordinate of the destination point of the query, $$y$$-coordinate of the destination point of the query and the number of moves in the query, correspondingly.",
+    "output": "Output Print $$q$$ integers. The $$i$$-th integer should be equal to -1 if Mikhail cannot go from the point $$(0, 0)$$ to the point $$(n_i, m_i)$$ in exactly $$k_i$$ moves described above. Otherwise the $$i$$-th integer should be equal to the the maximum number of diagonal moves among all possible movements.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

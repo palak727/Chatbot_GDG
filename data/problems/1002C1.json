@@ -1,0 +1,16 @@
+{
+    "id": "1002C1",
+    "contest_id": 1002,
+    "problem_letter": "C1",
+    "title": "C1. Distinguish zero state and plus state with minimum error",
+    "statement": "You are given a qubit which is guaranteed to be either in state or in state.\n\nYour task is to perform necessary operations and measurements to figure out which state it was and to return 0 if it was a state or 1 if it was state. The state of the qubit after the operations does not matter.\n\nNote that these states are not orthogonal, and thus can not be distinguished perfectly. In each test your solution will be called 1000 times, and your goal is to get a correct answer at least 80% of the times. In each test and states will be provided with 50% probability.\n\nYou have to implement an operation which takes a qubit as an input and returns an integer.\n\nYour code should have the following signature:",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1700"
+    ],
+    "rating": 1700
+}

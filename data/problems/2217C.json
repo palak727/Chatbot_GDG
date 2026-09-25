@@ -1,0 +1,18 @@
+{
+    "id": "2217C",
+    "contest_id": 2217,
+    "problem_letter": "C",
+    "title": "C. Grid Covering",
+    "statement": "\n\nPrakul has been working hard setting problems for Codecraft. When he's deep in thought, he likes jumping around his room in weird but specific ways. After some time, he wonders if jumping in this manner can cover all the tiles of his room.\n\nPrakul's room can be considered as a grid $$A$$ consisting of $$n$$ rows and $$m$$ columns. He starts walking from $$A_{1,1}$$. If he is currently at $$A_{i,j}$$ he can do either of the following moves:\n\nA special restriction is that he can start with either move, but must alternate between them.\n\nNote that his room is quite special as it wraps around itself. Moving one step right from the $$m$$-th column places him in the $$1$$-st column. Similarly, moving one step down from the $$n$$-th row places him in the $$1$$-st row.\n\nSince he still has to work on problemsetting, he needs your help. Determine if he can visit all tiles in $$A$$ in a finite number of jumps.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains four integers $$n, m, a, b$$ ($$1 $\\leq n, m, a, b\\leq 10^{9}$$$).\n\nFor each test case, print \" YES \" if Prakul can cover all the tiles of his room, and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the second test case: $$n=2$$, $$m=2$$, $$a=1$$, $$b=1$$. One possible way to cover the grid is if Prakul starts by moving down :\n\nIn the third test case: $$n=4$$, $$m=2$$, $$a=2$$, $$b=1$$. If Prakul starts by moving down , the moves look like:\n\nIn this case, the tiles $$\\{(2, 1), (2, 2), (4, 1), (4, 2)\\}$$ remain unvisited forever. Since not all tiles can be covered, the answer is \"NO\". It can be shown that even if Prakul started by moving right in the first move, the answer would not have changed.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains four integers $$n, m, a, b$$ ($$1 $\\leq n, m, a, b\\leq 10^{9}$$$).",
+    "output": "Output For each test case, print \" YES \" if Prakul can cover all the tiles of his room, and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "chinese remainder theorem",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

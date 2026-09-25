@@ -1,0 +1,19 @@
+{
+    "id": "2195H",
+    "contest_id": 2195,
+    "problem_letter": "H",
+    "title": "H. Codeforces Heuristic Contest 001",
+    "statement": "There is a grid of $$3n $\\times 3n$$$ points, consisting of all integer points $$(x,y)$$ such that $$1 $\\leq x,y \\leq 3n$$$.\n\nFind a largest set of triangles satisfying the following conditions:\n\nIf there exist multiple largest such sets of triangles, you may output any of them.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 30$$$). The description of the test cases follows.\n\nThe only line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 166$$$).\n\nIt is guaranteed that the sum of $$n^2$$ over all test cases does not exceed $$166^2$$.\n\nOutput the maximum size $$m$$ of the set of triangles on one line ($$0 $\\leq m \\leq 3n^2$$$).\n\nThen, output $$m$$ lines in the following format:\n\nYou may output the vertices of one triangle in any order (clockwise or counterclockwise).\n\nYour output will be accepted if it satisfies all conditions and the maximum size given is correct.\n\nIn the first test case, the example output has $$2$$ triangles as shown in the following image:\n\nIn the second test case, the example output has $$12$$ triangles as shown in the image on the left:\n\nAs the triangles are not required to be right triangles, the set of triangles shown in the image on the right will also be considered valid.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 30$$$). The description of the test cases follows. The only line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 166$$$). It is guaranteed that the sum of $$n^2$$ over all test cases does not exceed $$166^2$$.",
+    "output": "Output Output the maximum size $$m$$ of the set of triangles on one line ($$0 $\\leq m \\leq 3n^2$$$). Then, output $$m$$ lines in the following format: $$x_{i,1}\\;y_{i,1}\\;x_{i,2}\\;y_{i,2}\\;x_{i,3}\\;y_{i,3}$$: The vertices of the $$i$$-th triangle are $$(x_{i,1},y_{i,1})$$, $$(x_{i,2},y_{i,2})$$, $$(x_{i,3},y_{i,3})$$. You may output the vertices of one triangle in any order (clockwise or counterclockwise). Your output will be accepted if it satisfies all conditions and the maximum size given is correct.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "geometry",
+        "implementation",
+        "*2400"
+    ],
+    "rating": 2400
+}

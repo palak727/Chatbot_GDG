@@ -1,0 +1,22 @@
+{
+    "id": "2159D1",
+    "contest_id": 2159,
+    "problem_letter": "D1",
+    "title": "D1. Inverse Minimum Partition (Easy Version)",
+    "statement": "\n\nThis is the easy version of the problem. The difference between the versions is that in this version, you are only asked to find $$f(a)$$. You can hack only if you solved all versions of this problem.\n\nFor some sequence $$b$$ of $$k$$ positive integers, the cost of the sequence is defined as follows$$^{∗}$$:\n\n$$$\\mathtt{cost}(b)=\\left\\lceil{$\\frac{b_k}{\\min(b_1,b_2,\\ldots,b_k)}}\\right\\rceil$$$$\n\nAssume that you partition a sequence $$c$$ into one or more sequences, so that the sequences become $$c$$ when concatenated. For example, when the sequence $$c$$ is $$[3,1,4,1,5]$$, a few valid ways to partition the sequence are $$[[3,1],[4,1,5]]$$, $$[[3],[1,4,1],[5]]$$, $$[[3,1,4,1,5]]$$. On the other hand, $$[[3,1],[1,5]]$$ and $$[[3,4,1],[1,5]]$$ are not valid ways to partition the sequence.\n\nFor a partition of a sequence $$c$$ of positive integers, the total cost of the partition is defined as the sum of the costs of each sequence in the partition. Then, let us define $$f(c)$$ as the minimum total cost to partition the sequence $$c$$.\n\nGiven a sequence $$a$$ of $$n$$ positive integers, you must compute the value of $$f(a)$$.\n\n$$^{∗}$$Given a real value $$x$$, $$\\left\\lceil{x}\\right\\rceil$$ is defined as the smallest integer no less than $$x$$. For example, the value of $$\\left\\lceil{3.14}\\right\\rceil$$ is $$4$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 4\\cdot 10^5$$$).\n\nThe second line of each test case contains $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^{18}$$$).\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$4$\\cdot 10^5$$$.\n\nFor each test case, output the answer to the problem on a separate line.\n\nFor the first test case, the partition $$[[3,1,4,1],[5]]$$ gives a total cost of $$1+1=2$$.\n\nFor the second test case, the partition $$[[9,2,6,5,3],[5,8,9,7,9]]$$ gives a total cost of $$2+2=4$$.\n\nFor the third test case, the partition $$[[1],[2,3,4],[5,6,7,8]]$$ gives a total cost of $$1+2+2=5$$.\n\nFor the fourth test case, the partition $$[[1],[1\\,000\\,000\\,000\\,000\\,000\\,000]]$$ gives a total cost of $$1+1=2$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 4\\cdot 10^5$$$). The second line of each test case contains $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^{18}$$$). It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$4$\\cdot 10^5$$$.",
+    "output": "Output For each test case, output the answer to the problem on a separate line.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "geometry",
+        "greedy",
+        "math",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

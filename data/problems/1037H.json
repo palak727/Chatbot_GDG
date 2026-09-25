@@ -1,0 +1,17 @@
+{
+    "id": "1037H",
+    "contest_id": 1037,
+    "problem_letter": "H",
+    "title": "H. Security",
+    "statement": "Some programming website is establishing a secure communication protocol. For security reasons, they want to choose several more or less random strings.\n\nInitially, they have a string $$s$$ consisting of lowercase English letters. Now they want to choose $$q$$ strings using the following steps, and you are to help them.\n\nString $$a$$ is lexicographically less than string $$b$$, if either $$a$$ is a prefix of $$b$$ and $$a \\ne b$$, or there exists such a position $$i$$ ($$1 $\\leq i \\leq min(|a|, |b|)$$$), such that $$a_i  \\lt  b_i$$ and for all $$j$$ ($$1 $\\leq j  \\lt  i$$$) $$a_j = b_j$$. Here $$|a|$$ denotes the length of the string $$a$$.\n\nThe first line of input contains a non-empty string $$s$$ ($$1 $\\leq |s| \\leq 10^{5}$$$) consisting of lowercase English letters.\n\nThe second line contains an integer $$q$$ ($$1 $\\leq q \\leq 2 \\cdot 10^5$$$) — the number of strings to select.\n\nEach of the next $$q$$ lines contains two integers $$l$$, $$r$$ ($$1 $\\leq l \\leq r \\leq |s|$$$) and a non-empty string $$x$$ consisting of lowercase English letters. The total length of strings $$x$$ for all queries does not exceed $$2 $\\cdot 10^{5}$$$.\n\nOutput $$q$$ lines, each of them should contain the desired string or $$-1$$, if there is no such string.\n\nConsider the first example.\n\nThe string $$s$$ is \" baa \". The queries are as follows.",
+    "input": "Input The first line of input contains a non-empty string $$s$$ ($$1 $\\leq |s| \\leq 10^{5}$$$) consisting of lowercase English letters. The second line contains an integer $$q$$ ($$1 $\\leq q \\leq 2 \\cdot 10^5$$$) — the number of strings to select. Each of the next $$q$$ lines contains two integers $$l$$, $$r$$ ($$1 $\\leq l \\leq r \\leq |s|$$$) and a non-empty string $$x$$ consisting of lowercase English letters. The total length of strings $$x$$ for all queries does not exceed $$2 $\\cdot 10^{5}$$$.",
+    "output": "Output Output $$q$$ lines, each of them should contain the desired string or $$-1$$, if there is no such string.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "string suffix structures",
+        "*3200"
+    ],
+    "rating": 3200
+}

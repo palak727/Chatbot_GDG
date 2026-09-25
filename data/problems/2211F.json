@@ -1,0 +1,19 @@
+{
+    "id": "2211F",
+    "contest_id": 2211,
+    "problem_letter": "F",
+    "title": "F. Learning Binary Search",
+    "statement": "You step into your first data structures class, where you are learning about binary search. You heard the professor yapping about why binary search works in $$O($\\log{n})$$$. But you want to see if you can find a better bound.\n\nGiven a sorted array $$a$$ of size $$n$$ and an integer $$k$$, define $$f(a, k, l, r)$$ as the result of the following code:\n\nYou are given two integers $$n$$ and $$m$$. Define an array $$a$$ good if:\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$3 $\\leq n,m \\leq 10^6$$$).\n\nIt is guaranteed that the sum of $$n$$ does not exceed $$10^6$$ over all test cases, and the sum of $$m$$ does not exceed $$10^6$$ over all test cases.\n\nFor each test case, output the requested sum modulo $$676\\,767\\,677$$ on a new line.\n\nIn the first test case, one good array $$a$$ is $$[2,2,3]$$. Here, $$f(a,1,1,n)=0$$ (as $$1$$ is not present in $$a$$), $$f(a,2,1,n)=1$$, $$f(a,3,1,n)=2$$. Therefore, the contribution of this good array is $$0+1+2=3$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$3 $\\leq n,m \\leq 10^6$$$). It is guaranteed that the sum of $$n$$ does not exceed $$10^6$$ over all test cases, and the sum of $$m$$ does not exceed $$10^6$$ over all test cases.",
+    "output": "Output For each test case, output the requested sum modulo $$676\\,767\\,677$$ on a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

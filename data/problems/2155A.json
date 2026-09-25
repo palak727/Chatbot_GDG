@@ -1,0 +1,17 @@
+{
+    "id": "2155A",
+    "contest_id": 2155,
+    "problem_letter": "A",
+    "title": "A. El fucho",
+    "statement": "Juan and his friends are going to split themselves into $$n$$ teams and play a modified double-elimination football tournament, consisting of a winners' group and a losers' group. Initially, all teams belong to the winners' group.\n\nIn each round of the tournament, the following happens as long as one of the groups has at least two teams:\n\nNote that in the above process, when a team loses a match in the winners' group, it drops down to the losers' group in the next round. That means, it is not considered for the pairing process in the current round's losers' group.\n\nAfter multiple iterations of the aforementioned process, both groups end up with a single team each. When this happens, both teams face off against each other in a match and a victor emerges.\n\nDetermine how many matches were played in total. It can be proved that no matter how the teams are paired up and which ones win and lose, the answer remains the same.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe only line of each test case contains one positive integer $$n$$ ($$2 $\\leq n \\leq 500$$$) — the number of teams.\n\nFor each test case, print the total number of matches played during the tournament.\n\nIn the first test case, it can be proved that exactly $$2$$ matches are played before a victor is declared.\n\nIn the second test case, the image below shows one possible tournament. Notice that $$4$$ matches were played in total.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The only line of each test case contains one positive integer $$n$$ ($$2 $\\leq n \\leq 500$$$) — the number of teams.",
+    "output": "Output For each test case, print the total number of matches played during the tournament.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

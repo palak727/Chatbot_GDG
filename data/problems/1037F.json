@@ -1,0 +1,18 @@
+{
+    "id": "1037F",
+    "contest_id": 1037,
+    "problem_letter": "F",
+    "title": "F. Maximum Reduction",
+    "statement": "Given an array $$a$$ of $$n$$ integers and an integer $$k$$ ($$2 $\\leq k \\leq n$$$), where each element of the array is denoted by $$a_i$$ ($$0 $\\leq i  \\lt  n$$$). Perform the operation $$z$$ given below on $$a$$ and print the value of $$z(a,k)$$ modulo $$10^{9}+7$$.\n\nThe first line of input contains two integers $$n$$ and $$k$$ ($$2 $\\leq k \\leq n \\leq 10^6$$$) — the length of the initial array $$a$$ and the parameter $$k$$.\n\nThe second line of input contains $$n$$ integers $$a_0, a_1, \\ldots, a_{n - 1}$$ ($$1 $\\leq a_{i} \\leq 10^9$$$) — the elements of the array $$a$$.\n\nOutput the only integer, the value of $$z(a,k)$$ modulo $$10^9+7$$.\n\nIn the first example:\n\nSo the returned value is $$19+10+0=29$$.\n\nIn the second example:\n\nSo the returned value is $$25+9+0=34$$.",
+    "input": "Input The first line of input contains two integers $$n$$ and $$k$$ ($$2 $\\leq k \\leq n \\leq 10^6$$$) — the length of the initial array $$a$$ and the parameter $$k$$. The second line of input contains $$n$$ integers $$a_0, a_1, \\ldots, a_{n - 1}$$ ($$1 $\\leq a_{i} \\leq 10^9$$$) — the elements of the array $$a$$.",
+    "output": "Output Output the only integer, the value of $$z(a,k)$$ modulo $$10^9+7$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

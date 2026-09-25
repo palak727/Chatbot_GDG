@@ -1,0 +1,18 @@
+{
+    "id": "2211D",
+    "contest_id": 2211,
+    "problem_letter": "D",
+    "title": "D. AND-array",
+    "statement": "\n\nFor a sequence $$a$$ of length $$n$$, we define its AND-array $$f(a)$$ as follows:\n\n$$$f(a)_k = $\\sum\\limits_{1 \\leq i_1  \\lt  i_2  \\lt  \\ldots  \\lt  i_k \\leq n} a_{i_1} \\& a_{i_2} \\& \\ldots \\& a_{i_k}$$$$\n\nfor all $$1$\\leq k\\leq n$$$, where $$\\&$$ denotes the bitwise AND operation .\n\nIn other words, $$f(a)_k$$ is a sum of bitwise AND over all subsequences$$^{∗}$$ of $$a$$ with length $$k$$.\n\nThe sequence $$a$$ is unknown to you. However, you are provided with a sequence $$b$$ of length $$n$$ such that $$b_i \\equiv f(a)_i \\pmod{10^9 + 7}$$ for all $$1 $\\leq i \\leq n$$$. Your task is to reconstruct the sequence $$a$$ based on the given sequence $$b$$.\n\n$$^{∗}$$A sequence $$c$$ is a subsequence of a sequence $$d$$ if $$c$$ can be obtained from $$d$$ by the deletion of several (possibly, zero or all) element from arbitrary positions. Two subsequences are considered different if the sets of positions of the deleted elements are different.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the length of sequences $$a$$ and $$b$$.\n\nThe second line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$0 $\\leq b_i  \\lt  10^9 + 7$$$) — the sequence $$b$$.\n\nIt is guaranteed that there exists a sequence $$a$$ of length $$n$$ with $$0 $\\leq a_i  \\lt  2^{29}$$$, such that $$b_i \\equiv f(a)_i \\pmod{10^9 + 7}$$ for all $$1 $\\leq i \\leq n$$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.\n\nOutput $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0$\\leq a_i  \\lt  2^{29}$$$) representing the reconstructed sequence $$a$$. If there are multiple possible sequences satisfying the constraints, output any.\n\nIn the second example, for $$a = [5, 3, 6, 1, 7]$$ the value of $$f(a)_4$$ is $$a_1 \\& a_2 \\& a_3 \\& a_4 + a_1 \\& a_2 \\& a_3 \\& a_5 + a_1 \\& a_2 \\& a_4 \\& a_5 + a_1 \\& a_3 \\& a_4 \\& a_5 + a_2 \\& a_3 \\& a_4 \\& a_5 = 0 + 0 + 1 + 0 + 0 = 1$$, and $$f(a)_1 = a_1 + a_2 + a_3 + a_4 + a_5 = 22$$. It can be proven that $$f(a)_i = b_i$$ for all $$1 $\\leq i \\leq 5$$$, so $$a = [5, 3, 6, 1, 7]$$ is a valid solution.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the length of sequences $$a$$ and $$b$$. The second line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$0 $\\leq b_i  \\lt  10^9 + 7$$$) — the sequence $$b$$. It is guaranteed that there exists a sequence $$a$$ of length $$n$$ with $$0 $\\leq a_i  \\lt  2^{29}$$$, such that $$b_i \\equiv f(a)_i \\pmod{10^9 + 7}$$ for all $$1 $\\leq i \\leq n$$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.",
+    "output": "Output Output $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0$\\leq a_i  \\lt  2^{29}$$$) representing the reconstructed sequence $$a$$. If there are multiple possible sequences satisfying the constraints, output any.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

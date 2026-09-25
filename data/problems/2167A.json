@@ -1,0 +1,17 @@
+{
+    "id": "2167A",
+    "contest_id": 2167,
+    "problem_letter": "A",
+    "title": "A. Square?",
+    "statement": "You are given $$4$$ sticks of lengths $$a$$, $$b$$, $$c$$, and $$d$$. You can not break or bend them.\n\nDetermine whether it is possible to form a square$$^{∗}$$ using the given sticks.\n\n$$^{∗}$$A square is defined as a polygon consisting of $$4$$ vertices, of which all sides have equal length and all inner angles are equal. No two edges of the polygon may intersect each other.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe only line of each test case contains four integers $$a$$, $$b$$, $$c$$, and $$d$$ ($$1 $\\leq a, b, c, d \\leq 10$$$) — the lengths of the sticks.\n\nFor each test case, print \" YES \" if it is possible to form a square using the given sticks, and \" NO \" otherwise.\n\nYou may print each letter in any case (uppercase or lowercase). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will all be recognized as a positive answer.\n\nIn the first test case, we can prove that we can't make a square.\n\nIn the second, third, and sixth test cases, we can make a square like this:",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The only line of each test case contains four integers $$a$$, $$b$$, $$c$$, and $$d$$ ($$1 $\\leq a, b, c, d \\leq 10$$$) — the lengths of the sticks.",
+    "output": "Output For each test case, print \" YES \" if it is possible to form a square using the given sticks, and \" NO \" otherwise. You may print each letter in any case (uppercase or lowercase). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will all be recognized as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

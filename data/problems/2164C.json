@@ -1,0 +1,20 @@
+{
+    "id": "2164C",
+    "contest_id": 2164,
+    "problem_letter": "C",
+    "title": "C. Dungeon",
+    "statement": "You are now in a dungeon with $$n$$ swords, facing $$m$$ monsters.\n\nThe damage of the $$i$$-th sword is $$a_i$$, and the life value of the $$i$$-th monster is $$b_i$$. A sword with damage $$x$$ can kill a monster with life value $$y$$ if and only if $$x $\\geq y$$$.\n\nAfter killing the $$i$$-th monster with a sword of damage $$x$$, this sword disappears. Then, if $$c_i  \\gt  0$$, you will obtain a new sword with damage $$\\max(x, c_i)$$; otherwise, you gain nothing.\n\nNow you want to know the maximum number of monsters you can kill. Note that you can kill each monster at most once.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$T$$ ($$1 $\\leq T \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n,m \\leq 2 \\cdot 10^5$$$).\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9)$$$.\n\nThe third line of each test case contains $$m$$ integers $$b_1, b_2, \\ldots, b_m$$ ($$1 $\\leq b_i \\leq 10^9)$$$.\n\nThe fourth line of each test case contains $$m$$ integers $$c_1, c_2, \\ldots, c_m$$ ($$0 $\\leq c_i \\leq 10^9)$$$.\n\nIt is guaranteed that the sum of $$n$$ and $$m$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$, respectively.\n\nFor each test case output one integer — the maximum number of monsters you can kill.\n\nVisualizer link\n\nIn the first test case, you can first kill monster #1 using sword #1, and obtain a new sword with damage $$\\max(2,3)=3$$. You can then use this sword to kill monster #2.\n\nIn the second test case, you can't obtain any new swords because all $$c_i=0$$, so you can only kill monster #1 and #2 with your two existing swords.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$T$$ ($$1 $\\leq T \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n,m \\leq 2 \\cdot 10^5$$$). The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9)$$$. The third line of each test case contains $$m$$ integers $$b_1, b_2, \\ldots, b_m$$ ($$1 $\\leq b_i \\leq 10^9)$$$. The fourth line of each test case contains $$m$$ integers $$c_1, c_2, \\ldots, c_m$$ ($$0 $\\leq c_i \\leq 10^9)$$$. It is guaranteed that the sum of $$n$$ and $$m$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$, respectively.",
+    "output": "Output For each test case output one integer — the maximum number of monsters you can kill.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

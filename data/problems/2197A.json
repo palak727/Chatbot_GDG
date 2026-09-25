@@ -1,0 +1,20 @@
+{
+    "id": "2197A",
+    "contest_id": 2197,
+    "problem_letter": "A",
+    "title": "A. Friendly Numbers",
+    "statement": "For an integer $$x$$, we call another integer $$y$$ friendly if the following condition holds:\n\nFor a given integer $$x$$, determine how many friendly numbers it has.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nEach test case consists of a single line containing one integer $$x$$ ($$1 $\\leq x \\leq 10^{9}$$$).\n\nFor each test case, output one integer — the answer to the problem.\n\nThe number $$1$$ does not have any friendly numbers.\n\nThe number $$18$$ has $$10$$ friendly numbers: These are all the numbers from $$20$$ to $$29$$. For example, $$20 - d(20) = 20 - 2 = 18$$.\n\nThe number $$998\\,244\\,360$$ has $$10$$ friendly numbers:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. Each test case consists of a single line containing one integer $$x$$ ($$1 $\\leq x \\leq 10^{9}$$$).",
+    "output": "Output For each test case, output one integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "expression parsing",
+        "math",
+        "schedules",
+        "*800"
+    ],
+    "rating": 800
+}

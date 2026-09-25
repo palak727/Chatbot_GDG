@@ -1,0 +1,22 @@
+{
+    "id": "2244E",
+    "contest_id": 2244,
+    "problem_letter": "E",
+    "title": "E. Masha and the Garland",
+    "statement": "Masha has a New Year garland consisting of $$n$$ bulbs. Each bulb can be either off or on. The state of the garland is given by a binary string $$s$$ of length $$n$$, where ' 0 ' denotes an off bulb and ' 1 ' denotes an on bulb.\n\nMasha considers the garland beautiful if the states of adjacent bulbs strictly alternate. That is, there are no two adjacent bulbs that are both on or both off. For example, the garlands ' 01010 ' and ' 1010 ' are beautiful, while ' 0110 ' and ' 000 ' are not.\n\nYura can apply the following operation to the garland: choose a subsegment and flip the state of all bulbs in it, that is, turn all on bulbs off and all off bulbs on.\n\nMasha invites him to play the following game $$q$$ times: she chooses a segment from the $$l$$-th to the $$r$$-th bulb inclusive, and Yura must make this segment beautiful using at most $$k$$ operations.\n\nHowever, Yura is not sure whether this is always possible, so he asks you to determine for each game whether he can make the chosen segment beautiful using no more than $$k$$ operations. Note that the games are independent, and the garland itself is not actually modified.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 2 \\cdot 10^5$$$) — the length of the garland and the number of games.\n\nThe second line contains a binary string $$s$$ of length $$n$$, consisting only of characters ' 0 ' and ' 1 '.\n\nThe next $$q$$ lines each contain three integers $$l$$, $$r$$, and $$k$$ ($$1 $\\leq l \\leq r \\leq n$$$, $$0 $\\leq k \\leq n$$$) — the boundaries of the segment and the maximum allowed number of operations.\n\nIt is guaranteed that the sum of $$n$$ and the sum of $$q$$ over all test cases do not exceed $$2 $\\cdot 10^5$$$.\n\nFor each game, output \" YES \" if the segment can be made beautiful using at most $$k$$ operations, and \" NO \" otherwise.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 2 \\cdot 10^5$$$) — the length of the garland and the number of games. The second line contains a binary string $$s$$ of length $$n$$, consisting only of characters ' 0 ' and ' 1 '. The next $$q$$ lines each contain three integers $$l$$, $$r$$, and $$k$$ ($$1 $\\leq l \\leq r \\leq n$$$, $$0 $\\leq k \\leq n$$$) — the boundaries of the segment and the maximum allowed number of operations. It is guaranteed that the sum of $$n$$ and the sum of $$q$$ over all test cases do not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each game, output \" YES \" if the segment can be made beautiful using at most $$k$$ operations, and \" NO \" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

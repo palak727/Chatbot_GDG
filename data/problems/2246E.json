@@ -1,0 +1,19 @@
+{
+    "id": "2246E",
+    "contest_id": 2246,
+    "problem_letter": "E",
+    "title": "E. lce4113 and Security Game",
+    "statement": "\n\nThis is an interactive problem. Additionally, hacks are disabled for this problem.\n\nThere are two hidden integers $$b$$ and $$v$$ such that $$b \\in \\{0,1\\}$$ and $$0 $\\leq v  \\lt  2^{30}.$$$ There is also a hidden operation $$ty,$$ which is either $$\\&$$ or $$|.$$ Here, $$\\&$$ denotes the bitwise AND operation . Additionally, $$|$$ denotes the bitwise OR operation .\n\nYour goal is to guess $$b.$$\n\nThe interaction proceeds as follows:\n\nAfter the interaction, you have to output $$b$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^5$$$). The description of the test cases follows. Note that this is the only initial input given.\n\nFirst, you need to output a single integer $$x \\, (0 $\\leq x  \\lt  2^{30})$$$ — the initial value to send to the interactor.\n\nIn response, you will receive a single integer $$o\\,(0 $\\leq o  \\lt  2^{30})$$$ — the result $$o(v,x)$$ of the operation $$v\\,ty\\,x.$$\n\nNext, you will send a single line containing two integers $$m_0, m_1\\,(0 $\\leq m_0, m_1  \\lt  2^{30}).$$$\n\nFinally, receive a single integer $$r\\,(0 $\\leq r  \\lt  2^{30})$$$ — the value of $$m_b \\oplus v.$$\n\nNote that the interactor is partially adaptive — in particular, the choice of $$v$$ may be determined by the initial input $$x$$, but all hidden values will be fixed after .\n\nAfter printing each query do not forget to output the end of line and flush$$^{∗}$$ the output. Otherwise, you will get Idleness limit exceeded verdict.\n\nIf, at any interaction step, you read $$-1$$ instead of valid data, your solution must exit immediately. This means that your solution will receive Wrong answer because of an invalid query or any other mistake. Failing to exit can result in an arbitrary verdict because your solution will continue to read from a closed stream.\n\n$$^{∗}$$To flush, use:\n\nThe example interaction proceeds as follows:\n\nNote that the queries made by the example solution may not yield enough information to determine the hidden bit $$b.$$ Additionally the empty lines in the example interaction are given for readability and need not be outputted in the solution.\n\nThe hidden values in the test cases are given below.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^5$$$). The description of the test cases follows. Note that this is the only initial input given.",
+    "output": "",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "interactive",
+        "math",
+        "probabilities",
+        "*2600"
+    ],
+    "rating": 2600
+}

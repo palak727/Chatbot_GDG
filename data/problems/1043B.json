@@ -1,0 +1,16 @@
+{
+    "id": "1043B",
+    "contest_id": 1043,
+    "problem_letter": "B",
+    "title": "B. Lost Array",
+    "statement": "Bajtek, known for his unusual gifts, recently got an integer array $$x_0, x_1, \\ldots, x_{k-1}$$.\n\nUnfortunately, after a huge array-party with his extraordinary friends, he realized that he'd lost it. After hours spent on searching for a new toy, Bajtek found on the arrays producer's website another array $$a$$ of length $$n + 1$$. As a formal description of $$a$$ says, $$a_0 = 0$$ and for all other $$i$$ ($$1 $\\leq i \\leq n$$$) $$a_i = x_{(i-1)\\bmod k} + a_{i-1}$$, where $$p \\bmod q$$ denotes the remainder of division $$p$$ by $$q$$.\n\nFor example, if the $$x = [1, 2, 3]$$ and $$n = 5$$, then:\n\nSo, if the $$x = [1, 2, 3]$$ and $$n = 5$$, then $$a = [0, 1, 3, 6, 7, 9]$$.\n\nNow the boy hopes that he will be able to restore $$x$$ from $$a$$! Knowing that $$1 $\\leq k \\leq n$$$, help him and find all possible values of $$k$$ — possible lengths of the lost array.\n\nThe first line contains exactly one integer $$n$$ ($$1 $\\leq n \\leq 1000$$$) — the length of the array $$a$$, excluding the element $$a_0$$.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^6$$$).\n\nNote that $$a_0$$ is always $$0$$ and is not given in the input.\n\nThe first line of the output should contain one integer $$l$$ denoting the number of correct lengths of the lost array.\n\nThe second line of the output should contain $$l$$ integers — possible lengths of the lost array in increasing order.\n\nIn the first example, any $$k$$ is suitable, since $$a$$ is an arithmetic progression.\n\nPossible arrays $$x$$:\n\nIn the second example, Bajtek's array can have three or five elements.\n\nPossible arrays $$x$$:\n\nFor example, $$k = 4$$ is bad, since it leads to $$6 + x_0 = 8$$ and $$0 + x_0 = 1$$, which is an obvious contradiction.\n\nIn the third example, only $$k = n$$ is good.\n\nArray $$[1, 4, -2]$$ satisfies the requirements.\n\nNote that $$x_i$$ may be negative.",
+    "input": "Input The first line contains exactly one integer $$n$$ ($$1 $\\leq n \\leq 1000$$$) — the length of the array $$a$$, excluding the element $$a_0$$. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^6$$$). Note that $$a_0$$ is always $$0$$ and is not given in the input.",
+    "output": "Output The first line of the output should contain one integer $$l$$ denoting the number of correct lengths of the lost array. The second line of the output should contain $$l$$ integers — possible lengths of the lost array in increasing order.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

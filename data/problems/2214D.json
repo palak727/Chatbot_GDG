@@ -1,0 +1,16 @@
+{
+    "id": "2214D",
+    "contest_id": 2214,
+    "problem_letter": "D",
+    "title": "D. Neural Feud",
+    "statement": "Questions:\n\n1. I want to wash my car and the car wash is 100 meters away. Should I walk or should I drive?\n\n2. Are you a robot?\n\n3. Is April Fools 2026 Codeforces Contest rated?\n\n4. I was given a cup but it has no bottom and the top is sealed. Can I drink from this?\n\n5. Does Pikachu's tail have a black tip?\n\n6. Is there a seahorse emoji?\n\n7. The word backwards spelled backwards.\n\n8. Number between 1 to 10.\n\nThe only line contains one integer $$n$$ ($$1 $\\leq n \\leq 8$$$) — the question number.\n\nOutput one word, the answer of question $$n$$.",
+    "input": "Input The only line contains one integer $$n$$ ($$1 $\\leq n \\leq 8$$$) — the question number.",
+    "output": "Output Output one word, the answer of question $$n$$.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "strings"
+    ],
+    "rating": null
+}

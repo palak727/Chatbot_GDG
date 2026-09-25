@@ -1,0 +1,17 @@
+{
+    "id": "1029A",
+    "contest_id": 1029,
+    "problem_letter": "A",
+    "title": "A. Many Equal Substrings",
+    "statement": "You are given a string $$t$$ consisting of $$n$$ lowercase Latin letters and an integer number $$k$$.\n\nLet's define a substring of some string $$s$$ with indices from $$l$$ to $$r$$ as $$s[l \\dots r]$$.\n\nYour task is to construct such string $$s$$ of minimum possible length that there are exactly $$k$$ positions $$i$$ such that $$s[i \\dots i + n - 1] = t$$. In other words, your task is to construct such string $$s$$ of minimum possible length that there are exactly $$k$$ substrings of $$s$$ equal to $$t$$.\n\nIt is guaranteed that the answer is always unique.\n\nThe first line of the input contains two integers $$n$$ and $$k$$ ($$1 $\\leq n, k \\leq 50$$$) — the length of the string $$t$$ and the number of substrings.\n\nThe second line of the input contains the string $$t$$ consisting of exactly $$n$$ lowercase Latin letters.\n\nPrint such string $$s$$ of minimum possible length that there are exactly $$k$$ substrings of $$s$$ equal to $$t$$.\n\nIt is guaranteed that the answer is always unique.",
+    "input": "Input The first line of the input contains two integers $$n$$ and $$k$$ ($$1 $\\leq n, k \\leq 50$$$) — the length of the string $$t$$ and the number of substrings. The second line of the input contains the string $$t$$ consisting of exactly $$n$$ lowercase Latin letters.",
+    "output": "Output Print such string $$s$$ of minimum possible length that there are exactly $$k$$ substrings of $$s$$ equal to $$t$$. It is guaranteed that the answer is always unique.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*1300"
+    ],
+    "rating": 1300
+}

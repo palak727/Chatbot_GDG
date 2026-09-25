@@ -1,0 +1,19 @@
+{
+    "id": "2178B",
+    "contest_id": 2178,
+    "problem_letter": "B",
+    "title": "B. Impost or Sus",
+    "statement": "\n\nA string $$w$$ consisting of lowercase Latin letters is called suspicious if and only if all of the following conditions hold:\n\nAfter watching you finish a string task, your friend Aka has gifted you a string $$r$$ consisting only of letters $$\\mathtt{s}$$ and $$\\mathtt{u}$$. You can perform the following operation on $$r$$:\n\nDetermine the minimum number of operations needed to make $$r$$ suspicious . It can be shown that, under the given constraints, it is always possible to transform $$r$$ into a suspicious string.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains the string $$r$$ ($$3$\\leq |r|\\leq 2\\cdot 10^5$$$). It is guaranteed that $$r_i = \\mathtt{s}$$ or $$\\mathtt{u}$$.\n\nIt is guaranteed that the sum of $$|r|$$ over all test cases does not exceed $$2$\\cdot 10 ^ 5$$$.\n\nFor each test case, output a single integer — the minimum number of operations needed to make $$r$$ suspicious .\n\nIn the first test case, the string $$\\mathtt{sus}$$ is already suspicious because $$\\mathtt{s}$$ appears twice in the string and the two nearest $$\\mathtt{s}$$ to the only $$\\mathtt{u}$$ are both $$1$$ character away: $$\\color{red}{\\mathtt{s}}\\underline{\\mathtt{u}}\\color{red}{\\mathtt{s}}$$.\n\nIn the second test case, it is optimal to perform the operation on indices $$1$$, $$3$$, and $$4$$. After that, the string $$s$$ becomes $$\\texttt{suss}$$. The string $$\\mathtt{suss}$$ is suspicious because $$\\mathtt{s}$$ appears $$3$$ times in the string and the two nearest $$\\mathtt{s}$$ to the only $$\\mathtt{u}$$ are both $$1$$ character away: $$\\color{red}{\\mathtt{s}}\\underline{\\mathtt{u}}\\color{red}{\\mathtt{s}}\\mathtt{s}$$.\n\nIn the third test case, the condition on $$\\mathtt{u}$$ is vacuously true because there is no $$\\mathtt{u}$$ in the string $$\\mathtt{sssss}$$. Thus, the given string is already suspicious .\n\nIn the sixth test case, the initial string $$\\mathtt{usssssss}$$ is not suspicious because the two nearest $$\\mathtt{s}$$ to the only $$\\mathtt{u}$$ are one and two characters away, respectively: $$\\underline{\\mathtt{u}}\\color{red}{\\mathtt{ss}}\\mathtt{sssss}$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains the string $$r$$ ($$3$\\leq |r|\\leq 2\\cdot 10^5$$$). It is guaranteed that $$r_i = \\mathtt{s}$$ or $$\\mathtt{u}$$. It is guaranteed that the sum of $$|r|$$ over all test cases does not exceed $$2$\\cdot 10 ^ 5$$$.",
+    "output": "Output For each test case, output a single integer — the minimum number of operations needed to make $$r$$ suspicious .",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "strings",
+        "*900"
+    ],
+    "rating": 900
+}

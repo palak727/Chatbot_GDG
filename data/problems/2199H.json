@@ -1,0 +1,20 @@
+{
+    "id": "2199H",
+    "contest_id": 2199,
+    "problem_letter": "H",
+    "title": "H. Sum of MEX",
+    "statement": "The MEX of a sequence of non-negative integers $$[s_1, s_2, \\dots, s_n]$$ is the smallest non-negative integer that does not appear in this sequence.\n\nGiven an array $$[a_1, a_2, \\dots, a_n]$$, where each element is an integer from $$-1$$ to $$n$$. For each $$i$$ from $$1$$ to $$n$$, calculate $$f([a_1, a_2, \\dots, a_i])$$, where $$f(s)$$ for an array $$s$$ is defined as follows:\n\nThe first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$).\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$-1 $\\leq a_i \\leq n$$$).\n\nAn additional constraint on the input: the array $$a$$ contains no more than $$300$$ elements equal to $$-1$$.\n\nFor each $$i$$ from $$1$$ to $$n$$, output a single integer — $$f([a_1, a_2, \\dots, a_i])$$, taken modulo $$998244353$$.\n\nConsider $$i=3$$ in the first example. We need to calculate $$f([-1, 1, -1])$$. There are $$36$$ different arrays that can be obtained by replacing each element $$-1$$ with an integer from $$0$$ to $$5$$. For $$25$$ of them (those that do not contain $$0$$), the MEX is $$0$$. Let's consider the remaining $$11$$:\n\nThe sum of these values is $$24$$.\n\nIf we consider $$i=4$$, then we need to append $$3$$ to each of these arrays. This will increase the MEX of two arrays by $$2$$, so for $$i=4$$, the answer is $$26$$.",
+    "input": "Input The first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$). The second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$-1 $\\leq a_i \\leq n$$$). An additional constraint on the input: the array $$a$$ contains no more than $$300$$ elements equal to $$-1$$.",
+    "output": "Output For each $$i$$ from $$1$$ to $$n$$, output a single integer — $$f([a_1, a_2, \\dots, a_i])$$, taken modulo $$998244353$$.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "data structures",
+        "dp",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

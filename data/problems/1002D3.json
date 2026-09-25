@@ -1,0 +1,16 @@
+{
+    "id": "1002D3",
+    "contest_id": 1002,
+    "problem_letter": "D3",
+    "title": "D3. Oracle for majority function",
+    "statement": "Implement a quantum oracle on 3 qubits which implements a majority function. Majority function on 3-bit vectors is defined as follows: if vector has two or three 1s, and 0 if it has zero or one 1s.\n\nFor an explanation on how this type of quantum oracles works, see Introduction to quantum oracles .\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2185G",
+    "contest_id": 2185,
+    "problem_letter": "G",
+    "title": "G. Mixing MEXes",
+    "statement": "You are given $$n$$ arrays $$a_1, a_2, \\ldots, a_n$$.\n\nThe following operation is performed exactly once:\n\nEvaluate the sum of the values of all possible distinct independent operations. Two operations are distinct if the ordered triple of integers $$(i,j,k)$$ is different.\n\n$$\\operatorname{MEX}(a)$$ is defined as the smallest non-negative integer that is not present in the array. For example, $$\\operatorname{MEX}([1, 2, 0, 5])$$ is $$3$$, and $$\\operatorname{MEX}([1, 2, 4, 9])$$ is $$0$$.\n\nThe first line of the input contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of arrays.\n\nThe next $$n$$ lines start with $$l_i$$ ($$1 $\\leq l_i \\leq 10^5$$$) — the length of the $$i$$th array — then contain $$l_i$$ integers $$a_1, a_2, \\ldots, a_{l_i}$$ ($$0 $\\leq a_{i_j} \\leq 10^6$$$) — the array $$a_i$$.\n\nIt is guaranteed that the sum of $$l_i$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output the sum of the values of all possible distinct operations.\n\nFor the first test case, we have 3 possible distinct operations:\n\nFor the second test case, since no array contains a zero, the value of all operations will be $$0$$.",
+    "input": "Input The first line of the input contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of arrays. The next $$n$$ lines start with $$l_i$$ ($$1 $\\leq l_i \\leq 10^5$$$) — the length of the $$i$$th array — then contain $$l_i$$ integers $$a_1, a_2, \\ldots, a_{l_i}$$ ($$0 $\\leq a_{i_j} \\leq 10^6$$$) — the array $$a_i$$. It is guaranteed that the sum of $$l_i$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output the sum of the values of all possible distinct operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

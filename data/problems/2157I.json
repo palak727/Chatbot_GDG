@@ -1,0 +1,17 @@
+{
+    "id": "2157I",
+    "contest_id": 2157,
+    "problem_letter": "I",
+    "title": "I. Hyper Smawk Bros",
+    "statement": "You and Bob are playing Hyper Smawk Bros against each other, facing a single boss with health $$n$$.\n\nYou and Bob act alternately, and you start. On your turn, you may use an attack that deals an integer amount of damage $$x$$ in $$[1, m]$$, replacing $$n$$ with $$n - x$$. However, one cannot use the same $$x$$ that his opponent just used on the previous turn (on the very first move of the game, any $$x$$ in $$[1, m]$$ is allowed).\n\nThe winner is the first player to reduce the boss's health to $$n $\\leq 0$$$. Determine whether you can force a win if Bob plays optimally.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains two integers $$n$$, $$m$$ ($$1 $\\leq n \\leq 10^6$$$, $$2 $\\leq m \\leq 10^6$$$) — the starting health $$n$$ and the maximum damage per attack $$m$$.\n\nNote that there are no constraints on the sum of $$n$$ over all test cases, and there are no constraints on the sum of $$m$$ over all test cases.\n\nFor each test case, output $$\\texttt{YES}$$ if you can force a win against Bob, and $$\\texttt{NO}$$ otherwise.\n\nThe judge is case-insensitive (for example, $$\\texttt{YES}$$, $$\\texttt{Yes}$$, $$\\texttt{yes}$$, $$\\texttt{yEs}$$ will all be recognized as positive answers).\n\nIn the first test case, you can win immediately by dealing damage $$8$$, so that $$n$$ becomes $$6-8 = -2 $\\leq 0$$$.\n\nIn the second test case,\n\nIn the third test case,\n\nIn both cases, you lose.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains two integers $$n$$, $$m$$ ($$1 $\\leq n \\leq 10^6$$$, $$2 $\\leq m \\leq 10^6$$$) — the starting health $$n$$ and the maximum damage per attack $$m$$. Note that there are no constraints on the sum of $$n$$ over all test cases, and there are no constraints on the sum of $$m$$ over all test cases.",
+    "output": "Output For each test case, output $$\\texttt{YES}$$ if you can force a win against Bob, and $$\\texttt{NO}$$ otherwise. The judge is case-insensitive (for example, $$\\texttt{YES}$$, $$\\texttt{Yes}$$, $$\\texttt{yes}$$, $$\\texttt{yEs}$$ will all be recognized as positive answers).",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "dp",
+        "games",
+        "*3500"
+    ],
+    "rating": 3500
+}

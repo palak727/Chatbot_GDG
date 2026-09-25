@@ -1,0 +1,20 @@
+{
+    "id": "2215B",
+    "contest_id": 2215,
+    "problem_letter": "B",
+    "title": "B. RReeppeettiittiioonn",
+    "statement": "\n\nAs a girl born on November 11th (or 11/11), SS loves repetition. For example, her favorite English word is b ookkee per, her favorite letter is W (double-u, double vé, or whatever you call it), her favorite animals are the cat (ki tt en!) and the ra bb it (bu nn y!), her favorite programming language is C ++ , her favorite parser is LL (1), her favorite optimization algorithm is branch and bound ( BB ), her favorite unit is millimeter ( mm ), her favorite game is LLLL , and her favorite winning hand in Mahjong is Seven Pairs. She plans to release her new songs \"Silent-night Satellite\" and \"Siesta Stella\" soon, so she wants to select a \"pre tt y\" number to decorate the cover of her new songs.\n\nSS observes this world from a higher perspective, which means she considers an integer concurrently in all standard positional numeral systems, starting from the binary numeral system. SS then calls a positive integer $$n$$ $$(b, p)$$ -tidy (with $$b,p$\\geq 2$$$) if and only if:\n\nFor example, $$2233$$ and $$3355$$ are $$(10,2)$$ -tidy , $$1111$$ is both $$(10,2)$$ -tidy and $$(10,4)$$ -tidy , and $$6\\,737\\,151=(66\\textrm{CCFF})_{16}$$ is $$(16,2)$$ -tidy . Furthermore, SS defines the tidiness of a positive integer $$n$$ as the number of ordered pairs $$(b, p)$$ such that $$n$$ is $$(b, p)$$ -tidy .\n\nSS has given you an integer $$n$$. Your task is to determine the tidiness of $$n$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 1000$$$). The description of the test cases follows.\n\nThe only line of each test case contains a single integer $$n$$ ($$1$\\leq n\\leq 10^{12}$$$) — the integer SS has given you.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^{12}$$.\n\nFor each test case, output a single integer — the tidiness of $$n$$.\n\nIn the third test case, $$115={(55)}_{22}={(11)}_{114}$$. Therefore, the tidiness of $$115$$ is $$2$$.\n\nIn the fourth test case, $$1111$$ is $$(10, 2)$$ -tidy , $$(10, 4)$$ -tidy , $$(100, 2)$$ -tidy , and $$(1110, 2)$$ -tidy .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 1000$$$). The description of the test cases follows. The only line of each test case contains a single integer $$n$$ ($$1$\\leq n\\leq 10^{12}$$$) — the integer SS has given you. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^{12}$$.",
+    "output": "Output For each test case, output a single integer — the tidiness of $$n$$.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "implementation",
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

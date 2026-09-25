@@ -1,0 +1,18 @@
+{
+    "id": "2206B",
+    "contest_id": 2206,
+    "problem_letter": "B",
+    "title": "B. Subtree Removal Game",
+    "statement": "You are given a rooted tree with $$n$$ nodes, numbered from $$1$$ to $$n$$, rooted at node $$1$$. For each node $$i$$ ($$2 $\\leq i \\leq n$$$), its parent is node $$p_i$$. For each node $$i$$, if it is a leaf (a node having no children), the integer $$i$$ is written on it. Otherwise, nothing is written.\n\nNode $$u$$ is a descendant of node $$v$$ if $$u = v$$, or $$u$$ is not the root and the parent of $$u$$ is a descendant of $$v$$.\n\nNow, you and your friend play a game on this tree, taking turns alternately: You move first, then your friend, and so on. On each turn, the current player must choose a node $$v$$ and then remove the entire subtree of $$v$$ (i.e., all descendants of $$v$$, including $$v$$ itself). The move is allowed only if, after the removal, at least one node with an integer written on it remains in the tree.\n\nThe game ends when no further moves are possible. At that point, exactly one node with an integer written on it remains; the score of the game is the integer on that node.\n\nYou aim to minimize the score, while your friend aims to maximize it. Assuming you and your friend play optimally, determine the score of the game.\n\nThe first line of input contains an integer $$n$$ ($$2 $\\leq n \\leq 500\\,000$$$).\n\nThe second line contains $$n-1$$ integers $$p_2, p_3, \\ldots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$ for all $$2 $\\leq i \\leq n$$$).\n\nOutput the score of the game assuming you and your friend play optimally.\n\nExplanation for the sample input/output #1\n\nThe given tree is illustrated in Figure B.1 (a).\n\nThe only optimal moves for both players are as follows:\n\nExplanation for the sample input/output #2\n\nThe given tree is illustrated in Figure B.2. One of the optimal moves for you is to choose node $$2$$. The game ends after that, and the score is $$7$$.",
+    "input": "Input The first line of input contains an integer $$n$$ ($$2 $\\leq n \\leq 500\\,000$$$). The second line contains $$n-1$$ integers $$p_2, p_3, \\ldots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$ for all $$2 $\\leq i \\leq n$$$).",
+    "output": "Output Output the score of the game assuming you and your friend play optimally.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "games",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

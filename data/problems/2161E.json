@@ -1,0 +1,18 @@
+{
+    "id": "2161E",
+    "contest_id": 2161,
+    "problem_letter": "E",
+    "title": "E. Left is Always Right",
+    "statement": "Consider a binary string of length $$n$$ and an odd number $$k$$. We will call the binary string good if for each substring of length $$k$$, the leftmost character of the substring occurs more than the other.\n\nFor example, if $$k = 3$$, 000101 is a good string, because for all substrings of length 3 ( 000 , 001 , 010 , and 101 ) the first character of the substring occurs more than the other character. On the other hand, 1011 is not good, because the property is false for 011 .\n\nGiven a pattern of length $$n$$ consisting of characters 0 , 1 and ? , find the number of ways to replace question marks with 0 or 1 , such that the resulting binary string is good. Since the answer may be large, find it modulo $$998\\,244\\,353$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$3 $\\leq k \\leq n \\leq 10^5$$$, $$k$$ is odd). The second line contains $$n$$ characters 0 , 1 or ? — the pattern.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.\n\nFor each test case, print the number of ways to replace ? with 0 or 1 such that the resulting string is good, modulo $$998\\,244\\,353$$.\n\nIn the first example, three valid ways to make the pattern good are 00000 , 00001 , and 00101 . In the second example, the only invalid way (out of 16 total ways) is 1001001 .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$k$$ ($$3 $\\leq k \\leq n \\leq 10^5$$$, $$k$$ is odd). The second line contains $$n$$ characters 0 , 1 or ? — the pattern. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.",
+    "output": "Output For each test case, print the number of ways to replace ? with 0 or 1 such that the resulting string is good, modulo $$998\\,244\\,353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "implementation",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

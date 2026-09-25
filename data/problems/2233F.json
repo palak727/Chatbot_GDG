@@ -1,0 +1,20 @@
+{
+    "id": "2233F",
+    "contest_id": 2233,
+    "problem_letter": "F",
+    "title": "F. Shortest GCD Paths",
+    "statement": "You are given three integers $$n$$, $$a$$, $$b$$. Consider a weighted undirected graph with $$n$$ vertices, where for every pair of distinct vertices $$(u, v)$$ there is an edge with weight:\n\n$$$ w(u, v) = $\\frac{\\max(u, v)}{\\gcd(u, v)} $$$$\n\nHere $$\\gcd(x, y)$$ denotes the greatest common divisor (GCD) of integers $$x$$ and $$y$$.\n\nFind the shortest path from vertex $$a$$ to vertex $$b$$ in this graph.\n\nThe only line contains three integers $$n$$, $$a$$, $$b$$ ($$2 $\\leq n \\leq 10^{9}, 1 \\leq a, b \\leq n, a \\neq b$$$).\n\nPrint one integer — the length of the shortest path from vertex $$a$$ to vertex $$b$$.\n\nConsider the first example.\n\nThe shortest path in it is $$9 \\to 6 \\to 8$$ with total cost $$w(9, 6) + w(6, 8) = 3 + 4 = 7$$.",
+    "input": "Input The only line contains three integers $$n$$, $$a$$, $$b$$ ($$2 $\\leq n \\leq 10^{9}, 1 \\leq a, b \\leq n, a \\neq b$$$).",
+    "output": "Output Print one integer — the length of the shortest path from vertex $$a$$ to vertex $$b$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "math",
+        "number theory",
+        "shortest paths",
+        "*2800"
+    ],
+    "rating": 2800
+}

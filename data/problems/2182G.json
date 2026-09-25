@@ -1,0 +1,20 @@
+{
+    "id": "2182G",
+    "contest_id": 2182,
+    "problem_letter": "G",
+    "title": "G. Short Garland",
+    "statement": "Monocarp wants to hang a garland on the Christmas tree.\n\nThe Christmas tree is a tree with $$n$$ vertices rooted at vertex $$1$$. The distance between two vertices of the tree is the number of edges on the shortest path between them, and the depth of a vertex is the distance from it to the root.\n\nThe garland consists of $$n$$ bulbs connected by wire and numbered from $$1$$ to $$n$$. The length of the wire between every two adjacent bulbs is $$k$$.\n\nThe garland must be hung on the tree according to the following rules:\n\nYour task is to count the number of ways to hang the garland while following all the rules and output it modulo $$998244353$$. Two ways are considered different if there exists at least one integer $$i \\in [1, n]$$ such that the $$i$$-th bulb is placed on different vertices in these two ways.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 3 \\cdot 10^5$$$; $$1 $\\leq k  \\lt  n$$$) — the number of vertices in the tree and the distance constraint between two consecutive bulbs.\n\nThe second line contains $$n-1$$ integers $$p_2, p_3, \\dots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$), where $$p_i$$ is the parent of the $$i$$-th vertex in the tree.\n\nAdditional constraint on the input: the sum of $$n$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$.\n\nFor each test case, output one integer — the number of ways to hang the garland while following all the rules, modulo $$998244353$$.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 3 \\cdot 10^5$$$; $$1 $\\leq k  \\lt  n$$$) — the number of vertices in the tree and the distance constraint between two consecutive bulbs. The second line contains $$n-1$$ integers $$p_2, p_3, \\dots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$), where $$p_i$$ is the parent of the $$i$$-th vertex in the tree. Additional constraint on the input: the sum of $$n$$ over all test cases does not exceed $$3 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output one integer — the number of ways to hang the garland while following all the rules, modulo $$998244353$$.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

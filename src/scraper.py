@@ -7,6 +7,7 @@ import os
 import re
 import sys
 import time
+import argparse
 from typing import Any
 
 import cloudscraper
@@ -18,6 +19,8 @@ from src.utils import format_latex
 
 API_URL = "https://codeforces.com/api/problemset.problems"
 REQUEST_DELAY = 1.0  # seconds between HTML scrape requests
+MAX_SCRAPE_RETRIES = 3
+MIN_STATEMENT_LENGTH = 40
 
 
 def fetch_api_problems() -> list[dict[str, Any]]:
@@ -57,17 +60,33 @@ def _clean_spec_div(spec_div) -> str:
     return format_latex(text)
 
 
-def scrape_statement(contest_id: int, problem_letter: str) -> dict[str, str] | None:
+def scrape_statement(
+    contest_id: int,
+    problem_letter: str,
+    scraper=None,
+) -> dict[str, str] | None:
     """Scrape problem statement HTML with rate limiting."""
     url = f"https://codeforces.com/contest/{contest_id}/problem/{problem_letter}"
-    scraper = cloudscraper.create_scraper()
+    scraper = scraper or cloudscraper.create_scraper()
 
-    try:
-        resp = scraper.get(url, timeout=30)
-        if resp.status_code != 200:
-            return None
-    except Exception as exc:
-        print(f"  Scrape failed for {contest_id}{problem_letter}: {exc}", file=sys.stderr)
+    for attempt in range(1, MAX_SCRAPE_RETRIES + 1):
+        try:
+            resp = scraper.get(url, timeout=30)
+            if resp.status_code == 200:
+                break
+            if resp.status_code not in {429, 500, 502, 503, 504}:
+                return None
+            if attempt == MAX_SCRAPE_RETRIES:
+                return None
+        except requests.RequestException as exc:
+            if attempt == MAX_SCRAPE_RETRIES:
+                print(
+                    f"  Scrape failed for {contest_id}{problem_letter}: {exc}",
+                    file=sys.stderr,
+                )
+                return None
+        time.sleep(attempt * REQUEST_DELAY)
+    else:
         return None
 
     soup = BeautifulSoup(resp.text, "lxml")
@@ -90,9 +109,13 @@ def scrape_statement(contest_id: int, problem_letter: str) -> dict[str, str] | N
     if memory_div:
         memory_limit = memory_div.get_text().replace("memory limit per test", "").strip()
 
+    statement = _clean_statement_html(problem_div).strip()
+    if len(statement) < MIN_STATEMENT_LENGTH:
+        return None
+
     return {
         "title": title_div.get_text(strip=True),
-        "statement": _clean_statement_html(problem_div),
+        "statement": statement,
         "input": _clean_spec_div(input_spec),
         "output": _clean_spec_div(output_spec),
         "time_limit": time_limit,
@@ -123,8 +146,8 @@ def save_problem(data: dict[str, Any]) -> None:
 
 def ingest_problems(
     contest_min: int = 1000,
-    contest_max: int = 1050,
-    max_count: int = 200,
+    contest_max: int = 2267,
+    max_count: int = 1000,
     skip_existing: bool = True,
     scrape_missing: bool = True,
 ) -> int:
@@ -139,6 +162,8 @@ def ingest_problems(
         return 0
 
     saved = 0
+    seen_ids: set[str] = set()
+    scraper = cloudscraper.create_scraper()
     for prob in api_problems:
         if saved >= max_count:
             break
@@ -151,6 +176,9 @@ def ingest_problems(
             continue
 
         problem_id = f"{contest_id}{index}"
+        if problem_id in seen_ids:
+            continue
+        seen_ids.add(problem_id)
         if skip_existing and problem_exists(problem_id):
             continue
 
@@ -174,13 +202,15 @@ def ingest_problems(
 
         if scrape_missing:
             print(f"Scraping {problem_id} ...")
-            scraped = scrape_statement(contest_id, index)
+            scraped = scrape_statement(contest_id, index, scraper=scraper)
             time.sleep(REQUEST_DELAY)
 
-            if scraped:
-                data.update(scraped)
-                if scraped.get("title"):
-                    data["title"] = scraped["title"]
+            if not scraped or not scraped.get("statement", "").strip():
+                print(f"Skipping {problem_id}: statement unavailable", file=sys.stderr)
+                continue
+            data.update(scraped)
+            if scraped.get("title"):
+                data["title"] = scraped["title"]
 
         save_problem(data)
         saved += 1
@@ -189,10 +219,33 @@ def ingest_problems(
     return saved
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     """CLI entry point for problem ingestion."""
-    sys.stdout.reconfigure(encoding="utf-8")
-    count = ingest_problems()
+    parser = argparse.ArgumentParser(description="Fetch Codeforces problems and statements.")
+    parser.add_argument("--contest-min", type=int, default=1000)
+    parser.add_argument("--contest-max", type=int, default=2267)
+    parser.add_argument("--max-count", type=int, default=1000)
+    parser.add_argument(
+        "--metadata-only",
+        action="store_true",
+        help="Save API metadata without scraping statements.",
+    )
+    parser.add_argument(
+        "--include-existing",
+        action="store_true",
+        help="Rewrite existing problem files instead of skipping them.",
+    )
+    args = parser.parse_args(argv)
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8")
+    count = ingest_problems(
+        contest_min=args.contest_min,
+        contest_max=args.contest_max,
+        max_count=args.max_count,
+        skip_existing=not args.include_existing,
+        scrape_missing=not args.metadata_only,
+    )
     print(f"Ingestion complete. Saved {count} new problems to {PROBLEMS_DIR}")
 
 

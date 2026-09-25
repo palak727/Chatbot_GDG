@@ -1,0 +1,18 @@
+{
+    "id": "1029B",
+    "contest_id": 1029,
+    "problem_letter": "B",
+    "title": "B. Creating the Contest",
+    "statement": "You are given a problemset consisting of $$n$$ problems. The difficulty of the $$i$$-th problem is $$a_i$$. It is guaranteed that all difficulties are distinct and are given in the increasing order.\n\nYou have to assemble the contest which consists of some problems of the given problemset. In other words, the contest you have to assemble should be a subset of problems (not necessary consecutive) of the given problemset . There is only one condition that should be satisfied: for each problem but the hardest one (the problem with the maximum difficulty) there should be a problem with the difficulty greater than the difficulty of this problem but not greater than twice the difficulty of this problem. In other words, let $$a_{i_1}, a_{i_2}, \\dots, a_{i_p}$$ be the difficulties of the selected problems in increasing order. Then for each $$j$$ from $$1$$ to $$p-1$$ $$a_{i_{j + 1}} $\\leq a_{i_j} \\cdot 2$$$ should hold. It means that the contest consisting of only one problem is always valid.\n\nAmong all contests satisfying the condition above you have to assemble one with the maximum number of problems. Your task is to find this number of problems.\n\nThe first line of the input contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of problems in the problemset.\n\nThe second line of the input contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — difficulties of the problems. It is guaranteed that difficulties of the problems are distinct and are given in the increasing order .\n\nPrint a single integer — maximum number of problems in the contest satisfying the condition in the problem statement.\n\nDescription of the first example: there are $$10$$ valid contests consisting of $$1$$ problem, $$10$$ valid contests consisting of $$2$$ problems ($$[1, 2], [5, 6], [5, 7], [5, 10], [6, 7], [6, 10], [7, 10], [21, 23], [21, 24], [23, 24]$$), $$5$$ valid contests consisting of $$3$$ problems ($$[5, 6, 7], [5, 6, 10], [5, 7, 10], [6, 7, 10], [21, 23, 24]$$) and a single valid contest consisting of $$4$$ problems ($$[5, 6, 7, 10]$$).\n\nIn the second example all the valid contests consist of $$1$$ problem.\n\nIn the third example are two contests consisting of $$3$$ problems: $$[4, 7, 12]$$ and $$[100, 150, 199]$$.",
+    "input": "Input The first line of the input contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of problems in the problemset. The second line of the input contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — difficulties of the problems. It is guaranteed that difficulties of the problems are distinct and are given in the increasing order .",
+    "output": "Output Print a single integer — maximum number of problems in the contest satisfying the condition in the problem statement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

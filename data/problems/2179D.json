@@ -1,0 +1,19 @@
+{
+    "id": "2179D",
+    "contest_id": 2179,
+    "problem_letter": "D",
+    "title": "D. Blackslex and Penguin Civilization",
+    "statement": "\n\nPenguins are civilized creatures that communicate using permutations. Blackslex, as a penguin researcher, must study their means of communication.\n\nFor a given integer $$n$$, consider permutations$$^{∗}$$ $$p$$ of the array $$[0, 1, \\ldots, 2^n - 1]$$. Define $$$S(p) \\;=\\; \\sum_{i=0}^{2^n-1} \\operatorname{popcount}\\!\\bigl(p_0 \\mathbin{\\&} p_1 \\mathbin{\\&} \\cdots \\mathbin{\\&} p_i\\bigr),$$$ where $$\\operatorname{popcount}(z)$$ is the number of $$1$$-bits in the binary representation of $$z$$ (for instance, $$\\operatorname{popcount}(5) = 2$$ because $$5 = 101_2$$ has two $$1$$-bits in the binary representation), and $$\\&$$ denotes the bitwise AND operation . .\n\nA permutation is considered sacred if it maximizes $$S(p)$$. Find the lexicographically minimal $$^{†}$$ sacred permutation.\n\n$$^{∗}$$A permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$1$$ to $$n$$ in arbitrary order. For example, $$[2,3,1,5,4]$$ is a permutation, but $$[1,2,2]$$ is not a permutation ($$2$$ appears twice in the array), and $$[1,3,4]$$ is also not a permutation ($$n=3$$ but there is $$4$$ in the array).\n\n$$^{†}$$An array $$a$$ is lexicographically smaller than an array $$b$$ of the same size if and only if the following holds:\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 16$$$) — the number of test cases.\n\nEach test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 16$$$).\n\nIt is guaranteed that the sum of $$2^n$$ over all test cases does not exceed $$2^{16}$$.\n\nFor each test case, output $$2^n$$ integers $$p_0, p_1, \\ldots, p_{2^n-1}$$ — the required permutation.\n\nFor the first test case, there are two possible permutations.\n\nFor the second test case, $$S([3, 1, 0, 2]) = 3$$ is sacred. There are other permutations $$p$$ that are sacred, such as $$p = [3, 2, 0, 1]$$, but those are not lexicographically minimal.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 16$$$) — the number of test cases. Each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 16$$$). It is guaranteed that the sum of $$2^n$$ over all test cases does not exceed $$2^{16}$$.",
+    "output": "Output For each test case, output $$2^n$$ integers $$p_0, p_1, \\ldots, p_{2^n-1}$$ — the required permutation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

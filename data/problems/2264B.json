@@ -1,0 +1,18 @@
+{
+    "id": "2264B",
+    "contest_id": 2264,
+    "problem_letter": "B",
+    "title": "B. Knife's Pill Farm",
+    "statement": "\n\nMr. Knife has drafted $$n$$ absurd posts for a channel on a chat platform. His goal is to farm pill emoji reactions. Unfortunately, the channel's pill-farming bot uses an unnecessarily elaborate scoring rule.\n\nThe drafts have absurdity ratings $$a_1, a_2, \\ldots, a_n$$, which may be negative. Mr. Knife must publish exactly $$m$$ drafts in their original order. Their ratings form a subsequence$$^{∗}$$ $$b$$ of $$a$$ with length $$m$$.\n\nHis pill score starts at $$0$$. When he publishes the $$i$$-th chosen draft, the bot changes his score by $$i $\\cdot (b_i - b_{i-1})$$$, where $$b_0 = 0$$. A negative change deducts points, and the score is allowed to become negative. Thus, his final pill score is $$$ \\sum_{i = 1}^{m} i $\\cdot (b_i - b_{i - 1}). $$$$\n\nWhat is the maximum pill score Mr. Knife can obtain by choosing which drafts to publish?\n\n$$^{∗}$$A sequence $$a$$ is a subsequence of a sequence $$b$$ if $$a$$ can be obtained from $$b$$ by the deletion of several (possibly, zero or all) elements from arbitrary positions.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq m \\leq n \\leq 2 \\cdot 10^5$$$) — the number of drafts and the number of posts Mr. Knife must publish.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$-10^7 $\\leq a_i \\leq 10^7$$$) — the absurdity ratings of the drafts.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, print one integer — the maximum pill score Mr. Knife can obtain by publishing exactly $$m$$ drafts in their original order.\n\nIn the first test case, Mr. Knife can publish the drafts with ratings $$[0, 1, 7]$$. His final pill score is $$$ 1 $\\cdot (0 - 0) + 2 \\cdot (1 - 0) + 3 \\cdot (7 - 1) = 20. $$$$\n\nIn the second test case, he can publish the drafts with ratings $$[0, -4, 10]$$. The second post deducts points, but the third post more than makes up for it. His final pill score is $$$ 1 $\\cdot (0 - 0) + 2 \\cdot (-4 - 0) + 3 \\cdot (10 - (-4)) = 34. $$$$",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq m \\leq n \\leq 2 \\cdot 10^5$$$) — the number of drafts and the number of posts Mr. Knife must publish. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$-10^7 $\\leq a_i \\leq 10^7$$$) — the absurdity ratings of the drafts. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print one integer — the maximum pill score Mr. Knife can obtain by publishing exactly $$m$$ drafts in their original order.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

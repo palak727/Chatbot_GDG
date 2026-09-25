@@ -1,0 +1,17 @@
+{
+    "id": "2153D",
+    "contest_id": 2153,
+    "problem_letter": "D",
+    "title": "D. Not Alone",
+    "statement": "\n\nA circular array $$b$$ of length $$m$$ is nice if every element has at least one adjacent element$$^{∗}$$ that is equal to it. Formally, for every $$1$\\leq i\\leq m$$$, at least one of the following holds: $$b_i = b_{(i+m-2)\\bmod m\\;+1}$$, or $$b_i = b_{i\\bmod m\\;+1}$$, where $$x \\bmod y$$ denotes the remainder from dividing $$x$$ by $$y$$.\n\nYou are given a circular array $$a$$ of length $$n$$. In one operation, you may increase or decrease any element of $$a$$ by $$1$$. Your task is to determine the minimum number of operations required to make array $$a$$ nice. More formally, find the minimum value of $$\\sum_{i=1}^n |b_i - a_i|$$ among all nice circular arrays $$b$$ of length $$n$$.\n\n$$^{∗}$$In a circular array of length $$m$$:\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$3$\\leq n\\leq 2\\cdot 10^5$$$) — the length of the circular array $$a$$.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1$\\leq a_i\\leq 10^9$$$) — the elements of the circular array $$a$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^5$$$.\n\nFor each test case, output a single integer representing the minimum number of operations required to make array $$a$$ nice.\n\nIn the first test case, all elements of $$a$$ are equal. Therefore, the circular array $$a$$ is already nice and no operations are required.\n\nIn the second test case, we can perform the following sequence of operations:\n\nAfter these operations, every element has at least one adjacent element with the same value:\n\nIn the third test case, the circular array $$a$$ can become nice by decreasing $$a_4$$ four times. This results in $$a = [2, 2, 5, 5, 5]$$ which is nice as every element has at least one adjacent element with the same value.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$3$\\leq n\\leq 2\\cdot 10^5$$$) — the length of the circular array $$a$$. The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1$\\leq a_i\\leq 10^9$$$) — the elements of the circular array $$a$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^5$$$.",
+    "output": "Output For each test case, output a single integer representing the minimum number of operations required to make array $$a$$ nice.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2171E",
+    "contest_id": 2171,
+    "problem_letter": "E",
+    "title": "E. Anisphia Wynn Palettia and Good Permutations",
+    "statement": "Anis and her new assistant Euphie are improving the Witch's Broom! Magicology requires great precision and care — in order to fly, the construction of the broom must have sufficiently few imperfections.\n\nFor an arbitrary array $$a$$ of length $$m$$, call an index $$i$$ ($$1$\\leq i\\leq m-2$$$) bad if $$a_i$$, $$a_{i+1}$$, and $$a_{i+2}$$ are all pairwise coprime. More formally, $$i$$ is a bad index if and only if $$\\gcd(a_i, a_{i+1}) = \\gcd(a_i, a_{i+2}) = \\gcd(a_{i+1}, a_{i+2}) = 1$$$$^{∗}$$. Furthermore, call $$a$$ good if it has at most $$6$$ bad indices.\n\nYou are given an integer $$n$$. Construct a good permutation$$^{†}$$ $$p$$ of length $$n$$. It can be shown that such a permutation always exists.\n\nNote that you do not have to minimize the number of bad indices.\n\n$$^{∗}$$$$\\gcd(x, y)$$ denotes the greatest common divisor of $$x$$ and $$y$$\n\n$$^{†}$$ A permutation of length $$n$$ is an array that contains every integer from $$1$$ to $$n$$ exactly once, in any order.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$)  — the number of test cases.\n\nThe only line of each test case contains a single integer $$n$$ ($$3$\\leq n \\leq 2\\cdot 10^5$$$).\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^5$$$.\n\nFor each test case, output on a single line $$n$$ integers $$p_1, p_2, \\dots, p_n$$, an example of a good permutation of length $$n$$. If there are multiple good permutations, you may output any of them.\n\nFor $$n=9$$, we have\n\nThe only bad index is $$3$$. Since $$1$\\leq 6$$$, $$p$$ is a good permutation.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$)  — the number of test cases. The only line of each test case contains a single integer $$n$$ ($$3$\\leq n \\leq 2\\cdot 10^5$$$). It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^5$$$.",
+    "output": "Output For each test case, output on a single line $$n$$ integers $$p_1, p_2, \\dots, p_n$$, an example of a good permutation of length $$n$$. If there are multiple good permutations, you may output any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

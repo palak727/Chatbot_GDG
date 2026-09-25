@@ -1,0 +1,17 @@
+{
+    "id": "1032F",
+    "contest_id": 1032,
+    "problem_letter": "F",
+    "title": "F. Vasya and Maximum Matching",
+    "statement": "Vasya has got a tree consisting of $$n$$ vertices. He wants to delete some (possibly zero) edges in this tree such that the maximum matching in the resulting graph is unique. He asks you to calculate the number of ways to choose a set of edges to remove.\n\nA matching in the graph is a subset of its edges such that there is no vertex incident to two (or more) edges from the subset. A maximum matching is a matching such that the number of edges in the subset is maximum possible among all matchings in this graph.\n\nSince the answer may be large, output it modulo $$998244353$$.\n\nThe first line contains one integer $$n$$ ($$1 $\\leq n \\leq 3 \\cdot 10^5$$$) — the number of vertices in the tree.\n\nEach of the next $$n − 1$$ lines contains two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n, u \\neq v$$$) denoting an edge between vertex $$u$$ and vertex $$v$$. It is guaranteed that these edges form a tree.\n\nPrint one integer — the number of ways to delete some (possibly empty) subset of edges so that the maximum matching in the resulting graph is unique. Print the answer modulo $$998244353$$.\n\nPossible ways to delete edges in the first example:\n\nPossible ways to delete edges in the second example:",
+    "input": "Input The first line contains one integer $$n$$ ($$1 $\\leq n \\leq 3 \\cdot 10^5$$$) — the number of vertices in the tree. Each of the next $$n − 1$$ lines contains two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n, u \\neq v$$$) denoting an edge between vertex $$u$$ and vertex $$v$$. It is guaranteed that these edges form a tree.",
+    "output": "Output Print one integer — the number of ways to delete some (possibly empty) subset of edges so that the maximum matching in the resulting graph is unique. Print the answer modulo $$998244353$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

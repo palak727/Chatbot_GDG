@@ -1,0 +1,19 @@
+{
+    "id": "1037D",
+    "contest_id": 1037,
+    "problem_letter": "D",
+    "title": "D. Valid BFS?",
+    "statement": "The BFS algorithm is defined as follows.\n\nSince the order of choosing neighbors of each vertex can vary, it turns out that there may be multiple sequences which BFS can print.\n\nIn this problem you need to check whether a given sequence corresponds to some valid BFS traversal of the given tree starting from vertex $$1$$ . The tree is an undirected graph, such that there is exactly one simple path between any two vertices.\n\nThe first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) which denotes the number of nodes in the tree.\n\nThe following $$n - 1$$ lines describe the edges of the tree. Each of them contains two integers $$x$$ and $$y$$ ($$1 $\\leq x, y \\leq n$$$) — the endpoints of the corresponding edge of the tree. It is guaranteed that the given graph is a tree.\n\nThe last line contains $$n$$ distinct integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the sequence to check.\n\nPrint \" Yes \" (quotes for clarity) if the sequence corresponds to some valid BFS traversal of the given tree and \" No \" (quotes for clarity) otherwise.\n\nYou can print each letter in any case (upper or lower).\n\nBoth sample tests have the same tree in them.\n\nIn this tree, there are two valid BFS orderings:\n\nThe ordering $$1, 2, 4, 3$$ doesn't correspond to any valid BFS order.",
+    "input": "Input The first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) which denotes the number of nodes in the tree. The following $$n - 1$$ lines describe the edges of the tree. Each of them contains two integers $$x$$ and $$y$$ ($$1 $\\leq x, y \\leq n$$$) — the endpoints of the corresponding edge of the tree. It is guaranteed that the given graph is a tree. The last line contains $$n$$ distinct integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the sequence to check.",
+    "output": "Output Print \" Yes \" (quotes for clarity) if the sequence corresponds to some valid BFS traversal of the given tree and \" No \" (quotes for clarity) otherwise. You can print each letter in any case (upper or lower).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "shortest paths",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

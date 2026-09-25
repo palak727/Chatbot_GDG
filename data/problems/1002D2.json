@@ -1,0 +1,16 @@
+{
+    "id": "1002D2",
+    "contest_id": 1002,
+    "problem_letter": "D2",
+    "title": "D2. Oracle for f(x) = b * x + (1 - b) * (1 - x) mod 2",
+    "statement": "Implement a quantum oracle on N qubits which implements the following function:\n\nHere (a vector of N integers, each of which can be 0 or 1), and is a vector of N 1s.\n\nFor an explanation on how this type of quantum oracles works, see Introduction to quantum oracles .\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1300"
+    ],
+    "rating": 1300
+}

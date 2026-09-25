@@ -1,0 +1,18 @@
+{
+    "id": "2238A",
+    "contest_id": 2238,
+    "problem_letter": "A",
+    "title": "A. Another Puzzle from Papyrus",
+    "statement": "Papyrus came up with another puzzle for Frisk to solve. Papyrus brought two arrays $$a$$ and $$b$$ of length $$n$$ and allowed the following two operations to be performed:\n\nYou need to convert array $$a$$ into array $$b$$.\n\nFrisk wants to solve the puzzle as soon as possible. Help Frisk determine the minimum time needed to solve the puzzle. If there is no solution, output $$-1$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$c$$ ($$1 $\\leq n, c \\leq 100$$$) — the length of arrays $$a$$ and $$b$$ and the cost of the second operation.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 100$$$) — the elements of the first array.\n\nThe third line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$1 $\\leq b_i \\leq 100$$$) — the elements of the second array.\n\nFor each test case, output a single integer representing the minimum number of seconds required to solve the puzzle, or $$-1$$ if it is impossible to solve the puzzle.\n\nIn the first test case, it is impossible to transform $$a$$ into $$b$$ using only subtraction because $$a_2  \\lt  b_2$$. Let's rearrange the elements of array $$a$$ as follows: $$[5, 2, 3] \\Rightarrow [2, 3, 5]$$. Now it is enough to subtract one from $$a_3$$, and we get that array $$a$$ becomes equal to array $$b$$ in $$5 + 1 = 6$$ seconds.\n\nIn the second test case, all elements of $$a$$ are less than all elements of $$b$$, which means $$a$$ cannot be transformed into $$b$$.\n\nIn the third test case, you can choose not to rearrange the elements and get an answer of $$3$$. If you rearrange them at least once, the answer will be at least $$4$$, so the optimal answer is $$3$$ seconds.\n\nIn the sixth test case, the array can be rearranged as follows: $$[14, 20, 20]$$. It can be seen that the cost will then be $$5 + (14 - 12) + (20 - 18) + (20 - 17) = 12$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$c$$ ($$1 $\\leq n, c \\leq 100$$$) — the length of arrays $$a$$ and $$b$$ and the cost of the second operation. The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 100$$$) — the elements of the first array. The third line of each test case contains $$n$$ integers $$b_1, b_2, \\ldots, b_n$$ ($$1 $\\leq b_i \\leq 100$$$) — the elements of the second array.",
+    "output": "Output For each test case, output a single integer representing the minimum number of seconds required to solve the puzzle, or $$-1$$ if it is impossible to solve the puzzle.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

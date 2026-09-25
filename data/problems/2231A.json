@@ -1,0 +1,16 @@
+{
+    "id": "2231A",
+    "contest_id": 2231,
+    "problem_letter": "A",
+    "title": "A. Construct an Array",
+    "statement": "You are given an integer $$n$$. You need to construct an array of integers $$a_1, a_2, \\ldots, a_n$$ such that the following conditions are satisfied:\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe only line of each test case contains one integer $$n$$ ($$1 $\\leq n \\leq 500$$$).\n\nFor each test case, output an array of length $$n$$ that satisfies the condition of the problem. It can be shown that such an array always exists under the given constraints.\n\nIn the second example, all elements and adjacent sums form the set $$\\textbf{6}, \\textbf{2}, \\textbf{3}, 8, 5$$, all of whose elements are distinct.\n\nIn the third example, all elements and adjacent sums form the set $$\\textbf{8}, \\textbf{1}, \\textbf{11}, \\textbf{2}, \\textbf{3}, \\textbf{4}, 9, 12, 13, 5, 7$$, whose elements are also distinct.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The only line of each test case contains one integer $$n$$ ($$1 $\\leq n \\leq 500$$$).",
+    "output": "Output For each test case, output an array of length $$n$$ that satisfies the condition of the problem. It can be shown that such an array always exists under the given constraints.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*800"
+    ],
+    "rating": 800
+}

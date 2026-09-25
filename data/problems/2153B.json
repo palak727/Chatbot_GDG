@@ -1,0 +1,17 @@
+{
+    "id": "2153B",
+    "contest_id": 2153,
+    "problem_letter": "B",
+    "title": "B. Bitwise Reversion",
+    "statement": "\n\nYou are given three non-negative integers $$x$$, $$y$$ and $$z$$. Determine whether there exist three non-negative integers $$a$$, $$b$$ and $$c$$ satisfying the following three conditions:\n\nwhere $$\\mathbin{\\&}$$ denotes the bitwise AND operation .\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first and only line of each test case contains three integers $$x$$, $$y$$ and $$z$$ ($$0$\\leq x, y, z\\leq 10^9$$$) — the target values of $$a \\mathbin{\\&} b$$, $$b \\mathbin{\\&} c$$ and $$a \\mathbin{\\&} c$$, respectively.\n\nFor each test case, output \" YES \" if there exists three non-negative integers $$a$$, $$b$$, and $$c$$ satisfying the above conditions, and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the first test case, $$a = 3$$, $$b = 5$$, and $$c = 9$$ satisfies the condition as $$3 \\mathbin{\\&} 5 = 1$$, $$5 \\mathbin{\\&} 9 = 1$$, and $$3 \\mathbin{\\&} 9 = 1$$.\n\nIn the second test case, $$a = 7$$, $$b = 3$$, and $$c = 22$$ satisfies the condition as $$7 \\mathbin{\\&} 3 = 3$$, $$3 \\mathbin{\\&} 22 = 2$$, and $$7 \\mathbin{\\&} 22 = 6$$.\n\nIn the third test case, it can be proven that there are no three non-negative integers $$a$$, $$b$$, and $$c$$ such that $$a \\mathbin{\\&} b = 4$$, $$b \\mathbin{\\&} c = 8$$, and $$a \\mathbin{\\&} c = 12$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first and only line of each test case contains three integers $$x$$, $$y$$ and $$z$$ ($$0$\\leq x, y, z\\leq 10^9$$$) — the target values of $$a \\mathbin{\\&} b$$, $$b \\mathbin{\\&} c$$ and $$a \\mathbin{\\&} c$$, respectively.",
+    "output": "Output For each test case, output \" YES \" if there exists three non-negative integers $$a$$, $$b$$, and $$c$$ satisfying the above conditions, and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

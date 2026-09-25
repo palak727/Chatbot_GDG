@@ -1,0 +1,20 @@
+{
+    "id": "2182E",
+    "contest_id": 2182,
+    "problem_letter": "E",
+    "title": "E. New Year's Gifts",
+    "statement": "Monocarp has $$n$$ friends and decided to give a New Year's gift to each of them. He has also prepared $$m$$ boxes to place the gifts in; the beauty of the $$i$$-th box is $$a_i$$. Every box can contain at most one gift.\n\nMonocarp wants to give a gift worth at least $$y_i$$ coins to the $$i$$-th friend. Additionally, he knows that the $$i$$-th friend will be happy if at least one of the following conditions holds:\n\nYour task is to help Monocarp calculate the maximum possible number of friends he can make happy if he has $$k$$ coins. Note that Monocarp must purchase a gift for each friend, and the gift may not necessarily come in a box .\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains three integers $$n$$, $$m$$ and $$k$$ ($$1 $\\leq n, m \\leq 2 \\cdot 10^5$$$; $$1 $\\leq k \\leq 10^{15}$$$).\n\nThe second line contains $$m$$ integers $$a_1, a_2, \\dots, a_m$$ ($$1 $\\leq a_i \\leq m$$$).\n\nThen $$n$$ lines follow; the $$i$$-th of them contains three integers $$x_i$$, $$y_i$$ and $$z_i$$ ($$1 $\\leq x_i \\leq m$$$; $$1 $\\leq y_i  \\lt  z_i \\leq 10^9$$$).\n\nAdditional constraints on the input:\n\nFor each test case, print a single integer — the maximum possible number of friends Monocarp can make happy if he has $$k$$ coins.\n\nIn the first example, Monocarp can make both friends happy as follows: give the first friend a gift for $$3$$ coins, and give the second friend a gift for $$2$$ coins in a box with $$1$$ beauty.\n\nIn the second example, Monocarp cannot make any of his friends happy, because he does not have enough money to buy a gift for $$z_i$$ coins for even one of them; also, all the boxes have less beauty than any of the $$x_i$$.\n\nIn the third example, Monocarp can make two friends (the $$2$$-nd friend and the $$3$$-rd friend) happy as follows: give the first friend a gift for $$2$$ coins, and give the second friend a gift for $$6$$ coins, and give the third friend a gift for $$3$$ coins.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains three integers $$n$$, $$m$$ and $$k$$ ($$1 $\\leq n, m \\leq 2 \\cdot 10^5$$$; $$1 $\\leq k \\leq 10^{15}$$$). The second line contains $$m$$ integers $$a_1, a_2, \\dots, a_m$$ ($$1 $\\leq a_i \\leq m$$$). Then $$n$$ lines follow; the $$i$$-th of them contains three integers $$x_i$$, $$y_i$$ and $$z_i$$ ($$1 $\\leq x_i \\leq m$$$; $$1 $\\leq y_i  \\lt  z_i \\leq 10^9$$$). Additional constraints on the input: $$\\sum\\limits_{i=1}^{n} y_i $\\leq k$$$. the sum of $$n$$ over all test cases doesn't exceed $$2 $\\cdot 10^5$$$; the sum of $$m$$ over all test cases doesn't exceed $$2 $\\cdot 10^5$$$;",
+    "output": "Output For each test case, print a single integer — the maximum possible number of friends Monocarp can make happy if he has $$k$$ coins.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2266B",
+    "contest_id": 2266,
+    "problem_letter": "B",
+    "title": "B. Three Piles",
+    "statement": "Alice and Bob are playing a game with three piles of stones. Initially, Alice has $$a$$ stones, Bob has $$b$$ stones, and the third pile contains $$c$$ stones.\n\nAlice and Bob take turns, with Alice going first. On each turn, the current player may take any number of stones from the third pile, possibly zero, and add them to their own pile.\n\nIf both players take zero stones on two consecutive turns, the game ends.\n\nLet $$A$$ and $$B$$ be the final numbers of stones Alice and Bob have, respectively. The score of the game is $$|A-B|$$.\n\nAlice wants to maximize the score, while Bob wants to minimize it. Assuming both players play optimally, find the final score.\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nEach test case contains three integers $$a$$, $$b$$, and $$c$$ ($$0 $\\leq a,b,c \\leq 10^9$$$) — the initial numbers of stones Alice has, Bob has, and the third pile has, respectively.\n\nFor each test case, output one integer — the final score if both players play optimally.\n\nIt is important to use a $$64$$-bit integer type, such as long long in C++.\n\nIn the first test case, Alice can choose to take $$0$$ stones on her first turn. Bob can then also take $$0$$ stones, so the game ends with piles of sizes $$3$$ and $$6$$. Therefore, the score can be $$3$$. It can be shown that Alice cannot achieve a larger score, and Bob cannot achieve a smaller score.\n\nIn the second test case, Alice can take all $$10$$ stones from the third pile on her first turn. The game then ends with piles of sizes $$13$$ and $$6$$, so the score is $$7$$.",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. Each test case contains three integers $$a$$, $$b$$, and $$c$$ ($$0 $\\leq a,b,c \\leq 10^9$$$) — the initial numbers of stones Alice has, Bob has, and the third pile has, respectively.",
+    "output": "Output For each test case, output one integer — the final score if both players play optimally. It is important to use a $$64$$-bit integer type, such as long long in C++.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "math"
+    ],
+    "rating": null
+}

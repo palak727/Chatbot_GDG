@@ -1,0 +1,16 @@
+{
+    "id": "1047A",
+    "contest_id": 1047,
+    "problem_letter": "A",
+    "title": "A. Little C Loves 3 I",
+    "statement": "Little C loves number « 3 » very much. He loves all things about it.\n\nNow he has a positive integer $$n$$. He wants to split $$n$$ into $$3$$ positive integers $$a,b,c$$, such that $$a+b+c=n$$ and none of the $$3$$ integers is a multiple of $$3$$. Help him to find a solution.\n\nA single line containing one integer $$n$$ ($$3 $\\leq n \\leq 10^9$$$) — the integer Little C has.\n\nPrint $$3$$ positive integers $$a,b,c$$ in a single line, such that $$a+b+c=n$$ and none of them is a multiple of $$3$$.\n\nIt can be proved that there is at least one solution. If there are multiple solutions, print any of them.",
+    "input": "Input A single line containing one integer $$n$$ ($$3 $\\leq n \\leq 10^9$$$) — the integer Little C has.",
+    "output": "Output Print $$3$$ positive integers $$a,b,c$$ in a single line, such that $$a+b+c=n$$ and none of them is a multiple of $$3$$. It can be proved that there is at least one solution. If there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

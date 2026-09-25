@@ -1,0 +1,19 @@
+{
+    "id": "2200G",
+    "contest_id": 2200,
+    "problem_letter": "G",
+    "title": "G. Operation Permutation",
+    "statement": "AksLolCoding has an integer $$x$$ and a list of $$n$$ operations. Each operation is a string starting with one of the symbols +,-,x, or / (representing addition, subtraction, multiplication, and real number division respectively), followed immediately by a positive integer $$y$$ ($$1 $\\leq y \\leq 10^9$$$). For example, the operation x3 represents multiplying $$x$$ by $$3$$.\n\nAksLolCoding will randomly permute the operations and then apply all operations sequentially to $$x$$ in the permuted order. Help AksLolCoding compute the expected$$^{∗}$$ final value of $$x$$ modulo $$10^9+7$$.\n\nFormally, let $$M = 10^9 + 7$$. It can be shown that the answer can be expressed as an irreducible fraction $$\\frac{p}{q}$$, where $$p$$ and $$q$$ are integers and $$q \\not\\equiv 0 \\pmod M$$. Output the integer equal to $$p $\\cdot q^{-1} \\pmod M$$$. In other words, output such an integer $$a$$ that $$0 $\\leq a  \\lt  M$$$ and $$a $\\cdot q \\equiv p \\pmod M$$$.\n\n$$^{∗}$$The expected final value of $$x$$ is the average of the final value of $$x$$ over all $$n!$$ permutations.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$), the number of test cases.\n\nFor each test case, the first line contains two integers $$n$$ and $$x$$ ($$1 $\\leq n \\leq 3000$$$, $$1 $\\leq x \\leq 10^9$$$).\n\nThe second line of each test case contains $$n$$ strings, each representing an operation in the format described above.\n\nThe sum of $$n^2$$ over all test cases does not exceed $$3000^2$$.\n\nNote: x is used to represent multiplication, not *\n\nFor each test case, output a single integer: the expected final value of $$x$$ modulo $$10^9+7$$.\n\nIn the first test case, $$x$$ can either be $$(10$\\cdot 2)-10=10$$$ or $$(10-10)$\\cdot 2=0$$$, resulting in an expected value of $$5$$.\n\nIn the second test case, all possible permutations result in $$x=2$$.\n\nIn the third test case, the expected value of $$x$$ is $$\\frac{55}{6}$$.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$), the number of test cases. For each test case, the first line contains two integers $$n$$ and $$x$$ ($$1 $\\leq n \\leq 3000$$$, $$1 $\\leq x \\leq 10^9$$$). The second line of each test case contains $$n$$ strings, each representing an operation in the format described above. The sum of $$n^2$$ over all test cases does not exceed $$3000^2$$. Note: x is used to represent multiplication, not *",
+    "output": "Output For each test case, output a single integer: the expected final value of $$x$$ modulo $$10^9+7$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2200"
+    ],
+    "rating": 2200
+}

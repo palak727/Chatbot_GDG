@@ -1,0 +1,18 @@
+{
+    "id": "2204G",
+    "contest_id": 2204,
+    "problem_letter": "G",
+    "title": "G. Grid Path",
+    "statement": "You are given a grid with $$n$$ rows (numbered from $$1$$ to $$n$$ from top to bottom) and $$m$$ columns (numbered from $$1$$ to $$m$$ from left to right). You are controlling a chip that is initially in the cell $$(1, 1)$$. In one move, the chip can move left, right, or down (if the current cell is $$(x, y)$$, it can go to $$(x, y - 1)$$, $$(x, y + 1)$$, or $$(x + 1, y)$$). The chip cannot leave the grid.\n\nYou can make any number of moves (possibly zero). Let's define the path of a chip as the set of cells it visits at least once. Note that the order of visited cells doesn't matter.\n\nYour task is to calculate the number of possible paths. Since the answer might be large, print it modulo $$mod$$.\n\nThe only line contains three integers $$n$$, $$m$$, and $$mod$$ ($$1 $\\leq n \\leq 10^8$$$; $$1 $\\leq m \\leq 150$$$; $$2 $\\leq mod \\leq 10^9$$$).\n\nPrint a single integer — the number of possible paths, taken modulo $$mod$$.",
+    "input": "Input The only line contains three integers $$n$$, $$m$$, and $$mod$$ ($$1 $\\leq n \\leq 10^8$$$; $$1 $\\leq m \\leq 150$$$; $$2 $\\leq mod \\leq 10^9$$$).",
+    "output": "Output Print a single integer — the number of possible paths, taken modulo $$mod$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "matrices",
+        "*2700"
+    ],
+    "rating": 2700
+}

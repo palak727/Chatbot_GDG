@@ -1,0 +1,18 @@
+{
+    "id": "2266H",
+    "contest_id": 2266,
+    "problem_letter": "H",
+    "title": "H. Deque Malfunction",
+    "statement": "Vihaan built a deque on his own, but it sometimes malfunctions.\n\nVihaan wants the final contents of the deque, from front to back, to be $$[1,2,\\ldots,n]$$.\n\nYou are given an array $$b$$ of length $$m$$. The elements arrive one at a time in the order $$b_1,b_2,\\ldots,b_m$$.\n\nWhenever an element $$b_i$$ arrives, Vihaan must perform exactly one of the following operations:\n\nAfter all $$m$$ elements have arrived and all operations have been performed, the deque must contain exactly $$[1,2,\\ldots,n]$$ in that order.\n\nDetermine the minimum number of times the deque must malfunction to create $$[1,2,\\ldots,n]$$, or determine that it is impossible.\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n \\leq m \\leq 2 \\cdot 10^5$$$) — the length of the desired deque and the number of arriving elements.\n\nThe second line contains $$m$$ integers $$b_1,b_2,\\ldots,b_m$$ ($$1 $\\leq b_i \\leq n$$$) — the order in which the elements arrive.\n\nIt is guaranteed that the sum of $$m$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, print one integer — the minimum number of times the deque must malfunction.\n\nIf it is impossible to obtain the desired deque, print $$-1$$.\n\nIn the first test case, Vihaan can perform the following operations:\n\nIn the second test case, the value $$3$$ never appears in $$b$$, so it is impossible to obtain the desired deque.\n\nIn the third test case, Vihaan can perform the following operations:\n\nIn the fourth test case, Vihaan can perform the following operations:",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n \\leq m \\leq 2 \\cdot 10^5$$$) — the length of the desired deque and the number of arriving elements. The second line contains $$m$$ integers $$b_1,b_2,\\ldots,b_m$$ ($$1 $\\leq b_i \\leq n$$$) — the order in which the elements arrive. It is guaranteed that the sum of $$m$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print one integer — the minimum number of times the deque must malfunction. If it is impossible to obtain the desired deque, print $$-1$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "greedy"
+    ],
+    "rating": null
+}

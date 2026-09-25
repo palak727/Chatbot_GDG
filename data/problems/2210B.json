@@ -1,0 +1,17 @@
+{
+    "id": "2210B",
+    "contest_id": 2210,
+    "problem_letter": "B",
+    "title": "B. Simply Sitting on Chairs",
+    "statement": "\n\nThere are $$n$$ chairs in a row, initially all unmarked.\n\nYou are given a permutation $$p$$$$^{∗}$$ of length $$n$$.\n\nNow, you play a game. You visit each chair sequentially, starting from the $$1$$-st chair. At the $$i$$-th chair, you can do the following:\n\nYour task is to determine the maximum number of chairs that you can sit on.\n\n$$^{∗}$$A permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$1$$ to $$n$$ in arbitrary order. For example, $$[2,3,1,5,4]$$ is a permutation, but $$[1,2,2]$$ is not a permutation ($$2$$ appears twice in the array), and $$[1,3,4]$$ is also not a permutation ($$n=3$$ but there is $$4$$ in the array).\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2\\cdot 10^5$$$) — the number of chairs.\n\nThe second line of each test case contains $$n$$ distinct integers $$p_1, p_2,\\ldots,p_{n}$$ — the permutation $$p$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.\n\nOutput a single integer — the maximum number of chairs you can sit on.\n\nIn the first test case, you can proceed as follows:\n\nIn the second test case, you can proceed as follows:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2\\cdot 10^5$$$) — the number of chairs. The second line of each test case contains $$n$$ distinct integers $$p_1, p_2,\\ldots,p_{n}$$ — the permutation $$p$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2\\cdot10^5$$.",
+    "output": "Output Output a single integer — the maximum number of chairs you can sit on.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

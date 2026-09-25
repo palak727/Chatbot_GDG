@@ -1,0 +1,20 @@
+{
+    "id": "2223C",
+    "contest_id": 2223,
+    "problem_letter": "C",
+    "title": "C. Zhily and Signpost",
+    "statement": "While returning to the base, Jily lost his way. He found that the paths ahead formed a tree. At every fork in the road, there was a signpost, but these signposts were affected by an anomalous magnetic field and kept rotating. Zhily became worried about Jily and wants to ask you several questions. Each time, given a specific moment, he asks which node Jily would eventually stop at if he started from the beginning.\n\nYou are given a tree with $$n$$ nodes, rooted at $$1$$. Node $$u$$ has $$d_u$$ children, sorted by node index in increasing order, namely $$s_{u,0},\\ldots,s_{u,d_u-1}$$. It takes some time to cross each edge; specifically, the time needed to cross the edge between node $$u$$ and its parent is $$l_u$$.\n\nEach non-leaf node in the tree has a signpost pointing to one of its children. When you are at such a node, you must immediately move to the child it points to, continuing in this way until you reach a leaf node, where you stop immediately.\n\nThe signposts change over time. At time $$m$$, the signpost of node $$u$$ points to its $$(m\\bmod d_u+1)$$-th child, that is, node $$s_{u,m \\bmod d_u}$$.\n\nThere are now $$q$$ queries. In each query, you are given $$m$$, and you need to determine the index of the leaf node you will eventually reach if you start from the root at time $$m$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two positive integers $$n,q$$ ($$1 $\\leq n \\leq 5 \\cdot 10^5,1 \\leq q \\leq 10^6$$$).\n\nThe second line contains $$n-1$$ positive integers $$f_2,\\ldots,f_n$$ ($$1 $\\leq f_u \\lt u$$$), where $$f_u$$ denotes the index of the parent of node $$u$$.\n\nThe third line contains $$n-1$$ non-negative integers $$l_2,\\ldots,l_n$$ ($$0 $\\leq l_u \\leq 10^9$$$), where $$l_u$$ denotes the time needed to cross the edge between node $$u$$ and its parent.\n\nThe fourth line contains $$q$$ non-negative integers $$m_1,\\ldots,m_{q}$$ ($$0 $\\leq m_i \\leq 10^{18}$$$), representing the $$q$$ queries.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5 $\\cdot 10^5$$$.\n\nIt is guaranteed that the sum of $$q$$ over all test cases does not exceed $$10^6$$.\n\nFor each test case, output one line containing $$q$$ positive integers, representing the answer to each query.\n\nThe tree in the first test case is shown below.\n\nThe tree in the second test case is shown below.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two positive integers $$n,q$$ ($$1 $\\leq n \\leq 5 \\cdot 10^5,1 \\leq q \\leq 10^6$$$). The second line contains $$n-1$$ positive integers $$f_2,\\ldots,f_n$$ ($$1 $\\leq f_u \\lt u$$$), where $$f_u$$ denotes the index of the parent of node $$u$$. The third line contains $$n-1$$ non-negative integers $$l_2,\\ldots,l_n$$ ($$0 $\\leq l_u \\leq 10^9$$$), where $$l_u$$ denotes the time needed to cross the edge between node $$u$$ and its parent. The fourth line contains $$q$$ non-negative integers $$m_1,\\ldots,m_{q}$$ ($$0 $\\leq m_i \\leq 10^{18}$$$), representing the $$q$$ queries. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5 $\\cdot 10^5$$$. It is guaranteed that the sum of $$q$$ over all test cases does not exceed $$10^6$$.",
+    "output": "Output For each test case, output one line containing $$q$$ positive integers, representing the answer to each query.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "chinese remainder theorem",
+        "dfs and similar",
+        "math",
+        "number theory",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

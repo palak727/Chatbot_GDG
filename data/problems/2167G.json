@@ -1,0 +1,17 @@
+{
+    "id": "2167G",
+    "contest_id": 2167,
+    "problem_letter": "G",
+    "title": "G. Mukhammadali and the Smooth Array",
+    "statement": "Muhammadali has an integer array $$a_1,\\dots,a_n$$. He can change (replace) any subset of positions; changing position $$i$$ costs $$c_i$$ and replaces $$a_i$$ with any integer of his choice. The positions that he does not change must retain their original values.\n\nAfter all changes, we call an index $$i$$ ($$1 $\\leq i  \\lt  n$$$) a drop if the final value at position $$i$$ is strictly greater than the final value at position $$i+1$$. Muhammadali wants the final array to contain no drops .\n\nFind the minimum cost of changes required to ensure that there are no drops in the array.\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 5000$$$) — the number of test cases.\n\nEach test case consists of three lines:\n\nThe first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 8000$$$) — the length of the arrays.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the elements of the array.\n\nThe third line contains $$n$$ integers $$c_1, c_2, \\dots, c_n$$ ($$1 $\\leq c_i \\leq 10^9$$$) — the costs of changes.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$8000$$.\n\nFor each test case, output a single integer — the minimum possible total cost required to eliminate all drops .\n\nIn the first and second examples, the array already has no drops , so no changes are needed.\n\nIn the third example, one of the optimal arrays is: $$[2,3,5,6]$$; to achieve this, all elements except the second need to be replaced, so the answer is $$c_1 + c_3 + c_4 = 3$$.",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 5000$$$) — the number of test cases. Each test case consists of three lines: The first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 8000$$$) — the length of the arrays. The second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the elements of the array. The third line contains $$n$$ integers $$c_1, c_2, \\dots, c_n$$ ($$1 $\\leq c_i \\leq 10^9$$$) — the costs of changes. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$8000$$.",
+    "output": "Output For each test case, output a single integer — the minimum possible total cost required to eliminate all drops .",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "*1600"
+    ],
+    "rating": 1600
+}

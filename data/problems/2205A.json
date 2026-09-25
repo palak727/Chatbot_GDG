@@ -1,0 +1,17 @@
+{
+    "id": "2205A",
+    "contest_id": 2205,
+    "problem_letter": "A",
+    "title": "A. Simons and Making It Beautiful",
+    "statement": "\n\nFor a permutation$$^{∗}$$ $$r$$ of length $$m$$, we call an index $$i$$ ($$1$\\leq i\\leq m$$$) ugly if and only if $$i=$\\max(\\{r_1,r_2,\\ldots,r_i\\})$$$.\n\nSimons has a permutation $$p$$ of length $$n$$, and he can perform the following operation on $$p$$ at most once :\n\nFind a permutation $$q$$ that can be obtained from $$p$$ by performing the above operation at most once, such that the number of ugly indices in $$q$$ is minimized.\n\n$$^{∗}$$A permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$1$$ to $$n$$ in arbitrary order. For example, $$[2,3,1,5,4]$$ is a permutation, but $$[1,2,2]$$ is not a permutation ($$2$$ appears twice in the array), and $$[1,3,4]$$ is also not a permutation ($$n=3$$ but there is $$4$$ in the array).\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe first line contains an integer $$n$$ ($$1$\\leq n\\leq 500$$$) — the length of $$p$$.\n\nThe second line contains $$n$$ integers $$p_1,p_2,\\ldots,p_n$$ ($$1$\\leq p_i\\leq n$$$, all $$p_i$$-s are distinct) — the elements of $$p$$.\n\nFor each test case, print $$n$$ integers $$q_1,q_2,\\ldots,q_n$$ — the permutation you found.\n\nIf there are multiple possible permutations, you may output any.\n\nIn the first test case, Simons can obtain only two possible permutations: $$[1,2]$$ and $$[2,1]$$.\n\nThus, permutation $$[2,1]$$ has the minimum count of ugly indices.\n\nIn the second test case, Simons can obtain permutation $$[2,4,1,3]$$ by choosing indices $$2$$ and $$4$$ to swap. There is only one ugly index in the permutation:\n\nIn the third test case, note that Simons does not perform the operation.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The first line contains an integer $$n$$ ($$1$\\leq n\\leq 500$$$) — the length of $$p$$. The second line contains $$n$$ integers $$p_1,p_2,\\ldots,p_n$$ ($$1$\\leq p_i\\leq n$$$, all $$p_i$$-s are distinct) — the elements of $$p$$.",
+    "output": "Output For each test case, print $$n$$ integers $$q_1,q_2,\\ldots,q_n$$ — the permutation you found. If there are multiple possible permutations, you may output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "*800"
+    ],
+    "rating": 800
+}

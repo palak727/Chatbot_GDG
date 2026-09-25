@@ -1,0 +1,19 @@
+{
+    "id": "2178H",
+    "contest_id": 2178,
+    "problem_letter": "H",
+    "title": "H. Create or Duplicate",
+    "statement": "\n\nSanta realized that hand-drawing circles takes too long, so he has turned to magic to meet his production quotas.\n\nThere are three types of presents with distinct values $$a$$, $$b$$, and $$c$$. Initially, Santa has exactly one present of each type.\n\nYou are given two integers $$m$$ and $$k$$, representing Santa's favorite number and the cost of duplication, respectively. Santa can cast the following two types of spells any number of times (possibly zero):\n\nSanta wants to perform a sequence of spells such that the sum of the values of all presents is a multiple of $$m$$ after the spells.\n\nDetermine the minimum amount of mana Santa needs to achieve this. It can be shown that, under the given constraints, such a sequence of spells always exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe only line of each test case contains five integers $$a$$, $$b$$, $$c$$, $$m$$, and $$k$$ ($$1$\\leq a \\lt  b \\lt  c \\lt  m\\leq 5\\cdot 10^5$$$, $$1$\\leq k\\leq 5\\cdot 10^5$$$).\n\nIt is guaranteed that the sum of $$m$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.\n\nIt is guaranteed that the sum of $$k$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.\n\nFor each test case, output a single integer — the minimum amount of mana Santa needs to make the sum of the values of all presents a multiple of $$m$$.\n\nLet $$\\ell$$ be the list of values of presents and $$\\operatorname{sum}(\\ell)$$ be the sum of all elements in $$\\ell$$.\n\nIn the first test case, below is an optimal sequence of operations:\n\nIn the second test case, it is optimal to not perform any operations because $$3+4+5=12$$ is already a multiple of $$12$$.\n\nIn the third test case, below is an optimal sequence of operations:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The only line of each test case contains five integers $$a$$, $$b$$, $$c$$, $$m$$, and $$k$$ ($$1$\\leq a \\lt  b \\lt  c \\lt  m\\leq 5\\cdot 10^5$$$, $$1$\\leq k\\leq 5\\cdot 10^5$$$). It is guaranteed that the sum of $$m$$ over all test cases does not exceed $$5$\\cdot 10^5$$$. It is guaranteed that the sum of $$k$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.",
+    "output": "Output For each test case, output a single integer — the minimum amount of mana Santa needs to make the sum of the values of all presents a multiple of $$m$$.",
+    "time_limit": "6 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "bitmasks",
+        "graphs",
+        "number theory",
+        "shortest paths",
+        "*3300"
+    ],
+    "rating": 3300
+}

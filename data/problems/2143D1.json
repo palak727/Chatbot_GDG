@@ -1,0 +1,20 @@
+{
+    "id": "2143D1",
+    "contest_id": 2143,
+    "problem_letter": "D1",
+    "title": "D1. Inversion Graph Coloring (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, $$n $\\leq 300$$$. You can hack only if you solved all versions of this problem.\n\nA sequence $$b_1, b_2, \\ldots, b_k$$ is called good if there exists a coloring of each index $$i$$ in red or blue such that for every pair of indices $$i  \\lt  j$$ with $$b_i  \\gt  b_j$$, the colors assigned to $$i$$ and $$j$$ are different.\n\nYou are given a sequence $$a_1, a_2, \\ldots, a_n$$. Compute the number of good subsequences of the sequence, including the empty subsequence$$^{∗}$$. Since the answer can be very large, output it modulo $$10^9 + 7$$.\n\n$$^{∗}$$A sequence $$b$$ is a subsequence of a sequence $$a$$ if $$b$$ can be obtained from $$a$$ by the deletion of several (possibly, zero or all) element from arbitrary positions.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe first line contains an integer $$n$$ ($$1 $\\leq n \\leq 300$$$) — the length of the sequence\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the contents of the sequence.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$300$$.\n\nFor each test case, output a single line containing the number of good subsequences modulo $$10^9 + 7$$.\n\nIn the first test case, the subsequences that are not good are $$[4, 3, 1]$$, $$[4, 2, 1]$$, and $$[4, 2, 3, 1]$$. Since there are $$16$$ subsequences in total, this means there are $$16 - 3 = 13$$ good subsequences.\n\nIn the third test case, every subsequence is good.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The first line contains an integer $$n$$ ($$1 $\\leq n \\leq 300$$$) — the length of the sequence The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq n$$$) — the contents of the sequence. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$300$$.",
+    "output": "Output For each test case, output a single line containing the number of good subsequences modulo $$10^9 + 7$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "greedy",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

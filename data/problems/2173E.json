@@ -1,0 +1,20 @@
+{
+    "id": "2173E",
+    "contest_id": 2173,
+    "problem_letter": "E",
+    "title": "E. Shiro's Mirror Duel",
+    "statement": "\n\nThis is an interactive problem.\n\nOne day, Sora and Shiro feel bored again, so they decide to settle it with a game.\n\nAt the beginning, Sora gives Shiro a permutation$$^{∗}$$ $$p_1,p_2,\\ldots,p_n$$ of length $$n$$. In each operation, Shiro may select two distinct indices $$x$$ and $$y$$ ($$1$\\leq x\\ne y\\leq n$$$). Then Sora flips a fair coin:\n\nAfter the operation, Sora replies with the actual pair of indices that were swapped, so that Shiro can update her local permutation accordingly.\n\nShiro's goal is to sort the permutation $$p$$ in ascending order by using at most $$\\lfloor 2.5n+800\\rfloor$$ operations. Help her!\n\n$$^{∗}$$A permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$1$$ to $$n$$ in arbitrary order. For example, $$[2,3,1,5,4]$$ is a permutation, but $$[1,2,2]$$ is not a permutation ($$2$$ appears twice in the array), and $$[1,3,4]$$ is also not a permutation ($$n=3$$ but there is $$4$$ in the array).\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1$\\leq n\\leq 4000$$$) — the length of $$p$$.\n\nThe second line contains $$n$$ integers $$p_1,p_2,\\ldots,p_n$$ — the elements of $$p$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^4$$$.\n\nIt is guaranteed that there are $$50$$ tests in this problem.\n\nFor each test case, you can use at most $$\\lfloor 2.5n+800\\rfloor$$ moves to sort the permutation $$p$$ in ascending order.\n\nTo make a move, you should print a new line in the following format:\n\nAs a response to the move, you will receive two integers $$u$$ and $$v$$ — the actual pair of indices that Sora swapped. It is guaranteed that $$(u, v)$$ is randomly selected from $$(x, y)$$ and $$(n-x+1, n-y+1)$$ with equal probability.\n\nTo report that the permutation has been sorted in ascending order, you should print a new line with a single character $$\\mathtt{!}$$. This does not count as one of the $$\\lfloor 2.5n+800\\rfloor$$ moves.\n\nAfter that, proceed to the next test case or terminate the program if it was the last test case.\n\nAfter printing each query do not forget to output the end of line and flush$$^{∗}$$ the output. Otherwise, you will get Idleness limit exceeded verdict.\n\nIf, at any interaction step, you read $$-1$$ instead of valid data, your solution must exit immediately. This means that your solution will receive Wrong answer because of an invalid query or any other mistake. Failing to exit can result in an arbitrary verdict because your solution will continue to read from a closed stream.\n\nHacks are disabled in this problem.\n\n$$^{∗}$$To flush, use:\n\nIn the first test case, $$n=5$$ and the initial permutation is $$[5,1,3,4,2]$$.\n\nIn the second test case, the given permutation is already increasing, so we just need to output ! .",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1$\\leq n\\leq 4000$$$) — the length of $$p$$. The second line contains $$n$$ integers $$p_1,p_2,\\ldots,p_n$$ — the elements of $$p$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2$\\cdot 10^4$$$. It is guaranteed that there are $$50$$ tests in this problem.",
+    "output": "",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "interactive",
+        "probabilities",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

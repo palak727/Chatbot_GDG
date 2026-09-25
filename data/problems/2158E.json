@@ -1,0 +1,20 @@
+{
+    "id": "2158E",
+    "contest_id": 2158,
+    "problem_letter": "E",
+    "title": "E. Sink",
+    "statement": "You are given a grid containing $$n$$ rows and $$m$$ columns. Every cell $$(i, j)$$, located in the $$i$$-th row and $$j$$-th column, has a positive integer value associated with it $$a_{i, j}$$. Two cells are adjacent if and only if they share a common side in the grid.\n\nYou are allowed to construct holes at cells of your choice. A cell $$(x, y)$$ is a sink if and only if it has a hole, or is adjacent to a sink $$(i, j)$$ with $$a_{x, y} $\\geq a_{i, j}$$$.\n\nThe beauty of a grid is defined as the minimum number of holes you need to construct so that every cell becomes a sink.\n\nYou have to determine the beauty of this grid.\n\nYou are also given $$q$$ queries.\n\nIn a query, you are given three positive integers $$r$$, $$c$$, and $$x$$. The current value of cell $$(r, c)$$ is decreased by $$x$$. After each query, determine the beauty of the grid considering no holes have been constructed yet.\n\nNote that queries are cumulative, so the effects of each query carry on to future queries.\n\nIt is guaranteed that after every query the value of each cell will remain positive.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 2 \\cdot 10^5$$$, $$1 $\\leq n \\cdot m \\leq 2 \\cdot 10^5$$$) — the number of rows and columns, respectively.\n\nThe following $$n$$ lines contain $$m$$ integers each; the $$j$$-th element in the $$i$$-th line $$a_{i, j}$$ is the number written in the $$j$$-th cell of the $$i$$-th row ($$1 $\\leq a_{i,j} \\leq 10^9$$$).\n\nThe next line contains a single integer $$q$$ ($$0 $\\leq q \\leq 2\\cdot 10^5$$$) — the number of queries.\n\nThe following $$q$$ lines contain $$3$$ integers each — $$r, c,$$ and $$x$$ ($$1$\\leq r \\leq n, 1\\leq c \\leq m, 1\\leq x  \\lt  10^9$$$).\n\nIt is guaranteed that the sum of $$n $\\cdot m$$$ and the sum of $$q$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nIt is guaranteed that after every query the value of each cell will remain positive.\n\nFor each test case, print $$q+1$$ lines.\n\nOn the first line print the beauty of the initial grid.\n\nAlso, after each query, print the beauty of the current grid.\n\nFor the first test case:\n\nFor the second test case:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 2 \\cdot 10^5$$$, $$1 $\\leq n \\cdot m \\leq 2 \\cdot 10^5$$$) — the number of rows and columns, respectively. The following $$n$$ lines contain $$m$$ integers each; the $$j$$-th element in the $$i$$-th line $$a_{i, j}$$ is the number written in the $$j$$-th cell of the $$i$$-th row ($$1 $\\leq a_{i,j} \\leq 10^9$$$). The next line contains a single integer $$q$$ ($$0 $\\leq q \\leq 2\\cdot 10^5$$$) — the number of queries. The following $$q$$ lines contain $$3$$ integers each — $$r, c,$$ and $$x$$ ($$1$\\leq r \\leq n, 1\\leq c \\leq m, 1\\leq x  \\lt  10^9$$$). It is guaranteed that the sum of $$n $\\cdot m$$$ and the sum of $$q$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$. It is guaranteed that after every query the value of each cell will remain positive.",
+    "output": "Output For each test case, print $$q+1$$ lines. On the first line print the beauty of the initial grid. Also, after each query, print the beauty of the current grid.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "graphs",
+        "implementation",
+        "*2600"
+    ],
+    "rating": 2600
+}

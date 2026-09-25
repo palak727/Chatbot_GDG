@@ -1,0 +1,16 @@
+{
+    "id": "2215G",
+    "contest_id": 2215,
+    "problem_letter": "G",
+    "title": "G. Maze",
+    "statement": "There is an $$(n+2) $\\times (n+2)$$$ grid, where both coordinates range from $$0$$ to $$n+1$$ inclusive. The outermost cells of the grid are all obstacle cells.\n\nIn addition, there are $$m$$ more obstacle cells in the grid. The $$i$$-th obstacle cell is located at $$(x_i, y_i)$$. It is guaranteed that all obstacles (including the outer boundary cells) are 4-connected. That is, you can move between any two obstacle cells by moving up, down, left, or right through other obstacle cells.\n\nLittle L is walking in this maze. He cannot step into any obstacle cell at any time. If Little L is at position $$(x, y)$$, he can make the following moves:\n\nThere are $$q$$ queries. For each query, you are given a starting point and an ending point. You need to find the minimum total cost for Little L to travel from the starting point to the ending point. If it is impossible to reach the ending point, output $$-1$$.\n\nThe first line of the input contains three integers $$n$$, $$m$$, and $$q$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq m, q \\leq 3 \\cdot 10^5$$$).\n\nThe next $$m$$ lines each contain two integers $$x_i$$ and $$y_i$$ — the coordinates of the $$i$$-th obstacle cell. It is guaranteed that all obstacle coordinates are distinct, and that all obstacles (including the outer boundary cells) are 4-connected.\n\nThe next $$q$$ lines each contain four integers $$s_x$$, $$s_y$$, $$t_x$$, and $$t_y$$ — a query with starting point $$(s_x, s_y)$$ and ending point $$(t_x, t_y)$$. It is guaranteed that neither $$(s_x,s_y)$$ nor $$(t_x,t_y)$$ is an obstacle.\n\nFor each query, output a single integer — the minimum cost to travel from the starting point to the ending point. Or print $$-1$$ if it is impossible to do so.\n\nFor the second query, you can move as follows: $$(1, 1) \\to (1, 2) \\to (2, 3) \\to (3, 4) \\to (4, 3) \\to (4, 2) \\to (3, 1)$$. The total cost is $$2 + 3 + 3 + 3 + 2 + 3 = 16$$.",
+    "input": "Input The first line of the input contains three integers $$n$$, $$m$$, and $$q$$ ($$1 $\\leq n \\leq 10^5$$$, $$1 $\\leq m, q \\leq 3 \\cdot 10^5$$$). The next $$m$$ lines each contain two integers $$x_i$$ and $$y_i$$ — the coordinates of the $$i$$-th obstacle cell. It is guaranteed that all obstacle coordinates are distinct, and that all obstacles (including the outer boundary cells) are 4-connected. The next $$q$$ lines each contain four integers $$s_x$$, $$s_y$$, $$t_x$$, and $$t_y$$ — a query with starting point $$(s_x, s_y)$$ and ending point $$(t_x, t_y)$$. It is guaranteed that neither $$(s_x,s_y)$$ nor $$(t_x,t_y)$$ is an obstacle.",
+    "output": "Output For each query, output a single integer — the minimum cost to travel from the starting point to the ending point. Or print $$-1$$ if it is impossible to do so.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

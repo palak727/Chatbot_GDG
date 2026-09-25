@@ -1,0 +1,17 @@
+{
+    "id": "2236A",
+    "contest_id": 2236,
+    "problem_letter": "A",
+    "title": "A. Games on the Train",
+    "statement": "Dabir, Egor, and Arseniy just got on the train and decided to play a game. Dabir has a backpack with an infinite number of cubes. He built $$n$$ towers from them, where the $$i$$-th tower has height $$h_i$$ cubes.\n\nEgor and Arseniy must choose an integer $$x_i$$ for each tower $$i$$ and increase its height by $$x_i$$ exactly once . For example, if $$h$$ = [$$1, 3, 2, 2$$], $$x$$ = [$$3, 2, 2, 8$$], then after increasing $$h$$ it will become [$$4, 5, 4, 10$$]. Their goal is to make the heights of all towers equal.\n\nTo make the game more interesting, Dabir wants to choose an integer $$k$$ and add a restriction: each $$x_i$$ must satisfy $$1 $\\leq x_i \\leq k$$$. Help him find the smallest $$k$$ for which it is possible to finish the game.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThen $$t$$ test cases follow.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 5$$$).\n\nThe second line contains $$n$$ integers $$h_1, h_2, \\dots, h_n$$ ($$1 $\\leq h_i \\leq 6$$$).\n\nFor each test case, output a single integer — the minimum value of $$k$$ such that it is possible to make all towers have equal height.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. Then $$t$$ test cases follow. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 5$$$). The second line contains $$n$$ integers $$h_1, h_2, \\dots, h_n$$ ($$1 $\\leq h_i \\leq 6$$$).",
+    "output": "Output For each test case, output a single integer — the minimum value of $$k$$ such that it is possible to make all towers have equal height.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

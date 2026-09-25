@@ -1,0 +1,20 @@
+{
+    "id": "2195F",
+    "contest_id": 2195,
+    "problem_letter": "F",
+    "title": "F. Parabola Independence",
+    "statement": "You are given a set of $$n$$ quadratic functions $$F=\\{f_1,f_2,\\ldots,f_n \\}$$, where $$f_i(x)=a_i x^2 + b_i x + c_i$$.\n\nTwo functions $$f$$ and $$g$$ are called independent if $$f(x) $\\neq g(x)$$$ for all $$x \\in \\mathbb{R}$$.\n\nAlso, a set of functions $$G=\\{g_1,g_2,\\ldots,g_k\\}$$ is called organized if the two functions $$g_i$$ and $$g_j$$ are independent for all $$1 $\\leq i  \\lt  j \\leq |G|$$$.\n\nFor each $$i=1,2,\\ldots,n$$, please find the size of the largest organized subset of $$F$$ that contains $$f_i$$ as an element.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 3000$$$).\n\nEach of the $$n$$ following lines contains three integers $$a_i$$, $$b_i$$, $$c_i$$ denoting the function $$f_i$$ ($$-10^6 $\\leq a_i, b_i, c_i \\leq 10^6$$$, $$a_i $\\neq 0$$$).\n\nIt is guaranteed that the functions in one test case are pairwise distinct.\n\nIt is guaranteed that the sum of $$n^2$$ over all test cases does not exceed $$3000^2$$.\n\nFor each test case, output $$n$$ integers $$s_1,s_2,\\ldots,s_n$$, where $$s_i$$ is the size of the largest organized subset that contains $$f_i$$.\n\nIn the first test case, the functions are as follows:\n\nThe functions' graphs are as shown below:\n\nThe largest organized subsets of $$F$$ containing each function are as follows:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 3000$$$). Each of the $$n$$ following lines contains three integers $$a_i$$, $$b_i$$, $$c_i$$ denoting the function $$f_i$$ ($$-10^6 $\\leq a_i, b_i, c_i \\leq 10^6$$$, $$a_i $\\neq 0$$$). It is guaranteed that the functions in one test case are pairwise distinct. It is guaranteed that the sum of $$n^2$$ over all test cases does not exceed $$3000^2$$.",
+    "output": "Output For each test case, output $$n$$ integers $$s_1,s_2,\\ldots,s_n$$, where $$s_i$$ is the size of the largest organized subset that contains $$f_i$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

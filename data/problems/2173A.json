@@ -1,0 +1,17 @@
+{
+    "id": "2173A",
+    "contest_id": 2173,
+    "problem_letter": "A",
+    "title": "A. Sleeping Through Classes",
+    "statement": "You have $$n$$ classes today, which are numbered from $$1$$ to $$n$$.\n\nThe classes are described by a binary string$$^{∗}$$ $$s$$ of length $$n$$. We call class $$i$$ important if and only if $$s_i = \\mathtt 1 $$. For each important class, you must stay awake and listen to it.\n\nYou are very tired and wish to sleep through as many classes as possible. However, falling asleep takes time. If you listen to an important class $$i$$, then you cannot fall asleep for the next $$k$$ classes, i.e., you must also stay awake in classes $$i+1, i+2, \\ldots, i+k$$ (or until the end of the day, if fewer than $$k$$ classes remain).\n\nFor classes that are not important , you may sleep through them unless the rule above forces you to stay awake.\n\nYour task is to find out the maximum number of classes you can sleep through today.\n\n$$^{∗}$$A binary string is a string where each character is either $$\\mathtt{0}$$ or $$\\mathtt{1}$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n, k \\leq 100$$$).\n\nThe second line of each test case contains the string $$s$$ of length $$n$$ ($$s_i = \\mathtt 0$$ or $$\\mathtt 1$$).\n\nFor each test case, output a single integer — the maximum number of classes you can sleep through today.\n\nIn the first test case, you must listen to class $$1$$ and class $$4$$. After listening to class $$1$$, you cannot fall asleep in class $$2$$. So the only class you can sleep through is class $$3$$.\n\nIn the second test case, you can sleep through all the classes.\n\nIn the fourth test case, you can only sleep through classes $$1$$ and $$5$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n, k \\leq 100$$$). The second line of each test case contains the string $$s$$ of length $$n$$ ($$s_i = \\mathtt 0$$ or $$\\mathtt 1$$).",
+    "output": "Output For each test case, output a single integer — the maximum number of classes you can sleep through today.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

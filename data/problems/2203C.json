@@ -1,0 +1,19 @@
+{
+    "id": "2203C",
+    "contest_id": 2203,
+    "problem_letter": "C",
+    "title": "C. Test Generator",
+    "statement": "You are developing a test generator. It takes two integers $$s$$ and $$m$$ as input. You need to construct an array of non-negative integers $$a = [a_{1}, a_{2}, \\dots, a_{n}]$$ such that:\n\nIn other words, in each number $$a_i$$, the bits that are set to one can only be in the positions where the bits in the number $$m$$ are also set to one.\n\nDetermine whether there exists at least one such array. If it exists, find the minimum possible length $$n$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nEach test case consists of a single line containing two integers $$s$$ and $$m$$ ($$1 $\\leq s, m \\leq 10^{18}$$$) — parameters of the generator.\n\nFor each test case, print one integer:\n\nLet's analyze some examples:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. Each test case consists of a single line containing two integers $$s$$ and $$m$$ ($$1 $\\leq s, m \\leq 10^{18}$$$) — parameters of the generator.",
+    "output": "Output For each test case, print one integer: if such an array does not exist, print $$-1$$; otherwise, print the minimum possible value of $$n$$ — the length of the array.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

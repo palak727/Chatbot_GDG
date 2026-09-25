@@ -1,0 +1,15 @@
+{
+    "id": "2266A",
+    "contest_id": 2266,
+    "problem_letter": "A",
+    "title": "A. Good Contest",
+    "statement": "The next programming contest has three problems and $$n$$ participants.\n\nProblem $$1$$ is easy, problem $$2$$ is medium, and problem $$3$$ is hard.\n\nA participant is called weak if they did not solve all three problems.\n\nUnfortunately, the scoreboard was lost. The only remaining information is an array $$a$$ of length $$3$$, where $$a_i$$ is the number of participants who solved problem $$i$$.\n\nAmong all scoreboards consistent with this information, find the minimum possible number of weak participants.\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 3000$$$) — the number of test cases.\n\nThe first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 9$$$) — the number of participants.\n\nThe second line of each test case contains three integers $$a_1, a_2, a_3$$ ($$0 $\\leq a_i \\leq n$$$), where $$a_i$$ is the number of participants who solved problem $$i$$.\n\nFor each test case, print a single integer — the minimum possible number of weak participants.\n\nIn the first test case, all $$3$$ participants can have solved all three problems, so the answer is $$0$$.\n\nIn the second test case, participant $$1$$ could have solved only problems $$1$$ and $$2$$, while participants $$2$$, $$3$$, and $$4$$ solved all three problems. Therefore, participant $$1$$ is the only participant who is weak, so the answer is $$1$$. It can be shown that this is minimal.",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 3000$$$) — the number of test cases. The first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 9$$$) — the number of participants. The second line of each test case contains three integers $$a_1, a_2, a_3$$ ($$0 $\\leq a_i \\leq n$$$), where $$a_i$$ is the number of participants who solved problem $$i$$.",
+    "output": "Output For each test case, print a single integer — the minimum possible number of weak participants.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy"
+    ],
+    "rating": null
+}

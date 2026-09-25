@@ -1,0 +1,17 @@
+{
+    "id": "1028G",
+    "contest_id": 1028,
+    "problem_letter": "G",
+    "title": "G. Guess the number",
+    "statement": "This problem is interactive.\n\nYou should guess hidden number $$x$$ which is between $$1$$ and $$M = 10004205361450474$$, inclusive.\n\nYou could use up to $$5$$ queries.\n\nIn each query, you can output an increasing sequence of $$k $\\leq x$$$ integers, each between $$1$$ and $$M$$, inclusive, and you will obtain one of the following as an answer:\n\nSee the interaction section for clarity.\n\nBe aware that the interactor is adaptive , i.e. the hidden number can depend on queries the solution makes. However, it is guaranteed that for any solution the interactor works non-distinguishable from the situation when the hidden number is fixed beforehand.\n\nHacks are allowed only with fixed hidden number. A hack is represented by a single integer between $$1$$ and $$M$$. In all pretests the hidden number is fixed as well.\n\nYou can make up to $$5$$ queries. To make a query print a number $$k$$ ($$1 $\\leq k \\leq 10^4$$$) and then an increasing sequence $$t_0  \\lt  t_1  \\lt  \\ldots  \\lt  t_{k-1}$$ of $$k$$ numbers, each between $$1$$ and $$M$$, inclusive. If $$k  \\gt  x$$, you lose.\n\nYou get one integer as a response.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise you will get Idleness limit exceeded . To do this, use:\n\nIn the first example the number $$5$$ is hidden.",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "interactive",
+        "*3000"
+    ],
+    "rating": 3000
+}

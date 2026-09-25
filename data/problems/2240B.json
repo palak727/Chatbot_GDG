@@ -1,0 +1,17 @@
+{
+    "id": "2240B",
+    "contest_id": 2240,
+    "problem_letter": "B",
+    "title": "B. AI Finds Nothing Here",
+    "statement": "Milkcat2009 has a matrix $$a$$ with $$n$$ rows and $$m$$ columns consisting of integers $$0$$ and $$1$$. The rows are numbered from $$1$$ to $$n$$, and the columns are numbered from $$1$$ to $$m$$. The element in the $$i$$-th row and $$j$$-th column is denoted as $$a_{i,j}$$.\n\nMilkcat2009's AI scans every single submatrix$$^{∗}$$ of $$a$$ consisting of $$r$$ rows and $$c$$ columns. The AI considers the matrix clean if the bitwise XOR sum of elements in each such submatrix is equal to $$0$$.\n\nFormally, the matrix $$a$$ is valid if and only if for all $$1 $\\leq i \\leq n - r + 1$$$ and $$1 $\\leq j \\leq m - c + 1$$$: $$$ \\bigoplus_{x=i}^{i+r-1} \\bigoplus_{y=j}^{j+c-1} a_{x,y} = 0 $$$\n\nwhere $$\\oplus$$ denotes summation with the bitwise XOR operation .\n\nYour task is, given various sets of integers $$n, m, r, c$$, to count the number of clean matrices of $$n$$ rows and $$m$$ columns with respect to scanning dimensions $$r$$ and $$c$$. Since the answer can be very large, calculate it modulo $$998\\,244\\,353$$.\n\n$$^{∗}$$A submatrix of a matrix is obtained by removing some rows (from the beginning and/or end) and/or columns (from the beginning and/or end) from the original matrix.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nEach test case consists of a single line containing four integers $$n, m, r, c$$ ($$1 $\\leq r \\leq n \\leq 10^9$$$, $$1 $\\leq c \\leq m \\leq 10^9$$$), representing the dimensions of the matrix and the dimensions of the scanning area, respectively.\n\nFor each test case, output a single integer representing the answer modulo $$998\\,244\\,353$$.\n\nFor the first test case. The only element $$a_{1,1}$$ must satisfy $$a_{1,1} = 0$$. Since $$a_{1,1}$$ must be $$0$$, there is only $$1$$ valid matrix: $$[0]$$.\n\nFor the second test case.The condition requires the XOR sum of every $$1 $\\times 2$$$ submatrix to be $$0$$. This implies $$a_{i,j} \\oplus a_{i,j+1} = 0$$, so $$a_{i,j} = a_{i,j+1}$$ for all valid $$i,j$$. For each row, all elements must be equal. Thus, each row can be either $$[0, 0, 0]$$ or $$[1, 1, 1]$$. With $$2$$ rows, there are $$2^2 =4$$ valid matrices.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. Each test case consists of a single line containing four integers $$n, m, r, c$$ ($$1 $\\leq r \\leq n \\leq 10^9$$$, $$1 $\\leq c \\leq m \\leq 10^9$$$), representing the dimensions of the matrix and the dimensions of the scanning area, respectively.",
+    "output": "Output For each test case, output a single integer representing the answer modulo $$998\\,244\\,353$$.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

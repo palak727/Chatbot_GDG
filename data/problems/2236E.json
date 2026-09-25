@@ -1,0 +1,17 @@
+{
+    "id": "2236E",
+    "contest_id": 2236,
+    "problem_letter": "E",
+    "title": "E. Friendly Gifts",
+    "statement": "Arseniy decided to make his friends Dabir and Egor happy. For this, he decided to give each of them an array of numbers of the same length . An array $$b$$ is called good if its elements can be rearranged so that for all $$i  \\gt  1$$ the condition $$b_i - b_{i - 1} = 1$$ holds.\n\nArseniy wants Dabir and Egor to be able to play with these arrays. For this, the following conditions must be satisfied:\n\nArseniy already has an array $$a$$ of length $$n$$. He plans to cut both arrays from $$a$$, that is, to choose two non-overlapping subsegments of the same length . Help Arseniy determine the maximum possible length of the resulting arrays.\n\nThe first line contains a single integer $$t$$ $$(1 $\\leq t \\leq 1000)$$$ — the number of test cases.\n\nThen $$t$$ test cases follow.\n\nThe first line of each test case contains a single integer $$n$$ $$(1 $\\leq n \\leq 6000)$$$.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ $$(1 $\\leq a_i \\leq n)$$$.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$6000$$.\n\nFor each test case, output a single integer — the maximum possible length of the arrays.\n\nIn the first sample, it is impossible to select $$2$$ arrays, so the answer is $$0$$.\n\nIn the second sample, the maximum length of the selected arrays is $$1$$. Arrays [$$1$$] and [$$2$$] can be selected.\n\nIn the fourth sample, the maximum length of the selected arrays is $$2$$. You can select arrays [$$2, 1$$] and [$$4, 3$$].\n\nIn the fifth sample, the maximum length of the selected arrays is $$1$$. One way to select arrays is [$$1$$] and [$$2$$]. Other methods are arrays [$$2$$] and [$$3$$], [$$3$$] and [$$4$$], or [$$4$$] and [$$5$$].",
+    "input": "Input The first line contains a single integer $$t$$ $$(1 $\\leq t \\leq 1000)$$$ — the number of test cases. Then $$t$$ test cases follow. The first line of each test case contains a single integer $$n$$ $$(1 $\\leq n \\leq 6000)$$$. The second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ $$(1 $\\leq a_i \\leq n)$$$. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$6000$$.",
+    "output": "Output For each test case, output a single integer — the maximum possible length of the arrays.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "*1700"
+    ],
+    "rating": 1700
+}

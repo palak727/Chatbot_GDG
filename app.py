@@ -4,13 +4,11 @@ from __future__ import annotations
 
 import os
 
-os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
-
 import streamlit as st
 
 from config import FAISS_INDEX_PATH, METADATA_PATH
-from src.gemini_client import generate_hint, get_api_key, review_code
-from src.search import SearchEngine
+from src.groq_client import generate_hint, get_api_key, review_code
+from src.search import SearchEngine, is_problem_id_query
 from src.utils import extract_rating, render_problem_markdown, tag_pills_html
 
 # Page configuration
@@ -163,9 +161,9 @@ def render_problem(problem: dict, engine: SearchEngine) -> None:
     except Exception as exc:
         st.warning(f"Could not load related problems: {exc}")
 
-    # Socratic Hint Engine
+    #  Hint Engine
     st.divider()
-    st.subheader("Socratic Learning Assistant")
+    st.subheader("CP Learning Assistant")
 
     if not get_api_key():
         st.warning(
@@ -218,7 +216,7 @@ def render_problem(problem: dict, engine: SearchEngine) -> None:
 def main() -> None:
     st.markdown('<div class="title-text">Competitive Programming Assistant</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-text">Semantic search, Socratic problem-solving guidance, and automated code analysis.</div>',
+        '<div class="sub-text">Find the right problem, get guidance, and review your solution.</div>',
         unsafe_allow_html=True,
     )
 
@@ -239,45 +237,45 @@ def main() -> None:
     # Sidebar Filters
     with st.sidebar:
         st.subheader("Search & Filters")
-        search_mode = st.radio(
-            "Search Method",
-            ["Semantic Search", "Exact Problem ID"],
-            help="Semantic: Find by concept/keywords. Exact ID: Search by ID like 1000A.",
-        )
-        mode_key = "semantic" if search_mode == "Semantic Search" else "exact_id"
-
         all_tags = engine.all_tags
         selected_tags = st.multiselect(
             "Filter by Tag",
             options=all_tags,
-            help="Filter candidate problems by topic tags.",
+            help="A problem must contain every selected tag.",
         )
 
         rating_range = st.slider(
             "Difficulty Rating Range",
             min_value=800,
-            max_value=2400,
-            value=(800, 2400),
+            max_value=3500,
+            value=(800, 3500),
             step=100,
         )
 
         st.divider()
+        filter_count = engine.filter_count(
+            selected_tags or None,
+            rating_range[0],
+            rating_range[1],
+        )
+        filters_active = bool(selected_tags) or rating_range != (800, 3500)
+        if filters_active:
+            st.caption(f"{filter_count} problems match your filters")
         st.caption(f"Index status: {len(engine.problems)} problems loaded")
         if get_api_key():
-            st.caption("Gemini API: Connected")
+            st.caption("Groq API: Connected")
         else:
-            st.caption("Gemini API: Missing key")
+            st.caption("Groq API: Missing key")
 
     # Main Search Input
     query = st.text_input(
         "Search Problems",
-        placeholder="Search by topic, keyword, or problem ID (e.g. 'segment tree', '1000A')",
+        placeholder="Search by topic, title, or problem ID...",
     )
 
-    if query:
+    if query.strip():
         results = engine.search(
             query,
-            mode=mode_key,
             tags=selected_tags or None,
             rating_min=rating_range[0],
             rating_max=rating_range[1],
@@ -285,7 +283,10 @@ def main() -> None:
         )
 
         if not results:
-            st.warning("No matching problems found. Try adjusting query or sidebar filters.")
+            if is_problem_id_query(query) and engine.find_problem_by_id(query):
+                st.warning(f"Problem {query.strip().upper()} exists, but does not match the selected filters.")
+            else:
+                st.warning("No matching problems found. Try adjusting query or sidebar filters.")
         elif len(results) == 1:
             render_problem(results[0], engine)
         else:
@@ -295,16 +296,25 @@ def main() -> None:
                 rating_label = f" Rating: {rating}" if rating else ""
                 with st.expander(f"{prob['id']} — {prob['title']} ({rating_label.strip()})"):
                     render_problem(prob, engine)
+    elif filters_active:
+        results = engine.search(
+            "",
+            tags=selected_tags or None,
+            rating_min=rating_range[0],
+            rating_max=rating_range[1],
+            k=5,
+        )
+        if not results:
+            st.info("No problems match your current filters.")
+        else:
+            st.subheader(f"Browse Results ({filter_count} matches)")
+            for prob in results:
+                rating = prob.get("rating") or extract_rating(prob.get("tags", []))
+                rating_label = f" Rating: {rating}" if rating else ""
+                with st.expander(f"{prob['id']} — {prob['title']} ({rating_label.strip()})"):
+                    render_problem(prob, engine)
     else:
-        st.info("Enter a topic or problem ID above to begin search.")
-        st.markdown("#### Sample Queries")
-        examples = [
-            ("1000A", "Exact problem lookup by ID"),
-            ("shortest path graph", "Semantic search for algorithms"),
-            ("dynamic programming on trees", "Concept search"),
-        ]
-        for query_text, desc in examples:
-            st.markdown(f"- `{query_text}` — {desc}")
+        st.info("Search for a problem or use filters to browse the collection.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+{
+    "id": "2183C",
+    "contest_id": 2183,
+    "problem_letter": "C",
+    "title": "C. War Strategy",
+    "statement": "A war has broken out! You, as the country's top general, must strategize where to place your troops.\n\nThere are $$n$$ bases in a line, with the $$k$$-th of which being the home base for your army. Initially, there is only a single soldier at base $$k$$. Each day, the following happens in order:\n\nHowever, time is tight, and there are only $$m$$ days until the enemy attacks. A base is called fortified if at least one soldier resides in it. Your job is to find the maximum number of fortified bases (including the home base) you can have by the end of the $$m$$-th day.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains three integers $$n$$, $$m$$, $$k$$ ($$1 $\\leq k \\leq n \\leq 10^5$$$, $$1 $\\leq m \\leq 10^9$$$) — denoting the number of bases, the number of days you have to fortify your bases, and the index of the home base.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2$\\cdot 10^5$$$.\n\nFor each test case, print the maximum number of bases you can fortify at the end of the $$m$$-th day.\n\nIn the second test case, here is one way to fortify $$3$$ bases:\n\nIn the third test case, here is one way you can achieve $$3$$ bases being fortified:\n\nBelow is a vivid explanation of the third test case.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains three integers $$n$$, $$m$$, $$k$$ ($$1 $\\leq k \\leq n \\leq 10^5$$$, $$1 $\\leq m \\leq 10^9$$$) — denoting the number of bases, the number of days you have to fortify your bases, and the index of the home base. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2$\\cdot 10^5$$$.",
+    "output": "Output For each test case, print the maximum number of bases you can fortify at the end of the $$m$$-th day.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2204C",
+    "contest_id": 2204,
+    "problem_letter": "C",
+    "title": "C. Spring",
+    "statement": "Alice, Bob, and Carol visit a spring to collect water. Alice visits every $$a$$ days (on days $$a, 2a, 3a, \\dots$$), Bob visits every $$b$$ days (on days $$b, 2b, 3b, \\dots$$), and Carol visits every $$c$$ days (on days $$c, 2c, 3c, \\dots$$).\n\nWhen only one person visits, they collect $$6$$ liters of water. If multiple people visit, the water is divided equally: two people take $$3$$ liters each, and three people take $$2$$ liters each.\n\nYour task is to calculate how much water Alice, Bob, and Carol collect over $$m$$ days, starting from day $$1$$.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe only line of each test case contains four integers $$a$$, $$b$$, $$c$$, and $$m$$ ($$1 $\\leq a, b, c \\leq 10^6$$$; $$1 $\\leq m \\leq 10^{17}$$$).\n\nFor each test case, print three integers — the number of liters of water that Alice, Bob, and Carol collect over $$m$$ days.\n\nConsider the first example:",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The only line of each test case contains four integers $$a$$, $$b$$, $$c$$, and $$m$$ ($$1 $\\leq a, b, c \\leq 10^6$$$; $$1 $\\leq m \\leq 10^{17}$$$).",
+    "output": "Output For each test case, print three integers — the number of liters of water that Alice, Bob, and Carol collect over $$m$$ days.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1000"
+    ],
+    "rating": 1000
+}

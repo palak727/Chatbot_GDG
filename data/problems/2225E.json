@@ -1,0 +1,18 @@
+{
+    "id": "2225E",
+    "contest_id": 2225,
+    "problem_letter": "E",
+    "title": "E. Covering Points with Circles",
+    "statement": "You are given an array $$p$$ containing $$n$$ points with integer coordinates. These points are uniformly distributed inside some rectangle whose sides are parallel to the coordinate axes.\n\nYou need to place several circles so that the following conditions hold:\n\nThe rectangle in which the points from array $$p$$ are distributed is unknown to you, but in all tests except for the example it is guaranteed that the area of one circle of radius $$r$$ does not exceed $$\\frac{1}{10}$$ of the area of this rectangle.\n\nThe first line contains two integers $$n$$ and $$r$$ ($$4 $\\leq n \\leq 10^4$$$, $$10^2 $\\leq r \\leq 10^3$$$).\n\nThe next $$n$$ lines each contain two integers $$p_{x}$$ and $$p_{y}$$ ($$-10^5 $\\leq p_x, p_y \\leq 10^5$$$).\n\nThere are $$40$$ tests in this problem. For each test except the example from the statement, the following constraints hold:\n\nHacks are disabled in this problem.\n\nIn the first line, output one integer $$k$$ ($$1 $\\leq k \\leq n$$$) — the number of circles. In each of the next $$k$$ lines, output two integers $$x$$ and $$y$$ — the coordinates of the center of the $$i$$-th circle. The coordinates of centers of the circles you output should not exceed $$2 $\\cdot 10^5$$$ by absolute value.\n\nIf there are multiple solutions, output any of them. You do not need to minimize the number of circles, but it should not exceed $$n$$.\n\nOne possible covering for the first sample is shown in the figure:",
+    "input": "Input The first line contains two integers $$n$$ and $$r$$ ($$4 $\\leq n \\leq 10^4$$$, $$10^2 $\\leq r \\leq 10^3$$$). The next $$n$$ lines each contain two integers $$p_{x}$$ and $$p_{y}$$ ($$-10^5 $\\leq p_x, p_y \\leq 10^5$$$). There are $$40$$ tests in this problem. For each test except the example from the statement, the following constraints hold: the number of points is $$10^4$$; all points are generated as follows: first, some integer $$x$$ from $$300$$ to $$10^5$$ is chosen; after that, $$n$$ distinct integer points are chosen uniformly at random in the rectangle $$[-x, x] $\\times [-x, x]$$$; the area of a circle of radius $$r$$ does not exceed $$\\frac{1}{10}$$ of the area of the rectangle $$[-x, x] $\\times [-x, x]$$$; there exists a set of circles satisfying the conditions of the problem. Hacks are disabled in this problem.",
+    "output": "Output In the first line, output one integer $$k$$ ($$1 $\\leq k \\leq n$$$) — the number of circles. In each of the next $$k$$ lines, output two integers $$x$$ and $$y$$ — the coordinates of the center of the $$i$$-th circle. The coordinates of centers of the circles you output should not exceed $$2 $\\cdot 10^5$$$ by absolute value. If there are multiple solutions, output any of them. You do not need to minimize the number of circles, but it should not exceed $$n$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

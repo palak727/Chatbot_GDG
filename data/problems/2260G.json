@@ -1,0 +1,19 @@
+{
+    "id": "2260G",
+    "contest_id": 2260,
+    "problem_letter": "G",
+    "title": "G. Sortable Permutations",
+    "statement": "A permutation of size $$n$$ is an array of length $$n$$ in which every integer from $$1$$ to $$n$$ appears exactly once.\n\nWe call a permutation sortable if there exists an integer $$x$\\geq 2$$$ such that the following property holds: if we remove from the permutation all elements at positions divisible by $$x$$, then the remaining array is strictly increasing. In other words, the elements at positions $$x,2x,3x,\\ldots$$, not exceeding $$n$$, are removed, the order of the remaining elements is unchanged, and the resulting array must be strictly increasing. Positions are numbered starting from $$1$$.\n\nCount the number of sortable permutations of size $$n$$. Since the answer may be very large, output it modulo $$998244353$$.\n\nThe only line contains one integer $$n$$ ($$1$\\leq n\\leq 2\\cdot10^5$$$) — the size of the permutation.\n\nOutput one integer — the number of sortable permutations of size $$n$$, taken modulo $$998244353$$.\n\nIn the first example, the only permutation is $$[1]$$. For $$x=2$$, nothing is removed, and the sequence is already sorted.\n\nIn the second example, the sortable permutations are $$[1,2,3]$$, $$[1,3,2]$$, $$[2,1,3]$$, and $$[2,3,1]$$. For example, for the permutation $$[2,1,3]$$, $$x=2$$ works: after removing the second element, the sequence $$[2,3]$$ remains.\n\nIn the third example, one of the sortable permutations is $$[1,3,6,4,5,2]$$. For $$x=3$$, the elements at positions $$3$$ and $$6$$ are removed, after which the strictly increasing sequence $$[1,3,4,5]$$ remains.",
+    "input": "Input The only line contains one integer $$n$$ ($$1$\\leq n\\leq 2\\cdot10^5$$$) — the size of the permutation.",
+    "output": "Output Output one integer — the number of sortable permutations of size $$n$$, taken modulo $$998244353$$.",
+    "time_limit": "8 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "math",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

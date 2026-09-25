@@ -1,0 +1,16 @@
+{
+    "id": "2214E",
+    "contest_id": 2214,
+    "problem_letter": "E",
+    "title": "E. Shortest Paths",
+    "statement": "You are given a graph of $$n$$ nodes and $$m$$ undirected edges. Find the shortest path from node $$1$$ to each node with Dikjstra's algorithm.\n\nThe first line contains two integers $$n$$ and $$m$$ $$(2 $\\leq n \\leq 100, 0 \\leq m \\leq \\frac{n(n-1)}{2})$$$.\n\nThe following $$m$$ lines contain $$3$$ integers each: $$u$$, $$v$$, and $$w$$, denoting an undirected edge from $$u$$ to $$v$$ with weight $$w$$ $$(1 $\\leq u, v \\leq n, 0 \\leq w \\leq 10^5)$$$.\n\nOutput the shortest path from node $$1$$ to each node $$2, \\dots, n$$. If a node is not reachable from node $$1$$, output $$-1$$.",
+    "input": "Input The first line contains two integers $$n$$ and $$m$$ $$(2 $\\leq n \\leq 100, 0 \\leq m \\leq \\frac{n(n-1)}{2})$$$. The following $$m$$ lines contain $$3$$ integers each: $$u$$, $$v$$, and $$w$$, denoting an undirected edge from $$u$$ to $$v$$ with weight $$w$$ $$(1 $\\leq u, v \\leq n, 0 \\leq w \\leq 10^5)$$$.",
+    "output": "Output Output the shortest path from node $$1$$ to each node $$2, \\dots, n$$. If a node is not reachable from node $$1$$, output $$-1$$.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "shortest paths"
+    ],
+    "rating": null
+}

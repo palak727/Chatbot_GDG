@@ -1,0 +1,22 @@
+{
+    "id": "2176E",
+    "contest_id": 2176,
+    "problem_letter": "E",
+    "title": "E. Remove at the lowest cost",
+    "statement": "You have $$n$$ elements. Each of these elements has a natural value $$a_i$$ and a natural removal cost $$c_i$$. You need to remove all elements except one, paying the minimum possible cost. To do this, you perform the following operation $$n - 1$$ times:\n\nIn one operation, you choose two adjacent elements and remove the one with the smaller value. For this operation, you pay the removal cost of the least expensive element among the two. If these two elements have equal values, you can remove either of them, paying the removal cost of the minimum of the two in terms of removal cost. After removing an element, the elements to the right of the removed element shift left by one position, leaving no gaps.\n\nYou also have $$n$$ zeroing operations for the removal costs of the array. After the $$i$$-th zeroing operation, the removal cost of the element with index $$p_i$$ becomes $$0$$. It is guaranteed that all $$p_i$$ are distinct. You need to solve this problem for the original elements, as well as after each of the zeroing operations.\n\nNote: After the $$i$$-th zeroing operation, the removal cost of the element $$p_i$$ remains $$0$$ in all subsequent problems ($$i + 1, i + 2, \\dots, n$$).\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains one natural number $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of elements you have.\n\nThe second line of each test case contains $$n$$ natural numbers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the values of the elements.\n\nThe third line of each test case contains $$n$$ natural numbers $$c_1, c_2, \\ldots, c_n$$ ($$1 $\\leq c_i \\leq 10^9$$$) — the removal costs of the elements.\n\nThe fourth line of each test case contains $$n$$ natural numbers $$p_1, p_2, \\ldots, p_n$$ ($$1 $\\leq p_i \\leq n$$$) — the indices of the elements whose removal costs are zeroed, in the corresponding order. It is guaranteed that all $$p_i$$ are distinct.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output $$n + 1$$ numbers — the minimum cost of removing all elements except one, before all zeroings and after each of them.\n\nExplanation of the first test case example:\n\nThe minimum cost of removing all elements before zeroings is — 42.\n\nTo achieve this cost, you can, for example:\n\nThe total cost of all removed elements is $$3+3+6+6+6+6+6+3+3=42$$. It can be proven that achieving a lower cost of removing all elements except one is impossible.\n\nAfter the first zeroing request, the first element becomes ($$5, 0$$). Now the first two elements can be removed not for $$3+3$$, but for $$0+0$$. The total cost of removing all elements except one is now $$36$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains one natural number $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of elements you have. The second line of each test case contains $$n$$ natural numbers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the values of the elements. The third line of each test case contains $$n$$ natural numbers $$c_1, c_2, \\ldots, c_n$$ ($$1 $\\leq c_i \\leq 10^9$$$) — the removal costs of the elements. The fourth line of each test case contains $$n$$ natural numbers $$p_1, p_2, \\ldots, p_n$$ ($$1 $\\leq p_i \\leq n$$$) — the indices of the elements whose removal costs are zeroed, in the corresponding order. It is guaranteed that all $$p_i$$ are distinct. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output $$n + 1$$ numbers — the minimum cost of removing all elements except one, before all zeroings and after each of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

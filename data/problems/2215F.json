@@ -1,0 +1,16 @@
+{
+    "id": "2215F",
+    "contest_id": 2215,
+    "problem_letter": "F",
+    "title": "F. Research",
+    "statement": "Research: Draw cards from 1 of the facedown Level Decks equal to your Research Amount. You may choose 1 to Build or File.\n\nAlice and Bob will play a game with a deck of cards. This deck consists of $$n-1$$ white cards and one green card. Initially, the green card is located at the $$s$$-th place from the top of the deck, with the number $$1$$ written on it. Both Alice and Bob know the place of the green card.\n\nAlice goes first. In each turn, they should proceed as follows:\n\nAlice needs to maximize the score, while Bob needs to minimize it. You have to find the final score of the game if both of them play optimally.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 50$$$). The description of the test cases follows.\n\nThe only line of each test case contains three integers $$n$$, $$k$$, and $$s$$ ($$1$\\leq n,k\\leq 10^9$$$, $$1$\\leq s\\leq n$$$).\n\nFor each test case, if the game will never end, output a line with the word Infinity ; otherwise, output a single integer — the score of the game.\n\nIn the first test case, an optimal process of the game is as follows. Alice should take $$2$$ cards from the top, discard nothing, and return the green card to the bottom of the deck. Then Bob should take $$2$$ white cards from the top and discard one. On the third turn, Alice should discard the green card with the number $$2$$ written on it.\n\nIn the second test case, Bob will take the green card first and discard it. Therefore, the score should be $$0$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 50$$$). The description of the test cases follows. The only line of each test case contains three integers $$n$$, $$k$$, and $$s$$ ($$1$\\leq n,k\\leq 10^9$$$, $$1$\\leq s\\leq n$$$).",
+    "output": "Output For each test case, if the game will never end, output a line with the word Infinity ; otherwise, output a single integer — the score of the game.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "games",
+        "*3500"
+    ],
+    "rating": 3500
+}

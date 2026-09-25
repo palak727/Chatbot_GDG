@@ -1,0 +1,17 @@
+{
+    "id": "2193C",
+    "contest_id": 2193,
+    "problem_letter": "C",
+    "title": "C. Replace and Sum",
+    "statement": "Today, KQ has an exam at the Grail Academy. A strict teacher gave a task that KQ could not solve. He was given two arrays $$a$$ and $$b$$ of length $$n$$. KQ is allowed to perform the following operations on the arrays:\n\nEach test consists of several test cases. The first line contains one integer $$t$$ ($$1$\\leq t\\leq 10^4$$$) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$, $$q$$ $$(1$\\leq n, q\\leq 2 \\cdot 10^5)$$$.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2,...,a_n$$ $$(1$\\leq a_i\\leq 10^4)$$$.\n\nThe third line of each test case contains $$n$$ integers $$b_1, b_2,...,b_n$$ $$(1$\\leq b_i\\leq 10^4)$$$.\n\nThe following $$q$$ lines contain two integers $$l$$ and $$r$$ $$(1$\\leq l\\leq r\\leq n)$$$.\n\nIt is guaranteed that the sum of the values of $$n$$ and the sum of the values of $$q$$ across all test cases do not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output $$q$$ numbers separated by spaces — the maximum values of the sums $$(a_l + a_{l+1} + a_{l+2} + \\dots + a_r)$$.\n\nConsider the first test case. Replace $$a_3$$ with $$b_3$$, $$a = [3, 2, 3]$$. Replace $$a_2$$ with $$a_3$$, $$a = [3, 3, 3]$$. The sum $$a_1 + a_2 + a_3 = 9$$.",
+    "input": "Input Each test consists of several test cases. The first line contains one integer $$t$$ ($$1$\\leq t\\leq 10^4$$$) — the number of test cases. The description of the test cases follows. The first line of each test case contains two integers $$n$$, $$q$$ $$(1$\\leq n, q\\leq 2 \\cdot 10^5)$$$. The second line of each test case contains $$n$$ integers $$a_1, a_2,...,a_n$$ $$(1$\\leq a_i\\leq 10^4)$$$. The third line of each test case contains $$n$$ integers $$b_1, b_2,...,b_n$$ $$(1$\\leq b_i\\leq 10^4)$$$. The following $$q$$ lines contain two integers $$l$$ and $$r$$ $$(1$\\leq l\\leq r\\leq n)$$$. It is guaranteed that the sum of the values of $$n$$ and the sum of the values of $$q$$ across all test cases do not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output $$q$$ numbers separated by spaces — the maximum values of the sums $$(a_l + a_{l+1} + a_{l+2} + \\dots + a_r)$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

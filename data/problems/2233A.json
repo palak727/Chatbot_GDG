@@ -1,0 +1,17 @@
+{
+    "id": "2233A",
+    "contest_id": 2233,
+    "problem_letter": "A",
+    "title": "A. AI Project Development",
+    "statement": "Maxim and Nikita are working together on a project consisting of $$n$$ lines of code.\n\nMaxim starts working immediately and writes at a speed of $$x$$ lines per hour until the very end.\n\nNikita has two options:\n\nNikita makes this choice before work begins and does not change it later.\n\nWhile Nikita is setting up the AI, he does not write any code at all, but Maxim continues working at the speed of $$x$$ lines per hour.\n\nThe project is considered completed as soon as Maxim and Nikita together have written at least $$n$$ lines of code. If the project can be completed before the AI setup ends, then the work ends at that moment.\n\nTime is measured using full hours: if a project is completed in the middle of an hour, this hour is counted fully.\n\nNikita chooses whether to use AI or not.\n\nDetermine the minimum number of full hours after which the project will be completed.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows.\n\nThe only line of each test case contains four integers $$n$$, $$x$$, $$y$$, and $$z$$ ($$1 $\\leq n, x, y, z \\leq 10\\,000$$$) — the number of lines in the project, Maxim's speed, Nikita's speed without AI, and the AI setup time, respectively.\n\nFor each test case, output one integer — the minimum number of full hours after which the project will be completed if Nikita acts optimally.\n\nIn the first example, without using AI, Nikita and Maxim will write $$2$$ lines of code in $$1$$ hour, and since the project requires only $$1$$ line to finish, it will be completed in $$1$$ hour.\n\nIn the fourth example, Nikita spends the first hour setting up the AI, while Maxim writes $$10$$ lines during that time, and then during the next hour $$10 + 9 $\\cdot 10 = 100$$$ lines of code are written, so the whole project can be completed in $$2$$ hours.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 100$$$). The description of the test cases follows. The only line of each test case contains four integers $$n$$, $$x$$, $$y$$, and $$z$$ ($$1 $\\leq n, x, y, z \\leq 10\\,000$$$) — the number of lines in the project, Maxim's speed, Nikita's speed without AI, and the AI setup time, respectively.",
+    "output": "Output For each test case, output one integer — the minimum number of full hours after which the project will be completed if Nikita acts optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

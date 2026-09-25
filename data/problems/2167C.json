@@ -1,0 +1,19 @@
+{
+    "id": "2167C",
+    "contest_id": 2167,
+    "problem_letter": "C",
+    "title": "C. Isamatdin and His Magic Wand!",
+    "statement": "Isamatdin has $$n$$ toys arranged in a row. The $$i$$-th toy has an integer $$a_i$$. He wanted to sort them because otherwise, his mother would scold him.\n\nHowever, Isamatdin never liked arranging toys in order, so his friend JahonaliX gave him a magic wand to help. Unfortunately, JahonaliX made a small mistake while creating the wand.\n\nBut Isamatdin couldn't wait any longer and decided to use the broken wand anyway. The wand can only swap two toys if their integers have different parity (one is even, the other is odd). In other words, you can swap toys in positions $$(i, j)$$ only if $$a_i \\bmod 2 $\\neq a_j \\bmod 2$$$, where $$\\bmod$$ — is the remainder of integer division.\n\nNow he wants to know the lexicographically smallest $$^{∗}$$ arrangement he can achieve using this broken wand.\n\n$$^{∗}$$A sequence $$p$$ is lexicographically smaller than a sequence $$q$$ if there exists an index $$i$$ such that $$p_j = q_j$$ for all $$j  \\lt  i$$, and $$p_i  \\lt  q_i$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of toys.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the integers of the toys.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output $$n$$ integers — the lexicographically smallest sequence that can be obtained using the described operation.\n\nIn the first test case, we can swap positions $$(1, 3)$$ and then $$(2, 3)$$.\n\nIn the second test case, we can swap positions $$(1, 2)$$, $$(1, 3)$$, and then $$(2, 3)$$.\n\nIn the third and fourth test cases, we can't swap any positions because all toy integers have the same parity.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of toys. The second line of each test case contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the integers of the toys. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output $$n$$ integers — the lexicographically smallest sequence that can be obtained using the described operation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2189F",
+    "contest_id": 2189,
+    "problem_letter": "F",
+    "title": "F. Zhora the Vacuum Cleaner",
+    "statement": "Once upon a time, Zhora the Vacuum Cleaner found a big container with nuts that is represented by a tree with $$n$$ vertices. Initially, in the $$i$$-th vertex, there are $$a_i$$ nuts. What Zhora the Vacuum Cleaner likes most is eating nuts, so he decided to eat all the nuts.\n\nTo save electricity, the vacuum cleaner can rearrange the nuts in the container beforehand. Zhora can choose a vertex $$v$$ of the tree, and for every vertex $$u \\ne v$$, in non-increasing order of the length of path $$uv$$, if $$u$$ contains at least one nut, one nut from $$u$$ moves into the closest vertex to $$v$$ among $$u$$'s adjacent vertices. This operation requires $$p$$ electricity units.\n\nAfter performing several such operations (possibly none), Zhora the Vacuum Cleaner eats all the nuts from every vertex, spending $$q$$ electricity units per every vertex that contains nuts.\n\nWhat is the minimum amount of electricity units required to eat all the nuts?\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains three integers $$n$$, $$p$$, and $$q$$ ($$2 $\\leq n \\leq 10^5$$$, $$0 $\\leq p, q \\leq 10^6$$$) — the number of vertices in the container's tree and the required amounts of electricity for operations of types 1 and 2, respectively.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 10^6$$$) — the quantities of nuts in the vertices.\n\nEach of the next $$n - 1$$ lines of each test case contains two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n, u \\ne v$$$), representing an undirected tree edge from vertex $$u$$ to vertex $$v$$. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.\n\nFor each test case, output the minimum amount of electricity units required to eat all the nuts.\n\nIn the first test case, it is best to apply the movement operation to vertex $$2$$, and then eat all the $$4$$ nuts from vertex $$2$$, spending $$1 + 1 = 2$$ electricity units in total.\n\nIn the second test case, it is best to apply the movement operation twice to vertex $$3$$, and then eat all the $$5$$ nuts from vertex $$3$$, spending $$1 + 1 + 100 = 102$$ electricity units in total.\n\nIn the third test case, it is best just to eat all the nuts from vertices $$1,2,4,5$$, spending $$10 + 10 + 10 + 10 = 40$$ electricity units.\n\nIn the fourth test case, it is best to apply the movement operation twice to vertex $$2$$, and then eat all the nuts from vertex $$2$$, spending $$6$$ electricity units in total.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains three integers $$n$$, $$p$$, and $$q$$ ($$2 $\\leq n \\leq 10^5$$$, $$0 $\\leq p, q \\leq 10^6$$$) — the number of vertices in the container's tree and the required amounts of electricity for operations of types 1 and 2, respectively. The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 10^6$$$) — the quantities of nuts in the vertices. Each of the next $$n - 1$$ lines of each test case contains two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n, u \\ne v$$$), representing an undirected tree edge from vertex $$u$$ to vertex $$v$$. It is guaranteed that the given edges form a tree. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.",
+    "output": "Output For each test case, output the minimum amount of electricity units required to eat all the nuts.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "implementation",
+        "sortings",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

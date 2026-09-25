@@ -1,0 +1,18 @@
+{
+    "id": "2172J",
+    "contest_id": 2172,
+    "problem_letter": "J",
+    "title": "J. Sliding Tiles",
+    "statement": "You have a special sliding puzzle played on an $$n $\\times n$$$ grid. This puzzle is slightly different from standard sliding puzzles: between each pair of adjacent columns, there is a vertical bar of height $$h_i$$ (for $$1 $\\leq i  \\lt  n$$$) positioned at the bottom of the grid. Each $$h_i$$ indicates how many rows from the bottom this bar extends upwards, and it blocks tile movement between the two columns in those rows.\n\nThe grid contains several tiles, each occupying exactly one cell. These tiles can slide freely in the grid unless they are blocked by the grid boundaries, a vertical bar (depending on its height) or another tile.\n\nThe puzzle allows two types of tilt operations:\n\nIn both operations, all tiles move simultaneously and stop only when blocked by the grid's edge, a bar, or another tile.\n\nDefine a group operation as a sequence of: first tilt the grid to the right, then tilt it downward.\n\nInitially, the $$i$$-th column has $$a_i$$ tiles stacked from the bottom of the column. You perform the group operation exactly once on the board. After the operation, determine the number of tiles in each column.\n\nThe first line contains an integer $$n$$, representing the size of the board.\n\nThe second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$, where $$a_i$$ is the number of tiles in the $$i$$-th column initially.\n\nThe third line contains $$n-1$$ integers $$h_1,h_2,\\ldots,h_{n-1}$$, where $$h_i$$ is the height of the bar between column $$i$$ and column $$i+1$$.\n\nPrint $$n$$ numbers in a new line, representing the number of tiles in each column after performing the group operation exactly once.",
+    "input": "Input The first line contains an integer $$n$$, representing the size of the board. The second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$, where $$a_i$$ is the number of tiles in the $$i$$-th column initially. The third line contains $$n-1$$ integers $$h_1,h_2,\\ldots,h_{n-1}$$, where $$h_i$$ is the height of the bar between column $$i$$ and column $$i+1$$. $$2 $\\leq n \\leq 5 \\times 10^5$$$ $$0 $\\leq a_i \\leq n$$$ $$0 $\\leq h_i \\leq n-1$$$",
+    "output": "Output Print $$n$$ numbers in a new line, representing the number of tiles in each column after performing the group operation exactly once.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "*2300"
+    ],
+    "rating": 2300
+}

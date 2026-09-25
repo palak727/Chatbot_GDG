@@ -1,0 +1,16 @@
+{
+    "id": "2206A",
+    "contest_id": 2206,
+    "problem_letter": "A",
+    "title": "A. Compare Suffixes",
+    "statement": "The judge program possesses a hidden string $$S$$ of length $$n$$ consisting only of lowercase Latin letters ( a – z ). You cannot access the string. At the start, only the length $$n$$ is given to you.\n\nYour task is to determine the order of all $$n$$ suffixes using a limited number of queries .\n\nFor an integer $$k$$ ($$1 $\\leq k \\leq n$$$), let $$S(k)$$ denote the suffix of $$S$$ starting at the $$k$$-th character. In particular, $$S(1)=S$$.\n\nIn a single query, you specify two distinct integers $$i$$ and $$j$$. The judge program compares $$S(i)$$ and $$S(j)$$ lexicographically and returns whether $$S(i)  \\lt  S(j)$$ or $$S(i)  \\gt  S(j)$$ to you. Note that ties never occur for $$i\\not= j$$ because all suffixes are distinct.\n\nFind a permutation $$(p_1,p_2,\\ldots,p_n)$$ of $$(1,2,\\ldots,n)$$ such that $$S(p_1)  \\lt  S(p_2)  \\lt  \\cdots  \\lt  S(p_n)$$.\n\nThe first line of input contains the integer $$n$$ ($$2 $\\leq n \\leq 1000$$$).\n\nTo issue a query, your program should write a line of the form \" query $$i$$ $$j$$\" ($$1 $\\leq i \\leq n; 1 \\leq j \\leq n; i \\not= j$$$). After that, an input line containing first or second becomes available. A line containing first means $$S(i)  \\lt  S(j)$$, while a line containing second means $$S(i)  \\gt  S(j)$$.\n\nOnce you determine the order of the suffixes, your program should write a line of the form \" answer $$p_1$$ $$p_2$$ $$\\ldots$$ $$p_n$$\". After that, the interaction stops and your program should terminate without extra output.\n\nYour program may issue at most $$6260$$ queries. If your program issues more than $$6260$$ queries, it will be judged as \"Wrong Answer.\"\n\nIt is guaranteed that the hidden string $$S$$ consists only of lowercase letters ( a – z ).\n\nNotes on interactive judging:\n\nExplanation for the sample interaction #1\n\nIn this sample, $$S=\\texttt{icpc}$$ is assumed. The order of four suffixes is $$S(4)  \\lt  S(2)  \\lt  S(1)  \\lt  S(3)$$ because $$\\texttt{c}  \\lt  \\texttt{cpc}  \\lt  \\texttt{icpc}  \\lt  \\texttt{pc}$$.\n\nIn the first and third query, first is returned because $$S(2)  \\lt  S(1)$$ and $$S(1)  \\lt  S(3)$$. In the second query, second is returned because $$S(2)  \\gt  S(4)$$. With these responses, you can determine the ordering.",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "interactive",
+        "*3500"
+    ],
+    "rating": 3500
+}

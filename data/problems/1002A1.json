@@ -1,0 +1,16 @@
+{
+    "id": "1002A1",
+    "contest_id": 1002,
+    "problem_letter": "A1",
+    "title": "A1. Generate superposition of all basis states",
+    "statement": "You are given N qubits ( 1 ≤ N ≤ 8 ) in zero state .\n\nYour task is to generate an equal superposition of all 2 N basis vectors on N qubits:\n\nFor example,\n\nYou have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of the operation is the state in which it leaves the qubits.\n\nYour code should have the following signature:",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2154B",
+    "contest_id": 2154,
+    "problem_letter": "B",
+    "title": "B. Make it Zigzag",
+    "statement": "An arbitrary array of integers $$b$$ of length $$m$$ is considered awesome if for all $$i$$ ($$1 $\\leq i  \\lt  m$$$):\n\nIn other words, the following inequality is true: $$b_1  \\lt  b_2  \\gt  b_3  \\lt  b_4 \\ldots$$\n\nYou are given an array of positive integers $$a$$ of length $$n$$. You may do either of the following operations any number of times, in any order:\n\nDetermine the minimum number of times you need to do operation $$2$$ to make $$a$$ awesome. Note that you do not need to minimise the number of times you perform operation $$1$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains an integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the length of the array $$a$$.\n\nThe second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$).\n\nThe sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each testcase, output the minimum cost to make $$a$$ awesome.\n\nIn the first test case, the array is already awesome so no operations need to be done.\n\nIn the second test case, $$a$$ can be made awesome as follows:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains an integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the length of the array $$a$$. The second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$). The sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each testcase, output the minimum cost to make $$a$$ awesome.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

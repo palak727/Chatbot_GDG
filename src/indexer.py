@@ -6,6 +6,7 @@ import json
 import os
 import pickle
 import sys
+import argparse
 
 import faiss
 import numpy as np
@@ -73,6 +74,7 @@ def save_index(
     vectors: np.ndarray,
     index_path: str = FAISS_INDEX_PATH,
     metadata_path: str = METADATA_PATH,
+    model_name: str = EMBEDDING_MODEL,
 ) -> None:
     """Persist FAISS index and metadata mapping to disk."""
     os.makedirs(os.path.dirname(index_path), exist_ok=True)
@@ -81,7 +83,7 @@ def save_index(
     metadata = {
         "problems": problems,
         "vectors": vectors,
-        "model_name": EMBEDDING_MODEL,
+        "model_name": model_name,
         "count": len(problems),
     }
     with open(metadata_path, "wb") as f:
@@ -114,11 +116,33 @@ def load_index_from_disk(
     )
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     """CLI entry point: build and save the FAISS index."""
-    print(f"Building index from {PROBLEMS_DIR} ...")
-    index, problems, vectors = build_index(show_progress=True)
-    save_index(index, problems, vectors)
+    parser = argparse.ArgumentParser(description="Build the CP Chatbot FAISS index.")
+    parser.add_argument(
+        "--problems-dir",
+        default=PROBLEMS_DIR,
+        help="Directory containing problem JSON files.",
+    )
+    parser.add_argument(
+        "--model-name",
+        default=EMBEDDING_MODEL,
+        help="Sentence-transformers model used for embeddings.",
+    )
+    parser.add_argument(
+        "--no-progress",
+        action="store_true",
+        help="Disable embedding progress output.",
+    )
+    args = parser.parse_args(argv)
+
+    print(f"Building index from {args.problems_dir} ...")
+    index, problems, vectors = build_index(
+        problems_dir=args.problems_dir,
+        model_name=args.model_name,
+        show_progress=not args.no_progress,
+    )
+    save_index(index, problems, vectors, model_name=args.model_name)
     print(f"Done. Indexed {len(problems)} problems into {INDEX_DIR}")
 
 

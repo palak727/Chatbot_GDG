@@ -1,0 +1,18 @@
+{
+    "id": "2230B",
+    "contest_id": 2230,
+    "problem_letter": "B",
+    "title": "B. Digit String",
+    "statement": "You are given a string $$s$$ consisting of digits from $$1$$ to $$4$$.\n\nLet's say that the string is beautiful if it is impossible to select some of its elements and write them out (in the same order as they appear in the string) to form a number that is a multiple of $$4$$. For example, the strings 31 , 222 , 213 are beautiful, while the strings 143 , 3123 , 1322 are not. The empty string is considered beautiful.\n\nYour task is to calculate the minimum possible number of elements in the string $$s$$ that need to be removed in order to make it beautiful.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe only line of each test case contains a string $$s$$ ($$1 $\\leq |s| \\leq 3 \\cdot 10^5$$$), consisting of digits from $$1$$ to $$4$$.\n\nAdditional constraint on the input: the sum of the lengths of $$s$$ over all test cases doesn't exceed $$3 $\\cdot 10^5$$$.\n\nFor each test case, print a single integer — the minimum possible number of elements in the string $$s$$ that need to be removed in order to make it beautiful.\n\nIn the first example, you have to delete the whole string.\n\nIn the second example, the string is already beautiful.\n\nIn the third example, you can delete the $$1$$-st, $$3$$-rd, $$4$$-th, and $$6$$-th characters, and you will get the string 213 .",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The only line of each test case contains a string $$s$$ ($$1 $\\leq |s| \\leq 3 \\cdot 10^5$$$), consisting of digits from $$1$$ to $$4$$. Additional constraint on the input: the sum of the lengths of $$s$$ over all test cases doesn't exceed $$3 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print a single integer — the minimum possible number of elements in the string $$s$$ that need to be removed in order to make it beautiful.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

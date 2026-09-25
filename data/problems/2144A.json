@@ -1,0 +1,19 @@
+{
+    "id": "2144A",
+    "contest_id": 2144,
+    "problem_letter": "A",
+    "title": "A. Cut the Array",
+    "statement": "You are given an array of $$n$$ non-negative integers $$[a_1, a_2, \\dots, a_n]$$.\n\nYour task is to cut it into three non-empty parts: a prefix, a middle part, and a suffix. Formally, you need to choose two integers $$l$$ and $$r$$ such that $$1 $\\leq l  \\lt  r  \\lt  n$$$, and obtain three parts:\n\nLet $$s_1, s_2, s_3$$ be the remainders of the sums of these parts modulo $$3$$. In other words:\n\nYour task is to find such boundaries $$l$$ and $$r$$ that either all numbers $$s_1, s_2, s_3$$ are different, or all numbers $$s_1, s_2, s_3$$ are the same.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$) — the number of test cases.\n\nEach test case consists of two lines:\n\nFor each test case, if a suitable pair of integers $$l$$ and $$r$$ ($$1 $\\leq l  \\lt  r  \\lt  n$$$) exists, output these two integers (if there are multiple suitable pairs, you can output any of them). Otherwise, output two integers equal to $$0$$.\n\nConsider the examples from the statement:",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$) — the number of test cases. Each test case consists of two lines: the first line contains a single integer $$n$$ ($$3 $\\leq n \\leq 40$$$); the second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$0 $\\leq a_i \\leq 40$$$).",
+    "output": "Output For each test case, if a suitable pair of integers $$l$$ and $$r$$ ($$1 $\\leq l  \\lt  r  \\lt  n$$$) exists, output these two integers (if there are multiple suitable pairs, you can output any of them). Otherwise, output two integers equal to $$0$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

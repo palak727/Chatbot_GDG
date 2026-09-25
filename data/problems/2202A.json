@@ -1,0 +1,16 @@
+{
+    "id": "2202A",
+    "contest_id": 2202,
+    "problem_letter": "A",
+    "title": "A. Parkour Design",
+    "statement": "Today, Alex wants to build a parkour course for Steve to train his parkour skills on. A parkour course is a sequence $$p_0 \\to p_1 \\to \\ldots \\to p_k$$ of integer coordinates on the plane. Here, a contiguous pair of coordinates is called a move , denoted as $$p_{i-1} \\to p_i$$.\n\nAlex knows that Steve can only perform the following types of moves:\n\nNote that Steve will not perform any other type of moves. For example, Steve can perform $$(0,0) \\to (2,1)$$ and $$(2,1) \\to (5,1)$$, but will never perform moves such as $$(2,1) \\to (3,2)$$, $$(3,0) \\to (5,-1)$$, or $$(4,-1) \\to (6,-1)$$ (even though they may look very easy).\n\nYou are given an integer coordinate $$(x,y)$$ on the plane.\n\nPlease determine if it is possible to make a parkour course $$q_0,q_1,\\ldots,q_k$$ that satisfies the following conditions:\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows.\n\nThe only line of each test case contains two integers $$x$$ and $$y$$ ($$1 $\\leq x \\leq 10^9$$$, $$-10^8 $\\leq y \\leq 10^8$$$).\n\nIf it is possible to make a parkour course that satisfies the conditions, output \" YES \" on a separate line.\n\nIf it is impossible to make a parkour course that satisfies the conditions, output \" NO \" on a separate line.\n\nYou can output the answer in any case. For example, the strings \" yEs \", \" yes \", and \" Yes \" will also be recognized as positive responses.\n\nFor the fifth test case, the parkour course must start from $$(0,0)$$ and end on $$(14,1)$$.\n\nThis can be achieved by the following parkour course.\n\n$$$(0,0) \\to (4,-1) \\to (7,-1) \\to (9,0) \\to (12,0) \\to (14,1)$$$\n\nNote that the following parkour course does not satisfy the third condition stated above due to the moves highlighted in red.\n\n$$$(0,0) \\to \\color{red}{(4,-1) \\to (6,-1)} \\to (8,0) \\to \\color{red}{(11,0) \\to (14,1)}$$$",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows. The only line of each test case contains two integers $$x$$ and $$y$$ ($$1 $\\leq x \\leq 10^9$$$, $$-10^8 $\\leq y \\leq 10^8$$$).",
+    "output": "Output If it is possible to make a parkour course that satisfies the conditions, output \" YES \" on a separate line. If it is impossible to make a parkour course that satisfies the conditions, output \" NO \" on a separate line. You can output the answer in any case. For example, the strings \" yEs \", \" yes \", and \" Yes \" will also be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

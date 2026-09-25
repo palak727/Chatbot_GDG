@@ -1,0 +1,16 @@
+{
+    "id": "1028A",
+    "contest_id": 1028,
+    "problem_letter": "A",
+    "title": "A. Find Square",
+    "statement": "Consider a table of size $$n $\\times m$$$, initially fully white. Rows are numbered $$1$$ through $$n$$ from top to bottom, columns $$1$$ through $$m$$ from left to right. Some square inside the table with odd side length was painted black. Find the center of this square.\n\nThe first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 115$$$) — the number of rows and the number of columns in the table.\n\nThe $$i$$-th of the next $$n$$ lines contains a string of $$m$$ characters $$s_{i1} s_{i2} \\ldots s_{im}$$ ($$s_{ij}$$ is ' W ' for white cells and ' B ' for black cells), describing the $$i$$-th row of the table.\n\nOutput two integers $$r$$ and $$c$$ ($$1 $\\leq r \\leq n$$$, $$1 $\\leq c \\leq m$$$) separated by a space — the row and column numbers of the center of the black square.",
+    "input": "Input The first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 115$$$) — the number of rows and the number of columns in the table. The $$i$$-th of the next $$n$$ lines contains a string of $$m$$ characters $$s_{i1} s_{i2} \\ldots s_{im}$$ ($$s_{ij}$$ is ' W ' for white cells and ' B ' for black cells), describing the $$i$$-th row of the table.",
+    "output": "Output Output two integers $$r$$ and $$c$$ ($$1 $\\leq r \\leq n$$$, $$1 $\\leq c \\leq m$$$) separated by a space — the row and column numbers of the center of the black square.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

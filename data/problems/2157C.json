@@ -1,0 +1,19 @@
+{
+    "id": "2157C",
+    "contest_id": 2157,
+    "problem_letter": "C",
+    "title": "C. Meximum Array 2",
+    "statement": "\n\nYou are given three positive integers $$n$$, $$k$$, and $$q$$. You are also given $$q$$ tuples $$(c, l, r)$$, with $$1 $\\leq c \\leq 2$$$ and $$1 $\\leq l \\leq r \\leq n$$$.\n\nAn array $$a_1, a_2, \\ldots, a_n$$ is meximum if $$0 $\\leq a_i \\leq 10^9$$$ for each $$i$$ in $$[1, n]$$, and for each given tuple $$(c, l, r)$$,\n\nNote that the parameter $$k$$ is the same for all the conditions.\n\nFind a meximum array $$a_1, a_2, \\ldots, a_n$$ of length $$n$$. The input is generated in such a way that a valid array always exists. If there are multiple possible arrays, you can print any one of them.\n\n$$^{∗}$$The minimum excluded (MEX) of a collection of integers $$a_1, a_2, \\ldots, a_k$$ is defined as the smallest non-negative integer $$x$$ which does not occur in the collection $$a$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains three integers $$n$$, $$k$$, $$q$$ ($$1 $\\leq k \\leq n \\leq 100$$$, $$1 $\\leq q \\leq 100$$$) — the length of the array $$a_1, a_2, \\ldots, a_n$$, the result of the $$\\min$$ and $$\\operatorname{MEX}$$ calculations described by the tuples, and the number of tuples.\n\nThen, $$q$$ lines follow. The $$i$$-th line contains a tuple $$(c, l, r)$$, which gives a constraint to $$a_l, a_{l+1}, \\ldots, a_r$$ according to the statement.\n\nIt is guaranteed that there exists a valid array corresponding to the given input.\n\nNote that there are no constraints on the sum of $$n$$, $$k$$, or $$q$$ over all test cases.\n\nFor each test case, print a single line containing a meximum array $$a_1, a_2, \\ldots, a_n$$.\n\nIn the first test case, you have to build a meximum array with $$n = 6$$, $$k = 2$$ and with $$q = 2$$ constraints given by tuples.\n\nA possible array that satisfies all these constraints, and has elements $$0 $\\leq a_i \\leq 10^9$$$, is $$[2, 5, 4, 3, 0, 1]$$.\n\nIn the second test case, you have to build a meximum array with $$n = 3$$, $$k = 3$$ and with $$q = 1$$ constraint given by a tuple.\n\nA possible array that satisfies this constraint, and has elements $$0 $\\leq a_i \\leq 10^9$$$, is $$[2, 0, 1]$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains three integers $$n$$, $$k$$, $$q$$ ($$1 $\\leq k \\leq n \\leq 100$$$, $$1 $\\leq q \\leq 100$$$) — the length of the array $$a_1, a_2, \\ldots, a_n$$, the result of the $$\\min$$ and $$\\operatorname{MEX}$$ calculations described by the tuples, and the number of tuples. Then, $$q$$ lines follow. The $$i$$-th line contains a tuple $$(c, l, r)$$, which gives a constraint to $$a_l, a_{l+1}, \\ldots, a_r$$ according to the statement. It is guaranteed that there exists a valid array corresponding to the given input. Note that there are no constraints on the sum of $$n$$, $$k$$, or $$q$$ over all test cases.",
+    "output": "Output For each test case, print a single line containing a meximum array $$a_1, a_2, \\ldots, a_n$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

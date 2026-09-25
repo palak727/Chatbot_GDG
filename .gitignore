@@ -15,9 +15,6 @@ env/
 .env
 .streamlit/secrets.toml
 
-# Large datasets
-data/problems/*.json
-
 # Model caches
 .cache/
 models/
@@ -34,3 +31,15 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Test, type-checking, and coverage output
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak

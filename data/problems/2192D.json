@@ -1,0 +1,18 @@
+{
+    "id": "2192D",
+    "contest_id": 2192,
+    "problem_letter": "D",
+    "title": "D. Cost of Tree",
+    "statement": "For a tree $$T$$ with root $$r$$, where each node $$u$$ has a value $$a_u$$ associated with it, the cost of the tree defined as:\n\n$$$\\sum_{u\\in T} (a_u $\\cdot d(r,u))$$$$\n\nHere, this sum is taken over all nodes $$u$$ in the tree $$T$$, and $$d(r,u)$$ denotes the number of edges on the shortest path from node $$r$$ to node $$u$$ on a tree.\n\nYou are given a tree consisting of $$n$$ nodes, rooted at node $$1$$. Each node $$i$$ has a value $$a_i$$ assigned to it. For each $$r$$ from $$1$$ to $$n$$, please solve the following problem independently:\n\nConsider the subtree of node $$r$$ with respect to node $$1$$. Formally, the subtree of node $$r$$ is the tree consisting of all nodes $$u$$ such that the shortest path from $$1$$ to $$u$$ contains $$r$$.\n\nFind the maximum cost of the subtree after performing at most one operation of the following type on the subtree:\n\n$$^{∗}$$Formally, remove the edge from $$u$$ to $$p$$, where $$p$$ is the unique node satisfying $$d(u,p)=1$$ and $$d(u,r)=d(p,r)+1$$\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each testcase contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the count of nodes in the tree.\n\nThe second line of each testcase contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 2 \\cdot 10^5$$$).\n\nThen $$n − 1$$ lines follow, the $$i$$-th line containing two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n$$$) — the two nodes that the $$i$$-th edge connects.\n\nIt is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of $$n$$ does not exceed $$2 $\\cdot 10^5$$$ over all test cases.\n\nFor each test case, print $$n$$ numbers – the answers for $$r=1,2,\\ldots,n$$.\n\nIn the first test case, for $$r=1$$, it is optimal to choose $$u=5$$ and $$v=4$$. The cost of the tree is then $$1$\\cdot 0 + 3\\cdot 1+2\\cdot 2+1\\cdot 3+2\\cdot 4=18$$$. It can be shown that a larger cost cannot be obtained over all legal operations.\n\nFor $$r=4$$ for example, there is only $$1$$ node in the subtree, so there is no operation possible. The only possible cost of the subtree is $$0$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each testcase contains a single integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the count of nodes in the tree. The second line of each testcase contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 2 \\cdot 10^5$$$). Then $$n − 1$$ lines follow, the $$i$$-th line containing two integers $$u$$ and $$v$$ ($$1 $\\leq u, v \\leq n$$$) — the two nodes that the $$i$$-th edge connects. It is guaranteed that the given edges form a tree. It is guaranteed that the sum of $$n$$ does not exceed $$2 $\\cdot 10^5$$$ over all test cases.",
+    "output": "Output For each test case, print $$n$$ numbers – the answers for $$r=1,2,\\ldots,n$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

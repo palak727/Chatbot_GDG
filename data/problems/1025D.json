@@ -1,0 +1,20 @@
+{
+    "id": "1025D",
+    "contest_id": 1025,
+    "problem_letter": "D",
+    "title": "D. Recovering BST",
+    "statement": "Dima the hamster enjoys nibbling different things: cages, sticks, bad problemsetters and even trees!\n\nRecently he found a binary search tree and instinctively nibbled all of its edges, hence messing up the vertices. Dima knows that if Andrew, who has been thoroughly assembling the tree for a long time, comes home and sees his creation demolished, he'll get extremely upset.\n\nTo not let that happen, Dima has to recover the binary search tree. Luckily, he noticed that any two vertices connected by a direct edge had their greatest common divisor value exceed $$1$$.\n\nHelp Dima construct such a binary search tree or determine that it's impossible. The definition and properties of a binary search tree can be found here.\n\nThe first line contains the number of vertices $$n$$ ($$2 $\\leq n \\leq 700$$$).\n\nThe second line features $$n$$ distinct integers $$a_i$$ ($$2 $\\leq a_i \\leq 10^9$$$) — the values of vertices in ascending order .\n\nIf it is possible to reassemble the binary search tree, such that the greatest common divisor of any two vertices connected by the edge is greater than $$1$$, print \" Yes \" (quotes for clarity).\n\nOtherwise, print \" No \" (quotes for clarity).\n\nThe picture below illustrates one of the possible trees for the first example.\n\nThe picture below illustrates one of the possible trees for the third example.",
+    "input": "Input The first line contains the number of vertices $$n$$ ($$2 $\\leq n \\leq 700$$$). The second line features $$n$$ distinct integers $$a_i$$ ($$2 $\\leq a_i \\leq 10^9$$$) — the values of vertices in ascending order .",
+    "output": "Output If it is possible to reassemble the binary search tree, such that the greatest common divisor of any two vertices connected by the edge is greater than $$1$$, print \" Yes \" (quotes for clarity). Otherwise, print \" No \" (quotes for clarity).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "number theory",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

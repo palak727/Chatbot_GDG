@@ -1,0 +1,17 @@
+{
+    "id": "2141A",
+    "contest_id": 2141,
+    "problem_letter": "A",
+    "title": "A. Furniture Store",
+    "statement": "On the website of a company that manufactures and sells furniture, customers can order $$n$$ different models of sofas, numbered from $$1$$ to $$n$$. Each sofa has a unique price; the price of the $$i$$-th sofa is denoted by $$a_i$$.\n\nEvery customer who visits the website has their own budget $$m$$, which they are willing to spend on a sofa. When they look through the list of sofa models, they search for the first sofa that costs no more than $$m$$ and orders it. If there are no such sofas, then the client leaves the website without ordering anything.\n\nThe company aims to identify which sofas will never be ordered. Your task is to determine the models such that there is no such budget $$m$$ that a customer will order this particular model.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$) — the number of test cases.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$).\n\nThe second line contains $$n$$ distinct integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 100$$$).\n\nFor each test case, provide the answer in this format: on the first line, print a single integer $$k$$ — the number of models that cannot be ordered. On the second line, print exactly $$k$$ integers in ascending order, representing the indices of the models that cannot be ordered.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 1000$$$) — the number of test cases. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$). The second line contains $$n$$ distinct integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 100$$$).",
+    "output": "Output For each test case, provide the answer in this format: on the first line, print a single integer $$k$$ — the number of models that cannot be ordered. On the second line, print exactly $$k$$ integers in ascending order, representing the indices of the models that cannot be ordered.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

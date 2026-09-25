@@ -1,0 +1,17 @@
+{
+    "id": "1045E",
+    "contest_id": 1045,
+    "problem_letter": "E",
+    "title": "E. Ancient civilizations",
+    "statement": "On the surface of a newly discovered planet, which we model by a plane, explorers found remains of two different civilizations in various locations. They would like to learn more about those civilizations and to explore the area they need to build roads between some of locations. But as always, there are some restrictions:\n\nObviously all locations are different points in the plane, but explorers found out one more interesting information that may help you – no three locations lie on the same line!\n\nHelp explorers and find a solution for their problem, or report it is impossible.\n\nIn the first line, integer $$n$$ $$(1 $\\leq n \\leq 10^3)$$$ - the number of locations discovered.\n\nIn next $$n$$ lines, three integers $$x, y, c$$ $$(0 $\\leq x, y \\leq 10^4, c \\in \\{0, 1\\})$$$ - coordinates of the location and number of civilization it belongs to.\n\nIn first line print number of roads that should be built.\n\nIn the following lines print all pairs of locations (their $$0$$-based indices) that should be connected with a road.\n\nIf it is not possible to build roads such that all restrictions are met, print \" Impossible \". You should not print the quotation marks.",
+    "input": "Input In the first line, integer $$n$$ $$(1 $\\leq n \\leq 10^3)$$$ - the number of locations discovered. In next $$n$$ lines, three integers $$x, y, c$$ $$(0 $\\leq x, y \\leq 10^4, c \\in \\{0, 1\\})$$$ - coordinates of the location and number of civilization it belongs to.",
+    "output": "Output In first line print number of roads that should be built. In the following lines print all pairs of locations (their $$0$$-based indices) that should be connected with a road. If it is not possible to build roads such that all restrictions are met, print \" Impossible \". You should not print the quotation marks.",
+    "time_limit": "0.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "*3200"
+    ],
+    "rating": 3200
+}

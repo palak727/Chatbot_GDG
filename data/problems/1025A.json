@@ -1,0 +1,17 @@
+{
+    "id": "1025A",
+    "contest_id": 1025,
+    "problem_letter": "A",
+    "title": "A. Doggo Recoloring",
+    "statement": "Panic is rising in the committee for doggo standardization — the puppies of the new brood have been born multi-colored! In total there are 26 possible colors of puppies in the nature and they are denoted by letters from ' a ' to ' z ' inclusive.\n\nThe committee rules strictly prohibit even the smallest diversity between doggos and hence all the puppies should be of the same color. Thus Slava, the committee employee, has been assigned the task to recolor some puppies into other colors in order to eliminate the difference and make all the puppies have one common color.\n\nUnfortunately, due to bureaucratic reasons and restricted budget, there's only one operation Slava can perform: he can choose a color $$x$$ such that there are currently at least two puppies of color $$x$$ and recolor all puppies of the color $$x$$ into some arbitrary color $$y$$. Luckily, this operation can be applied multiple times (including zero).\n\nFor example, if the number of puppies is $$7$$ and their colors are represented as the string \" abababc \", then in one operation Slava can get the results \" zbzbzbc \", \" bbbbbbc \", \" aaaaaac \", \" acacacc \" and others. However, if the current color sequence is \" abababc \", then he can't choose $$x$$=' c ' right now, because currently only one puppy has the color ' c '.\n\nHelp Slava and the committee determine whether it is possible to standardize all the puppies, i.e. after Slava's operations all the puppies should have the same color.\n\nThe first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the number of puppies.\n\nThe second line contains a string $$s$$ of length $$n$$ consisting of lowercase Latin letters, where the $$i$$-th symbol denotes the $$i$$-th puppy's color.\n\nIf it's possible to recolor all puppies into one color, print \" Yes \".\n\nOtherwise print \" No \".\n\nOutput the answer without quotation signs.\n\nIn the first example Slava can perform the following steps:\n\nIn the second example it's impossible to recolor any of the puppies.\n\nIn the third example all the puppies' colors are the same; thus there's no need to recolor anything.",
+    "input": "Input The first line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^5$$$) — the number of puppies. The second line contains a string $$s$$ of length $$n$$ consisting of lowercase Latin letters, where the $$i$$-th symbol denotes the $$i$$-th puppy's color.",
+    "output": "Output If it's possible to recolor all puppies into one color, print \" Yes \". Otherwise print \" No \". Output the answer without quotation signs.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

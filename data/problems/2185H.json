@@ -1,0 +1,20 @@
+{
+    "id": "2185H",
+    "contest_id": 2185,
+    "problem_letter": "H",
+    "title": "H. BattleCows 2",
+    "statement": "Farmer John wants to host another tournament with $$n$$ cows, where the $$i$$-th cow has a skill level of $$a_i$$. The following process repeats until there is only one cow in the line.\n\nHowever, to maintain accuracy to the real USACOW competition, a cow is able to cheat up to $$k$$ times. This means that even if it loses the match, Farmer John will treat it as if the losing cow won the match, meaning that the losing cow's skill level will be set to $$x + y$$, where $$x$$ is the skill level of the winning cow and $$y$$ is the skill level of the losing cow, and the winning cow will leave the line.\n\nA position $$x$$ is good for a cow $$i$$ if cow $$i$$ can be removed from its original position and inserted at index $$x$$ without changing the order of the other cows and be the only cow remaining in the line once the tournament has ended, assuming no other cow cheats.\n\nFor each cow in the line, calculate the number of good positions for that cow.\n\nThe first line of the input contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$, $$0 $\\leq k  \\lt  n$$$) — the number of cows and the number of cheats a cow can use.\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the skill levels of the cows.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output $$n$$ integers, where the $$i$$-th integer denotes the number of good positions for cow $$i$$.\n\nFor the first test case, cow $$2$$ would lose no matter what it was positioned, and cow $$1$$ would win no matter where it was positioned.\n\nFor the second test case, both cows could win at position $$1$$, but could not win at position $$2$$, meaning that they each have $$1$$ good position.\n\nFor the third test case, let's look at cow $$1$$.",
+    "input": "Input The first line of the input contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$k$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$, $$0 $\\leq k  \\lt  n$$$) — the number of cows and the number of cheats a cow can use. The second line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$) — the skill levels of the cows. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output $$n$$ integers, where the $$i$$-th integer denotes the number of good positions for cow $$i$$.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "*2500"
+    ],
+    "rating": 2500
+}

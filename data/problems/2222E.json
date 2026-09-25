@@ -1,0 +1,19 @@
+{
+    "id": "2222E",
+    "contest_id": 2222,
+    "problem_letter": "E",
+    "title": "E. Seek the Truth",
+    "statement": "\n\nThis is an interactive problem.\n\nThere are two hidden integers $$k$$ and $$c$$ such that $$k\\in \\{1,2,3\\}$$ and $$1$\\leq c\\leq 2^n-1$$$. Note that $$c$\\neq 0$$$.\n\nBefore any interaction, you need to tell the jury a non-negative integer $$a$\\leq 2^n-1$$$. The grader will then use $$a$$ as the initial element in the set $$S$$, that is, initially $$S = \\{a\\}$$.\n\nNext, you can make at most $$n+3$$ queries of the following two types:\n\nThe definition of $$f(x)$$ is as follows:\n\n$$$ f(x)= \\begin{cases} x\\,\\&\\,c & if\\, k=1,\\\\ x\\,|\\,c & if\\, k=2,\\\\ x\\oplus c & if\\, k=3.\\\\ \\end{cases} $$$\n\nHere,  $$\\&$$ denotes the bitwise AND operation ,  $$|$$ denotes the bitwise OR operation , and  $$\\oplus$$ denotes the bitwise XOR operation .\n\nYour task is to determine the values of $$k$$ and $$c$$ using at most $$n+3$$ interactions.\n\nPlease note that reporting the answer does not count towards the $$n+3$$ interactions.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 60$$$). Then, interaction follows.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.\n\nFirst, you need to output an integer $$a$$ ($$0$\\leq a\\leq 2^n-1$$$) — the initial element you chose for set $$S$$.\n\nTo make an interaction, output a single line in the following format:\n\nTo give the final answer, output a single line in the following format:\n\nAfter printing each query do not forget to output the end of line and flush$$^{∗}$$ the output. Otherwise, you will get Idleness limit exceeded verdict.\n\nIf, at any interaction step, you read $$-1$$ instead of valid data, your solution must exit immediately. This means that your solution will receive Wrong answer because of an invalid query or any other mistake. Failing to exit can result in an arbitrary verdict because your solution will continue to read from a closed stream.\n\nNote that the grader is non-adaptive . This means that the values of $$k$$ and $$c$$ are fixed at the beginning and will not change based on your interactions.\n\nHacks\n\nTo hack, use the following format.\n\nThe first line should contain a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe only line of each test case should contain three integers $$n$$, $$k$$, and $$c$$ ($$2 $\\leq n \\leq 60$$$, $$1$\\leq k\\leq 3$$$, $$1$\\leq c\\leq 2^n-1$$$).\n\nThe sum of $$n$$ over all test cases should not exceed $$10^5$$.\n\n$$^{∗}$$To flush, use:\n\nBelow is the interaction process in the example:\n\nEmpty lines in the example input and output are given only for better readability; you don't need to output them in your solution.\n\nNote that in the example, the given queries are in fact insufficient to uniquely determine the values; they are given only to illustrate the input/output format.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 60$$$). Then, interaction follows. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^5$$.",
+    "output": "",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "*2000"
+    ],
+    "rating": 2000
+}

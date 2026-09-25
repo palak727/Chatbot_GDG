@@ -1,0 +1,21 @@
+{
+    "id": "2154E",
+    "contest_id": 2154,
+    "problem_letter": "E",
+    "title": "E. No Mind To Think",
+    "statement": "You are given an array of positive integers $$a$$ of length $$n$$ and a positive integer $$k$$, and you will play the following game with them:\n\nNote that the integer $$x$$ you choose cannot change between operations.\n\nDetermine the maximum value for the sum of $$a$$ obtainable after playing the game.\n\n$$^{∗}$$The median of an array $$a$$ of length $$n$$ (written $$median(a)$$) is the $$\\left\\lfloor$\\frac{n + 1}{2}\\right\\rfloor$$$-th smallest element in $$a$$, where $$\\left\\lfloor x \\right\\rfloor$$ denotes the largest integer which is smaller than or equal to $$x$$. For example, $$median([4, 3, 1, 2, 5]) = 3$$ and $$median([4, 3, 5, 3]) = 3$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains integers $$n$$ and $$k$$ ($$3 $\\leq n \\leq 2 \\cdot 10^5$$$, $$1 $\\leq k \\leq 2 \\cdot 10^5$$$) — the length of the array $$a$$, and the maximum number of times you can perform the operation.\n\nThe second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$).\n\nThe sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output the maximum sum of $$a$$ achievable after playing the game.\n\nA way to achieve $$25$$ in the first test case is to select $$x = 5$$ and then do:\n\nA way to achieve $$13$$ in the third test case is to pick $$x = 3$$ and then do:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains integers $$n$$ and $$k$$ ($$3 $\\leq n \\leq 2 \\cdot 10^5$$$, $$1 $\\leq k \\leq 2 \\cdot 10^5$$$) — the length of the array $$a$$, and the maximum number of times you can perform the operation. The second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$). The sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output the maximum sum of $$a$$ achievable after playing the game.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "divide and conquer",
+        "greedy",
+        "sortings",
+        "ternary search",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

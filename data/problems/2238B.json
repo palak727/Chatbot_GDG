@@ -1,0 +1,18 @@
+{
+    "id": "2238B",
+    "contest_id": 2238,
+    "problem_letter": "B",
+    "title": "B. Crimson Triples",
+    "statement": "\n\nAfter summoning the next boss — The Brain of Cthulhu, you noticed that it surrounds itself with $$n$$ eyes, numbered from $$1$$ to $$n$$. In one attack, The Brain of Cthulhu chooses a triple of eyes (not necessarily distinct) with numbers $$(a, b, c)$$. The triple of eyes is called crimson if and only if the following property holds:\n\nTo defeat the boss, you want to know how many ways The Brain of Cthulhu can choose a crimson triple of eyes. The triples of eyes $$(a_1, b_1, c_1)$$ and $$(a_2, b_2, c_2)$$ are considered different if $$a_1 $\\neq a_2$$$, or $$b_1 $\\neq b_2$$$, or $$c_1 $\\neq c_2$$$.\n\n$$^{∗}$$$$\\gcd(x, y)$$ denotes the greatest common divisor (GCD) of integers $$x$$ and $$y$$.\n\n$$^{†}$$$$\\operatorname{lcm}(x, y)$$ denotes the least common multiple (LCM) of integers $$x$$ and $$y$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 1000$$$). The description of the test cases follows.\n\nThe only line of each test case contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of eyes of The Brain of Cthulhu.\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output one integer — the number of ways to choose a crimson triple of eyes.\n\nIn the first test case, there is $$1$$ possible crimson triple: $$(1, 1, 1)$$.\n\nIn the second test case, there are $$5$$ possible crimson triples: $$(1, 1, 1)$$, $$(1, 1, 2)$$, $$(2, 1, 1)$$, $$(2, 1, 2)$$, $$(2, 2, 2)$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 1000$$$). The description of the test cases follows. The only line of each test case contains one integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of eyes of The Brain of Cthulhu. It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output one integer — the number of ways to choose a crimson triple of eyes.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

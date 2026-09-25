@@ -1,0 +1,16 @@
+{
+    "id": "2266C",
+    "contest_id": 2266,
+    "problem_letter": "C",
+    "title": "C. AND, OR, Sort!",
+    "statement": "You are given a binary string $$^{∗}$$ $$s$$ of length $$n$$.\n\nYou may perform the following operation any number of times (possibly zero):\n\nNote that the bitwise AND or bitwise OR of a single element is equal to the element itself.\n\nYour goal is to make $$s$$ sorted in non-decreasing order$$^{†}$$.\n\nFind the minimum number of operations required to sort $$s$$ in non-decreasing order.\n\n$$^{∗}$$A binary string only contains characters $$\\texttt{0}$$ and $$\\texttt{1}$$.\n\n$$^{†}$$If $$s$$ is in non-decreasing order, then $$s_1 $\\leq s_2 \\leq \\ldots \\leq s_n$$$.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the length of the binary string $$s$$.\n\nThe second line of each test case contains the binary string $$s$$ of length $$n$$. Each character of $$s$$ is either 0 or 1 .\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, print a single integer — the minimum number of operations required to sort $$s$$ in non-decreasing order.\n\nIn the first test case, the string is already sorted, so no operations are required.\n\nIn the second test case, we can use bitwise OR to change the last three characters to 1 , obtaining 1111 in $$3$$ operations.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains a single integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^5$$$) — the length of the binary string $$s$$. The second line of each test case contains the binary string $$s$$ of length $$n$$. Each character of $$s$$ is either 0 or 1 . It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print a single integer — the minimum number of operations required to sort $$s$$ in non-decreasing order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings"
+    ],
+    "rating": null
+}

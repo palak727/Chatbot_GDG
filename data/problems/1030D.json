@@ -1,0 +1,17 @@
+{
+    "id": "1030D",
+    "contest_id": 1030,
+    "problem_letter": "D",
+    "title": "D. Vasya and Triangle",
+    "statement": "Vasya has got three integers $$n$$, $$m$$ and $$k$$. He'd like to find three integer points $$(x_1, y_1)$$, $$(x_2, y_2)$$, $$(x_3, y_3)$$, such that $$0 $\\leq x_1, x_2, x_3 \\leq n$$$, $$0 $\\leq y_1, y_2, y_3 \\leq m$$$ and the area of the triangle formed by these points is equal to $$\\frac{nm}{k}$$.\n\nHelp Vasya! Find such points (if it's possible). If there are multiple solutions, print any of them.\n\nThe single line contains three integers $$n$$, $$m$$, $$k$$ ($$1$\\leq n, m \\leq 10^9$$$, $$2 $\\leq k \\leq 10^9$$$).\n\nIf there are no such points, print \" NO \".\n\nOtherwise print \" YES \" in the first line. The next three lines should contain integers $$x_i, y_i$$ — coordinates of the points, one point per line. If there are multiple solutions, print any of them.\n\nYou can print each letter in any case (upper or lower).\n\nIn the first example area of the triangle should be equal to $$\\frac{nm}{k} = 4$$. The triangle mentioned in the output is pictured below:\n\nIn the second example there is no triangle with area $$\\frac{nm}{k} = $\\frac{16}{7}$$$.",
+    "input": "Input The single line contains three integers $$n$$, $$m$$, $$k$$ ($$1$\\leq n, m \\leq 10^9$$$, $$2 $\\leq k \\leq 10^9$$$).",
+    "output": "Output If there are no such points, print \" NO \". Otherwise print \" YES \" in the first line. The next three lines should contain integers $$x_i, y_i$$ — coordinates of the points, one point per line. If there are multiple solutions, print any of them. You can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

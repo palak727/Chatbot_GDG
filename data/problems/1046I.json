@@ -1,0 +1,16 @@
+{
+    "id": "1046I",
+    "contest_id": 1046,
+    "problem_letter": "I",
+    "title": "I. Say Hello",
+    "statement": "Two friends are travelling through Bubble galaxy. They say \"Hello!\" via signals to each other if their distance is smaller or equal than $$d_1$$ and\n\nWe need to calculate how many times friends said \"Hello!\" to each other. For $$N$$ moments, you'll have an array of points for each friend representing their positions at that moment. A person can stay in the same position between two moments in time, but if a person made a move we assume this movement as movement with constant speed in constant direction.\n\nThe first line contains one integer number $$N$$ ($$2 $\\leq N \\leq 100\\,000$$$) representing number of moments in which we captured positions for two friends.\n\nThe second line contains two integer numbers $$d_1$$ and $$d_2 \\ (0  \\lt  d_1  \\lt  d_2  \\lt  1000)$$.\n\nThe next $$N$$ lines contains four integer numbers $$A_x,A_y,B_x,B_y$$ ($$0 $\\leq A_x, A_y, B_x, B_y \\leq 1000$$$) representing coordinates of friends A and B in each captured moment.\n\nOutput contains one integer number that represents how many times friends will say \"Hello!\" to each other.\n\nExplanation: Friends should send signals 2 times to each other, first time around point $$A2$$ and $$B2$$ and second time during A's travel from point $$A3$$ to $$A4$$ while B stays in point $$B3=B4$$.",
+    "input": "Input The first line contains one integer number $$N$$ ($$2 $\\leq N \\leq 100\\,000$$$) representing number of moments in which we captured positions for two friends. The second line contains two integer numbers $$d_1$$ and $$d_2 \\ (0  \\lt  d_1  \\lt  d_2  \\lt  1000)$$. The next $$N$$ lines contains four integer numbers $$A_x,A_y,B_x,B_y$$ ($$0 $\\leq A_x, A_y, B_x, B_y \\leq 1000$$$) representing coordinates of friends A and B in each captured moment.",
+    "output": "Output Output contains one integer number that represents how many times friends will say \"Hello!\" to each other.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "*2300"
+    ],
+    "rating": 2300
+}

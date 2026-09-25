@@ -1,0 +1,21 @@
+{
+    "id": "2205D",
+    "contest_id": 2205,
+    "problem_letter": "D",
+    "title": "D. Simons and Beating Peaks",
+    "statement": "\n\nWe call an array $$b$$ of length $$m$$ cool if and only if:\n\nSimons has an array $$a$$ of size $$n$$. Initially, the array is a permutation$$^{∗}$$.\n\nHe must perform the following operation until the array is cool :\n\nFind the minimum number of operations for Simons to perform.\n\n$$^{∗}$$A permutation of length $$n$$ is an array consisting of $$n$$ distinct integers from $$1$$ to $$n$$ in arbitrary order. For example, $$[2,3,1,5,4]$$ is a permutation, but $$[1,2,2]$$ is not a permutation ($$2$$ appears twice in the array), and $$[1,3,4]$$ is also not a permutation ($$n=3$$ but there is $$4$$ in the array).\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 5\\cdot 10^4$$$). The description of the test cases follows.\n\nThe first line contains an integer $$n$$ ($$3$\\leq n\\leq 5\\cdot 10^5$$$) — the size of $$a$$.\n\nThe second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1$\\leq a_i\\leq n$$$, all $$a_i$$-s are distinct) — the array Simons has initially.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.\n\nFor each test case, print a single integer — the minimum number of operations for Simons to perform.\n\nIn the first test case, the array is cool initially, so Simons can't perform any operation. The answer is $$0$$.\n\nIn the second test case, Simons can perform as follows:\n\nWe can see the array is cool now. Thus, the answer is $$1$$.\n\nIn the third test case, Simons can perform as follows:\n\nThus, Simons makes the array cool in $$3$$ operations.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 5\\cdot 10^4$$$). The description of the test cases follows. The first line contains an integer $$n$$ ($$3$\\leq n\\leq 5\\cdot 10^5$$$) — the size of $$a$$. The second line contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1$\\leq a_i\\leq n$$$, all $$a_i$$-s are distinct) — the array Simons has initially. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$5$\\cdot 10^5$$$.",
+    "output": "Output For each test case, print a single integer — the minimum number of operations for Simons to perform.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2244A",
+    "contest_id": 2244,
+    "problem_letter": "A",
+    "title": "A. Iskander and Drawings",
+    "statement": "During a geometry lesson, Iskander got very bored, so he decided to draw in Yura's notebook. To do this, he took a row and drew horizontal lines on it. Some lines are long, some are short, and some parts of the page remain empty.\n\nThe page is represented by a string $$s$$, where the character '*' denotes an empty part of the paper, and the character '#' denotes one centimeter of a drawn line. A continuous sequence of '#' characters forms a single line.\n\nYura decided to erase all the lines and made Iskander help him: they will erase one of the lines from both ends simultaneously.\n\nYura wants to choose a line so that, together with Iskander, they erase it for as long as possible. Help him determine this maximum time. If there are no lines on the page, the answer is $$0$$ seconds.\n\nThe first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 2500$$$) — the number of test cases.\n\nThe first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 10$$$) — the length of the string $$s$$.\n\nThe second line of each test case contains a string $$s$$ of length $$n$$, consisting of characters '#' and '*'.\n\nFor each test case, output a single integer — the maximum time required to erase a line.",
+    "input": "Input The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 2500$$$) — the number of test cases. The first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 10$$$) — the length of the string $$s$$. The second line of each test case contains a string $$s$$ of length $$n$$, consisting of characters '#' and '*'.",
+    "output": "Output For each test case, output a single integer — the maximum time required to erase a line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "games",
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

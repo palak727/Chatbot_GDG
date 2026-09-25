@@ -1,0 +1,21 @@
+{
+    "id": "2196D",
+    "contest_id": 2196,
+    "problem_letter": "D",
+    "title": "D. Double Bracket Sequence",
+    "statement": "Given a string $$s$$ of even length, consisting of the characters \" ( \", \" ) \", \" [ \" and \" ] \", which are brackets of two types (round and square).\n\nWe call a string $$t$$ beautiful if it satisfies two conditions simultaneously:\n\nFor example, the string \" [(][)[]]() \" is beautiful , as the subsequence of all round brackets in it \" ()() \" forms a correct bracket sequence and the subsequence of all square brackets in it \" [][[]] \" forms a correct bracket sequence.\n\nYou would like to turn $$s$$ into any beautiful string; for this, you can change the characters: in one operation, you can choose a position $$i$$, such that $$1 $\\leq i \\leq n$$$ and change the character $$s_{i}$$ to any round or square bracket.\n\nWhat is the minimum number of operations required to transform $$s$$ into any beautiful string?\n\n$$^{∗}$$A bracket sequence is called correct if by inserting the symbols \" + \" and \" 1 \" into it, one can obtain a valid mathematical expression. For example, the sequences \" (())() \", \" [] \" and \" (()(())) \" are correct, while \" )( \", \" [[] \" and \" (()))( \" are not.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains one integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^{5}$$$) — the length of the string $$s$$. It is guaranteed that $$n$$ is even.\n\nThe second line of each test case contains a string $$s$$ of length $$n$$, consisting only of the characters \" ( \", \" ) \", \" [ \" and \" ] \".\n\nIt is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$\n\nFor each test case, output a single integer — the answer to the problem.\n\nIn the first test case, from $$s$$ you can obtain \" [] \" by changing the second character.\n\nIn the second test case, from $$s$$, in $$2$$ operations, you can obtain \" [][] \", by changing the characters at positions $$2$$ and $$4$$.\n\nIn the third test case, from $$s$$, in $$2$$ operations, you can obtain \" ()[] \", by changing the characters at positions $$1$$ and $$4$$.\n\nIn the fourth test case, $$s$$ is already beautiful , as it can be divided into the subsequences \" () \" and \" [] \".",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains one integer $$n$$ ($$2 $\\leq n \\leq 2 \\cdot 10^{5}$$$) — the length of the string $$s$$. It is guaranteed that $$n$$ is even. The second line of each test case contains a string $$s$$ of length $$n$$, consisting only of the characters \" ( \", \" ) \", \" [ \" and \" ] \". It is guaranteed that the sum of $$n$$ across all test cases does not exceed $$2 $\\cdot 10^5$$$",
+    "output": "Output For each test case, output a single integer — the answer to the problem.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "expression parsing",
+        "flows",
+        "greedy",
+        "strings",
+        "*2500"
+    ],
+    "rating": 2500
+}

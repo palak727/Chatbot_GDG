@@ -1,0 +1,18 @@
+{
+    "id": "1028C",
+    "contest_id": 1028,
+    "problem_letter": "C",
+    "title": "C. Rectangles",
+    "statement": "You are given $$n$$ rectangles on a plane with coordinates of their bottom left and upper right points. Some $$(n-1)$$ of the given $$n$$ rectangles have some common point. A point belongs to a rectangle if this point is strictly inside the rectangle or belongs to its boundary.\n\nFind any point with integer coordinates that belongs to at least $$(n-1)$$ given rectangles.\n\nThe first line contains a single integer $$n$$ ($$2 $\\leq n \\leq 132\\,674$$$) — the number of given rectangles.\n\nEach the next $$n$$ lines contains four integers $$x_1$$, $$y_1$$, $$x_2$$ and $$y_2$$ ($$-10^9 $\\leq x_1  \\lt  x_2 \\leq 10^9$$$, $$-10^9 $\\leq y_1  \\lt  y_2 \\leq 10^9$$$) — the coordinates of the bottom left and upper right corners of a rectangle.\n\nPrint two integers $$x$$ and $$y$$ — the coordinates of any point that belongs to at least $$(n-1)$$ given rectangles.\n\nThe picture below shows the rectangles in the first and second samples. The possible answers are highlighted.\n\nThe picture below shows the rectangles in the third and fourth samples.",
+    "input": "Input The first line contains a single integer $$n$$ ($$2 $\\leq n \\leq 132\\,674$$$) — the number of given rectangles. Each the next $$n$$ lines contains four integers $$x_1$$, $$y_1$$, $$x_2$$ and $$y_2$$ ($$-10^9 $\\leq x_1  \\lt  x_2 \\leq 10^9$$$, $$-10^9 $\\leq y_1  \\lt  y_2 \\leq 10^9$$$) — the coordinates of the bottom left and upper right corners of a rectangle.",
+    "output": "Output Print two integers $$x$$ and $$y$$ — the coordinates of any point that belongs to at least $$(n-1)$$ given rectangles.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "implementation",
+        "sortings",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2201A1",
+    "contest_id": 2201,
+    "problem_letter": "A1",
+    "title": "A1. Lost Civilization (Easy Version)",
+    "statement": "\n\nThis is the easy version of the problem. The difference between the versions is that in this version, you must compute a value for one sequence. You can hack only if you solved all versions of this problem.\n\nLet's define an algorithm to generate a sequence of $$m+k$$ integers as follows:\n\nAlice knows that this algorithm was used by an ancient civilization in order to hide their secrets safely. Alice wants to learn the knowledge that they wanted to hide, but it is not an easy job to infer the input from the output of the algorithm.\n\nGiven a sequence $$a$$ of $$n$$ integers, determine the length of the shortest sequence that could be given as an input for the algorithm to generate $$a$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 300\\,000$$$).\n\nThe second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$).\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$300\\,000$$.\n\nFor each test case, output the length of the shortest sequence on a separate line.\n\nIn the first test case, the sequence $$[1]$$ can generate the sequence $$a=[1,2,3,4,5]$$ by the following process:\n\n$$$[1] \\to [1,\\color{red}{2}] \\to [1,2,\\color{red}{3}] \\to [1,2,3,\\color{red}{4}] \\to [1,2,3,4,\\color{red}{5}]$$$\n\nIn the second test case, the only sequence that can generate $$a=[1,3,5,7,9]$$ is $$a$$ itself.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 300\\,000$$$). The second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$). It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$300\\,000$$.",
+    "output": "Output For each test case, output the length of the shortest sequence on a separate line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2180F1",
+    "contest_id": 2180,
+    "problem_letter": "F1",
+    "title": "F1. Control Car (Easy Version)",
+    "statement": "The two versions differ in the limits, including variable bounds, as well as time and memory constraints. You can hack only if you solve both versions of this problem. Note that a correct solution for the hard version is not necessarily a valid solution for the easy version.\n\nWe have a control car that behaves like a random variable. As a random variable is neither truly random nor truly variable, our control car is neither a car nor controllable!\n\nAnyhow, we are given a grid of size $$n $\\times m$$$ formed by the intersections of $$n+1$$ horizontal lines and $$m+1$$ vertical lines. The grid contains $$(n+1)(m+1)$$ intersection points, which are the corners surrounding the cells.\n\nAn orientation is an assignment of one of the four cardinal directions (up, down, left, right) to each of these $$(n+1)(m+1)$$ intersection points. Therefore, there are $$4^{(n+1)(m+1)}$$ possible orientations.\n\nConsider the process below for an orientation:\n\nCount the number of valid orientations. As the number of valid orientations can be huge, print the answer modulo $$10^9+7$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 5000$$$), the sizes of the grid.\n\nFor each test case, output the number of valid orientations modulo $$10^9+7$$.\n\nIn the first test case, for an orientation to be valid, we need at least one of the lower-left or lower-right walls to cover the bottom border of the square. We also need at least one of the upper-right or lower-right walls to cover the right border. If both of these conditions hold, then the orientation is valid.\n\nNow, if the upper-right corner points downward and the lower-left corner points to the right, then the upper-left and lower-right corners can point in arbitrary directions. Hence, there are $$16$$ valid orientations of this type.\n\nIf one of the upper-right or lower-left corners points in a different direction, the lower-right corner must cover the corresponding border. Therefore, only one of them can point in a different direction. In total, there are $$2 $\\cdot 3 \\cdot 4 = 24$$$ valid orientations of this type.\n\nThus, the final answer is $$16 + 24 = 40$$.\n\nLink to the visualizer",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 5000$$$), the sizes of the grid.",
+    "output": "Output For each test case, output the number of valid orientations modulo $$10^9+7$$.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

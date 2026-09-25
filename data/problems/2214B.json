@@ -1,0 +1,16 @@
+{
+    "id": "2214B",
+    "contest_id": 2214,
+    "problem_letter": "B",
+    "title": "B. Are You Smiling?",
+    "statement": "Show us a smile! 😁\n\nFor a properly chosen $$?$$, the following equation holds: $$U + ? = HAPPY$$.\n\nOutput $$?$$, a string consisting of uppercase letters and numbers.",
+    "input": "",
+    "output": "Output For a properly chosen $$?$$, the following equation holds: $$U + ? = HAPPY$$. Output $$?$$, a string consisting of uppercase letters and numbers.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "strings"
+    ],
+    "rating": null
+}

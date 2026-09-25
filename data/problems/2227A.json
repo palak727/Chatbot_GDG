@@ -1,0 +1,17 @@
+{
+    "id": "2227A",
+    "contest_id": 2227,
+    "problem_letter": "A",
+    "title": "A. Koshary",
+    "statement": "Yousef is at the coordinates $$(0, 0)$$ and wants to reach a plate of Koshary at $$(x, y)$$.\n\nTo get there, Yousef takes long steps. From any point $$(a, b)$$, a long step moves him to:\n\nHowever, Yousef is allowed to take at most one short step during his entire journey. A short step moves him to:\n\nCan Yousef reach the exact coordinates $$(x, y)$$ of the Koshary plate?\n\nThe first line contains an integer $$t$$ ($$1 $\\leq t \\leq 100$$$) — the number of test cases.\n\nEach test case contains two integers $$x$$ and $$y$$ ($$1 $\\leq x, y \\leq 10$$$) — the coordinates of the Koshary plate.\n\nFor each test case, output \" YES \" if Yousef can reach the Koshary plate and \" NO \" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.\n\nIn the first test case, it is impossible to reach $$(1, 1)$$ using the mentioned steps.\n\nIn the second test case, an optimal sequence of steps would be: $$$(0, 0) \\xrightarrow{\\texttt{long}} (0, 2) \\xrightarrow{\\texttt{short}} (1, 2)$$$\n\nIn the third test case, an optimal sequence of steps would be: $$$(0, 0) \\xrightarrow{\\texttt{long}} (0, 2) \\xrightarrow{\\texttt{long}} (2, 2) \\xrightarrow{\\texttt{long}} (2, 4) \\xrightarrow{\\texttt{long}} (4, 4) \\xrightarrow{\\texttt{long}} (4, 6)$$$",
+    "input": "Input The first line contains an integer $$t$$ ($$1 $\\leq t \\leq 100$$$) — the number of test cases. Each test case contains two integers $$x$$ and $$y$$ ($$1 $\\leq x, y \\leq 10$$$) — the coordinates of the Koshary plate.",
+    "output": "Output For each test case, output \" YES \" if Yousef can reach the Koshary plate and \" NO \" otherwise. You can output the answer in any case (upper or lower). For example, the strings \" yEs \", \" yes \", \" Yes \", and \" YES \" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

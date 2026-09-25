@@ -1,0 +1,18 @@
+{
+    "id": "2152D",
+    "contest_id": 2152,
+    "problem_letter": "D",
+    "title": "D. Division Versus Addition",
+    "statement": "\n\nFor an array $$b=[b_1,b_2,\\ldots,b_m]$$ of length $$m$$ ($$b_i $\\geq 2$$$), consider the following two-player game played by Poby and Rekkles.\n\nThe game ends once all elements in the array $$b$$ are equal to $$1$$.\n\nDefine the score of the game as the number of moves that Poby makes. Poby's goal is to minimize the score , while Rekkles's goal is to maximize the score .\n\nThen, the value of the array $$b$$ is the score of the game when both players play optimally.\n\nYou are given an integer array $$a$$ of length $$n$$ ($$a_i $\\geq 2$$$).\n\nAnswer $$q$$ independent queries. In each query, you are given a range $$1 $\\leq l \\leq r \\leq n$$$ and must find the value of the array $$[a_l, a_{l+1}, \\ldots, a_r]$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 250\\,000$$$) — the length of the array and the number of queries.\n\nThe next line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$2 $\\leq a_i \\leq 10^9$$$) — the elements of the array $$a$$.\n\nThen $$q$$ lines follow. The $$j$$-th of them contains two integers $$l_j$$ and $$r_j$$ ($$1 $\\leq l_j \\leq r_j \\leq n$$$) — the range of the subarray for the $$i$$-th query.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$250\\,000$$.\n\nIt is guaranteed that the sum of $$q$$ over all test cases does not exceed $$250\\,000$$.\n\nFor each test case, output $$q$$ lines. The $$i$$-th line should contain a single integer representing the answer to the $$i$$-th query.\n\nExplanation of the first test case, first query (1 1):\n\nThe subarray is $$[4]$$.\n\nIt can be shown that this strategy is optimal for both players. Therefore, the value of the array $$[4]$$ is $$2$$.\n\nExplanation of the first test case, second query (1 2):\n\nThe subarray is $$[4,3]$$.\n\nIt can be shown that this strategy is optimal for both players. Therefore, the value of the array $$[4,3]$$ is $$3$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 250\\,000$$$) — the length of the array and the number of queries. The next line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$2 $\\leq a_i \\leq 10^9$$$) — the elements of the array $$a$$. Then $$q$$ lines follow. The $$j$$-th of them contains two integers $$l_j$$ and $$r_j$$ ($$1 $\\leq l_j \\leq r_j \\leq n$$$) — the range of the subarray for the $$i$$-th query. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$250\\,000$$. It is guaranteed that the sum of $$q$$ over all test cases does not exceed $$250\\,000$$.",
+    "output": "Output For each test case, output $$q$$ lines. The $$i$$-th line should contain a single integer representing the answer to the $$i$$-th query.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

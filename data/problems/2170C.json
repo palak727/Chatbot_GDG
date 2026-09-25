@@ -1,0 +1,18 @@
+{
+    "id": "2170C",
+    "contest_id": 2170,
+    "problem_letter": "C",
+    "title": "C. Quotient and Remainder",
+    "statement": "You are given two integer arrays: $$q_1, q_2, \\dots, q_n$$ and $$r_1, r_2, \\dots, r_n$$, as well as an integer $$k$$.\n\nYou can perform the following operation any number of times (possibly zero):\n\nCalculate the maximum number of operations that you can perform on the given arrays $$q$$ and $$r$$.\n\nThe first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases.\n\nThe first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$; $$2 $\\leq k \\leq 10^{18}$$$) — the size of the arrays $$q$$ and $$r$$ and the upper limit for $$x$$ and $$y$$.\n\nThe second line of each test case contains $$n$$ integers $$q_1, q_2, \\dots, q_n$$ ($$1 $\\leq q_i \\leq 10^9$$$) — the array $$q$$.\n\nThe third line contains $$n$$ integers $$r_1, r_2, \\dots, r_n$$ ($$1 $\\leq r_i \\leq 10^9$$$) — the array $$r$$.\n\nAdditional constraints on the input: the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, print one integer — the maximum number of operations that you can perform on the given arrays.\n\nIn the first test case, one operation can be performed: you can choose $$x = 69$$ and $$y = 42$$. Then $$\\left\\lfloor $\\frac{69}{42} \\right\\rfloor = 1 = q_1$$$ and $$69 \\bmod 42 = 27 = r_1$$.\n\nIn the second test case, it is impossible to perform any operations, as suitable $$x$$ and $$y$$ cannot be found.\n\nIn the third test case, three operations can be performed:",
+    "input": "Input The first line contains one integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The first line of each test case contains two integers $$n$$ and $$k$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$; $$2 $\\leq k \\leq 10^{18}$$$) — the size of the arrays $$q$$ and $$r$$ and the upper limit for $$x$$ and $$y$$. The second line of each test case contains $$n$$ integers $$q_1, q_2, \\dots, q_n$$ ($$1 $\\leq q_i \\leq 10^9$$$) — the array $$q$$. The third line contains $$n$$ integers $$r_1, r_2, \\dots, r_n$$ ($$1 $\\leq r_i \\leq 10^9$$$) — the array $$r$$. Additional constraints on the input: the sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, print one integer — the maximum number of operations that you can perform on the given arrays.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

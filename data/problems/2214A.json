@@ -1,0 +1,17 @@
+{
+    "id": "2214A",
+    "contest_id": 2214,
+    "problem_letter": "A",
+    "title": "A. Odd One Out",
+    "statement": "Output exactly two characters: a single letter followed by a single digit, with no spaces or additional characters between them.",
+    "input": "",
+    "output": "Output Output exactly two characters: a single letter followed by a single digit, with no spaces or additional characters between them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "graph matchings",
+        "implementation"
+    ],
+    "rating": null
+}

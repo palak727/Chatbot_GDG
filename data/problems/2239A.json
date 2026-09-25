@@ -1,0 +1,19 @@
+{
+    "id": "2239A",
+    "contest_id": 2239,
+    "problem_letter": "A",
+    "title": "A. Nim Game Is XOR Game",
+    "statement": "Alice and Bob are playing a game with an array $$a$$ consisting of $$n$$ non-negative integers. Alice goes first.\n\nIn each turn, the current player must choose an array of $$n$$ non-negative integers $$b = [b_1, b_2, \\ldots, b_n]$$ that satisfies the following conditions:\n\nAfter choosing the array $$b$$, the player updates the array $$a$$ by performing $$a_i \\leftarrow a_i - b_i$$ for all $$1 $\\leq i \\leq n$$$.\n\nThe player who cannot perform such an operation loses the game.\n\nDetermine the number of valid choices for the array $$b$$ that Alice can make on her first turn to guarantee a win, assuming both players play optimally. Since this number may be large, output the answer modulo $$998\\,244\\,353$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^6$$$) — the length of the array $$a$$.\n\nThe second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i  \\lt  2^{30}$$$) — the contents of the array $$a$$\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^6$$.\n\nFor each test case, output the number of valid choices for the array $$b$$ that Alice can make on her first turn to guarantee a win modulo $$998\\,244\\,353$$.\n\nIn the first test case, Alice must choose an array $$b$$ of length $$1$$. The conditions require $$b_1 $\\leq a_1$$$, $$b_1  \\gt  0$$, and $$b_1 = 0$$. It is impossible to satisfy $$b_1  \\gt  0$$ and $$b_1 = 0$$ simultaneously. Thus, Alice has no valid moves and loses immediately. The answer is $$0$$.\n\nIn the second test case, $$a = [1, 2]$$. Alice must choose $$b = [b_1, b_2]$$. The condition $$b_1 \\oplus b_2 = 0$$ implies that $$b_1 = b_2$$. Since $$0 $\\leq b_1 \\leq 1$$$ and $$0 $\\leq b_2 \\leq 2$$$, and the array $$b$$ cannot consist entirely of zeros, the only valid choice is $$b = [1, 1]$$. If Alice chooses $$b = [1, 1]$$, the array updates to $$a = [1-1, 2-1] = [0, 1]$$. Now it is Bob's turn. Similar to Alice's situation, Bob must choose $$b'$$ such that $$b'_1 = b'_2$$. Since $$a_1 = 0$$, he is forced to pick $$b'_1 = 0$$, which means $$b'_2 = 0$$. Since a valid move must have $$\\sum b'_i  \\gt  0$$, Bob has no valid moves and loses. Therefore, $$b = [1, 1]$$ is a winning move for Alice, and the answer is $$1$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^6$$$) — the length of the array $$a$$. The second line of each test case contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$1 $\\leq a_i  \\lt  2^{30}$$$) — the contents of the array $$a$$ It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$10^6$$.",
+    "output": "Output For each test case, output the number of valid choices for the array $$b$$ that Alice can make on her first turn to guarantee a win modulo $$998\\,244\\,353$$.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

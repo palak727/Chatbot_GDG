@@ -1,0 +1,19 @@
+{
+    "id": "2225G",
+    "contest_id": 2225,
+    "problem_letter": "G",
+    "title": "G. Simple Problem",
+    "statement": "One day, Polycarp came up with the following simple problem: the numbers $$0, 1, \\ldots, n-1$$ are given. Is it possible to arrange them so that the absolute difference of every adjacent pair of numbers is divisible by at least one of the numbers $$k_1, k_2, \\ldots, k_m$$?\n\nPolycarp spent a long time thinking about how to solve this problem and eventually realized that it is not so simple after all. Help him solve this problem.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$m$$ ($$3 $\\leq n \\leq 5 \\cdot 10^{3}$$$; $$1 $\\leq m \\leq 10$$$).\n\nThe second line of each test case contains $$m$$ integers $$k_{i}$$ ($$1 $\\leq k_i \\leq \\left\\lfloor \\frac{n}{3} \\right\\rfloor $$$).\n\nAdditional constraints on the input:\n\nFor each test case, output one of the following:",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^3$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$m$$ ($$3 $\\leq n \\leq 5 \\cdot 10^{3}$$$; $$1 $\\leq m \\leq 10$$$). The second line of each test case contains $$m$$ integers $$k_{i}$$ ($$1 $\\leq k_i \\leq \\left\\lfloor \\frac{n}{3} \\right\\rfloor $$$). Additional constraints on the input: the sum of $$n$$ over all test cases does not exceed $$5 $\\cdot 10^{3}$$$.",
+    "output": "Output For each test case, output one of the following: -1 on a single line if no suitable arrangement exists; $$n$$ integers $$0, 1, \\ldots, n-1$$ satisfying the condition. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "graphs",
+        "greedy",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

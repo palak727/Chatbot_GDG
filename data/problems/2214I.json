@@ -1,0 +1,15 @@
+{
+    "id": "2214I",
+    "contest_id": 2214,
+    "problem_letter": "I",
+    "title": "I. You Are a Robot",
+    "statement": "There is a track system consisting of $$n$$ intersections, numbered from $$1$$ to $$n$$. The track forms a tree rooted at intersection $$1$$. An unstoppable trolley starts at intersection $$1$$ and moves along the edges of the tree.\n\nEach edge, corresponding to a track segment, contains one of the following:\n\nYou are a robot, and all robots share a unified mind. You can control the direction of the trolley at any intersection it arrives at.\n\nThe trolley stops when there are no further directions it can take. Determine the intersection at which the trolley will stop.\n\nIf there are multiple possible answers, you may output any.\n\nEach test contains multiple test cases. The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of intersections.\n\nThe second line of each test case contains $$n - 1$$ integers $$p_2, p_3, \\ldots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$), where $$p_i$$ denotes the parent of intersection $$i$$ in the tree.\n\nThe third line of each test case contains $$n - 1$$ integers $$a_2, a_3, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 2$$$), where $$a_i$$ describes the type of the track segment between node $$p_i$$ and node $$i$$:\n\nThe sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.\n\nFor each test case, output a single integer denoting a possible answer. If there are multiple possible answers, you may output any.",
+    "input": "Input Each test contains multiple test cases. The first line contains a single integer $$t$$ ($$1 $\\leq t \\leq 10^4$$$) — the number of test cases. The description of the test cases follows. The first line of each test case contains an integer $$n$$ ($$1 $\\leq n \\leq 2 \\cdot 10^5$$$) — the number of intersections. The second line of each test case contains $$n - 1$$ integers $$p_2, p_3, \\ldots, p_n$$ ($$1 $\\leq p_i  \\lt  i$$$), where $$p_i$$ denotes the parent of intersection $$i$$ in the tree. The third line of each test case contains $$n - 1$$ integers $$a_2, a_3, \\ldots, a_n$$ ($$0 $\\leq a_i \\leq 2$$$), where $$a_i$$ describes the type of the track segment between node $$p_i$$ and node $$i$$: $$0$$ denotes an empty segment, $$1$$ denotes a human, $$2$$ denotes a robot. The sum of $$n$$ over all test cases does not exceed $$2 $\\cdot 10^5$$$.",
+    "output": "Output For each test case, output a single integer denoting a possible answer. If there are multiple possible answers, you may output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

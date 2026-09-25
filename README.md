@@ -1,49 +1,60 @@
 # CP Chatbot
 
-A production-ready Streamlit web application for competitive programming students. Search Codeforces problems with semantic vector search (FAISS), get Socratic hints powered by Gemini, find related practice problems, and receive AI code reviews.
+A simple Streamlit app for exploring Codeforces problems. It helps students search for problems, filter by tags and rating, browse related material, and get guidance or code feedback through Groq.
 
-## Features
+## What this project does
 
-- **Pre-computed FAISS index** — embeddings built offline; the app loads from disk instantly
-- **Codeforces API ingestion** — metadata, tags, and ratings via official API; HTML scraping for statements
-- **Semantic & exact search** — natural language queries or direct problem ID lookup (e.g. `1000A`)
-- **Sidebar filters** — filter by tags and difficulty rating (800–2400)
-- **Socratic hint engine** — 3-level guidance (intuition → algorithm → full solution)
-- **Related problems** — FAISS similarity search with rating-matched recommendations
-- **Code scratchpad** — paste C++/Python code for Gemini-powered review
+- Search Codeforces problems by topic, title, or exact problem ID
+- Combine FAISS and BM25 search for hybrid retrieval
+- Filter by tags and rating range
+- Browse matching problems when no search query is entered
+- Show related problems and helpful suggestions
+- Review C++ or Python code with Groq
 
-## Project Structure
+## Tech stack
 
-```
+- Python
+- Streamlit
+- FAISS
+- BM25 ranking
+- sentence-transformers embeddings
+- Groq API
+- Codeforces API and scraped statement pages
+
+## Project structure
+
+```text
 CP_chatbot/
-├── app.py                  # Streamlit entry point
-├── config.py               # Paths and constants
+├── app.py                  # Streamlit app
+├── benchmark.py            # Benchmarking script
+├── config.py               # Paths and configuration
 ├── requirements.txt
+├── scrape_problems.py      # Scraper wrapper
 ├── src/
-│   ├── indexer.py          # Build & save FAISS index (run offline)
-│   ├── scraper.py          # Codeforces API + HTML scraper
-│   ├── search.py           # Search engine (loads index from disk)
-│   ├── gemini_client.py    # Hints, solutions, code review
-│   └── utils.py            # LaTeX formatting, rating extraction
+│   ├── indexer.py          # Build the FAISS index
+│   ├── scraper.py          # Codeforces metadata and statement scraper
+│   ├── search.py           # Hybrid search logic
+│   ├── groq_client.py      # Groq guidance and code review
+│   └── utils.py            # Rating and rendering helpers
 ├── data/
-│   ├── problems/           # Problem JSON files (gitignored)
-│   └── index/              # faiss.index + metadata.pkl (gitignored)
-└── .streamlit/
-    ├── config.toml         # Theme
-    └── secrets.toml        # API keys (gitignored)
+│   ├── problems/           # Problem JSON data
+│   └── index/              # FAISS index and metadata
+├── tests/                  # Offline search and regression tests
+├── .streamlit/
+│   ├── config.toml
+│   └── secrets.toml         # Local Groq API key
+└── README.md
 ```
 
-## Quick Start (Local)
+## Setup
 
-### 1. Clone and install dependencies
+Create a virtual environment and install dependencies:
 
 ```bash
-git clone <your-repo-url>
-cd CP_chatbot
 python -m venv venv
 
-# Windows
-venv\Scripts\activate
+# Windows PowerShell
+venv\Scripts\Activate.ps1
 
 # macOS / Linux
 source venv/bin/activate
@@ -51,86 +62,86 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Configure API key
-
-Create `.streamlit/secrets.toml`:
+Add your Groq API key in `.streamlit/secrets.toml`:
 
 ```toml
-API_KEY = "your-gemini-api-key"
+GROQ_API_KEY = "your-groq-api-key"
 ```
 
-Or set an environment variable:
+You can also set it in the environment instead:
 
-```bash
-export GEMINI_API_KEY="your-gemini-api-key"
+```powershell
+$env:GROQ_API_KEY = "your-groq-api-key"
 ```
 
-Get a free key at [Google AI Studio](https://aistudio.google.com/app/apikey).
-
-### 3. Ingest problems (optional if JSON files already exist)
-
-```bash
-python -m src.scraper
-```
-
-This fetches metadata from the Codeforces API and scrapes statements (1 req/sec rate limit).
-
-### 4. Build the search index (required before first run)
-
-```bash
-python -m src.indexer
-```
-
-Creates `data/index/faiss.index` and `data/index/metadata.pkl`.
-
-### 5. Run the app
+Run the app:
 
 ```bash
 streamlit run app.py
 ```
 
-Open [http://localhost:8501](http://localhost:8501).
+The app is usually available at `http://localhost:8501`.
 
-## Deploy to Streamlit Community Cloud
+## Data and indexing
 
-1. Push your repo to GitHub (exclude large files — they are in `.gitignore`).
-2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your repo.
-3. Set **Main file path** to `app.py`.
-4. Add secrets in the Cloud dashboard:
+The project includes a pre-built FAISS index.
 
-   ```toml
-   API_KEY = "your-gemini-api-key"
-   ```
+Fetch problem metadata and statements:
 
-5. **Important:** The FAISS index must exist in the repo or be built at deploy time. Options:
-   - Commit `data/index/faiss.index` and `data/index/metadata.pkl` (remove from `.gitignore` temporarily), or
-   - Add a build step in `packages.txt` / custom script, or
-   - Include problem JSONs and run `python -m src.indexer` in a pre-deploy hook.
+```bash
+python -m src.scraper
+```
 
-6. For environment-variable fallback, set `GEMINI_API_KEY` in Cloud secrets or env vars.
+This uses the official Codeforces API for metadata and Codeforces HTML pages for problem statements. The current dataset contains 1,061 valid problems.
 
-## Deploy to Render / Hugging Face Spaces
-
-Same steps as above. Set `GEMINI_API_KEY` as an environment variable. Run the indexer locally and commit the index artifacts, or build them in a CI step before deploy.
-
-## Usage Tips
-
-| Action | How |
-|--------|-----|
-| Find by ID | Switch to **Exact Problem ID** mode, type `1000A` |
-| Topic search | **Semantic Search** + query like `segment tree` |
-| Filter by tag | Select tags in sidebar (e.g. `dp`, `graphs`) |
-| Get hints | Open a problem → choose hint level → **Generate Hint** |
-| Code review | Paste code in scratchpad → **Review My Code** |
-
-## Rebuilding the Index
-
-Re-run after adding or updating problem JSON files:
+Rebuild the index after changing the problem JSON files:
 
 ```bash
 python -m src.indexer
 ```
 
-## License
+The indexer supports `--problems-dir`, `--model-name`, and `--no-progress`. It writes the index to `data/index/faiss.index` and the metadata to `data/index/metadata.pkl`.
 
-MIT
+## Search behavior
+
+The search box accepts:
+
+- problem ID such as `1000A`
+- topic text such as `shortest path`
+- title or concept text such as `dynamic programming`
+
+Search behavior is designed to be practical:
+
+- exact problem IDs are detected first
+- filters are applied before ranking during a query
+- with no query, selecting tags or a rating range browses matching problems
+- with no query and no filters, the app shows an empty-state prompt instead of loading the full dataset
+- multiple tags use AND logic
+- rating bounds are inclusive
+
+## Benchmarking and tests
+
+Run the benchmark to check index size, load time, memory usage, and search latency:
+
+```bash
+python benchmark.py
+```
+
+Run the offline tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## How to use it
+
+1. Enter a problem ID, topic, or problem concept in the search box.
+2. Use the sidebar to narrow results by tag or rating.
+3. Pick a result to view the problem and related suggestions.
+4. Ask for guidance or review code if needed.
+
+## Deployment
+
+For Streamlit Community Cloud, set the app entry file to `app.py` and configure `GROQ_API_KEY` in the app secrets. Keep the tracked FAISS index available in the repository, and rebuild it if the dataset changes.
+
+

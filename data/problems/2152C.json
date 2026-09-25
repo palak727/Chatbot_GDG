@@ -1,0 +1,18 @@
+{
+    "id": "2152C",
+    "contest_id": 2152,
+    "problem_letter": "C",
+    "title": "C. Triple Removal",
+    "statement": "\n\nTired of supporting ranged carries, Keria is now creating a data structure problem about supporting range queries.\n\nFor an array $$b = [b_1, b_2, \\ldots, b_m]$$ of length $$m$$ where $$b_i=0$$ or $$b_i=1$$, consider the following triple removal operation:\n\nWe want to make the array $$b$$ empty using the triple removal operation. Hence, we define the total cost of an array as the minimum possible sum of the costs of triple removal operations required to make the array empty. If it is impossible to make the array empty, the cost is defined to be $$-1$$.\n\nKeria wants to test his data structure. For this, you must answer $$q$$ independent queries. Initially, you are given an array $$a = [a_1, a_2, \\ldots, a_n]$$ of length $$n$$ where $$a_i=0$$ or $$a_i=1$$. For each query, you are given a range $$1 $\\leq l \\leq r \\leq n$$$ and must find the cost for the array $$[a_l, a_{l+1}, \\ldots, a_r]$$.\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows.\n\nThe first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 250\\,000$$$) — the length of the array and the number of queries.\n\nThe next line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$a_i = 0$$ or $$a_i=1$$) — the elements of the array.\n\nThen $$q$$ lines follow. The $$i$$-th of them contains two integers $$l_i$$ and $$r_i$$ ($$1 $\\leq l_i \\leq r_i \\leq n$$$) — the range of the subarray for the $$i$$-th query.\n\nIt is guaranteed that the sum of $$n$$ over all test cases does not exceed $$250\\,000$$.\n\nIt is guaranteed that the sum of $$q$$ over all test cases does not exceed $$250\\,000$$.\n\nFor each test case, output $$q$$ lines. The $$i$$-th line should contain a single integer representing the answer to the $$i$$-th query.\n\nExplanation of the first test case, first query (1 12):\n\nThe subarray is $$[0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0]$$. There are six $$0$$s and six $$1$$s. A possible optimal sequence of operations is:\n\nThe total cost is $$1+1+1+1=4$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 10^4$$$). The description of the test cases follows. The first line of each test case contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 250\\,000$$$) — the length of the array and the number of queries. The next line contains $$n$$ integers $$a_1, a_2, \\ldots, a_n$$ ($$a_i = 0$$ or $$a_i=1$$) — the elements of the array. Then $$q$$ lines follow. The $$i$$-th of them contains two integers $$l_i$$ and $$r_i$$ ($$1 $\\leq l_i \\leq r_i \\leq n$$$) — the range of the subarray for the $$i$$-th query. It is guaranteed that the sum of $$n$$ over all test cases does not exceed $$250\\,000$$. It is guaranteed that the sum of $$q$$ over all test cases does not exceed $$250\\,000$$.",
+    "output": "Output For each test case, output $$q$$ lines. The $$i$$-th line should contain a single integer representing the answer to the $$i$$-th query.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

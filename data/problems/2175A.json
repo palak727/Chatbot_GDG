@@ -1,0 +1,16 @@
+{
+    "id": "2175A",
+    "contest_id": 2175,
+    "problem_letter": "A",
+    "title": "A. Little Fairy's Painting",
+    "statement": "The little fairy has a ribbon with $$10^{18}$$ cells and an infinite variety of colors. The first $$n$$ cells of the ribbon have already been colored, where the $$i$$-th cell is colored with color $$a_i$$.\n\nLittle fairy will color the remaining cells in order from $$n+1$$ to $$10^{18}$$. For the $$i$$-th cell:\n\nWhat color will the fairy use for the $$10^{18}$$-th cell?\n\nEach test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows.\n\nThe first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the number of colored cells.\n\nThe second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^3$$$) — the colors of the cells.\n\nFor each test case, print the color of the last cell.\n\nIn the first example, each time there is only one distinct color on the ribbon, so the fairy always chooses the color $$1$$.\n\nIn the second example, the fairy will color the next $$1000$$ cells with colors from $$1$$ to $$1000$$ sequentially, after that all next cells will be colored with color $$1000$$.",
+    "input": "Input Each test contains multiple test cases. The first line contains the number of test cases $$t$$ ($$1 $\\leq t \\leq 500$$$). The description of the test cases follows. The first line of each test case contains a single integer $$n$$ ($$1 $\\leq n \\leq 100$$$) — the number of colored cells. The second line of each test case contains $$n$$ integers $$a_1,a_2,\\ldots,a_n$$ ($$1 $\\leq a_i \\leq 10^3$$$) — the colors of the cells.",
+    "output": "Output For each test case, print the color of the last cell.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}
