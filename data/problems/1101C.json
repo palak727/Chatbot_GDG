@@ -1,0 +1,16 @@
+{
+    "id": "1101C",
+    "contest_id": 1101,
+    "problem_letter": "C",
+    "title": "C. Division and Union",
+    "statement": "There are n segments [l_i, r_i] for 1 ≤ i ≤ n. You should divide all segments into two non-empty groups in such way that there is no pair of segments from different groups which have at least one common point, or say that it's impossible to do it. Each segment should belong to exactly one group.\n\nTo optimize testing process you will be given multitest.\n\nThe first line contains one integer T (1 ≤ T ≤ 50000) — the number of queries. Each query contains description of the set of segments. Queries are independent.\n\nFirst line of each query contains single integer n (2 ≤ n ≤ 10^5) — number of segments. It is guaranteed that ∑n over all queries does not exceed 10^5.\n\nThe next n lines contains two integers l_i, r_i per line (1 ≤ l_i ≤ r_i ≤ 2·10^5) — the i-th segment.\n\nFor each query print n integers t_1, t_2, …, t_n (t_i ∈ {1, 2}) — for each segment (in the same order as in the input) t_i equals 1 if the i-th segment will belongs to the first group and 2 otherwise.\n\nIf there are multiple answers, you can print any of them. If there is no answer, print -1.\n\nIn the first query the first and the second segments should be in different groups, but exact numbers don't matter.\n\nIn the second query the third segment intersects with the first and the second segments, so they should be in the same group, but then the other group becomes empty, so answer is -1.\n\nIn the third query we can distribute segments in any way that makes groups non-empty, so any answer of 6 possible is correct.\n\nInput:\n```\n3\n2\n5 5\n2 3\n3\n3 5\n2 3\n2 3\n3\n3 3\n4 4\n5 5\n```\n\nOutput:\n```\n2 1 \n-1\n1 1 2 \n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 50000) — the number of queries. Each query contains description of the set of segments. Queries are independent.\n\nFirst line of each query contains single integer n (2 ≤ n ≤ 10^5) — number of segments. It is guaranteed that ∑n over all queries does not exceed 10^5.\n\nThe next n lines contains two integers l_i, r_i per line (1 ≤ l_i ≤ r_i ≤ 2·10^5) — the i-th segment.",
+    "output": "For each query print n integers t_1, t_2, …, t_n (t_i ∈ {1, 2}) — for each segment (in the same order as in the input) t_i equals 1 if the i-th segment will belongs to the first group and 2 otherwise.\n\nIf there are multiple answers, you can print any of them. If there is no answer, print -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

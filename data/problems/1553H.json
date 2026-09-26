@@ -1,0 +1,18 @@
+{
+    "id": "1553H",
+    "contest_id": 1553,
+    "problem_letter": "H",
+    "title": "H. XOR and Distance",
+    "statement": "You are given an array a consisting of n distinct elements and an integer k. Each element in the array is a non-negative integer not exceeding 2^k-1.\n\nLet's define the XOR distance for a number x as the value of\n\nf(x) = minlimits_{i = 1}^n minlimits_{j = i + 1}^n |(a_i oplus x) - (a_j oplus x)|,\n\nwhere oplus denotes the bitwise XOR operation.\n\nFor every integer x from 0 to 2^k-1, you have to calculate f(x).\n\nThe first line contains two integers n and k (1 ≤ k ≤ 19; 2 ≤ n ≤ 2^k).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^k-1). All these integers are distinct.\n\nPrint 2^k integers. The i-th of them should be equal to f(i-1).\n\nConsider the first example:\n\nInput:\n```\n3 3\n6 0 3\n```\n\nOutput:\n```\n3 1 1 2 2 1 1 3 \n```\n\nInput:\n```\n3 4\n13 4 2\n```\n\nOutput:\n```\n2 2 6 6 3 1 2 2 2 2 1 3 6 6 2 2 \n```",
+    "input": "The first line contains two integers n and k (1 ≤ k ≤ 19; 2 ≤ n ≤ 2^k).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^k-1). All these integers are distinct.",
+    "output": "Print 2^k integers. The i-th of them should be equal to f(i-1).",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "divide and conquer",
+        "trees",
+        "*2900"
+    ],
+    "rating": 2900
+}

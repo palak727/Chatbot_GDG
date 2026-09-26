@@ -1,0 +1,20 @@
+{
+    "id": "1626F",
+    "contest_id": 1626,
+    "problem_letter": "F",
+    "title": "F. A Random Code Problem",
+    "statement": "You are given an integer array a_0, a_1, …, a_{n - 1}, and an integer k. You perform the following code with it:\n\n```\nlong long ans = 0; // create a 64-bit signed variable which is initially equal to 0\nfor(int i = 1; i <= k; i++)\n{\n  int idx = rnd.next(0, n - 1); // generate a random integer between 0 and n - 1, both inclusive\n                                // each integer from 0 to n - 1 has the same probability of being chosen\n  ans += a[idx];\n  a[idx] -= (a[idx] % i);\n}\n```\n\nYour task is to calculate the expected value of the variable ans after performing this code.\n\nNote that the input is generated according to special rules (see the input format section).\n\nThe only line contains six integers n, a_0, x, y, k and M (1 ≤ n ≤ 10^7; 1 ≤ a_0, x, y < M ≤ 998244353; 1 ≤ k ≤ 17).\n\nThe array a in the input is constructed as follows:\n\nLet the expected value of the variable ans after performing the code be E. It can be shown that E·n^k is an integer. You have to output this integer modulo 998244353.\n\nThe array in the first example test is [10, 35, 22]. In the second example, it is [15363, 1418543].\n\nInput:\n```\n3 10 3 5 13 88\n```\n\nOutput:\n```\n382842030\n```\n\nInput:\n```\n2 15363 270880 34698 17 2357023\n```\n\nOutput:\n```\n319392398\n```",
+    "input": "The only line contains six integers n, a_0, x, y, k and M (1 ≤ n ≤ 10^7; 1 ≤ a_0, x, y < M ≤ 998244353; 1 ≤ k ≤ 17).\n\nThe array a in the input is constructed as follows:",
+    "output": "Let the expected value of the variable ans after performing the code be E. It can be shown that E·n^k is an integer. You have to output this integer modulo 998244353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

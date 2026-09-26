@@ -1,0 +1,17 @@
+{
+    "id": "1605F",
+    "contest_id": 1605,
+    "problem_letter": "F",
+    "title": "F. PalindORme",
+    "statement": "An integer array a of length n is said to be a PalindORme if (a_1 | a_2 | … | a_i) = (a_{n - i + 1} | … | a_{n - 1} | a_n) for all 1 ≤ i ≤ n, where | denotes the bitwise OR operation.\n\nAn integer array a of length n is considered to be good if its elements can be rearranged to form a PalindORme. Formally, array a is good if there exists a permutation p_1, p_2, … p_n (an array where each integer from 1 to n appears exactly once) for which a_p_1, a_p_2, … a_p_n is a PalindORme.\n\nFind the number of good arrays of length n, consisting only of integers in the range [0, 2^k - 1], and print it modulo some prime m.\n\nTwo arrays a_1, a_2, …, a_n and b_1, b_2, …, b_n are considered to be different if there exists any i (1 ≤ i ≤ n) such that a_i ≠ b_i.\n\nThe first and only line of the input contains three integers n, k and m (1 ≤ n,k ≤ 80, 10^8 < m < 10^9). It is guaranteed that m is prime.\n\nPrint a single integer — the number of good arrays modulo m.\n\nIn the first sample, both the possible arrays [0] and [1] are good.\n\nIn the second sample, some examples of good arrays are:\n\nNote that [1, 1, 0], [1, 0, 1] and [0, 1, 1] are all good arrays and are considered to be different according to the definition in the statement.\n\nIn the third sample, an example of a good array is [1, 0, 1, 4, 2, 5, 4]. It can be rearranged to an array b = [1, 5, 0, 2, 4, 4, 1] which is a PalindORme because:\n\nHere OR(l, r) denotes b_l | b_{l+1} | … | b_r\n\nInput:\n```\n1 1 998244353\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 2 999999733\n```\n\nOutput:\n```\n40\n```\n\nInput:\n```\n7 3 796735397\n```\n\nOutput:\n```\n1871528\n```\n\nInput:\n```\n2 46 606559127\n```\n\nOutput:\n```\n177013\n```",
+    "input": "The first and only line of the input contains three integers n, k and m (1 ≤ n,k ≤ 80, 10^8 < m < 10^9). It is guaranteed that m is prime.",
+    "output": "Print a single integer — the number of good arrays modulo m.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*2900"
+    ],
+    "rating": 2900
+}

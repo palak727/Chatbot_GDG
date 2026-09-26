@@ -1,0 +1,22 @@
+{
+    "id": "1572A",
+    "contest_id": 1572,
+    "problem_letter": "A",
+    "title": "A. Book",
+    "statement": "You are given a book with n chapters.\n\nEach chapter has a specified list of other chapters that need to be understood in order to understand this chapter. To understand a chapter, you must read it after you understand every chapter on its required list.\n\nCurrently you don't understand any of the chapters. You are going to read the book from the beginning till the end repeatedly until you understand the whole book. Note that if you read a chapter at a moment when you don't understand some of the required chapters, you don't understand this chapter.\n\nDetermine how many times you will read the book to understand every chapter, or determine that you will never understand every chapter no matter how many times you read the book.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — number of chapters.\n\nThen n lines follow. The i-th line begins with an integer k_i (0 ≤ k_i ≤ n-1) — number of chapters required to understand the i-th chapter. Then k_i integers a_{i,1}, a_{i,2}, …, a_{i, k_i} (1 ≤ a_{i, j} ≤ n, a_{i, j} ≠ i, a_{i, j} ≠ a_{i, l} for j ≠ l) follow — the chapters required to understand the i-th chapter.\n\nIt is guaranteed that the sum of n and sum of k_i over all testcases do not exceed 2·10^5.\n\nFor each test case, if the entire book can be understood, print how many times you will read it, otherwise print -1.\n\nIn the first example, we will understand chapters {2, 4} in the first reading and chapters {1, 3} in the second reading of the book.\n\nIn the second example, every chapter requires the understanding of some other chapter, so it is impossible to understand the book.\n\nIn the third example, every chapter requires only chapters that appear earlier in the book, so we can understand everything in one go.\n\nIn the fourth example, we will understand chapters {2, 3, 4} in the first reading and chapter 1 in the second reading of the book.\n\nIn the fifth example, we will understand one chapter in every reading from 5 to 1.\n\nInput:\n```\n5\n4\n1 2\n0\n2 1 4\n1 2\n5\n1 5\n1 1\n1 2\n1 3\n1 4\n5\n0\n0\n2 1 2\n1 2\n2 2 1\n4\n2 2 3\n0\n0\n2 3 2\n5\n1 2\n1 3\n1 4\n1 5\n0\n```\n\nOutput:\n```\n2\n-1\n1\n2\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — number of chapters.\n\nThen n lines follow. The i-th line begins with an integer k_i (0 ≤ k_i ≤ n-1) — number of chapters required to understand the i-th chapter. Then k_i integers a_{i,1}, a_{i,2}, …, a_{i, k_i} (1 ≤ a_{i, j} ≤ n, a_{i, j} ≠ i, a_{i, j} ≠ a_{i, l} for j ≠ l) follow — the chapters required to understand the i-th chapter.\n\nIt is guaranteed that the sum of n and sum of k_i over all testcases do not exceed 2·10^5.",
+    "output": "For each test case, if the entire book can be understood, print how many times you will read it, otherwise print -1.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "graphs",
+        "implementation",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

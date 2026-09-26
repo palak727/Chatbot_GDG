@@ -1,0 +1,18 @@
+{
+    "id": "2048I2",
+    "contest_id": 2048,
+    "problem_letter": "I2",
+    "title": "I2. Kevin and Puzzle (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference between the versions is that in this version, you need to count the number of good arrays. You can hack only if you solved all versions of this problem.\n\nKevin is visiting the Red Church, and he found a puzzle on the wall.\n\nFor an array a , let c(l,r) indicate how many distinct numbers are among a_l, a_{l+1}, …, a_r . In particular, if l > r , define c(l,r) = 0 .\n\nYou are given a string s of length n consisting of letters textttL and textttR only. Let a non-negative array a be called good, if the following conditions hold for 1 ≤ i ≤ n :\n\nYou need to count the number of good arrays a. Since the answer may be large, you only need to output the answer modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of string s.\n\nThe second line of each test case contains a string s with a length n, containing only English uppercase letters replacedVerb L and replacedVerb R.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of good arrays modulo 998,244,353.\n\nAll arrays satisfying the conditions can be found in the easy version of this problem.\n\nInput:\n```\n43LLR3RRL4RRLR5LLRLR\n```\n\nOutput:\n```\n1\n2\n0\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of string s.\n\nThe second line of each test case contains a string s with a length n, containing only English uppercase letters replacedVerb L and replacedVerb R.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of good arrays modulo 998,244,353.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "fft",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

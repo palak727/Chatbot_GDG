@@ -1,0 +1,20 @@
+{
+    "id": "1542D",
+    "contest_id": 1542,
+    "problem_letter": "D",
+    "title": "D. Priority Queue",
+    "statement": "You are given a sequence A, where its elements are either in the form + x or -, where x is an integer.\n\nFor such a sequence S where its elements are either in the form + x or -, define f(S) as follows:\n\nThe sequence b is a subsequence of the sequence a if b can be derived from a by removing zero or more elements without changing the order of the remaining elements. For all A's subsequences B, compute the sum of f(B), modulo 998,244,353.\n\nThe first line contains an integer n (1≤ n≤ 500) — the length of A.\n\nEach of the next n lines begins with an operator + or -. If the operator is +, then it's followed by an integer x (1≤ x < 998,244,353). The i-th line of those n lines describes the i-th element in A.\n\nPrint one integer, which is the answer to the problem, modulo 998,244,353.\n\nIn the first example, the following are all possible pairs of B and f(B):\n\nThe sum of these values is 16.\n\nInput:\n```\n4\n-\n+ 1\n+ 2\n-\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n15\n+ 2432543\n-\n+ 4567886\n+ 65638788\n-\n+ 578943\n-\n-\n+ 62356680\n-\n+ 711111\n-\n+ 998244352\n-\n-\n```\n\nOutput:\n```\n750759115\n```",
+    "input": "The first line contains an integer n (1≤ n≤ 500) — the length of A.\n\nEach of the next n lines begins with an operator + or -. If the operator is +, then it's followed by an integer x (1≤ x < 998,244,353). The i-th line of those n lines describes the i-th element in A.",
+    "output": "Print one integer, which is the answer to the problem, modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "ternary search",
+        "*2200"
+    ],
+    "rating": 2200
+}

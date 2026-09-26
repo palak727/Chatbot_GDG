@@ -1,0 +1,18 @@
+{
+    "id": "2041H",
+    "contest_id": 2041,
+    "problem_letter": "H",
+    "title": "H. Sheet Music",
+    "statement": "Alice likes singing. As a singing enthusiast, Alice has listened to countless songs and has tried singing them many times. However, occasionally, some songs make Alice feel bored. After some research, Alice believes that this is because even though the songs she chose are all different, due to her instinctive preference, they all turn out to be musically similar to one another.\n\nTo thoroughly analyze this, Alice decided to study the sheet music of the songs. For convenience, Alice represented a song of length n as an integer sequence a_1, a_2, …, a_n, where a_i is the pitch of the i-th note. Then she defined the musical equivalence between songs. Two songs a_1, a_2, …, a_n and b_1, b_2, …, b_n of length n are musically equivalent if for all 1≤ i < n, both a_i, a_{i+1} and b_i, b_{i+1} have the same pitch relationship. More specifically, a_i, a_{i+1} and b_i, b_{i+1} have the same pitch relationship if either\n\nHaving practiced consistently for a long time, Alice is able to sing any note in the range of [1, k]. She wants to know how many different songs of length n within her range there are, if we treat musically equivalent songs as the same one. Can you help her calculate the number?\n\nSince the answer might be large, print the answer modulo 998244353.\n\nThe only line contains two integers n, k.\n\nOutput the number of different songs modulo 998244353.\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n5 3\n```\n\nOutput:\n```\n67\n```",
+    "input": "The only line contains two integers n, k.",
+    "output": "Output the number of different songs modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

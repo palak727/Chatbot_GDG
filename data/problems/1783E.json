@@ -1,0 +1,19 @@
+{
+    "id": "1783E",
+    "contest_id": 1783,
+    "problem_letter": "E",
+    "title": "E. Game of the Year",
+    "statement": "Monocarp and Polycarp are playing a computer game. This game features n bosses for the playing to kill, numbered from 1 to n.\n\nThey will fight each boss the following way:\n\nMonocarp kills the i-th boss on his a_i-th attempt. Polycarp kills the i-th boss on his b_i-th attempt. After one of them kills the i-th boss, they move on to the (i+1)-st boss. The attempt counters reset for both of them. Once one of them kills the n-th boss, the game ends.\n\nFind all values of k from 1 to n such that Monocarp kills all bosses.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of bosses.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the index of attempt Monocarp kills each boss on.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the index of attempt Polycarp kills each boss on.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print two lines. The first line should contain a single integer cnt — the number of values of k from 1 to n such that Monocarp kills all bosses. The second line should contain cnt distinct integers — the values of k themselves.\n\nConsider the last testcase of the example.\n\nLet k = 1. First, Monocarp makes one attempt to kill the first boss. It's successful, since a_1 = 1. Then, Monocarp makes one attempt to kill the second boss. It's unsuccessful, since a_2 > 1. So, Polycarp makes an attempt then. It's also unsuccessful, since b_2 > 1. Then, Monocarp makes another attempt. It's still unsuccessful, since a_2 > 2. This goes on until Polycarp finally kills the boss on his third attempt. Monocarp didn't kill this boss, thus, k = 1 isn't the answer.\n\nLet k = 2. Monocarp still kills the first boss on his first attempt. Then, he makes two unsuccessful attempts for the second boss. Then, Polycarp makes two unsuccessful attempts. Then, Monocarp makes two more attempts and kills the boss on his fourth attempt. The third boss is similar. First, two unsuccessful attempts by Monocarp. Then, two unsuccessful attempts by Polycarp. Then, Monocarp has two more attempts, but even his first one is successful, since a_3 = 3. The fourth boss is also killed by Monocarp. Thus, k = 2 is the answer.\n\nInput:\n```\n331 1 12 3 111141 4 3 23 3 4 1\n```\n\nOutput:\n```\n3\n1 2 3 \n1\n1 \n2\n2 4 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of bosses.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the index of attempt Monocarp kills each boss on.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the index of attempt Polycarp kills each boss on.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print two lines. The first line should contain a single integer cnt — the number of values of k from 1 to n such that Monocarp kills all bosses. The second line should contain cnt distinct integers — the values of k themselves.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "math",
+        "number theory",
+        "*2300"
+    ],
+    "rating": 2300
+}

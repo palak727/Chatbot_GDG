@@ -1,0 +1,21 @@
+{
+    "id": "1560F1",
+    "contest_id": 1560,
+    "problem_letter": "F1",
+    "title": "F1. Nearest Beautiful Number (easy version)",
+    "statement": "It is a simplified version of problem F2. The difference between them is the constraints (F1: k ≤ 2, F2: k ≤ 10).\n\nYou are given an integer n. Find the minimum integer x such that x ≥ n and the number x is k-beautiful.\n\nA number is called k-beautiful if its decimal representation having no leading zeroes contains no more than k different digits. E.g. if k = 2, the numbers 3434443, 55550, 777 and 21 are k-beautiful whereas the numbers 120, 445435 and 998244353 are not.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing two integers n and k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ 2).\n\nFor each test case output on a separate line x — the minimum k-beautiful integer such that x ≥ n.\n\nInput:\n```\n4\n1 1\n221 2\n177890 2\n998244353 1\n```\n\nOutput:\n```\n1\n221\n181111\n999999999\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing two integers n and k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ 2).",
+    "output": "For each test case output on a separate line x — the minimum k-beautiful integer such that x ≥ n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

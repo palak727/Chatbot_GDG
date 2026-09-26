@@ -1,0 +1,19 @@
+{
+    "id": "1893B",
+    "contest_id": 1893,
+    "problem_letter": "B",
+    "title": "B. Neutral Tonality",
+    "statement": "You are given an array a consisting of n integers, as well as an array b consisting of m integers.\n\nLet LIS(c) denote the length of the longest increasing subsequence of array c. For example, LIS([2, underline1, 1, underline3]) = 2, LIS([underline1, underline7, underline9]) = 3, LIS([3, underline1, underline2, underline4]) = 3.\n\nYou need to insert the numbers b_1, b_2, …, b_m into the array a, at any positions, in any order. Let the resulting array be c_1, c_2, …, c_{n+m}. You need to choose the positions for insertion in order to minimize LIS(c).\n\nFormally, you need to find an array c_1, c_2, …, c_{n+m} that simultaneously satisfies the following conditions:\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the length of array a and the length of array b.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the elements of the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5, and the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, output n + m numbers — the elements of the final array c_1, c_2, …, c_{n+m}, obtained after the insertion, such that the value of LIS(c) is minimized. If there are several answers, you can output any of them.\n\nIn the first test case, LIS(a) = LIS([6, 4]) = 1. We can insert the number 5 between 6 and 4, then LIS(c) = LIS([6, 5, 4]) = 1.\n\nIn the second test case, LIS([underline1, 7, underline2, underline4, underline5]) = 4. After the insertion, c = [1, 1, 7, 7, 2, 2, 4, 4, 5, 5]. It is easy to see that LIS(c) = 4. It can be shown that it is impossible to achieve LIS(c) less than 4.\n\nInput:\n```\n72 16 455 51 7 2 4 55 4 1 2 71 971 2 3 4 5 6 7 8 93 21 3 52 410 51 9 2 3 8 1 4 7 2 97 8 5 4 62 12 216 11 1 1 1 1 1777\n```\n\nOutput:\n```\n6 5 4\n1 1 7 7 2 2 4 4 5 5\n9 8 7 7 6 5 4 3 2 1\n1 3 5 2 4\n1 9 2 3 8 8 1 4 4 7 7 2 9 6 5\n2 2 1\n777 1 1 1 1 1 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the length of array a and the length of array b.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the elements of the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5, and the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n + m numbers — the elements of the final array c_1, c_2, …, c_{n+m}, obtained after the insertion, such that the value of LIS(c) is minimized. If there are several answers, you can output any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

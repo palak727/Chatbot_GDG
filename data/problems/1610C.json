@@ -1,0 +1,17 @@
+{
+    "id": "1610C",
+    "contest_id": 1610,
+    "problem_letter": "C",
+    "title": "C. Keshi Is Throwing a Party",
+    "statement": "Keshi is throwing a party and he wants everybody in the party to be happy.\n\nHe has n friends. His i-th friend has i dollars.\n\nIf you invite the i-th friend to the party, he will be happy only if at most a_i people in the party are strictly richer than him and at most b_i people are strictly poorer than him.\n\nKeshi wants to invite as many people as possible. Find the maximum number of people he can invite to the party so that every invited person would be happy.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the number of Keshi's friends.\n\nThe i-th of the following n lines contains two integers a_i and b_i (0 ≤ a_i, b_i < n).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case print the maximum number of people Keshi can invite.\n\nIn the first test case, he invites the first and the second person. If he invites all of them, the third person won't be happy because there will be more than 1 person poorer than him.\n\nInput:\n```\n3\n3\n1 2\n2 1\n1 1\n2\n0 0\n0 1\n2\n1 0\n0 1\n```\n\nOutput:\n```\n2\n1\n2\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the number of Keshi's friends.\n\nThe i-th of the following n lines contains two integers a_i and b_i (0 ≤ a_i, b_i < n).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case print the maximum number of people Keshi can invite.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*1600"
+    ],
+    "rating": 1600
+}

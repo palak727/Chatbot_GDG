@@ -1,0 +1,19 @@
+{
+    "id": "1361E",
+    "contest_id": 1361,
+    "problem_letter": "E",
+    "title": "E. James and the Chase",
+    "statement": "James Bond has a new plan for catching his enemy. There are some cities and directed roads between them, such that it is possible to travel between any two cities using these roads. When the enemy appears in some city, Bond knows her next destination but has no idea which path she will choose to move there.\n\nThe city a is called interesting, if for each city b, there is exactly one simple path from a to b. By a simple path, we understand a sequence of distinct cities, such that for every two neighboring cities, there exists a directed road from the first to the second city.\n\nBond's enemy is the mistress of escapes, so only the chase started in an interesting city gives the possibility of catching her. James wants to arrange his people in such cities. However, if there are not enough interesting cities, the whole action doesn't make sense since Bond's people may wait too long for the enemy.\n\nYou are responsible for finding all the interesting cities or saying that there is not enough of them. By not enough, James means strictly less than 20% of all cities.\n\nThe first line contains one integer t (1 ≤ t ≤ 2,000) — the number of test cases. Each test case is described as follows:\n\nThe first line contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 2·10^5) — the number of cities and roads between them. Each of the following m lines contains two integers u, v (u ≠ v; 1 ≤ u, v ≤ n), which denote that there is a directed road from u to v.\n\nYou can assume that between each ordered pair of cities there is at most one road. The sum of n over all test cases doesn't exceed 10^5, and the sum of m doesn't exceed 2·10^5.\n\nIf strictly less than 20% of all cities are interesting, print -1. Otherwise, let k be the number of interesting cities. Print k distinct integers in increasing order — the indices of interesting cities.\n\nIn all drawings, if a city is colored green, then it is interesting; otherwise, it is colored red.\n\nIn the first sample, each city is interesting.\n\nIn the second sample, no city is interesting.\n\nIn the third sample, cities 1, 2, 3 and 5 are interesting.\n\nIn the last sample, only the city 1 is interesting. It is strictly less than 20% of all cities, so the answer is -1.\n\nInput:\n```\n4\n3 3\n1 2\n2 3\n3 1\n3 6\n1 2\n2 1\n2 3\n3 2\n1 3\n3 1\n7 10\n1 2\n2 3\n3 1\n1 4\n4 5\n5 1\n4 6\n6 7\n7 4\n6 1\n6 8\n1 2\n2 3\n3 4\n4 5\n5 6\n6 1\n6 2\n5 1\n```\n\nOutput:\n```\n1 2 3 \n-1\n1 2 3 5 \n-1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2,000) — the number of test cases. Each test case is described as follows:\n\nThe first line contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 2·10^5) — the number of cities and roads between them. Each of the following m lines contains two integers u, v (u ≠ v; 1 ≤ u, v ≤ n), which denote that there is a directed road from u to v.\n\nYou can assume that between each ordered pair of cities there is at most one road. The sum of n over all test cases doesn't exceed 10^5, and the sum of m doesn't exceed 2·10^5.",
+    "output": "If strictly less than 20% of all cities are interesting, print -1. Otherwise, let k be the number of interesting cities. Print k distinct integers in increasing order — the indices of interesting cities.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "probabilities",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

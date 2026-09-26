@@ -1,0 +1,18 @@
+{
+    "id": "1674F",
+    "contest_id": 1674,
+    "problem_letter": "F",
+    "title": "F. Desktop Rearrangement",
+    "statement": "Your friend Ivan asked you to help him rearrange his desktop. The desktop can be represented as a rectangle matrix of size n × m consisting of characters '.' (empty cell of the desktop) and '*' (an icon).\n\nThe desktop is called good if all its icons are occupying some prefix of full columns and, possibly, the prefix of the next column (and there are no icons outside this figure). In other words, some amount of first columns will be filled with icons and, possibly, some amount of first cells of the next (after the last full column) column will be also filled with icons (and all the icons on the desktop belong to this figure). This is pretty much the same as the real life icons arrangement.\n\nIn one move, you can take one icon and move it to any empty cell in the desktop.\n\nIvan loves to add some icons to his desktop and remove them from it, so he is asking you to answer q queries: what is the minimum number of moves required to make the desktop good after adding/removing one icon?\n\nNote that queries are permanent and change the state of the desktop.\n\nThe first line of the input contains three integers n, m and q (1 ≤ n, m ≤ 1000; 1 ≤ q ≤ 2·10^5) — the number of rows in the desktop, the number of columns in the desktop and the number of queries, respectively.\n\nThe next n lines contain the description of the desktop. The i-th of them contains m characters '.' and '*' — the description of the i-th row of the desktop.\n\nThe next q lines describe queries. The i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m) — the position of the cell which changes its state (if this cell contained the icon before, then this icon is removed, otherwise an icon appears in this cell).\n\nPrint q integers. The i-th of them should be the minimum number of moves required to make the desktop good after applying the first i queries.\n\nInput:\n```\n4 4 8\n..**\n.*..\n*...\n...*\n1 3\n2 3\n3 1\n2 3\n3 4\n4 3\n2 3\n2 2\n```\n\nOutput:\n```\n3\n4\n4\n3\n4\n5\n5\n5\n```\n\nInput:\n```\n2 5 5\n*...*\n*****\n1 3\n2 2\n1 3\n1 5\n2 3\n```\n\nOutput:\n```\n2\n3\n3\n3\n2\n```",
+    "input": "The first line of the input contains three integers n, m and q (1 ≤ n, m ≤ 1000; 1 ≤ q ≤ 2·10^5) — the number of rows in the desktop, the number of columns in the desktop and the number of queries, respectively.\n\nThe next n lines contain the description of the desktop. The i-th of them contains m characters '.' and '*' — the description of the i-th row of the desktop.\n\nThe next q lines describe queries. The i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m) — the position of the cell which changes its state (if this cell contained the icon before, then this icon is removed, otherwise an icon appears in this cell).",
+    "output": "Print q integers. The i-th of them should be the minimum number of moves required to make the desktop good after applying the first i queries.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

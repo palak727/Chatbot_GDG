@@ -1,0 +1,19 @@
+{
+    "id": "1988D",
+    "contest_id": 1988,
+    "problem_letter": "D",
+    "title": "D. The Omnipotent Monster Killer",
+    "statement": "You, the monster killer, want to kill a group of monsters. The monsters are on a tree with n vertices. On vertex with number i (1≤ i≤ n), there is a monster with a_i attack points. You want to battle with monsters for 10^100 rounds.\n\nIn each round, the following happens in order:\n\nThere is a restriction: in one round, you cannot kill two monsters that are directly connected by an edge.\n\nIf you choose what monsters to attack optimally, what is the smallest health decrement you can have after all rounds?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 3·10^5).\n\nThe second line of each test case contains n integers a_1,…,a_n (1≤ a_i≤ 10^12).\n\nThe following n-1 lines each contain two integers x,y (1≤ x,y≤ n), denoting an edge on the tree connecting vertex x and y.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print one integer: the minimum possible health decrement.\n\nIn the first test case, an optimal sequence of operations would be:\n\nThe total health decrement is 10^12.\n\nIn the second test case, an optimal sequence of operations would be:\n\nThe total health decrement is 193.\n\nIn the third test case, an optimal sequence of operations would be:\n\nThe total health decrement is 57.\n\nInput:\n```\n311000000000000547 15 32 29 231 21 32 42 578 10 2 3 5 7 41 21 43 25 36 27 5\n```\n\nOutput:\n```\n1000000000000\n193\n57\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 3·10^5).\n\nThe second line of each test case contains n integers a_1,…,a_n (1≤ a_i≤ 10^12).\n\nThe following n-1 lines each contain two integers x,y (1≤ x,y≤ n), denoting an edge on the tree connecting vertex x and y.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print one integer: the minimum possible health decrement.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

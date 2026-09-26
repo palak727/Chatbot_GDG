@@ -1,0 +1,18 @@
+{
+    "id": "1146C",
+    "contest_id": 1146,
+    "problem_letter": "C",
+    "title": "C. Tree Diameter",
+    "statement": "There is a weighted tree with n nodes and n-1 edges. The nodes are conveniently labeled from 1 to n. The weights are positive integers at most 100. Define the distance between two nodes to be the sum of edges on the unique path between the nodes. You would like to find the diameter of the tree. Diameter is the maximum distance between a pair of nodes.\n\nUnfortunately, the tree isn't given to you, but you can ask some questions about it. In one question, you can specify two nonempty disjoint sets of nodes p and q, and the judge will return the maximum distance between a node in p and a node in q. In the words, maximum distance between x and y, where x ∈ p and y ∈ q. After asking not more than 9 questions, you must report the maximum distance between any pair of nodes.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1,000). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 100) — the number of nodes in the tree.\n\nTo ask a question, print \"k_1 k_2 a_1 a_2 … a_k_1 b_1 b_2 … b_k_2\" (k_1, k_2 ≥ 1 and k_1+k_2 ≤ n). These two sets must be nonempty and disjoint. The judge will respond with a single integer max_{p,q} dist(a_p, b_q). If you ever get a result of -1 (because you printed an invalid query), exit immediately to avoid getting other verdicts.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nWhen you are ready to answer, print \"-1 d\", where d is the maximum shortest distance over all pairs of nodes.\n\nYou can only ask at most 9 questions per test case.\n\nHack Format\n\nTo hack, use the following format. Note that you can only hack with one test case.\n\nThe first line should contain a single integer t (t=1).\n\nThe second line should contain a single integer n (2 ≤ n ≤ 100).\n\nEach of the next n-1 lines should contain three integers a_i, b_i, c_i (1≤ a_i, b_i≤ n, 1 ≤ c_i ≤ 100). This denotes an undirected edge between nodes a_i and b_i with weight c_i. These edges must form a tree.\n\nIn the first example, the first tree looks as follows:\n\nIn the first question, we have p = 1, and q = 2, 3, 4, 5. The maximum distance between a node in p and a node in q is 9 (the distance between nodes 1 and 5).\n\nThe second tree is a tree with two nodes with an edge with weight 99 between them.\n\nInput:\n```\n2\n5\n9\n6\n10\n9\n10\n2\n99\n```\n\nOutput:\n```\n1 4 1 2 3 4 5\n1 4 2 3 4 5 1\n1 4 3 4 5 1 2\n1 4 4 5 1 2 3\n1 4 5 1 2 3 4\n-1 10\n1 1 1 2\n-1 99\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "graphs",
+        "interactive",
+        "*1700"
+    ],
+    "rating": 1700
+}

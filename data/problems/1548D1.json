@@ -1,0 +1,19 @@
+{
+    "id": "1548D1",
+    "contest_id": 1548,
+    "problem_letter": "D1",
+    "title": "D1. Gregor and the Odd Cows (Easy)",
+    "statement": "This is the easy version of the problem. The only difference from the hard version is that in this version all coordinates are even.\n\nThere are n fence-posts at distinct coordinates on a plane. It is guaranteed that no three fence posts lie on the same line.\n\nThere are an infinite number of cows on the plane, one at every point with integer coordinates.\n\nGregor is a member of the Illuminati, and wants to build a triangular fence, connecting 3 distinct existing fence posts. A cow strictly inside the fence is said to be enclosed. If there are an odd number of enclosed cows and the area of the fence is an integer, the fence is said to be interesting.\n\nFind the number of interesting fences.\n\nThe first line contains the integer n (3 ≤ n ≤ 6000), the number of fence posts which Gregor can choose to form the vertices of a fence.\n\nEach of the next n line contains two integers x and y (0 ≤ x,y ≤ 10^7, x and y are even), where (x,y) is the coordinate of a fence post. All fence posts lie at distinct coordinates. No three fence posts are on the same line.\n\nPrint a single integer, the number of interesting fences. Two fences are considered different if they are constructed with a different set of three fence posts.\n\nIn the first example, there is only 1 fence. That fence is interesting since its area is 4 and there is 1 enclosed cow, marked in red.\n\nIn the second example, there are 3 interesting fences.\n\nInput:\n```\n3\n0 0\n2 0\n0 4\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n0 0\n2 16\n30 14\n4 6\n2 10\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains the integer n (3 ≤ n ≤ 6000), the number of fence posts which Gregor can choose to form the vertices of a fence.\n\nEach of the next n line contains two integers x and y (0 ≤ x,y ≤ 10^7, x and y are even), where (x,y) is the coordinate of a fence post. All fence posts lie at distinct coordinates. No three fence posts are on the same line.",
+    "output": "Print a single integer, the number of interesting fences. Two fences are considered different if they are constructed with a different set of three fence posts.",
+    "time_limit": "6 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "geometry",
+        "math",
+        "number theory",
+        "*2300"
+    ],
+    "rating": 2300
+}

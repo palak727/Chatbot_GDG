@@ -1,0 +1,18 @@
+{
+    "id": "1985G",
+    "contest_id": 1985,
+    "problem_letter": "G",
+    "title": "G. D-Function",
+    "statement": "Let D(n) represent the sum of digits of n. For how many integers n where 10^l ≤ n < 10^r satisfy D(k·n) = k·D(n)? Output the answer modulo 10^9+7.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nEach test case contains three integers l, r, and k (0 ≤ l < r ≤ 10^9, 1 ≤ k ≤ 10^9).\n\nFor each test case, output an integer, the answer, modulo 10^9 + 7.\n\nFor the first test case, the only values of n that satisfy the condition are 1 and 2.\n\nFor the second test case, the only values of n that satisfy the condition are 1, 10, and 11.\n\nFor the third test case, all values of n between 10 inclusive and 100 exclusive satisfy the condition.\n\nInput:\n```\n60 1 40 2 71 2 11 2 3582 74663 30 3 1\n```\n\nOutput:\n```\n2\n3\n90\n12\n974995667\n999\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nEach test case contains three integers l, r, and k (0 ≤ l < r ≤ 10^9, 1 ≤ k ≤ 10^9).",
+    "output": "For each test case, output an integer, the answer, modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

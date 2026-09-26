@@ -1,0 +1,18 @@
+{
+    "id": "1208H",
+    "contest_id": 1208,
+    "problem_letter": "H",
+    "title": "H. Red Blue Tree",
+    "statement": "You are given a tree of n nodes. The tree is rooted at node 1, which is not considered as a leaf regardless of its degree.\n\nEach leaf of the tree has one of the two colors: red or blue. Leaf node v initially has color s_v.\n\nThe color of each of the internal nodes (including the root) is determined as follows.\n\nInteger k is a parameter that is same for all the nodes.\n\nYou need to handle the following types of queries:\n\nThe first line of the input consists of two integers n and k (2 ≤ n ≤ 10^5, -n ≤ k ≤ n) — the number of nodes and the initial parameter k.\n\nEach of the next n - 1 lines contains two integers u and v (1 ≤ u,v ≤ n), denoting that there is an edge between vertices u and v.\n\nThe next line consists of n space separated integers — the initial array s (-1 ≤ s_i ≤ 1). s_i = 0 means that the color of node i is red. s_i = 1 means that the color of node i is blue. s_i = -1 means that the node i is not a leaf.\n\nThe next line contains an integer q (1 ≤ q ≤ 10^5), the number of queries.\n\nq lines follow, each containing a query in one of the following queries:\n\nFor each query of the first type, print 0 if the color of vertex v is red, and 1 otherwise.\n\n(i) The initial tree\n\n(ii) The tree after the 3rd query\n\n(iii) The tree after the 7th query\n\nInput:\n```\n5 2\n1 2\n1 3\n2 4\n2 5\n-1 -1 0 1 0\n9\n1 1\n1 2\n3 -2\n1 1\n1 2\n3 1\n2 5 1\n1 1\n1 2\n```\n\nOutput:\n```\n0\n0\n1\n1\n0\n1\n```",
+    "input": "The first line of the input consists of two integers n and k (2 ≤ n ≤ 10^5, -n ≤ k ≤ n) — the number of nodes and the initial parameter k.\n\nEach of the next n - 1 lines contains two integers u and v (1 ≤ u,v ≤ n), denoting that there is an edge between vertices u and v.\n\nThe next line consists of n space separated integers — the initial array s (-1 ≤ s_i ≤ 1). s_i = 0 means that the color of node i is red. s_i = 1 means that the color of node i is blue. s_i = -1 means that the node i is not a leaf.\n\nThe next line contains an integer q (1 ≤ q ≤ 10^5), the number of queries.\n\nq lines follow, each containing a query in one of the following queries:",
+    "output": "For each query of the first type, print 0 if the color of vertex v is red, and 1 otherwise.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

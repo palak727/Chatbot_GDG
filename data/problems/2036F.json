@@ -1,0 +1,19 @@
+{
+    "id": "2036F",
+    "contest_id": 2036,
+    "problem_letter": "F",
+    "title": "F. XORificator 3000",
+    "statement": "Alice has been giving gifts to Bob for many years, and she knows that what he enjoys the most is performing bitwise XOR of interesting integers. Bob considers a positive integer x to be interesting if it satisfies x not≡ k (bmod 2^i). Therefore, this year for his birthday, she gifted him a super-powerful \"XORificator 3000\", the latest model.\n\nBob was very pleased with the gift, as it allowed him to instantly compute the XOR of all interesting integers in any range from l to r, inclusive. After all, what else does a person need for happiness? Unfortunately, the device was so powerful that at one point it performed XOR with itself and disappeared. Bob was very upset, and to cheer him up, Alice asked you to write your version of the \"XORificator\".\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of XOR queries on the segment. The following t lines contain the queries, each consisting of the integers l, r, i, k (1 ≤ l ≤ r ≤ 10^18, 0 ≤ i ≤ 30, 0 ≤ k < 2^i).\n\nFor each query, output a single integer — the XOR of all integers x in the range [l, r] such that x not≡ k mod 2^i.\n\nIn the first query, the interesting integers in the range [1, 3] are 1 and 3, so the answer will be 1 oplus 3 = 2.\n\nInput:\n```\n61 3 1 02 28 3 715 43 1 057 2007 1 01010 1993 2 21 1000000000 30 1543\n```\n\nOutput:\n```\n2\n2\n13\n0\n4\n1000000519\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of XOR queries on the segment. The following t lines contain the queries, each consisting of the integers l, r, i, k (1 ≤ l ≤ r ≤ 10^18, 0 ≤ i ≤ 30, 0 ≤ k < 2^i).",
+    "output": "For each query, output a single integer — the XOR of all integers x in the range [l, r] such that x not≡ k mod 2^i.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "number theory",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

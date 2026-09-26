@@ -1,0 +1,19 @@
+{
+    "id": "1623B",
+    "contest_id": 1623,
+    "problem_letter": "B",
+    "title": "B. Game on Ranges",
+    "statement": "Alice and Bob play the following game. Alice has a set S of disjoint ranges of integers, initially containing only one range [1, n]. In one turn, Alice picks a range [l, r] from the set S and asks Bob to pick a number in the range. Bob chooses a number d (l ≤ d ≤ r). Then Alice removes [l, r] from S and puts into the set S the range [l, d - 1] (if l ≤ d - 1) and the range [d + 1, r] (if d + 1 ≤ r). The game ends when the set S is empty. We can show that the number of turns in each game is exactly n.\n\nAfter playing the game, Alice remembers all the ranges [l, r] she picked from the set S, but Bob does not remember any of the numbers that he picked. But Bob is smart, and he knows he can find out his numbers d from Alice's ranges, and so he asks you for help with your programming skill.\n\nGiven the list of ranges that Alice has picked ([l, r]), for each range, help Bob find the number d that Bob has picked.\n\nWe can show that there is always a unique way for Bob to choose his number for a list of valid ranges picked by Alice.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 1000).\n\nEach of the next n lines contains two integers l and r (1 ≤ l ≤ r ≤ n), denoting the range [l, r] that Alice picked at some point.\n\nNote that the ranges are given in no particular order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000, and the ranges for each test case are from a valid game.\n\nFor each test case print n lines. Each line should contain three integers l, r, and d, denoting that for Alice's range [l, r] Bob picked the number d.\n\nYou can print the lines in any order. We can show that the answer is unique.\n\nIt is not required to print a new line after each test case. The new lines in the output of the example are for readability only.\n\nIn the first test case, there is only 1 range [1, 1]. There was only one range [1, 1] for Alice to pick, and there was only one number 1 for Bob to pick.\n\nIn the second test case, n = 3. Initially, the set contains only one range [1, 3].\n\nIn the fourth test case, the game was played with n = 5. Initially, the set contains only one range [1, 5]. The game's turn is described in the following table.\n\nInput:\n```\n4\n1\n1 1\n3\n1 3\n2 3\n2 2\n6\n1 1\n3 5\n4 4\n3 6\n4 5\n1 6\n5\n1 5\n1 2\n4 5\n2 2\n4 4\n```\n\nOutput:\n```\n1 1 1\n\n1 3 1\n2 2 2\n2 3 3\n\n1 1 1\n3 5 3\n4 4 4\n3 6 6\n4 5 5\n1 6 2\n\n1 5 3\n1 2 1\n4 5 5\n2 2 2\n4 4 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 1000).\n\nEach of the next n lines contains two integers l and r (1 ≤ l ≤ r ≤ n), denoting the range [l, r] that Alice picked at some point.\n\nNote that the ranges are given in no particular order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000, and the ranges for each test case are from a valid game.",
+    "output": "For each test case print n lines. Each line should contain three integers l, r, and d, denoting that for Alice's range [l, r] Bob picked the number d.\n\nYou can print the lines in any order. We can show that the answer is unique.\n\nIt is not required to print a new line after each test case. The new lines in the output of the example are for readability only.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "implementation",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

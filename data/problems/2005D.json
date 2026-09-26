@@ -1,0 +1,21 @@
+{
+    "id": "2005D",
+    "contest_id": 2005,
+    "problem_letter": "D",
+    "title": "D. Alter the GCD",
+    "statement": "You are given two arrays a_1, a_2, …, a_n and b_1, b_2, …, b_n.\n\nYou must perform the following operation exactly once:\n\nFind the maximum possible value of gcd(a_1, a_2, …, a_n) + gcd(b_1, b_2, …, b_n) after performing the operation exactly once. Also find the number of distinct pairs (l, r) which achieve the maximum value.\n\nIn the first line of the input, you are given a single integer t (1 ≤ t ≤ 10^5), the number of test cases. Then the description of each test case follows.\n\nIn the first line of each test case, you are given a single integer n (1 ≤ n ≤ 2·10^5), representing the number of integers in each array.\n\nIn the next line, you are given n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIn the last line, you are given n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the elements of the array b.\n\nThe sum of values of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output a line with two integers: the maximum value of gcd(a_1, a_2, …, a_n) + gcd(b_1, b_2, …, b_n) after performing the operation exactly once, and the number of ways.\n\nIn the first, third, and fourth test cases, there's no way to achieve a higher GCD than 1 in any of the arrays, so the answer is 1 + 1 = 2. Any pair (l, r) achieves the same result; for example, in the first test case there are 36 such pairs.\n\nIn the last test case, you must choose l = 1, r = 2 to maximize the answer. In this case, the GCD of the first array is 5, and the GCD of the second array is 1, so the answer is 5 + 1 = 6, and the number of ways is 1.\n\nInput:\n```\n5811 4 16 17 3 24 25 88 10 4 21 17 18 25 2146 4 24 1315 3 1 14213 145 8820 17 15 11 21 10 3 79 9 4 20 14 9 13 1218 1315 20\n```\n\nOutput:\n```\n2 36\n3 2\n2 3\n2 36\n6 1\n```",
+    "input": "In the first line of the input, you are given a single integer t (1 ≤ t ≤ 10^5), the number of test cases. Then the description of each test case follows.\n\nIn the first line of each test case, you are given a single integer n (1 ≤ n ≤ 2·10^5), representing the number of integers in each array.\n\nIn the next line, you are given n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIn the last line, you are given n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the elements of the array b.\n\nThe sum of values of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output a line with two integers: the maximum value of gcd(a_1, a_2, …, a_n) + gcd(b_1, b_2, …, b_n) after performing the operation exactly once, and the number of ways.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

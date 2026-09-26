@@ -1,0 +1,21 @@
+{
+    "id": "2123G",
+    "contest_id": 2123,
+    "problem_letter": "G",
+    "title": "G. Modular Sorting",
+    "statement": "You are given an integer m (2≤ m≤ 5·10^5) and an array a consisting of nonnegative integers smaller than m.\n\nAnswer queries of the following form:\n\nNote that instances of query 2 are independent; that is, no actual operations are taking place. Instances of query 1 are persistent.\n\n^{∗}apmod m is defined as the unique integer b such that 0≤ b < m and a-b is an integer multiple of m.\n\n^{†}An array a of size n is called nondecreasing if and only if a_i≤ a_{i+1} for all 1≤ i < n.\n\nThe first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers, n, m, and q (2≤ n ≤ 10^5, 2≤ m≤ 5·10^5, 1≤ q≤ 10^5) — the size of the array a, the integer m, and the number of queries.\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (0≤ a_i < m).\n\nThen follows q lines. Each line is of one of the following forms:\n\nIt is guaranteed that the sum of n and the sum of q over all test cases each do not exceed 10^5.\n\nFor each instance of query 2, output on a single line \"YES\" if there exists some sequence of (possibly zero) operations to make a nondecreasing, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first sample, the array is initially:\n\nBy applying the operation twice on a_1, twice on a_2, once on a_5, twice on a_6, and once on a_7, the array becomes:\n\nAfter the second query, the array becomes:\n\nInput:\n```\n27 6 64 5 2 2 4 1 02 41 4 52 42 31 7 22 38 8 30 1 2 3 4 5 6 72 41 3 42 4\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers, n, m, and q (2≤ n ≤ 10^5, 2≤ m≤ 5·10^5, 1≤ q≤ 10^5) — the size of the array a, the integer m, and the number of queries.\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (0≤ a_i < m).\n\nThen follows q lines. Each line is of one of the following forms:\n\nIt is guaranteed that the sum of n and the sum of q over all test cases each do not exceed 10^5.",
+    "output": "For each instance of query 2, output on a single line \"YES\" if there exists some sequence of (possibly zero) operations to make a nondecreasing, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "math",
+        "number theory",
+        "sortings",
+        "*2100"
+    ],
+    "rating": 2100
+}

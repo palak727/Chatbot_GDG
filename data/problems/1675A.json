@@ -1,0 +1,17 @@
+{
+    "id": "1675A",
+    "contest_id": 1675,
+    "problem_letter": "A",
+    "title": "A. Food for Animals",
+    "statement": "In the pet store on sale there are:\n\nPolycarp has x dogs and y cats. Is it possible that he will be able to buy food for all his animals in the store? Each of his dogs and each of his cats should receive one pack of suitable food for it.\n\nThe first line of input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nThen t lines are given, each containing a description of one test case. Each description consists of five integers a, b, c, x and y (0 ≤ a,b,c,x,y ≤ 10^8).\n\nFor each test case in a separate line, output:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).\n\nInput:\n```\n71 1 4 2 30 0 0 0 05 5 0 4 61 1 1 1 150000000 50000000 100000000 100000000 1000000000 0 0 100000000 1000000001 3 2 2 5\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\nNO\nNO\n```",
+    "input": "The first line of input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nThen t lines are given, each containing a description of one test case. Each description consists of five integers a, b, c, x and y (0 ≤ a,b,c,x,y ≤ 10^8).",
+    "output": "For each test case in a separate line, output:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

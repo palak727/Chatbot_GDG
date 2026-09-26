@@ -1,0 +1,17 @@
+{
+    "id": "1726A",
+    "contest_id": 1726,
+    "problem_letter": "A",
+    "title": "A. Mainak and Array",
+    "statement": "Mainak has an array a_1, a_2, …, a_n of n positive integers. He will do the following operation to this array exactly once:\n\nMainak wants to maximize the value of (a_n - a_1) after exactly one such operation. Determine the maximum value of (a_n - a_1) that he can obtain.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 999).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, output a single integer — the maximum value of (a_n - a_1) that Mainak can obtain by doing the operation exactly once.\n\nInput:\n```\n561 3 9 11 5 712039 99 99942 1 8 132 1 5\n```\n\nOutput:\n```\n10\n0\n990\n7\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 999).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, output a single integer — the maximum value of (a_n - a_1) that Mainak can obtain by doing the operation exactly once.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

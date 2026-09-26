@@ -1,0 +1,19 @@
+{
+    "id": "1628F",
+    "contest_id": 1628,
+    "problem_letter": "F",
+    "title": "F. Spaceship Crisis Management",
+    "statement": "NASA (Norwegian Astronaut Stuff Association) is developing a new steering system for spaceships. But in its current state, it wouldn't be very safe if the spaceship would end up in a bunch of space junk. To make the steering system safe, they need to answer the following:\n\nGiven the target position t = (0, 0), a set of n pieces of space junk l described by line segments l_i = ((a_ix, a_iy), (b_ix, b_iy)), and a starting position s = (s_x, s_y), is there a direction such that floating in that direction from the starting position would lead to the target position?\n\nWhen the spaceship hits a piece of space junk, what happens depends on the absolute difference in angle between the floating direction and the line segment, θ:\n\nYou are only given the set of pieces of space junk once, and the target position is always (0, 0), but there are q queries, each with a starting position s_j = (s_jx, s_jy).\n\nAnswer the above question for each query.\n\nThe first line contains the the integer n (1 ≤ n ≤ 1500).\n\nThen follows n lines, the i-th of which containing the 4 integers a_ix, a_iy, b_ix, and b_iy (|a_ix|, |a_iy|, |b_ix|, |b_iy| ≤ 1000).\n\nThen follows a line containing the integer q (1 ≤ q ≤ 1000).\n\nThen follows q lines, the j-th of which containing the 2 integers s_jx and s_jy (|s_jx|, |s_jy| ≤ 1000).\n\nIt is guaranteed that none of the segments in l cross or touch, that t is not on any segment in l, that s_j is not on any segment in l, and that s ≠ t.\n\nFor each query s_j print an answer. If there exists a direction such that floating from s_j in that direction, possibly sliding along some pieces of space junk, leads to t, print \"YES\". Otherwise, print \"NO\" (case insensitive).\n\nThe blue cross represents the target location, and the other blue line segments represent the space junk.\n\nGreen dots represent starting locations where the answer is yes, and red dots represent starting locations where the answer is no.\n\nThe yellow lines are possible paths to the target location for the 3rd and 14th queries.\n\nThe black line is a possible path from the starting location in the 6th query, but it barely misses the target location.\n\nInput:\n```\n3\n0 1 2 4\n1 3 -1 6\n0 -1 1 -1\n14\n-2 10\n-1 10\n0 10\n1 10\n2 10\n3 10\n4 10\n5 10\n6 10\n-1 -2\n0 -2\n1 -2\n2 -2\n3 -2\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nYES\nYES\nNO\nNO\nNO\nYES\n```",
+    "input": "The first line contains the the integer n (1 ≤ n ≤ 1500).\n\nThen follows n lines, the i-th of which containing the 4 integers a_ix, a_iy, b_ix, and b_iy (|a_ix|, |a_iy|, |b_ix|, |b_iy| ≤ 1000).\n\nThen follows a line containing the integer q (1 ≤ q ≤ 1000).\n\nThen follows q lines, the j-th of which containing the 2 integers s_jx and s_jy (|s_jx|, |s_jy| ≤ 1000).\n\nIt is guaranteed that none of the segments in l cross or touch, that t is not on any segment in l, that s_j is not on any segment in l, and that s ≠ t.",
+    "output": "For each query s_j print an answer. If there exists a direction such that floating from s_j in that direction, possibly sliding along some pieces of space junk, leads to t, print \"YES\". Otherwise, print \"NO\" (case insensitive).",
+    "time_limit": "8 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "geometry",
+        "sortings",
+        "*3500"
+    ],
+    "rating": 3500
+}

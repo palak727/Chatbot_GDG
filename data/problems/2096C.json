@@ -1,0 +1,17 @@
+{
+    "id": "2096C",
+    "contest_id": 2096,
+    "problem_letter": "C",
+    "title": "C. Wonderful City",
+    "statement": "You are the proud leader of a city in Ancient Berland. There are n^2 buildings arranged in a grid of n rows and n columns. The height of the building in row i and column j is h_{i, j}.\n\nThe city is beautiful if no two adjacent by side buildings have the same height. In other words, it must satisfy the following:\n\nThere are n workers at company A, and n workers at company B. Each worker can be hired at most once.\n\nIt costs a_i coins to hire worker i at company A. After hiring, worker i will:\n\nIt costs b_j coins to hire worker j at company B. After hiring, worker j will:\n\nFind the minimum number of coins needed to make the city beautiful, or report that it is impossible.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the size of the grid.\n\nThe i-th of the next n lines of each test case contains n integers h_{i, 1}, h_{i, 2}, …, h_{i, n} (1 ≤ h_{i, j} ≤ 10^9) — the heights of the buildings in row i.\n\nThe next line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the costs of hiring the workers at company A.\n\nThe next line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_j ≤ 10^9) — the costs of hiring the workers at company B.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.\n\nFor each test case, output a single integer — the minimum number of coins needed, or -1 if it is impossible.\n\nFor the first test case, we can see that the city is already beautiful. Thus, the answer is 0.\n\nFor the second test case, we can hire worker 2 from company A, worker 4 from company A, and worker 4 from company B:\n\nThe cost of hiring the workers is 2 + 4 + 8 = 14. This is the minimum possible cost.\n\nFor the third test case, no matter what we do, it is impossible to make the city beautiful. Thus, the answer is -1.\n\nInput:\n```\n421 22 1100 100100 10041 2 1 23 2 1 21 2 1 11 3 1 21 2 3 45 6 7 831 2 22 2 12 1 1100 100 100100 100 10068 7 2 8 4 87 7 9 7 1 18 3 1 1 8 56 8 3 1 1 41 4 5 1 9 67 1 1 6 8 211 23 20 79 30 1515 83 73 57 34 63\n```\n\nOutput:\n```\n0\n14\n-1\n183\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the size of the grid.\n\nThe i-th of the next n lines of each test case contains n integers h_{i, 1}, h_{i, 2}, …, h_{i, n} (1 ≤ h_{i, j} ≤ 10^9) — the heights of the buildings in row i.\n\nThe next line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the costs of hiring the workers at company A.\n\nThe next line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_j ≤ 10^9) — the costs of hiring the workers at company B.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.",
+    "output": "For each test case, output a single integer — the minimum number of coins needed, or -1 if it is impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "*1700"
+    ],
+    "rating": 1700
+}

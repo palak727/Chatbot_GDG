@@ -1,0 +1,17 @@
+{
+    "id": "2071F",
+    "contest_id": 2071,
+    "problem_letter": "F",
+    "title": "F. Towering Arrays",
+    "statement": "An array b = [b_1, b_2, …, b_m] of length m is called p-towering if there exists an index i (1≤ i≤ m) such that for every index j (1 ≤ j ≤ m), the following condition holds: b_j ≥ p - |i - j|.\n\nGiven an array a = [a_1, a_2, …, a_n] of length n, you can remove at most k elements from it. Determine the maximum value of p for which the remaining array can be made p-towering.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (0 ≤ k < n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum value of p for which the remaining array can be made p-towering.\n\nIn the first test case, you cannot delete any element. The array remains [2, 1, 4, colorred5, 2] and is p-towering for p = 3 by picking i = 4:\n\nIn the second test case, you can remove the first, second, and fifth elements to obtain the array [4, colorred5]. Clearly, the obtained array is p-towering for p = 5 by picking i = 2.\n\nInput:\n```\n65 02 1 4 5 25 32 1 4 5 26 11 2 3 4 5 111 66 3 8 5 8 3 2 1 2 7 114 33 2 3 5 5 2 6 7 4 8 10 1 8 92 01 1\n```\n\nOutput:\n```\n3\n5\n5\n7\n9\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (0 ≤ k < n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum value of p for which the remaining array can be made p-towering.",
+    "time_limit": "6 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "*2700"
+    ],
+    "rating": 2700
+}

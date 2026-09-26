@@ -1,0 +1,19 @@
+{
+    "id": "2115A",
+    "contest_id": 2115,
+    "problem_letter": "A",
+    "title": "A. Gellyfish and Flaming Peony",
+    "statement": "Gellyfish hates math problems, but she has to finish her math homework:\n\nGellyfish is given an array of n positive integers a_1, a_2, …, a_n.\n\nShe needs to do the following two-step operation until all elements of a are equal:\n\nNow, Gellyfish asks you for the minimum number of operations to achieve her goal.\n\nIt can be proven that Gellyfish can always achieve her goal.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the length of the array.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 5000) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.\n\nFor each test case, output a single integer — the minimum number of operations to achieve her goal.\n\nIn the first test case, the following is a way that minimizes the number of operations:\n\nInput:\n```\n3312 20 3061 9 1 9 8 136 14 15\n```\n\nOutput:\n```\n4\n3\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the length of the array.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 5000) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case, output a single integer — the minimum number of operations to achieve her goal.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

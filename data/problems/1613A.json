@@ -1,0 +1,17 @@
+{
+    "id": "1613A",
+    "contest_id": 1613,
+    "problem_letter": "A",
+    "title": "A. Long Comparison",
+    "statement": "Monocarp wrote down two numbers on a whiteboard. Both numbers follow a specific format: a positive integer x with p zeros appended to its end.\n\nNow Monocarp asks you to compare these two numbers. Can you help him?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers x_1 and p_1 (1 ≤ x_1 ≤ 10^6; 0 ≤ p_1 ≤ 10^6) — the description of the first number.\n\nThe second line of each testcase contains two integers x_2 and p_2 (1 ≤ x_2 ≤ 10^6; 0 ≤ p_2 ≤ 10^6) — the description of the second number.\n\nFor each testcase print the result of the comparison of the given two numbers. If the first number is smaller than the second one, print '<'. If the first number is greater than the second one, print '>'. If they are equal, print '='.\n\nThe comparisons in the example are: 20 > 19, 1000 = 1000, 1999 < 2000, 1 = 1, 99 < 100.\n\nInput:\n```\n5\n2 1\n19 0\n10 2\n100 1\n1999 0\n2 3\n1 0\n1 0\n99 0\n1 2\n```\n\nOutput:\n```\n>\n=\n<\n=\n<\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers x_1 and p_1 (1 ≤ x_1 ≤ 10^6; 0 ≤ p_1 ≤ 10^6) — the description of the first number.\n\nThe second line of each testcase contains two integers x_2 and p_2 (1 ≤ x_2 ≤ 10^6; 0 ≤ p_2 ≤ 10^6) — the description of the second number.",
+    "output": "For each testcase print the result of the comparison of the given two numbers. If the first number is smaller than the second one, print '<'. If the first number is greater than the second one, print '>'. If they are equal, print '='.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

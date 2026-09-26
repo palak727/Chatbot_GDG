@@ -1,0 +1,17 @@
+{
+    "id": "1703B",
+    "contest_id": 1703,
+    "problem_letter": "B",
+    "title": "B. ICPC Balloons",
+    "statement": "In an ICPC contest, balloons are distributed as follows:\n\nDetermine the total number of balloons that the teams received. Note that some problems may be solved by none of the teams.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the length of the string.\n\nThe second line of each test case contains a string s of length n consisting of uppercase English letters, denoting the order of solved problems.\n\nFor each test case, output a single integer — the total number of balloons that the teams received.\n\nIn the first test case, 5 balloons are given out:\n\nIn the second test case, there is only one problem solved. The team who solved it receives 2 balloons: one because they solved the problem, an an additional one because they are the first team to solve problem textsfA.\n\nInput:\n```\n63ABA1A3ORZ5BAAAA4BKPT10CODEFORCES\n```\n\nOutput:\n```\n5\n2\n6\n7\n8\n17\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the length of the string.\n\nThe second line of each test case contains a string s of length n consisting of uppercase English letters, denoting the order of solved problems.",
+    "output": "For each test case, output a single integer — the total number of balloons that the teams received.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

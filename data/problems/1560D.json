@@ -1,0 +1,18 @@
+{
+    "id": "1560D",
+    "contest_id": 1560,
+    "problem_letter": "D",
+    "title": "D. Make a Power of Two",
+    "statement": "You are given an integer n. In 1 move, you can do one of the following actions:\n\nThe actions may be performed in any order any number of times.\n\nNote that if, after deleting some digit from a number, it will contain leading zeroes, they will not be deleted. E.g. if you delete from the number 301 the digit 3, the result is the number 01 (not 1).\n\nYou need to perform the minimum number of actions to make the number any power of 2 (i.e. there's an integer k (k ≥ 0) such that the resulting number is equal to 2^k). The resulting number must not have leading zeroes.\n\nE.g. consider n=1052. The answer is equal to 2. First, let's add to the right one digit 4 (the result will be 10524). Then let's erase the digit 5, so the result will be 1024 which is a power of 2.\n\nE.g. consider n=8888. The answer is equal to 3. Let's erase any of the digits 8 three times. The result will be 8 which is a power of 2.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 10^9).\n\nFor each test case, output in a separate line one integer m — the minimum number of moves to transform the number into any power of 2.\n\nThe answer for the first test case was considered above.\n\nThe answer for the second test case was considered above.\n\nIn the third test case, it's enough to add to the right the digit 4 — the number 6 will turn into 64.\n\nIn the fourth test case, let's add to the right the digit 8 and then erase 7 and 5 — the taken number will turn into 8.\n\nThe numbers of the fifth and the sixth test cases are already powers of two so there's no need to make any move.\n\nIn the seventh test case, you can delete first of all the digit 3 (the result is 01) and then the digit 0 (the result is 1).\n\nInput:\n```\n12\n1052\n8888\n6\n75\n128\n1\n301\n12048\n1504\n6656\n1000000000\n687194767\n```\n\nOutput:\n```\n2\n3\n1\n3\n0\n0\n2\n1\n3\n4\n9\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 10^9).",
+    "output": "For each test case, output in a separate line one integer m — the minimum number of moves to transform the number into any power of 2.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "strings",
+        "*1300"
+    ],
+    "rating": 1300
+}

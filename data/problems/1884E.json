@@ -1,0 +1,18 @@
+{
+    "id": "1884E",
+    "contest_id": 1884,
+    "problem_letter": "E",
+    "title": "E. Hard Design",
+    "statement": "Consider an array of integers b_0, b_1, …, b_{n-1}. Your goal is to make all its elements equal. To do so, you can perform the following operation several (possibly, zero) times:\n\nThe value f(b) is defined as a pair of integers (cnt, cost), where cnt is the smallest number of operations required to make all elements of the array equal, and cost is the largest total number of coins you can receive among all possible ways to make all elements equal within cnt operations. In other words, first, you need to minimize the number of operations, second, you need to maximize the total number of coins you receive.\n\nYou are given an array of integers a_0, a_1, …, a_{n-1}. Please, find the value of f for all cyclic shifts of a.\n\nFormally, for each 0 ≤ i ≤ n-1 you need to do the following:\n\nPlease note that under a fixed cnt you need to maximize the total number of coins cost, not its remainder modulo (10^9 + 7).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line of each test case contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, for each 0 ≤ i ≤ n-1 output the value of f for the i-th cyclic shift of array a: first, output cnt (the minimum number of operations), then output cost (the maximum number of coins these operations can give) modulo 10^9 + 7.\n\nIn the first test case, there is only one cycle shift, which is equal to [1], and all its elements are already equal.\n\nIn the second test case, you need to find the answer for three arrays:\n\nConsider the case of [2, 1, 3]. To make all elements equal, we can pick l = 1 and r = 1 on the first operation, which results in [2, 2, 3]. On the second operation we can pick l = 0 and r = 1, which results in [3, 3, 3]. We have used 2 operations, and the total number of coins received is 1^2 + 2^2 = 5.\n\nInput:\n```\n51131 3 253 2 4 5 186 5 6 4 2 6 2 2410 10 10 10\n```\n\nOutput:\n```\n0 0\n3 3\n2 5\n2 5\n7 18\n7 16\n6 22\n5 28\n5 28\n9 27\n9 27\n9 27\n9 27\n11 23\n9 27\n9 27\n13 19\n0 0\n0 0\n0 0\n0 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line of each test case contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, for each 0 ≤ i ≤ n-1 output the value of f for the i-th cyclic shift of array a: first, output cnt (the minimum number of operations), then output cost (the maximum number of coins these operations can give) modulo 10^9 + 7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*2800"
+    ],
+    "rating": 2800
+}

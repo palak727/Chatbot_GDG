@@ -1,0 +1,18 @@
+{
+    "id": "1721C",
+    "contest_id": 1721,
+    "problem_letter": "C",
+    "title": "C. Min-Max Array Transformation",
+    "statement": "You are given an array a_1, a_2, …, a_n, which is sorted in non-descending order. You decided to perform the following steps to create array b_1, b_2, …, b_n:\n\nYou are given the resulting array b. For each index i, calculate what is the minimum and maximum possible value of d_i you can choose in order to get the given array b.\n\nNote that the minimum (maximum) d_i-s are independent of each other, i. e. they can be obtained from different possible arrays d.\n\nThe first line contains the single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of arrays a, b and d.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9; a_i ≤ a_{i+1}) — the array a in non-descending order.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9; b_i ≤ b_{i+1}) — the array b in non-descending order.\n\nAdditional constraints on the input:\n\nFor each test case, print two lines. In the first line, print n integers d_1^min, d_2^min, …, d_n^min, where d_i^min is the minimum possible value you can add to a_i.\n\nSecondly, print n integers d_1^max, d_2^max, …, d_n^max, where d_i^max is the maximum possible value you can add to a_i.\n\nAll d_i^min and d_i^max values are independent of each other. In other words, for each i, d_i^min is just the minimum value among all possible values of d_i.\n\nIn the first test case, in order to get d_1^min = 5, we can choose, for example, d = [5, 10, 6]. Then b = [2+5,3+10,5+6] = [7,13,11] = [7,11,13].\n\nFor d_2^min = 4, we can choose d = [9, 4, 8]. Then b = [2+9,3+4,5+8] = [11,7,13] = [7,11,13].\n\nInput:\n```\n432 3 57 11 1311000500041 2 3 41 2 3 4410 20 30 4022 33 33 55\n```\n\nOutput:\n```\n5 4 2\n11 10 8\n4000\n4000\n0 0 0 0\n0 0 0 0\n12 2 3 15\n23 13 3 15\n```",
+    "input": "The first line contains the single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of arrays a, b and d.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9; a_i ≤ a_{i+1}) — the array a in non-descending order.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9; b_i ≤ b_{i+1}) — the array b in non-descending order.\n\nAdditional constraints on the input:",
+    "output": "For each test case, print two lines. In the first line, print n integers d_1^min, d_2^min, …, d_n^min, where d_i^min is the minimum possible value you can add to a_i.\n\nSecondly, print n integers d_1^max, d_2^max, …, d_n^max, where d_i^max is the maximum possible value you can add to a_i.\n\nAll d_i^min and d_i^max values are independent of each other. In other words, for each i, d_i^min is just the minimum value among all possible values of d_i.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

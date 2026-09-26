@@ -1,0 +1,17 @@
+{
+    "id": "1926D",
+    "contest_id": 1926,
+    "problem_letter": "D",
+    "title": "D. Vlad and Division",
+    "statement": "Vladislav has n non-negative integers, and he wants to divide all of them into several groups so that in any group, any pair of numbers does not have matching bit values among bits from 1-st to 31-st bit (i.e., considering the 31 least significant bits of the binary representation).\n\nFor an integer k, let k_2(i) denote the i-th bit in its binary representation (from right to left, indexing from 1). For example, if k=43, since 43=101011_2, then 43_2(1)=1, 43_2(2)=1, 43_2(3)=0, 43_2(4)=1, 43_2(5)=0, 43_2(6)=1, 43_2(7)=0, 43_2(8)=0, …, 43_2(31)=0.\n\nFormally, for any two numbers x and y in the same group, the condition x_2(i) ≠ y_2(i) must hold for all 1 ≤ i < 32.\n\nWhat is the minimum number of groups Vlad needs to achieve his goal? Each number must fall into exactly one group.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the total number of integers.\n\nThe second line of each test case contains n given integers a_1, …, a_n (0 ≤ a_j < 2^31).\n\nThe sum of n over all test cases in a test does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of groups required to satisfy the condition.\n\nIn the first test case, any two numbers have the same last 31 bits, so we need to place each number in its own group.\n\nIn the second test case, a_1=0000000000000000000000000000000_2, a_2=1111111111111111111111111111111_2 so they can be placed in the same group because a_1(i) ≠ a_2(i) for each i between 1 and 31, inclusive.\n\nInput:\n```\n941 4 3 420 21474836475476319172 261956880 2136179468 1671164475 188552676731335890506 811593141 11282233624688873446 627404104 1520079543 1458610201461545621 2085938026 1269342732 143025857540 0 2147483647 214748364730 0 214748364781858058912 289424735 1858058912 2024818580 1858058912 289424735 122665067 289424735\n```\n\nOutput:\n```\n4\n1\n3\n2\n2\n3\n2\n2\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the total number of integers.\n\nThe second line of each test case contains n given integers a_1, …, a_n (0 ≤ a_j < 2^31).\n\nThe sum of n over all test cases in a test does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of groups required to satisfy the condition.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

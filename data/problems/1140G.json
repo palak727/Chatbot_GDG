@@ -1,0 +1,19 @@
+{
+    "id": "1140G",
+    "contest_id": 1140,
+    "problem_letter": "G",
+    "title": "G. Double Tree",
+    "statement": "You are given a special undirected graph. It consists of 2n vertices numbered from 1 to 2n. The following properties hold for the graph:\n\nSo, the graph can be represented as two trees having the same structure, and n edges connecting each vertex of the first tree to the corresponding vertex of the second tree.\n\nEdges of the graph are weighted. The length of some simple path in the graph is the sum of weights of traversed edges.\n\nYou are given q queries to this graph; in each query, you are asked to compute the length of the shortest path between some pair of vertices in this graph. Can you answer all of the queries?\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers w_{1, 2}, w_{3,4}, ..., w_{2n - 1, 2n} (1 ≤ w_{i, i + 1} ≤ 10^12). These integers describe the weights of the edges connecting odd vertices with even ones.\n\nThen n-1 lines follow. i-th line contains four integers x_i, y_i, w_{i, 1} and w_{i, 2} (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i, 1 ≤ w_{i, j} ≤ 10^12); it describes two edges: one connecting 2x_i - 1 with 2y_i - 1 and having weight w_{i, 1}; another connecting 2x_i with 2y_i and having weight w_{i, 2}.\n\nThe next line contains one integer q (1 ≤ q ≤ 6·10^5) — the number of queries.\n\nThen q lines follow, i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ 2n, u_i ≠ v_i), describing a query \"compute the length of the shortest path between vertices u_i and v_i\".\n\nPrint q integers, i-th integer should be equal to the answer to the i-th query.\n\nThe graph in the first test looks like that:\n\nInput:\n```\n5\n3 6 15 4 8\n1 2 5 4\n2 3 5 7\n1 4 1 5\n1 5 2 1\n3\n1 2\n5 6\n1 10\n```\n\nOutput:\n```\n3\n15\n4\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers w_{1, 2}, w_{3,4}, ..., w_{2n - 1, 2n} (1 ≤ w_{i, i + 1} ≤ 10^12). These integers describe the weights of the edges connecting odd vertices with even ones.\n\nThen n-1 lines follow. i-th line contains four integers x_i, y_i, w_{i, 1} and w_{i, 2} (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i, 1 ≤ w_{i, j} ≤ 10^12); it describes two edges: one connecting 2x_i - 1 with 2y_i - 1 and having weight w_{i, 1}; another connecting 2x_i with 2y_i and having weight w_{i, 2}.\n\nThe next line contains one integer q (1 ≤ q ≤ 6·10^5) — the number of queries.\n\nThen q lines follow, i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ 2n, u_i ≠ v_i), describing a query \"compute the length of the shortest path between vertices u_i and v_i\".",
+    "output": "Print q integers, i-th integer should be equal to the answer to the i-th query.",
+    "time_limit": "10 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "shortest paths",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

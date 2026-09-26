@@ -1,0 +1,18 @@
+{
+    "id": "1380F",
+    "contest_id": 1380,
+    "problem_letter": "F",
+    "title": "F. Strange Addition",
+    "statement": "Let a and b be some non-negative integers. Let's define strange addition of a and b as following:\n\nAssume that both numbers have an infinite number of leading zeros.\n\nFor example, let's take a look at a strange addition of numbers 3248 and 908:\n\nYou are given a string c, consisting of n digits from 0 to 9. You are also given m updates of form:\n\nNote that string c might have leading zeros at any point of time.\n\nAfter each update print the number of pairs (a, b) such that both a and b are non-negative integers and the result of a strange addition of a and b is equal to c.\n\nNote that the numbers of pairs can be quite large, so print them modulo 998244353.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 5·10^5) — the length of the number c and the number of updates.\n\nThe second line contains a string c, consisting of exactly n digits from 0 to 9.\n\nEach of the next m lines contains two integers x and d (1 ≤ x ≤ n, 0 ≤ d ≤ 9) — the descriptions of updates.\n\nPrint m integers — the i-th value should be equal to the number of pairs (a, b) such that both a and b are non-negative integers and the result of a strange addition of a and b is equal to c after i updates are applied.\n\nNote that the numbers of pairs can be quite large, so print them modulo 998244353.\n\nAfter the first update c is equal to 14. The pairs that sum up to 14 are: (0, 14), (1, 13), (2, 12), (3, 11), (4, 10), (5, 9), (6, 8), (7, 7), (8, 6), (9, 5), (10, 4), (11, 3), (12, 2), (13, 1), (14, 0).\n\nAfter the second update c is equal to 11.\n\nAfter the third update c is equal to 01.\n\nInput:\n```\n2 3\n14\n2 4\n2 1\n1 0\n```\n\nOutput:\n```\n15\n12\n2\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 5·10^5) — the length of the number c and the number of updates.\n\nThe second line contains a string c, consisting of exactly n digits from 0 to 9.\n\nEach of the next m lines contains two integers x and d (1 ≤ x ≤ n, 0 ≤ d ≤ 9) — the descriptions of updates.",
+    "output": "Print m integers — the i-th value should be equal to the number of pairs (a, b) such that both a and b are non-negative integers and the result of a strange addition of a and b is equal to c after i updates are applied.\n\nNote that the numbers of pairs can be quite large, so print them modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "matrices",
+        "*2600"
+    ],
+    "rating": 2600
+}

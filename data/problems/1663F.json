@@ -1,0 +1,16 @@
+{
+    "id": "1663F",
+    "contest_id": 1663,
+    "problem_letter": "F",
+    "title": "F. In Every Generation...",
+    "statement": "A string s (3 ≤ |s| ≤ 7) consisting of lowercase English letters.\n\nA single string. If there is no answer, print \"none\" (without the quotes).\n\nInput:\n```\ntourist\n```\n\nOutput:\n```\nooggqjx\n```",
+    "input": "A string s (3 ≤ |s| ≤ 7) consisting of lowercase English letters.",
+    "output": "A single string. If there is no answer, print \"none\" (without the quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "strings"
+    ],
+    "rating": null
+}

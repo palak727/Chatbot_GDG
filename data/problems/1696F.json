@@ -1,0 +1,21 @@
+{
+    "id": "1696F",
+    "contest_id": 1696,
+    "problem_letter": "F",
+    "title": "F. Tree Recovery",
+    "statement": "Fishingprince loves trees. A tree is a connected undirected graph without cycles.\n\nFishingprince has a tree of n vertices. The vertices are numbered 1 through n. Let d(x,y) denote the shortest distance on the tree from vertex x to vertex y, assuming that the length of each edge is 1.\n\nHowever, the tree was lost in an accident. Fortunately, Fishingprince still remembers some information about the tree. More specifically, for every triple of integers x,y,z (1≤ x < y≤ n, 1≤ z≤ n) he remembers whether d(x,z)=d(y,z) or not.\n\nHelp him recover the structure of the tree, or report that no tree satisfying the constraints exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (2≤ n≤ 100) — the number of vertices in the tree.\n\nThen n-1 lines follow. The i-th line of these n-1 lines contains n-i strings of length n consisting of 0 and 1. If the k-th character in the j-th string of the i-th line is 0, it means that d(i,k)≠ d(i+j,k); if the k-th character in the j-th string of the i-th line is 1, it means that d(i,k)=d(i+j,k).\n\nIt is guaranteed that in one input file,\n\nFor each test case:\n\nWhen printing Yes and No, you can print each letter in any case (upper or lower).\n\nInput:\n```\n52002103001 0000003001 010000500000 01001 00000 0110000000 10000 0000000000 1101000000\n```\n\nOutput:\n```\nYes\n1 2\nNo\nYes\n1 3\n2 3\nNo\nYes\n1 2\n1 4\n2 3\n2 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (2≤ n≤ 100) — the number of vertices in the tree.\n\nThen n-1 lines follow. The i-th line of these n-1 lines contains n-i strings of length n consisting of 0 and 1. If the k-th character in the j-th string of the i-th line is 0, it means that d(i,k)≠ d(i+j,k); if the k-th character in the j-th string of the i-th line is 1, it means that d(i,k)=d(i+j,k).\n\nIt is guaranteed that in one input file,",
+    "output": "For each test case:\n\nWhen printing Yes and No, you can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

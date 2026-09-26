@@ -1,0 +1,18 @@
+{
+    "id": "1528F",
+    "contest_id": 1528,
+    "problem_letter": "F",
+    "title": "F. AmShZ Farm",
+    "statement": "To AmShZ, all arrays are equal, but some arrays are more-equal than others. Specifically, the arrays consisting of n elements from 1 to n that can be turned into permutations of numbers from 1 to n by adding a non-negative integer to each element.\n\nMashtali who wants to appear in every problem statement thinks that an array b consisting of k elements is compatible with a more-equal array a consisting of n elements if for each 1 ≤ i ≤ k we have 1 ≤ b_i ≤ n and also a_b_1 = a_b_2 = … = a_b_k.\n\nFind the number of pairs of arrays a and b such that a is a more-equal array consisting of n elements and b is an array compatible with a consisting of k elements modulo 998244353.\n\nNote that the elements of b are not necessarily distinct, same holds for a.\n\nThe first line of input contains two integers n and k (1 ≤ n ≤ 10^9 , 1 ≤ k ≤ 10^5).\n\nPrint a single integer — the answer to the problem modulo 998244353.\n\nThere are eight possible pairs for the second example:\n\nInput:\n```\n1 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5 4\n```\n\nOutput:\n```\n50400\n```\n\nInput:\n```\n20 100\n```\n\nOutput:\n```\n807645526\n```\n\nInput:\n```\n10000000 10000\n```\n\nOutput:\n```\n883232350\n```",
+    "input": "The first line of input contains two integers n and k (1 ≤ n ≤ 10^9 , 1 ≤ k ≤ 10^5).",
+    "output": "Print a single integer — the answer to the problem modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math",
+        "*3300"
+    ],
+    "rating": 3300
+}

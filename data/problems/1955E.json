@@ -1,0 +1,19 @@
+{
+    "id": "1955E",
+    "contest_id": 1955,
+    "problem_letter": "E",
+    "title": "E. Long Inversions",
+    "statement": "A binary string s of length n is given. A binary string is a string consisting only of the characters '1' and '0'.\n\nYou can choose an integer k (1 ≤ k ≤ n) and then apply the following operation any number of times: choose k consecutive characters of the string and invert them, i.e., replace all '0' with '1' and vice versa.\n\nUsing these operations, you need to make all the characters in the string equal to '1'.\n\nFor example, if n=5, s=00100, you can choose k=3 and proceed as follows:\n\nFind the maximum value of k for which it is possible to make all the characters in the string equal to '1' using the described operations. Note that the number of operations required to achieve this is not important.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the length of the string s.\n\nThe second line of each test case contains a string s of length n, consisting of the characters '1' and '0'.\n\nIt is guaranteed that the sum of the values n^2 over all test cases in the test does not exceed 25·10^6.\n\nFor each test case, output the maximum integer k (1 ≤ k ≤ n) for which it is possible to obtain a string s consisting only of the characters '1' using the described operations.\n\nInput:\n```\n5500100501000710111013000210\n```\n\nOutput:\n```\n3\n2\n4\n3\n1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the length of the string s.\n\nThe second line of each test case contains a string s of length n, consisting of the characters '1' and '0'.\n\nIt is guaranteed that the sum of the values n^2 over all test cases in the test does not exceed 25·10^6.",
+    "output": "For each test case, output the maximum integer k (1 ≤ k ≤ n) for which it is possible to obtain a string s consisting only of the characters '1' using the described operations.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

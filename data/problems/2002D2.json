@@ -1,0 +1,21 @@
+{
+    "id": "2002D2",
+    "contest_id": 2002,
+    "problem_letter": "D2",
+    "title": "D2. DFS Checker (Hard Version)",
+    "statement": "This is the hard version of the problem. In this version, you are given a generic tree and the constraints on n and q are higher. You can make hacks only if both versions of the problem are solved.\n\nYou are given a rooted tree consisting of n vertices. The vertices are numbered from 1 to n, and the root is the vertex 1. You are also given a permutation p_1, p_2, …, p_n of [1,2,…,n].\n\nYou need to answer q queries. For each query, you are given two integers x, y; you need to swap p_x and p_y and determine if p_1, p_2, …, p_n is a valid DFS order^dagger of the given tree.\n\nPlease note that the swaps are persistent through queries.\n\n^dagger A DFS order is found by calling the following textttdfs function on the given tree.\n\n```\ndfs_order = []\n\nfunction dfs(v):\n    append v to the back of dfs_order\n    pick an arbitrary permutation s of children of v\n    for child in s:\n        dfs(child)\ndfs(1)\n```\n\nNote that the DFS order is not unique.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, q (2≤ n≤ 3·10^5, 2≤ q≤ 10^5) — the number of vertices in the tree and the number of queries.\n\nThe next line contains n-1 integers a_2,a_3,…,a_n (1≤ a_i < i) — the parent of each vertex in the given tree.\n\nThe next line contains n integers p_1,p_2,…,p_n (1≤ p_i≤ n, all p_i are distinct) — the initial permutation p.\n\nThe next q lines each contain two integers x, y (1≤ x,y≤ n,x≠ y) — the positions of the elements to swap in the permutation.\n\nIt is guaranteed that the sum of all n does not exceed 3·10^5, and the sum of all q does not exceed 10^5.\n\nFor each test case, print q lines corresponding to the q queries. For each query, output textttYES if there is a DFS order that exactly equals the current permutation, and output textttNO otherwise.\n\nYou can output textttYes and textttNo in any case (for example, strings textttyEs, textttyes, textttYes, and textttYES will be recognized as a positive response).\n\nIn the first test case, the permutation p_1, p_2, …, p_n after each modification is [1,3,2],[1,2,3],[3,2,1], respectively. The first two permutations are valid DFS orders; the third is not a DFS order.\n\nIn the second test case, the permutation p_1, p_2, …, p_n after each modification is [1,2,5,4,3,6,7],[1,3,5,4,2,6,7],[1,3,7,4,2,6,5],[1,3,7,6,2,4,5], respectively.\n\nInput:\n```\n33 31 11 2 32 33 21 37 41 1 2 2 3 31 2 3 4 5 6 73 52 53 74 65 41 1 3 42 3 4 5 15 14 53 42 3\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nNO\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, q (2≤ n≤ 3·10^5, 2≤ q≤ 10^5) — the number of vertices in the tree and the number of queries.\n\nThe next line contains n-1 integers a_2,a_3,…,a_n (1≤ a_i < i) — the parent of each vertex in the given tree.\n\nThe next line contains n integers p_1,p_2,…,p_n (1≤ p_i≤ n, all p_i are distinct) — the initial permutation p.\n\nThe next q lines each contain two integers x, y (1≤ x,y≤ n,x≠ y) — the positions of the elements to swap in the permutation.\n\nIt is guaranteed that the sum of all n does not exceed 3·10^5, and the sum of all q does not exceed 10^5.",
+    "output": "For each test case, print q lines corresponding to the q queries. For each query, output textttYES if there is a DFS order that exactly equals the current permutation, and output textttNO otherwise.\n\nYou can output textttYes and textttNo in any case (for example, strings textttyEs, textttyes, textttYes, and textttYES will be recognized as a positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "hashing",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

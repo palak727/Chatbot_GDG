@@ -1,0 +1,18 @@
+{
+    "id": "1669E",
+    "contest_id": 1669,
+    "problem_letter": "E",
+    "title": "E. 2-Letter Strings",
+    "statement": "Given n strings, each of length 2, consisting of lowercase Latin alphabet letters from 'a' to 'k', output the number of pairs of indices (i, j) such that i < j and the i-th string and the j-th string differ in exactly one position.\n\nIn other words, count the number of pairs (i, j) (i < j) such that the i-th string and the j-th string have exactly one position p (1 ≤ p ≤ 2) such that s_i_p ≠ s_j_p.\n\nThe answer may not fit into 32-bit integer type, so you should use 64-bit integers like long long in C++ to avoid integer overflow.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of strings.\n\nThen follows n lines, the i-th of which containing a single string s_i of length 2, consisting of lowercase Latin letters from 'a' to 'k'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print a single integer — the number of pairs (i, j) (i < j) such that the i-th string and the j-th string have exactly one position p (1 ≤ p ≤ 2) such that s_i_p ≠ s_j_p.\n\nPlease note, that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).\n\nFor the first test case the pairs that differ in exactly one position are: (\"ab\", \"cb\"), (\"ab\", \"db\"), (\"ab\", \"aa\"), (\"cb\", \"db\") and (\"cb\", \"cc\").\n\nFor the second test case the pairs that differ in exactly one position are: (\"aa\", \"ac\"), (\"aa\", \"ca\"), (\"cc\", \"ac\"), (\"cc\", \"ca\"), (\"ac\", \"aa\") and (\"ca\", \"aa\").\n\nFor the third test case, the are no pairs satisfying the conditions.\n\nInput:\n```\n46abcbdbaaccef7aabbccaccabbaa4kkkkabab5jfjfjkjkjk\n```\n\nOutput:\n```\n5\n6\n0\n6\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of strings.\n\nThen follows n lines, the i-th of which containing a single string s_i of length 2, consisting of lowercase Latin letters from 'a' to 'k'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print a single integer — the number of pairs (i, j) (i < j) such that the i-th string and the j-th string have exactly one position p (1 ≤ p ≤ 2) such that s_i_p ≠ s_j_p.\n\nPlease note, that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "math",
+        "strings",
+        "*1200"
+    ],
+    "rating": 1200
+}

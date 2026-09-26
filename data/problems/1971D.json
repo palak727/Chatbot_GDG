@@ -1,0 +1,20 @@
+{
+    "id": "1971D",
+    "contest_id": 1971,
+    "problem_letter": "D",
+    "title": "D. Binary Cut",
+    "statement": "You are given a binary string^dagger. Please find the minimum number of pieces you need to cut it into, so that the resulting pieces can be rearranged into a sorted binary string.\n\nNote that:\n\n^dagger A binary string is a string consisting of characters texttt0 and texttt1. A sorted binary string is a binary string such that all characters texttt0 come before all characters texttt1.\n\nThe first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 500) consisting of characters texttt0 and texttt1, where |s| denotes the length of the string s.\n\nFor each test case, output a single integer — the minimum number of pieces needed to be able to rearrange the string into a sorted binary string.\n\nThe first test case is pictured in the statement. It can be proven that you can't use fewer than 3 pieces.\n\nIn the second and third test cases, the binary string is already sorted, so only 1 piece is needed.\n\nIn the fourth test case, you need to make a single cut between the two characters and rearrange them to make the string texttt01.\n\nInput:\n```\n6110100000000011000011110110\n```\n\nOutput:\n```\n3\n1\n1\n2\n1\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 500) consisting of characters texttt0 and texttt1, where |s| denotes the length of the string s.",
+    "output": "For each test case, output a single integer — the minimum number of pieces needed to be able to rearrange the string into a sorted binary string.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "sortings",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

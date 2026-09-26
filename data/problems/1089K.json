@@ -1,0 +1,16 @@
+{
+    "id": "1089K",
+    "contest_id": 1089,
+    "problem_letter": "K",
+    "title": "K. King Kog's Reception",
+    "statement": "King Kog got annoyed of the usual laxity of his knights — they can break into his hall without prior notice! Thus, the King decided to build a reception with a queue where each knight chooses in advance the time when he will come and how long the visit will take. The knights are served in the order of the recorded time, but each knight has to wait until the visits of all the knights before him are finished.\n\nPrincess Keabeanie wants to see her father. However, she does not want to interrupt the knights so she joins the queue. Unfortunately, the knights change their minds very often — they can join the queue or cancel their visits. Please help the princess to understand how long she will have to wait until she sees her father if she enters the queue at the specified moments of time given the records at the reception.\n\nThe first line of the input contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of events. An event can be of three types: join, cancel, or query.\n\nIt is guaranteed that after each event there are no two knights with the same entrance time in the queue. Cancel events refer to the previous joins that were not cancelled yet.\n\nKeabeanie can come at the same time as some knight, but Keabeanie is very polite and she will wait for the knight to pass.\n\nFor each query write a separate line with the amount of time Keabeanie will have to wait.\n\nInput:\n```\n19\n? 3\n+ 2 2\n? 3\n? 4\n+ 5 2\n? 5\n? 6\n+ 1 2\n? 2\n? 3\n? 4\n? 5\n? 6\n? 7\n? 9\n- 8\n? 2\n? 3\n? 6\n```\n\nOutput:\n```\n0\n1\n0\n2\n1\n3\n2\n1\n2\n1\n0\n0\n2\n1\n1\n```",
+    "input": "The first line of the input contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of events. An event can be of three types: join, cancel, or query.\n\nIt is guaranteed that after each event there are no two knights with the same entrance time in the queue. Cancel events refer to the previous joins that were not cancelled yet.\n\nKeabeanie can come at the same time as some knight, but Keabeanie is very polite and she will wait for the knight to pass.",
+    "output": "For each query write a separate line with the amount of time Keabeanie will have to wait.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

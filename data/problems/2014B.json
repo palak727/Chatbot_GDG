@@ -1,0 +1,16 @@
+{
+    "id": "2014B",
+    "contest_id": 2014,
+    "problem_letter": "B",
+    "title": "B. Robin Hood and the Major Oak",
+    "statement": "The Major Oak in Sherwood is known for its majestic foliage, which provided shelter to Robin Hood and his band of merry men and women.\n\nThe Major Oak grows i^i new leaves in the i-th year. It starts with 1 leaf in year 1.\n\nLeaves last for k years on the tree. In other words, leaves grown in year i last between years i and i+k-1 inclusive.\n\nRobin considers even numbers lucky. Help Robin determine whether the Major Oak will have an even number of leaves in year n.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two integers n, k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ n) — the requested year and the number of years during which the leaves remain.\n\nFor each test case, output one line, \"YES\" if in year n the Major Oak will have an even number of leaves and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, there is only 1 leaf.\n\nIn the second test case, k=1, so in the 2-nd year there will be 2^2=4 leaves.\n\nIn the third test case, k=2, so in the 2-nd year there will be 1+2^2=5 leaves.\n\nIn the fourth test case, k=2, so in the 3-rd year there will be 2^2 + 3^3 = 4 + 27 = 31 leaves.\n\nInput:\n```\n51 12 12 23 24 4\n```\n\nOutput:\n```\nNO\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two integers n, k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ n) — the requested year and the number of years during which the leaves remain.",
+    "output": "For each test case, output one line, \"YES\" if in year n the Major Oak will have an even number of leaves and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

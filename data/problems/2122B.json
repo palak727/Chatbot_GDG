@@ -1,0 +1,17 @@
+{
+    "id": "2122B",
+    "contest_id": 2122,
+    "problem_letter": "B",
+    "title": "B. Pile Shuffling",
+    "statement": "You are given n binary piles, the i-th of which consists of a_i zeros on the top and b_i ones on the bottom.\n\nIn one operation, you can take the top element of any pile and move it to any position in any pile, including the pile it was taken from.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of piles.\n\nThen n lines follow, the i-th containing four integers a_i, b_i, c_i, d_i (0 ≤ a_i, b_i, c_i, d_i ≤ 10^9) — the original and target state of the i-th pile.\n\nIt is guaranteed that there exists a sequence of operations that transforms the piles into the target state.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the minimum number of operations required to achieve the target state.\n\nThe solution of the first test case is shown in the statement.\n\nIn the second test case, an optimal solution is to do the following:\n\nIn the third test case, all piles are already in their target state.\n\nInput:\n```\n321 3 1 21 1 1 232 0 2 20 1 1 01 1 0 031 2 1 23 4 3 40 0 0 0\n```\n\nOutput:\n```\n2\n3\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of piles.\n\nThen n lines follow, the i-th containing four integers a_i, b_i, c_i, d_i (0 ≤ a_i, b_i, c_i, d_i ≤ 10^9) — the original and target state of the i-th pile.\n\nIt is guaranteed that there exists a sequence of operations that transforms the piles into the target state.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the minimum number of operations required to achieve the target state.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

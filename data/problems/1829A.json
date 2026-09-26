@@ -1,0 +1,17 @@
+{
+    "id": "1829A",
+    "contest_id": 1829,
+    "problem_letter": "A",
+    "title": "A. Love Story",
+    "statement": "Timur loves codeforces. That's why he has a string s having length 10 made containing only lowercase Latin letters. Timur wants to know how many indices string s differs from the string \"codeforces\".\n\nFor example string s = \"coolforsez\" differs from \"codeforces\" in 4 indices, shown in bold.\n\nHelp Timur by finding the number of indices where string s differs from \"codeforces\".\n\nNote that you can't reorder the characters in the string s.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is one line and contains the string s, consisting of exactly 10 lowercase Latin characters.\n\nFor each test case, output a single integer — the number of indices where string s differs.\n\nInput:\n```\n5coolforsezcadafurciecodeforcespaiuforcesforcescode\n```\n\nOutput:\n```\n4\n5\n0\n4\n9\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is one line and contains the string s, consisting of exactly 10 lowercase Latin characters.",
+    "output": "For each test case, output a single integer — the number of indices where string s differs.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

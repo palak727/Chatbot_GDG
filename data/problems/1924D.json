@@ -1,0 +1,18 @@
+{
+    "id": "1924D",
+    "contest_id": 1924,
+    "problem_letter": "D",
+    "title": "D. Balanced Subsequences",
+    "statement": "A sequence of brackets is called balanced if one can turn it into a valid math expression by adding characters '+' and '1'. For example, sequences '(())()', '()', and '(()(()))' are balanced, while ')(', '(()', and '(()))(' are not.\n\nA subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.\n\nYou are given three integers n, m and k. Find the number of sequences consisting of n '(' and m ')', such that the longest balanced subsequence is of length 2·k. Since the answer can be large calculate it modulo 1,000,000,007 (10^9 + 7).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 3·10^3). Description of the test cases follows.\n\nThe first line of each test case contains three integers n, m and k (1 ≤ n, m, k ≤ 2·10^3)\n\nFor each test case, print one integer — the answer to the problem.\n\nFor the first test case \"()()\", \"(())\" are the 2 sequences\n\nFor the second test case no sequence is possible.\n\nFor the third test case \")((()\", \")(()(\", \")()((\", \"())((\" are the 4 sequences.\n\nInput:\n```\n32 2 23 2 33 2 1\n```\n\nOutput:\n```\n2\n0\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 3·10^3). Description of the test cases follows.\n\nThe first line of each test case contains three integers n, m and k (1 ≤ n, m, k ≤ 2·10^3)",
+    "output": "For each test case, print one integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2001A",
+    "contest_id": 2001,
+    "problem_letter": "A",
+    "title": "A. Make All Equal",
+    "statement": "You are given a cyclic array a_1, a_2, …, a_n.\n\nYou can perform the following operation on a at most n - 1 times:\n\nYour goal is to find the minimum number of operations needed to make all elements in a equal.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of array a.\n\nFor each test case, output a single line containing an integer: the minimum number of operations needed to make all elements in a equal.\n\nIn the first test case, there is only one element in a, so we can't do any operation.\n\nIn the second test case, we can perform the following operations to make all elements in a equal:\n\nIt can be proven that we can't make all elements in a equal using fewer than 2 operations, so the answer is 2.\n\nInput:\n```\n71131 2 331 2 255 4 3 2 161 1 2 2 3 388 7 6 3 8 7 6 361 1 4 5 1 4\n```\n\nOutput:\n```\n0\n2\n1\n4\n4\n6\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of array a.",
+    "output": "For each test case, output a single line containing an integer: the minimum number of operations needed to make all elements in a equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

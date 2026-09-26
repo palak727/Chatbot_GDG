@@ -1,0 +1,18 @@
+{
+    "id": "1806C",
+    "contest_id": 1806,
+    "problem_letter": "C",
+    "title": "C. Sequence Master",
+    "statement": "For some positive integer m, YunQian considers an array q of 2m (possibly negative) integers good, if and only if for every possible subsequence of q that has length m, the product of the m elements in the subsequence is equal to the sum of the m elements that are not in the subsequence. Formally, let U={1,2,…,2m}. For all sets S ⊆ U such that |S|=m, ∏limits_{i ∈ S} q_i = ∑limits_{i ∈ U setminus S} q_i.\n\nDefine the distance between two arrays a and b both of length k to be ∑limits_{i=1}^k|a_i-b_i|.\n\nYou are given a positive integer n and an array p of 2n integers.\n\nFind the minimum distance between p and q over all good arrays q of length 2n. It can be shown for all positive integers n, at least one good array exists. Note that you are not required to construct the array q that achieves this minimum distance.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains 2n integers p_1, p_2, …, p_2n (|p_i| ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the minimum distance between p and a good q.\n\nIn the first test case, it is optimal to let q=[6,6].\n\nIn the second test case, it is optimal to let q=[2,2,2,2].\n\nInput:\n```\n416 921 2 2 12-2 -2 2 24-3 -2 -1 0 1 2 3 4\n```\n\nOutput:\n```\n3\n2\n5\n13\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains 2n integers p_1, p_2, …, p_2n (|p_i| ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the minimum distance between p and a good q.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2123D",
+    "contest_id": 2123,
+    "problem_letter": "D",
+    "title": "D. Binary String Battle",
+    "statement": "Alice and Bob are given a binary string s of length n, and an integer k (1≤ k < n).\n\nAlice wins if she is able to transform all characters of s into zeroes. If Alice is unable to win in a finite number of moves, then Bob wins.\n\nAlice and Bob take turns, with Alice going first.\n\nNote that Alice wins if the string consists of all zeros at any point during the game, including in between Alice's and Bob's turns.\n\nDetermine who wins with optimal play.\n\n^{∗}A subsequence of a string s is a set of characters in s. Note that these characters do not have to be adjacent.\n\n^{†}A substring of a string s is a contiguous group of characters in s. Note that these characters must be adjacent.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (2≤ n ≤ 2·10^5, 1≤ k < n).\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output on a single line \"Alice\" if Alice wins with optimal play, and \"Bob\" if Bob wins with optimal play.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"aLiCe\", \"alice\", \"ALICE\", and \"alICE\" will be recognized as \"Alice\".\n\nIn the third sample, Alice can choose the subsequence consisting of s_2, turning s into 000000. Then she wins immediately.\n\nIn the fourth sample, it can be shown that there is no way for Alice to guarantee that she can turn s into 0000 within a finite number of moves.\n\nInput:\n```\n65 2110117 410110116 10100004 111118 3101101106 4111111\n```\n\nOutput:\n```\nBob\nAlice\nAlice\nBob\nBob\nAlice\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (2≤ n ≤ 2·10^5, 1≤ k < n).\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output on a single line \"Alice\" if Alice wins with optimal play, and \"Bob\" if Bob wins with optimal play.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"aLiCe\", \"alice\", \"ALICE\", and \"alICE\" will be recognized as \"Alice\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

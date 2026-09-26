@@ -1,0 +1,18 @@
+{
+    "id": "1678B2",
+    "contest_id": 1678,
+    "problem_letter": "B2",
+    "title": "B2. Tokitsukaze and Good 01-String (hard version)",
+    "statement": "This is the hard version of the problem. The only difference between the two versions is that the harder version asks additionally for a minimum number of subsegments.\n\nTokitsukaze has a binary string s of length n, consisting only of zeros and ones, n is even.\n\nNow Tokitsukaze divides s into the minimum number of contiguous subsegments, and for each subsegment, all bits in each subsegment are the same. After that, s is considered good if the lengths of all subsegments are even.\n\nFor example, if s is \"11001111\", it will be divided into \"11\", \"00\" and \"1111\". Their lengths are 2, 2, 4 respectively, which are all even numbers, so \"11001111\" is good. Another example, if s is \"1110011000\", it will be divided into \"111\", \"00\", \"11\" and \"000\", and their lengths are 3, 2, 2, 3. Obviously, \"1110011000\" is not good.\n\nTokitsukaze wants to make s good by changing the values of some positions in s. Specifically, she can perform the operation any number of times: change the value of s_i to '0' or '1' (1 ≤ i ≤ n). Can you tell her the minimum number of operations to make s good? Meanwhile, she also wants to know the minimum number of subsegments that s can be divided into among all solutions with the minimum number of operations.\n\nThe first contains a single positive integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of s, it is guaranteed that n is even.\n\nThe second line contains a binary string s of length n, consisting only of zeros and ones.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single line with two integers — the minimum number of operations to make s good, and the minimum number of subsegments that s can be divided into among all solutions with the minimum number of operations.\n\nIn the first test case, one of the ways to make s good is the following.\n\nChange s_3, s_6 and s_7 to '0', after that s becomes \"1100000000\", it can be divided into \"11\" and \"00000000\", which lengths are 2 and 8 respectively, the number of subsegments of it is 2. There are other ways to operate 3 times to make s good, such as \"1111110000\", \"1100001100\", \"1111001100\", the number of subsegments of them are 2, 4, 4 respectively. It's easy to find that the minimum number of subsegments among all solutions with the minimum number of operations is 2.\n\nIn the second, third and fourth test cases, s is good initially, so no operation is required.\n\nInput:\n```\n51011100110008110011112002116100110\n```\n\nOutput:\n```\n3 2\n0 3\n0 1\n0 1\n3 1\n```",
+    "input": "The first contains a single positive integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of s, it is guaranteed that n is even.\n\nThe second line contains a binary string s of length n, consisting only of zeros and ones.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single line with two integers — the minimum number of operations to make s good, and the minimum number of subsegments that s can be divided into among all solutions with the minimum number of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

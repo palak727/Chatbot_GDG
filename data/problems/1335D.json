@@ -1,0 +1,17 @@
+{
+    "id": "1335D",
+    "contest_id": 1335,
+    "problem_letter": "D",
+    "title": "D. Anti-Sudoku",
+    "statement": "You are given a correct solution to a Sudoku puzzle. If you don't know what Sudoku is, you can read about it here.\n\nThe picture below shows a correct Sudoku solution:\n\nYour task is to change at most 9 elements of this field (i. e., choose some 1 ≤ i, j ≤ 9 and change the number at the position (i, j) to any other number in the range [1; 9]) to make it anti-sudoku. The anti-sudoku is the 9 × 9 field, in which:\n\nIt is guaranteed that a solution exists.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of 9 lines; each line consists of 9 characters from 1 to 9 without any whitespaces — the correct solution of the Sudoku puzzle.\n\nFor each test case, print the answer — the initial field with at most 9 changed elements so that the obtained field is anti-sudoku. If there are several solutions, you can print any. It is guaranteed that the answer exists.\n\nInput:\n```\n1154873296386592714729641835863725149975314628412968357631457982598236471247189563\n```\n\nOutput:\n```\n154873396\n336592714\n729645835\n863725145\n979314628\n412958357\n631457992\n998236471\n247789563\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of 9 lines; each line consists of 9 characters from 1 to 9 without any whitespaces — the correct solution of the Sudoku puzzle.",
+    "output": "For each test case, print the answer — the initial field with at most 9 changed elements so that the obtained field is anti-sudoku. If there are several solutions, you can print any. It is guaranteed that the answer exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

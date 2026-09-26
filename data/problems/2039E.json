@@ -1,0 +1,19 @@
+{
+    "id": "2039E",
+    "contest_id": 2039,
+    "problem_letter": "E",
+    "title": "E. Shohag Loves Inversions",
+    "statement": "Shohag has an array a of integers. Initially a = [0, 1]. He can repeatedly perform the following operation any number of times:\n\nFor example, if a = [4, 6, 2, 4], then the number of inversions is k = 3. So Shohag can obtain the following arrays after the operation: [textbf3, 4, 6, 2, 4], [4, textbf3, 6, 2, 4], [4, 6, textbf3, 2, 4], [4, 6, 2, textbf3, 4], and [4, 6, 2, 4, textbf3].\n\nGiven an integer n, help Shohag count, modulo 998,244,353, the number of distinct arrays of length n that can be obtained after performing the operations.\n\n^{∗}The number of inversions in an array a is the number of pairs of indices (i, j) such that i < j and a_i > a_j.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains an integer n (2 ≤ n ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output an integer — the number of possible arrays modulo 998,244,353.\n\nIn the first test case, the following 5 arrays can be obtained (the inserted inversion count is shown in bold):\n\nInput:\n```\n442769\n```\n\nOutput:\n```\n5\n1\n682\n325188814\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains an integer n (2 ≤ n ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output an integer — the number of possible arrays modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

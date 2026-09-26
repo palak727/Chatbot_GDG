@@ -1,0 +1,17 @@
+{
+    "id": "1680A",
+    "contest_id": 1680,
+    "problem_letter": "A",
+    "title": "A. Minimums and Maximums",
+    "statement": "An array is beautiful if both of the following two conditions meet:\n\nFor example, the array [2, 3, 2, 4, 4, 3, 2] has 3 elements equal to its minimum (1-st, 3-rd and 7-th) and 2 elements equal to its maximum (4-th and 5-th).\n\nAnother example: the array [42, 42, 42] has 3 elements equal to its minimum and 3 elements equal to its maximum.\n\nYour task is to calculate the minimum possible number of elements in a beautiful array.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing four integers l_1, r_1, l_2 and r_2 (1 ≤ l_1 ≤ r_1 ≤ 50; 1 ≤ l_2 ≤ r_2 ≤ 50).\n\nFor each test case, print one integer — the minimum possible number of elements in a beautiful array.\n\nOptimal arrays in the test cases of the example:\n\nInput:\n```\n73 5 4 65 8 5 53 3 10 121 5 3 31 1 2 22 2 1 16 6 6 6\n```\n\nOutput:\n```\n4\n5\n13\n3\n3\n3\n6\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing four integers l_1, r_1, l_2 and r_2 (1 ≤ l_1 ≤ r_1 ≤ 50; 1 ≤ l_2 ≤ r_2 ≤ 50).",
+    "output": "For each test case, print one integer — the minimum possible number of elements in a beautiful array.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

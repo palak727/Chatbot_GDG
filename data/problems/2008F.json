@@ -1,0 +1,18 @@
+{
+    "id": "2008F",
+    "contest_id": 2008,
+    "problem_letter": "F",
+    "title": "F. Sakurako's Box",
+    "statement": "Sakurako has a box with n balls. Each ball has it's value. She wants to bet with her friend that if the friend randomly picks two balls from the box (it could be two distinct balls, but they may have the same value), the product of their values will be the same as the number that Sakurako guessed.\n\nSince Sakurako has a PhD in probability, she knows that the best number to pick is the expected value, but she forgot how to calculate it. Help Sakurako and find the expected value of the product of two elements from the array.\n\nIt can be shown that the expected value has the form P/Q, where P and Q are non-negative integers, and Q ≠ 0. Report the value of P·Q^{-1}(bmod 10^9+7).\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of elements in the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output the value of P·Q^{-1}(bmod 10^9+7).\n\nFor the first test, Sakurako's friend can pick these pairs of balls: (a_1,a_2), (a_1,a_3), (a_2,a_3). Their products equal to 3·2=6 , 3·3=9 , 3·2=6 respectively, so the expected value is (6+9+6)/3=7.\n\nFor the second test, Sakurako's friend can pick these pairs of balls: (a_1,a_2), (a_1,a_3), (a_1,a_4), (a_2,a_3), (a_2,a_4), (a_3,a_4). Their products equal to 2·2=4 , 2·2=4 , 2·4=8, 2·2=4, 2·4=8, 2·4=8 respectively, so the expected value is (4+4+8+4+8+8)/6=36/6=6.\n\nInput:\n```\n333 2 342 2 2 451 2 3 4 5\n```\n\nOutput:\n```\n7\n6\n500000012\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of elements in the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the value of P·Q^{-1}(bmod 10^9+7).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

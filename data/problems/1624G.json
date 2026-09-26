@@ -1,0 +1,20 @@
+{
+    "id": "1624G",
+    "contest_id": 1624,
+    "problem_letter": "G",
+    "title": "G. MinOr Tree",
+    "statement": "Recently, Vlad has been carried away by spanning trees, so his friends, without hesitation, gave him a connected weighted undirected graph of n vertices and m edges for his birthday.\n\nVlad defined the ority of a spanning tree as the bitwise OR of all its weights, and now he is interested in what is the minimum possible ority that can be achieved by choosing a certain spanning tree. A spanning tree is a connected subgraph of a given graph that does not contain cycles.\n\nIn other words, you want to keep n-1 edges so that the graph remains connected and the bitwise OR weights of the edges are as small as possible. You have to find the minimum bitwise OR itself.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nAn empty line is written in front of each test case.\n\nThis is followed by two numbers n and m (3 ≤ n ≤ 2·10^5, n - 1 ≤ m ≤ 2·10^5) — the number of vertices and edges of the graph, respectively.\n\nThe next m lines contain the description of the edges. Line i contains three numbers v_i, u_i and w_i (1 ≤ v_i, u_i ≤ n, 1 ≤ w_i ≤ 10^9, v_i ≠ u_i) — the vertices that the edge connects and its weight.\n\nIt is guaranteed that the sum m and the sum n over all test cases does not exceed 2·10^5 and each test case contains a connected graph.\n\nPrint t lines, each of which contains the answer to the corresponding set of input data — the minimum possible spanning tree ority.\n\nInput:\n```\n3\n3 31 2 12 3 21 3 2\n5 74 2 72 5 83 4 23 2 12 4 24 1 21 2 2\n3 41 2 12 3 21 3 33 1 4\n```\n\nOutput:\n```\n2\n10\n3\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nAn empty line is written in front of each test case.\n\nThis is followed by two numbers n and m (3 ≤ n ≤ 2·10^5, n - 1 ≤ m ≤ 2·10^5) — the number of vertices and edges of the graph, respectively.\n\nThe next m lines contain the description of the edges. Line i contains three numbers v_i, u_i and w_i (1 ≤ v_i, u_i ≤ n, 1 ≤ w_i ≤ 10^9, v_i ≠ u_i) — the vertices that the edge connects and its weight.\n\nIt is guaranteed that the sum m and the sum n over all test cases does not exceed 2·10^5 and each test case contains a connected graph.",
+    "output": "Print t lines, each of which contains the answer to the corresponding set of input data — the minimum possible spanning tree ority.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

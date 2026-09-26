@@ -1,0 +1,17 @@
+{
+    "id": "1934A",
+    "contest_id": 1934,
+    "problem_letter": "A",
+    "title": "A. Too Min Too Max",
+    "statement": "Given an array a of n elements, find the maximum value of the expression:\n\n|a_i - a_j| + |a_j - a_k| + |a_k - a_l| + |a_l - a_i|\n\nwhere i, j, k, and l are four distinct indices of the array a, with 1 ≤ i, j, k, l ≤ n.\n\nHere |x| denotes the absolute value of x.\n\nThe first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 100) — the length of the given array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^6 ≤ a_i ≤ 10^6).\n\nFor each test case, print a single integer — the maximum value.\n\nIn the first test case, for any selection of i, j, k, l, the answer will be 0. For example, |a_1 - a_2| + |a_2 - a_3| + |a_3 - a_4| + |a_4 - a_1| = |1 - 1| + |1 - 1| + |1 - 1| + |1 - 1| = 0 + 0 + 0 + 0 = 0.\n\nIn the second test case, for i = 1, j = 3, k = 2, and l = 5, the answer will be 6. |a_1 - a_3| + |a_3 - a_2| + |a_2 - a_5| + |a_5 - a_1| = |1 - 2| + |2 - 1| + |1 - 3| + |3 - 1| = 1 + 1 + 2 + 2 = 6.\n\nInput:\n```\n541 1 1 151 1 2 2 385 1 3 2 -3 -1 10 343 3 1 141 2 2 -1\n```\n\nOutput:\n```\n0\n6\n38\n8\n8\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 100) — the length of the given array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^6 ≤ a_i ≤ 10^6).",
+    "output": "For each test case, print a single integer — the maximum value.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

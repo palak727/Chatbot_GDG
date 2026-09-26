@@ -1,0 +1,16 @@
+{
+    "id": "1520C",
+    "contest_id": 1520,
+    "problem_letter": "C",
+    "title": "C. Not Adjacent Matrix",
+    "statement": "We will consider the numbers a and b as adjacent if they differ by exactly one, that is, |a-b|=1.\n\nWe will consider cells of a square matrix n × n as adjacent if they have a common side, that is, for cell (r, c) cells (r, c-1), (r, c+1), (r-1, c) and (r+1, c) are adjacent to it.\n\nFor a given number n, construct a square matrix n × n such that:\n\nThe first line contains one integer t (1 ≤ t ≤ 100). Then t test cases follow.\n\nEach test case is characterized by one integer n (1 ≤ n ≤ 100).\n\nFor each test case, output:\n\nThe matrix should be outputted as n lines, where each line contains n integers.\n\nInput:\n```\n3\n1\n2\n3\n```\n\nOutput:\n```\n1\n-1\n2 9 7\n4 6 3\n1 8 5\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100). Then t test cases follow.\n\nEach test case is characterized by one integer n (1 ≤ n ≤ 100).",
+    "output": "For each test case, output:\n\nThe matrix should be outputted as n lines, where each line contains n integers.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1000"
+    ],
+    "rating": 1000
+}

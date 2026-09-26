@@ -1,0 +1,18 @@
+{
+    "id": "1730D",
+    "contest_id": 1730,
+    "problem_letter": "D",
+    "title": "D. Prefixes and Suffixes",
+    "statement": "You have two strings s_1 and s_2 of length n, consisting of lowercase English letters. You can perform the following operation any (possibly zero) number of times:\n\nIs it possible to make these two strings equal by doing described operations?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the test cases follow.\n\nEach test case consists of three lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the strings s_1 and s_2.\n\nThe second line contains the string s_1 of length n, consisting of lowercase English letters.\n\nThe third line contains the string s_2 of length n, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, print \"YES\" if it is possible to make the strings equal, and \"NO\" otherwise.\n\nIn the first test case:\n\nIn the second test case:\n\nIn the third test case, it's impossible to make strings equal.\n\nInput:\n```\n73cbcaba5abcaacbabb5abcaacbabz1aa1ab6abadaaadaaba8abcabdaaadabcaba\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the test cases follow.\n\nEach test case consists of three lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the strings s_1 and s_2.\n\nThe second line contains the string s_1 of length n, consisting of lowercase English letters.\n\nThe third line contains the string s_2 of length n, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print \"YES\" if it is possible to make the strings equal, and \"NO\" otherwise.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "strings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

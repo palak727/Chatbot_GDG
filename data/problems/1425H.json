@@ -1,0 +1,16 @@
+{
+    "id": "1425H",
+    "contest_id": 1425,
+    "problem_letter": "H",
+    "title": "H. Huge Boxes of Animal Toys",
+    "statement": "Chaneka has a hobby of playing with animal toys. Every toy has a different fun value, a real number. Chaneka has four boxes to store the toys with specification:\n\nChaneka has A, B, C, D toys in the first, second, third, and fourth box, respectively. One day she decides that she only wants one toy, a super toy. So she begins to create this super toy by sewing all the toys she has.\n\nWhile the number of toys Chaneka has is more than 1, she takes two different toys randomly and then sews them together, creating a new toy. The fun value of this new toy is equal to the multiplication of fun values of the sewn toys. She then puts this new toy in the appropriate box. She repeats this process until she only has one toy. This last toy is the super toy, and the box that stores this toy is the special box.\n\nAs an observer, you only know the number of toys in each box initially but do not know their fun values. You also don't see the sequence of Chaneka's sewing. Determine which boxes can be the special box after Chaneka found her super toy.\n\nThe first line has an integer T (1 ≤ T ≤ 5·10^4), the number of test cases.\n\nEvery case contains a line with four space-separated integers A B C D (0 ≤ A, B, C, D ≤ 10^6, A + B + C + D > 0), which denotes the number of toys in the first, second, third, and fourth box, respectively.\n\nFor each case, print four space-separated strings. Each string represents the possibility that the first, second, third, and fourth box can be the special box from left to right.\n\nFor each box, print \"Ya\" (Without quotes, Indonesian for yes) if that box can be the special box. Print \"Tidak\" (Without quotes, Indonesian for No) otherwise.\n\nFor the first case, here is a scenario where the first box is the special box:\n\nThe sewing sequence:\n\nHere is a scenario where the second box ends up being the special box:\n\nThe sewing sequence:\n\nInput:\n```\n2\n1 2 0 1\n0 1 0 0\n```\n\nOutput:\n```\nYa Ya Tidak Tidak\nTidak Ya Tidak Tidak\n```",
+    "input": "The first line has an integer T (1 ≤ T ≤ 5·10^4), the number of test cases.\n\nEvery case contains a line with four space-separated integers A B C D (0 ≤ A, B, C, D ≤ 10^6, A + B + C + D > 0), which denotes the number of toys in the first, second, third, and fourth box, respectively.",
+    "output": "For each case, print four space-separated strings. Each string represents the possibility that the first, second, third, and fourth box can be the special box from left to right.\n\nFor each box, print \"Ya\" (Without quotes, Indonesian for yes) if that box can be the special box. Print \"Tidak\" (Without quotes, Indonesian for No) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1300"
+    ],
+    "rating": 1300
+}

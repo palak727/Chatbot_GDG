@@ -1,0 +1,18 @@
+{
+    "id": "1609G",
+    "contest_id": 1609,
+    "problem_letter": "G",
+    "title": "G. A Stroll Around the Matrix",
+    "statement": "William has two arrays of numbers a_1, a_2, …, a_n and b_1, b_2, …, b_m. The arrays satisfy the conditions of being convex. Formally an array c of length k is considered convex if c_i - c_{i - 1} < c_{i + 1} - c_i for all i from 2 to k - 1 and c_1 < c_2.\n\nThroughout William's life he observed q changes of two types happening to the arrays:\n\nAfter each change a matrix d is created from arrays a and b, of size n × m, where d_{i, j}=a_i + b_j. William wants to get from cell (1, 1) to cell (n, m) of this matrix. From cell (x, y) he can only move to cells (x + 1, y) and (x, y + 1). The length of a path is calculated as the sum of numbers in cells visited by William, including the first and the last cells.\n\nAfter each change William wants you to help find out the minimal length of the path he could take.\n\nThe first line contains three integers n, m and q (2 ≤ n ≤ 100, 2 ≤ m ≤ 10^5, 1 ≤ q ≤ 10^5), the sizes of the arrays and the number of changes.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12), the contents of array a.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^12), the contents of array b.\n\nEach of the next q lines contains three integers type, k and d (1 ≤ type ≤ 2, if type = 1, then 1 ≤ k ≤ n otherwise 1 ≤ k ≤ m, 1 ≤ d ≤ 10^3).\n\nAfter each change, output one integer, the minimum length of the path in the constructed matrix.\n\nInput:\n```\n5 3 4\n1 2 4 7 11\n5 7 10\n1 3 2\n2 2 5\n1 5 4\n2 1 7\n```\n\nOutput:\n```\n98\n128\n219\n229\n```\n\nInput:\n```\n5 6 7\n4 9 22 118 226\n7 94 238 395 565 738\n2 1 95\n1 4 54\n1 2 5\n1 2 87\n2 6 62\n2 1 143\n1 1 77\n```\n\nOutput:\n```\n3639\n5122\n5162\n5617\n7663\n7806\n7960\n```",
+    "input": "The first line contains three integers n, m and q (2 ≤ n ≤ 100, 2 ≤ m ≤ 10^5, 1 ≤ q ≤ 10^5), the sizes of the arrays and the number of changes.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12), the contents of array a.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^12), the contents of array b.\n\nEach of the next q lines contains three integers type, k and d (1 ≤ type ≤ 2, if type = 1, then 1 ≤ k ≤ n otherwise 1 ≤ k ≤ m, 1 ≤ d ≤ 10^3).",
+    "output": "After each change, output one integer, the minimum length of the path in the constructed matrix.",
+    "time_limit": "6 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*3000"
+    ],
+    "rating": 3000
+}

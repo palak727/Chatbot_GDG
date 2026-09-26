@@ -1,0 +1,17 @@
+{
+    "id": "1672B",
+    "contest_id": 1672,
+    "problem_letter": "B",
+    "title": "B. I love AAAB",
+    "statement": "Let's call a string good if its length is at least 2 and all of its characters are textttA except for the last character which is textttB. The good strings are textttAB,textttAAB,textttAAAB,…. Note that textttB is not a good string.\n\nYou are given an initially empty string s_1.\n\nYou can perform the following operation any number of times:\n\nGiven a string s_2, can we turn s_1 into s_2 after some number of operations?\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single string s_2 (1 ≤ |s_2| ≤ 2·10^5).\n\nIt is guaranteed that s_2 consists of only the characters textttA and textttB.\n\nIt is guaranteed that the sum of |s_2| over all test cases does not exceed 2·10^5.\n\nFor each test case, print \"YES\" (without quotes) if we can turn s_1 into s_2 after some number of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nIn the first test case, we transform s_1 as such: varnothing → colorredtextttAAB → textttAcolorredtextttABtextttAB.\n\nIn the third test case, we transform s_1 as such: varnothing → colorredtextttAAAAAAAAB.\n\nIn the second and fourth test case, it can be shown that it is impossible to turn s_1 into s_2.\n\nInput:\n```\n4AABABABBAAAAAAAABA\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single string s_2 (1 ≤ |s_2| ≤ 2·10^5).\n\nIt is guaranteed that s_2 consists of only the characters textttA and textttB.\n\nIt is guaranteed that the sum of |s_2| over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print \"YES\" (without quotes) if we can turn s_1 into s_2 after some number of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1495B",
+    "contest_id": 1495,
+    "problem_letter": "B",
+    "title": "B. Let's Go Hiking",
+    "statement": "On a weekend, Qingshan suggests that she and her friend Daniel go hiking. Unfortunately, they are busy high school students, so they can only go hiking on scratch paper.\n\nA permutation p is written from left to right on the paper. First Qingshan chooses an integer index x (1≤ x≤ n) and tells it to Daniel. After that, Daniel chooses another integer index y (1≤ y≤ n, y ≠ x).\n\nThe game progresses turn by turn and as usual, Qingshan moves first. The rules follow:\n\nThe person who can't make her or his move loses, and the other wins. You, as Qingshan's fan, are asked to calculate the number of possible x to make Qingshan win in the case both players play optimally.\n\nThe first line contains a single integer n (2≤ n≤ 10^5) — the length of the permutation.\n\nThe second line contains n distinct integers p_1,p_2,…,p_n (1≤ p_i≤ n) — the permutation.\n\nPrint the number of possible values of x that Qingshan can choose to make her win.\n\nIn the first test case, Qingshan can only choose x=3 to win, so the answer is 1.\n\nIn the second test case, if Qingshan will choose x=4, Daniel can choose y=1. In the first turn (Qingshan's) Qingshan chooses x'=3 and changes x to 3. In the second turn (Daniel's) Daniel chooses y'=2 and changes y to 2. Qingshan can't choose x'=2 because y=2 at this time. Then Qingshan loses.\n\nInput:\n```\n5\n1 2 5 4 3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n7\n1 2 4 6 5 3 7\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (2≤ n≤ 10^5) — the length of the permutation.\n\nThe second line contains n distinct integers p_1,p_2,…,p_n (1≤ p_i≤ n) — the permutation.",
+    "output": "Print the number of possible values of x that Qingshan can choose to make her win.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

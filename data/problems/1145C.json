@@ -1,0 +1,17 @@
+{
+    "id": "1145C",
+    "contest_id": 1145,
+    "problem_letter": "C",
+    "title": "C. Mystery Circuit",
+    "statement": "The input contains a single integer a (0 ≤ a ≤ 15).\n\nOutput a single integer.\n\nInput:\n```\n3\n```\n\nOutput:\n```\n13\n```",
+    "input": "The input contains a single integer a (0 ≤ a ≤ 15).",
+    "output": "Output a single integer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "bitmasks",
+        "brute force"
+    ],
+    "rating": null
+}

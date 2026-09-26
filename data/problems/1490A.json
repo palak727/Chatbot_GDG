@@ -1,0 +1,17 @@
+{
+    "id": "1490A",
+    "contest_id": 1490,
+    "problem_letter": "A",
+    "title": "A. Dense Array",
+    "statement": "Polycarp calls an array dense if the greater of any two adjacent elements is not more than twice bigger than the smaller. More formally, for any i (1 ≤ i ≤ n-1), this condition must be satisfied: (max(a[i], a[i+1]))/(min(a[i], a[i+1])) ≤ 2\n\nFor example, the arrays [1, 2, 3, 4, 3], [1, 1, 1] and [5, 10] are dense. And the arrays [5, 11], [1, 4, 2], [6, 6, 1] are not dense.\n\nYou are given an array a of n integers. What is the minimum number of numbers you need to add to an array to make it dense? You can insert numbers anywhere in the array. If the array is already dense, no numbers need to be added.\n\nFor example, if a=[4,2,10,1], then the answer is 5, and the array itself after inserting elements into it may look like this: a=[4,2,underlinetextbf3,underlinetextbf5,10,underlinetextbf6,underlinetextbf4,underlinetextbf2,1] (there are other ways to build such a).\n\nThe first line contains one integer t (1 ≤ t ≤ 1000). Then t test cases follow.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 50) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 50).\n\nFor each test case, output one integer — the minimum number of numbers that must be added to the array to make it dense.\n\nThe first test case is explained in the statements.\n\nIn the second test case, you can insert one element, a=[1,underlinetextbf2,3].\n\nIn the third test case, you can insert two elements, a=[6,underlinetextbf4,underlinetextbf2,1].\n\nIn the fourth test case, you can insert one element, a=[1,underlinetextbf2,4,2].\n\nIn the fifth test case, the array a is already dense.\n\nInput:\n```\n6\n4\n4 2 10 1\n2\n1 3\n2\n6 1\n3\n1 4 2\n5\n1 2 3 4 3\n12\n4 31 25 50 30 20 34 46 42 16 15 16\n```\n\nOutput:\n```\n5\n1\n2\n1\n0\n3\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000). Then t test cases follow.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 50) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 50).",
+    "output": "For each test case, output one integer — the minimum number of numbers that must be added to the array to make it dense.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

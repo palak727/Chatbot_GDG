@@ -1,0 +1,19 @@
+{
+    "id": "2038B",
+    "contest_id": 2038,
+    "problem_letter": "B",
+    "title": "B. Make It Equal",
+    "statement": "You are given an integer array a of size n. The elements of the array are numbered from 1 to n.\n\nYou can perform the following operation any number of times (possibly, zero): choose an index i from 1 to n; decrease a_i by 2 and increase a_{(i bmod n) + 1} by 1.\n\nAfter you perform the operations, all elements of the array should be non-negative equal integers.\n\nYour task is to calculate the minimum number of operations you have to perform.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the minimum number of operations you have to perform. If it is impossible to make all elements of the array equal, print -1.\n\nInput:\n```\n321 131 3 242 1 2 6\n```\n\nOutput:\n```\n0\n-1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the minimum number of operations you have to perform. If it is impossible to make all elements of the array equal, print -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

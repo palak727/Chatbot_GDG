@@ -1,0 +1,22 @@
+{
+    "id": "1767E",
+    "contest_id": 1767,
+    "problem_letter": "E",
+    "title": "E. Algebra Flash",
+    "statement": "Changelog:\n\nThank you for the continued support of the game!\n\nHuh, is that it? Slightly disappointed, you boot up the game and click on the new gamemode. It says \"Colored platforms\".\n\nThere are n platforms, numbered from 1 to n, placed one after another. There are m colors available in the game, numbered from 1 to m. The i-th platform is colored c_i.\n\nYou start on the platform 1 and want to reach platform n. In one move, you can jump from some platform i to platforms i + 1 or i + 2.\n\nAll platforms are initially deactivated (including platforms 1 and n). For each color j, you can pay x_j coins to activate all platforms of that color.\n\nYou want to activate some platforms so that you could start on an activated platform 1, jump through some activated platforms and reach an activated platform n.\n\nWhat's the smallest amount of coins you can spend to achieve that?\n\nThe first line contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 40) — the number of platforms and the number of colors, respectively.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ m) — the colors of the platforms.\n\nThe third line contains m integers x_1, x_2, …, x_m (1 ≤ x_i ≤ 10^7) — the cost of activating all platforms of each color.\n\nPrint the smallest amount of coins you can spend to activate some platforms so that you could start on an activated platform 1, jump through some activated platforms and reach an activated platform n.\n\nInput:\n```\n5 3\n1 3 2 3 1\n1 10 100\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n5 3\n1 3 2 3 1\n1 200 20\n```\n\nOutput:\n```\n21\n```\n\nInput:\n```\n4 2\n2 2 1 1\n5 5\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n10 10\n3 8 6 2 10 5 2 3 7 3\n9 7 4 2 1 8 2 6 2 2\n```\n\nOutput:\n```\n15\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 40) — the number of platforms and the number of colors, respectively.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ m) — the colors of the platforms.\n\nThe third line contains m integers x_1, x_2, …, x_m (1 ≤ x_i ≤ 10^7) — the cost of activating all platforms of each color.",
+    "output": "Print the smallest amount of coins you can spend to activate some platforms so that you could start on an activated platform 1, jump through some activated platforms and reach an activated platform n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "graphs",
+        "math",
+        "meet-in-the-middle",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

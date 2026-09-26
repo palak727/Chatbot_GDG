@@ -1,0 +1,18 @@
+{
+    "id": "1967B2",
+    "contest_id": 1967,
+    "problem_letter": "B2",
+    "title": "B2. Reverse Card (Hard Version)",
+    "statement": "The two versions are different problems. You may want to read both versions. You can make hacks only if both versions are solved.\n\nYou are given two positive integers n, m.\n\nCalculate the number of ordered pairs (a, b) satisfying the following conditions:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n,m≤ 2·10^6).\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^6.\n\nFor each test case, print a single integer: the number of valid pairs.\n\nIn the first test case, no pair satisfies the conditions.\n\nIn the fourth test case, (2,2),(3,6),(4,4),(6,3),(6,6),(8,8) satisfy the conditions.\n\nInput:\n```\n61 12 33 510 8100 12331000000 1145141\n```\n\nOutput:\n```\n0\n1\n1\n6\n423\n5933961\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n,m≤ 2·10^6).\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^6.",
+    "output": "For each test case, print a single integer: the number of valid pairs.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

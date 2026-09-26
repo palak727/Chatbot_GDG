@@ -1,0 +1,18 @@
+{
+    "id": "1482H",
+    "contest_id": 1482,
+    "problem_letter": "H",
+    "title": "H. Exam",
+    "statement": "This year a Chunin Selection Exam is held again in Konoha, and taking part in it are n ninjas named s_1, s_2, ..., s_n. All names are distinct. One of the exam stages consists of fights between the participants. This year the rules determining the ninjas for each fight are the following: ninjas i and j fight against each other if the following conditions are held:\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nYour task is to find out how many fights are going to take place this year.\n\nThe first line consists of the only integer n (1 ≤ n ≤ 10^6) standing for the number of examinees.\n\nThe following n lines contain their names. No two names coincide, all names are non-empty and consist of lowercase English letters. The total length of all names doesn't exceed 10^6.\n\nPrint the only integer standing for the number of fights.\n\nIn the first example hidan fights against dan, and hanabi fights against nabi, who also fights bi. Ninjas named hanabi and bi don't fight each other since there is the ninja called nabi who breaks the third condition for them.\n\nIn the second example the fights are held between abacaba and acaba, abacaba and abaca, acaba and aca, abaca and aca.\n\nInput:\n```\n5\nhidan\ndan\nhanabi\nbi\nnabi\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4\nabacaba\nabaca\nacaba\naca\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line consists of the only integer n (1 ≤ n ≤ 10^6) standing for the number of examinees.\n\nThe following n lines contain their names. No two names coincide, all names are non-empty and consist of lowercase English letters. The total length of all names doesn't exceed 10^6.",
+    "output": "Print the only integer standing for the number of fights.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "string suffix structures",
+        "trees",
+        "*3400"
+    ],
+    "rating": 3400
+}

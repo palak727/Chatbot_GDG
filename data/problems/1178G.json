@@ -1,0 +1,17 @@
+{
+    "id": "1178G",
+    "contest_id": 1178,
+    "problem_letter": "G",
+    "title": "G. The Awesomest Vertex",
+    "statement": "You are given a rooted tree on n vertices. The vertices are numbered from 1 to n; the root is the vertex number 1.\n\nEach vertex has two integers associated with it: a_i and b_i. We denote the set of all ancestors of v (including v itself) by R(v). The awesomeness of a vertex v is defined as\n\nleft| ∑_{w ∈ R(v)} a_wright|·left|∑_{w ∈ R(v)} b_wright|,\n\nwhere |x| denotes the absolute value of x.\n\nProcess q queries of one of the following forms:\n\nThe first line contains two integers n and q (1 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 10^5) — the number of vertices in the tree and the number of queries, respectively.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i means that there is an edge between vertices i and p_i.\n\nThe third line contains n integers a_1, a_2, …, a_n (-5000 ≤ a_i ≤ 5000), the initial values of a_i for each vertex.\n\nThe fourth line contains n integers b_1, b_2, …, b_n (-5000 ≤ b_i ≤ 5000), the values of b_i for each vertex.\n\nEach of the next q lines describes a query. It has one of the following forms:\n\nFor each query of the second type, print a single line with the maximum awesomeness in the respective subtree.\n\nThe initial awesomeness of the vertices is [100, 91, 57, 64, 57]. The most awesome vertex in the subtree of vertex 1 (the first query) is 1, and the most awesome vertex in the subtree of vertex 2 (the second query) is 2.\n\nAfter the first update (the third query), the awesomeness changes to [100, 169, 57, 160, 57] and thus the most awesome vertex in the whole tree (the fourth query) is now 2.\n\nAfter the second update (the fifth query), the awesomeness becomes [100, 234, 57, 240, 152], hence the most awesome vertex (the sixth query) is now 4.\n\nInput:\n```\n5 6\n1 1 2 2\n10 -3 -7 -3 -10\n10 3 9 3 6\n2 1\n2 2\n1 2 6\n2 1\n1 2 5\n2 1\n```\n\nOutput:\n```\n100\n91\n169\n240\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 10^5) — the number of vertices in the tree and the number of queries, respectively.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i means that there is an edge between vertices i and p_i.\n\nThe third line contains n integers a_1, a_2, …, a_n (-5000 ≤ a_i ≤ 5000), the initial values of a_i for each vertex.\n\nThe fourth line contains n integers b_1, b_2, …, b_n (-5000 ≤ b_i ≤ 5000), the values of b_i for each vertex.\n\nEach of the next q lines describes a query. It has one of the following forms:",
+    "output": "For each query of the second type, print a single line with the maximum awesomeness in the respective subtree.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "*3000"
+    ],
+    "rating": 3000
+}

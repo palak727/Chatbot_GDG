@@ -1,0 +1,17 @@
+{
+    "id": "1924E",
+    "contest_id": 1924,
+    "problem_letter": "E",
+    "title": "E. Paper Cutting Again",
+    "statement": "There is a rectangular sheet of paper with initial height n and width m. Let the current height and width be h and w respectively. We introduce a xy-coordinate system so that the four corners of the sheet are (0, 0), (w, 0), (0, h), and (w, h). The sheet can then be cut along the lines x = 1,2,…,w-1 and the lines y = 1,2,…,h-1. In each step, the paper is cut randomly along any one of these h+w-2 lines. After each vertical and horizontal cut, the right and bottom piece of paper respectively are discarded.\n\nFind the expected number of steps required to make the area of the sheet of paper strictly less than k. It can be shown that this answer can always be expressed as a fraction p/q where p and q are coprime integers. Calculate p·q^{-1} bmod (10^9+7).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 57000). Description of the test cases follows.\n\nThe first line of each test case contains 3 integers n, m, and k (1 ≤ n, m ≤ 10^6, 2 ≤ k ≤ 10^12).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 10^6.\n\nFor each test case, print one integer — the answer to the problem.\n\nFor the first test case, the area is already less than 10 so no cuts are required.\n\nFor the second test case, the area is exactly 8 so any one of the 4 possible cuts would make the area strictly less than 8.\n\nFor the third test case, the final answer is 17/6 = 833,333,342bmod (10^9+7).\n\nFor the fourth test case, the final answer is 5/4 = 250,000,003bmod (10^9+7).\n\nInput:\n```\n42 4 102 4 82 4 22 4 6\n```\n\nOutput:\n```\n0\n1\n833333342\n250000003\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 57000). Description of the test cases follows.\n\nThe first line of each test case contains 3 integers n, m, and k (1 ≤ n, m ≤ 10^6, 2 ≤ k ≤ 10^12).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 10^6.",
+    "output": "For each test case, print one integer — the answer to the problem.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "probabilities",
+        "*3100"
+    ],
+    "rating": 3100
+}

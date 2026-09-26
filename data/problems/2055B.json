@@ -1,0 +1,18 @@
+{
+    "id": "2055B",
+    "contest_id": 2055,
+    "problem_letter": "B",
+    "title": "B. Crafting",
+    "statement": "There are n different types of magical materials, numbered from 1 to n. Initially, you have a_i units of material i for each i from 1 to n. You are allowed to perform the following operation:\n\nYou are trying to craft an artifact using these materials. To successfully craft the artifact, you must have at least b_i units of material i for each i from 1 to n. Determine if it is possible to craft the artifact by performing the operation any number of times (including zero).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of types of materials.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i≤ 10^9) — the amount of each material i that you currently hold.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (0 ≤ b_i≤ 10^9) — the amount of each material i needed to produce the artifact.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single line containing either \"YES\" or \"NO\", representing whether or not the artifact can be crafted.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, perform an operation on material 1. After doing so, we will have exactly the required resources: 1 unit of material 1, and 4 units each of materials 2 and 3.\n\nIn the second test case, it can be shown that no matter how the operations are performed, it is impossible to craft the artifact.\n\nIn the third test case, we can perform the operation on material 1 twice. After these operations, we will have 3 units of material 1 and 8 units of material 2, which is more than enough to craft the artifact.\n\nInput:\n```\n340 5 5 11 4 4 031 1 32 2 121 103 3\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of types of materials.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i≤ 10^9) — the amount of each material i that you currently hold.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (0 ≤ b_i≤ 10^9) — the amount of each material i needed to produce the artifact.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single line containing either \"YES\" or \"NO\", representing whether or not the artifact can be crafted.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

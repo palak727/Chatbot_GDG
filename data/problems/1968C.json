@@ -1,0 +1,17 @@
+{
+    "id": "1968C",
+    "contest_id": 1968,
+    "problem_letter": "C",
+    "title": "C. Assembly via Remainders",
+    "statement": "You are given an array x_2,x_3,…,x_n. Your task is to find any array a_1,…,a_n, where:\n\nHere cbmod d denotes the remainder of the division of the integer c by the integer d. For example 5 bmod 2 = 1, 72 bmod 3 = 0, 143 bmod 14 = 3.\n\nNote that if there is more than one a which satisfies the statement, you are allowed to find any.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 500) — the number of elements in a.\n\nThe second line of each test case contains n-1 integers x_2,…,x_n (1≤ x_i≤ 500) — the elements of x.\n\nIt is guaranteed that the sum of values n over all test cases does not exceed 2·10^5.\n\nFor each test case output any a_1,…,a_n (1 ≤ a_i ≤ 10^9) which satisfies the statement.\n\nIn the first test case a=[3,5,4,9] satisfies the conditions, because:\n\nInput:\n```\n542 4 131 164 2 5 1 2250031 5\n```\n\nOutput:\n```\n3 5 4 9\n2 5 11\n5 14 16 5 11 24\n501 500\n2 7 5\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 500) — the number of elements in a.\n\nThe second line of each test case contains n-1 integers x_2,…,x_n (1≤ x_i≤ 500) — the elements of x.\n\nIt is guaranteed that the sum of values n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output any a_1,…,a_n (1 ≤ a_i ≤ 10^9) which satisfies the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "number theory",
+        "*1000"
+    ],
+    "rating": 1000
+}

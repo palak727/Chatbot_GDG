@@ -1,0 +1,18 @@
+{
+    "id": "1310C",
+    "contest_id": 1310,
+    "problem_letter": "C",
+    "title": "C. Au Pont Rouge",
+    "statement": "VK just opened its second HQ in St. Petersburg! Side of its office building has a huge string s written on its side. This part of the office is supposed to be split into m meeting rooms in such way that meeting room walls are strictly between letters on the building. Obviously, meeting rooms should not be of size 0, but can be as small as one letter wide. Each meeting room will be named after the substring of s written on its side.\n\nFor each possible arrangement of m meeting rooms we ordered a test meeting room label for the meeting room with lexicographically minimal name. When delivered, those labels got sorted backward lexicographically.\n\nWhat is printed on kth label of the delivery?\n\nIn the first line, you are given three integer numbers n, m, k — length of string s, number of planned meeting rooms to split s into and number of the interesting label (2 ≤ n ≤ 1,000; 1 ≤ m ≤ 1,000; 1 ≤ k ≤ 10^18).\n\nSecond input line has string s, consisting of n lowercase english letters.\n\nFor given n, m, k there are at least k ways to split s into m substrings.\n\nOutput single string – name of meeting room printed on k-th label of the delivery.\n\nIn the first example, delivery consists of the labels \"aba\", \"ab\", \"a\".\n\nIn the second example, delivery consists of 3060 labels. The first label is \"aupontrougevkof\" and the last one is \"a\".\n\nInput:\n```\n4 2 1\nabac\n```\n\nOutput:\n```\naba\n```\n\nInput:\n```\n19 5 1821\naupontrougevkoffice\n```\n\nOutput:\n```\nau\n```",
+    "input": "In the first line, you are given three integer numbers n, m, k — length of string s, number of planned meeting rooms to split s into and number of the interesting label (2 ≤ n ≤ 1,000; 1 ≤ m ≤ 1,000; 1 ≤ k ≤ 10^18).\n\nSecond input line has string s, consisting of n lowercase english letters.\n\nFor given n, m, k there are at least k ways to split s into m substrings.",
+    "output": "Output single string – name of meeting room printed on k-th label of the delivery.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "strings",
+        "*2800"
+    ],
+    "rating": 2800
+}

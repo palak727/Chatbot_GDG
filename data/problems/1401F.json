@@ -1,0 +1,18 @@
+{
+    "id": "1401F",
+    "contest_id": 1401,
+    "problem_letter": "F",
+    "title": "F. Reverse and Swap",
+    "statement": "You are given an array a of length 2^n. You should process q queries on it. Each query has one of the following 4 types:\n\nWrite a program that can quickly process given queries.\n\nThe first line contains two integers n, q (0 ≤ n ≤ 18; 1 ≤ q ≤ 10^5) — the length of array a and the number of queries.\n\nThe second line contains 2^n integers a_1, a_2, …, a_{2^n} (0 ≤ a_i ≤ 10^9).\n\nNext q lines contains queries — one per line. Each query has one of 4 types:\n\nIt is guaranteed that there is at least one Sum query.\n\nPrint the answer for each Sum query.\n\nIn the first sample, initially, the array a is equal to {7,4,9,9}.\n\nAfter processing the first query. the array a becomes {7,8,9,9}.\n\nAfter processing the second query, the array a_i becomes {9,9,7,8}\n\nTherefore, the answer to the third query is 9+7+8=24.\n\nIn the second sample, initially, the array a is equal to {7,0,8,8,7,1,5,2}. What happens next is:\n\nInput:\n```\n2 3\n7 4 9 9\n1 2 8\n3 1\n4 2 4\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\n3 8\n7 0 8 8 7 1 5 2\n4 3 7\n2 1\n3 2\n4 1 6\n2 3\n1 5 16\n4 8 8\n3 0\n```\n\nOutput:\n```\n29\n22\n1\n```",
+    "input": "The first line contains two integers n, q (0 ≤ n ≤ 18; 1 ≤ q ≤ 10^5) — the length of array a and the number of queries.\n\nThe second line contains 2^n integers a_1, a_2, …, a_{2^n} (0 ≤ a_i ≤ 10^9).\n\nNext q lines contains queries — one per line. Each query has one of 4 types:\n\nIt is guaranteed that there is at least one Sum query.",
+    "output": "Print the answer for each Sum query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

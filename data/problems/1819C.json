@@ -1,0 +1,20 @@
+{
+    "id": "1819C",
+    "contest_id": 1819,
+    "problem_letter": "C",
+    "title": "C. The Fox and the Complete Tree Traversal",
+    "statement": "The fox Yae climbed the tree of the Sacred Sakura. A tree is a connected undirected graph that does not contain cycles.\n\nThe fox uses her magical powers to move around the tree. Yae can jump from vertex v to another vertex u if and only if the distance between these vertices does not exceed 2. In other words, in one jump Yae can jump from vertex v to vertex u if vertices v and u are connected by an edge, or if there exists such vertex w that vertices v and w are connected by an edge, and also vertices u and w are connected by an edge.\n\nAfter Yae was able to get the sakura petal, she wondered if there was a cyclic route in the tree v_1, v_2, …, v_n such that:\n\nHelp the fox determine if the required traversal exists.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) —the number of vertices of the tree.\n\nEach of the following n - 1 lines contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — vertices connected by an edge. It is guaranteed that these edges form a tree.\n\nOn the first line, print \"Yes\" (without quotes) if the required route of the tree exists, or \"No\" (without quotes) otherwise.\n\nIf the required tree traversal exists, on the second line print n integers of different integers v_1, v_2, …, v_n (1 ≤ v_i ≤ n) — the vertices of the tree in traversal order.\n\nIf there are several correct traversals, output any of them.\n\nThe tree from the first example is shown below. The bold arrows indicate the fox's route.\n\nIn the second example, any sequence of three different vertices is a correct route, because the fox can jump from any vertex to any vertex.\n\nThe tree from the third example is shown below. It can be shown that there is no required route for it.\n\nInput:\n```\n5\n1 2\n1 3\n3 4\n3 5\n```\n\nOutput:\n```\nYes\n4 5 1 2 3 \n```\n\nInput:\n```\n3\n1 2\n1 3\n```\n\nOutput:\n```\nYes\n1 2 3\n```\n\nInput:\n```\n15\n1 2\n1 3\n2 4\n2 5\n3 6\n3 7\n4 8\n4 9\n5 10\n5 11\n6 12\n6 13\n7 14\n7 15\n```\n\nOutput:\n```\nNo\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) —the number of vertices of the tree.\n\nEach of the following n - 1 lines contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — vertices connected by an edge. It is guaranteed that these edges form a tree.",
+    "output": "On the first line, print \"Yes\" (without quotes) if the required route of the tree exists, or \"No\" (without quotes) otherwise.\n\nIf the required tree traversal exists, on the second line print n integers of different integers v_1, v_2, …, v_n (1 ≤ v_i ≤ n) — the vertices of the tree in traversal order.\n\nIf there are several correct traversals, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "implementation",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

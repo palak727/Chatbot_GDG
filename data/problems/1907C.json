@@ -1,0 +1,19 @@
+{
+    "id": "1907C",
+    "contest_id": 1907,
+    "problem_letter": "C",
+    "title": "C. Removal of Unattractive Pairs",
+    "statement": "Vlad found a string s consisting of n lowercase Latin letters, and he wants to make it as short as possible.\n\nTo do this, he can remove any pair of adjacent characters from s any number of times, provided they are different. For example, if s=racoon, then by removing one pair of characters he can obtain the strings coon, roon, raon, and raco, but he cannot obtain racn (because the removed letters were the same) or rcon (because the removed letters were not adjacent).\n\nWhat is the minimum length Vlad can achieve by applying any number of deletions?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains the string s consisting of n lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single number—the minimum length of the string s, after removing pairs of adjacent characters with different values.\n\nIn the first test case of the example, you need to act as follows: \"aabc\" → \"ac\" → \"\". Note that with a different order of deletions, the string will not become empty.\n\nInput:\n```\n104aabc5abaca10avbvvcvvvd7abcdefg5dabbb8aacebeaa7bbbbacc6dacfcc6fdfcdc9dbdcfbbdc\n```\n\nOutput:\n```\n0\n1\n2\n1\n1\n0\n1\n0\n0\n1\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains the string s consisting of n lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single number—the minimum length of the string s, after removing pairs of adjacent characters with different values.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1354F",
+    "contest_id": 1354,
+    "problem_letter": "F",
+    "title": "F. Summoning Minions",
+    "statement": "Polycarp plays a computer game. In this game, the players summon armies of magical minions, which then fight each other.\n\nPolycarp can summon n different minions. The initial power level of the i-th minion is a_i, and when it is summoned, all previously summoned minions' power levels are increased by b_i. The minions can be summoned in any order.\n\nUnfortunately, Polycarp cannot have more than k minions under his control. To get rid of unwanted minions after summoning them, he may destroy them. Each minion can be summoned (and destroyed) only once.\n\nPolycarp's goal is to summon the strongest possible army. Formally, he wants to maximize the sum of power levels of all minions under his control (those which are summoned and not destroyed).\n\nHelp Polycarp to make up a plan of actions to summon the strongest possible army!\n\nThe first line contains one integer T (1 ≤ T ≤ 75) — the number of test cases.\n\nEach test case begins with a line containing two integers n and k (1 ≤ k ≤ n ≤ 75) — the number of minions availible for summoning, and the maximum number of minions that can be controlled by Polycarp, respectively.\n\nThen n lines follow, the i-th line contains 2 integers a_i and b_i (1 ≤ a_i ≤ 10^5, 0 ≤ b_i ≤ 10^5) — the parameters of the i-th minion.\n\nFor each test case print the optimal sequence of actions as follows:\n\nFirstly, print m — the number of actions which Polycarp has to perform (0 ≤ m ≤ 2n). Then print m integers o_1, o_2, ..., o_m, where o_i denotes the i-th action as follows: if the i-th action is to summon the minion x, then o_i = x, and if the i-th action is to destroy the minion x, then o_i = -x. Each minion can be summoned at most once and cannot be destroyed before being summoned (and, obviously, cannot be destroyed more than once). The number of minions in Polycarp's army should be not greater than k after every action.\n\nIf there are multiple optimal sequences, print any of them.\n\nConsider the example test.\n\nIn the first test case, Polycarp can summon the minion 2 with power level 7, then summon the minion 1, which will increase the power level of the previous minion by 3, then destroy the minion 1, and finally, summon the minion 5. After this, Polycarp will have two minions with power levels of 10.\n\nIn the second test case, Polycarp can control only one minion, so he should choose the strongest of them and summon it.\n\nIn the third test case, Polycarp is able to summon and control all five minions.\n\nInput:\n```\n3\n5 2\n5 3\n7 0\n5 0\n4 0\n10 0\n2 1\n10 100\n50 10\n5 5\n1 5\n2 4\n3 3\n4 2\n5 1\n```\n\nOutput:\n```\n4\n2 1 -1 5\n1\n2\n5\n5 4 3 2 1\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 75) — the number of test cases.\n\nEach test case begins with a line containing two integers n and k (1 ≤ k ≤ n ≤ 75) — the number of minions availible for summoning, and the maximum number of minions that can be controlled by Polycarp, respectively.\n\nThen n lines follow, the i-th line contains 2 integers a_i and b_i (1 ≤ a_i ≤ 10^5, 0 ≤ b_i ≤ 10^5) — the parameters of the i-th minion.",
+    "output": "For each test case print the optimal sequence of actions as follows:\n\nFirstly, print m — the number of actions which Polycarp has to perform (0 ≤ m ≤ 2n). Then print m integers o_1, o_2, ..., o_m, where o_i denotes the i-th action as follows: if the i-th action is to summon the minion x, then o_i = x, and if the i-th action is to destroy the minion x, then o_i = -x. Each minion can be summoned at most once and cannot be destroyed before being summoned (and, obviously, cannot be destroyed more than once). The number of minions in Polycarp's army should be not greater than k after every action.\n\nIf there are multiple optimal sequences, print any of them.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "flows",
+        "graph matchings",
+        "greedy",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

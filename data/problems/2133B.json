@@ -1,0 +1,16 @@
+{
+    "id": "2133B",
+    "contest_id": 2133,
+    "problem_letter": "B",
+    "title": "B. Villagers",
+    "statement": "Steve lives in a village with n other villagers. Unfortunately, due to disputes over the distribution of emeralds, none of those villagers are friends with any other villager. Furthermore, villager i initially has a grumpiness of g_i.\n\nSteve can perform the following operation any number of times:\n\nSteve wishes to make every villager friends with every other villager (possibly through some intermediate friendships); that is, from any villager, you can follow a path of friendships to reach any other villager. Since he does not want to inflate the village economy too much, calculate the minimum number of emeralds he must give away to accomplish this.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of villagers.\n\nThe second line of each test case contains n integers g_1, g_2,…, g_n (1 ≤ g_i ≤ 10^9) — the initial grumpiness of each villager.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of emeralds Steve must give away to make everyone friends.\n\nIn the first test case, the only valid operation is i = 1, j = 2. Steve gives them max(1, 2) = 2 emeralds, and they become friends.\n\nIn the second test case, one optimal sequence of operations is as follows:\n\nAfter this, the pairs of villagers (1, 3), (2, 4) and (1, 2) are directly friends, and every other pair of villagers is connected by a chain of mutual friendships. It can be shown that Steve cannot spend fewer than 7 emeralds to accomplish this.\n\nInput:\n```\n421 242 1 5 251000000000 1000000000 1000000000 1000000000 100000000063 1 4 1 5 9\n```\n\nOutput:\n```\n2\n7\n3000000000\n14\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of villagers.\n\nThe second line of each test case contains n integers g_1, g_2,…, g_n (1 ≤ g_i ≤ 10^9) — the initial grumpiness of each villager.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of emeralds Steve must give away to make everyone friends.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

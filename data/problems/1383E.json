@@ -1,0 +1,18 @@
+{
+    "id": "1383E",
+    "contest_id": 1383,
+    "problem_letter": "E",
+    "title": "E. Strange Operation",
+    "statement": "Koa the Koala has a binary string s of length n. Koa can perform no more than n-1 (possibly zero) operations of the following form:\n\nIn one operation Koa selects positions i and i+1 for some i with 1 ≤ i < |s| and sets s_i to max(s_i, s_{i+1}). Then Koa deletes position i+1 from s (after the removal, the remaining parts are concatenated).\n\nNote that after every operation the length of s decreases by 1.\n\nHow many different binary strings can Koa obtain by doing no more than n-1 (possibly zero) operations modulo 10^9+7 (1000000007)?\n\nThe only line of input contains binary string s (1 ≤ |s| ≤ 10^6). For all i (1 ≤ i ≤ |s|) s_i = 0 or s_i = 1.\n\nOn a single line print the answer to the problem modulo 10^9+7 (1000000007).\n\nIn the first sample Koa can obtain binary strings: 0, 00 and 000.\n\nIn the second sample Koa can obtain binary strings: 1, 01, 11, 011, 101 and 0101. For example:\n\nParentheses denote the two positions Koa selected in each operation.\n\nInput:\n```\n000\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n0101\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n0001111\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n00101100011100\n```\n\nOutput:\n```\n477\n```",
+    "input": "The only line of input contains binary string s (1 ≤ |s| ≤ 10^6). For all i (1 ≤ i ≤ |s|) s_i = 0 or s_i = 1.",
+    "output": "On a single line print the answer to the problem modulo 10^9+7 (1000000007).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "*2800"
+    ],
+    "rating": 2800
+}

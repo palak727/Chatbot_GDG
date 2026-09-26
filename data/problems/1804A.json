@@ -1,0 +1,17 @@
+{
+    "id": "1804A",
+    "contest_id": 1804,
+    "problem_letter": "A",
+    "title": "A. Lame King",
+    "statement": "You are given a checkerboard of size 201 × 201, i. e. it has 201 rows and 201 columns. The rows of this checkerboard are numbered from -100 to 100 from bottom to top. The columns of this checkerboard are numbered from -100 to 100 from left to right. The notation (r, c) denotes the cell located in the r-th row and the c-th column.\n\nThere is a king piece at position (0, 0) and it wants to get to position (a, b) as soon as possible. In this problem our king is lame. Each second, the king makes exactly one of the following five moves.\n\nWhat is the minimum number of seconds the lame king needs to reach position (a, b)?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follow t lines containing one test case description each.\n\nEach test case consists of two integers a and b (-100 ≤ a, b ≤ 100) — the position of the cell that the king wants to reach. It is guaranteed that either a ≠ 0 or b ≠ 0.\n\nPrint t integers. The i-th of these integers should be equal to the minimum number of seconds the lame king needs to get to the position he wants to reach in the i-th test case. The king always starts at position (0, 0).\n\nOne of the possible solutions for the first example is: go down, go right, go down, go right, go down, go left, go down.\n\nOne of the possible solutions for the second example is to alternate \"go right\" and \"go up\" moves 4 times each.\n\nOne of the possible solutions for the third example is to alternate \"go left\" and \"skip\" moves starting with \"go left\". Thus, \"go left\" will be used 6 times, and \"skip\" will be used 5 times.\n\nInput:\n```\n5-4 14 40 -6-5 -47 -8\n```\n\nOutput:\n```\n7\n8\n11\n9\n15\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follow t lines containing one test case description each.\n\nEach test case consists of two integers a and b (-100 ≤ a, b ≤ 100) — the position of the cell that the king wants to reach. It is guaranteed that either a ≠ 0 or b ≠ 0.",
+    "output": "Print t integers. The i-th of these integers should be equal to the minimum number of seconds the lame king needs to get to the position he wants to reach in the i-th test case. The king always starts at position (0, 0).",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1078E",
+    "contest_id": 1078,
+    "problem_letter": "E",
+    "title": "E. Negative Time Summation",
+    "statement": "Everyone knows that computers become faster and faster. Recently Berland scientists have built a machine that can move itself back in time!\n\nMore specifically, it works as follows. It has an infinite grid and a robot which stands on one of the cells. Each cell of the grid can either be empty or contain 0 or 1. The machine also has a program which consists of instructions, which are being handled one by one. Each instruction is represented by exactly one symbol (letter or digit) and takes exactly one unit of time (say, second) to be performed, except the last type of operation (it's described below). Here they are:\n\nFor example, let the board be completely empty, and the program be sr1t0. Let the robot initially be at (0, 0).\n\nNow Berland scientists want to use their machine in practice. For example, they want to be able to add two integers.\n\nAssume that the initial state of the machine is as follows:\n\nYou are asked to write a program after which\n\nNote that there are no restrictions on other cells. In particular, there may be a digit just to the left to the robot after all instructions.\n\nIn each test you are given up to 1000 pairs (a, b), and your program must work for all these pairs. Also since the machine's memory is not very big, your program must consist of no more than 10^5 instructions.\n\nThe first line contains the only integer t (1≤ t≤ 1000) standing for the number of testcases. Each of the next t lines consists of two positive integers a and b (1≤ a, b < 2^30) in decimal.\n\nOutput the only line consisting of no more than 10^5 symbols from 01eslrudt standing for your program.\n\nNote that formally you may output different programs for different tests.\n\nInput:\n```\n2\n123456789 987654321\n555555555 555555555\n```\n\nOutput:\n```\n0l1l1l0l0l0l1l1l1l0l1l0l1l1l0l0l0l1l0l1l1l1l0l0l0l1l0l0l0l0l1l0lr\n```",
+    "input": "The first line contains the only integer t (1≤ t≤ 1000) standing for the number of testcases. Each of the next t lines consists of two positive integers a and b (1≤ a, b < 2^30) in decimal.",
+    "output": "Output the only line consisting of no more than 10^5 symbols from 01eslrudt standing for your program.\n\nNote that formally you may output different programs for different tests.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*3400"
+    ],
+    "rating": 3400
+}

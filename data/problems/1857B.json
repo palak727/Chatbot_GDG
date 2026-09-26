@@ -1,0 +1,18 @@
+{
+    "id": "1857B",
+    "contest_id": 1857,
+    "problem_letter": "B",
+    "title": "B. Maximum Rounding",
+    "statement": "Given a natural number x. You can perform the following operation:\n\nNote that the positions are numbered from right to left, starting from zero. If the number has k digits, it is considered that the digit at the k-th position is equal to 0.\n\nThe rounding is done as follows:\n\nYour task is to make x as large as possible, if you can perform the operation as many times as you want.\n\nFor example, if x is equal to 3451, then if you choose consecutively:\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case consists of positive integer x with a length of up to 2·10^5. It is guaranteed that there are no leading zeros in the integer.\n\nIt is guaranteed that the sum of the lengths of all integers x over all test cases does not exceed 2·10^5.\n\nFor each set of input data, output the maximum possible value of x after the operations. The number should not have leading zeros in its representation.\n\nIn the first sample, it is better not to perform any operations.\n\nIn the second sample, you can perform one operation and obtain 10.\n\nIn the third sample, you can choose k=1 or k=2. In both cases the answer will be 100.\n\nInput:\n```\n101599913198020444204456094741986040862016542130810467\n```\n\nOutput:\n```\n1\n10\n100\n1000\n2000\n20444\n21000\n100000\n420000\n41000000000000000000\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case consists of positive integer x with a length of up to 2·10^5. It is guaranteed that there are no leading zeros in the integer.\n\nIt is guaranteed that the sum of the lengths of all integers x over all test cases does not exceed 2·10^5.",
+    "output": "For each set of input data, output the maximum possible value of x after the operations. The number should not have leading zeros in its representation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

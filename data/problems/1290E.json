@@ -1,0 +1,16 @@
+{
+    "id": "1290E",
+    "contest_id": 1290,
+    "problem_letter": "E",
+    "title": "E. Cartesian Tree",
+    "statement": "Ildar is the algorithm teacher of William and Harris. Today, Ildar is teaching Cartesian Tree. However, Harris is sick, so Ildar is only teaching William.\n\nA cartesian tree is a rooted tree, that can be constructed from a sequence of distinct integers. We build the cartesian tree as follows:\n\nFor example, this is the cartesian tree for the sequence 4, 2, 7, 3, 5, 6, 1:\n\nAfter teaching what the cartesian tree is, Ildar has assigned homework. He starts with an empty sequence a.\n\nIn the i-th round, he inserts an element with value i somewhere in a. Then, he asks a question: what is the sum of the sizes of the subtrees for every node in the cartesian tree for the current sequence a?\n\nNode v is in the node u subtree if and only if v = u or v is in the subtree of one of the vertex u children. The size of the subtree of node u is the number of nodes v such that v is in the subtree of u.\n\nIldar will do n rounds in total. The homework is the sequence of answers to the n questions.\n\nThe next day, Ildar told Harris that he has to complete the homework as well. Harris obtained the final state of the sequence a from William. However, he has no idea how to find the answers to the n questions. Help Harris!\n\nThe first line contains a single integer n (1 ≤ n ≤ 150000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n). It is guarenteed that each integer from 1 to n appears in the sequence exactly once.\n\nPrint n lines, i-th line should contain a single integer — the answer to the i-th question.\n\nAfter the first round, the sequence is 1. The tree is\n\nThe answer is 1.\n\nAfter the second round, the sequence is 2, 1. The tree is\n\nThe answer is 2+1=3.\n\nAfter the third round, the sequence is 2, 1, 3. The tree is\n\nThe answer is 2+1+3=6.\n\nAfter the fourth round, the sequence is 2, 4, 1, 3. The tree is\n\nThe answer is 1+4+1+2=8.\n\nAfter the fifth round, the sequence is 2, 4, 1, 5, 3. The tree is\n\nThe answer is 1+3+1+5+1=11.\n\nInput:\n```\n5\n2 4 1 5 3\n```\n\nOutput:\n```\n1\n3\n6\n8\n11\n```\n\nInput:\n```\n6\n1 2 4 5 6 3\n```\n\nOutput:\n```\n1\n3\n6\n8\n12\n17\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 150000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n). It is guarenteed that each integer from 1 to n appears in the sequence exactly once.",
+    "output": "Print n lines, i-th line should contain a single integer — the answer to the i-th question.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*3300"
+    ],
+    "rating": 3300
+}

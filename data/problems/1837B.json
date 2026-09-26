@@ -1,0 +1,16 @@
+{
+    "id": "1837B",
+    "contest_id": 1837,
+    "problem_letter": "B",
+    "title": "B. Comparison String",
+    "statement": "You are given a string s of length n, where each character is either < or >.\n\nAn array a consisting of n+1 elements is compatible with the string s if, for every i from 1 to n, the character s_i represents the result of comparing a_i and a_{i+1}, i. e.:\n\nFor example, the array [1, 2, 5, 4, 2] is compatible with the string <<>>. There are other arrays with are compatible with that string, for example, [13, 37, 42, 37, 13].\n\nThe cost of the array is the number of different elements in it. For example, the cost of [1, 2, 5, 4, 2] is 4; the cost of [13, 37, 42, 37, 13] is 3.\n\nYou have to calculate the minimum cost among all arrays which are compatible with the given string s.\n\nThe first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nEach test case consists of two lines:\n\nFor each test case, print one integer — the minimum cost among all arrays which are compatible with the given string s.\n\nIn the first test case of the example, the array can be [13, 37, 42, 37, 13].\n\nIn the second test case of the example, the array can be [42, 37, 13, 37, 42].\n\nInput:\n```\n44<<>>4>><<5>>>>>7<><><><\n```\n\nOutput:\n```\n3\n3\n6\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nEach test case consists of two lines:",
+    "output": "For each test case, print one integer — the minimum cost among all arrays which are compatible with the given string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

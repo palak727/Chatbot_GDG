@@ -1,0 +1,17 @@
+{
+    "id": "1990B",
+    "contest_id": 1990,
+    "problem_letter": "B",
+    "title": "B. Array Craft",
+    "statement": "For an array b of size m, we define:\n\nYou are given three integers n, x, and y (x > y). Construct an array a of size n satisfying:\n\nIf there are multiple arrays that meet the conditions, print any. It can be proven that such an array always exists under the given conditions.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nIt is guaranteed that the sum of n over all test cases will not exceed 10^5.\n\nFor each test case, output n space-separated integers a_1, a_2, …, a_n in a new line.\n\nIn the second test case,\n\nThus, the array a=[1,-1,1,1] is considered correct.\n\nInput:\n```\n32 2 14 4 36 5 1\n```\n\nOutput:\n```\n1 1\n1 -1 1 1\n1 1 -1 1 1 -1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nIt is guaranteed that the sum of n over all test cases will not exceed 10^5.",
+    "output": "For each test case, output n space-separated integers a_1, a_2, …, a_n in a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

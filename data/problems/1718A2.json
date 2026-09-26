@@ -1,0 +1,18 @@
+{
+    "id": "1718A2",
+    "contest_id": 1718,
+    "problem_letter": "A2",
+    "title": "A2. Burenka and Traditions (hard version)",
+    "statement": "This is the hard version of this problem. The difference between easy and hard versions is only the constraints on a_i and on n. You can make hacks only if both versions of the problem are solved.\n\nBurenka is the crown princess of Buryatia, and soon she will become the n-th queen of the country. There is an ancient tradition in Buryatia — before the coronation, the ruler must show their strength to the inhabitants. To determine the strength of the n-th ruler, the inhabitants of the country give them an array of a of exactly n numbers, after which the ruler must turn all the elements of the array into zeros in the shortest time. The ruler can do the following two-step operation any number of times:\n\nHelp Burenka calculate how much time she will need.\n\nThe first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) - the size of the array\n\nThe second line of each test case contains n integers a_1, a_2, ⋯ , a_n (0 ≤ a_i < 2^30) — elements of the array.\n\nIt is guaranteed that the sum of n in all tests does not exceed 10^5.\n\nFor each test case, output a single number — the minimum time that Burenka will need.\n\nIn the first test case, Burenka can choose segment l = 1, r = 4, and x=5. so it will fill the array with zeros in 2 seconds.\n\nIn the second test case, Burenka first selects segment l = 1, r = 2, and x = 1, after which a = [0, 2, 2], and then the segment l = 2, r = 3, and x=2, which fills the array with zeros. In total, Burenka will spend 2 seconds.\n\nInput:\n```\n745 5 5 531 3 220 032 5 761 2 3 3 2 11027 27 34 32 2 31 23 56 52 451822 1799 57 23 55\n```\n\nOutput:\n```\n2\n2\n0\n2\n4\n7\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) - the size of the array\n\nThe second line of each test case contains n integers a_1, a_2, ⋯ , a_n (0 ≤ a_i < 2^30) — elements of the array.\n\nIt is guaranteed that the sum of n in all tests does not exceed 10^5.",
+    "output": "For each test case, output a single number — the minimum time that Burenka will need.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

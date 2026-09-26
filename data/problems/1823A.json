@@ -1,0 +1,18 @@
+{
+    "id": "1823A",
+    "contest_id": 1823,
+    "problem_letter": "A",
+    "title": "A. A-characteristic",
+    "statement": "Consider an array a_1, a_2, …, a_n consisting of numbers 1 and -1. Define A-characteristic of this array as a number of pairs of indices 1 ≤ i < j ≤ n, such that a_i·a_j = 1.\n\nFind any array a with given length n with A-characteristic equal to the given value k.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains two integers n and k (2 ≤ n ≤ 100; 0 ≤ k ≤ ((n-1) n)/2) — the length of required array and required A-characteristic.\n\nFor each test case, if there is no array a with given A-characteristic k, print NO.\n\nOtherwise, print YES and n numbers 1 and -1, which form the required array a. If there are multiple answers, print any of them.\n\nIn the first test case, there is only one pair of different elements in the array, and their product is a_1·a_2 = -1 ≠ 1, hence its A-characteristic is 0.\n\nIn the second test case, there is only one pair of different elements in the array, and their product is a_1·a_2 = 1, hence its A-characteristic is 1.\n\nIn the third test case, there are three pairs of different elements in the array, and their product are: a_1·a_2 = -1, a_1·a_3 = 1, a_2·a_3 = -1, hence its A-characteristic is 1.\n\nIn the fourth test case, we can show, that there is no array with length 3, which A-characteristic is 2.\n\nInput:\n```\n72 02 13 13 23 35 45 5\n```\n\nOutput:\n```\nYES\n1 -1 \nYES\n1 1 \nYES\n1 -1 1 \nNO\nYES\n1 1 1 \nYES\n-1 1 -1 1 1 \nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains two integers n and k (2 ≤ n ≤ 100; 0 ≤ k ≤ ((n-1) n)/2) — the length of required array and required A-characteristic.",
+    "output": "For each test case, if there is no array a with given A-characteristic k, print NO.\n\nOtherwise, print YES and n numbers 1 and -1, which form the required array a. If there are multiple answers, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

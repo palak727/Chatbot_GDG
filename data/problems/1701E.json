@@ -1,0 +1,19 @@
+{
+    "id": "1701E",
+    "contest_id": 1701,
+    "problem_letter": "E",
+    "title": "E. Text Editor",
+    "statement": "You wanted to write a text t consisting of m lowercase Latin letters. But instead, you have written a text s consisting of n lowercase Latin letters, and now you want to fix it by obtaining the text t from the text s.\n\nInitially, the cursor of your text editor is at the end of the text s (after its last character). In one move, you can do one of the following actions:\n\nYour task is to calculate the minimum number of moves required to obtain the text t from the text s using the given set of actions, or determine it is impossible to obtain the text t from the text s.\n\nYou have to answer T independent test cases.\n\nThe first line of the input contains one integer T (1 ≤ T ≤ 5000) — the number of test cases. Then T test cases follow.\n\nThe first line of the test case contains two integers n and m (1 ≤ m ≤ n ≤ 5000) — the length of s and the length of t, respectively.\n\nThe second line of the test case contains the string s consisting of n lowercase Latin letters.\n\nThe third line of the test case contains the string t consisting of m lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000 (∑ n ≤ 5000).\n\nFor each test case, print one integer — the minimum number of moves required to obtain the text t from the text s using the given set of actions, or -1 if it is impossible to obtain the text t from the text s in the given test case.\n\nInput:\n```\n69 4aaaaaaaaaaaaa7 3abacabaaaa5 4aabcdabcd4 2abbabb6 4barakabaka8 7questionproblem\n```\n\nOutput:\n```\n5\n6\n3\n4\n4\n-1\n```",
+    "input": "The first line of the input contains one integer T (1 ≤ T ≤ 5000) — the number of test cases. Then T test cases follow.\n\nThe first line of the test case contains two integers n and m (1 ≤ m ≤ n ≤ 5000) — the length of s and the length of t, respectively.\n\nThe second line of the test case contains the string s consisting of n lowercase Latin letters.\n\nThe third line of the test case contains the string t consisting of m lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000 (∑ n ≤ 5000).",
+    "output": "For each test case, print one integer — the minimum number of moves required to obtain the text t from the text s using the given set of actions, or -1 if it is impossible to obtain the text t from the text s in the given test case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "strings",
+        "*2500"
+    ],
+    "rating": 2500
+}

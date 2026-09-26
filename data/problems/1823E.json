@@ -1,0 +1,20 @@
+{
+    "id": "1823E",
+    "contest_id": 1823,
+    "problem_letter": "E",
+    "title": "E. Removing Graph",
+    "statement": "Alice and Bob are playing a game on a graph. They have an undirected graph without self-loops and multiple edges. All vertices of the graph have degree equal to 2. The graph may consist of several components. Note that if such graph has n vertices, it will have exactly n edges.\n\nAlice and Bob take turn. Alice goes first. In each turn, the player can choose k (l ≤ k ≤ r; l < r) vertices that form a connected subgraph and erase these vertices from the graph, including all incident edges.\n\nThe player who can't make a step loses.\n\nFor example, suppose they are playing on the given graph with given l = 2 and r = 3:\n\nA valid vertex set for Alice to choose at the first move is one of the following:\n\nThen a valid vertex set for Bob to choose at the first move is one of the following:\n\nAlice can't make a move, so she loses.\n\nYou are given a graph of size n and integers l and r. Who will win if both Alice and Bob play optimally.\n\nThe first line contains three integers n, l and r (3 ≤ n ≤ 2·10^5; 1 ≤ l < r ≤ n) — the number of vertices in the graph, and the constraints on the number of vertices Alice or Bob can choose in one move.\n\nNext n lines contains edges of the graph: one edge per line. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — description of the i-th edge.\n\nIt's guaranteed that the degree of each vertex of the given graph is equal to 2.\n\nPrint Alice (case-insensitive) if Alice wins, or Bob otherwise.\n\nIn the first test the same input as in legend is shown.\n\nIn the second test the same graph as in legend is shown, but with l = 1 and r = 2.\n\nInput:\n```\n6 2 3\n1 2\n2 3\n3 1\n4 5\n5 6\n6 4\n```\n\nOutput:\n```\nBob\n```\n\nInput:\n```\n6 1 2\n1 2\n2 3\n3 1\n4 5\n5 6\n6 4\n```\n\nOutput:\n```\nBob\n```\n\nInput:\n```\n12 1 3\n1 2\n2 3\n3 1\n4 5\n5 6\n6 7\n7 4\n8 9\n9 10\n10 11\n11 12\n12 8\n```\n\nOutput:\n```\nAlice\n```",
+    "input": "The first line contains three integers n, l and r (3 ≤ n ≤ 2·10^5; 1 ≤ l < r ≤ n) — the number of vertices in the graph, and the constraints on the number of vertices Alice or Bob can choose in one move.\n\nNext n lines contains edges of the graph: one edge per line. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — description of the i-th edge.\n\nIt's guaranteed that the degree of each vertex of the given graph is equal to 2.",
+    "output": "Print Alice (case-insensitive) if Alice wins, or Bob otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "games",
+        "graphs",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

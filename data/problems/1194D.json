@@ -1,0 +1,17 @@
+{
+    "id": "1194D",
+    "contest_id": 1194,
+    "problem_letter": "D",
+    "title": "D. 1-2-K Game",
+    "statement": "Alice and Bob play a game. There is a paper strip which is divided into n + 1 cells numbered from left to right starting from 0. There is a chip placed in the n-th cell (the last one).\n\nPlayers take turns, Alice is first. Each player during his or her turn has to move the chip 1, 2 or k cells to the left (so, if the chip is currently in the cell i, the player can move it into cell i - 1, i - 2 or i - k). The chip should not leave the borders of the paper strip: it is impossible, for example, to move it k cells to the left if the current cell has number i < k. The player who can't make a move loses the game.\n\nWho wins if both participants play optimally?\n\nAlice and Bob would like to play several games, so you should determine the winner in each game.\n\nThe first line contains the single integer T (1 ≤ T ≤ 100) — the number of games. Next T lines contain one game per line. All games are independent.\n\nEach of the next T lines contains two integers n and k (0 ≤ n ≤ 10^9, 3 ≤ k ≤ 10^9) — the length of the strip and the constant denoting the third move, respectively.\n\nFor each game, print Alice if Alice wins this game and Bob otherwise.\n\nInput:\n```\n4\n0 3\n3 3\n3 4\n4 4\n```\n\nOutput:\n```\nBob\nAlice\nBob\nAlice\n```",
+    "input": "The first line contains the single integer T (1 ≤ T ≤ 100) — the number of games. Next T lines contain one game per line. All games are independent.\n\nEach of the next T lines contains two integers n and k (0 ≤ n ≤ 10^9, 3 ≤ k ≤ 10^9) — the length of the strip and the constant denoting the third move, respectively.",
+    "output": "For each game, print Alice if Alice wins this game and Bob otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

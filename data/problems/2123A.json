@@ -1,0 +1,16 @@
+{
+    "id": "2123A",
+    "contest_id": 2123,
+    "problem_letter": "A",
+    "title": "A. Blackboard Game",
+    "statement": "Initially, the integers from 0 to n-1 are written on a blackboard.\n\nIn one round,\n\nRounds take place in succession until a player is unable to make a move — the first player who is unable to make a move loses. Determine who wins with optimal play.\n\n^{∗}We define that x≡ ypmod m whenever x-y is an integer multiple of m.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains an integer n (1≤ n ≤ 100) — the number of integers written on the blackboard.\n\nFor each test case, output on a single line \"Alice\" if Alice wins with optimal play, and \"Bob\" if Bob wins with optimal play.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"aLiCe\", \"alice\", \"ALICE\", and \"alICE\" will be recognized as \"Alice\".\n\nIn the first sample, suppose Alice chooses 0, then Bob cannot choose any number so Alice wins immediately.\n\nIn the second sample, suppose Alice chooses 0, then Bob can choose 3. Then suppose Alice chooses 2, then Bob can choose 1. Then Alice has no numbers remaining, so Bob wins.\n\nInput:\n```\n52457100\n```\n\nOutput:\n```\nAlice\nBob\nAlice\nAlice\nBob\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains an integer n (1≤ n ≤ 100) — the number of integers written on the blackboard.",
+    "output": "For each test case, output on a single line \"Alice\" if Alice wins with optimal play, and \"Bob\" if Bob wins with optimal play.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"aLiCe\", \"alice\", \"ALICE\", and \"alICE\" will be recognized as \"Alice\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

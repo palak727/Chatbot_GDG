@@ -1,0 +1,20 @@
+{
+    "id": "1257G",
+    "contest_id": 1257,
+    "problem_letter": "G",
+    "title": "G. Divisor Set",
+    "statement": "You are given an integer x represented as a product of n its prime divisors p_1·p_2,·…·p_n. Let S be the set of all positive integer divisors of x (including 1 and x itself).\n\nWe call a set of integers D good if (and only if) there is no pair a ∈ D, b ∈ D such that a ≠ b and a divides b.\n\nFind a good subset of S with maximum possible size. Since the answer can be large, print the size of the subset modulo 998244353.\n\nThe first line contains the single integer n (1 ≤ n ≤ 2·10^5) — the number of prime divisors in representation of x.\n\nThe second line contains n integers p_1, p_2, …, p_n (2 ≤ p_i ≤ 3·10^6) — the prime factorization of x.\n\nPrint the maximum possible size of a good subset modulo 998244353.\n\nIn the first sample, x = 2999999·43·2999957 and one of the maximum good subsets is { 43, 2999957, 2999999 }.\n\nIn the second sample, x = 2·3·2·3·2·2 = 144 and one of the maximum good subsets is { 9, 12, 16 }.\n\nInput:\n```\n3\n2999999 43 2999957\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6\n2 3 2 3 2 2\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains the single integer n (1 ≤ n ≤ 2·10^5) — the number of prime divisors in representation of x.\n\nThe second line contains n integers p_1, p_2, …, p_n (2 ≤ p_i ≤ 3·10^6) — the prime factorization of x.",
+    "output": "Print the maximum possible size of a good subset modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "divide and conquer",
+        "fft",
+        "greedy",
+        "math",
+        "number theory",
+        "*2600"
+    ],
+    "rating": 2600
+}

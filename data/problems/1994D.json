@@ -1,0 +1,22 @@
+{
+    "id": "1994D",
+    "contest_id": 1994,
+    "problem_letter": "D",
+    "title": "D. Funny Game",
+    "statement": "Vanya has a graph with n vertices (numbered from 1 to n) and an array a of n integers; initially, there are no edges in the graph. Vanya got bored, and to have fun, he decided to perform n - 1 operations.\n\nOperation number x (operations are numbered in order starting from 1) is as follows:\n\nHelp Vanya get a connected^{∗} graph using the n - 1 operations, or determine that it is impossible.\n\n^{∗}A graph is called connected if it is possible to reach any vertex from any other by moving along the edges.\n\nEach test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains the number n (1 ≤ n ≤ 2000) — the number of vertices in the graph.\n\nThe second line of each test case contains n numbers a_1, a_2, ⋯ a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, if there is no solution, then output \"No\" (without quotes).\n\nOtherwise, output \"Yes\" (without quotes), and then output n - 1 lines, where in the i-th line, output the numbers u and v that need to be chosen for operation i.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nLet's consider the second test case.\n\nInput:\n```\n821 4499 7 1 13510 2 31 44 73587 6 81 44 32562 35 33 79 1656 51 31 69 42552 63 25 21 51233 40 3 11 31 43 37 8 50 5 12 22\n```\n\nOutput:\n```\nYES\n2 1\nYES\n4 1\n2 1\n3 2\nYES\n5 1\n4 1\n3 1\n2 1\nYES\n4 1\n3 1\n2 1\n5 4\nYES\n3 1\n5 1\n2 1\n4 2\nYES\n4 1\n5 1\n2 1\n3 2\nYES\n2 1\n5 2\n3 1\n4 3\nYES\n9 1\n12 9\n11 1\n10 1\n6 1\n7 6\n2 1\n8 2\n5 2\n3 1\n4 1\n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains the number n (1 ≤ n ≤ 2000) — the number of vertices in the graph.\n\nThe second line of each test case contains n numbers a_1, a_2, ⋯ a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, if there is no solution, then output \"No\" (without quotes).\n\nOtherwise, output \"Yes\" (without quotes), and then output n - 1 lines, where in the i-th line, output the numbers u and v that need to be chosen for operation i.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "graphs",
+        "greedy",
+        "math",
+        "number theory",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

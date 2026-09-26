@@ -1,0 +1,17 @@
+{
+    "id": "1891A",
+    "contest_id": 1891,
+    "problem_letter": "A",
+    "title": "A. Sorting with Twos",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n. In one operation, you do the following:\n\nCan you sort the array in non-decreasing order by performing some number (possibly zero) of operations?\n\nAn array is considered non-decreasing if a_i ≤ a_{i + 1} for all integers i such that 1 ≤ i ≤ n - 1.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 20) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n — the integers in array a (0 ≤ a_i ≤ 1000).\n\nFor each test case, output \"YES\" if the array can be sorted, and \"NO\" otherwise.\n\nIn the first test case, the array is already sorted in non-decreasing order, so we don't have to perform any operations.\n\nIn the second test case, we can choose m = 1 twice to get the array [4, 3, 3, 4, 4]. Then, we can choose m = 0 once and get the sorted in non-decreasing order array [3, 3, 3, 4, 4].\n\nIn the third test case, we can choose m = 0 once and get the array [5, 5, 5, 7, 5, 6, 6, 8, 7]. Then, we can choose m = 2 twice and get the array [3, 3, 3, 5, 5, 6, 6, 8, 7]. After that, we can choose m = 3 once and get the sorted in non-decreasing order array [2, 2, 2, 4, 4, 5, 5, 7, 7].\n\nFor the fourth and fifth test case, it can be shown that the array could not be sorted using these operations.\n\nInput:\n```\n851 2 3 4 556 5 3 4 496 5 5 7 5 6 6 8 744 3 2 162 2 4 5 3 281 3 17 19 27 57 179 1353 17 57 179 92101 2 3 4 0 6 7 8 9 10\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nNO\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 20) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n — the integers in array a (0 ≤ a_i ≤ 1000).",
+    "output": "For each test case, output \"YES\" if the array can be sorted, and \"NO\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

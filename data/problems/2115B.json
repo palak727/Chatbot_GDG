@@ -1,0 +1,22 @@
+{
+    "id": "2115B",
+    "contest_id": 2115,
+    "problem_letter": "B",
+    "title": "B. Gellyfish and Camellia Japonica",
+    "statement": "Gellyfish has an array of n integers c_1, c_2, …, c_n. In the beginning, c = [a_1, a_2, …, a_n].\n\nGellyfish will make q modifications to c.\n\nFor i = 1,2,…,q, Gellyfish is given three integers x_i, y_i, and z_i between 1 and n. Then Gellyfish will set c_z_i := min(c_x_i, c_y_i).\n\nAfter the q modifications, c = [b_1, b_2, …, b_n].\n\nNow Flower knows the value of b and the value of the integers x_i, y_i, and z_i for all 1 ≤ i ≤ q, but she doesn't know the value of a.\n\nFlower wants to find any possible value of the array a or report that no such a exists.\n\nIf there are multiple possible values of the array a, you may output any of them.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the size of the array and the number of modifications.\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the value of the array c after the q modifications.\n\nThe following q lines each contain three integers x_i, y_i, and z_i (1 ≤ x_i, y_i, z_i ≤ n) — describing the i-th modification.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases does not exceed 3·10^5.\n\nFor each test case, if a exists, output n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) in a single line. Otherwise, output \"-1\" in a single line.\n\nIf there are multiple solutions, print any of them.\n\nIn the first test case, based on the given sequence of modifications, we know that b_1 = a_1 and b_2 = min(a_1, a_2). Therefore, it is necessary that b_2 ≤ b_1. However, for the given b, we have b_1 < b_2. Therefore, there is no solution.\n\nIn the second test case, we can see that the given c becomes b from a after the given modifications, and c is not changed at each modification.\n\nInput:\n```\n32 11 22 1 23 21 2 32 3 21 2 16 41 2 2 3 4 55 6 64 5 53 4 42 3 3\n```\n\nOutput:\n```\n-1\n1 2 3 \n1 2 3 4 5 5 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the size of the array and the number of modifications.\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the value of the array c after the q modifications.\n\nThe following q lines each contain three integers x_i, y_i, and z_i (1 ≤ x_i, y_i, z_i ≤ n) — describing the i-th modification.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, if a exists, output n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) in a single line. Otherwise, output \"-1\" in a single line.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

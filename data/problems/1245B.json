@@ -1,0 +1,18 @@
+{
+    "id": "1245B",
+    "contest_id": 1245,
+    "problem_letter": "B",
+    "title": "B. Restricted RPS",
+    "statement": "Let n be a positive integer. Let a, b, c be nonnegative integers such that a + b + c = n.\n\nAlice and Bob are gonna play rock-paper-scissors n times. Alice knows the sequences of hands that Bob will play. However, Alice has to play rock a times, paper b times, and scissors c times.\n\nAlice wins if she beats Bob in at least lceil n/2 rceil (n/2 rounded up to the nearest integer) hands, otherwise Alice loses.\n\nNote that in rock-paper-scissors:\n\nThe task is, given the sequence of hands that Bob will play, and the numbers a, b, c, determine whether or not Alice can win. And if so, find any possible sequence of hands that Alice can use to win.\n\nIf there are multiple answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen, t testcases follow, each consisting of three lines:\n\nFor each testcase:\n\nThe \"YES\" / \"NO\" part of the output is case-insensitive (i.e. \"yEs\", \"no\" or \"YEs\" are all valid answers). Note that 'R', 'P' and 'S' are case-sensitive.\n\nIn the first testcase, in the first hand, Alice plays paper and Bob plays rock, so Alice beats Bob. In the second hand, Alice plays scissors and Bob plays paper, so Alice beats Bob. In the third hand, Alice plays rock and Bob plays scissors, so Alice beats Bob. Alice beat Bob 3 times, and 3 ≥ lceil 3/2 rceil = 2, so Alice wins.\n\nIn the second testcase, the only sequence of hands that Alice can play is \"RRR\". Alice beats Bob only in the last hand, so Alice can't win. 1 < lceil 3/2 rceil = 2.\n\nInput:\n```\n2\n3\n1 1 1\nRPS\n3\n3 0 0\nRPS\n```\n\nOutput:\n```\nYES\nPSR\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen, t testcases follow, each consisting of three lines:",
+    "output": "For each testcase:\n\nThe \"YES\" / \"NO\" part of the output is case-insensitive (i.e. \"yEs\", \"no\" or \"YEs\" are all valid answers). Note that 'R', 'P' and 'S' are case-sensitive.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

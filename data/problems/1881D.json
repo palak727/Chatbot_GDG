@@ -1,0 +1,17 @@
+{
+    "id": "1881D",
+    "contest_id": 1881,
+    "problem_letter": "D",
+    "title": "D. Divide and Equalize",
+    "statement": "You are given an array a consisting of n positive integers. You can perform the following operation on it:\n\nFor example, let's consider the array a = [100, 2, 50, 10, 1] with 5 elements. Perform two operations on it:\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nThen follows the description of each test case.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^4) — the number of elements in the array a.\n\nThe second line of each test case contains exactly n integers a_i (1 ≤ a_i ≤ 10^6) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^4.\n\nFor each test case, output a single line:\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will all be recognized as a positive answer).\n\nThe first test case is explained in the problem statement.\n\nInput:\n```\n75100 2 50 10 131 1 148 2 4 2430 50 27 20275 4024 432 3 1\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nThen follows the description of each test case.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^4) — the number of elements in the array a.\n\nThe second line of each test case contains exactly n integers a_i (1 ≤ a_i ≤ 10^6) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^4.",
+    "output": "For each test case, output a single line:\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will all be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

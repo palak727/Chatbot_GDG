@@ -1,0 +1,16 @@
+{
+    "id": "1824D",
+    "contest_id": 1824,
+    "problem_letter": "D",
+    "title": "D. LuoTianyi and the Function",
+    "statement": "LuoTianyi gives you an array a of n integers and the index begins from 1.\n\nDefine g(i,j) as follows:\n\nThere are q queries. For each query you are given four integers l,r,x,y, you need to calculate ∑limits_{i=l}^r∑limits_{j=x}^yg(i,j).\n\nThe first line contains two integers n and q (1≤ n,q≤ 10^6) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n) — the elements of the array a.\n\nNext q lines describe a query. The i-th line contains four integers l,r,x,y (1≤ l≤ r≤ n, 1≤ x≤ y≤ n) — the integers in the i-th query.\n\nPrint q lines where i-th line contains one integer — the answer for the i-th query.\n\nIn the first example:\n\nIn the first query, the answer is g(1,4)+g(1,5)=3+3=6.\n\nx=1,2,3 can satisfies {a_p:1≤ p≤ 4}⊆{a_q:x≤ q≤ 4}, 3 is the largest integer so g(1,4)=3.\n\nIn the second query, the answer is g(2,3)+g(3,3)=3+3=6.\n\nIn the third query, the answer is 0, because all i > j and g(i,j)=0.\n\nIn the fourth query, the answer is g(6,6)=6.\n\nIn the second example:\n\nIn the second query, the answer is g(2,3)=2.\n\nIn the fourth query, the answer is g(1,4)+g(1,5)=2+2=4.\n\nInput:\n```\n6 4\n1 2 2 1 3 4\n1 1 4 5\n2 3 3 3\n3 6 1 2\n6 6 6 6\n```\n\nOutput:\n```\n6\n6\n0\n6\n```\n\nInput:\n```\n10 5\n10 2 8 10 9 8 2 1 1 8\n1 1 10 10\n2 2 3 3\n6 6 6 6\n1 1 4 5\n4 8 4 8\n```\n\nOutput:\n```\n4\n2\n6\n4\n80\n```",
+    "input": "The first line contains two integers n and q (1≤ n,q≤ 10^6) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n) — the elements of the array a.\n\nNext q lines describe a query. The i-th line contains four integers l,r,x,y (1≤ l≤ r≤ n, 1≤ x≤ y≤ n) — the integers in the i-th query.",
+    "output": "Print q lines where i-th line contains one integer — the answer for the i-th query.",
+    "time_limit": "7 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "*3000"
+    ],
+    "rating": 3000
+}

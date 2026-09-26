@@ -1,0 +1,21 @@
+{
+    "id": "1859D",
+    "contest_id": 1859,
+    "problem_letter": "D",
+    "title": "D. Andrey and Escape from Capygrad",
+    "statement": "An incident occurred in Capygrad, the capital of Tyagoland, where all the capybaras in the city went crazy and started throwing mandarins. Andrey was forced to escape from the city as far as possible, using portals.\n\nTyagoland is represented by a number line, and the city of Capygrad is located at point 0. There are n portals all over Tyagoland, each of which is characterised by four integers l_i, r_i, a_i and b_i (1 ≤ l_i ≤ a_i ≤ b_i ≤ r_i ≤ 10^9). Note that the segment [a_i, b_i] is contained in the segment [l_i, r_i].\n\nIf Andrey is on the segment [l_i, r_i], then the portal can teleport him to any point on the segment [a_i, b_i]. Andrey has a pass that allows him to use the portals an unlimited number of times.\n\nAndrey thinks that the point x is on the segment [l, r] if the inequality l ≤ x ≤ r is satisfied.\n\nAndrey has q options for where to start his escape, each option is characterized by a single integer x_i — the starting position of the escape. He wants to escape from Capygrad as far as possible (to the point with the maximum possible coordinate). Help Andrey determine how far he could escape from Capygrad, starting at each of the q positions.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of portals.\n\nEach of the next n lines contains four integers l_i, r_i, a_i, and b_i (1 ≤ l_i ≤ a_i ≤ b_i ≤ r_i ≤ 10^9) — the characteristics of the portals.\n\nThe next line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of positions.\n\nThe following line contains q integers x_1, x_2, …, x_q (1 ≤ x_i ≤ 10^9) — the position from which Andrey will start his escape in the i-th options.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single line of q integers, containing the answers to Andrey's questions.\n\nIn the first test case:\n\nOptimal actions when starting from each position:\n\nIn the fifth test case:\n\nOptimal actions when starting from each position:\n\nInput:\n```\n536 17 7 141 12 3 816 24 20 22610 2 23 15 28 1833 14 7 1016 24 20 221 16 3 1492 4 6 8 18 23 11 13 1521 4 2 33 9 6 734 8 1518 24 18 241 8 2 411 16 14 1426 32 28 305 10 6 8915 14 13 27 22 17 31 1 769 22 14 2011 26 13 2421 33 22 2321 33 25 321 6 3 418 29 20 21811 23 16 5 8 33 2 21\n```\n\nOutput:\n```\n14 14 23 15 28 22 \n14 14 14 14 22 23 14 14 15 \n7 8 7 \n15 14 14 30 24 17 31 4 8 \n32 32 32 5 8 33 4 32 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of portals.\n\nEach of the next n lines contains four integers l_i, r_i, a_i, and b_i (1 ≤ l_i ≤ a_i ≤ b_i ≤ r_i ≤ 10^9) — the characteristics of the portals.\n\nThe next line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of positions.\n\nThe following line contains q integers x_1, x_2, …, x_q (1 ≤ x_i ≤ 10^9) — the position from which Andrey will start his escape in the i-th options.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single line of q integers, containing the answers to Andrey's questions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "dsu",
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

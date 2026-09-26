@@ -1,0 +1,21 @@
+{
+    "id": "1284B",
+    "contest_id": 1284,
+    "problem_letter": "B",
+    "title": "B. New Year and Ascent Sequence",
+    "statement": "A sequence a = [a_1, a_2, …, a_l] of length l has an ascent if there exists a pair of indices (i, j) such that 1 ≤ i < j ≤ l and a_i < a_j. For example, the sequence [0, 2, 0, 2, 0] has an ascent because of the pair (1, 4), but the sequence [4, 3, 3, 3, 1] doesn't have an ascent.\n\nLet's call a concatenation of sequences p and q the sequence that is obtained by writing down sequences p and q one right after another without changing the order. For example, the concatenation of the [0, 2, 0, 2, 0] and [4, 3, 3, 3, 1] is the sequence [0, 2, 0, 2, 0, 4, 3, 3, 3, 1]. The concatenation of sequences p and q is denoted as p+q.\n\nGyeonggeun thinks that sequences with ascents bring luck. Therefore, he wants to make many such sequences for the new year. Gyeonggeun has n sequences s_1, s_2, …, s_n which may have different lengths.\n\nGyeonggeun will consider all n^2 pairs of sequences s_x and s_y (1 ≤ x, y ≤ n), and will check if its concatenation s_x + s_y has an ascent. Note that he may select the same sequence twice, and the order of selection matters.\n\nPlease count the number of pairs (x, y) of sequences s_1, s_2, …, s_n whose concatenation s_x + s_y contains an ascent.\n\nThe first line contains the number n (1 ≤ n ≤ 100,000) denoting the number of sequences.\n\nThe next n lines contain the number l_i (1 ≤ l_i) denoting the length of s_i, followed by l_i integers s_{i, 1}, s_{i, 2}, …, s_{i, l_i} (0 ≤ s_{i, j} ≤ 10^6) denoting the sequence s_i.\n\nIt is guaranteed that the sum of all l_i does not exceed 100,000.\n\nPrint a single integer, the number of pairs of sequences whose concatenation has an ascent.\n\nFor the first example, the following 9 arrays have an ascent: [1, 2], [1, 2], [1, 3], [1, 3], [1, 4], [1, 4], [2, 3], [2, 4], [3, 4]. Arrays with the same contents are counted as their occurences.\n\nInput:\n```\n5\n1 1\n1 1\n1 2\n1 4\n1 3\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n3\n4 2 0 2 0\n6 9 9 8 8 7 7\n1 6\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n10\n3 62 24 39\n1 17\n1 99\n1 60\n1 64\n1 30\n2 79 29\n2 20 73\n2 85 37\n1 100\n```\n\nOutput:\n```\n72\n```",
+    "input": "The first line contains the number n (1 ≤ n ≤ 100,000) denoting the number of sequences.\n\nThe next n lines contain the number l_i (1 ≤ l_i) denoting the length of s_i, followed by l_i integers s_{i, 1}, s_{i, 2}, …, s_{i, l_i} (0 ≤ s_{i, j} ≤ 10^6) denoting the sequence s_i.\n\nIt is guaranteed that the sum of all l_i does not exceed 100,000.",
+    "output": "Print a single integer, the number of pairs of sequences whose concatenation has an ascent.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "data structures",
+        "dp",
+        "implementation",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

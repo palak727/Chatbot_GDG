@@ -1,0 +1,18 @@
+{
+    "id": "1873D",
+    "contest_id": 1873,
+    "problem_letter": "D",
+    "title": "D. 1D Eraser",
+    "statement": "You are given a strip of paper s that is n cells long. Each cell is either black or white. In an operation you can take any k consecutive cells and make them all white.\n\nFind the minimum number of operations needed to remove all black cells.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5) — the length of the paper and the integer used in the operation.\n\nThe second line of each test case contains a string s of length n consisting of characters textttB (representing a black cell) or textttW (representing a white cell).\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of operations needed to remove all black cells.\n\nIn the first test case you can perform the following operations: colorredtextttWBWtextttWWB → textttWWWcolorredtextttWWB → textttWWWWWW\n\nIn the second test case you can perform the following operations: textttWWcolorredtextttBWBtextttWW → textttWWWWWWW\n\nIn the third test case you can perform the following operations: textttBcolorredtextttWBWB → colorredtextttBWWWtextttW → textttWWWWW\n\nInput:\n```\n86 3WBWWWB7 3WWBWBWW5 4BWBWB5 5BBBBB8 2BWBWBBBB10 2WBBWBBWBBW4 1BBBB3 2WWW\n```\n\nOutput:\n```\n2\n1\n2\n1\n4\n3\n4\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5) — the length of the paper and the integer used in the operation.\n\nThe second line of each test case contains a string s of length n consisting of characters textttB (representing a black cell) or textttW (representing a white cell).\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of operations needed to remove all black cells.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

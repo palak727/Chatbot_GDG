@@ -1,0 +1,21 @@
+{
+    "id": "1374E2",
+    "contest_id": 1374,
+    "problem_letter": "E2",
+    "title": "E2. Reading Books (hard version)",
+    "statement": "Easy and hard versions are actually different problems, so read statements of both problems completely and carefully.\n\nSummer vacation has started so Alice and Bob want to play and joy, but... Their mom doesn't think so. She says that they have to read exactly m books before all entertainments. Alice and Bob will read each book together to end this exercise faster.\n\nThere are n books in the family library. The i-th book is described by three integers: t_i — the amount of time Alice and Bob need to spend to read it, a_i (equals 1 if Alice likes the i-th book and 0 if not), and b_i (equals 1 if Bob likes the i-th book and 0 if not).\n\nSo they need to choose exactly m books from the given n books in such a way that:\n\nThe set they choose is the same for both Alice an Bob (it's shared between them) and they read all books together, so the total reading time is the sum of t_i over all books that are in the chosen set.\n\nYour task is to help them and find any suitable set of books or determine that it is impossible to find such a set.\n\nThe first line of the input contains three integers n, m and k (1 ≤ k ≤ m ≤ n ≤ 2·10^5).\n\nThe next n lines contain descriptions of books, one description per line: the i-th line contains three integers t_i, a_i and b_i (1 ≤ t_i ≤ 10^4, 0 ≤ a_i, b_i ≤ 1), where:\n\nIf there is no solution, print only one integer -1.\n\nIf the solution exists, print T in the first line — the minimum total reading time of the suitable set of books. In the second line print m distinct integers from 1 to n in any order — indices of books which are in the set you found.\n\nIf there are several answers, print any of them.\n\nInput:\n```\n6 3 1\n6 0 0\n11 1 0\n9 0 1\n21 1 1\n10 1 0\n8 0 1\n```\n\nOutput:\n```\n24\n6 5 1 \n```\n\nInput:\n```\n6 3 2\n6 0 0\n11 1 0\n9 0 1\n21 1 1\n10 1 0\n8 0 1\n```\n\nOutput:\n```\n39\n4 6 5 \n```",
+    "input": "The first line of the input contains three integers n, m and k (1 ≤ k ≤ m ≤ n ≤ 2·10^5).\n\nThe next n lines contain descriptions of books, one description per line: the i-th line contains three integers t_i, a_i and b_i (1 ≤ t_i ≤ 10^4, 0 ≤ a_i, b_i ≤ 1), where:",
+    "output": "If there is no solution, print only one integer -1.\n\nIf the solution exists, print T in the first line — the minimum total reading time of the suitable set of books. In the second line print m distinct integers from 1 to n in any order — indices of books which are in the set you found.\n\nIf there are several answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "sortings",
+        "ternary search",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2134E",
+    "contest_id": 2134,
+    "problem_letter": "E",
+    "title": "E. Power Boxes",
+    "statement": "This is an interactive problem.\n\nYou are given n boxes, indexed from 1 to n. The boxes look identical, but each one has a hidden power value a_i, which is either 1 or 2.\n\nYou want to determine the power value of each box. To do so, you conduct the following experiment. Initially, the i-th box is placed at coordinate i on a number line (1 ≤ i ≤ n).\n\nYou are allowed to perform the following two types of queries:\n\nYour task is to determine the power value of each box using no more than leftlceil 3n/2 rightrceil queries in total, counting both swap and throw queries.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first and the only line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the number of boxes.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.\n\nThe interaction for each test case begins by reading the integer n.\n\nTo make a query, output a line in one of the following formats:\n\nNote that queries are case sensitive.\n\nOnce you have determined the power value of each box, output a line in the following format:\n\nNote that submitting the final answer with the previous query does not count towards the limit of leftlceil 3n/2 rightrceil queries.\n\nIf your program exceeds leftlceil 3n/2 rightrceil queries in one test case, your program must terminate immediately to receive the verdict Wrong Answer. Otherwise, it may receive any other verdict.\n\nAfter outputting a query, do not forget to output the end of the line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nThe interactor is non-adaptive; the power values of the boxes remain constant throughout the interaction.\n\nHacks\n\nTo hack, use the following format.\n\nThe first line should contain a single integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the number of boxes.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 2) — the power value of each box.\n\nThe sum of n over all test cases should not exceed 1000.\n\nBelow is the interaction process in the example:\n\nEmpty lines in the example input and output are given only for better readability; you don't need to output them in your solution.\n\nNote that in the first test case, the given queries are in fact insufficient to uniquely determine the power values; they are given only to illustrate the input/output format.\n\nInput:\n```\n2\n4\n\n2\n\n\n3\n\n3\n\n2\n\n2\n\n\n1\n```\n\nOutput:\n```\nthrow 2\n\nswap 3\nthrow 2\n\nthrow 1\n\n! 2 1 2 1\n\nthrow 1\n\nswap 1\nthrow 1\n\n! 1 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first and the only line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the number of boxes.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "implementation",
+        "interactive",
+        "*2300"
+    ],
+    "rating": 2300
+}

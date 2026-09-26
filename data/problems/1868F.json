@@ -1,0 +1,18 @@
+{
+    "id": "1868F",
+    "contest_id": 1868,
+    "problem_letter": "F",
+    "title": "F. LIS?",
+    "statement": "Entering senior high school life, Tom is attracted by LIS problems, not only the Longest Increasing Subsequence problem, but also the Largest Interval Sum problem. Now he gets a really interesting problem from his friend Daniel. However, it seems too hard for him to solve it, so he asks you for help.\n\nGiven an array a consisting of n integers.\n\nIn one operation, you do the following:\n\nFind the minimum number of operations you need to perform to make a_i < 0 for every 1≤ i≤ n.\n\nThe first line of input contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (-10^6≤ a_i≤ 10^6) — the elements of the array a.\n\nPrint a single integer — the minimum number of operations.\n\nIn the first example, you can do operations on intervals [1,5],[1,5],[2,5],[3,5],[4,5],[5,5] in such order. You may also do operations on intervals [1,5],[2,5],[3,5],[4,5],[5,5],[1,5] in such order.\n\nIn the second example, it's already satisfied that a_i < 0 for every 1≤ i≤ n. So you do not need to perform any operations.\n\nInput:\n```\n5\n1 2 3 4 5\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n6\n-1 -5 -4 -1 -4 -7\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n11\n0 1000000 1 -50000 2 998353 3 -100007 4 200943 0\n```\n\nOutput:\n```\n1936973\n```",
+    "input": "The first line of input contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (-10^6≤ a_i≤ 10^6) — the elements of the array a.",
+    "output": "Print a single integer — the minimum number of operations.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "*3500"
+    ],
+    "rating": 3500
+}

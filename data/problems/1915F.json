@@ -1,0 +1,18 @@
+{
+    "id": "1915F",
+    "contest_id": 1915,
+    "problem_letter": "F",
+    "title": "F. Greetings",
+    "statement": "There are n people on the number line; the i-th person is at point a_i and wants to go to point b_i. For each person, a_i < b_i, and the starting and ending points of all people are distinct. (That is, all of the 2n numbers a_1, a_2, …, a_n, b_1, b_2, …, b_n are distinct.)\n\nAll the people will start moving simultaneously at a speed of 1 unit per second until they reach their final point b_i. When two people meet at the same point, they will greet each other once. How many greetings will there be?\n\nNote that a person can still greet other people even if they have reached their final point.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of people.\n\nThen n lines follow, the i-th of which contains two integers a_i and b_i (-10^9 ≤ a_i < b_i ≤ 10^9) — the starting and ending positions of each person.\n\nFor each test case, all of the 2n numbers a_1, a_2, …, a_n, b_1, b_2, …, b_n are distinct.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer denoting the number of greetings that will happen.\n\nIn the first test case, the two people will meet at point 3 and greet each other.\n\nInput:\n```\n522 31 462 63 94 51 87 10-2 1004-10 10-5 5-12 12-13 135-4 9-2 53 46 78 1041 23 45 67 8\n```\n\nOutput:\n```\n1\n9\n6\n4\n0\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of people.\n\nThen n lines follow, the i-th of which contains two integers a_i and b_i (-10^9 ≤ a_i < b_i ≤ 10^9) — the starting and ending positions of each person.\n\nFor each test case, all of the 2n numbers a_1, a_2, …, a_n, b_1, b_2, …, b_n are distinct.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer denoting the number of greetings that will happen.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

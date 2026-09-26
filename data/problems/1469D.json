@@ -1,0 +1,19 @@
+{
+    "id": "1469D",
+    "contest_id": 1469,
+    "problem_letter": "D",
+    "title": "D. Ceil Divisions",
+    "statement": "You have an array a_1, a_2, …, a_n where a_i = i.\n\nIn one step, you can choose two indices x and y (x ≠ y) and set a_x = leftlceil a_x/a_y rightrceil (ceiling function).\n\nYour goal is to make array a consist of n - 1 ones and 1 two in no more than n + 5 steps. Note that you don't have to minimize the number of steps.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains the single integer n (3 ≤ n ≤ 2·10^5) — the length of array a.\n\nIt's guaranteed that the sum of n over test cases doesn't exceed 2·10^5.\n\nFor each test case, print the sequence of operations that will make a as n - 1 ones and 1 two in the following format: firstly, print one integer m (m ≤ n + 5) — the number of operations; next print m pairs of integers x and y (1 ≤ x, y ≤ n; x ≠ y) (x may be greater or less than y) — the indices of the corresponding operation.\n\nIt can be proven that for the given constraints it's always possible to find a correct sequence of operations.\n\nIn the first test case, you have array a = [1, 2, 3]. For example, you can do the following:\n\nIn the second test case, a = [1, 2, 3, 4]. For example, you can do the following:\n\nInput:\n```\n2\n3\n4\n```\n\nOutput:\n```\n2\n3 2\n3 2\n3\n3 4\n4 2\n4 2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains the single integer n (3 ≤ n ≤ 2·10^5) — the length of array a.\n\nIt's guaranteed that the sum of n over test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print the sequence of operations that will make a as n - 1 ones and 1 two in the following format: firstly, print one integer m (m ≤ n + 5) — the number of operations; next print m pairs of integers x and y (1 ≤ x, y ≤ n; x ≠ y) (x may be greater or less than y) — the indices of the corresponding operation.\n\nIt can be proven that for the given constraints it's always possible to find a correct sequence of operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

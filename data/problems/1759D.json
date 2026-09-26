@@ -1,0 +1,17 @@
+{
+    "id": "1759D",
+    "contest_id": 1759,
+    "problem_letter": "D",
+    "title": "D. Make It Round",
+    "statement": "Inflation has occurred in Berlandia, so the store needs to change the price of goods.\n\nThe current price of good n is given. It is allowed to increase the price of the good by k times, with 1 ≤ k ≤ m, k is an integer. Output the roundest possible new price of the good. That is, the one that has the maximum number of zeros at the end.\n\nFor example, the number 481000 is more round than the number 1000010 (three zeros at the end of 481000 and only one at the end of 1000010).\n\nIf there are several possible variants, output the one in which the new price is maximal.\n\nIf it is impossible to get a rounder price, output n·m (that is, the maximum possible price).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nEach test case consists of one line.\n\nThis line contains two integers: n and m (1 ≤ n, m ≤ 10^9). Where n is the old price of the good, and the number m means that you can increase the price n no more than m times.\n\nFor each test case, output on a separate line the roundest integer of the form n·k (1 ≤ k ≤ m, k — an integer).\n\nIf there are several possible variants, output the one in which the new price (value n·k) is maximal.\n\nIf it is impossible to get a more rounded price, output n·m (that is, the maximum possible price).\n\nIn the first case n = 6, m = 11. We cannot get a number with two zeros or more at the end, because we need to increase the price 50 times, but 50 > m = 11. The maximum price multiple of 10 would be 6·10 = 60.\n\nIn the second case n = 5, m = 43. The maximum price multiple of 100 would be 5·40 = 200.\n\nIn the third case, n = 13, m = 5. All possible new prices will not end in 0, then you should output n·m = 65.\n\nIn the fourth case, you should increase the price 15 times.\n\nIn the fifth case, increase the price 12000 times.\n\nInput:\n```\n106 115 4313 54 1610050 123452 64 3025 102 811 7\n```\n\nOutput:\n```\n60\n200\n65\n60\n120600000\n10\n100\n200\n100\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nEach test case consists of one line.\n\nThis line contains two integers: n and m (1 ≤ n, m ≤ 10^9). Where n is the old price of the good, and the number m means that you can increase the price n no more than m times.",
+    "output": "For each test case, output on a separate line the roundest integer of the form n·k (1 ≤ k ≤ m, k — an integer).\n\nIf there are several possible variants, output the one in which the new price (value n·k) is maximal.\n\nIf it is impossible to get a more rounded price, output n·m (that is, the maximum possible price).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

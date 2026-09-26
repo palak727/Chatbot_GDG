@@ -1,0 +1,21 @@
+{
+    "id": "1220E",
+    "contest_id": 1220,
+    "problem_letter": "E",
+    "title": "E. Tourism",
+    "statement": "Alex decided to go on a touristic trip over the country.\n\nFor simplicity let's assume that the country has n cities and m bidirectional roads connecting them. Alex lives in city s and initially located in it. To compare different cities Alex assigned each city a score w_i which is as high as interesting city seems to Alex.\n\nAlex believes that his trip will be interesting only if he will not use any road twice in a row. That is if Alex came to city v from city u, he may choose as the next city in the trip any city connected with v by the road, except for the city u.\n\nYour task is to help Alex plan his city in a way that maximizes total score over all cities he visited. Note that for each city its score is counted at most once, even if Alex been there several times during his trip.\n\nFirst line of input contains two integers n and m, (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) which are numbers of cities and roads in the country.\n\nSecond line contains n integers w_1, w_2, …, w_n (0 ≤ w_i ≤ 10^9) which are scores of all cities.\n\nThe following m lines contain description of the roads. Each of these m lines contains two integers u and v (1 ≤ u, v ≤ n) which are cities connected by this road.\n\nIt is guaranteed that there is at most one direct road between any two cities, no city is connected to itself by the road and, finally, it is possible to go from any city to any other one using only roads.\n\nThe last line contains single integer s (1 ≤ s ≤ n), which is the number of the initial city.\n\nOutput single integer which is the maximum possible sum of scores of visited cities.\n\nInput:\n```\n5 7\n2 2 8 6 9\n1 2\n1 3\n2 4\n3 2\n4 5\n2 5\n1 5\n2\n```\n\nOutput:\n```\n27\n```\n\nInput:\n```\n10 12\n1 7 1 9 3 3 6 30 1 10\n1 2\n1 3\n3 5\n5 7\n2 3\n5 4\n6 9\n4 6\n3 7\n6 8\n9 4\n9 10\n6\n```\n\nOutput:\n```\n61\n```",
+    "input": "First line of input contains two integers n and m, (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) which are numbers of cities and roads in the country.\n\nSecond line contains n integers w_1, w_2, …, w_n (0 ≤ w_i ≤ 10^9) which are scores of all cities.\n\nThe following m lines contain description of the roads. Each of these m lines contains two integers u and v (1 ≤ u, v ≤ n) which are cities connected by this road.\n\nIt is guaranteed that there is at most one direct road between any two cities, no city is connected to itself by the road and, finally, it is possible to go from any city to any other one using only roads.\n\nThe last line contains single integer s (1 ≤ s ≤ n), which is the number of the initial city.",
+    "output": "Output single integer which is the maximum possible sum of scores of visited cities.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "graphs",
+        "greedy",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

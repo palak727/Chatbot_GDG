@@ -1,0 +1,19 @@
+{
+    "id": "1969F",
+    "contest_id": 1969,
+    "problem_letter": "F",
+    "title": "F. Card Pairing",
+    "statement": "There is a deck of n cards, each card has one of k types. You are given the sequence a_1, a_2, …, a_n denoting the types of cards in the deck from top to bottom. Both n and k are even numbers.\n\nYou play a game with these cards. First, you draw k topmost cards from the deck. Then, the following happens each turn of the game:\n\nYou have to calculate the maximum number of coins you can earn during the game.\n\nThe first line of the input contains two integers n and k (2 ≤ k ≤ n ≤ 1000, both n and k are even).\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ k).\n\nPrint one integer — the maximum number of coins you can earn.\n\nInput:\n```\n4 21 2 1 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n8 22 1 2 2 1 2 1 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4 41 2 1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n6 43 2 3 1 2 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6 43 2 3 3 2 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n18 65 6 1 1 6 5 4 1 5 1 1 6 2 6 2 2 6 3\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n8 41 2 3 4 4 3 1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n8 41 2 3 4 4 3 3 2\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line of the input contains two integers n and k (2 ≤ k ≤ n ≤ 1000, both n and k are even).\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ k).",
+    "output": "Print one integer — the maximum number of coins you can earn.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "hashing",
+        "implementation",
+        "*3000"
+    ],
+    "rating": 3000
+}

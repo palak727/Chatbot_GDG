@@ -3,13 +3,14 @@
     "contest_id": 1001,
     "problem_letter": "G",
     "title": "G. Oracle for f(x) = k-th element of x",
-    "statement": "Implement a quantum oracle on N qubits which implements a function f(x) = xk, i.e. the value of the function is the value of the k-th qubit.\nFor an explanation on how the quantum oracles work, see the tutorial blog post.\nYou have to implement an operation which takes the following inputs:\nThe operation doesn't have an output; the \"output\" of your solution is the state in which it left the qubits.\nYour code should have the following signature:",
-    "input": "You have to implement an operation which takes the following inputs:",
+    "statement": "Implement a quantum oracle on N qubits which implements a function f(x) = x_k, i.e. the value of the function is the value of the k-th qubit.\n\nFor an explanation on how the quantum oracles work, see the tutorial blog post.\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; the \"output\" of your solution is the state in which it left the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (x : Qubit[], y : Qubit, k : Int) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
+    "input": "You have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; the \"output\" of your solution is the state in which it left the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (x : Qubit[], y : Qubit, k : Int) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "output": "",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
-        "*special problem",
+        "*special",
         "*1400"
-    ]
+    ],
+    "rating": 1400
 }

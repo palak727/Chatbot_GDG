@@ -1,0 +1,19 @@
+{
+    "id": "1494E",
+    "contest_id": 1494,
+    "problem_letter": "E",
+    "title": "E. A-Z Graph",
+    "statement": "You are given a directed graph consisting of n vertices. Each directed edge (or arc) labeled with a single character. Initially, the graph is empty.\n\nYou should process m queries with it. Each query is one of three types:\n\nThe first line contains two integers n and m (2 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 2·10^5) — the number of vertices in the graph and the number of queries.\n\nThe next m lines contain queries — one per line. Each query is one of three types:\n\nIt's guaranteed that you don't add multiple edges and erase only existing edges. Also, there is at least one query of the third type.\n\nFor each query of the third type, print YES if there exist the sequence v_1, v_2, …, v_k described above, or NO otherwise.\n\nIn the first query of the third type k = 3, we can, for example, choose a sequence [1, 2, 3], since 1 xrightarrowa 2 xrightarrowb 3 and 3 xrightarrowa 2 xrightarrowb 1.\n\nIn the second query of the third type k = 2, and we can't find sequence p_1, p_2 such that arcs (p_1, p_2) and (p_2, p_1) have the same characters.\n\nIn the third query of the third type, we can, for example, choose a sequence [1, 2, 3, 2, 1], where 1 xrightarrowa 2 xrightarrowb 3 xrightarrowd 2 xrightarrowc 1.\n\nInput:\n```\n3 11\n+ 1 2 a\n+ 2 3 b\n+ 3 2 a\n+ 2 1 b\n? 3\n? 2\n- 2 1\n- 3 2\n+ 2 1 c\n+ 3 2 d\n? 5\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 2·10^5) — the number of vertices in the graph and the number of queries.\n\nThe next m lines contain queries — one per line. Each query is one of three types:\n\nIt's guaranteed that you don't add multiple edges and erase only existing edges. Also, there is at least one query of the third type.",
+    "output": "For each query of the third type, print YES if there exist the sequence v_1, v_2, …, v_k described above, or NO otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "hashing",
+        "*2400"
+    ],
+    "rating": 2400
+}

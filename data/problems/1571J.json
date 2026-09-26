@@ -1,0 +1,16 @@
+{
+    "id": "1571J",
+    "contest_id": 1571,
+    "problem_letter": "J",
+    "title": "J. Two Railroads",
+    "statement": "There are n cities in Berland, and they are connected by two railroads — the Main railroad and the Auxiliary railroad. Each city has two railway stations, one connected to the Main railroad (called the Main station), and the other connected to the Auxiliary railroad.\n\nThe railroads are identical in their structure. The Main railroad consists of n-1 railroad segments; the i-th railroad segment connects the Main station of the city i with the Main station of the city i+1. Similarly, the Auxiliary railroad consists of n-1 railroad segments; the i-th railroad segment connects the Auxiliary station of the city i with the Auxiliary station of the city i+1.\n\nThese railroads are used to transfer different goods and resources from one city to another. In particular, the Ministry of Energetics is interested in using these railroads to transfer coal.\n\nThe Ministry has estimated the following capabilities of the railroads:\n\nTo analyze the capacity of the whole railroad network, the Ministry requires a software that would process and answer queries of the following format:\n\nYour task is to implement this software.\n\nThe first line contains one integer n (2 ≤ n ≤ 3·10^5) — the number of cities.\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n-1 integers b_1, b_2, …, b_{n-1} (1 ≤ b_i ≤ 10^9).\n\nThe fourth line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nThe fifth line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThen q lines follow, the i-th line contains two integers l_i and r_i (1 ≤ l_i < r_i ≤ n) — the parameters of the i-th query.\n\nPrint q integers, where the i-th integer should be the answer to the i-th query, i. e. the maximum number of tons of coal that can be transferred per day from the Main station l_i to the Main station r_i.\n\nInput:\n```\n5\n3 4 7 4\n8 5 3 5\n10 5 3 4 10\n4\n1 4\n1 2\n3 4\n2 4\n```\n\nOutput:\n```\n9 8 10 9 \n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 3·10^5) — the number of cities.\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n-1 integers b_1, b_2, …, b_{n-1} (1 ≤ b_i ≤ 10^9).\n\nThe fourth line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nThe fifth line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThen q lines follow, the i-th line contains two integers l_i and r_i (1 ≤ l_i < r_i ≤ n) — the parameters of the i-th query.",
+    "output": "Print q integers, where the i-th integer should be the answer to the i-th query, i. e. the maximum number of tons of coal that can be transferred per day from the Main station l_i to the Main station r_i.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*special",
+        "*3000"
+    ],
+    "rating": 3000
+}

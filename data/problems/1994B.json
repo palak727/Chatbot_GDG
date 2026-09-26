@@ -1,0 +1,19 @@
+{
+    "id": "1994B",
+    "contest_id": 1994,
+    "problem_letter": "B",
+    "title": "B. Fun Game",
+    "statement": "Vova really loves the XOR operation (denoted as oplus). Recently, when he was going to sleep, he came up with a fun game.\n\nAt the beginning of the game, Vova chooses two binary sequences s and t of length n and gives them to Vanya. A binary sequence is a sequence consisting only of the numbers 0 and 1. Vanya can choose integers l, r such that 1 ≤ l ≤ r ≤ n, and for all l ≤ i ≤ r simultaneously replace s_i with s_i oplus s_{i - l + 1}, where s_i is the i-th element of the sequence s.\n\nIn order for the game to be interesting, there must be a possibility to win. Vanya wins if, with an unlimited number of actions, he can obtain the sequence t from the sequence s. Determine if the game will be interesting for the sequences s and t.\n\nEach test consists of multiple test cases. The first line contains an integer q (1 ≤ q ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the sequences s and t.\n\nThe second line of each test case contains a binary sequence s of length n.\n\nThe third line of each test case contains a binary sequence t of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"Yes\" if the game will be interesting, otherwise output \"No\".\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, Vanya will not be able to change the sequence s with the only possible action of choosing l = r = 1.\n\nIn the second test case, the sequences s and t are already equal.\n\nIn the third test case, Vanya can act as follows:\n\nInput:\n```\n6101701101000110100910010101010111111040011101140100000181011011101100000\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer q (1 ≤ q ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the sequences s and t.\n\nThe second line of each test case contains a binary sequence s of length n.\n\nThe third line of each test case contains a binary sequence t of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"Yes\" if the game will be interesting, otherwise output \"No\".\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

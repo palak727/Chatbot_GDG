@@ -1,0 +1,17 @@
+{
+    "id": "1456E",
+    "contest_id": 1456,
+    "problem_letter": "E",
+    "title": "E. XOR-ranges",
+    "statement": "Given integers c_0, c_1, …, c_{k-1} we can define the cost of a number 0 ≤ x < 2^k as p(x) = ∑_{i=0}^{k-1} left( leftlfloor x/(2^i) rightrfloor bmod 2 right)·c_i. In other words, the cost of number x is the sum of c_i over the bits of x which are equal to one.\n\nLet's define the cost of array a of length n ≥ 2 with elements from [0, 2^k) as follows: cost(a) = ∑_{i=1}^{n - 1} p(a_i oplus a_{i+1}), where oplus denotes bitwise exclusive OR operation.\n\nYou have to construct an array of length n with minimal cost, given that each element should belong to the given segment: l_i ≤ a_i ≤ r_i.\n\nThe first line contains two integers n and k (2 ≤ n ≤ 50, 1 ≤ k ≤ 50) — the size of an array and bit length of the numbers in question.\n\nNext n lines contain the restrictions for elements of the array: the i-th line contains two integers l_i and r_i (0 ≤ l_i ≤ r_i < 2^k).\n\nThe last line contains integers c_0, c_1, …, c_{k-1} (0 ≤ c_i ≤ 10^12).\n\nOutput one integer — the minimal cost of an array satisfying all the restrictions.\n\nIn the first example there is only one array satisfying all the restrictions — [3, 5, 6, 1] — and its cost is equal to cost([3, 5, 6, 1]) = p(3 oplus 5) + p(5 oplus 6) + p(6 oplus 1) = p(6) + p(3) + p(7) = (c_1 + c_2) + (c_0 + c_1) + (c_0 + c_1 + c_2) = (2 + 7) + (5 + 2) + (5 + 2 + 7) = 30.\n\nIn the second example the only optimal array is [2, 3, 6].\n\nInput:\n```\n4 3\n3 3\n5 5\n6 6\n1 1\n5 2 7\n```\n\nOutput:\n```\n30\n```\n\nInput:\n```\n3 3\n2 2\n3 4\n4 6\n1 10 100\n```\n\nOutput:\n```\n102\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 50, 1 ≤ k ≤ 50) — the size of an array and bit length of the numbers in question.\n\nNext n lines contain the restrictions for elements of the array: the i-th line contains two integers l_i and r_i (0 ≤ l_i ≤ r_i < 2^k).\n\nThe last line contains integers c_0, c_1, …, c_{k-1} (0 ≤ c_i ≤ 10^12).",
+    "output": "Output one integer — the minimal cost of an array satisfying all the restrictions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*3500"
+    ],
+    "rating": 3500
+}

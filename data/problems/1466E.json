@@ -1,0 +1,18 @@
+{
+    "id": "1466E",
+    "contest_id": 1466,
+    "problem_letter": "E",
+    "title": "E. Apollo versus Pan",
+    "statement": "Only a few know that Pan and Apollo weren't only battling for the title of the GOAT musician. A few millenniums later, they also challenged each other in math (or rather in fast calculations). The task they got to solve is the following:\n\nLet x_1, x_2, …, x_n be the sequence of n non-negative integers. Find this value: ∑_{i=1}^n ∑_{j=1}^n ∑_{k=1}^n (x_i , & , x_j)·(x_j , | , x_k)\n\nHere & denotes the bitwise and, and | denotes the bitwise or.\n\nPan and Apollo could solve this in a few seconds. Can you do it too? For convenience, find the answer modulo 10^9 + 7.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1,000) denoting the number of test cases, then t test cases follow.\n\nThe first line of each test case consists of a single integer n (1 ≤ n ≤ 5·10^5), the length of the sequence. The second one contains n non-negative integers x_1, x_2, …, x_n (0 ≤ x_i < 2^60), elements of the sequence.\n\nThe sum of n over all test cases will not exceed 5·10^5.\n\nPrint t lines. The i-th line should contain the answer to the i-th text case.\n\nInput:\n```\n8\n2\n1 7\n3\n1 2 4\n4\n5 5 5 5\n5\n6 2 2 1 0\n1\n0\n1\n1\n6\n1 12 123 1234 12345 123456\n5\n536870912 536870911 1152921504606846975 1152921504606846974 1152921504606846973\n```\n\nOutput:\n```\n128\n91\n1600\n505\n0\n1\n502811676\n264880351\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1,000) denoting the number of test cases, then t test cases follow.\n\nThe first line of each test case consists of a single integer n (1 ≤ n ≤ 5·10^5), the length of the sequence. The second one contains n non-negative integers x_1, x_2, …, x_n (0 ≤ x_i < 2^60), elements of the sequence.\n\nThe sum of n over all test cases will not exceed 5·10^5.",
+    "output": "Print t lines. The i-th line should contain the answer to the i-th text case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

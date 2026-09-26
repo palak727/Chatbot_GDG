@@ -1,0 +1,17 @@
+{
+    "id": "1945A",
+    "contest_id": 1945,
+    "problem_letter": "A",
+    "title": "A. Setting up Camp",
+    "statement": "The organizing committee plans to take the participants of the Olympiad on a hike after the tour. Currently, the number of tents needed to be taken is being calculated. It is known that each tent can accommodate up to 3 people.\n\nAmong the participants, there are a introverts, b extroverts, and c universals:\n\nThe organizing committee respects the wishes of each participant very much, so they want to fulfill all of them.\n\nTell us the minimum number of tents needed to be taken so that all participants can be accommodated according to their preferences. If it is impossible to accommodate the participants in a way that fulfills all the wishes, output -1.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by the descriptions of the test cases.\n\nEach test case is described by a single line containing three integers a, b, c (0 ≤ a, b, c ≤ 10^9) — the number of introverts, extroverts, and universals, respectively.\n\nFor each test case, output a single integer — the minimum number of tents, or -1 if it is impossible to accommodate the participants.\n\nIn the first test case, 1 tent will be given to the introverts, 1 tent will be shared by two extroverts and one universal, and the last tent will be shared by two universals. In total, 3 tents are needed.\n\nIn the second test case, three extroverts will take 1 tent, and 1 tent will be taken by an introvert. Then, one extrovert and one universal will be left. This extrovert will not be able to live with two others.\n\nInput:\n```\n101 2 31 4 11 4 21 1 11 3 219 7 180 0 07 0 00 24 01000000000 1000000000 1000000000\n```\n\nOutput:\n```\n3\n-1\n3\n-1\n3\n28\n0\n7\n8\n1666666667\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by the descriptions of the test cases.\n\nEach test case is described by a single line containing three integers a, b, c (0 ≤ a, b, c ≤ 10^9) — the number of introverts, extroverts, and universals, respectively.",
+    "output": "For each test case, output a single integer — the minimum number of tents, or -1 if it is impossible to accommodate the participants.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

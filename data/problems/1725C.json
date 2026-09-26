@@ -1,0 +1,20 @@
+{
+    "id": "1725C",
+    "contest_id": 1725,
+    "problem_letter": "C",
+    "title": "C. Circular Mirror",
+    "statement": "Pak Chanek has a mirror in the shape of a circle. There are N lamps on the circumference numbered from 1 to N in clockwise order. The length of the arc from lamp i to lamp i+1 is D_i for 1 ≤ i ≤ N-1. Meanwhile, the length of the arc between lamp N and lamp 1 is D_N.\n\nPak Chanek wants to colour the lamps with M different colours. Each lamp can be coloured with one of the M colours. However, there cannot be three different lamps such that the colours of the three lamps are the same and the triangle made by considering the three lamps as vertices is a right triangle (triangle with one of its angles being exactly 90 degrees).\n\nThe following are examples of lamp colouring configurations on the circular mirror.\n\nBefore colouring the lamps, Pak Chanek wants to know the number of distinct colouring configurations he can make. Count the number of distinct possible lamp colouring configurations, modulo 998,244,353.\n\nThe first line contains two integers N and M (1 ≤ N ≤ 3·10^5, 2 ≤ M ≤ 3·10^5) — the number of lamps in the mirror and the number of different colours used.\n\nThe second line contains N integers D_1, D_2, …, D_N (1 ≤ D_i ≤ 10^9) — the lengths of the arcs between the lamps in the mirror.\n\nAn integer representing the number of possible lamp colouring configurations, modulo 998,244,353.\n\nIn the first example, all correct lamp colouring configurations are [1, 1, 2, 1], [1, 1, 2, 2], [1, 2, 1, 2], [1, 2, 2, 1], [1, 2, 2, 2], [2, 1, 1, 1], [2, 1, 1, 2], [2, 1, 2, 1], [2, 2, 1, 1], and [2, 2, 1, 2].\n\nInput:\n```\n4 2\n10 10 6 14\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n1 2\n10\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains two integers N and M (1 ≤ N ≤ 3·10^5, 2 ≤ M ≤ 3·10^5) — the number of lamps in the mirror and the number of different colours used.\n\nThe second line contains N integers D_1, D_2, …, D_N (1 ≤ D_i ≤ 10^9) — the lengths of the arcs between the lamps in the mirror.",
+    "output": "An integer representing the number of possible lamp colouring configurations, modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "geometry",
+        "math",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

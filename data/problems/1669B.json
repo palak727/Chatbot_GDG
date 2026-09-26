@@ -1,0 +1,17 @@
+{
+    "id": "1669B",
+    "contest_id": 1669,
+    "problem_letter": "B",
+    "title": "B. Triple",
+    "statement": "Given an array a of n elements, print any value that appears at least three times or print -1 if there is no such value.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print any value that appears at least three times or print -1 if there is no such value.\n\nIn the first test case there is just a single element, so it can't occur at least three times and the answer is -1.\n\nIn the second test case, all three elements of the array are equal to 2, so 2 occurs three times, and so the answer is 2.\n\nFor the third test case, 2 occurs four times, so the answer is 2.\n\nFor the fourth test case, 4 occurs three times, so the answer is 4.\n\nFor the fifth test case, 1, 2 and 3 all occur at least three times, so they are all valid outputs.\n\nFor the sixth test case, all elements are distinct, so none of them occurs at least three times and the answer is -1.\n\nInput:\n```\n71132 2 272 2 3 3 4 2 281 4 3 4 3 2 4 191 1 1 2 2 2 3 3 351 5 2 4 344 4 4 4\n```\n\nOutput:\n```\n-1\n2\n2\n4\n3\n-1\n4\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print any value that appears at least three times or print -1 if there is no such value.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

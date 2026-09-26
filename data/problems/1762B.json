@@ -1,0 +1,19 @@
+{
+    "id": "1762B",
+    "contest_id": 1762,
+    "problem_letter": "B",
+    "title": "B. Make Array Good",
+    "statement": "An array b of m positive integers is good if for all pairs i and j (1 ≤ i,j ≤ m), max(b_i,b_j) is divisible by min(b_i,b_j).\n\nYou are given an array a of n positive integers. You can perform the following operation:\n\nYou have to construct a sequence of at most n operations that will make a good. It can be proven that under the constraints of the problem, such a sequence of operations always exists.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — representing the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test, output a single integer p (0 ≤ p ≤ n) — denoting the number of operations in your solution.\n\nIn each of the following p lines, output two space-separated integers — i and x.\n\nYou do not need to minimize the number of operations. It can be proven that a solution always exists.\n\nIn the first test case, array a becomes [5,5,5,5] after the operations. It is easy to see that [5,5,5,5] is good.\n\nIn the second test case, array a is already good.\n\nIn the third test case, after performing the operations, array a becomes [10,5,350,5,10], which is good.\n\nIn the fourth test case, after performing the operations, array a becomes [60,10,20], which is good.\n\nInput:\n```\n442 3 5 524 853 4 343 5 6331 5 17\n```\n\nOutput:\n```\n4\n1 2\n1 1\n2 2\n3 0\n0\n5\n1 3\n1 4\n2 1\n5 4\n3 7\n3\n1 29\n2 5\n3 3\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — representing the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test, output a single integer p (0 ≤ p ≤ n) — denoting the number of operations in your solution.\n\nIn each of the following p lines, output two space-separated integers — i and x.\n\nYou do not need to minimize the number of operations. It can be proven that a solution always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "number theory",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1077F2",
+    "contest_id": 1077,
+    "problem_letter": "F2",
+    "title": "F2. Pictures with Kittens (hard version)",
+    "statement": "The only difference between easy and hard versions is the constraints.\n\nVova likes pictures with kittens. The news feed in the social network he uses can be represented as an array of n consecutive pictures (with kittens, of course). Vova likes all these pictures, but some are more beautiful than the others: the i-th picture has beauty a_i.\n\nVova wants to repost exactly x pictures in such a way that:\n\nFor example, if k=1 then Vova has to repost all the pictures in the news feed. If k=2 then Vova can skip some pictures, but between every pair of consecutive pictures Vova has to repost at least one of them.\n\nYour task is to calculate the maximum possible sum of values of reposted pictures if Vova follows conditions described above, or say that there is no way to satisfy all conditions.\n\nThe first line of the input contains three integers n, k and x (1 ≤ k, x ≤ n ≤ 5000) — the number of pictures in the news feed, the minimum length of segment with at least one repost in it and the number of pictures Vova is ready to repost.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the beauty of the i-th picture.\n\nPrint -1 if there is no way to repost some pictures to satisfy all the conditions in the problem statement.\n\nOtherwise print one integer — the maximum sum of values of reposted pictures if Vova follows conditions described in the problem statement.\n\nInput:\n```\n5 2 3\n5 1 3 10 1\n```\n\nOutput:\n```\n18\n```\n\nInput:\n```\n6 1 5\n10 30 30 70 10 10\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n4 3 1\n1 100 1 1\n```\n\nOutput:\n```\n100\n```",
+    "input": "The first line of the input contains three integers n, k and x (1 ≤ k, x ≤ n ≤ 5000) — the number of pictures in the news feed, the minimum length of segment with at least one repost in it and the number of pictures Vova is ready to repost.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the beauty of the i-th picture.",
+    "output": "Print -1 if there is no way to repost some pictures to satisfy all the conditions in the problem statement.\n\nOtherwise print one integer — the maximum sum of values of reposted pictures if Vova follows conditions described in the problem statement.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1633A",
+    "contest_id": 1633,
+    "problem_letter": "A",
+    "title": "A. Div. 7",
+    "statement": "You are given an integer n. You have to change the minimum number of digits in it in such a way that the resulting number does not have any leading zeroes and is divisible by 7.\n\nIf there are multiple ways to do it, print any of them. If the given number is already divisible by 7, leave it unchanged.\n\nThe first line contains one integer t (1 ≤ t ≤ 990) — the number of test cases.\n\nThen the test cases follow, each test case consists of one line containing one integer n (10 ≤ n ≤ 999).\n\nFor each test case, print one integer without any leading zeroes — the result of your changes (i. e. the integer that is divisible by 7 and can be obtained by changing the minimum possible number of digits in n).\n\nIf there are multiple ways to apply changes, print any resulting number. If the given number is already divisible by 7, just print it.\n\nIn the first test case of the example, 42 is already divisible by 7, so there's no need to change it.\n\nIn the second test case of the example, there are multiple answers — 28, 21 or 63.\n\nIn the third test case of the example, other possible answers are 357, 371 and 378. Note that you cannot print 077 or 77.\n\nInput:\n```\n34223377\n```\n\nOutput:\n```\n42\n28\n777\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 990) — the number of test cases.\n\nThen the test cases follow, each test case consists of one line containing one integer n (10 ≤ n ≤ 999).",
+    "output": "For each test case, print one integer without any leading zeroes — the result of your changes (i. e. the integer that is divisible by 7 and can be obtained by changing the minimum possible number of digits in n).\n\nIf there are multiple ways to apply changes, print any resulting number. If the given number is already divisible by 7, just print it.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "*800"
+    ],
+    "rating": 800
+}

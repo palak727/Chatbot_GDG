@@ -1,0 +1,18 @@
+{
+    "id": "1781B",
+    "contest_id": 1781,
+    "problem_letter": "B",
+    "title": "B. Going to the Cinema",
+    "statement": "A company of n people is planning a visit to the cinema. Every person can either go to the cinema or not. That depends on how many other people will go. Specifically, every person i said: \"I want to go to the cinema if and only if at least a_i other people will go, not counting myself\". That means that person i will become sad if:\n\nIn how many ways can a set of people going to the cinema be chosen so that nobody becomes sad?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of people in the company.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n - 1) — integers from peoples' claims.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the number of different ways to choose a set of people going to the cinema so that nobody becomes sad.\n\nIn the first test case, both people want to go to the cinema if and only if the other person goes. There are two valid options: either both people go, or neither of them goes. However, if just one of them goes, both will be sad.\n\nIn the second test case, everyone has to go to the cinema. In any other case, someone will be sad.\n\nIn the third test case, there are three valid options: person number 2 goes to the cinema; or persons with indices 2, 3, 4, 7 go; or all eight people go.\n\nInput:\n```\n421 170 1 2 3 4 5 686 0 3 3 6 7 2 753 0 0 3 3\n```\n\nOutput:\n```\n2\n1\n3\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of people in the company.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n - 1) — integers from peoples' claims.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the number of different ways to choose a set of people going to the cinema so that nobody becomes sad.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

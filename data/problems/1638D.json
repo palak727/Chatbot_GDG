@@ -1,0 +1,19 @@
+{
+    "id": "1638D",
+    "contest_id": 1638,
+    "problem_letter": "D",
+    "title": "D. Big Brush",
+    "statement": "You found a painting on a canvas of size n × m. The canvas can be represented as a grid with n rows and m columns. Each cell has some color. Cell (i, j) has color c_{i,j}.\n\nNear the painting you also found a brush in the shape of a 2 × 2 square, so the canvas was surely painted in the following way: initially, no cell was painted. Then, the following painting operation has been performed some number of times:\n\nAll cells must be painted at least once. A cell can be painted multiple times. In this case, its final color will be the last one.\n\nFind any sequence of at most nm operations that could have led to the painting you found or state that it's impossible.\n\nThe first line of input contains two integers n and m (2 ≤ n, m ≤ 1000) — the dimensions of the canvas.\n\nOn the i-th of the next n lines of input, there will be m integers. The j-th of them is a_{i,j} (1 ≤ a_{i,j} ≤ nm) — the color of cell (i, j).\n\nIf there is no solution, print a single integer -1.\n\nOtherwise, on the first line, print one integer q (1 ≤ q ≤ nm) — the number of operations.\n\nNext, print the operations in order. On the k-th of the next q lines, print three integers i, j, c (1 ≤ i < n, 1 ≤ j < m, 1 ≤ c ≤ nm) — the description of the k-th operation.\n\nIf there are multiple solutions, print any.\n\nIn the first test case, the solution is not unique. Here's one of them:\n\nIn the second test case, there is no way one could obtain the given painting, thus the answer is -1.\n\nInput:\n```\n4 4\n5 5 3 3\n1 1 5 3\n2 2 5 4\n2 2 4 4\n```\n\nOutput:\n```\n6\n1 3 3\n3 3 4\n2 2 5\n1 1 5\n2 1 1\n3 1 2\n```\n\nInput:\n```\n3 4\n1 1 1 1\n2 2 3 1\n2 2 1 1\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line of input contains two integers n and m (2 ≤ n, m ≤ 1000) — the dimensions of the canvas.\n\nOn the i-th of the next n lines of input, there will be m integers. The j-th of them is a_{i,j} (1 ≤ a_{i,j} ≤ nm) — the color of cell (i, j).",
+    "output": "If there is no solution, print a single integer -1.\n\nOtherwise, on the first line, print one integer q (1 ≤ q ≤ nm) — the number of operations.\n\nNext, print the operations in order. On the k-th of the next q lines, print three integers i, j, c (1 ≤ i < n, 1 ≤ j < m, 1 ≤ c ≤ nm) — the description of the k-th operation.\n\nIf there are multiple solutions, print any.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "implementation",
+        "*2000"
+    ],
+    "rating": 2000
+}

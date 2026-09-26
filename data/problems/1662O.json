@@ -1,0 +1,18 @@
+{
+    "id": "1662O",
+    "contest_id": 1662,
+    "problem_letter": "O",
+    "title": "O. Circular Maze",
+    "statement": "You are given a circular maze such as the ones shown in the figures.\n\nAngles are measured in degrees; the angle 0 corresponds to the upward pointing direction; and angles increase clockwise (hence the east direction corresponds to the angle 90).\n\nEach test contains multiple test cases. The first line contains an integer t (1≤ t≤ 20) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of walls.\n\nEach of the following n lines each contains a character (C for circular, and S for straight) and three integers:\n\nIt is guaranteed that circular walls do not overlap (but two circular walls may intersect at one or two points), and that straight walls do not overlap (but two straight walls may intersect at one point). However, circular and straight walls can intersect arbitrarily.\n\nFor each test case, print YES if the maze can be solved and NO otherwise.\n\nThe two sample test cases correspond to the two mazes in the picture.\n\nInput:\n```\n2\n5\nC 1 180 90\nC 5 250 230\nC 10 150 140\nC 20 185 180\nS 1 20 180\n6\nC 1 180 90\nC 5 250 230\nC 10 150 140\nC 20 185 180\nS 1 20 180\nS 5 10 0\n```\n\nOutput:\n```\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1≤ t≤ 20) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of walls.\n\nEach of the following n lines each contains a character (C for circular, and S for straight) and three integers:\n\nIt is guaranteed that circular walls do not overlap (but two circular walls may intersect at one or two points), and that straight walls do not overlap (but two straight walls may intersect at one point). However, circular and straight walls can intersect arbitrarily.",
+    "output": "For each test case, print YES if the maze can be solved and NO otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "graphs",
+        "implementation"
+    ],
+    "rating": null
+}

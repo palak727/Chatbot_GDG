@@ -1,0 +1,17 @@
+{
+    "id": "1630A",
+    "contest_id": 1630,
+    "problem_letter": "A",
+    "title": "A. And Matching",
+    "statement": "You are given a set of n (n is always a power of 2) elements containing all integers 0, 1, 2, …, n-1 exactly once.\n\nFind n/2 pairs of elements such that:\n\nIf there are many solutions, print any of them, if there is no solution, print -1 instead.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 400) — the number of test cases. Description of the test cases follows.\n\nEach test case consists of a single line with two integers n and k (4 ≤ n ≤ 2^16, n is a power of 2, 0 ≤ k ≤ n-1).\n\nThe sum of n over all test cases does not exceed 2^16. All test cases in each individual input will be pairwise different.\n\nFor each test case, if there is no solution, print a single line with the integer -1.\n\nOtherwise, print n/2 lines, the i-th of them must contain a_i and b_i, the elements in the i-th pair.\n\nIf there are many solutions, print any of them. Print the pairs and the elements in the pairs in any order.\n\nIn the first test, (0&3)+(1&2) = 0.\n\nIn the second test, (0&2)+(1&3) = 1.\n\nIn the third test, (0&1)+(2&3) = 2.\n\nIn the fourth test, there is no solution.\n\nInput:\n```\n44 04 14 24 3\n```\n\nOutput:\n```\n0 3\n1 2\n0 2\n1 3\n0 1\n2 3\n-1\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 400) — the number of test cases. Description of the test cases follows.\n\nEach test case consists of a single line with two integers n and k (4 ≤ n ≤ 2^16, n is a power of 2, 0 ≤ k ≤ n-1).\n\nThe sum of n over all test cases does not exceed 2^16. All test cases in each individual input will be pairwise different.",
+    "output": "For each test case, if there is no solution, print a single line with the integer -1.\n\nOtherwise, print n/2 lines, the i-th of them must contain a_i and b_i, the elements in the i-th pair.\n\nIf there are many solutions, print any of them. Print the pairs and the elements in the pairs in any order.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "*1500"
+    ],
+    "rating": 1500
+}

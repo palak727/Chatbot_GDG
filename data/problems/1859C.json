@@ -1,0 +1,19 @@
+{
+    "id": "1859C",
+    "contest_id": 1859,
+    "problem_letter": "C",
+    "title": "C. Another Permutation Problem",
+    "statement": "Andrey is just starting to come up with problems, and it's difficult for him. That's why he came up with a strange problem about permutations^dagger and asks you to solve it. Can you do it?\n\nLet's call the cost of a permutation p of length n the value of the expression:\n\nFind the maximum cost among all permutations of length n.\n\n^daggerA permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 30) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 250) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.\n\nFor each test case, output a single integer — the maximum cost among all permutations of length n.\n\nIn the first test case, the permutation with the maximum cost is [2, 1]. The cost is equal to 2·1 + 1·2 - max (2·1, 1·2)= 2 + 2 - 2 = 2.\n\nIn the second test case, the permutation with the maximum cost is [1, 2, 4, 3]. The cost is equal to 1·1 + 2·2 + 4·3 + 3·4 - 4·3 = 17.\n\nInput:\n```\n52431020\n```\n\nOutput:\n```\n2\n17\n7\n303\n2529\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 30) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 250) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.",
+    "output": "For each test case, output a single integer — the maximum cost among all permutations of length n.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

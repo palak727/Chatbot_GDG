@@ -1,0 +1,18 @@
+{
+    "id": "1747E",
+    "contest_id": 1747,
+    "problem_letter": "E",
+    "title": "E. List Generation",
+    "statement": "For given integers n and m, let's call a pair of arrays a and b of integers good, if they satisfy the following conditions:\n\nFind the sum of |a| over all good pairs of arrays (a,b). Since the answer can be very large, output it modulo 10^9 + 7.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 5·10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^6 and the sum of m over all test cases does not exceed 5·10^6.\n\nFor each test case, output a single integer — the sum of |a| over all good pairs of arrays (a,b) modulo 10^9 + 7.\n\nIn the first testcase, the good pairs of arrays are\n\nHence the sum of the lengths would be 2 + 3 + 3 = 8.\n\nInput:\n```\n41 11 22 2100 100\n```\n\nOutput:\n```\n8\n26\n101\n886336572\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 5·10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^6 and the sum of m over all test cases does not exceed 5·10^6.",
+    "output": "For each test case, output a single integer — the sum of |a| over all good pairs of arrays (a,b) modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1703A",
+    "contest_id": 1703,
+    "problem_letter": "A",
+    "title": "A. YES or YES?",
+    "statement": "There is a string s of length 3, consisting of uppercase and lowercase English letters. Check if it is equal to \"YES\" (without quotes), where each letter can be in any case. For example, \"yES\", \"Yes\", \"yes\" are all allowable.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^3) — the number of testcases.\n\nThe description of each test consists of one line containing one string s consisting of three characters. Each character of s is either an uppercase or lowercase English letter.\n\nFor each test case, output \"YES\" (without quotes) if s satisfies the condition, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nThe first five test cases contain the strings \"YES\", \"yES\", \"yes\", \"Yes\", \"YeS\". All of these are equal to \"YES\", where each character is either uppercase or lowercase.\n\nInput:\n```\n10YESyESyesYesYeSNooorZyEzYasXES\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^3) — the number of testcases.\n\nThe description of each test consists of one line containing one string s consisting of three characters. Each character of s is either an uppercase or lowercase English letter.",
+    "output": "For each test case, output \"YES\" (without quotes) if s satisfies the condition, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

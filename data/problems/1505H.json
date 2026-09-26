@@ -1,0 +1,16 @@
+{
+    "id": "1505H",
+    "contest_id": 1505,
+    "problem_letter": "H",
+    "title": "H. L BREAK into program",
+    "statement": "Hack the program and get the password hidden in it.\n\nThis program has only one test, and it's empty (it doesn't give your program anything to read).\n\nOutput the password recovered from the program. The password is case sensitive.",
+    "input": "This program has only one test, and it's empty (it doesn't give your program anything to read).",
+    "output": "Output the password recovered from the program. The password is case sensitive.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*2500"
+    ],
+    "rating": 2500
+}

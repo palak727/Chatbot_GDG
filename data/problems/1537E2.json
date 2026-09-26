@@ -1,0 +1,22 @@
+{
+    "id": "1537E2",
+    "contest_id": 1537,
+    "problem_letter": "E2",
+    "title": "E2. Erase and Extend (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference is the constraints on n and k. You can make hacks only if all versions of the problem are solved.\n\nYou have a string s, and you can do two types of operations on it:\n\nYou can use each operation any number of times (possibly none).\n\nYour task is to find the lexicographically smallest string of length exactly k that can be obtained by doing these operations on string s.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nThe first line contains two integers n, k (1 ≤ n, k ≤ 5·10^5) — the length of the original string s and the length of the desired string.\n\nThe second line contains the string s, consisting of n lowercase English letters.\n\nPrint the lexicographically smallest string of length k that can be obtained by doing the operations on string s.\n\nIn the first test, it is optimal to make one duplication: \"dbcadabc\" → \"dbcadabcdbcadabc\".\n\nIn the second test it is optimal to delete the last 3 characters, then duplicate the string 3 times, then delete the last 3 characters to make the string have length k.\n\n\"abcd\" → \"abc\" → \"ab\" → \"a\" → \"aa\" → \"aaaa\" → \"aaaaaaaa\" → \"aaaaaaa\" → \"aaaaaa\" → \"aaaaa\".\n\nInput:\n```\n8 16\ndbcadabc\n```\n\nOutput:\n```\ndbcadabcdbcadabc\n```\n\nInput:\n```\n4 5\nabcd\n```\n\nOutput:\n```\naaaaa\n```",
+    "input": "The first line contains two integers n, k (1 ≤ n, k ≤ 5·10^5) — the length of the original string s and the length of the desired string.\n\nThe second line contains the string s, consisting of n lowercase English letters.",
+    "output": "Print the lexicographically smallest string of length k that can be obtained by doing the operations on string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "hashing",
+        "string suffix structures",
+        "strings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1975E",
+    "contest_id": 1975,
+    "problem_letter": "E",
+    "title": "E. Chain Queries",
+    "statement": "You are given a tree of n vertices numbered from 1 to n. Initially, all vertices are colored white or black.\n\nYou are asked to perform q queries:\n\nAfter each query, you should answer whether all the black vertices form a chain. That is, there exist two black vertices such that the simple path between them passes through all the black vertices and only the black vertices. Specifically, if there is only one black vertex, they form a chain. If there are no black vertices, they do not form a chain.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n,q≤ 2·10^5).\n\nThe second line of each test case contains n integers c_1,c_2,…,c_n (c_i ∈ { mathtt0, mathtt1 }) — the initial color of the vertices. c_i denotes the color of vertex i where mathtt0 denotes the color white, and mathtt1 denotes the color black.\n\nThen n - 1 lines follow, each line contains two integers x_i and y_i (1 ≤ x_i,y_i ≤ n), indicating an edge between vertices x_i and y_i. It is guaranteed that these edges form a tree.\n\nThe following q lines each contain an integer u_i (1 ≤ u_i ≤ n), indicating the color of vertex u_i needs to be toggled.\n\nIt is guaranteed that the sum of n and q over all test cases respectively does not exceed 2·10^5.\n\nFor each query, output \"Yes\" if the black vertices form a chain, and output \"No\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).\n\nIn the second test case, the color of the vertices are as follows:\n\nThe initial tree:\n\nThe first query toggles the color of vertex 4:\n\nThe second query toggles the color of vertex 3:\n\nThe third query toggles the color of vertex 2:\n\nThe fourth query toggles the color of vertex 5:\n\nInput:\n```\n22 11 01 215 41 0 0 0 01 21 31 53 44325\n```\n\nOutput:\n```\nNo\nNo\nYes\nYes\nNo\n```\n\nInput:\n```\n45 31 1 1 1 13 52 53 41 51114 40 0 0 01 22 31 412321 1111 101\n```\n\nOutput:\n```\nYes\nNo\nYes\nYes\nYes\nYes\nNo\nNo\nYes\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n,q≤ 2·10^5).\n\nThe second line of each test case contains n integers c_1,c_2,…,c_n (c_i ∈ { mathtt0, mathtt1 }) — the initial color of the vertices. c_i denotes the color of vertex i where mathtt0 denotes the color white, and mathtt1 denotes the color black.\n\nThen n - 1 lines follow, each line contains two integers x_i and y_i (1 ≤ x_i,y_i ≤ n), indicating an edge between vertices x_i and y_i. It is guaranteed that these edges form a tree.\n\nThe following q lines each contain an integer u_i (1 ≤ u_i ≤ n), indicating the color of vertex u_i needs to be toggled.\n\nIt is guaranteed that the sum of n and q over all test cases respectively does not exceed 2·10^5.",
+    "output": "For each query, output \"Yes\" if the black vertices form a chain, and output \"No\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "implementation",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

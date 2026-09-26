@@ -1,0 +1,17 @@
+{
+    "id": "1999A",
+    "contest_id": 1999,
+    "problem_letter": "A",
+    "title": "A. A+B Again?",
+    "statement": "Given a two-digit positive integer n, find the sum of its digits.\n\nThe first line contains an integer t (1 ≤ t ≤ 90) — the number of test cases.\n\nThe only line of each test case contains a single two-digit positive integer n (10 ≤ n ≤ 99).\n\nFor each test case, output a single integer — the sum of the digits of n.\n\nInput:\n```\n87721403419841099\n```\n\nOutput:\n```\n14\n3\n4\n7\n10\n12\n1\n18\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 90) — the number of test cases.\n\nThe only line of each test case contains a single two-digit positive integer n (10 ≤ n ≤ 99).",
+    "output": "For each test case, output a single integer — the sum of the digits of n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

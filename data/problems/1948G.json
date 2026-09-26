@@ -1,0 +1,20 @@
+{
+    "id": "1948G",
+    "contest_id": 1948,
+    "problem_letter": "G",
+    "title": "G. MST with Matching",
+    "statement": "You are given an undirected connected graph on n vertices. Each edge of this graph has a weight; the weight of the edge connecting vertices i and j is w_{i,j} (or w_{i,j} = 0 if there is no edge between i and j). All weights are positive integers.\n\nYou are also given a positive integer c.\n\nYou have to build a spanning tree of this graph; i. e. choose exactly (n-1) edges of this graph in such a way that every vertex can be reached from every other vertex by traversing some of the chosen edges. The cost of the spanning tree is the sum of two values:\n\nFind any spanning tree with the minimum cost. Since the graph is connected, there exists at least one spanning tree.\n\nThe first line contains two integers n and c (2 ≤ n ≤ 20; 1 ≤ c ≤ 10^6).\n\nThen n lines follow. The i-th of them contains n integers w_{i,1}, w_{i,2}, …, w_{i,n} (0 ≤ w_{i,j} ≤ 10^6), where w_{i,j} denotes the weight of the edge between i and j (or w_{i,j} = 0 if there is no such edge).\n\nAdditional constraints on the input:\n\nPrint one integer — the minimum cost of a spanning tree of the given graph.\n\nIn the first example, the minimum cost spanning tree consists of edges (1, 3), (2, 3) and (3, 4). The maximum matching for it is 1.\n\nIn the second example, the minimum cost spanning tree consists of edges (1, 2), (2, 3) and (3, 4). The maximum matching for it is 2.\n\nInput:\n```\n4 100 1 8 01 0 1 08 1 0 20 0 2 0\n```\n\nOutput:\n```\n21\n```\n\nInput:\n```\n4 50 1 8 01 0 1 08 1 0 20 0 2 0\n```\n\nOutput:\n```\n14\n```",
+    "input": "The first line contains two integers n and c (2 ≤ n ≤ 20; 1 ≤ c ≤ 10^6).\n\nThen n lines follow. The i-th of them contains n integers w_{i,1}, w_{i,2}, …, w_{i,n} (0 ≤ w_{i,j} ≤ 10^6), where w_{i,j} denotes the weight of the edge between i and j (or w_{i,j} = 0 if there is no such edge).\n\nAdditional constraints on the input:",
+    "output": "Print one integer — the minimum cost of a spanning tree of the given graph.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dsu",
+        "graph matchings",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

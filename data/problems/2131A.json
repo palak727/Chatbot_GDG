@@ -1,0 +1,16 @@
+{
+    "id": "2131A",
+    "contest_id": 2131,
+    "problem_letter": "A",
+    "title": "A. Lever",
+    "statement": "In Divergent Universe, The Lever iterates itself given two arrays a and b of length n. In each iteration, The Lever will do the following:\n\nAfter each iteration, the Lever will check if step 1 is ignored, and if so, it will end its iteration.\n\nYou're given the two arrays. Find the number of iterations that the Lever does. It can be shown this number is fixed over all possibilities of random indices that The Lever can choose for each step.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10).\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10).\n\nFor each test case, output one integer — the number of iterations that the Lever does.\n\nIn the first sample case:\n\nIn the first iteration, the Lever decreases a_1 by 1 and increases a_2 by 1, and a becomes [6,4].\n\nIn the second iteration, the Lever decreases a_1 by 1 and increases a_2 by 1, and a becomes [5,5].\n\nIn the third iteration, the Lever increases a_2 by 1, and a becomes [5,6]. Since it fails to decrease an element, its iteration ends. Therefore, the answer is 3.\n\nIn the second sample case, the Lever does nothing in its first iteration, and thus it does only one iteration.\n\nInput:\n```\n427 35 633 1 43 1 4110161 1 4 5 1 41 9 1 9 8 1\n```\n\nOutput:\n```\n3\n1\n10\n7\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10).\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10).",
+    "output": "For each test case, output one integer — the number of iterations that the Lever does.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

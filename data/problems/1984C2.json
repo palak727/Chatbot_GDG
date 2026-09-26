@@ -1,0 +1,19 @@
+{
+    "id": "1984C2",
+    "contest_id": 1984,
+    "problem_letter": "C2",
+    "title": "C2. Magnitude (Hard Version)",
+    "statement": "The two versions of the problem are different. You may want to read both versions. You can make hacks only if both versions are solved.\n\nYou are given an array a of length n. Start with c = 0. Then, for each i from 1 to n (in increasing order) do exactly one of the following:\n\nLet the maximum final value of c after the procedure described above be equal to k. Find the number of unique procedures that result in c = k. Two procedures are different if at any index i, one procedure chose option 1 and another chose option 2, even if the value of c is equal for both procedures after that turn.\n\nSince the answer may be large, output it modulo 998,244,353.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nThe sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output a single integer — the number of unique procedures that result in c = k, modulo 998,244,353.\n\nIn the first test case, it can be shown that our maximal final value of c is 3. There are 12 ways to achieve this because in order to get 3, we have to take absolute value at indices 2 or 4, or both, resulting in 3 ways. For the other two indices, it doesn't change the value whether we take absolute value or not, so we have 2·2 = 4 ways for them. In total, we have 3·4 = 12 ways.\n\nIn the second test case, taking the absolute value will never change anything, so we can either take absolute value or not, for every index. This gives us 2^8 = 256 possible ways.\n\nInput:\n```\n542 -5 3 -381 4 3 4 1 4 3 43-1 -2 -34-1000000000 1000000000 1000000000 100000000041 9 8 4\n```\n\nOutput:\n```\n12\n256\n1\n8\n16\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nThe sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output a single integer — the number of unique procedures that result in c = k, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

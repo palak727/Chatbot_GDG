@@ -1,0 +1,22 @@
+{
+    "id": "2071D2",
+    "contest_id": 2071,
+    "problem_letter": "D2",
+    "title": "D2. Infinite Sequence (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference between the versions is that in this version, l≤ r. You can hack only if you solved all versions of this problem.\n\nYou are given a positive integer n and the first n terms of an infinite binary sequence a, which is defined as follows:\n\nYour task is to compute the sum of elements in a given range [l, r]: a_l + a_{l + 1} + … + a_r.\n\n^{∗}oplus denotes the bitwise XOR operation.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, l, and r (1 ≤ n ≤ 2·10^5, 1 ≤ l ≤ r ≤ 10^18).\n\nThe second line contains n integers a_1, a_2, …, a_n (colorreda_i ∈ {0, 1}) — the first n terms of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the sum of elements in the given range.\n\nIn the first test case, the sequence a is equal to [underlinecolorred1, 1, 1, 0, 0, 1, 1, 1, 1, 1, …] where l = 1, and r = 1. The sum of elements in the range [1, 1] is equal to a_1 = 1.\n\nIn the second test case, the sequence a is equal to [colorred1, colorred0, underline1, 1, 1, 0, 0, 1, 1, 0, …] where l = 3, and r = 10. The sum of elements in the range [3, 10] is equal to a_3 + a_4 + … + a_10 = 1 + 1 + 1 + 0 + 0 + 1 + 1 + 0 = 5.\n\nInput:\n```\n91 1 112 3 101 03 5 251 1 11 234 56705 1111 100000000001 0 1 0 11 1000000000000000000 1000000000000000000110 41 870 1 1 1 1 1 1 1 0 012 65 691 0 0 0 0 1 0 1 0 1 1 013 46 540 1 0 1 1 1 1 1 1 0 1 1 1\n```\n\nOutput:\n```\n1\n5\n14\n0\n6666665925\n0\n32\n3\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, l, and r (1 ≤ n ≤ 2·10^5, 1 ≤ l ≤ r ≤ 10^18).\n\nThe second line contains n integers a_1, a_2, …, a_n (colorreda_i ∈ {0, 1}) — the first n terms of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the sum of elements in the given range.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

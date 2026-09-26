@@ -3,14 +3,15 @@
     "contest_id": 1008,
     "problem_letter": "A",
     "title": "A. Romaji",
-    "statement": "Vitya has just started learning Berlanese language. It is known that Berlanese uses the Latin alphabet. Vowel letters are \"a\", \"o\", \"u\", \"i\", and \"e\". Other letters are consonant.\nIn Berlanese, there has to be a vowel after every consonant, but there can be any letter after any vowel. The only exception is a consonant \"n\"; after this letter, there can be any letter (not only a vowel) or there can be no letter at all. For example, the words \"harakiri\", \"yupie\", \"man\", and \"nbo\" are Berlanese while the words \"horse\", \"king\", \"my\", and \"nz\" are not.\nHelp Vitya find out if a word s is Berlanese.\nThe first line of the input contains the string s consisting of |s| (1 |s| 100) lowercase Latin letters.\nPrint \"YES\" (without quotes) if there is a vowel after every consonant except \"n\", otherwise print \"NO\".\nYou can print each letter in any case (upper or lower).\nIn the first and second samples, a vowel goes after each consonant except \"n\", so the word is Berlanese.\nIn the third sample, the consonant \"c\" goes after the consonant \"r\", and the consonant \"s\" stands on the end, so the word is not Berlanese.",
-    "input": "The first line of the input contains the string s consisting of |s| (1≤q |s|≤q 100) lowercase Latin letters.",
-    "output": "Print \"YES\" (without quotes) if there is a vowel after every consonant except \"n\", otherwise print \"NO\".",
+    "statement": "Vitya has just started learning Berlanese language. It is known that Berlanese uses the Latin alphabet. Vowel letters are \"a\", \"o\", \"u\", \"i\", and \"e\". Other letters are consonant.\n\nIn Berlanese, there has to be a vowel after every consonant, but there can be any letter after any vowel. The only exception is a consonant \"n\"; after this letter, there can be any letter (not only a vowel) or there can be no letter at all. For example, the words \"harakiri\", \"yupie\", \"man\", and \"nbo\" are Berlanese while the words \"horse\", \"king\", \"my\", and \"nz\" are not.\n\nHelp Vitya find out if a word s is Berlanese.\n\nThe first line of the input contains the string s consisting of |s| (1≤ |s|≤ 100) lowercase Latin letters.\n\nPrint \"YES\" (without quotes) if there is a vowel after every consonant except \"n\", otherwise print \"NO\".\n\nYou can print each letter in any case (upper or lower).\n\nIn the first and second samples, a vowel goes after each consonant except \"n\", so the word is Berlanese.\n\nIn the third sample, the consonant \"c\" goes after the consonant \"r\", and the consonant \"s\" stands on the end, so the word is not Berlanese.\n\nInput:\n```\nsumimasen\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nninja\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\ncodeforces\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line of the input contains the string s consisting of |s| (1≤ |s|≤ 100) lowercase Latin letters.",
+    "output": "Print \"YES\" (without quotes) if there is a vowel after every consonant except \"n\", otherwise print \"NO\".\n\nYou can print each letter in any case (upper or lower).",
     "time_limit": "2 seconds",
     "memory_limit": "256 megabytes",
     "tags": [
         "implementation",
         "strings",
         "*900"
-    ]
+    ],
+    "rating": 900
 }

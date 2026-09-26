@@ -1,0 +1,17 @@
+{
+    "id": "1870F",
+    "contest_id": 1870,
+    "problem_letter": "F",
+    "title": "F. Lazy Numbers",
+    "statement": "You are given positive integers n and k. For each number from 1 to n, we write its representation in the number system with base k (without leading zeros) and then sort the resulting array in lexicographic order as strings. In the sorted array, we number the elements from 1 to n (i.e., indexing starts from 1). Find the number of values i such that the representation of number i is at the i-th position in the sorted array of representations.\n\nExamples of representations: 1 in any number system is equal to 1, 7 with k = 3 is written as 21, and 81 with k = 9 is written as 100.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. This is followed by a description of the test cases.\n\nThe only line of each test case contains integers n and k (1 ≤ n ≤ 10^18, 2 ≤ k ≤ 10^18).\n\nFor each test case, output a single integer — the number of values 1 ≤ i ≤ n such that the representation of number i in the number system with base k is at the i-th position after sorting.\n\nIn the first test case, for numbers 1 and 2, their representations are at positions 1 and 2 respectively.\n\nIn the second test case, the sorted array is [1_2 = 1, 10_2 = 2, 100_2 = 4, 11_2 = 3], and only the representations of numbers 1 and 2 are at the required positions.\n\nIn the third test case, the sorted array is [1_4 = 1, 10_4 = 4, 11_4 = 5, 12_4 = 6, 2_4 = 2, 3_4 = 3], and only the number 1 is at its position.\n\nInput:\n```\n82 24 26 433 2532 13780011804570805480 3788366364720306464627 4702032149561577293940402103595405 2\n```\n\nOutput:\n```\n2\n2\n1\n3\n1\n3789\n1\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. This is followed by a description of the test cases.\n\nThe only line of each test case contains integers n and k (1 ≤ n ≤ 10^18, 2 ≤ k ≤ 10^18).",
+    "output": "For each test case, output a single integer — the number of values 1 ≤ i ≤ n such that the representation of number i in the number system with base k is at the i-th position after sorting.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

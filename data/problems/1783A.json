@@ -1,0 +1,18 @@
+{
+    "id": "1783A",
+    "contest_id": 1783,
+    "problem_letter": "A",
+    "title": "A. Make it Beautiful",
+    "statement": "An array a is called ugly if it contains at least one element which is equal to the sum of all elements before it. If the array is not ugly, it is beautiful.\n\nFor example:\n\nYou are given an array a such that 1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 100. You have to reorder the elements of a in such a way that the resulting array is beautiful. Note that you are not allowed to insert new elements or erase existing ones, you can only change the order of elements of a. You are allowed to keep the array a unchanged, if it is beautiful.\n\nThe first line contains one integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer n (2 ≤ n ≤ 50). The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 100).\n\nFor each test case, print the answer as follows:\n\nInput:\n```\n443 3 6 6210 1051 2 3 4 531 4 4\n```\n\nOutput:\n```\nYES\n3 6 3 6\nNO\nYES\n2 4 1 5 3\nYES\n1 4 4\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer n (2 ≤ n ≤ 50). The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 100).",
+    "output": "For each test case, print the answer as follows:",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

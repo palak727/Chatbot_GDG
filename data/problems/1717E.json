@@ -1,0 +1,17 @@
+{
+    "id": "1717E",
+    "contest_id": 1717,
+    "problem_letter": "E",
+    "title": "E. Madoka and The Best University",
+    "statement": "Madoka wants to enter to \"Novosibirsk State University\", but in the entrance exam she came across a very difficult task:\n\nGiven an integer n, it is required to calculate ∑lcm(c, gcd(a, b)), for all triples of positive integers (a, b, c), where a + b + c = n.\n\nIn this problem gcd(x, y) denotes the greatest common divisor of x and y, and lcm(x, y) denotes the least common multiple of x and y.\n\nSolve this problem for Madoka and help her to enter to the best university!\n\nThe first and the only line contains a single integer n (3 ≤ n ≤ 10^5).\n\nPrint exactly one interger — ∑lcm(c, gcd(a, b)). Since the answer can be very large, then output it modulo 10^9 + 7.\n\nIn the first example, there is only one suitable triple (1, 1, 1). So the answer is lcm(1, gcd(1, 1)) = lcm(1, 1) = 1.\n\nIn the second example, lcm(1, gcd(3, 1)) + lcm(1, gcd(2, 2)) + lcm(1, gcd(1, 3)) + lcm(2, gcd(2, 1)) + lcm(2, gcd(1, 2)) + lcm(3, gcd(1, 1)) = lcm(1, 1) + lcm(1, 2) + lcm(1, 1) + lcm(2, 1) + lcm(2, 1) + lcm(3, 1) = 1 + 2 + 1 + 2 + 2 + 3 = 11\n\nInput:\n```\n3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n69228\n```\n\nOutput:\n```\n778304278\n```",
+    "input": "The first and the only line contains a single integer n (3 ≤ n ≤ 10^5).",
+    "output": "Print exactly one interger — ∑lcm(c, gcd(a, b)). Since the answer can be very large, then output it modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

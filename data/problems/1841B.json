@@ -1,0 +1,16 @@
+{
+    "id": "1841B",
+    "contest_id": 1841,
+    "problem_letter": "B",
+    "title": "B. Keep it Beautiful",
+    "statement": "The array [a_1, a_2, …, a_k] is called beautiful if it is possible to remove several (maybe zero) elements from the beginning of the array and insert all these elements to the back of the array in the same order in such a way that the resulting array is sorted in non-descending order.\n\nIn other words, the array [a_1, a_2, …, a_k] is beautiful if there exists an integer i ∈ [0, k-1] such that the array [a_{i+1}, a_{i+2}, …, a_{k-1}, a_k, a_1, a_2, …, a_i] is sorted in non-descending order.\n\nFor example:\n\nNote that any array consisting of zero elements or one element is beautiful.\n\nYou are given an array a, which is initially empty. You have to process q queries to it. During the i-th query, you will be given one integer x_i, and you have to do the following:\n\nAfter each query, report whether you appended the given integer x_i, or not.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries. The second line contains q integers x_1, x_2, …, x_q (0 ≤ x_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of q over all test cases does not exceed 2·10^5).\n\nFor each test case, print one string consisting of exactly q characters. The i-th character of the string should be 1 if you appended the integer during the i-th query; otherwise, it should be 0.\n\nConsider the first test case of the example. Initially, the array is [].\n\nInput:\n```\n393 7 7 9 2 4 6 3 451 1 1 1 153 2 1 2 3\n```\n\nOutput:\n```\n111110010\n11111\n11011\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries. The second line contains q integers x_1, x_2, …, x_q (0 ≤ x_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of q over all test cases does not exceed 2·10^5).",
+    "output": "For each test case, print one string consisting of exactly q characters. The i-th character of the string should be 1 if you appended the integer during the i-th query; otherwise, it should be 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

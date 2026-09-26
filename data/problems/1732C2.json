@@ -1,0 +1,21 @@
+{
+    "id": "1732C2",
+    "contest_id": 1732,
+    "problem_letter": "C2",
+    "title": "C2. Sheikh (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference is that in this version q = n.\n\nYou are given an array of integers a_1, a_2, …, a_n.\n\nThe cost of a subsegment of the array [l, r], 1 ≤ l ≤ r ≤ n, is the value f(l, r) = sum(l, r) - xor(l, r), where sum(l, r) = a_l + a_{l+1} + … + a_r, and xor(l, r) = a_l oplus a_{l+1} oplus … oplus a_r (oplus stands for bitwise XOR).\n\nYou will have q queries. Each query is given by a pair of numbers L_i, R_i, where 1 ≤ L_i ≤ R_i ≤ n. You need to find the subsegment [l, r], L_i ≤ l ≤ r ≤ R_i, with maximum value f(l, r). If there are several answers, then among them you need to find a subsegment with the minimum length, that is, the minimum value of r - l + 1.\n\nEach test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 10^5, q = n) — the length of the array and the number of queries.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — array elements.\n\ni-th of the next q lines of each test case contains two integers L_i and R_i (1 ≤ L_i ≤ R_i ≤ n) — the boundaries in which we need to find the segment.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nIt is guaranteed that L_1 = 1 and R_1 = n.\n\nFor each test case print q pairs of numbers L_i ≤ l ≤ r ≤ R_i such that the value f(l, r) is maximum and among such the length r - l + 1 is minimum. If there are several correct answers, print any of them.\n\nIn all test cases, the first query is considered.\n\nIn the first test case, f(1, 1) = 0 - 0 = 0.\n\nIn the second test case, f(1, 1) = 5 - 5 = 0, f(2, 2) = 10 - 10 = 0. Note that f(1, 2) = (10 + 5) - (10 oplus 5) = 0, but we need to find a subsegment with the minimum length among the maximum values of f(l, r). So, only segments [1, 1] and [2, 2] are the correct answers.\n\nIn the fourth test case, f(2, 3) = (12 + 8) - (12 oplus 8) = 16.\n\nThere are two correct answers in the fifth test case, since f(2, 3) = f(3, 4) and their lengths are equal.\n\nInput:\n```\n61 101 12 25 101 22 23 30 2 41 31 22 34 40 12 8 31 41 32 42 35 521 32 32 32 101 51 41 32 53 57 70 1 0 1 0 1 01 73 62 51 44 72 62 7\n```\n\nOutput:\n```\n1 1\n1 1\n2 2\n1 1\n1 1\n2 2\n2 3\n2 3\n2 3\n2 3\n2 3\n2 3\n2 3\n2 3\n3 4\n2 4\n4 6\n2 4\n2 4\n4 6\n2 4\n2 4\n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 10^5, q = n) — the length of the array and the number of queries.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — array elements.\n\ni-th of the next q lines of each test case contains two integers L_i and R_i (1 ≤ L_i ≤ R_i ≤ n) — the boundaries in which we need to find the segment.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nIt is guaranteed that L_1 = 1 and R_1 = n.",
+    "output": "For each test case print q pairs of numbers L_i ≤ l ≤ r ≤ R_i such that the value f(l, r) is maximum and among such the length r - l + 1 is minimum. If there are several correct answers, print any of them.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

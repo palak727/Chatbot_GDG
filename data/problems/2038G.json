@@ -1,0 +1,18 @@
+{
+    "id": "2038G",
+    "contest_id": 2038,
+    "problem_letter": "G",
+    "title": "G. Guess One Character",
+    "statement": "This is an interactive problem. You have to use flush operation right after printing each line. For example, in C++ you should use the function fflush(stdout) or cout.flush(), in Java or Kotlin — System.out.flush(), and in Python — sys.stdout.flush().\n\nThe jury has a string s consisting of characters 0 and/or 1. The length of this string is n.\n\nYou can ask the following queries:\n\nYou have to guess at least one character in the string s by asking no more than 3 queries. Note that giving the answer does not count as a query.\n\nIn every test and in every test case, the string s is fixed beforehand.\n\nInitially, the jury program sends one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nAt the start of each test case, the jury program sends one integer n (2 ≤ n ≤ 50) — the length of the string.\n\nAfter that, your program can submit queries to the jury program by printing the following line (do not forget to flush the output after printing a line!):\n\nFor every query, the jury prints one integer on a separate line. It is either:\n\nTo submit the answer, your program should send a line in the following format (do not forget to flush the output after printing a line!):\n\nIf your guess is correct, the jury program will print one integer 1 on a separate line, indicating that you may proceed to the next test case (or terminate the program, if it was the last test case) and that the number of queries you have asked is reset. If it is not correct, the jury program will print one integer -1 on a separate line.\n\nAfter your program receives -1 as the response, it should immediately terminate. This will lead to your submission receiving the verdict \"Wrong Answer\". If your program does not terminate, the verdict of your submission is undefined.\n\nIn the example, there are 3 test cases: 101, 11 and 10. Note that everything after the // sign is a comment that explains which line means what in the interaction. The jury program won't print these comments in the actual problem, and you shouldn't print them. The empty lines are also added for your convenience, the jury program won't print them, and your solution should not print any empty lines.\n\nInput:\n```\n3     // 3 test cases\n3     // the length of the string is 3\n\n1     // 101 occurs once\n\n1     // guessed correctly\n2     // the length of the string is 2\n\n0     // 00 occurs zero times\n\n0     // 0 occurs zero times\n\n1     // guessed correctly\n2     // the length of the string is 2\n\n1     // 1 occurs once\n\n0     // 01 occurs zero times\n\n1     // guessed correctly\n```\n\nOutput:\n```\n1 101 // how many times 101 occurs\n\n0 2 0 // guess: s[2] is 0\n\n\n1 00  // how many times 00 occurs\n\n1 0   // how many times 0 occurs\n\n0 1 1 // guess: s[1] is 1\n\n\n1 1   // how many times 1 occurs\n\n1 01  // how many times 01 occurs\n\n0 2 0 // guess: s[2] is 0\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "*1900"
+    ],
+    "rating": 1900
+}

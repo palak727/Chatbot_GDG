@@ -1,0 +1,17 @@
+{
+    "id": "1695B",
+    "contest_id": 1695,
+    "problem_letter": "B",
+    "title": "B. Circle Game",
+    "statement": "Mike and Joe are playing a game with some stones. Specifically, they have n piles of stones of sizes a_1, a_2, …, a_n. These piles are arranged in a circle.\n\nThe game goes as follows. Players take turns removing some positive number of stones from a pile in clockwise order starting from pile 1. Formally, if a player removed stones from pile i on a turn, the other player removes stones from pile ((ibmod n) + 1) on the next turn.\n\nIf a player cannot remove any stones on their turn (because the pile is empty), they lose. Mike goes first.\n\nIf Mike and Joe play optimally, who will win?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of piles.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the size of the piles.\n\nFor each test case print the winner of the game, either \"Mike\" or \"Joe\" on its own line (without quotes).\n\nIn the first test case, Mike just takes all 37 stones on his first turn.\n\nIn the second test case, Joe can just copy Mike's moves every time. Since Mike went first, he will hit 0 on the first pile one move before Joe does so on the second pile.\n\nInput:\n```\n21372100 100\n```\n\nOutput:\n```\nMike\nJoe\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of piles.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the size of the piles.",
+    "output": "For each test case print the winner of the game, either \"Mike\" or \"Joe\" on its own line (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

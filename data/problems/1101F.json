@@ -1,0 +1,17 @@
+{
+    "id": "1101F",
+    "contest_id": 1101,
+    "problem_letter": "F",
+    "title": "F. Trucks and Cities",
+    "statement": "There are n cities along the road, which can be represented as a straight line. The i-th city is situated at the distance of a_i kilometers from the origin. All cities are situated in the same direction from the origin. There are m trucks travelling from one city to another.\n\nEach truck can be described by 4 integers: starting city s_i, finishing city f_i, fuel consumption c_i and number of possible refuelings r_i. The i-th truck will spend c_i litres of fuel per one kilometer.\n\nWhen a truck arrives in some city, it can be refueled (but refueling is impossible in the middle of nowhere). The i-th truck can be refueled at most r_i times. Each refueling makes truck's gas-tank full. All trucks start with full gas-tank.\n\nAll trucks will have gas-tanks of the same size V litres. You should find minimum possible V such that all trucks can reach their destinations without refueling more times than allowed.\n\nFirst line contains two integers n and m (2 ≤ n ≤ 400, 1 ≤ m ≤ 250000) — the number of cities and trucks.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9, a_i < a_{i+1}) — positions of cities in the ascending order.\n\nNext m lines contains 4 integers each. The i-th line contains integers s_i, f_i, c_i, r_i (1 ≤ s_i < f_i ≤ n, 1 ≤ c_i ≤ 10^9, 0 ≤ r_i ≤ n) — the description of the i-th truck.\n\nPrint the only integer — minimum possible size of gas-tanks V such that all trucks can reach their destinations.\n\nLet's look at queries in details:\n\nInput:\n```\n7 6\n2 5 7 10 14 15 17\n1 3 10 0\n1 7 12 7\n4 5 13 3\n4 7 10 1\n4 7 10 1\n1 5 11 2\n```\n\nOutput:\n```\n55\n```",
+    "input": "First line contains two integers n and m (2 ≤ n ≤ 400, 1 ≤ m ≤ 250000) — the number of cities and trucks.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9, a_i < a_{i+1}) — positions of cities in the ascending order.\n\nNext m lines contains 4 integers each. The i-th line contains integers s_i, f_i, c_i, r_i (1 ≤ s_i < f_i ≤ n, 1 ≤ c_i ≤ 10^9, 0 ≤ r_i ≤ n) — the description of the i-th truck.",
+    "output": "Print the only integer — minimum possible size of gas-tanks V such that all trucks can reach their destinations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "*2400"
+    ],
+    "rating": 2400
+}

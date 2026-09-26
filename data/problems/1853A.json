@@ -1,0 +1,18 @@
+{
+    "id": "1853A",
+    "contest_id": 1853,
+    "problem_letter": "A",
+    "title": "A. Desorting",
+    "statement": "Call an array a of length n sorted if a_1 ≤ a_2 ≤ … ≤ a_{n-1} ≤ a_n.\n\nNtarsis has an array a of length n.\n\nHe is allowed to perform one type of operation on it (zero or more times):\n\nThe values of a can be negative after an operation.\n\nDetermine the minimum operations needed to make a not sorted.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 500) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the values of array a.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 500.\n\nOutput the minimum number of operations needed to make the array not sorted.\n\nIn the first case, we can perform 1 operation to make the array not sorted:\n\nIn the second case, we can perform 2 operations to make the array not sorted:\n\nIt can be proven that 1 and 2 operations are the minimal numbers of operations in the first and second test cases, respectively.\n\nIn the third case, the array is already not sorted, so we perform 0 operations.\n\nInput:\n```\n421 141 8 10 1331 3 231 9 14\n```\n\nOutput:\n```\n1\n2\n0\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 500) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the values of array a.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 500.",
+    "output": "Output the minimum number of operations needed to make the array not sorted.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

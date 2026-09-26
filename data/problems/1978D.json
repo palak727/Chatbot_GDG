@@ -1,0 +1,19 @@
+{
+    "id": "1978D",
+    "contest_id": 1978,
+    "problem_letter": "D",
+    "title": "D. Elections",
+    "statement": "Elections are taking place in Berland. There are n candidates participating in the elections, numbered from 1 to n. The i-th candidate has a_i fans who will vote for him. Additionally, there are c people who are undecided about their favorite candidate, let's call them undecided. Undecided people will vote for the candidate with the lowest number.\n\nThe candidate who receives the maximum number of votes wins the elections, and if multiple candidates receive the same maximum number of votes, the candidate with the lowest number among them wins.\n\nYou found these elections too boring and predictable, so you decided to exclude some candidates from them. If you do not allow candidate number i to participate in the elections, all a_i of his fans will become undecided, and will vote for the candidate with the lowest number.\n\nYou are curious to find, for each i from 1 to n, the minimum number of candidates that need to be excluded from the elections for candidate number i to win the elections.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 2·10^5, 0 ≤ c ≤ 10^9) — the number of candidates in the elections and the number of undecided people.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the number of fans for each candidate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output n integers, the i-th of which should be equal to the minimum number of candidates that need to be excluded from the elections for candidate number i to win.\n\nIn the first test case:\n\nIn the second test case, candidate number 1 will win if candidate number 2 is not allowed to participate.\n\nInput:\n```\n53 12 0 32 30 105 35 4 3 2 14 53 10 7 16 02 2 2 3 3 3\n```\n\nOutput:\n```\n0 1 2\n1 0\n0 1 2 3 4\n1 0 2 3\n1 1 2 0 4 5\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 2·10^5, 0 ≤ c ≤ 10^9) — the number of candidates in the elections and the number of undecided people.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the number of fans for each candidate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n integers, the i-th of which should be equal to the minimum number of candidates that need to be excluded from the elections for candidate number i to win.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

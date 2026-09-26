@@ -1,0 +1,17 @@
+{
+    "id": "1520A",
+    "contest_id": 1520,
+    "problem_letter": "A",
+    "title": "A. Do Not Be Distracted!",
+    "statement": "Polycarp has 26 tasks. Each task is designated by a capital letter of the Latin alphabet.\n\nThe teacher asked Polycarp to solve tasks in the following way: if Polycarp began to solve some task, then he must solve it to the end, without being distracted by another task. After switching to another task, Polycarp cannot return to the previous task.\n\nPolycarp can only solve one task during the day. Every day he wrote down what task he solved. Now the teacher wants to know if Polycarp followed his advice.\n\nFor example, if Polycarp solved tasks in the following order: \"DDBBCCCBBEZ\", then the teacher will see that on the third day Polycarp began to solve the task 'B', then on the fifth day he got distracted and began to solve the task 'C', on the eighth day Polycarp returned to the task 'B'. Other examples of when the teacher is suspicious: \"BAB\", \"AABBCCDDEEBZZ\" and \"AAAAZAAAAA\".\n\nIf Polycarp solved the tasks as follows: \"FFGZZZY\", then the teacher cannot have any suspicions. Please note that Polycarp is not obligated to solve all tasks. Other examples of when the teacher doesn't have any suspicious: \"BA\", \"AFFFCC\" and \"YYYYY\".\n\nHelp Polycarp find out if his teacher might be suspicious.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000). Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 50) — the number of days during which Polycarp solved tasks.\n\nThe second line contains a string of length n, consisting of uppercase Latin letters, which is the order in which Polycarp solved the tasks.\n\nFor each test case output:\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES are all recognized as positive answer).\n\nInput:\n```\n5\n3\nABA\n11\nDDBBCCCBBEZ\n7\nFFGZZZY\n1\nZ\n2\nAB\n```\n\nOutput:\n```\nNO\nNO\nYES\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000). Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 50) — the number of days during which Polycarp solved tasks.\n\nThe second line contains a string of length n, consisting of uppercase Latin letters, which is the order in which Polycarp solved the tasks.",
+    "output": "For each test case output:\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES are all recognized as positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

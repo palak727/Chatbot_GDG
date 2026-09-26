@@ -1,0 +1,19 @@
+{
+    "id": "1718B",
+    "contest_id": 1718,
+    "problem_letter": "B",
+    "title": "B. Fibonacci Strings",
+    "statement": "In all schools in Buryatia, in the 1 class, everyone is told the theory of Fibonacci strings.\n\n\"A block is a subsegment of a string where all the letters are the same and are bounded on the left and right by the ends of the string or by letters other than the letters in the block. A string is called a Fibonacci string if, when it is divided into blocks, their lengths in the order they appear in the string form the Fibonacci sequence (f_0 = f_1 = 1, f_i = f_{i-2} + f_{i-1}), starting from the zeroth member of this sequence. A string is called semi-Fibonacci if it possible to reorder its letters to get a Fibonacci string.\"\n\nBurenka decided to enter the Buryat State University, but at the entrance exam she was given a difficult task. She was given a string consisting of the letters of the Buryat alphabet (which contains exactly k letters), and was asked if the given string is semi-Fibonacci. The string can be very long, so instead of the string, she was given the number of appearances of each letter (c_i for the i-th letter) in that string. Unfortunately, Burenka no longer remembers the theory of Fibonacci strings, so without your help she will not pass the exam.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The following is a description of the input data sets.\n\nThe first line of each test case contains one integer k (1 ≤ k ≤ 100) — the number of letters in the alphabet.\n\nThe second line of each test case contains k integers c_1, c_2, …, c_k (1 ≤ c_i ≤ 10^9) — the number of occurrences of each letter in the string.\n\nFor each test case print the string \"YES\" if the corresponding string is semi-Fibonacci, and \"NO\" if it is not.\n\nYou can print \"YES\" and \"NO\" in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" will be recognized as a positive answer).\n\nIn the first test case, a one-character string is semi-Fibonacci, being itself a Fibonacci string.\n\nIn the second test case, a string of two different characters is Fibonacci.\n\nIn the third test case, the string \"abb\" (let the first of the alphabet letter be a, the second letter b) is not a semi-Fibonacci string, since no permutation of its letters (\"abb\", \"bab\", and \"bba\") is a Fibonacci string.\n\nIn the fourth test case, two permutations of the letters of the string \"abaccac\" (the first letter is a, the second letter is b, the third letter is c) are Fibonacci strings — \"abaaccc\" and \"cbccaaa\".\n\nInput:\n```\n61121 121 233 1 327 5626 8 3 4 13 34\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The following is a description of the input data sets.\n\nThe first line of each test case contains one integer k (1 ≤ k ≤ 100) — the number of letters in the alphabet.\n\nThe second line of each test case contains k integers c_1, c_2, …, c_k (1 ≤ c_i ≤ 10^9) — the number of occurrences of each letter in the string.",
+    "output": "For each test case print the string \"YES\" if the corresponding string is semi-Fibonacci, and \"NO\" if it is not.\n\nYou can print \"YES\" and \"NO\" in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

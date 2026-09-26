@@ -1,0 +1,17 @@
+{
+    "id": "1906K",
+    "contest_id": 1906,
+    "problem_letter": "K",
+    "title": "K. Deck-Building Game",
+    "statement": "You are playing a deck-building game with your friend. There are N cards, numbered from 1 to N. Card i has the value of A_i.\n\nYou want to build two decks; one for you and one for your friend. A card cannot be inside both decks, and it is allowed to not use all N cards. It is also allowed for a deck to be empty, i.e. does not contain any cards.\n\nThe power of a deck is represented as the bitwise XOR of the value of the cards in the deck. The power of an empty deck is 0.\n\nThe game is balanced if both decks have the same power.\n\nDetermine the number of ways to build two decks such that the game is balanced. Two ways are considered different if one of the decks contains at least one different card. Since the answer can be very large, calculate the answer modulo 998,244,353.\n\nThe first line consists of an integer N (2 ≤ N ≤ 100,000).\n\nThe following line consists of N integers A_i (1 ≤ A_i ≤ 100,000).\n\nOutput an integer representing the number of ways to build two decks such that the game is balanced. Output the answer modulo 998,244,353.\n\nExplanation for the sample input/output #1\n\nDenote S and T as the set of cards in your deck and your friend's deck, respectively. There are 9 ways to build the decks such that the game is balanced.\n\nExplanation for the sample input/output #2\n\nThe only way to make the game balanced is to have both decks empty.\n\nExplanation for the sample input/output #3\n\nThere are 5 ways to build the decks such that the game is balanced.\n\nInput:\n```\n4\n16 12 4 8\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n1 2 4 8\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2\n1 1\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n6\n1 1 1 2 2 2\n```\n\nOutput:\n```\n169\n```",
+    "input": "The first line consists of an integer N (2 ≤ N ≤ 100,000).\n\nThe following line consists of N integers A_i (1 ≤ A_i ≤ 100,000).",
+    "output": "Output an integer representing the number of ways to build two decks such that the game is balanced. Output the answer modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "divide and conquer",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

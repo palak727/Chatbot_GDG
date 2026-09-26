@@ -1,0 +1,18 @@
+{
+    "id": "1966A",
+    "contest_id": 1966,
+    "problem_letter": "A",
+    "title": "A. Card Exchange",
+    "statement": "You have a hand of n cards, where each card has a number written on it, and a fixed integer k. You can perform the following operation any number of times:\n\nHere is one possible sequence of operations for the first example case, which has k=3:\n\nWhat is the minimum number of cards you can have in your hand at the end of this process?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 2 ≤ k ≤ 100) — the number of cards you have, and the number of cards you exchange during each operation, respectively.\n\nThe next line of each test case contains n integers c_1, c_2, … c_n (1 ≤ c_i ≤ 100) — the numbers written on your cards.\n\nFor each test case, output a single integer — the minimum number of cards you can have left in your hand after any number of operations.\n\nThe first example case corresponds to the picture above. The sequence of operations displayed there is optimal, so the answer is 2.\n\nIn the second example case, no operations can be performed, so the answer is 1.\n\nIn the fourth example case, you can repeatedly select 4 cards numbered with 1 and replace them with 3 cards numbered with 1, until there are 3 cards left.\n\nInput:\n```\n75 34 1 1 4 41 1077 24 2 1 100 5 2 310 41 1 1 1 1 1 1 1 1 15 23 8 1 48 76 210 20 30 10 20 406 310 20 30 10 20 40\n```\n\nOutput:\n```\n2\n1\n1\n3\n5\n1\n6\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 2 ≤ k ≤ 100) — the number of cards you have, and the number of cards you exchange during each operation, respectively.\n\nThe next line of each test case contains n integers c_1, c_2, … c_n (1 ≤ c_i ≤ 100) — the numbers written on your cards.",
+    "output": "For each test case, output a single integer — the minimum number of cards you can have left in your hand after any number of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

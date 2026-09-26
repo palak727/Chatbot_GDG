@@ -1,0 +1,19 @@
+{
+    "id": "1977D",
+    "contest_id": 1977,
+    "problem_letter": "D",
+    "title": "D. XORificator",
+    "statement": "You are given a binary (consisting only of 0s and 1s) n × m matrix. You are also given a XORificator, using which you can invert all the values in a chosen row (i.e. replace 0 with 1 and 1 with 0).\n\nA column in the matrix is considered special if it contains exactly one 1. Your task is to find the maximum number of columns that can be made special at the same time, and the set of rows the XORificator should be used on to achieve that.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 3·10^5, n·m ≤ 3·10^5).\n\nEach of the following n lines of the test case contains a binary string of length m.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 3·10^5.\n\nFor each test case, output two lines.\n\nIn the first line, output the maximum number of special columns that is possible to get simultaneously.\n\nIn the second line, output a binary string of length n, where the i-th character is 0, if you don't use the XORificator on the i-th row, and 1, if you use the XORificator on the i-th row.\n\nIf there are multiple valid XORificator configurations that achieve the optimal answer, you can output any of them.\n\nIn the first test case, you can use the XORificator on the second row to make the columns 2, 3, and 4 special.\n\nIn the second test case, the only column is already special, so you don't need to use the XORificator.\n\nInput:\n```\n53 41010011001001 111 102 500101101103 3101111000\n```\n\nOutput:\n```\n3\n010\n1\n0\n1\n1\n3\n00\n2\n010\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 3·10^5, n·m ≤ 3·10^5).\n\nEach of the following n lines of the test case contains a binary string of length m.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output two lines.\n\nIn the first line, output the maximum number of special columns that is possible to get simultaneously.\n\nIn the second line, output a binary string of length n, where the i-th character is 0, if you don't use the XORificator on the i-th row, and 1, if you use the XORificator on the i-th row.\n\nIf there are multiple valid XORificator configurations that achieve the optimal answer, you can output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "hashing",
+        "*2300"
+    ],
+    "rating": 2300
+}

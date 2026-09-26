@@ -1,0 +1,25 @@
+{
+    "id": "2127H",
+    "contest_id": 2127,
+    "problem_letter": "H",
+    "title": "H. 23 Rises Again",
+    "statement": "Kiarash is picking strawberries to take home...\n\nA graph is called candy if and only if the degree of every vertex in it is at most 2.\n\nYou are given a simple, undirected, and connected graph G of n≤ 30 vertices, with a special property: each vertex belongs to at most 5 simple cycles^{∗}.\n\nWhat is the maximum number of edges among all subgraphs^{†} of G that are candy?\n\n^{∗}A simple cycle is a connected subgraph such that each vertex has a degree of exactly 2\n\n^{†}A subgraph of G is a graph whose vertices and edges are subsets of G.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ 30, n-1 ≤ m ≤ (n(n-1))/2) — the number of vertices and the number of edges.\n\nThen m lines follow, the i-th line containing two integers u and v (1 ≤ u, v ≤ n) — the two vertices that the i-th edge connects.\n\nIt is guaranteed that the given graph is simple and connected, and each vertex belongs to at most 5 simple cycles.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 900.\n\nFor each test case, output a single integer — the maximum number of edges among all subgraphs that are candy graphs.\n\nIn the first test case, you can select the edges marked in the image below. On the other hand, you can't select all the edges because the degree of vertex 3 would exceed 2. So the maximum number of edges among all subgraphs that are candy is 3.\n\nIn the second test case, you can select the edges marked in the image below. It can be proven that any subgraph that is candy has at most 7 edges.\n\nIn the third test case, the image below shows one of the subgraphs with the maximum possible number of edges that is candy.\n\nInput:\n```\n34 41 21 32 33 47 101 21 31 42 43 44 54 65 65 76 79 101 21 33 43 74 54 65 67 87 98 9\n```\n\nOutput:\n```\n3\n7\n8\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ 30, n-1 ≤ m ≤ (n(n-1))/2) — the number of vertices and the number of edges.\n\nThen m lines follow, the i-th line containing two integers u and v (1 ≤ u, v ≤ n) — the two vertices that the i-th edge connects.\n\nIt is guaranteed that the given graph is simple and connected, and each vertex belongs to at most 5 simple cycles.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 900.",
+    "output": "For each test case, output a single integer — the maximum number of edges among all subgraphs that are candy graphs.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "flows",
+        "graph matchings",
+        "graphs",
+        "greedy",
+        "implementation",
+        "probabilities",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

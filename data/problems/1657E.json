@@ -1,0 +1,19 @@
+{
+    "id": "1657E",
+    "contest_id": 1657,
+    "problem_letter": "E",
+    "title": "E. Star MST",
+    "statement": "In this problem, we will consider complete undirected graphs consisting of n vertices with weighted edges. The weight of each edge is an integer from 1 to k.\n\nAn undirected graph is considered beautiful if the sum of weights of all edges incident to vertex 1 is equal to the weight of MST in the graph. MST is the minimum spanning tree — a tree consisting of n-1 edges of the graph, which connects all n vertices and has the minimum sum of weights among all such trees; the weight of MST is the sum of weights of all edges in it.\n\nCalculate the number of complete beautiful graphs having exactly n vertices and the weights of edges from 1 to k. Since the answer might be large, print it modulo 998244353.\n\nThe only line contains two integers n and k (2 ≤ n ≤ 250; 1 ≤ k ≤ 250).\n\nPrint one integer — the number of complete beautiful graphs having exactly n vertices and the weights of edges from 1 to k. Since the answer might be large, print it modulo 998244353.\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n4 4\n```\n\nOutput:\n```\n571\n```\n\nInput:\n```\n6 9\n```\n\nOutput:\n```\n310640163\n```\n\nInput:\n```\n42 13\n```\n\nOutput:\n```\n136246935\n```",
+    "input": "The only line contains two integers n and k (2 ≤ n ≤ 250; 1 ≤ k ≤ 250).",
+    "output": "Print one integer — the number of complete beautiful graphs having exactly n vertices and the weights of edges from 1 to k. Since the answer might be large, print it modulo 998244353.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "graph matchings",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

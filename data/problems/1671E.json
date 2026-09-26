@@ -1,0 +1,22 @@
+{
+    "id": "1671E",
+    "contest_id": 1671,
+    "problem_letter": "E",
+    "title": "E. Preorder",
+    "statement": "You are given a rooted tree of 2^n - 1 vertices. Every vertex of this tree has either 0 children, or 2 children. All leaves of this tree have the same distance from the root, and for every non-leaf vertex, one of its children is the left one, and the other child is the right one. Formally, you are given a perfect binary tree.\n\nThe vertices of the tree are numbered in the following order:\n\nEvery vertex of the tree has a letter written on it, either A or B. Let's define the character on the vertex x as s_x.\n\nLet the preorder string of some vertex x be defined in the following way:\n\nThe preorder string of the tree is the preorder string of its root.\n\nNow, for the problem itself...\n\nYou have to calculate the number of different strings that can be obtained as the preorder string of the given tree, if you are allowed to perform the following operation any number of times before constructing the preorder string of the tree:\n\nThe first line contains one integer n (2 ≤ n ≤ 18).\n\nThe second line contains a sequence of 2^n-1 characters s_1, s_2, …, s_{2^n-1}. Each character is either A or B. The characters are not separated by spaces or anything else.\n\nPrint one integer — the number of different strings that can be obtained as the preorder string of the given tree, if you can apply any number of operations described in the statement. Since it can be very large, print it modulo 998244353.\n\nInput:\n```\n4\nBAAAAAAAABBABAB\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n2\nBAA\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2\nABA\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\nAAB\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\nAAA\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 18).\n\nThe second line contains a sequence of 2^n-1 characters s_1, s_2, …, s_{2^n-1}. Each character is either A or B. The characters are not separated by spaces or anything else.",
+    "output": "Print one integer — the number of different strings that can be obtained as the preorder string of the given tree, if you can apply any number of operations described in the statement. Since it can be very large, print it modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "dsu",
+        "hashing",
+        "sortings",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

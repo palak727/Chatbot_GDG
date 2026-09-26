@@ -1,0 +1,18 @@
+{
+    "id": "1624F",
+    "contest_id": 1624,
+    "problem_letter": "F",
+    "title": "F. Interacdive Problem",
+    "statement": "This problem is interactive.\n\nWe decided to play a game with you and guess the number x (1 ≤ x < n), where you know the number n.\n\nYou can make queries like this:\n\nYou win if you guess the current number with no more than 10 queries.\n\nThe interaction begins by reading an integer n (2 < n ≤ 1000), which is written in the input data on its own line.\n\nThen you can make no more than 10 queries. To make a query, print on a separate line:\n\nPrint the answer, like the queries, on a separate line. The answer doesn't count in number of queries. To output it, use the following format:\n\nAfter that, your program should exit.\n\nYou have to use a flush operation right after printing each line. For example, in C++ you should use the function fflush(stdout), in Java — System.out.flush(), in Pascal — flush(output) and in Python — sys.stdout.flush().\n\nNote that the interactor is not responsive.\n\nTo make a hack, use the following format: a single line must contain two numbers x and n, separated by a space.\n\nIn the first sample initially x = 2. After the first query x = 3, lfloorx/nrfloor = 1.\n\nIn the second sample also initially x = 2. After the first query x = 3, lfloorx/nrfloor = 0. After the second query x = 4, lfloorx/nrfloor = 0. After the third query x=5, lfloorx/nrfloor = 1.\n\nInput:\n```\n3\n\n1\n```\n\nOutput:\n```\n+ 1\n\n! 3\n```\n\nInput:\n```\n5\n\n0\n\n0\n\n1\n```\n\nOutput:\n```\n+ 1\n\n+ 1\n\n+ 1\n\n! 5\n```\n\nInput:\n```\n10\n\n0\n\n0\n\n1\n\n2\n```\n\nOutput:\n```\n+ 2\n\n+ 2\n\n+ 3\n\n+ 8\n\n! 20\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "interactive",
+        "*2000"
+    ],
+    "rating": 2000
+}

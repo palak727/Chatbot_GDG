@@ -1,0 +1,17 @@
+{
+    "id": "1174C",
+    "contest_id": 1174,
+    "problem_letter": "C",
+    "title": "C. Ehab and a Special Coloring Problem",
+    "statement": "You're given an integer n. For every integer i from 2 to n, assign a positive integer a_i such that the following conditions hold:\n\nA pair of integers is called coprime if their greatest common divisor is 1.\n\nThe only line contains the integer n (2 ≤ n ≤ 10^5).\n\nPrint n-1 integers, a_2, a_3, …, a_n (1 ≤ a_i ≤ n).\n\nIf there are multiple solutions, print any of them.\n\nIn the first example, notice that 3 and 4 are coprime, so a_3 ≠ a_4. Also, notice that a=[1,2,3] satisfies the first condition, but it's not a correct answer because its maximal value is 3.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n1 2 1 \n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n2 1\n```",
+    "input": "The only line contains the integer n (2 ≤ n ≤ 10^5).",
+    "output": "Print n-1 integers, a_2, a_3, …, a_n (1 ≤ a_i ≤ n).\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

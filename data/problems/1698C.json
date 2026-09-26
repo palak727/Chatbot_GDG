@@ -1,0 +1,17 @@
+{
+    "id": "1698C",
+    "contest_id": 1698,
+    "problem_letter": "C",
+    "title": "C. 3SUM Closure",
+    "statement": "You are given an array a of length n. The array is called 3SUM-closed if for all distinct indices i, j, k, the sum a_i + a_j + a_k is an element of the array. More formally, a is 3SUM-closed if for all integers 1 ≤ i < j < k ≤ n, there exists some integer 1 ≤ l ≤ n such that a_i + a_j + a_k = a_l.\n\nDetermine if a is 3SUM-closed.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" (without quotes) if a is 3SUM-closed and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nIn the first test case, there is only one triple where i=1, j=2, k=3. In this case, a_1 + a_2 + a_3 = 0, which is an element of the array (a_2 = 0), so the array is 3SUM-closed.\n\nIn the second test case, a_1 + a_4 + a_5 = -1, which is not an element of the array. Therefore, the array is not 3SUM-closed.\n\nIn the third test case, a_i + a_j + a_k = 0 for all distinct i, j, k, and 0 is an element of the array, so the array is 3SUM-closed.\n\nInput:\n```\n43-1 0 151 -2 -2 1 -360 0 0 0 0 04-1 2 -3 4\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" (without quotes) if a is 3SUM-closed and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "*1300"
+    ],
+    "rating": 1300
+}

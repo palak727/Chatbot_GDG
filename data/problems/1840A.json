@@ -1,0 +1,18 @@
+{
+    "id": "1840A",
+    "contest_id": 1840,
+    "problem_letter": "A",
+    "title": "A. Cipher Shifer",
+    "statement": "There is a string a (unknown to you), consisting of lowercase Latin letters, encrypted according to the following rule into string s:\n\nYou are given string s, and you need to output the initial string a. In other words, you need to decrypt string s.\n\nNote that each string encrypted in this way is decrypted uniquely.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 100) — the length of the encrypted message.\n\nThe second line of each test case contains a string s of length n — the encrypted message obtained from some string a.\n\nFor each test case, output the decrypted message a on a separate line.\n\nIn the first encrypted message, the letter a is encrypted as aba, and the letter c is encrypted as cabac.\n\nIn the second encrypted message, only one letter q is encrypted as qzxcq.\n\nIn the third encrypted message, zero characters are added to each letter.\n\nInput:\n```\n38abacabac5qzxcq20ccooddeeffoorrcceess\n```\n\nOutput:\n```\nac\nq\ncodeforces\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 100) — the length of the encrypted message.\n\nThe second line of each test case contains a string s of length n — the encrypted message obtained from some string a.",
+    "output": "For each test case, output the decrypted message a on a separate line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

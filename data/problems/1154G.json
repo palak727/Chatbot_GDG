@@ -1,0 +1,19 @@
+{
+    "id": "1154G",
+    "contest_id": 1154,
+    "problem_letter": "G",
+    "title": "G. Minimum Possible LCM",
+    "statement": "You are given an array a consisting of n integers a_1, a_2, …, a_n.\n\nYour problem is to find such pair of indices i, j (1 ≤ i < j ≤ n) that lcm(a_i, a_j) is minimum possible.\n\nlcm(x, y) is the least common multiple of x and y (minimum positive number such that both x and y are divisors of this number).\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 10^6) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7), where a_i is the i-th element of a.\n\nPrint two integers i and j (1 ≤ i < j ≤ n) such that the value of lcm(a_i, a_j) is minimum among all valid pairs i, j. If there are multiple answers, you can print any.\n\nInput:\n```\n5\n2 4 8 3 6\n```\n\nOutput:\n```\n1 2\n```\n\nInput:\n```\n5\n5 2 11 3 7\n```\n\nOutput:\n```\n2 4\n```\n\nInput:\n```\n6\n2 5 10 1 10 2\n```\n\nOutput:\n```\n1 4\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 10^6) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7), where a_i is the i-th element of a.",
+    "output": "Print two integers i and j (1 ≤ i < j ≤ n) such that the value of lcm(a_i, a_j) is minimum among all valid pairs i, j. If there are multiple answers, you can print any.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

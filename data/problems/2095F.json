@@ -1,0 +1,16 @@
+{
+    "id": "2095F",
+    "contest_id": 2095,
+    "problem_letter": "F",
+    "title": "F. ⅓ оf а Рrоblеm",
+    "statement": "aqquad mathord4qquad mathord+qquad mathord-qquad mathord+qquad mathord-qquad mathord)qquad mathord2\n\nInput:\n```\n0 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "math"
+    ],
+    "rating": null
+}

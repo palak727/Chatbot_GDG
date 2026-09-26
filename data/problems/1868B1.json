@@ -1,0 +1,21 @@
+{
+    "id": "1868B1",
+    "contest_id": 1868,
+    "problem_letter": "B1",
+    "title": "B1. Candy Party (Easy Version)",
+    "statement": "This is the easy version of the problem. The only difference is that in this version everyone must give candies to exactly one person and receive candies from exactly one person. Note that a submission cannot pass both versions of the problem at the same time. You can make hacks only if both versions of the problem are solved.\n\nAfter Zhongkao examination, Daniel and his friends are going to have a party. Everyone will come with some candies.\n\nThere will be n people at the party. Initially, the i-th person has a_i candies. During the party, they will swap their candies. To do this, they will line up in an arbitrary order and everyone will do the following exactly once:\n\nDaniel likes fairness, so he will be happy if and only if everyone receives candies from exactly one person. Meanwhile, his friend Tom likes average, so he will be happy if and only if all the people have the same number of candies after all swaps.\n\nDetermine whether there exists a way to swap candies, so that both Daniel and Tom will be happy after the swaps.\n\nThe first line of input contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of people at the party.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9) — the number of candies each person has.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print \"Yes\" (without quotes) if exists a way to swap candies to make both Daniel and Tom happy, and print \"No\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case:\n\nThen all people have 3 candies.\n\nIn the second test case:\n\nThen all people have 3 candies. Note that at first the first person cannot give 2 candies to the third person, since he only has a_1=1 candy. But after the fifth person gives him 4 candies, he can do this, because he currently has 1+4=5 candies.\n\nIn the third test case, it's impossible for all people to have the same number of candies.\n\nIn the fourth test case, the first person gives 1024 candies to the second person, and the second person gives 1024 candies to the first person as well.\n\nInput:\n```\n632 4 351 2 3 4 561 4 7 1 5 4220092043 20092043129 9 8 2 4 4 3 5 1 1 1 162 12 7 16 11 12\n```\n\nOutput:\n```\nYes\nYes\nNo\nYes\nNo\nNo\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of people at the party.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9) — the number of candies each person has.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print \"Yes\" (without quotes) if exists a way to swap candies to make both Daniel and Tom happy, and print \"No\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

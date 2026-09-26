@@ -1,0 +1,18 @@
+{
+    "id": "1730A",
+    "contest_id": 1730,
+    "problem_letter": "A",
+    "title": "A. Planets",
+    "statement": "One day, Vogons wanted to build a new hyperspace highway through a distant system with n planets. The i-th planet is on the orbit a_i, there could be multiple planets on the same orbit. It's a pity that all the planets are on the way and need to be destructed.\n\nVogons have two machines to do that.\n\nVogons can use each machine as many times as they want.\n\nVogons are very greedy, so they want to destroy all planets with minimum amount of money spent. Can you help them to know the minimum cost of this project?\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then the test cases follow.\n\nEach test case consists of two lines.\n\nThe first line contains two integers n and c (1 ≤ n, c ≤ 100) — the number of planets and the cost of the second machine usage.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100), where a_i is the orbit of the i-th planet.\n\nFor each test case print a single integer — the minimum cost of destroying all planets.\n\nIn the first test case, the cost of using both machines is the same, so you can always use the second one and destroy all planets in orbit 1, all planets in orbit 2, all planets in orbit 4, all planets in orbit 5.\n\nIn the second test case, it is advantageous to use the second machine for 2 Triganic Pus to destroy all the planets in orbit 2, then destroy the remaining two planets using the first machine.\n\nIn the third test case, you can use the first machine twice or the second machine once.\n\nIn the fourth test case, it is advantageous to use the first machine twice.\n\nInput:\n```\n410 12 1 4 5 2 4 5 5 1 25 23 2 1 2 22 21 12 21 2\n```\n\nOutput:\n```\n4\n4\n2\n2\n```\n\nInput:\n```\n11 1001\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then the test cases follow.\n\nEach test case consists of two lines.\n\nThe first line contains two integers n and c (1 ≤ n, c ≤ 100) — the number of planets and the cost of the second machine usage.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100), where a_i is the orbit of the i-th planet.",
+    "output": "For each test case print a single integer — the minimum cost of destroying all planets.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

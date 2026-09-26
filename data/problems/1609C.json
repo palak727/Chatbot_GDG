@@ -1,0 +1,21 @@
+{
+    "id": "1609C",
+    "contest_id": 1609,
+    "problem_letter": "C",
+    "title": "C. Complex Market Analysis",
+    "statement": "While performing complex market analysis William encountered the following problem:\n\nFor a given array a of size n and a natural number e, calculate the number of pairs of natural numbers (i, k) which satisfy the following conditions:\n\nA prime number (or a prime) is a natural number greater than 1 that is not a product of two smaller natural numbers.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and e (1 ≤ e ≤ n ≤ 2·10^5), the number of items in the array and number e, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), the contents of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case output the answer in the following format:\n\nOutput one line containing the number of pairs of numbers (i, k) which satisfy the conditions.\n\nIn the first example test case two pairs satisfy the conditions:\n\nIn the second example test case there are no pairs that satisfy the conditions.\n\nIn the third example test case four pairs satisfy the conditions:\n\nIn the fourth example test case there are no pairs that satisfy the conditions.\n\nIn the fifth example test case five pairs satisfy the conditions:\n\nIn the sixth example test case there are no pairs that satisfy the conditions.\n\nInput:\n```\n6\n7 3\n10 2 1 3 1 19 3\n3 2\n1 13 1\n9 3\n2 4 2 1 1 1 1 4 2\n3 1\n1 1 1\n4 1\n1 2 1 1\n2 2\n1 2\n```\n\nOutput:\n```\n2\n0\n4\n0\n5\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and e (1 ≤ e ≤ n ≤ 2·10^5), the number of items in the array and number e, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), the contents of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output the answer in the following format:\n\nOutput one line containing the number of pairs of numbers (i, k) which satisfy the conditions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "implementation",
+        "number theory",
+        "schedules",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

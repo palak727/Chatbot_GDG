@@ -1,0 +1,18 @@
+{
+    "id": "1999B",
+    "contest_id": 1999,
+    "problem_letter": "B",
+    "title": "B. Card Game",
+    "statement": "Suneet and Slavic play a card game. The rules of the game are as follows:\n\nSince Suneet and Slavic aren't best friends, you need to calculate the number of ways the game could happen that Suneet would end up as the winner.\n\nFor a better understanding, please check the notes section.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains 4 integers a_1, a_2, b_1, b_2 (1 ≤ a_1, a_2, b_1, b_2 ≤ 10) where a_1 and a_2 represent the cards Suneet has, and b_1 and b_2 represent the cards Slavic has, respectively.\n\nFor each test case, output a single integer — the number of games Suneet would win considering all possible games.\n\nConsider the first test case when Slavic starts with the cards that have the values 2 and 6, and Suneet starts with cards that have the values 3 and 8. The game could happen in 4 different ways:\n\nInput:\n```\n53 8 2 61 1 1 110 10 2 21 1 10 103 8 7 2\n```\n\nOutput:\n```\n2\n0\n4\n0\n2\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains 4 integers a_1, a_2, b_1, b_2 (1 ≤ a_1, a_2, b_1, b_2 ≤ 10) where a_1 and a_2 represent the cards Suneet has, and b_1 and b_2 represent the cards Slavic has, respectively.",
+    "output": "For each test case, output a single integer — the number of games Suneet would win considering all possible games.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

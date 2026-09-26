@@ -1,0 +1,18 @@
+{
+    "id": "2096E",
+    "contest_id": 2096,
+    "problem_letter": "E",
+    "title": "E. Wonderful Teddy Bears",
+    "statement": "You are the proud owner of n teddy bears, which are arranged in a row on a shelf. Each teddy bear is colored either black or pink.\n\nAn arrangement of teddy bears is beautiful if all the black teddy bears are to the left of all the pink teddy bears. In other words, there does not exist a pair of indices (i, j) (1 ≤ i < j ≤ n) such that the i-th teddy bear is pink, and the j-th teddy bear is black.\n\nYou want to reorder the teddy bears into a beautiful arrangement. You are too short to reach the shelf, but luckily, you can send instructions to a robot to move the teddy bears around. In a single instruction, the robot can:\n\nWhat is the minimum number of instructions needed to reorder the teddy bears?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of teddy bears.\n\nThe second line of each test case contains a single string s of length n consisting of characters B and P — the colors of the teddy bears. For each i from 1 to n, the i-th teddy bear is colored black if s_i = textttB and pink if s_i = textttP.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of instructions needed to reorder the teddy bears.\n\nFor the first test case, all the teddy bears are pink. Thus, the arrangement is already beautiful, so the answer is 0.\n\nFor the second test case, all the black teddy bears are to the left of all the pink teddy bears. Thus, the answer is 0.\n\nFor the third test case, we can perform 1 instruction with i = 1.\n\nAfter the instruction, the sequence of colors changes from textttPPB to textttBPP, and we are done.\n\nFor the fourth test case, we can perform 5 instructions as follows:\n\nInput:\n```\n53PPP3BPP3PPB7PPBPPBB15BPBPBBBBBPBBBBB\n```\n\nOutput:\n```\n0\n0\n1\n5\n14\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of teddy bears.\n\nThe second line of each test case contains a single string s of length n consisting of characters B and P — the colors of the teddy bears. For each i from 1 to n, the i-th teddy bear is colored black if s_i = textttB and pink if s_i = textttP.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of instructions needed to reorder the teddy bears.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2048I1",
+    "contest_id": 2048,
+    "problem_letter": "I1",
+    "title": "I1. Kevin and Puzzle (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, you need to find any one good array. You can hack only if you solved all versions of this problem.\n\nKevin is visiting the Red Church, and he found a puzzle on the wall.\n\nFor an array a , let c(l,r) indicate how many distinct numbers are among a_l, a_{l+1}, …, a_r . In particular, if l > r , define c(l,r) = 0 .\n\nYou are given a string s of length n consisting of letters textttL and textttR only. Let a non-negative array a be called good, if the following conditions hold for 1 ≤ i ≤ n :\n\nIf there is a good array a, print any of the good arrays. Otherwise, report that no such arrays exists.\n\nEach test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of string s.\n\nThe second line of each test case contains a string s with a length n, containing only English uppercase letters replacedVerb L and replacedVerb R.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, if a good array exists, print n non-negative integers: a good array a. Otherwise, print a single integer -1.\n\nIf there are multiple arrays a satisfying the conditions, you can output any of them.\n\nIn the first test case, the array [0,1,0] satisfies the conditions because:\n\nIn the second test case, another suitable answer is [1,1,1].\n\nIn the third test case, it can be proven that there's no array satisfying the conditions.\n\nInput:\n```\n43LLR3RRL4RRLR5LLRLR\n```\n\nOutput:\n```\n0 1 0\n2 1 2\n-1\n0 1 2 3 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of string s.\n\nThe second line of each test case contains a string s with a length n, containing only English uppercase letters replacedVerb L and replacedVerb R.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if a good array exists, print n non-negative integers: a good array a. Otherwise, print a single integer -1.\n\nIf there are multiple arrays a satisfying the conditions, you can output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*3500"
+    ],
+    "rating": 3500
+}

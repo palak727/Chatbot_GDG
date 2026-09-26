@@ -1,0 +1,18 @@
+{
+    "id": "1200A",
+    "contest_id": 1200,
+    "problem_letter": "A",
+    "title": "A. Hotelier",
+    "statement": "Amugae has a hotel consisting of 10 rooms. The rooms are numbered from 0 to 9 from left to right.\n\nThe hotel has two entrances — one from the left end, and another from the right end. When a customer arrives to the hotel through the left entrance, they are assigned to an empty room closest to the left entrance. Similarly, when a customer arrives at the hotel through the right entrance, they are assigned to an empty room closest to the right entrance.\n\nOne day, Amugae lost the room assignment list. Thankfully Amugae's memory is perfect, and he remembers all of the customers: when a customer arrived, from which entrance, and when they left the hotel. Initially the hotel was empty. Write a program that recovers the room assignment list from Amugae's memory.\n\nThe first line consists of an integer n (1 ≤ n ≤ 10^5), the number of events in Amugae's memory.\n\nThe second line consists of a string of length n describing the events in chronological order. Each character represents:\n\nIt is guaranteed that there is at least one empty room when a customer arrives, and there is a customer in the room x when x (0, 1, ..., 9) is given. Also, all the rooms are initially empty.\n\nIn the only line, output the hotel room's assignment status, from room 0 to room 9. Represent an empty room as '0', and an occupied room as '1', without spaces.\n\nIn the first example, hotel room's assignment status after each action is as follows.\n\nSo after all, hotel room's final assignment status is 1010000011.\n\nIn the second example, hotel room's assignment status after each action is as follows.\n\nSo after all, hotel room's final assignment status is 1100000010.\n\nInput:\n```\n8\nLLRL1RL1\n```\n\nOutput:\n```\n1010000011\n```\n\nInput:\n```\n9\nL0L0LLRR9\n```\n\nOutput:\n```\n1100000010\n```",
+    "input": "The first line consists of an integer n (1 ≤ n ≤ 10^5), the number of events in Amugae's memory.\n\nThe second line consists of a string of length n describing the events in chronological order. Each character represents:\n\nIt is guaranteed that there is at least one empty room when a customer arrives, and there is a customer in the room x when x (0, 1, ..., 9) is given. Also, all the rooms are initially empty.",
+    "output": "In the only line, output the hotel room's assignment status, from room 0 to room 9. Represent an empty room as '0', and an occupied room as '1', without spaces.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

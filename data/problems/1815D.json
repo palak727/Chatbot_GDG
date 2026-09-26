@@ -1,0 +1,19 @@
+{
+    "id": "1815D",
+    "contest_id": 1815,
+    "problem_letter": "D",
+    "title": "D. XOR Counting",
+    "statement": "Given two positive integers n and m. Find the sum of all possible values of a_1bigoplus a_2bigoplus…bigoplus a_m, where a_1,a_2,…,a_m are non-negative integers such that a_1+a_2+…+a_m=n.\n\nNote that all possible values a_1bigoplus a_2bigoplus…bigoplus a_m should be counted in the sum exactly once.\n\nAs the answer may be too large, output your answer modulo 998244353.\n\nHere, bigoplus denotes the bitwise XOR operation.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first and only line of each test case contains two integers n and m (0≤ n≤ 10^18, 1≤ m≤ 10^5) — the sum and the number of integers in the set, respectively.\n\nFor each test case, output the sum of all possible values of a_1bigoplus a_2bigoplus…bigoplus a_m among all non-negative integers a_1,a_2,…,a_m with a_1+a_2+…+a_m=n. As the answer may be too large, output your answer modulo 998244353.\n\nFor the first test case, we must have a_1=69, so it's the only possible value of a_1, therefore our answer is 69.\n\nFor the second test case, (a_1,a_2) can be (0,5), (1,4), (2,3), (3,2), (4,1) or (5,0), in which a_1bigoplus a_2 are 5,5,1,1,5,5 respectively. So a_1bigoplus a_2 can be 1 or 5, therefore our answer is 1+5=6.\n\nFor the third test case, a_1,a_2,…,a_10 must be all 0, so a_1bigoplus a_2bigoplus…bigoplus a_10=0. Therefore our answer is 0.\n\nInput:\n```\n769 15 20 10420 6912 2673 341000000000000000000 10\n```\n\nOutput:\n```\n69\n6\n0\n44310\n42\n1369\n216734648\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first and only line of each test case contains two integers n and m (0≤ n≤ 10^18, 1≤ m≤ 10^5) — the sum and the number of integers in the set, respectively.",
+    "output": "For each test case, output the sum of all possible values of a_1bigoplus a_2bigoplus…bigoplus a_m among all non-negative integers a_1,a_2,…,a_m with a_1+a_2+…+a_m=n. As the answer may be too large, output your answer modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

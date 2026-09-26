@@ -1,0 +1,19 @@
+{
+    "id": "1646E",
+    "contest_id": 1646,
+    "problem_letter": "E",
+    "title": "E. Power Board",
+    "statement": "You have a rectangular board of size n× m (n rows, m columns). The n rows are numbered from 1 to n from top to bottom, and the m columns are numbered from 1 to m from left to right.\n\nThe cell at the intersection of row i and column j contains the number i^j (i raised to the power of j). For example, if n=3 and m=3 the board is as follows:\n\nFind the number of distinct integers written on the board.\n\nThe only line contains two integers n and m (1≤ n,m≤ 10^6) — the number of rows and columns of the board.\n\nPrint one integer, the number of distinct integers on the board.\n\nThe statement shows the board for the first test case. In this case there are 7 distinct integers: 1, 2, 3, 4, 8, 9, and 27.\n\nIn the second test case, the board is as follows:\n\nThere are 5 distinct numbers: 1, 2, 4, 8 and 16.\n\nIn the third test case, the board is as follows:\n\nThere are 6 distinct numbers: 1, 2, 3, 4, 9 and 16.\n\nInput:\n```\n3 3\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n2 4\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n4 2\n```\n\nOutput:\n```\n6\n```",
+    "input": "The only line contains two integers n and m (1≤ n,m≤ 10^6) — the number of rows and columns of the board.",
+    "output": "Print one integer, the number of distinct integers on the board.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1882B",
+    "contest_id": 1882,
+    "problem_letter": "B",
+    "title": "B. Sets and Union",
+    "statement": "You have n sets of integers S_1, S_2, …, S_n. We call a set S attainable, if it is possible to choose some (possibly, none) of the sets S_1, S_2, …, S_n so that S is equal to their union^dagger. If you choose none of S_1, S_2, …, S_n, their union is an empty set.\n\nFind the maximum number of elements in an attainable S such that S ≠ S_1 ∪ S_2 ∪ … ∪ S_n.\n\n^dagger The union of sets A_1, A_2, …, A_k is defined as the set of elements present in at least one of these sets. It is denoted by A_1 ∪ A_2 ∪ … ∪ A_k. For example, {2, 4, 6} ∪ {2, 3} ∪ {3, 6, 7} = {2, 3, 4, 6, 7}.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe following n lines describe the sets S_1, S_2, …, S_n. The i-th of these lines contains an integer k_i (1 ≤ k_i ≤ 50) — the number of elements in S_i, followed by k_i integers s_{i, 1}, s_{i, 2}, …, s_{i, k_i} (1 ≤ s_{i, 1} < s_{i, 2} < … < s_{i, k_i} ≤ 50) — the elements of S_i.\n\nFor each test case, print a single integer — the maximum number of elements in an attainable S such that S ≠ S_1 ∪ S_2 ∪ … ∪ S_n.\n\nIn the first test case, S = S_1 ∪ S_3 = {1, 2, 3, 4} is the largest attainable set not equal to S_1 ∪ S_2 ∪ S_3 = {1, 2, 3, 4, 5}.\n\nIn the second test case, we can pick S = S_2 ∪ S_3 ∪ S_4 = {2, 3, 4, 5, 6}.\n\nIn the third test case, we can pick S = S_2 ∪ S_5 = S_2 ∪ S_3 ∪ S_5 = {3, 5, 6, 8, 9, 10}.\n\nIn the fourth test case, the only attainable set is S = varnothing.\n\nInput:\n```\n433 1 2 32 4 52 3 444 1 2 3 43 2 5 63 3 5 63 4 5 651 13 3 6 101 92 1 33 5 8 912 4 28\n```\n\nOutput:\n```\n4\n5\n6\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe following n lines describe the sets S_1, S_2, …, S_n. The i-th of these lines contains an integer k_i (1 ≤ k_i ≤ 50) — the number of elements in S_i, followed by k_i integers s_{i, 1}, s_{i, 2}, …, s_{i, k_i} (1 ≤ s_{i, 1} < s_{i, 2} < … < s_{i, k_i} ≤ 50) — the elements of S_i.",
+    "output": "For each test case, print a single integer — the maximum number of elements in an attainable S such that S ≠ S_1 ∪ S_2 ∪ … ∪ S_n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1863E",
+    "contest_id": 1863,
+    "problem_letter": "E",
+    "title": "E. Speedrun",
+    "statement": "You are playing a video game. The game has n quests that need to be completed. However, the j-th quest can only be completed at the beginning of hour h_j of a game day. The game day is k hours long. The hours of each game day are numbered 0, 1, …, k - 1. After the first day ends, a new one starts, and so on.\n\nAlso, there are dependencies between the quests, that is, for some pairs (a_i, b_i) the b_i-th quest can only be completed after the a_i-th quest. It is guaranteed that there are no circular dependencies, as otherwise the game would be unbeatable and nobody would play it.\n\nYou are skilled enough to complete any number of quests in a negligible amount of time (i. e. you can complete any number of quests at the beginning of the same hour, even if there are dependencies between them). You want to complete all quests as fast as possible. To do this, you can complete the quests in any valid order. The completion time is equal to the difference between the time of completing the last quest and the time of completing the first quest in this order.\n\nFind the least amount of time you need to complete the game.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 100,000). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1≤ n≤ 200,000, 0≤ m≤ 200,000, 1≤ k≤ 10^9) — the number of quests, the number of dependencies between them, and the number of hours in a game day, respectively.\n\nThe next line contains n integers h_1, h_2, …, h_n (0≤ h_i < k).\n\nThe next m lines describe the dependencies. The i-th of these lines contains two integers a_i and b_i (1≤ a_i < b_i≤ n) meaning that quest b_i can only be completed after quest a_i. It is guaranteed that all dependencies are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 200,000.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 200,000.\n\nFor each test case, output a single integer — the minimum completion time.\n\nIn the first test case, quests 1 and 4 must be completed at the beginning of the 12-th hour of the day, but they cannot be completed during the same hour, because you also need to complete quests 2 and 3 between them. You can do all this in 24 hours, though. To do so, you start at 12 hours of the first game day by completing the first quest. At 16 hours you complete quest 2. At 18 hours you complete quest 3. Finally at 12 hours of the second day you can complete quest 4. The total time elapsed (from the moment you completed the first quest and the moment you completed the last) is 24 hours.\n\nIn the third test case, you can complete the first quest and then complete the remaining quest right after. You start at 5 hours of the first day by completing the first quest. After this the second quest becomes available, you complete it as well. The total time elapsed is 0.\n\nIn the fourth test case, you can start with the third quest. You start at 555 hours of the first day and you can finish at 35 hours of the second day. The total time elapsed is 1035-555=480.\n\nInput:\n```\n64 4 2412 16 18 121 21 32 43 44 3 102 6 5 91 42 43 42 1 105 51 25 0 10008 800 555 35 355 0 103 2 5 4 73 2 54 3 21 22 3\n```\n\nOutput:\n```\n24\n7\n0\n480\n5\n8\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 100,000). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1≤ n≤ 200,000, 0≤ m≤ 200,000, 1≤ k≤ 10^9) — the number of quests, the number of dependencies between them, and the number of hours in a game day, respectively.\n\nThe next line contains n integers h_1, h_2, …, h_n (0≤ h_i < k).\n\nThe next m lines describe the dependencies. The i-th of these lines contains two integers a_i and b_i (1≤ a_i < b_i≤ n) meaning that quest b_i can only be completed after quest a_i. It is guaranteed that all dependencies are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 200,000.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 200,000.",
+    "output": "For each test case, output a single integer — the minimum completion time.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

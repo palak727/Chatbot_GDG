@@ -1,0 +1,19 @@
+{
+    "id": "2053C",
+    "contest_id": 2053,
+    "problem_letter": "C",
+    "title": "C. Bewitching Stargazer",
+    "statement": "Iris looked at the stars and a beautiful problem emerged in her mind. She is inviting you to solve it so that a meteor shower is believed to form.\n\nThere are n stars in the sky, arranged in a row. Iris has a telescope, which she uses to look at the stars.\n\nInitially, Iris observes stars in the segment [1, n], and she has a lucky value of 0. Iris wants to look for the star in the middle position for each segment [l, r] that she observes. So the following recursive procedure is used:\n\nIris is a bit lazy. She defines her laziness by an integer k: as the observation progresses, she will not continue to observe any segment [l, r] with a length strictly less than k. In this case, please predict her final lucky value.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^9).\n\nFor each test case, output a single integer — the final lucky value.\n\nIn the first test case, at the beginning, Iris observes [1, 7]. Since [1, 7] has an odd length, she aims at star 4 and therefore increases her lucky value by 4. Then it is split into 2 new segments: [1, 3] and [5, 7]. The segment [1, 3] again has an odd length, so Iris aims at star 2 and increases her lucky value by 2. Then it is split into 2 new segments: [1, 1] and [3, 3], both having a length less than 2, so no further observation is conducted. For range [5, 7], the progress is similar and the lucky value eventually increases by 6. Therefore, the final lucky value is 4 + 2 + 6 = 12.\n\nIn the last test case, Iris finally observes all the stars and the final lucky value is 1 + 2 + ⋯ + 8,765,432 = 38,416,403,456,028.\n\nInput:\n```\n67 211 355 135801 68919 648765432 1\n```\n\nOutput:\n```\n12\n18\n196\n1975581\n958900\n38416403456028\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^9).",
+    "output": "For each test case, output a single integer — the final lucky value.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

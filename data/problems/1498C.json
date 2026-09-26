@@ -1,0 +1,18 @@
+{
+    "id": "1498C",
+    "contest_id": 1498,
+    "problem_letter": "C",
+    "title": "C. Planar Reflections",
+    "statement": "Gaurang has grown up in a mystical universe. He is faced by n consecutive 2D planes. He shoots a particle of decay age k at the planes.\n\nA particle can pass through a plane directly, however, every plane produces an identical copy of the particle going in the opposite direction with a decay age k-1. If a particle has decay age equal to 1, it will NOT produce a copy.\n\nFor example, if there are two planes and a particle is shot with decay age 3 (towards the right), the process is as follows: (here, D(x) refers to a single particle with decay age x)\n\nIn total, the final multiset S of particles is {D(3), D(2), D(2), D(1)}. (See notes for visual explanation of this test case.)\n\nGaurang is unable to cope up with the complexity of this situation when the number of planes is too large. Help Gaurang find the size of the multiset S, given n and k.\n\nSince the size of the multiset can be very large, you have to output it modulo 10^9+7.\n\nNote: Particles can go back and forth between the planes without colliding with each other.\n\nThe first line of the input contains the number of test cases t (1 ≤ t ≤ 100). Then, t lines follow, each containing two integers n and k (1 ≤ n, k ≤ 1000).\n\nAdditionally, the sum of n over all test cases will not exceed 1000, and the sum of k over all test cases will not exceed 1000. All test cases in one test are different.\n\nOutput t integers. The i-th of them should be equal to the answer to the i-th test case.\n\nLet us explain the first example with four test cases.\n\nTest case 1: (n = 2, k = 3) is already explained in the problem statement.\n\nSee the below figure of this simulation. Each straight line with a different color represents the path of a different particle. As you can see, there are four distinct particles in the multiset. Note that the vertical spacing between reflected particles is for visual clarity only (as mentioned before, no two distinct particles collide with each other)\n\nTest case 2: (n = 2, k = 2) is explained as follows:\n\nTotal size of multiset obtained {D(1), D(1), D(2)} is equal to three.\n\nTest case 3: (n = 3, k = 1), there are three planes, but decay age is only one. So no new copies are produced while the one particle passes through the planes. Hence, the answer is one.\n\nTest case 4: (n = 1, k = 3) there is only one plane. The particle produces a new copy to the left. The multiset {D(2), D(3)} is of size two.\n\nInput:\n```\n4\n2 3\n2 2\n3 1\n1 3\n```\n\nOutput:\n```\n4\n3\n1\n2\n```\n\nInput:\n```\n3\n1 1\n1 500\n500 250\n```\n\nOutput:\n```\n1\n2\n257950823\n```",
+    "input": "The first line of the input contains the number of test cases t (1 ≤ t ≤ 100). Then, t lines follow, each containing two integers n and k (1 ≤ n, k ≤ 1000).\n\nAdditionally, the sum of n over all test cases will not exceed 1000, and the sum of k over all test cases will not exceed 1000. All test cases in one test are different.",
+    "output": "Output t integers. The i-th of them should be equal to the answer to the i-th test case.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1331F",
+    "contest_id": 1331,
+    "problem_letter": "F",
+    "title": "F. Elementary!",
+    "statement": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.\n\nOutput \"YES\" or \"NO\".\n\nInput:\n```\nGENIUS\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nDOCTOR\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nIRENE\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nMARY\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nSMARTPHONE\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nREVOLVER\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nHOLMES\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nWATSON\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.",
+    "output": "Output \"YES\" or \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "brute force",
+        "dp",
+        "strings"
+    ],
+    "rating": null
+}

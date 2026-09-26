@@ -1,0 +1,19 @@
+{
+    "id": "2097E",
+    "contest_id": 2097,
+    "problem_letter": "E",
+    "title": "E. Clearing the Snowdrift",
+    "statement": "Boy Vasya loves to travel very much. In particular, flying in airplanes brings him extraordinary pleasure. He was about to fly to another city, but the runway was heavily covered with snow and needed to be cleared.\n\nThe runway can be represented as n consecutive sections numbered from 1 to n. The snowstorm was quite strong, but it has already stopped, so Vasya managed to calculate that the i-th section is covered with a_i meters of snow. For such situations, the airport has a snowplow that works in a rather unusual way. In one minute, the snowplow can do the following:\n\nFormally, one can choose 1 ≤ l ≤ r ≤ n (r - l + 1 ≤ d). After that, c = max { a_l, a_{l + 1}, … , a_r } is calculated, and if c > 0, then for all i colon l ≤ i ≤ r such that a_i = c, the value of a_i is decreased by one.\n\nVasya has been preparing for the flight for a long time and wants to understand how much time he has left to wait until all sections are completely cleared of snow. In other words, it is required to calculate the minimum number of minutes that the snowplow will need to achieve a_i = 0 for all i from 1 to n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and d (1 ≤ n ≤ 5·10^5, 1 ≤ d ≤ n) — the number of sections on the runway and the maximum length of the segment that the snowplow can choose.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of meters of snow on the i-th section.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output a single integer — the minimum number of minutes required for the snowplow to achieve a_i = 0 for all i from 1 to n.\n\nIn the first test case, there is an optimal sequence of operations. First, select the segment [2, 3] four times. After three operations, a_2 will turn into 2, and the array a will look like [1, 2, 2, 1, 2]. After the fourth operation, the array a will become [1, 1, 1, 1, 2]. Next, the array can be transformed into zeros by selecting the segments [1, 2], [3, 3], [5, 5], and [4, 5] (in that exact order).\n\nIn the second test case, d = 1, which means that each section is cleared independently of the others, and the answer is equal to the sum of all a_i.\n\nInput:\n```\n25 21 5 2 1 23 11000000000 1000000000 1000000000\n```\n\nOutput:\n```\n8\n3000000000\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and d (1 ≤ n ≤ 5·10^5, 1 ≤ d ≤ n) — the number of sections on the runway and the maximum length of the segment that the snowplow can choose.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of meters of snow on the i-th section.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of minutes required for the snowplow to achieve a_i = 0 for all i from 1 to n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "*3100"
+    ],
+    "rating": 3100
+}

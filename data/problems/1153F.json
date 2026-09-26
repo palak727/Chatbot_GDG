@@ -1,0 +1,19 @@
+{
+    "id": "1153F",
+    "contest_id": 1153,
+    "problem_letter": "F",
+    "title": "F. Serval and Bonus Problem",
+    "statement": "Getting closer and closer to a mathematician, Serval becomes a university student on math major in Japari University. On the Calculus class, his teacher taught him how to calculate the expected length of a random subsegment of a given segment. Then he left a bonus problem as homework, with the award of a garage kit from IOI. The bonus is to extend this problem to the general case as follows.\n\nYou are given a segment with length l. We randomly choose n segments by choosing two points (maybe with non-integer coordinates) from the given segment equiprobably and the interval between the two points forms a segment. You are given the number of random segments n, and another integer k. The 2n endpoints of the chosen segments split the segment into (2n+1) intervals. Your task is to calculate the expected total length of those intervals that are covered by at least k segments of the n random segments.\n\nYou should find the answer modulo 998244353.\n\nFirst line contains three space-separated positive integers n, k and l (1≤ k ≤ n ≤ 2000, 1≤ l≤ 10^9).\n\nOutput one integer — the expected total length of all the intervals covered by at least k segments of the n random segments modulo 998244353.\n\nFormally, let M = 998244353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nIn the first example, the expected total length is ∫_0^1 ∫_0^1 |x-y| ,dx,dy = 1over 3, and 3^{-1} modulo 998244353 is 332748118.\n\nInput:\n```\n1 1 1\n```\n\nOutput:\n```\n332748118\n```\n\nInput:\n```\n6 2 1\n```\n\nOutput:\n```\n760234711\n```\n\nInput:\n```\n7 5 3\n```\n\nOutput:\n```\n223383352\n```\n\nInput:\n```\n97 31 9984524\n```\n\nOutput:\n```\n267137618\n```",
+    "input": "First line contains three space-separated positive integers n, k and l (1≤ k ≤ n ≤ 2000, 1≤ l≤ 10^9).",
+    "output": "Output one integer — the expected total length of all the intervals covered by at least k segments of the n random segments modulo 998244353.\n\nFormally, let M = 998244353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2600"
+    ],
+    "rating": 2600
+}

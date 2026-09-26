@@ -1,0 +1,17 @@
+{
+    "id": "1692B",
+    "contest_id": 1692,
+    "problem_letter": "B",
+    "title": "B. All Distinct",
+    "statement": "Sho has an array a consisting of n integers. An operation consists of choosing two distinct indices i and j and removing a_i and a_j from the array.\n\nFor example, for the array [2, 3, 4, 2, 5], Sho can choose to remove indices 1 and 3. After this operation, the array becomes [3, 2, 5]. Note that after any operation, the length of the array is reduced by two.\n\nAfter he made some operations, Sho has an array that has only distinct elements. In addition, he made operations such that the resulting array is the longest possible.\n\nMore formally, the array after Sho has made his operations respects these criteria:\n\nOutput the length of the final array.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the array.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^4) — the elements of the array.\n\nFor each test case, output a single integer — the length of the final array. Remember that in the final array, all elements are different, and its length is maximum.\n\nFor the first test case Sho can perform operations as follows:\n\nFor the second test case Sho can perform operations as follows:\n\nInput:\n```\n462 2 2 3 3 359 1 9 9 1415 16 16 15410 100 1000 10000\n```\n\nOutput:\n```\n2\n1\n2\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the array.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^4) — the elements of the array.",
+    "output": "For each test case, output a single integer — the length of the final array. Remember that in the final array, all elements are different, and its length is maximum.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

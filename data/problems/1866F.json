@@ -1,0 +1,18 @@
+{
+    "id": "1866F",
+    "contest_id": 1866,
+    "problem_letter": "F",
+    "title": "F. Freak Joker Process",
+    "statement": "After the success of the basketball teams formed and trained by Pak Chanek last year (Basketball Together), Pak Chanek wants to measure the performance of each player that is considered as a superstar.\n\nThere are N superstar players that have been trained by Pak Chanek. At the end of the season, some calculations will be made on the performance of the N players using an international method. Each player has two values A_i and B_i where each represents the offensive and defensive value of that player.\n\nDefine RankA(i) as the offensive ranking of the i-th player, whose value is c+1 with c here representing the number of j (1 ≤ j ≤ N) such that A_j > A_i. Define RankB(i) as the defensive ranking of the i-th player, whose value is c+1 with c here representing the number of j (1 ≤ j ≤ N) such that B_j > B_i.\n\nDefine RankOverall(i) as the overall ranking of the i-th player, whose value is c+1 with c here representing the number of j (1 ≤ j ≤ N) such that RankA(j)+RankB(j) < RankA(i)+RankB(i).\n\nDuring the next Q days, exactly one event will happen on each day. Each event is one of the three following possibilities:\n\nThe first line contains a single integer N (1≤ N≤10^5) — the number of superstar players.\n\nThe second line contains N integers A_1, A_2, A_3 …, A_N (1 ≤ A_i ≤ 10^5) — the offensive value of each player.\n\nThe third line contains N integers B_1, B_2, B_3 …, B_N (1 ≤ B_i ≤ 10^5) — the defensive value of each player.\n\nThe fourth line contains a single integer Q (1≤ Q≤10^5) — the number of events.\n\nThe j-th of the next Q lines contains the j-th event as described. At any moment, each value of A_i and B_i is always between 1 and 10^5 inclusive. There is at least one event of type 3.\n\nFor each event of type 3, output a line containing an integer representing the value of RankOverall(k) at that moment.\n\nAt the 8-th event, A=[3,2,1,3,2] and B=[3,6,1,4,1]. It can be obtained that the values of RankA and RankB for each player are as follows:\n\nSo it can be obtained that RankOverall(1)=2.\n\nInput:\n```\n5\n3 3 1 3 2\n3 7 1 3 1\n8\n3 1\n3 2\n2 4 +\n1 2 -\n3 2\n3 3\n2 2 -\n3 1\n```\n\nOutput:\n```\n2\n1\n2\n5\n2\n```",
+    "input": "The first line contains a single integer N (1≤ N≤10^5) — the number of superstar players.\n\nThe second line contains N integers A_1, A_2, A_3 …, A_N (1 ≤ A_i ≤ 10^5) — the offensive value of each player.\n\nThe third line contains N integers B_1, B_2, B_3 …, B_N (1 ≤ B_i ≤ 10^5) — the defensive value of each player.\n\nThe fourth line contains a single integer Q (1≤ Q≤10^5) — the number of events.\n\nThe j-th of the next Q lines contains the j-th event as described. At any moment, each value of A_i and B_i is always between 1 and 10^5 inclusive. There is at least one event of type 3.",
+    "output": "For each event of type 3, output a line containing an integer representing the value of RankOverall(k) at that moment.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "sortings",
+        "*3100"
+    ],
+    "rating": 3100
+}

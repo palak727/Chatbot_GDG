@@ -1,0 +1,18 @@
+{
+    "id": "1673B",
+    "contest_id": 1673,
+    "problem_letter": "B",
+    "title": "B. A Perfectly Balanced String?",
+    "statement": "Let's call a string s perfectly balanced if for all possible triplets (t,u,v) such that t is a non-empty substring of s and u and v are characters present in s, the difference between the frequencies of u and v in t is not more than 1.\n\nFor example, the strings \"aba\" and \"abc\" are perfectly balanced but \"abb\" is not because for the triplet (\"bb\",'a','b'), the condition is not satisfied.\n\nYou are given a string s consisting of lowercase English letters only. Your task is to determine whether s is perfectly balanced or not.\n\nA string b is called a substring of another string a if b can be obtained by deleting some characters (possibly 0) from the start and some characters (possibly 0) from the end of a.\n\nThe first line of input contains a single integer t (1≤ t≤ 2·10^4) denoting the number of testcases.\n\nEach of the next t lines contain a single string s (1≤ |s|≤ 2·10^5), consisting of lowercase English letters.\n\nIt is guaranteed that the sum of |s| over all testcases does not exceed 2·10^5.\n\nFor each test case, print \"YES\" if s is a perfectly balanced string, and \"NO\" otherwise.\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as positive answer).\n\nLet f_t(c) represent the frequency of character c in string t.\n\nFor the first testcase we have\n\nFor the second testcase we have\n\nFor the third testcase we have\n\nIt can be seen that for any substring t of s and any two characters u,v∈{a,b,c}, the difference between f_t(u) and f_t(v) is not more than 1. Hence the string s is perfectly balanced.\n\nInput:\n```\n5abaabbabcaaaaaabcba\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 2·10^4) denoting the number of testcases.\n\nEach of the next t lines contain a single string s (1≤ |s|≤ 2·10^5), consisting of lowercase English letters.\n\nIt is guaranteed that the sum of |s| over all testcases does not exceed 2·10^5.",
+    "output": "For each test case, print \"YES\" if s is a perfectly balanced string, and \"NO\" otherwise.\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

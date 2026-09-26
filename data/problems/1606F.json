@@ -1,0 +1,18 @@
+{
+    "id": "1606F",
+    "contest_id": 1606,
+    "problem_letter": "F",
+    "title": "F. Tree Queries",
+    "statement": "You are given a tree consisting of n vertices. Recall that a tree is an undirected connected acyclic graph. The given tree is rooted at the vertex 1.\n\nYou have to process q queries. In each query, you are given a vertex of the tree v and an integer k.\n\nTo process a query, you may delete any vertices from the tree in any order, except for the root and the vertex v. When a vertex is deleted, its children become the children of its parent. You have to process a query in such a way that maximizes the value of c(v) - m·k (where c(v) is the resulting number of children of the vertex v, and m is the number of vertices you have deleted). Print the maximum possible value you can obtain.\n\nThe queries are independent: the changes you make to the tree while processing a query don't affect the tree in other queries.\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThen n-1 lines follow, the i-th of them contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i) — the endpoints of the i-th edge. These edges form a tree.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow, the j-th of them contains two integers v_j and k_j (1 ≤ v_j ≤ n; 0 ≤ k_j ≤ 2·10^5) — the parameters of the j-th query.\n\nFor each query, print one integer — the maximum value of c(v) - m·k you can achieve.\n\nThe tree in the first example is shown in the following picture:\n\nAnswers to the queries are obtained as follows:\n\nInput:\n```\n8\n6 7\n3 2\n8 3\n5 7\n7 4\n7 1\n7 3\n6\n1 0\n1 2\n1 3\n7 1\n5 0\n7 200000\n```\n\nOutput:\n```\n5\n2\n1\n4\n0\n4\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThen n-1 lines follow, the i-th of them contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i) — the endpoints of the i-th edge. These edges form a tree.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow, the j-th of them contains two integers v_j and k_j (1 ≤ v_j ≤ n; 0 ≤ k_j ≤ 2·10^5) — the parameters of the j-th query.",
+    "output": "For each query, print one integer — the maximum value of c(v) - m·k you can achieve.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

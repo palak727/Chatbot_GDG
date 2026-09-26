@@ -1,0 +1,16 @@
+{
+    "id": "1878C",
+    "contest_id": 1878,
+    "problem_letter": "C",
+    "title": "C. Vasilije in Cacak",
+    "statement": "Aca and Milovan, two fellow competitive programmers, decided to give Vasilije a problem to test his skills.\n\nVasilije is given three positive integers: n, k, and x, and he has to determine if he can choose k distinct integers between 1 and n, such that their sum is equal to x.\n\nSince Vasilije is now in the weirdest city in Serbia where Aca and Milovan live, Cacak, the problem seems weird to him. So he needs your help with this problem.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers n, k and x (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n, 1 ≤ x ≤ 4·10^10) — the maximum element he can choose, the number of elements he can choose and the sum he has to reach.\n\nNote that the sum of n over all test cases may exceed 2·10^5.\n\nFor each test case output one line: \"YES\", if it is possible to choose k distinct integers between 1 and n, such that their sum is equal to x, and \"NO\", if it isn't.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nIn the first test case n = 5, k=3, x=10, so we can choose the numbers: 2, 3, 5, whose sum is 10, so the answer is \"YES\".\n\nIn the second test case n = 5, k=3, x=3, there is no three numbers which satisfies the condition, so the answer is \"NO\". It can be shown that there are no three numbers whose sum is 3.\n\nInput:\n```\n125 3 105 3 310 10 556 5 202 1 26187856 87856 2609202300200000 190000 1900000000028 5 20042 2 20069 6 4047202 32455 613407217185977 145541 15770805980\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\nNO\nNO\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers n, k and x (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n, 1 ≤ x ≤ 4·10^10) — the maximum element he can choose, the number of elements he can choose and the sum he has to reach.\n\nNote that the sum of n over all test cases may exceed 2·10^5.",
+    "output": "For each test case output one line: \"YES\", if it is possible to choose k distinct integers between 1 and n, such that their sum is equal to x, and \"NO\", if it isn't.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

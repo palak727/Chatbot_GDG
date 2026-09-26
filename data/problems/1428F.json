@@ -1,0 +1,20 @@
+{
+    "id": "1428F",
+    "contest_id": 1428,
+    "problem_letter": "F",
+    "title": "F. Fruit Sequences",
+    "statement": "Zookeeper is buying a carton of fruit to feed his pet wabbit. The fruits are a sequence of apples and oranges, which is represented by a binary string s_1s_2… s_n of length n. 1 represents an apple and 0 represents an orange.\n\nSince wabbit is allergic to eating oranges, Zookeeper would like to find the longest contiguous sequence of apples. Let f(l,r) be the longest contiguous sequence of apples in the substring s_ls_{l+1}… s_r.\n\nHelp Zookeeper find ∑_{l=1}^n ∑_{r=l}^n f(l,r), or the sum of f across all substrings.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe next line contains a binary string s of length n (s_i ∈ {0,1})\n\nPrint a single integer: ∑_{l=1}^n ∑_{r=l}^n f(l,r).\n\nIn the first test, there are ten substrings. The list of them (we let [l,r] be the substring s_l s_{l+1} … s_r):\n\nThe lengths of the longest contiguous sequence of ones in each of these ten substrings are 0,1,2,2,1,2,2,1,1,0 respectively. Hence, the answer is 0+1+2+2+1+2+2+1+1+0 = 12.\n\nInput:\n```\n4\n0110\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n7\n1101001\n```\n\nOutput:\n```\n30\n```\n\nInput:\n```\n12\n011100011100\n```\n\nOutput:\n```\n156\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe next line contains a binary string s of length n (s_i ∈ {0,1})",
+    "output": "Print a single integer: ∑_{l=1}^n ∑_{r=l}^n f(l,r).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

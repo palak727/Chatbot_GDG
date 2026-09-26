@@ -1,0 +1,16 @@
+{
+    "id": "1335B",
+    "contest_id": 1335,
+    "problem_letter": "B",
+    "title": "B. Construct the String",
+    "statement": "You are given three positive integers n, a and b. You have to construct a string s of length n consisting of lowercase Latin letters such that each substring of length a has exactly b distinct letters. It is guaranteed that the answer exists.\n\nYou have to answer t independent test cases.\n\nRecall that the substring s[l … r] is the string s_l, s_{l+1}, …, s_r and its length is r - l + 1. In this problem you are only interested in substrings of length a.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2000) — the number of test cases. Then t test cases follow.\n\nThe only line of a test case contains three space-separated integers n, a and b (1 ≤ a ≤ n ≤ 2000, 1 ≤ b ≤ min(26, a)), where n is the length of the required string, a is the length of a substring and b is the required number of distinct letters in each substring of length a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000 (∑ n ≤ 2000).\n\nFor each test case, print the answer — such a string s of length n consisting of lowercase Latin letters that each substring of length a has exactly b distinct letters. If there are multiple valid answers, print any of them. It is guaranteed that the answer exists.\n\nIn the first test case of the example, consider all the substrings of length 5:\n\nInput:\n```\n4\n7 5 3\n6 1 1\n6 6 1\n5 2 2\n```\n\nOutput:\n```\ntleelte\nqwerty\nvvvvvv\nabcde\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2000) — the number of test cases. Then t test cases follow.\n\nThe only line of a test case contains three space-separated integers n, a and b (1 ≤ a ≤ n ≤ 2000, 1 ≤ b ≤ min(26, a)), where n is the length of the required string, a is the length of a substring and b is the required number of distinct letters in each substring of length a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000 (∑ n ≤ 2000).",
+    "output": "For each test case, print the answer — such a string s of length n consisting of lowercase Latin letters that each substring of length a has exactly b distinct letters. If there are multiple valid answers, print any of them. It is guaranteed that the answer exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1578A",
+    "contest_id": 1578,
+    "problem_letter": "A",
+    "title": "A. Anti-Tetris",
+    "statement": "Let us consider the game \"Sticky Tetris\". In this game, there is a field of n × m squares. Tiles appear on the field and the player can move the tiles.\n\nEach tile is a 4-connected set of at most 7 squares.\n\nEach new tile appears in any position that fits inside the field, does not intersect any other tile, and the top cell of the tile is at the top row of the field. The player can move the tile left, right, and down, and at any moment the tile must still entirely fit inside the field and must not intersect other tiles. The player can stop the tile at any position at any time. After that, it cannot be moved. Since this is \"Sticky Tetris,\" the tile will not fall once stopped.\n\nYou are given a final configuration of a \"Sticky Tetris\" game. You need to restore a sequence of steps that leads to that configuration if it exists.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 50) — the size of the playing field.\n\nThe next n lines contain a string of m characters each. Each character could be either a '.', or lowercase English letter. Connected components of the same letter correspond to a single tile. Each tile consists of at most 7 squares.\n\nIf there is no solution, print -1.\n\nOtherwise, print k — the number of different tiles that are placed on the field.\n\nOn the next k lines print the sequence of steps for each of the tiles in the order they are placed.\n\nEach line consists of a number x followed by a string with steps. x (1 ≤ x ≤ m) is the starting column of the leftmost square in the top row of the tile. The string consists of characters 'L' (for left), 'R' (for right), and 'D' (for down), describing the path of that tile, ending with a single character 'S' (for stop). The final position of the tile determines which tile is being placed. The string with steps can have at most n·m + 1 characters.\n\nInput:\n```\n3 2\naa\nab\naa\n```\n\nOutput:\n```\n2\n2 DS\n1 S\n```\n\nInput:\n```\n5 6\n....dd\n.ccccd\n.cbbdd\n.aab.a\naabbaa\n```\n\nOutput:\n```\n5\n2 DDDS\n4 DDLS\n6 DDDS\n2 DS\n5 S\n```\n\nInput:\n```\n5 3\n...\naab\nabb\naab\n.bb\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 50) — the size of the playing field.\n\nThe next n lines contain a string of m characters each. Each character could be either a '.', or lowercase English letter. Connected components of the same letter correspond to a single tile. Each tile consists of at most 7 squares.",
+    "output": "If there is no solution, print -1.\n\nOtherwise, print k — the number of different tiles that are placed on the field.\n\nOn the next k lines print the sequence of steps for each of the tiles in the order they are placed.\n\nEach line consists of a number x followed by a string with steps. x (1 ≤ x ≤ m) is the starting column of the leftmost square in the top row of the tile. The string consists of characters 'L' (for left), 'R' (for right), and 'D' (for down), describing the path of that tile, ending with a single character 'S' (for stop). The final position of the tile determines which tile is being placed. The string with steps can have at most n·m + 1 characters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "shortest paths",
+        "*2800"
+    ],
+    "rating": 2800
+}

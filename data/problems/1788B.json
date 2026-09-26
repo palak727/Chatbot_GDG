@@ -1,0 +1,20 @@
+{
+    "id": "1788B",
+    "contest_id": 1788,
+    "problem_letter": "B",
+    "title": "B. Sum of Two Numbers",
+    "statement": "The sum of digits of a non-negative integer a is the result of summing up its digits together when written in the decimal system. For example, the sum of digits of 123 is 6 and the sum of digits of 10 is 1. In a formal way, the sum of digits of displaystyle a=∑_{i=0}^{∞} a_i·10^i, where 0 ≤ a_i ≤ 9, is defined as displaystyle∑_{i=0}^{∞}a_i.\n\nGiven an integer n, find two non-negative integers x and y which satisfy the following conditions.\n\nIt can be shown that such x and y always exist.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000).\n\nEach test case consists of a single integer n (1 ≤ n ≤ 10^9)\n\nFor each test case, print two integers x and y.\n\nIf there are multiple answers, print any.\n\nIn the second test case, the sum of digits of 67 and the sum of digits of 94 are both 13.\n\nIn the third test case, the sum of digits of 60 is 6, and the sum of digits of 7 is 7.\n\nInput:\n```\n5\n1\n161\n67\n1206\n19\n```\n\nOutput:\n```\n1 0\n67 94\n60 7\n1138 68\n14 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000).\n\nEach test case consists of a single integer n (1 ≤ n ≤ 10^9)",
+    "output": "For each test case, print two integers x and y.\n\nIf there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "probabilities",
+        "*1100"
+    ],
+    "rating": 1100
+}

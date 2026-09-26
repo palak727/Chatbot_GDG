@@ -1,0 +1,18 @@
+{
+    "id": "1951A",
+    "contest_id": 1951,
+    "problem_letter": "A",
+    "title": "A. Dual Trigger",
+    "statement": "There are n lamps numbered 1 to n lined up in a row, initially turned off. You can perform the following operation any number of times (possibly zero):\n\nDetermine whether you can reach configuration s, where s_i = 1 means the i-th lamp is turned on, and s_i = 0 otherwise.\n\n^dagger Only lamp i and i + 1 are adjacent for all 1 ≤ i < n. Note that lamp n and 1 are not adjacent when n ≠ 2.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the number of lamps.\n\nThe second line of each test case contains a binary string s of size n — the final desired configuration.\n\nFor each test case, print on one line \"YES\" if we can reach the configuration s via applying the given operation any number of times. Otherwise, print \"NO\".\n\nIn the first test case, the sequence of operation could have been as follows (note that initially s is all zero): mathtt0000000000 → mathttcolorred10000000colorred10 → mathtt1colorred100000colorred110 → mathtt110colorred10colorred10110.\n\nIn the third test case, we don't have to do any operation.\n\nIn the fourth test case, we cannot do any operation, but we need the first lamp to be on. Therefore, it is impossible to achieve the desired state.\n\nInput:\n```\n510110101011010100100111060000001112111111111111\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the number of lamps.\n\nThe second line of each test case contains a binary string s of size n — the final desired configuration.",
+    "output": "For each test case, print on one line \"YES\" if we can reach the configuration s via applying the given operation any number of times. Otherwise, print \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1415E",
+    "contest_id": 1415,
+    "problem_letter": "E",
+    "title": "E. New Game Plus!",
+    "statement": "Wabbit is playing a game with n bosses numbered from 1 to n. The bosses can be fought in any order. Each boss needs to be defeated exactly once. There is a parameter called boss bonus which is initially 0.\n\nWhen the i-th boss is defeated, the current boss bonus is added to Wabbit's score, and then the value of the boss bonus increases by the point increment c_i. Note that c_i can be negative, which means that other bosses now give fewer points.\n\nHowever, Wabbit has found a glitch in the game. At any point in time, he can reset the playthrough and start a New Game Plus playthrough. This will set the current boss bonus to 0, while all defeated bosses remain defeated. The current score is also saved and does not reset to zero after this operation. This glitch can be used at most k times. He can reset after defeating any number of bosses (including before or after defeating all of them), and he also can reset the game several times in a row without defeating any boss.\n\nHelp Wabbit determine the maximum score he can obtain if he has to defeat all n bosses.\n\nThe first line of input contains two spaced integers n and k (1 ≤ n ≤ 5·10^5, 0 ≤ k ≤ 5·10^5), representing the number of bosses and the number of resets allowed.\n\nThe next line of input contains n spaced integers c_1,c_2,…,c_n (-10^6 ≤ c_i ≤ 10^6), the point increments of the n bosses.\n\nOutput a single integer, the maximum score Wabbit can obtain by defeating all n bosses (this value may be negative).\n\nIn the first test case, no resets are allowed. An optimal sequence of fights would be\n\nThus the answer for the first test case is 0+1+2=3.\n\nIn the second test case, it can be shown that one possible optimal sequence of fights is\n\nHence the answer for the second test case is 0+5+4+2+0=11.\n\nInput:\n```\n3 0\n1 1 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5 1\n-1 -2 -3 -4 5\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n13 2\n3 1 4 1 5 -9 -2 -6 -5 -3 -5 -8 -9\n```\n\nOutput:\n```\n71\n```",
+    "input": "The first line of input contains two spaced integers n and k (1 ≤ n ≤ 5·10^5, 0 ≤ k ≤ 5·10^5), representing the number of bosses and the number of resets allowed.\n\nThe next line of input contains n spaced integers c_1,c_2,…,c_n (-10^6 ≤ c_i ≤ 10^6), the point increments of the n bosses.",
+    "output": "Output a single integer, the maximum score Wabbit can obtain by defeating all n bosses (this value may be negative).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

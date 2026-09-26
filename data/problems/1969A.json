@@ -1,0 +1,18 @@
+{
+    "id": "1969A",
+    "contest_id": 1969,
+    "problem_letter": "A",
+    "title": "A. Two Friends",
+    "statement": "Monocarp wants to throw a party. He has n friends, and he wants to have at least 2 of them at his party.\n\nThe i-th friend's best friend is p_i. All p_i are distinct, and for every i ∈ [1, n], p_i ≠ i.\n\nMonocarp can send invitations to friends. The i-th friend comes to the party if both the i-th friend and the p_i-th friend receive an invitation (note that the p_i-th friend doesn't have to actually come to the party). Each invitation is sent to exactly one of the friends.\n\nFor example, if p = [3, 1, 2, 5, 4], and Monocarp sends invitations to the friends [1, 2, 4, 5], then the friends [2, 4, 5] will come to the party. The friend 1 won't come since his best friend didn't receive an invitation; the friend 3 won't come since he didn't receive an invitation.\n\nCalculate the minimum number of invitations Monocarp has to send so that at least 2 friends come to the party.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of two lines:\n\nPrint one integer — the minimum number of invitations Monocarp has to send.\n\nIn the first testcase, Monocarp can send invitations to friends 4 and 5. Both of them will come to the party since they are each other's best friends, and both of them have invitations.\n\nIn the second testcase, Monocarp can send invitations to friends 1, 2 and 3, for example. Then friends 1 and 2 will attend: friend 1 and his best friend 2 have invitations, friend 2 and his best friend 3 have invitations. Friend 3 won't attend since his friend 4 doesn't have an invitation. It's impossible to send invitations to fewer than 3 friends in such a way that at least 2 come.\n\nIn the third testcase, Monocarp can send invitations to both friends 1 and 2, and both of them will attend.\n\nInput:\n```\n353 1 2 5 442 3 4 122 1\n```\n\nOutput:\n```\n2\n3\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of two lines:",
+    "output": "Print one integer — the minimum number of invitations Monocarp has to send.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2006E",
+    "contest_id": 2006,
+    "problem_letter": "E",
+    "title": "E. Iris's Full Binary Tree",
+    "statement": "Iris likes full binary trees.\n\nLet's define the depth of a rooted tree as the maximum number of vertices on the simple paths from some vertex to the root. A full binary tree of depth d is a binary tree of depth d with exactly 2^d - 1 vertices.\n\nIris calls a tree a d-binary tree if some vertices and edges can be added to it to make it a full binary tree of depth d. Note that any vertex can be chosen as the root of a full binary tree.\n\nSince performing operations on large trees is difficult, she defines the binary depth of a tree as the minimum d satisfying that the tree is d-binary. Specifically, if there is no integer d ≥ 1 such that the tree is d-binary, the binary depth of the tree is -1.\n\nIris now has a tree consisting of only vertex 1. She wants to add n - 1 more vertices to form a larger tree. She will add the vertices one by one. When she adds vertex i (2 ≤ i ≤ n), she'll give you an integer p_i (1 ≤ p_i < i), and add a new edge connecting vertices i and p_i.\n\nIris wants to ask you the binary depth of the tree formed by the first i vertices for each 1 ≤ i ≤ n. Can you tell her the answer?\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^5) — the final size of the tree.\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) — descriptions of all edges of the tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case output n integers, i-th of them representing the binary depth of the tree formed by the first i vertices.\n\nIn the first test case, the final tree is shown below:\n\nIn the second test case, the formed full binary tree after adding some vertices to the tree consisting of n vertices is shown below (bolded vertices are added):\n\nThe depth of the formed full binary tree is 4.\n\nIn the fifth test case, the final tree is shown below:\n\nIt can be proved that Iris can't form any full binary tree by adding vertices and edges, so the binary depth is -1.\n\nInput:\n```\n731 161 2 3 4 571 1 3 2 5 1101 1 2 1 4 2 4 5 8101 1 3 1 3 2 2 2 6201 1 2 2 4 4 5 5 7 6 8 6 11 14 11 8 13 13 12251 1 3 3 1 5 4 4 6 8 11 12 8 7 11 13 7 13 15 6 19 14 10 23\n```\n\nOutput:\n```\n1 2 2 \n1 2 2 3 3 4 \n1 2 2 3 3 4 4 \n1 2 2 3 3 3 4 4 5 5 \n1 2 2 3 3 4 4 4 -1 -1 \n1 2 2 3 3 4 4 4 4 5 5 5 5 6 6 6 6 6 6 7 \n1 2 2 3 3 4 4 4 4 5 5 6 6 6 6 6 7 7 7 7 7 8 8 8 8 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^5) — the final size of the tree.\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) — descriptions of all edges of the tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case output n integers, i-th of them representing the binary depth of the tree formed by the first i vertices.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

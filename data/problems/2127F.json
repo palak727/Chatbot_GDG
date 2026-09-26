@@ -1,0 +1,20 @@
+{
+    "id": "2127F",
+    "contest_id": 2127,
+    "problem_letter": "F",
+    "title": "F. Hamed and AghaBalaSar",
+    "statement": "Hamid wrote 3014 lines of code for the a+b problem and gave 10 lines of it to Hamed; then the following problem came to Hamed's mind.\n\nYou are given two integers n and m.\n\nAn array a_1,a_2,…,a_n is called snake if and only if all of the following conditions hold:\n\nWe define f(a) as in the following pseudocode:\n\n```\nfunction f(array a):\n    pos := 1\n    res := 0\n    let nxt[x] be an array such that nxt[x] is the smallest index y such that\n                                    y > x and a[y] > a[x],\n                              or undefined if no such y exists\n    while pos < n:\n        if a[pos] < a[n]:\n            res += a[nxt[pos]] - a[pos]\n            pos := nxt[pos]\n        else:\n            pos += 1\n    return res\n```\n\nFind the sum of f(a) over all snake arrays a_1,a_2,…,a_n, modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) — the length of a snake array and the sum of all elements in a snake array.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the sum of f(a) over all snake arrays a_1,a_2,…,a_n, modulo 10^9+7.\n\nIn the first test case, there are three snake arrays:\n\nThus, the answer is 5+3+1=9.\n\nIn the second test case, there are six snake arrays:\n\nThus, the answer is 4+3+2+1+2+2=14.\n\nIn the fifth test case, a possible snake array is:\n\nInput:\n```\n82 53 44 65 106 23100 100142857 33333200000 0\n```\n\nOutput:\n```\n9\n14\n76\n985\n142112\n771227753\n865580631\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) — the length of a snake array and the sum of all elements in a snake array.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the sum of f(a) over all snake arrays a_1,a_2,…,a_n, modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

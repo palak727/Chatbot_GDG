@@ -1,0 +1,20 @@
+{
+    "id": "1991F",
+    "contest_id": 1991,
+    "problem_letter": "F",
+    "title": "F. Triangle Formation",
+    "statement": "You are given n sticks, numbered from 1 to n. The length of the i-th stick is a_i.\n\nYou need to answer q queries. In each query, you are given two integers l and r (1 ≤ l < r ≤ n, r - l + 1 ≥ 6). Determine whether it is possible to choose 6 distinct sticks from the sticks numbered l to r, to form 2 non-degenerate triangles^{∗}.\n\n^{∗}A triangle with side lengths a, b, and c is called non-degenerate if:\n\nThe first line contains two integers n and q (6 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^5) — the number of sticks and the number of queries respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — a_i denotes the length of the i-th stick.\n\nEach of the following q lines contains two integers l and r (1 ≤ l < r ≤ n, r - l + 1 ≥ 6) — the parameters of each query.\n\nFor each query, output \"YES\" (without quotes) if it is possible to form 2 triangles, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first query, the lengths of the sticks are [5, 2, 2, 10, 4, 10]. Two sets of sticks [2, 4, 5] and [2, 10, 10] can be selected to form 2 non-degenerate triangles.\n\nIn the second query, the lengths of the sticks are [2, 2, 10, 4, 10, 6]. It can be shown that it is impossible to form 2 non-degenerate triangles.\n\nIn the third query, the lengths of the sticks are [2, 2, 10, 4, 10, 6, 1]. Two sets of sticks [1, 2, 2] and [4, 10, 10] can be selected to form 2 non-degenerate triangles.\n\nIn the fourth query, the lengths of the sticks are [4, 10, 6, 1, 5, 3]. It can be shown that it is impossible to form 2 non-degenerate triangles.\n\nIn the fifth query, the lengths of the sticks are [10, 4, 10, 6, 1, 5, 3]. Two sets of sticks [1, 10, 10] and [3, 4, 5] can be selected to form 2 non-degenerate triangles.\n\nInput:\n```\n10 55 2 2 10 4 10 6 1 5 31 62 72 85 104 10\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains two integers n and q (6 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^5) — the number of sticks and the number of queries respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — a_i denotes the length of the i-th stick.\n\nEach of the following q lines contains two integers l and r (1 ≤ l < r ≤ n, r - l + 1 ≥ 6) — the parameters of each query.",
+    "output": "For each query, output \"YES\" (without quotes) if it is possible to form 2 triangles, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

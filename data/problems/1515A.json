@@ -1,0 +1,18 @@
+{
+    "id": "1515A",
+    "contest_id": 1515,
+    "problem_letter": "A",
+    "title": "A. Phoenix and Gold",
+    "statement": "Phoenix has collected n pieces of gold, and he wants to weigh them together so he can feel rich. The i-th piece of gold has weight w_i. All weights are distinct. He will put his n pieces of gold on a weight scale, one piece at a time.\n\nThe scale has an unusual defect: if the total weight on it is exactly x, it will explode. Can he put all n gold pieces onto the scale in some order, without the scale exploding during the process? If so, help him find some possible order.\n\nFormally, rearrange the array w so that for each i (1 ≤ i ≤ n), ∑limits_{j = 1}^iw_j ≠ x.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 100; 1 ≤ x ≤ 10^4) — the number of gold pieces that Phoenix has and the weight to avoid, respectively.\n\nThe second line of each test case contains n space-separated integers (1 ≤ w_i ≤ 100) — the weights of the gold pieces. It is guaranteed that the weights are pairwise distinct.\n\nFor each test case, if Phoenix cannot place all n pieces without the scale exploding, print NO. Otherwise, print YES followed by the rearranged array w. If there are multiple solutions, print any.\n\nIn the first test case, Phoenix puts the gold piece with weight 3 on the scale first, then the piece with weight 2, and finally the piece with weight 1. The total weight on the scale is 3, then 5, then 6. The scale does not explode because the total weight on the scale is never 2.\n\nIn the second test case, the total weight on the scale is 8, 9, 11, 14, then 18. It is never 3.\n\nIn the third test case, Phoenix must put the gold piece with weight 5 on the scale, and the scale will always explode.\n\nInput:\n```\n3\n3 2\n3 2 1\n5 3\n1 2 3 4 8\n1 5\n5\n```\n\nOutput:\n```\nYES\n3 2 1\nYES\n8 1 2 3 4\nNO\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 100; 1 ≤ x ≤ 10^4) — the number of gold pieces that Phoenix has and the weight to avoid, respectively.\n\nThe second line of each test case contains n space-separated integers (1 ≤ w_i ≤ 100) — the weights of the gold pieces. It is guaranteed that the weights are pairwise distinct.",
+    "output": "For each test case, if Phoenix cannot place all n pieces without the scale exploding, print NO. Otherwise, print YES followed by the rearranged array w. If there are multiple solutions, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1169A",
+    "contest_id": 1169,
+    "problem_letter": "A",
+    "title": "A. Circle Metro",
+    "statement": "The circle line of the Roflanpolis subway has n stations.\n\nThere are two parallel routes in the subway. The first one visits stations in order 1 → 2 → … → n → 1 → 2 → … (so the next stop after station x is equal to (x+1) if x < n and 1 otherwise). The second route visits stations in order n → (n-1) → … → 1 → n → (n-1) → … (so the next stop after station x is equal to (x-1) if x > 1 and n otherwise). All trains depart their stations simultaneously, and it takes exactly 1 minute to arrive at the next station.\n\nTwo toads live in this city, their names are Daniel and Vlad.\n\nDaniel is currently in a train of the first route at station a and will exit the subway when his train reaches station x.\n\nCoincidentally, Vlad is currently in a train of the second route at station b and he will exit the subway when his train reaches station y.\n\nSurprisingly, all numbers a,x,b,y are distinct.\n\nToad Ilya asks you to check if Daniel and Vlad will ever be at the same station at the same time during their journey. In other words, check if there is a moment when their trains stop at the same station. Note that this includes the moments when Daniel or Vlad enter or leave the subway.\n\nThe first line contains five space-separated integers n, a, x, b, y (4 ≤ n ≤ 100, 1 ≤ a, x, b, y ≤ n, all numbers among a, x, b, y are distinct) — the number of stations in Roflanpolis, Daniel's start station, Daniel's finish station, Vlad's start station and Vlad's finish station, respectively.\n\nOutput \"YES\" if there is a time moment when Vlad and Daniel are at the same station, and \"NO\" otherwise. You can print each letter in any case (upper or lower).\n\nIn the first example, Daniel and Vlad start at the stations (1, 3). One minute later they are at stations (2, 2). They are at the same station at this moment. Note that Vlad leaves the subway right after that.\n\nConsider the second example, let's look at the stations Vlad and Daniel are at. They are:\n\nAfter that, they both leave the subway because they are at their finish stations, so there is no moment when they both are at the same station.\n\nInput:\n```\n5 1 4 3 2\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n10 2 1 9 10\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains five space-separated integers n, a, x, b, y (4 ≤ n ≤ 100, 1 ≤ a, x, b, y ≤ n, all numbers among a, x, b, y are distinct) — the number of stations in Roflanpolis, Daniel's start station, Daniel's finish station, Vlad's start station and Vlad's finish station, respectively.",
+    "output": "Output \"YES\" if there is a time moment when Vlad and Daniel are at the same station, and \"NO\" otherwise. You can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

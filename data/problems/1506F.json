@@ -1,0 +1,20 @@
+{
+    "id": "1506F",
+    "contest_id": 1506,
+    "problem_letter": "F",
+    "title": "F. Triangular Paths",
+    "statement": "Consider an infinite triangle made up of layers. Let's number the layers, starting from one, from the top of the triangle (from top to bottom). The k-th layer of the triangle contains k points, numbered from left to right. Each point of an infinite triangle is described by a pair of numbers (r, c) (1 ≤ c ≤ r), where r is the number of the layer, and c is the number of the point in the layer. From each point (r, c) there are two directed edges to the points (r+1, c) and (r+1, c+1), but only one of the edges is activated. If r + c is even, then the edge to the point (r+1, c) is activated, otherwise the edge to the point (r+1, c+1) is activated. Look at the picture for a better understanding.\n\nFrom the point (r_1, c_1) it is possible to reach the point (r_2, c_2), if there is a path between them only from activated edges. For example, in the picture above, there is a path from (1, 1) to (3, 2), but there is no path from (2, 1) to (1, 1).\n\nInitially, you are at the point (1, 1). For each turn, you can:\n\nYou are given a sequence of n points of an infinite triangle (r_1, c_1), (r_2, c_2), …, (r_n, c_n). Find the minimum cost path from (1, 1), passing through all n points in arbitrary order.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) is the number of test cases. Then t test cases follow.\n\nEach test case begins with a line containing one integer n (1 ≤ n ≤ 2·10^5) is the number of points to visit.\n\nThe second line contains n numbers r_1, r_2, …, r_n (1 ≤ r_i ≤ 10^9), where r_i is the number of the layer in which i-th point is located.\n\nThe third line contains n numbers c_1, c_2, …, c_n (1 ≤ c_i ≤ r_i), where c_i is the number of the i-th point in the r_i layer.\n\nIt is guaranteed that all n points are distinct.\n\nIt is guaranteed that there is always at least one way to traverse all n points.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the minimum cost of a path passing through all points in the corresponding test case.\n\nInput:\n```\n4\n3\n1 4 2\n1 3 1\n2\n2 4\n2 3\n2\n1 1000000000\n1 1000000000\n4\n3 10 5 8\n2 5 2 4\n```\n\nOutput:\n```\n0\n1\n999999999\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) is the number of test cases. Then t test cases follow.\n\nEach test case begins with a line containing one integer n (1 ≤ n ≤ 2·10^5) is the number of points to visit.\n\nThe second line contains n numbers r_1, r_2, …, r_n (1 ≤ r_i ≤ 10^9), where r_i is the number of the layer in which i-th point is located.\n\nThe third line contains n numbers c_1, c_2, …, c_n (1 ≤ c_i ≤ r_i), where c_i is the number of the i-th point in the r_i layer.\n\nIt is guaranteed that all n points are distinct.\n\nIt is guaranteed that there is always at least one way to traverse all n points.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the minimum cost of a path passing through all points in the corresponding test case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "math",
+        "shortest paths",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

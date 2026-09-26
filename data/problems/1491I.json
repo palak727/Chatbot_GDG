@@ -1,0 +1,17 @@
+{
+    "id": "1491I",
+    "contest_id": 1491,
+    "problem_letter": "I",
+    "title": "I. Ruler Of The Zoo",
+    "statement": "After realizing that Zookeeper is just a duck, the animals have overthrown Zookeeper. They now have to decide a new ruler among themselves through a fighting tournament of the following format:\n\nInitially, animal 0 is king, while everyone else queues up with animal 1 at the front of the queue and animal n-1 at the back. The animal at the front of the queue will challenge the king to a fight, and the animal with greater strength will win the fight. The winner will become king, while the loser joins the back of the queue.\n\nAn animal who wins 3 times consecutively will be crowned ruler for the whole zoo. The strength of each animal depends on how many consecutive fights he won. Animal i has strength A_i with 0 consecutive win, B_i with 1 consecutive win, and C_i with 2 consecutive wins. Initially, everyone has 0 consecutive win.\n\nFor all animals, A_i > B_i and C_i > B_i. Also, the values of A_i, B_i, C_i are distinct (all 3n values are pairwise different).\n\nIn other words, an animal who is not a king has strength A_i. A king usually has a strength of B_i or C_i. The exception is on the first turn, the first king (animal 0) has strength A_i.\n\nWho is the new ruler, and after how many fights? Or will it end up that animals fight forever with no one ending up as ruler?\n\nThe first line contains one integer n (4 ≤ n ≤ 6000) — number of the animals.\n\ni-th of the next n lines contains 3 integers A_i, B_i and C_i (0 ≤ A_i, B_i, C_i ≤ 10^9).\n\nIt is guaranteed that A_i > B_i and C_i > B_i, and that all values of A_i, B_i and C_i are distinct.\n\nOutput two integers in a single line. The first is the index of the animal that will become ruler, and the second is the number of fights passed until some animal becomes the ruler.\n\nIf the animals will fight for infinitely long, output -1 -1 instead.\n\nThe following describes the sequence of events for the second sample. Note that in fight 1, the king (animal 0) has strength A_0. The tournament ends at fight 7 as animal 1 wins fight 5, 6 and 7.\n\nInput:\n```\n4\n5 1 2\n10 8 11\n9 0 3\n7 4 6\n```\n\nOutput:\n```\n-1 -1\n```\n\nInput:\n```\n5\n11 7 12\n8 6 14\n2 1 10\n13 0 9\n5 3 4\n```\n\nOutput:\n```\n1 7\n```",
+    "input": "The first line contains one integer n (4 ≤ n ≤ 6000) — number of the animals.\n\ni-th of the next n lines contains 3 integers A_i, B_i and C_i (0 ≤ A_i, B_i, C_i ≤ 10^9).\n\nIt is guaranteed that A_i > B_i and C_i > B_i, and that all values of A_i, B_i and C_i are distinct.",
+    "output": "Output two integers in a single line. The first is the index of the animal that will become ruler, and the second is the number of fights passed until some animal becomes the ruler.\n\nIf the animals will fight for infinitely long, output -1 -1 instead.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "*3500"
+    ],
+    "rating": 3500
+}

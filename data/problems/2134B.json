@@ -1,0 +1,18 @@
+{
+    "id": "2134B",
+    "contest_id": 2134,
+    "problem_letter": "B",
+    "title": "B. Add 0 or K",
+    "statement": "You are given an array of n positive integers a_1, a_2, …, a_n and a positive integer k.\n\nIn one operation, you may add either 0 or k to each a_i, i.e., choose another array of n integers b_1, b_2, …, b_n where each b_i is either 0 or k, and update a_i to a_i + b_i for 1 ≤ i ≤ n. Note that you can choose different values for each element of the array b.\n\nYour task is to perform at most k such operations to make gcd(a_1, a_2, …, a_n) > 1 ^{∗}. It can be proved that this is always possible.\n\nOutput the final array after the operations. You do not have to output the operations themselves.\n\n^{∗}gcd(a_1, a_2, …, a_n) denotes the greatest common divisor (GCD) of a_1, a_2, …, a_n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 10^9) — the length of the array a and the given constant.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output an array of n integers in a new line — the final array after the operations. The integers in the output should be within the range from 1 to 10^9 + k^2.\n\nIf there are multiple valid outputs, you can output any of them.\n\nNote that you do not have to minimize the number of operations.\n\nIn the first test case, the output [8,10,10] is valid because gcd(8, 10, 10) = 2 > 1, and the array [2, 7, 1] can be transformed into [8, 10, 10] using at most 3 operations. One possible sequence of operations is shown below:\n\nOther outputs like [2, 10, 4], [8, 16, 4], and [5, 10, 10] are also considered valid.\n\nIn the second test case, the output [7, 14, 21, 14] is valid because:\n\nInput:\n```\n83 32 7 14 52 9 16 144 11 2 3 45 25 6 7 8 92 107 91 100000000011 37110000000003 61 3 5\n```\n\nOutput:\n```\n8 10 10\n7 14 21 14\n2 2 4 4\n9 6 9 12 9\n77 99\n1000000000000000001\n1000000000\n25 15 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 10^9) — the length of the array a and the given constant.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output an array of n integers in a new line — the final array after the operations. The integers in the output should be within the range from 1 to 10^9 + k^2.\n\nIf there are multiple valid outputs, you can output any of them.\n\nNote that you do not have to minimize the number of operations.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

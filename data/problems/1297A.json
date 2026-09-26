@@ -1,0 +1,16 @@
+{
+    "id": "1297A",
+    "contest_id": 1297,
+    "problem_letter": "A",
+    "title": "A. Likes Display",
+    "statement": "Polycarp is working on the implementation of displaying likes on the Codehorses social network. The number of likes should be displayed in a format that will be easy to read by users. It was decided that for large numbers of likes the format should be like 123K (one hundred twenty-three thousand) or like 56M (fifty-six million).\n\nThe following displaying strategy has been approved:\n\nHelp Polycarp implement this part of the functionality: for a given non-negative integer number of likes n, print its view in the Codehorses interface.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases in the input. The following are descriptions of the t input test cases, one per line.\n\nThe description of each test case consists of a single line that contains a non-negative integer n (0 ≤ n ≤ 2·10^9) — the number of likes.\n\nPrint t answers to the given test cases in the order from the input. Each printed value must have one of the following types:\n\nThe answer is equal to a view which is the closest (by difference) to the given number n. If this rounding is ambiguous, then round answer up (to a greater value).\n\nLet's describe some test cases:\n\nInput:\n```\n9\n999\n123\n0\n1782\n31415926\n1500\n999999\n35499710\n2000000000\n```\n\nOutput:\n```\n999\n123\n0\n2K\n31M\n2K\n1M\n35M\n2000M\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases in the input. The following are descriptions of the t input test cases, one per line.\n\nThe description of each test case consists of a single line that contains a non-negative integer n (0 ≤ n ≤ 2·10^9) — the number of likes.",
+    "output": "Print t answers to the given test cases in the order from the input. Each printed value must have one of the following types:\n\nThe answer is equal to a view which is the closest (by difference) to the given number n. If this rounding is ambiguous, then round answer up (to a greater value).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

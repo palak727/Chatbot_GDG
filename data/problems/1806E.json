@@ -1,0 +1,19 @@
+{
+    "id": "1806E",
+    "contest_id": 1806,
+    "problem_letter": "E",
+    "title": "E. Tree Master",
+    "statement": "You are given a tree with n weighted vertices labeled from 1 to n rooted at vertex 1. The parent of vertex i is p_i and the weight of vertex i is a_i. For convenience, define p_1=0.\n\nFor two vertices x and y of the same depth^dagger, define f(x,y) as follows:\n\nYou will process q queries. In the i-th query, you are given two integers x_i and y_i and you need to calculate f(x_i,y_i).\n\n^dagger The depth of vertex v is the number of edges on the unique simple path from the root of the tree to vertex v.\n\nThe first line contains two integers n and q (2 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nThe third line contains n-1 integers p_2, …, p_n (1 ≤ p_i < i).\n\nEach of the next q lines contains two integers x_i and y_i (1≤ x_i,y_i≤ n). It is guaranteed that x_i and y_i are of the same depth.\n\nOutput q lines, the i-th line contains a single integer, the value of f(x_i,y_i).\n\nConsider the first example:\n\nIn the first query, the answer is a_4·a_5+a_3·a_3+a_2·a_2+a_1·a_1=3+4+25+1=33.\n\nIn the second query, the answer is a_6·a_6+a_2·a_2+a_1·a_1=1+25+1=27.\n\nInput:\n```\n6 2\n1 5 2 3 1 1\n1 2 3 3 2\n4 5\n6 6\n```\n\nOutput:\n```\n33\n27\n```\n\nInput:\n```\n14 8\n3 2 5 3 1 4 2 2 2 5 5 5 2 4\n1 2 3 1 1 4 7 3 3 1 5 3 8\n4 4\n4 10\n13 10\n3 12\n13 9\n3 12\n9 10\n11 5\n```\n\nOutput:\n```\n47\n53\n48\n36\n42\n36\n48\n14\n```",
+    "input": "The first line contains two integers n and q (2 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nThe third line contains n-1 integers p_2, …, p_n (1 ≤ p_i < i).\n\nEach of the next q lines contains two integers x_i and y_i (1≤ x_i,y_i≤ n). It is guaranteed that x_i and y_i are of the same depth.",
+    "output": "Output q lines, the i-th line contains a single integer, the value of f(x_i,y_i).",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

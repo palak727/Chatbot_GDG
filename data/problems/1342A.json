@@ -1,0 +1,17 @@
+{
+    "id": "1342A",
+    "contest_id": 1342,
+    "problem_letter": "A",
+    "title": "A. Road To Zero",
+    "statement": "You are given two integers x and y. You can perform two types of operations:\n\nYour goal is to make both given integers equal zero simultaneously, i.e. x = y = 0. There are no other requirements. In particular, it is possible to move from x=1, y=0 to x=y=0.\n\nCalculate the minimum amount of dollars you have to spend on it.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains two integers x and y (0 ≤ x, y ≤ 10^9).\n\nThe second line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9).\n\nFor each test case print one integer — the minimum amount of dollars you have to spend.\n\nIn the first test case you can perform the following sequence of operations: first, second, first. This way you spend 391 + 555 + 391 = 1337 dollars.\n\nIn the second test case both integers are equal to zero initially, so you dont' have to spend money.\n\nInput:\n```\n2\n1 3\n391 555\n0 0\n9 4\n```\n\nOutput:\n```\n1337\n0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains two integers x and y (0 ≤ x, y ≤ 10^9).\n\nThe second line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9).",
+    "output": "For each test case print one integer — the minimum amount of dollars you have to spend.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

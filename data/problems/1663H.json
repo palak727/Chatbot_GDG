@@ -1,0 +1,16 @@
+{
+    "id": "1663H",
+    "contest_id": 1663,
+    "problem_letter": "H",
+    "title": "H. Cross-Language Program",
+    "statement": "Write a program that is compilable simultaneously in two languages: C++ (GCC 10.3.1, -std=c++11) and FreePascal (3.0.4).\n\nIt absolutely does not matter what this program does, the only requirement is that it successfully compiles into an executable file in both C++ and Pascal.\n\nPlease use the language Text to submit your solution. Just choose Text as a language in the submission form.\n\nThe submitted file can't exceed 2048 bytes. It should compile fast on both compilers.\n\nNo input.\n\nNo output.",
+    "input": "No input.",
+    "output": "No output.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms"
+    ],
+    "rating": null
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1674D",
+    "contest_id": 1674,
+    "problem_letter": "D",
+    "title": "D. A-B-C Sort",
+    "statement": "You are given three arrays a, b and c. Initially, array a consists of n elements, arrays b and c are empty.\n\nYou are performing the following algorithm that consists of two steps:\n\nCan you make array c sorted in non-decreasing order?\n\nThe first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Next t cases follow.\n\nThe first line of each test case contains the single integer n (1 ≤ n ≤ 2·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the array a itself.\n\nIt's guaranteed that the sum of n doesn't exceed 2·10^5.\n\nFor each test, print YES (case-insensitive), if you can make array c sorted in non-decreasing order. Otherwise, print NO (case-insensitive).\n\nIn the first test case, we can do the following for a = [3, 1, 5, 3]:\n\nStep 1:\n\nStep 2:\n\nInput:\n```\n343 1 5 333 2 117331\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Next t cases follow.\n\nThe first line of each test case contains the single integer n (1 ≤ n ≤ 2·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the array a itself.\n\nIt's guaranteed that the sum of n doesn't exceed 2·10^5.",
+    "output": "For each test, print YES (case-insensitive), if you can make array c sorted in non-decreasing order. Otherwise, print NO (case-insensitive).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

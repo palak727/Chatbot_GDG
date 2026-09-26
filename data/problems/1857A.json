@@ -1,0 +1,17 @@
+{
+    "id": "1857A",
+    "contest_id": 1857,
+    "problem_letter": "A",
+    "title": "A. Array Coloring",
+    "statement": "You are given an array consisting of n integers. Your task is to determine whether it is possible to color all its elements in two colors in such a way that the sums of the elements of both colors have the same parity and each color has at least one element colored.\n\nFor example, if the array is [1,2,4,3,2,3,5,4], we can color it as follows: [colorblue1,colorblue2,colorred4,colorblue3,colorred2,colorred3,colorred5,colorred4], where the sum of the blue elements is 6 and the sum of the red elements is 18.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case begins with a line containing an integer n (2 ≤ n ≤ 50) — the length of the array a.\n\nThe next line contains n integers a_1,a_2, …, a_n (1 ≤ a_i ≤ 50) — the elements of the array a.\n\nFor each test case, output \"YES\" (without quotes) if it is possible to color the array in two colors in such a way that the sums of the elements of both colors have the same parity and each color has at least one element colored, and \"NO\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as correct answers).\n\nThe first sample is described in the statement.\n\nIn the second sample, there are only two colorings [colorblue4,colorred7] and [colorred4,colorblue7] , but in both cases the parity of sums is different.\n\nIn the third sample, you can color [colorblue3,colorblue9,colorred8] and 12 and 8 are both even.\n\nInput:\n```\n781 2 4 3 2 3 5 424 733 9 821 755 4 3 2 144 3 4 5250 48\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case begins with a line containing an integer n (2 ≤ n ≤ 50) — the length of the array a.\n\nThe next line contains n integers a_1,a_2, …, a_n (1 ≤ a_i ≤ 50) — the elements of the array a.",
+    "output": "For each test case, output \"YES\" (without quotes) if it is possible to color the array in two colors in such a way that the sums of the elements of both colors have the same parity and each color has at least one element colored, and \"NO\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as correct answers).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

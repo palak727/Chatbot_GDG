@@ -1,0 +1,17 @@
+{
+    "id": "1810A",
+    "contest_id": 1810,
+    "problem_letter": "A",
+    "title": "A. Beautiful Sequence",
+    "statement": "A sequence of m integers a_1, a_2, …, a_m is good, if and only if there exists at least one i (1 ≤ i ≤ m) such that a_i = i. For example, [3,2,3] is a good sequence, since a_2 = 2, a_3 = 3, while [3,1,1] is not a good sequence, since there is no i such that a_i = i.\n\nA sequence a is beautiful, if and only if there exists at least one subsequence of a satisfying that this subsequence is good. For example, [4,3,2] is a beautiful sequence, since its subsequence [4,2] is good, while [5,3,4] is not a beautiful sequence.\n\nA sequence b is a subsequence of a sequence a if b can be obtained from a by the deletion of several (possibly, zero or all) elements.\n\nNow you are given a sequence, check whether it is beautiful or not.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. Their description follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), representing the sequence.\n\nFor each test case, output \"YES\" or \"NO\"(without quotes) in one line, representing whether the given sequence is beautiful.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, the good subsequence is b=[3,2], where b_2 = 2.\n\nIn the second test case, the good subsequence is b=[2,4,3], where b_3 = 3.\n\nIn the fourth test case, the good subsequence is b=[1], where b_1 = 1.\n\nIn the fifth test case, the good subsequence is b=[2,2], where b_2 = 2.\n\nInput:\n```\n733 2 142 4 3 552 3 5 5 623 152 4 5 2 345 6 7 866 5 4 3 2 1\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. Their description follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), representing the sequence.",
+    "output": "For each test case, output \"YES\" or \"NO\"(without quotes) in one line, representing whether the given sequence is beautiful.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

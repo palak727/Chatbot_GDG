@@ -1,0 +1,19 @@
+{
+    "id": "1644C",
+    "contest_id": 1644,
+    "problem_letter": "C",
+    "title": "C. Increase Subarray Sums",
+    "statement": "You are given an array a_1, a_2, …, a_n, consisting of n integers. You are also given an integer value x.\n\nLet f(k) be the maximum sum of a contiguous subarray of a after applying the following operation: add x to the elements on exactly k distinct positions. An empty subarray should also be considered, it has sum 0.\n\nNote that the subarray doesn't have to include all of the increased elements.\n\nCalculate the maximum value of f(k) for all k from 0 to n independently.\n\nThe first line contains a single integer t (1 ≤ t ≤ 5000) — the number of testcases.\n\nThe first line of the testcase contains two integers n and x (1 ≤ n ≤ 5000; 0 ≤ x ≤ 10^5) — the number of elements in the array and the value to add.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^5 ≤ a_i ≤ 10^5).\n\nThe sum of n over all testcases doesn't exceed 5000.\n\nFor each testcase, print n + 1 integers — the maximum value of f(k) for all k from 0 to n independently.\n\nIn the first testcase, it doesn't matter which elements you add x to. The subarray with the maximum sum will always be the entire array. If you increase k elements by x, k·x will be added to the sum.\n\nIn the second testcase:\n\nInput:\n```\n34 24 1 3 23 5-2 -7 -110 2-6 -1 -2 4 -6 -1 -4 4 -5 -4\n```\n\nOutput:\n```\n10 12 14 16 18\n0 4 4 5\n4 6 6 7 7 7 7 8 8 8 8\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of testcases.\n\nThe first line of the testcase contains two integers n and x (1 ≤ n ≤ 5000; 0 ≤ x ≤ 10^5) — the number of elements in the array and the value to add.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^5 ≤ a_i ≤ 10^5).\n\nThe sum of n over all testcases doesn't exceed 5000.",
+    "output": "For each testcase, print n + 1 integers — the maximum value of f(k) for all k from 0 to n independently.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2109E",
+    "contest_id": 2109,
+    "problem_letter": "E",
+    "title": "E. Binary String Wowee",
+    "statement": "Mouf is bored with themes, so he decided not to use any themes for this problem.\n\nYou are given a binary^{∗} string s of length n. You are to perform the following operation exactly k times:\n\nYou need to count the number of possible ways to perform all k operations.\n\nSince the answer could be ginormous, print it modulo 998,244,353.\n\nTwo sequences of operations are considered different if they differ in the index selected at any step.\n\n^{∗}A binary string is a string that consists only of the characters mathtt0 and mathtt1.\n\n^{†}Flipping a binary character is changing it from mathtt0 to mathtt1 or vice versa.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 500) — the length of the binary string s and the number of times the operation must be performed, respectively.\n\nThe second line of each test case contains a binary string s of length n consisting of only characters mathtt0 and mathtt1.\n\nIt is guaranteed that the sum of n does not exceed 500 over all test cases.\n\nFor each test case, output a single integer — the number of ways you can perform exactly k operations, modulo 998,244,353.\n\nIn the first test case, here are all the possible sequences of operations:\n\nIn the second test case, here are all the possible sequences of operations:\n\nInput:\n```\n53 10103 20005 4010018 81100110020 2010010110101101010110\n```\n\nOutput:\n```\n2\n3\n10\n27286\n915530405\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 500) — the length of the binary string s and the number of times the operation must be performed, respectively.\n\nThe second line of each test case contains a binary string s of length n consisting of only characters mathtt0 and mathtt1.\n\nIt is guaranteed that the sum of n does not exceed 500 over all test cases.",
+    "output": "For each test case, output a single integer — the number of ways you can perform exactly k operations, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "strings",
+        "*2400"
+    ],
+    "rating": 2400
+}

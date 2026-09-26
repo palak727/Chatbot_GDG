@@ -3,13 +3,14 @@
     "contest_id": 1001,
     "problem_letter": "D",
     "title": "D. Distinguish plus state and minus state",
-    "statement": "You are given a qubit which is guaranteed to be either in  or in  state. \nYour task is to perform necessary operations and measurements to figure out which state it was and to return 1 if it was a  state or -1 if it was  state. The state of the qubit after the operations does not matter.\nYou have to implement an operation which takes a qubit as an input and returns an integer. \nYour code should have the following signature:",
-    "input": "You have to implement an operation which takes a qubit as an input and returns an integer. ",
+    "statement": "You are given a qubit which is guaranteed to be either in or in state.\n\nYour task is to perform necessary operations and measurements to figure out which state it was and to return 1 if it was a state or -1 if it was state. The state of the qubit after the operations does not matter.\n\nYou have to implement an operation which takes a qubit as an input and returns an integer.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (q : Qubit) : Int\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
+    "input": "You have to implement an operation which takes a qubit as an input and returns an integer.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (q : Qubit) : Int\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "output": "",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
-        "*special problem",
+        "*special",
         "*1400"
-    ]
+    ],
+    "rating": 1400
 }

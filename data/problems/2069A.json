@@ -1,0 +1,17 @@
+{
+    "id": "2069A",
+    "contest_id": 2069,
+    "problem_letter": "A",
+    "title": "A. Was there an Array?",
+    "statement": "For an array of integers a_1, a_2, …, a_n, we define its equality characteristic as the array b_2, b_3, …, b_{n-1}, where b_i = 1 if the i-th element of the array a is equal to both of its neighbors, and b_i = 0 if the i-th element of the array a is not equal to at least one of its neighbors.\n\nFor example, for the array [1, 2, 2, 2, 3, 3, 4, 4, 4, 4], the equality characteristic will be [0, 1, 0, 0, 0, 0, 1, 1].\n\nYou are given the array b_2, b_3, …, b_{n-1}. Your task is to determine whether there exists such an array a for which the given array is the equality characteristic.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines:\n\nFor each test case, output YES if the array a exists, or NO if such an array does not exist. Each letter can be printed in any case.\n\nIn the first example, the array a = [1, 2, 2, 2, 3, 3, 4, 4, 4, 4] is suitable.\n\nIn the second example, the array a = [7, 7, 7] is suitable.\n\nInput:\n```\n3100 1 0 0 0 0 1 131100 1 0 1 1 0 0 1\n```\n\nOutput:\n```\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines:",
+    "output": "For each test case, output YES if the array a exists, or NO if such an array does not exist. Each letter can be printed in any case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "graph matchings",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

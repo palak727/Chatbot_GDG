@@ -1,0 +1,17 @@
+{
+    "id": "1278B",
+    "contest_id": 1278,
+    "problem_letter": "B",
+    "title": "B. A and B",
+    "statement": "You are given two integers a and b. You can perform a sequence of operations: during the first operation you choose one of these numbers and increase it by 1; during the second operation you choose one of these numbers and increase it by 2, and so on. You choose the number of these operations yourself.\n\nFor example, if a = 1 and b = 3, you can perform the following sequence of three operations:\n\nCalculate the minimum number of operations required to make a and b equal.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9).\n\nFor each test case print one integer — the minimum numbers of operations required to make a and b equal.\n\nFirst test case considered in the statement.\n\nIn the second test case integers a and b are already equal, so you don't need to perform any operations.\n\nIn the third test case you have to apply the first, the second, the third and the fourth operation to b (b turns into 20 + 1 + 2 + 3 + 4 = 30).\n\nInput:\n```\n3\n1 3\n11 11\n30 20\n```\n\nOutput:\n```\n3\n0\n4\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9).",
+    "output": "For each test case print one integer — the minimum numbers of operations required to make a and b equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

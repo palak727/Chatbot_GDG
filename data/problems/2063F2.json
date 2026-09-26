@@ -1,0 +1,22 @@
+{
+    "id": "2063F2",
+    "contest_id": 2063,
+    "problem_letter": "F2",
+    "title": "F2. Counting Is Not Fun (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference between the versions is that in this version, the limits on t and n are bigger. You can hack only if you solved all versions of this problem.\n\nA bracket sequence is called balanced if it can be constructed by the following formal grammar.\n\nFor example, the sequences \"(())()\", \"()\", \"(()(()))\", and the empty sequence are balanced, while \"(()\" and \"(()))(\" are not.\n\nGiven a balanced bracket sequence s, a pair of indices (i,j) (i < j) is called a good pair if s_i is '(', s_j is ')', and the two brackets are added simultaneously with respect to Rule 2 while constructing the sequence s. For example, the sequence \"(())()\" has three different good pairs, which are (1,4), (2,3), and (5,6). One can show that any balanced bracket sequence of 2n brackets contains exactly n different good pairs, and using any order of rules to construct the same bracket sequence will yield the same set of good pairs.\n\nEmily will play a bracket guessing game with John. The game is played as follows.\n\nInitially, John has a balanced bracket sequence s containing n different good pairs, which is not known to Emily. John tells Emily the value of n and asks Emily to guess the sequence.\n\nThroughout n turns, John gives Emily the following kind of clue on each turn.\n\nThe clues that John gives Emily are pairwise distinct and do not contradict each other.\n\nAt a certain point, Emily can be certain that the balanced bracket sequence satisfying the clues given so far is unique. For example, assume Emily knows that s has 3 good pairs, and it contains the good pair (2,5). Out of 5 balanced bracket sequences with 3 good pairs, there exists only one such sequence \"((()))\" with the good pair (2,5). Therefore, one can see that Emily does not always need n turns to guess s.\n\nTo find out the content of s as early as possible, Emily wants to know the number of different balanced bracket sequences that match the clues after each turn. Surely, this is not an easy job for Emily, especially when she is given so many good pairs. Now it is your turn to help Emily. Given the clues, you must find the answer before and after each turn. As the answers may be huge, you need to find them modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 3·10^5) — the number of good pairs.\n\nThen, each of the n following lines contains two integers l_i and r_i representing the i-th clue (1 ≤ l_i < r_i ≤ 2n).\n\nThe clues in one test case are pairwise distinct and do not contradict each other.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output n+1 integers on a separate line:\n\nThe first test case of the example is explained in the problem description.\n\nThe third test case of the example is explained as follows. It can be shown that there are 132 balanced bracket sequences with 6 good pairs. The answers after each clue are given as follows:\n\nThen, the number of bracket sequences after the fifth and the sixth clue are both 1 as you already know the content of s.\n\nInput:\n```\n332 51 63 441 67 82 34 562 31 67 89 1210 114 5\n```\n\nOutput:\n```\n5 1 1 1\n14 2 2 1 1\n132 42 5 2 1 1 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 3·10^5) — the number of good pairs.\n\nThen, each of the n following lines contains two integers l_i and r_i representing the i-th clue (1 ≤ l_i < r_i ≤ 2n).\n\nThe clues in one test case are pairwise distinct and do not contradict each other.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output n+1 integers on a separate line:",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "implementation",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

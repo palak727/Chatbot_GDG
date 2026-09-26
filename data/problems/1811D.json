@@ -1,0 +1,18 @@
+{
+    "id": "1811D",
+    "contest_id": 1811,
+    "problem_letter": "D",
+    "title": "D. Umka and a Long Flight",
+    "statement": "The girl Umka loves to travel and participate in math olympiads. One day she was flying by plane to the next olympiad and out of boredom explored a huge checkered sheet of paper.\n\nDenote the n-th Fibonacci number as F_n = begincases 1, & n = 0; 1, & n = 1; F_{n-2} + F_{n-1}, & n ≥ 2. endcases\n\nA checkered rectangle with a height of F_n and a width of F_{n+1} is called a Fibonacci rectangle of order n.\n\nUmka has a Fibonacci rectangle of order n. Someone colored a cell in it at the intersection of the row x and the column y.\n\nIt is necessary to cut this rectangle exactly into n+1 squares in such way that\n\nWill Umka be able to cut this rectangle in that way?\n\nThe first line contains an integer t (1 ≤ t ≤ 2·10^5) — number of test cases.\n\nFor each test case the integers n, x, y are given (1 ≤ n ≤ 44, 1 ≤ x ≤ F_n, 1 ≤ y ≤ F_{n+1}) — the order of the Fibonacci rectangle and the coordinates of the colored cell.\n\nFor each test case, print \"YES\" if the answer is positive, and \"NO\" otherwise.\n\nYou can print \"YES\" and \"NO\" in any case (for example, the strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive answer).\n\nInput:\n```\n121 1 12 1 23 1 43 3 24 4 64 3 35 6 55 4 125 2 124 2 11 1 244 758465880 1277583853\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 2·10^5) — number of test cases.\n\nFor each test case the integers n, x, y are given (1 ≤ n ≤ 44, 1 ≤ x ≤ F_n, 1 ≤ y ≤ F_{n+1}) — the order of the Fibonacci rectangle and the coordinates of the colored cell.",
+    "output": "For each test case, print \"YES\" if the answer is positive, and \"NO\" otherwise.\n\nYou can print \"YES\" and \"NO\" in any case (for example, the strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive answer).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

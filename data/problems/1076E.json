@@ -1,0 +1,17 @@
+{
+    "id": "1076E",
+    "contest_id": 1076,
+    "problem_letter": "E",
+    "title": "E. Vasya and a Tree",
+    "statement": "Vasya has a tree consisting of n vertices with root in vertex 1. At first all vertices has 0 written on it.\n\nLet d(i, j) be the distance between vertices i and j, i.e. number of edges in the shortest path from i to j. Also, let's denote k-subtree of vertex x — set of vertices y such that next two conditions are met:\n\nVasya needs you to process m queries. The i-th query is a triple v_i, d_i and x_i. For each query Vasya adds value x_i to each vertex from d_i-subtree of v_i.\n\nReport to Vasya all values, written on vertices of the tree after processing all queries.\n\nThe first line contains single integer n (1 ≤ n ≤ 3·10^5) — number of vertices in the tree.\n\nEach of next n - 1 lines contains two integers x and y (1 ≤ x, y ≤ n) — edge between vertices x and y. It is guarantied that given graph is a tree.\n\nNext line contains single integer m (1 ≤ m ≤ 3·10^5) — number of queries.\n\nEach of next m lines contains three integers v_i, d_i, x_i (1 ≤ v_i ≤ n, 0 ≤ d_i ≤ 10^9, 1 ≤ x_i ≤ 10^9) — description of the i-th query.\n\nPrint n integers. The i-th integers is the value, written in the i-th vertex after processing all queries.\n\nIn the first exapmle initial values in vertices are 0, 0, 0, 0, 0. After the first query values will be equal to 1, 1, 1, 0, 0. After the second query values will be equal to 1, 11, 1, 0, 0. After the third query values will be equal to 1, 11, 1, 100, 0.\n\nInput:\n```\n5\n1 2\n1 3\n2 4\n2 5\n3\n1 1 1\n2 0 10\n4 10 100\n```\n\nOutput:\n```\n1 11 1 100 0 \n```\n\nInput:\n```\n5\n2 3\n2 1\n5 4\n3 4\n5\n2 0 4\n3 10 1\n1 2 3\n2 3 10\n1 1 7\n```\n\nOutput:\n```\n10 24 14 11 11 \n```",
+    "input": "The first line contains single integer n (1 ≤ n ≤ 3·10^5) — number of vertices in the tree.\n\nEach of next n - 1 lines contains two integers x and y (1 ≤ x, y ≤ n) — edge between vertices x and y. It is guarantied that given graph is a tree.\n\nNext line contains single integer m (1 ≤ m ≤ 3·10^5) — number of queries.\n\nEach of next m lines contains three integers v_i, d_i, x_i (1 ≤ v_i ≤ n, 0 ≤ d_i ≤ 10^9, 1 ≤ x_i ≤ 10^9) — description of the i-th query.",
+    "output": "Print n integers. The i-th integers is the value, written in the i-th vertex after processing all queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

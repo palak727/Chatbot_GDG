@@ -1,0 +1,16 @@
+{
+    "id": "1207D",
+    "contest_id": 1207,
+    "problem_letter": "D",
+    "title": "D. Number Of Permutations",
+    "statement": "You are given a sequence of n pairs of integers: (a_1, b_1), (a_2, b_2), … , (a_n, b_n). This sequence is called bad if it is sorted in non-descending order by first elements or if it is sorted in non-descending order by second elements. Otherwise the sequence is good. There are examples of good and bad sequences:\n\nCalculate the number of permutations of size n such that after applying this permutation to the sequence s it turns into a good sequence.\n\nA permutation p of size n is a sequence p_1, p_2, … , p_n consisting of n distinct integers from 1 to n (1 ≤ p_i ≤ n). If you apply permutation p_1, p_2, … , p_n to the sequence s_1, s_2, … , s_n you get the sequence s_p_1, s_p_2, … , s_p_n. For example, if s = [(1, 2), (1, 3), (2, 3)] and p = [2, 3, 1] then s turns into [(1, 3), (2, 3), (1, 2)].\n\nThe first line contains one integer n (1 ≤ n ≤ 3·10^5).\n\nThe next n lines contains description of sequence s. The i-th line contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n) — the first and second elements of i-th pair in the sequence.\n\nThe sequence s may contain equal elements.\n\nPrint the number of permutations of size n such that after applying this permutation to the sequence s it turns into a good sequence. Print the answer modulo 998244353 (a prime number).\n\nIn first test case there are six permutations of size 3:\n\nInput:\n```\n3\n1 1\n2 2\n3 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4\n2 3\n2 2\n2 1\n2 4\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n3\n1 1\n1 1\n2 3\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 3·10^5).\n\nThe next n lines contains description of sequence s. The i-th line contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n) — the first and second elements of i-th pair in the sequence.\n\nThe sequence s may contain equal elements.",
+    "output": "Print the number of permutations of size n such that after applying this permutation to the sequence s it turns into a good sequence. Print the answer modulo 998244353 (a prime number).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "*1800"
+    ],
+    "rating": 1800
+}

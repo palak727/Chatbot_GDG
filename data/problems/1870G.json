@@ -1,0 +1,16 @@
+{
+    "id": "1870G",
+    "contest_id": 1870,
+    "problem_letter": "G",
+    "title": "G. MEXanization",
+    "statement": "Let's define f(S). Let S be a multiset (i.e., it can contain repeated elements) of non-negative integers. In one operation, you can choose any non-empty subset of S (which can also contain repeated elements), remove this subset (all elements in it) from S, and add the MEX of the removed subset to S. You can perform any number of such operations. After all the operations, S should contain exactly 1 number. f(S) is the largest number that could remain in S after any sequence of operations.\n\nYou are given an array of non-negative integers a of length n. For each of its n prefixes, calculate f(S) if S is the corresponding prefix (for the i-th prefix, S consists of the first i elements of array a).\n\nThe MEX (minimum excluded) of an array is the smallest non-negative integer that does not belong to the array. For instance:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the size of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2·10^5) — the array a.\n\nIt is guaranteed that the sum of all n values across all test cases does not exceed 2·10^5.\n\nFor each test case, output n numbers: f(S) for each of the n prefixes of array a.\n\nConsider the first test case. For a prefix of length 1, the initial multiset is {179}. If we do nothing, we get 179.\n\nFor a prefix of length 2, the initial multiset is {57, 179}. Using the following sequence of operations, we can obtain 2.\n\nConsider the second test case. For a prefix of length 1, the initial multiset is {0}. If we apply the operation to {0}, the multiset becomes {1}. This is the answer.\n\nInput:\n```\n48179 57 2 0 2 3 2 31031 0 381 0 1 2 4 3 0 2\n```\n\nOutput:\n```\n179 2 3 3 3 4 4 5 \n1 \n1 2 2 \n1 2 2 3 3 5 5 5 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the size of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2·10^5) — the array a.\n\nIt is guaranteed that the sum of all n values across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n numbers: f(S) for each of the n prefixes of array a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "*3300"
+    ],
+    "rating": 3300
+}

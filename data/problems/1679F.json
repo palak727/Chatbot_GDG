@@ -1,0 +1,18 @@
+{
+    "id": "1679F",
+    "contest_id": 1679,
+    "problem_letter": "F",
+    "title": "F. Formalism for Formalism",
+    "statement": "Yura is a mathematician, and his cognition of the world is so absolute as if he have been solving formal problems a hundred of trillions of billions of years. This problem is just that!\n\nConsider all non-negative integers from the interval [0, 10^n). For convenience we complement all numbers with leading zeros in such way that each number from the given interval consists of exactly n decimal digits.\n\nYou are given a set of pairs (u_i, v_i), where u_i and v_i are distinct decimal digits from 0 to 9.\n\nConsider a number x consisting of n digits. We will enumerate all digits from left to right and denote them as d_1, d_2, …, d_n. In one operation you can swap digits d_i and d_{i + 1} if and only if there is a pair (u_j, v_j) in the set such that at least one of the following conditions is satisfied:\n\nWe will call the numbers x and y, consisting of n digits, equivalent if the number x can be transformed into the number y using some number of operations described above. In particular, every number is considered equivalent to itself.\n\nYou are given an integer n and a set of m pairs of digits (u_i, v_i). You have to find the maximum integer k such that there exists a set of integers x_1, x_2, …, x_k (0 ≤ x_i < 10^n) such that for each 1 ≤ i < j ≤ k the number x_i is not equivalent to the number x_j.\n\nThe first line contains an integer n (1 ≤ n ≤ 50,000) — the number of digits in considered numbers.\n\nThe second line contains an integer m (0 ≤ m ≤ 45) — the number of pairs of digits in the set.\n\nEach of the following m lines contains two digits u_i and v_i, separated with a space (0 ≤ u_i < v_i ≤ 9).\n\nIt's guaranteed that all described pairs are pairwise distinct.\n\nPrint one integer — the maximum value k such that there exists a set of integers x_1, x_2, …, x_k (0 ≤ x_i < 10^n) such that for each 1 ≤ i < j ≤ k the number x_i is not equivalent to the number x_j.\n\nAs the answer can be big enough, print the number k modulo 998,244,353.\n\nIn the first example we can construct a set that contains all integers from 0 to 9. It's easy to see that there are no two equivalent numbers in the set.\n\nIn the second example there exists a unique pair of equivalent numbers: 01 and 10. We can construct a set that contains all integers from 0 to 99 despite number 1.\n\nInput:\n```\n1\n0\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n2\n1\n0 1\n```\n\nOutput:\n```\n99\n```\n\nInput:\n```\n2\n9\n0 1\n1 2\n2 3\n3 4\n4 5\n5 6\n6 7\n7 8\n8 9\n```\n\nOutput:\n```\n91\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 50,000) — the number of digits in considered numbers.\n\nThe second line contains an integer m (0 ≤ m ≤ 45) — the number of pairs of digits in the set.\n\nEach of the following m lines contains two digits u_i and v_i, separated with a space (0 ≤ u_i < v_i ≤ 9).\n\nIt's guaranteed that all described pairs are pairwise distinct.",
+    "output": "Print one integer — the maximum value k such that there exists a set of integers x_1, x_2, …, x_k (0 ≤ x_i < 10^n) such that for each 1 ≤ i < j ≤ k the number x_i is not equivalent to the number x_j.\n\nAs the answer can be big enough, print the number k modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1264D2",
+    "contest_id": 1264,
+    "problem_letter": "D2",
+    "title": "D2. Beautiful Bracket Sequence (hard version)",
+    "statement": "This is the hard version of this problem. The only difference is the limit of n - the length of the input string. In this version, 1 ≤ n ≤ 10^6.\n\nLet's define a correct bracket sequence and its depth as follow:\n\nFor a (not necessarily correct) bracket sequence s, we define its depth as the maximum depth of any correct bracket sequence induced by removing some characters from s (possibly zero). For example: the bracket sequence s = \"())(())\" has depth 2, because by removing the third character we obtain a correct bracket sequence \"()(())\" with depth 2.\n\nGiven a string a consists of only characters '(', ')' and '?'. Consider all (not necessarily correct) bracket sequences obtained by replacing all characters '?' in a by either '(' or ')'. Calculate the sum of all the depths of all these bracket sequences. As this number can be large, find it modulo 998244353.\n\nHacks in this problem can be done only if easy and hard versions of this problem was solved.\n\nThe only line contains a non-empty string consist of only '(', ')' and '?'. The length of the string is at most 10^6.\n\nPrint the answer modulo 998244353 in a single line.\n\nIn the first test case, we can obtain 4 bracket sequences by replacing all characters '?' with either '(' or ')':\n\nSo, the answer is 1 = 0 + 0 + 0 + 1.\n\nIn the second test case, we can obtain 4 bracket sequences by replacing all characters '?' with either '(' or ')':\n\nSo, the answer is 9 = 2 + 2 + 3 + 2.\n\nInput:\n```\n??\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n(?(?))\n```\n\nOutput:\n```\n9\n```",
+    "input": "The only line contains a non-empty string consist of only '(', ')' and '?'. The length of the string is at most 10^6.",
+    "output": "Print the answer modulo 998244353 in a single line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "probabilities",
+        "*2900"
+    ],
+    "rating": 2900
+}

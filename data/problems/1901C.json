@@ -1,0 +1,18 @@
+{
+    "id": "1901C",
+    "contest_id": 1901,
+    "problem_letter": "C",
+    "title": "C. Add, Divide and Floor",
+    "statement": "You are given an integer array a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9). In one operation, you can choose an integer x (0 ≤ x ≤ 10^18) and replace a_i with lfloor (a_i + x)/2 rfloor (lfloor y rfloor denotes rounding y down to the nearest integer) for all i from 1 to n. Pay attention to the fact that all elements of the array are affected on each operation.\n\nPrint the smallest number of operations required to make all elements of the array equal.\n\nIf the number of operations is less than or equal to n, then print the chosen x for each operation. If there are multiple answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print the smallest number of operations required to make all elements of the array equal.\n\nIf the number of operations is less than or equal to n, then print the chosen x for each operation in the next line. If there are multiple answers, print any of them.\n\nIn the first testcase, all elements are already equal, so 0 operations are required. It doesn't matter if you print an empty line afterwards or not.\n\nIn the second testcase, you can't make less than 2 operations. There are multiple answers, let's consider the answer sequence [2, 5]. After applying an operation with x = 2, the array becomes [lfloor (4 + 2)/2 rfloor, lfloor (6 + 2)/2 rfloor] = [3, 4]. After applying an operation with x = 5 after that, the array becomes [lfloor (3 + 5)/2 rfloor, lfloor (4 + 5)/2 rfloor] = [4, 4]. Both elements are the same, so we are done.\n\nIn the last testcase, you can't make less than 6 operations. Since 6 is greater than n, you don't have to print them. One possible answer sequence is [0, 0, 0, 0, 0, 0]. We are just dividing the second element by 2 every time and not changing the first element.\n\nInput:\n```\n411024 662 1 2 1 2 120 32\n```\n\nOutput:\n```\n0\n2\n2 5\n1\n1\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print the smallest number of operations required to make all elements of the array equal.\n\nIf the number of operations is less than or equal to n, then print the chosen x for each operation in the next line. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

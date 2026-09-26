@@ -1,0 +1,17 @@
+{
+    "id": "1765K",
+    "contest_id": 1765,
+    "problem_letter": "K",
+    "title": "K. Torus Path",
+    "statement": "You are given a square grid with n rows and n columns, where each cell has a non-negative integer written in it. There is a chip initially placed at the top left cell (the cell with coordinates (1, 1)). You need to move the chip to the bottom right cell (the cell with coordinates (n, n)).\n\nIn one step, you can move the chip to the neighboring cell, but:\n\nYour total score is counted as the sum of numbers in all cells you have visited. What is the maximum possible score you can achieve?\n\nThe first line contains the single integer n (2 ≤ n ≤ 200) — the number of rows and columns in the grid.\n\nNext n lines contains the description of each row of the grid. The i-th line contains n integers a_{i, 1}, a_{i, 2}, …, a_{i, n} (0 ≤ a_{i, j} ≤ 10^9) where a_{i, j} is the number written in the cell (i, j).\n\nPrint one integer — the maximum possible score you can achieve.\n\nInput:\n```\n2\n1 2\n3 4\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n3\n10 10 10\n10 0 10\n10 10 10\n```\n\nOutput:\n```\n80\n```",
+    "input": "The first line contains the single integer n (2 ≤ n ≤ 200) — the number of rows and columns in the grid.\n\nNext n lines contains the description of each row of the grid. The i-th line contains n integers a_{i, 1}, a_{i, 2}, …, a_{i, n} (0 ≤ a_{i, j} ≤ 10^9) where a_{i, j} is the number written in the cell (i, j).",
+    "output": "Print one integer — the maximum possible score you can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

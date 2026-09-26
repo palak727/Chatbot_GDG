@@ -1,0 +1,18 @@
+{
+    "id": "1184A1",
+    "contest_id": 1184,
+    "problem_letter": "A1",
+    "title": "A1. Heidi Learns Hashing (Easy)",
+    "statement": "Melody Pond was stolen from her parents as a newborn baby by Madame Kovarian, to become a weapon of the Silence in their crusade against the Doctor. Madame Kovarian changed Melody's name to River Song, giving her a new identity that allowed her to kill the Eleventh Doctor.\n\nHeidi figured out that Madame Kovarian uses a very complicated hashing function in order to change the names of the babies she steals. In order to prevent this from happening to future Doctors, Heidi decided to prepare herself by learning some basic hashing techniques.\n\nThe first hashing function she designed is as follows.\n\nGiven two positive integers (x, y) she defines H(x,y):=x^2+2xy+x+1.\n\nNow, Heidi wonders if the function is reversible. That is, given a positive integer r, can you find a pair (x, y) (of positive integers) such that H(x, y) = r?\n\nIf multiple such pairs exist, output the one with smallest possible x. If there is no such pair, output \"NO\".\n\nThe first and only line contains an integer r (1 ≤ r ≤ 10^12).\n\nOutput integers x, y such that H(x,y) = r and x is smallest possible, or \"NO\" if no such pair exists.\n\nInput:\n```\n19\n```\n\nOutput:\n```\n1 8\n```\n\nInput:\n```\n16\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first and only line contains an integer r (1 ≤ r ≤ 10^12).",
+    "output": "Output integers x, y such that H(x,y) = r and x is smallest possible, or \"NO\" if no such pair exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

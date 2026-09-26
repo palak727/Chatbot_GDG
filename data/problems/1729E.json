@@ -1,0 +1,17 @@
+{
+    "id": "1729E",
+    "contest_id": 1729,
+    "problem_letter": "E",
+    "title": "E. Guess the Cycle Size",
+    "statement": "This is an interactive problem.\n\nI want to play a game with you...\n\nWe hid from you a cyclic graph of n vertices (3 ≤ n ≤ 10^18). A cyclic graph is an undirected graph of n vertices that form one cycle. Each vertex belongs to the cycle, i.e. the length of the cycle (the number of edges in it) is exactly n. The order of the vertices in the cycle is arbitrary.\n\nYou can make queries in the following way:\n\nYou win if you guess the number of vertices in the hidden graph (number n) by making no more than 50 queries.\n\nNote that the interactor is implemented in such a way that for any ordered pair (a, b), it always returns the same value for query \"? a b\", no matter how many such queries. Note that the \"? b a\" query may be answered differently by the interactor.\n\nThe vertices in the graph are randomly placed, and their positions are fixed in advance.\n\nHacks are forbidden in this problem. The number of tests the jury has is 50.\n\nYou can make no more than 50 of queries. To make a query, output on a separate line:\n\nIf your program gets a number 0 as a result of a query, it means that the verdict for your solution is already defined as \"wrong answer\" (for example, you made more than 50 queries or made an invalid query). In this case, your program should terminate immediately. Otherwise, in this scenario you may get a random verdict \"Execution error\", \"Exceeded time limit\" or some other verdict instead of \"Wrong answer\".\n\nThe answer, like queries, print on a separate line. The output of the answer is not counted as a query when counting them. To print it, use the following format:\n\nAfter that, your program should terminate.\n\nAfter the output of the next query, be sure to use stream cleaning functions so that some of your output is not left in some buffer. For example, in C++ you should use function flush(stdout), in Java call System.out.flush(), in Pascal flush(output) and stdout.flush() for Python.\n\nNote that the interactor is implemented in such a way that for any ordered pair (a, b), it always returns the same value for query \"? a b\", no matter how many such queries. Note that the \"? b a\" query may be answered differently by the interactor.\n\nThe vertices in the graph are randomly placed, and their positions are fixed in advance.\n\nHacks are forbidden in this problem. The number of tests the jury has is 50.\n\nIn the first example, the graph could look like this\n\nThe lengths of the simple paths between all pairs of vertices in this case are 1 or 2.\n\nInput:\n```\n1\n\n2\n\n-1\n```\n\nOutput:\n```\n? 1 2\n\n? 1 3\n\n? 1 4\n\n! 3\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "interactive",
+        "probabilities",
+        "*1800"
+    ],
+    "rating": 1800
+}

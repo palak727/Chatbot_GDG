@@ -1,0 +1,18 @@
+{
+    "id": "1791G2",
+    "contest_id": 1791,
+    "problem_letter": "G2",
+    "title": "G2. Teleporters (Hard Version)",
+    "statement": "The only difference between the easy and hard versions are the locations you can teleport to.\n\nConsider the points 0,1,…,n+1 on the number line. There is a teleporter located on each of the points 1,2,…,n. At point i, you can do the following:\n\nYou have c coins, and you start at point 0. What's the most number of teleporters you can use?\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 2·10^5; 1 ≤ c ≤ 10^9) — the length of the array and the number of coins you have respectively.\n\nThe following line contains n space-separated positive integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the costs to use the teleporters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum number of teleporters you can use.\n\nIn the first test case, you can move one unit to the right, use the teleporter at index 1 and teleport to point n+1, move one unit to the left and use the teleporter at index 5. You are left with 6-1-1-1-1 = 2 coins, and wherever you teleport, you won't have enough coins to use another teleporter. You have used two teleporters, so the answer is two.\n\nIn the second test case, you go four units to the right and use the teleporter to go to n+1, then go three units left and use the teleporter at index 6 to go to n+1, and finally, you go left four times and use the teleporter. The total cost will be 4+6+3+4+4+9 = 30, and you used three teleporters.\n\nIn the third test case, you don't have enough coins to use any teleporter, so the answer is zero.\n\nInput:\n```\n105 61 1 1 1 18 32100 52 13 6 9 4 100 351 154 54 3 2 15 92 3 1 4 15 82 3 1 4 14 32 3 4 14 95 4 3 32 147 55 600000000500000000 400000000 300000000 200000000 100000000\n```\n\nOutput:\n```\n2\n3\n0\n1\n3\n2\n1\n1\n2\n2\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 2·10^5; 1 ≤ c ≤ 10^9) — the length of the array and the number of coins you have respectively.\n\nThe following line contains n space-separated positive integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the costs to use the teleporters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum number of teleporters you can use.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

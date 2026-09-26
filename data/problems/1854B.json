@@ -1,0 +1,18 @@
+{
+    "id": "1854B",
+    "contest_id": 1854,
+    "problem_letter": "B",
+    "title": "B. Earn or Unlock",
+    "statement": "Andrea is playing the game Tanto Cuore.\n\nHe has a deck of n cards with values a_1, …, a_n from top to bottom. Each card can be either locked or unlocked. Initially, only the topmost card is unlocked.\n\nThe game proceeds in turns. In each turn, Andrea chooses an unlocked card in the deck — the value written on the card is v — and performs exactly one of the following two operations:\n\nThe game ends when all the cards remaining in the deck are locked, or there are no more cards in the deck.\n\nWhat is the maximum number of victory points Andrea can earn?\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of cards in the deck.\n\nThe second line contains n integers a_1, …, a_n (0 ≤ a_1, …, a_n ≤ n) — the values of the cards in the deck.\n\nOutput a single integer — the maximum number of victory points Andrea can earn.\n\nIn the first sample test, the deck starts as [unlocked, locked]. Then, Andrea uses the first card to unlock the second card. Then he uses the second card to earn 2 victory points.\n\nIn the second sample test, Andrea can use the first card to unlock the second and the third card. Then he uses the second and the third card to earn 4+5=9 victory points.\n\nIn the third sample test, Andrea can't unlock any cards or gain any victory points with the first card.\n\nInput:\n```\n2\n1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n2 4 5 0 1\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n0 4 4 4\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of cards in the deck.\n\nThe second line contains n integers a_1, …, a_n (0 ≤ a_1, …, a_n ≤ n) — the values of the cards in the deck.",
+    "output": "Output a single integer — the maximum number of victory points Andrea can earn.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

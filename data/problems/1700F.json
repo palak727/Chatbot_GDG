@@ -1,0 +1,18 @@
+{
+    "id": "1700F",
+    "contest_id": 1700,
+    "problem_letter": "F",
+    "title": "F. Puzzle",
+    "statement": "Pupils Alice and Ibragim are best friends. It's Ibragim's birthday soon, so Alice decided to gift him a new puzzle. The puzzle can be represented as a matrix with 2 rows and n columns, every element of which is either 0 or 1. In one move you can swap two values in neighboring cells.\n\nMore formally, let's number rows 1 to 2 from top to bottom, and columns 1 to n from left to right. Also, let's denote a cell in row x and column y as (x, y). We consider cells (x_1, y_1) and (x_2, y_2) neighboring if |x_1 - x_2| + |y_1 - y_2| = 1.\n\nAlice doesn't like the way in which the cells are currently arranged, so she came up with her own arrangement, with which she wants to gift the puzzle to Ibragim. Since you are her smartest friend, she asked you to help her find the minimal possible number of operations in which she can get the desired arrangement. Find this number, or determine that it's not possible to get the new arrangement.\n\nThe first line contains an integer n (1 ≤ n ≤ 200,000) — the number of columns in the puzzle.\n\nFollowing two lines describe the current arrangement on the puzzle. Each line contains n integers, every one of which is either 0 or 1.\n\nThe last two lines describe Alice's desired arrangement in the same format.\n\nIf it is possible to get the desired arrangement, print the minimal possible number of steps, otherwise print -1.\n\nIn the first example the following sequence of swaps will suffice:\n\nIt can be shown that 5 is the minimal possible answer in this case.\n\nIn the second example no matter what swaps you do, you won't get the desired arrangement, so the answer is -1.\n\nInput:\n```\n5\n0 1 0 1 0\n1 1 0 0 1\n1 0 1 0 1\n0 0 1 1 0\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n3\n1 0 0\n0 0 0\n0 0 0\n0 0 0\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 200,000) — the number of columns in the puzzle.\n\nFollowing two lines describe the current arrangement on the puzzle. Each line contains n integers, every one of which is either 0 or 1.\n\nThe last two lines describe Alice's desired arrangement in the same format.",
+    "output": "If it is possible to get the desired arrangement, print the minimal possible number of steps, otherwise print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

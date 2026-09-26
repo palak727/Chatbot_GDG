@@ -1,0 +1,18 @@
+{
+    "id": "1178C",
+    "contest_id": 1178,
+    "problem_letter": "C",
+    "title": "C. Tiles",
+    "statement": "Bob is decorating his kitchen, more precisely, the floor. He has found a prime candidate for the tiles he will use. They come in a simple form factor — a square tile that is diagonally split into white and black part as depicted in the figure below.\n\nThe dimension of this tile is perfect for this kitchen, as he will need exactly w × h tiles without any scraps. That is, the width of the kitchen is w tiles, and the height is h tiles. As each tile can be rotated in one of four ways, he still needs to decide on how exactly he will tile the floor. There is a single aesthetic criterion that he wants to fulfil: two adjacent tiles must not share a colour on the edge — i.e. one of the tiles must have a white colour on the shared border, and the second one must be black.\n\nFind the number of possible tilings. As this number may be large, output its remainder when divided by 998244353 (a prime number).\n\nThe only line contains two space separated integers w, h (1 ≤ w,h ≤ 1,000) — the width and height of the kitchen, measured in tiles.\n\nOutput a single integer n — the remainder of the number of tilings when divided by 998244353.\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n2 4\n```\n\nOutput:\n```\n64\n```",
+    "input": "The only line contains two space separated integers w, h (1 ≤ w,h ≤ 1,000) — the width and height of the kitchen, measured in tiles.",
+    "output": "Output a single integer n — the remainder of the number of tilings when divided by 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

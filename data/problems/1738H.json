@@ -1,0 +1,17 @@
+{
+    "id": "1738H",
+    "contest_id": 1738,
+    "problem_letter": "H",
+    "title": "H. Palindrome Addicts",
+    "statement": "Your task is to maintain a queue consisting of lowercase English letters as follows:\n\nInitially, the queue is empty.\n\nAfter each operation, you are asked to count the number of distinct palindromic substrings in the string that are obtained by concatenating the letters from the front to the back of the queue.\n\nEspecially, the number of distinct palindromic substrings of the empty string is 0.\n\nA string s[1..n] of length n is palindromic if s[i] = s[n-i+1] for every 1 ≤ i ≤ n.\n\nThe string s[l..r] is a substring of string s[1..n] for every 1 ≤ l ≤ r ≤ n.\n\nTwo strings s[1..n] and t[1..m] are distinct, if at least one of the following holds.\n\nThe first line is an integer q (1 ≤ q ≤ 10^6), indicating the number of operations.\n\nThen q lines follow. Each of the following lines contains one of the operations as follows.\n\nIt is guaranteed that no \"pop\" operation will be performed when the queue is empty.\n\nAfter each operation, print the number of distinct palindromic substrings in the string presented in the queue.\n\nLet s_k be the string presented in the queue after the k-th operation, and let c_k be the number of distinct palindromic substrings of s_k. The following table shows the details of the example.\n\nIt is worth pointing out that\n\nInput:\n```\n12\npush a\npop\npush a\npush a\npush b\npush b\npush a\npush a\npop\npop\npop\npush b\n```\n\nOutput:\n```\n1\n0\n1\n2\n3\n4\n5\n6\n5\n4\n3\n4\n```",
+    "input": "The first line is an integer q (1 ≤ q ≤ 10^6), indicating the number of operations.\n\nThen q lines follow. Each of the following lines contains one of the operations as follows.\n\nIt is guaranteed that no \"pop\" operation will be performed when the queue is empty.",
+    "output": "After each operation, print the number of distinct palindromic substrings in the string presented in the queue.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "strings",
+        "*3300"
+    ],
+    "rating": 3300
+}

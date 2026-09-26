@@ -1,0 +1,16 @@
+{
+    "id": "1729A",
+    "contest_id": 1729,
+    "problem_letter": "A",
+    "title": "A. Two Elevators",
+    "statement": "Vlad went into his appartment house entrance, now he is on the 1-th floor. He was going to call the elevator to go up to his apartment.\n\nThere are only two elevators in his house. Vlad knows for sure that:\n\nIf you call the first elevator, it will immediately start to go to the floor 1. If you call the second one, then first it will reach the floor c and only then it will go to the floor 1. It takes |x - y| seconds for each elevator to move from floor x to floor y.\n\nVlad wants to call an elevator that will come to him faster. Help him choose such an elevator.\n\nThe first line of the input contains the only t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThis is followed by t lines, three integers each a, b and c (1 ≤ a, b, c ≤ 10^8, b ≠ c) — floor numbers described in the statement.\n\nOutput t numbers, each of which is the answer to the corresponding test case. As an answer, output:\n\nIn the first test case of the example, the first elevator is already on the floor of 1.\n\nIn the second test case of the example, when called, the elevators would move as follows:\n\nIn the third test case of the example, the first elevator will arrive in 2 seconds, and the second in 1.\n\nInput:\n```\n31 2 33 1 23 2 1\n```\n\nOutput:\n```\n1\n3\n2\n```",
+    "input": "The first line of the input contains the only t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThis is followed by t lines, three integers each a, b and c (1 ≤ a, b, c ≤ 10^8, b ≠ c) — floor numbers described in the statement.",
+    "output": "Output t numbers, each of which is the answer to the corresponding test case. As an answer, output:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

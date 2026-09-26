@@ -1,0 +1,18 @@
+{
+    "id": "1870D",
+    "contest_id": 1870,
+    "problem_letter": "D",
+    "title": "D. Prefix Purchase",
+    "statement": "You have an array a of size n, initially filled with zeros (a_1 = a_2 = … = a_n = 0). You also have an array of integers c of size n.\n\nInitially, you have k coins. By paying c_i coins, you can add 1 to all elements of the array a from the first to the i-th element (a_j mathrel+= 1 for all 1 ≤ j ≤ i). You can buy any c_i any number of times. A purchase is only possible if k ≥ c_i, meaning that at any moment k ≥ 0 must hold true.\n\nFind the lexicographically largest array a that can be obtained.\n\nAn array a is lexicographically smaller than an array b of the same length if and only if in the first position where a and b differ, the element in array a is smaller than the corresponding element in b.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of arrays a and c.\n\nThe second line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9) — the array c.\n\nThe third line of each test case contains a single integer k (1 ≤ k ≤ 10^9) — the number of coins you have.\n\nIt is guaranteed that the sum of all n values across all test cases does not exceed 2·10^5.\n\nFor each test case, output n integers a_1, a_2, …, a_n — the lexicographically largest array a that can be obtained.\n\nIn the first test case, a_1 cannot be greater than 5, and if we buy c_1 five times, we will run out of money, so a = [5, 0, 0].\n\nIn the second test case, a_1 cannot be greater than 2, but we can buy c_1 and c_2 once each (buying c_2 twice is not possible), so a = [2, 1].\n\nInput:\n```\n431 2 3523 4733 2 12610 6 4 6 3 47\n```\n\nOutput:\n```\n5 0 0 \n2 1 \n2 2 2 \n2 2 2 2 2 1 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of arrays a and c.\n\nThe second line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9) — the array c.\n\nThe third line of each test case contains a single integer k (1 ≤ k ≤ 10^9) — the number of coins you have.\n\nIt is guaranteed that the sum of all n values across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n integers a_1, a_2, …, a_n — the lexicographically largest array a that can be obtained.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

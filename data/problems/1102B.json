@@ -1,0 +1,17 @@
+{
+    "id": "1102B",
+    "contest_id": 1102,
+    "problem_letter": "B",
+    "title": "B. Array K-Coloring",
+    "statement": "You are given an array a consisting of n integer numbers.\n\nYou have to color this array in k colors in such a way that:\n\nObviously, such coloring might be impossible. In this case, print \"NO\". Otherwise print \"YES\" and any coloring (i.e. numbers c_1, c_2, … c_n, where 1 ≤ c_i ≤ k and c_i is the color of the i-th element of the given array) satisfying the conditions above. If there are multiple answers, you can print any.\n\nThe first line of the input contains two integers n and k (1 ≤ k ≤ n ≤ 5000) — the length of the array a and the number of colors, respectively.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5000) — elements of the array a.\n\nIf there is no answer, print \"NO\". Otherwise print \"YES\" and any coloring (i.e. numbers c_1, c_2, … c_n, where 1 ≤ c_i ≤ k and c_i is the color of the i-th element of the given array) satisfying the conditions described in the problem statement. If there are multiple answers, you can print any.\n\nIn the first example the answer 2~ 1~ 2~ 1 is also acceptable.\n\nIn the second example the answer 1~ 1~ 1~ 2~ 2 is also acceptable.\n\nThere exist other acceptable answers for both examples.\n\nInput:\n```\n4 2\n1 2 2 3\n```\n\nOutput:\n```\nYES\n1 1 2 2\n```\n\nInput:\n```\n5 2\n3 2 1 2 3\n```\n\nOutput:\n```\nYES\n2 1 1 2 1\n```\n\nInput:\n```\n5 2\n2 1 1 2 1\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line of the input contains two integers n and k (1 ≤ k ≤ n ≤ 5000) — the length of the array a and the number of colors, respectively.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5000) — elements of the array a.",
+    "output": "If there is no answer, print \"NO\". Otherwise print \"YES\" and any coloring (i.e. numbers c_1, c_2, … c_n, where 1 ≤ c_i ≤ k and c_i is the color of the i-th element of the given array) satisfying the conditions described in the problem statement. If there are multiple answers, you can print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

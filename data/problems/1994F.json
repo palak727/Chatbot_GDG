@@ -1,0 +1,19 @@
+{
+    "id": "1994F",
+    "contest_id": 1994,
+    "problem_letter": "F",
+    "title": "F. Stardew Valley",
+    "statement": "Pelican Town represents n houses connected by m bidirectional roads. Some roads have NPCs standing on them. Farmer Buba needs to walk on each road with an NPC and talk to them.\n\nHelp the farmer find a route satisfying the following properties:\n\nIt is guaranteed that you can reach any house from any other by walking on the roads with NPCs only.\n\nEach test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 5·10^5, 1 ≤ m ≤ 5·10^5) — the number of houses and roads in Pelican Town respectively.\n\nIn each of the next m lines, three integers u, v, and c (1 ≤ u, v ≤ n, c = 0/1) are given — the ends of the road and whether an NPC is on this road. If c = 1, then the road has an NPC. If c = 0, then the road has no NPC.\n\nThe graph may contain multiple edges and loops, and if there are multiple edges with NPCs standing on them, the route must follow each of these roads.\n\nIt is guaranteed that you can reach any house from any other by walking on the roads with NPCs only.\n\nIt is guaranteed that the sum of n and m for all test cases does not exceed 5·10^5.\n\nFor each test case, if there is no solution, then output \"No\" (without quotes).\n\nOtherwise, output \"Yes\" (without quotes), and then output k — the number of roads in the route. In the next line, output k + 1 numbers — the houses of the route in the order of traversal. Note that the first house should match the last one, as the route is cyclic.\n\nIf there are multiple answers, you can print any of them.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nNote that in the third test case, there are multiple edges (5, 2). You must walk on two of them.\n\nInput:\n```\n33 21 2 12 3 13 31 2 11 3 12 3 05 91 2 05 2 15 4 15 1 12 3 15 2 14 1 04 3 05 2 0\n```\n\nOutput:\n```\nNO\nYES\n3\n1 2 3 1 \nYES\n7\n1 2 5 4 3 2 5 1 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 5·10^5, 1 ≤ m ≤ 5·10^5) — the number of houses and roads in Pelican Town respectively.\n\nIn each of the next m lines, three integers u, v, and c (1 ≤ u, v ≤ n, c = 0/1) are given — the ends of the road and whether an NPC is on this road. If c = 1, then the road has an NPC. If c = 0, then the road has no NPC.\n\nThe graph may contain multiple edges and loops, and if there are multiple edges with NPCs standing on them, the route must follow each of these roads.\n\nIt is guaranteed that you can reach any house from any other by walking on the roads with NPCs only.\n\nIt is guaranteed that the sum of n and m for all test cases does not exceed 5·10^5.",
+    "output": "For each test case, if there is no solution, then output \"No\" (without quotes).\n\nOtherwise, output \"Yes\" (without quotes), and then output k — the number of roads in the route. In the next line, output k + 1 numbers — the houses of the route in the order of traversal. Note that the first house should match the last one, as the route is cyclic.\n\nIf there are multiple answers, you can print any of them.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2028F",
+    "contest_id": 2028,
+    "problem_letter": "F",
+    "title": "F. Alice's Adventures in Addition",
+    "statement": "Note that the memory limit is unusual.\n\nThe Cheshire Cat has a riddle for Alice: given n integers a_1, a_2, …, a_n and a target m, is there a way to insert + and × into the circles of the expression a_1 circ a_2 circ ⋯ circ a_n = m to make it true? We follow the usual order of operations: × is done before +.\n\nAlthough Alice is excellent at chess, she is not good at math. Please help her so she can find a way out of Wonderland!\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n≤ 2·10^5; 1≤ m≤ 10^4) — the number of integers and the target, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^4) — the elements of the array a.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" without quotes if it is possible to get the target by inserting + or × and \"NO\" otherwise.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nPossible solutions for the first four test cases are shown below. beginalign* 2 × 1 + 1 × 1 × 2 &= 4 2 × 1 + 1 + 1 × 2 &= 5 2 × 1 + 1 + 1 + 2 &= 6 2 + 1 + 1 + 1 + 2 &= 7 endalign* It is impossible to get a result of 8 in the fifth test case.\n\nInput:\n```\n65 42 1 1 1 25 52 1 1 1 25 62 1 1 1 25 72 1 1 1 25 82 1 1 1 25 62 0 2 2 3\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n≤ 2·10^5; 1≤ m≤ 10^4) — the number of integers and the target, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^4) — the elements of the array a.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" without quotes if it is possible to get the target by inserting + or × and \"NO\" otherwise.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "3 seconds",
+    "memory_limit": "32 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "implementation",
+        "*2700"
+    ],
+    "rating": 2700
+}

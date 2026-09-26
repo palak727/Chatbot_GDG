@@ -1,0 +1,16 @@
+{
+    "id": "1353C",
+    "contest_id": 1353,
+    "problem_letter": "C",
+    "title": "C. Board Moves",
+    "statement": "You are given a board of size n × n, where n is odd (not divisible by 2). Initially, each cell of the board contains one figure.\n\nIn one move, you can select exactly one figure presented in some cell and move it to one of the cells sharing a side or a corner with the current cell, i.e. from the cell (i, j) you can move the figure to cells:\n\nOf course, you can not move figures to cells out of the board. It is allowed that after a move there will be several figures in one cell.\n\nYour task is to find the minimum number of moves needed to get all the figures into one cell (i.e. n^2-1 cells should contain 0 figures and one cell should contain n^2 figures).\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 200) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains one integer n (1 ≤ n < 5·10^5) — the size of the board. It is guaranteed that n is odd (not divisible by 2).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5 (∑ n ≤ 5·10^5).\n\nFor each test case print the answer — the minimum number of moves needed to get all the figures into one cell.\n\nInput:\n```\n3\n1\n5\n499993\n```\n\nOutput:\n```\n0\n40\n41664916690999888\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 200) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains one integer n (1 ≤ n < 5·10^5) — the size of the board. It is guaranteed that n is odd (not divisible by 2).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5 (∑ n ≤ 5·10^5).",
+    "output": "For each test case print the answer — the minimum number of moves needed to get all the figures into one cell.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

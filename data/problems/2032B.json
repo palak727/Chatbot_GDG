@@ -1,0 +1,19 @@
+{
+    "id": "2032B",
+    "contest_id": 2032,
+    "problem_letter": "B",
+    "title": "B. Medians",
+    "statement": "You are given an array a = [1, 2, …, n], where n is odd, and an integer k.\n\nYour task is to choose an odd positive integer m and to split a into m subarrays^dagger b_1, b_2, …, b_m such that:\n\n^daggerA subarray of the array a of length n is the array [a_l, a_{l + 1}, …, a_r] for some integers 1 ≤ l ≤ r ≤ n.\n\n^ddaggerA median of the array of odd length is the middle element after the array is sorted in non-decreasing order. For example: median([1,2,5,4,3]) = 3, median([3,2,1]) = 2, median([2,1,2,1,2,2,2]) = 2.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n < 2·10^5, n is odd) — the length of array a and the desired median of the array of medians of all subarrays.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case:\n\nIn detail, for a valid answer [p_1, p_2, …, p_m]:\n\nIf there are multiple solutions, you can output any of them.\n\nIn the first test case, the given partition has m = 1 and b_1 = [1]. It is obvious that median([median([1])]) = median([1]) = 1.\n\nIn the second test case, the given partition has m = 3 and:\n\nTherefore, median([median([1]), median([2]), median([3])]) = median([1, 2, 3]) = 2.\n\nIn the third test case, there is no valid partition for k = 3.\n\nIn the fourth test case, the given partition has m = 5 and:\n\nTherefore, median([median([1, 2, 3]), median([4, 5, 6]), median([7, 8, 9]), median([10, 11, 12]), median([13, 14, 15])]) = median([2, 5, 8, 11, 14]) = 8.\n\nInput:\n```\n41 13 23 315 8\n```\n\nOutput:\n```\n1\n1\n3\n1 2 3\n-1\n5\n1 4 7 10 13\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n < 2·10^5, n is odd) — the length of array a and the desired median of the array of medians of all subarrays.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case:\n\nIn detail, for a valid answer [p_1, p_2, …, p_m]:\n\nIf there are multiple solutions, you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

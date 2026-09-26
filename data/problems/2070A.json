@@ -1,0 +1,17 @@
+{
+    "id": "2070A",
+    "contest_id": 2070,
+    "problem_letter": "A",
+    "title": "A. FizzBuzz Remixed",
+    "statement": "FizzBuzz is one of the most well-known problems from coding interviews. In this problem, we will consider a remixed version of FizzBuzz:\n\nGiven an integer n, process all integers from 0 to n. For every integer such that its remainders modulo 3 and modulo 5 are the same (so, for every integer i such that i bmod 3 = i bmod 5), print FizzBuzz.\n\nHowever, you don't have to solve it. Instead, given the integer n, you have to report how many times the correct solution to that problem will print FizzBuzz.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains one line consisting of one integer n (0 ≤ n ≤ 10^9).\n\nFor each test case, print one integer — the number of times the correct solution will print FizzBuzz with the given value of n.\n\nIn the first test case, the solution will print FizzBuzz for the integer 0.\n\nIn the second test case, the solution will print FizzBuzz for the integers 0, 1, 2.\n\nIn the third test case, the solution will print FizzBuzz for the integers 0, 1, 2, 15.\n\nInput:\n```\n7051542133717101997998244353\n```\n\nOutput:\n```\n1\n3\n4\n9\n270\n3420402\n199648872\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains one line consisting of one integer n (0 ≤ n ≤ 10^9).",
+    "output": "For each test case, print one integer — the number of times the correct solution will print FizzBuzz with the given value of n.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

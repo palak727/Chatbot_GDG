@@ -1,0 +1,18 @@
+{
+    "id": "1839A",
+    "contest_id": 1839,
+    "problem_letter": "A",
+    "title": "A. The Good Array",
+    "statement": "You are given two integers n and k.\n\nAn array a_1, a_2, …, a_n of length n, consisting of zeroes and ones is good if for all integers i from 1 to n both of the following conditions are satisfied:\n\nHere, lceil i/k rceil denotes the result of division of i by k, rounded up. For example, lceil 6/3 rceil = 2, lceil 11/5 rceil = lceil 2.2 rceil = 3 and lceil 7/4 rceil = lceil 1.75 rceil = 2.\n\nFind the minimum possible number of ones in a good array.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n, k (2 ≤ n ≤ 100, 1 ≤ k ≤ n) — the length of array and parameter k from the statement.\n\nFor each test case output one integer — the minimum possible number of ones in a good array.\n\nIt can be shown that under the given constraints at least one good array always exists.\n\nIn the first test case, n = 3 and k = 2:\n\nThus, the answer is 2.\n\nIn the second test case, n = 5 and k = 2:\n\nIn the third test case, n = 9 and k = 3:\n\nIn the fourth test case, n = 7 and k = 1. The only good array is [ , 1, 1, 1, 1, 1, 1, 1, ], so the answer is 7.\n\nInput:\n```\n73 25 29 37 110 49 58 8\n```\n\nOutput:\n```\n2\n3\n4\n7\n4\n3\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n, k (2 ≤ n ≤ 100, 1 ≤ k ≤ n) — the length of array and parameter k from the statement.",
+    "output": "For each test case output one integer — the minimum possible number of ones in a good array.\n\nIt can be shown that under the given constraints at least one good array always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

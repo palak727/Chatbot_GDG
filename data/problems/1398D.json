@@ -1,0 +1,18 @@
+{
+    "id": "1398D",
+    "contest_id": 1398,
+    "problem_letter": "D",
+    "title": "D. Colored Rectangles",
+    "statement": "You are given three multisets of pairs of colored sticks:\n\nYou are constructing rectangles from these pairs of sticks with the following process:\n\nThus, you get such rectangles that their opposite sides are the same color and their adjacent sides are not the same color.\n\nEach pair of sticks can be used at most once, some pairs can be left unused. You are not allowed to split a pair into independent sticks.\n\nWhat is the maximum area you can achieve?\n\nThe first line contains three integers R, G, B (1 ≤ R, G, B ≤ 200) — the number of pairs of red sticks, the number of pairs of green sticks and the number of pairs of blue sticks.\n\nThe second line contains R integers r_1, r_2, …, r_R (1 ≤ r_i ≤ 2000) — the lengths of sticks in each pair of red sticks.\n\nThe third line contains G integers g_1, g_2, …, g_G (1 ≤ g_i ≤ 2000) — the lengths of sticks in each pair of green sticks.\n\nThe fourth line contains B integers b_1, b_2, …, b_B (1 ≤ b_i ≤ 2000) — the lengths of sticks in each pair of blue sticks.\n\nPrint the maximum possible total area of the constructed rectangles.\n\nIn the first example you can construct one of these rectangles: red and green with sides 3 and 5, red and blue with sides 3 and 4 and green and blue with sides 5 and 4. The best area of them is 4 × 5 = 20.\n\nIn the second example the best rectangles are: red/blue 9 × 8, red/blue 5 × 5, green/blue 2 × 1. So the total area is 72 + 25 + 2 = 99.\n\nIn the third example the best rectangles are: red/green 19 × 8 and red/blue 20 × 11. The total area is 152 + 220 = 372. Note that you can't construct more rectangles because you are not allowed to have both pairs taken to be the same color.\n\nInput:\n```\n1 1 1\n3\n5\n4\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n2 1 3\n9 5\n1\n2 8 5\n```\n\nOutput:\n```\n99\n```\n\nInput:\n```\n10 1 1\n11 7 20 15 19 14 2 4 13 14\n8\n11\n```\n\nOutput:\n```\n372\n```",
+    "input": "The first line contains three integers R, G, B (1 ≤ R, G, B ≤ 200) — the number of pairs of red sticks, the number of pairs of green sticks and the number of pairs of blue sticks.\n\nThe second line contains R integers r_1, r_2, …, r_R (1 ≤ r_i ≤ 2000) — the lengths of sticks in each pair of red sticks.\n\nThe third line contains G integers g_1, g_2, …, g_G (1 ≤ g_i ≤ 2000) — the lengths of sticks in each pair of green sticks.\n\nThe fourth line contains B integers b_1, b_2, …, b_B (1 ≤ b_i ≤ 2000) — the lengths of sticks in each pair of blue sticks.",
+    "output": "Print the maximum possible total area of the constructed rectangles.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

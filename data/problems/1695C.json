@@ -1,0 +1,21 @@
+{
+    "id": "1695C",
+    "contest_id": 1695,
+    "problem_letter": "C",
+    "title": "C. Zero Path",
+    "statement": "You are given a grid with n rows and m columns. We denote the square on the i-th (1≤ i≤ n) row and j-th (1≤ j≤ m) column by (i, j) and the number there by a_ij. All numbers are equal to 1 or to -1.\n\nYou start from the square (1, 1) and can move one square down or one square to the right at a time. In the end, you want to end up at the square (n, m).\n\nIs it possible to move in such a way so that the sum of the values written in all the visited cells (including a_11 and a_nm) is 0?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 1000) — the size of the grid.\n\nEach of the following n lines contains m integers. The j-th integer on the i-th line is a_ij (a_ij = 1 or -1) — the element in the cell (i, j).\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.\n\nFor each test case, print \"YES\" if there exists a path from the top left to the bottom right that adds up to 0, and \"NO\" otherwise. You can output each letter in any case.\n\nOne possible path for the fourth test case is given in the picture in the statement.\n\nInput:\n```\n51 111 21 -11 41 -1 1 -13 41 -1 -1 -1-1 1 1 -11 1 1 -13 41 -1 1 1-1 1 -1 11 -1 1 1\n```\n\nOutput:\n```\nNO\nYES\nYES\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 1000) — the size of the grid.\n\nEach of the following n lines contains m integers. The j-th integer on the i-th line is a_ij (a_ij = 1 or -1) — the element in the cell (i, j).\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.",
+    "output": "For each test case, print \"YES\" if there exists a path from the top left to the bottom right that adds up to 0, and \"NO\" otherwise. You can output each letter in any case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*1700"
+    ],
+    "rating": 1700
+}

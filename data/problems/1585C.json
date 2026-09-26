@@ -1,0 +1,16 @@
+{
+    "id": "1585C",
+    "contest_id": 1585,
+    "problem_letter": "C",
+    "title": "C. Minimize Distance",
+    "statement": "A total of n depots are located on a number line. Depot i lies at the point x_i for 1 ≤ i ≤ n.\n\nYou are a salesman with n bags of goods, attempting to deliver one bag to each of the n depots. You and the n bags are initially at the origin 0. You can carry up to k bags at a time. You must collect the required number of goods from the origin, deliver them to the respective depots, and then return to the origin to collect your next batch of goods.\n\nCalculate the minimum distance you need to cover to deliver all the bags of goods to the depots. You do not have to return to the origin after you have delivered all the bags.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,500). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers x_1, x_2, …, x_n (-10^9 ≤ x_i ≤ 10^9). It is possible that some depots share the same position.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer denoting the minimum distance you need to cover to deliver all the bags of goods to the depots.\n\nIn the first test case, you can carry only one bag at a time. Thus, the following is a solution sequence that gives a minimum travel distance: 0 → 2 → 0 → 4 → 0 → 3 → 0 → 1 → 0 → 5, where each 0 means you go the origin and grab one bag, and each positive integer means you deliver the bag to a depot at this coordinate, giving a total distance of 25 units. It must be noted that there are other sequences that give the same distance.\n\nIn the second test case, you can follow the following sequence, among multiple such sequences, to travel minimum distance: 0 → 6 → 8 → 7 → 0 → 5 → 4 → 3 → 0 → (-5) → (-10) → (-15), with distance 41. It can be shown that 41 is the optimal distance for this test case.\n\nInput:\n```\n4\n5 1\n1 2 3 4 5\n9 3\n-5 -10 -15 6 5 8 3 7 4\n5 3\n2 2 3 3 3\n4 2\n1000000000 1000000000 1000000000 1000000000\n```\n\nOutput:\n```\n25\n41\n7\n3000000000\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,500). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers x_1, x_2, …, x_n (-10^9 ≤ x_i ≤ 10^9). It is possible that some depots share the same position.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer denoting the minimum distance you need to cover to deliver all the bags of goods to the depots.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

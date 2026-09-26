@@ -1,0 +1,17 @@
+{
+    "id": "2128C",
+    "contest_id": 2128,
+    "problem_letter": "C",
+    "title": "C. Leftmost Below",
+    "statement": "Consider an array a_1, …, a_n. Initially, a_i = 0 for every i.\n\nYou can do operations of the following form.\n\nFor example, if a = [6, 8, 2, 1] and you choose x = 6, then i will be equal to 3 (since a_1 ≥ 6, a_2 ≥ 6, and a_3 < 6) and a will become [6, 8, 8, 1].\n\nYou can do as many operations as you want. Can you reach a target array b_1, …, b_n?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 200,000).\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nThe sum of n over all test cases does not exceed 200,000.\n\nFor each test case, print YES if you can reach the target array and NO otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, we can do the following sequence of operations:\n\nIn the second test case, we can prove there is no way to reach [3, 1, 2].\n\nInput:\n```\n445 6 1 133 1 2340 60 9021 1\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 200,000).\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nThe sum of n over all test cases does not exceed 200,000.",
+    "output": "For each test case, print YES if you can reach the target array and NO otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

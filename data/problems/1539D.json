@@ -1,0 +1,20 @@
+{
+    "id": "1539D",
+    "contest_id": 1539,
+    "problem_letter": "D",
+    "title": "D. PriceFixed",
+    "statement": "Lena is the most economical girl in Moscow. So, when her dad asks her to buy some food for a trip to the country, she goes to the best store — \"PriceFixed\". Here are some rules of that store:\n\nLena needs to buy n products: she must purchase at least a_i items of the i-th product. Help Lena to calculate the minimum amount of money she needs to spend if she optimally chooses the order of purchasing. Note that if she wants, she can buy more items of some product than needed.\n\nThe first line contains a single integer n (1 ≤ n ≤ 100,000) — the number of products.\n\nEach of next n lines contains a product description. Each description consists of two integers a_i and b_i (1 ≤ a_i ≤ 10^14, 1 ≤ b_i ≤ 10^14) — the required number of the i-th product and how many products you need to buy to get the discount on the i-th product.\n\nThe sum of all a_i does not exceed 10^14.\n\nOutput the minimum sum that Lena needs to make all purchases.\n\nIn the first example, Lena can purchase the products in the following way:\n\nIn total, she spends 8 rubles. It can be proved that it is impossible to spend less.\n\nIn the second example Lena can purchase the products in the following way:\n\nIn total, she spends 12 rubles.\n\nInput:\n```\n3\n3 4\n1 3\n1 5\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5\n2 7\n2 8\n1 2\n2 4\n1 8\n```\n\nOutput:\n```\n12\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 100,000) — the number of products.\n\nEach of next n lines contains a product description. Each description consists of two integers a_i and b_i (1 ≤ a_i ≤ 10^14, 1 ≤ b_i ≤ 10^14) — the required number of the i-th product and how many products you need to buy to get the discount on the i-th product.\n\nThe sum of all a_i does not exceed 10^14.",
+    "output": "Output the minimum sum that Lena needs to make all purchases.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*1600"
+    ],
+    "rating": 1600
+}

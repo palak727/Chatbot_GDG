@@ -1,0 +1,20 @@
+{
+    "id": "2003E1",
+    "contest_id": 2003,
+    "problem_letter": "E1",
+    "title": "E1. Turtle and Inversions (Easy Version)",
+    "statement": "This is an easy version of this problem. The differences between the versions are the constraint on m and r_i < l_{i + 1} holds for each i from 1 to m - 1 in the easy version. You can make hacks only if both versions of the problem are solved.\n\nTurtle gives you m intervals [l_1, r_1], [l_2, r_2], …, [l_m, r_m]. He thinks that a permutation p is interesting if there exists an integer k_i for every interval (l_i ≤ k_i < r_i), and if he lets a_i = maxlimits_{j = l_i}^k_i p_j, b_i = minlimits_{j = k_i + 1}^r_i p_j for every integer i from 1 to m, the following condition holds:\n\nmaxlimits_{i = 1}^m a_i < minlimits_{i = 1}^m b_i\n\nTurtle wants you to calculate the maximum number of inversions of all interesting permutations of length n, or tell him if there is no interesting permutation.\n\nAn inversion of a permutation p is a pair of integers (i, j) (1 ≤ i < j ≤ n) such that p_i > p_j.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (2 ≤ n ≤ 5·10^3, 0 ≤ m ≤ n/2) — the length of the permutation and the number of intervals.\n\nThe i-th of the following m lines contains two integers l_i, r_i (1 ≤ l_i < r_i ≤ n) — the i-th interval.\n\nAdditional constraint on the input in this version: r_i < l_{i + 1} holds for each i from 1 to m - 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^3.\n\nFor each test case, if there is no interesting permutation, output a single integer -1.\n\nOtherwise, output a single integer — the maximum number of inversions.\n\nIn the third test case, the interesting permutation with the maximum number of inversions is [5, 2, 4, 3, 1].\n\nIn the fourth test case, the interesting permutation with the maximum number of inversions is [4, 8, 7, 6, 3, 2, 1, 5]. In this case, we can let [k_1, k_2] = [1, 7].\n\nIn the fifth test case, the interesting permutation with the maximum number of inversions is [4, 7, 6, 3, 2, 1, 5].\n\nIn the sixth test case, the interesting permutation with the maximum number of inversions is [4, 7, 3, 6, 2, 5, 1].\n\nInput:\n```\n62 02 11 25 12 48 21 46 87 21 34 77 31 23 45 6\n```\n\nOutput:\n```\n1\n0\n8\n21\n15\n15\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (2 ≤ n ≤ 5·10^3, 0 ≤ m ≤ n/2) — the length of the permutation and the number of intervals.\n\nThe i-th of the following m lines contains two integers l_i, r_i (1 ≤ l_i < r_i ≤ n) — the i-th interval.\n\nAdditional constraint on the input in this version: r_i < l_{i + 1} holds for each i from 1 to m - 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^3.",
+    "output": "For each test case, if there is no interesting permutation, output a single integer -1.\n\nOtherwise, output a single integer — the maximum number of inversions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1874E",
+    "contest_id": 1874,
+    "problem_letter": "E",
+    "title": "E. Jellyfish and Hack",
+    "statement": "It is well known that quick sort works by randomly selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. But Jellyfish thinks that choosing a random element is just a waste of time, so she always chooses the first element to be the pivot. The time her code needs to run can be calculated by the following pseudocode:\n\n```\nfunction fun(A)\n    if A.length > 0\n        let L[1 ... L.length] and R[1 ... R.length] be new arrays\n        L.length = R.length = 0\n        for i = 2 to A.length\n            if A[i] < A[1]\n                L.length = L.length + 1\n                L[L.length] = A[i]\n            else\n                R.length = R.length + 1\n                R[R.length] = A[i]\n        return A.length + fun(L) + fun(R)\n    else\n        return 0\n```\n\nNow you want to show her that her code is slow. When the function fun(A) is greater than or equal to lim, her code will get Time Limit Exceeded. You want to know how many distinct permutations P of [1, 2, …, n] satisfies fun(P) ≥ lim. Because the answer may be large, you will only need to find the answer modulo 10^9+7.\n\nThe only line of the input contains two integers n and lim (1 ≤ n ≤ 200, 1 ≤ lim ≤ 10^9).\n\nOutput the number of different permutations that satisfy the condition modulo 10^9+7.\n\nIn the first example, P = [1, 4, 2, 3] satisfies the condition, because: fun([1, 4, 2, 3]) = 4 + fun([4, 2, 3]) = 7 + fun([2, 3]) = 9 + fun([3]) = 10\n\nDo remember to output the answer modulo 10^9+7.\n\nInput:\n```\n4 10\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n8 32\n```\n\nOutput:\n```\n1280\n```",
+    "input": "The only line of the input contains two integers n and lim (1 ≤ n ≤ 200, 1 ≤ lim ≤ 10^9).",
+    "output": "Output the number of different permutations that satisfy the condition modulo 10^9+7.",
+    "time_limit": "8 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "*3000"
+    ],
+    "rating": 3000
+}

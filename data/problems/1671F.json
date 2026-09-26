@@ -1,0 +1,20 @@
+{
+    "id": "1671F",
+    "contest_id": 1671,
+    "problem_letter": "F",
+    "title": "F. Permutation Counting",
+    "statement": "Calculate the number of permutations p of size n with exactly k inversions (pairs of indices (i, j) such that i < j and p_i > p_j) and exactly x indices i such that p_i > p_{i+1}.\n\nYep, that's the whole problem. Good luck!\n\nThe first line contains one integer t (1 ≤ t ≤ 3·10^4) — the number of test cases.\n\nEach test case consists of one line which contains three integers n, k and x (1 ≤ n ≤ 998244352; 1 ≤ k ≤ 11; 1 ≤ x ≤ 11).\n\nFor each test case, print one integer — the answer to the problem, taken modulo 998244353.\n\nInput:\n```\n510 6 47 3 1163316 11 7136373 11 1325902 11 11\n```\n\nOutput:\n```\n465\n12\n986128624\n7636394\n57118194\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 3·10^4) — the number of test cases.\n\nEach test case consists of one line which contains three integers n, k and x (1 ≤ n ≤ 998244352; 1 ≤ k ≤ 11; 1 ≤ x ≤ 11).",
+    "output": "For each test case, print one integer — the answer to the problem, taken modulo 998244353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

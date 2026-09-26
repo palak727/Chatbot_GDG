@@ -1,0 +1,18 @@
+{
+    "id": "2000A",
+    "contest_id": 2000,
+    "problem_letter": "A",
+    "title": "A. Primary Task",
+    "statement": "Dmitry wrote down t integers on the board, and that is good. He is sure that he lost an important integer n among them, and that is bad.\n\nThe integer n had the form 10^x (x ≥ 2), where the symbol '^' denotes exponentiation.. Something went wrong, and Dmitry missed the symbol '^' when writing the important integer. For example, instead of the integer 10^5, he would have written 105, and instead of 10^19, he would have written 1019.\n\nDmitry wants to understand which of the integers on the board could have been the important integer and which could not.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of integers on the board.\n\nThe next t lines each contain an integer a (1 ≤ a ≤ 10000) — the next integer from the board.\n\nFor each integer on the board, output \"YES\" if it could have been the important integer and \"NO\" otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nInput:\n```\n71001010101105203310191002\n```\n\nOutput:\n```\nNO\nYES\nNO\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of integers on the board.\n\nThe next t lines each contain an integer a (1 ≤ a ≤ 10000) — the next integer from the board.",
+    "output": "For each integer on the board, output \"YES\" if it could have been the important integer and \"NO\" otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

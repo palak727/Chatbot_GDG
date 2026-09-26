@@ -1,0 +1,16 @@
+{
+    "id": "1742C",
+    "contest_id": 1742,
+    "problem_letter": "C",
+    "title": "C. Stripes",
+    "statement": "On an 8 × 8 grid, some horizontal rows have been painted red, and some vertical columns have been painted blue, in some order. The stripes are drawn sequentially, one after the other. When the stripe is drawn, it repaints all the cells through which it passes.\n\nDetermine which color was used last.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 4000) — the number of test cases. The description of test cases follows. There is an empty line before each test case.\n\nEach test case consists of 8 lines, each containing 8 characters. Each of these characters is either 'R', 'B', or '.', denoting a red square, a blue square, and an unpainted square, respectively.\n\nIt is guaranteed that the given field is obtained from a colorless one by drawing horizontal red rows and vertical blue columns.\n\nAt least one stripe is painted.\n\nFor each test case, output 'R' if a red stripe was painted last, and 'B' if a blue stripe was painted last (without quotes).\n\nThe first test case is pictured in the statement.\n\nIn the second test case, the first blue column is painted first, then the first and last red rows, and finally the last blue column. Since a blue stripe is painted last, the answer is B.\n\nInput:\n```\n4\n....B.......B.......B...RRRRRRRR....B.......B.......B.......B...\nRRRRRRRBB......BB......BB......BB......BB......BB......BRRRRRRRB\nRRRRRRBB.B.B..BBRRRRRRBB.B.B..BB.B.B..BBRRRRRRBB.B.B..BB.B.B..BB\n........................RRRRRRRR................................\n```\n\nOutput:\n```\nR\nB\nB\nR\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 4000) — the number of test cases. The description of test cases follows. There is an empty line before each test case.\n\nEach test case consists of 8 lines, each containing 8 characters. Each of these characters is either 'R', 'B', or '.', denoting a red square, a blue square, and an unpainted square, respectively.\n\nIt is guaranteed that the given field is obtained from a colorless one by drawing horizontal red rows and vertical blue columns.\n\nAt least one stripe is painted.",
+    "output": "For each test case, output 'R' if a red stripe was painted last, and 'B' if a blue stripe was painted last (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1948D",
+    "contest_id": 1948,
+    "problem_letter": "D",
+    "title": "D. Tandem Repeats?",
+    "statement": "You are given a string s, consisting of lowercase Latin letters and/or question marks.\n\nA tandem repeat is a string of an even length such that its first half is equal to its second half.\n\nA string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nYour goal is to replace each question mark with some lowercase Latin letter in such a way that the length of the longest substring that is a tandem repeat is maximum possible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe only line of each testcase contains a string s (1 ≤ |s| ≤ 5000), consisting only of lowercase Latin letters and/or question marks.\n\nThe total length of the strings over all testcases doesn't exceed 5000.\n\nFor each testcase, print a single integer — the maximum length of the longest substring that is a tandem repeat after you replace each question mark in the string with some lowercase Latin letter.\n\nIf it's impossible to make any tandem repeat substrings in the string, print 0.\n\nInput:\n```\n4zaabaabz?????code?????scodeforces\n```\n\nOutput:\n```\n6\n4\n10\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe only line of each testcase contains a string s (1 ≤ |s| ≤ 5000), consisting only of lowercase Latin letters and/or question marks.\n\nThe total length of the strings over all testcases doesn't exceed 5000.",
+    "output": "For each testcase, print a single integer — the maximum length of the longest substring that is a tandem repeat after you replace each question mark in the string with some lowercase Latin letter.\n\nIf it's impossible to make any tandem repeat substrings in the string, print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "strings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

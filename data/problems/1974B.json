@@ -1,0 +1,18 @@
+{
+    "id": "1974B",
+    "contest_id": 1974,
+    "problem_letter": "B",
+    "title": "B. Symmetric Encoding",
+    "statement": "Polycarp has a string s, which consists of lowercase Latin letters. He encodes this string using the following algorithm:\n\nFor example, encoding the string s=\"codeforces\" happens as follows:\n\nThus, the result of encoding the string s=\"codeforces\" is the string \"serofedsoc\".\n\nWrite a program that performs decoding — that is, restores the original string s from the encoding result.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string b.\n\nThe second line of each test case contains a string b of length n, consisting of lowercase Latin letters — the result of encoding the original string s.\n\nIt is guaranteed that the sum of the values of n over all test cases in the test does not exceed 2·10^5.\n\nFor each test case, output the string s from which the encoding result b was obtained.\n\nInput:\n```\n510serofedsoc3ttf9tlrhgmaoi1w15hnndledmnhlttin\n```\n\nOutput:\n```\ncodeforces\nfft\nalgorithm\nw\nmeetinthemiddle\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string b.\n\nThe second line of each test case contains a string b of length n, consisting of lowercase Latin letters — the result of encoding the original string s.\n\nIt is guaranteed that the sum of the values of n over all test cases in the test does not exceed 2·10^5.",
+    "output": "For each test case, output the string s from which the encoding result b was obtained.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

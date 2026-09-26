@@ -1,0 +1,19 @@
+{
+    "id": "2050D",
+    "contest_id": 2050,
+    "problem_letter": "D",
+    "title": "D. Digital string maximization",
+    "statement": "You are given a string s, consisting of digits from 0 to 9. In one operation, you can pick any digit in this string, except for 0 or the leftmost digit, decrease it by 1, and then swap it with the digit left to the picked.\n\nFor example, in one operation from the string 1023, you can get 1103 or 1022.\n\nFind the lexicographically maximum string you can obtain after any number of operations.\n\nThe first line of the input consists of an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line consisting of a digital string s (1 ≤ |s| ≤ 2·10^5), where |s| denotes the length of s. The string does not contain leading zeroes.\n\nIt is guaranteed that the sum of |s| of all test cases doesn't exceed 2·10^5.\n\nFor each test case, print the answer on a separate line.\n\nIn the first example, the following sequence of operations is suitable: 19 → 81.\n\nIn the second example, the following sequence of operations is suitable: 1709 → 1780 → 6180 → 6710.\n\nIn the fourth example, the following sequence of operations is suitable: 51476 → 53176 → 53616 → 53651 → 55351 → 55431.\n\nInput:\n```\n6191709115555147698765432105891917899\n```\n\nOutput:\n```\n81\n6710\n33311\n55431\n9876543210\n7875567711\n```",
+    "input": "The first line of the input consists of an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line consisting of a digital string s (1 ≤ |s| ≤ 2·10^5), where |s| denotes the length of s. The string does not contain leading zeroes.\n\nIt is guaranteed that the sum of |s| of all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print the answer on a separate line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "strings",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2104B",
+    "contest_id": 2104,
+    "problem_letter": "B",
+    "title": "B. Move to the End",
+    "statement": "You are given an array a consisting of n integers.\n\nFor every integer k from 1 to n, you have to do the following:\n\nFor every k, you choose the element which you move so that the value you print is the maximum possible.\n\nCalculate the value you print for every k.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print n integers. The i-th of these integers should be equal to the maximum value you can print if k=i.\n\nLet's consider the first test case from the statement:\n\nInput:\n```\n4713 5 10 14 8 15 1361000000000 1000000000 1000000000 1000000000 1000000000 100000000014227 5\n```\n\nOutput:\n```\n15 28 42 50 63 73 78 \n1000000000 2000000000 3000000000 4000000000 5000000000 6000000000 \n42 \n7 12 \n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print n integers. The i-th of these integers should be equal to the maximum value you can print if k=i.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

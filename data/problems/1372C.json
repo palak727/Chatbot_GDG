@@ -1,0 +1,17 @@
+{
+    "id": "1372C",
+    "contest_id": 1372,
+    "problem_letter": "C",
+    "title": "C. Omkar and Baseball",
+    "statement": "Patrick likes to play baseball, but sometimes he will spend so many hours hitting home runs that his mind starts to get foggy! Patrick is sure that his scores across n sessions follow the identity permutation (ie. in the first game he scores 1 point, in the second game he scores 2 points and so on). However, when he checks back to his record, he sees that all the numbers are mixed up!\n\nDefine a special exchange as the following: choose any subarray of the scores and permute elements such that no element of subarray gets to the same position as it was before the exchange. For example, performing a special exchange on [1,2,3] can yield [3,1,2] but it cannot yield [3,2,1] since the 2 is in the same position.\n\nGiven a permutation of n integers, please help Patrick find the minimum number of special exchanges needed to make the permutation sorted! It can be proved that under given constraints this number doesn't exceed 10^18.\n\nAn array a is a subarray of an array b if a can be obtained from b by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains integer n (1 ≤ n ≤ 2·10^5) — the length of the given permutation.\n\nThe second line of each test case contains n integers a_1,a_2,...,a_n (1 ≤ a_i ≤ n) — the initial permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer: the minimum number of special exchanges needed to sort the permutation.\n\nIn the first permutation, it is already sorted so no exchanges are needed.\n\nIt can be shown that you need at least 2 exchanges to sort the second permutation.\n\n[3, 2, 4, 5, 1, 6, 7]\n\nPerform special exchange on range (1, 5)\n\n[4, 1, 2, 3, 5, 6, 7]\n\nPerform special exchange on range (1, 4)\n\n[1, 2, 3, 4, 5, 6, 7]\n\nInput:\n```\n251 2 3 4 573 2 4 5 1 6 7\n```\n\nOutput:\n```\n0\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains integer n (1 ≤ n ≤ 2·10^5) — the length of the given permutation.\n\nThe second line of each test case contains n integers a_1,a_2,...,a_n (1 ≤ a_i ≤ n) — the initial permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer: the minimum number of special exchanges needed to sort the permutation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

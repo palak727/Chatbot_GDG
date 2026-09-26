@@ -1,0 +1,18 @@
+{
+    "id": "1288D",
+    "contest_id": 1288,
+    "problem_letter": "D",
+    "title": "D. Minimax Problem",
+    "statement": "You are given n arrays a_1, a_2, ..., a_n; each array consists of exactly m integers. We denote the y-th element of the x-th array as a_{x, y}.\n\nYou have to choose two arrays a_i and a_j (1 ≤ i, j ≤ n, it is possible that i = j). After that, you will obtain a new array b consisting of m integers, such that for every k ∈ [1, m] b_k = max(a_{i, k}, a_{j, k}).\n\nYour goal is to choose i and j so that the value of min limits_{k = 1}^m b_k is maximum possible.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 3·10^5, 1 ≤ m ≤ 8) — the number of arrays and the number of elements in each array, respectively.\n\nThen n lines follow, the x-th line contains the array a_x represented by m integers a_{x, 1}, a_{x, 2}, ..., a_{x, m} (0 ≤ a_{x, y} ≤ 10^9).\n\nPrint two integers i and j (1 ≤ i, j ≤ n, it is possible that i = j) — the indices of the two arrays you have to choose so that the value of min limits_{k = 1}^m b_k is maximum possible. If there are multiple answers, print any of them.\n\nInput:\n```\n6 5\n5 0 3 1 2\n1 8 9 1 3\n1 2 3 4 5\n9 1 0 3 7\n2 3 0 6 3\n6 4 1 7 0\n```\n\nOutput:\n```\n1 5\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 3·10^5, 1 ≤ m ≤ 8) — the number of arrays and the number of elements in each array, respectively.\n\nThen n lines follow, the x-th line contains the array a_x represented by m integers a_{x, 1}, a_{x, 2}, ..., a_{x, m} (0 ≤ a_{x, y} ≤ 10^9).",
+    "output": "Print two integers i and j (1 ≤ i, j ≤ n, it is possible that i = j) — the indices of the two arrays you have to choose so that the value of min limits_{k = 1}^m b_k is maximum possible. If there are multiple answers, print any of them.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "dp",
+        "*2000"
+    ],
+    "rating": 2000
+}

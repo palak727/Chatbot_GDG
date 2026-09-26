@@ -1,0 +1,18 @@
+{
+    "id": "1954A",
+    "contest_id": 1954,
+    "problem_letter": "A",
+    "title": "A. Painting the Ribbon",
+    "statement": "Alice and Bob have bought a ribbon consisting of n parts. Now they want to paint it.\n\nFirst, Alice will paint every part of the ribbon into one of m colors. For each part, she can choose its color arbitrarily.\n\nThen, Bob will choose at most k parts of the ribbon and repaint them into the same color (he chooses the affected parts and the color arbitrarily).\n\nBob would like all parts to have the same color. However, Alice thinks that this is too dull, so she wants to paint the ribbon in such a way that Bob cannot make all parts have the same color.\n\nIs it possible to paint the ribbon in such a way?\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing three integers n, m and k (1 ≤ m, k ≤ n ≤ 50) — the number of parts, the number of colors and the number of parts Bob can repaint, respectively.\n\nFor each test case, print YES if Alice can paint the ribbon so that Bob cannot make all parts have the same color. Otherwise, print NO.\n\nYou can print every letter in any register. For example, Yes, yes, yEs will all be recognized as positive answer.\n\nIn the first test case, a ribbon consists of 1 part. So all its parts will always have the same color.\n\nIn the second test case, there is only 1 color.\n\nIn the third test case, Alice can paint the ribbon as follows: [1, 2, 1, 2, 1]. It's impossible to change the color of at most 1 part so that all parts have the same color.\n\nIn the fourth test case, no matter how Alice paints the ribbon, Bob will always be able to repaint 2 parts so that all parts have the same color.\n\nIn the fifth test case, Alice can paint the ribbon as follows: [1, 2, 3, 4, 5]. It's impossible to change the color of at most 3 parts so that all parts have the same color.\n\nInput:\n```\n51 1 15 1 15 2 15 2 25 5 3\n```\n\nOutput:\n```\nNO\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing three integers n, m and k (1 ≤ m, k ≤ n ≤ 50) — the number of parts, the number of colors and the number of parts Bob can repaint, respectively.",
+    "output": "For each test case, print YES if Alice can paint the ribbon so that Bob cannot make all parts have the same color. Otherwise, print NO.\n\nYou can print every letter in any register. For example, Yes, yes, yEs will all be recognized as positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

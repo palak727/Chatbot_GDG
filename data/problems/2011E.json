@@ -1,0 +1,17 @@
+{
+    "id": "2011E",
+    "contest_id": 2011,
+    "problem_letter": "E",
+    "title": "E. Rock-Paper-Scissors Bot",
+    "statement": "Rock-Paper-Scissors is a game for two players. It is played in rounds. During each round, every player chooses one of three moves: Rock, Paper, or Scissors. Depending on the chosen moves, the following happens:\n\nMonocarp decided to play against a bot. During the game, Monocarp noticed that the bot's behavior is very predictable:\n\nMonocarp has a favorite string s, consisting of the characters R, P, and/or S. Monocarp decided to play a series of rounds against the bot. However, he wants both of the following conditions to be met:\n\nHelp Monocarp and calculate the minimum number of rounds he needs to play against the bot to satisfy both of the aforementioned conditions.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s (1 ≤ |s| ≤ 2·10^5), consisting of the characters R, P, and/or S.\n\nAdditional constraint on the input: the sum of the lengths of the strings s over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the minimum number of rounds Monocarp needs to play against the bot to satisfy both of the aforementioned conditions.\n\nIn the first example, Monocarp can play PPR, then the bot's moves are RSS, and the score is 2:1 in favor of Monocarp.\n\nIn the second example, Monocarp can play P, then the bot's moves are R, and the score is 1:0 in favor of Monocarp.\n\nIn the third example, Monocarp can play RPR, then the bot's moves are RPS, and the score is 1:0 in favor of Monocarp.\n\nIn the fourth example, Monocarp can play RRRSPR, then the bot's moves are RPPPRS, and the score is 3:2 in favor of Monocarp.\n\nIn the fifth example, Monocarp can play PRRSPRS, then the bot's moves are RSPPRSP, and the score is 6:1 in favor of Monocarp.\n\nIn the sixth example, Monocarp can play PRRRS, then the bot's moves are RSPPP, and the score is 3:2 in favor of Monocarp.\n\nIn the seventh example, Monocarp can play RSR, then the bot's moves are RPR, and the score is 1:0 in favor of Monocarp.\n\nInput:\n```\n7SSRRPSRPPPSPPRSPPPPPR\n```\n\nOutput:\n```\n3\n1\n3\n6\n7\n5\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s (1 ≤ |s| ≤ 2·10^5), consisting of the characters R, P, and/or S.\n\nAdditional constraint on the input: the sum of the lengths of the strings s over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the minimum number of rounds Monocarp needs to play against the bot to satisfy both of the aforementioned conditions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "greedy",
+        "strings"
+    ],
+    "rating": null
+}

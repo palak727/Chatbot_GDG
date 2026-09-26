@@ -1,0 +1,18 @@
+{
+    "id": "2109B",
+    "contest_id": 2109,
+    "problem_letter": "B",
+    "title": "B. Slice to Survive",
+    "statement": "Duelists Mouf and Fouad enter the arena, which is an n × m grid!\n\nFouad's monster starts at cell (a, b), where rows are numbered 1 to n and columns 1 to m.\n\nMouf and Fouad will keep duelling until the grid consists of only one cell.\n\nIn each turn:\n\nMouf wants to minimize the number of turns, while Fouad wants to maximize them. How many turns will this epic duel last if both play optimally?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains four integers n, m, a, and b (2 ≤ n, m ≤ 10^9, 1 ≤ a ≤ n, 1 ≤ b ≤ m) — denoting the number of rows, the number of columns, the starting row of the monster, and the starting column of the monster, respectively.\n\nFor each test case, output a single integer — the number of turns this epic duel will last if both play optimally.\n\nIn the first test case, one possible duel sequence is as follows:\n\nThe duel is completed in 2 turns.\n\nIn the fourth case, one possible duel sequence is as follows:\n\nIn total, the duel is completed in 3 turns.\n\nYou can refer to the pictures mentioned in the problem statement for illustrations of the fourth test case.\n\nInput:\n```\n82 2 1 13 3 2 22 7 1 42 7 2 28 9 4 69 9 5 52 20 2 1122 99 20 70\n```\n\nOutput:\n```\n2\n4\n4\n3\n6\n8\n6\n10\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains four integers n, m, a, and b (2 ≤ n, m ≤ 10^9, 1 ≤ a ≤ n, 1 ≤ b ≤ m) — denoting the number of rows, the number of columns, the starting row of the monster, and the starting column of the monster, respectively.",
+    "output": "For each test case, output a single integer — the number of turns this epic duel will last if both play optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

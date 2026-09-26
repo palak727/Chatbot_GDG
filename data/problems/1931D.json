@@ -1,0 +1,18 @@
+{
+    "id": "1931D",
+    "contest_id": 1931,
+    "problem_letter": "D",
+    "title": "D. Divisible Pairs",
+    "statement": "Polycarp has two favorite integers x and y (they can be equal), and he has found an array a of length n.\n\nPolycarp considers a pair of indices langle i, j rangle (1 ≤ i < j ≤ n) beautiful if:\n\nFor example, if x=5, y=2, n=6, a=[1, 2, 7, 4, 9, 6], then the only beautiful pairs are:\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains three integers n, x, and y (2 ≤ n ≤ 2·10^5, 1 ≤ x, y ≤ 10^9) — the size of the array and Polycarp's favorite integers.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of beautiful pairs in the array a.\n\nInput:\n```\n76 5 21 2 7 4 9 67 9 51 10 15 3 8 12 159 4 1014 10 2 2 11 11 13 5 69 5 610 7 6 7 9 7 7 10 109 6 24 9 7 1 2 2 13 3 159 2 314 6 1 15 12 15 8 2 1510 5 713 3 3 2 12 11 3 7 13 14\n```\n\nOutput:\n```\n2\n0\n1\n3\n5\n7\n0\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains three integers n, x, and y (2 ≤ n ≤ 2·10^5, 1 ≤ x, y ≤ 10^9) — the size of the array and Polycarp's favorite integers.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of beautiful pairs in the array a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

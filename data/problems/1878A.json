@@ -1,0 +1,16 @@
+{
+    "id": "1878A",
+    "contest_id": 1878,
+    "problem_letter": "A",
+    "title": "A. How Much Does Daytona Cost?",
+    "statement": "We define an integer to be the most common on a subsegment, if its number of occurrences on that subsegment is larger than the number of occurrences of any other integer in that subsegment. A subsegment of an array is a consecutive segment of elements in the array a.\n\nGiven an array a of size n, and an integer k, determine if there exists a non-empty subsegment of a where k is the most common element.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 1 ≤ k ≤ 100) — the number of elements in array and the element which must be the most common.\n\nThe second line of each test case contains n integers a_1, a_2, a_3, …, a_n (1 ≤ a_i ≤ 100) — elements of the array.\n\nFor each test case output \"YES\" if there exists a subsegment in which k is the most common element, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nIn the first test case we need to check if there is a subsegment where the most common element is 4.\n\nOn the subsegment [2,5] the elements are 4, 3, 4, 1.\n\nThis means that 4 is the most common element on the subsegment [2, 5], so there exists a subsegment where 4 is the most common element.\n\nInput:\n```\n75 41 4 3 4 14 12 3 4 45 643 5 60 4 22 51 54 15 3 3 11 335 33 4 1 5 5\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nYES\nYES\nYES\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 1 ≤ k ≤ 100) — the number of elements in array and the element which must be the most common.\n\nThe second line of each test case contains n integers a_1, a_2, a_3, …, a_n (1 ≤ a_i ≤ 100) — elements of the array.",
+    "output": "For each test case output \"YES\" if there exists a subsegment in which k is the most common element, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

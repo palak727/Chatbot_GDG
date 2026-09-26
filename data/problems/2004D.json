@@ -1,0 +1,22 @@
+{
+    "id": "2004D",
+    "contest_id": 2004,
+    "problem_letter": "D",
+    "title": "D. Colored Portals",
+    "statement": "There are n cities located on a straight line. The cities are numbered from 1 to n.\n\nPortals are used to move between cities. There are 4 colors of portals: blue, green, red, and yellow. Each city has portals of two different colors. You can move from city i to city j if they have portals of the same color (for example, you can move between a \"blue-red\" city and a \"blue-green\" city). This movement costs |i-j| coins.\n\nYour task is to answer q independent queries: calculate the minimum cost to move from city x to city y.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of cities and the number of queries, respectively.\n\nThe second line contains n strings of the following types: BG, BR, BY, GR, GY, or RY; the i-th of them describes the portals located in the i-th city; the symbol B indicates that there is a blue portal in the city, G — green, R — red, and Y — yellow.\n\nThe j-th of the next q lines contains two integers x_j and y_j (1 ≤ x_j, y_j ≤ n) — the description of the j-th query.\n\nAdditional constraints on the input:\n\nFor each query, print a single integer — the minimum cost to move from city x to city y (or -1 if it is impossible).\n\nInput:\n```\n24 5BR BR GY GR1 23 14 41 44 22 1BG RY1 2\n```\n\nOutput:\n```\n1\n4\n0\n3\n2\n-1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of cities and the number of queries, respectively.\n\nThe second line contains n strings of the following types: BG, BR, BY, GR, GY, or RY; the i-th of them describes the portals located in the i-th city; the symbol B indicates that there is a blue portal in the city, G — green, R — red, and Y — yellow.\n\nThe j-th of the next q lines contains two integers x_j and y_j (1 ≤ x_j, y_j ≤ n) — the description of the j-th query.\n\nAdditional constraints on the input:",
+    "output": "For each query, print a single integer — the minimum cost to move from city x to city y (or -1 if it is impossible).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "graphs",
+        "greedy",
+        "implementation",
+        "shortest paths",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1615A",
+    "contest_id": 1615,
+    "problem_letter": "A",
+    "title": "A. Closing The Gap",
+    "statement": "There are n block towers in a row, where tower i has a height of a_i. You're part of a building crew, and you want to make the buildings look as nice as possible. In a single day, you can perform the following operation:\n\nYou think the ugliness of the buildings is the height difference between the tallest and shortest buildings. Formally, the ugliness is defined as max(a)-min(a).\n\nWhat's the minimum possible ugliness you can achieve, after any number of days?\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t cases follow.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of buildings.\n\nThe second line of each test case contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7) — the heights of the buildings.\n\nFor each test case, output a single integer — the minimum possible ugliness of the buildings.\n\nIn the first test case, the ugliness is already 0.\n\nIn the second test case, you should do one operation, with i = 1 and j = 3. The new heights will now be [2, 2, 2, 2], with an ugliness of 0.\n\nIn the third test case, you may do three operations:\n\nInput:\n```\n3\n3\n10 10 10\n4\n3 2 1 2\n5\n1 2 3 1 5\n```\n\nOutput:\n```\n0\n0\n1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t cases follow.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of buildings.\n\nThe second line of each test case contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7) — the heights of the buildings.",
+    "output": "For each test case, output a single integer — the minimum possible ugliness of the buildings.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2120E",
+    "contest_id": 2120,
+    "problem_letter": "E",
+    "title": "E. Lanes of Cars",
+    "statement": "Harshith is the president of TollClub. He tasks his subordinate Aryan to oversee a toll plaza with n lanes. Initially, the i-th lane has a_i cars waiting in a queue. Exactly one car from the front of each lane passes through the toll every second.\n\nThe angriness of a car is defined as the number of seconds it had to wait before passing through the toll. Consider it takes 1 sec for each car to pass the toll, i.e., the first car in a lane has angriness 1, the second car has angriness 2, and so on.\n\nTo reduce congestion and frustration, cars are allowed to switch lanes. A car can instantly move to the back of any other lane at any time. However, changing lanes increases its angriness by an additional k units due to the confusion caused by the lane change.\n\nHarshith, being the awesome person he is, wants to help the drivers by minimising the total angriness of all cars. He asks Aryan to do so or get fired. Aryan is allowed to change lanes of any car anytime (possibly zero), but his goal is to find the minimum possible total angriness if the lane changes are done optimally. Help Aryan retain his job by determining the minimum angriness he can achieve.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^6) — the number of lanes and the increment in angriness on a lane change.\n\nThe second line of each test case contains n space-separated integers, denoting array a — the i-th number representing the number of cars in the i-th lane (1 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nNote that the sum of max a_i over all test cases is not bounded.\n\nFor each test case, output a single integer in a new line, denoting the minimum total angriness.\n\nIn the first test case, Aryan shifts two cars from lane 1 to lane 3, after which the array becomes [11, 7, 6]. The total angriness is (11·12)/2+(7·8)/2+(6·7)/2+2·4=123. It can be proven that this is the minimum possible angriness.\n\nIn the fourth test case, there is only one lane, so cars can't shift lanes. Total angriness is (6·7)/2=21.\n\nInput:\n```\n63 413 7 44 96 12 14 55 32 4 13 5 101 7613 410 26 34 39 9 43 48 41 1 38 13 4 4616 3176342 171863 70145 80835 160257 136105 78541 100795 114461 45482 68210 51656 29593 8750 173743 156063\n```\n\nOutput:\n```\n123\n219\n156\n21\n5315\n82302351405\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^6) — the number of lanes and the increment in angriness on a lane change.\n\nThe second line of each test case contains n space-separated integers, denoting array a — the i-th number representing the number of cars in the i-th lane (1 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nNote that the sum of max a_i over all test cases is not bounded.",
+    "output": "For each test case, output a single integer in a new line, denoting the minimum total angriness.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "ternary search",
+        "*2300"
+    ],
+    "rating": 2300
+}

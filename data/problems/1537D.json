@@ -1,0 +1,18 @@
+{
+    "id": "1537D",
+    "contest_id": 1537,
+    "problem_letter": "D",
+    "title": "D. Deleting Divisors",
+    "statement": "Alice and Bob are playing a game.\n\nThey start with a positive integer n and take alternating turns doing operations on it. Each turn a player can subtract from n one of its divisors that isn't 1 or n. The player who cannot make a move on his/her turn loses. Alice always moves first.\n\nNote that they subtract a divisor of the current number in each turn.\n\nYou are asked to find out who will win the game if both players play optimally.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case contains a single integer n (1 ≤ n ≤ 10^9) — the initial number.\n\nFor each test case output \"Alice\" if Alice will win the game or \"Bob\" if Bob will win, if both players play optimally.\n\nIn the first test case, the game ends immediately because Alice cannot make a move.\n\nIn the second test case, Alice can subtract 2 making n = 2, then Bob cannot make a move so Alice wins.\n\nIn the third test case, Alice can subtract 3 so that n = 9. Bob's only move is to subtract 3 and make n = 6. Now, Alice can subtract 3 again and n = 3. Then Bob cannot make a move, so Alice wins.\n\nInput:\n```\n4\n1\n4\n12\n69\n```\n\nOutput:\n```\nBob\nAlice\nAlice\nBob\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case contains a single integer n (1 ≤ n ≤ 10^9) — the initial number.",
+    "output": "For each test case output \"Alice\" if Alice will win the game or \"Bob\" if Bob will win, if both players play optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

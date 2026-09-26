@@ -1,0 +1,21 @@
+{
+    "id": "2129A",
+    "contest_id": 2129,
+    "problem_letter": "A",
+    "title": "A. Double Perspective",
+    "statement": "For a set of pairs S = {(a_1, b_1), (a_2, b_2), …, (a_m, b_m)}, where a_i < b_i for all 1 ≤ i ≤ m, we define f(S) and g(S) as follows:\n\nFor example, S = {(1,2), (2,4), (1,4), (4,5),(6,7)}, we can get f(S) = 5 and g(S) = 3.\n\nYou are given n distinct pairs. Your task is to select a subset S' of these pairs such that f(S') - g(S') is maximized. You need to output the indices of the selected pairs.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 3·10^3).\n\nNext n lines each contain two integers a_i and b_i (1 ≤ a_i < b_i ≤ 2n), representing a pair.\n\nIt is guaranteed that all pairs are distinct within the same test case.\n\nIt is guaranteed that the sum of n^2 over all test cases will not exceed 9·10^6.\n\nFor each test case, the first line contains an integer k (0 ≤ k ≤ n) — the size of the subset S'.\n\nNext line contains k integers i_1, i_2, …, i_m (1 ≤ i_1 , i_2 , … , i_k ≤ n) — the indices of the selected pairs. Note the indices must be distinct.\n\nIn the first test case, if no pair is selected (i.e. S'=varnothing), f(S')-g(S')=0-0=0. If the first pair is selected, f (S') - g (S')=1-0=1. So the optimal solution is to select the first pair.\n\nInput:\n```\n211 241 22 31 33 5\n```\n\nOutput:\n```\n1\n1\n3\n1 2 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 3·10^3).\n\nNext n lines each contain two integers a_i and b_i (1 ≤ a_i < b_i ≤ 2n), representing a pair.\n\nIt is guaranteed that all pairs are distinct within the same test case.\n\nIt is guaranteed that the sum of n^2 over all test cases will not exceed 9·10^6.",
+    "output": "For each test case, the first line contains an integer k (0 ≤ k ≤ n) — the size of the subset S'.\n\nNext line contains k integers i_1, i_2, …, i_m (1 ≤ i_1 , i_2 , … , i_k ≤ n) — the indices of the selected pairs. Note the indices must be distinct.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

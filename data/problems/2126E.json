@@ -1,0 +1,17 @@
+{
+    "id": "2126E",
+    "contest_id": 2126,
+    "problem_letter": "E",
+    "title": "E. G-C-D, Unlucky!",
+    "statement": "Two arrays p and s of length n are given, where p is the prefix GCD^{∗} of some array a, and s is the suffix GCD of the same array a. In other words, if the array a existed, then for each 1 ≤ i ≤ n, the following equalities would hold both:\n\n^{∗}gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 10^9) — the elements of the array.\n\nThe third line of each test case contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of all n across all test cases does not exceed 10^5.\n\nFor each test case, output \"Yes\" (without quotes) if there exists an array a for which the given arrays p and s can be obtained, and \"No\" (without quotes) otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nFor the first test case, a possible array is: [72, 24, 3, 6, 12, 144].\n\nFor the second test case, it can be shown that such arrays do not exist.\n\nFor the third test case, there exists an array: [125, 125, 125, 25, 75].\n\nInput:\n```\n5672 24 3 3 3 33 3 3 6 12 14431 2 34 5 65125 125 125 25 2525 25 25 25 754123 421 282 251125 1981 239 2233124 521 125125 121 121\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 10^9) — the elements of the array.\n\nThe third line of each test case contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of all n across all test cases does not exceed 10^5.",
+    "output": "For each test case, output \"Yes\" (without quotes) if there exists an array a for which the given arrays p and s can be obtained, and \"No\" (without quotes) otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

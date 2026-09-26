@@ -1,0 +1,20 @@
+{
+    "id": "1801C",
+    "contest_id": 1801,
+    "problem_letter": "C",
+    "title": "C. Music Festival",
+    "statement": "Vitya has a friend Masha, whom he really wants to invite to the festival, where his favorite bands perform. However, in order for a friend to agree, she must first evaluate the released novelties. Vitya knows that if Masha listens to a track that was cooler than all the previous ones, she will get 1 unit of impression. Unfortunately, albums can only be listened to in their entirety, without changing the songs in them in places.\n\nHelp Vitya find such an order of albums so that Masha's impression turns out to be as much as possible, and she definitely went to the festival with him.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 200,000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 200,000) — number of albums.\n\nThe album descriptions follow. Each album description consists of two lines:\n\nThe first line contains a single integer k_i (1 ≤ k_i ≤ 200,000) — the number of tracks in the ith album.\n\nThe following line contains k_i integers a_{i, 1}, a_{i, 2}, a_{i, 3}, …, a_{i, k_i} (1 ≤ a_{i,j} ≤ 200,000) — the coolness of the tracks in the i album.\n\nDenote for ∑ k_i the sum of all k_i. It is guaranteed that ∑ k_i ≤ 200,000.\n\nFor each test case print the singular number — the maximum impression that Masha can get.\n\nIn the first test example, the optimal order is listening to the 4th, 2nd, 3rd and 1st albums.\n\nIn this case, Masha will listen to the tracks in the following order: 1; 7; 8, 6; 4, 9, 4, 6, 8 and will receive 4 units of impression.\n\nIn the second test example, you must first listen to the 1st, then the 4th, and in any order the 2nd and 3rd. In this case, Masha will get the maximum impression, and for every song in the 1st and 4th albums and nothing for the 2nd and 3rd.\n\nInput:\n```\n2454 9 4 6 81728 611423 421 822 827 9\n```\n\nOutput:\n```\n4\n4\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 200,000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 200,000) — number of albums.\n\nThe album descriptions follow. Each album description consists of two lines:\n\nThe first line contains a single integer k_i (1 ≤ k_i ≤ 200,000) — the number of tracks in the ith album.\n\nThe following line contains k_i integers a_{i, 1}, a_{i, 2}, a_{i, 3}, …, a_{i, k_i} (1 ≤ a_{i,j} ≤ 200,000) — the coolness of the tracks in the i album.\n\nDenote for ∑ k_i the sum of all k_i. It is guaranteed that ∑ k_i ≤ 200,000.",
+    "output": "For each test case print the singular number — the maximum impression that Masha can get.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

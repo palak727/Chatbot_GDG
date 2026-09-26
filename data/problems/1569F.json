@@ -1,0 +1,20 @@
+{
+    "id": "1569F",
+    "contest_id": 1569,
+    "problem_letter": "F",
+    "title": "F. Palindromic Hamiltonian Path",
+    "statement": "You are given a simple undirected graph with n vertices, n is even. You are going to write a letter on each vertex. Each letter should be one of the first k letters of the Latin alphabet.\n\nA path in the graph is called Hamiltonian if it visits each vertex exactly once. A string is called palindromic if it reads the same from left to right and from right to left. A path in the graph is called palindromic if the letters on the vertices in it spell a palindromic string without changing the order.\n\nA string of length n is good if:\n\nNote that the path doesn't necesserily go through the vertices in order 1, 2, …, n.\n\nCount the number of good strings.\n\nThe first line contains three integers n, m and k (2 ≤ n ≤ 12; n is even; 0 ≤ m ≤ (n·(n-1))/2; 1 ≤ k ≤ 12) — the number of vertices in the graph, the number of edges in the graph and the number of first letters of the Latin alphabet that can be used.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the edges of the graph. The graph doesn't contain multiple edges and self-loops.\n\nPrint a single integer — number of good strings.\n\nInput:\n```\n4 3 3\n1 2\n2 3\n3 4\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4 6 3\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n```\n\nOutput:\n```\n21\n```\n\nInput:\n```\n12 19 12\n1 3\n2 6\n3 6\n3 7\n4 8\n8 5\n8 7\n9 4\n5 9\n10 1\n10 4\n10 6\n9 10\n11 1\n5 11\n7 11\n12 2\n12 5\n12 11\n```\n\nOutput:\n```\n456165084\n```",
+    "input": "The first line contains three integers n, m and k (2 ≤ n ≤ 12; n is even; 0 ≤ m ≤ (n·(n-1))/2; 1 ≤ k ≤ 12) — the number of vertices in the graph, the number of edges in the graph and the number of first letters of the Latin alphabet that can be used.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the edges of the graph. The graph doesn't contain multiple edges and self-loops.",
+    "output": "Print a single integer — number of good strings.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "hashing",
+        "*3000"
+    ],
+    "rating": 3000
+}

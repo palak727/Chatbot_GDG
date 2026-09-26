@@ -1,0 +1,17 @@
+{
+    "id": "1881C",
+    "contest_id": 1881,
+    "problem_letter": "C",
+    "title": "C. Perfect Square",
+    "statement": "Kristina has a matrix of size n by n, filled with lowercase Latin letters. The value of n is even.\n\nShe wants to change some characters so that her matrix becomes a perfect square. A matrix is called a perfect square if it remains unchanged when rotated 90^circ clockwise once.\n\nHere is an example of rotating a matrix by 90^circ:\n\nIn one operation, Kristina can choose any cell and replace its value with the next character in the alphabet. If the character is equal to \"z\", its value does not change.\n\nFind the minimum number of operations required to make the matrix a perfect square.\n\nFor example, if the 4 by 4 matrix looks like this:\n\nmatrix a & b & b & a cr b & c & textbfb & b cr b & c & c & bcr a & b & b & a cr\n\nthen it is enough to apply 1 operation to the letter b, highlighted in bold.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^2) — the number of test cases.\n\nThen follows the description of each test case.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 10^3) — the number of rows and columns in the matrix.\n\nThen follows n lines, each containing exactly n lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^3.\n\nFor each test case, output a single number on a separate line: the minimum number of operations required for Kristina to obtain a perfect square.\n\nThe first test case is explained in the problem statement.\n\nInput:\n```\n54abbabcbbbccbabba2abba6codeforcescodeforcescodeforcescodefo4baaaabbabababaab4bbaaabbaaabaabba\n```\n\nOutput:\n```\n1\n2\n181\n5\n9\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^2) — the number of test cases.\n\nThen follows the description of each test case.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 10^3) — the number of rows and columns in the matrix.\n\nThen follows n lines, each containing exactly n lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^3.",
+    "output": "For each test case, output a single number on a separate line: the minimum number of operations required for Kristina to obtain a perfect square.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

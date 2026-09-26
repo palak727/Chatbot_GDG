@@ -1,0 +1,19 @@
+{
+    "id": "1970D2",
+    "contest_id": 1970,
+    "problem_letter": "D2",
+    "title": "D2. Arithmancy (Medium)",
+    "statement": "The only difference between the versions of this problem is the maximum value of n.\n\nProfessor Vector is preparing to teach her Arithmancy class. She needs to prepare n distinct magic words for the class. Each magic word is a string consisting of characters X and O. A spell is a string created by concatenating two magic words together. The power of a spell is equal to the number of its different non-empty substrings. For example, the power of the spell XOXO is equal to 7, because it has 7 different substrings: X, O, XO, OX, XOX, OXO and XOXO.\n\nEach student will create their own spell by concatenating two magic words. Since the students are not very good at magic yet, they will choose each of the two words independently and uniformly at random from the n words provided by Professor Vector. It is therefore also possible that the two words a student chooses are the same. Each student will then compute the power of their spell, and tell it to Professor Vector. In order to check their work, and of course to impress the students, Professor Vector needs to find out which two magic words and in which order were concatenated by each student.\n\nYour program needs to perform the role of Professor Vector: first, create n distinct magic words, and then handle multiple requests where it is given the spell power and needs to determine the indices of the two magic words, in the correct order, that were used to create the corresponding spell.\n\nThis is an interactive problem.\n\nFirst, your program should read a single integer n (1 ≤ n ≤ 30), the number of magic words to prepare. Then, it should print n magic words it has created, one per line. The magic words must be distinct, each magic word must have at least 1 and at most 30·n characters, and each character must be either X or O. We will denote the i-th magic word you printed as w_i (1 ≤ i ≤ n).\n\nThen, your program should read a single integer q (1 ≤ q ≤ 1000), the number of students in the class. Then, it should repeat the following process q times, one per student.\n\nFor the j-th student, it should first read a single integer p_j, the power of their spell. It is guaranteed that this number is computed by choosing two indices u_j and v_j independently and uniformly at random between 1 and n inclusive, concatenating w_u_j and w_v_j, and finding the number of different non-empty substrings of the resulting string. Then, your program must print the numbers u_j and v_j, in this order (1 ≤ u_j, v_j ≤ n).\n\nNote that it is not enough to find any two magic words that concatenate into a spell with the given power. You must find the exact words used by the student in the exact order.\n\nRemember to flush the output stream after printing all magic words and after printing u_j and v_j for each student.\n\nInput:\n```\n2\n\n\n2\n15\n\n11\n```\n\nOutput:\n```\nXOXO\nX\n\n\n1 1\n\n2 1\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "probabilities",
+        "strings",
+        "*2600"
+    ],
+    "rating": 2600
+}

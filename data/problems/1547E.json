@@ -1,0 +1,21 @@
+{
+    "id": "1547E",
+    "contest_id": 1547,
+    "problem_letter": "E",
+    "title": "E. Air Conditioners",
+    "statement": "On a strip of land of length n there are k air conditioners: the i-th air conditioner is placed in cell a_i (1 ≤ a_i ≤ n). Two or more air conditioners cannot be placed in the same cell (i.e. all a_i are distinct).\n\nEach air conditioner is characterized by one parameter: temperature. The i-th air conditioner is set to the temperature t_i.\n\nFor each cell i (1 ≤ i ≤ n) find it's temperature, that can be calculated by the formula min_{1 ≤ j ≤ k}(t_j + |a_j - i|),\n\nwhere |a_j - i| denotes absolute value of the difference a_j - i.\n\nIn other words, the temperature in cell i is equal to the minimum among the temperatures of air conditioners, increased by the distance from it to the cell i.\n\nLet's look at an example. Consider that n=6, k=2, the first air conditioner is placed in cell a_1=2 and is set to the temperature t_1=14 and the second air conditioner is placed in cell a_2=5 and is set to the temperature t_2=16. In that case temperatures in cells are:\n\nFor each cell from 1 to n find the temperature in it.\n\nThe first line contains one integer q (1 ≤ q ≤ 10^4) — the number of test cases in the input. Then test cases follow. Before each test case, there is an empty line.\n\nEach test case contains three lines. The first line contains two integers n (1 ≤ n ≤ 3·10^5) and k (1 ≤ k ≤ n) — the length of the strip of land and the number of air conditioners respectively.\n\nThe second line contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ n) — positions of air conditioners on the strip of land.\n\nThe third line contains k integers t_1, t_2, …, t_k (1 ≤ t_i ≤ 10^9) — temperatures of air conditioners.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case output n integers separated by space: temperatures of air in cells.\n\nInput:\n```\n5\n\n6 2\n2 5\n14 16\n\n10 1\n7\n30\n\n5 5\n3 1 4 2 5\n3 1 4 2 5\n\n7 1\n1\n1000000000\n\n6 3\n6 1 3\n5 5 5\n```\n\nOutput:\n```\n15 14 15 16 16 17 \n36 35 34 33 32 31 30 31 32 33 \n1 2 3 4 5 \n1000000000 1000000001 1000000002 1000000003 1000000004 1000000005 1000000006 \n5 6 5 6 6 5 \n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 10^4) — the number of test cases in the input. Then test cases follow. Before each test case, there is an empty line.\n\nEach test case contains three lines. The first line contains two integers n (1 ≤ n ≤ 3·10^5) and k (1 ≤ k ≤ n) — the length of the strip of land and the number of air conditioners respectively.\n\nThe second line contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ n) — positions of air conditioners on the strip of land.\n\nThe third line contains k integers t_1, t_2, …, t_k (1 ≤ t_i ≤ 10^9) — temperatures of air conditioners.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case output n integers separated by space: temperatures of air in cells.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "implementation",
+        "shortest paths",
+        "sortings",
+        "two pointers",
+        "*1500"
+    ],
+    "rating": 1500
+}

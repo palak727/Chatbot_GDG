@@ -1,0 +1,18 @@
+{
+    "id": "1932F",
+    "contest_id": 1932,
+    "problem_letter": "F",
+    "title": "F. Feed Cats",
+    "statement": "There is a fun game where you need to feed cats that come and go. The level of the game consists of n steps. There are m cats; the cat i is present in steps from l_i to r_i, inclusive. In each step, you can feed all the cats that are currently present or do nothing.\n\nIf you feed the same cat more than once, it will overeat, and you will immediately lose the game. Your goal is to feed as many cats as possible without causing any cat to overeat.\n\nFind the maximum number of cats you can feed.\n\nFormally, you need to select several integer points from the segment from 1 to n in such a way that among given segments, none covers two or more of the selected points, and as many segments as possible cover one of the selected points.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^6, 1 ≤ m≤ 2·10^5).\n\nThe i-th of the next m lines contains a pair of integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThe sum of n for all tests does not exceed 10^6, the sum of m for all tests does not exceed 2·10^5.\n\nFor each test case, print a single integer, the maximum number of cats you can feed.\n\nIn the first example, one of the ways to feed five cats is to feed at steps 4 and 11.\n\nInput:\n```\n315 62 103 52 47 78 1211 111000 11 10005 101 23 43 43 43 41 11 23 33 43 4\n```\n\nOutput:\n```\n5\n1\n10\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^6, 1 ≤ m≤ 2·10^5).\n\nThe i-th of the next m lines contains a pair of integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThe sum of n for all tests does not exceed 10^6, the sum of m for all tests does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer, the maximum number of cats you can feed.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

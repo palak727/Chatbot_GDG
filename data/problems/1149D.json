@@ -1,0 +1,19 @@
+{
+    "id": "1149D",
+    "contest_id": 1149,
+    "problem_letter": "D",
+    "title": "D. Abandoning Roads",
+    "statement": "Codefortia is a small island country located somewhere in the West Pacific. It consists of n settlements connected by m bidirectional gravel roads. Curiously enough, the beliefs of the inhabitants require the time needed to pass each road to be equal either to a or b seconds. It's guaranteed that one can go between any pair of settlements by following a sequence of roads.\n\nCodefortia was recently struck by the financial crisis. Therefore, the king decided to abandon some of the roads so that:\n\nThe king, however, forgot where the parliament house was. For each settlement p = 1, 2, …, n, can you tell what is the minimum time required to travel between the king's residence and the parliament house (located in settlement p) after some roads are abandoned?\n\nThe first line of the input contains four integers n, m, a and b (2 ≤ n ≤ 70, n - 1 ≤ m ≤ 200, 1 ≤ a < b ≤ 10^7) — the number of settlements and gravel roads in Codefortia, and two possible travel times. Each of the following lines contains three integers u, v, c (1 ≤ u, v ≤ n, u ≠ v, c ∈ {a, b}) denoting a single gravel road between the settlements u and v, which requires c minutes to travel.\n\nYou can assume that the road network is connected and has no loops or multiedges.\n\nOutput a single line containing n integers. The p-th of them should denote the minimum possible time required to travel from 1 to p after the selected roads are abandoned. Note that for each p you can abandon a different set of roads.\n\nThe minimum possible sum of times required to pass each road in the first example is 85 — exactly one of the roads with passing time 25 must be abandoned. Note that after one of these roads is abandoned, it's now impossible to travel between settlements 1 and 3 in time 50.\n\nInput:\n```\n5 5 20 25\n1 2 25\n2 3 25\n3 4 20\n4 5 20\n5 1 20\n```\n\nOutput:\n```\n0 25 60 40 20\n```\n\nInput:\n```\n6 7 13 22\n1 2 13\n2 3 13\n1 4 22\n3 4 13\n4 5 13\n5 6 13\n6 1 13\n```\n\nOutput:\n```\n0 13 26 39 26 13\n```",
+    "input": "The first line of the input contains four integers n, m, a and b (2 ≤ n ≤ 70, n - 1 ≤ m ≤ 200, 1 ≤ a < b ≤ 10^7) — the number of settlements and gravel roads in Codefortia, and two possible travel times. Each of the following lines contains three integers u, v, c (1 ≤ u, v ≤ n, u ≠ v, c ∈ {a, b}) denoting a single gravel road between the settlements u and v, which requires c minutes to travel.\n\nYou can assume that the road network is connected and has no loops or multiedges.",
+    "output": "Output a single line containing n integers. The p-th of them should denote the minimum possible time required to travel from 1 to p after the selected roads are abandoned. Note that for each p you can abandon a different set of roads.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "graphs",
+        "greedy",
+        "*3000"
+    ],
+    "rating": 3000
+}

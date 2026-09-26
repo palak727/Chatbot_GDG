@@ -1,0 +1,18 @@
+{
+    "id": "1572E",
+    "contest_id": 1572,
+    "problem_letter": "E",
+    "title": "E. Polygon",
+    "statement": "You are given a strictly convex polygon with n vertices.\n\nYou will make k cuts that meet the following conditions:\n\nYour task is to maximize the area of the smallest region that will be formed by the polygon and those k cuts.\n\nThe first line contains two integers n, k (3 ≤ n ≤ 200, 0 ≤ k ≤ n-3).\n\nThe following n lines describe vertices of the polygon in anticlockwise direction. The i-th line contains two integers x_i, y_i (|x_i|, |y_i| ≤ 10^8) — the coordinates of the i-th vertex.\n\nIt is guaranteed that the polygon is convex and that no two adjacent sides are parallel.\n\nPrint one integer: the maximum possible area of the smallest region after making k cuts multiplied by 2.\n\nIn the first example, it's optimal to make cuts between the following pairs of vertices:\n\nIn the second example, it's optimal to make cuts between the following pairs of vertices:\n\nInput:\n```\n8 4\n-2 -4\n2 -2\n4 2\n1 5\n0 5\n-4 4\n-5 0\n-5 -1\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n6 3\n2 -2\n2 -1\n1 2\n0 2\n-2 1\n-1 0\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains two integers n, k (3 ≤ n ≤ 200, 0 ≤ k ≤ n-3).\n\nThe following n lines describe vertices of the polygon in anticlockwise direction. The i-th line contains two integers x_i, y_i (|x_i|, |y_i| ≤ 10^8) — the coordinates of the i-th vertex.\n\nIt is guaranteed that the polygon is convex and that no two adjacent sides are parallel.",
+    "output": "Print one integer: the maximum possible area of the smallest region after making k cuts multiplied by 2.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "geometry",
+        "*3000"
+    ],
+    "rating": 3000
+}

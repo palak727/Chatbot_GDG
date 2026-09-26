@@ -1,0 +1,17 @@
+{
+    "id": "1987A",
+    "contest_id": 1987,
+    "problem_letter": "A",
+    "title": "A. Upload More RAM",
+    "statement": "Oh no, the ForceCodes servers are running out of memory! Luckily, you can help them out by uploading some of your RAM!\n\nYou want to upload n GBs of RAM. Every second, you will upload either 0 or 1 GB of RAM. However, there is a restriction on your network speed: in any k consecutive seconds, you can upload only at most 1 GB of RAM in total.\n\nFind the minimum number of seconds needed to upload n GBs of RAM!\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains two integers n and k (1 ≤ n, k ≤ 100) — the number of GBs that you want to upload and the length of the time window respectively.\n\nFor each test case, output a single integer — the minimum number of seconds needed to upload n GBs of RAM.\n\nIn the first test case, you can upload 1 GB of RAM per second, so to upload 5 GBs, you need 5 seconds.\n\nIn the second test case, you can upload 1 GB in the first second, 0 GBs in the second second, and 1 GB in the third second, which in total adds up to exactly 2 GBs of uploaded RAM.\n\nIn the third test case, you can upload 1 GB in the first second, 0 GBs in the second second, 0 GBs in the third second, and 1 GB in the fourth second, which in total adds up to exactly 2 GBs of uploaded RAM.\n\nInput:\n```\n65 12 22 31 711 5100 100\n```\n\nOutput:\n```\n5\n3\n4\n1\n51\n9901\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains two integers n and k (1 ≤ n, k ≤ 100) — the number of GBs that you want to upload and the length of the time window respectively.",
+    "output": "For each test case, output a single integer — the minimum number of seconds needed to upload n GBs of RAM.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

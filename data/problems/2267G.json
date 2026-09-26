@@ -1,0 +1,15 @@
+{
+    "id": "2267G",
+    "contest_id": 2267,
+    "problem_letter": "G",
+    "title": "G. New LRT",
+    "statement": "A new LRT (light rail transit) has opened in the famous city. It is a train that moves along a straight line.\n\nYou are given two numbers n and m, and an array c consisting of m integers. You are at position 0, and you need to get to position n. If you are at position i, you can ride the train as follows:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1≤ n, m< 2^20).\n\nThe second line of each test case contains m integers c_1, c_2, …, c_m (1≤ c_i≤ 10^9).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2^20.\n\nFor each test case, output one number — the answer to the problem modulo 10^9 + 7.\n\nIn the first test case, there are 4 ways to get to position n:\n\nInput:\n```\n43 32 2 14 53 1 2 4 55 39 1 58 31000000000 1000000000 1000000000\n```\n\nOutput:\n```\n1516271999997081\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1≤ n, m< 2^20).\n\nThe second line of each test case contains m integers c_1, c_2, …, c_m (1≤ c_i≤ 10^9).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2^20.",
+    "output": "For each test case, output one number — the answer to the problem modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp"
+    ],
+    "rating": null
+}

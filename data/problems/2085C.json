@@ -1,0 +1,19 @@
+{
+    "id": "2085C",
+    "contest_id": 2085,
+    "problem_letter": "C",
+    "title": "C. Serval and The Formula",
+    "statement": "You are given two positive integers x and y (1≤ x, y≤ 10^9).\n\nFind a non-negative integer k≤ 10^18, such that (x+k) + (y+k) = (x+k)oplus (y+k) holds^{∗}, or determine that such an integer does not exist.\n\n^{∗}oplus denotes the bitwise XOR operation.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains two integers x and y (1≤ x, y≤ 10^9) — the given integers.\n\nFor each test case, output a single integer k (0≤ k≤ 10^18) — the integer you found. Print -1 if it is impossible to find such an integer.\n\nIf there are multiple answers, you may print any of them.\n\nIn the first test case, since (2 + 0) + (5 + 0) = (2 + 0) oplus (5 + 0) = 7, k=0 is a possible answer. Note that k=4 is also a possible answer because (2 + 4) + (5 + 4) = (2 + 4) oplus (5 + 4) = 15.\n\nIn the second test case, (x+k)oplus (y+k) = (6+k)oplus (6+k) = 0. However, (x+k)+(y+k) > 0 holds for every k ≥ 0, implying that such an integer k does not exist.\n\nInput:\n```\n52 56 619 101024 40961198372 599188\n```\n\nOutput:\n```\n0\n-1\n1\n1024\n28\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains two integers x and y (1≤ x, y≤ 10^9) — the given integers.",
+    "output": "For each test case, output a single integer k (0≤ k≤ 10^18) — the integer you found. Print -1 if it is impossible to find such an integer.\n\nIf there are multiple answers, you may print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*1600"
+    ],
+    "rating": 1600
+}

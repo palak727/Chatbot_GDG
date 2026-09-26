@@ -1,0 +1,21 @@
+{
+    "id": "1659E",
+    "contest_id": 1659,
+    "problem_letter": "E",
+    "title": "E. AND-MEX Walk",
+    "statement": "There is an undirected, connected graph with n vertices and m weighted edges. A walk from vertex u to vertex v is defined as a sequence of vertices p_1,p_2,…,p_k (which are not necessarily distinct) starting with u and ending with v, such that p_i and p_{i+1} are connected by an edge for 1 ≤ i < k.\n\nWe define the length of a walk as follows: take the ordered sequence of edges and write down the weights on each of them in an array. Now, write down the bitwise AND of every nonempty prefix of this array. The length of the walk is the MEX of all these values.\n\nMore formally, let us have [w_1,w_2,…,w_{k-1}] where w_i is the weight of the edge between p_i and p_{i+1}. Then the length of the walk is given by MEX({w_1,,w_1& w_2,,…,,w_1& w_2& …& w_{k-1}}), where & denotes the bitwise AND operation.\n\nNow you must process q queries of the form u v. For each query, find the minimum possible length of a walk from u to v.\n\nThe MEX (minimum excluded) of a set is the smallest non-negative integer that does not belong to the set. For instance:\n\nThe first line contains two integers n and m (2 ≤ n ≤ 10^5; n-1 ≤ m ≤ minleft((n(n-1))/2,10^5right)).\n\nEach of the next m lines contains three integers a, b, and w (1 ≤ a, b ≤ n, a ≠ b; 0 ≤ w < 2^30) indicating an undirected edge between vertex a and vertex b with weight w. The input will not contain self-loops or duplicate edges, and the provided graph will be connected.\n\nThe next line contains a single integer q (1 ≤ q ≤ 10^5).\n\nEach of the next q lines contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v), the description of each query.\n\nFor each query, print one line containing a single integer — the answer to the query.\n\nThe following is an explanation of the first example.\n\nHere is one possible walk for the first query:\n\n1 overset5→ 3 overset3→ 2 overset1→ 1 overset5→ 3 overset1→ 4 overset2→ 5.\n\nThe array of weights is w=[5,3,1,5,1,2]. Now if we take the bitwise AND of every prefix of this array, we get the set {5,1,0}. The MEX of this set is 2. We cannot get a walk with a smaller length (as defined in the statement).\n\nInput:\n```\n6 7\n1 2 1\n2 3 3\n3 1 5\n4 5 2\n5 6 4\n6 4 6\n3 4 1\n3\n1 5\n1 2\n5 3\n```\n\nOutput:\n```\n2\n0\n1\n```\n\nInput:\n```\n9 8\n1 2 5\n2 3 11\n3 4 10\n3 5 10\n5 6 2\n5 7 1\n7 8 5\n7 9 5\n10\n5 7\n2 5\n7 1\n6 4\n5 2\n7 6\n4 1\n6 2\n4 7\n2 8\n```\n\nOutput:\n```\n0\n0\n2\n0\n0\n2\n1\n0\n1\n1\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 10^5; n-1 ≤ m ≤ minleft((n(n-1))/2,10^5right)).\n\nEach of the next m lines contains three integers a, b, and w (1 ≤ a, b ≤ n, a ≠ b; 0 ≤ w < 2^30) indicating an undirected edge between vertex a and vertex b with weight w. The input will not contain self-loops or duplicate edges, and the provided graph will be connected.\n\nThe next line contains a single integer q (1 ≤ q ≤ 10^5).\n\nEach of the next q lines contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v), the description of each query.",
+    "output": "For each query, print one line containing a single integer — the answer to the query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*2200"
+    ],
+    "rating": 2200
+}

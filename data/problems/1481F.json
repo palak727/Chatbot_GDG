@@ -1,0 +1,18 @@
+{
+    "id": "1481F",
+    "contest_id": 1481,
+    "problem_letter": "F",
+    "title": "F. AB Tree",
+    "statement": "Kilani and Abd are neighbors for 3000 years, but then the day came and Kilani decided to move to another house. As a farewell gift, Kilani is going to challenge Abd with a problem written by their other neighbor with the same name Abd.\n\nThe problem is:\n\nYou are given a connected tree rooted at node 1.\n\nYou should assign a character a or b to every node in the tree so that the total number of a's is equal to x and the total number of b's is equal to n - x.\n\nLet's define a string for each node v of the tree as follows:\n\nYou should assign every node a character in a way that minimizes the number of distinct strings among the strings of all nodes.\n\nThe first line contains two integers n and x (1 ≤ n ≤ 10^5; 0 ≤ x ≤ n) — the number of vertices in the tree the number of a's.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n; p_i ≠ i), where p_i is the parent of node i.\n\nIt is guaranteed that the input describes a connected tree.\n\nIn the first line, print the minimum possible total number of distinct strings.\n\nIn the second line, print n characters, where all characters are either a or b and the i-th character is the character assigned to the i-th node.\n\nMake sure that the total number of a's is equal to x and the total number of b's is equal to n - x.\n\nIf there is more than one answer you can print any of them.\n\nThe tree from the sample is shown below:\n\nThe tree after assigning characters to every node (according to the output) is the following:\n\nStrings for all nodes are the following:\n\nThe set of unique strings is {a, aa, aab, aabb}, so the number of distinct strings is 4.\n\nInput:\n```\n9 3\n1 2 2 4 4 4 3 1\n```\n\nOutput:\n```\n4\naabbbbbba\n```",
+    "input": "The first line contains two integers n and x (1 ≤ n ≤ 10^5; 0 ≤ x ≤ n) — the number of vertices in the tree the number of a's.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n; p_i ≠ i), where p_i is the parent of node i.\n\nIt is guaranteed that the input describes a connected tree.",
+    "output": "In the first line, print the minimum possible total number of distinct strings.\n\nIn the second line, print n characters, where all characters are either a or b and the i-th character is the character assigned to the i-th node.\n\nMake sure that the total number of a's is equal to x and the total number of b's is equal to n - x.\n\nIf there is more than one answer you can print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

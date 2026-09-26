@@ -1,0 +1,19 @@
+{
+    "id": "1861E",
+    "contest_id": 1861,
+    "problem_letter": "E",
+    "title": "E. Non-Intersecting Subpermutations",
+    "statement": "You are given two integers n and k.\n\nFor an array of length n, let's define its cost as the maximum number of contiguous subarrays of this array that can be chosen so that:\n\nFor example, if n = 10, k = 3 and the array is [1, 2, 1, 3, 2, 3, 2, 3, 1, 3], its cost is 2 because, for example, we can choose the subarrays from the 2-nd element to the 4-th element and from the 7-th element to the 9-th element, and we can show that it's impossible to choose more than 2 subarrays.\n\nCalculate the sum of costs over all arrays of length n consisting of integers from 1 to k, and print it modulo 998244353.\n\nThe only line of the input contains two integers n and k (2 ≤ k ≤ n ≤ 4000).\n\nPrint one integer — the sum of costs of all arrays of length n consisting of integers from 1 to k taken modulo 998244353.\n\nInput:\n```\n10 3\n```\n\nOutput:\n```\n71712\n```\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1337 42\n```\n\nOutput:\n```\n524933698\n```",
+    "input": "The only line of the input contains two integers n and k (2 ≤ k ≤ n ≤ 4000).",
+    "output": "Print one integer — the sum of costs of all arrays of length n consisting of integers from 1 to k taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

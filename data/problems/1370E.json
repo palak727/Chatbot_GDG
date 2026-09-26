@@ -1,0 +1,19 @@
+{
+    "id": "1370E",
+    "contest_id": 1370,
+    "problem_letter": "E",
+    "title": "E. Binary Subsequence Rotation",
+    "statement": "Naman has two binary strings s and t of length n (a binary string is a string which only consists of the characters \"0\" and \"1\"). He wants to convert s into t using the following operation as few times as possible.\n\nIn one operation, he can choose any subsequence of s and rotate it clockwise once.\n\nFor example, if s = 1textbf1101textbf00, he can choose a subsequence corresponding to indices (1-based) {2, 6, 7 } and rotate them clockwise. The resulting string would then be s = 1textbf0101textbf10.\n\nA string a is said to be a subsequence of string b if a can be obtained from b by deleting some characters without changing the ordering of the remaining characters.\n\nTo perform a clockwise rotation on a sequence c of size k is to perform an operation which sets c_1:=c_k, c_2:=c_1, c_3:=c_2, …, c_k:=c_{k-1} simultaneously.\n\nDetermine the minimum number of operations Naman has to perform to convert s into t or say that it is impossible.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6) — the length of the strings.\n\nThe second line contains the binary string s of length n.\n\nThe third line contains the binary string t of length n.\n\nIf it is impossible to convert s to t after any number of operations, print -1.\n\nOtherwise, print the minimum number of operations required.\n\nIn the first test, Naman can choose the subsequence corresponding to indices {2, 6} and rotate it once to convert s into t.\n\nIn the second test, he can rotate the subsequence corresponding to all indices 5 times. It can be proved, that it is the minimum required number of operations.\n\nIn the last test, it is impossible to convert s into t.\n\nInput:\n```\n6\n010000\n000001\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n10\n1111100000\n0000011111\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n8\n10101010\n01010101\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n10\n1111100000\n1111100001\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6) — the length of the strings.\n\nThe second line contains the binary string s of length n.\n\nThe third line contains the binary string t of length n.",
+    "output": "If it is impossible to convert s to t after any number of operations, print -1.\n\nOtherwise, print the minimum number of operations required.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "*2100"
+    ],
+    "rating": 2100
+}

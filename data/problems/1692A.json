@@ -1,0 +1,16 @@
+{
+    "id": "1692A",
+    "contest_id": 1692,
+    "problem_letter": "A",
+    "title": "A. Marathon",
+    "statement": "You are given four distinct integers a, b, c, d.\n\nTimur and three other people are running a marathon. The value a is the distance that Timur has run and b, c, d correspond to the distances the other three participants ran.\n\nOutput the number of participants in front of Timur.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of each test case consists of four distinct integers a, b, c, d (0 ≤ a, b, c, d ≤ 10^4).\n\nFor each test case, output a single integer — the number of participants in front of Timur.\n\nFor the first test case, there are 2 people in front of Timur, specifically the participants who ran distances of 3 and 4. The other participant is not in front of Timur because he ran a shorter distance than Timur.\n\nFor the second test case, no one is in front of Timur, since he ran a distance of 10000 while all others ran a distance of 0, 1, and 2 respectively.\n\nFor the third test case, only the second person is in front of Timur, who ran a total distance of 600 while Timur ran a distance of 500.\n\nInput:\n```\n42 3 4 110000 0 1 2500 600 400 3000 9999 10000 9998\n```\n\nOutput:\n```\n2\n0\n1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of each test case consists of four distinct integers a, b, c, d (0 ≤ a, b, c, d ≤ 10^4).",
+    "output": "For each test case, output a single integer — the number of participants in front of Timur.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

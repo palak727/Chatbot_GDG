@@ -1,0 +1,20 @@
+{
+    "id": "2066B",
+    "contest_id": 2066,
+    "problem_letter": "B",
+    "title": "B. White Magic",
+    "statement": "We call a sequence a_1, a_2, …, a_n magical if for all 1 ≤ i ≤ n-1 it holds that: min(a_1, …, a_i) ≥ mex(a_{i+1}, …, a_n). In particular, any sequence of length 1 is considered magical.\n\nThe minimum excluded (MEX) of a collection of integers a_1, a_2, …, a_k is defined as the smallest non-negative integer t which does not occur in the collection a.\n\nYou are given a sequence a of n non-negative integers. Find the maximum possible length of a magical subsequence^{∗} of the sequence a.\n\n^{∗}A sequence a is a subsequence of a sequence b if a can be obtained from b by the deletion of several (possibly, zero or all) element from arbitrary positions.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the sequence a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the sequence a.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output a single number — the maximum possible length of a magical subsequence of the sequence a.\n\nIn the first test case, the sequence [4, 3, 2, 1, 0] is magical, since:\n\nIn the second test case, the sequence [4, 3, 3, 2, 1, 0] is not magical, since min(4, 3) = 3, mex(3, 2, 1, 0) = 4, 3 < 4. However, the subsequence [4, 3, 2, 1, 0] of this sequence is magical, so the answer is 5.\n\nInput:\n```\n854 3 2 1 064 3 3 2 1 042 0 1 2177741000000000 1 7 920 121 240 1 0 1\n```\n\nOutput:\n```\n5\n5\n3\n1\n4\n2\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the sequence a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the sequence a.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single number — the maximum possible length of a magical subsequence of the sequence a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

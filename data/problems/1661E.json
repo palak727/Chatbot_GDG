@@ -1,0 +1,21 @@
+{
+    "id": "1661E",
+    "contest_id": 1661,
+    "problem_letter": "E",
+    "title": "E. Narrow Components",
+    "statement": "You are given a matrix a, consisting of 3 rows and n columns. Each cell of the matrix is either free or taken.\n\nA free cell y is reachable from a free cell x if at least one of these conditions hold:\n\nA connected component is a set of free cells of the matrix such that all cells in it are reachable from one another, but adding any other free cell to the set violates this rule.\n\nYou are asked q queries about the matrix. Each query is the following:\n\nPrint the answers to all queries.\n\nThe first line contains an integer n (1 ≤ n ≤ 5·10^5) — the number of columns of matrix a.\n\nThe i-th of the next three lines contains a description of the i-th row of the matrix a — a string, consisting of n characters. Each character is either 1 (denoting a free cell) or 0 (denoting a taken cell).\n\nThe next line contains an integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThe j-th of the next q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the description of the j-th query.\n\nPrint q integers — the j-th value should be equal to the number of the connected components of the matrix, consisting of columns from l_j to r_j of the matrix a, inclusive.\n\nInput:\n```\n12\n100101011101\n110110010110\n010001011101\n8\n1 12\n1 1\n1 2\n9 9\n8 11\n9 12\n11 12\n4 6\n```\n\nOutput:\n```\n7\n1\n1\n2\n1\n3\n3\n3\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 5·10^5) — the number of columns of matrix a.\n\nThe i-th of the next three lines contains a description of the i-th row of the matrix a — a string, consisting of n characters. Each character is either 1 (denoting a free cell) or 0 (denoting a taken cell).\n\nThe next line contains an integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThe j-th of the next q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the description of the j-th query.",
+    "output": "Print q integers — the j-th value should be equal to the number of the connected components of the matrix, consisting of columns from l_j to r_j of the matrix a, inclusive.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "dsu",
+        "math",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1444B",
+    "contest_id": 1444,
+    "problem_letter": "B",
+    "title": "B. Divide and Sum",
+    "statement": "You are given an array a of length 2n. Consider a partition of array a into two subsequences p and q of length n each (each element of array a should be in exactly one subsequence: either in p or in q).\n\nLet's sort p in non-decreasing order, and q in non-increasing order, we can denote the sorted versions by x and y, respectively. Then the cost of a partition is defined as f(p, q) = ∑_{i = 1}^n |x_i - y_i|.\n\nFind the sum of f(p, q) over all correct partitions of array a. Since the answer might be too big, print its remainder modulo 998244353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 150,000).\n\nThe second line contains 2n integers a_1, a_2, …, a_2n (1 ≤ a_i ≤ 10^9) — elements of array a.\n\nPrint one integer — the answer to the problem, modulo 998244353.\n\nTwo partitions of an array are considered different if the sets of indices of elements included in the subsequence p are different.\n\nIn the first example, there are two correct partitions of the array a:\n\nIn the second example, there are six valid partitions of the array a:\n\nInput:\n```\n1\n1 4\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n2\n2 1 2 1\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n3\n2 2 2 2 2 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n5\n13 8 35 94 9284 34 54 69 123 846\n```\n\nOutput:\n```\n2588544\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 150,000).\n\nThe second line contains 2n integers a_1, a_2, …, a_2n (1 ≤ a_i ≤ 10^9) — elements of array a.",
+    "output": "Print one integer — the answer to the problem, modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

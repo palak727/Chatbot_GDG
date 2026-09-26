@@ -1,0 +1,17 @@
+{
+    "id": "2267E",
+    "contest_id": 2267,
+    "problem_letter": "E",
+    "title": "E. Clean Substrings",
+    "statement": "A binary string t of length m is called clean if t_i = t_{i+1} for all 1≤ i< m.\n\nThe chief engineer of the country has made another discovery. He invented a smart robot that can perform the following operation on any binary string t for one coin:\n\nDefine the beauty of a string t as the minimum number of coins needed to make it clean. Define the power of a string t as the sum of the beauties of all its substrings.\n\nYou are given a binary string s of length n. The engineer's competitors are going to modify the string exactly q times. Each modification is described by one number i. After the modification, s_i is inverted. Your task is to compute the power of the string s before and after each modification.\n\n^{∗}A string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n, q≤ 2·10^5) — the length of the binary string and the number of modifications.\n\nThe second line of each test case contains the binary string s.\n\nThe next q lines of each test case contain one integer i (1≤ i≤ n) — the description of the modifications.\n\nIt is guaranteed that the sum of all n values and the sum of all q values over all test cases do not exceed 2·10^5.\n\nFor each test case, output q + 1 integers separated by spaces — the answer before the modifications and after each modification of the string.\n\nConsider the first test case.\n\nBefore the modifications, the string s is 110. The power of the string is 2:\n\nInput:\n```\n43 111024 21010128 410101110352310 51100101110161073\n```\n\nOutput:\n```\n2 2 7 5 5 36 23 22 25 26 61 66 41 35 59 60 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n, q≤ 2·10^5) — the length of the binary string and the number of modifications.\n\nThe second line of each test case contains the binary string s.\n\nThe next q lines of each test case contain one integer i (1≤ i≤ n) — the description of the modifications.\n\nIt is guaranteed that the sum of all n values and the sum of all q values over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output q + 1 integers separated by spaces — the answer before the modifications and after each modification of the string.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "math"
+    ],
+    "rating": null
+}

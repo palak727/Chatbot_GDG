@@ -1,0 +1,20 @@
+{
+    "id": "1787D",
+    "contest_id": 1787,
+    "problem_letter": "D",
+    "title": "D. Game on Axis",
+    "statement": "There are n points 1,2,…,n, each point i has a number a_i on it. You're playing a game on them. Initially, you are at point 1. When you are at point i, take following steps:\n\nBefore the game begins, you can choose two integers x and y satisfying 1≤ x≤ n, -n ≤ y ≤ n and replace a_x with y (set a_x := y). Find the number of distinct pairs (x,y) such that the game that you start after making the change ends in a finite number of steps.\n\nNotice that you do not have to satisfy a_xnot=y.\n\nEach test contains multiple test cases. The first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1≤ n≤ 2·10^5) — the number of points.\n\nThe second line contains n integers a_1,a_2,…,a_n (-n ≤ a_i ≤ n) — the numbers on the axis.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.\n\nFor each test case, print a line containing a single integer — the number of distinct pairs (x,y) with which the game ends.\n\nIn the first test case, the pairs (x,y) with which the game ends are (1,-1) and (1,1), corresponding to the routes 1→ 0 and 1→ 2. Note that (1,2) is invalid since when n=1, y=2 violates -n≤ y≤ n. (1,0) is also invalid since you will go from 1 to 1 forever.\n\nIn the second test case, the pairs are (1,-2),(1,-1),(1,2),(2,-2),(2,-1),(2,0),(2,1),(2,2).\n\nIn the fourth test case, the pairs are (1,-2),(1,-1),(1,1),(1,2),(2,-2),(2,1),(2,2).\n\nInput:\n```\n9102-1 021 -121 13-1 -2 -131 -2 -14-1 4 -2 151 1 1 1 -451 1 1 1 1\n```\n\nOutput:\n```\n2\n8\n6\n7\n20\n17\n34\n30\n40\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1≤ n≤ 2·10^5) — the number of points.\n\nThe second line contains n integers a_1,a_2,…,a_n (-n ≤ a_i ≤ n) — the numbers on the axis.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.",
+    "output": "For each test case, print a line containing a single integer — the number of distinct pairs (x,y) with which the game ends.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

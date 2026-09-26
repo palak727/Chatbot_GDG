@@ -1,0 +1,19 @@
+{
+    "id": "1334C",
+    "contest_id": 1334,
+    "problem_letter": "C",
+    "title": "C. Circle of Monsters",
+    "statement": "You are playing another computer game, and now you have to slay n monsters. These monsters are standing in a circle, numbered clockwise from 1 to n. Initially, the i-th monster has a_i health.\n\nYou may shoot the monsters to kill them. Each shot requires exactly one bullet and decreases the health of the targeted monster by 1 (deals 1 damage to it). Furthermore, when the health of some monster i becomes 0 or less than 0, it dies and explodes, dealing b_i damage to the next monster (monster i + 1, if i < n, or monster 1, if i = n). If the next monster is already dead, then nothing happens. If the explosion kills the next monster, it explodes too, damaging the monster after it and possibly triggering another explosion, and so on.\n\nYou have to calculate the minimum number of bullets you have to fire to kill all n monsters in the circle.\n\nThe first line contains one integer T (1 ≤ T ≤ 150000) — the number of test cases.\n\nThen the test cases follow, each test case begins with a line containing one integer n (2 ≤ n ≤ 300000) — the number of monsters. Then n lines follow, each containing two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^12) — the parameters of the i-th monster in the circle.\n\nIt is guaranteed that the total number of monsters in all test cases does not exceed 300000.\n\nFor each test case, print one integer — the minimum number of bullets you have to fire to kill all of the monsters.\n\nInput:\n```\n1\n3\n7 15\n2 14\n5 3\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 150000) — the number of test cases.\n\nThen the test cases follow, each test case begins with a line containing one integer n (2 ≤ n ≤ 300000) — the number of monsters. Then n lines follow, each containing two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^12) — the parameters of the i-th monster in the circle.\n\nIt is guaranteed that the total number of monsters in all test cases does not exceed 300000.",
+    "output": "For each test case, print one integer — the minimum number of bullets you have to fire to kill all of the monsters.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

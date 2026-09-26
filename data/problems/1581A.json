@@ -1,0 +1,18 @@
+{
+    "id": "1581A",
+    "contest_id": 1581,
+    "problem_letter": "A",
+    "title": "A. CQXYM Count Permutations",
+    "statement": "CQXYM is counting permutations length of 2n.\n\nA permutation is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nA permutation p(length of 2n) will be counted only if the number of i satisfying p_i < p_{i+1} is no less than n. For example:\n\nCQXYM wants you to help him to count the number of such permutations modulo 1000000007 (10^9+7).\n\nIn addition, modulo operation is to get the remainder. For example:\n\nThe input consists of multiple test cases.\n\nThe first line contains an integer t (t ≥ 1) — the number of test cases. The description of the test cases follows.\n\nOnly one line of each test case contains an integer n(1 ≤ n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5\n\nFor each test case, print the answer in a single line.\n\nn=1, there is only one permutation that satisfies the condition: [1,2].\n\nIn permutation [1,2], p_1 < p_2, and there is one i=1 satisfy the condition. Since 1 ≥ n, this permutation should be counted. In permutation [2,1], p_1 > p_2. Because 0 < n, this permutation should not be counted.\n\nn=2, there are 12 permutations: [1,2,3,4],[1,2,4,3],[1,3,2,4],[1,3,4,2],[1,4,2,3],[2,1,3,4],[2,3,1,4],[2,3,4,1],[2,4,1,3],[3,1,2,4],[3,4,1,2],[4,1,2,3].\n\nInput:\n```\n4\n1\n2\n9\n91234\n```\n\nOutput:\n```\n1\n12\n830455698\n890287984\n```",
+    "input": "The input consists of multiple test cases.\n\nThe first line contains an integer t (t ≥ 1) — the number of test cases. The description of the test cases follows.\n\nOnly one line of each test case contains an integer n(1 ≤ n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5",
+    "output": "For each test case, print the answer in a single line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1717A",
+    "contest_id": 1717,
+    "problem_letter": "A",
+    "title": "A. Madoka and Strange Thoughts",
+    "statement": "Madoka is a very strange girl, and therefore she suddenly wondered how many pairs of integers (a, b) exist, where 1 ≤ a, b ≤ n, for which (lcm(a, b))/(gcd(a, b)) ≤ 3.\n\nIn this problem, gcd(a, b) denotes the greatest common divisor of the numbers a and b, and lcm(a, b) denotes the smallest common multiple of the numbers a and b.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first and the only line of each test case contains the integer n (1 ≤ n ≤ 10^8).\n\nFor each test case output a single integer — the number of pairs of integers satisfying the condition.\n\nFor n = 1 there is exactly one pair of numbers — (1, 1) and it fits.\n\nFor n = 2, there are only 4 pairs — (1, 1), (1, 2), (2, 1), (2, 2) and they all fit.\n\nFor n = 3, all 9 pair are suitable, except (2, 3) and (3, 2), since their lcm is 6, and gcd is 1, which doesn't fit the condition.\n\nInput:\n```\n612345100000000\n```\n\nOutput:\n```\n1\n4\n7\n10\n11\n266666666\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first and the only line of each test case contains the integer n (1 ≤ n ≤ 10^8).",
+    "output": "For each test case output a single integer — the number of pairs of integers satisfying the condition.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

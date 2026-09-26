@@ -1,0 +1,20 @@
+{
+    "id": "1290B",
+    "contest_id": 1290,
+    "problem_letter": "B",
+    "title": "B. Irreducible Anagrams",
+    "statement": "Let's call two strings s and t anagrams of each other if it is possible to rearrange symbols in the string s to get a string, equal to t.\n\nLet's consider two strings s and t which are anagrams of each other. We say that t is a reducible anagram of s if there exists an integer k ≥ 2 and 2k non-empty strings s_1, t_1, s_2, t_2, …, s_k, t_k that satisfy the following conditions:\n\nIf such strings don't exist, then t is said to be an irreducible anagram of s. Note that these notions are only defined when s and t are anagrams of each other.\n\nFor example, consider the string s = \"gamegame\". Then the string t = \"megamage\" is a reducible anagram of s, we may choose for example s_1 = \"game\", s_2 = \"gam\", s_3 = \"e\" and t_1 = \"mega\", t_2 = \"mag\", t_3 = \"e\":\n\nOn the other hand, we can prove that t = \"memegaga\" is an irreducible anagram of s.\n\nYou will be given a string s and q queries, represented by two integers 1 ≤ l ≤ r ≤ |s| (where |s| is equal to the length of the string s). For each query, you should find if the substring of s formed by characters from the l-th to the r-th has at least one irreducible anagram.\n\nThe first line contains a string s, consisting of lowercase English characters (1 ≤ |s| ≤ 2·10^5).\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the following q lines contain two integers l and r (1 ≤ l ≤ r ≤ |s|), representing a query for the substring of s formed by characters from the l-th to the r-th.\n\nFor each query, print a single line containing \"Yes\" (without quotes) if the corresponding substring has at least one irreducible anagram, and a single line containing \"No\" (without quotes) otherwise.\n\nIn the first sample, in the first and third queries, the substring is \"a\", which has itself as an irreducible anagram since two or more non-empty strings cannot be put together to obtain \"a\". On the other hand, in the second query, the substring is \"aaa\", which has no irreducible anagrams: its only anagram is itself, and we may choose s_1 = \"a\", s_2 = \"aa\", t_1 = \"a\", t_2 = \"aa\" to show that it is a reducible anagram.\n\nIn the second query of the second sample, the substring is \"abb\", which has, for example, \"bba\" as an irreducible anagram.\n\nInput:\n```\naaaaa\n3\n1 1\n2 4\n5 5\n```\n\nOutput:\n```\nYes\nNo\nYes\n```\n\nInput:\n```\naabbbbbbc\n6\n1 2\n2 4\n2 2\n1 9\n5 7\n3 5\n```\n\nOutput:\n```\nNo\nYes\nYes\nYes\nNo\nNo\n```",
+    "input": "The first line contains a string s, consisting of lowercase English characters (1 ≤ |s| ≤ 2·10^5).\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the following q lines contain two integers l and r (1 ≤ l ≤ r ≤ |s|), representing a query for the substring of s formed by characters from the l-th to the r-th.",
+    "output": "For each query, print a single line containing \"Yes\" (without quotes) if the corresponding substring has at least one irreducible anagram, and a single line containing \"No\" (without quotes) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "strings",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

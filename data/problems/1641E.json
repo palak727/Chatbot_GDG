@@ -1,0 +1,19 @@
+{
+    "id": "1641E",
+    "contest_id": 1641,
+    "problem_letter": "E",
+    "title": "E. Special Positions",
+    "statement": "You are given an array a of length n. Also you are given m distinct positions p_1, p_2, …, p_m (1 ≤ p_i ≤ n).\n\nA non-empty subset of these positions T is randomly selected with equal probability and the following value is calculated: ∑_{i=1}^n (a_i·min_{j ∈ T} left|i - jright|). In other word, for each index of the array, a_i and the distance to the closest chosen position are multiplied, and then these values are summed up.\n\nFind the expected value of this sum.\n\nThis value must be found modulo 998,244,353. More formally, let M = 998,244,353. It can be shown that the answer can be represented as an irreducible fraction p/q, where p and q are integers and q ≠ 0 (mod M). Output the integer equal to p·q^{-1} (mod M). In other words, output such integer x that 0 ≤ x < M and x·q = p (mod M).\n\nThe first line contains two integers n and m (1 ≤ m ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 998,244,353).\n\nThe third line contains m distinct integers p_1, p_2, …, p_m (1 ≤ p_i ≤ n).\n\nFor every 1 ≤ i < m it is guaranteed that p_i < p_{i+1}.\n\nPrint a single integer — the answer to the problem.\n\nIn the first test:\n\nThe answer to the problem is (20 + 10 + 5)/3 = 35/3 = 665,496,247 (modulo 998,244,353).\n\nInput:\n```\n4 2\n1 2 3 4\n1 4\n```\n\nOutput:\n```\n665496247\n```\n\nInput:\n```\n6 6\n4 2 4 2 4 2\n1 2 3 4 5 6\n```\n\nOutput:\n```\n855638030\n```",
+    "input": "The first line contains two integers n and m (1 ≤ m ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 998,244,353).\n\nThe third line contains m distinct integers p_1, p_2, …, p_m (1 ≤ p_i ≤ n).\n\nFor every 1 ≤ i < m it is guaranteed that p_i < p_{i+1}.",
+    "output": "Print a single integer — the answer to the problem.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "fft",
+        "math",
+        "*3300"
+    ],
+    "rating": 3300
+}

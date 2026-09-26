@@ -1,0 +1,18 @@
+{
+    "id": "1337B",
+    "contest_id": 1337,
+    "problem_letter": "B",
+    "title": "B. Kana and Dragon Quest game",
+    "statement": "Kana was just an ordinary high school girl before a talent scout discovered her. Then, she became an idol. But different from the stereotype, she is also a gameholic.\n\nOne day Kana gets interested in a new adventure game called Dragon Quest. In this game, her quest is to beat a dragon.\n\nThe dragon has a hit point of x initially. When its hit point goes to 0 or under 0, it will be defeated. In order to defeat the dragon, Kana can cast the two following types of spells.\n\nAssume that the dragon's current hit point is h, after casting this spell its hit point will become leftlfloor h/2 rightrfloor + 10. Here leftlfloor h/2 rightrfloor denotes h divided by two, rounded down.\n\nThis spell will decrease the dragon's hit point by 10. Assume that the dragon's current hit point is h, after casting this spell its hit point will be lowered to h-10.\n\nDue to some reasons Kana can only cast no more than n Void Absorptions and m Lightning Strikes. She can cast the spells in any order and doesn't have to cast all the spells. Kana isn't good at math, so you are going to help her to find out whether it is possible to defeat the dragon.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe next t lines describe test cases. For each test case the only line contains three integers x, n, m (1≤ x ≤ 10^5, 0≤ n,m≤30) — the dragon's intitial hit point, the maximum number of Void Absorptions and Lightning Strikes Kana can cast respectively.\n\nIf it is possible to defeat the dragon, print \"YES\" (without quotes). Otherwise, print \"NO\" (without quotes).\n\nYou can print each letter in any case (upper or lower).\n\nOne possible casting sequence of the first test case is shown below:\n\nInput:\n```\n7\n100 3 4\n189 3 4\n64 2 3\n63 2 3\n30 27 7\n10 9 1\n69117 21 2\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nYES\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe next t lines describe test cases. For each test case the only line contains three integers x, n, m (1≤ x ≤ 10^5, 0≤ n,m≤30) — the dragon's intitial hit point, the maximum number of Void Absorptions and Lightning Strikes Kana can cast respectively.",
+    "output": "If it is possible to defeat the dragon, print \"YES\" (without quotes). Otherwise, print \"NO\" (without quotes).\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

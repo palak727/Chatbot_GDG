@@ -1,0 +1,18 @@
+{
+    "id": "2134A",
+    "contest_id": 2134,
+    "problem_letter": "A",
+    "title": "A. Painting With Two Colors",
+    "statement": "You are given three positive integers n, a, and b (1≤ a,b ≤ n).\n\nConsider a row of n cells, initially all white and indexed from 1 to n. You will perform the following two steps in order:\n\nIf a cell is painted both red and blue, its final color is blue.\n\nA coloring of the grid is considered symmetric if, for every integer i from 1 to n (inclusive), the color of cell i is the same as the color of cell (n+1-i). Your task is to determine whether there exist integers x and y such that the final coloring of the grid is symmetric.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first and the only line of each test case contains three integers n, a, and b (1 ≤ n ≤ 10^9, 1 ≤ a,b ≤ n) — the number of cells of the grid and the number of cells to be painted in each step.\n\nFor each testcase, output \"YES\" if it is possible that the final coloring of the grid is symmetric; otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, the grid becomes symmetric when choosing x = 2 and y = 3, so the answer is \"YES\". The following figure illustrates each step of the coloring process:\n\nIn the second test case, the grid becomes symmetric when choosing x = 2 and y = 2, so the answer is \"YES\". The following figure illustrates each step of the coloring process:\n\nIn the third and fourth test cases, it can be proved that no choice of x and y results in a symmetric grid, so the answer is \"NO\".\n\nInput:\n```\n75 3 14 1 27 7 48 3 71 1 11000000000 1000000000 10000000003 2 1\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first and the only line of each test case contains three integers n, a, and b (1 ≤ n ≤ 10^9, 1 ≤ a,b ≤ n) — the number of cells of the grid and the number of cells to be painted in each step.",
+    "output": "For each testcase, output \"YES\" if it is possible that the final coloring of the grid is symmetric; otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

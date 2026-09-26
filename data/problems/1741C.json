@@ -1,0 +1,19 @@
+{
+    "id": "1741C",
+    "contest_id": 1741,
+    "problem_letter": "C",
+    "title": "C. Minimize the Thickness",
+    "statement": "You are given a sequence a=[a_1,a_2,…,a_n] consisting of n positive integers.\n\nLet's call a group of consecutive elements a segment. Each segment is characterized by two indices: the index of its left end and the index of its right end. Denote by a[l,r] a segment of the sequence a with the left end in l and the right end in r, i.e. a[l,r]=[a_l, a_{l+1}, …, a_r].\n\nFor example, if a=[31,4,15,92,6,5], then a[2,5]=[4,15,92,6], a[5,5]=[6], a[1,6]=[31,4,15,92,6,5] are segments.\n\nWe split the given sequence a into segments so that:\n\nFor example, if a = [55,45,30,30,40,100], then such a sequence can be split into three segments: a[1,2]=[55,45], a[3,5]=[30, 30, 40], a[6,6]=[100]. Each element belongs to exactly segment, the sum of the elements of each segment is 100.\n\nLet's define thickness of split as the length of the longest segment. For example, the thickness of the split from the example above is 3.\n\nFind the minimum thickness among all possible splits of the given sequence of a into segments in the required way.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case is described by two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the length of the sequence a.\n\nThe second line of each test case contains exactly n integers: a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — elements of the sequence a.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2000.\n\nFor each test case, output one integer — the minimum possible thickness of a split of the sequence a into segments.\n\nNote that there always exist a split, you can always consider whole sequence as one segment.\n\nThe split in the first test case is explained in the statement, it can be shown that it is optimal.\n\nIn the second test case, it is possible to split into segments only by leaving a single segment. Then the thickness of this split is equal to the length of the entire sequence, that is, 4.\n\nIn the third test case, the optimal split will be [10, 55], [35, 30], [65]. The thickness of the split equals to 2.\n\nIn the fourth test case possible splits are:\n\nInput:\n```\n4655 45 30 30 40 100410 23 7 13510 55 35 30 6564 1 1 1 1 4\n```\n\nOutput:\n```\n3\n4\n2\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case is described by two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the length of the sequence a.\n\nThe second line of each test case contains exactly n integers: a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — elements of the sequence a.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2000.",
+    "output": "For each test case, output one integer — the minimum possible thickness of a split of the sequence a into segments.\n\nNote that there always exist a split, you can always consider whole sequence as one segment.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

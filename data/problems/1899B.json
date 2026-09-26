@@ -1,0 +1,18 @@
+{
+    "id": "1899B",
+    "contest_id": 1899,
+    "problem_letter": "B",
+    "title": "B. 250 Thousand Tons of TNT",
+    "statement": "Alex is participating in the filming of another video of BrMeast, and BrMeast asked Alex to prepare 250 thousand tons of TNT, but Alex didn't hear him well, so he prepared n boxes and arranged them in a row waiting for trucks. The i-th box from the left weighs a_i tons.\n\nAll trucks that Alex is going to use hold the same number of boxes, denoted by k. Loading happens the following way:\n\nUpon loading is completed, each truck must have exactly k boxes. In other words, if at some point it is not possible to load exactly k boxes into the truck, then the loading option with that k is not possible.\n\nAlex hates justice, so he wants the maximum absolute difference between the total weights of two trucks to be as great as possible. If there is only one truck, this value is 0.\n\nAlex has quite a lot of connections, so for every 1 ≤ k ≤ n, he can find a company such that each of its trucks can hold exactly k boxes. Print the maximum absolute difference between the total weights of any two trucks.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 150,000) — the number of boxes.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the boxes.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 150,000.\n\nFor each test case, print a single integer — the answer to the problem.\n\nIn the first case, we should pick two trucks, so the first one will have only the first box, and the second one will have only the second box.\n\nIn the second case, we should pick six trucks, so the maximum will be 10, the minimum will be 1, and the answer is 10 - 1 = 9.\n\nIn the third case, for any possible k, the trucks will have the same total weight of boxes, so the answer is 0.\n\nInput:\n```\n521 2610 2 3 6 1 341000000000 1000000000 1000000000 10000000001560978 82265 78961 56708 39846 31071 4913 4769 29092 91348 64119 72421 98405 222 14294819957 69913 37531 96991 57838 21008 14207 19198\n```\n\nOutput:\n```\n1\n9\n0\n189114\n112141\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 150,000) — the number of boxes.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the boxes.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 150,000.",
+    "output": "For each test case, print a single integer — the answer to the problem.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

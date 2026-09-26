@@ -1,0 +1,18 @@
+{
+    "id": "1658A",
+    "contest_id": 1658,
+    "problem_letter": "A",
+    "title": "A. Marin and Photoshoot",
+    "statement": "Today, Marin is at a cosplay exhibition and is preparing for a group photoshoot!\n\nFor the group picture, the cosplayers form a horizontal line. A group picture is considered beautiful if for every contiguous segment of at least 2 cosplayers, the number of males does not exceed the number of females (obviously).\n\nCurrently, the line has n cosplayers which can be described by a binary string s. The i-th cosplayer is male if s_i = 0 and female if s_i = 1. To ensure that the line is beautiful, you can invite some additional cosplayers (possibly zero) to join the line at any position. You can't remove any cosplayer from the line.\n\nMarin wants to know the minimum number of cosplayers you need to invite so that the group picture of all the cosplayers is beautiful. She can't do this on her own, so she's asking you for help. Can you help her?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a positive integer n (1 ≤ n ≤ 100) — the number of cosplayers in the initial line.\n\nThe second line of each test case contains a binary string s of length n — describing the cosplayers already in line. Each character of the string is either 0 describing a male, or 1 describing a female.\n\nNote that there is no limit on the sum of n.\n\nFor each test case, print the minimum number of cosplayers you need to invite so that the group picture of all the cosplayers is beautiful.\n\nIn the first test case, for each pair of adjacent cosplayers, you can invite two female cosplayers to stand in between them. Then, 000 → 0110110.\n\nIn the third test case, you can invite one female cosplayer to stand next to the second cosplayer. Then, 010 → 0110.\n\nInput:\n```\n930003001301030113100310131103111191010110000100000101\n```\n\nOutput:\n```\n4\n2\n1\n0\n2\n0\n0\n0\n17\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a positive integer n (1 ≤ n ≤ 100) — the number of cosplayers in the initial line.\n\nThe second line of each test case contains a binary string s of length n — describing the cosplayers already in line. Each character of the string is either 0 describing a male, or 1 describing a female.\n\nNote that there is no limit on the sum of n.",
+    "output": "For each test case, print the minimum number of cosplayers you need to invite so that the group picture of all the cosplayers is beautiful.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

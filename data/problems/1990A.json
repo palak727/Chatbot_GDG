@@ -1,0 +1,19 @@
+{
+    "id": "1990A",
+    "contest_id": 1990,
+    "problem_letter": "A",
+    "title": "A. Submission Bait",
+    "statement": "Alice and Bob are playing a game in an array a of size n.\n\nThey take turns to do operations, with Alice starting first. The player who can not operate will lose. At first, a variable mx is set to 0.\n\nIn one operation, a player can do:\n\nDetermine whether Alice has a winning strategy.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nFor each test case:\n\nFor each test case, if Alice has a winning strategy, output \"YES\". Otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, Alice can choose i=1 since a_1=2 ≥ mx=0.\n\nAfter Alice's operation, a=[0,1] and mx=2. Bob can not do any operation. Alice wins.\n\nIn the second test case, Alice doesn't have a winning strategy.\n\nFor example, if Alice chooses i=1, after Alice's operation: a=[0,1] and mx=1. Then, Bob can choose i=2 since a_2=1 ≥ mx=1. After Bob's operation: a=[0,0] and mx=1. Alice can not do any operation. Bob wins.\n\nInput:\n```\n522 121 133 3 343 3 4 441 2 2 2\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nFor each test case:",
+    "output": "For each test case, if Alice has a winning strategy, output \"YES\". Otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "games",
+        "greedy",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

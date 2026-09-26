@@ -1,0 +1,20 @@
+{
+    "id": "1693D",
+    "contest_id": 1693,
+    "problem_letter": "D",
+    "title": "D. Decinc Dividing",
+    "statement": "Let's call an array a of m integers a_1, a_2, …, a_m Decinc if a can be made increasing by removing a decreasing subsequence (possibly empty) from it.\n\nYou are given a permutation p of numbers from 1 to n. Find the number of pairs of integers (l, r) with 1 ≤ l ≤ r ≤ n such that p[l … r] (the subarray of p from l to r) is a Decinc array.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of p.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, all p_i are distinct) — elements of the permutation.\n\nOutput the number of pairs of integers (l, r) such that p[l … r] (the subarray of p from l to r) is a Decinc array. (1 ≤ l ≤ r ≤ n)\n\nIn the first sample, all subarrays are Decinc.\n\nIn the second sample, all subarrays except p[1 … 6] and p[2 … 6] are Decinc.\n\nInput:\n```\n3\n2 3 1\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n6\n4 5 2 6 1 3\n```\n\nOutput:\n```\n19\n```\n\nInput:\n```\n10\n7 10 1 8 3 9 2 4 6 5\n```\n\nOutput:\n```\n39\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of p.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, all p_i are distinct) — elements of the permutation.",
+    "output": "Output the number of pairs of integers (l, r) such that p[l … r] (the subarray of p from l to r) is a Decinc array. (1 ≤ l ≤ r ≤ n)",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "*2800"
+    ],
+    "rating": 2800
+}

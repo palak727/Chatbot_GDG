@@ -1,0 +1,16 @@
+{
+    "id": "1145A",
+    "contest_id": 1145,
+    "problem_letter": "A",
+    "title": "A. Thanos Sort",
+    "statement": "Thanos sort is a supervillain sorting algorithm, which works as follows: if the array is not sorted, snap your fingers* to remove the first or the second half of the items, and repeat the process.\n\nGiven an input array, what is the size of the longest sorted array you can obtain from it using Thanos sort?\n\n*Infinity Gauntlet required.\n\nThe first line of input contains a single number n (1 ≤ n ≤ 16) — the size of the array. n is guaranteed to be a power of 2.\n\nThe second line of input contains n space-separated integers a_i (1 ≤ a_i ≤ 100) — the elements of the array.\n\nReturn the maximal length of a sorted array you can obtain using Thanos sort. The elements of the array have to be sorted in non-decreasing order.\n\nIn the first example the array is already sorted, so no finger snaps are required.\n\nIn the second example the array actually has a subarray of 4 sorted elements, but you can not remove elements from different sides of the array in one finger snap. Each time you have to remove either the whole first half or the whole second half, so you'll have to snap your fingers twice to get to a 2-element sorted array.\n\nIn the third example the array is sorted in decreasing order, so you can only save one element from the ultimate destruction.\n\nInput:\n```\n4\n1 2 2 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n8\n11 12 1 2 13 14 3 4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n7 6 5 4\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line of input contains a single number n (1 ≤ n ≤ 16) — the size of the array. n is guaranteed to be a power of 2.\n\nThe second line of input contains n space-separated integers a_i (1 ≤ a_i ≤ 100) — the elements of the array.",
+    "output": "Return the maximal length of a sorted array you can obtain using Thanos sort. The elements of the array have to be sorted in non-decreasing order.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

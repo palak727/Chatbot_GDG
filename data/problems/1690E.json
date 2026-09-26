@@ -1,0 +1,19 @@
+{
+    "id": "1690E",
+    "contest_id": 1690,
+    "problem_letter": "E",
+    "title": "E. Price Maximization",
+    "statement": "A batch of n goods (n — an even number) is brought to the store, i-th of which has weight a_i. Before selling the goods, they must be packed into packages. After packing, the following will be done:\n\nWith this, the cost of a package of weight x is always left lfloorx/krightrfloor burles (rounded down), where k — a fixed and given value.\n\nPack the goods to the packages so that the revenue from their sale is maximized. In other words, make such n/2 pairs of given goods that the sum of the values left lfloorx_i/k right rfloor, where x_i is the weight of the package number i (1 ≤ i ≤ n/2), is maximal.\n\nFor example, let n = 6, k = 3, weights of goods a = [3, 2, 7, 1, 4, 8]. Let's pack them into the following packages.\n\nWith this packing, the total cost of all packs would be 5 + 2 + 1 = 8 burles.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 1000). The number n — is even.\n\nThe second line of each test case contains exactly n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all the test cases does not exceed 2·10^5.\n\nFor each test case, print on a separate line a single number — the maximum possible total cost of all the packages.\n\nThe first test case is analyzed in the statement.\n\nIn the second test case, you can get a total value equal to 4 if you put the first and second goods in the first package and the third and fourth goods in the second package.\n\nIn the third test case, the cost of each item is 0, so the total cost will also be 0.\n\nInput:\n```\n66 33 2 7 1 4 84 32 1 5 64 120 0 0 02 11 16 102 0 0 5 9 46 55 3 8 6 3 2\n```\n\nOutput:\n```\n8\n4\n0\n2\n1\n5\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 1000). The number n — is even.\n\nThe second line of each test case contains exactly n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all the test cases does not exceed 2·10^5.",
+    "output": "For each test case, print on a separate line a single number — the maximum possible total cost of all the packages.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1500"
+    ],
+    "rating": 1500
+}

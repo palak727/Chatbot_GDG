@@ -1,0 +1,18 @@
+{
+    "id": "1651C",
+    "contest_id": 1651,
+    "problem_letter": "C",
+    "title": "C. Fault-tolerant Network",
+    "statement": "There is a classroom with two rows of computers. There are n computers in each row and each computer has its own grade. Computers in the first row have grades a_1, a_2, …, a_n and in the second row — b_1, b_2, …, b_n.\n\nInitially, all pairs of neighboring computers in each row are connected by wire (pairs (i, i + 1) for all 1 ≤ i < n), so two rows form two independent computer networks.\n\nYour task is to combine them into one common network by connecting one or more pairs of computers from different rows. Connecting the i-th computer from the first row and the j-th computer from the second row costs |a_i - b_j|.\n\nYou can connect one computer to several other computers, but you need to provide at least a basic fault tolerance: you need to connect computers in such a way that the network stays connected, despite one of its computers failing. In other words, if one computer is broken (no matter which one), the network won't split into two or more parts.\n\nWhat is the minimum total cost to make a fault-tolerant network?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next, t cases follow.\n\nThe first line of each test case contains the single integer n (3 ≤ n ≤ 2·10^5) — the number of computers in each row.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the grades of computers in the first row.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the grades of computers in the second row.\n\nIt's guaranteed that the total sum of n doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the minimum total cost to make a fault-tolerant network.\n\nIn the first test case, it's optimal to connect four pairs of computers:\n\nIn the second test case, it's optimal to connect 1 from the first row with 1 from the second row, and 4 from the first row with 4 from the second row.\n\nInput:\n```\n231 10 120 4 2541 1 1 11000000000 1000000000 1000000000 1000000000\n```\n\nOutput:\n```\n31\n1999999998\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next, t cases follow.\n\nThe first line of each test case contains the single integer n (3 ≤ n ≤ 2·10^5) — the number of computers in each row.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the grades of computers in the first row.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the grades of computers in the second row.\n\nIt's guaranteed that the total sum of n doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the minimum total cost to make a fault-tolerant network.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

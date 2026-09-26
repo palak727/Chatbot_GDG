@@ -1,0 +1,21 @@
+{
+    "id": "2104F",
+    "contest_id": 2104,
+    "problem_letter": "F",
+    "title": "F. Numbers and Strings",
+    "statement": "For each integer x from 1 to n, we will form the string S(x) according to the following rules:\n\nFor example, the string S(139) is 011349 (before sorting the digits, it is 139140). The string S(99) is 00199.\n\nYour task is to count the number of distinct strings among S(1), S(2), …, S(n).\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing a single integer n (1 ≤ n ≤ 10^9 - 2).\n\nFor each test case, output a single integer — the number of distinct strings among S(1), S(2), …, S(n).\n\nInput:\n```\n2421337\n```\n\nOutput:\n```\n42\n948\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing a single integer n (1 ≤ n ≤ 10^9 - 2).",
+    "output": "For each test case, output a single integer — the number of distinct strings among S(1), S(2), …, S(n).",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "implementation",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

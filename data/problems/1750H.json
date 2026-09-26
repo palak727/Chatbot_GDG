@@ -1,0 +1,18 @@
+{
+    "id": "1750H",
+    "contest_id": 1750,
+    "problem_letter": "H",
+    "title": "H. BinaryStringForces",
+    "statement": "You are given a binary string s of length n. We define a maximal substring as a substring that cannot be extended while keeping all elements equal. For example, in the string 11000111 there are three maximal substrings: 11, 000 and 111.\n\nIn one operation, you can select two maximal adjacent substrings. Since they are maximal and adjacent, it's easy to see their elements must have different values. Let a be the length of the sequence of ones and b be the length of the sequence of zeros. Then do the following:\n\nAs an example, for 1110000 we make it 0000000, for 0011 we make it 1111. We call a string being good if it can be turned into 1111...1111 using the aforementioned operation any number of times (possibly, zero). Find the number of good substrings among all (n(n+1))/2 non-empty substrings of s.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains the binary string s of length n.\n\nIt is guaranteed that sum of n across all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the number of good substrings.\n\nLet's define a substring from index l to index r as [l, r].\n\nFor the first test case, the good substrings are:\n\nIn the second test case, all substrings are good except [2,2].\n\nIn the third test case, all substrings are good.\n\nInput:\n```\n4610001131015111116010101\n```\n\nOutput:\n```\n8\n5\n15\n18\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains the binary string s of length n.\n\nIt is guaranteed that sum of n across all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the number of good substrings.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "*3500"
+    ],
+    "rating": 3500
+}

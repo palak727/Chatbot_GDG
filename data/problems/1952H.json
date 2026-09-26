@@ -1,0 +1,17 @@
+{
+    "id": "1952H",
+    "contest_id": 1952,
+    "problem_letter": "H",
+    "title": "H. Palindrome",
+    "statement": "A palindrome is a string that reads the same in both directions, for example z, uwu, or moom.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe following t lines each contain a string of length at most 100 consisting of lowercase English letters.\n\nFor each test case, output \"YES\" or \"NO\", denoting the answer.\n\nInput:\n```\n8actleradarracecarphpatcodercodeforcessteam\n```\n\nOutput:\n```\nNO\nNO\nYES\nYES\nNO\nNO\nYES\nYES\n```\n\nInput:\n```\n2az\n```\n\nOutput:\n```\nNO\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe following t lines each contain a string of length at most 100 consisting of lowercase English letters.",
+    "output": "For each test case, output \"YES\" or \"NO\", denoting the answer.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "strings"
+    ],
+    "rating": null
+}

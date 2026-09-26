@@ -1,0 +1,22 @@
+{
+    "id": "1977C",
+    "contest_id": 1977,
+    "problem_letter": "C",
+    "title": "C. Nikita and LCM",
+    "statement": "Nikita is a student passionate about number theory and algorithms. He faces an interesting problem related to an array of numbers.\n\nSuppose Nikita has an array of integers a of length n. He will call a subsequence^dagger of the array special if its least common multiple (LCM) is not contained in a. The LCM of an empty subsequence is equal to 0.\n\nNikita wonders: what is the length of the longest special subsequence of a? Help him answer this question!\n\n^dagger A sequence b is a subsequence of a if b can be obtained from a by the deletion of several (possibly, zero or all) elements, without changing the order of the remaining elements. For example, [5,2,3] is a subsequence of [1,5,7,8,2,4,3].\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, output a single integer — the length of the longest special subsequence of a.\n\nIn the first test case, the LCM of any non-empty subsequence is contained in a, so the answer is 0.\n\nIn the second test case, we can take the subsequence [3, 2, 10, 1], its LCM is equal to 30, which is not contained in a.\n\nIn the third test case, we can take the subsequence [2, 3, 6, 100,003], its LCM is equal to 600,018, which is not contained in a.\n\nInput:\n```\n651 2 4 8 1663 2 10 20 60 172 3 4 6 12 100003 120003692 42 7 3 6 7 7 1 684 99 57 179 10203 2 11 4081211\n```\n\nOutput:\n```\n0\n4\n4\n5\n8\n0\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, output a single integer — the length of the longest special subsequence of a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "math",
+        "number theory",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

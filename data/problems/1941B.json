@@ -1,0 +1,19 @@
+{
+    "id": "1941B",
+    "contest_id": 1941,
+    "problem_letter": "B",
+    "title": "B. Rudolf and 121",
+    "statement": "Rudolf has an array a of n integers, the elements are numbered from 1 to n.\n\nIn one operation, he can choose an index i (2 ≤ i ≤ n - 1) and assign:\n\nRudolf can apply this operation any number of times. Any index i can be used zero or more times.\n\nCan he make all the elements of the array equal to zero using this operation?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe first line of each case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array.\n\nThe second line of each case contains n integers a_1, a_2, …, a_n (0 ≤ a_j ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of the values of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if it is possible to make all the elements of the array zero using the described operations. Otherwise, output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first example, the original array is [1, 3, 5, 5, 2], to make all its elements zero, Rudolf can act as follows:\n\nInput:\n```\n751 3 5 5 252 4 4 5 150 1 3 3 165 6 0 2 3 041 2 7 237 1 041 1 1 1\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\nNO\nNO\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe first line of each case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array.\n\nThe second line of each case contains n integers a_1, a_2, …, a_n (0 ≤ a_j ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of the values of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if it is possible to make all the elements of the array zero using the described operations. Otherwise, output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

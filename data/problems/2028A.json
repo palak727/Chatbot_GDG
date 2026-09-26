@@ -1,0 +1,18 @@
+{
+    "id": "2028A",
+    "contest_id": 2028,
+    "problem_letter": "A",
+    "title": "A. Alice's Adventures in \"Chess\"",
+    "statement": "Alice is trying to meet up with the Red Queen in the countryside! Right now, Alice is at position (0, 0), and the Red Queen is at position (a, b). Alice can only move in the four cardinal directions (north, east, south, west).\n\nMore formally, if Alice is at the point (x, y), she will do one of the following:\n\nAlice's movements are predetermined. She has a string s representing a sequence of moves that she performs from left to right. Once she reaches the end of the sequence, she repeats the same pattern of moves forever.\n\nCan you help Alice figure out if she will ever meet the Red Queen?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, a, b (1 ≤ n, a, b ≤ 10) — the length of the string and the initial coordinates of the Red Queen.\n\nThe second line contains a string s of length n consisting only of the characters N, E, S, or W.\n\nFor each test case, output a single string \"YES\" or \"NO\" (without the quotes) denoting whether Alice will eventually meet the Red Queen.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, Alice follows the path (0,0) xrightarrow[textttN] (0,1) xrightarrow[textttE] (1,1) xrightarrow[textttN] (1,2) xrightarrow[textttE] (2,2).\n\nIn the second test case, Alice can never reach the Red Queen.\n\nInput:\n```\n62 2 2NE3 2 2NNE6 2 1NNEESW6 10 10NNEESW3 4 2NEE4 5 5NEWS\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, a, b (1 ≤ n, a, b ≤ 10) — the length of the string and the initial coordinates of the Red Queen.\n\nThe second line contains a string s of length n consisting only of the characters N, E, S, or W.",
+    "output": "For each test case, output a single string \"YES\" or \"NO\" (without the quotes) denoting whether Alice will eventually meet the Red Queen.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

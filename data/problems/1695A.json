@@ -1,0 +1,16 @@
+{
+    "id": "1695A",
+    "contest_id": 1695,
+    "problem_letter": "A",
+    "title": "A. Subrectangle Guess",
+    "statement": "Michael and Joe are playing a game. The game is played on a grid with n rows and m columns, filled with distinct integers. We denote the square on the i-th (1≤ i≤ n) row and j-th (1≤ j≤ m) column by (i, j) and the number there by a_ij.\n\nMichael starts by saying two numbers h (1≤ h ≤ n) and w (1≤ w ≤ m). Then Joe picks any h× w subrectangle of the board (without Michael seeing).\n\nFormally, an h× w subrectangle starts at some square (a,b) where 1 ≤ a ≤ n-h+1 and 1 ≤ b ≤ m-w+1. It contains all squares (i,j) for a ≤ i ≤ a+h-1 and b ≤ j ≤ b+w-1.\n\nFinally, Michael has to guess the maximum number in the subrectangle. He wins if he gets it right.\n\nBecause Michael doesn't like big numbers, he wants the area of the chosen subrectangle (that is, h·w), to be as small as possible, while still ensuring that he wins, not depending on Joe's choice. Help Michael out by finding this minimum possible area.\n\nIt can be shown that Michael can always choose h, w for which he can ensure that he wins.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 20). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 40) — the size of the grid.\n\nEach of the following n lines contains m integers. The j-th integer on the i-th line is a_ij (-10^9 ≤ a_ij ≤ 10^9) — the element in the cell (i, j).\n\nIt is guaranteed that all the numbers are distinct (that is, if a_i_1j_1 = a_i_2j_2, then i_1 = i_2, j_1 = j_2).\n\nFor each test case print a single positive integer — the minimum possible area the subrectangle can have while still ensuring that Michael can guarantee the victory.\n\nIn the first test case, the grid is 1× 1, so the only possible choice for h, w is h = 1, w = 1, giving an area of h·w = 1.\n\nThe grid from the second test case is drawn in the statement. It can be shown that with h = 3, w = 3 Michael can guarantee the victory and that any choice with h·w ≤ 8 doesn't.\n\nInput:\n```\n31 134 42 12 6 103 15 16 41 13 8 1114 7 9 52 3-7 5 20 8 -3\n```\n\nOutput:\n```\n1\n9\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 20). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 40) — the size of the grid.\n\nEach of the following n lines contains m integers. The j-th integer on the i-th line is a_ij (-10^9 ≤ a_ij ≤ 10^9) — the element in the cell (i, j).\n\nIt is guaranteed that all the numbers are distinct (that is, if a_i_1j_1 = a_i_2j_2, then i_1 = i_2, j_1 = j_2).",
+    "output": "For each test case print a single positive integer — the minimum possible area the subrectangle can have while still ensuring that Michael can guarantee the victory.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "*800"
+    ],
+    "rating": 800
+}

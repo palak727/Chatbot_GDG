@@ -1,0 +1,19 @@
+{
+    "id": "1916E",
+    "contest_id": 1916,
+    "problem_letter": "E",
+    "title": "E. Happy Life in University",
+    "statement": "Egor and his friend Arseniy are finishing school this year and will soon enter university. And since they are very responsible guys, they have started preparing for admission already.\n\nFirst of all, they decided to take care of where they will live for the long four years of study, and after visiting the university's website, they found out that the university dormitory can be represented as a root tree with n vertices with the root at vertex 1. In the tree, each vertex represents a recreation with some type of activity a_i. The friends need to choose 2 recreations (not necessarily different) in which they will settle. The guys are convinced that the more the value of the following function f(u, v) = diff(u, lca(u, v))·diff(v, lca(u, v)), the more fun their life will be. Help Egor and Arseniy and find the maximum value of f(u, v) among all pairs of recreations!\n\n^dagger diff(u, v) — the number of different activities listed on the simple path from vertex u to vertex v.\n\n^dagger lca(u, v) — a vertex p such that it is at the maximum distance from the root and is a parent of both vertex u and vertex v.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …,p_n (1 ≤ p_i ≤ i - 1), where p_i — the parent of vertex i.\n\nThe third line of each test case contains n integers a_1, a_2, …,a_n (1 ≤ a_i ≤ n), where a_i — the number of the activity located at vertex i.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output the maximum value of f(u, v) for all pairs of recreations (u, v).\n\nConsider the fourth test case. The tree has the following structure:\n\nInput:\n```\n4211 271 1 2 2 3 36 5 2 3 6 5 6131 1 1 2 2 2 3 3 4 5 6 62 2 2 1 4 9 7 2 5 2 1 11 2121 1 1 2 2 3 4 4 7 7 611 2 1 11 12 8 5 8 8 5 11 7\n```\n\nOutput:\n```\n2\n9\n9\n12\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …,p_n (1 ≤ p_i ≤ i - 1), where p_i — the parent of vertex i.\n\nThe third line of each test case contains n integers a_1, a_2, …,a_n (1 ≤ a_i ≤ n), where a_i — the number of the activity located at vertex i.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output the maximum value of f(u, v) for all pairs of recreations (u, v).",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "greedy",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

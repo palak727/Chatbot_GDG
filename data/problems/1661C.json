@@ -1,0 +1,18 @@
+{
+    "id": "1661C",
+    "contest_id": 1661,
+    "problem_letter": "C",
+    "title": "C. Water the Trees",
+    "statement": "There are n trees in a park, numbered from 1 to n. The initial height of the i-th tree is h_i.\n\nYou want to water these trees, so they all grow to the same height.\n\nThe watering process goes as follows. You start watering trees at day 1. During the j-th day you can:\n\nNote that you can't water more than one tree in a day.\n\nYour task is to determine the minimum number of days required to water the trees so they grow to the same height.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 3·10^5) — the number of trees.\n\nThe second line of the test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10^9), where h_i is the height of the i-th tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5 (∑ n ≤ 3·10^5).\n\nFor each test case, print one integer — the minimum number of days required to water the trees, so they grow to the same height.\n\nConsider the first test case of the example. The initial state of the trees is [1, 2, 4].\n\nThus, the answer is 4.\n\nInput:\n```\n331 2 454 4 3 5 572 5 4 8 3 7 4\n```\n\nOutput:\n```\n4\n3\n16\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 3·10^5) — the number of trees.\n\nThe second line of the test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10^9), where h_i is the height of the i-th tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5 (∑ n ≤ 3·10^5).",
+    "output": "For each test case, print one integer — the minimum number of days required to water the trees, so they grow to the same height.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -3,7 +3,7 @@
     "contest_id": 1002,
     "problem_letter": "A4",
     "title": "A4. Generate W state",
-    "statement": "You are given N = 2 k qubits ( 0 ≤ k ≤ 4 ) in zero state . Your task is to create a generalized W state on them. Generalized W state is an equal superposition of all basis states on N qubits that have Hamming weight equal to 1:\n\nFor example, for N = 1 , .\n\nYou have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of the operation is the state in which it leaves the qubits.\n\nYour code should have the following signature:",
+    "statement": "You are given N = 2^k qubits (0 ≤ k ≤ 4) in zero state . Your task is to create a generalized W state on them. Generalized W state is an equal superposition of all basis states on N qubits that have Hamming weight equal to 1:\n\nFor example, for N = 1, .\n\nYou have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of the operation is the state in which it leaves the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[]) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "input": "",
     "output": "",
     "time_limit": "1 second",

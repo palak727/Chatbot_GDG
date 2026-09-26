@@ -1,0 +1,16 @@
+{
+    "id": "1511A",
+    "contest_id": 1511,
+    "problem_letter": "A",
+    "title": "A. Review Site",
+    "statement": "You are an upcoming movie director, and you have just released your first movie. You have also launched a simple review site with two buttons to press — upvote and downvote.\n\nHowever, the site is not so simple on the inside. There are two servers, each with its separate counts for the upvotes and the downvotes.\n\nn reviewers enter the site one by one. Each reviewer is one of the following types:\n\nEach reviewer votes on the movie exactly once.\n\nSince you have two servers, you can actually manipulate the votes so that your movie gets as many upvotes as possible. When a reviewer enters a site, you know their type, and you can send them either to the first server or to the second one.\n\nWhat is the maximum total number of upvotes you can gather over both servers if you decide which server to send each reviewer to?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 50) — the number of reviewers.\n\nThe second line of each testcase contains n integers r_1, r_2, …, r_n (1 ≤ r_i ≤ 3) — the types of the reviewers in the same order they enter the site.\n\nFor each testcase print a single integer — the maximum total number of upvotes you can gather over both servers if you decide which server to send each reviewer to.\n\nIn the first testcase of the example you can send the only reviewer to either of the servers — they'll downvote anyway. The movie won't receive any upvotes.\n\nIn the second testcase of the example you can send all reviewers to the first server:\n\nThere are two upvotes in total. Alternatevely, you can send the first and the second reviewers to the first server and the last reviewer — to the second server:\n\nInput:\n```\n4\n1\n2\n3\n1 2 3\n5\n1 1 1 1 1\n3\n3 3 2\n```\n\nOutput:\n```\n0\n2\n5\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 50) — the number of reviewers.\n\nThe second line of each testcase contains n integers r_1, r_2, …, r_n (1 ≤ r_i ≤ 3) — the types of the reviewers in the same order they enter the site.",
+    "output": "For each testcase print a single integer — the maximum total number of upvotes you can gather over both servers if you decide which server to send each reviewer to.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1575M",
+    "contest_id": 1575,
+    "problem_letter": "M",
+    "title": "M. Managing Telephone Poles",
+    "statement": "Mr. Chanek's city can be represented as a plane. He wants to build a housing complex in the city.\n\nThere are some telephone poles on the plane, which is represented by a grid a of size (n + 1) × (m + 1). There is a telephone pole at (x, y) if a_{x, y} = 1.\n\nFor each point (x, y), define S(x, y) as the square of the Euclidean distance between the nearest pole and (x, y). Formally, the square of the Euclidean distance between two points (x_1, y_1) and (x_2, y_2) is (x_2 - x_1)^2 + (y_2 - y_1)^2.\n\nTo optimize the building plan, the project supervisor asks you the sum of all S(x, y) for each 0 ≤ x ≤ n and 0 ≤ y ≤ m. Help him by finding the value of ∑_{x=0}^n ∑_{y=0}^m S(x, y).\n\nThe first line contains two integers n and m (0 ≤ n, m < 2000) — the size of the grid.\n\nThen (n + 1) lines follow, each containing (m + 1) integers a_{i, j} (0 ≤ a_{i, j} ≤ 1) — the grid denoting the positions of telephone poles in the plane. There is at least one telephone pole in the given grid.\n\nOutput an integer denoting the value of ∑_{x=0}^n ∑_{y=0}^m S(x, y).\n\nIn the first example, the nearest telephone pole for the points (0,0), (1,0), (2,0), (0,1), (1,1), and (2,1) is at (0, 0). While the nearest telephone pole for the points (0, 2), (1,2), and (2,2) is at (0, 2). Thus, ∑_{x=0}^n ∑_{y=0}^m S(x, y) = (0 + 1 + 4) + (1 + 2 + 5) + (0 + 1 + 4) = 18.\n\nInput:\n```\n2 2\n101\n000\n000\n```\n\nOutput:\n```\n18\n```\n\nInput:\n```\n5 4\n10010\n00000\n01000\n00001\n00100\n00010\n```\n\nOutput:\n```\n36\n```",
+    "input": "The first line contains two integers n and m (0 ≤ n, m < 2000) — the size of the grid.\n\nThen (n + 1) lines follow, each containing (m + 1) integers a_{i, j} (0 ≤ a_{i, j} ≤ 1) — the grid denoting the positions of telephone poles in the plane. There is at least one telephone pole in the given grid.",
+    "output": "Output an integer denoting the value of ∑_{x=0}^n ∑_{y=0}^m S(x, y).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "*2400"
+    ],
+    "rating": 2400
+}

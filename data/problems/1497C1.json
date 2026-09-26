@@ -1,0 +1,17 @@
+{
+    "id": "1497C1",
+    "contest_id": 1497,
+    "problem_letter": "C1",
+    "title": "C1. k-LCM (easy version)",
+    "statement": "It is the easy version of the problem. The only difference is that in this version k = 3.\n\nYou are given a positive integer n. Find k positive integers a_1, a_2, …, a_k, such that:\n\nHere LCM is the least common multiple of numbers a_1, a_2, …, a_k.\n\nWe can show that for given constraints the answer always exists.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n, k (3 ≤ n ≤ 10^9, k = 3).\n\nFor each test case print k positive integers a_1, a_2, …, a_k, for which all conditions are satisfied.\n\nInput:\n```\n3\n3 3\n8 3\n14 3\n```\n\nOutput:\n```\n1 1 1\n4 2 2\n2 6 6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n, k (3 ≤ n ≤ 10^9, k = 3).",
+    "output": "For each test case print k positive integers a_1, a_2, …, a_k, for which all conditions are satisfied.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

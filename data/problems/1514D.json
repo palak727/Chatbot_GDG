@@ -1,0 +1,20 @@
+{
+    "id": "1514D",
+    "contest_id": 1514,
+    "problem_letter": "D",
+    "title": "D. Cut and Stick",
+    "statement": "Baby Ehab has a piece of Cut and Stick with an array a of length n written on it. He plans to grab a pair of scissors and do the following to it:\n\nMore formally, he partitions the sequence a_l, a_{l + 1}, ..., a_r into subsequences. He thinks a partitioning is beautiful if for every piece (subsequence) it holds that, if it has length x, then no value occurs strictly more than lceil x/2 rceil times in it.\n\nHe didn't pick a range yet, so he's wondering: for q ranges (l, r), what is the minimum number of pieces he needs to partition the elements a_l, a_{l + 1}, ..., a_r into so that the partitioning is beautiful.\n\nA sequence b is a subsequence of an array a if b can be obtained from a by deleting some (possibly zero) elements. Note that it does not have to be contiguous.\n\nThe first line contains two integers n and q (1 ≤ n,q ≤ 3·10^5) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n) — the elements of the array a.\n\nEach of the next q lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — the range of this query.\n\nFor each query, print the minimum number of subsequences you need to partition this range into so that the partitioning is beautiful. We can prove such partitioning always exists.\n\nIn the first query, you can just put the whole array in one subsequence, since its length is 6, and no value occurs more than 3 times in it.\n\nIn the second query, the elements of the query range are [3,2,3,3]. You can't put them all in one subsequence, since its length is 4, and 3 occurs more than 2 times. However, you can partition it into two subsequences: [3] and [2,3,3].\n\nInput:\n```\n6 2\n1 3 2 3 3 2\n1 6\n2 5\n```\n\nOutput:\n```\n1\n2\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n,q ≤ 3·10^5) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n) — the elements of the array a.\n\nEach of the next q lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — the range of this query.",
+    "output": "For each query, print the minimum number of subsequences you need to partition this range into so that the partitioning is beautiful. We can prove such partitioning always exists.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

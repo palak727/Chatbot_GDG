@@ -1,0 +1,20 @@
+{
+    "id": "1561D1",
+    "contest_id": 1561,
+    "problem_letter": "D1",
+    "title": "D1. Up the Strip (simplified version)",
+    "statement": "This version of the problem differs from the next one only in the constraint on n.\n\nNote that the memory limit in this problem is lower than in others.\n\nYou have a vertical strip with n cells, numbered consecutively from 1 to n from top to bottom.\n\nYou also have a token that is initially placed in cell n. You will move the token up until it arrives at cell 1.\n\nLet the token be in cell x > 1 at some moment. One shift of the token can have either of the following kinds:\n\nFind the number of ways to move the token from cell n to cell 1 using one or more shifts, and print it modulo m. Note that if there are several ways to move the token from one cell to another in one shift, all these ways are considered distinct (check example explanation for a better understanding).\n\nThe only line contains two integers n and m (2 ≤ n ≤ 2·10^5; 10^8 < m < 10^9; m is a prime number) — the length of the strip and the modulo.\n\nPrint the number of ways to move the token from cell n to cell 1, modulo m.\n\nIn the first test, there are three ways to move the token from cell 3 to cell 1 in one shift: using subtraction of y = 2, or using division by z = 2 or z = 3.\n\nThere are also two ways to move the token from cell 3 to cell 1 via cell 2: first subtract y = 1, and then either subtract y = 1 again or divide by z = 2.\n\nTherefore, there are five ways in total.\n\nInput:\n```\n3 998244353\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n5 998244353\n```\n\nOutput:\n```\n25\n```\n\nInput:\n```\n42 998244353\n```\n\nOutput:\n```\n793019428\n```",
+    "input": "The only line contains two integers n and m (2 ≤ n ≤ 2·10^5; 10^8 < m < 10^9; m is a prime number) — the length of the strip and the modulo.",
+    "output": "Print the number of ways to move the token from cell n to cell 1, modulo m.",
+    "time_limit": "6 seconds",
+    "memory_limit": "128 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

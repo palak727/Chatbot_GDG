@@ -1,0 +1,18 @@
+{
+    "id": "1886B",
+    "contest_id": 1886,
+    "problem_letter": "B",
+    "title": "B. Fear of the Dark",
+    "statement": "Monocarp tries to get home from work. He is currently at the point O = (0, 0) of a two-dimensional plane; his house is at the point P = (P_x, P_y).\n\nUnfortunately, it is late in the evening, so it is very dark. Monocarp is afraid of the darkness. He would like to go home along a path illuminated by something.\n\nThankfully, there are two lanterns, located in the points A = (A_x, A_y) and B = (B_x, B_y). You can choose any non-negative number w and set the power of both lanterns to w. If a lantern's power is set to w, it illuminates a circle of radius w centered at the lantern location (including the borders of the circle).\n\nYou have to choose the minimum non-negative value w for the power of the lanterns in such a way that there is a path from the point O to the point P which is completely illuminated. You may assume that the lanterns don't interfere with Monocarp's movement.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input:\n\nFor each test case, print the answer on a separate line — one real number equal to the minimum value of w such that there is a completely illuminated path from the point O to the point P.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-6} — formally, if your answer is a, and the jury's answer is b, your answer will be accepted if (|a - b|)/(max(1, b)) ≤ 10^{-6}.\n\nInput:\n```\n23 31 0-1 63 3-1 -14 3\n```\n\nOutput:\n```\n3.6055512755\n3.2015621187\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input:",
+    "output": "For each test case, print the answer on a separate line — one real number equal to the minimum value of w such that there is a completely illuminated path from the point O to the point P.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-6} — formally, if your answer is a, and the jury's answer is b, your answer will be accepted if (|a - b|)/(max(1, b)) ≤ 10^{-6}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "geometry",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

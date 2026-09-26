@@ -1,0 +1,18 @@
+{
+    "id": "1490E",
+    "contest_id": 1490,
+    "problem_letter": "E",
+    "title": "E. Accidental Victory",
+    "statement": "A championship is held in Berland, in which n players participate. The player with the number i has a_i (a_i ≥ 1) tokens.\n\nThe championship consists of n-1 games, which are played according to the following rules:\n\nThe last player with non-zero tokens is the winner of the championship.\n\nAll random decisions that are made during the championship are made equally probable and independently.\n\nFor example, if n=4, a = [1, 2, 4, 3], then one of the options for the game (there could be other options) is:\n\nChampionship winners will receive personalized prizes. Therefore, the judges want to know in advance which players have a chance of winning, i.e have a non-zero probability of winning the championship. You have been asked to find all such players.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case consists of one positive integer n (1 ≤ n ≤ 2·10^5) — the number of players in the championship.\n\nThe second line of each test case contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of tokens the players have.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the number of players who have a nonzero probability of winning the championship. On the next line print the numbers of these players in increasing order. Players are numbered starting from one in the order in which they appear in the input.\n\nInput:\n```\n2\n4\n1 2 4 3\n5\n1 1 1 1 1\n```\n\nOutput:\n```\n3\n2 3 4 \n5\n1 2 3 4 5 \n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case consists of one positive integer n (1 ≤ n ≤ 2·10^5) — the number of players in the championship.\n\nThe second line of each test case contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of tokens the players have.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the number of players who have a nonzero probability of winning the championship. On the next line print the numbers of these players in increasing order. Players are numbered starting from one in the order in which they appear in the input.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "*1400"
+    ],
+    "rating": 1400
+}

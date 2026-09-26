@@ -1,0 +1,17 @@
+{
+    "id": "1291B",
+    "contest_id": 1291,
+    "problem_letter": "B",
+    "title": "B. Array Sharpening",
+    "statement": "You're given an array a_1, …, a_n of n non-negative integers.\n\nLet's call it sharpened if and only if there exists an integer 1 ≤ k ≤ n such that a_1 < a_2 < … < a_k and a_k > a_{k+1} > … > a_n. In particular, any strictly increasing or strictly decreasing array is sharpened. For example:\n\nYou can do the following operation as many times as you want: choose any strictly positive element of the array, and decrease it by one. Formally, you can choose any i (1 ≤ i ≤ n) such that a_i > 0 and assign a_i := a_i - 1.\n\nTell if it's possible to make the given array sharpened using some number (possibly zero) of these operations.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 15 000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line of each test case contains a sequence of n non-negative integers a_1, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output a single line containing \"Yes\" (without quotes) if it's possible to make the given array sharpened using the described operations, or \"No\" (without quotes) otherwise.\n\nIn the first and the second test case of the first test, the given array is already sharpened.\n\nIn the third test case of the first test, we can transform the array into [3, 11, 15, 9, 7, 4] (decrease the first element 97 times and decrease the last element 4 times). It is sharpened because 3 < 11 < 15 and 15 > 9 > 7 > 4.\n\nIn the fourth test case of the first test, it's impossible to make the given array sharpened.\n\nInput:\n```\n10\n1\n248618\n3\n12 10 8\n6\n100 11 15 9 7 8\n4\n0 1 1 0\n2\n0 0\n2\n0 1\n2\n1 0\n2\n1 1\n3\n0 1 0\n3\n1 0 1\n```\n\nOutput:\n```\nYes\nYes\nYes\nNo\nNo\nYes\nYes\nYes\nYes\nNo\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 15 000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line of each test case contains a sequence of n non-negative integers a_1, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output a single line containing \"Yes\" (without quotes) if it's possible to make the given array sharpened using the described operations, or \"No\" (without quotes) otherwise.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

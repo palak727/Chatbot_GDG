@@ -1,0 +1,20 @@
+{
+    "id": "1849C",
+    "contest_id": 1849,
+    "problem_letter": "C",
+    "title": "C. Binary String Copying",
+    "statement": "You are given a string s consisting of n characters 0 and/or 1.\n\nYou make m copies of this string, let the i-th copy be the string t_i. Then you perform exactly one operation on each of the copies: for the i-th copy, you sort its substring [l_i; r_i] (the substring from the l_i-th character to the r_i-th character, both endpoints inclusive). Note that each operation affects only one copy, and each copy is affected by only one operation.\n\nYour task is to calculate the number of different strings among t_1, t_2, …, t_m. Note that the initial string s should be counted only if at least one of the copies stays the same after the operation.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of s and the number of copies, respectively.\n\nThe second line contains n characters 0 and/or 1 — the string s.\n\nThen m lines follow. The i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the description of the operation applied to the i-th copy.\n\nThe sum of n over all test cases doesn't exceed 2·10^5. The sum of m over all test cases doesn't exceed 2·10^5.\n\nPrint one integer — the number of different strings among t_1, t_2, …, t_m.\n\nConsider the first example. Copies below are given in order of the input operations. Underlined substrings are substrings that are sorted:\n\nThere are three different strings among t_1, t_2, t_3, t_4, t_5: 000111, 011100 and 101100.\n\nConsider the second example:\n\nThere are three different strings among t_1, t_2, t_3, t_4: 001111, 010111 and 100111.\n\nInput:\n```\n36 51011001 21 32 45 51 66 41001112 21 41 31 21 101 1\n```\n\nOutput:\n```\n3\n3\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of s and the number of copies, respectively.\n\nThe second line contains n characters 0 and/or 1 — the string s.\n\nThen m lines follow. The i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the description of the operation applied to the i-th copy.\n\nThe sum of n over all test cases doesn't exceed 2·10^5. The sum of m over all test cases doesn't exceed 2·10^5.",
+    "output": "Print one integer — the number of different strings among t_1, t_2, …, t_m.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "hashing",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

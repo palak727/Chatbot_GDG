@@ -1,0 +1,19 @@
+{
+    "id": "2025A",
+    "contest_id": 2025,
+    "problem_letter": "A",
+    "title": "A. Two Screens",
+    "statement": "There are two screens which can display sequences of uppercase Latin letters. Initially, both screens display nothing.\n\nIn one second, you can do one of the following two actions:\n\nYou have to calculate the minimum number of seconds you have to spend so that the first screen displays the sequence s, and the second screen displays the sequence t.\n\nThe first line contains one integer q (1 ≤ q ≤ 500) — the number of test cases.\n\nEach test case consists of two lines. The first line contains the string s, and the second line contains the string t (1 ≤ |s|, |t| ≤ 100). Both strings consist of uppercase Latin letters.\n\nFor each test case, print one integer — the minimum possible number of seconds you have to spend so that the first screen displays the sequence s, and the second screen displays the sequence t.\n\nIn the first test case, the following sequence of actions is possible:\n\nIn the second test case, the following sequence of actions is possible:\n\nIn the third test case, the fastest way to display the sequences is to type both of them character by character without copying, and this requires 16 seconds.\n\nInput:\n```\n3GARAGEGARAGEFORSALEABCDEAABCDTRAININGDRAINING\n```\n\nOutput:\n```\n14\n10\n16\n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 500) — the number of test cases.\n\nEach test case consists of two lines. The first line contains the string s, and the second line contains the string t (1 ≤ |s|, |t| ≤ 100). Both strings consist of uppercase Latin letters.",
+    "output": "For each test case, print one integer — the minimum possible number of seconds you have to spend so that the first screen displays the sequence s, and the second screen displays the sequence t.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "strings",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

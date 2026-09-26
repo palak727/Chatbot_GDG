@@ -1,0 +1,18 @@
+{
+    "id": "1804G",
+    "contest_id": 1804,
+    "problem_letter": "G",
+    "title": "G. Flow Control",
+    "statement": "Raj has a single physical network line that connects his office to the Internet. This line bandwidth is b bytes per millisecond.\n\nThere are n users who would like to use this network line to transmit some data. The i-th of them will use the line from millisecond s_i to millisecond f_i inclusive. His initial data rate will be set to d_i. That means he will use data rate equal to d_i for millisecond s_i, and then it will change according to the procedure described below.\n\nThe flow control will happen as follows. Suppose there are m users trying to transmit some data via the given network line during millisecond x. Denote as t_i the data rate that the i-th of these m users has at the beginning of this millisecond. All t_i are non-negative integer values.\n\nRaj knows all the values n, b, s_i, f_i, and d_i, he wants to calculate the total number of bytes transmitted by all the users in the aggregate.\n\nThe first line of the input contains two integers n and b (1 ≤ n ≤ 2·10^5, 1 ≤ b ≤ 10^9), the number of users who will use the line and the line bandwidth, respectively.\n\nEach of the following n lines contains three integers s_i, f_i and d_i (1 ≤ s_i ≤ f_i ≤ 10^9, 1 ≤ d_i ≤ 10^9), denoting that the i-th user will try to transmit data during each millisecond between s_i and f_i inclusive, and the initial data rate of the i-th user.\n\nPrint one integer — the total number of bytes all users will successfully transmit.\n\nConsider the first example.\n\nIn the second example, at each millisecond from the 7-th to the 11-th inclusive, congestion occurs, and the only user decreases their rate twice. However, they don't decrease the speed enough before disconnecting.\n\nConsider the third example.\n\nInput:\n```\n1 3\n1 5 2\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n1 10\n7 11 1000\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2 6\n1 12 1\n8 20 3\n```\n\nOutput:\n```\n64\n```\n\nInput:\n```\n3 10\n1 100 1\n30 60 20\n40 80 6\n```\n\nOutput:\n```\n534\n```",
+    "input": "The first line of the input contains two integers n and b (1 ≤ n ≤ 2·10^5, 1 ≤ b ≤ 10^9), the number of users who will use the line and the line bandwidth, respectively.\n\nEach of the following n lines contains three integers s_i, f_i and d_i (1 ≤ s_i ≤ f_i ≤ 10^9, 1 ≤ d_i ≤ 10^9), denoting that the i-th user will try to transmit data during each millisecond between s_i and f_i inclusive, and the initial data rate of the i-th user.",
+    "output": "Print one integer — the total number of bytes all users will successfully transmit.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "implementation",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1408C",
+    "contest_id": 1408,
+    "problem_letter": "C",
+    "title": "C. Discrete Acceleration",
+    "statement": "There is a road with length l meters. The start of the road has coordinate 0, the end of the road has coordinate l.\n\nThere are two cars, the first standing at the start of the road and the second standing at the end of the road. They will start driving simultaneously. The first car will drive from the start to the end and the second car will drive from the end to the start.\n\nInitially, they will drive with a speed of 1 meter per second. There are n flags at different coordinates a_1, a_2, …, a_n. Each time when any of two cars drives through a flag, the speed of that car increases by 1 meter per second.\n\nFind how long will it take for cars to meet (to reach the same coordinate).\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4): the number of test cases.\n\nThe first line of each test case contains two integers n, l (1 ≤ n ≤ 10^5, 1 ≤ l ≤ 10^9): the number of flags and the length of the road.\n\nThe second line contains n integers a_1, a_2, …, a_n in the increasing order (1 ≤ a_1 < a_2 < … < a_n < l).\n\nIt is guaranteed that the sum of n among all test cases does not exceed 10^5.\n\nFor each test case print a single real number: the time required for cars to meet.\n\nYour answer will be considered correct, if its absolute or relative error does not exceed 10^{-6}. More formally, if your answer is a and jury's answer is b, your answer will be considered correct if (|a-b|)/(max(1, b)) ≤ 10^{-6}.\n\nIn the first test case cars will meet in the coordinate 5.\n\nThe first car will be in the coordinate 1 in 1 second and after that its speed will increase by 1 and will be equal to 2 meters per second. After 2 more seconds it will be in the coordinate 5. So, it will be in the coordinate 5 in 3 seconds.\n\nThe second car will be in the coordinate 9 in 1 second and after that its speed will increase by 1 and will be equal to 2 meters per second. After 2 more seconds it will be in the coordinate 5. So, it will be in the coordinate 5 in 3 seconds.\n\nIn the second test case after 1 second the first car will be in the coordinate 1 and will have the speed equal to 2 meters per second, the second car will be in the coordinate 9 and will have the speed equal to 1 meter per second. So, they will meet after (9-1)/(2+1) = 8/3 seconds. So, the answer is equal to 1 + 8/3 = 11/3.\n\nInput:\n```\n5\n2 10\n1 9\n1 10\n1\n5 7\n1 2 3 4 6\n2 1000000000\n413470354 982876160\n9 478\n1 10 25 33 239 445 453 468 477\n```\n\nOutput:\n```\n3.000000000000000\n3.666666666666667\n2.047619047619048\n329737645.750000000000000\n53.700000000000000\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4): the number of test cases.\n\nThe first line of each test case contains two integers n, l (1 ≤ n ≤ 10^5, 1 ≤ l ≤ 10^9): the number of flags and the length of the road.\n\nThe second line contains n integers a_1, a_2, …, a_n in the increasing order (1 ≤ a_1 < a_2 < … < a_n < l).\n\nIt is guaranteed that the sum of n among all test cases does not exceed 10^5.",
+    "output": "For each test case print a single real number: the time required for cars to meet.\n\nYour answer will be considered correct, if its absolute or relative error does not exceed 10^{-6}. More formally, if your answer is a and jury's answer is b, your answer will be considered correct if (|a-b|)/(max(1, b)) ≤ 10^{-6}.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "implementation",
+        "math",
+        "two pointers",
+        "*1500"
+    ],
+    "rating": 1500
+}

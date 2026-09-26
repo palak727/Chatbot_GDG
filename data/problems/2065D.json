@@ -1,0 +1,17 @@
+{
+    "id": "2065D",
+    "contest_id": 2065,
+    "problem_letter": "D",
+    "title": "D. Skibidus and Sigma",
+    "statement": "Let's denote the score of an array b with k elements as ∑_{i=1}^kleft(∑_{j=1}^ib_jright). In other words, let S_i denote the sum of the first i elements of b. Then, the score can be denoted as S_1+S_2+…+S_k.\n\nSkibidus is given n arrays a_1,a_2,…,a_n, each of which contains m elements. Being the sigma that he is, he would like to concatenate them in any order to form a single array containing n·m elements. Please find the maximum possible score Skibidus can achieve with his concatenated array!\n\nFormally, among all possible permutations^{∗} p of length n, output the maximum score of a_p_1 + a_p_2 + … + a_p_n, where + represents concatenation^{†}.\n\n^{∗}A permutation of length n contains all integers from 1 to n exactly once.\n\n^{†}The concatenation of two arrays c and d with lengths e and f respectively (i.e. c + d) is c_1, c_2, …, c_e, d_1, d_2, … d_f.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 2·10^5) — the number of arrays and the length of each array.\n\nThe i'th of the next n lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^6) — the elements of the i'th array.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum score among all possible permutations p on a new line.\n\nFor the first test case, there are two possibilities for p:\n\nThe maximum possible score is 41.\n\nIn the second test case, one optimal arrangement of the final concatenated array is [4,1,2,1,2,2,2,2,3,2,1,2]. We can calculate that the score is 162.\n\nInput:\n```\n32 24 46 13 42 2 2 23 2 1 24 1 2 12 33 4 51 1 9\n```\n\nOutput:\n```\n41\n162\n72\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 2·10^5) — the number of arrays and the length of each array.\n\nThe i'th of the next n lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^6) — the elements of the i'th array.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum score among all possible permutations p on a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

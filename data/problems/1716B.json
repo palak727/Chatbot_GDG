@@ -1,0 +1,17 @@
+{
+    "id": "1716B",
+    "contest_id": 1716,
+    "problem_letter": "B",
+    "title": "B. Permutation Chain",
+    "statement": "A permutation of length n is a sequence of integers from 1 to n such that each integer appears in it exactly once.\n\nLet the fixedness of a permutation p be the number of fixed points in it — the number of positions j such that p_j = j, where p_j is the j-th element of the permutation p.\n\nYou are asked to build a sequence of permutations a_1, a_2, …, starting from the identity permutation (permutation a_1 = [1, 2, …, n]). Let's call it a permutation chain. Thus, a_i is the i-th permutation of length n.\n\nFor every i from 2 onwards, the permutation a_i should be obtained from the permutation a_{i-1} by swapping any two elements in it (not necessarily neighboring). The fixedness of the permutation a_i should be strictly lower than the fixedness of the permutation a_{i-1}.\n\nConsider some chains for n = 3:\n\nFind the longest permutation chain. If there are multiple longest answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 99) — the number of testcases.\n\nThe only line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the required length of permutations in the chain.\n\nFor each testcase, first, print the length of a permutation chain k.\n\nThen print k permutations a_1, a_2, …, a_k. a_1 should be an identity permutation of length n ([1, 2, …, n]). For each i from 2 to k, a_i should be obtained by swapping two elements in a_{i-1}. It should also have a strictly lower fixedness than a_{i-1}.\n\nInput:\n```\n223\n```\n\nOutput:\n```\n2\n1 2\n2 1\n3\n1 2 3\n3 2 1\n3 1 2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 99) — the number of testcases.\n\nThe only line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the required length of permutations in the chain.",
+    "output": "For each testcase, first, print the length of a permutation chain k.\n\nThen print k permutations a_1, a_2, …, a_k. a_1 should be an identity permutation of length n ([1, 2, …, n]). For each i from 2 to k, a_i should be obtained by swapping two elements in a_{i-1}. It should also have a strictly lower fixedness than a_{i-1}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

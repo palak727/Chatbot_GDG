@@ -1,0 +1,17 @@
+{
+    "id": "1514C",
+    "contest_id": 1514,
+    "problem_letter": "C",
+    "title": "C. Product 1 Modulo N",
+    "statement": "Now you get Baby Ehab's first words: \"Given an integer n, find the longest subsequence of [1,2, …, n-1] whose product is 1 modulo n.\" Please solve the problem.\n\nA sequence b is a subsequence of an array a if b can be obtained from a by deleting some (possibly all) elements. The product of an empty subsequence is equal to 1.\n\nThe only line contains the integer n (2 ≤ n ≤ 10^5).\n\nThe first line should contain a single integer, the length of the longest subsequence.\n\nThe second line should contain the elements of the subsequence, in increasing order.\n\nIf there are multiple solutions, you can print any.\n\nIn the first example, the product of the elements is 6 which is congruent to 1 modulo 5. The only longer subsequence is [1,2,3,4]. Its product is 24 which is congruent to 4 modulo 5. Hence, the answer is [1,2,3].\n\nInput:\n```\n5\n```\n\nOutput:\n```\n3\n1 2 3 \n```\n\nInput:\n```\n8\n```\n\nOutput:\n```\n4\n1 3 5 7 \n```",
+    "input": "The only line contains the integer n (2 ≤ n ≤ 10^5).",
+    "output": "The first line should contain a single integer, the length of the longest subsequence.\n\nThe second line should contain the elements of the subsequence, in increasing order.\n\nIf there are multiple solutions, you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

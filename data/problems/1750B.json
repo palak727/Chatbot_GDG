@@ -1,0 +1,18 @@
+{
+    "id": "1750B",
+    "contest_id": 1750,
+    "problem_letter": "B",
+    "title": "B. Maximum Substring",
+    "statement": "A binary string is a string consisting only of the characters 0 and 1. You are given a binary string s.\n\nFor some non-empty substring^dagger t of string s containing x characters 0 and y characters 1, define its cost as:\n\nGiven a binary string s of length n, find the maximum cost across all its non-empty substrings.\n\n^dagger A string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum cost across all substrings.\n\nIn the first test case, we can take a substring 111. It contains 3 characters 1 and 0 characters 0. So a = 3, b = 0 and its cost is 3^2 = 9.\n\nIn the second test case, we can take the whole string. It contains 4 characters 1 and 3 characters 0. So a = 4, b = 3 and its cost is 4·3 = 12.\n\nIn the third test case, we can can take a substring 1111 and its cost is 4^2 = 16.\n\nIn the fourth test case, we can take the whole string and cost is 4·3 = 12.\n\nIn the fifth test case, we can take a substring 000 and its cost is 3·3 = 9.\n\nIn the sixth test case, we can only take the substring 0 and its cost is 1·1 = 1.\n\nInput:\n```\n6511100711001106011110710010104100010\n```\n\nOutput:\n```\n9\n12\n16\n12\n9\n1\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum cost across all substrings.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

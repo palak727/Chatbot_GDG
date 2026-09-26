@@ -1,0 +1,17 @@
+{
+    "id": "1228A",
+    "contest_id": 1228,
+    "problem_letter": "A",
+    "title": "A. Distinct Digits",
+    "statement": "You have two integers l and r. Find an integer x which satisfies the conditions below:\n\nIf there are multiple answers, print any of them.\n\nThe first line contains two integers l and r (1 ≤ l ≤ r ≤ 10^5).\n\nIf an answer exists, print any of them. Otherwise, print -1.\n\nIn the first example, 123 is one of the possible answers. However, 121 can't be the answer, because there are multiple 1s on different digits.\n\nIn the second example, there is no valid answer.\n\nInput:\n```\n121 130\n```\n\nOutput:\n```\n123\n```\n\nInput:\n```\n98766 100000\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers l and r (1 ≤ l ≤ r ≤ 10^5).",
+    "output": "If an answer exists, print any of them. Otherwise, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

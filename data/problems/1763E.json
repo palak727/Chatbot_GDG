@@ -1,0 +1,19 @@
+{
+    "id": "1763E",
+    "contest_id": 1763,
+    "problem_letter": "E",
+    "title": "E. Node Pairs",
+    "statement": "Let's call an ordered pair of nodes (u, v) in a directed graph unidirectional if u ≠ v, there exists a path from u to v, and there are no paths from v to u.\n\nA directed graph is called p-reachable if it contains exactly p ordered pairs of nodes (u, v) such that u < v and u and v are reachable from each other. Find the minimum number of nodes required to create a p-reachable directed graph.\n\nAlso, among all such p-reachable directed graphs with the minimum number of nodes, let G denote a graph which maximizes the number of unidirectional pairs of nodes. Find this number.\n\nThe first and only line contains a single integer p (0 ≤ p ≤ 2·10^5) — the number of ordered pairs of nodes.\n\nPrint a single line containing two integers — the minimum number of nodes required to create a p-reachable directed graph, and the maximum number of unidirectional pairs of nodes among all such p-reachable directed graphs with the minimum number of nodes.\n\nIn the first test case, the minimum number of nodes required to create a 3-reachable directed graph is 3. Among all 3-reachable directed graphs with 3 nodes, the following graph G is one of the graphs with the maximum number of unidirectional pairs of nodes, which is 0.\n\nInput:\n```\n3\n```\n\nOutput:\n```\n3 0\n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n5 6\n```\n\nInput:\n```\n0\n```\n\nOutput:\n```\n0 0\n```",
+    "input": "The first and only line contains a single integer p (0 ≤ p ≤ 2·10^5) — the number of ordered pairs of nodes.",
+    "output": "Print a single line containing two integers — the minimum number of nodes required to create a p-reachable directed graph, and the maximum number of unidirectional pairs of nodes among all such p-reachable directed graphs with the minimum number of nodes.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

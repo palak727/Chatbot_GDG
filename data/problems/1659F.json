@@ -1,0 +1,19 @@
+{
+    "id": "1659F",
+    "contest_id": 1659,
+    "problem_letter": "F",
+    "title": "F. Tree and Permutation Game",
+    "statement": "There is a tree of n vertices and a permutation p of size n. A token is present on vertex x of the tree.\n\nAlice and Bob are playing a game. Alice is in control of the permutation p, and Bob is in control of the token on the tree. In Alice's turn, she must pick two distinct numbers u and v (not positions; u ≠ v), such that the token is neither at vertex u nor vertex v on the tree, and swap their positions in the permutation p. In Bob's turn, he must move the token to an adjacent vertex from the one it is currently on.\n\nAlice wants to sort the permutation in increasing order. Bob wants to prevent that. Alice wins if the permutation is sorted in increasing order at the beginning or end of her turn. Bob wins if he can make the game go on for an infinite number of moves (which means that Alice is never able to get a sorted permutation). Both players play optimally. Alice makes the first move.\n\nGiven the tree, the permutation p, and the vertex x on which the token initially is, find the winner of the game.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of each test case follows.\n\nThe first line of each test case has two integers n and x (3 ≤ n ≤ 2·10^5; 1 ≤ x ≤ n).\n\nEach of the next n-1 lines contains two integers a and b (1 ≤ a, b ≤ n, a ≠ b) indicating an undirected edge between vertex a and vertex b. It is guaranteed that the given edges form a tree.\n\nThe next line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the permutation p.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one line containing Alice or Bob — the winner of the game. The output is case-sensitive.\n\nHere is the explanation for the first example:\n\nIn the first test case, there is a way for Alice to win. Here is a possible sequence of moves:\n\nIn the second test case, Alice cannot win since Bob can make the game go on forever. Here is the sequence of moves:\n\nIn the third test case, Alice wins immediately since the permutation is already sorted.\n\nInput:\n```\n36 31 33 24 33 65 32 1 3 6 4 53 21 23 21 3 23 21 23 21 2 3\n```\n\nOutput:\n```\nAlice\nBob\nAlice\n```\n\nInput:\n```\n111 43 115 910 34 82 41 86 88 74 55 117 4 9 8 6 5 11 10 2 3 1\n```\n\nOutput:\n```\nAlice\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of each test case follows.\n\nThe first line of each test case has two integers n and x (3 ≤ n ≤ 2·10^5; 1 ≤ x ≤ n).\n\nEach of the next n-1 lines contains two integers a and b (1 ≤ a, b ≤ n, a ≠ b) indicating an undirected edge between vertex a and vertex b. It is guaranteed that the given edges form a tree.\n\nThe next line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the permutation p.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one line containing Alice or Bob — the winner of the game. The output is case-sensitive.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "games",
+        "graphs",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

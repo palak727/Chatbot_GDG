@@ -1,0 +1,24 @@
+{
+    "id": "1633E",
+    "contest_id": 1633,
+    "problem_letter": "E",
+    "title": "E. Spanning Tree Queries",
+    "statement": "You are given a connected weighted undirected graph, consisting of n vertices and m edges.\n\nYou are asked k queries about it. Each query consists of a single integer x. For each query, you select a spanning tree in the graph. Let the weights of its edges be w_1, w_2, …, w_{n-1}. The cost of a spanning tree is ∑ limits_{i=1}^{n-1} |w_i - x| (the sum of absolute differences between the weights and x). The answer to a query is the lowest cost of a spanning tree.\n\nThe queries are given in a compressed format. The first p (1 ≤ p ≤ k) queries q_1, q_2, …, q_p are provided explicitly. For queries from p+1 to k, q_j = (q_{j-1}·a + b) mod c.\n\nPrint the xor of answers to all queries.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 50; n - 1 ≤ m ≤ 300) — the number of vertices and the number of edges in the graph.\n\nEach of the next m lines contains a description of an undirected edge: three integers v, u and w (1 ≤ v, u ≤ n; v ≠ u; 0 ≤ w ≤ 10^8) — the vertices the edge connects and its weight. Note that there might be multiple edges between a pair of vertices. The edges form a connected graph.\n\nThe next line contains five integers p, k, a, b and c (1 ≤ p ≤ 10^5; p ≤ k ≤ 10^7; 0 ≤ a, b ≤ 10^8; 1 ≤ c ≤ 10^8) — the number of queries provided explicitly, the total number of queries and parameters to generate the queries.\n\nThe next line contains p integers q_1, q_2, …, q_p (0 ≤ q_j < c) — the first p queries.\n\nPrint a single integer — the xor of answers to all queries.\n\nThe queries in the first example are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0. The answers are 11, 9, 7, 3, 1, 5, 8, 7, 5, 7, 11.\n\nThe queries in the second example are 3, 0, 2, 1, 6, 0, 3, 5, 4, 1. The answers are 14, 19, 15, 16, 11, 19, 14, 12, 13, 16.\n\nThe queries in the third example are 75, 0, 0, …. The answers are 50, 150, 150, ….\n\nInput:\n```\n5 8\n4 1 4\n3 1 0\n3 5 3\n2 5 4\n3 4 8\n4 3 4\n4 2 8\n5 3 9\n3 11 1 1 10\n0 1 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6 7\n2 4 0\n5 4 7\n2 4 0\n2 1 7\n2 6 1\n3 4 4\n1 4 8\n4 10 3 3 7\n3 0 2 1\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n3 3\n1 2 50\n2 3 100\n1 3 150\n1 10000000 0 0 100000000\n75\n```\n\nOutput:\n```\n164\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 50; n - 1 ≤ m ≤ 300) — the number of vertices and the number of edges in the graph.\n\nEach of the next m lines contains a description of an undirected edge: three integers v, u and w (1 ≤ v, u ≤ n; v ≠ u; 0 ≤ w ≤ 10^8) — the vertices the edge connects and its weight. Note that there might be multiple edges between a pair of vertices. The edges form a connected graph.\n\nThe next line contains five integers p, k, a, b and c (1 ≤ p ≤ 10^5; p ≤ k ≤ 10^7; 0 ≤ a, b ≤ 10^8; 1 ≤ c ≤ 10^8) — the number of queries provided explicitly, the total number of queries and parameters to generate the queries.\n\nThe next line contains p integers q_1, q_2, …, q_p (0 ≤ q_j < c) — the first p queries.",
+    "output": "Print a single integer — the xor of answers to all queries.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2057H",
+    "contest_id": 2057,
+    "problem_letter": "H",
+    "title": "H. Coffee Break",
+    "statement": "There are very long classes in the T-Generation. In one day, you need to have time to analyze the training and thematic contests, give a lecture with new material, and, if possible, also hold a mini-seminar. Therefore, there is a break where students can go to drink coffee and chat with each other.\n\nThere are a total of n+2 coffee machines located in sequentially arranged rooms along a long corridor. The coffee machines are numbered from 0 to n+1, and immediately after the break starts, there are a_i students gathered around the i-th coffee machine.\n\nThe students are talking too loudly among themselves, and the teachers need to make a very important announcement. Therefore, they want to gather the maximum number of students around some single coffee machine. The teachers are too lazy to run around the corridors and gather the students, so they came up with a more sophisticated way to manipulate them:\n\nThe teachers have not yet decided where they will gather the students, so for each i from 1 to n, you should determine what is the maximum number of students that can be gathered around the i-th coffee machine.\n\nThe teachers can turn off the lights in any rooms at their discretion, in any order, possibly turning off the lights in the same room multiple times.\n\nNote that the values of a_0 and a_{n+1} do not affect the answer to the problem, so their values will not be given to you.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nIn the first line of each test case, there is an integer n (1 ≤ n ≤ 10^6).\n\nIn the second line of each test case, there are integers a_1, …, a_n (0 ≤ a_i ≤ 10^9) — the number of students around coffee machines numbered 1, 2, …, n.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.\n\nFor each test case, output n integers b_1, …, b_n, where b_i is the maximum number of students that can be around coffee machines number i.\n\nLet's analyze the first test case:\n\nInput:\n```\n328 052 2 2 2 250 0 9 0 0\n```\n\nOutput:\n```\n8 4 \n4 5 4 5 4 \n4 6 9 6 4 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nIn the first line of each test case, there is an integer n (1 ≤ n ≤ 10^6).\n\nIn the second line of each test case, there are integers a_1, …, a_n (0 ≤ a_i ≤ 10^9) — the number of students around coffee machines numbered 1, 2, …, n.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.",
+    "output": "For each test case, output n integers b_1, …, b_n, where b_i is the maximum number of students that can be around coffee machines number i.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

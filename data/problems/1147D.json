@@ -1,0 +1,17 @@
+{
+    "id": "1147D",
+    "contest_id": 1147,
+    "problem_letter": "D",
+    "title": "D. Palindrome XOR",
+    "statement": "You are given a string s consisting of characters \"1\", \"0\", and \"?\". The first character of s is guaranteed to be \"1\". Let m be the number of characters in s.\n\nCount the number of ways we can choose a pair of integers a, b that satisfies the following:\n\nCompute this count modulo 998244353.\n\nThe first line contains a single string s (1 ≤ |s| ≤ 1,000). s consists only of characters \"1\", \"0\" and \"?\". It is guaranteed that the first character of s is a \"1\".\n\nPrint a single integer, the count of pairs that satisfy the conditions modulo 998244353.\n\nFor the first example, the pairs in base-2 are (111, 10001), (11, 10101), (1001, 11111).\n\nInput:\n```\n10110\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n1?0???10\n```\n\nOutput:\n```\n44\n```\n\nInput:\n```\n1?????????????????????????????????????\n```\n\nOutput:\n```\n519569202\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single string s (1 ≤ |s| ≤ 1,000). s consists only of characters \"1\", \"0\" and \"?\". It is guaranteed that the first character of s is a \"1\".",
+    "output": "Print a single integer, the count of pairs that satisfy the conditions modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "*2400"
+    ],
+    "rating": 2400
+}

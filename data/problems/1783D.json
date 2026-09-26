@@ -1,0 +1,18 @@
+{
+    "id": "1783D",
+    "contest_id": 1783,
+    "problem_letter": "D",
+    "title": "D. Different Arrays",
+    "statement": "You are given an array a consisting of n integers.\n\nYou have to perform the sequence of n-2 operations on this array:\n\nSo, during the i-th operation, you add the value of a_{i+1} to one of its neighbors, and subtract it from the other neighbor.\n\nFor example, if you have the array [1, 2, 3, 4, 5], one of the possible sequences of operations is:\n\nSo, the resulting array is [3, 1, -4, 5, 10].\n\nAn array is reachable if it can be obtained by performing the aforementioned sequence of operations on a. You have to calculate the number of reachable arrays, and print it modulo 998244353.\n\nThe first line contains one integer n (3 ≤ n ≤ 300).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 300).\n\nPrint one integer — the number of reachable arrays. Since the answer can be very large, print its remainder modulo 998244353.\n\nInput:\n```\n4\n1 1 1 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5\n1 2 3 5 0\n```\n\nOutput:\n```\n7\n```",
+    "input": "The first line contains one integer n (3 ≤ n ≤ 300).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 300).",
+    "output": "Print one integer — the number of reachable arrays. Since the answer can be very large, print its remainder modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "*2000"
+    ],
+    "rating": 2000
+}

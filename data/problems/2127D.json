@@ -1,0 +1,19 @@
+{
+    "id": "2127D",
+    "contest_id": 2127,
+    "problem_letter": "D",
+    "title": "D. Root was Built by Love, Broken by Destiny",
+    "statement": "Heartfall River runs horizontally through Destinyland and divides it into the northern and southern sides.\n\nEngineer Root wants to build n houses along the river, numbered from 1 to n. All houses on the northern side and all houses on the southern side must lie along straight lines parallel to Heartfall River.\n\nThere will be m bridges, with the i-th bridge connecting house u_i and house v_i (u_i ≠ v_i). It is guaranteed that all n houses are connected by these bridges, that is, you can travel from any house to any other by crossing bridges. Also, there are no two bridges connecting the same pair of houses.\n\nRoot wants to know how many ways there are to arrange the n houses along the river, modulo 10^9+7, such that the following conditions hold for the planned m bridges:\n\nTwo arrangements are considered different if at least one of the following conditions holds:\n\nSince Root is distracted by his ex, whom destiny separated from him, he asks you to calculate the number of ways to arrange the houses along the river, modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ minleft((n(n-1))/2, 2·10^5right)) — the number of houses and the number of bridges.\n\nThen m lines follow, the i-th line containing two integers u_i and v_i (1 ≤ u_i,v_i ≤ n, u_i≠ v_i) — the two houses that the i-th bridge connects.\n\nIt is guaranteed that all the n houses are connected by the bridges, and there are no two bridges connecting the same pair of houses.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5, and the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of ways to arrange the n houses along the river, modulo 10^9+7.\n\nIn the first test case, either house 1 should be built on the northern side and house 2 on the southern side, or vice versa.\n\nIn the second test case, at least two houses must be built on the same side of the river. But every pair of houses is connected by a bridge. So in every arrangement, at least one bridge will not cross the river. Thus, the answer is 0.\n\nIn the third test case, one of the possible arrangements of the houses is provided in the problem statement.\n\nInput:\n```\n42 11 23 31 21 32 35 41 21 33 43 54 31 21 31 4\n```\n\nOutput:\n```\n2\n0\n8\n12\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ minleft((n(n-1))/2, 2·10^5right)) — the number of houses and the number of bridges.\n\nThen m lines follow, the i-th line containing two integers u_i and v_i (1 ≤ u_i,v_i ≤ n, u_i≠ v_i) — the two houses that the i-th bridge connects.\n\nIt is guaranteed that all the n houses are connected by the bridges, and there are no two bridges connecting the same pair of houses.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5, and the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of ways to arrange the n houses along the river, modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

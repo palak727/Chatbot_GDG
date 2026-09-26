@@ -1,0 +1,17 @@
+{
+    "id": "1879B",
+    "contest_id": 1879,
+    "problem_letter": "B",
+    "title": "B. Chips on the Board",
+    "statement": "You are given a board of size n × n (n rows and n colums) and two arrays of positive integers a and b of size n.\n\nYour task is to place the chips on this board so that the following condition is satisfied for every cell (i, j):\n\nThe cost of putting a chip in the cell (i, j) is equal to a_i + b_j.\n\nFor example, for n=3, a=[1, 4, 1] and b=[3, 2, 2]. One of the possible chip placements is as follows:\n\nThe total cost of that placement is (1+3) + (1+2) + (1+2) = 10.\n\nCalculate the minimum possible total cost of putting chips according to the rules above.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nThe sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a single integer — the minimum possible total cost of putting chips according to the rules.\n\nThe first test case of the example is described in the statement.\n\nInput:\n```\n431 4 13 2 214524 52 355 2 4 5 33 4 2 1 5\n```\n\nOutput:\n```\n10\n9\n13\n24\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nThe sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the minimum possible total cost of putting chips according to the rules.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

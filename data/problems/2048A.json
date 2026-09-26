@@ -1,0 +1,20 @@
+{
+    "id": "2048A",
+    "contest_id": 2048,
+    "problem_letter": "A",
+    "title": "A. Kevin and Combination Lock",
+    "statement": "Kevin is trapped in Lakeside Village by Grace. At the exit of the village, there is a combination lock that can only be unlocked if Kevin solves it.\n\nThe combination lock starts with an integer x . Kevin can perform one of the following two operations zero or more times:\n\nWhen the value of x on the combination lock becomes 0 , Kevin can unlock the lock and escape from Lakeside Village. Please determine whether it is possible for Kevin to unlock the combination lock and escape.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nThe only line of each test case contains a positive integer x (1≤ x≤ 10^9).\n\nFor each test case, output \"YES\" or \"NO\" (without quotes) in one line, representing whether Kevin can unlock the combination lock and escape. You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nFor the first test case, 165xrightarrow-33132xrightarrow-3399xrightarrow-3366xrightarrow-3333xrightarrow-330.\n\nFor the second test case, 6369xrightarrow-336colorred336xrightarrowremove \"33\"66xrightarrow-3333xrightarrow-330.\n\nFor the third test case, it can be proven that, regardless of the operations performed, 666 cannot be transformed into 0.\n\nInput:\n```\n51656369666114514133333332\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nThe only line of each test case contains a positive integer x (1≤ x≤ 10^9).",
+    "output": "For each test case, output \"YES\" or \"NO\" (without quotes) in one line, representing whether Kevin can unlock the combination lock and escape. You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

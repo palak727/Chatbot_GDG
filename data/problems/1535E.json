@@ -1,0 +1,21 @@
+{
+    "id": "1535E",
+    "contest_id": 1535,
+    "problem_letter": "E",
+    "title": "E. Gold Transfer",
+    "statement": "You are given a rooted tree. Each vertex contains a_i tons of gold, which costs c_i per one ton. Initially, the tree consists only a root numbered 0 with a_0 tons of gold and price c_0 per ton.\n\nThere are q queries. Each query has one of two types:\n\nIf we buy x tons of gold in some vertex v the remaining amount of gold in it decreases by x (of course, we can't buy more gold that vertex has at the moment). For each query of the second type, calculate the resulting amount of gold we bought and the amount of money we should spend.\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query, so don't forget to flush output after printing answers. You can use functions like fflush(stdout) in C++ and BufferedWriter.flush in Java or similar after each writing in your program. In standard (if you don't tweak I/O), endl flushes cout in C++ and System.out.println in Java (or println in Kotlin) makes automatic flush as well.\n\nThe first line contains three integers q, a_0 and c_0 (1 ≤ q ≤ 3·10^5; 1 ≤ a_0, c_0 < 10^6) — the number of queries, the amount of gold in the root and its price.\n\nNext q lines contain descriptions of queries; The i-th query has one of two types:\n\nIt's guaranteed that there is at least one query of the second type.\n\nFor each query of the second type, print the resulting amount of gold we bought and the minimum amount of money we should spend.\n\nExplanation of the sample:\n\nAt the first query, the tree consist of root, so we purchase 2 tons of gold and pay 2·2 = 4. 3 tons remain in the root.\n\nAt the second query, we add vertex 2 as a son of vertex 0. Vertex 2 now has 3 tons of gold with price 4 per one ton.\n\nAt the third query, a path from 2 to 0 consists of only vertices 0 and 2 and since c_0 < c_2 we buy 3 remaining tons of gold in vertex 0 and 1 ton in vertex 2. So we bought 3 + 1 = 4 tons and paid 3·2 + 1·4 = 10. Now, in vertex 0 no gold left and 2 tons of gold remain in vertex 2.\n\nAt the fourth query, we add vertex 4 as a son of vertex 0. Vertex 4 now has 1 ton of gold with price 3.\n\nAt the fifth query, a path from 4 to 0 consists of only vertices 0 and 4. But since no gold left in vertex 0 and only 1 ton is in vertex 4, we buy 1 ton of gold in vertex 4 and spend 1·3 = 3. Now, in vertex 4 no gold left.\n\nInput:\n```\n5 5 2\n2 0 2\n1 0 3 4\n2 2 4\n1 0 1 3\n2 4 2\n```\n\nOutput:\n```\n2 4\n4 10\n1 3\n```",
+    "input": "The first line contains three integers q, a_0 and c_0 (1 ≤ q ≤ 3·10^5; 1 ≤ a_0, c_0 < 10^6) — the number of queries, the amount of gold in the root and its price.\n\nNext q lines contain descriptions of queries; The i-th query has one of two types:\n\nIt's guaranteed that there is at least one query of the second type.",
+    "output": "For each query of the second type, print the resulting amount of gold we bought and the minimum amount of money we should spend.",
+    "time_limit": "4.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "greedy",
+        "interactive",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

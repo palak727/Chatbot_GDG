@@ -1,0 +1,19 @@
+{
+    "id": "1913D",
+    "contest_id": 1913,
+    "problem_letter": "D",
+    "title": "D. Array Collapse",
+    "statement": "You are given an array [p_1, p_2, …, p_n], where all elements are distinct.\n\nYou can perform several (possibly zero) operations with it. In one operation, you can choose a contiguous subsegment of p and remove all elements from that subsegment, except for the minimum element on that subsegment. For example, if p = [3, 1, 4, 7, 5, 2, 6] and you choose the subsegment from the 3-rd element to the 6-th element, the resulting array is [3, 1, 2, 6].\n\nAn array a is called reachable if it can be obtained from p using several (maybe zero) aforementioned operations. Calculate the number of reachable arrays, and print it modulo 998244353.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer n (1 ≤ n ≤ 3·10^5). The second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print one integer — the number of reachable arrays, taken modulo 998244353.\n\nInput:\n```\n322 142 4 1 3510 2 6 3 4\n```\n\nOutput:\n```\n2\n6\n12\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer n (1 ≤ n ≤ 3·10^5). The second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print one integer — the number of reachable arrays, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

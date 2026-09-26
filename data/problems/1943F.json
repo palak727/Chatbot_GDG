@@ -1,0 +1,16 @@
+{
+    "id": "1943F",
+    "contest_id": 1943,
+    "problem_letter": "F",
+    "title": "F. Minimum Hamming Distance",
+    "statement": "You are given a binary string^dagger s of length n.\n\nA binary string p of the same length n is called good if for every i (1 ≤ i ≤ n), there exist indices l and r such that:\n\nYou are given another binary string t of length n. Find the minimum Hamming distance^S between t and any good string g.\n\n^dagger A binary string is a string that only consists of characters mathtt0 and mathtt1.\n\n^ddagger Character c is a mode of string p of length m if the number of occurrences of c in p is at least lceil m/2 rceil. For example, mathtt0 is a mode of mathtt010, mathtt1 is not a mode of mathtt010, and both mathtt0 and mathtt1 are modes of mathtt011010.\n\n^S The Hamming distance of strings a and b of length m is the number of indices i such that 1 ≤ i ≤ m and a_i ≠ b_i.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^4) — the length of the binary string s.\n\nThe second line of each test case contains a binary string s of length n consisting of characters 0 and 1.\n\nThe third line of each test case contains a binary string t of length n consisting of characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6, with the additional assurance that the sum of n^2 over all test cases does not exceed 10^8\n\nFor each test case, print the minimum Hamming distance between t and any good string g.\n\nIn the first test case, g=mathtt000 is a good string which has Hamming distance 0 from t.\n\nIn the second test case, g=mathtt0011 is a good string which has Hamming distance 2 from t. It can be proven that there are no good strings with Hamming distance less than 2 from t.\n\nIn the third test case, g=mathtt001100 is a good string which has Hamming distance 1 from t.\n\nInput:\n```\n330000004000011116111111000100\n```\n\nOutput:\n```\n0\n2\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^4) — the length of the binary string s.\n\nThe second line of each test case contains a binary string s of length n consisting of characters 0 and 1.\n\nThe third line of each test case contains a binary string t of length n consisting of characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6, with the additional assurance that the sum of n^2 over all test cases does not exceed 10^8",
+    "output": "For each test case, print the minimum Hamming distance between t and any good string g.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "dp",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2050G",
+    "contest_id": 2050,
+    "problem_letter": "G",
+    "title": "G. Tree Destruction",
+    "statement": "Given a tree^{∗} with n vertices. You can choose two vertices a and b once and remove all vertices on the path from a to b, including the vertices themselves. If you choose a=b, only one vertex will be removed.\n\nYour task is to find the maximum number of connected components^{†} that can be formed after removing the path from the tree.\n\n^{∗}A tree is a connected graph without cycles.\n\n^{†}A connected component is a set of vertices such that there is a path along the edges from any vertex to any other vertex in the set (and it is not possible to reach vertices not belonging to this set)\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 2·10^5) — the size of the tree.\n\nThe next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — the vertices connected by an edge. It is guaranteed that the edges form a tree.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the maximum number of connected components that can be achieved using the described operation.\n\nInput:\n```\n621 251 22 33 43 541 22 33 452 13 14 15 462 13 14 15 36 362 13 24 25 36 4\n```\n\nOutput:\n```\n1\n3\n2\n3\n4\n3\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 2·10^5) — the size of the tree.\n\nThe next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — the vertices connected by an edge. It is guaranteed that the edges form a tree.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the maximum number of connected components that can be achieved using the described operation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

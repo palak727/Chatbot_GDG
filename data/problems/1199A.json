@@ -1,0 +1,16 @@
+{
+    "id": "1199A",
+    "contest_id": 1199,
+    "problem_letter": "A",
+    "title": "A. City Day",
+    "statement": "For years, the Day of city N was held in the most rainy day of summer. New mayor decided to break this tradition and select a not-so-rainy day for the celebration. The mayor knows the weather forecast for the n days of summer. On the i-th day, a_i millimeters of rain will fall. All values a_i are distinct.\n\nThe mayor knows that citizens will watch the weather x days before the celebration and y days after. Because of that, he says that a day d is not-so-rainy if a_d is smaller than rain amounts at each of x days before day d and and each of y days after day d. In other words, a_d < a_j should hold for all d - x ≤ j < d and d < j ≤ d + y. Citizens only watch the weather during summer, so we only consider such j that 1 ≤ j ≤ n.\n\nHelp mayor find the earliest not-so-rainy day of summer.\n\nThe first line contains three integers n, x and y (1 ≤ n ≤ 100,000, 0 ≤ x, y ≤ 7) — the number of days in summer, the number of days citizens watch the weather before the celebration and the number of days they do that after.\n\nThe second line contains n distinct integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9), where a_i denotes the rain amount on the i-th day.\n\nPrint a single integer — the index of the earliest not-so-rainy day of summer. We can show that the answer always exists.\n\nIn the first example days 3 and 8 are not-so-rainy. The 3-rd day is earlier.\n\nIn the second example day 3 is not not-so-rainy, because 3 + y = 6 and a_3 > a_6. Thus, day 8 is the answer. Note that 8 + y = 11, but we don't consider day 11, because it is not summer.\n\nInput:\n```\n10 2 2\n10 9 6 7 8 3 2 1 4 5\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n10 2 3\n10 9 6 7 8 3 2 1 4 5\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5 5 5\n100000 10000 1000 100 10\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains three integers n, x and y (1 ≤ n ≤ 100,000, 0 ≤ x, y ≤ 7) — the number of days in summer, the number of days citizens watch the weather before the celebration and the number of days they do that after.\n\nThe second line contains n distinct integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9), where a_i denotes the rain amount on the i-th day.",
+    "output": "Print a single integer — the index of the earliest not-so-rainy day of summer. We can show that the answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

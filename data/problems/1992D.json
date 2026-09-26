@@ -1,0 +1,18 @@
+{
+    "id": "1992D",
+    "contest_id": 1992,
+    "problem_letter": "D",
+    "title": "D. Test of Love",
+    "statement": "ErnKor is ready to do anything for Julen, even to swim through crocodile-infested swamps. We decided to test this love. ErnKor will have to swim across a river with a width of 1 meter and a length of n meters.\n\nThe river is very cold. Therefore, in total (that is, throughout the entire swim from 0 to n+1) ErnKor can swim in the water for no more than k meters. For the sake of humanity, we have added not only crocodiles to the river, but also logs on which he can jump. Our test is as follows:\n\nInitially, ErnKor is on the left bank and needs to reach the right bank. They are located at the 0 and n+1 meters respectively. The river can be represented as n segments, each with a length of 1 meter. Each segment contains either a log 'L', a crocodile 'C', or just water 'W'. ErnKor can move as follows:\n\nDetermine if ErnKor can reach the right bank.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three numbers n, m, k (0 ≤ k ≤ 2·10^5, 1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10) — the length of the river, the distance ErnKor can jump, and the number of meters ErnKor can swim without freezing.\n\nThe second line of each test case contains a string a of length n. a_i denotes the object located at the i-th meter. (a_i ∈ {'W','C','L'})\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if ErnKor can pass the test, and output \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nLet's consider examples:\n\nInput:\n```\n66 2 0LWLLLW6 1 1LWLLLL6 1 1LWLLWL6 2 15LWLLCC6 10 0CCCCCC6 6 1WCCCCW\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three numbers n, m, k (0 ≤ k ≤ 2·10^5, 1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10) — the length of the river, the distance ErnKor can jump, and the number of meters ErnKor can swim without freezing.\n\nThe second line of each test case contains a string a of length n. a_i denotes the object located at the i-th meter. (a_i ∈ {'W','C','L'})\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if ErnKor can pass the test, and output \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

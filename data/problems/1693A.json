@@ -1,0 +1,16 @@
+{
+    "id": "1693A",
+    "contest_id": 1693,
+    "problem_letter": "A",
+    "title": "A. Directional Increase",
+    "statement": "We have an array of length n. Initially, each element is equal to 0 and there is a pointer located on the first element.\n\nWe can do the following two kinds of operations any number of times (possibly zero) in any order:\n\nBut there is one additional rule. After we are done, the pointer has to be on the first element.\n\nYou are given an array a. Determine whether it's possible to obtain a after some operations or not.\n\nThe first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the size of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print \"Yes\" (without quotes) if it's possible to obtain a after some operations, and \"No\" (without quotes) otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nIn the first test case we can obtain the array after some operations, but the pointer won't be on the first element.\n\nOne way of obtaining the array in the second test case is shown below.\n\nlangle underline0, 0, 0, 0rangle → langle 1, underline0, 0, 0 rangle → langle underline1, -1, 0, 0rangle → langle 2, underline-1, 0, 0rangle → langle 2, 0, underline0, 0rangle → langle 2, underline0, -1, 0rangle → langle underline2, -1, -1, 0rangle\n\nInput:\n```\n7\n2\n1 0\n4\n2 -1 -1 0\n4\n1 -4 3 0\n4\n1 -1 1 -1\n5\n1 2 3 4 -10\n7\n2 -1 1 -2 0 0 0\n1\n0\n```\n\nOutput:\n```\nNo\nYes\nNo\nNo\nYes\nYes\nYes\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the size of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print \"Yes\" (without quotes) if it's possible to obtain a after some operations, and \"No\" (without quotes) otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

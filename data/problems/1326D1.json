@@ -1,0 +1,18 @@
+{
+    "id": "1326D1",
+    "contest_id": 1326,
+    "problem_letter": "D1",
+    "title": "D1. Prefix-Suffix Palindrome (Easy version)",
+    "statement": "This is the easy version of the problem. The difference is the constraint on the sum of lengths of strings and the number of test cases. You can make hacks only if you solve all versions of this task.\n\nYou are given a string s, consisting of lowercase English letters. Find the longest string, t, which satisfies the following conditions:\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases. The next t lines each describe a test case.\n\nEach test case is a non-empty string s, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of lengths of strings over all test cases does not exceed 5000.\n\nFor each test case, print the longest string which satisfies the conditions described above. If there exists multiple possible solutions, print any of them.\n\nIn the first test, the string s = \"a\" satisfies all conditions.\n\nIn the second test, the string \"abcdfdcba\" satisfies all conditions, because:\n\nIt can be proven that there does not exist a longer string which satisfies the conditions.\n\nIn the fourth test, the string \"c\" is correct, because \"c\" = \"c\" + \"\" and a or b can be empty. The other possible solution for this test is \"s\".\n\nInput:\n```\n5\na\nabcdfdcecba\nabbaxyzyx\ncodeforces\nacbba\n```\n\nOutput:\n```\na\nabcdfdcba\nxyzyx\nc\nabba\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases. The next t lines each describe a test case.\n\nEach test case is a non-empty string s, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of lengths of strings over all test cases does not exceed 5000.",
+    "output": "For each test case, print the longest string which satisfies the conditions described above. If there exists multiple possible solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "hashing",
+        "string suffix structures",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

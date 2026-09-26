@@ -1,0 +1,20 @@
+{
+    "id": "1528A",
+    "contest_id": 1528,
+    "problem_letter": "A",
+    "title": "A. Parsa's Humongous Tree",
+    "statement": "Parsa has a humongous tree on n vertices.\n\nOn each vertex v he has written two integers l_v and r_v.\n\nTo make Parsa's tree look even more majestic, Nima wants to assign a number a_v (l_v ≤ a_v ≤ r_v) to each vertex v such that the beauty of Parsa's tree is maximized.\n\nNima's sense of the beauty is rather bizarre. He defines the beauty of the tree as the sum of |a_u - a_v| over all edges (u, v) of the tree.\n\nSince Parsa's tree is too large, Nima can't maximize its beauty on his own. Your task is to find the maximum possible beauty for Parsa's tree.\n\nThe first line contains an integer t (1≤ t≤ 250) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^5) — the number of vertices in Parsa's tree.\n\nThe i-th of the following n lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nEach of the next n-1 lines contains two integers u and v (1 ≤ u , v ≤ n, u≠ v) meaning that there is an edge between the vertices u and v in Parsa's tree.\n\nIt is guaranteed that the given graph is a tree.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case print the maximum possible beauty for Parsa's tree.\n\nThe trees in the example:\n\nIn the first test case, one possible assignment is a = {1, 8} which results in |1 - 8| = 7.\n\nIn the second test case, one of the possible assignments is a = {1, 5, 9} which results in a beauty of |1 - 5| + |5 - 9| = 8\n\nInput:\n```\n3\n2\n1 6\n3 8\n1 2\n3\n1 3\n4 6\n7 9\n1 2\n2 3\n6\n3 14\n12 20\n12 19\n2 12\n10 17\n3 17\n3 2\n6 5\n1 5\n2 6\n4 6\n```\n\nOutput:\n```\n7\n8\n62\n```",
+    "input": "The first line contains an integer t (1≤ t≤ 250) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^5) — the number of vertices in Parsa's tree.\n\nThe i-th of the following n lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nEach of the next n-1 lines contains two integers u and v (1 ≤ u , v ≤ n, u≠ v) meaning that there is an edge between the vertices u and v in Parsa's tree.\n\nIt is guaranteed that the given graph is a tree.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case print the maximum possible beauty for Parsa's tree.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

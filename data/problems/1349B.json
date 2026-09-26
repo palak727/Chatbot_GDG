@@ -1,0 +1,18 @@
+{
+    "id": "1349B",
+    "contest_id": 1349,
+    "problem_letter": "B",
+    "title": "B. Orac and Medians",
+    "statement": "Slime has a sequence of positive integers a_1, a_2, …, a_n.\n\nIn one operation Orac can choose an arbitrary subsegment [l … r] of this sequence and replace all values a_l, a_{l + 1}, …, a_r to the value of median of {a_l, a_{l + 1}, …, a_r}.\n\nIn this problem, for the integer multiset s, the median of s is equal to the lfloor (|s|+1)/2rfloor-th smallest number in it. For example, the median of {1,4,4,6,5} is 4, and the median of {1,7,5,8} is 5.\n\nSlime wants Orac to make a_1 = a_2 = … = a_n = k using these operations.\n\nOrac thinks that it is impossible, and he does not want to waste his time, so he decided to ask you if it is possible to satisfy the Slime's requirement, he may ask you these questions several times.\n\nThe first line of the input is a single integer t: the number of queries.\n\nThe first line of each query contains two integers n (1≤ n≤ 100,000) and k (1≤ k≤ 10^9), the second line contains n positive integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9)\n\nThe total sum of n is at most 100,000.\n\nThe output should contain t lines. The i-th line should be equal to 'yes' if it is possible to make all integers k in some number of operations or 'no', otherwise. You can print each letter in lowercase or uppercase.\n\nIn the first query, Orac can't turn all elements into 3.\n\nIn the second query, a_1=6 is already satisfied.\n\nIn the third query, Orac can select the complete array and turn all elements into 2.\n\nIn the fourth query, Orac can't turn all elements into 3.\n\nIn the fifth query, Orac can select [1,6] at first and then select [2,10].\n\nInput:\n```\n5\n5 3\n1 5 2 6 1\n1 6\n6\n3 2\n1 2 3\n4 3\n3 1 2 3\n10 3\n1 2 3 4 5 6 7 8 9 10\n```\n\nOutput:\n```\nno\nyes\nyes\nno\nyes\n```",
+    "input": "The first line of the input is a single integer t: the number of queries.\n\nThe first line of each query contains two integers n (1≤ n≤ 100,000) and k (1≤ k≤ 10^9), the second line contains n positive integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9)\n\nThe total sum of n is at most 100,000.",
+    "output": "The output should contain t lines. The i-th line should be equal to 'yes' if it is possible to make all integers k in some number of operations or 'no', otherwise. You can print each letter in lowercase or uppercase.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1584F",
+    "contest_id": 1584,
+    "problem_letter": "F",
+    "title": "F. Strange LCS",
+    "statement": "You are given n strings s_1, s_2, …, s_n, each consisting of lowercase and uppercase English letters. In addition, it's guaranteed that each character occurs in each string at most twice. Find the longest common subsequence of these strings.\n\nA string t is a subsequence of a string s if t can be obtained from s by deletion of several (possibly, zero or all) symbols.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10) — the number of strings.\n\nEach of the next n lines contains the corresponding string s_i. Each s_i is non-empty, consists only of uppercase and lowercase English letters, and no character appears more than twice in each string.\n\nFor each test case print the answer in two lines:\n\nIn the first line print the length of the longest common subsequence.\n\nIn the second line print the longest common subsequence. If there are multiple such subsequences, print any of them.\n\nIn the first test case, the longest common subsequence is \"A\". There are no common subsequences of length 2.\n\nIn the second test case, sets of characters of strings don't intersect, so any non-empty string can't be a common subsequence.\n\nInput:\n```\n4\n2\nABC\nCBA\n2\nbacab\ndefed\n3\nabcde\naBcDe\nace\n2\ncodeforces\ntechnocup\n```\n\nOutput:\n```\n1\nA\n0\n\n3\nace\n3\ncoc\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10) — the number of strings.\n\nEach of the next n lines contains the corresponding string s_i. Each s_i is non-empty, consists only of uppercase and lowercase English letters, and no character appears more than twice in each string.",
+    "output": "For each test case print the answer in two lines:\n\nIn the first line print the length of the longest common subsequence.\n\nIn the second line print the longest common subsequence. If there are multiple such subsequences, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "graphs",
+        "greedy",
+        "strings",
+        "*2600"
+    ],
+    "rating": 2600
+}

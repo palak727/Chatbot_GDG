@@ -1,0 +1,18 @@
+{
+    "id": "1967F",
+    "contest_id": 1967,
+    "problem_letter": "F",
+    "title": "F. Next and Prev",
+    "statement": "Let p_1, …, p_n be a permutation of [1, …, n].\n\nLet the q-subsequence of p be a permutation of [1, q], whose elements are in the same relative order as in p_1, …, p_n. That is, we extract all elements not exceeding q together from p in the original order, and they make the q-subsequence of p.\n\nFor a given array a, let pre(i) be the largest value satisfying pre(i) < i and a_{pre(i)} > a_i. If it does not exist, let pre(i) = -10^100. Let nxt(i) be the smallest value satisfying nxt(i) > i and a_{nxt(i)} > a_i. If it does not exist, let nxt(i) = 10^100.\n\nFor each q such that 1 ≤ q ≤ n, let a_1, …, a_q be the q-subsequence of p. For each i such that 1 ≤ i ≤ q, pre(i) and nxt(i) will be calculated as defined. Then, you will be given some integer values of x, and for each of them you have to calculate ∑limits_{i=1}^q min(nxt(i) - pre(i), x).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5) — the length of the permutation.\n\nThe second line of each test case contains n integers p_1, …, p_n (1 ≤ p_i ≤ n) — the initial permutation.\n\nThen, for each q such that 1 ≤ q ≤ n in ascending order, you will be given an integer k (0 ≤ k ≤ 10^5), representing the number of queries for the q-subsequence. Then k numbers in a line follow: each of them is the value of x for a single query (1 ≤ x ≤ q).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5 and the sum of k over all test cases does not exceed 10^5.\n\nFor each test case, for each query, print a single line with an integer: the answer to the query.\n\nThe 1-subsequence is [1], and pre=[-10^100], nxt=[10^100]. ans(1)=min(10^100-(-10^100),1)=1.\n\nThe 5-subsequence is [1,4,3,2,5], and pre=[-10^100,-10^100,2,3,-10^100], nxt=[2,5,5,5,10^100]. ans(1)=5,ans(2)=10,ans(3)=14.\n\nInput:\n```\n176 1 4 3 2 5 71 101 31 23 1 2 31 32 2 6\n```\n\nOutput:\n```\n1\n9\n8\n5\n10\n14\n16\n14\n30\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5) — the length of the permutation.\n\nThe second line of each test case contains n integers p_1, …, p_n (1 ≤ p_i ≤ n) — the initial permutation.\n\nThen, for each q such that 1 ≤ q ≤ n in ascending order, you will be given an integer k (0 ≤ k ≤ 10^5), representing the number of queries for the q-subsequence. Then k numbers in a line follow: each of them is the value of x for a single query (1 ≤ x ≤ q).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5 and the sum of k over all test cases does not exceed 10^5.",
+    "output": "For each test case, for each query, print a single line with an integer: the answer to the query.",
+    "time_limit": "15 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*3200"
+    ],
+    "rating": 3200
+}

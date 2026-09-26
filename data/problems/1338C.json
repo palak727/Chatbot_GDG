@@ -1,0 +1,20 @@
+{
+    "id": "1338C",
+    "contest_id": 1338,
+    "problem_letter": "C",
+    "title": "C. Perfect Triples",
+    "statement": "Consider the infinite sequence s of positive integers, created by repeating the following steps:\n\nYou have integer n. Find the n-th element of s.\n\nYou have to answer t independent test cases.\n\nA sequence a is lexicographically smaller than a sequence b if in the first position where a and b differ, the sequence a has a smaller element than the corresponding element in b.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach of the next t lines contains a single integer n (1≤ n ≤ 10^16) — the position of the element you want to know.\n\nIn each of the t lines, output the answer to the corresponding test case.\n\nThe first elements of s are 1, 2, 3, 4, 8, 12, 5, 10, 15, …\n\nInput:\n```\n9\n1\n2\n3\n4\n5\n6\n7\n8\n9\n```\n\nOutput:\n```\n1\n2\n3\n4\n8\n12\n5\n10\n15\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach of the next t lines contains a single integer n (1≤ n ≤ 10^16) — the position of the element you want to know.",
+    "output": "In each of the t lines, output the answer to the corresponding test case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "divide and conquer",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

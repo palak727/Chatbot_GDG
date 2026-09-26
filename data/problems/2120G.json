@@ -1,0 +1,18 @@
+{
+    "id": "2120G",
+    "contest_id": 2120,
+    "problem_letter": "G",
+    "title": "G. Eulerian Line Graph",
+    "statement": "Aryan loves graph theory more than anything. Well, no, he likes to flex his research paper on line graphs to everyone more. To start a conversation with you, he decides to give you a problem on line graphs. In the mathematical discipline of graph theory, the line graph of a simple undirected graph G is another simple undirected graph L(G) that represents the adjacency between every two edges in G.\n\nPrecisely speaking, for an undirected graph G without self-loops or multiple edges, its line graph L(G) is a graph such that\n\nAlso, L^0(G)=G and L^k(G)=L(L^{k-1}(G)) for k≥ 1.\n\nAn Euler trail is a sequence of edges that visits every edge of the graph exactly once. This trail can be either a path (starting and ending at different vertices) or a cycle (starting and ending at the same vertex). Vertices may be revisited during the trail, but each edge must be used exactly once.\n\nAryan gives you a simple connected graph G with n vertices and m edges and an integer k, and it is guaranteed that G has an Euler trail and it is not a path graph^{∗}. He asks you to determine if L^k(G) has an Euler trail.\n\n^{∗}A path graph is a tree where every vertex is connected to atmost two other vertices.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three space-separated integers n, m, and k (5 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ min((n·(n-1))/2 ,2·10^5), 1 ≤ k ≤ 2·10^5).\n\nThe next m lines of each test case contain two space-separated integers u and v (1 ≤ u,v ≤ n, u ≠ v), denoting that an edge connects vertices u and v.\n\nIt is guaranteed that the sum of n and m over all test cases does not exceed 2·10^5.\n\nFor each testcase, print \"YES\" if L^k(G) has an Euler trail; otherwise, \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nFor the first test case, L^2(G) is isomorphic to G itself. So, since G has an Euler trail, L^2(G) also has an Euler trail.\n\nFor the second test case, L(G) looks as follows(Vertex i-j of L(G) in figure corresponds to edge between vertices i and j of G). It can be proven that this doesn't have an Euler trail.\n\nInput:\n```\n45 5 21 22 33 44 55 15 6 11 22 33 44 55 11 310 11 31 22 33 44 54 64 75 76 77 88 99 107 8 21 32 31 44 52 51 66 72 7\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three space-separated integers n, m, and k (5 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ min((n·(n-1))/2 ,2·10^5), 1 ≤ k ≤ 2·10^5).\n\nThe next m lines of each test case contain two space-separated integers u and v (1 ≤ u,v ≤ n, u ≠ v), denoting that an edge connects vertices u and v.\n\nIt is guaranteed that the sum of n and m over all test cases does not exceed 2·10^5.",
+    "output": "For each testcase, print \"YES\" if L^k(G) has an Euler trail; otherwise, \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "greedy",
+        "math",
+        "*3000"
+    ],
+    "rating": 3000
+}

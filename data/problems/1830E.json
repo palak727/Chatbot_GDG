@@ -1,0 +1,17 @@
+{
+    "id": "1830E",
+    "contest_id": 1830,
+    "problem_letter": "E",
+    "title": "E. Bully Sort",
+    "statement": "On a permutation p of length n, we define a bully swap as follows:\n\nWe define f(p) as the number of bully swaps we need to perform until p becomes sorted. Note that if p is the identity permutation, f(p)=0.\n\nYou are given n and a permutation p of length n. You need to process the following q updates.\n\nIn each update, you are given two integers x and y. You will swap p_x and p_y and then find the value of f(p).\n\nNote that the updates are persistent. Changes made to the permutation p will apply when processing future updates.\n\nThe first line of the input contains two integers n and q (2 ≤ n ≤ 5·10^5, 1 ≤ q ≤ 5·10^4) — the length of the permutation and the number of updates.\n\nThe second line of input contains n integer p_1,p_2,…,p_n (1 ≤ p_i ≤ n) — the permutation p. All elements of p are distinct.\n\nThe i-th of the next q lines of input contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ n) — describing the i-th update.\n\nAfter each update, output f(p).\n\nAfter the first update, we have f(p)=5. The 5 bully swaps are illustrated below.\n\nInput:\n```\n8 5\n6 2 1 5 3 4 7 8\n1 8\n2 3\n4 7\n7 8\n3 6\n```\n\nOutput:\n```\n5\n6\n9\n8\n7\n```",
+    "input": "The first line of the input contains two integers n and q (2 ≤ n ≤ 5·10^5, 1 ≤ q ≤ 5·10^4) — the length of the permutation and the number of updates.\n\nThe second line of input contains n integer p_1,p_2,…,p_n (1 ≤ p_i ≤ n) — the permutation p. All elements of p are distinct.\n\nThe i-th of the next q lines of input contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ n) — describing the i-th update.",
+    "output": "After each update, output f(p).",
+    "time_limit": "10 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

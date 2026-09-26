@@ -1,0 +1,21 @@
+{
+    "id": "2089B2",
+    "contest_id": 2089,
+    "problem_letter": "B2",
+    "title": "B2. Canteen (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference between the versions is that in this version, there are no additional limits on k. You can hack only if you solved all versions of this problem.\n\nEcrade has two sequences a_0, a_1, …, a_{n - 1} and b_0, b_1, …, b_{n - 1} consisting of integers. It is guaranteed that the sum of all elements in a does not exceed the sum of all elements in b.\n\nInitially, Ecrade can make exactly k changes to the sequence a. It is guaranteed that k does not exceed the sum of a. In each change:\n\nThen Ecrade will perform the following three operations sequentially on a and b, which constitutes one round of operations:\n\nEcrade wants to know the minimum number of rounds required for all elements in a to become equal to 0 after exactly k changes to a.\n\nHowever, this seems a bit complicated, so please help him!\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, k (1≤ n≤ 2·10^5, 0≤ k≤ 2·10^14).\n\nThe second line of each test case contains n integers a_0, a_1, …, a_{n - 1} (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains n integers b_0, b_1, …, b_{n - 1} (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5. It is also guaranteed that in each test case the sum of a does not exceed the sum of b, and that k does not exceed the sum of a.\n\nFor each test case, output the minimum number of rounds required for all elements in a to become equal to 0 after exactly k changes to a.\n\nIn the fifth test case, all elements in a become 0 after exactly 6 changes.\n\nIn the sixth test case, Ecrade can do exactly one change to a_3, then a will become [1,2,2,4].\n\nIn the seventh test case, Ecrade can do exactly one change to a_4, then a will become [2,1,1,1].\n\nInput:\n```\n83 01 1 45 1 44 01 2 3 44 3 2 14 02 1 1 21 2 2 18 01 2 3 4 5 6 7 88 7 6 5 4 3 2 13 61 1 45 1 44 11 2 3 44 3 2 14 12 1 1 21 2 2 14 22 1 1 21 2 2 1\n```\n\nOutput:\n```\n1\n4\n4\n8\n0\n2\n2\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, k (1≤ n≤ 2·10^5, 0≤ k≤ 2·10^14).\n\nThe second line of each test case contains n integers a_0, a_1, …, a_{n - 1} (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains n integers b_0, b_1, …, b_{n - 1} (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5. It is also guaranteed that in each test case the sum of a does not exceed the sum of b, and that k does not exceed the sum of a.",
+    "output": "For each test case, output the minimum number of rounds required for all elements in a to become equal to 0 after exactly k changes to a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "flows",
+        "greedy",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

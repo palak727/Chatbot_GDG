@@ -1,0 +1,20 @@
+{
+    "id": "2056E",
+    "contest_id": 2056,
+    "problem_letter": "E",
+    "title": "E. Nested Segments",
+    "statement": "A set A consisting of pairwise distinct segments [l, r] with integer endpoints is called good if 1≤ l≤ r≤ n, and for any pair of distinct segments [l_i, r_i], [l_j, r_j] in A, exactly one of the following conditions holds:\n\nYou are given a good set S consisting of m pairwise distinct segments [l_i, r_i] with integer endpoints. You want to add as many additional segments to the set S as possible while ensuring that set S remains good.\n\nSince this task is too easy, you need to determine the number of different ways to add the maximum number of additional segments to S, ensuring that the set remains good. Two ways are considered different if there exists a segment that is being added in one of the ways, but not in the other.\n\nFormally, you need to find the number of good sets T of distinct segments, such that S is a subset of T and T has the maximum possible size. Since the result might be very large, compute the answer modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) — the maximum right endpoint of the segments, and the size of S.\n\nThe i-th of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the boundaries of the segments in set S.\n\nIt is guaranteed that the given set S is good, and the segments in set S are pairwise distinct.\n\nIt is guaranteed that both the sum of n and the sum of m over all test cases do not exceed 2·10^5.\n\nFor each test case, output a single integer representing the number of different ways, modulo 998,244,353, that you can add the maximum number of additional segments to set S while ensuring that set S remains good.\n\nIn the first example, the only possible segment is [1, 1], so T = {[1, 1]} has the maximum size, and it is the only solution.\n\nIn the second example, it is not possible to add any additional segments to set S. Hence, the only way to add segments to S is adding nothing.\n\nIn the third example, it is possible to add 7 additional segments to S while ensuring that the set remains good. It can be proven that adding more than 7 additional segments to S is not possible. There are exactly 2 different ways to add these 7 segments to S, and their respective sets T are shown below:\n\nIn the fourth example, there are exactly 5 different ways to add a maximum of 6 additional segments to S, and their respective sets T are shown below:\n\nInput:\n```\n61 02 31 12 21 25 21 32 34 11 16 21 34 62300 0\n```\n\nOutput:\n```\n1\n1\n2\n5\n4\n187997613\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) — the maximum right endpoint of the segments, and the size of S.\n\nThe i-th of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the boundaries of the segments in set S.\n\nIt is guaranteed that the given set S is good, and the segments in set S are pairwise distinct.\n\nIt is guaranteed that both the sum of n and the sum of m over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output a single integer representing the number of different ways, modulo 998,244,353, that you can add the maximum number of additional segments to set S while ensuring that set S remains good.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

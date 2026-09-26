@@ -1,0 +1,21 @@
+{
+    "id": "2021E2",
+    "contest_id": 2021,
+    "problem_letter": "E2",
+    "title": "E2. Digital Village (Hard Version)",
+    "statement": "This is the hard version of the problem. In the three versions, the constraints on n and m are different. You can make hacks only if all the versions of the problem are solved.\n\nPak Chanek is setting up internet connections for the village of Khuntien. The village can be represented as a connected simple graph with n houses and m internet cables connecting house u_i and house v_i, each with a latency of w_i.\n\nThere are p houses that require internet. Pak Chanek can install servers in at most k of the houses. The houses that need internet will then be connected to one of the servers. However, since each cable has its latency, the latency experienced by house s_i requiring internet will be the maximum latency of the cables between that house and the server it is connected to.\n\nFor each k = 1,2,…,n, help Pak Chanek determine the minimum total latency that can be achieved for all the houses requiring internet.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2000). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, p (2 ≤ n ≤ 5000; n-1 ≤ m ≤ 5000; 1 ≤ p ≤ n) — the number of houses, the number of cables, and the number of houses that need internet.\n\nThe second line of each test case contains p integers s_1, s_2, …, s_p (1 ≤ s_i ≤ n) — the houses that need internet. It is guaranteed that all elements of s are distinct.\n\nThe i-th of the next m lines of each test case contains three integers u_i, v_i, and w_i (1 ≤ u_i < v_i ≤ n; 1 ≤ w_i ≤ 10^9) — the internet cable connecting house u_i and house v_i with latency of w_i. It is guaranteed that the given edges form a connected simple graph.\n\nIt is guaranteed that the sum of n and the sum of m do not exceed 5000.\n\nFor each test case, output n integers: the minimum total latency that can be achieved for all the houses requiring internet for each k = 1,2,…,n.\n\nIn the first test case for k=3, a possible optimal solution is to install servers at vertices 2, 6 and 8 and obtain the following latency:\n\nSo the total latency is 9.\n\nInput:\n```\n29 8 52 5 6 8 91 2 11 3 23 4 104 5 34 6 51 7 107 8 47 9 23 3 23 11 2 12 3 31 3 2\n```\n\nOutput:\n```\n34 19 9 4 0 0 0 0 0\n2 0 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2000). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, p (2 ≤ n ≤ 5000; n-1 ≤ m ≤ 5000; 1 ≤ p ≤ n) — the number of houses, the number of cables, and the number of houses that need internet.\n\nThe second line of each test case contains p integers s_1, s_2, …, s_p (1 ≤ s_i ≤ n) — the houses that need internet. It is guaranteed that all elements of s are distinct.\n\nThe i-th of the next m lines of each test case contains three integers u_i, v_i, and w_i (1 ≤ u_i < v_i ≤ n; 1 ≤ w_i ≤ 10^9) — the internet cable connecting house u_i and house v_i with latency of w_i. It is guaranteed that the given edges form a connected simple graph.\n\nIt is guaranteed that the sum of n and the sum of m do not exceed 5000.",
+    "output": "For each test case, output n integers: the minimum total latency that can be achieved for all the houses requiring internet for each k = 1,2,…,n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "dsu",
+        "graphs",
+        "math",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

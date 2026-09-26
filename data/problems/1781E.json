@@ -1,0 +1,21 @@
+{
+    "id": "1781E",
+    "contest_id": 1781,
+    "problem_letter": "E",
+    "title": "E. Rectangle Shrinking",
+    "statement": "You have a rectangular grid of height 2 and width 10^9 consisting of unit cells. There are n rectangles placed on this grid, and the borders of these rectangles pass along cell borders. The i-th rectangle covers all cells in rows from u_i to d_i inclusive and columns from l_i to r_i inclusive (1 ≤ u_i ≤ d_i ≤ 2; 1 ≤ l_i ≤ r_i ≤ 10^9). The initial rectangles can intersect, be nested, and coincide arbitrarily.\n\nYou should either remove each rectangle, or replace it with any of its non-empty subrectangles. In the latter case, the new subrectangle must lie inside the initial rectangle, and its borders must still pass along cell borders. In particular, it is allowed for the subrectangle to be equal to the initial rectangle.\n\nAfter that replacement, no two (non-removed) rectangles are allowed to have common cells, and the total area covered with the new rectangles must be as large as possible.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of rectangles.\n\nEach of the next n lines contains four integers u_i, l_i, d_i, r_i (1 ≤ u_i ≤ d_i ≤ 2; 1 ≤ l_i ≤ r_i ≤ 10^9) — the coordinates of cells located in the top-left and the bottom-right corners of the rectangle, respectively.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, first print an integer s — the largest possible covered by new rectangles area. Then print n lines with your solution to cover this area.\n\nIn the i-th of these lines print four integers u'_i, l'_i, d'_i, r'_i. If you remove the i-th rectangle, print u'_i = l'_i = d'_i = r'_i = 0. Otherwise, these numbers denote the new coordinates of the top-left and the bottom-right corners of the i-th rectangle, satisfying u_i ≤ u'_i ≤ d'_i ≤ d_i; l_i ≤ l'_i ≤ r'_i ≤ r_i.\n\nIf there are multiple solutions, print any.\n\nThe picture in the statement illustrates the first test case.\n\nInput:\n```\n851 2 2 42 4 2 81 4 2 71 2 1 21 9 1 1021 1 1 101 5 1 1521 1 1 101 1 1 1051 3 1 71 3 1 81 1 1 41 2 1 71 10 1 1121 1 2 101 5 1 821 5 2 101 2 1 721 5 2 102 2 2 1552 6 2 71 4 2 51 5 1 91 7 2 101 2 1 6\n```\n\nOutput:\n```\n15\n1 2 2 4\n2 5 2 8\n1 5 1 7\n0 0 0 0\n1 9 1 10\n15\n1 1 1 10\n1 11 1 15\n10\n1 1 1 10\n0 0 0 0\n10\n0 0 0 0\n1 8 1 8\n1 1 1 4\n1 5 1 7\n1 10 1 11\n20\n1 1 2 10\n0 0 0 0\n15\n1 5 2 10\n1 2 1 4\n20\n1 5 1 10\n2 2 2 15\n16\n2 6 2 6\n2 4 2 5\n0 0 0 0\n1 7 2 10\n1 2 1 6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of rectangles.\n\nEach of the next n lines contains four integers u_i, l_i, d_i, r_i (1 ≤ u_i ≤ d_i ≤ 2; 1 ≤ l_i ≤ r_i ≤ 10^9) — the coordinates of cells located in the top-left and the bottom-right corners of the rectangle, respectively.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, first print an integer s — the largest possible covered by new rectangles area. Then print n lines with your solution to cover this area.\n\nIn the i-th of these lines print four integers u'_i, l'_i, d'_i, r'_i. If you remove the i-th rectangle, print u'_i = l'_i = d'_i = r'_i = 0. Otherwise, these numbers denote the new coordinates of the top-left and the bottom-right corners of the i-th rectangle, satisfying u_i ≤ u'_i ≤ d'_i ≤ d_i; l_i ≤ l'_i ≤ r'_i ≤ r_i.\n\nIf there are multiple solutions, print any.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

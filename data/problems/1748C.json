@@ -1,0 +1,20 @@
+{
+    "id": "1748C",
+    "contest_id": 1748,
+    "problem_letter": "C",
+    "title": "C. Zero-Sum Prefixes",
+    "statement": "The score of an array v_1,v_2,…,v_n is defined as the number of indices i (1 ≤ i ≤ n) such that v_1+v_2+…+v_i = 0.\n\nYou are given an array a_1,a_2,…,a_n of length n. You can perform the following operation multiple times:\n\nWhat is the maximum possible score of a that can be obtained by performing a sequence of such operations?\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (-10^9 ≤ a_i ≤ 10^9) — array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the maximum possible score of the array a after performing a sequence of operations.\n\nIn the first test case, it is optimal to change the value of a_2 to -2 in one operation.\n\nThe resulting array a will be [2,-2,1,-1,0], with a score of 3:\n\nIn the second test case, it is optimal to change the value of a_3 to -2,000,000,000, giving us an array with a score of 1.\n\nIn the third test case, it is not necessary to perform any operations.\n\nInput:\n```\n552 0 1 -1 031000000000 1000000000 040 0 0 083 0 2 -10 10 -30 30 091 0 0 1 -1 0 1 0 -1\n```\n\nOutput:\n```\n3\n1\n4\n4\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (-10^9 ≤ a_i ≤ 10^9) — array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the maximum possible score of the array a after performing a sequence of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

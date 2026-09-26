@@ -1,0 +1,19 @@
+{
+    "id": "1520F2",
+    "contest_id": 1520,
+    "problem_letter": "F2",
+    "title": "F2. Guess the K-th Zero (Hard version)",
+    "statement": "This is an interactive problem.\n\nThis is a hard version of the problem. The difference from the easy version is that in the hard version 1 ≤ t ≤ min(n, 10^4) and the total number of queries is limited to 6·10^4.\n\nPolycarp is playing a computer game. In this game, an array consisting of zeros and ones is hidden. Polycarp wins if he guesses the position of the k-th zero from the left t times.\n\nPolycarp can make no more than 6·10^4 requests totally of the following type:\n\nTo make the game more interesting, each guessed zero turns into one and the game continues on the changed array. More formally, if the position of the k-th zero was x, then after Polycarp guesses this position, the x-th element of the array will be replaced from 0 to 1.\n\nHelp Polycarp win the game.\n\nFirst, your program must read two integers n and t (1 ≤ n ≤ 2·10^5, 1 ≤ t ≤ min(n, 10^4)).\n\nThen t lines follow, each of which contains one integer k (1 ≤ k ≤ n). It is guaranteed that at the moment of the request the array contains at least k zeros. In order to get the next value of k, you must output the answer for the previous value of k.\n\nAfter that, you can make no more than 6·10^4 requests in total.\n\nUse the following format to output the answer (it is not a request, it doesn't count in 6·10^4):\n\nPositions in the array are numbered from left to right from 1 to n inclusive.\n\nAfter printing t answers, your program should exit immediately.\n\nIn this task, the interactor is not adaptive. This means that within the same test, the hidden array and the queries do not change.\n\nIn case of an incorrect query, -1 will be displayed. When this value is received, your program must immediately exit normally (for example, by calling exit(0)), otherwise, the testing system may issue an arbitrary verdict.\n\nIf the number of requests is exceeded, the verdict wrong answer will be displayed.\n\nYour solution may get the verdict Idleness limit exceeded if you don't print anything or forget to flush the output buffer.\n\nTo flush the output buffer, you need to do the following immediately after the query output and the end-of-line character:\n\nHacks\n\nUse the following format for hacks:\n\nOn the first line print the string s (1 ≤ |s| ≤ 2·10^5), consisting of zeros and ones, and an integer t (1 ≤ t ≤ min(|s|, 10^4)) — hidden array and number of requests, respectively. In the next t lines output the number k (1 ≤ k ≤ |s|).\n\nThe hacked solution will not have direct access to the hidden array.\n\nIn the first test, the array [1, 0, 1, 1, 0, 1] is hidden. After answering the query k=2, the array changed to [1, 0, 1, 1, 1, 1].\n\nInput:\n```\n6 2\n\n2\n\n2\n\n1\n\n1\n\n0\n\n1\n\n0\n```\n\nOutput:\n```\n? 4 6\n\n? 1 1\n\n? 1 2\n\n? 5 5\n\n! 5\n\n? 2 2\n\n! 2\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "interactive",
+        "*2200"
+    ],
+    "rating": 2200
+}

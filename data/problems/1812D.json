@@ -1,0 +1,18 @@
+{
+    "id": "1812D",
+    "contest_id": 1812,
+    "problem_letter": "D",
+    "title": "D. Trivial Conjecture",
+    "statement": "f(n) = left{ beginarrayll n/2 & n ≡ 0 pmod2 3n+1 & n ≡ 1 pmod2 endarray right.\n\nFind an integer n so that none of the first k terms of the sequence n, f(n), f(f(n)), f(f(f(n))), … are equal to 1.\n\nThe only line contains an integer k (1 ≤ k ≤ min(textbf[REDACTED], 10^18)).\n\nOutput a single integer n such that none of the first k terms of the sequence n, f(n), f(f(n)), f(f(f(n))), … are equal to 1.\n\nInteger n should have at most 10^3 digits.\n\nIn the first test, the sequence created with n = 5 looks like 5, 16, 8, 4, 2, 1, 4, …, and none of the first k=1 terms are equal to 1.\n\nIn the second test, the sequence created with n = 6 looks like 6, 3, 10, 5, 16, 8, 4, …, and none of the first k=5 terms are equal to 1.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\n6\n```",
+    "input": "The only line contains an integer k (1 ≤ k ≤ min(textbf[REDACTED], 10^18)).",
+    "output": "Output a single integer n such that none of the first k terms of the sequence n, f(n), f(f(n)), f(f(f(n))), … are equal to 1.\n\nInteger n should have at most 10^3 digits.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "math",
+        "number theory"
+    ],
+    "rating": null
+}

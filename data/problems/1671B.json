@@ -1,0 +1,18 @@
+{
+    "id": "1671B",
+    "contest_id": 1671,
+    "problem_letter": "B",
+    "title": "B. Consecutive Points Segment",
+    "statement": "You are given n points with integer coordinates on a coordinate axis OX. The coordinate of the i-th point is x_i. All points' coordinates are distinct and given in strictly increasing order.\n\nFor each point i, you can do the following operation no more than once: take this point and move it by 1 to the left or to the right (i..e., you can change its coordinate x_i to x_i - 1 or to x_i + 1). In other words, for each point, you choose (separately) its new coordinate. For the i-th point, it can be either x_i - 1, x_i or x_i + 1.\n\nYour task is to determine if you can move some points as described above in such a way that the new set of points forms a consecutive segment of integers, i. e. for some integer l the coordinates of points should be equal to l, l + 1, …, l + n - 1.\n\nNote that the resulting points should have distinct coordinates.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of points in the set x.\n\nThe second line of the test case contains n integers x_1 < x_2 < … < x_n (1 ≤ x_i ≤ 10^6), where x_i is the coordinate of the i-th point.\n\nIt is guaranteed that the points are given in strictly increasing order (this also means that all coordinates are distinct). It is also guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).\n\nFor each test case, print the answer — if the set of points from the test case can be moved to form a consecutive segment of integers, print YES, otherwise print NO.\n\nInput:\n```\n521 431 2 341 2 3 71100000032 5 6\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of points in the set x.\n\nThe second line of the test case contains n integers x_1 < x_2 < … < x_n (1 ≤ x_i ≤ 10^6), where x_i is the coordinate of the i-th point.\n\nIt is guaranteed that the points are given in strictly increasing order (this also means that all coordinates are distinct). It is also guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).",
+    "output": "For each test case, print the answer — if the set of points from the test case can be moved to form a consecutive segment of integers, print YES, otherwise print NO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

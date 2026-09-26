@@ -1,0 +1,20 @@
+{
+    "id": "2051E",
+    "contest_id": 2051,
+    "problem_letter": "E",
+    "title": "E. Best Price",
+    "statement": "A batch of Christmas trees has arrived at the largest store in Berland. n customers have already come to the store, wanting to buy them.\n\nBefore the sales begin, the store needs to determine the price for one tree (the price is the same for all customers). To do this, the store has some information about each customer.\n\nFor the i-th customer, two integers a_i and b_i are known, which define their behavior:\n\nYour task is to calculate the maximum possible earnings for the store, given that it can receive no more than k negative reviews.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2·10^9; a_i < b_i).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum possible earnings for the store, given that it can receive no more than k negative reviews.\n\nConsider the example from the statement:\n\nInput:\n```\n52 02 13 41 1253 31 5 23 6 44 32 3 2 83 7 3 93 12 9 512 14 9\n```\n\nOutput:\n```\n2\n5\n9\n14\n15\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2·10^9; a_i < b_i).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum possible earnings for the store, given that it can receive no more than k negative reviews.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1600"
+    ],
+    "rating": 1600
+}

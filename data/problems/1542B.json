@@ -1,0 +1,18 @@
+{
+    "id": "1542B",
+    "contest_id": 1542,
+    "problem_letter": "B",
+    "title": "B. Plus and Multiply",
+    "statement": "There is an infinite set generated as follows:\n\nFor example, when a=3 and b=6, the five smallest elements of the set are:\n\nGiven positive integers a, b, n, determine if n is in this set.\n\nThe input consists of multiple test cases. The first line contains an integer t (1≤ t≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe only line describing each test case contains three integers n, a, b (1≤ n,a,b≤ 10^9) separated by a single space.\n\nFor each test case, print \"Yes\" if n is in this set, and \"No\" otherwise. You can print each letter in any case.\n\nIn the first test case, 24 is generated as follows:\n\nThus we can see 24 is in this set.\n\nThe five smallest elements of the set in the second test case is described in statements. We can see that 10 isn't among them.\n\nInput:\n```\n5\n24 3 5\n10 3 6\n2345 1 4\n19260817 394 485\n19260817 233 264\n```\n\nOutput:\n```\nYes\nNo\nYes\nNo\nYes\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1≤ t≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe only line describing each test case contains three integers n, a, b (1≤ n,a,b≤ 10^9) separated by a single space.",
+    "output": "For each test case, print \"Yes\" if n is in this set, and \"No\" otherwise. You can print each letter in any case.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

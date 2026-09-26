@@ -1,0 +1,17 @@
+{
+    "id": "1420B",
+    "contest_id": 1420,
+    "problem_letter": "B",
+    "title": "B. Rock and Lever",
+    "statement": "You must block the canal. With a rock. I will not give the rock to you.\"\n\nDanik urgently needs rock and lever! Obviously, the easiest way to get these things is to ask Hermit Lizard for them.\n\nHermit Lizard agreed to give Danik the lever. But to get a stone, Danik needs to solve the following task.\n\nYou are given a positive integer n, and an array a of positive integers. The task is to calculate the number of such pairs (i,j) that i < j and a_i & a_j ≥ a_i oplus a_j, where & denotes the bitwise AND operation, and oplus denotes the bitwise XOR operation.\n\nDanik has solved this task. But can you solve it?\n\nEach test contains multiple test cases.\n\nThe first line contains one positive integer t (1 ≤ t ≤ 10) denoting the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains one positive integer n (1 ≤ n ≤ 10^5) — length of the array.\n\nThe second line contains n positive integers a_i (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor every test case print one non-negative integer — the answer to the problem.\n\nIn the first test case there is only one pair: (4,7): for it 4 & 7 = 4, and 4 oplus 7 = 3.\n\nIn the second test case all pairs are good.\n\nIn the third test case there are two pairs: (6,5) and (2,3).\n\nIn the fourth test case there are no good pairs.\n\nInput:\n```\n5\n5\n1 4 3 7 10\n3\n1 1 1\n4\n6 2 5 3\n2\n2 4\n1\n1\n```\n\nOutput:\n```\n1\n3\n2\n0\n0\n```",
+    "input": "Each test contains multiple test cases.\n\nThe first line contains one positive integer t (1 ≤ t ≤ 10) denoting the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains one positive integer n (1 ≤ n ≤ 10^5) — length of the array.\n\nThe second line contains n positive integers a_i (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For every test case print one non-negative integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

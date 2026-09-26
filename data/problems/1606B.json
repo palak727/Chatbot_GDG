@@ -1,0 +1,18 @@
+{
+    "id": "1606B",
+    "contest_id": 1606,
+    "problem_letter": "B",
+    "title": "B. Update Files",
+    "statement": "Berland State University has received a new update for the operating system. Initially it is installed only on the 1-st computer.\n\nUpdate files should be copied to all n computers. The computers are not connected to the internet, so the only way to transfer update files from one computer to another is to copy them using a patch cable (a cable connecting two computers directly). Only one patch cable can be connected to a computer at a time. Thus, from any computer where the update files are installed, they can be copied to some other computer in exactly one hour.\n\nYour task is to find the minimum number of hours required to copy the update files to all n computers if there are only k patch cables in Berland State University.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of a single line that contains two integers n and k (1 ≤ k ≤ n ≤ 10^18) — the number of computers and the number of patch cables.\n\nFor each test case print one integer — the minimum number of hours required to copy the update files to all n computers.\n\nLet's consider the test cases of the example:\n\nInput:\n```\n4\n8 3\n6 6\n7 1\n1 1\n```\n\nOutput:\n```\n4\n3\n6\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of a single line that contains two integers n and k (1 ≤ k ≤ n ≤ 10^18) — the number of computers and the number of patch cables.",
+    "output": "For each test case print one integer — the minimum number of hours required to copy the update files to all n computers.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

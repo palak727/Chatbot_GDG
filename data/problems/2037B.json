@@ -1,0 +1,17 @@
+{
+    "id": "2037B",
+    "contest_id": 2037,
+    "problem_letter": "B",
+    "title": "B. Intercepted Inputs",
+    "statement": "To help you prepare for your upcoming Codeforces contest, Citlali set a grid problem and is trying to give you a n by m grid through your input stream. Specifically, your input stream should contain the following:\n\nHowever, someone has intercepted your input stream, shuffled all given integers, and put them all on one line! Now, there are k integers all on one line, and you don't know where each integer originally belongs. Instead of asking Citlali to resend the input, you decide to determine the values of n and m yourself.\n\nOutput any possible value of n and m that Citlali could have provided.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer k (3 ≤ k ≤ 2·10^5) — the total number of inputs in your input stream.\n\nThe following line of each test case contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ k) — the shuffled inputs of your input stream. It is guaranteed that n and m are contained within the k integers.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 2·10^5.\n\nFor each test case, output two integers, one possible value of n and m. If multiple possible answers exist, output any.\n\nIn the first test case, the initial input could have been the following:\n\n1 1\n\n2\n\nIn the second test case, the initial input could have been the following:\n\n3 3\n\n4 5 6\n\n7 8 9\n\n9 10 11\n\nInput:\n```\n531 1 2113 3 4 5 6 7 8 9 9 10 1188 4 8 3 8 2 8 162 1 4 5 3 381 2 6 3 8 5 5 3\n```\n\nOutput:\n```\n1 1\n3 3\n2 3\n4 1\n1 6\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer k (3 ≤ k ≤ 2·10^5) — the total number of inputs in your input stream.\n\nThe following line of each test case contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ k) — the shuffled inputs of your input stream. It is guaranteed that n and m are contained within the k integers.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output two integers, one possible value of n and m. If multiple possible answers exist, output any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

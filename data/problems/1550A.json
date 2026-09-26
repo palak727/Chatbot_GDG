@@ -1,0 +1,17 @@
+{
+    "id": "1550A",
+    "contest_id": 1550,
+    "problem_letter": "A",
+    "title": "A. Find The Array",
+    "statement": "Let's call an array a consisting of n positive (greater than 0) integers beautiful if the following condition is held for every i from 1 to n: either a_i = 1, or at least one of the numbers a_i - 1 and a_i - 2 exists in the array as well.\n\nFor example:\n\nYou are given a positive integer s. Find the minimum possible size of a beautiful array with the sum of elements equal to s.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nThen t lines follow, the i-th line contains one integer s (1 ≤ s ≤ 5000) for the i-th test case.\n\nPrint t integers, the i-th integer should be the answer for the i-th testcase: the minimum possible size of a beautiful array with the sum of elements equal to s.\n\nConsider the example test:\n\nInput:\n```\n4\n1\n8\n7\n42\n```\n\nOutput:\n```\n1\n3\n3\n7\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nThen t lines follow, the i-th line contains one integer s (1 ≤ s ≤ 5000) for the i-th test case.",
+    "output": "Print t integers, the i-th integer should be the answer for the i-th testcase: the minimum possible size of a beautiful array with the sum of elements equal to s.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

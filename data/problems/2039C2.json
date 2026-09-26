@@ -1,0 +1,19 @@
+{
+    "id": "2039C2",
+    "contest_id": 2039,
+    "problem_letter": "C2",
+    "title": "C2. Shohag Loves XOR (Hard Version)",
+    "statement": "This is the hard version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.\n\nShohag has two integers x and m. Help him count the number of integers 1 ≤ y ≤ m such that x oplus y is divisible^{∗} by either x, y, or both. Here oplus is the bitwise XOR operator.\n\n^{∗}The number a is divisible by the number b if there exists an integer c such that a = b·c.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains two space-separated integers x and m (1 ≤ x ≤ 10^6, 1 ≤ m ≤ 10^18).\n\nIt is guaranteed that the sum of x over all test cases does not exceed 10^7.\n\nFor each test case, print a single integer — the number of suitable y.\n\nIn the first test case, for x = 7, there are 3 valid values for y among the integers from 1 to m = 10, and they are 1, 7, and 9.\n\nInput:\n```\n57 102 36 41 64 1\n```\n\nOutput:\n```\n3\n2\n2\n6\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains two space-separated integers x and m (1 ≤ x ≤ 10^6, 1 ≤ m ≤ 10^18).\n\nIt is guaranteed that the sum of x over all test cases does not exceed 10^7.",
+    "output": "For each test case, print a single integer — the number of suitable y.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "math",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

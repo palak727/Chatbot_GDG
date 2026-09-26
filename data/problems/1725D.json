@@ -1,0 +1,18 @@
+{
+    "id": "1725D",
+    "contest_id": 1725,
+    "problem_letter": "D",
+    "title": "D. Deducing Sortability",
+    "statement": "Let's say Pak Chanek has an array A consisting of N positive integers. Pak Chanek will do a number of operations. In each operation, Pak Chanek will do the following:\n\nAfter each operation, all elements of A must be positive integers.\n\nAn array A is said to be sortable if and only if Pak Chanek can do zero or more operations so that A_1 < A_2 < A_3 < A_4 < … < A_N.\n\nPak Chanek must find an array A that is sortable with length N such that A_1 + A_2 + A_3 + A_4 + … + A_N is the minimum possible. If there are more than one possibilities, Pak Chanek must choose the array that is lexicographically minimum among them.\n\nPak Chanek must solve the following things:\n\nHelp Pak Chanek solve the problem.\n\nNote: an array B of size N is said to be lexicographically smaller than an array C that is also of size N if and only if there exists an index i such that B_i < C_i and for each j < i, B_j = C_j.\n\nThe first line contains two integers N and Q (1 ≤ N ≤ 10^9, 0 ≤ Q ≤ min(N, 10^5)) — the required length of array A and the number of questions.\n\nThe i-th of the next Q lines contains a single integer P_i (1 ≤ P_1 < P_2 < … < P_Q ≤ N) — the index asked in the i-th question.\n\nPrint Q+1 lines. The 1-st line contains an integer representing A_1 + A_2 + A_3 + A_4 + … + A_N. For each 1 ≤ i ≤ Q, the (i+1)-th line contains an integer representing A_P_i.\n\nIn the first example, the array A obtained is [1, 2, 3, 3, 4, 4]. We can see that the array is sortable by doing the following operations:\n\nInput:\n```\n6 3\n1\n4\n5\n```\n\nOutput:\n```\n17\n1\n3\n4\n```\n\nInput:\n```\n1 0\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains two integers N and Q (1 ≤ N ≤ 10^9, 0 ≤ Q ≤ min(N, 10^5)) — the required length of array A and the number of questions.\n\nThe i-th of the next Q lines contains a single integer P_i (1 ≤ P_1 < P_2 < … < P_Q ≤ N) — the index asked in the i-th question.",
+    "output": "Print Q+1 lines. The 1-st line contains an integer representing A_1 + A_2 + A_3 + A_4 + … + A_N. For each 1 ≤ i ≤ Q, the (i+1)-th line contains an integer representing A_P_i.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

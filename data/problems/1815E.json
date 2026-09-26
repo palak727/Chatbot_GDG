@@ -1,0 +1,19 @@
+{
+    "id": "1815E",
+    "contest_id": 1815,
+    "problem_letter": "E",
+    "title": "E. Bosco and Particle",
+    "statement": "Bosco is studying the behaviour of particles. He decided to investigate on the peculiar behaviour of the so-called \"four-one-two\" particle. He does the following:\n\nThere is a line of length n+1, where the topmost point is position 0 and bottommost is position n+1. The particle is initially (at time t=0) at position 0 and heading downwards. The particle moves at the speed of 1 unit per second. There are n oscillators at positions 1,2,…,n.\n\nEach oscillator can be described by a binary string. The initial state of each oscillator is the first character of its binary string. When the particle hits with an oscillator, the particle reverses its direction if its current state is texttt1 and continues to move at the same direction if its current state is texttt0, and that oscillator moves on to the next state (the next state of the last state is defined as the first state). Additionally, the particle always reverses its direction when it is at position 0 or n+1 at time t > 0.\n\nBosco would like to know the cycle length of the movement of particle. The cycle length is defined as the minimum value of c such that for any time t ≥ 0, the position of the particle at time t is same as the position of the particle at time t+c. It can be proved that such value c always exists. As he realises the answer might be too large, he asks you to output your answer modulo 998244353.\n\nThe first line contains an integer n (1≤ n≤10^6) — the number of oscillators.\n\nThe i-th of the next n line contains a binary string s_i (1≤left|s_iright|≤10^6) — the binary string, that contains only characters texttt0 and texttt1, describing the oscillator at position i.\n\nIt is guaranteed that the sum of all |s_i| does not exceed 10^6.\n\nOutput a single integer integer — the cycle length of the movement of the particle, modulo 998244353.\n\nIn the first sample, the only oscillator at position 1 always has state texttt0. At time moments 0,1,2,3 positions the particle are 0,1,2,1 respectively. Then the same positions will be repeated, so c=4.\n\nAnimation for the second sample: here or a smoother animation.\n\nInput:\n```\n1\n00\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2\n01\n010\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n4\n0101\n000\n1\n01\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n4\n01010\n0001\n11\n0001\n```\n\nOutput:\n```\n120\n```",
+    "input": "The first line contains an integer n (1≤ n≤10^6) — the number of oscillators.\n\nThe i-th of the next n line contains a binary string s_i (1≤left|s_iright|≤10^6) — the binary string, that contains only characters texttt0 and texttt1, describing the oscillator at position i.\n\nIt is guaranteed that the sum of all |s_i| does not exceed 10^6.",
+    "output": "Output a single integer integer — the cycle length of the movement of the particle, modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "number theory",
+        "strings",
+        "*3100"
+    ],
+    "rating": 3100
+}

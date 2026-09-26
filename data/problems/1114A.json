@@ -1,0 +1,18 @@
+{
+    "id": "1114A",
+    "contest_id": 1114,
+    "problem_letter": "A",
+    "title": "A. Got Any Grapes?",
+    "statement": "For simplicity, we'll assume that there are only three types of grapes: green grapes, purple grapes and black grapes.\n\nAndrew, Dmitry and Michal are all grapes' lovers, however their preferences of grapes are different. To make all of them happy, the following should happen:\n\nKnowing that his friends are so fond of grapes, Aki decided to host a grape party with them. He has prepared a box with a green grapes, b purple grapes and c black grapes.\n\nHowever, Aki isn't sure if the box he prepared contains enough grapes to make everyone happy. Can you please find out whether it's possible to distribute grapes so that everyone is happy or Aki has to buy some more grapes?\n\nIt is not required to distribute all the grapes, so it's possible that some of them will remain unused.\n\nThe first line contains three integers x, y and z (1 ≤ x, y, z ≤ 10^5) — the number of grapes Andrew, Dmitry and Michal want to eat.\n\nThe second line contains three integers a, b, c (1 ≤ a, b, c ≤ 10^5) — the number of green, purple and black grapes in the box.\n\nIf there is a grape distribution that allows everyone to be happy, print \"YES\", otherwise print \"NO\".\n\nIn the first example, there is only one possible distribution:\n\nAndrew should take 1 green grape, Dmitry should take 3 remaining green grapes and 3 purple grapes, and Michal will take 2 out of 3 available black grapes.\n\nIn the second test, there is no possible distribution, since Andrew is not be able to eat enough green grapes. :(\n\nInput:\n```\n1 6 2\n4 3 3\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n5 1 1\n4 3 2\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains three integers x, y and z (1 ≤ x, y, z ≤ 10^5) — the number of grapes Andrew, Dmitry and Michal want to eat.\n\nThe second line contains three integers a, b, c (1 ≤ a, b, c ≤ 10^5) — the number of green, purple and black grapes in the box.",
+    "output": "If there is a grape distribution that allows everyone to be happy, print \"YES\", otherwise print \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

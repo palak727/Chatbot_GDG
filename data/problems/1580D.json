@@ -1,0 +1,20 @@
+{
+    "id": "1580D",
+    "contest_id": 1580,
+    "problem_letter": "D",
+    "title": "D. Subsequence",
+    "statement": "Alice has an integer sequence a of length n and all elements are different. She will choose a subsequence of a of length m, and defines the value of a subsequence a_b_1,a_b_2,…,a_b_m as ∑_{i = 1}^m (m·a_b_i) - ∑_{i = 1}^m ∑_{j = 1}^m f(min(b_i, b_j), max(b_i, b_j)), where f(i, j) denotes min(a_i, a_{i + 1}, …, a_j).\n\nAlice wants you to help her to maximize the value of the subsequence she choose.\n\nA sequence s is a subsequence of a sequence t if s can be obtained from t by deletion of several (possibly, zero or all) elements.\n\nThe first line contains two integers n and m (1 ≤ m ≤ n ≤ 4000).\n\nThe second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i < 2^31).\n\nPrint the maximal value Alice can get.\n\nIn the first example, Alice can choose the subsequence [15, 2, 18, 13], which has the value 4·(15 + 2 + 18 + 13) - (15 + 2 + 2 + 2) - (2 + 2 + 2 + 2) - (2 + 2 + 18 + 12) - (2 + 2 + 12 + 13) = 100. In the second example, there are a variety of subsequences with value 176, and one of them is [9, 7, 12, 20, 18].\n\nInput:\n```\n6 4\n15 2 18 12 13 4\n```\n\nOutput:\n```\n100\n```\n\nInput:\n```\n11 5\n9 3 7 1 8 12 10 20 15 18 5\n```\n\nOutput:\n```\n176\n```\n\nInput:\n```\n1 1\n114514\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2 1\n666 888\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two integers n and m (1 ≤ m ≤ n ≤ 4000).\n\nThe second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i < 2^31).",
+    "output": "Print the maximal value Alice can get.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "trees",
+        "*2900"
+    ],
+    "rating": 2900
+}

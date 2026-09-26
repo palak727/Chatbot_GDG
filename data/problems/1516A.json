@@ -1,0 +1,16 @@
+{
+    "id": "1516A",
+    "contest_id": 1516,
+    "problem_letter": "A",
+    "title": "A. Tit for Tat",
+    "statement": "Given an array a of length n, you can do at most k operations of the following type on it:\n\nWhat is lexicographically the smallest array you can obtain?\n\nAn array x is lexicographically smaller than an array y if there exists an index i such that x_i < y_i, and x_j=y_j for all 1 ≤ j < i. Less formally, at the first index i in which they differ, x_i < y_i.\n\nThe first line contains an integer t (1 ≤ t ≤ 20) – the number of test cases you need to solve.\n\nThe first line of each test case contains 2 integers n and k (2 ≤ n ≤ 100, 1 ≤ k ≤ 10000) — the number of elements in the array and the maximum number of operations you can make.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100) — the elements of the array a.\n\nFor each test case, print the lexicographically smallest array you can obtain after at most k operations.\n\nIn the second test case, we start by subtracting 1 from the first element and adding 1 to the second. Then, we can't get any lexicographically smaller arrays, because we can't make any of the elements negative.\n\nInput:\n```\n2\n3 1\n3 1 4\n2 10\n1 0\n```\n\nOutput:\n```\n2 1 5 \n0 1 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 20) – the number of test cases you need to solve.\n\nThe first line of each test case contains 2 integers n and k (2 ≤ n ≤ 100, 1 ≤ k ≤ 10000) — the number of elements in the array and the maximum number of operations you can make.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100) — the elements of the array a.",
+    "output": "For each test case, print the lexicographically smallest array you can obtain after at most k operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

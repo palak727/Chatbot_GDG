@@ -1,0 +1,18 @@
+{
+    "id": "1832E",
+    "contest_id": 1832,
+    "problem_letter": "E",
+    "title": "E. Combinatorics Problem",
+    "statement": "Recall that the binomial coefficient x choose y is calculated as follows (x and y are non-negative integers):\n\nYou are given an array a_1, a_2, …, a_n and an integer k. You have to calculate a new array b_1, b_2, …, b_n, where\n\nFormally, b_i = (∑limits_{j=1}^i i - j + 1 choose k·a_j) bmod 998244353.\n\nNote that the array is given in a modified way, and you have to output it in a modified way as well.\n\nThe only line of the input contains six integers n, a_1, x, y, m and k (1 ≤ n ≤ 10^7; 0 ≤ a_1, x, y < m; 2 ≤ m ≤ 998244353; 1 ≤ k ≤ 5).\n\nThe array [a_1, a_2, …, a_n] is generated as follows:\n\nSince outputting up to 10^7 integers might be too slow, you have to do the following:\n\nLet c_i = b_i·i (without taking modulo 998244353 after the multiplication). Print the integer c_1 oplus c_2 oplus … oplus c_n, where oplus denotes the bitwise XOR operator.\n\nInput:\n```\n5 8 2 3 100 2\n```\n\nOutput:\n```\n1283\n```",
+    "input": "The only line of the input contains six integers n, a_1, x, y, m and k (1 ≤ n ≤ 10^7; 0 ≤ a_1, x, y < m; 2 ≤ m ≤ 998244353; 1 ≤ k ≤ 5).\n\nThe array [a_1, a_2, …, a_n] is generated as follows:",
+    "output": "Since outputting up to 10^7 integers might be too slow, you have to do the following:\n\nLet c_i = b_i·i (without taking modulo 998244353 after the multiplication). Print the integer c_1 oplus c_2 oplus … oplus c_n, where oplus denotes the bitwise XOR operator.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

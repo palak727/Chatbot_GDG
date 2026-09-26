@@ -3,14 +3,15 @@
     "contest_id": 1000,
     "problem_letter": "F",
     "title": "F. One Occurrence",
-    "statement": "You are given an array a consisting of n integers, and q queries to it. i-th query is denoted by two integers l_i and r_i. For each query, you have to find any integer that occurs exactly once in the subarray of a from index l_i to index r_i (a subarray is a contiguous subsegment of an array). For example, if a = [1, 1, 2, 3, 2, 4], then for query (l_i = 2, r_i = 6) the subarray we are interested in is [1, 2, 3, 2, 4], and possible answers are 1, 3 and 4; for query (l_i = 1, r_i = 2) the subarray we are interested in is [1, 1], and there is no such element that occurs exactly once.\nCan you answer all of the queries?\nThe first line contains one integer n (1  n  5  10^5).\nThe second line contains n integers a_1, a_2, , a_n (1  a_i  5  10^5).\nThe third line contains one integer q (1  q  5  10^5).\nThen q lines follow, i-th line containing two integers l_i and r_i representing i-th query (1  l_i  r_i  n).\nAnswer the queries as follows:\nIf there is no integer such that it occurs in the subarray from index l_i to index r_i exactly once, print 0. Otherwise print any such integer.",
-    "input": "The first line contains one integer n (1 ≤ n ≤ 5 \\cdot 10^5).",
-    "output": "Answer the queries as follows:",
+    "statement": "You are given an array a consisting of n integers, and q queries to it. i-th query is denoted by two integers l_i and r_i. For each query, you have to find any integer that occurs exactly once in the subarray of a from index l_i to index r_i (a subarray is a contiguous subsegment of an array). For example, if a = [1, 1, 2, 3, 2, 4], then for query (l_i = 2, r_i = 6) the subarray we are interested in is [1, 2, 3, 2, 4], and possible answers are 1, 3 and 4; for query (l_i = 1, r_i = 2) the subarray we are interested in is [1, 1], and there is no such element that occurs exactly once.\n\nCan you answer all of the queries?\n\nThe first line contains one integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^5).\n\nThe third line contains one integer q (1 ≤ q ≤ 5·10^5).\n\nThen q lines follow, i-th line containing two integers l_i and r_i representing i-th query (1 ≤ l_i ≤ r_i ≤ n).\n\nAnswer the queries as follows:\n\nIf there is no integer such that it occurs in the subarray from index l_i to index r_i exactly once, print 0. Otherwise print any such integer.\n\nInput:\n```\n6\n1 1 2 3 2 4\n2\n2 6\n1 2\n```\n\nOutput:\n```\n4\n0\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^5).\n\nThe third line contains one integer q (1 ≤ q ≤ 5·10^5).\n\nThen q lines follow, i-th line containing two integers l_i and r_i representing i-th query (1 ≤ l_i ≤ r_i ≤ n).",
+    "output": "Answer the queries as follows:\n\nIf there is no integer such that it occurs in the subarray from index l_i to index r_i exactly once, print 0. Otherwise print any such integer.",
     "time_limit": "3 seconds",
     "memory_limit": "768 megabytes",
     "tags": [
         "data structures",
         "divide and conquer",
         "*2400"
-    ]
+    ],
+    "rating": 2400
 }

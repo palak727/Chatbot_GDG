@@ -1,0 +1,18 @@
+{
+    "id": "1994A",
+    "contest_id": 1994,
+    "problem_letter": "A",
+    "title": "A. Diverse Game",
+    "statement": "Petr, watching Sergey's stream, came up with a matrix a, consisting of n rows and m columns (the number in the i-th row and j-th column is denoted as a_{i, j}), which contains all integers from 1 to n·m. But he didn't like the arrangement of the numbers, and now he wants to come up with a new matrix b, consisting of n rows and m columns, which will also contain all integers from 1 to n·m, such that for any 1 ≤ i ≤ n, 1 ≤ j ≤ m it holds that a_{i, j} ≠ b_{i, j}.\n\nYou are given the matrix a, construct any matrix b that meets Petr's requirements, or determine that it is impossible.\n\nHurry up! Otherwise, he will donate all his money to the stream in search of an answer to his question.\n\nEach test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 10) — the number of rows and columns of matrix a.\n\nThe next n lines contain m integers each, describing matrix a. The i-th of these lines contains the elements of matrix a_{i, 1}, a_{i, 2}, …, a_{i, m}.\n\nIt is guaranteed that all numbers in matrix a are distinct and 1 ≤ a_{i, j} ≤ n·m.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5·10^4.\n\nFor each test case, output n·m integers — any suitable matrix b, or -1 if such a matrix does not exist.\n\nIn the first test case, there is only one element in the matrix, so matrix b is the only matrix and it does not fit.\n\nIn the second test case a_{1, 1} = 2 ≠ 1 = b_{1, 1}, a_{2, 1} = 1 ≠ 2 = b_{2, 1}.\n\nInput:\n```\n51 112 1211 52 4 5 3 12 41 2 3 45 6 7 83 34 2 19 8 36 7 5\n```\n\nOutput:\n```\n-1\n1 \n2 \n4 5 3 1 2 \n6 7 8 5 \n2 3 4 1 \n8 3 9 \n7 5 6 \n2 1 4 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 10) — the number of rows and columns of matrix a.\n\nThe next n lines contain m integers each, describing matrix a. The i-th of these lines contains the elements of matrix a_{i, 1}, a_{i, 2}, …, a_{i, m}.\n\nIt is guaranteed that all numbers in matrix a are distinct and 1 ≤ a_{i, j} ≤ n·m.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5·10^4.",
+    "output": "For each test case, output n·m integers — any suitable matrix b, or -1 if such a matrix does not exist.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

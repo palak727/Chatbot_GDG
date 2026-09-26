@@ -1,0 +1,16 @@
+{
+    "id": "1671A",
+    "contest_id": 1671,
+    "problem_letter": "A",
+    "title": "A. String Building",
+    "statement": "You are given a string s. You have to determine whether it is possible to build the string s out of strings aa, aaa, bb and/or bbb by concatenating them. You can use the strings aa, aaa, bb and/or bbb any number of times and in any order.\n\nFor example:\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 50), consisting of characters a and/or b.\n\nFor each test case, print YES if it is possible to build the string s. Otherwise, print NO.\n\nYou may print each letter in any case (for example, YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nThe first four test cases of the example are described in the statement.\n\nInput:\n```\n8aaaabbbbbaaaaabbbaaaaaaabababaaaabbbaaa\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nNO\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 50), consisting of characters a and/or b.",
+    "output": "For each test case, print YES if it is possible to build the string s. Otherwise, print NO.\n\nYou may print each letter in any case (for example, YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

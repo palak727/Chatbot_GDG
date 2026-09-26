@@ -1,0 +1,24 @@
+{
+    "id": "1697E",
+    "contest_id": 1697,
+    "problem_letter": "E",
+    "title": "E. Coloring",
+    "statement": "You are given n points on the plane, the coordinates of the i-th point are (x_i, y_i). No two points have the same coordinates.\n\nThe distance between points i and j is defined as d(i,j) = |x_i - x_j| + |y_i - y_j|.\n\nFor each point, you have to choose a color, represented by an integer from 1 to n. For every ordered triple of different points (a,b,c), the following constraints should be met:\n\nCalculate the number of different ways to choose the colors that meet these constraints.\n\nThe first line contains one integer n (2 ≤ n ≤ 100) — the number of points.\n\nThen n lines follow. The i-th of them contains two integers x_i and y_i (0 ≤ x_i, y_i ≤ 10^8).\n\nNo two points have the same coordinates (i. e. if i ≠ j, then either x_i ≠ x_j or y_i ≠ y_j).\n\nPrint one integer — the number of ways to choose the colors for the points. Since it can be large, print it modulo 998244353.\n\nIn the first test, the following ways to choose the colors are suitable:\n\nInput:\n```\n3\n1 0\n3 0\n2 1\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n5\n1 2\n2 4\n3 4\n4 4\n1 3\n```\n\nOutput:\n```\n240\n```\n\nInput:\n```\n4\n1 0\n3 0\n2 1\n2 0\n```\n\nOutput:\n```\n24\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 100) — the number of points.\n\nThen n lines follow. The i-th of them contains two integers x_i and y_i (0 ≤ x_i, y_i ≤ 10^8).\n\nNo two points have the same coordinates (i. e. if i ≠ j, then either x_i ≠ x_j or y_i ≠ y_j).",
+    "output": "Print one integer — the number of ways to choose the colors for the points. Since it can be large, print it modulo 998244353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "constructive algorithms",
+        "dp",
+        "geometry",
+        "graphs",
+        "greedy",
+        "implementation",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

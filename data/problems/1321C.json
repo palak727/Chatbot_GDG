@@ -1,0 +1,19 @@
+{
+    "id": "1321C",
+    "contest_id": 1321,
+    "problem_letter": "C",
+    "title": "C. Remove Adjacent",
+    "statement": "You are given a string s consisting of lowercase Latin letters. Let the length of s be |s|. You may perform several operations on this string.\n\nIn one operation, you can choose some index i and remove the i-th character of s (s_i) if at least one of its adjacent characters is the previous letter in the Latin alphabet for s_i. For example, the previous letter for b is a, the previous letter for s is r, the letter a has no previous letters. Note that after each removal the length of the string decreases by one. So, the index i should satisfy the condition 1 ≤ i ≤ |s| during each operation.\n\nFor the character s_i adjacent characters are s_{i-1} and s_{i+1}. The first and the last characters of s both have only one adjacent character (unless |s| = 1).\n\nConsider the following example. Let s= bacabcab.\n\nYour task is to find the maximum possible number of characters you can remove if you choose the sequence of operations optimally.\n\nThe first line of the input contains one integer |s| (1 ≤ |s| ≤ 100) — the length of s.\n\nThe second line of the input contains one string s consisting of |s| lowercase Latin letters.\n\nPrint one integer — the maximum possible number of characters you can remove if you choose the sequence of moves optimally.\n\nThe first example is described in the problem statement. Note that the sequence of moves provided in the statement is not the only, but it can be shown that the maximum possible answer to this test is 4.\n\nIn the second example, you can remove all but one character of s. The only possible answer follows.\n\nInput:\n```\n8\nbacabcab\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4\nbcda\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6\nabbbbb\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line of the input contains one integer |s| (1 ≤ |s| ≤ 100) — the length of s.\n\nThe second line of the input contains one string s consisting of |s| lowercase Latin letters.",
+    "output": "Print one integer — the maximum possible number of characters you can remove if you choose the sequence of moves optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

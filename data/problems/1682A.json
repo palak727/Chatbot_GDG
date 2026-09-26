@@ -1,0 +1,17 @@
+{
+    "id": "1682A",
+    "contest_id": 1682,
+    "problem_letter": "A",
+    "title": "A. Palindromic Indices",
+    "statement": "You are given a palindromic string s of length n.\n\nYou have to count the number of indices i (1 ≤ i ≤ n) such that the string after removing s_i from s still remains a palindrome.\n\nFor example, consider s = \"aba\"\n\nA palindrome is a string that reads the same backward as forward. For example, \"abba\", \"a\", \"fef\" are palindromes whereas \"codeforces\", \"acd\", \"xy\" are not.\n\nThe input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. Description of the test cases follows.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 10^5) — the length of string s.\n\nThe second line of each test case contains a string s consisting of lowercase English letters. It is guaranteed that s is a palindrome.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of indices i (1 ≤ i ≤ n) such that the string after removing s_i from s still remains a palindrome.\n\nThe first test case is described in the statement.\n\nIn the second test case, the indices i that result in palindrome after removing s_i are 3, 4, 5, 6. Hence the answer is 4.\n\nIn the third test case, removal of any of the indices results in \"d\" which is a palindrome. Hence the answer is 2.\n\nInput:\n```\n33aba8acaaaaca2dd\n```\n\nOutput:\n```\n1\n4\n2\n```",
+    "input": "The input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. Description of the test cases follows.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 10^5) — the length of string s.\n\nThe second line of each test case contains a string s consisting of lowercase English letters. It is guaranteed that s is a palindrome.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of indices i (1 ≤ i ≤ n) such that the string after removing s_i from s still remains a palindrome.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

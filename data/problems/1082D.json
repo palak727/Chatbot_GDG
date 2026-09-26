@@ -1,0 +1,18 @@
+{
+    "id": "1082D",
+    "contest_id": 1082,
+    "problem_letter": "D",
+    "title": "D. Maximum Diameter Graph",
+    "statement": "Graph constructive problems are back! This time the graph you are asked to build should match the following properties.\n\nThe graph is connected if and only if there exists a path between every pair of vertices.\n\nThe diameter (aka \"longest shortest path\") of a connected undirected graph is the maximum number of edges in the shortest path between any pair of its vertices.\n\nThe degree of a vertex is the number of edges incident to it.\n\nGiven a sequence of n integers a_1, a_2, …, a_n construct a connected undirected graph of n vertices such that:\n\nOutput the resulting graph or report that no solution exists.\n\nThe first line contains a single integer n (3 ≤ n ≤ 500) — the number of vertices in the graph.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n - 1) — the upper limits to vertex degrees.\n\nPrint \"NO\" if no graph can be constructed under the given conditions.\n\nOtherwise print \"YES\" and the diameter of the resulting graph in the first line.\n\nThe second line should contain a single integer m — the number of edges in the resulting graph.\n\nThe i-th of the next m lines should contain two integers v_i, u_i (1 ≤ v_i, u_i ≤ n, v_i ≠ u_i) — the description of the i-th edge. The graph should contain no multiple edges — for each pair (x, y) you output, you should output no more pairs (x, y) or (y, x).\n\nHere are the graphs for the first two example cases. Both have diameter of 2.\n\nd_2 = 2 ≤ a_2 = 2\n\nd_3 = 1 ≤ a_3 = 2\n\nd_2 = 4 ≤ a_2 = 4\n\nd_3 = 1 ≤ a_3 = 1\n\nd_4 = 1 ≤ a_4 = 1\n\nInput:\n```\n3\n2 2 2\n```\n\nOutput:\n```\nYES 2\n2\n1 2\n2 3\n```\n\nInput:\n```\n5\n1 4 1 1 1\n```\n\nOutput:\n```\nYES 2\n4\n1 2\n3 2\n4 2\n5 2\n```\n\nInput:\n```\n3\n1 1 1\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains a single integer n (3 ≤ n ≤ 500) — the number of vertices in the graph.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n - 1) — the upper limits to vertex degrees.",
+    "output": "Print \"NO\" if no graph can be constructed under the given conditions.\n\nOtherwise print \"YES\" and the diameter of the resulting graph in the first line.\n\nThe second line should contain a single integer m — the number of edges in the resulting graph.\n\nThe i-th of the next m lines should contain two integers v_i, u_i (1 ≤ v_i, u_i ≤ n, v_i ≠ u_i) — the description of the i-th edge. The graph should contain no multiple edges — for each pair (x, y) you output, you should output no more pairs (x, y) or (y, x).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

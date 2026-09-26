@@ -1,0 +1,17 @@
+{
+    "id": "1342C",
+    "contest_id": 1342,
+    "problem_letter": "C",
+    "title": "C. Yet Another Counting Problem",
+    "statement": "You are given two integers a and b, and q queries. The i-th query consists of two numbers l_i and r_i, and the answer to it is the number of integers x such that l_i ≤ x ≤ r_i, and ((x bmod a) bmod b) ≠ ((x bmod b) bmod a). Calculate the answer for each query.\n\nRecall that y bmod z is the remainder of the division of y by z. For example, 5 bmod 3 = 2, 7 bmod 8 = 7, 9 bmod 4 = 1, 9 bmod 9 = 0.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases. Then the test cases follow.\n\nThe first line of each test case contains three integers a, b and q (1 ≤ a, b ≤ 200; 1 ≤ q ≤ 500).\n\nThen q lines follow, each containing two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^18) for the corresponding query.\n\nFor each test case, print q integers — the answers to the queries of this test case in the order they appear.\n\nInput:\n```\n2\n4 6 5\n1 1\n1 3\n1 5\n1 7\n1 9\n7 10 2\n7 8\n100 200\n```\n\nOutput:\n```\n0 0 0 2 4 \n0 91 \n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases. Then the test cases follow.\n\nThe first line of each test case contains three integers a, b and q (1 ≤ a, b ≤ 200; 1 ≤ q ≤ 500).\n\nThen q lines follow, each containing two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^18) for the corresponding query.",
+    "output": "For each test case, print q integers — the answers to the queries of this test case in the order they appear.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

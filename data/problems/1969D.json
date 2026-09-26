@@ -1,0 +1,19 @@
+{
+    "id": "1969D",
+    "contest_id": 1969,
+    "problem_letter": "D",
+    "title": "D. Shop Game",
+    "statement": "Alice and Bob are playing a game in the shop. There are n items in the shop; each item has two parameters: a_i (item price for Alice) and b_i (item price for Bob).\n\nAlice wants to choose a subset (possibly empty) of items and buy them. After that, Bob does the following:\n\nAlice's profit is equal to ∑limits_{i ∈ S} b_i - ∑limits_{j ∈ T} a_j, where S is the set of items Bob buys from Alice, and T is the set of items Alice buys from the shop. In other words, Alice's profit is the difference between the amount Bob pays her and the amount she spends buying the items.\n\nAlice wants to maximize her profit, Bob wants to minimize Alice's profit. Your task is to calculate Alice's profit if both Alice and Bob act optimally.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — Alice's profit if both Alice and Bob act optimally.\n\nIn the first test case, Alice should buy the 2-nd item and sell it to Bob, so her profit is 2 - 1 = 1.\n\nIn the second test case, Alice should buy the 1-st, the 2-nd and the 3-rd item; then Bob takes the 1-st item for free and pays for the 2-nd and the 3-rd item. Alice's profit is (3+2) - (1+2+1) = 1. Bob could take 2-nd item for free instead; this does not change Alice's profit. Bob won't take the 3-rd item for free, since this would lead to a profit of 2.\n\nInput:\n```\n42 02 11 24 11 2 1 43 3 2 34 22 1 1 14 2 3 26 21 3 4 9 1 37 6 8 10 6 8\n```\n\nOutput:\n```\n1\n1\n0\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — Alice's profit if both Alice and Bob act optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

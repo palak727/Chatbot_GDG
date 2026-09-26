@@ -1,0 +1,18 @@
+{
+    "id": "1744E2",
+    "contest_id": 1744,
+    "problem_letter": "E2",
+    "title": "E2. Divisible Numbers (hard version)",
+    "statement": "This is an hard version of the problem. The only difference between an easy and a hard version is the constraints on a, b, c and d.\n\nYou are given 4 positive integers a, b, c, d with a < c and b < d. Find any pair of numbers x and y that satisfies the following conditions:\n\nNote that required x and y may not exist.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10), the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe only line of each test case contains four integers a, b, c and d (1 ≤ a < c ≤ 10^9, 1 ≤ b < d ≤ 10^9).\n\nFor each test case print a pair of numbers a < x ≤ c and b < y ≤ d such that x·y is divisible by a·b. If there are multiple answers, print any of them. If there is no such pair of numbers, then print -1 -1.\n\nInput:\n```\n101 1 2 23 4 5 78 9 15 1812 21 14 2436 60 48 661024 729 373248 7301024 729 373247 7305040 40320 40319 1000000000999999999 999999999 1000000000 1000000000268435456 268435456 1000000000 1000000000\n```\n\nOutput:\n```\n2 2\n4 6\n12 12\n-1 -1\n-1 -1\n373248 730\n-1 -1\n15120 53760\n-1 -1\n536870912 536870912\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10), the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe only line of each test case contains four integers a, b, c and d (1 ≤ a < c ≤ 10^9, 1 ≤ b < d ≤ 10^9).",
+    "output": "For each test case print a pair of numbers a < x ≤ c and b < y ≤ d such that x·y is divisible by a·b. If there are multiple answers, print any of them. If there is no such pair of numbers, then print -1 -1.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

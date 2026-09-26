@@ -1,0 +1,17 @@
+{
+    "id": "1965F",
+    "contest_id": 1965,
+    "problem_letter": "F",
+    "title": "F. Conference",
+    "statement": "You have been asked to organize a very important art conference. The first step is to choose the dates.\n\nThe conference must last for a certain number of consecutive days. Each day, one lecturer must perform, and the same lecturer cannot perform more than once.\n\nYou asked n potential lecturers if they could participate in the conference. Lecturer i indicated that they could perform on any day from l_i to r_i inclusive.\n\nA certain segment of days can be chosen as the conference dates if there is a way to assign an available lecturer to each day of the segment, assigning each lecturer to no more than one day.\n\nFor each k from 1 to n, find how many ways there are to choose a segment of k consecutive days as the conference dates.\n\nThe first line of input contains one integer n — the number of potential lecturers (1 ≤ n ≤ 2·10^5).\n\nEach of the next n lines contains two integers l_i and r_i — the segment of available days for the ith lecturer (1 ≤ l_i ≤ r_i ≤ 2·10^5).\n\nPrint n integers, where the kth number denotes the number of ways to select a segment of k consecutive days as conference dates.\n\nIn the first testcase, a one-day conference can be organized on any of the days from 1 to 6. A two-day conference can be organized from day 2 to day 3, as well as from day 4 to day 5.\n\nIn the second testcase, five lecturers can perform only from day 1 to day 3, so it will not be possible to organize a conference longer than three days.\n\nInput:\n```\n31 23 45 6\n```\n\nOutput:\n```\n6\n2\n0\n```\n\nInput:\n```\n51 31 31 31 31 3\n```\n\nOutput:\n```\n3\n2\n1\n0\n0\n```",
+    "input": "The first line of input contains one integer n — the number of potential lecturers (1 ≤ n ≤ 2·10^5).\n\nEach of the next n lines contains two integers l_i and r_i — the segment of available days for the ith lecturer (1 ≤ l_i ≤ r_i ≤ 2·10^5).",
+    "output": "Print n integers, where the kth number denotes the number of ways to select a segment of k consecutive days as conference dates.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "flows",
+        "*3300"
+    ],
+    "rating": 3300
+}

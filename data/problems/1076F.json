@@ -1,0 +1,17 @@
+{
+    "id": "1076F",
+    "contest_id": 1076,
+    "problem_letter": "F",
+    "title": "F. Summer Practice Report",
+    "statement": "Vova has taken his summer practice this year and now he should write a report on how it went.\n\nVova has already drawn all the tables and wrote down all the formulas. Moreover, he has already decided that the report will consist of exactly n pages and the i-th page will include x_i tables and y_i formulas. The pages are numbered from 1 to n.\n\nVova fills the pages one after another, he can't go filling page i + 1 before finishing page i and he can't skip pages.\n\nHowever, if he draws strictly more than k tables in a row or writes strictly more than k formulas in a row then he will get bored. Vova wants to rearrange tables and formulas in each page in such a way that he doesn't get bored in the process. Vova can't move some table or some formula to another page.\n\nNote that the count doesn't reset on the start of the new page. For example, if the page ends with 3 tables and the next page starts with 5 tables, then it's counted as 8 tables in a row.\n\nHelp Vova to determine if he can rearrange tables and formulas on each page in such a way that there is no more than k tables in a row and no more than k formulas in a row.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 3·10^5, 1 ≤ k ≤ 10^6).\n\nThe second line contains n integers x_1, x_2, …, x_n (1 ≤ x_i ≤ 10^6) — the number of tables on the i-th page.\n\nThe third line contains n integers y_1, y_2, …, y_n (1 ≤ y_i ≤ 10^6) — the number of formulas on the i-th page.\n\nPrint \"YES\" if Vova can rearrange tables and formulas on each page in such a way that there is no more than k tables in a row and no more than k formulas in a row.\n\nOtherwise print \"NO\".\n\nIn the first example the only option to rearrange everything is the following (let table be 'T' and formula be 'F'):\n\nThat way all blocks of tables have length 2.\n\nIn the second example there is no way to fit everything in such a way that there are no more than 2 tables in a row and 2 formulas in a row.\n\nInput:\n```\n2 2\n5 5\n2 2\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n2 2\n5 6\n2 2\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n4 1\n4 1 10 1\n3 2 10 1\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 3·10^5, 1 ≤ k ≤ 10^6).\n\nThe second line contains n integers x_1, x_2, …, x_n (1 ≤ x_i ≤ 10^6) — the number of tables on the i-th page.\n\nThe third line contains n integers y_1, y_2, …, y_n (1 ≤ y_i ≤ 10^6) — the number of formulas on the i-th page.",
+    "output": "Print \"YES\" if Vova can rearrange tables and formulas on each page in such a way that there is no more than k tables in a row and no more than k formulas in a row.\n\nOtherwise print \"NO\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*2500"
+    ],
+    "rating": 2500
+}

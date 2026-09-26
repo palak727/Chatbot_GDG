@@ -1,0 +1,19 @@
+{
+    "id": "1980D",
+    "contest_id": 1980,
+    "problem_letter": "D",
+    "title": "D. GCD-sequence",
+    "statement": "GCD (Greatest Common Divisor) of two integers x and y is the maximum integer z by which both x and y are divisible. For example, GCD(36, 48) = 12, GCD(5, 10) = 5, and GCD(7,11) = 1.\n\nKristina has an array a consisting of exactly n positive integers. She wants to count the GCD of each neighbouring pair of numbers to get a new array b, called GCD-sequence.\n\nSo, the elements of the GCD-sequence b will be calculated using the formula b_i = GCD(a_i, a_{i + 1}) for 1 ≤ i ≤ n - 1.\n\nDetermine whether it is possible to remove exactly one number from the array a so that the GCD sequence b is non-decreasing (i.e., b_i ≤ b_{i+1} is always true).\n\nFor example, let Khristina had an array a = [20, 6, 12, 3, 48, 36]. If she removes a_4 = 3 from it and counts the GCD-sequence of b, she gets:\n\nThe first line of input data contains a single number t (1 ≤ t ≤ 10^4) — he number of test cases in the test.\n\nThis is followed by the descriptions of the test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array a.\n\nThe second line of each test case contains exactly n integers a_i (1 ≤ a_i ≤ 10^9) — the elements of array a.\n\nIt is guaranteed that the sum of n over all test case does not exceed 2·10^5.\n\nFor each test case, output a single line:\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will all be recognized as a positive answer).\n\nThe first test case is explained in the problem statement.\n\nInput:\n```\n12620 6 12 3 48 36412 6 3 4310 12 3532 16 8 4 25100 50 2 10 2042 4 8 1107 4 6 2 4 5 1 4 2 875 9 6 8 5 9 2611 14 8 12 9 395 7 3 10 6 3 12 6 334 2 481 6 11 12 6 12 3 6\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nYES\nNO\nYES\nYES\nYES\nYES\nYES\n```",
+    "input": "The first line of input data contains a single number t (1 ≤ t ≤ 10^4) — he number of test cases in the test.\n\nThis is followed by the descriptions of the test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array a.\n\nThe second line of each test case contains exactly n integers a_i (1 ≤ a_i ≤ 10^9) — the elements of array a.\n\nIt is guaranteed that the sum of n over all test case does not exceed 2·10^5.",
+    "output": "For each test case, output a single line:\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will all be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

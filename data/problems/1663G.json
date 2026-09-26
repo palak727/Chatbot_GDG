@@ -1,0 +1,17 @@
+{
+    "id": "1663G",
+    "contest_id": 1663,
+    "problem_letter": "G",
+    "title": "G. Six Characters",
+    "statement": "Aenar should go to the string's home.\n\nA string consisting of only 6 letters.\n\nA string consisting of only 6 characters.\n\nIf many answers are possible, the jury will still only accept one!",
+    "input": "A string consisting of only 6 letters.",
+    "output": "A string consisting of only 6 characters.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "strings"
+    ],
+    "rating": null
+}

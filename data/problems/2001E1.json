@@ -1,0 +1,19 @@
+{
+    "id": "2001E1",
+    "contest_id": 2001,
+    "problem_letter": "E1",
+    "title": "E1. Deterministic Heap (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the two versions is the definition of deterministic max-heap, time limit, and constraints on n and t. You can make hacks only if both versions of the problem are solved.\n\nConsider a perfect binary tree with size 2^n - 1, with nodes numbered from 1 to 2^n-1 and rooted at 1. For each vertex v (1 ≤ v ≤ 2^{n - 1} - 1), vertex 2v is its left child and vertex 2v + 1 is its right child. Each node v also has a value a_v assigned to it.\n\nDefine the operation pop as follows:\n\nThen we say the pop operation is deterministic if there is a unique way to do such operation. In other words, a_2v ≠ a_{2v + 1} would hold whenever choosing between them.\n\nA binary tree is called a max-heap if for every vertex v (1 ≤ v ≤ 2^{n - 1} - 1), both a_v ≥ a_2v and a_v ≥ a_{2v + 1} hold.\n\nA max-heap is deterministic if the pop operation is deterministic to the heap when we do it for the first time.\n\nInitially, a_v := 0 for every vertex v (1 ≤ v ≤ 2^n - 1), and your goal is to count the number of different deterministic max-heaps produced by applying the following operation add exactly k times:\n\nTwo heaps are considered different if there is a node which has different values in the heaps.\n\nSince the answer might be large, print it modulo p.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, k, p (1 ≤ n, k ≤ 500, 10^8 ≤ p ≤ 10^9, p is a prime).\n\nIt is guaranteed that the sum of n and the sum of k over all test cases does not exceed 500.\n\nFor each test case, output a single line containing an integer: the number of different deterministic max-heaps produced by applying the aforementioned operation add exactly k times, modulo p.\n\nFor the first testcase, there is only one way to generate a, and such sequence is a deterministic max-heap, so the answer is 1.\n\nFor the second testcase, if we choose v = 1 and do the operation, we would have a = [1, 0, 0], and since a_2 = a_3, we can choose either of them when doing the first pop operation, so such heap is not a deterministic max-heap.\n\nAnd if we choose v = 2, we would have a = [1, 1, 0], during the first pop, the following would happen:\n\nSince the first pop operation is deterministic, this is a deterministic max-heap. Also, if we choose v = 3, a would be a deterministic max-heap, so the answer is 2.\n\nInput:\n```\n71 13 9982443532 1 9982443533 2 9982448533 3 9982443533 4 1000000374 2 1000000394 3 100000037\n```\n\nOutput:\n```\n1\n2\n12\n52\n124\n32\n304\n```\n\nInput:\n```\n1500 500 100000007\n```\n\nOutput:\n```\n76297230\n```\n\nInput:\n```\n687 63 10000003777 77 100000039100 200 998244353200 100 99824435332 59 9982448531 1 998244353\n```\n\nOutput:\n```\n26831232\n94573603\n37147649\n847564946\n727060898\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, k, p (1 ≤ n, k ≤ 500, 10^8 ≤ p ≤ 10^9, p is a prime).\n\nIt is guaranteed that the sum of n and the sum of k over all test cases does not exceed 500.",
+    "output": "For each test case, output a single line containing an integer: the number of different deterministic max-heaps produced by applying the aforementioned operation add exactly k times, modulo p.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

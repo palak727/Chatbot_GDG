@@ -1,0 +1,18 @@
+{
+    "id": "1886D",
+    "contest_id": 1886,
+    "problem_letter": "D",
+    "title": "D. Monocarp and the Set",
+    "statement": "Monocarp has n numbers 1, 2, …, n and a set (initially empty). He adds his numbers to this set n times in some order. During each step, he adds a new number (which has not been present in the set before). In other words, the sequence of added numbers is a permutation of length n.\n\nEvery time Monocarp adds an element into the set except for the first time, he writes out a character:\n\nYou are given a string s of n-1 characters, which represents the characters written out by Monocarp (in the order he wrote them out). You have to process m queries to the string. Each query has the following format:\n\nBoth before processing the queries and after each query, you have to calculate the number of different ways to order the integers 1, 2, 3, …, n such that, if Monocarp inserts the integers into the set in that order, he gets the string s. Since the answers might be large, print them modulo 998244353.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 3·10^5).\n\nThe second line contains the string s, consisting of exactly n-1 characters <, > and/or ?.\n\nThen m lines follow. Each of them represents a query. Each line contains an integer i and a character c (1 ≤ i ≤ n-1; c is either <, >, or ?).\n\nBoth before processing the queries and after each query, print one integer — the number of ways to order the integers 1, 2, 3, …, n such that, if Monocarp inserts the integers into the set in that order, he gets the string s. Since the answers might be large, print them modulo 998244353.\n\nIn the first example, there are three possible orderings before all queries:\n\nAfter the last query, there is only one possible ordering:\n\nInput:\n```\n6 4\n<?>?>\n1 ?\n4 <\n5 <\n1 >\n```\n\nOutput:\n```\n3\n0\n0\n0\n1\n```\n\nInput:\n```\n2 2\n>\n1 ?\n1 <\n```\n\nOutput:\n```\n1\n0\n1\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 3·10^5).\n\nThe second line contains the string s, consisting of exactly n-1 characters <, > and/or ?.\n\nThen m lines follow. Each of them represents a query. Each line contains an integer i and a character c (1 ≤ i ≤ n-1; c is either <, >, or ?).",
+    "output": "Both before processing the queries and after each query, print one integer — the number of ways to order the integers 1, 2, 3, …, n such that, if Monocarp inserts the integers into the set in that order, he gets the string s. Since the answers might be large, print them modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

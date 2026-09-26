@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import heapq
 import re
 from typing import Any
 
@@ -79,18 +80,19 @@ def semantic_search(
     if candidate_indices is not None:
         if not candidate_indices:
             return []
-        sub_vectors = np.array(
-            [index.reconstruct(i) for i in candidate_indices], dtype=np.float32
+        target_count = min(k, len(candidate_indices))
+        candidate_ids = np.asarray(candidate_indices, dtype=np.int64)
+        selector = faiss.IDSelectorBatch(
+            len(candidate_ids), faiss.swig_ptr(candidate_ids)
         )
-        sub_index = faiss.IndexFlatL2(sub_vectors.shape[1])
-        sub_index.add(sub_vectors)
-        distances, local_idx = sub_index.search(query_vec, min(k, len(candidate_indices)))
-        results = []
-        for dist, li in zip(distances[0], local_idx[0]):
-            if li >= 0:
-                global_idx = candidate_indices[li]
-                results.append((problems[global_idx], float(dist)))
-        return results
+        search_params = faiss.SearchParameters()
+        search_params.sel = selector
+        distances, indices = index.search(query_vec, target_count, params=search_params)
+        return [
+            (problems[idx], float(dist))
+            for dist, idx in zip(distances[0], indices[0])
+            if idx >= 0
+        ]
 
     distances, indices = index.search(query_vec, min(k, len(problems)))
     results = []
@@ -108,12 +110,21 @@ def find_similar_problems(
     model: SentenceTransformer,
     k: int = 3,
     rating_tolerance: int = 200,
+    problem_id_to_index: dict[str, int] | None = None,
 ) -> list[dict]:
     """Find similar problems with comparable difficulty ratings."""
-    try:
-        idx = next(i for i, p in enumerate(problems) if p["id"] == problem["id"])
-    except StopIteration:
-        return []
+    if problem_id_to_index is None:
+        try:
+            idx = next(i for i, p in enumerate(problems) if p["id"] == problem["id"])
+        except StopIteration:
+            return []
+    else:
+        problem_id = problem.get("id")
+        if not isinstance(problem_id, str):
+            return []
+        idx = problem_id_to_index.get(problem_id)
+        if idx is None:
+            return []
 
     source_rating = problem.get("rating") or extract_rating(problem.get("tags", []))
     query_vec = vectors[idx : idx + 1].astype(np.float32)
@@ -145,6 +156,7 @@ class SearchEngine:
     def __init__(self) -> None:
         self.index: faiss.IndexFlatL2 | None = None
         self.problems: list[dict] = []
+        self.problem_id_to_index: dict[str, int] = {}
         self.vectors: np.ndarray | None = None
         self.model: SentenceTransformer | None = None
         self.bm25: BM25Okapi | None = None
@@ -156,6 +168,9 @@ class SearchEngine:
         self.index, self.problems, self.vectors, model_name = load_index_from_disk(
             FAISS_INDEX_PATH, METADATA_PATH
         )
+        self.problem_id_to_index = {
+            problem["id"]: index for index, problem in enumerate(self.problems)
+        }
         self.model = SentenceTransformer(model_name)
 
         # Repeat short topic fields so BM25 does not dilute them in long statements.
@@ -198,15 +213,17 @@ class SearchEngine:
         bm25_scores = self.bm25.get_scores(query_tokens)
 
         # Filter BM25 scores for candidates only
-        candidate_bm25 = [(idx, bm25_scores[idx]) for idx in candidate_indices]
-        candidate_bm25.sort(key=lambda x: x[1], reverse=True)
-        candidate_bm25 = candidate_bm25[:retrieval_k]
+        candidate_bm25 = heapq.nlargest(
+            retrieval_k,
+            ((idx, bm25_scores[idx]) for idx in candidate_indices),
+            key=lambda item: item[1],
+        )
 
         # 3. Reciprocal Rank Fusion (RRF)
         rrf_scores: dict[int, float] = {}
 
         for rank, (problem, _) in enumerate(dense_results):
-            p_idx = self.problems.index(problem)
+            p_idx = self.problem_id_to_index[problem["id"]]
             rrf_scores[p_idx] = rrf_scores.get(p_idx, 0.0) + 1.0 / (rrf_k + rank + 1)
 
         for rank, (p_idx, _) in enumerate(candidate_bm25):
@@ -249,7 +266,7 @@ class SearchEngine:
         if title_match:
             return [title_match]
 
-        candidate_indices = [self.problems.index(p) for p in pool if p in self.problems]
+        candidate_indices = [self.problem_id_to_index[p["id"]] for p in pool]
         return self.hybrid_search(query, candidate_indices, k=k)
 
     def find_problem_by_id(self, query: str) -> dict | None:
@@ -271,7 +288,13 @@ class SearchEngine:
         self.load()
         assert self.index is not None and self.vectors is not None and self.model is not None
         return find_similar_problems(
-            problem, self.index, self.problems, self.vectors, self.model, k=k
+            problem,
+            self.index,
+            self.problems,
+            self.vectors,
+            self.model,
+            k=k,
+            problem_id_to_index=self.problem_id_to_index,
         )
 
     @property

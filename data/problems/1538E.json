@@ -1,0 +1,20 @@
+{
+    "id": "1538E",
+    "contest_id": 1538,
+    "problem_letter": "E",
+    "title": "E. Funny Substrings",
+    "statement": "Polycarp came up with a new programming language. There are only two types of statements in it:\n\nAll variable names and strings only consist of lowercase letters of the English alphabet and do not exceed 5 characters.\n\nThe result of the program is the number of occurrences of string haha in the string that was written to the variable in the last statement.\n\nPolycarp was very tired while inventing that language. He asks you to implement it. Your task is — for given program statements calculate the number of occurrences of string haha in the last assigned variable.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^3). Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of statements in the program. All variable names and strings are guaranteed to consist only of lowercase letters of the English alphabet and do not exceed 5 characters.\n\nThis is followed by n lines describing the statements in the format described above. It is guaranteed that the program is correct.\n\nFor each set of input data, output the number of occurrences of the haha substring in the string that was written to the variable in the last statement.\n\nIn the first test case the resulting value of d is hhahahaha.\n\nInput:\n```\n4\n6\na := h\nb := aha\nc = a + b\nc = c + c\ne = c + c\nd = a + c\n15\nx := haha\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\nx = x + x\n1\nhaha := hah\n5\nhaahh := aaaha\nahhhh = haahh + haahh\nhaahh = haahh + haahh\nahhhh = ahhhh + haahh\nahhaa = haahh + ahhhh\n```\n\nOutput:\n```\n3\n32767\n0\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^3). Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of statements in the program. All variable names and strings are guaranteed to consist only of lowercase letters of the English alphabet and do not exceed 5 characters.\n\nThis is followed by n lines describing the statements in the format described above. It is guaranteed that the program is correct.",
+    "output": "For each set of input data, output the number of occurrences of the haha substring in the string that was written to the variable in the last statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "hashing",
+        "implementation",
+        "matrices",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

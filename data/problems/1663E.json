@@ -1,0 +1,16 @@
+{
+    "id": "1663E",
+    "contest_id": 1663,
+    "problem_letter": "E",
+    "title": "E. Are You Safe?",
+    "statement": "Seven boys and seven girls from Athens were brought before King Minos. The evil king laughed and said \"I hope you enjoy your stay in Crete\".\n\nWith a loud clang, the doors behind them shut, and darkness reigned. The terrified children huddled together. In the distance they heard a bellowing, unholy roar.\n\nBravely, they advanced forward, to their doom.\n\nn (1 ≤ n ≤ 100) — the dimensions of the labyrinth.\n\nEach of the next n lines contains a string of lowercase English letters of length n.\n\nInput:\n```\n10\natzxcodera\nmzhappyayc\nmineodteri\ntrxesonaac\nmtollexcxc\nhjikeoutlc\neascripsni\nrgvymnjcxm\nonzazwswwg\ngeothermal\n```\n\nOutput:\n```\nYES\n```",
+    "input": "n (1 ≤ n ≤ 100) — the dimensions of the labyrinth.\n\nEach of the next n lines contains a string of lowercase English letters of length n.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

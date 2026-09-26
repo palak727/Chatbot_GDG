@@ -1,0 +1,18 @@
+{
+    "id": "1985B",
+    "contest_id": 1985,
+    "problem_letter": "B",
+    "title": "B. Maximum Multiple Sum",
+    "statement": "Given an integer n, find an integer x such that:\n\nThe first line contains t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case contains a single integer n (2 ≤ n ≤ 100).\n\nFor each test case, output an integer, the optimal value of x. It can be shown there is only one unique answer.\n\nFor n = 3, the possible values of x are 2 and 3. The sum of all multiples of 2 less than or equal to n is just 2, and the sum of all multiples of 3 less than or equal to n is 3. Therefore, 3 is the optimal value of x.\n\nFor n = 15, the optimal value of x is 2. The sum of all multiples of 2 less than or equal to n is 2 + 4 + 6 + 8 + 10 + 12 + 14 = 56, which can be proven to be the maximal over all other possible values of x.\n\nInput:\n```\n2315\n```\n\nOutput:\n```\n3\n2\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case contains a single integer n (2 ≤ n ≤ 100).",
+    "output": "For each test case, output an integer, the optimal value of x. It can be shown there is only one unique answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

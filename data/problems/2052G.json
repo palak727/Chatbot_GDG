@@ -1,0 +1,18 @@
+{
+    "id": "2052G",
+    "contest_id": 2052,
+    "problem_letter": "G",
+    "title": "G. Geometric Balance",
+    "statement": "Peter's little brother Ivan likes to play with a turtle. The turtle is a special toy that lives on the plane and can execute three commands:\n\nIvan just learned about the compass, so he will only rotate his turtle so it faces one of eight cardinal or ordinal directions (angles a in rotate commands are always divisible by 45). Also, he will perform at least one draw command.\n\nPeter has noted all the commands Ivan has given to his turtle. He thinks that the image drawn by the turtle is adorable. Now Peter wonders about the smallest positive angle b such that he can perform the following operations: move the turtle to a point of his choosing, rotate it by b degrees, and execute all the commands in the same order. These operations should produce the same image as the original one. Can you help Peter?\n\nNote, two images are considered the same if the sets of points covered by ink on the plane are the same in both of the images.\n\nThe first line of the input contains a single integer n;(1 ≤ n ≤ 50000) — the number of commands Ivan has given.\n\nThe next n lines contain commands. Each command is one of:\n\nAt least one and at most 2000 of the commands are draw. It is guaranteed that no segment of the plane will be covered by ink more than once.\n\nOutput a single number, the answer to the question. The answer always exists.\n\nInput:\n```\n1draw 10\n```\n\nOutput:\n```\n180\n```\n\nInput:\n```\n7draw 1rotate 90draw 1rotate 90draw 1rotate 90draw 1\n```\n\nOutput:\n```\n90\n```\n\nInput:\n```\n3draw 1move 1draw 2\n```\n\nOutput:\n```\n360\n```",
+    "input": "The first line of the input contains a single integer n;(1 ≤ n ≤ 50000) — the number of commands Ivan has given.\n\nThe next n lines contain commands. Each command is one of:\n\nAt least one and at most 2000 of the commands are draw. It is guaranteed that no segment of the plane will be covered by ink more than once.",
+    "output": "Output a single number, the answer to the question. The answer always exists.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

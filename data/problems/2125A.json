@@ -1,0 +1,19 @@
+{
+    "id": "2125A",
+    "contest_id": 2125,
+    "problem_letter": "A",
+    "title": "A. Difficult Contest",
+    "statement": "It is known that a contest can be represented by a string s, consisting of uppercase Latin letters that denote problems. It is also known that a contest is difficult if it contains \"FFT\" or \"NTT\" as a contiguous substring.\n\nYour task is to rearrange the problem in contest s in such a way that this contest is not difficult. If the initial contest is not difficult, you may leave it as it is.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains s (1 ≤ |s| ≤ 2·10^5).\n\nAdditional constraints on the input data:\n\nFor each test case, output a string — a non-difficult contest that was obtained from s by rearranging the letters.\n\nIf there are multiple correct answers, you may output any. It can be shown that at least one correct answer always exists.\n\nInput:\n```\n5FFTABFBANTTAFFTNTTFFTFFTFFTNNTNNTAFFTBFFNTTFTTZ\n```\n\nOutput:\n```\nFTF\nABFBANATT\nNTFTFT\nTFFFFFFNTNTNTNT\nAFTFBTTFFNFTTZ\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains s (1 ≤ |s| ≤ 2·10^5).\n\nAdditional constraints on the input data:",
+    "output": "For each test case, output a string — a non-difficult contest that was obtained from s by rearranging the letters.\n\nIf there are multiple correct answers, you may output any. It can be shown that at least one correct answer always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "sortings",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

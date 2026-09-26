@@ -1,0 +1,18 @@
+{
+    "id": "1891D",
+    "contest_id": 1891,
+    "problem_letter": "D",
+    "title": "D. Suspicious logarithms",
+    "statement": "Let f(x) be the floor of the binary logarithm of x. In other words, f(x) is largest non-negative integer y, such that 2^y does not exceed x.\n\nLet g(x) be the floor of the logarithm of x with base f(x). In other words, g(x) is the largest non-negative integer z, such that f(x)^z does not exceed x.\n\nYou are given q queries. The i-th query consists of two integers l_i and r_i. The answer to the query is the sum of g(k) across all integers k, such that l_i ≤ k ≤ r_i. Since the answers might be large, print them modulo 10^9 + 7.\n\nThe first line contains a single integer q — the number of queries (1 ≤ q ≤ 10^5).\n\nThe next q lines each contain two integers l_i and r_i — the bounds of the i-th query (4 ≤ l_i ≤ r_i ≤ 10^18).\n\nFor each query, output the answer to the query modulo 10^9 + 7.\n\nThe table below contains the values of the functions f(x) and g(x) for all x such that 1 ≤ x ≤ 8.\n\nInput:\n```\n12\n4 6\n4 7\n4 8\n4 100000\n179 1000000000000000000\n57 179\n4 201018959\n7 201018960\n729 50624\n728 50624\n728 50625\n729 50625\n```\n\nOutput:\n```\n6\n8\n9\n348641\n41949982\n246\n1\n0\n149688\n149690\n149694\n149692\n```",
+    "input": "The first line contains a single integer q — the number of queries (1 ≤ q ≤ 10^5).\n\nThe next q lines each contain two integers l_i and r_i — the bounds of the i-th query (4 ≤ l_i ≤ r_i ≤ 10^18).",
+    "output": "For each query, output the answer to the query modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

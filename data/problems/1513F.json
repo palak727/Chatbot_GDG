@@ -1,0 +1,19 @@
+{
+    "id": "1513F",
+    "contest_id": 1513,
+    "problem_letter": "F",
+    "title": "F. Swapping Problem",
+    "statement": "You are given 2 arrays a and b, both of size n. You can swap two elements in b at most once (or leave it as it is), and you are required to minimize the value ∑_i|a_i-b_i|.\n\nFind the minimum possible value of this sum.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).\n\nOutput the minimum value of ∑_i|a_i-b_i|.\n\nIn the first example, we can swap the first and fifth element in array b, so that it becomes [ 5, 2, 3, 4, 1 ].\n\nTherefore, the minimum possible value of this sum would be |5-5| + |4-2| + |3-3| + |2-4| + |1-1| = 4.\n\nIn the second example, we can swap the first and second elements. So, our answer would be 2.\n\nInput:\n```\n5\n5 4 3 2 1\n1 2 3 4 5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2\n1 3\n4 2\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9).",
+    "output": "Output the minimum value of ∑_i|a_i-b_i|.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

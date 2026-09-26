@@ -1,0 +1,18 @@
+{
+    "id": "1942C2",
+    "contest_id": 1942,
+    "problem_letter": "C2",
+    "title": "C2. Bessie's Birthday Cake (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference between the two versions is the constraint on y. In this version 0 ≤ y ≤ n - x. You can make hacks only if both versions are solved.\n\nBessie has received a birthday cake from her best friend Elsie, and it came in the form of a regular polygon with n sides. The vertices of the cake are numbered from 1 to n clockwise. You and Bessie are going to choose some of those vertices to cut non-intersecting diagonals into the cake. In other words, the endpoints of the diagonals must be part of the chosen vertices.\n\nBessie would only like to give out pieces of cake which result in a triangle to keep consistency. The size of the pieces doesn't matter, and the whole cake does not have to be separated into all triangles (other shapes are allowed in the cake, but those will not be counted).\n\nBessie has already chosen x of those vertices that can be used to form diagonals. She wants you to choose no more than y other vertices such that the number of triangular pieces of cake she can give out is maximized.\n\nWhat is the maximum number of triangular pieces of cake Bessie can give out?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case consists of three integers, n, x, and y (4 ≤ n ≤ 10^9, 2 ≤ x ≤ min(n, 2·10^5), 0 ≤ y ≤ n - x) — the number of sides of the polygon, number of vertices Bessie has chosen, and the maximum number of other vertices you can choose.\n\nThe second line consists of x distinct integers from 1 to n, representing the vertices Bessie has chosen.\n\nIt is guaranteed the sum of x over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer: the maximum number of non-intersecting triangular pieces of cake she can give out.\n\nIn test cases 1, 2 and 3, you can get 6, 5 and 2 non-intersecting triangular pieces of cake, respectively. A possible construction is shown in the following pictures:\n\nThe green dots represent vertices that Bessie chose, the yellow dots represent vertices that you chose, the blue lines represent diagonals that are drawn, and the red numbers represent triangles that are counted.\n\nInput:\n```\n38 4 21 6 2 57 3 16 4 34 2 21 3\n```\n\nOutput:\n```\n6\n5\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case consists of three integers, n, x, and y (4 ≤ n ≤ 10^9, 2 ≤ x ≤ min(n, 2·10^5), 0 ≤ y ≤ n - x) — the number of sides of the polygon, number of vertices Bessie has chosen, and the maximum number of other vertices you can choose.\n\nThe second line consists of x distinct integers from 1 to n, representing the vertices Bessie has chosen.\n\nIt is guaranteed the sum of x over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer: the maximum number of non-intersecting triangular pieces of cake she can give out.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

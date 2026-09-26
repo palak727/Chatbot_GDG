@@ -1,0 +1,19 @@
+{
+    "id": "2066A",
+    "contest_id": 2066,
+    "problem_letter": "A",
+    "title": "A. Object Identification",
+    "statement": "This is an interactive problem.\n\nYou are given an array x_1, …, x_n of integers from 1 to n. The jury also has a fixed but hidden array y_1, …, y_n of integers from 1 to n. The elements of array y are unknown to you. Additionally, it is known that for all i, x_i ≠ y_i, and all pairs (x_i, y_i) are distinct.\n\nThe jury has secretly thought of one of two objects, and you need to determine which one it is:\n\nTo guess which object the jury has thought of, you can make queries. In one query, you must specify two numbers i, j (1 ≤ i, j ≤ n, i ≠ j). In response, you receive one number:\n\nYou have 2 queries to determine which of the objects the jury has thought of.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe interaction begins with reading n (3 ≤ n ≤ 2·10^5) — the length of the arrays x and y at the start of each test case.\n\nNext, read n integers: x_1, x_2, …, x_n (1 ≤ x_i ≤ n) — the elements of array x.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nThe array y_1, y_2, …, y_n is fixed for each test case. In other words, the interactor is not adaptive.\n\nIt is guaranteed that x_i ≠ y_i for all 1 ≤ i ≤ n, and all pairs (x_i, y_i) are distinct.\n\nTo make a query, output \"? i j\" (without quotes, 1 ≤ i, j ≤ n, i ≠ j). Then you must read the response to the query, which is a non-negative integer.\n\nTo give an answer, output \"! A\" if Object A is hidden or \"! B\" if Object B is hidden (without quotes). Note that printing the answer does not count as one of the 2 queries.\n\nAfter printing each query do not forget to output the end of line and flush^{∗} the output. Otherwise, you will get Idleness limit exceeded verdict. If, at any interaction step, you read -1 instead of valid data, your solution must exit immediately. This means that your solution will reveive Wrong answer because of an invalid query or any other mistake. Failing to exit can result in an arbitrary verdict because your solution will continue to read from a closed stream. Note that if the query is correct, the response will never be -1.\n\nHacks\n\nThe first line must contain an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case must contain an integer n (3 ≤ n ≤ 2·10^5) — the length of the hidden array.\n\nThe second line of each test case must contain n integers — x_1, x_2, …, x_n (1 ≤ x_i ≤ n).\n\nThe third line of each test case must contain n integers — y_1, y_2, …, y_n (1 ≤ y_i ≤ n).\n\nIt must be ensured that x_i ≠ y_i for all 1 ≤ i ≤ n, and all pairs (x_i, y_i) must be distinct.\n\nThe fourth line must contain one character: A or B, indicating which of the objects you want to hide.\n\nThe sum of n across all test cases must not exceed 2·10^5.\n\n^{∗}To flush, use:\n\nIn the first test case, x = [2,2,3], y = [1,3,1] and Object A is guessed.\n\nIn the second test case, x = [5,1,4,2,3], y = [3,3,2,4,1] and Object B is guessed.\n\nInput:\n```\n2\n3\n2 2 3\n\n1\n\n0\n\n5\n5 1 4 2 3\n\n4\n\n4\n```\n\nOutput:\n```\n? 2 3\n\n? 1 2\n\n! A\n\n? 1 5\n\n? 5 1\n\n! B\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "greedy",
+        "implementation",
+        "interactive",
+        "*1400"
+    ],
+    "rating": 1400
+}

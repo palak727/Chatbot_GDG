@@ -1,0 +1,19 @@
+{
+    "id": "1995D",
+    "contest_id": 1995,
+    "problem_letter": "D",
+    "title": "D. Cases",
+    "statement": "You're a linguist studying a mysterious ancient language. You know that\n\nYou have a single text written in this language. Unfortunately, as the language is really ancient, spaces between words are missing and all letters are uppercase. You wonder what is the minimum number of cases the language can have. Can you find this out?\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. It is followed by descriptions of the test cases.\n\nThe first line of each test case contains three integers n, c, k (1 ≤ k ≤ n ≤ 2^18, 1 ≤ c ≤ 18) — the length of the text, the number of letters in the language, and the maximum length of the word.\n\nThe second line contains a string of n characters — the text itself. Each character is one of the first c uppercase letters of the Latin alphabet.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2^18 and the sum of 2^c over all test cases does not exceed 2^18.\n\nFor each test case, output a single line consisting of a single integer — the minimum number of cases in the language.\n\nIn the first test case, there must be five cases in the language (for each of the letters 'A', 'B', 'C', 'D', and 'E' there must be a case that has a corresponding ending).\n\nIn the fourth test case, one case with ending 'B' is sufficient.\n\nInput:\n```\n75 5 1ABCDE3 1 2AAA3 2 2AAB10 2 2ABABABABAB4 4 4DCBA1 17 1Q9 3 2ABCABCABC\n```\n\nOutput:\n```\n5\n1\n2\n1\n1\n1\n2\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. It is followed by descriptions of the test cases.\n\nThe first line of each test case contains three integers n, c, k (1 ≤ k ≤ n ≤ 2^18, 1 ≤ c ≤ 18) — the length of the text, the number of letters in the language, and the maximum length of the word.\n\nThe second line contains a string of n characters — the text itself. Each character is one of the first c uppercase letters of the Latin alphabet.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2^18 and the sum of 2^c over all test cases does not exceed 2^18.",
+    "output": "For each test case, output a single line consisting of a single integer — the minimum number of cases in the language.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "strings",
+        "*2300"
+    ],
+    "rating": 2300
+}

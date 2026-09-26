@@ -1,0 +1,18 @@
+{
+    "id": "1462B",
+    "contest_id": 1462,
+    "problem_letter": "B",
+    "title": "B. Last Year's Substring",
+    "statement": "Polycarp has a string s[1 … n] of length n consisting of decimal digits. Polycarp performs the following operation with the string s no more than once (i.e. he can perform operation 0 or 1 time):\n\nFor example, the string s = \"20192020\" Polycarp can turn into strings:\n\nPolycarp likes the string \"2020\" very much, so he is wondering if it is possible to turn the string s into a string \"2020\" in no more than one operation? Note that you can perform zero operations.\n\nThe first line contains a positive integer t (1 ≤ t ≤ 1000 ) — number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains an integer n (4 ≤ n ≤ 200) — length of the string s. The next line contains a string s of length n consisting of decimal digits. It is allowed that the string s starts with digit 0.\n\nFor each test case, output on a separate line:\n\nYou may print every letter of \"YES\" and \"NO\" in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).\n\nIn the first test case, Polycarp could choose i=3 and j=6.\n\nIn the second test case, Polycarp could choose i=2 and j=5.\n\nIn the third test case, Polycarp did not perform any operations with the string.\n\nInput:\n```\n6\n8\n20192020\n8\n22019020\n4\n2020\n5\n20002\n6\n729040\n6\n200200\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nNO\n```",
+    "input": "The first line contains a positive integer t (1 ≤ t ≤ 1000 ) — number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains an integer n (4 ≤ n ≤ 200) — length of the string s. The next line contains a string s of length n consisting of decimal digits. It is allowed that the string s starts with digit 0.",
+    "output": "For each test case, output on a separate line:\n\nYou may print every letter of \"YES\" and \"NO\" in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

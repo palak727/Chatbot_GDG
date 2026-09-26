@@ -1,0 +1,18 @@
+{
+    "id": "1728C",
+    "contest_id": 1728,
+    "problem_letter": "C",
+    "title": "C. Digital Logarithm",
+    "statement": "Let's define f(x) for a positive integer x as the length of the base-10 representation of x without leading zeros. I like to call it a digital logarithm. Similar to a digital root, if you are familiar with that.\n\nYou are given two arrays a and b, each containing n positive integers. In one operation, you do the following:\n\nTwo arrays are considered similar to each other if you can rearrange the elements in both of them, so that they are equal (e. g. a_i = b_i for all i from 1 to n).\n\nWhat's the smallest number of operations required to make a and b similar to each other?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of elements in each of the arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_j < 10^9).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print the smallest number of operations required to make a and b similar to each other.\n\nIn the first testcase, you can apply the digital logarithm to b_1 twice.\n\nIn the second testcase, the arrays are already similar to each other.\n\nIn the third testcase, you can first apply the digital logarithm to a_1, then to b_2.\n\nInput:\n```\n411100041 2 3 43 1 4 232 9 31 100 91075019 709259 5 611271314 9024533 81871864 9 3 6 48659503 2 371245467 6 7 37376159 8 364036498 52295554 169\n```\n\nOutput:\n```\n2\n0\n2\n18\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of elements in each of the arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_j < 10^9).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print the smallest number of operations required to make a and b similar to each other.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

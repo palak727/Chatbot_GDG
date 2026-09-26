@@ -1,0 +1,20 @@
+{
+    "id": "1904B",
+    "contest_id": 1904,
+    "problem_letter": "B",
+    "title": "B. Collecting Game",
+    "statement": "You are given an array a of n positive integers and a score. If your score is greater than or equal to a_i, then you can increase your score by a_i and remove a_i from the array.\n\nFor each index i, output the maximum number of additional array elements that you can remove if you remove a_i and then set your score to a_i. Note that the removal of a_i should not be counted in the answer.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output n integers, the i-th of which denotes the maximum number of additional array elements that you can remove if you remove a_i from the array and then set your score to a_i.\n\nIn the first test case, the answers are as follows:\n\nIf we start with i=4, our initial score is a_4=4 and a=[20,5,1,2]. We can remove 3 additional elements in the following order:\n\nIf we start with i=1 we can remove all remaining elements in the array, so the answer is 4.\n\nIf we start with i=2, we can remove 3 additional elements in the following order: 1, 4, 2.\n\nIf we start with i=3, we can remove no additional elements.\n\nIf we start with i=5, we can remove 1 additional element: 1.\n\nInput:\n```\n4520 5 1 4 231434 7 1442115999999999 999999999 999999999 1000000000 1000000000\n```\n\nOutput:\n```\n4 3 0 3 1 \n1 0 2 \n0 \n4 4 4 4 4 \n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output n integers, the i-th of which denotes the maximum number of additional array elements that you can remove if you remove a_i from the array and then set your score to a_i.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

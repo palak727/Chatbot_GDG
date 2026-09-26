@@ -1,0 +1,20 @@
+{
+    "id": "1610E",
+    "contest_id": 1610,
+    "problem_letter": "E",
+    "title": "E. AmShZ and G.O.A.T.",
+    "statement": "Let's call an array of k integers c_1, c_2, …, c_k terrible, if the following condition holds:\n\nLet AVG be the (c_1 + c_2 + … + c_k)/k(the average of all the elements of the array, it doesn't have to be integer). Then the number of elements of the array which are bigger than AVG should be strictly larger than the number of elements of the array which are smaller than AVG. Note that elements equal to AVG don't count.\n\nFor example c = {1, 4, 4, 5, 6} is terrible because AVG = 4.0 and 5-th and 4-th elements are greater than AVG and 1-st element is smaller than AVG.\n\nLet's call an array of m integers b_1, b_2, …, b_m bad, if at least one of its non-empty subsequences is terrible, and good otherwise.\n\nYou are given an array of n integers a_1, a_2, …, a_n. Find the minimum number of elements that you have to delete from it to obtain a good array.\n\nAn array is a subsequence of another array if it can be obtained from it by deletion of several (possibly, zero or all) elements.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the size of a.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of array a.\n\nIn each testcase for any 1 ≤ i < n it is guaranteed that a_i ≤ a_{i+1}.\n\nIt is guaranteed that the sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print the minimum number of elements that you have to delete from it to obtain a good array.\n\nIn the first sample, the array a is already good.\n\nIn the second sample, it's enough to delete 1, obtaining array [4, 4, 5, 6], which is good.\n\nInput:\n```\n4\n3\n1 2 3\n5\n1 4 4 5 6\n6\n7 8 197860736 212611869 360417095 837913434\n8\n6 10 56026534 405137099 550504063 784959015 802926648 967281024\n```\n\nOutput:\n```\n0\n1\n2\n3\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the size of a.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of array a.\n\nIn each testcase for any 1 ≤ i < n it is guaranteed that a_i ≤ a_{i+1}.\n\nIt is guaranteed that the sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print the minimum number of elements that you have to delete from it to obtain a good array.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

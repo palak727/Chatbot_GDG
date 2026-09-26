@@ -1,0 +1,17 @@
+{
+    "id": "1137E",
+    "contest_id": 1137,
+    "problem_letter": "E",
+    "title": "E. Train Car Selection",
+    "statement": "Vasya likes to travel by train, but doesn't like when the car he travels in is located in the tail of the train.\n\nVasya gets on the train at the station. The train consists of n cars indexed from 1 to n counting from the locomotive (head of the train). Three types of events occur while the train is moving:\n\nAt each moment of time we will index the cars from the head of the train, starting from 1. Note that when adding new cars to the head of the train, the indexing of the old ones may shift.\n\nTo choose which car to go in, Vasya will use the value A_i for each car (where i is a car index), which is calculated as follows:\n\nVasya hasn't decided yet where he will get on the train and where will get off the train, so after each event of one of the three types he wants to know the least index of the car, such that its value A_i is minimal. Since there is a lot of cars, Vasya asked you to write a program that answers his question.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 300,000), the number of cars in the train at the time of departure from the station and the number of stations, respectively.\n\nNext m lines contain the descriptions of events. Each event is one of the following three types:\n\nIt is guaranteed that at any time the train length does not exceed 10^9. Also it's guaranteed that the integers A_i will not grow too high. Formally, it's guaranteed that if we sum the largest addition over all events of the 3-rd type (that is, b + (n - 1)·s, where n is the number of cars at that moment) then the acquired sum would be at most 10^18.\n\nAfter each of the m queries print two integers: j and A_j — the number of the car closest to the head of the train, such that its value A_j is minimal, and the value A_j itself.\n\nInput:\n```\n1 8\n1 1\n3 1 1\n3 1 1\n2 1\n2 1\n3 1 1\n2 1\n3 1 5\n```\n\nOutput:\n```\n1 0\n1 1\n1 2\n3 0\n3 0\n1 3\n5 0\n1 4\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 300,000), the number of cars in the train at the time of departure from the station and the number of stations, respectively.\n\nNext m lines contain the descriptions of events. Each event is one of the following three types:\n\nIt is guaranteed that at any time the train length does not exceed 10^9. Also it's guaranteed that the integers A_i will not grow too high. Formally, it's guaranteed that if we sum the largest addition over all events of the 3-rd type (that is, b + (n - 1)·s, where n is the number of cars at that moment) then the acquired sum would be at most 10^18.",
+    "output": "After each of the m queries print two integers: j and A_j — the number of the car closest to the head of the train, such that its value A_j is minimal, and the value A_j itself.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "*2700"
+    ],
+    "rating": 2700
+}

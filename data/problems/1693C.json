@@ -1,0 +1,18 @@
+{
+    "id": "1693C",
+    "contest_id": 1693,
+    "problem_letter": "C",
+    "title": "C. Keshi in Search of AmShZ",
+    "statement": "AmShZ has traveled to Italy from Iran for the Thom Yorke concert. There are n cities in Italy indexed from 1 to n and m directed roads indexed from 1 to m. Initially, Keshi is located in the city 1 and wants to go to AmShZ's house in the city n. Since Keshi doesn't know the map of Italy, AmShZ helps him to see each other as soon as possible.\n\nIn the beginning of each day, AmShZ can send one of the following two messages to Keshi:\n\nNote that AmShZ always knows Keshi's current location.\n\nAmShZ and Keshi want to find the smallest possible integer d for which they can make sure that they will see each other after at most d days. Help them find d.\n\nThe first line of the input contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of cities and roads correspondingly.\n\nThe i-th line of the following m lines contains two integers v_i and u_i (1 ≤ v_i , u_i ≤ n,v_i ≠ u_i), denoting a directed road going from city v_i to city u_i.\n\nIt is guaranteed that there is at least one route from city 1 to city n. Note that there may be more than one road between a pair of cities in each direction.\n\nOutput the smallest possible integer d to make sure that AmShZ and Keshi will see each other after at most d days.\n\nIn the first sample, it's enough for AmShZ to send the second type of message.\n\nIn the second sample, on the first day, AmShZ blocks the first road. So the only reachable city from city 1 will be city 4. Hence on the second day, AmShZ can tell Keshi to move and Keshi will arrive at AmShZ's house.\n\nIt's also possible for AmShZ to tell Keshi to move for two days.\n\nInput:\n```\n2 1\n1 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4 4\n1 2\n1 4\n2 4\n1 4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5 7\n1 2\n2 3\n3 5\n1 4\n4 3\n4 5\n3 1\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line of the input contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of cities and roads correspondingly.\n\nThe i-th line of the following m lines contains two integers v_i and u_i (1 ≤ v_i , u_i ≤ n,v_i ≠ u_i), denoting a directed road going from city v_i to city u_i.\n\nIt is guaranteed that there is at least one route from city 1 to city n. Note that there may be more than one road between a pair of cities in each direction.",
+    "output": "Output the smallest possible integer d to make sure that AmShZ and Keshi will see each other after at most d days.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*2300"
+    ],
+    "rating": 2300
+}

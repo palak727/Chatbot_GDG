@@ -1,0 +1,17 @@
+{
+    "id": "1974C",
+    "contest_id": 1974,
+    "problem_letter": "C",
+    "title": "C. Beautiful Triple Pairs",
+    "statement": "Polycarp was given an array a of n integers. He really likes triples of numbers, so for each j (1 ≤ j ≤ n - 2) he wrote down a triple of elements [a_j, a_{j + 1}, a_{j + 2}].\n\nPolycarp considers a pair of triples b and c beautiful if they differ in exactly one position, that is, one of the following conditions is satisfied:\n\nFind the number of beautiful pairs of triples among the written triples [a_j, a_{j + 1}, a_{j + 2}].\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array.\n\nIt is guaranteed that the sum of the values of n for all test cases in the test does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of beautiful pairs of triples among the pairs of the form [a_j, a_{j + 1}, a_{j + 2}].\n\nNote that the answer may not fit into 32-bit data types.\n\nIn the first example, a = [3, 2, 2, 2, 3], Polycarp will write the following triples:\n\nIn the third example, a = [1, 2, 3, 2, 2, 3, 4, 2], Polycarp will write the following triples:\n\nInput:\n```\n853 2 2 2 351 2 1 2 181 2 3 2 2 3 4 242 1 1 182 1 1 2 1 1 1 172 1 1 1 1 1 162 1 1 1 1 152 1 1 1 1\n```\n\nOutput:\n```\n2\n0\n3\n1\n8\n4\n3\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array.\n\nIt is guaranteed that the sum of the values of n for all test cases in the test does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of beautiful pairs of triples among the pairs of the form [a_j, a_{j + 1}, a_{j + 2}].\n\nNote that the answer may not fit into 32-bit data types.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "*1400"
+    ],
+    "rating": 1400
+}

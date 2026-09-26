@@ -1,0 +1,18 @@
+{
+    "id": "1349F1",
+    "contest_id": 1349,
+    "problem_letter": "F1",
+    "title": "F1. Slime and Sequences (Easy Version)",
+    "statement": "Note that the only differences between easy and hard versions are the constraints on n and the time limit. You can make hacks only if all versions are solved.\n\nSlime is interested in sequences. He defined good positive integer sequences p of length n as follows:\n\nFor the given integer n, the set of all good sequences of length n is s_n. For the fixed integer k and the sequence p, let f_p(k) be the number of times that k appears in p. For each k from 1 to n, Slime wants to know the following value:\n\nleft(∑_{p∈ s_n} f_p(k)right) mod 998,244,353\n\nThe first line contains one integer n (1≤ n≤ 5000).\n\nPrint n integers, the i-th of them should be equal to left(∑_{p∈ s_n} f_p(i)right) mod 998,244,353.\n\nIn the first example, s={[1,1],[1,2]}.\n\nIn the second example, s={[1,1,1],[1,1,2],[1,2,1],[1,2,2],[2,1,2],[1,2,3]}.\n\nIn the third example, s={[1]}.\n\nInput:\n```\n2\n```\n\nOutput:\n```\n3 1 \n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n10 7 1 \n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1 \n```",
+    "input": "The first line contains one integer n (1≤ n≤ 5000).",
+    "output": "Print n integers, the i-th of them should be equal to left(∑_{p∈ s_n} f_p(i)right) mod 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "fft",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

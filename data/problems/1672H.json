@@ -1,0 +1,18 @@
+{
+    "id": "1672H",
+    "contest_id": 1672,
+    "problem_letter": "H",
+    "title": "H. Zigu Zagu",
+    "statement": "You have a binary string a of length n consisting only of digits 0 and 1.\n\nYou are given q queries. In the i-th query, you are given two indices l and r such that 1 ≤ l ≤ r ≤ n.\n\nLet s=a[l,r]. You are allowed to do the following operation on s:\n\nFor each of the q queries, find the minimum number of operations needed to make s an empty string.\n\nNote that for a string s, s[l,r] denotes the subsegment s_l,s_{l+1},…,s_r.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10 ^ 5) — the length of the binary string a and the number of queries respectively.\n\nThe second line contains a binary string a of length n (a_i ∈ {0, 1}).\n\nEach of the next q lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — representing the substring of each query.\n\nPrint q lines, the i-th line representing the minimum number of operations needed for the i-th query.\n\nIn the first test case,\n\nInput:\n```\n5 3\n11011\n2 4\n1 5\n3 5\n```\n\nOutput:\n```\n1\n3\n2\n```\n\nInput:\n```\n10 3\n1001110110\n1 10\n2 5\n5 10\n```\n\nOutput:\n```\n4\n2\n3\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10 ^ 5) — the length of the binary string a and the number of queries respectively.\n\nThe second line contains a binary string a of length n (a_i ∈ {0, 1}).\n\nEach of the next q lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — representing the substring of each query.",
+    "output": "Print q lines, the i-th line representing the minimum number of operations needed for the i-th query.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "*2700"
+    ],
+    "rating": 2700
+}

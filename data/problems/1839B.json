@@ -1,0 +1,17 @@
+{
+    "id": "1839B",
+    "contest_id": 1839,
+    "problem_letter": "B",
+    "title": "B. Lamps",
+    "statement": "You have n lamps, numbered by integers from 1 to n. Each lamp i has two integer parameters a_i and b_i.\n\nAt each moment each lamp is in one of three states: it may be turned on, turned off, or broken.\n\nInitially all lamps are turned off. In one operation you can select one lamp that is turned off and turn it on (you can't turn on broken lamps). You receive b_i points for turning lamp i on. The following happens after each performed operation:\n\nPlease note that broken lamps never count as turned on and that after a turned on lamp breaks, you still keep points received for turning it on.\n\nYou can perform an arbitrary number of operations.\n\nFind the maximum number of points you can get.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of lamps.\n\nEach of the next n lines contains two integers a_i and b_i (1 ≤ a_i ≤ n, 1 ≤ b_i ≤ 10^9) — parameters of the i-th lamp.\n\nIt is guaranteed that sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, output one integer — the maximum number of points you can get.\n\nIn first test case n = 4. One of ways to get the maximum number of points is as follows:\n\nYour receive 13 + 2 = 15 points in total. It can be shown that this is the maximum number of points you can get, so the answer for the first test case is 15.\n\nIn the second test case, one of the ways to get the maximum number of points is as follows:\n\nYou receive 2 + 5 + 4 + 3 = 14 points in total. It can be shown that this is the maximum number of points you can get.\n\nIn the third test case, one of the ways to get the maximum number of points is as follows:\n\nYou receive 4 + 4 + 3 + 4 + 5 = 20 points in total. It can be shown that this is the maximum number of points you can get.\n\nInput:\n```\n442 21 61 101 1353 43 12 53 23 361 23 41 43 43 52 311 1\n```\n\nOutput:\n```\n15\n14\n20\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of lamps.\n\nEach of the next n lines contains two integers a_i and b_i (1 ≤ a_i ≤ n, 1 ≤ b_i ≤ 10^9) — parameters of the i-th lamp.\n\nIt is guaranteed that sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output one integer — the maximum number of points you can get.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

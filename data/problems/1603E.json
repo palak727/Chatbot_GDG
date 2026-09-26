@@ -1,0 +1,18 @@
+{
+    "id": "1603E",
+    "contest_id": 1603,
+    "problem_letter": "E",
+    "title": "E. A Perfect Problem",
+    "statement": "A sequence of integers b_1, b_2, …, b_m is called good if max(b_1, b_2, …, b_m)·min(b_1, b_2, …, b_m) ≥ b_1 + b_2 + … + b_m.\n\nA sequence of integers a_1, a_2, …, a_n is called perfect if every non-empty subsequence of a is good.\n\nYouKn0wWho has two integers n and M, M is prime. Help him find the number, modulo M, of perfect sequences a_1, a_2, …, a_n such that 1 ≤ a_i ≤ n + 1 for each integer i from 1 to n.\n\nA sequence d is a subsequence of a sequence c if d can be obtained from c by deletion of several (possibly, zero or all) elements.\n\nThe first and only line of the input contains two space-separated integers n and M (1 ≤ n ≤ 200; 10^8 ≤ M ≤ 10^9). It is guaranteed that M is prime.\n\nPrint a single integer — the number of perfect sequences modulo M.\n\nIn the first test case, the perfect sequences are [2, 2], [2, 3], [3, 2] and [3, 3].\n\nIn the second test case, some of the perfect sequences are [3, 4, 3, 5], [4, 5, 4, 4], [4, 5, 5, 5] etc. One example of a sequence which is not perfect is [2, 3, 3, 4], because, for example, the subsequence [2, 3, 4] is not an good as 2·4 < 2 + 3 + 4.\n\nInput:\n```\n2 998244353\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4 100000007\n```\n\nOutput:\n```\n32\n```\n\nInput:\n```\n69 999999937\n```\n\nOutput:\n```\n456886663\n```",
+    "input": "The first and only line of the input contains two space-separated integers n and M (1 ≤ n ≤ 200; 10^8 ≤ M ≤ 10^9). It is guaranteed that M is prime.",
+    "output": "Print a single integer — the number of perfect sequences modulo M.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*3200"
+    ],
+    "rating": 3200
+}

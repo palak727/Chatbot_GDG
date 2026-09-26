@@ -1,0 +1,18 @@
+{
+    "id": "1228E",
+    "contest_id": 1228,
+    "problem_letter": "E",
+    "title": "E. Another Filling the Grid",
+    "statement": "You have n × n square grid and an integer k. Put an integer in each cell while satisfying the conditions below.\n\nFind the number of ways to put integers in the grid. Since the answer can be very large, find the answer modulo (10^9 + 7).\n\nThe only line contains two integers n and k (1 ≤ n ≤ 250, 1 ≤ k ≤ 10^9).\n\nPrint the answer modulo (10^9 + 7).\n\nIn the first example, following 7 cases are possible.\n\nIn the second example, make sure you print the answer modulo (10^9 + 7).\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n123 456789\n```\n\nOutput:\n```\n689974806\n```",
+    "input": "The only line contains two integers n and k (1 ≤ n ≤ 250, 1 ≤ k ≤ 10^9).",
+    "output": "Print the answer modulo (10^9 + 7).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

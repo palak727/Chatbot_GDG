@@ -1,0 +1,18 @@
+{
+    "id": "1619D",
+    "contest_id": 1619,
+    "problem_letter": "D",
+    "title": "D. New Year's Problem",
+    "statement": "Vlad has n friends, for each of whom he wants to buy one gift for the New Year.\n\nThere are m shops in the city, in each of which he can buy a gift for any of his friends. If the j-th friend (1 ≤ j ≤ n) receives a gift bought in the shop with the number i (1 ≤ i ≤ m), then the friend receives p_ij units of joy. The rectangular table p_ij is given in the input.\n\nVlad has time to visit at most n-1 shops (where n is the number of friends). He chooses which shops he will visit and for which friends he will buy gifts in each of them.\n\nLet the j-th friend receive a_j units of joy from Vlad's gift. Let's find the value α=min{a_1, a_2, …, a_n}. Vlad's goal is to buy gifts so that the value of α is as large as possible. In other words, Vlad wants to maximize the minimum of the joys of his friends.\n\nFor example, let m = 2, n = 2. Let the joy from the gifts that we can buy in the first shop: p_11 = 1, p_12=2, in the second shop: p_21 = 3, p_22=4.\n\nThen it is enough for Vlad to go only to the second shop and buy a gift for the first friend, bringing joy 3, and for the second — bringing joy 4. In this case, the value α will be equal to min{3, 4} = 3\n\nHelp Vlad choose gifts for his friends so that the value of α is as high as possible. Please note that each friend must receive one gift. Vlad can visit at most n-1 shops (where n is the number of friends). In the shop, he can buy any number of gifts.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nAn empty line is written before each test case. Then there is a line containing integers m and n (2 ≤ n, 2 ≤ n·m ≤ 10^5) separated by a space — the number of shops and the number of friends, where n·m is the product of n and m.\n\nThen m lines follow, each containing n numbers. The number in the i-th row of the j-th column p_ij (1 ≤ p_ij ≤ 10^9) is the joy of the product intended for friend number j in shop number i.\n\nIt is guaranteed that the sum of the values n·m over all test cases in the test does not exceed 10^5.\n\nPrint t lines, each line must contain the answer to the corresponding test case — the maximum possible value of α, where α is the minimum of the joys from a gift for all of Vlad's friends.\n\nInput:\n```\n5\n\n2 2\n1 2\n3 4\n\n4 3\n1 3 1\n3 1 1\n1 2 2\n1 1 3\n\n2 3\n5 3 4\n2 5 1\n\n4 2\n7 9\n8 1\n9 6\n10 8\n\n2 4\n6 5 2 1\n7 9 7 2\n```\n\nOutput:\n```\n3\n2\n4\n8\n2\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input.\n\nAn empty line is written before each test case. Then there is a line containing integers m and n (2 ≤ n, 2 ≤ n·m ≤ 10^5) separated by a space — the number of shops and the number of friends, where n·m is the product of n and m.\n\nThen m lines follow, each containing n numbers. The number in the i-th row of the j-th column p_ij (1 ≤ p_ij ≤ 10^9) is the joy of the product intended for friend number j in shop number i.\n\nIt is guaranteed that the sum of the values n·m over all test cases in the test does not exceed 10^5.",
+    "output": "Print t lines, each line must contain the answer to the corresponding test case — the maximum possible value of α, where α is the minimum of the joys from a gift for all of Vlad's friends.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

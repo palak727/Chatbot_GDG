@@ -1,0 +1,19 @@
+{
+    "id": "1156E",
+    "contest_id": 1156,
+    "problem_letter": "E",
+    "title": "E. Special Segments of Permutation",
+    "statement": "You are given a permutation p of n integers 1, 2, ..., n (a permutation is an array where each element from 1 to n occurs exactly once).\n\nLet's call some subsegment p[l, r] of this permutation special if p_l + p_r = max limits_{i = l}^r p_i. Please calculate the number of special subsegments.\n\nThe first line contains one integer n (3 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers p_1, p_2, ..., p_n (1 ≤ p_i ≤ n). All these integers are pairwise distinct.\n\nPrint the number of special subsegments of the given permutation.\n\nSpecial subsegments in the first example are [1, 5] and [1, 3].\n\nThe only special subsegment in the second example is [1, 3].\n\nInput:\n```\n5\n3 4 1 5 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n1 3 2\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains one integer n (3 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers p_1, p_2, ..., p_n (1 ≤ p_i ≤ n). All these integers are pairwise distinct.",
+    "output": "Print the number of special subsegments of the given permutation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

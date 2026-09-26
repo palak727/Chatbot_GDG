@@ -1,0 +1,18 @@
+{
+    "id": "1316F",
+    "contest_id": 1316,
+    "problem_letter": "F",
+    "title": "F. Battalion Strength",
+    "statement": "There are n officers in the Army of Byteland. Each officer has some power associated with him. The power of the i-th officer is denoted by p_i. As the war is fast approaching, the General would like to know the strength of the army.\n\nThe strength of an army is calculated in a strange way in Byteland. The General selects a random subset of officers from these n officers and calls this subset a battalion.(All 2^n subsets of the n officers can be chosen equally likely, including empty subset and the subset of all officers).\n\nThe strength of a battalion is calculated in the following way:\n\nLet the powers of the chosen officers be a_1,a_2,…,a_k, where a_1 ≤ a_2 ≤ … ≤ a_k. The strength of this battalion is equal to a_1a_2 + a_2a_3 + … + a_{k-1}a_k. (If the size of Battalion is ≤ 1, then the strength of this battalion is 0).\n\nThe strength of the army is equal to the expected value of the strength of the battalion.\n\nAs the war is really long, the powers of officers may change. Precisely, there will be q changes. Each one of the form i x indicating that p_i is changed to x.\n\nYou need to find the strength of the army initially and after each of these q updates.\n\nNote that the changes are permanent.\n\nThe strength should be found by modulo 10^9+7. Formally, let M=10^9+7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and qnot≡ 0 bmod M). Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x ⋅ q ≡ p bmod M).\n\nThe first line of the input contains a single integer n (1 ≤ n ≤ 3⋅10^5) — the number of officers in Byteland's Army.\n\nThe second line contains n integers p_1,p_2,…,p_n (1 ≤ p_i ≤ 10^9).\n\nThe third line contains a single integer q (1 ≤ q ≤ 3⋅10^5) — the number of updates.\n\nEach of the next q lines contains two integers i and x (1 ≤ i ≤ n, 1 ≤ x ≤ 10^9), indicating that p_i is updated to x .\n\nIn the first line output the initial strength of the army.\n\nIn i-th of the next q lines, output the strength of the army after i-th update.\n\nIn first testcase, initially, there are four possible battalions\n\nAfter changing p_1 to 2, strength of battallion 1,2 changes to 4, so strength of army becomes 1.\n\nAfter changing p_2 to 1, strength of battalion 1,2 again becomes 2, so strength of army becomes 1/2.\n\nInput:\n```\n2\n1 2\n2\n1 2\n2 1\n```\n\nOutput:\n```\n500000004\n1\n500000004\n```\n\nInput:\n```\n4\n1 2 3 4\n4\n1 5\n2 5\n3 5\n4 5\n```\n\nOutput:\n```\n625000011\n13\n62500020\n375000027\n62500027\n```",
+    "input": "The first line of the input contains a single integer n (1 ≤ n ≤ 3⋅10^5) — the number of officers in Byteland's Army.\n\nThe second line contains n integers p_1,p_2,…,p_n (1 ≤ p_i ≤ 10^9).\n\nThe third line contains a single integer q (1 ≤ q ≤ 3⋅10^5) — the number of updates.\n\nEach of the next q lines contains two integers i and x (1 ≤ i ≤ n, 1 ≤ x ≤ 10^9), indicating that p_i is updated to x .",
+    "output": "In the first line output the initial strength of the army.\n\nIn i-th of the next q lines, output the strength of the army after i-th update.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

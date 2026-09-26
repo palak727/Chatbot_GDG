@@ -1,0 +1,18 @@
+{
+    "id": "1368D",
+    "contest_id": 1368,
+    "problem_letter": "D",
+    "title": "D. AND, OR and square sum",
+    "statement": "Gottfried learned about binary number representation. He then came up with this task and presented it to you.\n\nYou are given a collection of n non-negative integers a_1, …, a_n. You are allowed to perform the following operation: choose two distinct indices 1 ≤ i, j ≤ n. If before the operation a_i = x, a_j = y, then after the operation a_i = x~mathsfAND~y, a_j = x~mathsfOR~y, where mathsfAND and mathsfOR are bitwise AND and OR respectively (refer to the Notes section for formal description). The operation may be performed any number of times (possibly zero).\n\nAfter all operations are done, compute ∑_{i=1}^n a_i^2 — the sum of squares of all a_i. What is the largest sum of squares you can achieve?\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, …, a_n (0 ≤ a_i < 2^20).\n\nPrint a single integer — the largest possible sum of squares that can be achieved after several (possibly zero) operations.\n\nIn the first sample no operation can be made, thus the answer is 123^2.\n\nIn the second sample we can obtain the collection 1, 1, 7, and 1^2 + 1^2 + 7^2 = 51.\n\nIf x and y are represented in binary with equal number of bits (possibly with leading zeros), then each bit of x~mathsfAND~y is set to 1 if and only if both corresponding bits of x and y are set to 1. Similarly, each bit of x~mathsfOR~y is set to 1 if and only if at least one of the corresponding bits of x and y are set to 1. For example, x = 3 and y = 5 are represented as 011_2 and 101_2 (highest bit first). Then, x~mathsfAND~y = 001_2 = 1, and x~mathsfOR~y = 111_2 = 7.\n\nInput:\n```\n1\n123\n```\n\nOutput:\n```\n15129\n```\n\nInput:\n```\n3\n1 3 5\n```\n\nOutput:\n```\n51\n```\n\nInput:\n```\n2\n349525 699050\n```\n\nOutput:\n```\n1099509530625\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, …, a_n (0 ≤ a_i < 2^20).",
+    "output": "Print a single integer — the largest possible sum of squares that can be achieved after several (possibly zero) operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

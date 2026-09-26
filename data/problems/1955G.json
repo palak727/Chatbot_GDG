@@ -1,0 +1,21 @@
+{
+    "id": "1955G",
+    "contest_id": 1955,
+    "problem_letter": "G",
+    "title": "G. GCD on a grid",
+    "statement": "Not long ago, Egor learned about the Euclidean algorithm for finding the greatest common divisor of two numbers. The greatest common divisor of two numbers a and b is the largest number that divides both a and b without leaving a remainder. With this knowledge, Egor can solve a problem that he once couldn't.\n\nVasily has a grid with n rows and m columns, and the integer a_i_j is located at the intersection of the i-th row and the j-th column. Egor wants to go from the top left corner (at the intersection of the first row and the first column) to the bottom right corner (at the intersection of the last row and the last column) and find the greatest common divisor of all the numbers along the path. He is only allowed to move down and to the right. Egor has written down several paths and obtained different GCD values. He became interested in finding the maximum possible GCD.\n\nUnfortunately, Egor is tired of calculating GCDs, so he asks for your help in finding the maximum GCD of the integers along the path from the top left corner to the bottom right corner of the grid.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 100) — the number of rows and columns of the grid.\n\nThen, there are n lines, where the i-th line contains m integers (1 ≤ a_{i,j} ≤ 10^6) — the integers written in the i-th row and the j-th column of the grid.\n\nIt is guaranteed that the sum of n·m does not exceed 2·10^5 over all test cases.\n\nFor each test case, output the maximum possible GCD along the path from the top left cell to the bottom right cell in a separate line.\n\nInput:\n```\n32 330 20 3015 25 403 312 4 93 12 28 3 122 42 4 6 81 3 6 9\n```\n\nOutput:\n```\n10\n3\n1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 100) — the number of rows and columns of the grid.\n\nThen, there are n lines, where the i-th line contains m integers (1 ≤ a_{i,j} ≤ 10^6) — the integers written in the i-th row and the j-th column of the grid.\n\nIt is guaranteed that the sum of n·m does not exceed 2·10^5 over all test cases.",
+    "output": "For each test case, output the maximum possible GCD along the path from the top left cell to the bottom right cell in a separate line.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "implementation",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

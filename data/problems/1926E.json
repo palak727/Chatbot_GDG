@@ -1,0 +1,22 @@
+{
+    "id": "1926E",
+    "contest_id": 1926,
+    "problem_letter": "E",
+    "title": "E. Vlad and an Odd Ordering",
+    "statement": "Vladislav has n cards numbered 1, 2, …, n. He wants to lay them down in a row as follows:\n\nThe first line contains an integer t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^9) — the number of cards Vlad has, and the position of the card you need to output.\n\nFor each test case, output a single integer — the k-th card Vladislav lays down.\n\nIn the first seven test cases, n=7. Vladislav lays down the cards as follows:\n\nInput:\n```\n117 17 27 37 47 57 67 71 134 1484 191000000000 1000000000\n```\n\nOutput:\n```\n1\n3\n5\n7\n2\n6\n4\n1\n27\n37\n536870912\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^9) — the number of cards Vlad has, and the position of the card you need to output.",
+    "output": "For each test case, output a single integer — the k-th card Vladislav lays down.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "dp",
+        "implementation",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

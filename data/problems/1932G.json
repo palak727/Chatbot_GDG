@@ -1,0 +1,19 @@
+{
+    "id": "1932G",
+    "contest_id": 1932,
+    "problem_letter": "G",
+    "title": "G. Moving Platforms",
+    "statement": "There is a game where you need to move through a labyrinth. The labyrinth consists of n platforms, connected by m passages.\n\nEach platform is at some level l_i, an integer number from 0 to H - 1. In a single step, if you are currently on platform i, you can stay on it, or move to another platform j. To move to platform j they have to be connected by the passage, and their levels have to be the same, namely l_i = l_j.\n\nAfter each step, the levels of all platforms change. The new level of platform i is calculated as l'_i = (l_i + s_i) bmod H, for all i.\n\nYou start on platform 1. Find the minimum number of steps you need to get to platform n.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains three integers n, m, and H (2 ≤ n ≤ 10^5, 1 ≤ m ≤ 10^5, 1 ≤ H ≤ 10^9).\n\nThe second line contains n integers l_i, the initial level of each platform (0 ≤ l_i ≤ H-1).\n\nThe third line contains n integers s_i, the change of level for each platform (0 ≤ s_i ≤ H-1).\n\nNext m lines contain a description of the passages. Each passage is described as a pair of integers — the platforms, connected by the passage. There is at most one passage connecting each pair of platforms, and there is no passage connecting a platform to itself.\n\nThe sum of n for all tests does not exceed 10^5, the sum of m for all tests does not exceed 10^5.\n\nFor each test case, print a single integer, the minimum number of steps needed to get from platform 1 to platform n.\n\nIf it is impossible to get to platform n, print -1.\n\nThis is how levels of the platforms change, and what actions we need to perform in the first example.\n\nInput:\n```\n33 3 101 9 42 3 01 23 21 32 1 101 24 61 28 7 2522 14 5 3 10 14 11 19 5 4 10 7 16 18 182 86 33 57 52 61 44 7\n```\n\nOutput:\n```\n6\n-1\n52\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains three integers n, m, and H (2 ≤ n ≤ 10^5, 1 ≤ m ≤ 10^5, 1 ≤ H ≤ 10^9).\n\nThe second line contains n integers l_i, the initial level of each platform (0 ≤ l_i ≤ H-1).\n\nThe third line contains n integers s_i, the change of level for each platform (0 ≤ s_i ≤ H-1).\n\nNext m lines contain a description of the passages. Each passage is described as a pair of integers — the platforms, connected by the passage. There is at most one passage connecting each pair of platforms, and there is no passage connecting a platform to itself.\n\nThe sum of n for all tests does not exceed 10^5, the sum of m for all tests does not exceed 10^5.",
+    "output": "For each test case, print a single integer, the minimum number of steps needed to get from platform 1 to platform n.\n\nIf it is impossible to get to platform n, print -1.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "graphs",
+        "math",
+        "number theory",
+        "shortest paths",
+        "*2300"
+    ],
+    "rating": 2300
+}

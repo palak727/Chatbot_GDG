@@ -1,0 +1,16 @@
+{
+    "id": "1593A",
+    "contest_id": 1593,
+    "problem_letter": "A",
+    "title": "A. Elections",
+    "statement": "The elections in which three candidates participated have recently ended. The first candidate received a votes, the second one received b votes, the third one received c votes. For each candidate, solve the following problem: how many votes should be added to this candidate so that he wins the election (i.e. the number of votes for this candidate was strictly greater than the number of votes for any other candidate)?\n\nPlease note that for each candidate it is necessary to solve this problem independently, i.e. the added votes for any candidate do not affect the calculations when getting the answer for the other two candidates.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing three integers a, b, and c (0 ≤ a,b,c ≤ 10^9).\n\nFor each test case, output in a separate line three integers A, B, and C (A, B, C ≥ 0) separated by spaces — the answers to the problem for the first, second, and third candidate, respectively.\n\nInput:\n```\n5\n0 0 0\n10 75 15\n13 13 17\n1000 0 0\n0 1000000000 0\n```\n\nOutput:\n```\n1 1 1\n66 0 61\n5 5 0\n0 1001 1001\n1000000001 0 1000000001\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing three integers a, b, and c (0 ≤ a,b,c ≤ 10^9).",
+    "output": "For each test case, output in a separate line three integers A, B, and C (A, B, C ≥ 0) separated by spaces — the answers to the problem for the first, second, and third candidate, respectively.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

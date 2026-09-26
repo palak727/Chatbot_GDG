@@ -1,0 +1,20 @@
+{
+    "id": "1681D",
+    "contest_id": 1681,
+    "problem_letter": "D",
+    "title": "D. Required Length",
+    "statement": "You are given two integer numbers, n and x. You may perform several operations with the integer x.\n\nEach operation you perform is the following one: choose any digit y that occurs in the decimal representation of x at least once, and replace x by x·y.\n\nYou want to make the length of decimal representation of x (without leading zeroes) equal to n. What is the minimum number of operations required to do that?\n\nThe only line of the input contains two integers n and x (2 ≤ n ≤ 19; 1 ≤ x < 10^{n-1}).\n\nPrint one integer — the minimum number of operations required to make the length of decimal representation of x (without leading zeroes) equal to n, or -1 if it is impossible.\n\nIn the second example, the following sequence of operations achieves the goal:\n\nInput:\n```\n2 1\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n13 42\n```\n\nOutput:\n```\n12\n```",
+    "input": "The only line of the input contains two integers n and x (2 ≤ n ≤ 19; 1 ≤ x < 10^{n-1}).",
+    "output": "Print one integer — the minimum number of operations required to make the length of decimal representation of x (without leading zeroes) equal to n, or -1 if it is impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "hashing",
+        "shortest paths",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1537A",
+    "contest_id": 1537,
+    "problem_letter": "A",
+    "title": "A. Arithmetic Array",
+    "statement": "An array b of length k is called good if its arithmetic mean is equal to 1. More formally, if (b_1 + ⋯ + b_k)/k=1.\n\nNote that the value (b_1+⋯+b_k)/k is not rounded up or down. For example, the array [1,1,1,2] has an arithmetic mean of 1.25, which is not equal to 1.\n\nYou are given an integer array a of length n. In an operation, you can append a non-negative integer to the end of the array. What's the minimum number of operations required to make the array good?\n\nWe have a proof that it is always possible with finitely many operations.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the initial array a.\n\nThe second line of each test case contains n integers a_1,…,a_n (-10^4≤ a_i ≤ 10^4), the elements of the array.\n\nFor each test case, output a single integer — the minimum number of non-negative integers you have to append to the array so that the arithmetic mean of the array will be exactly 1.\n\nIn the first test case, we don't need to add any element because the arithmetic mean of the array is already 1, so the answer is 0.\n\nIn the second test case, the arithmetic mean is not 1 initially so we need to add at least one more number. If we add 0 then the arithmetic mean of the whole array becomes 1, so the answer is 1.\n\nIn the third test case, the minimum number of elements that need to be added is 16 since only non-negative integers can be added.\n\nIn the fourth test case, we can add a single integer 4. The arithmetic mean becomes (-2+4)/2 which is equal to 1.\n\nInput:\n```\n4\n3\n1 1 1\n2\n1 2\n4\n8 4 6 2\n1\n-2\n```\n\nOutput:\n```\n0\n1\n16\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the initial array a.\n\nThe second line of each test case contains n integers a_1,…,a_n (-10^4≤ a_i ≤ 10^4), the elements of the array.",
+    "output": "For each test case, output a single integer — the minimum number of non-negative integers you have to append to the array so that the arithmetic mean of the array will be exactly 1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

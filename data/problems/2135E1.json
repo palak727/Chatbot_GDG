@@ -1,0 +1,18 @@
+{
+    "id": "2135E1",
+    "contest_id": 2135,
+    "problem_letter": "E1",
+    "title": "E1. Beyond the Palindrome (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, n≤ 10^6, and the sum of n over all test cases does not exceed 10^6. You can hack only if you solved all versions of this problem.\n\nFor a binary string^{∗} r, we define f(r) as the result of the following process:\n\nFor example, f(mathtt100110001)=mathtt001 because r changes as follows: mathttunderline1001underline10001→ mathtt0underline1001→mathtt001.\n\nWe call a binary string s almost-palindrome if and only if f(s)=f(rev(s))^{‡}.\n\nAquawave has given you an integer n. You have to help him find the number of distinct almost-palindrome binary strings of length n, modulo 998,244,353.\n\n^{∗}A binary string is a string where each character is either texttt0 or texttt1.\n\n^{†}A string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\n^{‡}rev(s) is the string obtained by writing s from right to left. For example, rev(mathtt10100)=mathtt00101.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (1≤ n≤ 10^6) — the length of the binary strings.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer — the number of distinct almost-palindrome binary strings of length n, modulo 998,244,353.\n\nIn the first test case, all binary strings of length 1 are almost-palindrome.\n\nIn the second test case, all almost-palindrome binary strings of length 2 are mathtt00 and mathtt11.\n\nIn the third test case, all almost-palindrome binary strings of length 3 are mathtt000, mathtt010, mathtt101, and mathtt111.\n\nInput:\n```\n12123456789101001024\n```\n\nOutput:\n```\n2\n2\n4\n8\n12\n26\n44\n86\n164\n302\n307217648\n950903700\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (1≤ n≤ 10^6) — the length of the binary strings.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer — the number of distinct almost-palindrome binary strings of length n, modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*3300"
+    ],
+    "rating": 3300
+}

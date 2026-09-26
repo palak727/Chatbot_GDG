@@ -1,0 +1,20 @@
+{
+    "id": "1228D",
+    "contest_id": 1228,
+    "problem_letter": "D",
+    "title": "D. Complete Tripartite",
+    "statement": "You have a simple undirected graph consisting of n vertices and m edges. The graph doesn't contain self-loops, there is at most one edge between a pair of vertices. The given graph can be disconnected.\n\nLet's make a definition.\n\nLet v_1 and v_2 be two some nonempty subsets of vertices that do not intersect. Let f(v_1, v_2) be true if and only if all the conditions are satisfied:\n\nCreate three vertex sets (v_1, v_2, v_3) which satisfy the conditions below;\n\nIs it possible to create such three vertex sets? If it's possible, print matching vertex set for each vertex.\n\nThe first line contains two integers n and m (3 ≤ n ≤ 10^5, 0 ≤ m ≤ min(3·10^5, (n(n-1))/2)) — the number of vertices and edges in the graph.\n\nThe i-th of the next m lines contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) — it means there is an edge between a_i and b_i. The graph doesn't contain self-loops, there is at most one edge between a pair of vertices. The given graph can be disconnected.\n\nIf the answer exists, print n integers. i-th integer means the vertex set number (from 1 to 3) of i-th vertex. Otherwise, print -1.\n\nIf there are multiple answers, print any.\n\nIn the first example, if v_1 = { 1 }, v_2 = { 2, 3 }, and v_3 = { 4, 5, 6 } then vertex sets will satisfy all conditions. But you can assign vertices to vertex sets in a different way; Other answers like \"2 3 3 1 1 1\" will be accepted as well.\n\nIn the second example, it's impossible to make such vertex sets.\n\nInput:\n```\n6 11\n1 2\n1 3\n1 4\n1 5\n1 6\n2 4\n2 5\n2 6\n3 4\n3 5\n3 6\n```\n\nOutput:\n```\n1 2 2 3 3 3 \n```\n\nInput:\n```\n4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and m (3 ≤ n ≤ 10^5, 0 ≤ m ≤ min(3·10^5, (n(n-1))/2)) — the number of vertices and edges in the graph.\n\nThe i-th of the next m lines contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) — it means there is an edge between a_i and b_i. The graph doesn't contain self-loops, there is at most one edge between a pair of vertices. The given graph can be disconnected.",
+    "output": "If the answer exists, print n integers. i-th integer means the vertex set number (from 1 to 3) of i-th vertex. Otherwise, print -1.\n\nIf there are multiple answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "hashing",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

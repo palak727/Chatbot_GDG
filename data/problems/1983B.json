@@ -1,0 +1,19 @@
+{
+    "id": "1983B",
+    "contest_id": 1983,
+    "problem_letter": "B",
+    "title": "B. Corner Twist",
+    "statement": "You are given two grids of numbers a and b, with n rows and m columns. All the values in the grid are 0, 1 or 2.\n\nYou can perform the following operation on a any number of times:\n\nNote that the operation only changes the values of the corners of the picked subrectangle.\n\nIs it possible to convert the grid a into grid b by applying the above operation any number of times (possibly zero)?\n\nThe first line contains an integer t, the number of testcases (1 ≤ t ≤ 250).\n\nFor each testcase:\n\nThe first line contains two integers n and m, the number of rows and columns in the grid (2 ≤ n,m ≤ 500).\n\nEach of the next n lines contain m characters — the j-th character of the i-th line represents a_{i,j}.\n\nEach of the next n lines contain m characters — the j-th character of the i-th line represents b_{i,j} (0 ≤ a_{i,j}, b_{i,j} ≤ 2).\n\nIt is guaranteed that the sum of n over all test cases and the sum of m over all test cases do not exceed 500.\n\nFor each test case print \"YES\" (without quotes) if it is possible to convert grid a into grid b and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first testcase, grid a can be converted into b in the following manner:\n\nbeginmatrixfbox0 & 0 & fbox0 0 & 0 & 0 fbox0 & 0 & fbox0endmatrix Rightarrow beginmatrix1 & 0 & 2 0 & fbox0 & fbox0 2 & fbox0 & fbox1endmatrix Rightarrow beginmatrix1 & 0 & 2 fbox0 & fbox1 & 2 fbox2 & fbox2 & 2endmatrix Rightarrow beginmatrix1 & fbox0 & fbox2 1 & 0 & 2 1 & fbox0 & fbox2endmatrix Rightarrow beginmatrix1 & 1 & 1 1 & fbox0 & fbox2 1 & fbox2 & fbox0endmatrix Rightarrow beginmatrix1 & 1 & 1 1 & 1 & 1 1 & 1 & 1endmatrix\n\nHere, in each operation, the top-right and bottom-left corners highlighted by a box are incremented by 2 modulo 3, while the top-left and bottom-right corners are incremented by 1 modulo 3.\n\nIn the fourth testcase, it can be proven that it is not possible to convert grid a into grid b using the above-mentioned operations any number of times.\n\nInput:\n```\n73 30000000001111111114 4000000000000000021001200001200214 4102012001210000000001200220000003 30120120120101110118 8000000000000000000000000000000000000000000000000000000001000000000000000012000000201000000102000000201000000102000000210100000002 700000000000000222011101112222 70000000010001022201111210202\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains an integer t, the number of testcases (1 ≤ t ≤ 250).\n\nFor each testcase:\n\nThe first line contains two integers n and m, the number of rows and columns in the grid (2 ≤ n,m ≤ 500).\n\nEach of the next n lines contain m characters — the j-th character of the i-th line represents a_{i,j}.\n\nEach of the next n lines contain m characters — the j-th character of the i-th line represents b_{i,j} (0 ≤ a_{i,j}, b_{i,j} ≤ 2).\n\nIt is guaranteed that the sum of n over all test cases and the sum of m over all test cases do not exceed 500.",
+    "output": "For each test case print \"YES\" (without quotes) if it is possible to convert grid a into grid b and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

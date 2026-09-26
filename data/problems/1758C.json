@@ -1,0 +1,17 @@
+{
+    "id": "1758C",
+    "contest_id": 1758,
+    "problem_letter": "C",
+    "title": "C. Almost All Multiples",
+    "statement": "Given two integers n and x, a permutation^dagger p of length n is called funny if p_i is a multiple of i for all 1 ≤ i ≤ n - 1, p_n = 1, and p_1 = x.\n\nFind the lexicographically minimal^ddagger funny permutation, or report that no such permutation exists.\n\n^dagger A permutation of length n is an array consisting of each of the integers from 1 to n exactly once.\n\n^ddagger Let a and b be permutations of length n. Then a is lexicographically smaller than b if in the first position i where a and b differ, a_i < b_i. A permutation is lexicographically minimal if it is lexicographically smaller than all other permutations.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and x (2 ≤ n ≤ 2·10^5; 1 < x ≤ n).\n\nThe sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, if the answer exists, output n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the lexicographically minimal funny permutation p. Otherwise, output -1.\n\nIn the first test case, the permutation [3,2,1] satisfies all the conditions: p_1=3, p_3=1, and:\n\nIn the second test case, the permutation [2,4,3,1] satisfies all the conditions: p_1=2, p_4=1, and:\n\nWe can show that these permutations are lexicographically minimal.\n\nNo such permutations exist in the third test case.\n\nInput:\n```\n33 34 25 4\n```\n\nOutput:\n```\n3 2 1 \n2 4 3 1 \n-1\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and x (2 ≤ n ≤ 2·10^5; 1 < x ≤ n).\n\nThe sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if the answer exists, output n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the lexicographically minimal funny permutation p. Otherwise, output -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1942G",
+    "contest_id": 1942,
+    "problem_letter": "G",
+    "title": "G. Bessie and Cards",
+    "statement": "Bessie has recently started playing a famous card game. In the game, there is only one deck of cards, consisting of a \"draw 0\" cards, b \"draw 1\" cards, c \"draw 2\" cards, and 5 special cards. At the start of the game, all cards are in the randomly shuffled deck.\n\nBessie starts the game by drawing the top 5 cards of the deck. She may then play \"draw x\" cards from the hand to draw the next x cards from the top of the deck. Note that every card can only be played once, special cards cannot be played, and if Bessie uses a \"draw 2\" card when there is only 1 card remaining in the deck, then she simply draws that remaining card. Bessie wins if she draws all 5 special cards.\n\nSince Bessie is not very good at math problems, she wants you to find the probability that she wins, given that the deck is shuffled randomly over all (a + b + c + 5)! possible orderings. It can be shown that this answer can always be expressed as a fraction p/q where p and q are coprime integers. Output p·q^{-1} modulo 998,244,353.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains three integers a, b, and c (0 ≤ a, b, c ≤ 2·10^5) – the number of draw 0 cards, draw 1 cards, and draw 2 cards, respectively.\n\nIt is guaranteed that the sum of a over all test cases does not exceed 2·10^5, the sum of b over all test cases does not exceed 2·10^5, and the sum of c over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the probability that Bessie wins, modulo 998,244,353.\n\nIn the first case, we have 1 of each type of \"draw\" card and 5 special cards. There are 30,720 starting decks where Bessie will win by drawing the top 5 cards and 40,320 starting decks in total. Thus, the probability of Bessie winning is (30,720)/(40,320) = 16/21.\n\nOne example of a winning starting deck is, top to bottom,\n\nOne example of a losing starting deck is:\n\nInput:\n```\n41 1 10 0 05 3 73366 1434 1234\n```\n\nOutput:\n```\n903173463\n1\n35118742\n398952013\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains three integers a, b, and c (0 ≤ a, b, c ≤ 2·10^5) – the number of draw 0 cards, draw 1 cards, and draw 2 cards, respectively.\n\nIt is guaranteed that the sum of a over all test cases does not exceed 2·10^5, the sum of b over all test cases does not exceed 2·10^5, and the sum of c over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the probability that Bessie wins, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2800"
+    ],
+    "rating": 2800
+}

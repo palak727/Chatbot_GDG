@@ -1,0 +1,19 @@
+{
+    "id": "1749D",
+    "contest_id": 1749,
+    "problem_letter": "D",
+    "title": "D. Counting Arrays",
+    "statement": "Consider an array a of length n with elements numbered from 1 to n. It is possible to remove the i-th element of a if gcd(a_i, i) = 1, where gcd denotes the greatest common divisor. After an element is removed, the elements to the right are shifted to the left by one position.\n\nAn array b with n integers such that 1 ≤ b_i ≤ n - i + 1 is a removal sequence for the array a if it is possible to remove all elements of a, if you remove the b_1-th element, then the b_2-th, ..., then the b_n-th element. For example, let a = [42, 314]:\n\nAn array is ambiguous if it has at least two removal sequences. For example, the array [1, 2, 5] is ambiguous: it has removal sequences [3, 1, 1] and [1, 2, 1]. The array [42, 314] is not ambiguous: the only removal sequence it has is [1, 1].\n\nYou are given two integers n and m. You have to calculate the number of ambiguous arrays a such that the length of a is from 1 to n and each a_i is an integer from 1 to m.\n\nThe only line of the input contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 10^12).\n\nPrint one integer — the number of ambiguous arrays a such that the length of a is from 1 to n and each a_i is an integer from 1 to m. Since the answer can be very large, print it modulo 998244353.\n\nInput:\n```\n2 3\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n4 2\n```\n\nOutput:\n```\n26\n```\n\nInput:\n```\n4 6\n```\n\nOutput:\n```\n1494\n```\n\nInput:\n```\n1337 424242424242\n```\n\nOutput:\n```\n119112628\n```",
+    "input": "The only line of the input contains two integers n and m (2 ≤ n ≤ 3·10^5; 1 ≤ m ≤ 10^12).",
+    "output": "Print one integer — the number of ambiguous arrays a such that the length of a is from 1 to n and each a_i is an integer from 1 to m. Since the answer can be very large, print it modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

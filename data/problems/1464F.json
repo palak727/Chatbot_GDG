@@ -1,0 +1,17 @@
+{
+    "id": "1464F",
+    "contest_id": 1464,
+    "problem_letter": "F",
+    "title": "F. My Beautiful Madness",
+    "statement": "You are given a tree. We will consider simple paths on it. Let's denote path between vertices a and b as (a, b). Let d-neighborhood of a path be a set of vertices of the tree located at a distance ≤ d from at least one vertex of the path (for example, 0-neighborhood of a path is a path itself). Let P be a multiset of the tree paths. Initially, it is empty. You are asked to maintain the following queries:\n\nThe first line contains two integers n and q — the number of vertices in the tree and the number of queries, accordingly (1 ≤ n ≤ 2·10^5, 2 ≤ q ≤ 2·10^5).\n\nEach of the following n - 1 lines contains two integers x_i and y_i — indices of vertices connected by i-th edge (1 ≤ x_i, y_i ≤ n).\n\nThe following q lines contain queries in the format described in the statement.\n\nIt's guaranteed that:\n\nFor each query of the third type output answer on a new line.\n\nInput:\n```\n1 4\n1 1 1\n1 1 1\n2 1 1\n3 0\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n5 3\n1 2\n1 3\n3 4\n4 5\n1 1 2\n1 5 5\n3 1\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n10 6\n1 2\n2 3\n3 4\n4 7\n7 10\n2 5\n5 6\n6 8\n8 9\n1 9 9\n1 9 8\n1 8 5\n3 0\n3 1\n3 2\n```\n\nOutput:\n```\nNo\nYes\nYes\n```",
+    "input": "The first line contains two integers n and q — the number of vertices in the tree and the number of queries, accordingly (1 ≤ n ≤ 2·10^5, 2 ≤ q ≤ 2·10^5).\n\nEach of the following n - 1 lines contains two integers x_i and y_i — indices of vertices connected by i-th edge (1 ≤ x_i, y_i ≤ n).\n\nThe following q lines contain queries in the format described in the statement.\n\nIt's guaranteed that:",
+    "output": "For each query of the third type output answer on a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1385D",
+    "contest_id": 1385,
+    "problem_letter": "D",
+    "title": "D. a-Good String",
+    "statement": "You are given a string s[1 … n] consisting of lowercase Latin letters. It is guaranteed that n = 2^k for some integer k ≥ 0.\n\nThe string s[1 … n] is called c-good if at least one of the following three conditions is satisfied:\n\nFor example: \"aabc\" is 'a'-good, \"ffgheeee\" is 'e'-good.\n\nIn one move, you can choose one index i from 1 to n and replace s_i with any lowercase Latin letter (any character from 'a' to 'z').\n\nYour task is to find the minimum number of moves required to obtain an 'a'-good string from s (i.e. c-good string for c= 'a'). It is guaranteed that the answer always exists.\n\nYou have to answer t independent test cases.\n\nAnother example of an 'a'-good string is as follows. Consider the string s = \"cdbbaaaa\". It is an 'a'-good string, because:\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 131~072) — the length of s. It is guaranteed that n = 2^k for some integer k ≥ 0. The second line of the test case contains the string s consisting of n lowercase Latin letters.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).\n\nFor each test case, print the answer — the minimum number of moves required to obtain an 'a'-good string from s (i.e. c-good string with c = 'a'). It is guaranteed that the answer exists.\n\nInput:\n```\n6\n8\nbbdcaaaa\n8\nasdfghjk\n8\nceaaaabb\n8\nbbaaddcc\n1\nz\n2\nac\n```\n\nOutput:\n```\n0\n7\n4\n5\n1\n1\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 131~072) — the length of s. It is guaranteed that n = 2^k for some integer k ≥ 0. The second line of the test case contains the string s consisting of n lowercase Latin letters.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).",
+    "output": "For each test case, print the answer — the minimum number of moves required to obtain an 'a'-good string from s (i.e. c-good string with c = 'a'). It is guaranteed that the answer exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "divide and conquer",
+        "dp",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

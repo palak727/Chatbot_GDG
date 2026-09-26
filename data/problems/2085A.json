@@ -1,0 +1,17 @@
+{
+    "id": "2085A",
+    "contest_id": 2085,
+    "problem_letter": "A",
+    "title": "A. Serval and String Theory",
+    "statement": "A string r consisting only of lowercase Latin letters is called universal if and only if r is lexicographically smaller^{∗} than the reversal^{†} of r.\n\nYou are given a string s consisting of n lowercase Latin letters. You are required to make s universal. To achieve this, you can perform the following operation on s at most k times:\n\nDetermine whether you can make s universal by performing the above operation at most k times.\n\n^{∗}A string a is lexicographically smaller than a string b of the same length, if and only if the following holds:\n\n^{†}The reversal of a string r is the string obtained by writing r from right to left. For example, the reversal of the string textttabcad is textttdacba.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1≤ n≤ 100, 0≤ k≤ 10^4) — the length of the string s, and the maximum number of operations you can perform.\n\nThe second line contains a string s consisting of n lowercase Latin letters.\n\nFor each test case, print \"YES\" if it is possible to make s universal by performing the operation at most k times. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, s will keep the same after any operations. However, the reversal of texttta is still texttta, so it is impossible to make s universal.\n\nIn the second test case, the string textttrev is lexicographically smaller than textttver. Thus, s is already universal.\n\nIn the fifth test case, you can perform the operations as follows:\n\nAnd the string textttinuserval is universal.\n\nInput:\n```\n81 10000a3 3rev6 0string6 0theory9 2universal19 0codeforcesecrofedoc19 1codeforcesecrofedoc3 1zzz\n```\n\nOutput:\n```\nNO\nYES\nNO\nYES\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1≤ n≤ 100, 0≤ k≤ 10^4) — the length of the string s, and the maximum number of operations you can perform.\n\nThe second line contains a string s consisting of n lowercase Latin letters.",
+    "output": "For each test case, print \"YES\" if it is possible to make s universal by performing the operation at most k times. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*900"
+    ],
+    "rating": 900
+}

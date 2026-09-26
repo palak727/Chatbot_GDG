@@ -1,0 +1,21 @@
+{
+    "id": "1673F",
+    "contest_id": 1673,
+    "problem_letter": "F",
+    "title": "F. Anti-Theft Road Planning",
+    "statement": "This is an interactive problem.\n\nA city has n^2 buildings divided into a grid of n rows and n columns. You need to build a road of some length D(A,B) of your choice between each pair of adjacent by side buildings A and B. Due to budget limitations and legal restrictions, the length of each road must be a positive integer and the total length of all roads should not exceed 48,000.\n\nThere is a thief in the city who will start from the topmost, leftmost building (in the first row and the first column) and roam around the city, occasionally stealing artifacts from some of the buildings. He can move from one building to another adjacent building by travelling through the road which connects them.\n\nYou are unable to track down what buildings he visits and what path he follows to reach them. But there is one tracking mechanism in the city. The tracker is capable of storing a single integer x which is initially 0. Each time the thief travels from a building A to another adjacent building B through a road of length D(A,B), the tracker changes x to xoplus D(A,B). Each time the thief steals from a building, the tracker reports the value x stored in it and resets it back to 0.\n\nIt is known beforehand that the thief will steal in exactly k buildings but you will know the values returned by the tracker only after the thefts actually happen. Your task is to choose the lengths of roads in such a way that no matter what strategy or routes the thief follows, you will be able to exactly tell the location of all the buildings where the thefts occurred from the values returned by the tracker.\n\nFirst read a single line containing two integers n (2≤ n≤ 32) and k (1≤ k≤ 1024) denoting the number of rows and number of thefts respectively.\n\nLet's denote the j-th building in the i-th row by B_{i,j}.\n\nThen print n lines each containing n-1 integers. The j-th integer of the i-th line must be the value of D(B_{i,j},B_{i,j+1}).\n\nThen print n-1 lines each containing n integers. The j-th integer of the i-th line must be the value of D(B_{i,j},B_{i+1,j}).\n\nRemember that the total length of the roads must not exceed 48,000.\n\nThen answer k queries. First read the value x returned by the tracker. Then print two integers denoting the row number and column number of the building where the theft occurred. After that you will be able to answer the next query (if such exists).\n\nAfter printing the answers do not forget to output end of line and flush the output buffer. Otherwise you will get the verdict Idleness limit exceeded. To flush the buffer, use:\n\nHacks\n\nYou cannot make hacks in this problem.\n\nFor the sample test, n=2 and k=4.\n\nYou choose to build the roads of the following lengths:\n\nThe thief follows the following strategy:\n\nThe tracker responds in the following way:\n\nInput:\n```\n2 4\n\n\n\n14\n\n1\n\n14\n\n3\n```\n\nOutput:\n```\n1\n8\n2 4\n\n1 2\n\n1 1\n\n1 2\n\n2 1\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "divide and conquer",
+        "greedy",
+        "interactive",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

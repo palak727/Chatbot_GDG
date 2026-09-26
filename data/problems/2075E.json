@@ -1,0 +1,20 @@
+{
+    "id": "2075E",
+    "contest_id": 2075,
+    "problem_letter": "E",
+    "title": "E. XOR Matrix",
+    "statement": "For two arrays a = [a_1, a_2, …, a_n] and b = [b_1, b_2, …, b_m], we define the XOR matrix X of size n × m, where for each pair (i,j) (1 ≤ i ≤ n; 1 ≤ j ≤ m) it holds that X_{i,j} = a_i oplus b_j. The symbol oplus denotes the bitwise XOR operation.\n\nYou are given four integers n, m, A, B. Count the number of such pairs of arrays (a, b) such that:\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing four integers n, m, A, B (2 ≤ n, m, A, B ≤ 2^29 - 1).\n\nFor each test case, output one integer — the number of pairs of arrays (a, b) that satisfy all three conditions. Since this number can be very large, output it modulo 998244353.\n\nInput:\n```\n62 2 2 22 3 4 55 7 4 31337 42 1337 424 2 13 37536870902 536370902 536390912 466128231\n```\n\nOutput:\n```\n57\n864\n50360\n439988899\n112000\n732195491\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing four integers n, m, A, B (2 ≤ n, m, A, B ≤ 2^29 - 1).",
+    "output": "For each test case, output one integer — the number of pairs of arrays (a, b) that satisfy all three conditions. Since this number can be very large, output it modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

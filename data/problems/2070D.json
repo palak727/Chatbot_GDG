@@ -1,0 +1,18 @@
+{
+    "id": "2070D",
+    "contest_id": 2070,
+    "problem_letter": "D",
+    "title": "D. Tree Jumps",
+    "statement": "You are given a rooted tree, consisting of n vertices. The vertices in the tree are numbered from 1 to n, and the root is the vertex 1. Let d_x be the distance (the number of edges on the shortest path) from the root to the vertex x.\n\nThere is a chip that is initially placed at the root. You can perform the following operation as many times as you want (possibly zero):\n\nFor example, in the tree above, the following chip moves are possible: 1 → 2, 1 → 5, 2 → 7, 5 → 3, 5 → 4, 3 → 6, 7 → 6.\n\nA sequence of vertices is valid if you can move the chip in such a way that it visits all vertices from the sequence (and only them), in the order they are given in the sequence.\n\nYour task is to calculate the number of valid vertex sequences. Since the answer might be large, print it modulo 998244353.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5).\n\nThe second line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i is the parent of the i-th vertex in the tree. Vertex 1 is the root.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a single integer — the number of valid vertex sequences, taken modulo 998244353.\n\nIn the first example, the following sequences are valid: [1], [1, 2], [1, 4], [1, 4, 3].\n\nIn the second example, the following sequences are valid: [1], [1, 2].\n\nIn the third example, the following sequences are valid: [1], [1, 2], [1, 2, 7], [1, 2, 7, 6], [1, 5], [1, 5, 3], [1, 5, 3, 6], [1, 5, 4].\n\nInput:\n```\n341 2 131 271 2 2 1 4 5\n```\n\nOutput:\n```\n4\n2\n8\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5).\n\nThe second line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i is the parent of the i-th vertex in the tree. Vertex 1 is the root.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the number of valid vertex sequences, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

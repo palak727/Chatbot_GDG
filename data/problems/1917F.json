@@ -1,0 +1,19 @@
+{
+    "id": "1917F",
+    "contest_id": 1917,
+    "problem_letter": "F",
+    "title": "F. Construct Tree",
+    "statement": "You are given an array of integers l_1, l_2, …, l_n and an integer d. Is it possible to construct a tree satisfying the following three conditions?\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 250) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, d (2 ≤ n ≤ 2000, 1 ≤ d ≤ 2000).\n\nThe second line of each test case contains n integers l_1, l_2, …, l_n (1 ≤ l_i ≤ d).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, output textttYes if it is possible to construct a tree that satisfies all the conditions, and textttNo otherwise.\n\nYou can print the letters in any case (upper or lower).\n\nBelow, you are given the illustrations of trees for the first and third test cases. One of the diameters is highlighted by coloring its edges in red.\n\nInput:\n```\n34 101 2 3 44 71 4 3 46 182 4 3 7 6 7\n```\n\nOutput:\n```\nYes\nNo\nYes\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 250) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n, d (2 ≤ n ≤ 2000, 1 ≤ d ≤ 2000).\n\nThe second line of each test case contains n integers l_1, l_2, …, l_n (1 ≤ l_i ≤ d).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, output textttYes if it is possible to construct a tree that satisfies all the conditions, and textttNo otherwise.\n\nYou can print the letters in any case (upper or lower).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

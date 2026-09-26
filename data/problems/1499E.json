@@ -1,0 +1,19 @@
+{
+    "id": "1499E",
+    "contest_id": 1499,
+    "problem_letter": "E",
+    "title": "E. Chaotic Merge",
+    "statement": "You are given two strings x and y, both consist only of lowercase Latin letters. Let |s| be the length of string s.\n\nLet's call a sequence a a merging sequence if it consists of exactly |x| zeros and exactly |y| ones in some order.\n\nA merge z is produced from a sequence a by the following rules:\n\nTwo merging sequences a and b are different if there is some position i such that a_i ≠ b_i.\n\nLet's call a string z chaotic if for all i from 2 to |z| z_{i-1} ≠ z_i.\n\nLet s[l,r] for some 1 ≤ l ≤ r ≤ |s| be a substring of consecutive letters of s, starting from position l and ending at position r inclusive.\n\nLet f(l_1, r_1, l_2, r_2) be the number of different merging sequences of x[l_1,r_1] and y[l_2,r_2] that produce chaotic merges. Note that only non-empty substrings of x and y are considered.\n\nCalculate ∑ limits_{1 ≤ l_1 ≤ r_1 ≤ |x| 1 ≤ l_2 ≤ r_2 ≤ |y|} f(l_1, r_1, l_2, r_2). Output the answer modulo 998,244,353.\n\nThe first line contains a string x (1 ≤ |x| ≤ 1000).\n\nThe second line contains a string y (1 ≤ |y| ≤ 1000).\n\nBoth strings consist only of lowercase Latin letters.\n\nPrint a single integer — the sum of f(l_1, r_1, l_2, r_2) over 1 ≤ l_1 ≤ r_1 ≤ |x| and 1 ≤ l_2 ≤ r_2 ≤ |y| modulo 998,244,353.\n\nIn the first example there are:\n\nThus, the answer is 6·2 + 3·1 + 4·1 + 2·2 + 2·0 + 1·1 = 24.\n\nInput:\n```\naaa\nbb\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\ncode\nforces\n```\n\nOutput:\n```\n1574\n```\n\nInput:\n```\naaaaa\naaa\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\njustamassivetesttocheck\nhowwellyouhandlemodulooperations\n```\n\nOutput:\n```\n667387032\n```",
+    "input": "The first line contains a string x (1 ≤ |x| ≤ 1000).\n\nThe second line contains a string y (1 ≤ |y| ≤ 1000).\n\nBoth strings consist only of lowercase Latin letters.",
+    "output": "Print a single integer — the sum of f(l_1, r_1, l_2, r_2) over 1 ≤ l_1 ≤ r_1 ≤ |x| and 1 ≤ l_2 ≤ r_2 ≤ |y| modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "strings",
+        "*2400"
+    ],
+    "rating": 2400
+}

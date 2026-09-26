@@ -1,0 +1,20 @@
+{
+    "id": "1847D",
+    "contest_id": 1847,
+    "problem_letter": "D",
+    "title": "D. Professor Higashikata",
+    "statement": "Josuke is tired of his peaceful life in Morioh. Following in his nephew Jotaro's footsteps, he decides to study hard and become a professor of computer science. While looking up competitive programming problems online, he comes across the following one:\n\nLet s be a binary string of length n. An operation on s is defined as choosing two distinct integers i and j (1 ≤ i < j ≤ n), and swapping the characters s_i, s_j.\n\nConsider the m strings t_1, t_2, …, t_m, where t_i is the substring ^dagger of s from l_i to r_i. Define t(s) = t_1+t_2+…+t_m as the concatenation of the strings t_i in that order.\n\nThere are q updates to the string. In the i-th update s_x_i gets flipped. That is if s_x_i=1, then s_x_i becomes 0 and vice versa. After each update, find the minimum number of operations one must perform on s to make t(s) lexicographically as large^ddagger as possible.\n\nNote that no operation is actually performed. We are only interested in the number of operations.\n\nHelp Josuke in his dream by solving the problem for him.\n\ndagger A string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nddagger A string a is lexicographically larger than a string b of the same length if and only if the following holds:\n\nThe first line contains three integers n, m, q (1 ≤ n,m,q ≤ 2·10^5).\n\nThe next line contains a binary string s of length n, consisting only of digits 0 and 1.\n\nThe i-th line of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThe i-th line of the next q lines contains a single integer x_i (1 ≤ x_i ≤ n).\n\nPrint q integers. The i-th integer is the minimum number of operations that need to be performed on s to get the lexicographically largest possible string t(s) in the i-th round.\n\nIn the first test case,\n\nOriginally, t(s) = s(1,2) + s(1,2) = 0101.\n\nAfter the 1-st query, s becomes 11 and consequently t becomes 1111. You don't need to perform any operation as t(s) is already the lexicographically largest string possible.\n\nAfter the 2-nd query, s becomes 01 and consequently t becomes 0101. You need to perform 1 operation by swapping s_1 and s_2. Consequently, t(s) becomes 1010 which is the lexicographically largest string you can achieve.\n\nInput:\n```\n2 2 4\n01\n1 2\n1 2\n1\n1\n2\n2\n```\n\nOutput:\n```\n0\n1\n0\n1\n```\n\nInput:\n```\n8 6 10\n10011010\n5 6\n2 3\n6 8\n5 7\n5 8\n6 8\n3\n5\n6\n2\n5\n2\n5\n8\n4\n1\n```\n\nOutput:\n```\n2\n3\n2\n2\n1\n2\n2\n2\n2\n2\n```",
+    "input": "The first line contains three integers n, m, q (1 ≤ n,m,q ≤ 2·10^5).\n\nThe next line contains a binary string s of length n, consisting only of digits 0 and 1.\n\nThe i-th line of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThe i-th line of the next q lines contains a single integer x_i (1 ≤ x_i ≤ n).",
+    "output": "Print q integers. The i-th integer is the minimum number of operations that need to be performed on s to get the lexicographically largest possible string t(s) in the i-th round.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

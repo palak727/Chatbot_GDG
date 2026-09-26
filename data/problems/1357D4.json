@@ -1,0 +1,15 @@
+{
+    "id": "1357D4",
+    "contest_id": 1357,
+    "problem_letter": "D4",
+    "title": "D4. Quantum Classification - Dataset 6",
+    "statement": "This problem is identical to the problem D1 in every aspect except the training dataset. Please refer to that problem for the full problem statement.",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

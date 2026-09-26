@@ -1,0 +1,20 @@
+{
+    "id": "1763D",
+    "contest_id": 1763,
+    "problem_letter": "D",
+    "title": "D. Valid Bitonic Permutations",
+    "statement": "You are given five integers n, i, j, x, and y. Find the number of bitonic permutations B, of the numbers 1 to n, such that B_i=x, and B_j=y. Since the answer can be large, compute it modulo 10^9+7.\n\nA bitonic permutation is a permutation of numbers, such that the elements of the permutation first increase till a certain index k, 2 ≤ k ≤ n-1, and then decrease till the end. Refer to notes for further clarification.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains five integers, n, i, j, x, and y (3 ≤ n ≤ 100 and 1 ≤ i,j,x,y ≤ n). It is guaranteed that i < j and x ≠ y.\n\nFor each test case, output a single line containing the number of bitonic permutations satisfying the above conditions modulo 10^9+7.\n\nA permutation is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nAn array of n ≥ 3 elements is bitonic if its elements are first increasing till an index k, 2 ≤ k ≤ n-1, and then decreasing till the end. For example, [2,5,8,6,1] is a bitonic array with k=3, but [2,5,8,1,6] is not a bitonic array (elements first increase till k=3, then decrease, and then increase again).\n\nA bitonic permutation is a permutation in which the elements follow the above-mentioned bitonic property. For example, [2,3,5,4,1] is a bitonic permutation, but [2,3,5,1,4] is not a bitonic permutation (since it is not a bitonic array) and [2,3,4,4,1] is also not a bitonic permutation (since it is not a permutation).\n\nSample Test Case Description\n\nFor n=3, possible permutations are [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1]. Among the given permutations, the bitonic permutations are [1,3,2] and [2,3,1].\n\nIn the first test case, the expected permutation must be of the form [2,?,3], which does not satisfy either of the two bitonic permutations with n=3, therefore the answer is 0.\n\nIn the second test case, the expected permutation must be of the form [?,3,2], which only satisfies the bitonic permutation [1,3,2], therefore, the answer is 1.\n\nInput:\n```\n73 1 3 2 33 2 3 3 24 3 4 3 15 2 5 2 45 3 4 5 49 3 7 8 620 6 15 8 17\n```\n\nOutput:\n```\n0\n1\n1\n1\n3\n0\n4788\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains five integers, n, i, j, x, and y (3 ≤ n ≤ 100 and 1 ≤ i,j,x,y ≤ n). It is guaranteed that i < j and x ≠ y.",
+    "output": "For each test case, output a single line containing the number of bitonic permutations satisfying the above conditions modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1774F2",
+    "contest_id": 1774,
+    "problem_letter": "F2",
+    "title": "F2. Magician and Pigs (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference between the two versions is the constraint on n and x. You can make hacks only if both versions of the problem are solved.\n\nLittle09 has been interested in magic for a long time, and it's so lucky that he meets a magician! The magician will perform n operations, each of them is one of the following three:\n\nA pig will die when its Health Point is less than or equal to 0.\n\nLittle09 wants to know how many living pigs there are after all the operations. Please, print the answer modulo 998,244,353.\n\nThe first line contains a single integer n (1≤ n≤ 8·10^5) — the number of operations.\n\nEach of the following n lines contains an operation given in the form described in the problem statement. It's guaranteed that 1≤ x≤ 10^9 in operations of the first two types.\n\nPrint a single integer — the number of living pigs after all the operations, modulo 998,244,353.\n\nIn the first example, the operations are equivalent to repeating four times: create a pig with 8 Health Points and then reduce the Health Points of all living pigs by 3. It is easy to find that there are two living pigs in the end with 2 and 5 Health Points.\n\nInput:\n```\n4\n1 8\n2 3\n3\n3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n6\n1 5\n1 6\n2 2\n3\n1 4\n3\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n12\n2 1\n1 15\n1 9\n3\n1 12\n2 2\n1 13\n3\n2 1\n1 9\n1 8\n3\n```\n\nOutput:\n```\n17\n```",
+    "input": "The first line contains a single integer n (1≤ n≤ 8·10^5) — the number of operations.\n\nEach of the following n lines contains an operation given in the form described in the problem statement. It's guaranteed that 1≤ x≤ 10^9 in operations of the first two types.",
+    "output": "Print a single integer — the number of living pigs after all the operations, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "implementation",
+        "*2700"
+    ],
+    "rating": 2700
+}

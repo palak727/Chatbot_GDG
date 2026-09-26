@@ -1,0 +1,19 @@
+{
+    "id": "1286D",
+    "contest_id": 1286,
+    "problem_letter": "D",
+    "title": "D. LCC",
+    "statement": "An infinitely long Line Chillland Collider (LCC) was built in Chillland. There are n pipes with coordinates x_i that are connected to LCC. When the experiment starts at time 0, i-th proton flies from the i-th pipe with speed v_i. It flies to the right with probability p_i and flies to the left with probability (1 - p_i). The duration of the experiment is determined as the time of the first collision of any two protons. In case there is no collision, the duration of the experiment is considered to be zero.\n\nFind the expected value of the duration of the experiment.\n\nThe first line of input contains one integer n — the number of pipes (1 ≤ n ≤ 10^5). Each of the following n lines contains three integers x_i, v_i, p_i — the coordinate of the i-th pipe, the speed of the i-th proton and the probability that the i-th proton flies to the right in percentage points (-10^9 ≤ x_i ≤ 10^9, 1 ≤ v ≤ 10^6, 0 ≤ p_i ≤ 100). It is guaranteed that all x_i are distinct and sorted in increasing order.\n\nIt's possible to prove that the answer can always be represented as a fraction P/Q, where P is an integer and Q is a natural number not divisible by 998,244,353. In this case, print P·Q^{-1} modulo 998,244,353.\n\nInput:\n```\n2\n1 1 100\n3 1 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n7 10 0\n9 4 86\n14 5 100\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n4\n6 4 50\n11 25 50\n13 16 50\n15 8 50\n```\n\nOutput:\n```\n150902884\n```",
+    "input": "The first line of input contains one integer n — the number of pipes (1 ≤ n ≤ 10^5). Each of the following n lines contains three integers x_i, v_i, p_i — the coordinate of the i-th pipe, the speed of the i-th proton and the probability that the i-th proton flies to the right in percentage points (-10^9 ≤ x_i ≤ 10^9, 1 ≤ v ≤ 10^6, 0 ≤ p_i ≤ 100). It is guaranteed that all x_i are distinct and sorted in increasing order.",
+    "output": "It's possible to prove that the answer can always be represented as a fraction P/Q, where P is an integer and Q is a natural number not divisible by 998,244,353. In this case, print P·Q^{-1} modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "math",
+        "matrices",
+        "probabilities",
+        "*3100"
+    ],
+    "rating": 3100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1062D",
+    "contest_id": 1062,
+    "problem_letter": "D",
+    "title": "D. Fun with Integers",
+    "statement": "You are given a positive integer n greater or equal to 2. For every pair of integers a and b (2 ≤ |a|, |b| ≤ n), you can transform a into b if and only if there exists an integer x such that 1 < |x| and (a·x = b or b·x = a), where |x| denotes the absolute value of x.\n\nAfter such a transformation, your score increases by |x| points and you are not allowed to transform a into b nor b into a anymore.\n\nInitially, you have a score of 0. You can start at any integer and transform it as many times as you like. What is the maximum score you can achieve?\n\nA single line contains a single integer n (2 ≤ n ≤ 100,000) — the given integer described above.\n\nPrint an only integer — the maximum score that can be achieved with the transformations. If it is not possible to perform even a single transformation for all possible starting integers, print 0.\n\nIn the first example, the transformations are 2 → 4 → (-2) → (-4) → 2.\n\nIn the third example, it is impossible to perform even a single transformation.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n6\n```\n\nOutput:\n```\n28\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n0\n```",
+    "input": "A single line contains a single integer n (2 ≤ n ≤ 100,000) — the given integer described above.",
+    "output": "Print an only integer — the maximum score that can be achieved with the transformations. If it is not possible to perform even a single transformation for all possible starting integers, print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

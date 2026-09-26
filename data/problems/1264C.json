@@ -1,0 +1,17 @@
+{
+    "id": "1264C",
+    "contest_id": 1264,
+    "problem_letter": "C",
+    "title": "C. Beautiful Mirrors with queries",
+    "statement": "Creatnx has n mirrors, numbered from 1 to n. Every day, Creatnx asks exactly one mirror \"Am I beautiful?\". The i-th mirror will tell Creatnx that he is beautiful with probability p_i/100 for all 1 ≤ i ≤ n.\n\nSome mirrors are called checkpoints. Initially, only the 1st mirror is a checkpoint. It remains a checkpoint all the time.\n\nCreatnx asks the mirrors one by one, starting from the 1-st mirror. Every day, if he asks i-th mirror, there are two possibilities:\n\nThere are some changes occur over time: some mirrors become new checkpoints and some mirrors are no longer checkpoints. You are given q queries, each query is represented by an integer u: If the u-th mirror isn't a checkpoint then we set it as a checkpoint. Otherwise, the u-th mirror is no longer a checkpoint.\n\nAfter each query, you need to calculate the expected number of days until Creatnx becomes happy.\n\nEach of this numbers should be found by modulo 998244353. Formally, let M = 998244353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nThe first line contains two integers n, q (2 ≤ n, q ≤ 2·10^5) — the number of mirrors and queries.\n\nThe second line contains n integers: p_1, p_2, …, p_n (1 ≤ p_i ≤ 100).\n\nEach of q following lines contains a single integer u (2 ≤ u ≤ n) — next query.\n\nPrint q numbers – the answers after each query by modulo 998244353.\n\nIn the first test after the first query, the first and the second mirrors are checkpoints. Creatnx will ask the first mirror until it will say that he is beautiful, after that he will ask the second mirror until it will say that he is beautiful because the second mirror is a checkpoint. After that, he will become happy. Probabilities that the mirrors will say, that he is beautiful are equal to 1/2. So, the expected number of days, until one mirror will say, that he is beautiful is equal to 2 and the answer will be equal to 4 = 2 + 2.\n\nInput:\n```\n2 2\n50 50\n2\n2\n```\n\nOutput:\n```\n4\n6\n```\n\nInput:\n```\n5 5\n10 20 30 40 50\n2\n3\n4\n5\n3\n```\n\nOutput:\n```\n117\n665496274\n332748143\n831870317\n499122211\n```",
+    "input": "The first line contains two integers n, q (2 ≤ n, q ≤ 2·10^5) — the number of mirrors and queries.\n\nThe second line contains n integers: p_1, p_2, …, p_n (1 ≤ p_i ≤ 100).\n\nEach of q following lines contains a single integer u (2 ≤ u ≤ n) — next query.",
+    "output": "Print q numbers – the answers after each query by modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "probabilities",
+        "*2400"
+    ],
+    "rating": 2400
+}

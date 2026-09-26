@@ -1,0 +1,20 @@
+{
+    "id": "1881F",
+    "contest_id": 1881,
+    "problem_letter": "F",
+    "title": "F. Minimum Maximum Distance",
+    "statement": "You have a tree with n vertices, some of which are marked. A tree is a connected undirected graph without cycles.\n\nLet f_i denote the maximum distance from vertex i to any of the marked vertices.\n\nYour task is to find the minimum value of f_i among all vertices.\n\nFor example, in the tree shown in the example, vertices 2, 6, and 7 are marked. Then the array f(i) = [2, 3, 2, 4, 4, 3, 3]. The minimum f_i is for vertices 1 and 3.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5) — the number of vertices in the tree and the number of marked vertices, respectively.\n\nThe second line of each test case contains k integers a_i (1 ≤ a_i ≤ n, a_{i-1} < a_i) — the indices of the marked vertices.\n\nThe next n - 1 lines contain two integers u_i and v_i — the indices of vertices connected by the i-th edge.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum value of f_i among all vertices.\n\nInput:\n```\n67 32 6 71 21 32 42 53 63 74 41 2 3 41 22 33 45 111 21 31 41 55 24 51 22 31 44 510 81 2 3 4 5 8 9 102 1010 55 33 11 77 44 98 96 110 91 2 4 5 6 7 8 9 101 33 99 44 1010 66 77 22 55 8\n```\n\nOutput:\n```\n2\n2\n0\n1\n4\n5\n```\n\nInput:\n```\n36 131 21 33 43 52 65 31 2 51 21 32 43 57 123 22 66 15 67 64 5\n```\n\nOutput:\n```\n0\n2\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5) — the number of vertices in the tree and the number of marked vertices, respectively.\n\nThe second line of each test case contains k integers a_i (1 ≤ a_i ≤ n, a_{i-1} < a_i) — the indices of the marked vertices.\n\nThe next n - 1 lines contain two integers u_i and v_i — the indices of vertices connected by the i-th edge.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum value of f_i among all vertices.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "shortest paths",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

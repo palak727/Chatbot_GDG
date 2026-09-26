@@ -1,0 +1,17 @@
+{
+    "id": "2002B",
+    "contest_id": 2002,
+    "problem_letter": "B",
+    "title": "B. Removals Game",
+    "statement": "Alice got a permutation a_1, a_2, …, a_n of [1,2,…,n], and Bob got another permutation b_1, b_2, …, b_n of [1,2,…,n]. They are going to play a game with these arrays.\n\nIn each turn, the following events happen in order:\n\nThe game continues for n-1 turns, after which both arrays will have exactly one remaining element: x in the array a and y in the array b.\n\nIf x=y, Bob wins; otherwise, Alice wins. Find which player will win if both players play optimally.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 3·10^5).\n\nThe next line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n, all a_i are distinct) — the permutation of Alice.\n\nThe next line contains n integers b_1,b_2,…,b_n (1≤ b_i≤ n, all b_i are distinct) — the permutation of Bob.\n\nIt is guaranteed that the sum of all n does not exceed 3·10^5.\n\nFor each test case, print a single line with the name of the winner, assuming both players play optimally. If Alice wins, print textttAlice; otherwise, print textttBob.\n\nIn the first test case, Bob can win the game by deleting the same element as Alice did.\n\nIn the second test case, Alice can delete 3 in the first turn, and then in the second turn, delete the element that is different from the one Bob deleted in the first turn to win the game.\n\nInput:\n```\n221 21 231 2 32 3 1\n```\n\nOutput:\n```\nBob\nAlice\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 3·10^5).\n\nThe next line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n, all a_i are distinct) — the permutation of Alice.\n\nThe next line contains n integers b_1,b_2,…,b_n (1≤ b_i≤ n, all b_i are distinct) — the permutation of Bob.\n\nIt is guaranteed that the sum of all n does not exceed 3·10^5.",
+    "output": "For each test case, print a single line with the name of the winner, assuming both players play optimally. If Alice wins, print textttAlice; otherwise, print textttBob.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "*1000"
+    ],
+    "rating": 1000
+}

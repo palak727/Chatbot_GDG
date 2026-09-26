@@ -1,0 +1,22 @@
+{
+    "id": "1696H",
+    "contest_id": 1696,
+    "problem_letter": "H",
+    "title": "H. Maximum Product?",
+    "statement": "You are given a positive integer k. For a multiset of integers S, define f(S) as the following.\n\nMore formally, let |S| denote the number of elements in S. Then,\n\nYou are given a multiset of integers, A. Compute ∑limits_{B⊆ A} f(B) modulo 10^9+7.\n\nNote that in this problem, we distinguish the elements by indices instead of values. That is, a multiset consisting of n elements always has 2^n distinct subsets regardless of whether some of its elements are equal.\n\nThe first line of input contains two integers n and k, where n is the number of elements in A (1≤ k≤ n≤ 600).\n\nThe second line of input contains n integers a_1,a_2,…,a_n, describing the elements in A (-10^9≤ a_i≤ 10^9).\n\nOutput ∑limits_{B⊆ A} f(B) modulo 10^9+7.\n\nConsider the first sample. From the definitions we know that\n\nSo we should print (0+0+0+0-2-4+8+8)bmod (10^9+7)=10.\n\nIn the second example, note that although the multiset consists of three same values, it still has 8 distinct subsets: varnothing,{1},{1},{1},{1,1},{1,1},{1,1},{1,1,1}.\n\nInput:\n```\n3 2\n-1 2 4\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n3 1\n1 1 1\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n10 4\n-24 -41 9 -154 -56 14 18 53 -7 120\n```\n\nOutput:\n```\n225905161\n```\n\nInput:\n```\n15 5\n0 0 2 -2 2 -2 3 -3 -3 4 5 -4 -4 4 5\n```\n\nOutput:\n```\n18119684\n```",
+    "input": "The first line of input contains two integers n and k, where n is the number of elements in A (1≤ k≤ n≤ 600).\n\nThe second line of input contains n integers a_1,a_2,…,a_n, describing the elements in A (-10^9≤ a_i≤ 10^9).",
+    "output": "Output ∑limits_{B⊆ A} f(B) modulo 10^9+7.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "two pointers",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1974F",
+    "contest_id": 1974,
+    "problem_letter": "F",
+    "title": "F. Cutting Game",
+    "statement": "Alice and Bob were playing a game again. They have a grid of size a × b (1 ≤ a, b ≤ 10^9), on which there are n chips, with at most one chip in each cell. The cell at the intersection of the x-th row and the y-th column has coordinates (x, y).\n\nAlice made the first move, and the players took turns. On each move, a player could cut several (but not all) rows or columns from the beginning or end of the remaining grid and earn a point for each chip that was on the cut part of the grid. Each move can be described by the character 'U', 'D', 'L', or 'R' and an integer k:\n\nBased on the initial state of the grid and the players' moves, determine the number of points earned by Alice and Bob, respectively.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers a, b, n, and m (2 ≤ a, b ≤ 10^9, 1 ≤ n, m ≤ 2·10^5) — the dimensions of the grid, the number of chips, and the number of moves.\n\nEach of the next n lines contain two integers x_i and y_i (1 ≤ x_i ≤ a, 1 ≤ y_i ≤ b) — the coordinates of the chips. All pairs of coordinates are distinct.\n\nEach of the next m lines contain a character c_j and an integer k_j — the description of the j-th move. It is guaranteed that k is less than the number of rows/columns in the current grid. In other words, a player cannot cut the entire remaining grid on their move.\n\nIt is guaranteed that the sum of the values of n across all test cases in the test does not exceed 2·10^5. It is guaranteed that the sum of the values of m across all test cases in the test does not exceed 2·10^5.\n\nFor each test case, output two integers — the number of points earned by Alice and Bob, respectively.\n\nBelow is the game from the first example:\n\nOn her turn, Alice cut 2 rows from the bottom and scored 2 points, then Bob cut 1 column from the right and scored one point. Note that if Bob had cut 1 row from the bottom, he would have also scored 1 point.\n\nInput:\n```\n64 4 3 24 13 32 4D 2R 14 4 3 34 13 22 3D 1L 1U 23 5 3 21 32 23 3R 2R 26 4 4 21 42 35 31 1R 1U 19 3 2 16 13 3D 810 10 2 57 59 1R 1L 2D 1U 4D 1\n```\n\nOutput:\n```\n2 1\n2 0\n0 3\n1 1\n2 0\n0 1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers a, b, n, and m (2 ≤ a, b ≤ 10^9, 1 ≤ n, m ≤ 2·10^5) — the dimensions of the grid, the number of chips, and the number of moves.\n\nEach of the next n lines contain two integers x_i and y_i (1 ≤ x_i ≤ a, 1 ≤ y_i ≤ b) — the coordinates of the chips. All pairs of coordinates are distinct.\n\nEach of the next m lines contain a character c_j and an integer k_j — the description of the j-th move. It is guaranteed that k is less than the number of rows/columns in the current grid. In other words, a player cannot cut the entire remaining grid on their move.\n\nIt is guaranteed that the sum of the values of n across all test cases in the test does not exceed 2·10^5. It is guaranteed that the sum of the values of m across all test cases in the test does not exceed 2·10^5.",
+    "output": "For each test case, output two integers — the number of points earned by Alice and Bob, respectively.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1764B",
+    "contest_id": 1764,
+    "problem_letter": "B",
+    "title": "B. Doremy's Perfect Math Class",
+    "statement": "\"Everybody! Doremy's Perfect Math Class is about to start! Come and do your best if you want to have as much IQ as me!\" In today's math class, Doremy is teaching everyone subtraction. Now she gives you a quiz to prove that you are paying attention in class.\n\nYou are given a set S containing positive integers. You may perform the following operation some (possibly zero) number of times:\n\nYou need to tell Doremy the maximum possible number of integers in S if the operations are performed optimally. It can be proven that this number is finite.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains an integer n (2 ≤ n≤ 10^5) — the size of the set S.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_1 < a_2 < ⋯ < a_n ≤ 10^9) — the positive integers in S.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, you need to output the maximum possible number of integers in S. It can be proven that this value is finite.\n\nIn the first test case, no such x and y exist. The maximum possible number of integers in S is 2.\n\nIn the second test case,\n\nAfter performing all operations, the number of integers in S is 5. It can be proven that no other sequence of operations allows S to contain more than 5 integers.\n\nInput:\n```\n221 235 10 25\n```\n\nOutput:\n```\n2\n5\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains an integer n (2 ≤ n≤ 10^5) — the size of the set S.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_1 < a_2 < ⋯ < a_n ≤ 10^9) — the positive integers in S.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, you need to output the maximum possible number of integers in S. It can be proven that this value is finite.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

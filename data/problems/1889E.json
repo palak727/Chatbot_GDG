@@ -1,0 +1,18 @@
+{
+    "id": "1889E",
+    "contest_id": 1889,
+    "problem_letter": "E",
+    "title": "E. Doremy's Swapping Trees",
+    "statement": "Consider two undirected graphs G_1 and G_2. Every node in G_1 and in G_2 has a label. Doremy calls G_1 and G_2 similar if and only if:\n\nNow Doremy gives you two trees T_1 and T_2 with n nodes, labeled from 1 to n. You can do the following operation any number of times:\n\nNow Doremy is wondering how many distinct T_1 you can get after any number of operations. Can you help her find the answer? Output the answer modulo 10^9+7.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains an integer n (2≤ n≤ 10^5) — the number of nodes in the trees T_1 and T_2.\n\nEach of the following n-1 lines contain two integers u,v (1≤ u,v≤ n), representing an undirected edge in T_1. It is guaranteed these edges form a tree.\n\nEach of the following n-1 lines contain two integers u,v (1≤ u,v≤ n), representing an undirected edge in T_2. It is guaranteed these edges form a tree.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5.\n\nFor each test case, you should output a single line with an integer, representing the number of distinct T_1 after any number of operations, modulo 10^9+7.\n\nIn the first test case, there is at most one distinct T_1 having the only edge (1,2).\n\nIn the second test case, you can choose the edge set {(1,3),(2,3)} in T_1, the edge set {(1,2),(2,3)} in T_2 and swap them. So T_1 can be 1-3-2 or 1-2-3.\n\nIn the third test case, there are 4 distinct T_1, as the following pictures.\n\nInput:\n```\n321 22 131 32 32 32 141 22 33 44 22 11 3\n```\n\nOutput:\n```\n1\n2\n4\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains an integer n (2≤ n≤ 10^5) — the number of nodes in the trees T_1 and T_2.\n\nEach of the following n-1 lines contain two integers u,v (1≤ u,v≤ n), representing an undirected edge in T_1. It is guaranteed these edges form a tree.\n\nEach of the following n-1 lines contain two integers u,v (1≤ u,v≤ n), representing an undirected edge in T_2. It is guaranteed these edges form a tree.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5.",
+    "output": "For each test case, you should output a single line with an integer, representing the number of distinct T_1 after any number of operations, modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

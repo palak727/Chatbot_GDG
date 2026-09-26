@@ -1,0 +1,20 @@
+{
+    "id": "1746D",
+    "contest_id": 1746,
+    "problem_letter": "D",
+    "title": "D. Paths on the Tree",
+    "statement": "You are given a rooted tree consisting of n vertices. The vertices are numbered from 1 to n, and the root is the vertex 1. You are also given a score array s_1, s_2, …, s_n.\n\nA multiset of k simple paths is called valid if the following two conditions are both true.\n\nIt can be shown that it is always possible to find at least one valid multiset. Find the maximum value among all valid multisets.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two space-separated integers n (2 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 10^9) — the size of the tree and the required number of paths.\n\nThe second line contains n - 1 space-separated integers p_2,p_3,…,p_n (1≤ p_i≤ n), where p_i is the parent of the i-th vertex. It is guaranteed that this value describe a valid tree with root 1.\n\nThe third line contains n space-separated integers s_1,s_2,…,s_n (0 ≤ s_i ≤ 10^4) — the scores of the vertices.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10 ^ 5.\n\nFor each test case, print a single integer — the maximum value of a path multiset.\n\nIn the first test case, one of optimal solutions is four paths 1 → 2 → 3 → 5, 1 → 2 → 3 → 5, 1 → 4, 1 → 4, here c=[4,2,2,2,2]. The value equals to 4·6+ 2·2+2·1+2·5+2·7=54.\n\nIn the second test case, one of optimal solution is three paths 1 → 2 → 3 → 5, 1 → 2 → 3 → 5, 1 → 4, here c=[3,2,2,1,2]. The value equals to 3·6+ 2·6+2·1+1·4+2·10=56.\n\nInput:\n```\n25 41 2 1 36 2 1 5 75 31 2 1 36 6 1 4 10\n```\n\nOutput:\n```\n54\n56\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two space-separated integers n (2 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 10^9) — the size of the tree and the required number of paths.\n\nThe second line contains n - 1 space-separated integers p_2,p_3,…,p_n (1≤ p_i≤ n), where p_i is the parent of the i-th vertex. It is guaranteed that this value describe a valid tree with root 1.\n\nThe third line contains n space-separated integers s_1,s_2,…,s_n (0 ≤ s_i ≤ 10^4) — the scores of the vertices.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10 ^ 5.",
+    "output": "For each test case, print a single integer — the maximum value of a path multiset.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "sortings",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

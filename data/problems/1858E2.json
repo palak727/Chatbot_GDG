@@ -1,0 +1,18 @@
+{
+    "id": "1858E2",
+    "contest_id": 1858,
+    "problem_letter": "E2",
+    "title": "E2. Rollbacks (Hard Version)",
+    "statement": "This is a hard version of this problem. The only difference between the versions is that you have to solve the hard version in online mode. You can make hacks only if both versions of the problem are solved.\n\nYou have an array a, which is initially empty. You need to process queries of the following types:\n\nThe first line contains an integer q (1 ≤ q ≤ 10^6) — the number of queries.\n\nThe next q lines contain the queries as described above.\n\nIt is guaranteed that\n\nIt is also guaranteed that the number of queries of the fourth type (?) does not exceed 10^5.\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query, so don't forget to flush output after printing answers. You can use functions like fflush(stdout) in C++ and BufferedWriter.flush in Java or similar after each writing in your program.\n\nFor each query of the fourth type output one integer — the number of distinct elements in array a at the moment of query.\n\nIn the first example array a changes as follows:\n\nIn the second example array a changes as follows:\n\nInput:\n```\n10\n+ 1\n+ 2\n+ 2\n?\n!\n+ 3\n- 2\n?\n+ 1\n?\n```\n\nOutput:\n```\n2\n1\n1\n```\n\nInput:\n```\n6\n+ 1\n+ 1000000\n?\n!\n!\n?\n```\n\nOutput:\n```\n2\n0\n```",
+    "input": "The first line contains an integer q (1 ≤ q ≤ 10^6) — the number of queries.\n\nThe next q lines contain the queries as described above.\n\nIt is guaranteed that\n\nIt is also guaranteed that the number of queries of the fourth type (?) does not exceed 10^5.\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query, so don't forget to flush output after printing answers. You can use functions like fflush(stdout) in C++ and BufferedWriter.flush in Java or similar after each writing in your program.",
+    "output": "For each query of the fourth type output one integer — the number of distinct elements in array a at the moment of query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "interactive",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

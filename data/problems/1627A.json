@@ -1,0 +1,17 @@
+{
+    "id": "1627A",
+    "contest_id": 1627,
+    "problem_letter": "A",
+    "title": "A. Not Shading",
+    "statement": "There is a grid with n rows and m columns. Some cells are colored black, and the rest of the cells are colored white.\n\nIn one operation, you can select some black cell and do exactly one of the following:\n\nYou are given two integers r and c. Find the minimum number of operations required to make the cell in row r and column c black, or determine that it is impossible.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains four integers n, m, r, and c (1 ≤ n, m ≤ 50; 1 ≤ r ≤ n; 1 ≤ c ≤ m) — the number of rows and the number of columns in the grid, and the row and column of the cell you need to turn black, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either 'B' or 'W' — a black and a white cell, respectively.\n\nFor each test case, if it is impossible to make the cell in row r and column c black, output -1.\n\nOtherwise, output a single integer — the minimum number of operations required to make the cell in row r and column c black.\n\nThe first test case is pictured below.\n\nWe can take the black cell in row 1 and column 2, and make all cells in its row black. Therefore, the cell in row 1 and column 4 will become black.\n\nIn the second test case, the cell in row 2 and column 1 is already black.\n\nIn the third test case, it is impossible to make the cell in row 2 and column 2 black.\n\nThe fourth test case is pictured below.\n\nWe can take the black cell in row 2 and column 2 and make its column black.\n\nThen, we can take the black cell in row 1 and column 2 and make its row black.\n\nTherefore, the cell in row 1 and column 1 will become black.\n\nInput:\n```\n93 5 1 4WBWWWBBBWBWWBBB4 3 2 1BWWBBWWBBWWB2 3 2 2WWWWWW2 2 1 1WWWB5 9 5 9WWWWWWWWWWBWBWBBBWWBBBWWBWWWBWBWBBBWWWWWWWWWW1 1 1 1B1 1 1 1W1 2 1 1WB2 1 1 1WB\n```\n\nOutput:\n```\n1\n0\n-1\n2\n2\n0\n-1\n1\n1\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains four integers n, m, r, and c (1 ≤ n, m ≤ 50; 1 ≤ r ≤ n; 1 ≤ c ≤ m) — the number of rows and the number of columns in the grid, and the row and column of the cell you need to turn black, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either 'B' or 'W' — a black and a white cell, respectively.",
+    "output": "For each test case, if it is impossible to make the cell in row r and column c black, output -1.\n\nOtherwise, output a single integer — the minimum number of operations required to make the cell in row r and column c black.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

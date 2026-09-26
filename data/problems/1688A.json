@@ -1,0 +1,17 @@
+{
+    "id": "1688A",
+    "contest_id": 1688,
+    "problem_letter": "A",
+    "title": "A. Cirno's Perfect Bitmasks Classroom",
+    "statement": "Cirno's perfect bitmasks classroom has just started!\n\nCirno gave her students a positive integer x. As an assignment, her students need to find the minimum positive integer y, which satisfies the following two conditions:\n\nx textttand y > 0 x textttxor y > 0\n\nWhere textttand is the bitwise AND operation, and textttxor is the bitwise XOR operation.\n\nAmong the students was Mystia, who was truly baffled by all these new operators. Please help her!\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^3) — the number of input test cases.\n\nFor each test case, the only line of input contains one integer x (1 ≤ x ≤ 2^30).\n\nFor each test case, print a single integer — the minimum number of y.\n\nTest case 1:\n\n1; textttand; 3=1 > 0, 1; textttxor; 3=2 > 0.\n\nTest case 2:\n\n2; textttand; 3=2 > 0, 2; textttxor; 3=1 > 0.\n\nInput:\n```\n71259161145141000000\n```\n\nOutput:\n```\n3\n3\n1\n1\n17\n2\n64\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^3) — the number of input test cases.\n\nFor each test case, the only line of input contains one integer x (1 ≤ x ≤ 2^30).",
+    "output": "For each test case, print a single integer — the minimum number of y.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "*800"
+    ],
+    "rating": 800
+}

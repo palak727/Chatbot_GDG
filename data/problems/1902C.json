@@ -1,0 +1,20 @@
+{
+    "id": "1902C",
+    "contest_id": 1902,
+    "problem_letter": "C",
+    "title": "C. Insert and Equalize",
+    "statement": "You are given an integer array a_1, a_2, …, a_n, all its elements are distinct.\n\nFirst, you are asked to insert one more integer a_{n+1} into this array. a_{n+1} should not be equal to any of a_1, a_2, …, a_n.\n\nThen, you will have to make all elements of the array equal. At the start, you choose a positive integer x (x > 0). In one operation, you add x to exactly one element of the array. Note that x is the same for all operations.\n\nWhat's the smallest number of operations it can take you to make all elements equal, after you choose a_{n+1} and x?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9). All a_i are distinct.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the smallest number of operations it can take you to make all elements equal, after you choose integers a_{n+1} and x.\n\nIn the first testcase, you can choose a_{n+1} = 4, the array becomes [1, 2, 3, 4]. Then choose x = 1 and apply the operation 3 times to the first element, 2 times to the second element, 1 time to the third element and 0 times to the fourth element.\n\nIn the second testcase, you can choose a_{n+1} = 13, x = 4.\n\nIn the third testcase, you can choose a_{n+1} = 9, x = 1. Then apply the operation once to a_{n+1}.\n\nInput:\n```\n331 2 351 -19 17 -3 -15110\n```\n\nOutput:\n```\n6\n27\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9). All a_i are distinct.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the smallest number of operations it can take you to make all elements equal, after you choose integers a_{n+1} and x.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

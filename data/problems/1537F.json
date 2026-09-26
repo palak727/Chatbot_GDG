@@ -1,0 +1,21 @@
+{
+    "id": "1537F",
+    "contest_id": 1537,
+    "problem_letter": "F",
+    "title": "F. Figure Fixing",
+    "statement": "You have a connected undirected graph made of n nodes and m edges. The i-th node has a value v_i and a target value t_i.\n\nIn an operation, you can choose an edge (i, j) and add k to both v_i and v_j, where k can be any integer. In particular, k can be negative.\n\nYour task to determine if it is possible that by doing some finite number of operations (possibly zero), you can achieve for every node i, v_i = t_i.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases. Then the test cases follow.\n\nThe first line of each test case contains two integers n, m (2 ≤ n ≤ 2·10^5, n-1≤ m≤ min(2·10^5, (n(n-1))/2)) — the number of nodes and edges respectively.\n\nThe second line contains n integers v_1…, v_n (-10^9 ≤ v_i ≤ 10^9) — initial values of nodes.\n\nThe third line contains n integers t_1…, t_n (-10^9 ≤ t_i ≤ 10^9) — target values of nodes.\n\nEach of the next m lines contains two integers i and j representing an edge between node i and node j (1 ≤ i, j ≤ n, i≠ j).\n\nIt is guaranteed that the graph is connected and there is at most one edge between the same pair of nodes.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5 and the sum of m over all testcases does not exceed 2·10^5.\n\nFor each test case, if it is possible for every node to reach its target after some number of operations, print \"YES\". Otherwise, print \"NO\".\n\nHere is a visualization of the first test case (the orange values denote the initial values and the blue ones the desired values):\n\nOne possible order of operations to obtain the desired values for each node is the following:\n\nNow we can see that in total we added -2 to node 1, 2 to node 2, 8 to node 3 and 4 to node 4 which brings each node exactly to it's desired value.\n\nFor the graph from the second test case it's impossible to get the target values.\n\nInput:\n```\n2\n4 4\n5 1 2 -3\n3 3 10 1\n1 2\n1 4\n3 2\n3 4\n4 4\n5 8 6 6\n-3 1 15 4\n1 2\n1 4\n3 2\n3 4\n```\n\nOutput:\n```\nYES\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases. Then the test cases follow.\n\nThe first line of each test case contains two integers n, m (2 ≤ n ≤ 2·10^5, n-1≤ m≤ min(2·10^5, (n(n-1))/2)) — the number of nodes and edges respectively.\n\nThe second line contains n integers v_1…, v_n (-10^9 ≤ v_i ≤ 10^9) — initial values of nodes.\n\nThe third line contains n integers t_1…, t_n (-10^9 ≤ t_i ≤ 10^9) — target values of nodes.\n\nEach of the next m lines contains two integers i and j representing an edge between node i and node j (1 ≤ i, j ≤ n, i≠ j).\n\nIt is guaranteed that the graph is connected and there is at most one edge between the same pair of nodes.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5 and the sum of m over all testcases does not exceed 2·10^5.",
+    "output": "For each test case, if it is possible for every node to reach its target after some number of operations, print \"YES\". Otherwise, print \"NO\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

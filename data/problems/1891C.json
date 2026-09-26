@@ -1,0 +1,20 @@
+{
+    "id": "1891C",
+    "contest_id": 1891,
+    "problem_letter": "C",
+    "title": "C. Smilo and Monsters",
+    "statement": "A boy called Smilo is playing a new game! In the game, there are n hordes of monsters, and the i-th horde contains a_i monsters. The goal of the game is to destroy all the monsters. To do this, you have two types of attacks and a combo counter x, initially set to 0:\n\nYour task is to destroy all of the monsters, meaning that there should be no monsters left in any of the hordes. Smilo wants to win as quickly as possible, so he wants to the minimum number of attacks required to win the game.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each input data set contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of hordes of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of monsters in each horde.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, out put the minimum number of attacks required to kill all monsters.\n\nIn the first test case, we can use an attack of the first type on the 1-st, 3-rd and 4-th hordes, and then use an attack of the second type to finish off the 2-nd horde. We need 4 attacks in total.\n\nIn the second test case, we can use an attack of the first type on the 1-st and 3-rd hordes, then use an attack of the second type to finish off the 2-nd horde, and then use an attack of the first type on the 4-th horde. We need 4 attacks in total.\n\nIn the fourth test case, we can use an attack of the first type once on the 1-st horde, twice on the 2-nd horde, and then use an attack of the second type on the 2-nd horde, and finally use an attack of the first type to finish off the 2-nd horde. We need 5 attacks in total.\n\nInput:\n```\n441 3 1 141 2 1 163 2 1 5 2 421 6\n```\n\nOutput:\n```\n4\n4\n11\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each input data set contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of hordes of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of monsters in each horde.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, out put the minimum number of attacks required to kill all monsters.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1500"
+    ],
+    "rating": 1500
+}

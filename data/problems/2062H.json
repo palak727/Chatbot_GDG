@@ -1,0 +1,18 @@
+{
+    "id": "2062H",
+    "contest_id": 2062,
+    "problem_letter": "H",
+    "title": "H. Galaxy Generator",
+    "statement": "In a two-dimensional universe, a star can be represented by a point (x,y) on a two-dimensional plane. Two stars are directly connected if and only if their x or y coordinates are the same, and there are no other stars on the line segment between them. Define a galaxy as a connected component composed of stars connected directly or indirectly (through other stars).\n\nFor a set of stars, its value is defined as the minimum number of galaxies that can be obtained after performing the following operation for any (possibly, zero) times: in each operation, you can select a point (x,y) without stars. If a star can be directly connected to at least 3 stars after creating it here, then you create a star here.\n\nYou are given a n× n matrix a consisting of 0 and 1 describing a set S of stars. There is a star at (x,y) if and only if a_{x,y}=1. Calculate the sum, modulo 10^9 + 7, of the values of all non-empty subsets of S.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (1 ≤ n ≤ 14) — the size of matrix a.\n\nThen n lines follow; the i-th line contains a string a_i of length n — the i-th row of matrix a.\n\nIt is guaranteed that the sum of 2^n over all test cases does not exceed 2^14.\n\nFor each test case, output the sum, modulo 10^9 + 7, of the values of all non-empty subsets of S.\n\nIn the first test case, S is empty. S has no non-empty subsets. So the answer is 0.\n\nIn the second test case, S = {(1,2),(2,1)}. S has 3 non-empty subsets.\n\nSo the answer is 1+1+2=4.\n\nIn the third test case, S = {(1,2),(3,1),(3,3)}. S has 7 non-empty subsets.\n\nSo the answer is 1+1+1+2+2+1+1=9.\n\nInput:\n```\n8\n1\n0\n2\n01\n10\n3\n010\n000\n101\n4\n0110\n1001\n1001\n0110\n11\n11111110111\n10000010010\n10111010011\n10111010011\n10111010001\n10000010000\n11111110101\n00000000111\n11011010011\n10010101100\n11101010100\n11\n11011111110\n10010000010\n00010111010\n10010111010\n01010111010\n11010000010\n01011111110\n11000000000\n01010000010\n01000111100\n00000001010\n11\n11010101001\n11001010100\n00000000110\n11111110010\n10000010010\n10111010110\n10111010111\n10111010010\n10000010110\n11111110100\n00000000000\n3\n111\n100\n111\n```\n\nOutput:\n```\n0\n4\n9\n355\n593092633\n438667113\n922743932\n155\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (1 ≤ n ≤ 14) — the size of matrix a.\n\nThen n lines follow; the i-th line contains a string a_i of length n — the i-th row of matrix a.\n\nIt is guaranteed that the sum of 2^n over all test cases does not exceed 2^14.",
+    "output": "For each test case, output the sum, modulo 10^9 + 7, of the values of all non-empty subsets of S.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "*3500"
+    ],
+    "rating": 3500
+}

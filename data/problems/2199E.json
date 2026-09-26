@@ -3,9 +3,9 @@
     "contest_id": 2199,
     "problem_letter": "E",
     "title": "E. Supersequence",
-    "statement": "An array $$a$$ is called a subsequence of an array $$b$$ if some elements can be removed from array $$b$$ (possibly all, possibly none) to obtain the array $$a$$.\n\nYou are given an array $$a = [a_1, a_2, \\dots, a_n]$$. We call an array $$b = [b_1, b_2, \\dots, b_m]$$ beautiful if:\n\nYou have to process $$q$$ queries. In the $$i$$-th query, a single integer $$x_i$$ is given. Your task is as follows:\n\nThe first line contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 2 \\cdot 10^5$$$).\n\nThe second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$).\n\nThe third line contains $$q$$ integers $$x_1, x_2, \\dots, x_q$$ ($$1 $\\leq x_i \\leq 10^{18}$$$).\n\nFor each query, print a single integer — the answer to it.",
-    "input": "Input The first line contains two integers $$n$$ and $$q$$ ($$1 $\\leq n, q \\leq 2 \\cdot 10^5$$$). The second line contains $$n$$ integers $$a_1, a_2, \\dots, a_n$$ ($$1 $\\leq a_i \\leq 10^9$$$). The third line contains $$q$$ integers $$x_1, x_2, \\dots, x_q$$ ($$1 $\\leq x_i \\leq 10^{18}$$$).",
-    "output": "Output For each query, print a single integer — the answer to it.",
+    "statement": "An array a is called a subsequence of an array b if some elements can be removed from array b (possibly all, possibly none) to obtain the array a.\n\nYou are given an array a = [a_1, a_2, …, a_n]. We call an array b = [b_1, b_2, …, b_m] beautiful if:\n\nYou have to process q queries. In the i-th query, a single integer x_i is given. Your task is as follows:\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains q integers x_1, x_2, …, x_q (1 ≤ x_i ≤ 10^18).\n\nFor each query, print a single integer — the answer to it.\n\nInput:\n```\n5 164 1 1 5 91 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n```\n\nOutput:\n```\n4 3 2 1 0 1 2 3 4 5 6 7 8 9 -1 -1\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains q integers x_1, x_2, …, x_q (1 ≤ x_i ≤ 10^18).",
+    "output": "For each query, print a single integer — the answer to it.",
     "time_limit": "2 seconds",
     "memory_limit": "512 megabytes",
     "tags": [

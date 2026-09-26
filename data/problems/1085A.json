@@ -1,0 +1,17 @@
+{
+    "id": "1085A",
+    "contest_id": 1085,
+    "problem_letter": "A",
+    "title": "A. Right-Left Cipher",
+    "statement": "Polycarp loves ciphers. He has invented his own cipher called Right-Left.\n\nRight-Left cipher is used for strings. To encrypt the string s=s_1s_2 … s_n Polycarp uses the following algorithm:\n\nFor example, if s=\"techno\" the process is: \"t\" → \"te\" → \"cte\" → \"cteh\" → \"ncteh\" → \"ncteho\". So the encrypted s=\"techno\" is \"ncteho\".\n\nGiven string t — the result of encryption of some string s. Your task is to decrypt it, i.e. find the string s.\n\nThe only line of the input contains t — the result of encryption of some string s. It contains only lowercase Latin letters. The length of t is between 1 and 50, inclusive.\n\nPrint such string s that after encryption it equals t.\n\nInput:\n```\nncteho\n```\n\nOutput:\n```\ntechno\n```\n\nInput:\n```\nerfdcoeocs\n```\n\nOutput:\n```\ncodeforces\n```\n\nInput:\n```\nz\n```\n\nOutput:\n```\nz\n```",
+    "input": "The only line of the input contains t — the result of encryption of some string s. It contains only lowercase Latin letters. The length of t is between 1 and 50, inclusive.",
+    "output": "Print such string s that after encryption it equals t.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

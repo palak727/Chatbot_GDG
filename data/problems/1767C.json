@@ -1,0 +1,17 @@
+{
+    "id": "1767C",
+    "contest_id": 1767,
+    "problem_letter": "C",
+    "title": "C. Count Binary Strings",
+    "statement": "You are given an integer n. You have to calculate the number of binary (consisting of characters 0 and/or 1) strings s meeting the following constraints.\n\nFor every pair of integers (i, j) such that 1 ≤ i ≤ j ≤ n, an integer a_{i,j} is given. It imposes the following constraint on the string s_i s_{i+1} s_{i+2} … s_j:\n\nCount the number of binary strings s of length n meeting the aforementioned constraints. Since the answer can be large, print it modulo 998244353.\n\nThe first line contains one integer n (2 ≤ n ≤ 100).\n\nThen n lines follow. The i-th of them contains n-i+1 integers a_{i,i}, a_{i,i+1}, a_{i,i+2}, …, a_{i,n} (0 ≤ a_{i,j} ≤ 2).\n\nPrint one integer — the number of strings meeting the constraints, taken modulo 998244353.\n\nIn the first example, the strings meeting the constraints are 001, 010, 011, 100, 101, 110.\n\nIn the second example, the strings meeting the constraints are 001, 110.\n\nInput:\n```\n3\n1 0 2\n1 0\n1\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n3\n1 1 2\n1 0\n1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n1 2 1\n1 0\n1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n3\n2 0 2\n0 1\n1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 100).\n\nThen n lines follow. The i-th of them contains n-i+1 integers a_{i,i}, a_{i,i+1}, a_{i,i+2}, …, a_{i,n} (0 ≤ a_{i,j} ≤ 2).",
+    "output": "Print one integer — the number of strings meeting the constraints, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "*2100"
+    ],
+    "rating": 2100
+}

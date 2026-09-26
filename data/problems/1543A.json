@@ -1,0 +1,18 @@
+{
+    "id": "1543A",
+    "contest_id": 1543,
+    "problem_letter": "A",
+    "title": "A. Exciting Bets",
+    "statement": "Welcome to Rockport City!\n\nIt is time for your first ever race in the game against Ronnie. To make the race interesting, you have bet a dollars and Ronnie has bet b dollars. But the fans seem to be disappointed. The excitement of the fans is given by gcd(a,b), where gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y. To make the race more exciting, you can perform two types of operations:\n\nIn one move, you can perform any one of these operations. You can perform arbitrary (possibly zero) number of moves. Determine the maximum excitement the fans can get and the minimum number of moves required to achieve it.\n\nNote that gcd(x,0)=x for any x ≥ 0.\n\nThe first line of input contains a single integer t (1≤ t≤ 5·10^3) — the number of test cases.\n\nThe first and the only line of each test case contains two integers a and b (0≤ a, b≤ 10^18).\n\nFor each test case, print a single line containing two integers.\n\nIf the fans can get infinite excitement, print 0 0.\n\nOtherwise, the first integer must be the maximum excitement the fans can get, and the second integer must be the minimum number of moves required to achieve that excitement.\n\nFor the first test case, you can apply the first operation 1 time to get a=9 and b=6. It can be shown that 3 is the maximum excitement possible.\n\nFor the second test case, no matter how many operations you apply, the fans will always have an excitement equal to 1. Since the initial excitement is also 1, you don't need to apply any operation.\n\nFor the third case, the fans can get infinite excitement by applying the first operation an infinite amount of times.\n\nFor the fourth test case, you can apply the second operation 3 times to get a=0 and b=6. Since, gcd(0,6)=6, the fans will get an excitement of 6.\n\nInput:\n```\n4\n8 5\n1 2\n4 4\n3 9\n```\n\nOutput:\n```\n3 1\n1 0\n0 0\n6 3\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 5·10^3) — the number of test cases.\n\nThe first and the only line of each test case contains two integers a and b (0≤ a, b≤ 10^18).",
+    "output": "For each test case, print a single line containing two integers.\n\nIf the fans can get infinite excitement, print 0 0.\n\nOtherwise, the first integer must be the maximum excitement the fans can get, and the second integer must be the minimum number of moves required to achieve that excitement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

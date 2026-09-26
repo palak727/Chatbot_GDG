@@ -1,0 +1,18 @@
+{
+    "id": "1439B",
+    "contest_id": 1439,
+    "problem_letter": "B",
+    "title": "B. Graph Subset Problem",
+    "statement": "You are given an undirected graph with n vertices and m edges. Also, you are given an integer k.\n\nFind either a clique of size k or a non-empty subset of vertices such that each vertex of this subset has at least k neighbors in the subset. If there are no such cliques and subsets report about it.\n\nA subset of vertices is called a clique of size k if its size is k and there exists an edge between every two vertices from the subset. A vertex is called a neighbor of the other vertex if there exists an edge between them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The next lines contain descriptions of test cases.\n\nThe first line of the description of each test case contains three integers n, m, k (1 ≤ n, m, k ≤ 10^5, k ≤ n).\n\nEach of the next m lines contains two integers u, v (1 ≤ u, v ≤ n, u ≠ v), denoting an edge between vertices u and v.\n\nIt is guaranteed that there are no self-loops or multiple edges. It is guaranteed that the sum of n for all test cases and the sum of m for all test cases does not exceed 2·10^5.\n\nFor each test case:\n\nIf you found a subset of vertices such that each vertex of this subset has at least k neighbors in the subset in the first line output 1 and the size of the subset. On the second line output the vertices of the subset in any order.\n\nIf you found a clique of size k then in the first line output 2 and in the second line output the vertices of the clique in any order.\n\nIf there are no required subsets and cliques print -1.\n\nIf there exists multiple possible answers you can print any of them.\n\nIn the first test case: the subset {1, 2, 3, 4} is a clique of size 4.\n\nIn the second test case: degree of each vertex in the original graph is at least 3. So the set of all vertices is a correct answer.\n\nIn the third test case: there are no cliques of size 4 or required subsets, so the answer is -1.\n\nInput:\n```\n3\n5 9 4\n1 2\n1 3\n1 4\n1 5\n2 3\n2 4\n2 5\n3 4\n3 5\n10 15 3\n1 2\n2 3\n3 4\n4 5\n5 1\n1 7\n2 8\n3 9\n4 10\n5 6\n7 10\n10 8\n8 6\n6 9\n9 7\n4 5 4\n1 2\n2 3\n3 4\n4 1\n1 3\n```\n\nOutput:\n```\n2\n4 1 2 3 \n1 10\n1 2 3 4 5 6 7 8 9 10 \n-1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The next lines contain descriptions of test cases.\n\nThe first line of the description of each test case contains three integers n, m, k (1 ≤ n, m, k ≤ 10^5, k ≤ n).\n\nEach of the next m lines contains two integers u, v (1 ≤ u, v ≤ n, u ≠ v), denoting an edge between vertices u and v.\n\nIt is guaranteed that there are no self-loops or multiple edges. It is guaranteed that the sum of n for all test cases and the sum of m for all test cases does not exceed 2·10^5.",
+    "output": "For each test case:\n\nIf you found a subset of vertices such that each vertex of this subset has at least k neighbors in the subset in the first line output 1 and the size of the subset. On the second line output the vertices of the subset in any order.\n\nIf you found a clique of size k then in the first line output 2 and in the second line output the vertices of the clique in any order.\n\nIf there are no required subsets and cliques print -1.\n\nIf there exists multiple possible answers you can print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "*2600"
+    ],
+    "rating": 2600
+}

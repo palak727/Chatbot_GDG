@@ -1,0 +1,17 @@
+{
+    "id": "2071A",
+    "contest_id": 2071,
+    "problem_letter": "A",
+    "title": "A. The Play Never Ends",
+    "statement": "Let's introduce a two-player game, table tennis, where a winner is always decided and draws are impossible.\n\nThree players, Sosai, Fofo, and Hohai, want to spend the rest of their lives playing table tennis. They decided to play forever in the following way:\n\nNow, the players, fully immersed in this infinite loop of matches, have tasked you with solving the following problem:\n\nGiven an integer k, determine whether the spectator of the first match can be the spectator in the k-th match.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains one integer k (1 ≤ k ≤ 10^9).\n\nFor each test case, print \"YES\" (without quotes) if the spectator of the first match can be the spectator of the k-th match, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, the spectator of the first match is already a spectator in the 1st match.\n\nIn the second test case, the spectator of the first match will play in the 2nd match regardless of the result of the first match.\n\nInput:\n```\n4123331000000000\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains one integer k (1 ≤ k ≤ 10^9).",
+    "output": "For each test case, print \"YES\" (without quotes) if the spectator of the first match can be the spectator of the k-th match, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

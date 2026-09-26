@@ -1,0 +1,17 @@
+{
+    "id": "1562A",
+    "contest_id": 1562,
+    "problem_letter": "A",
+    "title": "A. The Miracle and the Sleeper",
+    "statement": "You are given two integers l and r, l≤ r. Find the largest possible value of a bmod b over all pairs (a, b) of integers for which r≥ a ≥ b ≥ l.\n\nAs a reminder, a bmod b is a remainder we get when dividing a by b. For example, 26 bmod 8 = 2.\n\nEach test contains multiple test cases.\n\nThe first line contains one positive integer t (1≤ t≤ 10^4), denoting the number of test cases. Description of the test cases follows.\n\nThe only line of each test case contains two integers l, r (1≤ l ≤ r ≤ 10^9).\n\nFor every test case, output the largest possible value of a bmod b over all pairs (a, b) of integers for which r≥ a ≥ b ≥ l.\n\nIn the first test case, the only allowed pair is (a, b) = (1, 1), for which a bmod b = 1 bmod 1 = 0.\n\nIn the second test case, the optimal choice is pair (a, b) = (1000000000, 999999999), for which a bmod b = 1.\n\nInput:\n```\n4\n1 1\n999999999 1000000000\n8 26\n1 999999999\n```\n\nOutput:\n```\n0\n1\n12\n499999999\n```",
+    "input": "Each test contains multiple test cases.\n\nThe first line contains one positive integer t (1≤ t≤ 10^4), denoting the number of test cases. Description of the test cases follows.\n\nThe only line of each test case contains two integers l, r (1≤ l ≤ r ≤ 10^9).",
+    "output": "For every test case, output the largest possible value of a bmod b over all pairs (a, b) of integers for which r≥ a ≥ b ≥ l.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1807B",
+    "contest_id": 1807,
+    "problem_letter": "B",
+    "title": "B. Grab the Candies",
+    "statement": "Mihai and Bianca are playing with bags of candies. They have a row a of n bags of candies. The i-th bag has a_i candies. The bags are given to the players in the order from the first bag to the n-th bag.\n\nIf a bag has an even number of candies, Mihai grabs the bag. Otherwise, Bianca grabs the bag. Once a bag is grabbed, the number of candies in it gets added to the total number of candies of the player that took it.\n\nMihai wants to show off, so he wants to reorder the array so that at any moment (except at the start when they both have no candies), Mihai will have strictly more candies than Bianca. Help Mihai find out if such a reordering exists.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the number of bags in the array.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 100) — the number of candies in each bag.\n\nFor each test case, output \"YES\" (without quotes) if such a reordering exists, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, Mihai can reorder the array as follows: [4, 1, 2, 3]. Then the process proceeds as follows:\n\nInput:\n```\n341 2 3 441 1 1 231 4 3\n```\n\nOutput:\n```\nYES\nNO\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the number of bags in the array.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 100) — the number of candies in each bag.",
+    "output": "For each test case, output \"YES\" (without quotes) if such a reordering exists, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

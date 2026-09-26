@@ -1,0 +1,18 @@
+{
+    "id": "1845E",
+    "contest_id": 1845,
+    "problem_letter": "E",
+    "title": "E. Boxes and Balls",
+    "statement": "There are n boxes placed in a line. The boxes are numbered from 1 to n. Some boxes contain one ball inside of them, the rest are empty. At least one box contains a ball and at least one box is empty.\n\nIn one move, you have to choose a box with a ball inside and an adjacent empty box and move the ball from one box into another. Boxes i and i+1 for all i from 1 to n-1 are considered adjacent to each other. Boxes 1 and n are not adjacent.\n\nHow many different arrangements of balls exist after exactly k moves are performed? Two arrangements are considered different if there is at least one such box that it contains a ball in one of them and doesn't contain a ball in the other one.\n\nSince the answer might be pretty large, print its remainder modulo 10^9+7.\n\nThe first line contains two integers n and k (2 ≤ n ≤ 1500; 1 ≤ k ≤ 1500) — the number of boxes and the number of moves.\n\nThe second line contains n integers a_1, a_2, …, a_n (a_i ∈ {0, 1}) — 0 denotes an empty box and 1 denotes a box with a ball inside. There is at least one 0 and at least one 1.\n\nPrint a single integer — the number of different arrangements of balls that can exist after exactly k moves are performed, modulo 10^9+7.\n\nIn the first example, there are the following possible arrangements:\n\nIn the second example, there are the following possible arrangements:\n\nInput:\n```\n4 1\n1 0 1 0\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4 2\n1 0 1 0\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n10 6\n1 0 0 1 0 0 0 1 1 1\n```\n\nOutput:\n```\n69\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 1500; 1 ≤ k ≤ 1500) — the number of boxes and the number of moves.\n\nThe second line contains n integers a_1, a_2, …, a_n (a_i ∈ {0, 1}) — 0 denotes an empty box and 1 denotes a box with a ball inside. There is at least one 0 and at least one 1.",
+    "output": "Print a single integer — the number of different arrangements of balls that can exist after exactly k moves are performed, modulo 10^9+7.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

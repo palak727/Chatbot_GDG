@@ -1,0 +1,20 @@
+{
+    "id": "2119F",
+    "contest_id": 2119,
+    "problem_letter": "F",
+    "title": "F. Volcanic Eruptions",
+    "statement": "There is an undirected tree with root 1 where each vertex has a weight w_i∈{1,-1}.\n\nA volcano at the root erupts at time 0. At time t, lava floods all vertices whose distance from the root is at most t, where the distance is the number of edges in the shortest path between the two vertices.\n\nAt time 0, you are at vertex st with life value S, initially S=1. Starting at time 0 (including time 0), the following events happen in order at each time stamp:\n\nFind the maximum number of moves you can make before you die.\n\nEach test contains multiple test cases. The first line contains the number of test cases T (1 ≤ T ≤ 10^4). The description of the test cases follows.\n\nFor each test case, the first line contains two integers n,st (2 ≤ st ≤ n ≤ 5·10^5), denoting the number of vertices and the vertex you start at at time stamp 0.\n\nThe second line contains n integers w_1, w_2, …, w_n (w_i∈{1,-1},w_st=1), where w_i represents the weight of the vertex i.\n\nThe next n-1 lines each contain two integers u,v (1≤ u,v ≤ n), which describe a pair of vertices connected by an edge.\n\nIt is guaranteed that the given graph is a tree and the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output a line with an integer indicating the maximum number of moves you can make.\n\nHere is a picture that shows the tree in the first test case.\n\nOne of the optimal sequence of moves is 4→3→4→5→6→7→6, which makes 6 moves in total. The changes in S is 2→1→2→3→4→3→4. More precisely:\n\nInput:\n```\n67 4-1 -1 -1 1 1 1 -12 13 24 35 46 57 68 2-1 1 1 1 1 -1 1 12 16 28 63 87 35 74 58 2-1 1 -1 -1 -1 1 -1 -12 18 24 15 43 47 26 88 41 1 1 1 1 -1 1 -18 13 14 35 46 47 62 58 41 1 1 1 -1 -1 1 12 15 14 58 53 87 26 218 10-1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 1 1 -1 1 1 1 11 22 33 44 55 66 77 88 99 1010 1111 1212 139 1414 1515 1616 1717 18\n```\n\nOutput:\n```\n6\n7\n3\n3\n1\n13\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases T (1 ≤ T ≤ 10^4). The description of the test cases follows.\n\nFor each test case, the first line contains two integers n,st (2 ≤ st ≤ n ≤ 5·10^5), denoting the number of vertices and the vertex you start at at time stamp 0.\n\nThe second line contains n integers w_1, w_2, …, w_n (w_i∈{1,-1},w_st=1), where w_i represents the weight of the vertex i.\n\nThe next n-1 lines each contain two integers u,v (1≤ u,v ≤ n), which describe a pair of vertices connected by an edge.\n\nIt is guaranteed that the given graph is a tree and the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a line with an integer indicating the maximum number of moves you can make.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "shortest paths",
+        "trees",
+        "*3300"
+    ],
+    "rating": 3300
+}

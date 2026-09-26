@@ -1,0 +1,18 @@
+{
+    "id": "1468H",
+    "contest_id": 1468,
+    "problem_letter": "H",
+    "title": "H. K and Medians",
+    "statement": "Let's denote the median of a sequence s with odd length as the value in the middle of s if we sort s in non-decreasing order. For example, let s = [1, 2, 5, 7, 2, 3, 12]. After sorting, we get sequence [1, 2, 2, underline3, 5, 7, 12], and the median is equal to 3.\n\nYou have a sequence of n integers [1, 2, …, n] and an odd integer k.\n\nIn one step, you choose any k elements from the sequence and erase all chosen elements except their median. These elements do not have to go continuously (gaps are allowed between them).\n\nFor example, if you have a sequence [1, 2, 3, 4, 5, 6, 7] (i.e. n=7) and k = 3, then the following options for the first step are possible:\n\nYou can do zero or more steps. Can you get a sequence b_1, b_2, ..., b_m after several steps?\n\nYou'll be given t test cases. Solve each test case independently.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and m (3 ≤ n ≤ 2·10^5; 3 ≤ k ≤ n; k is odd; 1 ≤ m < n) — the length of the sequence you have, the number of elements you choose in each step and the length of the sequence you'd like to get.\n\nThe second line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_1 < b_2 < … < b_m ≤ n) — the sequence you'd like to get, given in the ascending order.\n\nIt's guaranteed that the total sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print YES if you can obtain the sequence b or NO otherwise. You may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answer).\n\nIn the first test case, you have sequence [1, 2, 3]. Since k = 3 you have only one way to choose k elements — it's to choose all elements [1, underline2, 3] with median 2. That's why after erasing all chosen elements except its median you'll get sequence [2]. In other words, there is no way to get sequence b = [1] as the result.\n\nIn the second test case, you have sequence [1, 2, 3, 4, 5, 6, 7] and one of the optimal strategies is following:\n\nIn the fourth test case, you have sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]. You can choose k=7 elements [2, 4, 6, underline7, 8, 10, 13] and erase them except its median to get sequence b.\n\nInput:\n```\n43 3 117 3 31 5 710 5 34 5 613 7 71 3 5 7 9 11 12\n```\n\nOutput:\n```\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and m (3 ≤ n ≤ 2·10^5; 3 ≤ k ≤ n; k is odd; 1 ≤ m < n) — the length of the sequence you have, the number of elements you choose in each step and the length of the sequence you'd like to get.\n\nThe second line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_1 < b_2 < … < b_m ≤ n) — the sequence you'd like to get, given in the ascending order.\n\nIt's guaranteed that the total sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print YES if you can obtain the sequence b or NO otherwise. You may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

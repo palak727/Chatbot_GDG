@@ -1,0 +1,19 @@
+{
+    "id": "1740C",
+    "contest_id": 1740,
+    "problem_letter": "C",
+    "title": "C. Bricks and Bags",
+    "statement": "There are n bricks numbered from 1 to n. Brick i has a weight of a_i.\n\nPak Chanek has 3 bags numbered from 1 to 3 that are initially empty. For each brick, Pak Chanek must put it into one of the bags. After this, each bag must contain at least one brick.\n\nAfter Pak Chanek distributes the bricks, Bu Dengklek will take exactly one brick from each bag. Let w_j be the weight of the brick Bu Dengklek takes from bag j. The score is calculated as |w_1 - w_2| + |w_2 - w_3|, where |x| denotes the absolute value of x.\n\nIt is known that Bu Dengklek will take the bricks in such a way that minimises the score. What is the maximum possible final score if Pak Chanek distributes the bricks optimally?\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the number of bricks.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the bricks.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a line containing an integer representing the maximum possible final score if Pak Chanek distributes the bricks optimally.\n\nIn the first test case, one way of achieving a final score of 6 is to do the following:\n\nIf Pak Chanek distributes the bricks that way, a way Bu Dengklek can take the bricks is:\n\nThe score is |a_5 - a_3| + |a_3 - a_2| = |3 - 5| + |5 - 1| = 6. It can be shown that Bu Dengklek cannot get a smaller score from this distribution.\n\nIt can be shown that there is no other distribution that results in a final score bigger than 6.\n\nInput:\n```\n353 1 5 2 3417 8 19 458265 265 265 265 265 265 265 265\n```\n\nOutput:\n```\n6\n63\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the number of bricks.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the bricks.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a line containing an integer representing the maximum possible final score if Pak Chanek distributes the bricks optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

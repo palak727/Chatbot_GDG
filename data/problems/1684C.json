@@ -1,0 +1,20 @@
+{
+    "id": "1684C",
+    "contest_id": 1684,
+    "problem_letter": "C",
+    "title": "C. Column Swapping",
+    "statement": "You are given a grid with n rows and m columns, where each cell has a positive integer written on it. Let's call a grid good, if in each row the sequence of numbers is sorted in a non-decreasing order. It means, that for each 1 ≤ i ≤ n and 2 ≤ j ≤ m the following holds: a_{i,j} ≥ a_{i, j-1}.\n\nYou have to to do the following operation exactly once: choose two columns with indexes i and j (not necessarily different), 1 ≤ i, j ≤ m, and swap them.\n\nYou are asked to determine whether it is possible to make the grid good after the swap and, if it is, find the columns that need to be swapped.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the number of rows and columns respectively.\n\nEach of the next n rows contains m integers, j-th element of i-th row is a_{i,j} (1 ≤ a_{i,j} ≤ 10^9) — the number written in the j-th cell of the i-th row.\n\nIt's guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.\n\nIf after the swap it is impossible to get a good grid, output -1.\n\nIn the other case output 2 integers — the indices of the columns that should be swapped to get a good grid.\n\nIf there are multiple solutions, print any.\n\nIn the first test case the grid is initially good, so we can, for example, swap the first column with itself.\n\nIn the second test case it is impossible to make the grid good.\n\nIn the third test case it is needed to swap the first and the second column, then the grid becomes good.\n\nInput:\n```\n52 31 2 31 1 12 24 12 32 22 11 12 36 2 15 4 32 112\n```\n\nOutput:\n```\n1 1\n-1\n1 2\n1 3\n1 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the number of rows and columns respectively.\n\nEach of the next n rows contains m integers, j-th element of i-th row is a_{i,j} (1 ≤ a_{i,j} ≤ 10^9) — the number written in the j-th cell of the i-th row.\n\nIt's guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.",
+    "output": "If after the swap it is impossible to get a good grid, output -1.\n\nIn the other case output 2 integers — the indices of the columns that should be swapped to get a good grid.\n\nIf there are multiple solutions, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

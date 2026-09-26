@@ -1,0 +1,20 @@
+{
+    "id": "1257C",
+    "contest_id": 1257,
+    "problem_letter": "C",
+    "title": "C. Dominated Subarray",
+    "statement": "Let's call an array t dominated by value v in the next situation.\n\nAt first, array t should have at least 2 elements. Now, let's calculate number of occurrences of each number num in t and define it as occ(num). Then t is dominated (by v) if (and only if) occ(v) > occ(v') for any other number v'. For example, arrays [1, 2, 3, 4, 5, 2], [11, 11] and [3, 2, 3, 2, 3] are dominated (by 2, 11 and 3 respectevitely) but arrays [3], [1, 2] and [3, 3, 2, 2, 1] are not.\n\nSmall remark: since any array can be dominated only by one number, we can not specify this number and just say that array is either dominated or not.\n\nYou are given array a_1, a_2, …, a_n. Calculate its shortest dominated subarray or say that there are no such subarrays.\n\nThe subarray of a is a contiguous part of the array a, i. e. the array a_i, a_{i + 1}, …, a_j for some 1 ≤ i ≤ j ≤ n.\n\nThe first line contains single integer T (1 ≤ T ≤ 1000) — the number of test cases. Each test case consists of two lines.\n\nThe first line contains single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the corresponding values of the array a.\n\nIt's guaranteed that the total length of all arrays in one test doesn't exceed 2·10^5.\n\nPrint T integers — one per test case. For each test case print the only integer — the length of the shortest dominated subarray, or -1 if there are no such subarrays.\n\nIn the first test case, there are no subarrays of length at least 2, so the answer is -1.\n\nIn the second test case, the whole array is dominated (by 1) and it's the only dominated subarray.\n\nIn the third test case, the subarray a_4, a_5, a_6 is the shortest dominated subarray.\n\nIn the fourth test case, all subarrays of length more than one are dominated.\n\nInput:\n```\n4\n1\n1\n6\n1 2 3 4 5 1\n9\n4 1 2 4 5 4 3 2 1\n4\n3 3 3 3\n```\n\nOutput:\n```\n-1\n6\n3\n2\n```",
+    "input": "The first line contains single integer T (1 ≤ T ≤ 1000) — the number of test cases. Each test case consists of two lines.\n\nThe first line contains single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the corresponding values of the array a.\n\nIt's guaranteed that the total length of all arrays in one test doesn't exceed 2·10^5.",
+    "output": "Print T integers — one per test case. For each test case print the only integer — the length of the shortest dominated subarray, or -1 if there are no such subarrays.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "strings",
+        "two pointers",
+        "*1200"
+    ],
+    "rating": 1200
+}

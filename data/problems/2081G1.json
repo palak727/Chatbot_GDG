@@ -1,0 +1,17 @@
+{
+    "id": "2081G1",
+    "contest_id": 2081,
+    "problem_letter": "G1",
+    "title": "G1. Hard Formula",
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, the limits on n and the time limit are smaller. You can hack only if you solved all versions of this problem.\n\nYou are given an integer n, and you need to compute (∑_{k=1}^n kbmodϕ(k))bmod 2^32, where ϕ(k) equals the number of positive integers no greater than k that are coprime with k.\n\nThe only line contains a single integer n (1 ≤ n ≤ 10^10).\n\nPrint a single integer, representing (∑_{k=1}^n kbmodϕ(k))bmod 2^32.\n\nInput:\n```\n5\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n10000000\n```\n\nOutput:\n```\n2316623097\n```\n\nInput:\n```\n10000000000\n```\n\nOutput:\n```\n282084447\n```",
+    "input": "The only line contains a single integer n (1 ≤ n ≤ 10^10).",
+    "output": "Print a single integer, representing (∑_{k=1}^n kbmodϕ(k))bmod 2^32.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*3100"
+    ],
+    "rating": 3100
+}

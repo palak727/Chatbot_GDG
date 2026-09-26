@@ -1,0 +1,20 @@
+{
+    "id": "1404C",
+    "contest_id": 1404,
+    "problem_letter": "C",
+    "title": "C. Fixed Point Removal",
+    "statement": "Let a_1, …, a_n be an array of n positive integers. In one operation, you can choose an index i such that a_i = i, and remove a_i from the array (after the removal, the remaining parts are concatenated).\n\nThe weight of a is defined as the maximum number of elements you can remove.\n\nYou must answer q independent queries (x, y): after replacing the x first elements of a and the y last elements of a by n+1 (making them impossible to remove), what would be the weight of a?\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the length of the array and the number of queries.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n) — elements of the array.\n\nThe i-th of the next q lines contains two integers x and y (x, y ≥ 0 and x+y < n).\n\nPrint q lines, i-th line should contain a single integer — the answer to the i-th query.\n\nExplanation of the first query:\n\nAfter making first x = 3 and last y = 1 elements impossible to remove, a becomes [×, ×, ×, 9, 5, 4, 6, 5, 7, 8, 3, 11, ×] (we represent 14 as × for clarity).\n\nHere is a strategy that removes 5 elements (the element removed is colored in red):\n\nIt is impossible to remove more than 5 elements, hence the weight is 5.\n\nInput:\n```\n13 5\n2 2 3 9 5 4 6 5 7 8 3 11 13\n3 1\n0 0\n2 4\n5 0\n0 12\n```\n\nOutput:\n```\n5\n11\n6\n1\n0\n```\n\nInput:\n```\n5 2\n1 4 1 2 4\n0 0\n1 0\n```\n\nOutput:\n```\n2\n0\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the length of the array and the number of queries.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n) — elements of the array.\n\nThe i-th of the next q lines contains two integers x and y (x, y ≥ 0 and x+y < n).",
+    "output": "Print q lines, i-th line should contain a single integer — the answer to the i-th query.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

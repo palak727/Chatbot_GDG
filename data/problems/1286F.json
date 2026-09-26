@@ -1,0 +1,21 @@
+{
+    "id": "1286F",
+    "contest_id": 1286,
+    "problem_letter": "F",
+    "title": "F. Harry The Potter",
+    "statement": "To defeat Lord Voldemort, Harry needs to destroy all horcruxes first. The last horcrux is an array a of n integers, which also needs to be destroyed. The array is considered destroyed if all its elements are zeroes. To destroy the array, Harry can perform two types of operations:\n\nNote that x does not have to be positive.\n\nHarry is in a hurry, please help him to find the minimum number of operations required to destroy the array and exterminate Lord Voldemort.\n\nThe first line contains a single integer n — the size of the array a (1 ≤ n ≤ 20).\n\nThe following line contains n integers a_1, a_2, …, a_n — array elements (-10^15 ≤ a_i ≤ 10^15).\n\nOutput a single integer — the minimum number of operations required to destroy the array a.\n\nIn the first example one can just apply the operation of the first kind three times.\n\nIn the second example, one can apply the operation of the second kind two times: first, choose i = 2, j = 1, x = 4, it transforms the array into (0, -1, -2), and then choose i = 3, j = 2, x = -2 to destroy the array.\n\nIn the third example, there is nothing to be done, since the array is already destroyed.\n\nInput:\n```\n3\n1 10 100\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3\n5 3 -2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1\n0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n — the size of the array a (1 ≤ n ≤ 20).\n\nThe following line contains n integers a_1, a_2, …, a_n — array elements (-10^15 ≤ a_i ≤ 10^15).",
+    "output": "Output a single integer — the minimum number of operations required to destroy the array a.",
+    "time_limit": "9 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "fft",
+        "implementation",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

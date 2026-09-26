@@ -1,0 +1,21 @@
+{
+    "id": "1462E2",
+    "contest_id": 1462,
+    "problem_letter": "E2",
+    "title": "E2. Close Tuples (hard version)",
+    "statement": "This is the hard version of this problem. The only difference between the easy and hard versions is the constraints on k and m. In this version of the problem, you need to output the answer by modulo 10^9+7.\n\nYou are given a sequence a of length n consisting of integers from 1 to n. The sequence may contain duplicates (i.e. some elements can be equal).\n\nFind the number of tuples of m elements such that the maximum number in the tuple differs from the minimum by no more than k. Formally, you need to find the number of tuples of m indices i_1 < i_2 < … < i_m, such that\n\nmax(a_i_1, a_i_2, …, a_i_m) - min(a_i_1, a_i_2, …, a_i_m) ≤ k.\n\nFor example, if n=4, m=3, k=2, a=[1,2,4,3], then there are two such triples (i=1, j=2, z=4 and i=2, j=3, z=4). If n=4, m=2, k=1, a=[1,1,1,1], then all six possible pairs are suitable.\n\nAs the result can be very large, you should print the value modulo 10^9 + 7 (the remainder when divided by 10^9 + 7).\n\nThe first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains three integers n, m, k (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 100, 1 ≤ k ≤ n) — the length of the sequence a, number of elements in the tuples and the maximum difference of elements in the tuple.\n\nThe next line contains n integers a_1, a_2,…, a_n (1 ≤ a_i ≤ n) — the sequence a.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nOutput t answers to the given test cases. Each answer is the required number of tuples of m elements modulo 10^9 + 7, such that the maximum value in the tuple differs from the minimum by no more than k.\n\nInput:\n```\n4\n4 3 2\n1 2 4 3\n4 2 1\n1 1 1 1\n1 1 1\n1\n10 4 3\n5 6 1 3 2 9 8 1 2 4\n```\n\nOutput:\n```\n2\n6\n1\n20\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains three integers n, m, k (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 100, 1 ≤ k ≤ n) — the length of the sequence a, number of elements in the tuples and the maximum difference of elements in the tuple.\n\nThe next line contains n integers a_1, a_2,…, a_n (1 ≤ a_i ≤ n) — the sequence a.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "Output t answers to the given test cases. Each answer is the required number of tuples of m elements modulo 10^9 + 7, such that the maximum value in the tuple differs from the minimum by no more than k.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "implementation",
+        "math",
+        "sortings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

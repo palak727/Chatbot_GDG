@@ -1,0 +1,20 @@
+{
+    "id": "1702F",
+    "contest_id": 1702,
+    "problem_letter": "F",
+    "title": "F. Equate Multisets",
+    "statement": "Multiset —is a set of numbers in which there can be equal elements, and the order of the numbers does not matter. Two multisets are equal when each value occurs the same number of times. For example, the multisets {2,2,4} and {2,4,2} are equal, but the multisets {1,2,2} and {1,1,2} — are not.\n\nYou are given two multisets a and b, each consisting of n integers.\n\nIn a single operation, any element of the b multiset can be doubled or halved (rounded down). In other words, you have one of the following operations available for an element x of the b multiset:\n\nNote that you cannot change the elements of the a multiset.\n\nSee if you can make the multiset b become equal to the multiset a in an arbitrary number of operations (maybe 0).\n\nFor example, if n = 4, a = {4, 24, 5, 2}, b = {4, 1, 6, 11}, then the answer is yes. We can proceed as follows:\n\nThe first line of input data contains a single integer t (1 ≤ t ≤ 10^4) —the number of test cases.\n\nEach test case consists of three lines.\n\nThe first line of the test case contains an integer n (1 ≤ n ≤ 2·10^5) —the number of elements in the multisets a and b.\n\nThe second line gives n integers: a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 10^9) —the elements of the multiset a. Note that the elements may be equal.\n\nThe third line contains n integers: b_1, b_2, …, b_n (1 ≤ b_1 ≤ b_2 ≤ … ≤ b_n ≤ 10^9) — elements of the multiset b. Note that the elements may be equal.\n\nIt is guaranteed that the sum of n values over all test cases does not exceed 2·10^5.\n\nFor each test case, print on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as positive answer).\n\nThe first example is explained in the statement.\n\nIn the second example, it is impossible to get the value 31 from the numbers of the multiset b by available operations.\n\nIn the third example, we can proceed as follows:\n\nInput:\n```\n542 4 5 241 4 6 1131 4 174 5 3154 7 10 13 142 14 14 26 4252 2 4 4 428 46 62 71 9861 2 10 16 64 8020 43 60 74 85 99\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\n```",
+    "input": "The first line of input data contains a single integer t (1 ≤ t ≤ 10^4) —the number of test cases.\n\nEach test case consists of three lines.\n\nThe first line of the test case contains an integer n (1 ≤ n ≤ 2·10^5) —the number of elements in the multisets a and b.\n\nThe second line gives n integers: a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 10^9) —the elements of the multiset a. Note that the elements may be equal.\n\nThe third line contains n integers: b_1, b_2, …, b_n (1 ≤ b_1 ≤ b_2 ≤ … ≤ b_n ≤ 10^9) — elements of the multiset b. Note that the elements may be equal.\n\nIt is guaranteed that the sum of n values over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as positive answer).",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1294C",
+    "contest_id": 1294,
+    "problem_letter": "C",
+    "title": "C. Product of Three Numbers",
+    "statement": "You are given one integer number n. Find three distinct integers a, b, c such that 2 ≤ a, b, c and a·b·c = n or say that it is impossible to do it.\n\nIf there are several answers, you can print any.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe next n lines describe test cases. The i-th test case is given on a new line as one integer n (2 ≤ n ≤ 10^9).\n\nFor each test case, print the answer on it. Print \"NO\" if it is impossible to represent n as a·b·c for some distinct integers a, b, c such that 2 ≤ a, b, c.\n\nOtherwise, print \"YES\" and any possible such representation.\n\nInput:\n```\n5\n64\n32\n97\n2\n12345\n```\n\nOutput:\n```\nYES\n2 4 8 \nNO\nNO\nNO\nYES\n3 5 823 \n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe next n lines describe test cases. The i-th test case is given on a new line as one integer n (2 ≤ n ≤ 10^9).",
+    "output": "For each test case, print the answer on it. Print \"NO\" if it is impossible to represent n as a·b·c for some distinct integers a, b, c such that 2 ≤ a, b, c.\n\nOtherwise, print \"YES\" and any possible such representation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

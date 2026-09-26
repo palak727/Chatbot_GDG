@@ -1,0 +1,18 @@
+{
+    "id": "1735A",
+    "contest_id": 1735,
+    "problem_letter": "A",
+    "title": "A. Working Week",
+    "statement": "Your working week consists of n days numbered from 1 to n, after day n goes day 1 again. And 3 of them are days off. One of the days off is the last day, day n. You have to decide when the other two are.\n\nChoosing days off, you pursue two goals:\n\nOutput the maximum value of min(|l_1 - l_2|, |l_2 - l_3|, |l_3 - l_1|) that can be obtained.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains the integer n (6 ≤ n ≤ 10^9).\n\nFor each test case, output one integer — the maximum possible obtained value.\n\nIn the image below you can see the example solutions for the first two test cases. Chosen days off are shown in purple. Working segments are underlined in green.\n\nIn test case 1, the only options for days off are days 2, 3, and 4 (because 1 and 5 are next to day n). So the only way to place them without selecting neighboring days is to choose days 2 and 4. Thus, l_1 = l_2 = l_3 = 1, and the answer min(|l_1 - l_2|, |l_2 - l_3|, |l_3 - l_1|) = 0.\n\nFor test case 2, one possible way to choose days off is shown. The working segments have the lengths of 2, 1, and 4 days. So the minimum difference is 1 = min(1, 3, 2) = min(|2 - 1|, |1 - 4|, |4 - 2|). It can be shown that there is no way to make it larger.\n\nInput:\n```\n36101033\n```\n\nOutput:\n```\n0\n1\n342\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains the integer n (6 ≤ n ≤ 10^9).",
+    "output": "For each test case, output one integer — the maximum possible obtained value.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

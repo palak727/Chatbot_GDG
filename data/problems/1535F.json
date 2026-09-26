@@ -1,0 +1,21 @@
+{
+    "id": "1535F",
+    "contest_id": 1535,
+    "problem_letter": "F",
+    "title": "F. String Distance",
+    "statement": "Suppose you are given two strings a and b. You can apply the following operation any number of times: choose any contiguous substring of a or b, and sort the characters in it in non-descending order. Let f(a, b) the minimum number of operations you have to apply in order to make them equal (or f(a, b) = 1337 if it is impossible to make a and b equal using these operations).\n\nFor example:\n\nYou are given n strings s_1, s_2, …, s_k having equal length. Calculate ∑ limits_{i = 1}^n ∑limits_{j = i + 1}^n f(s_i, s_j).\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of strings.\n\nThen n lines follow, each line contains one of the strings s_i, consisting of lowercase Latin letters. |s_1| = |s_2| = … = |s_n|, and n·|s_1| ≤ 2·10^5. All these strings are pairwise distinct.\n\nPrint one integer: ∑ limits_{i = 1}^n ∑limits_{j = i + 1}^n f(s_i, s_j).\n\nInput:\n```\n4\nzzz\nbac\nabc\nacb\n```\n\nOutput:\n```\n4015\n```\n\nInput:\n```\n2\na\nb\n```\n\nOutput:\n```\n1337\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of strings.\n\nThen n lines follow, each line contains one of the strings s_i, consisting of lowercase Latin letters. |s_1| = |s_2| = … = |s_n|, and n·|s_1| ≤ 2·10^5. All these strings are pairwise distinct.",
+    "output": "Print one integer: ∑ limits_{i = 1}^n ∑limits_{j = i + 1}^n f(s_i, s_j).",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "hashing",
+        "implementation",
+        "strings",
+        "*3000"
+    ],
+    "rating": 3000
+}

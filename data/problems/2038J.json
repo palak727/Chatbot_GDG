@@ -1,0 +1,17 @@
+{
+    "id": "2038J",
+    "contest_id": 2038,
+    "problem_letter": "J",
+    "title": "J. Waiting for...",
+    "statement": "Monocarp is waiting for a bus at the bus stop. Unfortunately, there are many people who want to ride a bus too.\n\nYou are given a list of events of two types:\n\nThese events are listed in a chronological order.\n\nWhen a bus arrives, the following happens. All people at the bus stop (except for Monocarp) try to enter the bus. If there are enough free seats for all of them, then they all enter the bus. Otherwise, some people remain at the bus stop (the number of people who enter the bus is equal to the number of free seats).\n\nIf there is still at least one free seat after all people (except for Monocarp) enter the bus, then Monocarp can decide to enter this bus as well (but he might choose to wait for another bus). For each bus, you have to determine if it is possible for Monocarp to take that bus.\n\nThe first line contains one integer n (1 ≤ n ≤ 10^3) — the number of events.\n\nThen, n lines follow. The i-th of them contains the description of the i-th event in one of the two following formats:\n\nAdditional constraint on the input: there is at least one event of type B.\n\nFor each event of type B, print YES if it is possible for Monocarp to take the corresponding bus, or NO otherwise (case-insensitive).\n\nInput:\n```\n10P 2P 5B 8P 14B 5B 9B 3P 2B 1B 2\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^3) — the number of events.\n\nThen, n lines follow. The i-th of them contains the description of the i-th event in one of the two following formats:\n\nAdditional constraint on the input: there is at least one event of type B.",
+    "output": "For each event of type B, print YES if it is possible for Monocarp to take the corresponding bus, or NO otherwise (case-insensitive).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

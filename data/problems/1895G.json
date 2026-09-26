@@ -1,0 +1,20 @@
+{
+    "id": "1895G",
+    "contest_id": 1895,
+    "problem_letter": "G",
+    "title": "G. Two Characters, Two Colors",
+    "statement": "You are given a string consisting of characters 0 and/or 1. You have to paint every character of this string into one of two colors, red or blue.\n\nIf you paint the i-th character red, you get r_i coins. If you paint it blue, you get b_i coins.\n\nAfter coloring the string, you remove every blue character from it, and count the number of inversions in the resulting string (i. e. the number of pairs of characters such that the left character in the pair is 1, and the right character in the pair is 0). For each inversion, you have to pay 1 coin.\n\nWhat is the maximum number of coins you can earn?\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of four lines:\n\nAdditional constraint on the input: the sum of values of n over all test cases does not exceed 4·10^5.\n\nFor each test case, print one integer — the maximum number of coins you can earn.\n\nExplanations for the test cases for the example (blue characters are underlined, red ones are not):\n\nInput:\n```\n4701000106 6 6 7 7 6 63 3 5 4 7 6 75101119 8 5 7 54 4 7 8 41001000000007 7 6 5 2 2 5 3 8 38 6 9 6 6 8 9 7 7 98010100008 7 7 7 8 7 7 84 4 4 2 1 4 4 4\n```\n\nOutput:\n```\n43\n36\n76\n52\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of four lines:\n\nAdditional constraint on the input: the sum of values of n over all test cases does not exceed 4·10^5.",
+    "output": "For each test case, print one integer — the maximum number of coins you can earn.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "flows",
+        "greedy",
+        "*3100"
+    ],
+    "rating": 3100
+}

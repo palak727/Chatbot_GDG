@@ -1,0 +1,18 @@
+{
+    "id": "2091F",
+    "contest_id": 2091,
+    "problem_letter": "F",
+    "title": "F. Igor and Mountain",
+    "statement": "The visitors of the IT Campus \"NEIMARK\" are not only strong programmers but also physically robust individuals! Some practice swimming, some rowing, and some rock climbing!\n\nMaster Igor is a prominent figure in the local rock climbing community. One day, he went on a mountain hike to ascend one of the peaks. As an experienced climber, Igor decided not to follow the established trails but to use his skills to climb strictly vertically.\n\nIgor found a rectangular vertical section of the mountain and mentally divided it into n horizontal levels. He then split each level into m segments using vertical partitions. Upon inspecting these segments, Igor discovered convenient protrusions that can be grasped (hereafter referred to as holds). Thus, the selected part of the mountain can be represented as an n × m rectangle, with some cells containing holds.\n\nBeing an experienced programmer, Igor decided to count the number of valid routes. A route is defined as a sequence of distinct holds. A route is considered valid if the following conditions are satisfied:\n\nIgor's arm span is d, which means he can move from one hold to another if the Euclidean distance between the centers of the corresponding segments does not exceed d. The distance between sections (i_1, j_1) and (i_2, j_2) is given by √((i_1 - i_2) ^ 2 + (j_1 - j_2) ^ 2).\n\nCalculate the number of different valid routes. Two routes are considered different if they differ in the list of holds used or in the order in which these holds are visited.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, d (2 ≤ n ≤ 2000, 1 ≤ m, d ≤ 2000).\n\nEach of the following n lines contains m characters — the description of the corresponding level of the mountain. The symbol '#' represents an empty section, and the symbol 'X' represents a section with a hold. The levels are described from top to bottom.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 4·10^6.\n\nFor each test case, output the number of different routes modulo 998244353.\n\nPossible routes in the first case:\n\nIn the second example, Igor's arm span has become larger, so new routes are available to him, for example this one:\n\nIn the third example, there are no holds on the lower level, so there are no correct routes.\n\nInput:\n```\n33 4 1XX#X#XX##X#X3 4 2XX#X#XX##X#X3 1 3XX#\n```\n\nOutput:\n```\n2\n60\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, d (2 ≤ n ≤ 2000, 1 ≤ m, d ≤ 2000).\n\nEach of the following n lines contains m characters — the description of the corresponding level of the mountain. The symbol '#' represents an empty section, and the symbol 'X' represents a section with a hold. The levels are described from top to bottom.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 4·10^6.",
+    "output": "For each test case, output the number of different routes modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "*1800"
+    ],
+    "rating": 1800
+}

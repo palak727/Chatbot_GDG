@@ -1,0 +1,18 @@
+{
+    "id": "1832B",
+    "contest_id": 1832,
+    "problem_letter": "B",
+    "title": "B. Maximum Sum",
+    "statement": "You are given an array a_1, a_2, …, a_n, where all elements are different.\n\nYou have to perform exactly k operations with it. During each operation, you do exactly one of the following two actions (you choose which to do yourself):\n\nYou have to calculate the maximum possible sum of elements in the resulting array.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n does not exceed 2·10^5.\n\nFor each test case, print one integer — the maximum possible sum of elements in the resulting array.\n\nIn the first testcase, applying the first operation produces the following outcome:\n\n21 is the best answer.\n\nIn the second testcase, it's optimal to first erase two minimums, then a maximum.\n\nInput:\n```\n65 12 5 1 10 65 22 5 1 10 63 11 2 36 115 22 12 10 13 116 215 22 12 10 13 115 1999999996 999999999 999999997 999999998 999999995\n```\n\nOutput:\n```\n21\n11\n3\n62\n46\n3999999986\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n does not exceed 2·10^5.",
+    "output": "For each test case, print one integer — the maximum possible sum of elements in the resulting array.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "sortings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

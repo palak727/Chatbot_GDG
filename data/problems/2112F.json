@@ -1,0 +1,18 @@
+{
+    "id": "2112F",
+    "contest_id": 2112,
+    "problem_letter": "F",
+    "title": "F. Variables and Operations",
+    "statement": "There are n variables; let's denote the value of the i-th variable as a_i.\n\nThere are also m operations which will be applied to these variables; the i-th operation is described by three integers x_i, y_i, z_i. When the i-th operation is applied, the variable x_i gets assigned the following value: min(a_x_i, a_y_i + z_i).\n\nEvery operation will be applied exactly once, but their order is not fixed; they can be applied in any order.\n\nLet's call a sequence of initial variable values a_1, a_2, …, a_n stable, if no matter in which order we apply operations, the resulting values will be the same. If the resulting value of the i-th variable depends on the order of operations, then the sequence of initial variable values is called i-unstable.\n\nYou have to process q queries. In each query, you will be given initial values a_1, a_2, …, a_n and an integer k; before applying the operations, you can at most k times choose a variable and decrease it by 1. For every variable i, you have to independently determine if it is possible to transform the given values into an i-unstable sequence.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 500; 1 ≤ m ≤ 4·10^5) — the number of variables and operations, respectively.\n\nThen, m lines follow. The i-th of them contains three integers x_i, y_i, z_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i; 0 ≤ z_i ≤ 10^5) — the description of the i-th operation.\n\nThe next line contains one integer q (1 ≤ q ≤ 1000) — the number of queries.\n\nEach query consists of two lines:\n\nFor each query, print a string of n zeroes and/or ones. The i-th character should be 1 if it is possible to obtain an i-unstable sequence, or 0 otherwise.\n\nConsider the first example. If the initial variable values are [20, 0, 15, 5], the resulting values will be [6, 0, 5, 5] with any order of operations. Decreasing the variables 10 times is not enough. However, if we can apply no more than 30 changes, we can decrease the 1-st variable by 2, and the 4-th variable by 25, we get initial values equal to [18, 0, 15, -20], and this sequence is 2-unstable and 3-unstable:\n\nInput:\n```\n4 52 1 103 2 51 4 81 2 63 1 173020 0 15 51020 0 15 53020 0 15 5\n```\n\nOutput:\n```\n0000\n0000\n0110\n```\n\nInput:\n```\n3 51 2 1001 2 101 3 51 2 1003 2 5110000000000 0 0\n```\n\nOutput:\n```\n000\n```\n\nInput:\n```\n3 42 3 51 2 03 1 41 3 41057 5 325 7 011 1 153 0 105 3 556 0 451 5 617 7 211 6 647 7 2\n```\n\nOutput:\n```\n000\n000\n000\n001\n000\n001\n001\n000\n000\n000\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 500; 1 ≤ m ≤ 4·10^5) — the number of variables and operations, respectively.\n\nThen, m lines follow. The i-th of them contains three integers x_i, y_i, z_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i; 0 ≤ z_i ≤ 10^5) — the description of the i-th operation.\n\nThe next line contains one integer q (1 ≤ q ≤ 1000) — the number of queries.\n\nEach query consists of two lines:",
+    "output": "For each query, print a string of n zeroes and/or ones. The i-th character should be 1 if it is possible to obtain an i-unstable sequence, or 0 otherwise.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1547B",
+    "contest_id": 1547,
+    "problem_letter": "B",
+    "title": "B. Alphabetical Strings",
+    "statement": "A string s of length n (1 ≤ n ≤ 26) is called alphabetical if it can be obtained using the following algorithm:\n\nIn other words, iterate over the n first letters of the Latin alphabet starting from 'a' and etc. Each time we prepend a letter to the left of the string s or append a letter to the right of the string s. Strings that can be obtained in that way are alphabetical.\n\nFor example, the following strings are alphabetical: \"a\", \"ba\", \"ab\", \"bac\" and \"ihfcbadeg\". The following strings are not alphabetical: \"z\", \"aa\", \"ca\", \"acb\", \"xyz\" and \"ddcba\".\n\nFrom the given string, determine if it is alphabetical.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is written on a separate line that contains one string s. String s consists of lowercase letters of the Latin alphabet and has a length between 1 and 26, inclusive.\n\nOutput t lines, each of them must contain the answer to the corresponding test case. Output YES if the given string s is alphabetical and NO otherwise.\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive answer).\n\nThe example contains test cases from the main part of the condition.\n\nInput:\n```\n11\na\nba\nab\nbac\nihfcbadeg\nz\naa\nca\nacb\nxyz\nddcba\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO\nNO\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is written on a separate line that contains one string s. String s consists of lowercase letters of the Latin alphabet and has a length between 1 and 26, inclusive.",
+    "output": "Output t lines, each of them must contain the answer to the corresponding test case. Output YES if the given string s is alphabetical and NO otherwise.\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

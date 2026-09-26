@@ -1,0 +1,19 @@
+{
+    "id": "1609E",
+    "contest_id": 1609,
+    "problem_letter": "E",
+    "title": "E. William The Oblivious",
+    "statement": "Before becoming a successful trader William got a university degree. During his education an interesting situation happened, after which William started to listen to homework assignments much more attentively. What follows is a formal description of the homework assignment as William heard it:\n\nYou are given a string s of length n only consisting of characters \"a\", \"b\" and \"c\". There are q queries of format (pos, c), meaning replacing the element of string s at position pos with character c. After each query you must output the minimal number of characters in the string, which have to be replaced, so that the string doesn't contain string \"abc\" as a subsequence. A valid replacement of a character is replacing it with \"a\", \"b\" or \"c\".\n\nA string x is said to be a subsequence of string y if x can be obtained from y by deleting some characters without changing the ordering of the remaining characters.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 10^5), the length of the string and the number of queries, respectively.\n\nThe second line contains the string s, consisting of characters \"a\", \"b\" and \"c\".\n\nEach of the next q lines contains an integer i and character c (1 ≤ i ≤ n), index and the value of the new item in the string, respectively. It is guaranteed that character's c value is \"a\", \"b\" or \"c\".\n\nFor each query output the minimal number of characters that would have to be replaced so that the string doesn't contain \"abc\" as a subsequence.\n\nLet's consider the state of the string after each query:\n\nInput:\n```\n9 12\naaabccccc\n4 a\n4 b\n2 b\n5 a\n1 b\n6 b\n5 c\n2 a\n1 a\n5 a\n6 b\n7 b\n```\n\nOutput:\n```\n0\n1\n2\n2\n1\n2\n1\n2\n2\n2\n2\n2\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 10^5), the length of the string and the number of queries, respectively.\n\nThe second line contains the string s, consisting of characters \"a\", \"b\" and \"c\".\n\nEach of the next q lines contains an integer i and character c (1 ≤ i ≤ n), index and the value of the new item in the string, respectively. It is guaranteed that character's c value is \"a\", \"b\" or \"c\".",
+    "output": "For each query output the minimal number of characters that would have to be replaced so that the string doesn't contain \"abc\" as a subsequence.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "dp",
+        "matrices",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1943B",
+    "contest_id": 1943,
+    "problem_letter": "B",
+    "title": "B. Non-Palindromic Substring",
+    "statement": "A string t is said to be k-good if there exists at least one substring^dagger of length k which is not a palindrome^ddagger. Let f(t) denote the sum of all values of k such that the string t is k-good.\n\nYou are given a string s of length n. You will have to answer q of the following queries:\n\n^dagger A substring of a string z is a contiguous segment of characters from z. For example, \"mathttdefor\", \"mathttcode\" and \"mathtto\" are all substrings of \"mathttcodeforces\" while \"mathttcodes\" and \"mathttaaa\" are not.\n\n^ddagger A palindrome is a string that reads the same backwards as forwards. For example, the strings \"textttz\", \"textttaa\" and \"texttttacocat\" are palindromes while \"textttcodeforces\" and \"textttab\" are not.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (2 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5), the size of the string and the number of queries respectively.\n\nThe second line of each test case contains the string s. It is guaranteed the string s only contains lowercase English characters.\n\nThe next q lines each contain two integers, l and r (1 ≤ l < r ≤ n).\n\nIt is guaranteed the sum of n and the sum of q both do not exceed 2·10^5.\n\nFor each query, output f(s_ls_{l + 1}… s_r).\n\nIn the first query of the first test case, the string is mathttaaab. mathttaaab, mathttaab and mathttab are all substrings that are not palindromes, and they have lengths 4, 3 and 2 respectively. Thus, the string is 2-good, 3-good and 4-good. Hence, f(mathttaaab) = 2 + 3 + 4 = 9.\n\nIn the second query of the first test case, the string is mathttaaa. There are no non-palindromic substrings. Hence, f(mathttaaa) = 0.\n\nIn the first query of the second test case, the string is mathttabc. mathttab, mathttbc and mathttabc are all substrings that are not palindromes, and they have lengths 2, 2 and 3 respectively. Thus, the string is 2-good and 3-good. Hence, f(mathttabc) = 2 + 3 = 5. Note that even though there are 2 non-palindromic substrings of length 2, we count it only once.\n\nInput:\n```\n54 4aaab1 41 33 42 43 2abc1 31 25 4pqpcc1 54 51 32 42 1aa1 212 1steponnopets1 12\n```\n\nOutput:\n```\n9\n0\n2\n5\n5\n2\n14\n0\n2\n5\n0\n65\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (2 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5), the size of the string and the number of queries respectively.\n\nThe second line of each test case contains the string s. It is guaranteed the string s only contains lowercase English characters.\n\nThe next q lines each contain two integers, l and r (1 ≤ l < r ≤ n).\n\nIt is guaranteed the sum of n and the sum of q both do not exceed 2·10^5.",
+    "output": "For each query, output f(s_ls_{l + 1}… s_r).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "hashing",
+        "implementation",
+        "math",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

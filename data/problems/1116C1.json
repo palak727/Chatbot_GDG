@@ -1,0 +1,15 @@
+{
+    "id": "1116C1",
+    "contest_id": 1116,
+    "problem_letter": "C1",
+    "title": "C1. Alternating bits oracle",
+    "statement": "Implement a quantum oracle on N qubits which checks whether the bits in the input vector vecx alternate (i.e., implements the function f(vecx) = 1 if vecx does not have a pair of adjacent bits in state 00 or 11).\n\nYou have to implement an operation which takes the following inputs:\n\nand performs a transformation |xrangle|yrangle → |xrangle|y oplus f(x)rangle. The operation doesn't have an output; its \"output\" is the state in which it leaves the qubits. Note that the input register x has to remain unchanged after applying the operation.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (x : Qubit[], y : Qubit) : Unit {\n        body (...) {\n            // your code here\n        }\n        adjoint auto;\n    }\n}\n```\n\nNote: the operation has to have an adjoint specified for it; adjoint auto means that the adjoint will be generated automatically. For details on adjoint, see Operation Definitions.\n\nYou are not allowed to use measurements in your operation.",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

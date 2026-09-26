@@ -1,0 +1,19 @@
+{
+    "id": "1599G",
+    "contest_id": 1599,
+    "problem_letter": "G",
+    "title": "G. Shortest path",
+    "statement": "You are given N points on an infinite plane with the Cartesian coordinate system on it. N-1 points lay on one line, and one point isn't on that line. You are on point K at the start, and the goal is to visit every point. You can move between any two points in a straight line, and you can revisit points. What is the minimum length of the path?\n\nThe first line contains two integers: N (3 ≤ N ≤ 2*10^5) - the number of points, and K (1 ≤ K ≤ N) - the index of the starting point.\n\nEach of the next N lines contain two integers, A_i, B_i (-10^6 ≤ A_i, B_i ≤ 10^6) - coordinates of the i-th point.\n\nThe output contains one number - the shortest path to visit all given points starting from point K. The absolute difference between your solution and the main solution shouldn't exceed 10^-6;\n\nThe shortest path consists of these moves:\n\n2 -> 5\n\n5 -> 4\n\n4 -> 1\n\n1 -> 3\n\nThere isn't any shorter path possible.\n\nInput:\n```\n5 2\n0 0\n-1 1\n2 -2\n0 1\n-2 2\n```\n\nOutput:\n```\n7.478709\n```",
+    "input": "The first line contains two integers: N (3 ≤ N ≤ 2*10^5) - the number of points, and K (1 ≤ K ≤ N) - the index of the starting point.\n\nEach of the next N lines contain two integers, A_i, B_i (-10^6 ≤ A_i, B_i ≤ 10^6) - coordinates of the i-th point.",
+    "output": "The output contains one number - the shortest path to visit all given points starting from point K. The absolute difference between your solution and the main solution shouldn't exceed 10^-6;",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "geometry",
+        "math",
+        "shortest paths",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1567B",
+    "contest_id": 1567,
+    "problem_letter": "B",
+    "title": "B. MEXor Mixup",
+    "statement": "Alice gave Bob two integers a and b (a > 0 and b ≥ 0). Being a curious boy, Bob wrote down an array of non-negative integers with MEX value of all elements equal to a and XOR value of all elements equal to b.\n\nWhat is the shortest possible length of the array Bob wrote?\n\nRecall that the MEX (Minimum EXcluded) of an array is the minimum non-negative integer that does not belong to the array and the XOR of an array is the bitwise XOR of all the elements of the array.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers a and b (1 ≤ a ≤ 3·10^5; 0 ≤ b ≤ 3·10^5) — the MEX and XOR of the array, respectively.\n\nFor each test case, output one (positive) integer — the length of the shortest array with MEX a and XOR b. We can show that such an array always exists.\n\nIn the first test case, one of the shortest arrays with MEX 1 and XOR 1 is [0, 2020, 2021].\n\nIn the second test case, one of the shortest arrays with MEX 2 and XOR 1 is [0, 1].\n\nIt can be shown that these arrays are the shortest arrays possible.\n\nInput:\n```\n5\n1 1\n2 1\n2 0\n1 10000\n2 10000\n```\n\nOutput:\n```\n3\n2\n3\n2\n3\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers a and b (1 ≤ a ≤ 3·10^5; 0 ≤ b ≤ 3·10^5) — the MEX and XOR of the array, respectively.",
+    "output": "For each test case, output one (positive) integer — the length of the shortest array with MEX a and XOR b. We can show that such an array always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

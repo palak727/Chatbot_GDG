@@ -1,0 +1,18 @@
+{
+    "id": "1879F",
+    "contest_id": 1879,
+    "problem_letter": "F",
+    "title": "F. Last Man Standing",
+    "statement": "There are n heroes in a videogame. Each hero has some health value h and initial armor value a. Let the current value of armor be a_cur, initially equal to a.\n\nWhen x points of damage are inflicted on a hero, the following happens: if x < a_cur, then x gets subtracted from a_cur; otherwise, 1 gets subtracted from h and a_cur gets assigned back to a.\n\nIn the start of the game, you choose the value x (an integer strictly greater than 0, arbitrarily large). Then you keep attacking all heroes in rounds: in one round, you inflict x points of damage to all alive heroes. A hero dies when his health becomes 0. The game ends when all heroes are dead.\n\nThe last hero to die earns the number of points, equal to the number of rounds he was the only hero alive. The other heroes get 0 points. In particular, if the last round ends with multiple heroes dying, then every hero gets 0 points.\n\nThe game is played for every possible x (from 1 to infinity). The points are reset between the games. What's the maximum number of points each hero has had?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of heroes.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 2·10^5) — the health value of each hero.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the initial armor value of each hero.\n\nFor each testcase, print n integers — the maximum number of points each hero has had over the games played for every possible x.\n\nIn the first testcase, the game for x = 1 is played as follows:\n\nThe second hero was the last hero to die, and he was the only hero alive during one round. Thus, he gets 1 point for that game.\n\nThe game for x = 4 is played as follows:\n\nThe third hero was the last hero to die, and he was the only hero alive during one round.\n\nInput:\n```\n333 1 23 11 5110020045 9 5 19 2 9 10\n```\n\nOutput:\n```\n1 1 1 \n20000 \n0 4 0 0 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of heroes.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 2·10^5) — the health value of each hero.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the initial armor value of each hero.",
+    "output": "For each testcase, print n integers — the maximum number of points each hero has had over the games played for every possible x.",
+    "time_limit": "7 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "number theory",
+        "*2800"
+    ],
+    "rating": 2800
+}

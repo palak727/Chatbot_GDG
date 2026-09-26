@@ -1,0 +1,18 @@
+{
+    "id": "1292F",
+    "contest_id": 1292,
+    "problem_letter": "F",
+    "title": "F. Nora's Toy Boxes",
+    "statement": "Back in time, the seven-year-old Nora used to play lots of games with her creation ROBO_Head-02, both to have fun and enhance his abilities.\n\nOne day, Nora's adoptive father, Phoenix Wyle, brought Nora n boxes of toys. Before unpacking, Nora decided to make a fun game for ROBO.\n\nShe labelled all n boxes with n distinct integers a_1, a_2, …, a_n and asked ROBO to do the following action several (possibly zero) times:\n\nBeing amused after nine different tries of the game, Nora asked ROBO to calculate the number of possible different piles having the largest amount of boxes in them. Two piles are considered different if there exists a position where those two piles have different boxes.\n\nSince ROBO was still in his infant stages, and Nora was still too young to concentrate for a long time, both fell asleep before finding the final answer. Can you help them?\n\nAs the number of such piles can be very large, you should print the answer modulo 10^9 + 7.\n\nThe first line contains an integer n (3 ≤ n ≤ 60), denoting the number of boxes.\n\nThe second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 60), where a_i is the label of the i-th box.\n\nPrint the number of distinct piles having the maximum number of boxes that ROBO_Head can have, modulo 10^9 + 7.\n\nLet's illustrate the box pile as a sequence b, with the pile's bottommost box being at the leftmost position.\n\nIn the first example, there are 2 distinct piles possible:\n\nIn the second example, there are 4 distinct piles possible:\n\nIn the third sequence, ROBO can do nothing at all. Therefore, there is only 1 valid pile, and that pile is empty.\n\nInput:\n```\n3\n2 6 8\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n2 3 4 9 12\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4\n5 7 2 9\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains an integer n (3 ≤ n ≤ 60), denoting the number of boxes.\n\nThe second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 60), where a_i is the label of the i-th box.",
+    "output": "Print the number of distinct piles having the maximum number of boxes that ROBO_Head can have, modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "*3500"
+    ],
+    "rating": 3500
+}

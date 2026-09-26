@@ -1,0 +1,17 @@
+{
+    "id": "1906E",
+    "contest_id": 1906,
+    "problem_letter": "E",
+    "title": "E. Merge Not Sort",
+    "statement": "You are currently researching the Merge Sort algorithm. Merge Sort is a sorting algorithm that is based on the principle of Divide and Conquer. It works by dividing an array into two subarrays of equal length, sorting each subarrays, then merging the sorted subarrays back together to form the final sorted array.\n\nYou are particularly interested in the merging routine. Common merge implementation will combine two subarrays by iteratively comparing their first elements, and move the smaller one to a new merged array. More precisely, the merge algorithm can be presented by the following pseudocode.\n\n```\n    Merge(A[1..N], B[1..N]):\n        C = []\n        i = 1\n        j = 1\n        while i <= N AND j <= N:\n            if A[i] < B[j]:\n                append A[i] to C\n                i = i + 1\n            else:\n                append B[j] to C\n                j = j + 1 \n        while i <= N:\n            append A[i] to C\n            i = i + 1 \n        while j <= N:\n            append B[j] to C\n            j = j + 1 \n        return C\n```\n\nDuring your research, you are keen to understand the behaviour of the merge algorithm when arrays A and B are not necessarily sorted. For example, if A = [3, 1, 6] and B = [4, 5, 2], then Merge(A, B) = [3, 1, 4, 5, 2, 6].\n\nTo further increase the understanding of the merge algorithm, you decided to work on the following problem. You are given an array C of length 2·N such that it is a permutation of 1 to 2·N. Construct any two arrays A and B of the same length N, such that Merge(A, B) = C, or determine if it is impossible to do so.\n\nThe first line consists of an integer N (1 ≤ N ≤ 1000).\n\nThe following line consists of 2·N integers C_i. The array C is a permutation of 1 to 2·N.\n\nIf it is impossible to construct two arrays A and B of length N such that Merge(A, B) = C, then output -1.\n\nOtherwise, output the arrays A and B in two lines. The first line consists of N integers A_i. The second line consists of N integers B_i. If there are several possible answers, output any of them.\n\nExplanation for the sample input/output #1\n\nThe solution A = [3, 1, 4] and B = [5, 2, 6] is also correct.\n\nExplanation for the sample input/output #2\n\nThe solution A = [1, 2, 3, 4] and B = [5, 6, 7, 8] is also correct.\n\nInput:\n```\n3\n3 1 4 5 2 6\n```\n\nOutput:\n```\n3 1 6\n4 5 2\n```\n\nInput:\n```\n4\n1 2 3 4 5 6 7 8\n```\n\nOutput:\n```\n2 3 5 7\n1 4 6 8\n```\n\nInput:\n```\n2\n4 3 2 1\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line consists of an integer N (1 ≤ N ≤ 1000).\n\nThe following line consists of 2·N integers C_i. The array C is a permutation of 1 to 2·N.",
+    "output": "If it is impossible to construct two arrays A and B of length N such that Merge(A, B) = C, then output -1.\n\nOtherwise, output the arrays A and B in two lines. The first line consists of N integers A_i. The second line consists of N integers B_i. If there are several possible answers, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "*1900"
+    ],
+    "rating": 1900
+}

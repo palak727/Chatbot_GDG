@@ -1,0 +1,19 @@
+{
+    "id": "1650C",
+    "contest_id": 1650,
+    "problem_letter": "C",
+    "title": "C. Weight of the System of Nested Segments",
+    "statement": "On the number line there are m points, i-th of which has integer coordinate x_i and integer weight w_i. The coordinates of all points are different, and the points are numbered from 1 to m.\n\nA sequence of n segments [l_1, r_1], [l_2, r_2], …, [l_n, r_n] is called system of nested segments if for each pair i, j (1 ≤ i < j ≤ n) the condition l_i < l_j < r_j < r_i is satisfied. In other words, the second segment is strictly inside the first one, the third segment is strictly inside the second one, and so on.\n\nFor a given number n, find a system of nested segments such that:\n\nFor example, let m = 8. The given points are marked in the picture, their weights are marked in red, their coordinates are marked in blue. Make a system of three nested segments:\n\nThe first line of input data contains an integer t (1 ≤ t ≤ 10^4) —the number of input test cases.\n\nAn empty line is written before each test case.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 10^5) and m (2·n ≤ m ≤ 2·10^5).\n\nThe next m lines contain pairs of integers x_i (-10^9 ≤ x_i ≤ 10^9) and w_i (-10^4 ≤ w_i ≤ 10^4) — coordinate and weight of point number i (1 ≤ i ≤ m) respectively. All x_i are different.\n\nIt is guaranteed that the sum of m values over all test cases does not exceed 2·10^5.\n\nFor each test case, output n + 1 lines: in the first of them, output the weight of the composed system, and in the next n lines output exactly two numbers — the indices of the points which are the endpoints of the i-th segment (1 ≤ i ≤ n). The order in which you output the endpoints of a segment is not important — you can output the index of the left endpoint first and then the number of the right endpoint, or the other way around.\n\nIf there are several ways to make a system of nested segments with minimal weight, output any of them.\n\nThe first test case coincides with the example from the condition. It can be shown that the weight of the composed system is minimal.\n\nThe second test case has only 6 points, so you need to use each of them to compose 3 segments.\n\nInput:\n```\n3\n\n3 8\n0 10\n-2 1\n4 10\n11 20\n7 -1\n9 1\n2 3\n5 -2\n\n3 6\n-1 2\n1 3\n3 -1\n2 4\n4 0\n8 2\n\n2 5\n5 -1\n3 -2\n1 0\n-2 0\n-5 -3\n```\n\nOutput:\n```\n12\n2 6\n5 1\n7 8\n\n10\n1 6\n5 2\n3 4\n\n-6\n5 1\n4 2\n```",
+    "input": "The first line of input data contains an integer t (1 ≤ t ≤ 10^4) —the number of input test cases.\n\nAn empty line is written before each test case.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 10^5) and m (2·n ≤ m ≤ 2·10^5).\n\nThe next m lines contain pairs of integers x_i (-10^9 ≤ x_i ≤ 10^9) and w_i (-10^4 ≤ w_i ≤ 10^4) — coordinate and weight of point number i (1 ≤ i ≤ m) respectively. All x_i are different.\n\nIt is guaranteed that the sum of m values over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n + 1 lines: in the first of them, output the weight of the composed system, and in the next n lines output exactly two numbers — the indices of the points which are the endpoints of the i-th segment (1 ≤ i ≤ n). The order in which you output the endpoints of a segment is not important — you can output the index of the left endpoint first and then the number of the right endpoint, or the other way around.\n\nIf there are several ways to make a system of nested segments with minimal weight, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "hashing",
+        "implementation",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

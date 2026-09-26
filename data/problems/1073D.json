@@ -1,0 +1,19 @@
+{
+    "id": "1073D",
+    "contest_id": 1073,
+    "problem_letter": "D",
+    "title": "D. Berland Fair",
+    "statement": "XXI Berland Annual Fair is coming really soon! Traditionally fair consists of n booths, arranged in a circle. The booths are numbered 1 through n clockwise with n being adjacent to 1. The i-th booths sells some candies for the price of a_i burles per item. Each booth has an unlimited supply of candies.\n\nPolycarp has decided to spend at most T burles at the fair. However, he has some plan in mind for his path across the booths:\n\nPolycarp's money is finite, thus the process will end once he can no longer buy candy at any booth.\n\nCalculate the number of candies Polycarp will buy.\n\nThe first line contains two integers n and T (1 ≤ n ≤ 2·10^5, 1 ≤ T ≤ 10^18) — the number of booths at the fair and the initial amount of burles Polycarp has.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the price of the single candy at booth number i.\n\nPrint a single integer — the total number of candies Polycarp will buy.\n\nLet's consider the first example. Here are Polycarp's moves until he runs out of money:\n\nNo candy can be bought later. The total number of candies bought is 10.\n\nIn the second example he has 1 burle left at the end of his path, no candy can be bought with this amount.\n\nInput:\n```\n3 38\n5 2 5\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n5 21\n2 4 100 2 6\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains two integers n and T (1 ≤ n ≤ 2·10^5, 1 ≤ T ≤ 10^18) — the number of booths at the fair and the initial amount of burles Polycarp has.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the price of the single candy at booth number i.",
+    "output": "Print a single integer — the total number of candies Polycarp will buy.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "*1700"
+    ],
+    "rating": 1700
+}

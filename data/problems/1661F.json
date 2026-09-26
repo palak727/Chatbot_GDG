@@ -1,0 +1,17 @@
+{
+    "id": "1661F",
+    "contest_id": 1661,
+    "problem_letter": "F",
+    "title": "F. Teleporters",
+    "statement": "There are n+1 teleporters on a straight line, located in points 0, a_1, a_2, a_3, ..., a_n. It's possible to teleport from point x to point y if there are teleporters in both of those points, and it costs (x-y)^2 energy.\n\nYou want to install some additional teleporters so that it is possible to get from the point 0 to the point a_n (possibly through some other teleporters) spending no more than m energy in total. Each teleporter you install must be located in an integer point.\n\nWhat is the minimum number of teleporters you have to install?\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 < a_2 < a_3 < … < a_n ≤ 10^9).\n\nThe third line contains one integer m (a_n ≤ m ≤ 10^18).\n\nPrint one integer — the minimum number of teleporters you have to install so that it is possible to get from 0 to a_n spending at most m energy. It can be shown that it's always possible under the constraints from the input format.\n\nInput:\n```\n2\n1 5\n7\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\n1 5\n6\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n1\n5\n5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n1\n1000000000\n1000000043\n```\n\nOutput:\n```\n999999978\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 < a_2 < a_3 < … < a_n ≤ 10^9).\n\nThe third line contains one integer m (a_n ≤ m ≤ 10^18).",
+    "output": "Print one integer — the minimum number of teleporters you have to install so that it is possible to get from 0 to a_n spending at most m energy. It can be shown that it's always possible under the constraints from the input format.",
+    "time_limit": "7 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

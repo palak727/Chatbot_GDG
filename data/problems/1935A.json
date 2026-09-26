@@ -1,0 +1,17 @@
+{
+    "id": "1935A",
+    "contest_id": 1935,
+    "problem_letter": "A",
+    "title": "A. Entertainment in MAC",
+    "statement": "Congratulations, you have been accepted to the Master's Assistance Center! However, you were extremely bored in class and got tired of doing nothing, so you came up with a game for yourself.\n\nYou are given a string s and an even integer n. There are two types of operations that you can apply to it:\n\nIt is required to determine the lexicographically smallest^dagger string that can be obtained after applying exactly n operations. Note that you can apply operations of different types in any order, but you must apply exactly n operations in total.\n\n^daggerA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 10^9) — the number of operations applied to the string s.\n\nThe second line of each test case contains a single string s (1 ≤ |s| ≤ 100), consisting of lowercase English letters, — the string to which the operations are applied.\n\nFor each test case, output a single line — the lexicographically smallest string that can be obtained after applying exactly n operations.\n\nIn the first test case, you can apply the operation of the second type (i.e., reverse the string s) 4 times. Then the string s will remain equal to cpm.\n\nIn the second test case, you can do the following:\n\nInput:\n```\n54cpm2grib10kupitimilablodarbuz1000000000capybara6abacaba\n```\n\nOutput:\n```\ncpm\nbirggrib\nkupitimilablodarbuz\narabypaccapybara\nabacaba\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 10^9) — the number of operations applied to the string s.\n\nThe second line of each test case contains a single string s (1 ≤ |s| ≤ 100), consisting of lowercase English letters, — the string to which the operations are applied.",
+    "output": "For each test case, output a single line — the lexicographically smallest string that can be obtained after applying exactly n operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2027D1",
+    "contest_id": 2027,
+    "problem_letter": "D1",
+    "title": "D1. The Endspeaker (Easy Version)",
+    "statement": "This is the easy version of this problem. The only difference is that you only need to output the minimum total cost of operations in this version. You must solve both versions to be able to hack.\n\nYou're given an array a of length n, and an array b of length m (b_i > b_{i+1} for all 1 ≤ i < m). Initially, the value of k is 1. Your aim is to make the array a empty by performing one of these two operations repeatedly:\n\nYou need to minimize the total cost of the operations to make array a empty. If it's impossible to do this through any sequence of operations, output -1. Otherwise, output the minimum total cost of the operations.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 3·10^5, boldsymbol1 ≤ n·m ≤ 3·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).\n\nIt is also guaranteed that b_i > b_{i+1} for all 1 ≤ i < m.\n\nIt is guaranteed that the sum of boldsymboln·m over all test cases does not exceed 3·10^5.\n\nFor each test case, if it's possible to make a empty, then output the minimum total cost of the operations.\n\nIf there is no possible sequence of operations which makes a empty, then output a single integer -1.\n\nIn the first test case, one optimal sequence of operations which yields a total cost of 1 is as follows:\n\nIn the second test case, it's impossible to remove any prefix of the array since a_1 > b_1, so array a cannot be made empty by any sequence of operations.\n\nInput:\n```\n54 29 3 4 311 71 22019 1810 22 5 2 1 10 3 2 9 9 617 910 112 2 2 2 2 2 2 2 2 220 18 16 14 12 10 8 6 4 2 11 61032 16 8 4 2 1\n```\n\nOutput:\n```\n1\n-1\n2\n10\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 3·10^5, boldsymbol1 ≤ n·m ≤ 3·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).\n\nIt is also guaranteed that b_i > b_{i+1} for all 1 ≤ i < m.\n\nIt is guaranteed that the sum of boldsymboln·m over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, if it's possible to make a empty, then output the minimum total cost of the operations.\n\nIf there is no possible sequence of operations which makes a empty, then output a single integer -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "graphs",
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

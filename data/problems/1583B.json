@@ -1,0 +1,17 @@
+{
+    "id": "1583B",
+    "contest_id": 1583,
+    "problem_letter": "B",
+    "title": "B. Omkar and Heavenly Tree",
+    "statement": "Lord Omkar would like to have a tree with n nodes (3 ≤ n ≤ 10^5) and has asked his disciples to construct the tree. However, Lord Omkar has created m (1 ≤ m < n) restrictions to ensure that the tree will be as heavenly as possible.\n\nA tree with n nodes is an connected undirected graph with n nodes and n-1 edges. Note that for any two nodes, there is exactly one simple path between them, where a simple path is a path between two nodes that does not contain any node more than once.\n\nHere is an example of a tree:\n\nA restriction consists of 3 pairwise distinct integers, a, b, and c (1 ≤ a,b,c ≤ n). It signifies that node b cannot lie on the simple path between node a and node c.\n\nCan you help Lord Omkar and become his most trusted disciple? You will need to find heavenly trees for multiple sets of restrictions. It can be shown that a heavenly tree will always exist for any set of restrictions under the given constraints.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers, n and m (3 ≤ n ≤ 10^5, 1 ≤ m < n), representing the size of the tree and the number of restrictions.\n\nThe i-th of the next m lines contains three integers a_i, b_i, c_i (1 ≤ a_i, b_i, c_i ≤ n, a, b, c are distinct), signifying that node b_i cannot lie on the simple path between nodes a_i and c_i.\n\nIt is guaranteed that the sum of n across all test cases will not exceed 10^5.\n\nFor each test case, output n-1 lines representing the n-1 edges in the tree. On each line, output two integers u and v (1 ≤ u, v ≤ n, u ≠ v) signifying that there is an edge between nodes u and v. Given edges have to form a tree that satisfies Omkar's restrictions.\n\nThe output of the first sample case corresponds to the following tree:\n\nThe output of the second sample case corresponds to the following tree:\n\nInput:\n```\n2\n7 4\n1 2 3\n3 4 5\n5 6 7\n6 5 4\n5 3\n1 2 3\n2 3 4\n3 4 5\n```\n\nOutput:\n```\n1 2\n1 3\n3 5\n3 4\n2 7\n7 6\n5 1\n1 3\n3 2\n2 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers, n and m (3 ≤ n ≤ 10^5, 1 ≤ m < n), representing the size of the tree and the number of restrictions.\n\nThe i-th of the next m lines contains three integers a_i, b_i, c_i (1 ≤ a_i, b_i, c_i ≤ n, a, b, c are distinct), signifying that node b_i cannot lie on the simple path between nodes a_i and c_i.\n\nIt is guaranteed that the sum of n across all test cases will not exceed 10^5.",
+    "output": "For each test case, output n-1 lines representing the n-1 edges in the tree. On each line, output two integers u and v (1 ≤ u, v ≤ n, u ≠ v) signifying that there is an edge between nodes u and v. Given edges have to form a tree that satisfies Omkar's restrictions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "trees",
+        "*1200"
+    ],
+    "rating": 1200
+}

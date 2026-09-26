@@ -1,0 +1,23 @@
+{
+    "id": "2032D",
+    "contest_id": 2032,
+    "problem_letter": "D",
+    "title": "D. Genokraken",
+    "statement": "This is an interactive problem.\n\nUpon clearing the Waterside Area, Gretel has found a monster named Genokraken, and she's keeping it contained for her scientific studies.\n\nThe monster's nerve system can be structured as a tree^dagger of n nodes (really, everything should stop resembling trees all the time…), numbered from 0 to n-1, with node 0 as the root.\n\nGretel's objective is to learn the exact structure of the monster's nerve system — more specifically, she wants to know the values p_1, p_2, …, p_{n-1} of the tree, where p_i (0 ≤ p_i < i) is the direct parent node of node i (1 ≤ i ≤ n - 1).\n\nShe doesn't know exactly how the nodes are placed, but she knows a few convenient facts:\n\nGretel can make queries to the containment cell:\n\nHowever, to avoid unexpected consequences by overstimulating the creature, Gretel wants to query at most 2n - 6 times. Though Gretel is gifted, she can't do everything all at once, so can you give her a helping hand?\n\n^daggerA tree is a connected graph where every pair of distinct nodes has exactly one simple path connecting them.\n\n^ddaggerA path is a tree whose vertices can be listed in the order v_1, v_2, …, v_k such that the edges are (v_i, v_{i+1}) (1 ≤ i < k).\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 10^4) — the number of nodes in Genokraken's nerve system.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^4.\n\nFor each test case, interaction starts by reading the integer n.\n\nThen you can make queries of the following type:\n\nAfter the query, read an integer r — the answer to your query. You are allowed to use at most 2n - 6 queries of this type.\n\nWhen you find out the structure, output a line in the format \"! p_1 space p_2 … p_{n-1}\" (without quotes), where p_i (0 ≤ p_i < i) denotes the index of the direct parent of node i. This query is not counted towards the 2n - 6 queries limit.\n\nAfter solving one test case, the program should immediately move on to the next one. After solving all test cases, the program should be terminated immediately.\n\nAfter printing any query do not forget to output an end of line and flush the output buffer. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nThe interactor is non-adaptive. The tree does not change during the interaction.\n\nHacks\n\nFor hack, use the following format:\n\nThe first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 10^4) — the number of nodes in Genokraken's nerve system.\n\nThe second line of each test case contains n-1 integers p_1, p_2, …, p_{n-1} (0 ≤ p_1 ≤ p_2 ≤ … ≤ p_{n-1} ≤ n - 2, 0 ≤ p_i < i) — the direct parents of node 1, 2, ..., n-1 in the system, respectively.\n\nIn each test case, the values p_1, p_2, …, p_{n-1} must ensure the following in the tree:\n\nThe sum of n over all test cases must not exceed 10^4.\n\nIn the first test case, Genokraken's nerve system forms the following tree:\n\nIn the second test case, Genokraken's nerve system forms the following tree:\n\nIn the third test case, Genokraken's nerve system forms the following tree:\n\nInput:\n```\n3\n4\n\n1\n\n5\n\n1\n\n0\n\n9\n```\n\nOutput:\n```\n? 2 3\n\n! 0 0 1\n\n? 2 3\n\n? 2 4\n\n! 0 0 1 2\n\n! 0 0 0 1 3 5 6 7\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 10^4) — the number of nodes in Genokraken's nerve system.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^4.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "greedy",
+        "implementation",
+        "interactive",
+        "trees",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

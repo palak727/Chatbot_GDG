@@ -1,0 +1,16 @@
+{
+    "id": "2038H",
+    "contest_id": 2038,
+    "problem_letter": "H",
+    "title": "H. Galactic Council",
+    "statement": "Monocarp plays a computer game. In this game, he maintains a space empire. The empire is governed by n political parties. Initially, every party has political power equal to 0, and there is no ruling party.\n\nDuring each of the next m turns, the following happens:\n\nDetermine which party Monocarp has to support during each turn so that he doesn't lose the game due to the events, and the score he achieves is the maximum possible. Initially, Monocarp's score is 0.\n\nThe first line contains two integers n and m (2 ≤ n, m ≤ 50) — the number of political parties and the number of turns, respectively.\n\nThe second line contains m integers p_1, p_2, …, p_m (1 ≤ p_j ≤ n), where p_j is the index of the party which should be the ruling party at the end of the j-th turn.\n\nThen n lines follow. The i-th of them contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^5), where a_{i,j} is the amount of points Monocarp gets if he supports the i-th party during the j-th turn.\n\nIf Monocarp loses the game no matter how he acts, print one integer -1.\n\nOtherwise, print m integers c_1, c_2, …, c_m (1 ≤ c_j ≤ n), where c_j is the index of the party Monocarp should support during the j-th turn. If there are multiple answers, print any of them.\n\nInput:\n```\n2 32 1 21 2 34 5 6\n```\n\nOutput:\n```\n2 1 2 \n```\n\nInput:\n```\n3 51 1 1 2 11 1 1 1 110 5 7 8 157 10 9 8 15\n```\n\nOutput:\n```\n1 3 2 2 1 \n```\n\nInput:\n```\n3 51 1 1 1 11 1 1 1 110 5 7 8 157 10 9 8 15\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n, m ≤ 50) — the number of political parties and the number of turns, respectively.\n\nThe second line contains m integers p_1, p_2, …, p_m (1 ≤ p_j ≤ n), where p_j is the index of the party which should be the ruling party at the end of the j-th turn.\n\nThen n lines follow. The i-th of them contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^5), where a_{i,j} is the amount of points Monocarp gets if he supports the i-th party during the j-th turn.",
+    "output": "If Monocarp loses the game no matter how he acts, print one integer -1.\n\nOtherwise, print m integers c_1, c_2, …, c_m (1 ≤ c_j ≤ n), where c_j is the index of the party Monocarp should support during the j-th turn. If there are multiple answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "flows",
+        "*3000"
+    ],
+    "rating": 3000
+}

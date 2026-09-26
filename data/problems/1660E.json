@@ -1,0 +1,19 @@
+{
+    "id": "1660E",
+    "contest_id": 1660,
+    "problem_letter": "E",
+    "title": "E. Matrix and Shifts",
+    "statement": "You are given a binary matrix A of size n × n. Rows are numbered from top to bottom from 1 to n, columns are numbered from left to right from 1 to n. The element located at the intersection of row i and column j is called A_ij. Consider a set of 4 operations:\n\nYou can perform an arbitrary (possibly zero) number of operations on the matrix; the operations can be performed in any order.\n\nAfter that, you can perform an arbitrary (possibly zero) number of new xor-operations:\n\nEach application of this xor-operation costs one burl. Note that the 4 shift operations — are free. These 4 operations can only be performed before xor-operations are performed.\n\nOutput the minimum number of burles you would have to pay to make the A matrix unitary. A unitary matrix is a matrix with ones on the main diagonal and the rest of its elements are zeros (that is, A_ij = 1 if i = j and A_ij = 0 otherwise).\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow. Before each test case, an empty line is written in the input.\n\nThe first line of each test case contains a single number n (1 ≤ n ≤ 2000)\n\nThis is followed by n lines, each containing exactly n characters and consisting only of zeros and ones. These lines describe the values in the elements of the matrix.\n\nIt is guaranteed that the sum of n^2 values over all test cases does not exceed 4·10^6.\n\nFor each test case, output the minimum number of burles you would have to pay to make the A matrix unitary. In other words, print the minimum number of xor-operations it will take after applying cyclic shifts to the matrix for the A matrix to become unitary.\n\nIn the first test case, you can do the following: first, shift all the rows down cyclically, then the main diagonal of the matrix will contain only \"1\". Then it will be necessary to apply xor-operation to the only \"1\" that is not on the main diagonal.\n\nIn the second test case, you can make a unitary matrix by applying the operation 2 — cyclic shift of rows upward twice to the matrix.\n\nInput:\n```\n4\n3010011100\n50001000001100000100000100\n21010\n41111101111111111\n```\n\nOutput:\n```\n1\n0\n2\n11\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow. Before each test case, an empty line is written in the input.\n\nThe first line of each test case contains a single number n (1 ≤ n ≤ 2000)\n\nThis is followed by n lines, each containing exactly n characters and consisting only of zeros and ones. These lines describe the values in the elements of the matrix.\n\nIt is guaranteed that the sum of n^2 values over all test cases does not exceed 4·10^6.",
+    "output": "For each test case, output the minimum number of burles you would have to pay to make the A matrix unitary. In other words, print the minimum number of xor-operations it will take after applying cyclic shifts to the matrix for the A matrix to become unitary.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1288C",
+    "contest_id": 1288,
+    "problem_letter": "C",
+    "title": "C. Two Arrays",
+    "statement": "You are given two integers n and m. Calculate the number of pairs of arrays (a, b) such that:\n\nAs the result can be very large, you should print it modulo 10^9+7.\n\nThe only line contains two integers n and m (1 ≤ n ≤ 1000, 1 ≤ m ≤ 10).\n\nPrint one integer – the number of arrays a and b satisfying the conditions described above modulo 10^9+7.\n\nIn the first test there are 5 suitable arrays:\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n10 1\n```\n\nOutput:\n```\n55\n```\n\nInput:\n```\n723 9\n```\n\nOutput:\n```\n157557417\n```",
+    "input": "The only line contains two integers n and m (1 ≤ n ≤ 1000, 1 ≤ m ≤ 10).",
+    "output": "Print one integer – the number of arrays a and b satisfying the conditions described above modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*1600"
+    ],
+    "rating": 1600
+}

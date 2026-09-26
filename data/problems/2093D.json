@@ -1,0 +1,17 @@
+{
+    "id": "2093D",
+    "contest_id": 2093,
+    "problem_letter": "D",
+    "title": "D. Skibidi Table",
+    "statement": "Vadim loves filling square tables with integers. But today he came up with a way to do it for fun! Let's take, for example, a table of size 2 × 2, with rows numbered from top to bottom and columns numbered from left to right. We place 1 in the top left cell, 2 in the bottom right, 3 in the bottom left, and 4 in the top right. That's all he needs for fun!\n\nFortunately for Vadim, he has a table of size 2^n × 2^n. He plans to fill it with integers from 1 to 2^2n in ascending order. To fill such a large table, Vadim will divide it into 4 equal square tables, filling the top left one first, then the bottom right one, followed by the bottom left one, and finally the top right one. Each smaller table will be divided into even smaller ones as he fills them until he reaches tables of size 2 × 2, which he will fill in the order described above.\n\nNow Vadim is eager to start filling the table, but he has q questions of two types:\n\nEach test consists of several sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10) — the number of sets of input data. The following lines describe the input data sets.\n\nIn the first line of each data set, there is an integer n, describing the size of the table (1 ≤ n ≤ 30).\n\nIn the second line of each data set, there is an integer q — the number of questions (1 ≤ q ≤ 20,000).\n\nIn the following q lines of each data set, the questions are described in the following formats:\n\nIt is guaranteed that the sum of q over all test cases does not exceed 20,000.\n\nOutput the answers to each question on a separate line.\n\nThis is how the filled table from the first example looks:\n\nInput:\n```\n225-> 4 3<- 15<- 4-> 3 1-> 1 318-> 1 1-> 1 2-> 2 1-> 2 2<- 1<- 2<- 3<- 4\n```\n\nOutput:\n```\n7\n2 3\n1 2\n9\n13\n1\n4\n3\n2\n1 1\n2 2\n2 1\n1 2\n```",
+    "input": "Each test consists of several sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10) — the number of sets of input data. The following lines describe the input data sets.\n\nIn the first line of each data set, there is an integer n, describing the size of the table (1 ≤ n ≤ 30).\n\nIn the second line of each data set, there is an integer q — the number of questions (1 ≤ q ≤ 20,000).\n\nIn the following q lines of each data set, the questions are described in the following formats:\n\nIt is guaranteed that the sum of q over all test cases does not exceed 20,000.",
+    "output": "Output the answers to each question on a separate line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1658C",
+    "contest_id": 1658,
+    "problem_letter": "C",
+    "title": "C. Shinju and the Lost Permutation",
+    "statement": "Shinju loves permutations very much! Today, she has borrowed a permutation p from Juju to play with.\n\nThe i-th cyclic shift of a permutation p is a transformation on the permutation such that p = [p_1, p_2, …, p_n] will now become p = [p_{n-i+1}, …, p_n, p_1,p_2, …, p_{n-i}].\n\nLet's define the power of permutation p as the number of distinct elements in the prefix maximums array b of the permutation. The prefix maximums array b is the array of length n such that b_i = max(p_1, p_2, …, p_i). For example, the power of [1, 2, 5, 4, 6, 3] is 4 since b=[1,2,5,5,6,6] and there are 4 distinct elements in b.\n\nUnfortunately, Shinju has lost the permutation p! The only information she remembers is an array c, where c_i is the power of the (i-1)-th cyclic shift of the permutation p. She's also not confident that she remembers it correctly, so she wants to know if her memory is good enough.\n\nGiven the array c, determine if there exists a permutation p that is consistent with c. You do not have to construct the permutation p.\n\nA permutation is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3, 4] is also not a permutation (n=3 but there is 4 in the array).\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^3) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers c_1,c_2,…,c_n (1 ≤ c_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print \"YES\" if there is a permutation p exists that satisfies the array c, and \"NO\" otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).\n\nIn the first test case, the permutation [1] satisfies the array c.\n\nIn the second test case, the permutation [2,1] satisfies the array c.\n\nIn the fifth test case, the permutation [5, 1, 2, 4, 6, 3] satisfies the array c. Let's see why this is true.\n\nTherefore, c = [2, 3, 1, 2, 3, 4].\n\nIn the third, fourth, and sixth testcases, we can show that there is no permutation that satisfies array c.\n\nInput:\n```\n61121 222 261 2 4 6 3 562 3 1 2 3 433 2 1\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nNO\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^3) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers c_1,c_2,…,c_n (1 ≤ c_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print \"YES\" if there is a permutation p exists that satisfies the array c, and \"NO\" otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

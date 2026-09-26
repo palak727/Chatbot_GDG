@@ -1,0 +1,22 @@
+{
+    "id": "2077E",
+    "contest_id": 2077,
+    "problem_letter": "E",
+    "title": "E. Another Folding Strip",
+    "statement": "For an array b of length m, define f(b) as follows.\n\nConsider a 1 × m strip, where all cells initially have darkness 0. You want to transform it into a strip where the color at the i-th position has darkness b_i. You can perform the following operation, which consists of two steps:\n\nLet f(b) be the minimum number of operations required to achieve the desired configuration. It can be proven that the goal can always be achieved in a finite number of operations.\n\nYou are given an array a of length n. Evaluate\n\n∑_{l=1}^n∑_{r=l}^n f(a_l a_{l+1} … a_r)\n\nmodulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — denoting the array a.\n\nIt is guaranteed that the sum of all values of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the required sum modulo 998,244,353.\n\nIn the first test case,\n\nThis sums up to 0+1+1+1+1+0 = 4\n\nIn the second test case, f(a_1a_2a_3a_4a_5a_6) = 2. Here's one possible sequence of operations.\n\nInput:\n```\n430 1 061 0 0 1 2 152 1 2 4 31276 55 12 32 11 45 9 63 88 83 32 6\n```\n\nOutput:\n```\n4\n28\n47\n7001\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — denoting the array a.\n\nIt is guaranteed that the sum of all values of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the required sum modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

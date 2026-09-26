@@ -1,0 +1,16 @@
+{
+    "id": "1157C1",
+    "contest_id": 1157,
+    "problem_letter": "C1",
+    "title": "C1. Increasing Subsequence (easy version)",
+    "statement": "The only difference between problems C1 and C2 is that all values in input of problem C1 are distinct (this condition may be false for problem C2).\n\nYou are given a sequence a consisting of n integers. All these integers are distinct, each value from 1 to n appears in the sequence exactly once.\n\nYou are making a sequence of moves. During each move you must take either the leftmost element of the sequence or the rightmost element of the sequence, write it down and remove it from the sequence. Your task is to write down a strictly increasing sequence, and among all such sequences you should take the longest (the length of the sequence is the number of elements in it).\n\nFor example, for the sequence [2, 1, 5, 4, 3] the answer is 4 (you take 2 and the sequence becomes [1, 5, 4, 3], then you take the rightmost element 3 and the sequence becomes [1, 5, 4], then you take 4 and the sequence becomes [1, 5] and then you take 5 and the sequence becomes [1], the obtained increasing sequence is [2, 3, 4, 5]).\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), where a_i is the i-th element of a. All these integers are pairwise distinct.\n\nIn the first line of the output print k — the maximum number of elements in a strictly increasing sequence you can obtain.\n\nIn the second line print a string s of length k, where the j-th character of this string s_j should be 'L' if you take the leftmost element during the j-th move and 'R' otherwise. If there are multiple answers, you can print any.\n\nThe first example is described in the problem statement.\n\nInput:\n```\n5\n2 1 5 4 3\n```\n\nOutput:\n```\n4\nLRRR\n```\n\nInput:\n```\n7\n1 3 5 6 7 4 2\n```\n\nOutput:\n```\n7\nLRLRLLL\n```\n\nInput:\n```\n3\n1 2 3\n```\n\nOutput:\n```\n3\nLLL\n```\n\nInput:\n```\n4\n1 2 4 3\n```\n\nOutput:\n```\n4\nLLRL\n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), where a_i is the i-th element of a. All these integers are pairwise distinct.",
+    "output": "In the first line of the output print k — the maximum number of elements in a strictly increasing sequence you can obtain.\n\nIn the second line print a string s of length k, where the j-th character of this string s_j should be 'L' if you take the leftmost element during the j-th move and 'R' otherwise. If there are multiple answers, you can print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

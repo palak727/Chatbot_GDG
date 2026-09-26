@@ -1,0 +1,16 @@
+{
+    "id": "1575F",
+    "contest_id": 1575,
+    "problem_letter": "F",
+    "title": "F. Finding Expected Value",
+    "statement": "Mr. Chanek opened a letter from his fellow, who is currently studying at Singanesia. Here is what it says.\n\nDefine an array b (0 ≤ b_i < k) with n integers. While there exists a pair (i, j) such that b_i ≠ b_j, do the following operation:\n\nDenote f(b) as the expected number of operations done to b until all elements of b are equal.\n\nYou are given two integers n and k, and an array a (-1 ≤ a_i < k) of n integers.\n\nFor every index i with a_i = -1, replace a_i with a random number j satisfying 0 ≤ j < k. Let c be the number of occurrences of -1 in a. There are k^c possibilites of a after the replacement, each with equal probability of being the final array.\n\nFind the expected value of f(a) modulo 10^9 + 7.\n\nFormally, let M = 10^9 + 7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nAfter reading the letter, Mr. Chanek gave the task to you. Solve it for the sake of their friendship!\n\nThe first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 10^9).\n\nThe second line contains n integers a_1, a_2, …, a_n (-1 ≤ a_i < k).\n\nOutput an integer denoting the expected value of f(a) modulo 10^9 + 7.\n\nInput:\n```\n2 2\n0 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2 2\n0 -1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 3\n0 1 1\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n3 3\n-1 -1 -1\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n10 9\n-1 0 -1 1 1 2 2 3 3 3\n```\n\nOutput:\n```\n652419213\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 10^9).\n\nThe second line contains n integers a_1, a_2, …, a_n (-1 ≤ a_i < k).",
+    "output": "Output an integer denoting the expected value of f(a) modulo 10^9 + 7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

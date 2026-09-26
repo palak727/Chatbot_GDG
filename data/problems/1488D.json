@@ -1,0 +1,18 @@
+{
+    "id": "1488D",
+    "contest_id": 1488,
+    "problem_letter": "D",
+    "title": "D. Problemsolving Marathon",
+    "statement": "Polycarp has decided to do a problemsolving marathon. He wants to solve s problems in n days. Let a_i be the number of problems he solves during the i-th day. He wants to find a distribution of problems into days such that:\n\nNote that a_1 can be arbitrarily large.\n\nWhat is the largest value of a_n Polycarp can obtain?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe only line of each testcase contains two integers n and s (1 ≤ n ≤ s ≤ 10^18) — the number of days and the number of problems Polycarp wants to solve.\n\nIt's guaranteed that the distribution always exists within the given constraints.\n\nFor each testcase print a single integer — the maximum value of a_n.\n\nIn the first testcase there is only one distribution: [15].\n\nIn the second testcase the distribution that maximizes a_n is: [2, 3, 4].\n\nIn the third testcase the distribution that maximizes a_n is: [2, 4]. [3, 3] is a valid distribution but a_n=3 which is smaller than 4. [1, 5] is not a valid distribution because 5 > 2·1.\n\nInput:\n```\n3\n1 15\n3 9\n2 6\n```\n\nOutput:\n```\n15\n4\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe only line of each testcase contains two integers n and s (1 ≤ n ≤ s ≤ 10^18) — the number of days and the number of problems Polycarp wants to solve.\n\nIt's guaranteed that the distribution always exists within the given constraints.",
+    "output": "For each testcase print a single integer — the maximum value of a_n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

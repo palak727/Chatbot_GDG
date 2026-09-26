@@ -1,0 +1,17 @@
+{
+    "id": "1735B",
+    "contest_id": 1735,
+    "problem_letter": "B",
+    "title": "B. Tea with Tangerines",
+    "statement": "There are n pieces of tangerine peel, the i-th of them has size a_i. In one step it is possible to divide one piece of size x into two pieces of positive integer sizes y and z so that y + z = x.\n\nYou want that for each pair of pieces, their sizes differ strictly less than twice. In other words, there should not be two pieces of size x and y, such that 2x ≤ y. What is the minimum possible number of steps needed to satisfy the condition?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains the integer n (1 ≤ n ≤ 100).\n\nThen one line follows, containing n integers a_1 ≤ a_2 ≤ … ≤ a_n (1 ≤ a_i ≤ 10^7).\n\nFor each test case, output a single line containing the minimum number of steps.\n\nIn the first test case, we initially have a piece of size 1, so all final pieces must have size 1. The total number of steps is: 0 + 1 + 2 + 3 + 4 = 10.\n\nIn the second test case, we have just one piece, so we don't need to do anything, and the answer is 0 steps.\n\nIn the third test case, one of the possible cut options is: 600, 900, (600 | 700), (1000 | 1000), (1000 | 1000 | 550). You can see this option in the picture below. The maximum piece has size 1000, and it is less than 2 times bigger than the minimum piece of size 550. 4 steps are done. We can show that it is the minimum possible number of steps.\n\nInput:\n```\n351 2 3 4 5110335600 900 1300 2000 2550\n```\n\nOutput:\n```\n10\n0\n4\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains the integer n (1 ≤ n ≤ 100).\n\nThen one line follows, containing n integers a_1 ≤ a_2 ≤ … ≤ a_n (1 ≤ a_i ≤ 10^7).",
+    "output": "For each test case, output a single line containing the minimum number of steps.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

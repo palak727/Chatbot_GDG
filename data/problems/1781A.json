@@ -1,0 +1,17 @@
+{
+    "id": "1781A",
+    "contest_id": 1781,
+    "problem_letter": "A",
+    "title": "A. Parallel Projection",
+    "statement": "Vika's house has a room in a shape of a rectangular parallelepiped (also known as a rectangular cuboid). Its floor is a rectangle of size w × d, and the ceiling is right above at the constant height of h. Let's introduce a coordinate system on the floor so that its corners are at points (0, 0), (w, 0), (w, d), and (0, d).\n\nA laptop is standing on the floor at point (a, b). A projector is hanging on the ceiling right above point (f, g). Vika wants to connect the laptop and the projector with a cable in such a way that the cable always goes along the walls, ceiling, or floor (i. e. does not go inside the cuboid). Additionally, the cable should always run parallel to one of the cuboid's edges (i. e. it can not go diagonally).\n\nWhat is the minimum length of a cable that can connect the laptop to the projector?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers w, d, and h (2 ≤ w, d, h ≤ 1000) — the size of the room.\n\nThe second line contains four integers a, b, f, g (0 < a, f < w; 0 < b, g < d): the laptop is located on the floor at point (a, b), while the projector is hanging on the ceiling right above point (f, g).\n\nFor each test case, print a single integer — the minimum length of the cable connecting the laptop and the projector that runs only along the walls, floor, and ceiling parallel to cuboid's edges.\n\nThe picture in the statement illustrates the first test case.\n\nInput:\n```\n555 20 2923 10 18 320 10 51 5 2 515 15 47 13 10 102 1000 21 1 1 99910 4 107 1 2 1\n```\n\nOutput:\n```\n47\n8\n14\n1002\n17\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers w, d, and h (2 ≤ w, d, h ≤ 1000) — the size of the room.\n\nThe second line contains four integers a, b, f, g (0 < a, f < w; 0 < b, g < d): the laptop is located on the floor at point (a, b), while the projector is hanging on the ceiling right above point (f, g).",
+    "output": "For each test case, print a single integer — the minimum length of the cable connecting the laptop and the projector that runs only along the walls, floor, and ceiling parallel to cuboid's edges.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "geometry",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

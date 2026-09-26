@@ -1,0 +1,20 @@
+{
+    "id": "1935E",
+    "contest_id": 1935,
+    "problem_letter": "E",
+    "title": "E. Distance Learning Courses in MAC",
+    "statement": "The New Year has arrived in the Master's Assistance Center, which means it's time to introduce a new feature!\n\nNow students are given distance learning courses, with a total of n courses available. For the i-th distance learning course, a student can receive a grade ranging from x_i to y_i.\n\nHowever, not all courses may be available to each student. Specifically, the j-th student is only given courses with numbers from l_j to r_j, meaning the distance learning courses with numbers l_j, l_j + 1, …, r_j.\n\nThe creators of the distance learning courses have decided to determine the final grade in a special way. Let the j-th student receive grades c_l_j, c_{l_j + 1}, …, c_r_j for their distance learning courses. Then their final grade will be equal to c_l_j | c_{l_j + 1} | … | c_r_j, where | denotes the bitwise OR operation.\n\nSince the chatbot for solving distance learning courses is broken, the students have asked for your help. For each of the q students, tell them the maximum final grade they can achieve.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of distance learning courses.\n\nEach of the following n lines contains two integers x_i and y_i (0 ≤ x_i ≤ y_i < 2^30) — the minimum and maximum grade that can be received for the i-th course.\n\nThe next line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of students.\n\nEach of the following q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the minimum and maximum course numbers accessible to the j-th student.\n\nIt is guaranteed that the sum of n over all test cases and the sum of q over all test cases do not exceed 2·10^5.\n\nFor each test case, output q integers, where the j-th integer is the maximum final grade that the j-th student can achieve.\n\nIn the first test case:\n\nIn the second test case:\n\nInput:\n```\n320 13 431 11 22 241 71 73 102 251 33 42 31 41 261 22 20 11 13 30 043 45 52 51 2\n```\n\nOutput:\n```\n1 5 4 \n15 11 15 15 7 \n1 3 3 3 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of distance learning courses.\n\nEach of the following n lines contains two integers x_i and y_i (0 ≤ x_i ≤ y_i < 2^30) — the minimum and maximum grade that can be received for the i-th course.\n\nThe next line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of students.\n\nEach of the following q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the minimum and maximum course numbers accessible to the j-th student.\n\nIt is guaranteed that the sum of n over all test cases and the sum of q over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output q integers, where the j-th integer is the maximum final grade that the j-th student can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "greedy",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

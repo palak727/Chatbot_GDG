@@ -1,0 +1,17 @@
+{
+    "id": "2009B",
+    "contest_id": 2009,
+    "problem_letter": "B",
+    "title": "B. osu!mania",
+    "statement": "You are playing your favorite rhythm game, osu!mania. The layout of your beatmap consists of n rows and 4 columns. Because notes at the bottom are closer, you will process the bottommost row first and the topmost row last. Each row will contain exactly one note, represented as a '#'.\n\nFor each note 1, 2, …, n, in the order of processing, output the column in which the note appears.\n\nThe first line contains t (1 ≤ t ≤ 100) — the number of test cases.\n\nFor each test case, the first line contains n (1 ≤ n ≤ 500) — the number of rows of the beatmap.\n\nThe following n lines contain 4 characters. The i-th line represents the i-th row of the beatmap from the top. It is guaranteed that the characters are either '.' or '#', and exactly one of the characters is '#'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.\n\nFor each test case, output n integers on a new line, the column that the i-th note appears in for all i from 1 to n.\n\nInput:\n```\n34#....#....#....#2.#...#..1...#\n```\n\nOutput:\n```\n4 3 2 1 \n2 2 \n4 \n```",
+    "input": "The first line contains t (1 ≤ t ≤ 100) — the number of test cases.\n\nFor each test case, the first line contains n (1 ≤ n ≤ 500) — the number of rows of the beatmap.\n\nThe following n lines contain 4 characters. The i-th line represents the i-th row of the beatmap from the top. It is guaranteed that the characters are either '.' or '#', and exactly one of the characters is '#'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.",
+    "output": "For each test case, output n integers on a new line, the column that the i-th note appears in for all i from 1 to n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

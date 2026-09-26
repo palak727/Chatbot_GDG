@@ -1,0 +1,18 @@
+{
+    "id": "1316C",
+    "contest_id": 1316,
+    "problem_letter": "C",
+    "title": "C. Primitive Primes",
+    "statement": "It is Professor R's last class of his teaching career. Every time Professor R taught a class, he gave a special problem for the students to solve. You being his favourite student, put your heart into solving it one last time.\n\nYou are given two polynomials f(x) = a_0 + a_1x + … + a_{n-1}x^{n-1} and g(x) = b_0 + b_1x + … + b_{m-1}x^{m-1}, with positive integral coefficients. It is guaranteed that the cumulative GCD of the coefficients is equal to 1 for both the given polynomials. In other words, gcd(a_0, a_1, …, a_{n-1}) = gcd(b_0, b_1, …, b_{m-1}) = 1. Let h(x) = f(x)·g(x). Suppose that h(x) = c_0 + c_1x + … + c_{n+m-2}x^{n+m-2}.\n\nYou are also given a prime number p. Professor R challenges you to find any t such that c_t isn't divisible by p. He guarantees you that under these conditions such t always exists. If there are several such t, output any of them.\n\nAs the input is quite large, please use fast input reading methods.\n\nThe first line of the input contains three integers, n, m and p (1 ≤ n, m ≤ 10^6, 2 ≤ p ≤ 10^9), — n and m are the number of terms in f(x) and g(x) respectively (one more than the degrees of the respective polynomials) and p is the given prime number.\n\nIt is guaranteed that p is prime.\n\nThe second line contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9) — a_i is the coefficient of x^i in f(x).\n\nThe third line contains m integers b_0, b_1, …, b_{m-1} (1 ≤ b_i ≤ 10^9) — b_i is the coefficient of x^i in g(x).\n\nPrint a single integer t (0≤ t ≤ n+m-2) — the appropriate power of x in h(x) whose coefficient isn't divisible by the given prime p. If there are multiple powers of x that satisfy the condition, print any.\n\nIn the first test case, f(x) is 2x^2 + x + 1 and g(x) is x + 2, their product h(x) being 2x^3 + 5x^2 + 3x + 2, so the answer can be 1 or 2 as both 3 and 5 aren't divisible by 2.\n\nIn the second test case, f(x) is x + 2 and g(x) is x + 3, their product h(x) being x^2 + 5x + 6, so the answer can be any of the powers as no coefficient is divisible by the given prime.\n\nInput:\n```\n3 2 2\n1 1 2\n2 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2 2 999999937\n2 1\n3 1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line of the input contains three integers, n, m and p (1 ≤ n, m ≤ 10^6, 2 ≤ p ≤ 10^9), — n and m are the number of terms in f(x) and g(x) respectively (one more than the degrees of the respective polynomials) and p is the given prime number.\n\nIt is guaranteed that p is prime.\n\nThe second line contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9) — a_i is the coefficient of x^i in f(x).\n\nThe third line contains m integers b_0, b_1, …, b_{m-1} (1 ≤ b_i ≤ 10^9) — b_i is the coefficient of x^i in g(x).",
+    "output": "Print a single integer t (0≤ t ≤ n+m-2) — the appropriate power of x in h(x) whose coefficient isn't divisible by the given prime p. If there are multiple powers of x that satisfy the condition, print any.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "ternary search",
+        "*1800"
+    ],
+    "rating": 1800
+}

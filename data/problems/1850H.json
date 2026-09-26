@@ -1,0 +1,20 @@
+{
+    "id": "1850H",
+    "contest_id": 1850,
+    "problem_letter": "H",
+    "title": "H. The Third Letter",
+    "statement": "In order to win his toughest battle, Mircea came up with a great strategy for his army. He has n soldiers and decided to arrange them in a certain way in camps. Each soldier has to belong to exactly one camp, and there is one camp at each integer point on the x-axis (at points ⋯, -2, -1, 0, 1, 2, ⋯).\n\nThe strategy consists of m conditions. Condition i tells that soldier a_i should belong to a camp that is situated d_i meters in front of the camp that person b_i belongs to. (If d_i < 0, then a_i's camp should be -d_i meters behind b_i's camp.)\n\nNow, Mircea wonders if there exists a partition of soldiers that respects the condition and he asks for your help! Answer \"YES\" if there is a partition of the n soldiers that satisfies all of the m conditions and \"NO\" otherwise.\n\nNote that two different soldiers may be placed in the same camp.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two positive integers n and m (2 ≤ n ≤ 2·10^5; 1 ≤ m ≤ n) — the number of soldiers, and the number of conditions respectively.\n\nThen m lines follow, each of them containing 3 integers: a_i, b_i, d_i (a_i ≠ b_i; 1 ≤ a_i, b_i ≤ n; -10^9 ≤ d_i ≤ 10^9) — denoting the conditions explained in the statement. Note that if d_i is positive, a_i should be d_i meters in front of b_i and if it is negative, a_i should be -d_i meters behind b_i.\n\nNote that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, output \"YES\" if there is an arrangement of the n soldiers that satisfies all of the m conditions and \"NO\" otherwise.\n\nFor the first test case, we can partition the soldiers into camps in the following way: soldier:\n\nFor the second test case, there is no partition that can satisfy all the constraints at the same time.\n\nFor the third test case, there is no partition that satisfies all the constraints since we get contradictory information about the same pair.\n\nFor the fourth test case, in order to satisfy the only condition, a possible partition is:\n\nInput:\n```\n45 31 2 22 3 44 2 -66 51 2 22 3 44 2 -65 4 43 5 1002 21 2 51 2 44 11 2 3\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two positive integers n and m (2 ≤ n ≤ 2·10^5; 1 ≤ m ≤ n) — the number of soldiers, and the number of conditions respectively.\n\nThen m lines follow, each of them containing 3 integers: a_i, b_i, d_i (a_i ≠ b_i; 1 ≤ a_i, b_i ≤ n; -10^9 ≤ d_i ≤ 10^9) — denoting the conditions explained in the statement. Note that if d_i is positive, a_i should be d_i meters in front of b_i and if it is negative, a_i should be -d_i meters behind b_i.\n\nNote that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if there is an arrangement of the n soldiers that satisfies all of the m conditions and \"NO\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "implementation",
+        "*1700"
+    ],
+    "rating": 1700
+}

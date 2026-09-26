@@ -1,0 +1,18 @@
+{
+    "id": "1380G",
+    "contest_id": 1380,
+    "problem_letter": "G",
+    "title": "G. Circular Dungeon",
+    "statement": "You are creating a level for a video game. The level consists of n rooms placed in a circle. The rooms are numbered 1 through n. Each room contains exactly one exit: completing the j-th room allows you to go the (j+1)-th room (and completing the n-th room allows you to go the 1-st room).\n\nYou are given the description of the multiset of n chests: the i-th chest has treasure value c_i.\n\nEach chest can be of one of two types:\n\nThe player starts in a random room with each room having an equal probability of being chosen. The players earnings is equal to the total value of treasure chests he'd collected before he lost.\n\nYou are allowed to choose the order the chests go into the rooms. For each k from 1 to n place the chests into the rooms in such a way that:\n\nPlease note that for each k the placement is chosen independently.\n\nIt can be shown that it is in the form of P/Q where P and Q are non-negative integers and Q ≠ 0. Report the values of P·Q^{-1} pmod 998244353.\n\nThe first contains a single integer n (2 ≤ n ≤ 3·10^5) — the number of rooms and the number of chests.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^6) — the treasure values of each chest.\n\nPrint n integers — the k -th value should be equal to the minimum possible expected value of players earnings if the chests are placed into the rooms in some order and exactly k of the chests are mimics.\n\nIt can be shown that it is in the form of P/Q where P and Q are non-negative integers and Q ≠ 0. Report the values of P·Q^{-1} pmod 998244353.\n\nIn the first example the exact values of minimum expected values are: frac 1 2, frac 0 2.\n\nIn the second example the exact values of minimum expected values are: frac132 8, frac54 8, frac30 8, frac17 8, frac12 8, frac 7 8, frac 3 8, frac 0 8.\n\nInput:\n```\n2\n1 2\n```\n\nOutput:\n```\n499122177 0 \n```\n\nInput:\n```\n8\n10 4 3 6 5 10 7 5\n```\n\nOutput:\n```\n499122193 249561095 249561092 873463811 499122178 124780545 623902721 0 \n```",
+    "input": "The first contains a single integer n (2 ≤ n ≤ 3·10^5) — the number of rooms and the number of chests.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^6) — the treasure values of each chest.",
+    "output": "Print n integers — the k -th value should be equal to the minimum possible expected value of players earnings if the chests are placed into the rooms in some order and exactly k of the chests are mimics.\n\nIt can be shown that it is in the form of P/Q where P and Q are non-negative integers and Q ≠ 0. Report the values of P·Q^{-1} pmod 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "probabilities",
+        "*2600"
+    ],
+    "rating": 2600
+}

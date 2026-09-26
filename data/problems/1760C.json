@@ -1,0 +1,18 @@
+{
+    "id": "1760C",
+    "contest_id": 1760,
+    "problem_letter": "C",
+    "title": "C. Advantage",
+    "statement": "There are n participants in a competition, participant i having a strength of s_i.\n\nEvery participant wonders how much of an advantage they have over the other best participant. In other words, each participant i wants to know the difference between s_i and s_j, where j is the strongest participant in the competition, not counting i (a difference can be negative).\n\nSo, they ask you for your help! For each i (1 ≤ i ≤ n) output the difference between s_i and the maximum strength of any participant other than participant i.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe following line contains n space-separated positive integers s_1, s_2, ..., s_n (1 ≤ s_i ≤ 10^9) — the strengths of the participants.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output n space-separated integers. For each i (1 ≤ i ≤ n) output the difference between s_i and the maximum strength of any other participant.\n\nFor the first test case:\n\nInput:\n```\n544 7 3 521 251 2 3 4 534 9 444 4 4 4\n```\n\nOutput:\n```\n-3 2 -4 -2 \n-1 1 \n-4 -3 -2 -1 1 \n-5 5 -5 \n0 0 0 0 \n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe following line contains n space-separated positive integers s_1, s_2, ..., s_n (1 ≤ s_i ≤ 10^9) — the strengths of the participants.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n space-separated integers. For each i (1 ≤ i ≤ n) output the difference between s_i and the maximum strength of any other participant.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

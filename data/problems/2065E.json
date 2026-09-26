@@ -1,0 +1,18 @@
+{
+    "id": "2065E",
+    "contest_id": 2065,
+    "problem_letter": "E",
+    "title": "E. Skibidus and Rizz",
+    "statement": "With the approach of Valentine's Day, Skibidus desperately needs a way to rizz up his crush! Fortunately, he knows of just the way: creating the perfect Binary String!\n\nGiven a binary string^{∗} t, let x represent the number of texttt0 in t and y represent the number of texttt1 in t. Its balance-value is defined as the value of max(x-y, y-x).\n\nSkibidus gives you three integers n, m, and k. He asks for your help to construct a binary string s of length n+m with exactly n texttt0's and m texttt1's such that the maximum balance-value among all of its substrings^{†} is exactly k. If it is not possible, output -1.\n\n^{∗}A binary string only consists of characters texttt0 and texttt1.\n\n^{†}A string a is a substring of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains three integers n, m, and k (0 ≤ n, m ≤ 2·10^5, 1 ≤ k ≤ n + m, n+m≥ 1).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, if it is possible to construct s, output it on a new line. If there are multiple possible s, output any. Otherwise, output -1 on a new line.\n\nIn the first test case, we must construct s such that it contains one texttt0, two texttt1, and a maximum balance of 1 among all of its substrings. One possible valid s is texttt101 because:\n\nAmong all possible substrings, the maximum balance-value is 1.\n\nIn the second test case, the substring with the maximum balance-value is 0100, which has a balance of max(3-1, 1-3)=2.\n\nInput:\n```\n61 2 14 3 22 4 38 3 25 0 45 0 5\n```\n\nOutput:\n```\n101\n0100101\n011011\n-1\n-1\n00000\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains three integers n, m, and k (0 ≤ n, m ≤ 2·10^5, 1 ≤ k ≤ n + m, n+m≥ 1).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if it is possible to construct s, output it on a new line. If there are multiple possible s, output any. Otherwise, output -1 on a new line.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1799H",
+    "contest_id": 1799,
+    "problem_letter": "H",
+    "title": "H. Tree Cutting",
+    "statement": "You are given a tree with n vertices.\n\nA hero k times do the following operation:\n\nYou are given an initial tree and the a sequence of written numbers. Find the number of ways to make operations such that the written numbers are equal to the given numbers. Due to the answer can be big, find it by modulo 998,244,353. Two ways are considered different, if on some operation edge or remaining part are selected differently.\n\nThe first line contains a single integer n (2 ≤ n ≤ 5000) — the number of vertices.\n\nEach of the next n-1 lines contains two integers s, f (1 ≤ s, f ≤ n, s ≠ f) — description of edge (s, f).\n\nNext line contains a single integer k (1 ≤ k ≤ min(6, n - 1)) — the number of operations.\n\nNext line contains k integers s_1, s_2, …, s_k (n > s_1 > s_2 > … > s_k ≥ 1) — written numbers.\n\nPrint a single integer — the answer to the problem by modulo 998,244,353.\n\nIn the first test there are four possible ways to make operations:\n\nIn the second test there are two possible ways to make operations:\n\nInput:\n```\n3\n1 2\n2 3\n2\n2 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n7\n2 1\n3 2\n4 1\n5 3\n6 4\n7 4\n2\n4 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n7\n1 2\n1 3\n1 4\n2 5\n3 6\n4 7\n1\n2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n7\n1 2\n1 3\n1 4\n2 5\n3 6\n4 7\n4\n6 5 2 1\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\n8\n1 2\n2 3\n3 4\n3 5\n3 6\n3 7\n3 8\n2\n7 4\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 5000) — the number of vertices.\n\nEach of the next n-1 lines contains two integers s, f (1 ≤ s, f ≤ n, s ≠ f) — description of edge (s, f).\n\nNext line contains a single integer k (1 ≤ k ≤ min(6, n - 1)) — the number of operations.\n\nNext line contains k integers s_1, s_2, …, s_k (n > s_1 > s_2 > … > s_k ≥ 1) — written numbers.",
+    "output": "Print a single integer — the answer to the problem by modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "dp",
+        "*3200"
+    ],
+    "rating": 3200
+}

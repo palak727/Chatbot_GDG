@@ -1,0 +1,17 @@
+{
+    "id": "1404A",
+    "contest_id": 1404,
+    "problem_letter": "A",
+    "title": "A. Balanced Bitstring",
+    "statement": "A bitstring is a string consisting only of the characters 0 and 1. A bitstring is called k-balanced if every substring of size k of this bitstring has an equal amount of 0 and 1 characters (k/2 of each).\n\nYou are given an integer k and a string s which is composed only of characters 0, 1, and ?. You need to determine whether you can make a k-balanced bitstring by replacing every ? characters in s with either 0 or 1.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 3·10^5, k is even) — the length of the string and the parameter for a balanced bitstring.\n\nThe next line contains the string s (|s| = n). It is given that s consists of only 0, 1, and ?.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print YES if we can replace every ? in s with 0 or 1 such that the resulting bitstring is k-balanced, or NO if it is not possible.\n\nFor the first test case, the string is already a 4-balanced bitstring.\n\nFor the second test case, the string can be transformed into 101.\n\nFor the fourth test case, the string can be transformed into 0110.\n\nFor the fifth test case, the string can be transformed into 1100110.\n\nInput:\n```\n9\n6 4\n100110\n3 2\n1?1\n3 2\n1?0\n4 4\n????\n7 4\n1?0??1?\n10 10\n11??11??11\n4 2\n1??1\n4 4\n?0?0\n6 2\n????00\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 3·10^5, k is even) — the length of the string and the parameter for a balanced bitstring.\n\nThe next line contains the string s (|s| = n). It is given that s consists of only 0, 1, and ?.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print YES if we can replace every ? in s with 0 or 1 such that the resulting bitstring is k-balanced, or NO if it is not possible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

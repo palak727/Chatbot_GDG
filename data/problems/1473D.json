@@ -1,0 +1,19 @@
+{
+    "id": "1473D",
+    "contest_id": 1473,
+    "problem_letter": "D",
+    "title": "D. Program",
+    "statement": "You are given a program that consists of n instructions. Initially a single variable x is assigned to 0. Afterwards, the instructions are of two types:\n\nYou are given m queries of the following format:\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThen the description of t testcases follows.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the number of instructions in the program and the number of queries.\n\nThe second line of each testcase contains a program — a string of n characters: each character is either '+' or '-' — increment and decrement instruction, respectively.\n\nEach of the next m lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — the description of the query.\n\nThe sum of n over all testcases doesn't exceed 2·10^5. The sum of m over all testcases doesn't exceed 2·10^5.\n\nFor each testcase print m integers — for each query l, r print the number of distinct values variable x is assigned to if all the instructions between the l-th one and the r-th one inclusive are ignored and the rest are executed without changing the order.\n\nThe instructions that remain for each query of the first testcase are:\n\nInput:\n```\n2\n8 4\n-+--+--+\n1 8\n2 8\n2 5\n1 1\n4 10\n+-++\n1 1\n1 2\n2 2\n1 3\n2 3\n3 3\n1 4\n2 4\n3 4\n4 4\n```\n\nOutput:\n```\n1\n2\n4\n4\n3\n3\n4\n2\n3\n2\n1\n2\n2\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThen the description of t testcases follows.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the number of instructions in the program and the number of queries.\n\nThe second line of each testcase contains a program — a string of n characters: each character is either '+' or '-' — increment and decrement instruction, respectively.\n\nEach of the next m lines contains two integers l and r (1 ≤ l ≤ r ≤ n) — the description of the query.\n\nThe sum of n over all testcases doesn't exceed 2·10^5. The sum of m over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase print m integers — for each query l, r print the number of distinct values variable x is assigned to if all the instructions between the l-th one and the r-th one inclusive are ignored and the rest are executed without changing the order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "implementation",
+        "strings",
+        "*1700"
+    ],
+    "rating": 1700
+}

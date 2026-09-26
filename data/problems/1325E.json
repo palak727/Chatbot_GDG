@@ -1,0 +1,20 @@
+{
+    "id": "1325E",
+    "contest_id": 1325,
+    "problem_letter": "E",
+    "title": "E. Ehab's REAL Number Theory Problem",
+    "statement": "You are given an array a of length n that has a special condition: every element in this array has at most 7 divisors. Find the length of the shortest non-empty subsequence of this array product of whose elements is a perfect square.\n\nA sequence a is a subsequence of an array b if a can be obtained from b by deletion of several (possibly, zero or all) elements.\n\nThe first line contains an integer n (1 ≤ n ≤ 10^5) — the length of a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array a.\n\nOutput the length of the shortest non-empty subsequence of a product of whose elements is a perfect square. If there are several shortest subsequences, you can find any of them. If there's no such subsequence, print \"-1\".\n\nIn the first sample, you can choose a subsequence [1].\n\nIn the second sample, you can choose a subsequence [6, 6].\n\nIn the third sample, you can choose a subsequence [6, 15, 10].\n\nIn the fourth sample, there is no such subsequence.\n\nInput:\n```\n3\n1 4 6\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4\n2 3 6 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n6 15 10\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4\n2 3 5 7\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 10^5) — the length of a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array a.",
+    "output": "Output the length of the shortest non-empty subsequence of a product of whose elements is a perfect square. If there are several shortest subsequences, you can find any of them. If there's no such subsequence, print \"-1\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "graphs",
+        "number theory",
+        "shortest paths",
+        "*2600"
+    ],
+    "rating": 2600
+}

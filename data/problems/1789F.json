@@ -1,0 +1,21 @@
+{
+    "id": "1789F",
+    "contest_id": 1789,
+    "problem_letter": "F",
+    "title": "F. Serval and Brain Power",
+    "statement": "Serval loves Brain Power and his brain power problem.\n\nServal defines that a string T is powerful iff T can be obtained by concatenating some string T' multiple times. Formally speaking, T is powerful iff there exist a string T' and an integer k≥ 2 such that T=underbraceT'+T'+…+T'_ktimes\n\nFor example, gogogo is powerful because it can be obtained by concatenating go three times, but power is not powerful.\n\nServal has a string S consists of lowercase English letters. He is curious about the longest powerful subsequence of S, and he only needs you to find out the length of it. If all the non-empty subsequences of S is not powerful, the answer is considered to be 0.\n\nA string a is a subsequence of a string b if a can be obtained from b by the deletion of several (possibly, zero or all) characters.\n\nThe first line contains a single string S (|S|≤ 80) consisting of lowercase English letters.\n\nPrint a single integer — the length of the longest powerful subsequence of S. If all the non-empty subsequences of S is not powerful, print 0.\n\nFor the first sample, all of the non-empty subsequences of buaa are listed below:\n\nSince textttaa = texttta + texttta, aa is a powerful subsequence. It can be shown that aa is the only powerful subsequence among them. So the answer is 2.\n\nFor the second sample, the longest powerful subsequence is codcod from codeforcesround. So the answer is 6.\n\nInput:\n```\nbuaa\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\ncodeforcesround\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\noooooooooooaaaaeaaiaujooooooooooooo\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\nzero\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single string S (|S|≤ 80) consisting of lowercase English letters.",
+    "output": "Print a single integer — the length of the longest powerful subsequence of S. If all the non-empty subsequences of S is not powerful, print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation",
+        "strings",
+        "*2700"
+    ],
+    "rating": 2700
+}

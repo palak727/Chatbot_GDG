@@ -1,0 +1,20 @@
+{
+    "id": "1439C",
+    "contest_id": 1439,
+    "problem_letter": "C",
+    "title": "C. Greedy Shopping",
+    "statement": "You are given an array a_1, a_2, …, a_n of integers. This array is non-increasing.\n\nLet's consider a line with n shops. The shops are numbered with integers from 1 to n from left to right. The cost of a meal in the i-th shop is equal to a_i.\n\nYou should process q queries of two types:\n\nThe first line contains two integers n, q (1 ≤ n, q ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the costs of the meals. It is guaranteed, that a_1 ≥ a_2 ≥ … ≥ a_n.\n\nEach of the next q lines contains three integers t, x, y (1 ≤ t ≤ 2, 1≤ x ≤ n, 1 ≤ y ≤ 10^9), each describing the next query.\n\nIt is guaranteed that there exists at least one query of type 2.\n\nFor each query of type 2 output the answer on the new line.\n\nIn the first query a hungry man will buy meals in all shops from 3 to 10.\n\nIn the second query a hungry man will buy meals in shops 4, 9, and 10.\n\nAfter the third query the array a_1, a_2, …, a_n of costs won't change and will be {10, 10, 10, 6, 6, 5, 5, 5, 3, 1}.\n\nIn the fourth query a hungry man will buy meals in shops 2, 3, 4, 5, 9, and 10.\n\nAfter the fifth query the array a of costs will be {10, 10, 10, 7, 6, 5, 5, 5, 3, 1}.\n\nIn the sixth query a hungry man will buy meals in shops 2 and 4.\n\nInput:\n```\n10 6\n10 10 10 6 6 5 5 5 3 1\n2 3 50\n2 4 10\n1 3 10\n2 2 36\n1 4 7\n2 2 17\n```\n\nOutput:\n```\n8\n3\n6\n2\n```",
+    "input": "The first line contains two integers n, q (1 ≤ n, q ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the costs of the meals. It is guaranteed, that a_1 ≥ a_2 ≥ … ≥ a_n.\n\nEach of the next q lines contains three integers t, x, y (1 ≤ t ≤ 2, 1≤ x ≤ n, 1 ≤ y ≤ 10^9), each describing the next query.\n\nIt is guaranteed that there exists at least one query of type 2.",
+    "output": "For each query of type 2 output the answer on the new line.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "implementation",
+        "*2600"
+    ],
+    "rating": 2600
+}

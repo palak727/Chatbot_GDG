@@ -1,0 +1,21 @@
+{
+    "id": "1574F",
+    "contest_id": 1574,
+    "problem_letter": "F",
+    "title": "F. Occurrences",
+    "statement": "A subarray of array a from index l to the index r is the array [a_l, a_{l+1}, …, a_r]. The number of occurrences of the array b in the array a is the number of subarrays of a such that they are equal to b.\n\nYou are given n arrays A_1, A_2, …, A_n; the elements of these arrays are integers from 1 to k. You have to build an array a consisting of m integers from 1 to k in such a way that, for every given subarray A_i, the number of occurrences of A_i in the array a is not less than the number of occurrences of each non-empty subarray of A_i in a. Note that if A_i doesn't occur in a, and no subarray of A_i occurs in a, this condition is still met for A_i.\n\nYour task is to calculate the number of different arrays a you can build, and print it modulo 998244353.\n\nThe first line contains three integers n, m and k (1 ≤ n, m, k ≤ 3·10^5) — the number of the given arrays, the desired length of the array a, and the upper bound on the values in the arrays.\n\nThen n lines follow. The i-th line represents the array A_i. The first integer in the i-th line is c_i (1 ≤ c_i ≤ m) — the number of elements in A_i; then, c_i integers from 1 to k follow — the elements of the array A_i.\n\nAdditional constraint on the input: ∑limits_{i=1}^n c_i ≤ 3·10^5; i. e., the number of elements in the given arrays in total does not exceed 3·10^5.\n\nPrint one integer — the number of different arrays a you can build, taken modulo 998244353.\n\nInput:\n```\n2 4 3\n2 1 2\n1 3\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n2 4 3\n2 1 2\n3 3 2 1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n1 42 1337\n2 13 31\n```\n\nOutput:\n```\n721234447\n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ n, m, k ≤ 3·10^5) — the number of the given arrays, the desired length of the array a, and the upper bound on the values in the arrays.\n\nThen n lines follow. The i-th line represents the array A_i. The first integer in the i-th line is c_i (1 ≤ c_i ≤ m) — the number of elements in A_i; then, c_i integers from 1 to k follow — the elements of the array A_i.\n\nAdditional constraint on the input: ∑limits_{i=1}^n c_i ≤ 3·10^5; i. e., the number of elements in the given arrays in total does not exceed 3·10^5.",
+    "output": "Print one integer — the number of different arrays a you can build, taken modulo 998244353.",
+    "time_limit": "7 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "fft",
+        "graphs",
+        "*2700"
+    ],
+    "rating": 2700
+}

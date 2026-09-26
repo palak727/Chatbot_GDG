@@ -1,0 +1,17 @@
+{
+    "id": "1307A",
+    "contest_id": 1307,
+    "problem_letter": "A",
+    "title": "A. Cow and Haybales",
+    "statement": "The USA Construction Operation (USACO) recently ordered Farmer John to arrange a row of n haybale piles on the farm. The i-th pile contains a_i haybales.\n\nHowever, Farmer John has just left for vacation, leaving Bessie all on her own. Every day, Bessie the naughty cow can choose to move one haybale in any pile to an adjacent pile. Formally, in one day she can choose any two indices i and j (1 ≤ i, j ≤ n) such that |i-j|=1 and a_i > 0 and apply a_i = a_i - 1, a_j = a_j + 1. She may also decide to not do anything on some days because she is lazy.\n\nBessie wants to maximize the number of haybales in pile 1 (i.e. to maximize a_1), and she only has d days to do so before Farmer John returns. Help her find the maximum number of haybales that may be in pile 1 if she acts optimally!\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Next 2t lines contain a description of test cases — two lines per test case.\n\nThe first line of each test case contains integers n and d (1 ≤ n,d ≤ 100) — the number of haybale piles and the number of days, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100) — the number of haybales in each pile.\n\nFor each test case, output one integer: the maximum number of haybales that may be in pile 1 after d days if Bessie acts optimally.\n\nIn the first test case of the sample, this is one possible way Bessie can end up with 3 haybales in pile 1:\n\nIn the second test case of the sample, Bessie can do nothing on the first day and move a haybale from pile 2 to pile 1 on the second day.\n\nInput:\n```\n3\n4 5\n1 0 3 2\n2 2\n100 1\n1 8\n0\n```\n\nOutput:\n```\n3\n101\n0\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Next 2t lines contain a description of test cases — two lines per test case.\n\nThe first line of each test case contains integers n and d (1 ≤ n,d ≤ 100) — the number of haybale piles and the number of days, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100) — the number of haybales in each pile.",
+    "output": "For each test case, output one integer: the maximum number of haybales that may be in pile 1 after d days if Bessie acts optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

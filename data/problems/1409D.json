@@ -1,0 +1,17 @@
+{
+    "id": "1409D",
+    "contest_id": 1409,
+    "problem_letter": "D",
+    "title": "D. Decrease the Sum of Digits",
+    "statement": "You are given a positive integer n. In one move, you can increase n by one (i.e. make n := n + 1). Your task is to find the minimum number of moves you need to perform in order to make the sum of digits of n be less than or equal to s.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers n and s (1 ≤ n ≤ 10^18; 1 ≤ s ≤ 162).\n\nFor each test case, print the answer: the minimum number of moves you need to perform in order to make the sum of digits of n be less than or equal to s.\n\nInput:\n```\n5\n2 1\n1 1\n500 4\n217871987498122 10\n100000000000000001 1\n```\n\nOutput:\n```\n8\n0\n500\n2128012501878\n899999999999999999\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers n and s (1 ≤ n ≤ 10^18; 1 ≤ s ≤ 162).",
+    "output": "For each test case, print the answer: the minimum number of moves you need to perform in order to make the sum of digits of n be less than or equal to s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

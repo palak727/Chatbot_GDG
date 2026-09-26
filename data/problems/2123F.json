@@ -1,0 +1,17 @@
+{
+    "id": "2123F",
+    "contest_id": 2123,
+    "problem_letter": "F",
+    "title": "F. Minimize Fixed Points",
+    "statement": "Call a permutation^{∗} p of length n good if gcd(p_i, i)^{†} > 1 for all 2 ≤ i ≤ n. Find a good permutation with the minimum number of fixed points^{‡} across all good permutations of length n. If there are multiple such permutations, print any of them.\n\n^{∗} A permutation of length n is an array that contains every integer from 1 to n exactly once, in any order.\n\n^{†}gcd(x, y) denotes the greatest common divisor (GCD) of x and y.\n\n^{‡}A fixed point of a permutation p is an index j (1≤ j≤ n) such that p_j = j.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output on a single line an example of a good permutation of length n with the minimum number of fixed points.\n\nIn the third sample, we construct the permutation\n\nInput:\n```\n423613\n```\n\nOutput:\n```\n1 2\n1 2 3\n1 4 6 2 5 3\n1 12 9 6 10 8 7 4 3 5 11 2 13\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output on a single line an example of a good permutation of length n with the minimum number of fixed points.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

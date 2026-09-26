@@ -3,13 +3,14 @@
     "contest_id": 1003,
     "problem_letter": "A",
     "title": "A. Polycarp's Pockets",
-    "statement": "Polycarp has n coins, the value of the i-th coin is a_i. Polycarp wants to distribute all the coins between his pockets, but he cannot put two coins with the same value into the same pocket.\nFor example, if Polycarp has got six coins represented as an array a = [1, 2, 4, 3, 3, 2], he can distribute the coins into two pockets as follows: [1, 2, 3], [2, 3, 4].\nPolycarp wants to distribute all the coins with the minimum number of used pockets. Help him to do that.\nThe first line of the input contains one integer n (1  n  100) — the number of coins.\nThe second line of the input contains n integers a_1, a_2, , a_n (1  a_i  100) — values of coins.\nPrint only one integer — the minimum number of pockets Polycarp needs to distribute all the coins so no two coins with the same value are put into the same pocket.",
-    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 100) — the number of coins.",
+    "statement": "Polycarp has n coins, the value of the i-th coin is a_i. Polycarp wants to distribute all the coins between his pockets, but he cannot put two coins with the same value into the same pocket.\n\nFor example, if Polycarp has got six coins represented as an array a = [1, 2, 4, 3, 3, 2], he can distribute the coins into two pockets as follows: [1, 2, 3], [2, 3, 4].\n\nPolycarp wants to distribute all the coins with the minimum number of used pockets. Help him to do that.\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 100) — the number of coins.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — values of coins.\n\nPrint only one integer — the minimum number of pockets Polycarp needs to distribute all the coins so no two coins with the same value are put into the same pocket.\n\nInput:\n```\n6\n1 2 4 3 3 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1\n100\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 100) — the number of coins.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — values of coins.",
     "output": "Print only one integer — the minimum number of pockets Polycarp needs to distribute all the coins so no two coins with the same value are put into the same pocket.",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
         "implementation",
         "*800"
-    ]
+    ],
+    "rating": 800
 }

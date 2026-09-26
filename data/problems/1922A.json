@@ -1,0 +1,18 @@
+{
+    "id": "1922A",
+    "contest_id": 1922,
+    "problem_letter": "A",
+    "title": "A. Tricky Template",
+    "statement": "You are given an integer n and three strings a, b, c, each consisting of n lowercase Latin letters.\n\nLet a template be a string t consisting of n lowercase and/or uppercase Latin letters. The string s matches the template t if the following conditions hold for all i from 1 to n:\n\nAccordingly, the string doesn't match the template if the condition doesn't hold for at least one i.\n\nDetermine whether there exists a template t such that the strings a and b match it, while the string c does not.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 20) — the length of the given strings.\n\nThe next three lines contain the strings a, b and c. Each string consists of exactly n lowercase Latin letters.\n\nFor each testcase, print \"YES\" if there exists a template t such that the strings a and b match it, while the string c does not. Otherwise, print \"NO\".\n\nIn the first test case, you can use the template \"C\". The first letter of strings a and b differ from 'c', so they match the template. The first letter of string c equals 'c', so it doesn't match.\n\nIn the third test case, you can use the template \"CODEforces\".\n\nInput:\n```\n41abc2aabbaa10mathforcesluckforcesadhoccoder3accabdabc\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 20) — the length of the given strings.\n\nThe next three lines contain the strings a, b and c. Each string consists of exactly n lowercase Latin letters.",
+    "output": "For each testcase, print \"YES\" if there exists a template t such that the strings a and b match it, while the string c does not. Otherwise, print \"NO\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

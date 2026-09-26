@@ -1,0 +1,18 @@
+{
+    "id": "2008C",
+    "contest_id": 2008,
+    "problem_letter": "C",
+    "title": "C. Longest Good Array",
+    "statement": "Today, Sakurako was studying arrays. An array a of length n is considered good if and only if:\n\nSakurako has come up with boundaries l and r and wants to construct a good array of maximum length, where l ≤ a_i ≤ r for all a_i.\n\nHelp Sakurako find the maximum length of a good array for the given l and r.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers l and r (1≤ l≤ r≤ 10^9).\n\nFor each test case, output a single integer — the length of the longest good array Sakurako can form given l and r.\n\nFor l=1 and r=5, one possible array could be (1,2,5). It can be proven that an array of length 4 does not exist for the given l and r.\n\nFor l=2 and r=2, the only possible array is (2).\n\nFor l=10 and r=20, the only possible array is (10,11,13,16,20).\n\nInput:\n```\n51 21 52 210 201 1000000000\n```\n\nOutput:\n```\n2\n3\n1\n5\n44721\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers l and r (1≤ l≤ r≤ 10^9).",
+    "output": "For each test case, output a single integer — the length of the longest good array Sakurako can form given l and r.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

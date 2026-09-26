@@ -1,0 +1,20 @@
+{
+    "id": "2004F",
+    "contest_id": 2004,
+    "problem_letter": "F",
+    "title": "F. Make a Palindrome",
+    "statement": "You are given an array a consisting of n integers.\n\nLet the function f(b) return the minimum number of operations needed to make an array b a palindrome. The operations you can make are:\n\nFor example, from an array b=[2, 1, 3], you can obtain the following arrays in one operation: [1, 1, 1, 3], [2, 1, 1, 2], [3, 3], [2, 4], or [2, 1, 2, 1].\n\nCalculate displaystyle left(∑_{1 ≤ l ≤ r ≤ n}f(a[l..r])right), where a[l..r] is the subarray of a from index l to index r, inclusive. In other words, find the sum of the values of the function f for all subarrays of the array a.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2000.\n\nFor each test case, print a single integer — the sum of the values of the function f for all subarrays of the array a.\n\nInput:\n```\n432 1 341 1 1 154 2 3 1 541 2 1 2\n```\n\nOutput:\n```\n3\n0\n14\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, print a single integer — the sum of the values of the function f for all subarrays of the array a.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

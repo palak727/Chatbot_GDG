@@ -1,0 +1,18 @@
+{
+    "id": "1794B",
+    "contest_id": 1794,
+    "problem_letter": "B",
+    "title": "B. Not Dividing",
+    "statement": "You are given an array of n positive integers a_1, a_2, …, a_n. In one operation, you can choose any number of the array and add 1 to it.\n\nMake at most 2n operations so that the array satisfies the following property: a_{i+1} is not divisible by a_i, for each i = 1, 2, …, n-1.\n\nYou do not need to minimize the number of operations.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 10^4) — the length of the given array.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.\n\nFor each test case, print the answer on a separate line.\n\nIn the only line, print n integers — the resulting array a after applying at most 2n operations.\n\nWe can show that an answer always exists under the given constraints. If there are multiple answers, print any of them.\n\nIn the first test case, the array [4, 5, 6, 7] can be achieved by applying 2 operations to the first element, 1 operation to the second element, 3 operations to the third element, and 1 operation to the last element. The total number of operations performed is 7, which is less than the allowed 8 operations in this case.\n\nIn the second test case, the array [3, 2, 3] can be achieved by applying two operations to the first element. Another possible resulting array could be [2, 3, 5], because the total number of operations does not need to be minimum.\n\nIn the third test case, not applying any operations results in an array that satisfies the statement's property. Observe that it is not mandatory to make operations.\n\nInput:\n```\n342 4 3 631 2 324 2\n```\n\nOutput:\n```\n4 5 6 7\n3 2 3\n4 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 10^4) — the length of the given array.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.",
+    "output": "For each test case, print the answer on a separate line.\n\nIn the only line, print n integers — the resulting array a after applying at most 2n operations.\n\nWe can show that an answer always exists under the given constraints. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

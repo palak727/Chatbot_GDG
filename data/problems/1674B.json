@@ -1,0 +1,17 @@
+{
+    "id": "1674B",
+    "contest_id": 1674,
+    "problem_letter": "B",
+    "title": "B. Dictionary",
+    "statement": "The Berland language consists of words having exactly two letters. Moreover, the first letter of a word is different from the second letter. Any combination of two different Berland letters (which, by the way, are the same as the lowercase letters of Latin alphabet) is a correct word in Berland language.\n\nThe Berland dictionary contains all words of this language. The words are listed in a way they are usually ordered in dictionaries. Formally, word a comes earlier than word b in the dictionary if one of the following conditions hold:\n\nSo, the dictionary looks like that:\n\nYou are given a word s from the Berland language. Your task is to find its index in the dictionary.\n\nThe first line contains one integer t (1 ≤ t ≤ 650) — the number of test cases.\n\nEach test case consists of one line containing s — a string consisting of exactly two different lowercase Latin letters (i. e. a correct word of the Berland language).\n\nFor each test case, print one integer — the index of the word s in the dictionary.\n\nInput:\n```\n7abacazbabczxzy\n```\n\nOutput:\n```\n1\n2\n25\n26\n27\n649\n650\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 650) — the number of test cases.\n\nEach test case consists of one line containing s — a string consisting of exactly two different lowercase Latin letters (i. e. a correct word of the Berland language).",
+    "output": "For each test case, print one integer — the index of the word s in the dictionary.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

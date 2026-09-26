@@ -1,0 +1,16 @@
+{
+    "id": "1913B",
+    "contest_id": 1913,
+    "problem_letter": "B",
+    "title": "B. Swap and Delete",
+    "statement": "You are given a binary string s (a string consisting only of 0-s and 1-s).\n\nYou can perform two types of operations on s:\n\nYou can perform these operations any number of times and in any order.\n\nLet's name a string you've got after performing operations above as t. The string t is good if for each i from 1 to |t| t_i ≠ s_i (|t| is the length of the string t). The empty string is always good. Note that you are comparing the resulting string t with the initial string s.\n\nWhat is the minimum total cost to make the string t good?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of each test case contains a binary string s (1 ≤ |s| ≤ 2·10^5; s_i ∈ {0, 1}) — the initial string, consisting of characters 0 and/or 1.\n\nAdditional constraint on the input: the total length of all strings s doesn't exceed 2·10^5.\n\nFor each test case, print one integer — the minimum total cost to make string t good.\n\nIn the first test case, you have to delete a character from s to get the empty string t. Only then t becomes good. One deletion costs 1 coin.\n\nIn the second test case, you can, for example, delete the second character from s to get the string 01, and then swap the first and second characters to get the string t = 10. String t is good, since t_1 ≠ s_1 and t_2 ≠ s_2. The total cost is 1 coin.\n\nIn the third test case, you can, for example, swap s_1 with s_2, swap s_3 with s_4, swap s_5 with s_7, s_6 with s_8 and s_9 with s_10. You'll get t = 1010001110. All swap operations are free, so the total cost is 0.\n\nInput:\n```\n400110101110001111100\n```\n\nOutput:\n```\n1\n1\n0\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of each test case contains a binary string s (1 ≤ |s| ≤ 2·10^5; s_i ∈ {0, 1}) — the initial string, consisting of characters 0 and/or 1.\n\nAdditional constraint on the input: the total length of all strings s doesn't exceed 2·10^5.",
+    "output": "For each test case, print one integer — the minimum total cost to make string t good.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

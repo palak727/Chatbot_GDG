@@ -1,0 +1,23 @@
+{
+    "id": "2097B",
+    "contest_id": 2097,
+    "problem_letter": "B",
+    "title": "B. Baggage Claim",
+    "statement": "Every airport has a baggage claim area, and Balbesovo Airport is no exception. At some point, one of the administrators at Sheremetyevo came up with an unusual idea: to change the traditional shape of the baggage claim conveyor from a carousel to a more complex form.\n\nSuppose that the baggage claim area is represented as a rectangular grid of size n × m. The administration proposed that the path of the conveyor should pass through the cells p_1, p_2, …, p_{2k+1}, where p_i = (x_i, y_i).\n\nFor each cell p_i and the next cell p_{i+1} (where 1 ≤ i ≤ 2k), these cells must share a common side. Additionally, the path must be simple, meaning that for no pair of indices i ≠ j should the cells p_i and p_j coincide.\n\nUnfortunately, the route plan was accidentally spoiled by spilled coffee, and only the cells with odd indices of the path were preserved: p_1, p_3, p_5, …, p_{2k+1}. Your task is to determine the number of ways to restore the original complete path p_1, p_2, …, p_{2k+1} given these k+1 cells.\n\nSince the answer can be very large, output it modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 3·10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 1000, n·m ≥ 3, 1 ≤ k ≤ leftlfloor frac12 (n m - 1) rightrfloor) — the dimensions of the grid and a parameter defining the length of the path.\n\nNext, there are k+1 lines, the i-th of which contains two integers x_{2i-1} and y_{2i-1} (1 ≤ x_{2i-1} ≤ n, 1 ≤ y_{2i-1} ≤ m) — the coordinates of the cell p_{2i-1} that lies on the path.\n\nIt is guaranteed that all pairs (x_{2i-1}, y_{2i-1}) are distinct.\n\nIt is guaranteed that the sum n·m over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer — the number of ways to restore the original complete path modulo 10^9+7.\n\nIn the first test case, there are two possible paths:\n\nIn the second test case, there is no suitable path, as the cells (1,1) and (1,4) do not have a common neighboring cell.\n\nInput:\n```\n52 4 21 12 22 41 4 11 11 45 5 112 53 44 55 44 35 24 13 22 11 22 31 43 4 41 22 13 22 33 43 3 22 21 11 3\n```\n\nOutput:\n```\n2\n0\n2\n5\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 3·10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 1000, n·m ≥ 3, 1 ≤ k ≤ leftlfloor frac12 (n m - 1) rightrfloor) — the dimensions of the grid and a parameter defining the length of the path.\n\nNext, there are k+1 lines, the i-th of which contains two integers x_{2i-1} and y_{2i-1} (1 ≤ x_{2i-1} ≤ n, 1 ≤ y_{2i-1} ≤ m) — the coordinates of the cell p_{2i-1} that lies on the path.\n\nIt is guaranteed that all pairs (x_{2i-1}, y_{2i-1}) are distinct.\n\nIt is guaranteed that the sum n·m over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer — the number of ways to restore the original complete path modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "graphs",
+        "implementation",
+        "math",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

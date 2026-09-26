@@ -1,0 +1,19 @@
+{
+    "id": "1167F",
+    "contest_id": 1167,
+    "problem_letter": "F",
+    "title": "F. Scalar Queries",
+    "statement": "You are given an array a_1, a_2, …, a_n. All a_i are pairwise distinct.\n\nLet's define function f(l, r) as follows:\n\nCalculate left(∑limits_{1 ≤ l ≤ r ≤ n}f(l, r)right) mod (10^9+7), i.e. total sum of f for all subsegments of a modulo 10^9+7.\n\nThe first line contains one integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9, a_i ≠ a_j for i ≠ j) — array a.\n\nPrint one integer — the total sum of f for all subsegments of a modulo 10^9+7\n\nDescription of the first example:\n\nInput:\n```\n4\n5 2 4 7\n```\n\nOutput:\n```\n167\n```\n\nInput:\n```\n3\n123456789 214365879 987654321\n```\n\nOutput:\n```\n582491518\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9, a_i ≠ a_j for i ≠ j) — array a.",
+    "output": "Print one integer — the total sum of f for all subsegments of a modulo 10^9+7",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "math",
+        "sortings",
+        "*2300"
+    ],
+    "rating": 2300
+}

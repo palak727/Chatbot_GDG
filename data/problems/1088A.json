@@ -1,0 +1,17 @@
+{
+    "id": "1088A",
+    "contest_id": 1088,
+    "problem_letter": "A",
+    "title": "A. Ehab and another construction problem",
+    "statement": "Given an integer x, find 2 integers a and b such that:\n\nThe only line contains the integer x (1 ≤ x ≤ 100).\n\nYou should output two integers a and b, satisfying the given conditions, separated by a space. If no pair of integers satisfy the conditions above, print \"-1\" (without quotes).\n\nInput:\n```\n10\n```\n\nOutput:\n```\n6 3\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The only line contains the integer x (1 ≤ x ≤ 100).",
+    "output": "You should output two integers a and b, satisfying the given conditions, separated by a space. If no pair of integers satisfy the conditions above, print \"-1\" (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "*800"
+    ],
+    "rating": 800
+}

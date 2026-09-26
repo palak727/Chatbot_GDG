@@ -1,0 +1,21 @@
+{
+    "id": "1874B",
+    "contest_id": 1874,
+    "problem_letter": "B",
+    "title": "B. Jellyfish and Math",
+    "statement": "Jellyfish is given the non-negative integers a, b, c, d and m. Initially (x,y)=(a,b). Jellyfish wants to do several operations so that (x,y)=(c,d).\n\nFor each operation, she can do one of the following:\n\nHere & denotes the bitwise AND operation, | denotes the bitwise OR operation and oplus denotes the bitwise XOR operation.\n\nNow Jellyfish asks you for the minimum number of operations such that (x,y)=(c,d).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe only line of each test case contains five integers, a, b, c, d and m (0 ≤ a, b, c, d, m < 2^30).\n\nFor each test case, output a single integer — the minimum number of operations. If this cannot be achieved, output -1 instead.\n\nIn the first test case, we can do the operation y = x oplus y.\n\nIn the second test case, it is not possible to change (x,y)=(1,2) using any sequence of operations.\n\nIn the third test case, we can do the operation x = x,&,y followed by the operation y = y oplus m.\n\nInput:\n```\n101 0 1 1 13 3 1 2 11 6 0 7 12 4 4 9 821 4 0 17 2850 50 0 0 3995 33 1 33 110138 202 174 64 10878 340 68 340 461457 291 491 566 766\n```\n\nOutput:\n```\n1\n-1\n2\n-1\n-1\n2\n1\n4\n1\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe only line of each test case contains five integers, a, b, c, d and m (0 ≤ a, b, c, d, m < 2^30).",
+    "output": "For each test case, output a single integer — the minimum number of operations. If this cannot be achieved, output -1 instead.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "shortest paths",
+        "*2400"
+    ],
+    "rating": 2400
+}

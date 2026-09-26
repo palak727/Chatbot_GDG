@@ -1,0 +1,19 @@
+{
+    "id": "1827A",
+    "contest_id": 1827,
+    "problem_letter": "A",
+    "title": "A. Counting Orders",
+    "statement": "You are given two arrays a and b each consisting of n integers. All elements of a are pairwise distinct.\n\nFind the number of ways to reorder a such that a_i > b_i for all 1 ≤ i ≤ n, modulo 10^9 + 7.\n\nTwo ways of reordering are considered different if the resulting arrays are different.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a and b.\n\nThe second line of each test case contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a. It is guaranteed that all elements of a are pairwise distinct.\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of ways to reorder array a such that a_i > b_i for all 1 ≤ i ≤ n, modulo 10^9 + 7.\n\nInput:\n```\n569 6 8 4 5 24 1 5 6 3 134 3 23 4 912132 3 41 3 3122 3 7 10 23 28 29 50 69 135 420 10001 1 2 3 5 8 13 21 34 55 89 144\n```\n\nOutput:\n```\n32\n0\n1\n0\n13824\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a and b.\n\nThe second line of each test case contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a. It is guaranteed that all elements of a are pairwise distinct.\n\nThe second line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of ways to reorder array a such that a_i > b_i for all 1 ≤ i ≤ n, modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "sortings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

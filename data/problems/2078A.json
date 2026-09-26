@@ -1,0 +1,16 @@
+{
+    "id": "2078A",
+    "contest_id": 2078,
+    "problem_letter": "A",
+    "title": "A. Final Verdict",
+    "statement": "You are given an array a of length n, and must perform the following operation until the length of a becomes 1.\n\nChoose a positive integer k < |a| such that (|a|)/k is an integer. Split a into k subsequences^{∗} s_1, s_2, …, s_k such that:\n\nAfter this, replace a = left[ avg(s_1), avg(s_2), …, avg(s_k) right] , where avg(s) = (∑_{i = 1}^{|s|} s_i)/(|s|) is the average of all the values in the subsequence. For example, avg([1, 2, 1, 1]) = 5/4 = 1.25.\n\nYour task is to determine whether there exists a sequence of operations such that after all operations, a = [x].\n\n^{∗}A sequence x is a subsequence of a sequence y if x can be obtained from y by the deletion of several (possibly, zero or all) elements.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, x (1 ≤ n, x ≤ 100) — the length of the array a and the final desired value.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the array a.\n\nFor each test case, output \"YES'\" (without quotes) if there exists such a sequence of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nIn the first test case, x = 3 and a = [3] already holds.\n\nIn the second test case, x = 9, and there exists no sequence of operations such that after all operations, a = [9].\n\nIn the third test case, x = 9, and here is one possible sequence of operations.\n\nIn the fourth test case, x = 10, and here is one possible sequence of operations.\n\nInput:\n```\n41 334 97 11 2 56 91 9 14 12 10 810 1010 10 10 10 10 10 10 10 10 10\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, x (1 ≤ n, x ≤ 100) — the length of the array a and the final desired value.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the array a.",
+    "output": "For each test case, output \"YES'\" (without quotes) if there exists such a sequence of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

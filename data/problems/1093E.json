@@ -1,0 +1,16 @@
+{
+    "id": "1093E",
+    "contest_id": 1093,
+    "problem_letter": "E",
+    "title": "E. Intersection of Permutations",
+    "statement": "You are given two permutations a and b, both consisting of n elements. Permutation of n elements is such a integer sequence that each value from 1 to n appears exactly once in it.\n\nYou are asked to perform two types of queries with them:\n\nPrint the answer for each query of the first type.\n\nIt is guaranteed that there will be at least one query of the first type in the input.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of elements in both permutations and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — permutation a. It is guaranteed that each value from 1 to n appears in a exactly once.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — permutation b. It is guaranteed that each value from 1 to n appears in b exactly once.\n\nEach of the next m lines contains the description of a certain query. These are either:\n\nPrint the answers for the queries of the first type, each answer in the new line — the number of values which appear in both segment [l_a; r_a] of positions in permutation a and segment [l_b; r_b] of positions in permutation b.\n\nConsider the first query of the first example. Values on positions [1; 2] of a are [5, 1] and values on positions [4; 5] of b are [1, 4]. Only value 1 appears in both segments.\n\nAfter the first swap (the second query) permutation b becomes [2, 1, 3, 5, 4, 6].\n\nAfter the second swap (the sixth query) permutation b becomes [5, 1, 3, 2, 4, 6].\n\nInput:\n```\n6 7\n5 1 4 2 3 6\n2 5 3 1 4 6\n1 1 2 4 5\n2 2 4\n1 1 2 4 5\n1 2 3 3 5\n1 1 6 1 2\n2 4 1\n1 4 4 1 3\n```\n\nOutput:\n```\n1\n1\n1\n2\n0\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of elements in both permutations and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — permutation a. It is guaranteed that each value from 1 to n appears in a exactly once.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — permutation b. It is guaranteed that each value from 1 to n appears in b exactly once.\n\nEach of the next m lines contains the description of a certain query. These are either:",
+    "output": "Print the answers for the queries of the first type, each answer in the new line — the number of values which appear in both segment [l_a; r_a] of positions in permutation a and segment [l_b; r_b] of positions in permutation b.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

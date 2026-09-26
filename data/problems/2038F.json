@@ -1,0 +1,20 @@
+{
+    "id": "2038F",
+    "contest_id": 2038,
+    "problem_letter": "F",
+    "title": "F. Alternative Platforms",
+    "statement": "Suppose you are working in the Ministry of Digital Development of Berland, and your task is to monitor the industry of video blogging.\n\nThere are n bloggers in Berland. Recently, due to the poor state of the main video platform in Berland, two alternative platforms were introduced. That's why bloggers started to reupload their videos to these alternative platforms. You've got the statistics that the i-th blogger uploaded v_i videos to the first alternative platform and r_i videos to the second alternative platform.\n\nYou think that a potential user will be upset if even at least one of his favorite bloggers doesn't upload anything. However, if a blogger uploads videos to both platforms, the user will watch that blogger on the platform where more videos are available. So, you've come up with the following function to estimate user experience. Suppose a user watches k bloggers b_1, b_2, …, b_k; then, let user experience be E(b_1, …, b_k) = maxleft(min_{i=1..k}v[b_i], min_{i=1..k}r[b_i]right).\n\nIn order to get some statistics, you want to calculate the value avg_k that is equal to an average experience among all subsets of bloggers of size k. Also, you have to calculate avg_k for each k from 1 to n.\n\nSince answers may be too large, print them modulo 998,244,353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of bloggers.\n\nThe second line contains n integers v_1, v_2, …, v_n (0 ≤ v_i ≤ 10^6), where v_i is the number of videos of the i-th blogger on the first alternative platform.\n\nThe third line contains n integers r_1, r_2, …, r_n (0 ≤ r_i ≤ 10^6), where r_i is the number of videos of the i-th blogger on the second alternative platform.\n\nPrint n integers avg_1, avg_2, …, avg_n.\n\nIt can be proven that avg_k may be represented as an irreducible fraction x/y where y not≡ 0 pmod998,244,353. So, print avg_k in a form x·y^{-1} bmod 998,244,353.\n\nIn the first example, 332748119 is 4/3. In the third example, 199648873 is 12/5.\n\nInput:\n```\n32 1 21 2 1\n```\n\nOutput:\n```\n2 332748119 1 \n```\n\nInput:\n```\n45 5 5 50 0 0 0\n```\n\nOutput:\n```\n5 5 5 5 \n```\n\nInput:\n```\n51 9 3 7 52 4 6 8 5\n```\n\nOutput:\n```\n6 4 3 199648873 2 \n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of bloggers.\n\nThe second line contains n integers v_1, v_2, …, v_n (0 ≤ v_i ≤ 10^6), where v_i is the number of videos of the i-th blogger on the first alternative platform.\n\nThe third line contains n integers r_1, r_2, …, r_n (0 ≤ r_i ≤ 10^6), where r_i is the number of videos of the i-th blogger on the second alternative platform.",
+    "output": "Print n integers avg_1, avg_2, …, avg_n.\n\nIt can be proven that avg_k may be represented as an irreducible fraction x/y where y not≡ 0 pmod998,244,353. So, print avg_k in a form x·y^{-1} bmod 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "fft",
+        "math",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

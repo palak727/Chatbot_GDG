@@ -1,0 +1,17 @@
+{
+    "id": "1427D",
+    "contest_id": 1427,
+    "problem_letter": "D",
+    "title": "D. Unshuffling a Deck",
+    "statement": "You are given a deck of n cards numbered from 1 to n (not necessarily in this order in the deck). You have to sort the deck by repeating the following operation.\n\nYou have to obtain a sorted deck (i.e., a deck where the first card is 1, the second is 2 and so on) performing at most n operations. It can be proven that it is always possible to sort the deck performing at most n operations.\n\nExamples of operation: The following are three examples of valid operations (on three decks with different sizes).\n\nThe first line of the input contains one integer n (1≤ n≤ 52) — the number of cards in the deck.\n\nThe second line contains n integers c_1, c_2, …, c_n — the cards in the deck. The first card is c_1, the second is c_2 and so on.\n\nIt is guaranteed that for all i=1,…,n there is exactly one j∈{1,…,n} such that c_j = i.\n\nOn the first line, print the number q of operations you perform (it must hold 0≤ q≤ n).\n\nThen, print q lines, each describing one operation.\n\nTo describe an operation, print on a single line the number k of parts you are going to split the deck in, followed by the size of the k parts: |D_1|, |D_2|, … , |D_k|.\n\nIt must hold 2≤ k≤ n, and |D_i|≥ 1 for all i=1,…,k, and |D_1|+|D_2|+⋯ + |D_k| = n.\n\nIt can be proven that it is always possible to sort the deck performing at most n operations. If there are several ways to sort the deck you can output any of them.\n\nExplanation of the first testcase: Initially the deck is [3 1 2 4].\n\nInput:\n```\n4\n3 1 2 4\n```\n\nOutput:\n```\n2\n3 1 2 1\n2 1 3\n```\n\nInput:\n```\n6\n6 5 4 3 2 1\n```\n\nOutput:\n```\n1\n6 1 1 1 1 1 1\n```\n\nInput:\n```\n1\n1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line of the input contains one integer n (1≤ n≤ 52) — the number of cards in the deck.\n\nThe second line contains n integers c_1, c_2, …, c_n — the cards in the deck. The first card is c_1, the second is c_2 and so on.\n\nIt is guaranteed that for all i=1,…,n there is exactly one j∈{1,…,n} such that c_j = i.",
+    "output": "On the first line, print the number q of operations you perform (it must hold 0≤ q≤ n).\n\nThen, print q lines, each describing one operation.\n\nTo describe an operation, print on a single line the number k of parts you are going to split the deck in, followed by the size of the k parts: |D_1|, |D_2|, … , |D_k|.\n\nIt must hold 2≤ k≤ n, and |D_i|≥ 1 for all i=1,…,k, and |D_1|+|D_2|+⋯ + |D_k| = n.\n\nIt can be proven that it is always possible to sort the deck performing at most n operations. If there are several ways to sort the deck you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*2000"
+    ],
+    "rating": 2000
+}

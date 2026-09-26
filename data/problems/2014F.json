@@ -1,0 +1,19 @@
+{
+    "id": "2014F",
+    "contest_id": 2014,
+    "problem_letter": "F",
+    "title": "F. Sheriff's Defense",
+    "statement": "The folk hero Robin Hood has been troubling Sheriff of Nottingham greatly. Sheriff knows that Robin Hood is about to attack his camps and he wants to be prepared.\n\nSheriff of Nottingham built the camps with strategy in mind and thus there are exactly n camps numbered from 1 to n and n-1 trails, each connecting two camps. Any camp can be reached from any other camp. Each camp i has initially a_i gold.\n\nAs it is now, all camps would be destroyed by Robin. Sheriff can strengthen a camp by subtracting exactly c gold from each of its neighboring camps and use it to build better defenses for that camp. Strengthening a camp doesn't change its gold, only its neighbors' gold. A camp can have negative gold.\n\nAfter Robin Hood's attack, all camps that have been strengthened survive the attack, all others are destroyed.\n\nWhat's the maximum gold Sheriff can keep in his surviving camps after Robin Hood's attack if he strengthens his camps optimally?\n\nCamp a is neighboring camp b if and only if there exists a trail connecting a and b. Only strengthened camps count towards the answer, as others are destroyed.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case begins with two integers n, c (1 ≤ n ≤ 2·10^5, 1 ≤ c ≤ 10^9) — the number of camps and the gold taken from each neighboring camp for strengthening.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (-10^9 ≤ a_i ≤ 10^9) — the initial gold of each camp.\n\nThen follow n-1 lines, each with integers u, v (1 ≤ u, v ≤ n, u ≠ v) — meaning that there is a trail between u and v.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nIt is guaranteed that any camp is reachable from any other camp.\n\nOutput a single integer, the maximum gold Sheriff of Nottingham can keep in his surviving camps after Robin Hood's attack.\n\nIn the first test case, it is optimal to strengthen the second base. The final gold at each base is [1,3,0].\n\nIn the second test case, it is optimal to strengthen all bases. The final gold at each base is [2,4,2].\n\nIn the third test case, it is optimal to not strengthen any base.\n\nInput:\n```\n53 12 3 11 22 33 13 6 31 22 33 1-2 -3 -11 22 36 15 -4 3 6 7 34 15 13 53 61 28 13 5 2 7 8 5 -3 -47 31 84 33 57 68 72 1\n```\n\nOutput:\n```\n3\n8\n0\n17\n26\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case begins with two integers n, c (1 ≤ n ≤ 2·10^5, 1 ≤ c ≤ 10^9) — the number of camps and the gold taken from each neighboring camp for strengthening.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (-10^9 ≤ a_i ≤ 10^9) — the initial gold of each camp.\n\nThen follow n-1 lines, each with integers u, v (1 ≤ u, v ≤ n, u ≠ v) — meaning that there is a trail between u and v.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nIt is guaranteed that any camp is reachable from any other camp.",
+    "output": "Output a single integer, the maximum gold Sheriff of Nottingham can keep in his surviving camps after Robin Hood's attack.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

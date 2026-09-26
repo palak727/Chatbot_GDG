@@ -1,0 +1,19 @@
+{
+    "id": "1689D",
+    "contest_id": 1689,
+    "problem_letter": "D",
+    "title": "D. Lena and Matrix",
+    "statement": "Lena is a beautiful girl who likes logical puzzles.\n\nAs a gift for her birthday, Lena got a matrix puzzle!\n\nThe matrix consists of n rows and m columns, and each cell is either black or white. The coordinates (i,j) denote the cell which belongs to the i-th row and j-th column for every 1≤ i ≤ n and 1≤ j ≤ m. To solve the puzzle, Lena has to choose a cell that minimizes the Manhattan distance to the farthest black cell from the chosen cell.\n\nMore formally, let there be k ≥ 1 black cells in the matrix with coordinates (x_i,y_i) for every 1≤ i ≤ k. Lena should choose a cell (a,b) that minimizes max_{i=1}^k(|a-x_i|+|b-y_i|).\n\nAs Lena has no skill, she asked you for help. Will you tell her the optimal cell to choose?\n\nThere are several test cases in the input data. The first line contains a single integer t (1≤ t≤ 10,000) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains two integers n and m (2≤ n,m ≤ 1000) — the dimensions of the matrix.\n\nThe following n lines contain m characters each, each character is either 'W' or 'B'. The j-th character in the i-th of these lines is 'W' if the cell (i,j) is white, and 'B' if the cell (i,j) is black.\n\nIt is guaranteed that at least one black cell exists.\n\nIt is guaranteed that the sum of n·m does not exceed 10^6.\n\nFor each test case, output the optimal cell (a,b) to choose. If multiple answers exist, output any.\n\nIn the first test case the two black cells have coordinates (1,1) and (3,2). The four optimal cells are (1,2), (2,1), (2,2) and (3,1). It can be shown that no other cell minimizes the maximum Manhattan distance to every black cell.\n\nIn the second test case it is optimal to choose the black cell (2,2) with maximum Manhattan distance being 2.\n\nInput:\n```\n5\n3 2\nBW\nWW\nWB\n3 3\nWWB\nWBW\nBWW\n2 3\nBBB\nBBB\n5 5\nBWBWB\nWBWBW\nBWBWB\nWBWBW\nBWBWB\n9 9\nWWWWWWWWW\nWWWWWWWWW\nBWWWWWWWW\nWWWWWWWWW\nWWWWBWWWW\nWWWWWWWWW\nWWWWWWWWW\nWWWWWWWWW\nWWWWWWWWB\n```\n\nOutput:\n```\n2 1\n2 2\n1 2\n3 3\n6 5\n```",
+    "input": "There are several test cases in the input data. The first line contains a single integer t (1≤ t≤ 10,000) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains two integers n and m (2≤ n,m ≤ 1000) — the dimensions of the matrix.\n\nThe following n lines contain m characters each, each character is either 'W' or 'B'. The j-th character in the i-th of these lines is 'W' if the cell (i,j) is white, and 'B' if the cell (i,j) is black.\n\nIt is guaranteed that at least one black cell exists.\n\nIt is guaranteed that the sum of n·m does not exceed 10^6.",
+    "output": "For each test case, output the optimal cell (a,b) to choose. If multiple answers exist, output any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "geometry",
+        "shortest paths",
+        "*1900"
+    ],
+    "rating": 1900
+}

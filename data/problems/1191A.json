@@ -1,0 +1,16 @@
+{
+    "id": "1191A",
+    "contest_id": 1191,
+    "problem_letter": "A",
+    "title": "A. Tokitsukaze and Enhancement",
+    "statement": "Tokitsukaze is one of the characters in the game \"Kantai Collection\". In this game, every character has a common attribute — health points, shortened to HP.\n\nIn general, different values of HP are grouped into 4 categories:\n\nThe above-mentioned n can be any integer.\n\nThese 4 categories ordered from highest to lowest as A > B > C > D, which means category A is the highest and category D is the lowest.\n\nWhile playing the game, players can increase the HP of the character. Now, Tokitsukaze wants you to increase her HP by at most 2 (that is, either by 0, 1 or 2). How much should she increase her HP so that it has the highest possible category?\n\nThe only line contains a single integer x (30 ≤ x ≤ 100) — the value Tokitsukaze's HP currently.\n\nPrint an integer a (0 ≤ a ≤ 2) and an uppercase letter b (b ∈ lbrace A, B, C, D rbrace), representing that the best way is to increase her HP by a, and then the category becomes b.\n\nNote that the output characters are case-sensitive.\n\nFor the first example, the category of Tokitsukaze's HP is already A, so you don't need to enhance her ability.\n\nFor the second example:\n\nTherefore, the best way is to increase her HP by 1 so that the category of her HP becomes B.\n\nInput:\n```\n33\n```\n\nOutput:\n```\n0 A\n```\n\nInput:\n```\n98\n```\n\nOutput:\n```\n1 B\n```",
+    "input": "The only line contains a single integer x (30 ≤ x ≤ 100) — the value Tokitsukaze's HP currently.",
+    "output": "Print an integer a (0 ≤ a ≤ 2) and an uppercase letter b (b ∈ lbrace A, B, C, D rbrace), representing that the best way is to increase her HP by a, and then the category becomes b.\n\nNote that the output characters are case-sensitive.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "*800"
+    ],
+    "rating": 800
+}

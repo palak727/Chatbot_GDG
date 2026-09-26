@@ -1,0 +1,17 @@
+{
+    "id": "1914B",
+    "contest_id": 1914,
+    "problem_letter": "B",
+    "title": "B. Preparing for the Contest",
+    "statement": "Monocarp is practicing for a big contest. He plans to solve n problems to make sure he's prepared. Each of these problems has a difficulty level: the first problem has a difficulty level of 1, the second problem has a difficulty level of 2, and so on, until the last (n-th) problem, which has a difficulty level of n.\n\nMonocarp will choose some order in which he is going to solve all n problems. Whenever he solves a problem which is more difficult than the last problem he solved, he gets excited because he feels like he's progressing. He doesn't get excited when he solves the first problem in his chosen order.\n\nFor example, if Monocarp solves the problems in the order [3, underline5, 4, 1, underline6, 2], he gets excited twice (the corresponding problems are underlined).\n\nMonocarp wants to get excited exactly k times during his practicing session. Help him to choose the order in which he has to solve the problems!\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (2 ≤ n ≤ 50; 0 ≤ k ≤ n - 1).\n\nFor each test case, print n distinct integers from 1 to n, denoting the order in which Monocarp should solve the problems. If there are multiple answers, print any of them.\n\nIt can be shown that under the constraints of the problem, the answer always exists.\n\nInput:\n```\n36 25 45 0\n```\n\nOutput:\n```\n3 5 4 1 6 2\n1 2 3 4 5\n5 4 3 2 1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (2 ≤ n ≤ 50; 0 ≤ k ≤ n - 1).",
+    "output": "For each test case, print n distinct integers from 1 to n, denoting the order in which Monocarp should solve the problems. If there are multiple answers, print any of them.\n\nIt can be shown that under the constraints of the problem, the answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2045D",
+    "contest_id": 2045,
+    "problem_letter": "D",
+    "title": "D. Aquatic Dragon",
+    "statement": "You live in an archipelago consisting of N islands (numbered from 1 to N) laid out in a single line. Island i is adjacent to island i+1, for 1 ≤ i < N. Between adjacent islands i and i+1, there is a pair of one-directional underwater tunnels: one that allows you to walk from island i to island i+1 and one for the opposite direction. Each tunnel can only be traversed at most once.\n\nYou also have a dragon with you. It has a stamina represented by a non-negative integer. The stamina is required for the dragon to perform its abilities: swim and fly. Initially, its stamina is 0.\n\nYour dragon's stamina can be increased as follows. There is a magical shrine on each island i that will immediately increase your dragon's stamina by P_i (regardless the position of the dragon) when you visit island i for the first time. This event takes no time.\n\nWhen you are on an island, there are 3 moves that you can perform.\n\nNote that both swimming and flying do not use tunnels.\n\nYour dragon and you are currently on island 1. Your mission is to go to island N with your dragon. Determine the minimum possible time to complete your mission.\n\nThe first line consists of five integers N D T_s T_f T_w (2 ≤ N ≤ 200,000; 1 ≤ D, T_s, T_f, T_w ≤ 200,000).\n\nThe second line consists of N integers P_i (1 ≤ P_i ≤ 200,000).\n\nOutput an integer in a single line representing the minimum possible time to go to island N with your dragon.\n\nExplanation for the sample input/output #1\n\nThe following sequence of events will complete your mission in the minimum time.\n\nExplanation for the sample input/output #2\n\nRepeat the following process for 1 ≤ i < 5: The shrine on island i increases your dragon's stamina, then use the stamina to fly with your dragon to island i+1.\n\nInput:\n```\n5 4 2 9 1\n1 2 4 2 1\n```\n\nOutput:\n```\n28\n```\n\nInput:\n```\n5 4 2 1 1\n1 2 4 2 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n3 4 2 10 1\n3 1 2\n```\n\nOutput:\n```\n16\n```",
+    "input": "The first line consists of five integers N D T_s T_f T_w (2 ≤ N ≤ 200,000; 1 ≤ D, T_s, T_f, T_w ≤ 200,000).\n\nThe second line consists of N integers P_i (1 ≤ P_i ≤ 200,000).",
+    "output": "Output an integer in a single line representing the minimum possible time to go to island N with your dragon.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3500"
+    ],
+    "rating": 3500
+}

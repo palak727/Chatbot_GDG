@@ -1,0 +1,17 @@
+{
+    "id": "1154C",
+    "contest_id": 1154,
+    "problem_letter": "C",
+    "title": "C. Gourmet Cat",
+    "statement": "Polycarp has a cat and his cat is a real gourmet! Dependent on a day of the week he eats certain type of food:\n\nPolycarp plans to go on a trip and already packed his backpack. His backpack contains:\n\nPolycarp has to choose such day of the week to start his trip that his cat can eat without additional food purchases as long as possible. Print the maximum number of days the cat can eat in a trip without additional food purchases, if Polycarp chooses the day of the week to start his trip optimally.\n\nThe first line of the input contains three positive integers a, b and c (1 ≤ a, b, c ≤ 7·10^8) — the number of daily rations of fish food, rabbit stew and chicken stakes in Polycarps backpack correspondingly.\n\nPrint the maximum number of days the cat can eat in a trip without additional food purchases, if Polycarp chooses the day of the week to start his trip optimally.\n\nIn the first example the best day for start of the trip is Sunday. In this case, during Sunday and Monday the cat will eat fish food, during Tuesday — rabbit stew and during Wednesday — chicken stake. So, after four days of the trip all food will be eaten.\n\nIn the second example Polycarp can start his trip in any day of the week. In any case there are food supplies only for one week in Polycarps backpack.\n\nIn the third example Polycarp can start his trip in any day, excluding Wednesday, Saturday and Sunday. In this case, the cat will eat three different dishes in three days. Nevertheless that after three days of a trip there will be 99 portions of rabbit stew in a backpack, can cannot eat anything in fourth day of a trip.\n\nInput:\n```\n2 1 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n3 2 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n1 100 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n30 20 10\n```\n\nOutput:\n```\n39\n```",
+    "input": "The first line of the input contains three positive integers a, b and c (1 ≤ a, b, c ≤ 7·10^8) — the number of daily rations of fish food, rabbit stew and chicken stakes in Polycarps backpack correspondingly.",
+    "output": "Print the maximum number of days the cat can eat in a trip without additional food purchases, if Polycarp chooses the day of the week to start his trip optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

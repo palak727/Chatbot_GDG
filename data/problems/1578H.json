@@ -1,0 +1,17 @@
+{
+    "id": "1578H",
+    "contest_id": 1578,
+    "problem_letter": "H",
+    "title": "H. Higher Order Functions",
+    "statement": "Helen studies functional programming and she is fascinated with a concept of higher order functions — functions that are taking other functions as parameters. She decides to generalize the concept of the function order and to test it on some examples.\n\nFor her study, she defines a simple grammar of types. In her grammar, a type non-terminal T is defined as one of the following grammar productions, together with order(T), defining an order of the corresponding type:\n\nHelen asks for your help in writing a program that computes an order of the given type.\n\nThe single line of the input contains a string consisting of characters '(', ')', '-', and '>' that describes a type that is valid according to the grammar from the problem statement. The length of the line is at most 10^4 characters.\n\nPrint a single integer — the order of the given type.\n\nInput:\n```\n()\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n()->()\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n()->()->()\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n(()->())->()\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n()->(((()->())->()->())->())\n```\n\nOutput:\n```\n3\n```",
+    "input": "The single line of the input contains a string consisting of characters '(', ')', '-', and '>' that describes a type that is valid according to the grammar from the problem statement. The length of the line is at most 10^4 characters.",
+    "output": "Print a single integer — the order of the given type.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*1700"
+    ],
+    "rating": 1700
+}

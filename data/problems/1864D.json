@@ -1,0 +1,21 @@
+{
+    "id": "1864D",
+    "contest_id": 1864,
+    "problem_letter": "D",
+    "title": "D. Matrix Cascade",
+    "statement": "There is a matrix of size n × n which consists of 0s and 1s. The rows are numbered from 1 to n from top to bottom, the columns are numbered from 1 to n from left to right. The cell at the intersection of the x-th row and the y-th column is denoted as (x, y).\n\nAquaMoon wants to turn all elements of the matrix to 0s. In one step she can perform the following operation:\n\nHelp AquaMoon determine the minimum number of steps she need to perform to turn all elements of the matrix to 0s. We can show that an answer always exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 3000).\n\nThe i-th of the following n lines contains a binary string only of characters 0 and 1, of length n.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 9,000,000.\n\nFor each test case, print the minimum number of steps.\n\nIn the first test case, we can use the following scheme:\n\nClearly, the elements of the initial matrix are not all 0, so at least one operation is required. Thus, 1 is the answer.\n\nIn the second test case, we use the following scheme:\n\nIt can be shown that there is no way to convert all elements to 0s in 0 or 1 steps, so the answer is exactly 2.\n\nInput:\n```\n35001000111011111111111111131001101106010101111101011110000000111010001110\n```\n\nOutput:\n```\n1\n2\n15\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 3000).\n\nThe i-th of the following n lines contains a binary string only of characters 0 and 1, of length n.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 9,000,000.",
+    "output": "For each test case, print the minimum number of steps.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

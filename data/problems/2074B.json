@@ -1,0 +1,18 @@
+{
+    "id": "2074B",
+    "contest_id": 2074,
+    "problem_letter": "B",
+    "title": "B. The Third Side",
+    "statement": "The pink soldiers have given you a sequence a consisting of n positive integers.\n\nYou must repeatedly perform the following operation until there is only 1 element left.\n\nPlease find the maximum possible value of the only last element in the sequence a.\n\n^{∗}A triangle with side lengths a, b, c is non-degenerate when a+b > c, a+c > b, b+c > a.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 1000) — the elements of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum possible value of the only last element on a separate line.\n\nOn the first test case, there is already only one element. The value of the only last element is 10.\n\nOn the second test case, a is initially [998,244,353]. The following series of operations is valid:\n\nIt can be shown that the only last element cannot be greater than 1593. Therefore, the answer is 1593.\n\nInput:\n```\n41103998 244 35351 2 3 4 599 9 8 2 4 4 3 5 3\n```\n\nOutput:\n```\n10\n1593\n11\n39\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 1000) — the elements of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum possible value of the only last element on a separate line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

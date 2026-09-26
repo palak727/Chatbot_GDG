@@ -1,0 +1,17 @@
+{
+    "id": "2039A",
+    "contest_id": 2039,
+    "problem_letter": "A",
+    "title": "A. Shohag Loves Mod",
+    "statement": "Shohag has an integer n. Please help him find an increasing integer sequence 1 ≤ a_1 < a_2 < … < a_n ≤ 100 such that a_i bmod i ≠ a_j bmod j ^{∗} is satisfied over all pairs 1 ≤ i < j ≤ n.\n\nIt can be shown that such a sequence always exists under the given constraints.\n\n^{∗}a bmod b denotes the remainder of a after division by b. For example, 7 bmod 3 = 1, 8 bmod 4 = 0 and 69 bmod 10 = 9.\n\nThe first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first and only line of each test case contains an integer n (2 ≤ n ≤ 50).\n\nFor each test case, print n integers — the integer sequence that satisfies the conditions mentioned in the statement. If there are multiple such sequences, output any.\n\nIn the first test case, the sequence is increasing, values are from 1 to 100 and each pair of indices satisfies the condition mentioned in the statement:\n\nNote that you do not necessarily have to print the exact same sequence, you can print any other sequence as long as it satisfies the necessary conditions.\n\nInput:\n```\n236\n```\n\nOutput:\n```\n2 7 8\n2 3 32 35 69 95\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first and only line of each test case contains an integer n (2 ≤ n ≤ 50).",
+    "output": "For each test case, print n integers — the integer sequence that satisfies the conditions mentioned in the statement. If there are multiple such sequences, output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

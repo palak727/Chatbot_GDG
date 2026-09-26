@@ -1,0 +1,19 @@
+{
+    "id": "2039B",
+    "contest_id": 2039,
+    "problem_letter": "B",
+    "title": "B. Shohag Loves Strings",
+    "statement": "For a string p, let f(p) be the number of distinct non-empty substrings^{∗} of p.\n\nShohag has a string s. Help him find a non-empty string p such that p is a substring of s and f(p) is even or state that no such string exists.\n\n^{∗}A string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains a string s (1 ≤ |s| ≤ 10^5) consisting of lowercase English letters.\n\nIt is guaranteed that the sum of the length of s over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a non-empty string that satisfies the conditions mentioned in the statement, or -1 if no such string exists. If there are multiple solutions, output any.\n\nIn the first test case, we can set p = abaa because it is a substring of s and the distinct non-empty substrings of p are a, b, aa, ab, ba, aba, baa and abaa, so it has a total of 8 distinct substrings which is even.\n\nIn the second test case, we can only set p = a but it has one distinct non-empty substring but this number is odd, so not valid.\n\nIn the third test case, the whole string contains 52 distinct non-empty substrings, so the string itself is a valid solution.\n\nInput:\n```\n5dcabaacayouknowwhocodeforcesbangladesh\n```\n\nOutput:\n```\nabaa\n-1\nyouknowwho\neforce\nbang\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains a string s (1 ≤ |s| ≤ 10^5) consisting of lowercase English letters.\n\nIt is guaranteed that the sum of the length of s over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a non-empty string that satisfies the conditions mentioned in the statement, or -1 if no such string exists. If there are multiple solutions, output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

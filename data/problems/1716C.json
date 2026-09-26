@@ -1,0 +1,20 @@
+{
+    "id": "1716C",
+    "contest_id": 1716,
+    "problem_letter": "C",
+    "title": "C. Robot in a Hallway",
+    "statement": "There is a grid, consisting of 2 rows and m columns. The rows are numbered from 1 to 2 from top to bottom. The columns are numbered from 1 to m from left to right.\n\nThe robot starts in a cell (1, 1). In one second, it can perform either of two actions:\n\nThe robot is not allowed to move outside the grid.\n\nInitially, all cells, except for the cell (1, 1), are locked. Each cell (i, j) contains a value a_{i,j} — the moment that this cell gets unlocked. The robot can only move into a cell (i, j) if at least a_{i,j} seconds have passed before the move.\n\nThe robot should visit all cells without entering any cell twice or more (cell (1, 1) is considered entered at the start). It can finish in any cell.\n\nWhat is the fastest the robot can achieve that?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer m (2 ≤ m ≤ 2·10^5) — the number of columns of the grid.\n\nThe i-th of the next 2 lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (0 ≤ a_{i,j} ≤ 10^9) — the moment of time each cell gets unlocked. a_{1,1} = 0. If a_{i,j} = 0, then cell (i, j) is unlocked from the start.\n\nThe sum of m over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the minimum amount of seconds that the robot can take to visit all cells without entering any cell twice or more.\n\nInput:\n```\n430 0 14 3 250 4 8 12 162 6 10 14 1840 10 10 1010 10 10 1020 00 0\n```\n\nOutput:\n```\n5\n19\n17\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer m (2 ≤ m ≤ 2·10^5) — the number of columns of the grid.\n\nThe i-th of the next 2 lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (0 ≤ a_{i,j} ≤ 10^9) — the moment of time each cell gets unlocked. a_{1,1} = 0. If a_{i,j} = 0, then cell (i, j) is unlocked from the start.\n\nThe sum of m over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the minimum amount of seconds that the robot can take to visit all cells without entering any cell twice or more.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "ternary search",
+        "*2000"
+    ],
+    "rating": 2000
+}

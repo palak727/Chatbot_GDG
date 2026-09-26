@@ -1,0 +1,18 @@
+{
+    "id": "1225F",
+    "contest_id": 1225,
+    "problem_letter": "F",
+    "title": "F. Tree Factory",
+    "statement": "Bytelandian Tree Factory produces trees for all kinds of industrial applications. You have been tasked with optimizing the production of a certain type of tree for an especially large and important order.\n\nThe tree in question is a rooted tree with n vertices labelled with distinct integers from 0 to n - 1. The vertex labelled 0 is the root of the tree, and for any non-root vertex v the label of its parent p(v) is less than the label of v.\n\nAll trees at the factory are made from bamboo blanks. A bamboo is a rooted tree such that each vertex has exactly one child, except for a single leaf vertex with no children. The vertices of a bamboo blank can be labelled arbitrarily before its processing is started.\n\nTo process a bamboo into another tree a single type of operation can be made: choose an arbitrary non-root vertex v such that its parent p(v) is not a root either. The operation consists of changing the parent of v to its parent's parent p(p(v)). Note that parents of all other vertices remain unchanged, in particular, the subtree of v does not change.\n\nEfficiency is crucial, hence you have to minimize the number of operations to make the desired tree from a bamboo blank. Construct any optimal sequence of operations to produce the desired tree.\n\nNote that the labelling of the resulting tree has to coincide with the labelling of the desired tree. Formally, the labels of the roots have to be equal, and for non-root vertices with the same label the labels of their parents should be the same.\n\nIt is guaranteed that for any test present in this problem an answer exists, and further, an optimal sequence contains at most 10^6 operations. Note that any hack that does not meet these conditions will be invalid.\n\nThe first line contains a single integer n — the number of vertices in the tree (2 ≤ n ≤ 10^5).\n\nThe second line contains n - 1 integers p(1), …, p(n - 1) — indices of parent vertices of 1, …, n - 1 respectively (0 ≤ p(i) < i).\n\nIn the first line, print n distinct integers id_1, …, id_n — the initial labelling of the bamboo blank starting from the root vertex (0 ≤ id_i < n).\n\nIn the second line, print a single integer k — the number of operations in your sequence (0 ≤ k ≤ 10^6).\n\nIn the third line print k integers v_1, …, v_k describing operations in order. The i-th operation consists of changing p(v_i) to p(p(v_i)). Each operation should be valid, i.e. neither v_i nor p(v_i) can be the root of the tree at the moment.\n\nInput:\n```\n5\n0 0 1 1\n```\n\nOutput:\n```\n0 2 1 4 3\n2\n1 3\n```\n\nInput:\n```\n4\n0 1 2\n```\n\nOutput:\n```\n0 1 2 3\n0\n```",
+    "input": "The first line contains a single integer n — the number of vertices in the tree (2 ≤ n ≤ 10^5).\n\nThe second line contains n - 1 integers p(1), …, p(n - 1) — indices of parent vertices of 1, …, n - 1 respectively (0 ≤ p(i) < i).",
+    "output": "In the first line, print n distinct integers id_1, …, id_n — the initial labelling of the bamboo blank starting from the root vertex (0 ≤ id_i < n).\n\nIn the second line, print a single integer k — the number of operations in your sequence (0 ≤ k ≤ 10^6).\n\nIn the third line print k integers v_1, …, v_k describing operations in order. The i-th operation consists of changing p(v_i) to p(p(v_i)). Each operation should be valid, i.e. neither v_i nor p(v_i) can be the root of the tree at the moment.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

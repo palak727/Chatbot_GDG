@@ -1,0 +1,17 @@
+{
+    "id": "1970E3",
+    "contest_id": 1970,
+    "problem_letter": "E3",
+    "title": "E3. Trails (Hard)",
+    "statement": "Harry Potter is hiking in the Alps surrounding Lake Geneva. In this area there are m cabins, numbered 1 to m. Each cabin is connected, with one or more trails, to a central meeting point next to the lake. Each trail is either short or long. Cabin i is connected with s_i short trails and l_i long trails to the lake.\n\nEach day, Harry walks a trail from the cabin where he currently is to Lake Geneva, and then from there he walks a trail to any of the m cabins (including the one he started in). However, as he has to finish the hike in a day, at least one of the two trails has to be short.\n\nHow many possible combinations of trails can Harry take if he starts in cabin 1 and walks for n days?\n\nGive the answer modulo 10^9 + 7.\n\nThe first line contains the integers m and n.\n\nThe second line contains m integers, s_1, …, s_m, where s_i is the number of short trails between cabin i and Lake Geneva.\n\nThe third and last line contains m integers, l_1, …, l_m, where l_i is the number of long trails between cabin i and Lake Geneva.\n\nWe have the following constraints:\n\n0 ≤ s_i, l_i ≤ 10^3.\n\n1 ≤ m ≤ 10^5.\n\n1 ≤ n ≤ 10^9.\n\nThe number of possible combinations of trails, modulo 10^9 + 7.\n\nInput:\n```\n3 21 0 10 1 1\n```\n\nOutput:\n```\n18\n```",
+    "input": "The first line contains the integers m and n.\n\nThe second line contains m integers, s_1, …, s_m, where s_i is the number of short trails between cabin i and Lake Geneva.\n\nThe third and last line contains m integers, l_1, …, l_m, where l_i is the number of long trails between cabin i and Lake Geneva.\n\nWe have the following constraints:\n\n0 ≤ s_i, l_i ≤ 10^3.\n\n1 ≤ m ≤ 10^5.\n\n1 ≤ n ≤ 10^9.",
+    "output": "The number of possible combinations of trails, modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "matrices",
+        "*2200"
+    ],
+    "rating": 2200
+}

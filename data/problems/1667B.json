@@ -1,0 +1,17 @@
+{
+    "id": "1667B",
+    "contest_id": 1667,
+    "problem_letter": "B",
+    "title": "B. Optimal Partition",
+    "statement": "You are given an array a consisting of n integers. You should divide a into continuous non-empty subarrays (there are 2^{n-1} ways to do that).\n\nLet s=a_l+a_{l+1}+…+a_r. The value of a subarray a_l, a_{l+1}, …, a_r is:\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, ..., a_n (-10^9 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case print a single integer — the maximum sum of values you can get with an optimal parition.\n\nTest case 1: one optimal partition is [1, 2], [-3]. 1+2 > 0 so the value of [1, 2] is 2. -3 < 0, so the value of [-3] is -1. 2+(-1)=1.\n\nTest case 2: the optimal partition is [0, -2, 3], [-4], and the sum of values is 3+(-1)=2.\n\nInput:\n```\n531 2 -340 -2 3 -45-1 -2 3 -1 -16-1 2 -3 4 -5 671 -1 -1 1 -1 -1 1\n```\n\nOutput:\n```\n1\n2\n1\n6\n-1\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, ..., a_n (-10^9 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case print a single integer — the maximum sum of values you can get with an optimal parition.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "*2100"
+    ],
+    "rating": 2100
+}

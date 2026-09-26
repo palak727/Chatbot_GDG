@@ -1,0 +1,19 @@
+{
+    "id": "1485A",
+    "contest_id": 1485,
+    "problem_letter": "A",
+    "title": "A. Add and Divide",
+    "statement": "You have two positive integers a and b.\n\nYou can perform two kinds of operations:\n\nFind the minimum number of operations required to make a=0.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of the description of each test case contains two integers a, b (1 ≤ a,b ≤ 10^9).\n\nFor each test case, print a single integer: the minimum number of operations required to make a=0.\n\nIn the first test case, one of the optimal solutions is:\n\nInput:\n```\n6\n9 2\n1337 1\n1 1\n50000000 4\n991026972 997\n1234 5678\n```\n\nOutput:\n```\n4\n9\n2\n12\n3\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of the description of each test case contains two integers a, b (1 ≤ a,b ≤ 10^9).",
+    "output": "For each test case, print a single integer: the minimum number of operations required to make a=0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory",
+        "*1000"
+    ],
+    "rating": 1000
+}

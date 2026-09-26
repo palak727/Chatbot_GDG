@@ -1,0 +1,18 @@
+{
+    "id": "2070B",
+    "contest_id": 2070,
+    "problem_letter": "B",
+    "title": "B. Robot Program",
+    "statement": "There is a robot on the coordinate line. Initially, the robot is located at the point x (x ≠ 0). The robot has a sequence of commands of length n consisting of characters, where L represents a move to the left by one unit (from point p to point (p-1)) and R represents a move to the right by one unit (from point p to point (p+1)).\n\nThe robot starts executing this sequence of commands (one command per second, in the order they are presented). However, whenever the robot reaches the point 0, the counter of executed commands is reset (i. e. it starts executing the entire sequence of commands from the very beginning). If the robot has completed all commands and is not at 0, it stops.\n\nYour task is to calculate how many times the robot will enter the point 0 during the next k seconds.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of a test case contains three integers n, x and k (1 ≤ n ≤ 2·10^5; -n ≤ x ≤ n; n ≤ k ≤ 10^18).\n\nThe second line of a test case contains a string s consisting of n characters L and/or R.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the number of times the robot will enter the point 0 during the next k seconds.\n\nIn the first example, the robot moves as follows: 2 → 1 → underline0 → -1 → -2 → -1. The robot has completed all instructions from the sequence and is not at 0. So it stops after 5 seconds and the point 0 is entered once.\n\nIn the second example, the robot moves as follows: -1 → underline0 → 1 → underline0 → 1 → underline0 → 1 → underline0 → 1. The robot worked 8 seconds and the point 0 is entered 4 times.\n\nIn the third example, the robot moves as follows: -2 → -3 → -2 → -1 → underline0 → -1. The robot worked 5 seconds and the point 0 is entered once.\n\nIn the fourth example, the robot moves as follows: 3 → 2 → 3 → 4 → 3 → 2. The robot has completed all instructions from the sequence and is not at 0. So it stops after 5 seconds, without reaching the point 0.\n\nInput:\n```\n63 2 6LLR2 -1 8RL4 -2 5LRRR5 3 7LRRLL1 1 1L3 -1 4846549234412827RLR\n```\n\nOutput:\n```\n1\n4\n1\n0\n1\n2423274617206414\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of a test case contains three integers n, x and k (1 ≤ n ≤ 2·10^5; -n ≤ x ≤ n; n ≤ k ≤ 10^18).\n\nThe second line of a test case contains a string s consisting of n characters L and/or R.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the number of times the robot will enter the point 0 during the next k seconds.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

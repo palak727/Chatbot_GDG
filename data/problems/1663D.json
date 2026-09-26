@@ -1,0 +1,18 @@
+{
+    "id": "1663D",
+    "contest_id": 1663,
+    "problem_letter": "D",
+    "title": "D. Is it rated - 3",
+    "statement": "The first line contains a string S.\n\nThe second line contains an integer X.\n\nConstraints",
+    "input": "The first line contains a string S.\n\nThe second line contains an integer X.\n\nConstraints",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "dp",
+        "math"
+    ],
+    "rating": null
+}

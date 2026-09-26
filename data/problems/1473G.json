@@ -1,0 +1,19 @@
+{
+    "id": "1473G",
+    "contest_id": 1473,
+    "problem_letter": "G",
+    "title": "G. Tiles",
+    "statement": "Consider a road consisting of several rows. Each row is divided into several rectangular tiles, and all tiles in the same row are equal. The first row contains exactly one rectangular tile. Look at the picture below which shows how the tiles are arranged.\n\nThe road is constructed as follows:\n\nYou start from the only tile in the first row and want to reach the last row (any tile of it). From your current tile, you can move to any tile in the next row which touches your current tile.\n\nCalculate the number of different paths from the first row to the last row. Since it can be large, print it modulo 998244353.\n\nThe first line contains one integer n (1 ≤ n ≤ 1000).\n\nThen n lines follow. The i-th of them contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^5; |a_i - b_i| ≤ 5).\n\nAdditional constraint on the input: the sequence of a_i and b_i never results in a row with non-positive number of tiles.\n\nPrint one integer — the number of paths from the first row to the last row, taken modulo 998244353.\n\nInput:\n```\n2\n4 2\n2 3\n```\n\nOutput:\n```\n850\n```\n\nInput:\n```\n3\n4 1\n2 3\n3 1\n```\n\nOutput:\n```\n10150\n```\n\nInput:\n```\n8\n328 323\n867 868\n715 718\n721 722\n439 435\n868 870\n834 834\n797 796\n```\n\nOutput:\n```\n759099319\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 1000).\n\nThen n lines follow. The i-th of them contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^5; |a_i - b_i| ≤ 5).\n\nAdditional constraint on the input: the sequence of a_i and b_i never results in a row with non-positive number of tiles.",
+    "output": "Print one integer — the number of paths from the first row to the last row, taken modulo 998244353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*2800"
+    ],
+    "rating": 2800
+}

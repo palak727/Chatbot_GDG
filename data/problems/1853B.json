@@ -1,0 +1,18 @@
+{
+    "id": "1853B",
+    "contest_id": 1853,
+    "problem_letter": "B",
+    "title": "B. Fibonaccharsis",
+    "statement": "Ntarsis has received two integers n and k for his birthday. He wonders how many fibonacci-like sequences of length k can be formed with n as the k-th element of the sequence.\n\nA sequence of non-decreasing non-negative integers is considered fibonacci-like if f_i = f_{i-1} + f_{i-2} for all i > 2, where f_i denotes the i-th element in the sequence. Note that f_1 and f_2 can be arbitrary.\n\nFor example, sequences such as [4,5,9,14] and [0,1,1] are considered fibonacci-like sequences, while [0,0,0,1,1], [1, 2, 1, 3], and [-1,-1,-2] are not: the first two do not always satisfy f_i = f_{i-1} + f_{i-2}, the latter does not satisfy that the elements are non-negative.\n\nImpress Ntarsis by helping him with this task.\n\nThe first line contains an integer t (1 ≤ t ≤ 2·10^5), the number of test cases. The description of each test case is as follows.\n\nEach test case contains two integers, n and k (1 ≤ n ≤ 2·10^5, 3 ≤ k ≤ 10^9).\n\nIt is guaranteed the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case output an integer, the number of fibonacci-like sequences of length k such that the k-th element in the sequence is n. That is, output the number of sequences f of length k so f is a fibonacci-like sequence and f_k = n. It can be shown this number is finite.\n\nThere are 4 valid fibonacci-like sequences for n = 22, k = 4:\n\nFor n = 3, k = 9, it can be shown that there are no fibonacci-like sequences satisfying the given conditions.\n\nFor n = 55, k = 11, [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55] is the only fibonacci-like sequence.\n\nInput:\n```\n822 43 955 1142069 669420 469 14341 31 4\n```\n\nOutput:\n```\n4\n0\n1\n1052\n11571\n0\n1\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 2·10^5), the number of test cases. The description of each test case is as follows.\n\nEach test case contains two integers, n and k (1 ≤ n ≤ 2·10^5, 3 ≤ k ≤ 10^9).\n\nIt is guaranteed the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output an integer, the number of fibonacci-like sequences of length k such that the k-th element in the sequence is n. That is, output the number of sequences f of length k so f is a fibonacci-like sequence and f_k = n. It can be shown this number is finite.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

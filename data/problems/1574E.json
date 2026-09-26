@@ -1,0 +1,19 @@
+{
+    "id": "1574E",
+    "contest_id": 1574,
+    "problem_letter": "E",
+    "title": "E. Coloring",
+    "statement": "A matrix of size n × m, such that each cell of it contains either 0 or 1, is considered beautiful if the sum in every contiguous submatrix of size 2 × 2 is exactly 2, i. e. every \"square\" of size 2 × 2 contains exactly two 1's and exactly two 0's.\n\nYou are given a matrix of size n × m. Initially each cell of this matrix is empty. Let's denote the cell on the intersection of the x-th row and the y-th column as (x, y). You have to process the queries of three types:\n\nAfter each query, print the number of ways to fill the empty cells of the matrix so that the resulting matrix is beautiful. Since the answers can be large, print them modulo 998244353.\n\nThe first line contains three integers n, m and k (2 ≤ n, m ≤ 10^6; 1 ≤ k ≤ 3·10^5) — the number of rows in the matrix, the number of columns, and the number of queries, respectively.\n\nThen k lines follow, the i-th of them contains three integers x_i, y_i, t_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; -1 ≤ t_i ≤ 1) — the parameters for the i-th query.\n\nFor each query, print one integer — the number of ways to fill the empty cells of the matrix after the respective query, taken modulo 998244353.\n\nInput:\n```\n2 2 7\n1 1 1\n1 2 1\n2 1 1\n1 1 0\n1 2 -1\n2 1 -1\n1 1 -1\n```\n\nOutput:\n```\n3\n1\n0\n1\n2\n3\n6\n```",
+    "input": "The first line contains three integers n, m and k (2 ≤ n, m ≤ 10^6; 1 ≤ k ≤ 3·10^5) — the number of rows in the matrix, the number of columns, and the number of queries, respectively.\n\nThen k lines follow, the i-th of them contains three integers x_i, y_i, t_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; -1 ≤ t_i ≤ 1) — the parameters for the i-th query.",
+    "output": "For each query, print one integer — the number of ways to fill the empty cells of the matrix after the respective query, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

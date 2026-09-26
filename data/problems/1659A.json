@@ -1,0 +1,19 @@
+{
+    "id": "1659A",
+    "contest_id": 1659,
+    "problem_letter": "A",
+    "title": "A. Red Versus Blue",
+    "statement": "Team Red and Team Blue competed in a competitive FPS. Their match was streamed around the world. They played a series of n matches.\n\nIn the end, it turned out Team Red won r times and Team Blue won b times. Team Blue was less skilled than Team Red, so b was strictly less than r.\n\nYou missed the stream since you overslept, but you think that the match must have been neck and neck since so many people watched it. So you imagine a string of length n where the i-th character denotes who won the i-th match — it is R if Team Red won or B if Team Blue won. You imagine the string was such that the maximum number of times a team won in a row was as small as possible. For example, in the series of matches RBBRRRB, Team Red won 3 times in a row, which is the maximum.\n\nYou must find a string satisfying the above conditions. If there are multiple answers, print any.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case has a single line containing three integers n, r, and b (3 ≤ n ≤ 100; 1 ≤ b < r ≤ n, r+b=n).\n\nFor each test case, output a single line containing a string satisfying the given conditions. If there are multiple answers, print any.\n\nThe first test case of the first example gives the optimal answer for the example in the statement. The maximum number of times a team wins in a row in RBRBRBR is 1. We cannot minimize it any further.\n\nThe answer for the second test case of the second example is RRBRBRBRBR. The maximum number of times a team wins in a row is 2, given by RR at the beginning. We cannot minimize the answer any further.\n\nInput:\n```\n37 4 36 5 119 13 6\n```\n\nOutput:\n```\nRBRBRBR\nRRRBRR\nRRBRRBRRBRRBRRBRRBR\n```\n\nInput:\n```\n63 2 110 6 411 6 510 9 110 8 211 9 2\n```\n\nOutput:\n```\nRBR\nRRBRBRBRBR\nRBRBRBRBRBR\nRRRRRBRRRR\nRRRBRRRBRR\nRRRBRRRBRRR\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case has a single line containing three integers n, r, and b (3 ≤ n ≤ 100; 1 ≤ b < r ≤ n, r+b=n).",
+    "output": "For each test case, output a single line containing a string satisfying the given conditions. If there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

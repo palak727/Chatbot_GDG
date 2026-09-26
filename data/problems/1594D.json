@@ -1,0 +1,20 @@
+{
+    "id": "1594D",
+    "contest_id": 1594,
+    "problem_letter": "D",
+    "title": "D. The Number of Imposters",
+    "statement": "Theofanis started playing the new online game called \"Among them\". However, he always plays with Cypriot players, and they all have the same name: \"Andreas\" (the most common name in Cyprus).\n\nIn each game, Theofanis plays with n other players. Since they all have the same name, they are numbered from 1 to n.\n\nThe players write m comments in the chat. A comment has the structure of \"i j c\" where i and j are two distinct integers and c is a string (1 ≤ i, j ≤ n; i ≠ j; c is either imposter or crewmate). The comment means that player i said that player j has the role c.\n\nAn imposter always lies, and a crewmate always tells the truth.\n\nHelp Theofanis find the maximum possible number of imposters among all the other Cypriot players, or determine that the comments contradict each other (see the notes for further explanation).\n\nNote that each player has exactly one role: either imposter or crewmate.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of each test case follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5; 0 ≤ m ≤ 5·10^5) — the number of players except Theofanis and the number of comments.\n\nEach of the next m lines contains a comment made by the players of the structure \"i j c\" where i and j are two distinct integers and c is a string (1 ≤ i, j ≤ n; i ≠ j; c is either imposter or crewmate).\n\nThere can be multiple comments for the same pair of (i, j).\n\nIt is guaranteed that the sum of all n does not exceed 2·10^5 and the sum of all m does not exceed 5·10^5.\n\nFor each test case, print one integer — the maximum possible number of imposters. If the comments contradict each other, print -1.\n\nIn the first test case, imposters can be Andreas 2 and 3.\n\nIn the second test case, imposters can be Andreas 1, 2, 3 and 5.\n\nIn the third test case, comments contradict each other. This is because player 1 says that player 2 is an imposter, and player 2 says that player 1 is a crewmate. If player 1 is a crewmate, then he must be telling the truth, so player 2 must be an imposter. But if player 2 is an imposter then he must be lying, so player 1 can't be a crewmate. Contradiction.\n\nInput:\n```\n5\n3 2\n1 2 imposter\n2 3 crewmate\n5 4\n1 3 crewmate\n2 5 crewmate\n2 4 imposter\n3 4 imposter\n2 2\n1 2 imposter\n2 1 crewmate\n3 5\n1 2 imposter\n1 2 imposter\n3 2 crewmate\n3 2 crewmate\n1 3 imposter\n5 0\n```\n\nOutput:\n```\n2\n4\n-1\n2\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of each test case follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5; 0 ≤ m ≤ 5·10^5) — the number of players except Theofanis and the number of comments.\n\nEach of the next m lines contains a comment made by the players of the structure \"i j c\" where i and j are two distinct integers and c is a string (1 ≤ i, j ≤ n; i ≠ j; c is either imposter or crewmate).\n\nThere can be multiple comments for the same pair of (i, j).\n\nIt is guaranteed that the sum of all n does not exceed 2·10^5 and the sum of all m does not exceed 5·10^5.",
+    "output": "For each test case, print one integer — the maximum possible number of imposters. If the comments contradict each other, print -1.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "graphs",
+        "*1700"
+    ],
+    "rating": 1700
+}

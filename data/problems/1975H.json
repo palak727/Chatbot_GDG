@@ -1,0 +1,17 @@
+{
+    "id": "1975H",
+    "contest_id": 1975,
+    "problem_letter": "H",
+    "title": "H. 378QAQ and Core",
+    "statement": "378QAQ has a string s of length n. Define the core of a string as the substring^dagger with maximum lexicographic^ddagger order.\n\nFor example, the core of \"mathttbazoka\" is \"mathttzoka\", and the core of \"mathttaaa\" is \"mathttaaa\".\n\n378QAQ wants to rearrange the string s so that the core is lexicographically minimum. Find the lexicographically minimum possible core over all rearrangements of s.\n\n^dagger A substring of string s is a continuous segment of letters from s. For example, \"mathttdefor\", \"mathttcode\" and \"mathtto\" are all substrings of \"mathttcodeforces\" while \"mathttcodes\" and \"mathttaaa\" are not.\n\n^ddagger A string p is lexicographically smaller than a string q if and only if one of the following holds:\n\nFor example, \"mathttcode\" and \"mathttcoda\" are both lexicographically smaller than \"mathttcodeforces\" while \"mathttcodeforceston\" and \"mathttz\" are not.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^6) — the length of string s.\n\nThe next line of each test case contains the string s of length n. The string s consists of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output the lexicographically minimum possible core over all rearrangements of s.\n\nIn the first test case, all possible rearrangements and their corresponding cores are as follows:\n\nSo the core with the minimum lexicographic order in all rearrangement plans is \"mathttqaq\".\n\nInput:\n```\n63qaq4cccc6bazoka6zazzzz7ababbbb7ccbabcc\n```\n\nOutput:\n```\nqaq\ncccc\nz\nzzz\nbbababb\ncbcacbc\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^6) — the length of string s.\n\nThe next line of each test case contains the string s of length n. The string s consists of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output the lexicographically minimum possible core over all rearrangements of s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*3500"
+    ],
+    "rating": 3500
+}

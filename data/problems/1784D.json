@@ -1,0 +1,17 @@
+{
+    "id": "1784D",
+    "contest_id": 1784,
+    "problem_letter": "D",
+    "title": "D. Wooden Spoon",
+    "statement": "2^n people, numbered with distinct integers from 1 to 2^n, are playing in a single elimination tournament. The bracket of the tournament is a full binary tree of height n with 2^n leaves.\n\nWhen two players meet each other in a match, a player with the smaller number always wins. The winner of the tournament is the player who wins all n their matches.\n\nA virtual consolation prize \"Wooden Spoon\" is awarded to a player who satisfies the following n conditions:\n\nIt can be shown that there is always exactly one player who satisfies these conditions.\n\nConsider all possible (2^n)! arrangements of players into the tournament bracket. For each player, find the number of these arrangements in which they will be awarded the \"Wooden Spoon\", and print these numbers modulo 998,244,353.\n\nThe only line contains a single integer n (1 ≤ n ≤ 20) — the size of the tournament.\n\nThere are 20 tests in the problem: in the first test, n = 1; in the second test, n = 2; …; in the 20-th test, n = 20.\n\nPrint 2^n integers — the number of arrangements in which the \"Wooden Spoon\" is awarded to players 1, 2, …, 2^n, modulo 998,244,353.\n\nIn the first example, the \"Wooden Spoon\" is always awarded to player 2.\n\nIn the second example, there are 8 arrangements where players 1 and 4 meet each other in the first match, and in these cases, the \"Wooden Spoon\" is awarded to player 3. In the remaining 16 arrangements, the \"Wooden Spoon\" is awarded to player 4.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n0\n2\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n0\n0\n8\n16\n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n0\n0\n0\n1536\n4224\n7680\n11520\n15360\n```",
+    "input": "The only line contains a single integer n (1 ≤ n ≤ 20) — the size of the tournament.\n\nThere are 20 tests in the problem: in the first test, n = 1; in the second test, n = 2; …; in the 20-th test, n = 20.",
+    "output": "Print 2^n integers — the number of arrangements in which the \"Wooden Spoon\" is awarded to players 1, 2, …, 2^n, modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*2400"
+    ],
+    "rating": 2400
+}

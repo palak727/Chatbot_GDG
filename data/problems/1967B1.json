@@ -1,0 +1,18 @@
+{
+    "id": "1967B1",
+    "contest_id": 1967,
+    "problem_letter": "B1",
+    "title": "B1. Reverse Card (Easy Version)",
+    "statement": "The two versions are different problems. You may want to read both versions. You can make hacks only if both versions are solved.\n\nYou are given two positive integers n, m.\n\nCalculate the number of ordered pairs (a, b) satisfying the following conditions:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n,m≤ 2·10^6).\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^6.\n\nFor each test case, print a single integer: the number of valid pairs.\n\nIn the first test case, only (1,1) satisfies the conditions.\n\nIn the fourth test case, (1,1),(2,1),(2,2),(3,1),(4,1),(5,1),(6,1),(6,2),(6,3),(7,1),(8,1),(9,1),(10,1),(10,2) satisfy the conditions.\n\nInput:\n```\n61 12 33 510 8100 12331000000 1145141\n```\n\nOutput:\n```\n1\n3\n4\n14\n153\n1643498\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n, m (1≤ n,m≤ 2·10^6).\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^6.",
+    "output": "For each test case, print a single integer: the number of valid pairs.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

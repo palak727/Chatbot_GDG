@@ -1,0 +1,18 @@
+{
+    "id": "1879C",
+    "contest_id": 1879,
+    "problem_letter": "C",
+    "title": "C. Make it Alternating",
+    "statement": "You are given a binary string s. A binary string is a string consisting of characters 0 and/or 1.\n\nYou can perform the following operation on s any number of times (even zero):\n\nYou have to make s alternating, i. e. after you perform the operations, every two adjacent characters in s should be different.\n\nYour goal is to calculate two values:\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 2·10^5). The string s consists of characters 0 and/or 1 only.\n\nAdditional constraint on the input:\n\nFor each test case, print two integers: the minimum number of operations you have to perform, and the number of different shortest sequences of operations. Since the second number might be large, print its remainder modulo 998244353.\n\nIn the first test case of the example, the shortest sequences of operations are:\n\nIn the second test case of the example, the shortest sequences of operations are:\n\nIn the third test case of the example, the only shortest sequence of operations is [] (empty sequence).\n\nInput:\n```\n3100101110101\n```\n\nOutput:\n```\n1 2\n2 6\n0 1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 2·10^5). The string s consists of characters 0 and/or 1 only.\n\nAdditional constraint on the input:",
+    "output": "For each test case, print two integers: the minimum number of operations you have to perform, and the number of different shortest sequences of operations. Since the second number might be large, print its remainder modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

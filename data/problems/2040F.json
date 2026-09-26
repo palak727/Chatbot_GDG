@@ -1,0 +1,19 @@
+{
+    "id": "2040F",
+    "contest_id": 2040,
+    "problem_letter": "F",
+    "title": "F. Number of Cubes",
+    "statement": "Consider a rectangular parallelepiped with sides a, b, and c, that consists of unit cubes of k different colors. We can apply cyclic shifts to the parallelepiped in any of the three directions any number of times^{∗}.\n\nThere are d_i cubes of the i-th color (1 ≤ i ≤ k). How many different parallelepipeds (with the given sides) can be formed from these cubes, no two of which can be made equal by some combination of cyclic shifts?\n\n^{∗}On the image:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains four integers: a, b, c, and k (1 ≤ a, b, c ≤ 3·10^6; a·b·c ≤ 3·10^6; 1 ≤ k ≤ 10^6) — three sides of the parallelepiped and the number of colors of unit cubes.\n\nThe second line of each test case contains k integers d_1, d_2, …, d_k (1 ≤ d_1 ≤ d_2 ≤ … ≤ d_k ≤ 3·10^6) — the elements of the array d: the number of cubes of a given color.\n\nIt is guaranteed that in each test case the sum of the elements of the array d is equal to a·b·c.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 10 ^ 6.\n\nFor each test case, print one integer — the number of different parallelepipeds modulo 998,244,353.\n\nIn the first test case, there is only one parallelepiped, which consists of one unit cube.\n\nInput:\n```\n61 1 1 116 1 1 31 2 312 1 1 32 4 63 3 1 23 62 3 3 26 1272 60 96 417280 86400 120960 190080\n```\n\nOutput:\n```\n1\n10\n1160\n12\n1044\n231490207\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains four integers: a, b, c, and k (1 ≤ a, b, c ≤ 3·10^6; a·b·c ≤ 3·10^6; 1 ≤ k ≤ 10^6) — three sides of the parallelepiped and the number of colors of unit cubes.\n\nThe second line of each test case contains k integers d_1, d_2, …, d_k (1 ≤ d_1 ≤ d_2 ≤ … ≤ d_k ≤ 3·10^6) — the elements of the array d: the number of cubes of a given color.\n\nIt is guaranteed that in each test case the sum of the elements of the array d is equal to a·b·c.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 10 ^ 6.",
+    "output": "For each test case, print one integer — the number of different parallelepipeds modulo 998,244,353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2700"
+    ],
+    "rating": 2700
+}

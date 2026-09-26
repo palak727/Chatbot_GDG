@@ -1,0 +1,17 @@
+{
+    "id": "1151A",
+    "contest_id": 1151,
+    "problem_letter": "A",
+    "title": "A. Maxim and Biology",
+    "statement": "Today in the scientific lyceum of the Kingdom of Kremland, there was a biology lesson. The topic of the lesson was the genomes. Let's call the genome the string \"ACTG\".\n\nMaxim was very boring to sit in class, so the teacher came up with a task for him: on a given string s consisting of uppercase letters and length of at least 4, you need to find the minimum number of operations that you need to apply, so that the genome appears in it as a substring. For one operation, you can replace any letter in the string s with the next or previous in the alphabet. For example, for the letter \"D\" the previous one will be \"C\", and the next — \"E\". In this problem, we assume that for the letter \"A\", the previous one will be the letter \"Z\", and the next one will be \"B\", and for the letter \"Z\", the previous one is the letter \"Y\", and the next one is the letter \"A\".\n\nHelp Maxim solve the problem that the teacher gave him.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nThe first line contains a single integer n (4 ≤ n ≤ 50) — the length of the string s.\n\nThe second line contains the string s, consisting of exactly n uppercase letters of the Latin alphabet.\n\nOutput the minimum number of operations that need to be applied to the string s so that the genome appears as a substring in it.\n\nIn the first example, you should replace the letter \"Z\" with \"A\" for one operation, the letter \"H\" — with the letter \"G\" for one operation. You will get the string \"ACTG\", in which the genome is present as a substring.\n\nIn the second example, we replace the letter \"A\" with \"C\" for two operations, the letter \"D\" — with the letter \"A\" for three operations. You will get the string \"ZACTG\", in which there is a genome.\n\nInput:\n```\n4\nZCTH\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\nZDATG\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n6\nAFBAKC\n```\n\nOutput:\n```\n16\n```",
+    "input": "The first line contains a single integer n (4 ≤ n ≤ 50) — the length of the string s.\n\nThe second line contains the string s, consisting of exactly n uppercase letters of the Latin alphabet.",
+    "output": "Output the minimum number of operations that need to be applied to the string s so that the genome appears as a substring in it.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

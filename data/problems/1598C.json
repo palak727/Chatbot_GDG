@@ -1,0 +1,20 @@
+{
+    "id": "1598C",
+    "contest_id": 1598,
+    "problem_letter": "C",
+    "title": "C. Delete Two Elements",
+    "statement": "Monocarp has got an array a consisting of n integers. Let's denote k as the mathematic mean of these elements (note that it's possible that k is not an integer).\n\nThe mathematic mean of an array of n elements is the sum of elements divided by the number of these elements (i. e. sum divided by n).\n\nMonocarp wants to delete exactly two elements from a so that the mathematic mean of the remaining (n - 2) elements is still equal to k.\n\nYour task is to calculate the number of pairs of positions [i, j] (i < j) such that if the elements on these positions are deleted, the mathematic mean of (n - 2) remaining elements is equal to k (that is, it is equal to the mathematic mean of n elements of the original array a).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains one integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array.\n\nThe second line contains a sequence of integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i is the i-th element of the array.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nPrint one integer — the number of pairs of positions [i, j] (i < j) such that if the elements on these positions are deleted, the mathematic mean of (n - 2) remaining elements is equal to k (that is, it is equal to the mathematic mean of n elements of the original array a).\n\nIn the first example, any pair of elements can be removed since all of them are equal.\n\nIn the second example, there is no way to delete two elements so the mathematic mean doesn't change.\n\nIn the third example, it is possible to delete the elements on positions 1 and 3, or the elements on positions 4 and 5.\n\nInput:\n```\n4\n4\n8 8 8 8\n3\n50 20 10\n5\n1 4 7 3 5\n7\n1 2 3 4 5 6 7\n```\n\nOutput:\n```\n6\n0\n2\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains one integer n (3 ≤ n ≤ 2·10^5) — the number of elements in the array.\n\nThe second line contains a sequence of integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i is the i-th element of the array.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "Print one integer — the number of pairs of positions [i, j] (i < j) such that if the elements on these positions are deleted, the mathematic mean of (n - 2) remaining elements is equal to k (that is, it is equal to the mathematic mean of n elements of the original array a).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "implementation",
+        "math",
+        "two pointers",
+        "*1200"
+    ],
+    "rating": 1200
+}

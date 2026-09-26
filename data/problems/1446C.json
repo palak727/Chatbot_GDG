@@ -1,0 +1,21 @@
+{
+    "id": "1446C",
+    "contest_id": 1446,
+    "problem_letter": "C",
+    "title": "C. Xor Tree",
+    "statement": "For a given sequence of distinct non-negative integers (b_1, b_2, …, b_k) we determine if it is good in the following way:\n\nIt is possible that for some numbers b_i and b_j, you will try to add the edge between them twice. Nevertheless, you will add this edge only once.\n\nYou can find an example below (the picture corresponding to the first test case).\n\nSequence (0, 1, 5, 2, 6) is not good as we cannot reach 1 from 5.\n\nHowever, sequence (0, 1, 5, 2) is good.\n\nYou are given a sequence (a_1, a_2, …, a_n) of distinct non-negative integers. You would like to remove some of the elements (possibly none) to make the remaining sequence good. What is the minimum possible number of removals required to achieve this goal?\n\nIt can be shown that for any sequence, we can remove some number of elements, leaving at least 2, so that the remaining sequence is good.\n\nThe first line contains a single integer n (2 ≤ n ≤ 200,000) — length of the sequence.\n\nThe second line contains n distinct non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the sequence.\n\nYou should output exactly one integer — the minimum possible number of elements to remove in order to make the remaining sequence good.\n\nNote that numbers which you remove don't impact the procedure of telling whether the resulting sequence is good.\n\nIt is possible that for some numbers b_i and b_j, you will try to add the edge between them twice. Nevertheless, you will add this edge only once.\n\nInput:\n```\n5\n0 1 5 2 6\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n7\n6 9 8 7 3 5 2\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 200,000) — length of the sequence.\n\nThe second line contains n distinct non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the sequence.",
+    "output": "You should output exactly one integer — the minimum possible number of elements to remove in order to make the remaining sequence good.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

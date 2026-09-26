@@ -1,0 +1,18 @@
+{
+    "id": "1623A",
+    "contest_id": 1623,
+    "problem_letter": "A",
+    "title": "A. Robot Cleaner",
+    "statement": "A robot cleaner is placed on the floor of a rectangle room, surrounded by walls. The floor consists of n rows and m columns. The rows of the floor are numbered from 1 to n from top to bottom, and columns of the floor are numbered from 1 to m from left to right. The cell on the intersection of the r-th row and the c-th column is denoted as (r,c). The initial position of the robot is (r_b, c_b).\n\nIn one second, the robot moves by dr rows and dc columns, that is, after one second, the robot moves from the cell (r, c) to (r + dr, c + dc). Initially dr = 1, dc = 1. If there is a vertical wall (the left or the right walls) in the movement direction, dc is reflected before the movement, so the new value of dc is -dc. And if there is a horizontal wall (the upper or lower walls), dr is reflected before the movement, so the new value of dr is -dr.\n\nEach second (including the moment before the robot starts moving), the robot cleans every cell lying in the same row or the same column as its position. There is only one dirty cell at (r_d, c_d). The job of the robot is to clean that dirty cell.\n\nGiven the floor size n and m, the robot's initial position (r_b, c_b) and the dirty cell's position (r_d, c_d), find the time for the robot to do its job.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nA test case consists of only one line, containing six integers n, m, r_b, c_b, r_d, and c_d (1 ≤ n, m ≤ 100, 1 ≤ r_b, r_d ≤ n, 1 ≤ c_b, c_d ≤ m) — the sizes of the room, the initial position of the robot and the position of the dirt cell.\n\nFor each test case, print an integer — the time for the robot to clean the dirty cell. We can show that the robot always cleans the dirty cell eventually.\n\nIn the first example, the floor has the size of 10× 10. The initial position of the robot is (6, 1) and the position of the dirty cell is (2, 8). See the illustration of this example in the problem statement.\n\nIn the second example, the floor is the same, but the initial position of the robot is now (9, 9), and the position of the dirty cell is (1, 1). In this example, the robot went straight to the dirty cell and clean it.\n\nIn the third example, the floor has the size 9 × 8. The initial position of the robot is (5, 6), and the position of the dirty cell is (2, 1).\n\nIn the fourth example, the floor has the size 6 × 9. The initial position of the robot is (2, 2) and the position of the dirty cell is (5, 8).\n\nIn the last example, the robot was already standing in the same column as the dirty cell, so it can clean the cell right away.\n\nInput:\n```\n5\n10 10 6 1 2 8\n10 10 9 9 1 1\n9 8 5 6 2 1\n6 9 2 2 5 8\n2 2 1 1 2 1\n```\n\nOutput:\n```\n7\n10\n9\n3\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nA test case consists of only one line, containing six integers n, m, r_b, c_b, r_d, and c_d (1 ≤ n, m ≤ 100, 1 ≤ r_b, r_d ≤ n, 1 ≤ c_b, c_d ≤ m) — the sizes of the room, the initial position of the robot and the position of the dirt cell.",
+    "output": "For each test case, print an integer — the time for the robot to clean the dirty cell. We can show that the robot always cleans the dirty cell eventually.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

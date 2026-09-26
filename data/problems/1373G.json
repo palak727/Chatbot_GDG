@@ -1,0 +1,18 @@
+{
+    "id": "1373G",
+    "contest_id": 1373,
+    "problem_letter": "G",
+    "title": "G. Pawns",
+    "statement": "You are given a chessboard consisting of n rows and n columns. Rows are numbered from bottom to top from 1 to n. Columns are numbered from left to right from 1 to n. The cell at the intersection of the x-th column and the y-th row is denoted as (x, y). Furthermore, the k-th column is a special column.\n\nInitially, the board is empty. There are m changes to the board. During the i-th change one pawn is added or removed from the board. The current board is good if we can move all pawns to the special column by the followings rules:\n\nThe current board may not always be good. To fix it, you can add new rows to the board. New rows are added at the top, i. e. they will have numbers n+1, n+2, n+3, ….\n\nAfter each of m changes, print one integer — the minimum number of rows which you have to add to make the board good.\n\nThe first line contains three integers n, k and m (1 ≤ n, m ≤ 2·10^5; 1 ≤ k ≤ n) — the size of the board, the index of the special column and the number of changes respectively.\n\nThen m lines follow. The i-th line contains two integers x and y (1 ≤ x, y ≤ n) — the index of the column and the index of the row respectively. If there is no pawn in the cell (x, y), then you add a pawn to this cell, otherwise — you remove the pawn from this cell.\n\nAfter each change print one integer — the minimum number of rows which you have to add to make the board good.\n\nInput:\n```\n5 3 5\n4 4\n3 5\n2 4\n3 4\n3 5\n```\n\nOutput:\n```\n0\n1\n2\n2\n1\n```",
+    "input": "The first line contains three integers n, k and m (1 ≤ n, m ≤ 2·10^5; 1 ≤ k ≤ n) — the size of the board, the index of the special column and the number of changes respectively.\n\nThen m lines follow. The i-th line contains two integers x and y (1 ≤ x, y ≤ n) — the index of the column and the index of the row respectively. If there is no pawn in the cell (x, y), then you add a pawn to this cell, otherwise — you remove the pawn from this cell.",
+    "output": "After each change print one integer — the minimum number of rows which you have to add to make the board good.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

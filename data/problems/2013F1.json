@@ -1,0 +1,23 @@
+{
+    "id": "2013F1",
+    "contest_id": 2013,
+    "problem_letter": "F1",
+    "title": "F1. Game in Tree (Easy Version)",
+    "statement": "This is the easy version of the problem. In this version, u = v. You can make hacks only if both versions of the problem are solved.\n\nAlice and Bob are playing a fun game on a tree. This game is played on a tree with n vertices, numbered from 1 to n. Recall that a tree with n vertices is an undirected connected graph with n - 1 edges.\n\nAlice and Bob take turns, with Alice going first. Each player starts at some vertex.\n\nOn their turn, a player must move from the current vertex to a neighboring vertex that has not yet been visited by anyone. The first player who cannot make a move loses.\n\nYou are given two vertices u and v. Represent the simple path from vertex u to v as an array p_1, p_2, p_3, …, p_m, where p_1 = u, p_m = v, and there is an edge between p_i and p_{i + 1} for all i (1 ≤ i < m).\n\nYou need to determine the winner of the game if Alice starts at vertex 1 and Bob starts at vertex p_j for each j (where 1 ≤ j ≤ m).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nEach of the following n - 1 lines contains two integers a and b (1 ≤ a, b ≤ n), denoting an undirected edge between vertices a and b. It is guaranteed that these edges form a tree.\n\nThe last line of each test case contains two integers u and v (2 ≤ u, v ≤ n, u = v).\n\nIt is guaranteed that the path from u to v does not pass through vertex 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output m lines.\n\nIn the i-th line, print the winner of the game if Alice starts at vertex 1 and Bob starts at vertex p_i. Print \"Alice\" (without quotes) if Alice wins, or \"Bob\" (without quotes) otherwise.\n\nIn the first test case, the path will be (2,2). Bob starts at vertex 2, Alice will not be able to move anywhere on her first turn and will lose.\n\nIn the second test case, the path will be (3,3). Bob starts at vertex 3, Alice will move to vertex 2, and Bob will have no remaining vertices to visit and will lose.\n\nInput:\n```\n331 22 32 231 22 33 361 21 32 42 51 64 4\n```\n\nOutput:\n```\nBob\nAlice\nAlice\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nEach of the following n - 1 lines contains two integers a and b (1 ≤ a, b ≤ n), denoting an undirected edge between vertices a and b. It is guaranteed that these edges form a tree.\n\nThe last line of each test case contains two integers u and v (2 ≤ u, v ≤ n, u = v).\n\nIt is guaranteed that the path from u to v does not pass through vertex 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output m lines.\n\nIn the i-th line, print the winner of the game if Alice starts at vertex 1 and Bob starts at vertex p_i. Print \"Alice\" (without quotes) if Alice wins, or \"Bob\" (without quotes) otherwise.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "games",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

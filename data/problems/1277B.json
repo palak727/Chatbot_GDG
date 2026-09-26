@@ -1,0 +1,17 @@
+{
+    "id": "1277B",
+    "contest_id": 1277,
+    "problem_letter": "B",
+    "title": "B. Make Them Odd",
+    "statement": "There are n positive integers a_1, a_2, …, a_n. For the one move you can choose any even value c and divide by two all elements that equal c.\n\nFor example, if a=[6,8,12,6,3,12] and you choose c=6, and a is transformed into a=[3,8,12,3,3,12] after the move.\n\nYou need to find the minimal number of moves for transforming a to an array of only odd integers (each element shouldn't be divisible by 2).\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow.\n\nThe first line of a test case contains n (1 ≤ n ≤ 2·10^5) — the number of integers in the sequence a. The second line contains positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe sum of n for all test cases in the input doesn't exceed 2·10^5.\n\nFor t test cases print the answers in the order of test cases in the input. The answer for the test case is the minimal number of moves needed to make all numbers in the test case odd (i.e. not divisible by 2).\n\nIn the first test case of the example, the optimal sequence of moves can be as follows:\n\nThus, all numbers became odd after 4 moves. In 3 or fewer moves, you cannot make them all odd.\n\nInput:\n```\n4\n6\n40 6 40 3 20 1\n1\n1024\n4\n2 4 8 16\n3\n3 1 7\n```\n\nOutput:\n```\n4\n10\n4\n0\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow.\n\nThe first line of a test case contains n (1 ≤ n ≤ 2·10^5) — the number of integers in the sequence a. The second line contains positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe sum of n for all test cases in the input doesn't exceed 2·10^5.",
+    "output": "For t test cases print the answers in the order of test cases in the input. The answer for the test case is the minimal number of moves needed to make all numbers in the test case odd (i.e. not divisible by 2).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2122F",
+    "contest_id": 2122,
+    "problem_letter": "F",
+    "title": "F. Colorful Polygon",
+    "statement": "You are given an array a_1, a_2, …, a_n, where n ≤ 8 and a_1 + a_2 + ⋯ + a_n ≤ 100.\n\nConstruct a simple polygon^{∗} with at most 333 vertices that has exactly ((a_1 + a_2 + ⋯ + a_n)!)/(a_1! a_2! ⋯ a_n!) different triangulations^{†}. It can be proven that such a polygon always exists.\n\n^{∗}A simple polygon is a polygon that does not intersect itself and has no holes. In other words, no two non-consecutive edges can have common points, and consecutive edges must have exactly one common point — the vertex between them. Consecutive edges may be collinear.\n\n^{†}A triangulation of a polygon with m vertices is a set of m-3 diagonals that intersect only at vertices. A diagonal is a segment between two vertices which lies inside the polygon and has exactly two common points with the polygon sides — the vertices it connects.\n\nThe first line of each test contains a single integer n (2 ≤ n ≤ 8) — the number of elements in the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array.\n\nIt is guaranteed that a_1 + a_2 + ⋯ + a_n does not exceed 100.\n\nIn the first line, output a single integer m (3 ≤ m ≤ 333) — the number of vertices in the polygon.\n\nIn the i-th of the following m lines, output two integers x_i, y_i (-10^6 ≤ x_i, y_i ≤ 10^6) — the coordinates of the i-th vertex of the polygon.\n\nThe polygon must be simple. The vertices may be given in either clockwise or counterclockwise order.\n\nIn the first test, the required polygon has to have (4!)/(1! 1! 2!) = 12 triangulations. The following are all the triangulations of the example polygon.\n\nIn the second test, the required polygon has to have (5!)/(4! 1!) = 5 triangulations.\n\nInput:\n```\n31 1 2\n```\n\nOutput:\n```\n8\n0 0\n2 1\n4 2\n6 1\n3 5\n4 7\n0 5\n1 2\n```\n\nInput:\n```\n24 1\n```\n\nOutput:\n```\n5\n-2 -2\n-3 1\n0 3\n3 1\n2 -2\n```",
+    "input": "The first line of each test contains a single integer n (2 ≤ n ≤ 8) — the number of elements in the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array.\n\nIt is guaranteed that a_1 + a_2 + ⋯ + a_n does not exceed 100.",
+    "output": "In the first line, output a single integer m (3 ≤ m ≤ 333) — the number of vertices in the polygon.\n\nIn the i-th of the following m lines, output two integers x_i, y_i (-10^6 ≤ x_i, y_i ≤ 10^6) — the coordinates of the i-th vertex of the polygon.\n\nThe polygon must be simple. The vertices may be given in either clockwise or counterclockwise order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "geometry",
+        "*3400"
+    ],
+    "rating": 3400
+}

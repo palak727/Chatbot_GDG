@@ -1,0 +1,17 @@
+{
+    "id": "1228C",
+    "contest_id": 1228,
+    "problem_letter": "C",
+    "title": "C. Primes and Multiplication",
+    "statement": "Let's introduce some definitions that will be needed later.\n\nLet prime(x) be the set of prime divisors of x. For example, prime(140) = { 2, 5, 7 }, prime(169) = { 13 }.\n\nLet g(x, p) be the maximum possible integer p^k where k is an integer such that x is divisible by p^k. For example:\n\nLet f(x, y) be the product of g(y, p) for all p in prime(x). For example:\n\nYou have integers x and n. Calculate f(x, 1)·f(x, 2)·…·f(x, n) bmod(10^9 + 7).\n\nThe only line contains integers x and n (2 ≤ x ≤ 10^9, 1 ≤ n ≤ 10^18) — the numbers used in formula.\n\nPrint the answer.\n\nIn the first example, f(10, 1) = g(1, 2)·g(1, 5) = 1, f(10, 2) = g(2, 2)·g(2, 5) = 2.\n\nIn the second example, actual value of formula is approximately 1.597·10^171. Make sure you print the answer modulo (10^9 + 7).\n\nIn the third example, be careful about overflow issue.\n\nInput:\n```\n10 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n20190929 1605\n```\n\nOutput:\n```\n363165664\n```\n\nInput:\n```\n947 987654321987654321\n```\n\nOutput:\n```\n593574252\n```",
+    "input": "The only line contains integers x and n (2 ≤ x ≤ 10^9, 1 ≤ n ≤ 10^18) — the numbers used in formula.",
+    "output": "Print the answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

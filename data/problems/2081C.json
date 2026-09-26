@@ -1,0 +1,20 @@
+{
+    "id": "2081C",
+    "contest_id": 2081,
+    "problem_letter": "C",
+    "title": "C. Quaternary Matrix",
+    "statement": "A matrix is called quaternary if all its elements are 0, 1, 2, or 3.\n\nEcrade calls a quaternary matrix A good if the following two properties hold.\n\nEcrade has a quaternary matrix of size n × m. He is interested in the minimum number of elements that need to be changed for the matrix to become good, and he also wants to find one of the possible resulting matrices.\n\nHowever, it seems a little difficult, so please help him!\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 10^3).\n\nThis is followed by n lines, each containing exactly m characters and consisting only of 0, 1, 2, and 3, describing the elements of Ecrade's matrix.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.\n\nFor each test case, print the minimum number of elements that need to be changed for the matrix to become good on the first line, then print n lines, each containing exactly m characters and consisting only of 0, 1, 2, and 3, describing one of the possible resulting matrices.\n\nIf there are multiple possible resulting matrices, output any of them.\n\nInput:\n```\n53 33131213133 30000000004 401231230230130124 412322110312213114 41232211031221312\n```\n\nOutput:\n```\n3\n213\n101\n312\n0\n000\n000\n000\n0\n0123\n1230\n2301\n3012\n6\n0132\n2310\n3131\n1313\n5\n0132\n2310\n3120\n1302\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 10^3).\n\nThis is followed by n lines, each containing exactly m characters and consisting only of 0, 1, 2, and 3, describing the elements of Ecrade's matrix.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.",
+    "output": "For each test case, print the minimum number of elements that need to be changed for the matrix to become good on the first line, then print n lines, each containing exactly m characters and consisting only of 0, 1, 2, and 3, describing one of the possible resulting matrices.\n\nIf there are multiple possible resulting matrices, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "matrices",
+        "*2700"
+    ],
+    "rating": 2700
+}

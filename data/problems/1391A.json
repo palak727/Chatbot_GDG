@@ -1,0 +1,17 @@
+{
+    "id": "1391A",
+    "contest_id": 1391,
+    "problem_letter": "A",
+    "title": "A. Suborrays",
+    "statement": "A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nFor a positive integer n, we call a permutation p of length n good if the following condition holds for every pair i and j (1 ≤ i ≤ j ≤ n) —\n\nIn other words, a permutation p is good if for every subarray of p, the OR of all elements in it is not less than the number of elements in that subarray.\n\nGiven a positive integer n, output any good permutation of length n. We can show that for the given constraints such a permutation always exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first and only line of every test case contains a single integer n (1 ≤ n ≤ 100).\n\nFor every test, output any good permutation of length n on a separate line.\n\nFor n = 3, [3,1,2] is a good permutation. Some of the subarrays are listed below.\n\nSimilarly, you can verify that [4,3,5,2,7,1,6] is also good.\n\nInput:\n```\n3\n1\n3\n7\n```\n\nOutput:\n```\n1\n3 1 2\n4 3 5 2 7 1 6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first and only line of every test case contains a single integer n (1 ≤ n ≤ 100).",
+    "output": "For every test, output any good permutation of length n on a separate line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

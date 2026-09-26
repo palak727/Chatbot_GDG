@@ -1,0 +1,16 @@
+{
+    "id": "1183A",
+    "contest_id": 1183,
+    "problem_letter": "A",
+    "title": "A. Nearest Interesting Number",
+    "statement": "Polycarp knows that if the sum of the digits of a number is divisible by 3, then the number itself is divisible by 3. He assumes that the numbers, the sum of the digits of which is divisible by 4, are also somewhat interesting. Thus, he considers a positive integer n interesting if its sum of digits is divisible by 4.\n\nHelp Polycarp find the nearest larger or equal interesting number for the given number a. That is, find the interesting number n such that n ≥ a and n is minimal.\n\nThe only line in the input contains an integer a (1 ≤ a ≤ 1000).\n\nPrint the nearest greater or equal interesting number for the given number a. In other words, print the interesting number n such that n ≥ a and n is minimal.\n\nInput:\n```\n432\n```\n\nOutput:\n```\n435\n```\n\nInput:\n```\n99\n```\n\nOutput:\n```\n103\n```\n\nInput:\n```\n237\n```\n\nOutput:\n```\n237\n```\n\nInput:\n```\n42\n```\n\nOutput:\n```\n44\n```",
+    "input": "The only line in the input contains an integer a (1 ≤ a ≤ 1000).",
+    "output": "Print the nearest greater or equal interesting number for the given number a. In other words, print the interesting number n such that n ≥ a and n is minimal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

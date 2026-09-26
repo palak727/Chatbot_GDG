@@ -1,0 +1,19 @@
+{
+    "id": "1771B",
+    "contest_id": 1771,
+    "problem_letter": "B",
+    "title": "B. Hossam and Friends",
+    "statement": "Hossam makes a big party, and he will invite his friends to the party.\n\nHe has n friends numbered from 1 to n. They will be arranged in a queue as follows: 1, 2, 3, …, n.\n\nHossam has a list of m pairs of his friends that don't know each other. Any pair not present in this list are friends.\n\nA subsegment of the queue starting from the friend a and ending at the friend b is [a, a + 1, a + 2, …, b]. A subsegment of the queue is called good when all pairs of that segment are friends.\n\nHossam wants to know how many pairs (a, b) there are (1 ≤ a ≤ b ≤ n), such that the subsegment starting from the friend a and ending at the friend b is good.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4), the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains two integer numbers n and m (2 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5) representing the number of friends and the number of pairs, respectively.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i, y_i≤ n, x_i ≠ y_i) representing a pair of Hossam's friends that don't know each other.\n\nNote that pairs can be repeated.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5, and the sum of m over all test cases does not exceed 10^5.\n\nFor each test case print an integer — the number of good subsegments.\n\nIn the first example, the answer is 4.\n\nThe good subsegments are:\n\n[1]\n\n[2]\n\n[3]\n\n[1, 2]\n\nIn the second example, the answer is 5.\n\nThe good subsegments are:\n\n[1]\n\n[2]\n\n[3]\n\n[4]\n\n[3, 4]\n\nInput:\n```\n23 21 32 34 21 22 3\n```\n\nOutput:\n```\n4\n5\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4), the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains two integer numbers n and m (2 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5) representing the number of friends and the number of pairs, respectively.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i, y_i≤ n, x_i ≠ y_i) representing a pair of Hossam's friends that don't know each other.\n\nNote that pairs can be repeated.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5, and the sum of m over all test cases does not exceed 10^5.",
+    "output": "For each test case print an integer — the number of good subsegments.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "dp",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

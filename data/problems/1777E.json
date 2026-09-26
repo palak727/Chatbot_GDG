@@ -1,0 +1,19 @@
+{
+    "id": "1777E",
+    "contest_id": 1777,
+    "problem_letter": "E",
+    "title": "E. Edge Reverse",
+    "statement": "You will be given a weighted directed graph of n nodes and m directed edges, where the i-th edge has a weight of w_i (1 ≤ i ≤ m).\n\nYou need to reverse some edges of this graph so that there is at least one node in the graph from which every other node is reachable. The cost of these reversals is equal to the maximum weight of all reversed edges. If no edge reversal is required, assume the cost to be 0.\n\nIt is guaranteed that no self-loop or duplicate edge exists.\n\nFind the minimum cost required for completing the task. If there is no solution, print a single integer -1.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nEach test case begins with a line containing two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of nodes in the graph and the number of edges in the graph.\n\nThe next m lines of each test case contain 3 integers each — u, v, w (1 ≤ u, v ≤ n, 1 ≤ w ≤ 10^9), indicating an edge from u to v with a weight of w. It is guaranteed that no edge connects a vertex to itself, and no pair of edges share the same origin and destination simultaneously.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.\n\nFor each test case, output the minimum cost. If there is no solution, print -1.\n\nIn the first test case, an edge exists from 1 to 2, so all nodes are reachable (from 1).\n\nIn the second test case, no nodes are reachable from any node no matter what edges we reverse, so the answer is -1.\n\nIn the third test case, reversing the 4-th or 5-th edge allows all nodes to be reachable from 1. We choose the 5-th edge here because its weight is smaller.\n\nInput:\n```\n42 11 2 35 41 2 102 3 103 1 104 5 104 51 2 100002 3 200001 3 300004 2 5004 3 204 51 2 100002 3 200001 3 300004 2 54 3 20\n```\n\nOutput:\n```\n0\n-1\n20\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nEach test case begins with a line containing two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) — the number of nodes in the graph and the number of edges in the graph.\n\nThe next m lines of each test case contain 3 integers each — u, v, w (1 ≤ u, v ≤ n, 1 ≤ w ≤ 10^9), indicating an edge from u to v with a weight of w. It is guaranteed that no edge connects a vertex to itself, and no pair of edges share the same origin and destination simultaneously.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output the minimum cost. If there is no solution, print -1.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

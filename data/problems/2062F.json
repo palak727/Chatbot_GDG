@@ -1,0 +1,22 @@
+{
+    "id": "2062F",
+    "contest_id": 2062,
+    "problem_letter": "F",
+    "title": "F. Traveling Salescat",
+    "statement": "You are a cat selling fun algorithm problems. Today, you want to recommend your fun algorithm problems to k cities.\n\nThere are a total of n cities, each with two parameters a_i and b_i. Between any two cities i,j (i≠ j), there is a bidirectional road with a length of max(a_i + b_j , b_i + a_j). The cost of a path is defined as the total length of roads between every two adjacent cities along the path.\n\nFor k=2,3,…,n, find the minimum cost among all simple paths containing exactly k distinct cities.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 1500) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (2 ≤ n ≤ 3·10^3) — the number of cities.\n\nThen n lines follow, the i-th line contains two integers a_i,b_i (0 ≤ a_i,b_i ≤ 10^9) — the parameters of city i.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 9·10^6.\n\nFor each test case, print n-1 integers in one line. The i-th integer represents the minimum cost when k=i+1.\n\nIn the first test case:\n\nIn the second test case:\n\nInput:\n```\n330 22 13 352 77 56 31 87 58899167687 609615846851467150 45726720931502759 23784096918190644 196992738142090421 475722765409556751 726971942513558832 998277529294328304 434714258\n```\n\nOutput:\n```\n4 9 \n10 22 34 46 \n770051069 1655330585 2931719265 3918741472 5033924854 6425541981 7934325514 \n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 1500) — the number of test cases.\n\nFor each test case, the first line contains a single integer n (2 ≤ n ≤ 3·10^3) — the number of cities.\n\nThen n lines follow, the i-th line contains two integers a_i,b_i (0 ≤ a_i,b_i ≤ 10^9) — the parameters of city i.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 9·10^6.",
+    "output": "For each test case, print n-1 integers in one line. The i-th integer represents the minimum cost when k=i+1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "geometry",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1909I",
+    "contest_id": 1909,
+    "problem_letter": "I",
+    "title": "I. Short Permutation Problem",
+    "statement": "You are given an integer n.\n\nFor each (m, k) such that 3 ≤ m ≤ n+1 and 0 ≤ k ≤ n-1, count the permutations of [1, 2, ..., n] such that p_i + p_{i+1} ≥ m for exactly k indices i, modulo 998,244,353.\n\nThe input consists of a single line, which contains two integers n, x (2 ≤ n ≤ 4000, 1 ≤ x < 1,000,000,007).\n\nLet a_{m,k} be the answer for the pair (m, k), modulo 998,244,353.\n\nLet large S = ∑_{m=3}^{n+1} ∑_{k=0}^{n-1} a_{m,k}x^{mn+k}phantom0.\n\nOutput a single line with an integer: S modulo 1,000,000,007.\n\nNote that using two different modulos is intentional. We want you to calculate all the a_{m,k} modulo 998,244,353, then treat them like integers in the range [0, 998,244,352], and hash them modulo 1,000,000,007.\n\nIn the first test case, the answers for all (m, k) are shown in the following table:\n\nTherefore, the value to print is 2^9·0 + 2^10·0 + 2^11·6 + 2^12·0 + 2^13·4 + 2^14·2 ≡ 77,824 phantom0 (mod phantom0 1,000,000,007).\n\nIn the second test case, the answers for all (m, k) are shown in the following table:\n\nIn the third test case, the answers for all (m, k) are shown in the following table:\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n77824\n```\n\nInput:\n```\n4 1000000000\n```\n\nOutput:\n```\n30984329\n```\n\nInput:\n```\n8 327869541\n```\n\nOutput:\n```\n85039220\n```\n\nInput:\n```\n4000 1149333\n```\n\nOutput:\n```\n584870166\n```",
+    "input": "The input consists of a single line, which contains two integers n, x (2 ≤ n ≤ 4000, 1 ≤ x < 1,000,000,007).",
+    "output": "Let a_{m,k} be the answer for the pair (m, k), modulo 998,244,353.\n\nLet large S = ∑_{m=3}^{n+1} ∑_{k=0}^{n-1} a_{m,k}x^{mn+k}phantom0.\n\nOutput a single line with an integer: S modulo 1,000,000,007.\n\nNote that using two different modulos is intentional. We want you to calculate all the a_{m,k} modulo 998,244,353, then treat them like integers in the range [0, 998,244,352], and hash them modulo 1,000,000,007.",
+    "time_limit": "7 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

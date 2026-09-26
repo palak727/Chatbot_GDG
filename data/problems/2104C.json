@@ -1,0 +1,20 @@
+{
+    "id": "2104C",
+    "contest_id": 2104,
+    "problem_letter": "C",
+    "title": "C. Card Game",
+    "statement": "Alice and Bob are playing a game. They have n cards numbered from 1 to n. At the beginning of the game, some of these cards are given to Alice, and the rest are given to Bob.\n\nCard with number i beats card with number j if and only if i > j, with one exception: card 1 beats card n.\n\nThe game continues as long as each player has at least one card. During each turn, the following occurs:\n\nA player can use a card that they have taken during one of the previous turns.\n\nThe player who has no cards at the beginning of a turn loses. Determine who will win if both players play optimally.\n\nThe first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: in each test case, at least one card is initially given to Alice, and at least one card is initially given to Bob.\n\nFor each test case, output Alice if Alice wins with optimal play, or Bob if Bob wins. It can be shown that if both players play optimally, the game will definitely end in a finite number of turns with one of the players winning.\n\nIn the first test case, Alice has only one card, and Bob has only one card. Since Alice's card beats Bob's card, she wins after the first turn.\n\nIn the second test case, Alice has only one card, and Bob has only one card. Since Bob's card beats Alice's card, he wins after the first turn.\n\nIn the third test case, there are two possible game scenarios:\n\nIn the fourth test case, there are two possible game scenarios:\n\nInput:\n```\n82AB2BA4ABAB4BABA3BAA5AAAAB5BAAAB6BBBAAA\n```\n\nOutput:\n```\nAlice\nBob\nBob\nBob\nAlice\nAlice\nBob\nAlice\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: in each test case, at least one card is initially given to Alice, and at least one card is initially given to Bob.",
+    "output": "For each test case, output Alice if Alice wins with optimal play, or Bob if Bob wins. It can be shown that if both players play optimally, the game will definitely end in a finite number of turns with one of the players winning.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "games",
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

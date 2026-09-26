@@ -1,0 +1,18 @@
+{
+    "id": "1665B",
+    "contest_id": 1665,
+    "problem_letter": "B",
+    "title": "B. Array Cloning Technique",
+    "statement": "You are given an array a of n integers. Initially there is only one copy of the given array.\n\nYou can do operations of two types:\n\nYou need to find the minimal number of operations needed to obtain a copy where all elements are equal.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case output a single integer — the minimal number of operations needed to create at least one copy where all elements are equal.\n\nIn the first test case all elements in the array are already equal, that's why the answer is 0.\n\nIn the second test case it is possible to create a copy of the given array. After that there will be two identical arrays:\n\n[ 0 1 3 3 7 0 ] and [ 0 1 3 3 7 0 ]\n\nAfter that we can swap elements in a way so all zeroes are in one array:\n\n[ 0 underline0 underline0 3 7 0 ] and [ underline1 1 3 3 7 underline3 ]\n\nNow let's create a copy of the first array:\n\n[ 0 0 0 3 7 0 ], [ 0 0 0 3 7 0 ] and [ 1 1 3 3 7 3 ]\n\nLet's swap elements in the first two copies:\n\n[ 0 0 0 underline0 underline0 0 ], [ underline3 underline7 0 3 7 0 ] and [ 1 1 3 3 7 3 ].\n\nFinally, we made a copy where all elements are equal and made 6 operations.\n\nIt can be proven that no fewer operations are enough.\n\nInput:\n```\n61178960 1 3 3 7 02-1000000000 100000000044 3 2 152 5 7 6 371 1 1 1 1 1 1\n```\n\nOutput:\n```\n0\n6\n2\n5\n7\n0\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case output a single integer — the minimal number of operations needed to create at least one copy where all elements are equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

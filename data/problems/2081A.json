@@ -1,0 +1,19 @@
+{
+    "id": "2081A",
+    "contest_id": 2081,
+    "problem_letter": "A",
+    "title": "A. Math Division",
+    "statement": "Ecrade has an integer x. He will show you this number in the form of a binary number of length n.\n\nThere are two kinds of operations.\n\nEcrade will perform several operations until x becomes 1. Each time, he will independently choose to perform either the first operation or the second operation with probability 1/2.\n\nEcrade wants to know the expected number of operations he will perform to make x equal to 1, modulo 10^9 + 7. However, it seems a little difficult, so please help him!\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of x in binary representation.\n\nThe second line of each test case contains a binary string of length n: the number x in the binary representation, presented from the most significant bit to the least significant bit. It is guaranteed that the most significant bit of x is 1.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.\n\nFor each test case, print a single integer representing the expected number of operations Ecrade will perform to make x equal to 1, modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the exact answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nFor simplicity, we call the first operation OPER 1 and the second operation OPER 2.\n\nIn the first test case, x=6, and there are six possible series of operations:\n\nThus, the expected number of operations is 2·1/4 + 3·1/8 + 3·1/8 + 2·1/4 + 3·1/8 + 3·1/8 = 5/2 ≡ 500,000,006 pmod10^9 + 7.\n\nInput:\n```\n331103100101101001011\n```\n\nOutput:\n```\n500000006\n2\n193359386\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of x in binary representation.\n\nThe second line of each test case contains a binary string of length n: the number x in the binary representation, presented from the most significant bit to the least significant bit. It is guaranteed that the most significant bit of x is 1.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.",
+    "output": "For each test case, print a single integer representing the expected number of operations Ecrade will perform to make x equal to 1, modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the exact answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math",
+        "probabilities",
+        "*1800"
+    ],
+    "rating": 1800
+}

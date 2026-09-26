@@ -1,0 +1,16 @@
+{
+    "id": "1950A",
+    "contest_id": 1950,
+    "problem_letter": "A",
+    "title": "A. Stair, Peak, or Neither?",
+    "statement": "You are given three digits a, b, and c. Determine whether they form a stair, a peak, or neither.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains three digits a, b, c (0 ≤ a, b, c ≤ 9).\n\nFor each test case, output \"STAIR\" if the digits form a stair, \"PEAK\" if the digits form a peak, and \"NONE\" otherwise (output the strings without quotes).\n\nInput:\n```\n71 2 33 2 11 5 33 4 10 0 04 1 74 5 7\n```\n\nOutput:\n```\nSTAIR\nNONE\nPEAK\nPEAK\nNONE\nNONE\nSTAIR\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains three digits a, b, c (0 ≤ a, b, c ≤ 9).",
+    "output": "For each test case, output \"STAIR\" if the digits form a stair, \"PEAK\" if the digits form a peak, and \"NONE\" otherwise (output the strings without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

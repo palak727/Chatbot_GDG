@@ -1,0 +1,18 @@
+{
+    "id": "1360G",
+    "contest_id": 1360,
+    "problem_letter": "G",
+    "title": "G. A/B Matrix",
+    "statement": "You are given four positive integers n, m, a, b (1 ≤ b ≤ n ≤ 50; 1 ≤ a ≤ m ≤ 50). Find any such rectangular matrix of size n × m that satisfies all of the following conditions:\n\nIf the desired matrix does not exist, indicate this.\n\nFor example, for n=3, m=6, a=2, b=1, there exists a matrix satisfying the conditions above:\n\nbeginvmatrix 0 & 1 & 0 & 0 & 0 & 1 1 & 0 & 0 & 1 & 0 & 0 0 & 0 & 1 & 0 & 1 & 0 endvmatrix\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nEach test case is described by four positive integers n, m, a, b (1 ≤ b ≤ n ≤ 50; 1 ≤ a ≤ m ≤ 50), where n and m are the sizes of the matrix, and a and b are the number of ones for rows and columns, respectively.\n\nFor each test case print:\n\nTo print the matrix n × m, print n rows, each of which consists of m numbers 0 or 1 describing a row of the matrix. Numbers must be printed without spaces.\n\nInput:\n```\n5\n3 6 2 1\n2 2 2 1\n2 2 2 2\n4 4 2 2\n2 1 1 2\n```\n\nOutput:\n```\nYES\n010001\n100100\n001010\nNO\nYES\n11\n11\nYES\n1100\n1100\n0011\n0011\nYES\n1\n1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nEach test case is described by four positive integers n, m, a, b (1 ≤ b ≤ n ≤ 50; 1 ≤ a ≤ m ≤ 50), where n and m are the sizes of the matrix, and a and b are the number of ones for rows and columns, respectively.",
+    "output": "For each test case print:\n\nTo print the matrix n × m, print n rows, each of which consists of m numbers 0 or 1 describing a row of the matrix. Numbers must be printed without spaces.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

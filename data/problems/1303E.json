@@ -1,0 +1,17 @@
+{
+    "id": "1303E",
+    "contest_id": 1303,
+    "problem_letter": "E",
+    "title": "E. Erase Subsequences",
+    "statement": "You are given a string s. You can build new string p from s using the following operation no more than two times:\n\nOf course, initially the string p is empty.\n\nFor example, let s = ababcd. At first, let's choose subsequence s_1 s_4 s_5 = abc — we will get s = bad and p = abc. At second, let's choose s_1 s_2 = ba — we will get s = d and p = abcba. So we can build abcba from ababcd.\n\nCan you build a given string t using the algorithm above?\n\nThe first line contains the single integer T (1 ≤ T ≤ 100) — the number of test cases.\n\nNext 2T lines contain test cases — two per test case. The first line contains string s consisting of lowercase Latin letters (1 ≤ |s| ≤ 400) — the initial string.\n\nThe second line contains string t consisting of lowercase Latin letters (1 ≤ |t| ≤ |s|) — the string you'd like to build.\n\nIt's guaranteed that the total length of strings s doesn't exceed 400.\n\nPrint T answers — one per test case. Print YES (case insensitive) if it's possible to build t and NO (case insensitive) otherwise.\n\nInput:\n```\n4\nababcd\nabcba\na\nb\ndefi\nfed\nxyz\nx\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains the single integer T (1 ≤ T ≤ 100) — the number of test cases.\n\nNext 2T lines contain test cases — two per test case. The first line contains string s consisting of lowercase Latin letters (1 ≤ |s| ≤ 400) — the initial string.\n\nThe second line contains string t consisting of lowercase Latin letters (1 ≤ |t| ≤ |s|) — the string you'd like to build.\n\nIt's guaranteed that the total length of strings s doesn't exceed 400.",
+    "output": "Print T answers — one per test case. Print YES (case insensitive) if it's possible to build t and NO (case insensitive) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*2200"
+    ],
+    "rating": 2200
+}

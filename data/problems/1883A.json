@@ -1,0 +1,16 @@
+{
+    "id": "1883A",
+    "contest_id": 1883,
+    "problem_letter": "A",
+    "title": "A. Morning",
+    "statement": "You are given a four-digit pin code consisting of digits from 0 to 9 that needs to be entered. Initially, the cursor points to the digit 1. In one second, you can perform exactly one of the following two actions:\n\nThe image above shows the device you are using to enter the pin code. For example, for the digit 5, the adjacent digits are 4 and 6, and for the digit 0, there is only one adjacent digit, 9.\n\nDetermine the minimum number of seconds required to enter the given four-digit pin code.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) - the number of the test cases. This is followed by their description.\n\nThe single line of each test case describes the pin code as a string of length 4, consisting of digits from 0 to 9.\n\nFor each test case, output the minimum number of seconds required to enter the given pin code.\n\nIn the first test case, the cursor needs to be pressed 4 times.\n\nIn the second test case, it can be done in 9 seconds as follows:\n\nInput:\n```\n101111123610101920927300007492854302948361\n```\n\nOutput:\n```\n4\n9\n31\n27\n28\n13\n25\n16\n33\n24\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) - the number of the test cases. This is followed by their description.\n\nThe single line of each test case describes the pin code as a string of length 4, consisting of digits from 0 to 9.",
+    "output": "For each test case, output the minimum number of seconds required to enter the given pin code.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

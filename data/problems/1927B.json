@@ -1,0 +1,18 @@
+{
+    "id": "1927B",
+    "contest_id": 1927,
+    "problem_letter": "B",
+    "title": "B. Following the String",
+    "statement": "Polycarp lost the string s of length n consisting of lowercase Latin letters, but he still has its trace.\n\nThe trace of the string s is an array a of n integers, where a_i is the number of such indices j (j < i) that s_i=s_j. For example, the trace of the string abracadabra is the array [0, 0, 0, 1, 0, 2, 0, 3, 1, 1, 4].\n\nGiven a trace of a string, find any string s from which it could have been obtained. The string s should consist only of lowercase Latin letters a-z.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the lost string.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n) — the trace of the string. It is guaranteed that for the given trace, there exists a suitable string s.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a string s that corresponds to the given trace. If there are multiple such strings s, then output any of them.\n\nThe string s should consist of lowercase Latin letters a-z.\n\nIt is guaranteed that for each test case, a valid answer exists.\n\nInput:\n```\n5110 0 0 1 0 2 0 3 1 1 4100 0 0 0 0 1 0 1 1 01080 1 2 3 4 5 6 780 0 0 0 0 0 0 0\n```\n\nOutput:\n```\nabracadabra\ncodeforces\na\naaaaaaaa\ndijkstra\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the lost string.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n) — the trace of the string. It is guaranteed that for the given trace, there exists a suitable string s.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a string s that corresponds to the given trace. If there are multiple such strings s, then output any of them.\n\nThe string s should consist of lowercase Latin letters a-z.\n\nIt is guaranteed that for each test case, a valid answer exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*900"
+    ],
+    "rating": 900
+}

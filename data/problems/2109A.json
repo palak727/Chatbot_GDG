@@ -1,0 +1,16 @@
+{
+    "id": "2109A",
+    "contest_id": 2109,
+    "problem_letter": "A",
+    "title": "A. It's Time To Duel",
+    "statement": "Something you may not know about Mouf is that he is a big fan of the Yu-Gi-Oh! card game. He loves to duel with anyone he meets. To gather all fans who love to play as well, he decided to organize a big Yu-Gi-Oh! tournament and invited n players.\n\nMouf arranged the n players in a line, numbered from 1 to n. They then held n - 1 consecutive duels: for each i from 1 to n - 1, player i faced player i + 1, producing one winner and one loser per match. Afterward, each player reports a value a_i(0 ≤ a_i ≤ 1):\n\nSince some may lie about their results (e.g., reporting a 1 instead of a 0, or vice versa) to influence prize outcomes, Mouf will cancel the tournament if he can prove any report to be false.\n\nGiven the array a, determine whether at least one player must be lying.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of players in the tournament.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1) — denoting the report of the i-th player.\n\nFor each test case, print \"YES\" (without quotes) if there is at least one liar among the players, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, it is consistent if player 2 defeats both players 1 and 3, so nobody's report is necessarily false.\n\nIn the second test case, in the only match between players 1 and 2, one must win — but both claimed zero wins, so someone must be lying.\n\nIn the third test case, the tournament consists of exactly one duel between players 1 and 2 — but it's impossible for both to win, concluding that at least one report is false.\n\nIn the fourth test case, a possible scenario is that player 2 won against player 1, then 3 won against 2, and then 4 won against 3. All reports align, so there is no evidence that someone lied.\n\nInput:\n```\n630 1 020 021 140 1 1 141 0 0 170 1 0 1 0 1 0\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of players in the tournament.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1) — denoting the report of the i-th player.",
+    "output": "For each test case, print \"YES\" (without quotes) if there is at least one liar among the players, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2072A",
+    "contest_id": 2072,
+    "problem_letter": "A",
+    "title": "A. New World, New Me, New Array",
+    "statement": "Natsume Akito has just woken up in a new world and immediately received his first quest! The system provided him with an array a of n zeros, an integer k, and an integer p.\n\nIn one operation, Akito chooses two integers i and x such that 1 ≤ i ≤ n and -p ≤ x ≤ p, and performs the assignment a_i = x.\n\nAkito is still not fully accustomed to controlling his new body, so help him calculate the minimum number of operations required to make the sum of all elements in the array equal to k, or tell him that it is impossible.\n\nThe first line of input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains three integers n, k, p (1 ≤ n ≤ 50, -2500 ≤ k ≤ 2500, 1 ≤ p ≤ 50) — the length of the array, the required sum, and the boundary of the segment from which numbers can be replaced.\n\nFor each test case, output the minimum number of operations to achieve the final sum k in the array, or -1 if it is impossible to achieve the sum k.\n\nIn the fifth example, the sum of the array is initially zero, so no operations are needed.\n\nIn the sixth example, the maximum sum in the array that we can achieve is 9 (by assigning the number 9 to the single element), so the sum 10 cannot be obtained by any operations.\n\nIn the seventh example, only one operation a_3 = -7 is needed.\n\nInput:\n```\n821 100 109 -420 425 -7 213 37 710 0 491 10 97 -7 720 31 1\n```\n\nOutput:\n```\n10\n-1\n4\n6\n0\n-1\n1\n-1\n```",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains three integers n, k, p (1 ≤ n ≤ 50, -2500 ≤ k ≤ 2500, 1 ≤ p ≤ 50) — the length of the array, the required sum, and the boundary of the segment from which numbers can be replaced.",
+    "output": "For each test case, output the minimum number of operations to achieve the final sum k in the array, or -1 if it is impossible to achieve the sum k.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

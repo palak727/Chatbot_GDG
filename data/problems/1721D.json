@@ -1,0 +1,20 @@
+{
+    "id": "1721D",
+    "contest_id": 1721,
+    "problem_letter": "D",
+    "title": "D. Maximum AND",
+    "statement": "You are given two arrays a and b, consisting of n integers each.\n\nLet's define a function f(a, b) as follows:\n\nFind the maximum value of the function f(a, b) if you can reorder the array b in an arbitrary way (leaving the initial order is also an option).\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the size of arrays a and b.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i < 2^30).\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case print one integer — the maximum value of the function f(a, b) if you can reorder the array b in an arbitrary way.\n\nInput:\n```\n351 0 0 3 32 3 2 1 031 1 10 0 380 1 2 3 4 5 6 77 6 5 4 3 2 1 0\n```\n\nOutput:\n```\n2\n0\n7\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the size of arrays a and b.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i < 2^30).\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print one integer — the maximum value of the function f(a, b) if you can reorder the array b in an arbitrary way.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "divide and conquer",
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

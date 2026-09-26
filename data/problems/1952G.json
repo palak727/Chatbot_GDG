@@ -1,0 +1,18 @@
+{
+    "id": "1952G",
+    "contest_id": 1952,
+    "problem_letter": "G",
+    "title": "G. Mathematician Takeover",
+    "statement": "A mathematician grabbed my computer as I was preparing this problem, deleted the statement, and changed the samples to fit his liking. The model solution and input/output format are still correct, but the samples are wrong.\n\nI've partially fixed the problem so that when you submit, it will be tested against the correct version of the problem. However, I can't fix the samples below. As a computer scientist, can you solve the correct problem?\n\nThe only line of input contains a real number x (1 ≤ x ≤ 100), given to exactly three decimal places.\n\nOutput one real number — the answer. Your answer is considered correct if its absolute or relative error does not exceed 10^{-4}. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^{-4}.\n\nInput:\n```\n1.234\n```\n\nOutput:\n```\n0.21026\n```\n\nInput:\n```\n4.113\n```\n\nOutput:\n```\n1.41415\n```\n\nInput:\n```\n99.000\n```\n\nOutput:\n```\n4.59512\n```",
+    "input": "The only line of input contains a real number x (1 ≤ x ≤ 100), given to exactly three decimal places.",
+    "output": "Output one real number — the answer. Your answer is considered correct if its absolute or relative error does not exceed 10^{-4}. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^{-4}.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "dfs and similar",
+        "math"
+    ],
+    "rating": null
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2011G",
+    "contest_id": 2011,
+    "problem_letter": "G",
+    "title": "G. Removal of a Permutation",
+    "statement": "You are given a permutation p of length n.\n\nYou can perform operations of two types:\n\nFor each integer from 1 to (n-1), calculate the minimum number of operations required to remove that integer from the permutation.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 250,000).\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). The array p is a permutation.\n\nAdditional constraints on the input: the sum of n over all test cases does not exceed 250,000.\n\nFor each test case, print (n-1) integers. The i-th of them should be equal to the minimum number of operations required to remove i from the permutation.\n\nInput:\n```\n544 2 1 321 265 4 1 3 2 675 6 1 3 7 2 453 1 2 5 4\n```\n\nOutput:\n```\n1 1 2\n1\n1 1 2 1 3\n1 1 1 2 1 2\n1 1 2 1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 250,000).\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). The array p is a permutation.\n\nAdditional constraints on the input: the sum of n over all test cases does not exceed 250,000.",
+    "output": "For each test case, print (n-1) integers. The i-th of them should be equal to the minimum number of operations required to remove i from the permutation.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

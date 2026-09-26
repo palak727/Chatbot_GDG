@@ -1,0 +1,17 @@
+{
+    "id": "1637C",
+    "contest_id": 1637,
+    "problem_letter": "C",
+    "title": "C. Andrew and Stones",
+    "statement": "Andrew has n piles with stones. The i-th pile contains a_i stones. He wants to make his table clean so he decided to put every stone either to the 1-st or the n-th pile.\n\nAndrew can perform the following operation any number of times: choose 3 indices 1 ≤ i < j < k ≤ n, such that the j-th pile contains at least 2 stones, then he takes 2 stones from the pile j and puts one stone into pile i and one stone into pile k.\n\nTell Andrew what is the minimum number of operations needed to move all the stones to piles 1 and n, or determine if it's impossible.\n\nThe input contains several test cases. The first line contains one integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line for each test case contains one integer n (3 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains a sequence of integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array elements.\n\nIt is guaranteed that the sum of the values n over all test cases does not exceed 10^5.\n\nFor each test case print the minimum number of operations needed to move stones to piles 1 and n, or print -1 if it's impossible.\n\nIn the first test case, it is optimal to do the following:\n\nIn the second test case, it's impossible to put all stones into piles with numbers 1 and 3:\n\nIn the third test case, it's optimal to do the following:\n\nIn the fourth test case, it's impossible to do any operation, and the array doesn't satisfy the statement, so the answer is -1.\n\nInput:\n```\n451 2 2 3 631 3 131 2 143 1 1 2\n```\n\nOutput:\n```\n4\n-1\n1\n-1 \n```",
+    "input": "The input contains several test cases. The first line contains one integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line for each test case contains one integer n (3 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains a sequence of integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array elements.\n\nIt is guaranteed that the sum of the values n over all test cases does not exceed 10^5.",
+    "output": "For each test case print the minimum number of operations needed to move stones to piles 1 and n, or print -1 if it's impossible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

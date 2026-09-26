@@ -1,0 +1,16 @@
+{
+    "id": "2095A",
+    "contest_id": 2095,
+    "problem_letter": "A",
+    "title": "A. Piecing It Together",
+    "statement": "A. Piecing It Togethertime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard output",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "string suffix structures"
+    ],
+    "rating": null
+}

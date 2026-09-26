@@ -1,0 +1,18 @@
+{
+    "id": "1698B",
+    "contest_id": 1698,
+    "problem_letter": "B",
+    "title": "B. Rising Sand",
+    "statement": "There are n piles of sand where the i-th pile has a_i blocks of sand. The i-th pile is called too tall if 1 < i < n and a_i > a_{i-1} + a_{i+1}. That is, a pile is too tall if it has more sand than its two neighbours combined. (Note that piles on the ends of the array cannot be too tall.)\n\nYou are given an integer k. An operation consists of picking k consecutive piles of sand and adding one unit of sand to them all. Formally, pick 1 ≤ l,r ≤ n such that r-l+1=k. Then for all l ≤ i ≤ r, update a_i gets a_i+1.\n\nWhat is the maximum number of piles that can simultaneously be too tall after some (possibly zero) operations?\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (3 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the number of piles of sand and the size of the operation, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the sizes of the piles.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum number of piles that are simultaneously too tall after some (possibly zero) operations.\n\nIn the first test case, we can perform the following three operations:\n\nIn the second test case, any operation will increase all piles by 1 unit, so the number of too tall piles will always be 0.\n\nIn the third test case, we can increase any pile by 1 unit of sand. It can be shown that the maximum number of too tall piles is 1.\n\nInput:\n```\n35 22 9 2 4 14 41 3 2 13 11 3 1\n```\n\nOutput:\n```\n2\n0\n1\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (3 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the number of piles of sand and the size of the operation, respectively.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the sizes of the piles.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum number of piles that are simultaneously too tall after some (possibly zero) operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

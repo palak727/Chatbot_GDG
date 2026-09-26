@@ -1,0 +1,16 @@
+{
+    "id": "1758B",
+    "contest_id": 1758,
+    "problem_letter": "B",
+    "title": "B. XOR = Average",
+    "statement": "You are given an integer n. Find a sequence of n integers a_1, a_2, …, a_n such that 1 ≤ a_i ≤ 10^9 for all i and a_1 oplus a_2 oplus … oplus a_n = (a_1 + a_2 + … + a_n)/n, where oplus represents the bitwise XOR.\n\nIt can be proven that there exists a sequence of integers that satisfies all the conditions above.\n\nThe first line of input contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the sequence you have to find.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output n space-separated integers a_1, a_2, …, a_n satisfying the conditions in the statement.\n\nIf there are several possible answers, you can output any of them.\n\nIn the first test case, 69 = 69/1 = 69.\n\nIn the second test case, 13 oplus 2 oplus 8 oplus 1 = (13 + 2 + 8 + 1)/4 = 6.\n\nInput:\n```\n3143\n```\n\nOutput:\n```\n69\n13 2 8 1\n7 7 7\n```",
+    "input": "The first line of input contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the sequence you have to find.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output n space-separated integers a_1, a_2, …, a_n satisfying the conditions in the statement.\n\nIf there are several possible answers, you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*900"
+    ],
+    "rating": 900
+}

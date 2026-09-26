@@ -1,0 +1,16 @@
+{
+    "id": "1772A",
+    "contest_id": 1772,
+    "problem_letter": "A",
+    "title": "A. A+B?",
+    "statement": "You are given an expression of the form a+b, where a and b are integers from 0 to 9. You have to evaluate it and print the result.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of one line containing an expression of the form a+b (0 ≤ a, b ≤ 9, both a and b are integers). The integers are not separated from the + sign.\n\nFor each test case, print one integer — the result of the expression.\n\nInput:\n```\n44+20+03+78+9\n```\n\nOutput:\n```\n6\n0\n10\n17\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of one line containing an expression of the form a+b (0 ≤ a, b ≤ 9, both a and b are integers). The integers are not separated from the + sign.",
+    "output": "For each test case, print one integer — the result of the expression.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

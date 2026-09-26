@@ -1,0 +1,20 @@
+{
+    "id": "2074C",
+    "contest_id": 2074,
+    "problem_letter": "C",
+    "title": "C. XOR and Triangle",
+    "statement": "This time, the pink soldiers have given you an integer x (x ≥ 2).\n\nPlease determine if there exists a positive integer y that satisfies the following conditions.\n\nAdditionally, if there exists such an integer y, output any.\n\n^{∗}A triangle with side lengths a, b, c is non-degenerate when a+b > c, a+c > b, b+c > a.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2000). The description of the test cases follows.\n\nThe only line of each test case contains a single integer x (2 ≤ x ≤ 10^9).\n\nFor each test case, print one integer on a separate line. The integer you must output is as follows:\n\nIf there exist multiple integers that satisfy the conditions, you may output any.\n\nIn the first test case, there exists a non-degenerate triangle with side lengths 3, 5, and 3 oplus 5 = 6. Therefore, y=3 is a valid answer.\n\nIn the second test case, 1 is the only possible candidate for y, but it cannot make a non-degenerate triangle. Therefore, the answer is -1.\n\nInput:\n```\n75263694420\n```\n\nOutput:\n```\n3\n-1\n5\n-1\n66\n-1\n320\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2000). The description of the test cases follows.\n\nThe only line of each test case contains a single integer x (2 ≤ x ≤ 10^9).",
+    "output": "For each test case, print one integer on a separate line. The integer you must output is as follows:\n\nIf there exist multiple integers that satisfy the conditions, you may output any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "geometry",
+        "greedy",
+        "probabilities",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1981D",
+    "contest_id": 1981,
+    "problem_letter": "D",
+    "title": "D. Turtle and Multiplication",
+    "statement": "Turtle just learned how to multiply two integers in his math class, and he was very excited.\n\nThen Piggy gave him an integer n, and asked him to construct a sequence a_1, a_2, …, a_n consisting of integers which satisfied the following conditions:\n\nOf all such sequences, Piggy asked Turtle to find the one with the minimum number of distinct elements.\n\nTurtle definitely could not solve the problem, so please help him!\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the length of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output n integers a_1, a_2, …, a_n — the elements of the sequence a.\n\nIf there are multiple answers, print any of them.\n\nIn the third test case, a = [3, 4, 2, 6] violates the second condition since a_1·a_2 = a_3·a_4. a = [2, 3, 4, 4] satisfy the conditions but its number of distinct elements isn't minimum.\n\nInput:\n```\n3234\n```\n\nOutput:\n```\n114514 114514\n1 2 2\n3 3 4 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the length of the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output n integers a_1, a_2, …, a_n — the elements of the sequence a.\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

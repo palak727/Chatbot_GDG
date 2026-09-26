@@ -1,0 +1,18 @@
+{
+    "id": "1997A",
+    "contest_id": 1997,
+    "problem_letter": "A",
+    "title": "A. Strong Password",
+    "statement": "Monocarp's current password on Codeforces is a string s, consisting of lowercase Latin letters. Monocarp thinks that his current password is too weak, so he wants to insert exactly one lowercase Latin letter into the password to make it stronger. Monocarp can choose any letter and insert it anywhere, even before the first character or after the last character.\n\nMonocarp thinks that the password's strength is proportional to the time it takes him to type the password. The time it takes to type the password is calculated as follows:\n\nFor example, the time it takes to type the password abacaba is 14; the time it takes to type the password a is 2; the time it takes to type the password aaabacc is 11.\n\nYou have to help Monocarp — insert a lowercase Latin letter into his password so that the resulting password takes the maximum possible amount of time to type.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 10), consisting of lowercase Latin letters.\n\nFor each test case, print one line containing the new password — a string which can be obtained from s by inserting one lowercase Latin letter. The string you print should have the maximum possible required time to type it. If there are multiple answers, print any of them.\n\nInput:\n```\n4aaaaabbpassword\n```\n\nOutput:\n```\nwa\naada\nabcb\npastsword\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 10), consisting of lowercase Latin letters.",
+    "output": "For each test case, print one line containing the new password — a string which can be obtained from s by inserting one lowercase Latin letter. The string you print should have the maximum possible required time to type it. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

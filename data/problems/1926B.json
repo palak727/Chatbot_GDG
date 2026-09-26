@@ -1,0 +1,17 @@
+{
+    "id": "1926B",
+    "contest_id": 1926,
+    "problem_letter": "B",
+    "title": "B. Vlad and Shapes",
+    "statement": "Vladislav has a binary square grid of n × n cells. A triangle or a square is drawn on the grid with symbols texttt1. As he is too busy being cool, he asks you to tell him which shape is drawn on the grid.\n\nFor the given grid, determine the type of shape that is drawn on it.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10) — the size of the grid.\n\nThe next n lines each contain n characters texttt0 or texttt1.\n\nThe grid contains exactly one triangle or exactly one square that contains all the texttt1s in the grid. It is guaranteed that the size of the triangle or square is greater than 1 (i.e., the shape cannot consist of exactly one 1).\n\nFor each test case, output \"SQUARE\" if all the texttt1s in the grid form a square, and \"TRIANGLE\" otherwise (without quotes).\n\nInput:\n```\n630000110114000000000100111021111500111000100000000000000001000000000000000000000000000000000000000000000000000111111111001111111000011111000000111000000001000003111111111\n```\n\nOutput:\n```\nSQUARE\nTRIANGLE\nSQUARE\nTRIANGLE\nTRIANGLE\nSQUARE\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10) — the size of the grid.\n\nThe next n lines each contain n characters texttt0 or texttt1.\n\nThe grid contains exactly one triangle or exactly one square that contains all the texttt1s in the grid. It is guaranteed that the size of the triangle or square is greater than 1 (i.e., the shape cannot consist of exactly one 1).",
+    "output": "For each test case, output \"SQUARE\" if all the texttt1s in the grid form a square, and \"TRIANGLE\" otherwise (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

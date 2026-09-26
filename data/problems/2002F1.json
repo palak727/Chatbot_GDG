@@ -1,0 +1,20 @@
+{
+    "id": "2002F1",
+    "contest_id": 2002,
+    "problem_letter": "F1",
+    "title": "F1. Court Blue (Easy Version)",
+    "statement": "This is the easy version of the problem. In this version, n=m and the time limit is lower. You can make hacks only if both versions of the problem are solved.\n\nIn the court of the Blue King, Lelle and Flamm are having a performance match. The match consists of several rounds. In each round, either Lelle or Flamm wins.\n\nLet W_L and W_F denote the number of wins of Lelle and Flamm, respectively. The Blue King considers a match to be successful if and only if:\n\nNote that gcd(0,x)=gcd(x,0)=x for every non-negative integer x.\n\nLelle and Flamm can decide to stop the match whenever they want, and the final score of the performance is l·W_L + f·W_F.\n\nPlease help Lelle and Flamm coordinate their wins and losses such that the performance is successful, and the total score of the performance is maximized.\n\nThe first line contains an integer t (1≤ t ≤ 10^3) — the number of test cases.\n\nThe only line of each test case contains four integers n, m, l, f (2≤ n≤ m ≤ 2·10^7, 1≤ l,f ≤ 10^9, bfn=m): n, m gives the upper bound on the number of Lelle and Flamm's wins, l and f determine the final score of the performance.\n\nUnusual additional constraint: it is guaranteed that, for each test, there are no pairs of test cases with the same pair of n, m.\n\nFor each test case, output a single integer — the maximum total score of a successful performance.\n\nIn the first test case, a possible performance is as follows:\n\nThe final score is 2·2+3·5=19.\n\nIn the third test case, a possible performance is as follows:\n\nThe final score is 5·2+4·2=18. Note that Lelle and Flamm can stop the match even if neither of them has n wins.\n\nInput:\n```\n83 3 2 54 4 1 46 6 2 27 7 2 39 9 9 12 2 1 45 5 1 48 8 6 7\n```\n\nOutput:\n```\n19\n17\n18\n33\n86\n9\n24\n86\n```\n\nInput:\n```\n120000000 20000000 1341 331\n```\n\nOutput:\n```\n33439999007\n```\n\nInput:\n```\n21984 1984 19 849982 9982 44 35\n```\n\nOutput:\n```\n204143\n788403\n```",
+    "input": "The first line contains an integer t (1≤ t ≤ 10^3) — the number of test cases.\n\nThe only line of each test case contains four integers n, m, l, f (2≤ n≤ m ≤ 2·10^7, 1≤ l,f ≤ 10^9, bfn=m): n, m gives the upper bound on the number of Lelle and Flamm's wins, l and f determine the final score of the performance.\n\nUnusual additional constraint: it is guaranteed that, for each test, there are no pairs of test cases with the same pair of n, m.",
+    "output": "For each test case, output a single integer — the maximum total score of a successful performance.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "math",
+        "number theory",
+        "*2600"
+    ],
+    "rating": 2600
+}

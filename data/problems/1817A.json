@@ -1,0 +1,18 @@
+{
+    "id": "1817A",
+    "contest_id": 1817,
+    "problem_letter": "A",
+    "title": "A. Almost Increasing Subsequence",
+    "statement": "A sequence is almost-increasing if it does not contain three consecutive elements x, y, z such that x≥ y≥ z.\n\nYou are given an array a_1, a_2, …, a_n and q queries.\n\nEach query consists of two integers 1≤ l≤ r≤ n. For each query, find the length of the longest almost-increasing subsequence of the subarray a_l, a_{l+1}, …, a_r.\n\nA subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.\n\nThe first line of input contains two integers, n and q (1 ≤ n, q ≤ 200,000) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the values of the array a.\n\nEach of the next q lines contains the description of a query. Each line contains two integers l and r (1 ≤ l ≤ r ≤ n) — the query is about the subarray a_l, a_{l+1}, …, a_r.\n\nFor each of the q queries, print a line containing the length of the longest almost-increasing subsequence of the subarray a_l, a_{l+1}, …, a_r.\n\nIn the first query, the subarray is a_1, a_2, a_3 = [1,2,4]. The whole subarray is almost-increasing, so the answer is 3.\n\nIn the second query, the subarray is a_1, a_2, a_3,a_4 = [1,2,4,3]. The whole subarray is a almost-increasing, because there are no three consecutive elements such that x ≥ y ≥ z. So the answer is 4.\n\nIn the third query, the subarray is a_2, a_3, a_4, a_5 = [2, 4, 3, 3]. The whole subarray is not almost-increasing, because the last three elements satisfy 4 ≥ 3 ≥ 3. An almost-increasing subsequence of length 3 can be found (for example taking a_2,a_3,a_5 = [2,4,3] ). So the answer is 3.\n\nInput:\n```\n9 8\n1 2 4 3 3 5 6 2 1\n1 3\n1 4\n2 5\n6 6\n3 7\n7 8\n1 8\n8 8\n```\n\nOutput:\n```\n3\n4\n3\n1\n4\n2\n7\n1\n```",
+    "input": "The first line of input contains two integers, n and q (1 ≤ n, q ≤ 200,000) — the length of the array a and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the values of the array a.\n\nEach of the next q lines contains the description of a query. Each line contains two integers l and r (1 ≤ l ≤ r ≤ n) — the query is about the subarray a_l, a_{l+1}, …, a_r.",
+    "output": "For each of the q queries, print a line containing the length of the longest almost-increasing subsequence of the subarray a_l, a_{l+1}, …, a_r.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "*1500"
+    ],
+    "rating": 1500
+}

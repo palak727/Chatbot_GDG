@@ -1,0 +1,17 @@
+{
+    "id": "1733C",
+    "contest_id": 1733,
+    "problem_letter": "C",
+    "title": "C. Parity Shuffle Sorting",
+    "statement": "You are given an array a with n non-negative integers. You can apply the following operation on it.\n\nFind any sequence of at most n operations that makes a non-decreasing. It can be proven that it is always possible. Note that you do not have to minimize the number of operations.\n\nAn array a_1, a_2, …, a_n is non-decreasing if and only if a_1 ≤ a_2 ≤ … ≤ a_n.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of two lines. The first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the array itself.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.\n\nFor each test case, print one integer m (0 ≤ m ≤ n), the number of operations, in the first line.\n\nThen print m lines. Each line must contain two integers l_i, r_i, which are the indices you chose in the i-th operation (1 ≤ l_i < r_i ≤ n).\n\nIf there are multiple solutions, print any of them.\n\nIn the second test case, a changes like this:\n\nIn the first and third test cases, a is already non-decreasing.\n\nInput:\n```\n327 851 1000000000 3 0 510\n```\n\nOutput:\n```\n0\n2\n3 4\n1 2\n0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of two lines. The first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the array itself.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.",
+    "output": "For each test case, print one integer m (0 ≤ m ≤ n), the number of operations, in the first line.\n\nThen print m lines. Each line must contain two integers l_i, r_i, which are the indices you chose in the i-th operation (1 ≤ l_i < r_i ≤ n).\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1523G",
+    "contest_id": 1523,
+    "problem_letter": "G",
+    "title": "G. Try Booking",
+    "statement": "William owns a flat in central London. He decided to rent his flat out for the next n days to earn some money.\n\nSince his flat is in the center of the city, he instantly got m offers in the form (l_i, r_i), which means that someone wants to book the flat from day l_i until day r_i inclusive. To avoid spending a lot of time figuring out whether it's profitable for him to accept an offer, William decided to develop an algorithm. The algorithm processes all offers as they arrive and will only accept offer i if the following two conditions are satisfied:\n\nWilliam isn't sure what value x should have and he asks you for help. For all x from 1 to n he wants you to calculate the total number of days for which the flat would be occupied if the corresponding value will be assigned to x.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 5·10^4, 1 ≤ m ≤ 10^5), which are the number of days and the number of offers, respectively.\n\nEach of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n), which describe the i-th renting offer. All offers are given in chronological order.\n\nPrint n integers. The number in i-th line must be equal to the number of days the flat would be occupied if the algorithm will use the value of x equal to i.\n\nThe description of segments from the first sample test for each x:\n\nInput:\n```\n6 5\n2 3\n3 5\n1 1\n1 5\n1 6\n```\n\nOutput:\n```\n3\n2\n3\n5\n5\n6\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 5·10^4, 1 ≤ m ≤ 10^5), which are the number of days and the number of offers, respectively.\n\nEach of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n), which describe the i-th renting offer. All offers are given in chronological order.",
+    "output": "Print n integers. The number in i-th line must be equal to the number of days the flat would be occupied if the algorithm will use the value of x equal to i.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "*3200"
+    ],
+    "rating": 3200
+}

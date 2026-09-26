@@ -1,0 +1,16 @@
+{
+    "id": "1676H1",
+    "contest_id": 1676,
+    "problem_letter": "H1",
+    "title": "H1. Maximum Crossings (Easy Version)",
+    "statement": "The only difference between the two versions is that in this version n ≤ 1000 and the sum of n over all test cases does not exceed 1000.\n\nA terminal is a row of n equal segments numbered 1 to n in order. There are two terminals, one above the other.\n\nYou are given an array a of length n. For all i = 1, 2, …, n, there should be a straight wire from some point on segment i of the top terminal to some point on segment a_i of the bottom terminal. You can't select the endpoints of a segment. For example, the following pictures show two possible wirings if n=7 and a=[4,1,4,6,7,7,5].\n\nA crossing occurs when two wires share a point in common. In the picture above, crossings are circled in red.\n\nWhat is the maximum number of crossings there can be if you place the wires optimally?\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 1000) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 1000.\n\nFor each test case, output a single integer — the maximum number of crossings there can be if you place the wires optimally.\n\nThe first test case is shown in the second picture in the statement.\n\nIn the second test case, the only wiring possible has the two wires cross, so the answer is 1.\n\nIn the third test case, the only wiring possible has one wire, so the answer is 0.\n\nInput:\n```\n474 1 4 6 7 7 522 11132 2 2\n```\n\nOutput:\n```\n6\n1\n0\n3\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 1000) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 1000.",
+    "output": "For each test case, output a single integer — the maximum number of crossings there can be if you place the wires optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "*1400"
+    ],
+    "rating": 1400
+}

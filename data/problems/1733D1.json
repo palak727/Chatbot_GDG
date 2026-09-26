@@ -1,0 +1,18 @@
+{
+    "id": "1733D1",
+    "contest_id": 1733,
+    "problem_letter": "D1",
+    "title": "D1. Zero-One (Easy Version)",
+    "statement": "This is the easy version of the problem. In this version, n ≤ 3000, x ≥ y holds. You can make hacks only if both versions of the problem are solved.\n\nYou are given two binary strings a and b, both of length n. You can do the following operation any number of times (possibly zero).\n\nYou have to find the minimum cost needed to make a equal to b or say there is no way to do so.\n\nThe first line contains one integer t (1 ≤ t ≤ 600) — the number of test cases.\n\nEach test case consists of three lines. The first line of each test case contains three integers n, x, and y (5 ≤ n ≤ 3000, 1 ≤ y ≤ x ≤ 10^9) — the length of the strings, and the costs per operation.\n\nThe second line of each test case contains the string a of length n. The string only consists of digits 0 and 1.\n\nThe third line of each test case contains the string b of length n. The string only consists of digits 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3000.\n\nFor each test case, if there is no way to make a equal to b, print -1. Otherwise, print the minimum cost needed to make a equal to b.\n\nIn the first test case, selecting indices 2 and 3 costs 8, which is the minimum possible cost.\n\nIn the second test case, we cannot make a equal to b using any number of operations.\n\nIn the third test case, we can perform the following operations:\n\nThe total cost is 6.\n\nIn the fourth test case, we don't have to perform any operations.\n\nInput:\n```\n45 8 701001001015 7 201000110117 8 3011100101000015 10 10110001100\n```\n\nOutput:\n```\n8\n-1\n6\n0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 600) — the number of test cases.\n\nEach test case consists of three lines. The first line of each test case contains three integers n, x, and y (5 ≤ n ≤ 3000, 1 ≤ y ≤ x ≤ 10^9) — the length of the strings, and the costs per operation.\n\nThe second line of each test case contains the string a of length n. The string only consists of digits 0 and 1.\n\nThe third line of each test case contains the string b of length n. The string only consists of digits 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3000.",
+    "output": "For each test case, if there is no way to make a equal to b, print -1. Otherwise, print the minimum cost needed to make a equal to b.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

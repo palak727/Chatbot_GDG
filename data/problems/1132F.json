@@ -1,0 +1,16 @@
+{
+    "id": "1132F",
+    "contest_id": 1132,
+    "problem_letter": "F",
+    "title": "F. Clear the String",
+    "statement": "You are given a string s of length n consisting of lowercase Latin letters. You may apply some operations to this string: in one operation you can delete some contiguous substring of this string, if all letters in the substring you delete are equal. For example, after deleting substring bbbb from string abbbbaccdd we get the string aaccdd.\n\nCalculate the minimum number of operations to delete the whole string s.\n\nThe first line contains one integer n (1 ≤ n ≤ 500) — the length of string s.\n\nThe second line contains the string s (|s| = n) consisting of lowercase Latin letters.\n\nOutput a single integer — the minimal number of operation to delete string s.\n\nInput:\n```\n5\nabaca\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n8\nabcddcba\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 500) — the length of string s.\n\nThe second line contains the string s (|s| = n) consisting of lowercase Latin letters.",
+    "output": "Output a single integer — the minimal number of operation to delete string s.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "*2000"
+    ],
+    "rating": 2000
+}

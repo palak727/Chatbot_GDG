@@ -1,0 +1,20 @@
+{
+    "id": "1609D",
+    "contest_id": 1609,
+    "problem_letter": "D",
+    "title": "D. Social Network",
+    "statement": "William arrived at a conference dedicated to cryptocurrencies. Networking, meeting new people, and using friends' connections are essential to stay up to date with the latest news from the world of cryptocurrencies.\n\nThe conference has n participants, who are initially unfamiliar with each other. William can introduce any two people, a and b, who were not familiar before, to each other.\n\nWilliam has d conditions, i'th of which requires person x_i to have a connection to person y_i. Formally, two people x and y have a connection if there is such a chain p_1=x, p_2, p_3, …, p_k=y for which for all i from 1 to k - 1 it's true that two people with numbers p_i and p_{i + 1} know each other.\n\nFor every i (1 ≤ i ≤ d) William wants you to calculate the maximal number of acquaintances one person can have, assuming that William satisfied all conditions from 1 and up to and including i and performed exactly i introductions. The conditions are being checked after William performed i introductions. The answer for each i must be calculated independently. It means that when you compute an answer for i, you should assume that no two people have been introduced to each other yet.\n\nThe first line contains two integers n and d (2 ≤ n ≤ 10^3, 1 ≤ d ≤ n - 1), the number of people, and number of conditions, respectively.\n\nEach of the next d lines each contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), the numbers of people which must have a connection according to condition i.\n\nOutput d integers. ith number must equal the number of acquaintances the person with the maximal possible acquaintances will have, if William performed i introductions and satisfied the first i conditions.\n\nThe explanation for the first test case:\n\nIn this explanation, the circles and the numbers in them denote a person with the corresponding number. The line denotes that William introduced two connected people. The person marked with red has the most acquaintances. These are not the only correct ways to introduce people.\n\nInput:\n```\n7 6\n1 2\n3 4\n2 4\n7 6\n6 5\n1 7\n```\n\nOutput:\n```\n1\n1\n3\n3\n3\n6\n```\n\nInput:\n```\n10 8\n1 2\n2 3\n3 4\n1 4\n6 7\n8 9\n8 10\n1 4\n```\n\nOutput:\n```\n1\n2\n3\n4\n5\n5\n6\n8\n```",
+    "input": "The first line contains two integers n and d (2 ≤ n ≤ 10^3, 1 ≤ d ≤ n - 1), the number of people, and number of conditions, respectively.\n\nEach of the next d lines each contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), the numbers of people which must have a connection according to condition i.",
+    "output": "Output d integers. ith number must equal the number of acquaintances the person with the maximal possible acquaintances will have, if William performed i introductions and satisfied the first i conditions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dsu",
+        "graphs",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

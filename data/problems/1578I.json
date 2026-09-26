@@ -1,0 +1,17 @@
+{
+    "id": "1578I",
+    "contest_id": 1578,
+    "problem_letter": "I",
+    "title": "I. Interactive Rays",
+    "statement": "This is an interactive problem.\n\nYour goal is to find a circle on a plane by shooting rays and getting the distance to the circle as a result.\n\nInteractor has three hidden integer parameters that are determined in advance for each test, but which you don't know — x_c, y_c, and r_c. (x_c, y_c) are coordinates of the circle's center and r_c is its radius. The absolute values of x_c, y_c, and r_c do not exceed 10^5, and 1 ≤ r_c ≤ √(x_c^2 + y_c^2) - 1.\n\nYou can shoot rays that extend from the origin (0,0) and go via a point (x_q,y_q) with the integer coordinates you specify. For each ray, you get a distance from the ray to the circle or 0 if the ray intersects the circle.\n\nThe interaction starts with your program printing a query to the standard output and finishes when your program finds and prints the answer to the problem.\n\nEach query has a form of \"? x_q y_q\", where x_q and y_q are integers (|x_q|, |y_q| ≤ 10^6; x_q ≠ 0 or y_q ≠ 0).\n\nThe interactor outputs a line with a single floating-point number — the distance between a query ray and a circle that is precise to 10^{-10} by an absolute value.\n\nYour program can make the next query, read the output, and so on. You are allowed to do at most 60 queries. At the end of the interaction, print the answer line \"! x_c y_c r_c\", flush the output and exit.\n\nNote, that the output of the interactor is actually rounded to the 10-th digit after a decimal point, so if you are stress-testing your solution locally, make sure that you also perform the corresponding rounding.\n\nInput:\n```\n? 0 -10\n\n? 10 -10\n\n? 10 0\n\n? 10 10\n\n? 10 20\n\n? 10 30\n\n! 20 10 10\n```\n\nOutput:\n```\n12.360679775\n\n11.2132034356\n\n0.0\n\n0.0\n\n3.416407865\n\n5.8113883008\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "geometry",
+        "interactive",
+        "*3300"
+    ],
+    "rating": 3300
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1240F",
+    "contest_id": 1240,
+    "problem_letter": "F",
+    "title": "F. Football",
+    "statement": "There are n football teams in the world.\n\nThe Main Football Organization (MFO) wants to host at most m games. MFO wants the i-th game to be played between the teams a_i and b_i in one of the k stadiums.\n\nLet s_ij be the numbers of games the i-th team played in the j-th stadium. MFO does not want a team to have much more games in one stadium than in the others. Therefore, for each team i, the absolute difference between the maximum and minimum among s_i1, s_i2, …, s_ik should not exceed 2.\n\nEach team has w_i — the amount of money MFO will earn for each game of the i-th team. If the i-th team plays l games, MFO will earn w_i·l.\n\nMFO needs to find what games in what stadiums they need to host in order to earn as much money as possible, not violating the rule they set.\n\nHowever, this problem is too complicated for MFO. Therefore, they are asking you to help them.\n\nThe first line contains three integers n, m, k (3 ≤ n ≤ 100, 0 ≤ m ≤ 1,000, 1 ≤ k ≤ 1,000) — the number of teams, the number of games, and the number of stadiums.\n\nThe second line contains n integers w_1, w_2, …, w_n (1 ≤ w_i ≤ 1,000) — the amount of money MFO will earn for each game of the i-th game.\n\nEach of the following m lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i) — the teams that can play the i-th game. It is guaranteed that each pair of teams can play at most one game.\n\nFor each game in the same order, print t_i (1 ≤ t_i ≤ k) — the number of the stadium, in which a_i and b_i will play the game. If the i-th game should not be played, t_i should be equal to 0.\n\nIf there are multiple answers, print any.\n\nOne of possible solutions to the example is shown below:\n\nInput:\n```\n7 11 3\n4 7 8 10 10 9 3\n6 2\n6 1\n7 6\n4 3\n4 6\n3 1\n5 3\n7 5\n7 3\n4 2\n1 4\n```\n\nOutput:\n```\n3\n2\n1\n1\n3\n1\n2\n1\n2\n3\n2\n```",
+    "input": "The first line contains three integers n, m, k (3 ≤ n ≤ 100, 0 ≤ m ≤ 1,000, 1 ≤ k ≤ 1,000) — the number of teams, the number of games, and the number of stadiums.\n\nThe second line contains n integers w_1, w_2, …, w_n (1 ≤ w_i ≤ 1,000) — the amount of money MFO will earn for each game of the i-th game.\n\nEach of the following m lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i) — the teams that can play the i-th game. It is guaranteed that each pair of teams can play at most one game.",
+    "output": "For each game in the same order, print t_i (1 ≤ t_i ≤ k) — the number of the stadium, in which a_i and b_i will play the game. If the i-th game should not be played, t_i should be equal to 0.\n\nIf there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "*3100"
+    ],
+    "rating": 3100
+}

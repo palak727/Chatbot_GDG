@@ -1,0 +1,19 @@
+{
+    "id": "2137G",
+    "contest_id": 2137,
+    "problem_letter": "G",
+    "title": "G. Cry Me a River",
+    "statement": "There is a directed acyclic graph with n nodes and m edges. Each node is initially colored blue.\n\nLet's define the fun graph game as follows:\n\nSince the graph is acyclic, it can be shown that the game always ends in a finite number of turns.\n\nNote that Cry and River can win the game immediately if the starting node s doesn't have outgoing edges, or is red respectively.\n\nYou must handle q queries of the following kind:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, q (2 ≤ n ≤ 2·10^5 ,1 ≤ m,q ≤ 2·10^5).\n\nThe following m lines each contain two integers u and v (1 ≤ u,v ≤ n), meaning that there is an edge from u to v.\n\nThe following q lines each contain two integers x and u (1 ≤ x ≤ 2, 1 ≤ u ≤ n) – denoting the type of query and the node that the query is done on.\n\nIt is guaranteed that the given graph is a directed acyclic graph. Additionally, no edge is given more than once.\n\nIt is guaranteed that the sum of n, the sum of m, and the sum of q each do not exceed 2·10^5 over all test cases.\n\nFor each query of the second type, output YES if Cry wins. Otherwise, output NO. Each letter may be outputted in uppercase or lowercase.\n\nBelow shows the graph in the sample.\n\nInitially, all nodes are blue. Thus, Cry cannot lose, and eventually the token will be moved to a node without outgoing edges.\n\nAfter nodes 3 and 4 are painted red, the nodes 1,3,4 now start off as a win for River when playing optimally. If the game starts at nodes 3 and 4, River wins immediately. If the game starts at node 1, one way the game can go is as follows:\n\nIt can be shown that Cry still wins with optimal play for all other nodes.\n\nInput:\n```\n17 8 101 21 31 42 53 65 72 33 42 11 31 42 12 22 32 42 52 62 7\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\nYES\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, q (2 ≤ n ≤ 2·10^5 ,1 ≤ m,q ≤ 2·10^5).\n\nThe following m lines each contain two integers u and v (1 ≤ u,v ≤ n), meaning that there is an edge from u to v.\n\nThe following q lines each contain two integers x and u (1 ≤ x ≤ 2, 1 ≤ u ≤ n) – denoting the type of query and the node that the query is done on.\n\nIt is guaranteed that the given graph is a directed acyclic graph. Additionally, no edge is given more than once.\n\nIt is guaranteed that the sum of n, the sum of m, and the sum of q each do not exceed 2·10^5 over all test cases.",
+    "output": "For each query of the second type, output YES if Cry wins. Otherwise, output NO. Each letter may be outputted in uppercase or lowercase.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "graphs",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1750F",
+    "contest_id": 1750,
+    "problem_letter": "F",
+    "title": "F. Majority",
+    "statement": "Everyone was happy coding, until suddenly a power shortage happened and the best competitive programming site went down. Fortunately, a system administrator bought some new equipment recently, including some UPSs. Thus there are some servers that are still online, but we need all of them to be working in order to keep the round rated.\n\nImagine the servers being a binary string s of length n. If the i-th server is online, then s_i = 1, and s_i = 0 otherwise.\n\nA system administrator can do the following operation called electricity spread, that consists of the following phases:\n\nWe call a binary string s of length n rated if we can turn on all servers (i.e. make s_i = 1 for 1 ≤ i ≤ n) using the electricity spread operation any number of times (possibly, 0). Your task is to find the number of rated strings of length n modulo m.\n\nThe first and only line contains two integers n and m (1 ≤ n ≤ 5000, 10 ≤ m ≤ 10^9) — the length of the string and the required module.\n\nPrint a single integer — the number of rated binary strings of length n. Since this number can be large, print it modulo m.\n\nIn the first example, the only rated string is 11. So the answer is 1.\n\nIn the second example, the rated strings are:\n\nIn the third sample, the rated strings are:\n\nInput:\n```\n2 100\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 10\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 3271890\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n17 123456\n```\n\nOutput:\n```\n32347\n```",
+    "input": "The first and only line contains two integers n and m (1 ≤ n ≤ 5000, 10 ≤ m ≤ 10^9) — the length of the string and the required module.",
+    "output": "Print a single integer — the number of rated binary strings of length n. Since this number can be large, print it modulo m.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "strings",
+        "*2700"
+    ],
+    "rating": 2700
+}

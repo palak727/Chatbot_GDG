@@ -1,0 +1,18 @@
+{
+    "id": "2094D",
+    "contest_id": 2094,
+    "problem_letter": "D",
+    "title": "D. Tung Tung Sahur",
+    "statement": "You have two drums in front of you: a left drum and a right drum. A hit on the left can be recorded as \"L\", and a hit on the right as \"R\".\n\nThe strange forces that rule this world are fickle: sometimes, a blow sounds once, and sometimes it sounds twice. Therefore, a hit on the left drum could have sounded as either \"L\" or \"LL\", and a hit on the right drum could have sounded as either \"R\" or \"RR\".\n\nThe sequence of hits made is recorded in the string p, and the sounds heard are in the string s. Given p and s, determine whether it is true that the string s could have been the result of the hits from the string p.\n\nFor example, if p=\"LR\", then the result of the hits could be any of the strings \"LR\", \"LRR\", \"LLR\", and \"LLRR\", but the strings \"LLLR\" or \"LRL\" cannot.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) – the number of independent test cases.\n\nThe first line of each test case contains the string p (1 ≤ |p| ≤ 2·10^5) consisting only of the characters \"R\" and \"L\", where |p| denotes the length of the string p.\n\nThe second line of each test case contains the string s (1 ≤ |p| ≤ |s| ≤ 2·10^5) consisting only of the characters \"R\" and \"L\".\n\nIt is guaranteed that the sum of |s| does not exceed 2·10^5 across all test cases.\n\nFor each set of input data, output \"YES\" if s can be the heard sound, and \"NO\" otherwise. You may output in any case.\n\nInput:\n```\n5RRRLRLRLRLRLRLLLRLLLLLRLLLLLRRLLLLRLRLRRLLLLRLRRLLRRRL\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) – the number of independent test cases.\n\nThe first line of each test case contains the string p (1 ≤ |p| ≤ 2·10^5) consisting only of the characters \"R\" and \"L\", where |p| denotes the length of the string p.\n\nThe second line of each test case contains the string s (1 ≤ |p| ≤ |s| ≤ 2·10^5) consisting only of the characters \"R\" and \"L\".\n\nIt is guaranteed that the sum of |s| does not exceed 2·10^5 across all test cases.",
+    "output": "For each set of input data, output \"YES\" if s can be the heard sound, and \"NO\" otherwise. You may output in any case.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

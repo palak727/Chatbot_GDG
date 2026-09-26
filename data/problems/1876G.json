@@ -1,0 +1,20 @@
+{
+    "id": "1876G",
+    "contest_id": 1876,
+    "problem_letter": "G",
+    "title": "G. Clubstep",
+    "statement": "There is an extremely hard video game that is one of Chaneka's favourite video games. One of the hardest levels in the game is called Clubstep. Clubstep consists of n parts, numbered from 1 to n. Chaneka has practised the level a good amount, so currently, her familiarity value with each part i is a_i.\n\nAfter this, Chaneka can do several (possibly zero) attempts on Clubstep. In each attempt, she dies on one of the n parts. If an attempt dies on part p, that means it only successfully passes through every part k for all 1 ≤ k ≤ p-1 and it does not reach any part k for all p+1 ≤ k ≤ n. An attempt that dies on part p takes p seconds.\n\nIt is known that Chaneka improves much more on the part she dies on than anything else. It is also known that during an attempt, Chaneka does not get to practise that much on the parts she does not reach. So, the effect of an attempt that dies on part p is as follows:\n\nNote that each question is independent, so the attempt Chaneka does on a question does not affect the familiarity values of any other questions.\n\nThe first line contains a single integer n (1 ≤ n ≤ 3·10^5) — the number of parts in Clubstep.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (1≤ a_i≤10^9) — Chaneka's familiarity value with each part.\n\nThe third line contains a single integer q (1≤ q≤3·10^5) — the number of questions.\n\nThe j-th of the next q lines contains three integers l_j, r_j, and x_j (1≤ l_j≤ r_j≤ n; 1≤ x_j≤10^9) — the description of the j-th question.\n\nOutput q lines with an integer in each line. The integer in the j-th line represents the minimum time (in seconds) for Chaneka to make it such that the familiarity value for every part p (l_j ≤ p ≤ r_j) is at least x_j.\n\nFor the 1-st question, one possible strategy is to do the following:\n\nThe total time taken (in seconds) is 1+4+10=15.\n\nFor the 2-nd question, one possible strategy is to do the following:\n\nThe total time taken (in seconds) is 3+8=11.\n\nInput:\n```\n5\n1 3 2 1 2\n3\n1 5 5\n2 4 5\n3 3 1\n```\n\nOutput:\n```\n15\n11\n0\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 3·10^5) — the number of parts in Clubstep.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (1≤ a_i≤10^9) — Chaneka's familiarity value with each part.\n\nThe third line contains a single integer q (1≤ q≤3·10^5) — the number of questions.\n\nThe j-th of the next q lines contains three integers l_j, r_j, and x_j (1≤ l_j≤ r_j≤ n; 1≤ x_j≤10^9) — the description of the j-th question.",
+    "output": "Output q lines with an integer in each line. The integer in the j-th line represents the minimum time (in seconds) for Chaneka to make it such that the familiarity value for every part p (l_j ≤ p ≤ r_j) is at least x_j.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

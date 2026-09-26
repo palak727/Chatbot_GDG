@@ -1,0 +1,19 @@
+{
+    "id": "1536E",
+    "contest_id": 1536,
+    "problem_letter": "E",
+    "title": "E. Omkar and Forest",
+    "statement": "Omkar's most recent follower, Ajit, has entered the Holy Forest. Ajit realizes that Omkar's forest is an n by m grid (1 ≤ n, m ≤ 2000) of some non-negative integers. Since the forest is blessed by Omkar, it satisfies some special conditions:\n\nUnfortunately, Ajit is not fully worthy of Omkar's powers yet. He sees each cell as a \"0\" or a \"#\". If a cell is labeled as \"0\", then the number in it must equal 0. Otherwise, the number in it can be any nonnegative integer.\n\nDetermine how many different assignments of elements exist such that these special conditions are satisfied. Two assignments are considered different if there exists at least one cell such that the numbers written in it in these assignments are different. Since the answer may be enormous, find the answer modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2000, nm ≥ 2) – the dimensions of the forest.\n\nn lines follow, each consisting of one string of m characters. Each of these characters is either a \"0\" or a \"#\".\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000 and the sum of m over all test cases does not exceed 2000.\n\nFor each test case, print one integer: the number of valid configurations modulo 10^9+7.\n\nFor the first test case, the two valid assignments are\n\n0000 0000 0000\n\nand\n\n0000 0010 0000\n\nInput:\n```\n4\n3 4\n0000\n00#0\n0000\n2 1\n#\n#\n1 2\n##\n6 29\n#############################\n#000##0###0##0#0####0####000#\n#0#0##00#00##00####0#0###0#0#\n#0#0##0#0#0##00###00000##00##\n#000##0###0##0#0##0###0##0#0#\n#############################\n```\n\nOutput:\n```\n2\n3\n3\n319908071\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 2000, nm ≥ 2) – the dimensions of the forest.\n\nn lines follow, each consisting of one string of m characters. Each of these characters is either a \"0\" or a \"#\".\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000 and the sum of m over all test cases does not exceed 2000.",
+    "output": "For each test case, print one integer: the number of valid configurations modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "graphs",
+        "math",
+        "shortest paths",
+        "*2300"
+    ],
+    "rating": 2300
+}

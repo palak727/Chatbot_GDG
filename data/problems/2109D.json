@@ -1,0 +1,19 @@
+{
+    "id": "2109D",
+    "contest_id": 2109,
+    "problem_letter": "D",
+    "title": "D. D/D/D",
+    "statement": "Of course, a problem with the letter D is sponsored by Declan Akaba.\n\nYou are given a simple, connected, undirected graph with n vertices and m edges. The graph contains no self-loops or multiple edges. You are also given a multiset A consisting of ell elements: A = {A_1, A_2, …, A_ell}\n\nStarting from vertex 1, you may perform the following move any number of times, as long as the multiset A is not empty:\n\nFor each i (1 ≤ i ≤ n), determine whether there exists a sequence of such moves that starts at vertex 1 and ends at vertex i, using the original multiset A.\n\nNote that the check for each vertex i is independent — you restart from vertex 1 and use the original multiset A for each case.\n\n^{∗}A walk of length k is a sequence of vertices v_0, v_1, …, v_{k - 1}, v_k such that each consecutive pair of vertices (v_i, v_{i + 1}) is connected by an edge in the graph. The sequence may include repeated vertices.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and ell (2 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ 4·10^5, 1 ≤ ell ≤ 2·10^5) — the number of vertices, the number of edges, and the size of the multiset, respectively.\n\nThe second line of each test case contains ell integers A_1, A_2, …, A_ell (1 ≤ A_i ≤ 10^4) — the elements of the multiset.\n\nEach of the following m lines contains two integers u and v (1 ≤ u < v ≤ n) — the endpoints of an edge in the graph.\n\nIt is guaranteed that the edges form a simple, connected graph without self-loops or multiple edges.\n\nIt is guaranteed that the sum of n, the sum of m, and the sum of ell over all test cases does not exceed 2·10^5, 4·10^5, and 2·10^5, respectively.\n\nFor each test case, output a binary string of length n, where the i-th character is mathtt1 if there exists a sequence of moves ending at vertex i, and mathtt0 otherwise.\n\nIn the first test case:\n\nInput:\n```\n36 5 22 31 22 33 44 55 65 5 151 22 33 44 53 55 4 3100 200 3001 21 31 42 5\n```\n\nOutput:\n```\n111101\n11111\n10001\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and ell (2 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ 4·10^5, 1 ≤ ell ≤ 2·10^5) — the number of vertices, the number of edges, and the size of the multiset, respectively.\n\nThe second line of each test case contains ell integers A_1, A_2, …, A_ell (1 ≤ A_i ≤ 10^4) — the elements of the multiset.\n\nEach of the following m lines contains two integers u and v (1 ≤ u < v ≤ n) — the endpoints of an edge in the graph.\n\nIt is guaranteed that the edges form a simple, connected graph without self-loops or multiple edges.\n\nIt is guaranteed that the sum of n, the sum of m, and the sum of ell over all test cases does not exceed 2·10^5, 4·10^5, and 2·10^5, respectively.",
+    "output": "For each test case, output a binary string of length n, where the i-th character is mathtt1 if there exists a sequence of moves ending at vertex i, and mathtt0 otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*1900"
+    ],
+    "rating": 1900
+}

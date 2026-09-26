@@ -1,0 +1,17 @@
+{
+    "id": "1915A",
+    "contest_id": 1915,
+    "problem_letter": "A",
+    "title": "A. Odd One Out",
+    "statement": "You are given three digits a, b, c. Two of them are equal, but the third one is different from the other two.\n\nFind the value that occurs exactly once.\n\nThe first line contains a single integer t (1 ≤ t ≤ 270) — the number of test cases.\n\nThe only line of each test case contains three digits a, b, c (0 ≤ a, b, c ≤ 9). Two of the digits are equal, but the third one is different from the other two.\n\nFor each test case, output the value that occurs exactly once.\n\nInput:\n```\n101 2 24 3 45 5 67 8 89 0 93 6 32 8 25 7 77 7 55 7 5\n```\n\nOutput:\n```\n1\n3\n6\n7\n0\n6\n8\n5\n5\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 270) — the number of test cases.\n\nThe only line of each test case contains three digits a, b, c (0 ≤ a, b, c ≤ 9). Two of the digits are equal, but the third one is different from the other two.",
+    "output": "For each test case, output the value that occurs exactly once.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

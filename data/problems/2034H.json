@@ -1,0 +1,19 @@
+{
+    "id": "2034H",
+    "contest_id": 2034,
+    "problem_letter": "H",
+    "title": "H. Rayan vs. Rayaneh",
+    "statement": "Rayan makes his final efforts to win Reyhaneh's heart by claiming he is stronger than Rayaneh (i.e., computer in Persian). To test this, Reyhaneh asks Khwarizmi for help. Khwarizmi explains that a set is integer linearly independent if no element in the set can be written as an integer linear combination of the others. Rayan is given a set of integers each time and must identify one of the largest possible integer linearly independent subsets.\n\nNote that a single element is always considered an integer linearly independent subset.\n\nAn integer linearly combination of a_1, …, a_k is any sum of the form c_1·a_1 + c_2·a_2 + … + c_k·a_k where c_1, c_2, …, c_k are integers (which may be zero, positive, or negative).\n\nThe first line contains an integer t (1 ≤ t ≤ 100), the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5), the size of the set. The second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nThe sum of n over all test cases does not exceed 3·10^6.\n\nIn the first line of each test case print the size of the largest integer linearly independent subset.\n\nIn the next line, print one such subset in any order. If there are multiple valid subsets, print any one of them.\n\nIn example 1, {4, 6} is an integer linearly independent subset. It can be proven that there is no integer linearly independent subset with at least 3 elements.\n\nIn example 2, {35, 21, 30} is an integer linearly independent subset because no integer linear combination of any two elements can create the third. There is no integer linearly independent subset with at least 4 elements.\n\nIn example 3, {2, 3, 6} is not an integer linearly independent subset since 6 can be written as 6·2 + (-2)·3, which is an integer linear combination of {2, 3}.\n\nInput:\n```\n352 4 6 8 10512 15 21 30 3532 3 6\n```\n\nOutput:\n```\n2\n4 6\n3\n35 21 30\n2\n2 3\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100), the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5), the size of the set. The second line contains n distinct integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nThe sum of n over all test cases does not exceed 3·10^6.",
+    "output": "In the first line of each test case print the size of the largest integer linearly independent subset.\n\nIn the next line, print one such subset in any order. If there are multiple valid subsets, print any one of them.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "number theory",
+        "*3300"
+    ],
+    "rating": 3300
+}

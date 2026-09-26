@@ -1,0 +1,18 @@
+{
+    "id": "1976A",
+    "contest_id": 1976,
+    "problem_letter": "A",
+    "title": "A. Verify Password",
+    "statement": "Monocarp is working on his new site, and the current challenge is to make the users pick strong passwords.\n\nMonocarp decided that strong passwords should satisfy the following conditions:\n\nNote that it's allowed for the password to have only letters or only digits.\n\nMonocarp managed to implement the first condition, but he struggles with the remaining ones. Can you help him to verify the passwords?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 20) — the length of the password.\n\nThe second line contains a string, consisting of exactly n characters. Each character is either a lowercase Latin letter or a digit.\n\nFor each testcase, print \"YES\" if the given password is strong and \"NO\" otherwise.\n\nIn the second testcase, the letters are not sorted in the non-decreasing order.\n\nIn the fourth testcase, there is a digit that comes after a letter — digit '1' after a letter 'c'.\n\nInput:\n```\n5412ac5123wa9allllmost5ac1236011679\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 20) — the length of the password.\n\nThe second line contains a string, consisting of exactly n characters. Each character is either a lowercase Latin letter or a digit.",
+    "output": "For each testcase, print \"YES\" if the given password is strong and \"NO\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

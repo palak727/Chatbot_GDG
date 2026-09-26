@@ -1,0 +1,18 @@
+{
+    "id": "1261F",
+    "contest_id": 1261,
+    "problem_letter": "F",
+    "title": "F. Xor-Set",
+    "statement": "You are given two sets of integers: A and B. You need to output the sum of elements in the set C = {x | x = a oplus b, a ∈ A, b ∈ B} modulo 998244353, where oplus denotes the bitwise XOR operation. Each number should be counted only once.\n\nFor example, if A = {2, 3} and B = {2, 3} you should count integer 1 only once, despite the fact that you can get it as 3 oplus 2 and as 2 oplus 3. So the answer for this case is equal to 1 + 0 = 1.\n\nLet's call a segment [l; r] a set of integers {l, l+1, …, r}.\n\nThe set A is given as a union of n_A segments, the set B is given as a union of n_B segments.\n\nThe first line contains a single integer n_A (1 ≤ n_A ≤ 100).\n\nThe i-th of the next n_A lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^18), describing a segment of values of set A.\n\nThe next line contains a single integer n_B (1 ≤ n_B ≤ 100).\n\nThe i-th of the next n_B lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ 10^18), describing a segment of values of set B.\n\nNote that segments in both sets may intersect.\n\nPrint one integer — the sum of all elements in set C = {x | x = a oplus b, a ∈ A, b ∈ B} modulo 998244353.\n\nIn the second example, we can discover that the set C = {0,1,…,15}, which means that all numbers between 0 and 15 can be represented as a oplus b.\n\nInput:\n```\n2\n3 5\n5 8\n3\n1 2\n1 9\n2 9\n```\n\nOutput:\n```\n112\n```\n\nInput:\n```\n1\n1 9\n2\n2 4\n2 10\n```\n\nOutput:\n```\n120\n```",
+    "input": "The first line contains a single integer n_A (1 ≤ n_A ≤ 100).\n\nThe i-th of the next n_A lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^18), describing a segment of values of set A.\n\nThe next line contains a single integer n_B (1 ≤ n_B ≤ 100).\n\nThe i-th of the next n_B lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ 10^18), describing a segment of values of set B.\n\nNote that segments in both sets may intersect.",
+    "output": "Print one integer — the sum of all elements in set C = {x | x = a oplus b, a ∈ A, b ∈ B} modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "divide and conquer",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1515I",
+    "contest_id": 1515,
+    "problem_letter": "I",
+    "title": "I. Phoenix and Diamonds",
+    "statement": "Phoenix wonders what it is like to rob diamonds from a jewelry store!\n\nThere are n types of diamonds. The i-th type has weight w_i and value v_i. The store initially has a_i diamonds of the i-th type.\n\nEach day, for q days, one of the following will happen:\n\nOf course, since Phoenix is a law-abiding citizen, this is all a thought experiment and he never actually robs any diamonds from the store. This means that queries of type 3 do not affect the diamonds in the store.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 2·10^5; 1 ≤ q ≤ 10^5) — the number of types of diamonds and number of days, respectively.\n\nThe next n lines describe each type of diamond. The i-th line will contain three integers a_i, w_i, and v_i (0 ≤ a_i ≤ 10^5; 1 ≤ w_i, v_i ≤ 10^5) — the initial number of diamonds of the i-th type, the weight of diamonds of the i-th type, and the value of diamonds of the i-th type, respectively.\n\nThe next q lines contain the queries. For each query, the first integer of each line is t (1 ≤ t ≤ 3) — the type of query.\n\nIf t=1, then two integers k_i, d_i follow (1 ≤ k_i ≤ 10^5; 1 ≤ d_i ≤ n). This means that a new shipment of k_i diamonds arrived, each of type d_i.\n\nIf t=2, then two integers k_i, d_i follow (1 ≤ k_i ≤ 10^5; 1 ≤ d_i ≤ n). This means that the store has sold k_i diamonds, each of type d_i. It is guaranteed that the store had the diamonds before they sold them.\n\nIf t=3, an integer c_i will follow (1 ≤ c_i ≤ 10^18) — the weight capacity of Phoenix's bag.\n\nIt is guaranteed that there is at least one query where t=3.\n\nPrint the answer for each query of the third type (t=3).\n\nFor the first query where t=3, Phoenix can fit 2 diamonds of type 1, with total weight 6 and value 8.\n\nFor the second query where t=3, Phoenix will first fit in 3 diamonds of type 3, then one diamond of type 1 for a total weight of 9 and a value of 16. Note that diamonds of type 3 are prioritized over type 1 because type 3 has equal value but less weight.\n\nFor the final query where t=3, Phoenix can fit every diamond for a total value of 13.\n\nInput:\n```\n3 5\n2 3 4\n1 5 1\n0 2 4\n3 6\n1 3 3\n3 10\n2 2 3\n3 30\n```\n\nOutput:\n```\n8\n16\n13\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n ≤ 2·10^5; 1 ≤ q ≤ 10^5) — the number of types of diamonds and number of days, respectively.\n\nThe next n lines describe each type of diamond. The i-th line will contain three integers a_i, w_i, and v_i (0 ≤ a_i ≤ 10^5; 1 ≤ w_i, v_i ≤ 10^5) — the initial number of diamonds of the i-th type, the weight of diamonds of the i-th type, and the value of diamonds of the i-th type, respectively.\n\nThe next q lines contain the queries. For each query, the first integer of each line is t (1 ≤ t ≤ 3) — the type of query.\n\nIf t=1, then two integers k_i, d_i follow (1 ≤ k_i ≤ 10^5; 1 ≤ d_i ≤ n). This means that a new shipment of k_i diamonds arrived, each of type d_i.\n\nIf t=2, then two integers k_i, d_i follow (1 ≤ k_i ≤ 10^5; 1 ≤ d_i ≤ n). This means that the store has sold k_i diamonds, each of type d_i. It is guaranteed that the store had the diamonds before they sold them.\n\nIf t=3, an integer c_i will follow (1 ≤ c_i ≤ 10^18) — the weight capacity of Phoenix's bag.\n\nIt is guaranteed that there is at least one query where t=3.",
+    "output": "Print the answer for each query of the third type (t=3).",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "sortings",
+        "*3400"
+    ],
+    "rating": 3400
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2056D",
+    "contest_id": 2056,
+    "problem_letter": "D",
+    "title": "D. Unique Median",
+    "statement": "An array b of m integers is called good if, when it is sorted, b_{leftlfloor (m + 1)/2 rightrfloor} = b_{leftlceil (m + 1)/2 rightrceil}. In other words, b is good if both of its medians are equal. In particular, leftlfloor (m + 1)/2 rightrfloor = leftlceil (m + 1)/2 rightrceil when m is odd, so b is guaranteed to be good if it has an odd length.\n\nYou are given an array a of n integers. Calculate the number of good subarrays^{∗} in a.\n\n^{∗}An array x is a subarray of an array y if x can be obtained from y by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ colorredtextbf10) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer representing the number of good subarrays in a.\n\nIn the first case, every subarray is good since all its elements are equal to 1.\n\nIn the second case, an example of a good subarray is b = [10, 2, 3, 3]. When it is sorted, b = [2, 3, 3, 10], so b_{leftlfloor (4 + 1)/2 rightrfloor} = b_{leftlceil (4 + 1)/2 rightrceil} = b_2 = b_3 = 3. Another example would be b = [1, 10, 2]. On the other hand, b = [1, 10] is not good as its two medians are 1 and 10, which are not equal.\n\nInput:\n```\n341 1 1 151 10 2 3 3106 3 2 3 5 3 4 2 3 5\n```\n\nOutput:\n```\n10\n11\n42\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ colorredtextbf10) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer representing the number of good subarrays in a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

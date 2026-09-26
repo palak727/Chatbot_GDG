@@ -1,0 +1,16 @@
+{
+    "id": "1829B",
+    "contest_id": 1829,
+    "problem_letter": "B",
+    "title": "B. Blank Space",
+    "statement": "You are given a binary array a of n elements, a binary array is an array consisting only of 0s and 1s.\n\nA blank space is a segment of consecutive elements consisting of only 0s.\n\nYour task is to find the length of the longest blank space.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the array.\n\nThe second line of each test case contains n space-separated integers a_i (0 ≤ a_i ≤ 1) — the elements of the array.\n\nFor each test case, output a single integer — the length of the longest blank space.\n\nInput:\n```\n551 0 0 1 040 1 1 11031 1 191 0 0 0 1 0 0 0 1\n```\n\nOutput:\n```\n2\n1\n1\n0\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the array.\n\nThe second line of each test case contains n space-separated integers a_i (0 ≤ a_i ≤ 1) — the elements of the array.",
+    "output": "For each test case, output a single integer — the length of the longest blank space.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

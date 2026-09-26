@@ -1,0 +1,19 @@
+{
+    "id": "1242B",
+    "contest_id": 1242,
+    "problem_letter": "B",
+    "title": "B. 0-1 MST",
+    "statement": "Ujan has a lot of useless stuff in his drawers, a considerable part of which are his math notebooks: it is time to sort them out. This time he found an old dusty graph theory notebook with a description of a graph.\n\nIt is an undirected weighted graph on n vertices. It is a complete graph: each pair of vertices is connected by an edge. The weight of each edge is either 0 or 1; exactly m edges have weight 1, and all others have weight 0.\n\nSince Ujan doesn't really want to organize his notes, he decided to find the weight of the minimum spanning tree of the graph. (The weight of a spanning tree is the sum of all its edges.) Can you find the answer for Ujan so he stops procrastinating?\n\nThe first line of the input contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ min((n(n-1))/2,10^5)), the number of vertices and the number of edges of weight 1 in the graph.\n\nThe i-th of the next m lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i), the endpoints of the i-th edge of weight 1.\n\nIt is guaranteed that no edge appears twice in the input.\n\nOutput a single integer, the weight of the minimum spanning tree of the graph.\n\nThe graph from the first sample is shown below. Dashed edges have weight 0, other edges have weight 1. One of the minimum spanning trees is highlighted in orange and has total weight 2.\n\nIn the second sample, all edges have weight 0 so any spanning tree has total weight 0.\n\nInput:\n```\n6 11\n1 3\n1 4\n1 5\n1 6\n2 3\n2 4\n2 5\n2 6\n3 4\n3 5\n3 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line of the input contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ min((n(n-1))/2,10^5)), the number of vertices and the number of edges of weight 1 in the graph.\n\nThe i-th of the next m lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i), the endpoints of the i-th edge of weight 1.\n\nIt is guaranteed that no edge appears twice in the input.",
+    "output": "Output a single integer, the weight of the minimum spanning tree of the graph.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

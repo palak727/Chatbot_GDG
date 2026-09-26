@@ -3,13 +3,14 @@
     "contest_id": 1001,
     "problem_letter": "C",
     "title": "C. Generate GHZ state",
-    "statement": "You are given N qubits (1 ≤ N ≤ 8) in zero state . Your task is to create Greenberger–Horne–Zeilinger (GHZ) state on them:\nNote that for N = 1 and N = 2 GHZ state becomes states  and  from the previous tasks, respectively.\nYou have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.\nYour code should have the following signature:",
-    "input": "You have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.",
+    "statement": "You are given N qubits (1 ≤ N ≤ 8) in zero state . Your task is to create Greenberger–Horne–Zeilinger (GHZ) state on them:\n\nNote that for N = 1 and N = 2 GHZ state becomes states and from the previous tasks, respectively.\n\nYou have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[]) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
+    "input": "You have to implement an operation which takes an array of N qubits as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[]) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "output": "",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
-        "*special problem",
+        "*special",
         "*1400"
-    ]
+    ],
+    "rating": 1400
 }

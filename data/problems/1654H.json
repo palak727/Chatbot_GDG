@@ -1,0 +1,21 @@
+{
+    "id": "1654H",
+    "contest_id": 1654,
+    "problem_letter": "H",
+    "title": "H. Three Minimums",
+    "statement": "Given a list of distinct values, we denote with first minimum, second minimum, and third minimum the three smallest values (in increasing order).\n\nA permutation p_1, p_2, …, p_n is good if the following statement holds for all pairs (l,r) with 1≤ l < l+2 ≤ r≤ n.\n\nYou are given an integer n and a string s of length m consisting of characters \"<\" and \">\".\n\nCount the number of good permutations p_1, p_2,…, p_n such that, for all 1≤ i≤ m,\n\nThe first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ min(100, n-1)).\n\nThe second line contains a string s of length m, consisting of characters \"<\" and \">\".\n\nPrint a single integer: the number of good permutations satisfying the constraints described in the statement, modulo 998,244,353.\n\nIn the first test, there are 5 good permutations satisfying the constraints given by the string s: [4, 3, 2, 1, 5], [5, 3, 2, 1, 4], [5, 4, 2, 1, 3], [5, 4, 3, 1, 2], [5, 4, 3, 2, 1]. Each of them\n\nIn the second test, there are 60 permutations such that p_1 < p_2. Only 56 of them are good: the permutations [1, 4, 3, 5, 2], [1, 5, 3, 4, 2], [2, 4, 3, 5, 1], [2, 5, 3, 4, 1] are not good because the required condition doesn't hold for (l, r) = (1, 5). For example, for the permutation [2, 4, 3, 5, 1],\n\nIn the third test, there are 23 good permutations satisfying the constraints given by the string s: [1, 2, 4, 3, 6, 5], [1, 2, 5, 3, 6, 4], [1, 2, 6, 3, 5, 4], [1, 3, 4, 2, 6, 5], [1, 3, 5, 2, 6, 4], [1, 3, 6, 2, 5, 4], [1, 4, 5, 2, 6, 3], [1, 4, 6, 2, 5, 3], [1, 5, 6, 2, 4, 3], [2, 3, 4, 1, 6, 5], [2, 3, 5, 1, 6, 4], [2, 3, 6, 1, 5, 4], [2, 4, 5, 1, 6, 3], [2, 4, 6, 1, 5, 3], [2, 5, 6, 1, 4, 3], [3, 4, 5, 1, 6, 2], [3, 4, 5, 2, 6, 1], [3, 4, 6, 1, 5, 2], [3, 4, 6, 2, 5, 1], [3, 5, 6, 1, 4, 2], [3, 5, 6, 2, 4, 1], [4, 5, 6, 1, 3, 2], [4, 5, 6, 2, 3, 1].\n\nInput:\n```\n5 3\n>>>\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n5 1\n<\n```\n\nOutput:\n```\n56\n```\n\nInput:\n```\n6 5\n<<><>\n```\n\nOutput:\n```\n23\n```\n\nInput:\n```\n10 5\n><<><\n```\n\nOutput:\n```\n83154\n```\n\nInput:\n```\n1008 20\n<><<>>><<<<<>>>>>>>>\n```\n\nOutput:\n```\n284142857\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 1 ≤ m ≤ min(100, n-1)).\n\nThe second line contains a string s of length m, consisting of characters \"<\" and \">\".",
+    "output": "Print a single integer: the number of good permutations satisfying the constraints described in the statement, modulo 998,244,353.",
+    "time_limit": "8 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "divide and conquer",
+        "dp",
+        "fft",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

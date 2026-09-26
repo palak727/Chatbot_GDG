@@ -1,0 +1,22 @@
+{
+    "id": "1886E",
+    "contest_id": 1886,
+    "problem_letter": "E",
+    "title": "E. I Wanna be the Team Leader",
+    "statement": "Monocarp is a team leader in a massive IT company.\n\nThere are m projects his team of programmers has to complete, numbered from 1 to m. The i-th project has a difficulty level b_i.\n\nThere are n programmers in the team, numbered from 1 to n. The j-th programmer has a stress tolerance level a_j.\n\nMonocarp wants to assign the programmers to the projects in such a way that:\n\nHelp Monocarp to find a valid assignment. If there are multiple answers, print any of them.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 20) — the number of programmers and the number of projects.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the stress tolerance level of each programmer.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the difficulty level of each project.\n\nIf there is no valid assignment, print \"NO\".\n\nOtherwise, in the first line, print \"YES\". In the i-th of the next m lines, print the list of the programmers assigned to the i-th project: first, the number of programmers, then their indices in an arbitrary order.\n\nIf there are multiple answers, print any of them.\n\nInput:\n```\n5 3\n4 6 100 5 1\n50 1 12\n```\n\nOutput:\n```\nYES\n1 3\n1 5\n3 2 4 1\n```\n\nInput:\n```\n5 3\n3 6 100 5 1\n50 1 12\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n5 3\n2 2 2 2 4\n3 5 1\n```\n\nOutput:\n```\nYES\n1 5\n3 1 2 3\n1 4\n```\n\nInput:\n```\n5 1\n10 20 30 40 50\n4\n```\n\nOutput:\n```\nYES\n1 4\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 20) — the number of programmers and the number of projects.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the stress tolerance level of each programmer.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the difficulty level of each project.",
+    "output": "If there is no valid assignment, print \"NO\".\n\nOtherwise, in the first line, print \"YES\". In the i-th of the next m lines, print the list of the programmers assigned to the i-th project: first, the number of programmers, then their indices in an arbitrary order.\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

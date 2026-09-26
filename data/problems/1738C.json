@@ -1,0 +1,19 @@
+{
+    "id": "1738C",
+    "contest_id": 1738,
+    "problem_letter": "C",
+    "title": "C. Even Number Addicts",
+    "statement": "Alice and Bob are playing a game on a sequence a_1, a_2, …, a_n of length n. They move in turns and Alice moves first.\n\nIn the turn of each player, he or she should select an integer and remove it from the sequence. The game ends when there is no integer left in the sequence.\n\nAlice wins if the sum of her selected integers is even; otherwise, Bob wins.\n\nYour task is to determine who will win the game, if both players play optimally.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100), indicating the length of the sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9), indicating the elements of the sequence.\n\nFor each test case, output \"Alice\" (without quotes) if Alice wins and \"Bob\" (without quotes) otherwise.\n\nIn the first and second test cases, Alice always selects two odd numbers, so the sum of her selected numbers is always even. Therefore, Alice always wins.\n\nIn the third test case, Bob has a winning strategy that he always selects a number with the same parity as Alice selects in her last turn. Therefore, Bob always wins.\n\nIn the fourth test case, Alice always selects two even numbers, so the sum of her selected numbers is always even. Therefore, Alice always wins.\n\nInput:\n```\n431 3 541 3 5 741 2 3 4410 20 30 40\n```\n\nOutput:\n```\nAlice\nAlice\nBob\nAlice\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100), indicating the length of the sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9), indicating the elements of the sequence.",
+    "output": "For each test case, output \"Alice\" (without quotes) if Alice wins and \"Bob\" (without quotes) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "games",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

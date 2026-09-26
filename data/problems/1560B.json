@@ -1,0 +1,16 @@
+{
+    "id": "1560B",
+    "contest_id": 1560,
+    "problem_letter": "B",
+    "title": "B. Who's Opposite?",
+    "statement": "Some number of people (this number is even) have stood in a circle. The people stand in the circle evenly. They are numbered clockwise starting from a person with the number 1. Each person is looking through the circle's center at the opposite person.\n\nYou don't know the exact number of people standing in the circle (but this number is even, no doubt). It is known that the person with the number a is looking at the person with the number b (and vice versa, of course). What is the number associated with a person being looked at by the person with the number c? If, for the specified a, b, and c, no such circle exists, output -1.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing three distinct integers a, b, c (1 ≤ a,b,c ≤ 10^8).\n\nFor each test case output in a separate line a single integer d — the number of the person being looked at by the person with the number c in a circle such that the person with the number a is looking at the person with the number b. If there are multiple solutions, print any of them. Output -1 if there's no circle meeting the given conditions.\n\nIn the first test case, there's a desired circle of 8 people. The person with the number 6 will look at the person with the number 2 and the person with the number 8 will look at the person with the number 4.\n\nIn the second test case, there's no circle meeting the conditions. If the person with the number 2 is looking at the person with the number 3, the circle consists of 2 people because these persons are neighbors. But, in this case, they must have the numbers 1 and 2, but it doesn't meet the problem's conditions.\n\nIn the third test case, the only circle with the persons with the numbers 2 and 4 looking at each other consists of 4 people. Therefore, the person with the number 10 doesn't occur in the circle.\n\nInput:\n```\n7\n6 2 4\n2 3 1\n2 4 10\n5 3 4\n1 3 2\n2 5 4\n4 3 2\n```\n\nOutput:\n```\n8\n-1\n-1\n-1\n4\n1\n-1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case consists of one line containing three distinct integers a, b, c (1 ≤ a,b,c ≤ 10^8).",
+    "output": "For each test case output in a separate line a single integer d — the number of the person being looked at by the person with the number c in a circle such that the person with the number a is looking at the person with the number b. If there are multiple solutions, print any of them. Output -1 if there's no circle meeting the given conditions.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

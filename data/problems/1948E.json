@@ -1,0 +1,20 @@
+{
+    "id": "1948E",
+    "contest_id": 1948,
+    "problem_letter": "E",
+    "title": "E. Clique Partition",
+    "statement": "You are given two integers, n and k. There is a graph on n vertices, numbered from 1 to n, which initially has no edges.\n\nYou have to assign each vertex an integer; let a_i be the integer on the vertex i. All a_i should be distinct integers from 1 to n.\n\nAfter assigning integers, for every pair of vertices (i, j), you add an edge between them if |i - j| + |a_i - a_j| ≤ k.\n\nYour goal is to create a graph which can be partitioned into the minimum possible (for the given values of n and k) number of cliques. Each vertex of the graph should belong to exactly one clique. Recall that a clique is a set of vertices such that every pair of vertices in it are connected with an edge.\n\nSince BledDest hasn't really brushed his programming skills up, he can't solve the problem \"given a graph, partition it into the minimum number of cliques\". So we also ask you to print the partition itself.\n\nThe first line contains one integer t (1 ≤ t ≤ 1600) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (2 ≤ n ≤ 40; 1 ≤ k ≤ 2n).\n\nFor each test case, print three lines:\n\nIf there are multiple answers, print any of them.\n\nInput:\n```\n32 35 48 16\n```\n\nOutput:\n```\n2 1\n1\n1 1\n3 1 5 2 4\n2\n1 1 2 1 2\n1 2 3 4 5 6 7 8\n1\n1 1 1 1 1 1 1 1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1600) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (2 ≤ n ≤ 40; 1 ≤ k ≤ 2n).",
+    "output": "For each test case, print three lines:\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "implementation",
+        "*2100"
+    ],
+    "rating": 2100
+}

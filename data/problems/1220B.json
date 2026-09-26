@@ -1,0 +1,17 @@
+{
+    "id": "1220B",
+    "contest_id": 1220,
+    "problem_letter": "B",
+    "title": "B. Multiplication Table",
+    "statement": "Sasha grew up and went to first grade. To celebrate this event her mother bought her a multiplication table M with n rows and n columns such that M_ij=a_i·a_j where a_1, …, a_n is some sequence of positive integers.\n\nOf course, the girl decided to take it to school with her. But while she was having lunch, hooligan Grisha erased numbers on the main diagonal and threw away the array a_1, …, a_n. Help Sasha restore the array!\n\nThe first line contains a single integer n (3 leqslant n leqslant 10^3), the size of the table.\n\nThe next n lines contain n integers each. The j-th number of the i-th line contains the number M_ij (1 ≤ M_ij ≤ 10^9). The table has zeroes on the main diagonal, that is, M_ii=0.\n\nIn a single line print n integers, the original array a_1, …, a_n (1 ≤ a_i ≤ 10^9). It is guaranteed that an answer exists. If there are multiple answers, print any.\n\nInput:\n```\n5\n0 4 6 2 4\n4 0 6 2 4\n6 6 0 3 6\n2 2 3 0 2\n4 4 6 2 0\n```\n\nOutput:\n```\n2 2 3 1 2 \n```\n\nInput:\n```\n3\n0 99990000 99970002\n99990000 0 99980000\n99970002 99980000 0\n```\n\nOutput:\n```\n9999 10000 9998 \n```",
+    "input": "The first line contains a single integer n (3 leqslant n leqslant 10^3), the size of the table.\n\nThe next n lines contain n integers each. The j-th number of the i-th line contains the number M_ij (1 ≤ M_ij ≤ 10^9). The table has zeroes on the main diagonal, that is, M_ii=0.",
+    "output": "In a single line print n integers, the original array a_1, …, a_n (1 ≤ a_i ≤ 10^9). It is guaranteed that an answer exists. If there are multiple answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

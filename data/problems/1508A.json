@@ -1,0 +1,20 @@
+{
+    "id": "1508A",
+    "contest_id": 1508,
+    "problem_letter": "A",
+    "title": "A. Binary Literature",
+    "statement": "A bitstring is a string that contains only the characters 0 and 1.\n\nKoyomi Kanou is working hard towards her dream of becoming a writer. To practice, she decided to participate in the Binary Novel Writing Contest. The writing prompt for the contest consists of three bitstrings of length 2n. A valid novel for the contest is a bitstring of length at most 3n that contains at least two of the three given strings as subsequences.\n\nKoyomi has just received the three prompt strings from the contest organizers. Help her write a valid novel for the contest.\n\nA string a is a subsequence of a string b if a can be obtained from b by deletion of several (possibly, zero) characters.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nEach of the following three lines contains a bitstring of length 2n. It is guaranteed that these three strings are pairwise distinct.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.\n\nFor each test case, print a single line containing a bitstring of length at most 3n that has at least two of the given bitstrings as subsequences.\n\nIt can be proven that under the constraints of the problem, such a bitstring always exists.\n\nIf there are multiple possible answers, you may output any of them.\n\nIn the first test case, the bitstrings 00 and 01 are subsequences of the output string: 010 and 010. Note that 11 is not a subsequence of the output string, but this is not required.\n\nIn the second test case all three input strings are subsequences of the output string: 011001010, 011001010 and 011001010.\n\nInput:\n```\n2\n1\n00\n11\n01\n3\n011001\n111010\n010001\n```\n\nOutput:\n```\n010\n011001010\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nEach of the following three lines contains a bitstring of length 2n. It is guaranteed that these three strings are pairwise distinct.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.",
+    "output": "For each test case, print a single line containing a bitstring of length at most 3n that has at least two of the given bitstrings as subsequences.\n\nIt can be proven that under the constraints of the problem, such a bitstring always exists.\n\nIf there are multiple possible answers, you may output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "strings",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

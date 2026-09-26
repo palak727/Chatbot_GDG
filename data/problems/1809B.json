@@ -1,0 +1,18 @@
+{
+    "id": "1809B",
+    "contest_id": 1809,
+    "problem_letter": "B",
+    "title": "B. Points on Plane",
+    "statement": "You are given a two-dimensional plane, and you need to place n chips on it.\n\nYou can place a chip only at a point with integer coordinates. The cost of placing a chip at the point (x, y) is equal to |x| + |y| (where |a| is the absolute value of a).\n\nThe cost of placing n chips is equal to the maximum among the costs of each chip.\n\nYou need to place n chips on the plane in such a way that the Euclidean distance between each pair of chips is strictly greater than 1, and the cost is the minimum possible.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next t cases follow.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^18) — the number of chips you need to place.\n\nFor each test case, print a single integer — the minimum cost to place n chips if the distance between each pair of chips must be strictly greater than 1.\n\nIn the first test case, you can place the only chip at point (0, 0) with total cost equal to 0 + 0 = 0.\n\nIn the second test case, you can, for example, place chips at points (-1, 0), (0, 1) and (1, 0) with costs |-1| + |0| = 1, |0| + |1| = 1 and |0| + |1| = 1. Distance between each pair of chips is greater than 1 (for example, distance between (-1, 0) and (0, 1) is equal to √(2)). The total cost is equal to max(1, 1, 1) = 1.\n\nIn the third test case, you can, for example, place chips at points (-1, -1), (-1, 1), (1, 1), (0, 0) and (0, 2). The total cost is equal to max(2, 2, 2, 0, 2) = 2.\n\nInput:\n```\n4135975461057789971042\n```\n\nOutput:\n```\n0\n1\n2\n987654321\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next t cases follow.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^18) — the number of chips you need to place.",
+    "output": "For each test case, print a single integer — the minimum cost to place n chips if the distance between each pair of chips must be strictly greater than 1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

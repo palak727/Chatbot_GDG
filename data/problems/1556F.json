@@ -1,0 +1,21 @@
+{
+    "id": "1556F",
+    "contest_id": 1556,
+    "problem_letter": "F",
+    "title": "F. Sports Betting",
+    "statement": "William is not only interested in trading but also in betting on sports matches. n teams participate in each match. Each team is characterized by strength a_i. Each two teams i < j play with each other exactly once. Team i wins with probability a_i/(a_i + a_j) and team j wins with probability a_j/(a_i + a_j).\n\nThe team is called a winner if it directly or indirectly defeated all other teams. Team a defeated (directly or indirectly) team b if there is a sequence of teams c_1, c_2, ... c_k such that c_1 = a, c_k = b and team c_i defeated team c_{i + 1} for all i from 1 to k - 1. Note that it is possible that team a defeated team b and in the same time team b defeated team a.\n\nWilliam wants you to find the expected value of the number of winners.\n\nThe first line contains a single integer n (1 ≤ n ≤ 14), which is the total number of teams participating in a match.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the strengths of teams participating in a match.\n\nOutput a single integer — the expected value of the number of winners of the tournament modulo 10^9 + 7.\n\nFormally, let M = 10^9+7. It can be demonstrated that the answer can be presented as a irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output a single integer equal to p·q^{-1} bmod M. In other words, output an integer x such that 0 ≤ x < M and x·q ≡ p pmodM.\n\nTo better understand in which situation several winners are possible let's examine the second test:\n\nOne possible result of the tournament is as follows (a → b means that a defeated b):\n\nOr more clearly in the picture:\n\nIn this case every team from the set { 1, 2, 3 } directly or indirectly defeated everyone. I.e.:\n\nTherefore the total number of winners is 3.\n\nInput:\n```\n2\n1 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n1 5 2 11 14\n```\n\nOutput:\n```\n642377629\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 14), which is the total number of teams participating in a match.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the strengths of teams participating in a match.",
+    "output": "Output a single integer — the expected value of the number of winners of the tournament modulo 10^9 + 7.\n\nFormally, let M = 10^9+7. It can be demonstrated that the answer can be presented as a irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output a single integer equal to p·q^{-1} bmod M. In other words, output an integer x such that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "graphs",
+        "math",
+        "probabilities",
+        "*2500"
+    ],
+    "rating": 2500
+}

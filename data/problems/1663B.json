@@ -1,0 +1,18 @@
+{
+    "id": "1663B",
+    "contest_id": 1663,
+    "problem_letter": "B",
+    "title": "B. Mike's Sequence",
+    "statement": "You won't find this sequence on OEIS.\n\nOne integer r (-45 ≤ r ≤ 2999).\n\nOne integer.\n\nInput:\n```\n2999\n```\n\nOutput:\n```\n3000\n```",
+    "input": "One integer r (-45 ≤ r ≤ 2999).",
+    "output": "One integer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "divide and conquer",
+        "implementation",
+        "math"
+    ],
+    "rating": null
+}

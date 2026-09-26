@@ -1,0 +1,21 @@
+{
+    "id": "1659C",
+    "contest_id": 1659,
+    "problem_letter": "C",
+    "title": "C. Line Empire",
+    "statement": "You are an ambitious king who wants to be the Emperor of The Reals. But to do that, you must first become Emperor of The Integers.\n\nConsider a number axis. The capital of your empire is initially at 0. There are n unconquered kingdoms at positions 0 < x_1 < x_2 < … < x_n. You want to conquer all other kingdoms.\n\nThere are two actions available to you:\n\nNote that you cannot place the capital at a point without a kingdom. In other words, at any point, your capital can only be at 0 or one of x_1,x_2,…,x_n. Also note that conquering a kingdom does not change the position of your capital.\n\nFind the minimum total cost to conquer all kingdoms. Your capital can be anywhere at the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of each test case follows.\n\nThe first line of each test case contains 3 integers n, a, and b (1 ≤ n ≤ 2·10^5; 1 ≤ a,b ≤ 10^5).\n\nThe second line of each test case contains n integers x_1, x_2, …, x_n (1 ≤ x_1 < x_2 < … < x_n ≤ 10^8).\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum cost to conquer all kingdoms.\n\nHere is an optimal sequence of moves for the second test case:\n\nThe total cost is 3+6+12+24+3+48+75=171. You cannot get a lower cost than this.\n\nInput:\n```\n45 2 73 5 12 13 215 6 31 5 6 21 302 9 310 1511 27182 3141516 18 33 98 874 989 4848 20458 34365 38117 72030\n```\n\nOutput:\n```\n173\n171\n75\n3298918744\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of each test case follows.\n\nThe first line of each test case contains 3 integers n, a, and b (1 ≤ n ≤ 2·10^5; 1 ≤ a,b ≤ 10^5).\n\nThe second line of each test case contains n integers x_1, x_2, …, x_n (1 ≤ x_1 < x_2 < … < x_n ≤ 10^8).\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum cost to conquer all kingdoms.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

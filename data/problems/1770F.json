@@ -1,0 +1,20 @@
+{
+    "id": "1770F",
+    "contest_id": 1770,
+    "problem_letter": "F",
+    "title": "F. Koxia and Sequence",
+    "statement": "Mari has three integers n, x, and y.\n\nCall an array a of n non-negative integers good if it satisfies the following conditions:\n\nThe score of a good array is the value of a_1 oplus a_2 oplus … oplus a_n, where oplus denotes the bitwise XOR operation.\n\nKoxia wants you to find the total bitwise XOR of the scores of all good arrays. If there are no good arrays, output 0 instead.\n\nThe first line of input contains three integers n, x and y (1 ≤ n < 2^40, 0 ≤ x < 2^60, 0 ≤ y < 2^20).\n\nOutput a single integer — the total bitwise XOR of the scores of all good arrays.\n\nIn the first test case, there are 12 good arrays totally as follows.\n\nTherefore, the total bitwise xor of the scores is underbrace1 oplus … oplus 1_9times oplus 3 oplus 3 oplus 3 = 2.\n\nIn the second test case, there are no good sequences. The output should be 0.\n\nInput:\n```\n3 5 3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n100 0 100\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n79877974817 749875791743978 982783\n```\n\nOutput:\n```\n64\n```",
+    "input": "The first line of input contains three integers n, x and y (1 ≤ n < 2^40, 0 ≤ x < 2^60, 0 ≤ y < 2^20).",
+    "output": "Output a single integer — the total bitwise XOR of the scores of all good arrays.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*3100"
+    ],
+    "rating": 3100
+}

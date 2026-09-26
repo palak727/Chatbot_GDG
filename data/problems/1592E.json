@@ -1,0 +1,19 @@
+{
+    "id": "1592E",
+    "contest_id": 1592,
+    "problem_letter": "E",
+    "title": "E. Bored Bakry",
+    "statement": "Bakry got bored of solving problems related to xor, so he asked you to solve this problem for him.\n\nYou are given an array a of n integers [a_1, a_2, …, a_n].\n\nLet's call a subarray a_l, a_{l+1}, a_{l+2}, …, a_r good if a_l , & , a_{l+1} , & , a_{l+2} , … , & , a_r > a_l oplus a_{l+1} oplus a_{l+2} … oplus a_r, where oplus denotes the bitwise XOR operation and & denotes the bitwise AND operation.\n\nFind the length of the longest good subarray of a, or determine that no such subarray exists.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — elements of the array.\n\nPrint a single integer — the length of the longest good subarray. If there are no good subarrays, print 0.\n\nIn the first case, the answer is 2, as the whole array is good: 5 & 6 = 4 > 5 oplus 6 = 3.\n\nIn the third case, the answer is 4, and one of the longest good subarrays is [a_2, a_3, a_4, a_5]: 1& 3 & 3 &1 = 1 > 1oplus 3 oplus 3oplus 1 = 0.\n\nInput:\n```\n2\n5 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n2 4 3\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n6\n8 1 3 3 1 2\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — elements of the array.",
+    "output": "Print a single integer — the length of the longest good subarray. If there are no good subarrays, print 0.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

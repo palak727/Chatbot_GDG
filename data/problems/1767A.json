@@ -1,0 +1,16 @@
+{
+    "id": "1767A",
+    "contest_id": 1767,
+    "problem_letter": "A",
+    "title": "A. Cut the Triangle",
+    "statement": "You are given a non-degenerate triangle (a non-degenerate triangle is a triangle with positive area). The vertices of the triangle have coordinates (x_1, y_1), (x_2, y_2) and (x_3, y_3).\n\nYou want to draw a straight line to cut the triangle into two non-degenerate triangles. Furthermore, the line you draw should be either horizontal or vertical.\n\nCan you draw the line to meet all the constraints?\n\nHere are some suitable ways to draw the line:\n\nHowever, these ways to draw the line are not suitable (the first line cuts the triangle into a triangle and a quadrangle; the second line doesn't cut the triangle at all; the third line is neither horizontal nor vertical):\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of four lines. The first of them is empty. The i-th of the next three lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ 10^8) — the coordinates of the i-th vertex of the triangle.\n\nAdditional constraint on the input: in each test case, the triangle formed by three vertices has positive area (i. e. it is non-degenerate).\n\nFor each test case, print YES if it is possible to cut the triangle according to the statement, or NO otherwise. You may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nInput:\n```\n4\n4 76 83 5\n4 54 76 8\n5 81 82 5\n3 66 66 3\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of four lines. The first of them is empty. The i-th of the next three lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ 10^8) — the coordinates of the i-th vertex of the triangle.\n\nAdditional constraint on the input: in each test case, the triangle formed by three vertices has positive area (i. e. it is non-degenerate).",
+    "output": "For each test case, print YES if it is possible to cut the triangle according to the statement, or NO otherwise. You may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

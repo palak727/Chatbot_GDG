@@ -1,0 +1,17 @@
+{
+    "id": "1208E",
+    "contest_id": 1208,
+    "problem_letter": "E",
+    "title": "E. Let Them Slide",
+    "statement": "You are given n arrays that can have different sizes. You also have a table with w columns and n rows. The i-th array is placed horizontally in the i-th row. You can slide each array within its row as long as it occupies several consecutive cells and lies completely inside the table.\n\nYou need to find the maximum sum of the integers in the j-th column for each j from 1 to w independently.\n\nNote that you can exclude any array out of a column provided it remains in the window. In this case its value is considered to be zero.\n\nThe first line contains two integers n (1 ≤ n ≤ 10^6) and w (1 ≤ w ≤ 10^6) — the number of arrays and the width of the table.\n\nEach of the next n lines consists of an integer l_i (1 ≤ l_i ≤ w), the length of the i-th array, followed by l_i integers a_i1, a_i2, …, a_il_i (-10^9 ≤ a_ij ≤ 10^9) — the elements of the array.\n\nThe total length of the arrays does no exceed 10^6.\n\nPrint w integers, the i-th of them should be the maximum sum for column i.\n\nIllustration for the first example is in the statement.\n\nInput:\n```\n3 3\n3 2 4 8\n2 2 5\n2 6 3\n```\n\nOutput:\n```\n10 15 16 \n```\n\nInput:\n```\n2 2\n2 7 8\n1 -8\n```\n\nOutput:\n```\n7 8 \n```",
+    "input": "The first line contains two integers n (1 ≤ n ≤ 10^6) and w (1 ≤ w ≤ 10^6) — the number of arrays and the width of the table.\n\nEach of the next n lines consists of an integer l_i (1 ≤ l_i ≤ w), the length of the i-th array, followed by l_i integers a_i1, a_i2, …, a_il_i (-10^9 ≤ a_ij ≤ 10^9) — the elements of the array.\n\nThe total length of the arrays does no exceed 10^6.",
+    "output": "Print w integers, the i-th of them should be the maximum sum for column i.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

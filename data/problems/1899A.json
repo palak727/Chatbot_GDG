@@ -1,0 +1,18 @@
+{
+    "id": "1899A",
+    "contest_id": 1899,
+    "problem_letter": "A",
+    "title": "A. Game with Integers",
+    "statement": "Vanya and Vova are playing a game. Players are given an integer n. On their turn, the player can add 1 to the current integer or subtract 1. The players take turns; Vanya starts. If after Vanya's move the integer is divisible by 3, then he wins. If 10 moves have passed and Vanya has not won, then Vova wins.\n\nWrite a program that, based on the integer n, determines who will win if both players play optimally.\n\nThe first line contains the integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe single line of each test case contains the integer n (1 ≤ n ≤ 1000).\n\nFor each test case, print \"First\" without quotes if Vanya wins, and \"Second\" without quotes if Vova wins.\n\nInput:\n```\n61351009991000\n```\n\nOutput:\n```\nFirst\nSecond\nFirst\nFirst\nSecond\nFirst\n```",
+    "input": "The first line contains the integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe single line of each test case contains the integer n (1 ≤ n ≤ 1000).",
+    "output": "For each test case, print \"First\" without quotes if Vanya wins, and \"Second\" without quotes if Vova wins.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1716F",
+    "contest_id": 1716,
+    "problem_letter": "F",
+    "title": "F. Bags with Balls",
+    "statement": "There are n bags, each bag contains m balls with numbers from 1 to m. For every i ∈ [1, m], there is exactly one ball with number i in each bag.\n\nYou have to take exactly one ball from each bag (all bags are different, so, for example, taking the ball 1 from the first bag and the ball 2 from the second bag is not the same as taking the ball 2 from the first bag and the ball 1 from the second bag). After that, you calculate the number of balls with odd numbers among the ones you have taken. Let the number of these balls be F.\n\nYour task is to calculate the sum of F^k over all possible ways to take n balls, one from each bag.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing three integers n, m and k (1 ≤ n, m ≤ 998244352; 1 ≤ k ≤ 2000).\n\nFor each test case, print one integer — the sum of F^k over all possible ways to take n balls, one from each bag. Since it can be huge, print it modulo 998244353.\n\nInput:\n```\n52 3 81 1 11 5 103 7 20001337666 42424242 2000\n```\n\nOutput:\n```\n1028\n1\n3\n729229716\n652219904\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing three integers n, m and k (1 ≤ n, m ≤ 998244352; 1 ≤ k ≤ 2000).",
+    "output": "For each test case, print one integer — the sum of F^k over all possible ways to take n balls, one from each bag. Since it can be huge, print it modulo 998244353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

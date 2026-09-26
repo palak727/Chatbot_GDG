@@ -1,0 +1,21 @@
+{
+    "id": "1687D",
+    "contest_id": 1687,
+    "problem_letter": "D",
+    "title": "D. Cute number",
+    "statement": "Ran Yakumo is a cute girl who loves creating cute Maths problems.\n\nLet f(x) be the minimal square number strictly greater than x, and g(x) be the maximal square number less than or equal to x. For example, f(1)=f(2)=g(4)=g(8)=4.\n\nA positive integer x is cute if x-g(x) < f(x)-x. For example, 1,5,11 are cute integers, while 3,8,15 are not.\n\nRan gives you an array a of length n. She wants you to find the smallest non-negative integer k such that a_i + k is a cute number for any element of a.\n\nThe first line contains one integer n (1 ≤ n ≤ 10^6) — the length of a.\n\nThe second line contains n intergers a_1,a_2,…,a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 2·10^6) — the array a.\n\nPrint a single interger k — the answer.\n\nTest case 1:\n\n3 is not cute integer, so k≠ 0.\n\n2,4,9,11 are cute integers, so k=1.\n\nInput:\n```\n4\n1 3 8 10\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n2 3 8 9 11\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n8\n1 2 3 4 5 6 7 8\n```\n\nOutput:\n```\n48\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^6) — the length of a.\n\nThe second line contains n intergers a_1,a_2,…,a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 2·10^6) — the array a.",
+    "output": "Print a single interger k — the answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dsu",
+        "implementation",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

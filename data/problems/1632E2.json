@@ -1,0 +1,19 @@
+{
+    "id": "1632E2",
+    "contest_id": 1632,
+    "problem_letter": "E2",
+    "title": "E2. Distance Tree (hard version)",
+    "statement": "This version of the problem differs from the previous one only in the constraint on n.\n\nA tree is a connected undirected graph without cycles. A weighted tree has a weight assigned to each edge. The distance between two vertices is the minimum sum of weights on the path connecting them.\n\nYou are given a weighted tree with n vertices, each edge has a weight of 1. Denote d(v) as the distance between vertex 1 and vertex v.\n\nLet f(x) be the minimum possible value of maxlimits_{1 ≤ v ≤ n} d(v) if you can temporarily add an edge with weight x between any two vertices a and b (1 ≤ a, b ≤ n). Note that after this operation, the graph is no longer a tree.\n\nFor each integer x from 1 to n, find f(x).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5).\n\nEach of the next n−1 lines contains two integers u and v (1 ≤ u,v ≤ n) indicating that there is an edge between vertices u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print n integers in a single line, x-th of which is equal to f(x) for all x from 1 to n.\n\nInput:\n```\n341 22 31 421 271 21 33 43 53 65 7\n```\n\nOutput:\n```\n1 2 2 2 \n1 1 \n2 2 3 3 3 3 3 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5).\n\nEach of the next n−1 lines contains two integers u and v (1 ≤ u,v ≤ n) indicating that there is an edge between vertices u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print n integers in a single line, x-th of which is equal to f(x) for all x from 1 to n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "shortest paths",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

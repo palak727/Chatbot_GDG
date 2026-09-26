@@ -1,0 +1,20 @@
+{
+    "id": "1355E",
+    "contest_id": 1355,
+    "problem_letter": "E",
+    "title": "E. Restorer Distance",
+    "statement": "You have to restore the wall. The wall consists of N pillars of bricks, the height of the i-th pillar is initially equal to h_i, the height is measured in number of bricks. After the restoration all the N pillars should have equal heights.\n\nYou are allowed the following operations:\n\nYou cannot create additional pillars or ignore some of pre-existing pillars even if their height becomes 0.\n\nWhat is the minimal total cost of restoration, in other words, what is the minimal total cost to make all the pillars of equal height?\n\nThe first line of input contains four integers N, A, R, M (1 ≤ N ≤ 10^5, 0 ≤ A, R, M ≤ 10^4) — the number of pillars and the costs of operations.\n\nThe second line contains N integers h_i (0 ≤ h_i ≤ 10^9) — initial heights of pillars.\n\nPrint one integer — the minimal cost of restoration.\n\nInput:\n```\n3 1 100 100\n1 3 8\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n3 100 1 100\n1 3 8\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n3 100 100 1\n1 3 8\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5 1 2 4\n5 5 3 6 5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5 1 2 2\n5 5 3 6 5\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line of input contains four integers N, A, R, M (1 ≤ N ≤ 10^5, 0 ≤ A, R, M ≤ 10^4) — the number of pillars and the costs of operations.\n\nThe second line contains N integers h_i (0 ≤ h_i ≤ 10^9) — initial heights of pillars.",
+    "output": "Print one integer — the minimal cost of restoration.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "sortings",
+        "ternary search",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1770A",
+    "contest_id": 1770,
+    "problem_letter": "A",
+    "title": "A. Koxia and Whiteboards",
+    "statement": "Kiyora has n whiteboards numbered from 1 to n. Initially, the i-th whiteboard has the integer a_i written on it.\n\nKoxia performs m operations. The j-th operation is to choose one of the whiteboards and change the integer written on it to b_j.\n\nFind the maximum possible sum of integers written on the whiteboards after performing all m operations.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).\n\nFor each test case, output a single integer — the maximum possible sum of integers written on whiteboards after performing all m operations.\n\nIn the first test case, Koxia can perform the operations as follows:\n\nAfter performing all operations, the numbers on the three whiteboards are 4, 5 and 3 respectively, and their sum is 12. It can be proven that this is the maximum possible sum achievable.\n\nIn the second test case, Koxia can perform the operations as follows:\n\nThe sum is 4 + 5 = 9. It can be proven that this is the maximum possible sum achievable.\n\nInput:\n```\n43 21 2 34 52 31 23 4 51 110015 31 1 1 1 11000000000 1000000000 1000000000\n```\n\nOutput:\n```\n12\n9\n1\n3000000002\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).",
+    "output": "For each test case, output a single integer — the maximum possible sum of integers written on whiteboards after performing all m operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1666I",
+    "contest_id": 1666,
+    "problem_letter": "I",
+    "title": "I. Interactive Treasure Hunt",
+    "statement": "This is an interactive problem.\n\nThere is a grid of n× m cells. Two treasure chests are buried in two different cells of the grid. Your task is to find both of them. You can make two types of operations:\n\nYou need to find the treasures in at most 7 operations. This includes both DIG and SCAN operations in total. To solve the test you need to call DIG operation at least once in both of the cells where the treasures are hidden.\n\nYour program has to process multiple test cases in a single run. First, the testing system writes t — the number of test cases (1≤ t ≤ 100). Then, t test cases should be processed one by one.\n\nIn each test case, your program should start by reading the integers n and m (2 ≤ n, m ≤ 16).\n\nThen, your program can make queries of two types:\n\nAfter you found both treasures, i. e. you received 1 for two DIG operations, your program should continue to the next test case or exit if that test case was the last one.\n\nInput:\n```\n1\n2 3\n\n1\n\n1\n\n3\n\n0\n\n1\n```\n\nOutput:\n```\nSCAN 1 2\n\nDIG 1 2\n\nSCAN 2 2\n\nDIG 1 1\n\nDIG 1 3\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "geometry",
+        "interactive",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

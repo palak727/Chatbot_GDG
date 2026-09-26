@@ -1,0 +1,22 @@
+{
+    "id": "1654F",
+    "contest_id": 1654,
+    "problem_letter": "F",
+    "title": "F. Minimal String Xoration",
+    "statement": "You are given an integer n and a string s consisting of 2^n lowercase letters of the English alphabet. The characters of the string s are s_0s_1s_2⋯ s_{2^n-1}.\n\nA string t of length 2^n (whose characters are denoted by t_0t_1t_2⋯ t_{2^n-1}) is a xoration of s if there exists an integer j (0≤ j ≤ 2^n-1) such that, for each 0 ≤ i ≤ 2^n-1, t_i = s_{i oplus j} (where oplus denotes the operation bitwise XOR).\n\nFind the lexicographically minimal xoration of s.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nThe first line contains a single integer n (1 ≤ n ≤ 18).\n\nThe second line contains a string s consisting of 2^n lowercase letters of the English alphabet.\n\nPrint a single line containing the lexicographically minimal xoration of s.\n\nIn the first test, the lexicographically minimal xoration t of s =\"acba\" is \"abca\". It's a xoration because, for j = 3,\n\nIn the second test, the minimal string xoration corresponds to choosing j = 4 in the definition of xoration.\n\nIn the third test, the minimal string xoration corresponds to choosing j = 11 in the definition of xoration.\n\nIn the fourth test, the minimal string xoration corresponds to choosing j = 10 in the definition of xoration.\n\nIn the fifth test, the minimal string xoration corresponds to choosing either j = 0 or j = 1 in the definition of xoration.\n\nInput:\n```\n2\nacba\n```\n\nOutput:\n```\nabca\n```\n\nInput:\n```\n3\nbcbaaabb\n```\n\nOutput:\n```\naabbbcba\n```\n\nInput:\n```\n4\nbdbcbccdbdbaaccd\n```\n\nOutput:\n```\nabdbdccacbdbdccb\n```\n\nInput:\n```\n5\nccfcffccccccffcfcfccfffffcccccff\n```\n\nOutput:\n```\ncccccffffcccccffccfcffcccccfffff\n```\n\nInput:\n```\n1\nzz\n```\n\nOutput:\n```\nzz\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 18).\n\nThe second line contains a string s consisting of 2^n lowercase letters of the English alphabet.",
+    "output": "Print a single line containing the lexicographically minimal xoration of s.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "hashing",
+        "sortings",
+        "strings",
+        "*2800"
+    ],
+    "rating": 2800
+}

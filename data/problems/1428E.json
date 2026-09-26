@@ -1,0 +1,20 @@
+{
+    "id": "1428E",
+    "contest_id": 1428,
+    "problem_letter": "E",
+    "title": "E. Carrots for Rabbits",
+    "statement": "There are some rabbits in Singapore Zoo. To feed them, Zookeeper bought n carrots with lengths a_1, a_2, a_3, …, a_n. However, rabbits are very fertile and multiply very quickly. Zookeeper now has k rabbits and does not have enough carrots to feed all of them. To solve this problem, Zookeeper decided to cut the carrots into k pieces. For some reason, all resulting carrot lengths must be positive integers.\n\nBig carrots are very difficult for rabbits to handle and eat, so the time needed to eat a carrot of size x is x^2.\n\nHelp Zookeeper split his carrots while minimizing the sum of time taken for rabbits to eat the carrots.\n\nThe first line contains two integers n and k (1 ≤ n ≤ k ≤ 10^5): the initial number of carrots and the number of rabbits.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6): lengths of carrots.\n\nIt is guaranteed that the sum of a_i is at least k.\n\nOutput one integer: the minimum sum of time taken for rabbits to eat carrots.\n\nFor the first test, the optimal sizes of carrots are {1,1,1,2,2,2}. The time taken is 1^2+1^2+1^2+2^2+2^2+2^2=15\n\nFor the second test, the optimal sizes of carrots are {4,5,5,5}. The time taken is 4^2+5^2+5^2+5^2=91.\n\nInput:\n```\n3 6\n5 3 1\n```\n\nOutput:\n```\n15\n```\n\nInput:\n```\n1 4\n19\n```\n\nOutput:\n```\n91\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ k ≤ 10^5): the initial number of carrots and the number of rabbits.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6): lengths of carrots.\n\nIt is guaranteed that the sum of a_i is at least k.",
+    "output": "Output one integer: the minimum sum of time taken for rabbits to eat carrots.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

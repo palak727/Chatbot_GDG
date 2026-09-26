@@ -1,0 +1,22 @@
+{
+    "id": "1400G",
+    "contest_id": 1400,
+    "problem_letter": "G",
+    "title": "G. Mercenaries",
+    "statement": "Polycarp plays a (yet another!) strategic computer game. In this game, he leads an army of mercenaries.\n\nPolycarp wants to gather his army for a quest. There are n mercenaries for hire, and the army should consist of some subset of them.\n\nThe i-th mercenary can be chosen if the resulting number of chosen mercenaries is not less than l_i (otherwise he deems the quest to be doomed) and not greater than r_i (he doesn't want to share the trophies with too many other mercenaries). Furthermore, m pairs of mercenaries hate each other and cannot be chosen for the same quest.\n\nHow many non-empty subsets does Polycarp need to consider? In other words, calculate the number of non-empty subsets of mercenaries such that the size of this subset belongs to [l_i, r_i] for each chosen mercenary, and there are no two mercenaries in the subset that hate each other.\n\nThe answer may be large, so calculate it modulo 998244353.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 3·10^5, 0 ≤ m ≤ min(20, (n(n-1))/2)) — the number of mercenaries and the number of pairs of mercenaries that hate each other.\n\nThen n lines follow, the i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThen m lines follow, the i-th of them contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) denoting that the mercenaries a_i and b_i hate each other. There are no two equal pairs in this list.\n\nPrint one integer — the number of non-empty subsets meeting the constraints, taken modulo 998244353.\n\nInput:\n```\n3 0\n1 1\n2 3\n1 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3 1\n1 1\n2 3\n1 3\n2 3\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 3·10^5, 0 ≤ m ≤ min(20, (n(n-1))/2)) — the number of mercenaries and the number of pairs of mercenaries that hate each other.\n\nThen n lines follow, the i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nThen m lines follow, the i-th of them contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) denoting that the mercenaries a_i and b_i hate each other. There are no two equal pairs in this list.",
+    "output": "Print one integer — the number of non-empty subsets meeting the constraints, taken modulo 998244353.",
+    "time_limit": "7 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "dp",
+        "dsu",
+        "math",
+        "two pointers",
+        "*2600"
+    ],
+    "rating": 2600
+}

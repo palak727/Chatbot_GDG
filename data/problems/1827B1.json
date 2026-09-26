@@ -1,0 +1,21 @@
+{
+    "id": "1827B1",
+    "contest_id": 1827,
+    "problem_letter": "B1",
+    "title": "B1. Range Sorting (Easy Version)",
+    "statement": "The only difference between this problem and the hard version is the constraints on t and n.\n\nYou are given an array a, consisting of n distinct integers a_1, a_2, …, a_n.\n\nDefine the beauty of an array p_1, p_2, … p_k as the minimum amount of time needed to sort this array using an arbitrary number of range-sort operations. In each range-sort operation, you will do the following:\n\nPlease calculate the sum of beauty over all subarrays of array a.\n\nA subarray of an array is defined as a sequence of consecutive elements of the array.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5·10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^3) — the length of the array a.\n\nThe second line of each test case consists of n integers a_1,a_2,…, a_n (1≤ a_i≤ 10^9). It is guaranteed that all elements of a are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^3.\n\nFor each test case, output the sum of beauty over all subarrays of array a.\n\nIn the first test case:\n\nIn the second test case:\n\nInput:\n```\n526 433 10 644 8 7 259 8 2 4 6122 6 13 3 15 5 10 8 16 9 11 18\n```\n\nOutput:\n```\n1\n2\n8\n16\n232\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5·10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^3) — the length of the array a.\n\nThe second line of each test case consists of n integers a_1,a_2,…, a_n (1≤ a_i≤ 10^9). It is guaranteed that all elements of a are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^3.",
+    "output": "For each test case, output the sum of beauty over all subarrays of array a.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "dsu",
+        "greedy",
+        "trees",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

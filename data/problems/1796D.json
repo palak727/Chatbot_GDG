@@ -1,0 +1,19 @@
+{
+    "id": "1796D",
+    "contest_id": 1796,
+    "problem_letter": "D",
+    "title": "D. Maximum Subarray",
+    "statement": "You are given an array a_1, a_2, …, a_n, consisting of n integers. You are also given two integers k and x.\n\nYou have to perform the following operation exactly once: add x to the elements on exactly k distinct positions, and subtract x from all the others.\n\nFor example, if a = [2, -1, 2, 3], k = 1, x = 2, and we have picked the first element, then after the operation the array a = [4, -3, 0, 1].\n\nLet f(a) be the maximum possible sum of a subarray of a. The subarray of a is a contiguous part of the array a, i. e. the array a_i, a_{i + 1}, …, a_j for some 1 ≤ i ≤ j ≤ n. An empty subarray should also be considered, it has sum 0.\n\nLet the array a' be the array a after applying the aforementioned operation. Apply the operation in such a way that f(a') is the maximum possible, and print the maximum possible value of f(a').\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k and x (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ min(20, n); -10^9 ≤ x ≤ 10^9).\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print one integer — the maximum possible value of f(a').\n\nInput:\n```\n44 1 22 -1 2 32 2 3-1 23 0 53 2 46 2 -84 -1 9 -3 7 -8\n```\n\nOutput:\n```\n5\n7\n0\n44\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k and x (1 ≤ n ≤ 2·10^5; 0 ≤ k ≤ min(20, n); -10^9 ≤ x ≤ 10^9).\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nThe sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print one integer — the maximum possible value of f(a').",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

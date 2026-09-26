@@ -1,0 +1,17 @@
+{
+    "id": "2036B",
+    "contest_id": 2036,
+    "problem_letter": "B",
+    "title": "B. Startup",
+    "statement": "Arseniy came up with another business plan — to sell soda from a vending machine! For this, he purchased a machine with n shelves, as well as k bottles, where the i-th bottle is characterized by the brand index b_i and the cost c_i.\n\nYou can place any number of bottles on each shelf, but all bottles on the same shelf must be of the same brand.\n\nArseniy knows that all the bottles he puts on the shelves of the machine will be sold. Therefore, he asked you to calculate the maximum amount he can earn.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 2·10^5), where n is the number of shelves in the machine, and k is the number of bottles available to Arseniy.\n\nThe next k lines contain two integers b_i and c_i (1 ≤ b_i ≤ k, 1 ≤ c_i ≤ 1000) — the brand and cost of the i-th bottle.\n\nIt is also guaranteed that the sum of n across all test cases does not exceed 2·10^5 and that the sum of k across all test cases also does not exceed 2·10^5.\n\nFor each test case, output one integer — the maximum amount that Arseniy can earn.\n\nIn the first test case, Arseniy has 3 shelves in the vending machine. He can place, for example, two bottles of the brand 2 on the first shelf and a bottle of the brand 1 on the second shelf. Then the total cost of the bottles would be 6 + 7 + 15 = 28.\n\nIn the second test case, he has only one shelf. It is not difficult to show that the optimal option is to place a bottle of the brand 1 on it. Then the total cost will be 15.\n\nIn the third test case, he has as many as 6 shelves, so he can place all available bottles with a total cost of 7 + 5 = 12.\n\nInput:\n```\n43 32 62 71 151 32 62 71 156 21 72 5190000 11 1000\n```\n\nOutput:\n```\n28\n15\n12\n1000\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 2·10^5), where n is the number of shelves in the machine, and k is the number of bottles available to Arseniy.\n\nThe next k lines contain two integers b_i and c_i (1 ≤ b_i ≤ k, 1 ≤ c_i ≤ 1000) — the brand and cost of the i-th bottle.\n\nIt is also guaranteed that the sum of n across all test cases does not exceed 2·10^5 and that the sum of k across all test cases also does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the maximum amount that Arseniy can earn.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

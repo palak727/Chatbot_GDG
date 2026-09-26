@@ -1,0 +1,19 @@
+{
+    "id": "1946E",
+    "contest_id": 1946,
+    "problem_letter": "E",
+    "title": "E. Girl Permutation",
+    "statement": "Some permutation of length n is guessed.\n\nYou are given the indices of its prefix maximums and suffix maximums.\n\nRecall that a permutation of length k is an array of size k such that each integer from 1 to k occurs exactly once.\n\nPrefix maximums are the elements that are the maximum on the prefix ending at that element. More formally, the element a_i is a prefix maximum if a_i > a_j for every j < i.\n\nSimilarly, suffix maximums are defined, the element a_i is a suffix maximum if a_i > a_j for every j > i.\n\nYou need to output the number of different permutations that could have been guessed.\n\nAs this number can be very large, output the answer modulo 10^9 + 7.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains three integers n, m_1 and m_2 (1 ≤ m_1, m_2 ≤ n ≤ 2·10^5) — the length of the permutation, the number of prefix maximums, and the number of suffix maximums, respectively.\n\nThe second line of each test case contains m_1 integers p_1 < p_2 < … < p_m_1 (1 ≤ p_i ≤ n) — the indices of the prefix maximums in increasing order.\n\nThe third line of each test case contains m_2 integers s_1 < s_2 < … < s_m_2 (1 ≤ s_i ≤ n) — the indices of the suffix maximums in increasing order.\n\nIt is guaranteed that the sum of the values of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer on a separate line — the number of suitable permutations modulo 10^9 + 7.\n\nThe following permutations are suitable for the second set of input data:\n\nThe following permutations are suitable for the sixth set of input data:\n\nInput:\n```\n61 1 1114 2 31 22 3 43 3 11 2 335 3 41 2 32 3 4 520 5 41 2 3 4 1212 13 18 206 2 31 33 4 6\n```\n\nOutput:\n```\n1\n3\n1\n0\n317580808\n10\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains three integers n, m_1 and m_2 (1 ≤ m_1, m_2 ≤ n ≤ 2·10^5) — the length of the permutation, the number of prefix maximums, and the number of suffix maximums, respectively.\n\nThe second line of each test case contains m_1 integers p_1 < p_2 < … < p_m_1 (1 ≤ p_i ≤ n) — the indices of the prefix maximums in increasing order.\n\nThe third line of each test case contains m_2 integers s_1 < s_2 < … < s_m_2 (1 ≤ s_i ≤ n) — the indices of the suffix maximums in increasing order.\n\nIt is guaranteed that the sum of the values of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer on a separate line — the number of suitable permutations modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

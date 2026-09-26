@@ -1,0 +1,17 @@
+{
+    "id": "1455A",
+    "contest_id": 1455,
+    "problem_letter": "A",
+    "title": "A. Strange Functions",
+    "statement": "Let's define a function f(x) (x is a positive integer) as follows: write all digits of the decimal representation of x backwards, then get rid of the leading zeroes. For example, f(321) = 123, f(120) = 21, f(1000000) = 1, f(111) = 111.\n\nLet's define another function g(x) = x/(f(f(x))) (x is a positive integer as well).\n\nYour task is the following: for the given positive integer n, calculate the number of different values of g(x) among all numbers x such that 1 ≤ x ≤ n.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n < 10^100). This integer is given without leading zeroes.\n\nFor each test case, print one integer — the number of different values of the function g(x), if x can be any integer from [1, n].\n\nExplanations for the two first test cases of the example:\n\nInput:\n```\n5\n4\n37\n998244353\n1000000007\n12345678901337426966631415\n```\n\nOutput:\n```\n1\n2\n9\n10\n26\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n < 10^100). This integer is given without leading zeroes.",
+    "output": "For each test case, print one integer — the number of different values of the function g(x), if x can be any integer from [1, n].",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

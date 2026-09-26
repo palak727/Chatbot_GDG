@@ -1,0 +1,18 @@
+{
+    "id": "1984G",
+    "contest_id": 1984,
+    "problem_letter": "G",
+    "title": "G. Magic Trick II",
+    "statement": "The secret behind Oscar's first magic trick has been revealed! Because he still wants to impress Lura, he comes up with a new idea: he still wants to sort a permutation p_1, p_2, …, p_n of [1, 2, …, n].\n\nThis time, he chooses an integer k. He wants to sort the permutation in non-decreasing order using the following operation several times:\n\nTo be as impressive as possible, Oscar would like to choose the maximal value of k such that he can sort his permutation. Please help him find the maximal k as well as a sequence of operations that will sort the permutation. You don't need to minimize the number of operations, but you are allowed to use at most 5n^2 operations.\n\nWe have a proof that, for the maximal k such that you can sort the permutation in any number of operations, you can also sort it in at most 5n^2 operations.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (5 ≤ n ≤ 10^3) — the length of the permutation.\n\nThe second line of each test case contains a permutation p_1, p_2, …, p_n of [1, 2, …, n].\n\nThe sum of n over all test cases does not exceed 2·10^3.\n\nFor each test case, first output the chosen value of k on a new line (1 ≤ k ≤ n).\n\nThen, output a single integer m — the number of operations used (0 ≤ m ≤ 5n^2).\n\nThen, on each of the next m lines, output the operations denoted by two integers i and j (1 ≤ i, j ≤ n - k + 1), representing an operation where you remove the subarray starting from index i and replace it back into p at index j.\n\nIn the first test case, it is enough to move the last four numbers to the front.\n\nIn the second test case, it can be shown that we cannot have k = 4 or k = 5. With k = 3, we can move the first three numbers to the end, and then the middle three to the front to sort the permutation.\n\nIn the third test case, the permutation is already sorted. We can have k = 6 and use no operations.\n\nInput:\n```\n355 1 2 3 452 3 5 4 161 2 3 4 5 6\n```\n\nOutput:\n```\n4\n1\n2 1\n3\n2\n1 3\n2 1\n6\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (5 ≤ n ≤ 10^3) — the length of the permutation.\n\nThe second line of each test case contains a permutation p_1, p_2, …, p_n of [1, 2, …, n].\n\nThe sum of n over all test cases does not exceed 2·10^3.",
+    "output": "For each test case, first output the chosen value of k on a new line (1 ≤ k ≤ n).\n\nThen, output a single integer m — the number of operations used (0 ≤ m ≤ 5n^2).\n\nThen, on each of the next m lines, output the operations denoted by two integers i and j (1 ≤ i, j ≤ n - k + 1), representing an operation where you remove the subarray starting from index i and replace it back into p at index j.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "sortings",
+        "*3200"
+    ],
+    "rating": 3200
+}

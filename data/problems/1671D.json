@@ -1,0 +1,18 @@
+{
+    "id": "1671D",
+    "contest_id": 1671,
+    "problem_letter": "D",
+    "title": "D. Insert a Progression",
+    "statement": "You are given a sequence of n integers a_1, a_2, …, a_n. You are also given x integers 1, 2, …, x.\n\nYou are asked to insert each of the extra integers into the sequence a. Each integer can be inserted at the beginning of the sequence, at the end of the sequence, or between any elements of the sequence.\n\nThe score of the resulting sequence a' is the sum of absolute differences of adjacent elements in it left(∑ limits_{i=1}^{n+x-1} |a'_i - a'_{i+1}|right).\n\nWhat is the smallest possible score of the resulting sequence a'?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and x (1 ≤ n, x ≤ 2·10^5) — the length of the sequence and the number of extra integers.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the smallest sum of absolute differences of adjacent elements of the sequence after you insert the extra integers into it.\n\nHere are the sequences with the smallest scores for the example. The underlined elements are the extra integers. Note that there exist other sequences with this smallest score.\n\nInput:\n```\n41 5103 87 2 1010 26 1 5 7 3 3 9 10 10 14 101 3 1 2\n```\n\nOutput:\n```\n9\n15\n31\n13\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and x (1 ≤ n, x ≤ 2·10^5) — the length of the sequence and the number of extra integers.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the smallest sum of absolute differences of adjacent elements of the sequence after you insert the extra integers into it.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1721A",
+    "contest_id": 1721,
+    "problem_letter": "A",
+    "title": "A. Image",
+    "statement": "You have an image file of size 2 × 2, consisting of 4 pixels. Each pixel can have one of 26 different colors, denoted by lowercase Latin letters.\n\nYou want to recolor some of the pixels of the image so that all 4 pixels have the same color. In one move, you can choose no more than two pixels of the same color and paint them into some other color (if you choose two pixels, both should be painted into the same color).\n\nWhat is the minimum number of moves you have to make in order to fulfill your goal?\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines. Each of these lines contains two lowercase letters of Latin alphabet without any separators, denoting a row of pixels in the image.\n\nFor each test case, print one integer — the minimum number of moves you have to make so that all 4 pixels of the image have the same color.\n\nLet's analyze the test cases of the example.\n\nIn the first test case, you can paint the bottom left pixel and the top right pixel (which share the same color) into the color r, so all pixels have this color.\n\nIn the second test case, two moves are enough:\n\nIn the third test case, all pixels already have the same color.\n\nIn the fourth test case, you may leave any of the pixels unchanged, and paint all three other pixels into the color of that pixel in three moves.\n\nIn the fifth test case, you can paint both top pixels into the color x.\n\nInput:\n```\n5rbbrccwbaaaaabcdyyxx\n```\n\nOutput:\n```\n1\n2\n0\n3\n1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines. Each of these lines contains two lowercase letters of Latin alphabet without any separators, denoting a row of pixels in the image.",
+    "output": "For each test case, print one integer — the minimum number of moves you have to make so that all 4 pixels of the image have the same color.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1437D",
+    "contest_id": 1437,
+    "problem_letter": "D",
+    "title": "D. Minimal Height Tree",
+    "statement": "Monocarp had a tree which consisted of n vertices and was rooted at vertex 1. He decided to study BFS (Breadth-first search), so he ran BFS on his tree, starting from the root. BFS can be described by the following pseudocode:\n\n```\na = [] # the order in which vertices were processed\nq = Queue()\nq.put(1) # place the root at the end of the queue\nwhile not q.empty():\n    k = q.pop() # retrieve the first vertex from the queue\n    a.append(k) # append k to the end of the sequence in which vertices were visited\n    for y in g[k]: # g[k] is the list of all children of vertex k, sorted in ascending order\n        q.put(y)\n```\n\nMonocarp was fascinated by BFS so much that, in the end, he lost his tree. Fortunately, he still has a sequence of vertices, in which order vertices were visited by the BFS algorithm (the array a from the pseudocode). Monocarp knows that each vertex was visited exactly once (since they were put and taken from the queue exactly once). Also, he knows that all children of each vertex were viewed in ascending order.\n\nMonocarp knows that there are many trees (in the general case) with the same visiting order a, so he doesn't hope to restore his tree. Monocarp is okay with any tree that has minimum height.\n\nThe height of a tree is the maximum depth of the tree's vertices, and the depth of a vertex is the number of edges in the path from the root to it. For example, the depth of vertex 1 is 0, since it's the root, and the depth of all root's children are 1.\n\nHelp Monocarp to find any tree with given visiting order a and minimum height.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n; a_i ≠ a_j; a_1 = 1) — the order in which the vertices were visited by the BFS algorithm.\n\nIt's guaranteed that the total sum of n over test cases doesn't exceed 2·10^5.\n\nFor each test case print the minimum possible height of a tree with the given visiting order a.\n\nIn the first test case, there is only one tree with the given visiting order:\n\nIn the second test case, there is only one tree with the given visiting order as well:\n\nIn the third test case, an optimal tree with the given visiting order is shown below:\n\nInput:\n```\n3\n4\n1 4 3 2\n2\n1 2\n3\n1 2 3\n```\n\nOutput:\n```\n3\n1\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n; a_i ≠ a_j; a_1 = 1) — the order in which the vertices were visited by the BFS algorithm.\n\nIt's guaranteed that the total sum of n over test cases doesn't exceed 2·10^5.",
+    "output": "For each test case print the minimum possible height of a tree with the given visiting order a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

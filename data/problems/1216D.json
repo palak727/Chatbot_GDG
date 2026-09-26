@@ -1,0 +1,16 @@
+{
+    "id": "1216D",
+    "contest_id": 1216,
+    "problem_letter": "D",
+    "title": "D. Swords",
+    "statement": "There were n types of swords in the theater basement which had been used during the plays. Moreover there were exactly x swords of each type. y people have broken into the theater basement and each of them has taken exactly z swords of some single type. Note that different people might have taken different types of swords. Note that the values x, y and z are unknown for you.\n\nThe next morning the director of the theater discovers the loss. He counts all swords — exactly a_i swords of the i-th type are left untouched.\n\nThe director has no clue about the initial number of swords of each type in the basement, the number of people who have broken into the basement and how many swords each of them have taken.\n\nFor example, if n=3, a = [3, 12, 6] then one of the possible situations is x=12, y=5 and z=3. Then the first three people took swords of the first type and the other two people took swords of the third type. Note that you don't know values x, y and z beforehand but know values of n and a.\n\nThus he seeks for your help. Determine the minimum number of people y, which could have broken into the theater basement, and the number of swords z each of them has taken.\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of types of swords.\n\nThe second line of the input contains the sequence a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i equals to the number of swords of the i-th type, which have remained in the basement after the theft. It is guaranteed that there exists at least one such pair of indices (j, k) that a_j ≠ a_k.\n\nPrint two integers y and z — the minimum number of people which could have broken into the basement and the number of swords each of them has taken.\n\nIn the first example the minimum value of y equals to 5, i.e. the minimum number of people who could have broken into the basement, is 5. Each of them has taken 3 swords: three of them have taken 3 swords of the first type, and two others have taken 3 swords of the third type.\n\nIn the second example the minimum value of y is 1, i.e. the minimum number of people who could have broken into the basement, equals to 1. He has taken 7 swords of the first type.\n\nInput:\n```\n3\n3 12 6\n```\n\nOutput:\n```\n5 3\n```\n\nInput:\n```\n2\n2 9\n```\n\nOutput:\n```\n1 7\n```\n\nInput:\n```\n7\n2 1000000000 4 6 8 4 2\n```\n\nOutput:\n```\n2999999987 2\n```\n\nInput:\n```\n6\n13 52 0 13 26 52\n```\n\nOutput:\n```\n12 13\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of types of swords.\n\nThe second line of the input contains the sequence a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i equals to the number of swords of the i-th type, which have remained in the basement after the theft. It is guaranteed that there exists at least one such pair of indices (j, k) that a_j ≠ a_k.",
+    "output": "Print two integers y and z — the minimum number of people which could have broken into the basement and the number of swords each of them has taken.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

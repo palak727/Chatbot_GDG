@@ -1,0 +1,17 @@
+{
+    "id": "1203E",
+    "contest_id": 1203,
+    "problem_letter": "E",
+    "title": "E. Boxers",
+    "statement": "There are n boxers, the weight of the i-th boxer is a_i. Each of them can change the weight by no more than 1 before the competition (the weight cannot become equal to zero, that is, it must remain positive). Weight is always an integer number.\n\nIt is necessary to choose the largest boxing team in terms of the number of people, that all the boxers' weights in the team are different (i.e. unique).\n\nWrite a program that for given current values ​a_i will find the maximum possible number of boxers in a team.\n\nIt is possible that after some change the weight of some boxer is 150001 (but no more).\n\nThe first line contains an integer n (1 ≤ n ≤ 150000) — the number of boxers. The next line contains n integers a_1, a_2, …, a_n, where a_i (1 ≤ a_i ≤ 150000) is the weight of the i-th boxer.\n\nPrint a single integer — the maximum possible number of people in a team.\n\nIn the first example, boxers should not change their weights — you can just make a team out of all of them.\n\nIn the second example, one boxer with a weight of 1 can be increased by one (get the weight of 2), one boxer with a weight of 4 can be reduced by one, and the other can be increased by one (resulting the boxers with a weight of 3 and 5, respectively). Thus, you can get a team consisting of boxers with weights of 5, 4, 3, 2, 1.\n\nInput:\n```\n4\n3 2 4 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6\n1 1 1 4 4 4\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 150000) — the number of boxers. The next line contains n integers a_1, a_2, …, a_n, where a_i (1 ≤ a_i ≤ 150000) is the weight of the i-th boxer.",
+    "output": "Print a single integer — the maximum possible number of people in a team.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

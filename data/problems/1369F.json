@@ -1,0 +1,18 @@
+{
+    "id": "1369F",
+    "contest_id": 1369,
+    "problem_letter": "F",
+    "title": "F. BareLee",
+    "statement": "Lee is used to finish his stories in a stylish way, this time he barely failed it, but Ice Bear came and helped him. Lee is so grateful for it, so he decided to show Ice Bear his new game called \"Critic\"...\n\nThe game is a one versus one game. It has t rounds, each round has two integers s_i and e_i (which are determined and are known before the game begins, s_i and e_i may differ from round to round). The integer s_i is written on the board at the beginning of the corresponding round.\n\nThe players will take turns. Each player will erase the number on the board (let's say it was a) and will choose to write either 2·a or a + 1 instead. Whoever writes a number strictly greater than e_i loses that round and the other one wins that round.\n\nNow Lee wants to play \"Critic\" against Ice Bear, for each round he has chosen the round's s_i and e_i in advance. Lee will start the first round, the loser of each round will start the next round.\n\nThe winner of the last round is the winner of the game, and the loser of the last round is the loser of the game.\n\nDetermine if Lee can be the winner independent of Ice Bear's moves or not. Also, determine if Lee can be the loser independent of Ice Bear's moves or not.\n\nThe first line contains the integer t (1 ≤ t ≤ 10^5) — the number of rounds the game has.\n\nThen t lines follow, each contains two integers s_i and e_i (1 ≤ s_i ≤ e_i ≤ 10^18) — the i-th round's information.\n\nThe rounds are played in the same order as given in input, s_i and e_i for all rounds are known to everyone before the game starts.\n\nPrint two integers.\n\nThe first one should be 1 if Lee can be the winner independent of Ice Bear's moves, and 0 otherwise.\n\nThe second one should be 1 if Lee can be the loser independent of Ice Bear's moves, and 0 otherwise.\n\nRemember, whoever writes an integer greater than e_i loses.\n\nInput:\n```\n3\n5 8\n1 4\n3 10\n```\n\nOutput:\n```\n1 1\n```\n\nInput:\n```\n4\n1 2\n2 3\n3 4\n4 5\n```\n\nOutput:\n```\n0 0\n```\n\nInput:\n```\n1\n1 1\n```\n\nOutput:\n```\n0 1\n```\n\nInput:\n```\n2\n1 9\n4 5\n```\n\nOutput:\n```\n0 0\n```\n\nInput:\n```\n2\n1 2\n2 8\n```\n\nOutput:\n```\n1 0\n```\n\nInput:\n```\n6\n216986951114298167 235031205335543871\n148302405431848579 455670351549314242\n506251128322958430 575521452907339082\n1 768614336404564650\n189336074809158272 622104412002885672\n588320087414024192 662540324268197150\n```\n\nOutput:\n```\n1 0\n```",
+    "input": "The first line contains the integer t (1 ≤ t ≤ 10^5) — the number of rounds the game has.\n\nThen t lines follow, each contains two integers s_i and e_i (1 ≤ s_i ≤ e_i ≤ 10^18) — the i-th round's information.\n\nThe rounds are played in the same order as given in input, s_i and e_i for all rounds are known to everyone before the game starts.",
+    "output": "Print two integers.\n\nThe first one should be 1 if Lee can be the winner independent of Ice Bear's moves, and 0 otherwise.\n\nThe second one should be 1 if Lee can be the loser independent of Ice Bear's moves, and 0 otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1889A",
+    "contest_id": 1889,
+    "problem_letter": "A",
+    "title": "A. Qingshan Loves Strings 2",
+    "statement": "Qingshan has a string s which only contains texttt0 and texttt1.\n\nA string a of length k is good if and only if\n\nFor Div. 2 contestants, note that this condition is different from the condition in problem B.\n\nFor example, texttt10, texttt1010, texttt111000 are good, while texttt11, texttt101, texttt001, texttt001100 are not good.\n\nQingshan wants to make s good. To do this, she can do the following operation at most 300 times (possibly, zero):\n\nPlease tell Qingshan if it is possible to make s good. If it is possible, print a sequence of operations that makes s good.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n≤ 100) — the length of string s, respectively.\n\nThe second line of each test case contains a string s with length n.\n\nIt is guaranteed that s only consists of texttt0 and texttt1.\n\nFor each test case, if it impossible to make s good, output -1.\n\nOtherwise, output p (0 ≤ p ≤ 300) — the number of operations, in the first line.\n\nThen, output p integers in the second line. The i-th integer should be an index x_i (0 ≤ x_i ≤ n+2i-2) — the position where you want to insert texttt01 in the current s. If x_i=0, you insert texttt01 at the beginning of s. Otherwise, you insert texttt01 immediately after the x_i-th character of s.\n\nWe can show that under the constraints in this problem, if an answer exists, there is always an answer that requires at most 300 operations.\n\nIn the first test case, you can do zero operations and get s=texttt01, which is good.\n\nAnother valid solution is to do one operation: (the inserted texttt01 is underlined)\n\nand get s = texttt0011, which is good.\n\nIn the second and the third test case, it is impossible to make s good.\n\nIn the fourth test case, you can do two operations:\n\nand get s = texttt0011100011, which is good.\n\nInput:\n```\n620130004111160011101001110011003001\n```\n\nOutput:\n```\n0\n\n-1\n-1\n2\n6 7\n1\n10\n-1\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n≤ 100) — the length of string s, respectively.\n\nThe second line of each test case contains a string s with length n.\n\nIt is guaranteed that s only consists of texttt0 and texttt1.",
+    "output": "For each test case, if it impossible to make s good, output -1.\n\nOtherwise, output p (0 ≤ p ≤ 300) — the number of operations, in the first line.\n\nThen, output p integers in the second line. The i-th integer should be an index x_i (0 ≤ x_i ≤ n+2i-2) — the position where you want to insert texttt01 in the current s. If x_i=0, you insert texttt01 at the beginning of s. Otherwise, you insert texttt01 immediately after the x_i-th character of s.\n\nWe can show that under the constraints in this problem, if an answer exists, there is always an answer that requires at most 300 operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

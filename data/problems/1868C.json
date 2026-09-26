@@ -1,0 +1,20 @@
+{
+    "id": "1868C",
+    "contest_id": 1868,
+    "problem_letter": "C",
+    "title": "C. Travel Plan",
+    "statement": "During the summer vacation after Zhongkao examination, Tom and Daniel are planning to go traveling.\n\nThere are n cities in their country, numbered from 1 to n. And the traffic system in the country is very special. For each city i (1 ≤ i ≤ n), there is\n\nMaking a travel plan, Daniel chooses some integer value between 1 and m for each city, for the i-th city we denote it by a_i.\n\nLet s_{i,j} be the maximum value of cities in the simple^dagger path between cities i and j. The score of the travel plan is ∑_{i=1}^n∑_{j=i}^n s_{i,j}.\n\nTom wants to know the sum of scores of all possible travel plans. Daniel asks you to help him find it. You just need to tell him the answer modulo 998,244,353.\n\n^dagger A simple path between cities x and y is a path between them that passes through each city at most once.\n\nThe first line of input contains a single integer t (1≤ t≤ 200) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (1≤ n≤ 10^18, 1≤ m≤ 10^5) — the number of the cities and the maximum value of a city.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.\n\nFor each test case output one integer — the sum of scores of all possible travel plans, modulo 998,244,353.\n\nIn the first test case, there is only one possible travel plan:\n\nPath 1→ 1: s_{1,1}=a_1=1.\n\nPath 1→ 2: s_{1,2}=max(1,1)=1.\n\nPath 1→ 3: s_{1,3}=max(1,1)=1.\n\nPath 2→ 2: s_{2,2}=a_2=1.\n\nPath 2→ 1→ 3: s_{2,3}=max(1,1,1)=1.\n\nPath 3→ 3: s_{3,3}=a_3=1.\n\nThe score is 1+1+1+1+1+1=6.\n\nIn the second test case, there are four possible travel plans:\n\nScore of plan 1: 1+1+1=3.\n\nScore of plan 2: 1+2+2=5.\n\nScore of plan 3: 2+2+1=5.\n\nScore of plan 4: 2+2+2=6.\n\nTherefore, the sum of score is 3+5+5+6=19.\n\nInput:\n```\n53 12 210 943 20154 147\n```\n\nOutput:\n```\n6\n19\n583217643\n68816635\n714002110\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 200) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (1≤ n≤ 10^18, 1≤ m≤ 10^5) — the number of the cities and the maximum value of a city.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.",
+    "output": "For each test case output one integer — the sum of scores of all possible travel plans, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "implementation",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1569B",
+    "contest_id": 1569,
+    "problem_letter": "B",
+    "title": "B. Chess Tournament",
+    "statement": "A chess tournament will be held soon, where n chess players will take part. Every participant will play one game against every other participant. Each game ends in either a win for one player and a loss for another player, or a draw for both players.\n\nEach of the players has their own expectations about the tournament, they can be one of two types:\n\nYou have to determine if there exists an outcome for all the matches such that all the players meet their expectations. If there are several possible outcomes, print any of them. If there are none, report that it's impossible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 200) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 50) — the number of chess players.\n\nThe second line contains the string s (|s| = n; s_i ∈ {1, 2}). If s_i = 1, then the i-th player has expectations of the first type, otherwise of the second type.\n\nFor each test case, print the answer in the following format:\n\nIn the first line, print NO if it is impossible to meet the expectations of all players.\n\nOtherwise, print YES, and the matrix of size n × n in the next n lines.\n\nThe matrix element in the i-th row and j-th column should be equal to:\n\nInput:\n```\n3\n3\n111\n2\n21\n4\n2122\n```\n\nOutput:\n```\nYES\nX==\n=X=\n==X\nNO\nYES\nX--+\n+X++\n+-X-\n--+X\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 200) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 50) — the number of chess players.\n\nThe second line contains the string s (|s| = n; s_i ∈ {1, 2}). If s_i = 1, then the i-th player has expectations of the first type, otherwise of the second type.",
+    "output": "For each test case, print the answer in the following format:\n\nIn the first line, print NO if it is impossible to meet the expectations of all players.\n\nOtherwise, print YES, and the matrix of size n × n in the next n lines.\n\nThe matrix element in the i-th row and j-th column should be equal to:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1000"
+    ],
+    "rating": 1000
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2049D",
+    "contest_id": 2049,
+    "problem_letter": "D",
+    "title": "D. Shift + Esc",
+    "statement": "After having fun with a certain contraption and getting caught, Evirir the dragon decides to put their magical skills to good use — warping reality to escape fast!\n\nYou are given a grid with n rows and m columns of non-negative integers and an integer k. Let (i, j) denote the cell in the i-th row from the top and j-th column from the left (1 ≤ i ≤ n, 1 ≤ j ≤ m). For every cell (i, j), the integer a_{i, j} is written on the cell (i, j).\n\nYou are initially at (1, 1) and want to go to (n, m). You may only move down or right. That is, if you are at (i, j), you can only move to (i+1, j) or (i, j+1) (if the corresponding cell exists).\n\nBefore you begin moving, you may do the following operation any number of times:\n\nAfter moving from (1, 1) to (n, m), let x be the number of operations you have performed before moving, and let y be the sum of the integers written on visited cells (including (1, 1) and (n, m)). Then the cost is defined as kx + y.\n\nFind the minimum cost to move from (1, 1) to (n, m).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line contains three space-separated integers n, m, and k (1 ≤ n, m ≤ 200, 0 ≤ k ≤ 10^9).\n\nThen, n lines follow. The i-th line contains m space-separated integers, a_{i,1},,a_{i,2},,…,,a_{i,m} (0 ≤ a_{i,j} ≤ 10^9).\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5·10^4.\n\nFor each test case, output a single integer, the minimum cost to move from (1, 1) to (n, m).\n\nIn the first test case, the minimum cost of 113 can be achieved as follows:\n\nx = 1 operation is done before moving. The sum of integers on visited cells is y = 3 + 4 + 2 + 4 + 0 = 13. Therefore, the cost is kx + y = 100·1 + 13 = 113.\n\nIn the second test case, one can shift row 1 once, row 2 twice, and row 3 thrice. Then, the grid becomes beginbmatrix0 & 0 & 10 & 10 10 & 0 & 0 & 0 10 & 10 & 10 & 0endbmatrix.\n\nx = 6 operations were done before moving, and there is a path of cost y = 0. Therefore, the cost is 6·1 + 0 = 6.\n\nInput:\n```\n53 3 1003 4 95 2 40 101 1013 4 110 0 0 100 0 10 010 10 0 101 1 343 2 31 23 65 410 10 1458 49 25 12 89 69 8 49 71 2345 27 65 59 36 100 73 23 5 8482 91 54 92 53 15 43 46 11 6561 69 71 87 67 72 51 42 55 801 64 8 54 61 70 47 100 84 5086 93 43 51 47 35 56 20 33 61100 59 5 68 15 55 69 8 8 6033 61 20 79 69 51 23 24 56 2867 76 3 69 58 79 75 10 65 636 64 73 79 17 62 55 53 61 58\n```\n\nOutput:\n```\n113\n6\n4\n13\n618\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line contains three space-separated integers n, m, and k (1 ≤ n, m ≤ 200, 0 ≤ k ≤ 10^9).\n\nThen, n lines follow. The i-th line contains m space-separated integers, a_{i,1},,a_{i,2},,…,,a_{i,m} (0 ≤ a_{i,j} ≤ 10^9).\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5·10^4.",
+    "output": "For each test case, output a single integer, the minimum cost to move from (1, 1) to (n, m).",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "*1900"
+    ],
+    "rating": 1900
+}

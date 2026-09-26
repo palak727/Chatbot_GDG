@@ -1,0 +1,18 @@
+{
+    "id": "1426F",
+    "contest_id": 1426,
+    "problem_letter": "F",
+    "title": "F. Number of Subsequences",
+    "statement": "You are given a string s consisting of lowercase Latin letters \"a\", \"b\" and \"c\" and question marks \"?\".\n\nLet the number of question marks in the string s be k. Let's replace each question mark with one of the letters \"a\", \"b\" and \"c\". Here we can obtain all 3^k possible strings consisting only of letters \"a\", \"b\" and \"c\". For example, if s = \"ac?b?c\" then we can obtain the following strings: [\"acabac\", \"acabbc\", \"acabcc\", \"acbbac\", \"acbbbc\", \"acbbcc\", \"accbac\", \"accbbc\", \"accbcc\"].\n\nYour task is to count the total number of subsequences \"abc\" in all resulting strings. Since the answer can be very large, print it modulo 10^9 + 7.\n\nA subsequence of the string t is such a sequence that can be derived from the string t after removing some (possibly, zero) number of letters without changing the order of remaining letters. For example, the string \"baacbc\" contains two subsequences \"abc\" — a subsequence consisting of letters at positions (2, 5, 6) and a subsequence consisting of letters at positions (3, 5, 6).\n\nThe first line of the input contains one integer n (3 ≤ n ≤ 200,000) — the length of s.\n\nThe second line of the input contains the string s of length n consisting of lowercase Latin letters \"a\", \"b\" and \"c\" and question marks\"?\".\n\nPrint the total number of subsequences \"abc\" in all strings you can obtain if you replace all question marks with letters \"a\", \"b\" and \"c\", modulo 10^9 + 7.\n\nIn the first example, we can obtain 9 strings:\n\nSo, there are 2 + 4 + 4 + 2 + 3 + 4 + 1 + 2 + 2 = 24 subsequences \"abc\" in total.\n\nInput:\n```\n6\nac?b?c\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\n7\n???????\n```\n\nOutput:\n```\n2835\n```\n\nInput:\n```\n9\ncccbbbaaa\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n5\na???c\n```\n\nOutput:\n```\n46\n```",
+    "input": "The first line of the input contains one integer n (3 ≤ n ≤ 200,000) — the length of s.\n\nThe second line of the input contains the string s of length n consisting of lowercase Latin letters \"a\", \"b\" and \"c\" and question marks\"?\".",
+    "output": "Print the total number of subsequences \"abc\" in all strings you can obtain if you replace all question marks with letters \"a\", \"b\" and \"c\", modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

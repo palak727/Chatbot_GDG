@@ -1,0 +1,18 @@
+{
+    "id": "1930F",
+    "contest_id": 1930,
+    "problem_letter": "F",
+    "title": "F. Maximize the Difference",
+    "statement": "For an array b of m non-negative integers, define f(b) as the maximum value of maxlimits_{i = 1}^m (b_i | x) - minlimits_{i = 1}^m (b_i | x) over all possible non-negative integers x, where | is bitwise OR operation.\n\nYou are given integers n and q. You start with an empty array a. Process the following q queries:\n\nThe queries are given in a modified way.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 2^22, 1 ≤ q ≤ 10^6) — the number of queries.\n\nThe second line of each test case contains q space-separated integers e_1,e_2,…,e_q (0 ≤ e_i < n) — the encrypted values of v.\n\nLet last_i equal the output of the (i-1)-th query for i≥ 2 and last_i=0 for i=1. Then the value of v for the i-th query is (e_i + last_i) modulo n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2^22 and the sum of q over all test cases does not exceed 10^6.\n\nFor each test case, print q integers. The i-th integer is the output of the i-th query.\n\nIn the first test case, the final a=[1,2]. For i=1, the answer is always 0, irrespective of x. For i=2, we can select x=5.\n\nIn the second test case, the final a=[3,1,0,5].\n\nInput:\n```\n25 21 27 43 1 5 2\n```\n\nOutput:\n```\n0 2\n0 2 3 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 2^22, 1 ≤ q ≤ 10^6) — the number of queries.\n\nThe second line of each test case contains q space-separated integers e_1,e_2,…,e_q (0 ≤ e_i < n) — the encrypted values of v.\n\nLet last_i equal the output of the (i-1)-th query for i≥ 2 and last_i=0 for i=1. Then the value of v for the i-th query is (e_i + last_i) modulo n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2^22 and the sum of q over all test cases does not exceed 10^6.",
+    "output": "For each test case, print q integers. The i-th integer is the output of the i-th query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1991E",
+    "contest_id": 1991,
+    "problem_letter": "E",
+    "title": "E. Coloring Game",
+    "statement": "This is an interactive problem.\n\nConsider an undirected connected graph consisting of n vertices and m edges. Each vertex can be colored with one of three colors: 1, 2, or 3. Initially, all vertices are uncolored.\n\nAlice and Bob are playing a game consisting of n rounds. In each round, the following two-step process happens:\n\nAlice wins if there exists an edge connecting two vertices of the same color. Otherwise, Bob wins.\n\nYou are given the graph. Your task is to decide which player you wish to play as and win the game.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 10^4, n - 1 ≤ m ≤ min((n·(n - 1))/2, 10^4)) — the number of vertices and the number of edges in the graph, respectively.\n\nEach of the next m lines of each test case contains two integers u_i, v_i (1 ≤ u_i, v_i ≤ n) — the edges of the graph. It is guaranteed that the graph is connected and there are no multiple edges or self-loops.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 10^4.\n\nFor each test case, you need to output a single line containing either \"Alice\" or \"Bob\", representing the player you choose.\n\nThen for each of the following n rounds, the following two-step process happens:\n\nIf any of your outputs are invalid, the jury will output \"-1\" and you will receive a Wrong Answer verdict.\n\nAt the end of all n turns, if you have lost the game, the jury will output \"-1\" and you will receive a Wrong Answer verdict.\n\nIf your program has received a -1 instead of a valid value, it must terminate immediately. Otherwise, you may receive an arbitrary verdict because your solution might be reading from a closed stream.\n\nNote that if you are playing as Alice, and there already exists an edge connected two vertices of the same color, the interactor will not terminate early and you will keep playing all n rounds.\n\nAfter outputting, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nIn this problem, hacks are disabled.\n\nNote that the sample test cases are example games and do not necessarily represent the optimal strategy for both players.\n\nIn the first test case, you choose to play as Alice.\n\nAlice wins because the edge (3, 1) connects two vertices of the same color.\n\nIn the second test case, you choose to play as Bob.\n\nBob wins because there are no edges with vertices of the same color.\n\nInput:\n```\n2\n3 3\n1 2\n2 3\n3 1\n\n\n3 1\n\n2 2\n\n1 1\n4 4\n1 2\n2 3\n3 4\n4 1\n\n2 3\n\n1 2\n\n2 1\n\n3 1\n```\n\nOutput:\n```\nAlice\n3 1\n\n1 2\n\n2 1\n\n\n\n\n\n\nBob\n\n1 2\n\n2 1\n\n4 1\n\n3 3\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 10^4, n - 1 ≤ m ≤ min((n·(n - 1))/2, 10^4)) — the number of vertices and the number of edges in the graph, respectively.\n\nEach of the next m lines of each test case contains two integers u_i, v_i (1 ≤ u_i, v_i ≤ n) — the edges of the graph. It is guaranteed that the graph is connected and there are no multiple edges or self-loops.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 10^4.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "games",
+        "graphs",
+        "greedy",
+        "interactive",
+        "*1900"
+    ],
+    "rating": 1900
+}

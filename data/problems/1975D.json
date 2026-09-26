@@ -1,0 +1,21 @@
+{
+    "id": "1975D",
+    "contest_id": 1975,
+    "problem_letter": "D",
+    "title": "D. Paint the Tree",
+    "statement": "378QAQ has a tree with n vertices. Initially, all vertices are white.\n\nThere are two chess pieces called P_A and P_B on the tree. P_A and P_B are initially located on vertices a and b respectively. In one step, 378QAQ will do the following in order:\n\nInitially, the vertex a is painted red. If a=b, the vertex a is painted blue instead. Note that both the chess pieces must be moved in each step. Two pieces can be on the same vertex at any given time.\n\n378QAQ wants to know the minimum number of steps to paint all vertices blue.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains two integers a and b (1≤ a,b≤ n).\n\nThen n - 1 lines follow, each line contains two integers x_i and y_i (1 ≤ x_i,y_i ≤ n), indicating an edge between vertices x_i and y_i. It is guaranteed that these edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the minimum number of steps to paint all vertices blue.\n\nIn the first test case, 378QAQ can paint all vertices blue in the following order:\n\nInput:\n```\n321 21 251 21 21 31 41 585 47 11 51 88 37 28 63 4\n```\n\nOutput:\n```\n2\n8\n13\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains two integers a and b (1≤ a,b≤ n).\n\nThen n - 1 lines follow, each line contains two integers x_i and y_i (1 ≤ x_i,y_i ≤ n), indicating an edge between vertices x_i and y_i. It is guaranteed that these edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the minimum number of steps to paint all vertices blue.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "shortest paths",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

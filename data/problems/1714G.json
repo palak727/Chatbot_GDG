@@ -1,0 +1,19 @@
+{
+    "id": "1714G",
+    "contest_id": 1714,
+    "problem_letter": "G",
+    "title": "G. Path Prefixes",
+    "statement": "You are given a rooted tree. It contains n vertices, which are numbered from 1 to n. The root is the vertex 1.\n\nEach edge has two positive integer values. Thus, two positive integers a_j and b_j are given for each edge.\n\nOutput n-1 numbers r_2, r_3, …, r_n, where r_i is defined as follows.\n\nConsider the path from the root (vertex 1) to i (2 ≤ i ≤ n). Let the sum of the costs of a_j along this path be A_i. Then r_i is equal to the length of the maximum prefix of this path such that the sum of b_j along this prefix does not exceed A_i.\n\nConsider an example. In this case:\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe descriptions of test cases follow.\n\nEach description begins with a line that contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThis is followed by n-1 string, each of which contains three numbers p_j, a_j, b_j (1 ≤ p_j ≤ n; 1 ≤ a_j,b_j ≤ 10^9) — the ancestor of the vertex j, the first and second values an edge that leads from p_j to j. The value of j runs through all values from 2 to n inclusive. It is guaranteed that each set of input data has a correct hanged tree with a root at the vertex 1.\n\nIt is guaranteed that the sum of n over all input test cases does not exceed 2·10^5.\n\nFor each test case, output n-1 integer in one line: r_2, r_3, …, r_n.\n\nThe first example is clarified in the statement.\n\nIn the second example:\n\nInput:\n```\n491 5 64 5 12 9 104 2 11 2 12 3 36 4 38 1 341 1 1002 1 13 101 141 100 12 1 13 1 101101 1 42 3 52 5 13 4 33 1 55 3 55 2 11 3 26 2 1\n```\n\nOutput:\n```\n0 3 1 2 1 1 2 3 \n0 0 3 \n1 2 2 \n0 1 2 1 1 2 2 1 1 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe descriptions of test cases follow.\n\nEach description begins with a line that contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThis is followed by n-1 string, each of which contains three numbers p_j, a_j, b_j (1 ≤ p_j ≤ n; 1 ≤ a_j,b_j ≤ 10^9) — the ancestor of the vertex j, the first and second values an edge that leads from p_j to j. The value of j runs through all values from 2 to n inclusive. It is guaranteed that each set of input data has a correct hanged tree with a root at the vertex 1.\n\nIt is guaranteed that the sum of n over all input test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n-1 integer in one line: r_2, r_3, …, r_n.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1704B",
+    "contest_id": 1704,
+    "problem_letter": "B",
+    "title": "B. Luke is a Foodie",
+    "statement": "Luke likes to eat. There are n piles of food aligned in a straight line in front of him. The i-th pile contains a_i units of food.\n\nLuke will walk from the 1-st pile towards the n-th pile, and he wants to eat every pile of food without walking back. When Luke reaches the i-th pile, he can eat that pile if and only if |v - a_i| ≤ x, where x is a fixed integer, and v is Luke's food affinity.\n\nBefore Luke starts to walk, he can set v to any integer. Also, for each i (1 ≤ i ≤ n), Luke can change his food affinity to any integer before he eats the i-th pile.\n\nFind the minimum number of changes needed to eat every pile of food.\n\nNote that the initial choice for v is not considered as a change.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nFor each test case, the first line contains two integers, n, x (1 ≤ n ≤ 2·10^5, 1 ≤ x ≤ 10^9) — the number of piles, and the maximum difference between the size of a pile and Luke's food affinity, such that Luke can eat the pile.\n\nThe second line contains n integers a_1, a_2, … , a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer on a separate line, which is the minimum number of changes needed.\n\nIn the first test case, Luke can set v to 5 before he starts to walk. And he can walk straight to eat every piles of food without changing v.\n\nIn the second test case, Luke can set v to 3 before he starts to walk. And he could change v to 10 before he eats the second pile. After that, he can walk straight to eat remaining food without changing v.\n\nIn the fourth test case, Luke can set v to 3 before he starts to walk. And he could change v to 8 before he eats the sixth pile. After that, he can walk straight to eat remaining food without changing v.\n\nIn the fifth test case, Luke can set v to 4 before he starts to walk. And he could change v to 6 before he eats the fourth pile. Then he could change v to 12 before he eats the seventh pile. After that, he can walk straight to eat remaining food without changing v.\n\nInput:\n```\n75 33 8 5 6 75 33 10 9 8 712 825 3 3 17 8 6 1 16 15 25 17 2310 21 2 3 4 5 6 7 8 9 108 22 4 6 8 6 4 12 148 22 7 8 9 6 13 21 2815 511 4 13 23 7 10 5 21 20 11 17 5 29 16 11\n```\n\nOutput:\n```\n0\n1\n2\n1\n2\n4\n6\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nFor each test case, the first line contains two integers, n, x (1 ≤ n ≤ 2·10^5, 1 ≤ x ≤ 10^9) — the number of piles, and the maximum difference between the size of a pile and Luke's food affinity, such that Luke can eat the pile.\n\nThe second line contains n integers a_1, a_2, … , a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer on a separate line, which is the minimum number of changes needed.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

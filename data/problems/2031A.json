@@ -1,0 +1,19 @@
+{
+    "id": "2031A",
+    "contest_id": 2031,
+    "problem_letter": "A",
+    "title": "A. Penchick and Modern Monument",
+    "statement": "Amidst skyscrapers in the bustling metropolis of Metro Manila, the newest Noiph mall in the Philippines has just been completed! The construction manager, Penchick, ordered a state-of-the-art monument to be built with n pillars.\n\nThe heights of the monument's pillars can be represented as an array h of n positive integers, where h_i represents the height of the i-th pillar for all i between 1 and n.\n\nPenchick wants the heights of the pillars to be in non-decreasing order, i.e. h_i ≤ h_{i + 1} for all i between 1 and n - 1. However, due to confusion, the monument was built such that the heights of the pillars are in non-increasing order instead, i.e. h_i ≥ h_{i + 1} for all i between 1 and n - 1.\n\nLuckily, Penchick can modify the monument and do the following operation on the pillars as many times as necessary:\n\nHelp Penchick determine the minimum number of operations needed to make the heights of the monument's pillars non-decreasing.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of pillars.\n\nThe second line of each test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ n and h_i≥ h_{i+1}) — the height of the pillars.\n\nPlease take note that the given array h is non-increasing.\n\nNote that there are no constraints on the sum of n over all test cases.\n\nFor each test case, output a single integer representing the minimum number of operations needed to make the heights of the pillars non-decreasing.\n\nIn the first test case, the initial heights of pillars are h = [5, 4, 3, 2, 1].\n\nAfter the operation, the heights of the pillars are h = [2, 2, 3, 4, 4], which is non-decreasing. It can be proven that it is not possible for Penchick to make the heights of the pillars non-decreasing in fewer than 4 operations.\n\nIn the second test case, Penchick can make the heights of the pillars non-decreasing by modifying the height of pillar 3 to h_3 := 2.\n\nIn the third test case, the heights of pillars are already non-decreasing, so no operations are required.\n\nInput:\n```\n355 4 3 2 132 2 111\n```\n\nOutput:\n```\n4\n1\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of pillars.\n\nThe second line of each test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ n and h_i≥ h_{i+1}) — the height of the pillars.\n\nPlease take note that the given array h is non-increasing.\n\nNote that there are no constraints on the sum of n over all test cases.",
+    "output": "For each test case, output a single integer representing the minimum number of operations needed to make the heights of the pillars non-decreasing.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

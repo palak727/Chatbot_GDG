@@ -1,0 +1,19 @@
+{
+    "id": "1697F",
+    "contest_id": 1697,
+    "problem_letter": "F",
+    "title": "F. Too Many Constraints",
+    "statement": "You are asked to build an array a, consisting of n integers, each element should be from 1 to k.\n\nThe array should be non-decreasing (a_i ≤ a_{i+1} for all i from 1 to n-1).\n\nYou are also given additional constraints on it. Each constraint is of one of three following types:\n\nBuild any non-decreasing array that satisfies all constraints or report that no such array exists.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains three integers n, m and k (2 ≤ n ≤ 2·10^4; 0 ≤ m ≤ 2·10^4; 2 ≤ k ≤ 10).\n\nThe i-th of the next m lines contains a description of a constraint. Each constraint is of one of three following types:\n\nThe sum of n over all testcases doesn't exceed 2·10^4. The sum of m over all testcases doesn't exceed 2·10^4.\n\nFor each testcase, determine if there exists a non-decreasing array that satisfies all conditions. If there is no such array, then print -1. Otherwise, print any valid array — n integers from 1 to k.\n\nInput:\n```\n44 0 42 2 33 1 2 31 2 23 3 21 1 12 2 3 23 2 3 25 5 53 2 5 72 4 5 103 4 5 63 3 4 72 1 5 7\n```\n\nOutput:\n```\n1 2 3 4\n1 3\n-1\n1 2 2 5 5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains three integers n, m and k (2 ≤ n ≤ 2·10^4; 0 ≤ m ≤ 2·10^4; 2 ≤ k ≤ 10).\n\nThe i-th of the next m lines contains a description of a constraint. Each constraint is of one of three following types:\n\nThe sum of n over all testcases doesn't exceed 2·10^4. The sum of m over all testcases doesn't exceed 2·10^4.",
+    "output": "For each testcase, determine if there exists a non-decreasing array that satisfies all conditions. If there is no such array, then print -1. Otherwise, print any valid array — n integers from 1 to k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "2-sat",
+        "constructive algorithms",
+        "graphs",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

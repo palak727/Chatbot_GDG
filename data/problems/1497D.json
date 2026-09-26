@@ -1,0 +1,19 @@
+{
+    "id": "1497D",
+    "contest_id": 1497,
+    "problem_letter": "D",
+    "title": "D. Genius",
+    "statement": "Please note the non-standard memory limit.\n\nThere are n problems numbered with integers from 1 to n. i-th problem has the complexity c_i = 2^i, tag tag_i and score s_i.\n\nAfter solving the problem i it's allowed to solve problem j if and only if IQ < |c_i - c_j| and tag_i ≠ tag_j. After solving it your IQ changes and becomes IQ = |c_i - c_j| and you gain |s_i - s_j| points.\n\nAny problem can be the first. You can solve problems in any order and as many times as you want.\n\nInitially your IQ = 0. Find the maximum number of points that can be earned.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of problems.\n\nThe second line of each test case contains n integers tag_1, tag_2, …, tag_n (1 ≤ tag_i ≤ n) — tags of the problems.\n\nThe third line of each test case contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ 10^9) — scores of the problems.\n\nIt's guaranteed that sum of n over all test cases does not exceed 5000.\n\nFor each test case print a single integer — the maximum number of points that can be earned.\n\nIn the first test case optimal sequence of solving problems is as follows:\n\nIn the second test case optimal sequence of solving problems is as follows:\n\nIn the third test case optimal sequence of solving problems is as follows:\n\nInput:\n```\n5\n4\n1 2 3 4\n5 10 15 20\n4\n1 2 1 2\n5 10 15 20\n4\n2 2 4 1\n2 8 19 1\n2\n1 1\n6 9\n1\n1\n666\n```\n\nOutput:\n```\n35\n30\n42\n0\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of problems.\n\nThe second line of each test case contains n integers tag_1, tag_2, …, tag_n (1 ≤ tag_i ≤ n) — tags of the problems.\n\nThe third line of each test case contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ 10^9) — scores of the problems.\n\nIt's guaranteed that sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case print a single integer — the maximum number of points that can be earned.",
+    "time_limit": "2 seconds",
+    "memory_limit": "32 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "graphs",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

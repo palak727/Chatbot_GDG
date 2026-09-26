@@ -3,7 +3,7 @@
     "contest_id": 1002,
     "problem_letter": "E1",
     "title": "E1. Bernstein-Vazirani algorithm",
-    "statement": "You are given a quantum oracle - an operation on N + 1 qubits which implements a function . You are guaranteed that the function f implemented by the oracle is scalar product function (oracle from problem D1):\n\nHere (an array of N integers, each of which can be 0 or 1).\n\nYour task is to reconstruct the array . Your code is allowed to call the given oracle only once.\n\nYou have to implement an operation which takes the following inputs:\n\nThe return of your operation is an array of integers of length N , each of them 0 or 1.\n\nYour code should have the following signature:",
+    "statement": "You are given a quantum oracle - an operation on N + 1 qubits which implements a function . You are guaranteed that the function f implemented by the oracle is scalar product function (oracle from problem D1):\n\nHere (an array of N integers, each of which can be 0 or 1).\n\nYour task is to reconstruct the array . Your code is allowed to call the given oracle only once.\n\nYou have to implement an operation which takes the following inputs:\n\nThe return of your operation is an array of integers of length N, each of them 0 or 1.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (N : Int, Uf : ((Qubit[], Qubit) => ())) : Int[]\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "input": "",
     "output": "",
     "time_limit": "2 seconds",

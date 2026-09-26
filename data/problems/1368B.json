@@ -1,0 +1,20 @@
+{
+    "id": "1368B",
+    "contest_id": 1368,
+    "problem_letter": "B",
+    "title": "B. Codeforces Subsequences",
+    "statement": "Karl likes Codeforces and subsequences. He wants to find a string of lowercase English letters that contains at least k subsequences codeforces. Out of all possible strings, Karl wants to find a shortest one.\n\nFormally, a codeforces subsequence of a string s is a subset of ten characters of s that read codeforces from left to right. For example, codeforces contains codeforces a single time, while codeforcesisawesome contains codeforces four times: codeforcesisawesome, codeforcesisawesome, codeforcesisawesome, codeforcesisawesome.\n\nHelp Karl find any shortest string that contains at least k codeforces subsequences.\n\nThe only line contains a single integer k (1 ≤ k ≤ 10^16).\n\nPrint a shortest string of lowercase English letters that contains at least k codeforces subsequences. If there are several such strings, print any of them.\n\nInput:\n```\n1\n```\n\nOutput:\n```\ncodeforces\n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\ncodeforcesss\n```",
+    "input": "The only line contains a single integer k (1 ≤ k ≤ 10^16).",
+    "output": "Print a shortest string of lowercase English letters that contains at least k codeforces subsequences. If there are several such strings, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

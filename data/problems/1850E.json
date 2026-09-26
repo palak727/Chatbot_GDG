@@ -1,0 +1,19 @@
+{
+    "id": "1850E",
+    "contest_id": 1850,
+    "problem_letter": "E",
+    "title": "E. Cardboard for Pictures",
+    "statement": "Mircea has n pictures. The i-th picture is a square with a side length of s_i centimeters.\n\nHe mounted each picture on a square piece of cardboard so that each picture has a border of w centimeters of cardboard on all sides. In total, he used c square centimeters of cardboard. Given the picture sizes and the value c, can you find the value of w?\n\nPlease note that the piece of cardboard goes behind each picture, not just the border.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and c (1 ≤ c ≤ 10^18) — the number of paintings, and the amount of used square centimeters of cardboard.\n\nThe second line of each test case contains n space-separated integers s_i (1 ≤ s_i ≤ 10^4) — the sizes of the paintings.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nAdditional constraint on the input: Such an integer w exists for each test case.\n\nPlease note, that some of the input for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).\n\nFor each test case, output a single integer — the value of w (w ≥ 1) which was used to use exactly c squared centimeters of cardboard.\n\nThe first test case is explained in the statement.\n\nFor the second test case, the chosen w was 2, thus the only cardboard covers an area of c = (2·2 + 6)^2 = 10^2 = 100 squared centimeters.\n\nFor the third test case, the chosen w was 4, which obtains the covered area c = (2·4 + 2)^2 × 5 = 10^2 × 5 = 100 × 5 = 500 squared centimeters.\n\nInput:\n```\n10\n3 50\n3 2 1\n1 100\n6\n5 500\n2 2 2 2 2\n2 365\n3 4\n2 469077255466389\n10000 2023\n10 635472106413848880\n9181 4243 7777 1859 2017 4397 14 9390 2245 7225\n7 176345687772781240\n9202 9407 9229 6257 7743 5738 7966\n14 865563946464579627\n3654 5483 1657 7571 1639 9815 122 9468 3079 2666 5498 4540 7861 5384\n19 977162053008871403\n9169 9520 9209 9013 9300 9843 9933 9454 9960 9167 9964 9701 9251 9404 9462 9277 9661 9164 9161\n18 886531871815571953\n2609 10 5098 9591 949 8485 6385 4586 1064 5412 6564 8460 2245 6552 5089 8353 3803 3764\n```\n\nOutput:\n```\n1\n2\n4\n5\n7654321\n126040443\n79356352\n124321725\n113385729\n110961227\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and c (1 ≤ c ≤ 10^18) — the number of paintings, and the amount of used square centimeters of cardboard.\n\nThe second line of each test case contains n space-separated integers s_i (1 ≤ s_i ≤ 10^4) — the sizes of the paintings.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nAdditional constraint on the input: Such an integer w exists for each test case.\n\nPlease note, that some of the input for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).",
+    "output": "For each test case, output a single integer — the value of w (w ≥ 1) which was used to use exactly c squared centimeters of cardboard.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "geometry",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

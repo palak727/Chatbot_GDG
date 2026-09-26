@@ -1,0 +1,21 @@
+{
+    "id": "2037G",
+    "contest_id": 2037,
+    "problem_letter": "G",
+    "title": "G. Natlan Exploring",
+    "statement": "You are exploring the stunning region of Natlan! This region consists of n cities, and each city is rated with an attractiveness a_i. A directed edge exists from City i to City j if and only if i < j and gcd(a_i,a_j)≠ 1, where gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.\n\nStarting from City 1, your task is to determine the total number of distinct paths you can take to reach City n, modulo 998,244,353. Two paths are different if and only if the set of cities visited is different.\n\nThe first line contains an integer n (2 ≤ n ≤ 2·10^5) — the number of cities.\n\nThe second line contains n integers a_1, a_2, …, a_n (2 ≤ a_i ≤ 10^6) — the attractiveness of each city.\n\nOutput the total number of distinct paths you can take to reach City n, modulo 998,244,353.\n\nIn the first example, the five paths are the following:\n\nIn the second example, the two paths are the following:\n\nInput:\n```\n52 6 3 4 6\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n54 196 2662 2197 121\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n73 6 8 9 11 12 20\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n22 3\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains an integer n (2 ≤ n ≤ 2·10^5) — the number of cities.\n\nThe second line contains n integers a_1, a_2, …, a_n (2 ≤ a_i ≤ 10^6) — the attractiveness of each city.",
+    "output": "Output the total number of distinct paths you can take to reach City n, modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "data structures",
+        "dp",
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

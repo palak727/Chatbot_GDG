@@ -1,0 +1,17 @@
+{
+    "id": "1056B",
+    "contest_id": 1056,
+    "problem_letter": "B",
+    "title": "B. Divide Candies",
+    "statement": "Arkady and his friends love playing checkers on an n × n field. The rows and the columns of the field are enumerated from 1 to n.\n\nThe friends have recently won a championship, so Arkady wants to please them with some candies. Remembering an old parable (but not its moral), Arkady wants to give to his friends one set of candies per each cell of the field: the set of candies for cell (i, j) will have exactly (i^2 + j^2) candies of unique type.\n\nThere are m friends who deserve the present. How many of these n × n sets of candies can be split equally into m parts without cutting a candy into pieces? Note that each set has to be split independently since the types of candies in different sets are different.\n\nThe only line contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 1000) — the size of the field and the number of parts to split the sets into.\n\nPrint a single integer — the number of sets that can be split equally.\n\nIn the first example, only the set for cell (3, 3) can be split equally (3^2 + 3^2 = 18, which is divisible by m=3).\n\nIn the second example, the sets for the following cells can be divided equally:\n\nIn the third example, sets in all cells can be divided equally, since m = 1.\n\nInput:\n```\n3 3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n6 5\n```\n\nOutput:\n```\n13\n```\n\nInput:\n```\n1000000000 1\n```\n\nOutput:\n```\n1000000000000000000\n```",
+    "input": "The only line contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 1000) — the size of the field and the number of parts to split the sets into.",
+    "output": "Print a single integer — the number of sets that can be split equally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1828A",
+    "contest_id": 1828,
+    "problem_letter": "A",
+    "title": "A. Divisible Array",
+    "statement": "You are given a positive integer n. Please find an array a_1, a_2, …, a_n that is perfect.\n\nA perfect array a_1, a_2, …, a_n satisfies the following criteria:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe only line of each test case contains a single positive integer n (1 ≤ n ≤ 200) — the length of the array a.\n\nFor each test case, output an array a_1, a_2, …, a_n that is perfect.\n\nWe can show that an answer always exists. If there are multiple solutions, print any.\n\nIn the third test case:\n\nIn the fifth test case:\n\nInput:\n```\n71234567\n```\n\nOutput:\n```\n1\n2 4\n1 2 3\n2 8 6 4\n3 4 9 4 5\n1 10 18 8 5 36\n3 6 21 24 10 6 14\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe only line of each test case contains a single positive integer n (1 ≤ n ≤ 200) — the length of the array a.",
+    "output": "For each test case, output an array a_1, a_2, …, a_n that is perfect.\n\nWe can show that an answer always exists. If there are multiple solutions, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

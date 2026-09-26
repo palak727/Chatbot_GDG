@@ -1,0 +1,19 @@
+{
+    "id": "1896C",
+    "contest_id": 1896,
+    "problem_letter": "C",
+    "title": "C. Matching Arrays",
+    "statement": "You are given two arrays a and b of size n. The beauty of the arrays a and b is the number of indices i such that a_i > b_i.\n\nYou are also given an integer x. Determine whether it is possible to rearrange the elements of b such that the beauty of the arrays becomes x. If it is possible, output one valid rearrangement of b.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 2·10^5, 0 ≤ x ≤ n) — the size of arrays a and b and the desired beauty of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n) — the elements of array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n) — the elements of array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"NO\" if it is not possible to rearrange b to make the beauty of the arrays equal to x.\n\nOtherwise, output \"YES\". Then, on the next line, output n integers which represent the rearrangement of b.\n\nIf there are multiple solutions, you may output any of them.\n\nYou can output \"YES\" and \"NO\" in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn test cases 1 and 2, the beauty of the arrays has to be 0 since a_1 = 1 ≤ 2 = b_1.\n\nIn test cases 3, 4, 5 and 6, the only possible beauty of the arrays is x = 1 and x = 2. In particular, if b is rearranged to [2, 4, 1], then a_3 = 3 > 1 = b_3, so the beauty of the arrays is 1. If b is kept in the same order as given the input, then a_2 = 4 > b_2 = 1 and a_3 = 3 > 2 = b_3, so the beauty of the arrays is 2.\n\nInput:\n```\n71 0121 1123 02 4 34 1 23 12 4 34 1 23 22 4 34 1 23 32 4 34 1 25 26 4 5 6 29 7 9 1 1\n```\n\nOutput:\n```\nYES\n2\nNO\nNO\nYES\n2 4 1\nYES\n4 1 2\nNO\nYES\n1 9 9 7 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 2·10^5, 0 ≤ x ≤ n) — the size of arrays a and b and the desired beauty of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n) — the elements of array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n) — the elements of array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"NO\" if it is not possible to rearrange b to make the beauty of the arrays equal to x.\n\nOtherwise, output \"YES\". Then, on the next line, output n integers which represent the rearrangement of b.\n\nIf there are multiple solutions, you may output any of them.\n\nYou can output \"YES\" and \"NO\" in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

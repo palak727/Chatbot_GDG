@@ -1,0 +1,17 @@
+{
+    "id": "1616B",
+    "contest_id": 1616,
+    "problem_letter": "B",
+    "title": "B. Mirror in the String",
+    "statement": "You have a string s_1 s_2 … s_n and you stand on the left of the string looking right. You want to choose an index k (1 ≤ k ≤ n) and place a mirror after the k-th letter, so that what you see is s_1 s_2 … s_k s_k s_{k - 1} … s_1. What is the lexicographically smallest string you can see?\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nThe first line of input contains one integer t (1 ≤ t ≤ 10,000): the number of test cases.\n\nThe next t lines contain the description of the test cases, two lines per a test case.\n\nIn the first line you are given one integer n (1 ≤ n ≤ 10^5): the length of the string.\n\nThe second line contains the string s consisting of n lowercase English characters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case print the lexicographically smallest string you can see.\n\nIn the first test case choose k = 1 to obtain \"cc\".\n\nIn the second test case choose k = 3 to obtain \"cbaabc\".\n\nIn the third test case choose k = 1 to obtain \"aa\".\n\nIn the fourth test case choose k = 1 to obtain \"bb\".\n\nInput:\n```\n4\n10\ncodeforces\n9\ncbacbacba\n3\naaa\n4\nbbaa\n```\n\nOutput:\n```\ncc\ncbaabc\naa\nbb\n```",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 10,000): the number of test cases.\n\nThe next t lines contain the description of the test cases, two lines per a test case.\n\nIn the first line you are given one integer n (1 ≤ n ≤ 10^5): the length of the string.\n\nThe second line contains the string s consisting of n lowercase English characters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print the lexicographically smallest string you can see.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

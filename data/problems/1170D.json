@@ -1,0 +1,17 @@
+{
+    "id": "1170D",
+    "contest_id": 1170,
+    "problem_letter": "D",
+    "title": "D. Decoding of Integer Sequences",
+    "statement": "Polycarp is developing a method for transmitting n integer sequences over a network. This method should support the transmission of an arbitrary number of integer sequences; sequences can have different lengths. The sequences contain arbitrary non-negative integers.\n\nPolycarp developed the following encoding procedure:\n\nFor example, if you want to encode three sequences [3, 1, 4], [2, 7] and [1, 2, 3, 4], then the sequence of actions will be as follows:\n\nYour task is to implement decoding by a given encoding result.\n\nThe first line contains integer number m (1 ≤ m ≤ 3·10^5), denoting the length of the encoding result. The second line contains the result of encoding as a sequence of integers b_1, b_2, …, b_m (-1 ≤ b_i ≤ 100).\n\nIt is guaranteed that in the initial sequences before encoding contains only non-negative integers from 0 to 100, that you are in fact given the result of correct encoding (in other words, it is guaranteed that the answer exists). It is possible that one or more initial sequences were empty before encoding.\n\nPrint n, where n is the number of encoded sequences. Then print n lines in the format k_i, a_i1, a_i2, …, a_ik_i, where k_i is the length of the i-th sequence, and a_i1, a_i2, …, a_ik_i are its elements. Separate the numbers in the lines with spaces. Please note that the encoding procedure is such that every possible encoding result can be decoded in only one way.\n\nInput:\n```\n12\n3 2 1 1 7 2 4 -1 3 -1 4 -1\n```\n\nOutput:\n```\n3\n3 3 1 4\n2 2 7\n4 1 2 3 4\n```\n\nInput:\n```\n6\n2 -1 2 -1 3 -1\n```\n\nOutput:\n```\n3\n1 2\n0\n2 2 3\n```",
+    "input": "The first line contains integer number m (1 ≤ m ≤ 3·10^5), denoting the length of the encoding result. The second line contains the result of encoding as a sequence of integers b_1, b_2, …, b_m (-1 ≤ b_i ≤ 100).\n\nIt is guaranteed that in the initial sequences before encoding contains only non-negative integers from 0 to 100, that you are in fact given the result of correct encoding (in other words, it is guaranteed that the answer exists). It is possible that one or more initial sequences were empty before encoding.",
+    "output": "Print n, where n is the number of encoded sequences. Then print n lines in the format k_i, a_i1, a_i2, …, a_ik_i, where k_i is the length of the i-th sequence, and a_i1, a_i2, …, a_ik_i are its elements. Separate the numbers in the lines with spaces. Please note that the encoding procedure is such that every possible encoding result can be decoded in only one way.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "implementation"
+    ],
+    "rating": null
+}

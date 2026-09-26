@@ -1,0 +1,17 @@
+{
+    "id": "1455F",
+    "contest_id": 1455,
+    "problem_letter": "F",
+    "title": "F. String and Operations",
+    "statement": "You are given a string s consisting of n characters. These characters are among the first k lowercase letters of the Latin alphabet. You have to perform n operations with the string.\n\nDuring the i-th operation, you take the character that initially occupied the i-th position, and perform one of the following actions with it:\n\nFor example, suppose the initial string is test, k = 20, and the sequence of operations is URLD. Then the string is transformed as follows:\n\nThe result of performing the sequence of operations is saes.\n\nGiven the string s and the value of k, find the lexicographically smallest string that can be obtained after applying a sequence of operations to s.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and k (1 ≤ n ≤ 500; 2 ≤ k ≤ 26).\n\nThe second line contains a string s consisting of n characters. Each character is one of the k first letters of the Latin alphabet (in lower case).\n\nFor each test case, print one line containing the lexicographically smallest string that can be obtained from s using one sequence of operations.\n\nInput:\n```\n6\n4 2\nbbab\n7 5\ncceddda\n6 5\necdaed\n7 4\ndcdbdaa\n8 3\nccabbaca\n5 7\neabba\n```\n\nOutput:\n```\naaaa\nbaccacd\naabdac\naabacad\naaaaaaaa\nabadb\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and k (1 ≤ n ≤ 500; 2 ≤ k ≤ 26).\n\nThe second line contains a string s consisting of n characters. Each character is one of the k first letters of the Latin alphabet (in lower case).",
+    "output": "For each test case, print one line containing the lexicographically smallest string that can be obtained from s using one sequence of operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*2800"
+    ],
+    "rating": 2800
+}

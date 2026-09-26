@@ -1,0 +1,16 @@
+{
+    "id": "1950B",
+    "contest_id": 1950,
+    "problem_letter": "B",
+    "title": "B. Upscaling",
+    "statement": "You are given an integer n. Output a 2n × 2n checkerboard made of 2 × 2 squares alternating 'texttt#' and 'texttt.', with the top-left cell being 'texttt#'.\n\nThe picture above shows the answers for n=1,2,3,4.\n\nThe first line contains an integer t (1 ≤ t ≤ 20) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 20) — it means you need to output a checkerboard of side length 2n.\n\nFor each test case, output 2n lines, each containing 2n characters without spaces — the checkerboard, as described in the statement. Do not output empty lines between test cases.\n\nInput:\n```\n41234\n```\n\nOutput:\n```\n##\n##\n##..\n##..\n..##\n..##\n##..##\n##..##\n..##..\n..##..\n##..##\n##..##\n##..##..\n##..##..\n..##..##\n..##..##\n##..##..\n##..##..\n..##..##\n..##..##\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 20) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 20) — it means you need to output a checkerboard of side length 2n.",
+    "output": "For each test case, output 2n lines, each containing 2n characters without spaces — the checkerboard, as described in the statement. Do not output empty lines between test cases.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1301F",
+    "contest_id": 1301,
+    "problem_letter": "F",
+    "title": "F. Super Jaber",
+    "statement": "Jaber is a superhero in a large country that can be described as a grid with n rows and m columns, where every cell in that grid contains a different city.\n\nJaber gave every city in that country a specific color between 1 and k. In one second he can go from the current city to any of the cities adjacent by the side or to any city with the same color as the current city color.\n\nJaber has to do q missions. In every mission he will be in the city at row r_1 and column c_1, and he should help someone in the city at row r_2 and column c_2.\n\nJaber wants your help to tell him the minimum possible time to go from the starting city to the finishing city for every mission.\n\nThe first line contains three integers n, m and k (1 ≤ n, m ≤ 1000, 1 ≤ k ≤ min(40 , n·m)) — the number of rows, columns and colors.\n\nEach of the next n lines contains m integers. In the i-th line, the j-th integer is a_ij (1 ≤ a_ij ≤ k), which is the color assigned to the city in the i-th row and j-th column.\n\nThe next line contains one integer q (1 ≤ q ≤ 10^5) — the number of missions.\n\nFor the next q lines, every line contains four integers r_1, c_1, r_2, c_2 (1 ≤ r_1 , r_2 ≤ n, 1 ≤ c_1 , c_2 ≤ m) — the coordinates of the starting and the finishing cities of the corresponding mission.\n\nIt is guaranteed that for every color between 1 and k there is at least one city of that color.\n\nFor every mission print the minimum possible time to reach city at the cell (r_2, c_2) starting from city at the cell (r_1, c_1).\n\nIn the first example:\n\nIn the second example:\n\nInput:\n```\n3 4 5\n1 2 1 3\n4 4 5 5\n1 2 1 3\n2\n1 1 3 4\n2 2 2 2\n```\n\nOutput:\n```\n2\n0\n```\n\nInput:\n```\n4 4 8\n1 2 2 8\n1 3 4 7\n5 1 7 6\n2 3 8 8\n4\n1 1 2 2\n1 1 3 4\n1 1 2 4\n1 1 4 4\n```\n\nOutput:\n```\n2\n3\n3\n4\n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ n, m ≤ 1000, 1 ≤ k ≤ min(40 , n·m)) — the number of rows, columns and colors.\n\nEach of the next n lines contains m integers. In the i-th line, the j-th integer is a_ij (1 ≤ a_ij ≤ k), which is the color assigned to the city in the i-th row and j-th column.\n\nThe next line contains one integer q (1 ≤ q ≤ 10^5) — the number of missions.\n\nFor the next q lines, every line contains four integers r_1, c_1, r_2, c_2 (1 ≤ r_1 , r_2 ≤ n, 1 ≤ c_1 , c_2 ≤ m) — the coordinates of the starting and the finishing cities of the corresponding mission.\n\nIt is guaranteed that for every color between 1 and k there is at least one city of that color.",
+    "output": "For every mission print the minimum possible time to reach city at the cell (r_2, c_2) starting from city at the cell (r_1, c_1).",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "shortest paths",
+        "*2600"
+    ],
+    "rating": 2600
+}

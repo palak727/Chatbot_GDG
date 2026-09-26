@@ -1,0 +1,19 @@
+{
+    "id": "2029E",
+    "contest_id": 2029,
+    "problem_letter": "E",
+    "title": "E. Common Generator",
+    "statement": "For two integers x and y (x,y≥ 2), we will say that x is a generator of y if and only if x can be transformed to y by performing the following operation some number of times (possibly zero):\n\nFor example,\n\nNow, Kevin gives you an array a consisting of n pairwise distinct integers (a_i≥ 2).\n\nYou have to find an integer x≥ 2 such that for each 1≤ i≤ n, x is a generator of a_i, or determine that such an integer does not exist.\n\nEach test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^5) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (2≤ a_i≤ 4·10^5) — the elements in the array a. It is guaranteed that the elements are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer x — the integer you found. Print -1 if there does not exist a valid x.\n\nIf there are multiple answers, you may output any of them.\n\nIn the first test case, for x=2:\n\nIn the second test case, it can be proven that it is impossible to find a common generator of the four integers.\n\nInput:\n```\n438 9 1042 3 4 52147 15453 6 8 25 100000\n```\n\nOutput:\n```\n2\n-1\n7\n3\n```",
+    "input": "Each test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^5) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (2≤ a_i≤ 4·10^5) — the elements in the array a. It is guaranteed that the elements are pairwise distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer x — the integer you found. Print -1 if there does not exist a valid x.\n\nIf there are multiple answers, you may output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

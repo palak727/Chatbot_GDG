@@ -1,0 +1,16 @@
+{
+    "id": "1970C1",
+    "contest_id": 1970,
+    "problem_letter": "C1",
+    "title": "C1. Game on Tree (Easy)",
+    "statement": "This is the easy version of the problem. The difference in this version is that t=1 and we work on an array-like tree.\n\nRon and Hermione are playing a game on a tree of n nodes that are initially inactive. This tree is special because it has exactly two leaves. It can thus be seen as an array. The game consists of t rounds, each of which starts with a stone on exactly one node, which is considered as activated. A move consists of picking an inactive neighbor of the node with a stone on it and moving the stone there (thus activating this neighbor). Ron makes the first move, after which he alternates with Hermione until no valid move is available. The player that cannot make a move loses the round. If both players play optimally, who wins each round of this game?\n\nNote that all the rounds are played with the same tree; only the starting node changes. Moreover, after each round, all active nodes are considered inactive again.\n\nThe first line contains integers n (2 ≤ n ≤ 2× 10^5), t (t=1), the number of nodes in the tree and the number of rounds, respectively.\n\nThe next n-1 lines contain two integers 1 ≤ u, v ≤ n each, corresponding to an edge of the tree. It is guaranteed that the tree has exactly two leaves.\n\nThe next line contains t integers 1 ≤ u_1 , …, u_t ≤ n, corresponding to the node where the stone is initially put.\n\nThe output consists of t=1 line which is either \"Ron\" or \"Hermione\".\n\nInput:\n```\n3 12 33 13\n```\n\nOutput:\n```\nRon\n```\n\nInput:\n```\n5 11 22 33 44 55\n```\n\nOutput:\n```\nHermione\n```",
+    "input": "The first line contains integers n (2 ≤ n ≤ 2× 10^5), t (t=1), the number of nodes in the tree and the number of rounds, respectively.\n\nThe next n-1 lines contain two integers 1 ≤ u, v ≤ n each, corresponding to an edge of the tree. It is guaranteed that the tree has exactly two leaves.\n\nThe next line contains t integers 1 ≤ u_1 , …, u_t ≤ n, corresponding to the node where the stone is initially put.",
+    "output": "The output consists of t=1 line which is either \"Ron\" or \"Hermione\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "*1400"
+    ],
+    "rating": 1400
+}

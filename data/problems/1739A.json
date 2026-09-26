@@ -1,0 +1,16 @@
+{
+    "id": "1739A",
+    "contest_id": 1739,
+    "problem_letter": "A",
+    "title": "A. Immobile Knight",
+    "statement": "There is a chess board of size n × m. The rows are numbered from 1 to n, the columns are numbered from 1 to m.\n\nLet's call a cell isolated if a knight placed in that cell can't move to any other cell on the board. Recall that a chess knight moves two cells in one direction and one cell in a perpendicular direction:\n\nFind any isolated cell on the board. If there are no such cells, print any cell on the board.\n\nThe first line contains a single integer t (1 ≤ t ≤ 64) — the number of testcases.\n\nThe only line of each testcase contains two integers n and m (1 ≤ n, m ≤ 8) — the number of rows and columns of the board.\n\nFor each testcase, print two integers — the row and the column of any isolated cell on the board. If there are no such cells, print any cell on the board.\n\nIn the first testcase, all cells are isolated. A knight can't move from any cell of the board to any other one. Thus, any cell on board is a correct answer.\n\nIn the second testcase, there are no isolated cells. On a normal chess board, a knight has at least two moves from any cell. Thus, again, any cell is a correct answer.\n\nIn the third testcase, only the middle cell of the board is isolated. The knight can move freely around the border of the board, but can't escape the middle.\n\nInput:\n```\n31 78 83 3\n```\n\nOutput:\n```\n1 7\n7 2\n2 2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 64) — the number of testcases.\n\nThe only line of each testcase contains two integers n and m (1 ≤ n, m ≤ 8) — the number of rows and columns of the board.",
+    "output": "For each testcase, print two integers — the row and the column of any isolated cell on the board. If there are no such cells, print any cell on the board.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

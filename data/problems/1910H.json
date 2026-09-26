@@ -1,0 +1,18 @@
+{
+    "id": "1910H",
+    "contest_id": 1910,
+    "problem_letter": "H",
+    "title": "H. Sum of Digits of Sums",
+    "statement": "You are given an array [a_1, a_2, …, a_n], consisting of positive integers.\n\nFor every i from 1 to n, calculate ∑ limits_{j=1}^n F(a_i + a_j), where F(x) is the sum of digits of x.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 10^9).\n\nPrint n integers. The i-th of them should be equal to ∑ limits_{j=1}^n F(a_i + a_j).\n\nInput:\n```\n4\n1 3 3 7\n```\n\nOutput:\n```\n18 17 17 15 \n```\n\nInput:\n```\n3\n42 1337 999\n```\n\nOutput:\n```\n38 53 47 \n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 10^9).",
+    "output": "Print n integers. The i-th of them should be equal to ∑ limits_{j=1}^n F(a_i + a_j).",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

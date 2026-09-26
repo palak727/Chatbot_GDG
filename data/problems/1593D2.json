@@ -1,0 +1,18 @@
+{
+    "id": "1593D2",
+    "contest_id": 1593,
+    "problem_letter": "D2",
+    "title": "D2. Half of Same",
+    "statement": "This problem is a complicated version of D1, but it has significant differences, so read the whole statement.\n\nPolycarp has an array of n (n is even) integers a_1, a_2, …, a_n. Polycarp conceived of a positive integer k. After that, Polycarp began performing the following operations on the array: take an index i (1 ≤ i ≤ n) and reduce the number a_i by k.\n\nAfter Polycarp performed some (possibly zero) number of such operations, it turned out that at least half of the numbers in the array became the same. Find the maximum k at which such a situation is possible, or print -1 if such a number can be arbitrarily large.\n\nThe first line contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.\n\nEach test case consists of two lines. The first line contains an even integer n (4 ≤ n ≤ 40) (n is even). The second line contains n integers a_1, a_2, … a_n (-10^6 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of all n specified in the given test cases does not exceed 100.\n\nFor each test case output on a separate line an integer k (k ≥ 1) — the maximum possible number that Polycarp used in operations on the array, or -1, if such a number can be arbitrarily large.\n\nInput:\n```\n4\n6\n48 13 22 -15 16 35\n8\n-1 0 1 -1 0 1 -1 0\n4\n100 -1000 -1000 -1000\n4\n1 1 1 1\n```\n\nOutput:\n```\n13\n2\n-1\n-1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.\n\nEach test case consists of two lines. The first line contains an even integer n (4 ≤ n ≤ 40) (n is even). The second line contains n integers a_1, a_2, … a_n (-10^6 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of all n specified in the given test cases does not exceed 100.",
+    "output": "For each test case output on a separate line an integer k (k ≥ 1) — the maximum possible number that Polycarp used in operations on the array, or -1, if such a number can be arbitrarily large.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

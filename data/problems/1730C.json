@@ -1,0 +1,19 @@
+{
+    "id": "1730C",
+    "contest_id": 1730,
+    "problem_letter": "C",
+    "title": "C. Minimum Notation",
+    "statement": "You have a string s consisting of digits from 0 to 9 inclusive. You can perform the following operation any (possibly zero) number of times:\n\nWhat is the lexicographically smallest string you can get by performing these operations?\n\nA string a is lexicographically smaller than a string b of the same length if and only if the following holds:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the test cases follow.\n\nEach test case consists of a single line that contains one string s (1 ≤ |s| ≤ 2·10^5) — the string consisting of digits. Please note that s is just a string consisting of digits, so leading zeros are allowed.\n\nIt is guaranteed that the sum of lengths of s over all test cases does not exceed 2·10^5.\n\nPrint a single string — the minimum string that is possible to obtain.\n\nIn the first test case:\n\nNothing needs to be done in the second and third test cases.\n\nInput:\n```\n404829901314752277691991\n```\n\nOutput:\n```\n02599\n9\n01\n111334567888999\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the test cases follow.\n\nEach test case consists of a single line that contains one string s (1 ≤ |s| ≤ 2·10^5) — the string consisting of digits. Please note that s is just a string consisting of digits, so leading zeros are allowed.\n\nIt is guaranteed that the sum of lengths of s over all test cases does not exceed 2·10^5.",
+    "output": "Print a single string — the minimum string that is possible to obtain.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

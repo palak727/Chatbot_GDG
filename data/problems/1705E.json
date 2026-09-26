@@ -1,0 +1,21 @@
+{
+    "id": "1705E",
+    "contest_id": 1705,
+    "problem_letter": "E",
+    "title": "E. Mark and Professor Koro",
+    "statement": "After watching a certain anime before going to sleep, Mark dreams of standing in an old classroom with a blackboard that has a sequence of n positive integers a_1, a_2,…,a_n on it.\n\nThen, professor Koro comes in. He can perform the following operation:\n\nProfessor Koro then asks Mark the question, \"what is the maximum possible number that could appear on the board after some operations?\"\n\nMark quickly solves this question, but he is still slower than professor Koro. Thus, professor Koro decides to give Mark additional challenges. He will update the initial sequence of integers q times. Each time, he will choose positive integers k and l, then change a_k to l. After each update, he will ask Mark the same question again.\n\nHelp Mark answer these questions faster than Professor Koro!\n\nNote that the updates are persistent. Changes made to the sequence a will apply when processing future updates.\n\nThe first line of the input contains two integers n and q (2≤ n≤ 2·10^5, 1≤ q≤ 2·10^5) — the length of the sequence a and the number of updates, respectively.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 2·10^5)\n\nThen, q lines follow, each consisting of two integers k and l (1≤ k≤ n, 1≤ l≤ 2·10^5), telling to update a_k to l.\n\nPrint q lines. The i-th line should consist of a single integer — the answer after the i-th update.\n\nIn the first example test, the program must proceed through 4 updates.\n\nThe sequence after the first update is [2,3,2,4,5]. One sequence of operations that achieves the number 6 the following.\n\nThen, in the second update, the array is changed to [2,3,2,4,3]. This time, Mark cannot achieve 6. However, one sequence that Mark can use to achieve 5 is shown below.\n\nIn the third update, the array is changed to [2,3,2,1,3]. One way to achieve 4 is shown below.\n\nInput:\n```\n5 4\n2 2 2 4 5\n2 3\n5 3\n4 1\n1 4\n```\n\nOutput:\n```\n6\n5\n4\n5\n```\n\nInput:\n```\n2 1\n200000 1\n2 200000\n```\n\nOutput:\n```\n200001\n```",
+    "input": "The first line of the input contains two integers n and q (2≤ n≤ 2·10^5, 1≤ q≤ 2·10^5) — the length of the sequence a and the number of updates, respectively.\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ 2·10^5)\n\nThen, q lines follow, each consisting of two integers k and l (1≤ k≤ n, 1≤ l≤ 2·10^5), telling to update a_k to l.",
+    "output": "Print q lines. The i-th line should consist of a single integer — the answer after the i-th update.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "greedy",
+        "*2300"
+    ],
+    "rating": 2300
+}

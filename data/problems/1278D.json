@@ -1,0 +1,19 @@
+{
+    "id": "1278D",
+    "contest_id": 1278,
+    "problem_letter": "D",
+    "title": "D. Segment Tree",
+    "statement": "As the name of the task implies, you are asked to do some work with segments and trees.\n\nRecall that a tree is a connected undirected graph such that there is exactly one simple path between every pair of its vertices.\n\nYou are given n segments [l_1, r_1], [l_2, r_2], …, [l_n, r_n], l_i < r_i for every i. It is guaranteed that all segments' endpoints are integers, and all endpoints are unique — there is no pair of segments such that they start in the same point, end in the same point or one starts in the same point the other one ends.\n\nLet's generate a graph with n vertices from these segments. Vertices v and u are connected by an edge if and only if segments [l_v, r_v] and [l_u, r_u] intersect and neither of it lies fully inside the other one.\n\nFor example, pairs ([1, 3], [2, 4]) and ([5, 10], [3, 7]) will induce the edges but pairs ([1, 2], [3, 4]) and ([5, 7], [3, 10]) will not.\n\nDetermine if the resulting graph is a tree or not.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5·10^5) — the number of segments.\n\nThe i-th of the next n lines contain the description of the i-th segment — two integers l_i and r_i (1 ≤ l_i < r_i ≤ 2n).\n\nIt is guaranteed that all segments borders are pairwise distinct.\n\nPrint \"YES\" if the resulting graph is a tree and \"NO\" otherwise.\n\nThe graph corresponding to the first example:\n\nThe graph corresponding to the second example:\n\nThe graph corresponding to the third example:\n\nInput:\n```\n6\n9 12\n2 11\n1 3\n6 10\n5 7\n4 8\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n5\n1 3\n2 4\n5 9\n6 8\n7 10\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n5\n5 8\n3 6\n2 9\n7 10\n1 4\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 5·10^5) — the number of segments.\n\nThe i-th of the next n lines contain the description of the i-th segment — two integers l_i and r_i (1 ≤ l_i < r_i ≤ 2n).\n\nIt is guaranteed that all segments borders are pairwise distinct.",
+    "output": "Print \"YES\" if the resulting graph is a tree and \"NO\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2095C",
+    "contest_id": 2095,
+    "problem_letter": "C",
+    "title": "C. Would It Be Unrated?",
+    "statement": "It's a disaster. During the last April fools round, Codeforces crashed and consequentially, the round was unrated. No one knows what happened to some of the poor authors afterwards.\n\nAfter careful investigation, the Codeforces team has found out the reason behind this catastrophe. Apparently, authors added too many tests as they forgot the pretests were equal to system tests.\n\nWe don't want to repeat this unfortunate incident and cause this round to be unrated as well. That's why we ask you for your help. Could you please help us check how many tests this problem has?\n\nThe question — how many tests does the problem have?\n\nA single integer. The right one.\n\nI'll forgive you for lying this time, but you better tell me the right answer next time I ask!\n\nInput:\n```\nHello! Can you please tell me how many tests does this problem have?\n```\n\nOutput:\n```\n25\n```",
+    "input": "The question — how many tests does the problem have?",
+    "output": "A single integer. The right one.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "brute force"
+    ],
+    "rating": null
+}

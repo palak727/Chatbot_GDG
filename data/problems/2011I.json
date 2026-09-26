@@ -1,0 +1,17 @@
+{
+    "id": "2011I",
+    "contest_id": 2011,
+    "problem_letter": "I",
+    "title": "I. Stack and Queue",
+    "statement": "There are 2 queues of patients at the doors of two doctors. The first doctor sees patients in the usual order of the queue — whoever arrived first will be seen first. The second doctor does the opposite — he sees those who arrived last first. Thus, there is a queue for the first doctor and a stack for the second doctor. A patient can be in both the queue and the stack. Each patient is characterized by the time their visit to the doctor will take (the time is the same for both doctors).\n\nWhen the appointments begin, the doctors will see patients in the order of the queue and stack, respectively. As soon as a doctor finishes with one patient, he will call the next one.\n\nBut there is one problem: if a patient is in both the queue and the stack, and he is called to one doctor first and then to the other, while he has not yet finished with the first one, confusion will arise. It is allowed for a patient to go to the second doctor at the exact moment he finishes with the first doctor.\n\nThe current configuration of the queue and stack is called good if the doctors can see all the patients without any confusion arising.\n\nInitially, both the queue and the stack are empty. There are three types of queries:\n\nIt is guaranteed that after each query, each patient is no more than once in the queue and no more than once in the stack.\n\nAfter each query, you need to determine if the current configuration is good.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of requests.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — for each patient, the time their visit to the doctor will take.\n\nEach of the following n lines contains two integers t and x (1 ≤ t ≤ 3; 1 ≤ x ≤ n) — the type of query and the patient's index. It is guaranteed that:\n\nAfter each query, print \"YES\", if the current configuration is good, and \"NO\" otherwise.\n\nIn the first test, there are the following configurations:\n\nIn the second test, the configuration after query 4 is as follows:\n\nAfter request 5, the next configuration is:\n\nAfter request 6, the next configuration is:\n\nPatient 2 must be at both doctors at the same time.\n\nAfter request 7, the next configuration is:\n\nPatient 2 must be at both doctors at the same time.\n\nInput:\n```\n310 15 41 12 12 2\n```\n\nOutput:\n```\nYES\nNO\nYES\n```\n\nInput:\n```\n72 5 1 5 5 4 81 12 51 22 33 21 23 1\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nNO\nNO\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of requests.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — for each patient, the time their visit to the doctor will take.\n\nEach of the following n lines contains two integers t and x (1 ≤ t ≤ 3; 1 ≤ x ≤ n) — the type of query and the patient's index. It is guaranteed that:",
+    "output": "After each query, print \"YES\", if the current configuration is good, and \"NO\" otherwise.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "divide and conquer"
+    ],
+    "rating": null
+}

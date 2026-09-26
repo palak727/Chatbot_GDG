@@ -1,0 +1,21 @@
+{
+    "id": "2053D",
+    "contest_id": 2053,
+    "problem_letter": "D",
+    "title": "D. Refined Product Optimality",
+    "statement": "Although Iris occasionally sets a problem where the solution is possibly wrong, she still insists on creating problems with her imagination; after all, everyone has always been on the road with their stubbornness... And like ever before, Iris has set a problem to which she gave a wrong solution, but Chris is always supposed to save it! You are going to play the role of Chris now:\n\nChris soon worked out this problem, but he was so tired that he fell asleep. Besides saying thanks to Chris, now it is your turn to write a program to calculate the answers for given input data.\n\nNote: since the input and output are large, you may need to optimize them for this problem.\n\nFor example, in C++, it is enough to use the following lines at the start of the main() function:\n\n```\nint main() {\n    std::ios::sync_with_stdio(false);\n    std::cin.tie(nullptr); std::cout.tie(nullptr);\n}\n```\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the length of the array and the number of operations.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^8) — the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 5·10^8) — the array b.\n\nThen q lines follow, each line contains two integers o and x (o ∈ {1, 2}, 1 ≤ x ≤ n), representing an operation.\n\nIt's guaranteed that the sum of n and the sum of q over all test cases does not exceed 4·10^5, respectively.\n\nFor each test case, output q + 1 integers in a line, representing the answers that Chris will calculate, modulo 998,244,353.\n\nIn the first test case:\n\nInput:\n```\n43 41 1 23 2 11 32 31 12 16 81 4 2 7 3 57 6 5 6 3 32 51 61 51 51 52 32 31 613 87 7 6 6 5 5 5 2 2 3 4 5 11 4 1 9 6 6 9 1 5 1 3 8 42 22 112 42 41 71 12 121 55 310000000 20000000 30000000 40000000 5000000010000000 20000000 30000000 40000000 500000001 12 22 1\n```\n\nOutput:\n```\n2 3 3 6 6\n840 840 1008 1344 1680 2016 2016 2016 2352\n2116800 2646000 3528000 3528000 3528000 4233600 4838400 4838400 4838400\n205272023 205272023 205272023 264129429\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the length of the array and the number of operations.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^8) — the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 5·10^8) — the array b.\n\nThen q lines follow, each line contains two integers o and x (o ∈ {1, 2}, 1 ≤ x ≤ n), representing an operation.\n\nIt's guaranteed that the sum of n and the sum of q over all test cases does not exceed 4·10^5, respectively.",
+    "output": "For each test case, output q + 1 integers in a line, representing the answers that Chris will calculate, modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "math",
+        "schedules",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

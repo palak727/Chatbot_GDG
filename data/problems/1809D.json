@@ -1,0 +1,17 @@
+{
+    "id": "1809D",
+    "contest_id": 1809,
+    "problem_letter": "D",
+    "title": "D. Binary String Sorting",
+    "statement": "You are given a binary string s consisting of only characters 0 and/or 1.\n\nYou can perform several operations on this string (possibly zero). There are two types of operations:\n\nYour task is to calculate the minimum number of coins required to sort the string s in non-decreasing order (i. e. transform s so that s_1 ≤ s_2 ≤ … ≤ s_m, where m is the length of the string after applying all operations). An empty string is also considered sorted in non-decreasing order.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains the string s (1 ≤ |s| ≤ 3·10^5), consisting of only characters 0 and/or 1.\n\nThe sum of lengths of all given strings doesn't exceed 3·10^5.\n\nFor each test case, print a single integer — the minimum number of coins required to sort the string s in non-decreasing order.\n\nIn the first example, you have to remove the 1-st element, so the string becomes equal to 00.\n\nIn the second example, the string is already sorted.\n\nIn the third example, you have to swap the 2-nd and the 3-rd elements, so the string becomes equal to 0011.\n\nIn the fourth example, you have to swap the 3-rd and the 4-th elements, so the string becomes equal to 00011101, and then remove the 7-th element, so the string becomes equal to 0001111.\n\nIn the fifth example, you have to remove the 1-st element, so the string becomes equal to 001101, and then remove the 5-th element, so the string becomes equal to 00111.\n\nIn the sixth example, the string is already sorted.\n\nInput:\n```\n61000010100101101100110111111\n```\n\nOutput:\n```\n1000000000001\n0\n1000000000000\n2000000000001\n2000000000002\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains the string s (1 ≤ |s| ≤ 3·10^5), consisting of only characters 0 and/or 1.\n\nThe sum of lengths of all given strings doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the minimum number of coins required to sort the string s in non-decreasing order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1800"
+    ],
+    "rating": 1800
+}

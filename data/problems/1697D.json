@@ -1,0 +1,18 @@
+{
+    "id": "1697D",
+    "contest_id": 1697,
+    "problem_letter": "D",
+    "title": "D. Guess The String",
+    "statement": "This is an interactive problem. Remember to flush your output while communicating with the testing program. You may use fflush(stdout) in C++, system.out.flush() in Java, stdout.flush() in Python or flush(output) in Pascal to flush the output. If you use some other programming language, consult its documentation. You may also refer to the guide on interactive problems: https://codeforces.com/blog/entry/45307.\n\nThe jury has chosen a string s consisting of n characters; each character of s is a lowercase Latin letter. Your task is to guess this string; initially, you know only its length.\n\nYou may ask queries of two types:\n\nYou are allowed to ask no more than 26 queries of the first type, and no more than 6000 queries of the second type. Your task is to restore the string s.\n\nFor each test in this problem, the string s is fixed beforehand, and will be the same for every submission.\n\nInitially, the jury program sends one integer n on a separate line — the size of s (1 ≤ n ≤ 1000).\n\nTo give the answer, print one line ! s with a line break in the end, where s should be the string picked by the jury. After that, your program should flush the output and terminate gracefully.\n\nTo ask a query, you should send one line containing the query, in one of the following formats:\n\nDon't forget to flush the output after sending the query line.\n\nThe answer to your query will be given on a separate line. For a query of the first type, the answer will be the character s_i. For a query of the second type, the answer will be an integer equal to the number of different characters among s_l, s_{l+1}, …, s_r.\n\nYou are allowed to ask no more than 26 queries of the first type, and no more than 6000 queries of the second type.\n\nIn case you ask too many queries, or the jury program fails to recognize your query format, the answer to your query will be one integer 0. After receiving 0 as the answer, your program should terminate immediately — otherwise you may receive verdict \"Runtime error\", \"Time limit exceeded\" or some other verdict instead of \"Wrong answer\".\n\nLet's analyze the example of interaction.\n\nThe string chosen by the jury is guess, so initially the jury sends one integer 5.\n\nIn the end, the answer is submitted as ! guess, and it is deduced correctly.\n\nInput:\n```\n5\n4\nu\n2\ng\ne\ns\n1\n```\n\nOutput:\n```\n? 2 1 5\n? 1 2\n? 2 1 2\n? 1 1\n? 1 3\n? 1 4\n? 2 4 5\n! guess\n```",
+    "input": "Initially, the jury program sends one integer n on a separate line — the size of s (1 ≤ n ≤ 1000).",
+    "output": "To give the answer, print one line ! s with a line break in the end, where s should be the string picked by the jury. After that, your program should flush the output and terminate gracefully.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "interactive",
+        "*1900"
+    ],
+    "rating": 1900
+}

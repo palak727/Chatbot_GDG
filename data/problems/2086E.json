@@ -1,0 +1,22 @@
+{
+    "id": "2086E",
+    "contest_id": 2086,
+    "problem_letter": "E",
+    "title": "E. Zebra-like Numbers",
+    "statement": "We call a positive integer zebra-like if its binary representation has alternating bits up to the most significant bit, and the least significant bit is equal to 1. For example, the numbers 1, 5, and 21 are zebra-like, as their binary representations 1, 101, and 10101 meet the requirements, while the number 10 is not zebra-like, as the least significant bit of its binary representation 1010 is 0.\n\nWe define the zebra value of a positive integer e as the minimum integer p such that e can be expressed as the sum of p zebra-like numbers (possibly the same, possibly different)\n\nGiven three integers l, r, and k, calculate the number of integers x such that l ≤ x ≤ r and the zebra value of x equals k.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains three integers l, r (1 ≤ l ≤ r ≤ 10^18) and k (1 ≤ k ≤ 10^18).\n\nFor each test case, output a single integer — the number of integers in [l, r] with zebra value k.\n\nIn the first test case, there are 13 suitable numbers: 3, 7, 11, 15, 23, 27, 31, 43, 47, 63, 87, 91, 95.\n\nEach of them can be represented as a sum of 3 zebra-like numbers.\n\nInput:\n```\n51 100 31 1 115 77 22 10 1001234567 123456789101112131 12\n```\n\nOutput:\n```\n13\n1\n3\n0\n4246658701\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains three integers l, r (1 ≤ l ≤ r ≤ 10^18) and k (1 ≤ k ≤ 10^18).",
+    "output": "For each test case, output a single integer — the number of integers in [l, r] with zebra value k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

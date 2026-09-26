@@ -1,0 +1,16 @@
+{
+    "id": "1170B",
+    "contest_id": 1170,
+    "problem_letter": "B",
+    "title": "B. Bad Days",
+    "statement": "Every day Kotlin heroes analyze the statistics of their website. For n days, they wrote out n numbers a_1, a_2, …, a_n, where a_i is the number of visits on the i-th day.\n\nThey believe that a day is bad if there are at least 2 days before it with a strictly greater number of visits. For example, if n=8 and a=[3, 1, 4, 1, 5, 9, 2, 6], then the day 4 is bad (because a_4=1, but there are a_1=3 and a_3=4). Also, the day with the number 7 is bad too.\n\nWrite a program that finds the number of bad days.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5), where n is the number of days. The second line contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of website visits on the i-th day.\n\nPrint the number of bad days, i.e. such days that there are at least two days before it with a strictly greater number of visits.\n\nInput:\n```\n8\n3 1 4 1 5 9 2 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n1 1 1 1 1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n13\n2 7 1 8 2 8 1 8 2 8 4 5 9\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 2·10^5), where n is the number of days. The second line contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of website visits on the i-th day.",
+    "output": "Print the number of bad days, i.e. such days that there are at least two days before it with a strictly greater number of visits.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

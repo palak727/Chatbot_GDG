@@ -1,0 +1,17 @@
+{
+    "id": "1579A",
+    "contest_id": 1579,
+    "problem_letter": "A",
+    "title": "A. Casimir's String Solitaire",
+    "statement": "Casimir has a string s which consists of capital Latin letters 'A', 'B', and 'C' only. Each turn he can choose to do one of the two following actions:\n\nTherefore, each turn the length of the string is decreased exactly by 2. All turns are independent so for each turn, Casimir can choose any of two possible actions.\n\nFor example, with s = \"ABCABC\" he can obtain a string s = \"ACBC\" in one turn (by erasing the first occurrence of 'B' and the second occurrence of 'A'). There are also many other options for a turn aside from this particular example.\n\nFor a given string s determine whether there is a sequence of actions leading to an empty string. In other words, Casimir's goal is to erase all letters from the string. Is there a way to do this?\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is described by one string s, for which you need to determine if it can be fully erased by some sequence of turns. The string s consists of capital letters 'A', 'B', 'C' and has a length from 1 to 50 letters, inclusive.\n\nPrint t lines, each line containing the answer to the corresponding test case. The answer to a test case should be YES if there is a way to fully erase the corresponding string and NO otherwise.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes, and YES will all be recognized as positive answers).\n\nInput:\n```\n6\nABACAB\nABBA\nAC\nABC\nCABCBB\nBCBCBCBCBCBCBCBC\n```\n\nOutput:\n```\nNO\nYES\nNO\nNO\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is described by one string s, for which you need to determine if it can be fully erased by some sequence of turns. The string s consists of capital letters 'A', 'B', 'C' and has a length from 1 to 50 letters, inclusive.",
+    "output": "Print t lines, each line containing the answer to the corresponding test case. The answer to a test case should be YES if there is a way to fully erase the corresponding string and NO otherwise.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes, and YES will all be recognized as positive answers).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1580C",
+    "contest_id": 1580,
+    "problem_letter": "C",
+    "title": "C. Train Maintenance",
+    "statement": "Kawasiro Nitori is excellent in engineering. Thus she has been appointed to help maintain trains.\n\nThere are n models of trains, and Nitori's department will only have at most one train of each model at any moment. In the beginning, there are no trains, at each of the following m days, one train will be added, or one train will be removed. When a train of model i is added at day t, it works for x_i days (day t inclusive), then it is in maintenance for y_i days, then in work for x_i days again, and so on until it is removed.\n\nIn order to make management easier, Nitori wants you to help her calculate how many trains are in maintenance in each day.\n\nOn a day a train is removed, it is not counted as in maintenance.\n\nThe first line contains two integers n, m (1 ≤ n,m ≤ 2·10^5).\n\nThe i-th of the next n lines contains two integers x_i,y_i (1 ≤ x_i,y_i ≤ 10^9).\n\nEach of the next m lines contains two integers op, k (1 ≤ k ≤ n, op = 1 or op = 2). If op=1, it means this day's a train of model k is added, otherwise the train of model k is removed. It is guaranteed that when a train of model x is added, there is no train of the same model in the department, and when a train of model x is removed, there is such a train in the department.\n\nPrint m lines, The i-th of these lines contains one integers, denoting the number of trains in maintenance in the i-th day.\n\nConsider the first example:\n\nThe first day: Nitori adds a train of model 3. Only a train of model 3 is running and no train is in maintenance.\n\nThe second day: Nitori adds a train of model 1. A train of model 1 is running and a train of model 3 is in maintenance.\n\nThe third day: Nitori removes a train of model 1. The situation is the same as the first day.\n\nThe fourth day: Nitori removes a train of model 3. There are no trains at all.\n\nInput:\n```\n3 4\n10 15\n12 10\n1 1\n1 3\n1 1\n2 1\n2 3\n```\n\nOutput:\n```\n0\n1\n0\n0\n```\n\nInput:\n```\n5 4\n1 1\n10000000 100000000\n998244353 1\n2 1\n1 2\n1 5\n2 5\n1 5\n1 1\n```\n\nOutput:\n```\n0\n0\n0\n1\n```",
+    "input": "The first line contains two integers n, m (1 ≤ n,m ≤ 2·10^5).\n\nThe i-th of the next n lines contains two integers x_i,y_i (1 ≤ x_i,y_i ≤ 10^9).\n\nEach of the next m lines contains two integers op, k (1 ≤ k ≤ n, op = 1 or op = 2). If op=1, it means this day's a train of model k is added, otherwise the train of model k is removed. It is guaranteed that when a train of model x is added, there is no train of the same model in the department, and when a train of model x is removed, there is such a train in the department.",
+    "output": "Print m lines, The i-th of these lines contains one integers, denoting the number of trains in maintenance in the i-th day.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

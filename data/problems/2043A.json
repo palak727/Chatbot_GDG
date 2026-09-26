@@ -1,0 +1,17 @@
+{
+    "id": "2043A",
+    "contest_id": 2043,
+    "problem_letter": "A",
+    "title": "A. Coin Transformation",
+    "statement": "Initially, you have a coin with value n. You can perform the following operation any number of times (possibly zero):\n\nWhat is the maximum number of coins you can have after performing this operation any number of times?\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 10^18).\n\nFor each test case, print one integer — the maximum number of coins you can have after performing the operation any number of times.\n\nIn the first example, you have a coin of value 1, and you can't do anything with it. So, the answer is 1.\n\nIn the second example, you can transform a coin of value 5 into two coins with value 1.\n\nIn the third example, you can transform a coin of value 16 into two coins with value 4. Each of the resulting coins can be transformed into two coins with value 1.\n\nInput:\n```\n415161000000000000000000\n```\n\nOutput:\n```\n1\n2\n4\n536870912\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 10^18).",
+    "output": "For each test case, print one integer — the maximum number of coins you can have after performing the operation any number of times.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

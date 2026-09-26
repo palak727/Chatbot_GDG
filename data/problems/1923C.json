@@ -1,0 +1,17 @@
+{
+    "id": "1923C",
+    "contest_id": 1923,
+    "problem_letter": "C",
+    "title": "C. Find B",
+    "statement": "An array a of length m is considered good if there exists an integer array b of length m such that the following conditions hold:\n\nYou are given an array c of length n. Each element of this array is greater than 0.\n\nYou have to answer q queries. During the i-th query, you have to determine whether the subarray c_l_i, c_{l_i+1}, …, c_r_i is good.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the length of the array c and the number of queries.\n\nThe second line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nThen q lines follow. The i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the borders of the i-th subarray.\n\nAdditional constraints on the input: the sum of n over all test cases does not exceed 3·10^5; the sum of q over all test cases does not exceed 3·10^5.\n\nFor each query, print YES if the subarray is good. Otherwise, print NO.\n\nYou can output each letter of the answer in any case (upper or lower). For example, the strings yEs, yes, Yes, and YES will all be recognized as positive responses.\n\nInput:\n```\n15 41 2 1 4 51 54 43 41 3\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the length of the array c and the number of queries.\n\nThe second line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nThen q lines follow. The i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the borders of the i-th subarray.\n\nAdditional constraints on the input: the sum of n over all test cases does not exceed 3·10^5; the sum of q over all test cases does not exceed 3·10^5.",
+    "output": "For each query, print YES if the subarray is good. Otherwise, print NO.\n\nYou can output each letter of the answer in any case (upper or lower). For example, the strings yEs, yes, Yes, and YES will all be recognized as positive responses.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1400"
+    ],
+    "rating": 1400
+}

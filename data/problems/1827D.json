@@ -1,0 +1,19 @@
+{
+    "id": "1827D",
+    "contest_id": 1827,
+    "problem_letter": "D",
+    "title": "D. Two Centroids",
+    "statement": "You are given a tree (an undirected connected acyclic graph) which initially only contains vertex 1. There will be several queries to the given tree. In the i-th query, vertex i + 1 will appear and be connected to vertex p_i (1 ≤ p_i ≤ i).\n\nAfter each query, please find out the least number of operations required to make the current tree has two centroids. In one operation, you can add one vertex and one edge to the tree such that it remains a tree.\n\nA vertex is called a centroid if its removal splits the tree into subtrees with at most lfloor n/2 rfloor vertices each, with n as the number of vertices of the tree. For example, the centroid of the following tree is 3 because the biggest subtree after removing the centroid has 2 vertices.\n\nIn the next tree, vertex 1 and 2 are both centroids.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^5) — the number of nodes of the final tree.\n\nThe second line of each test case contains n - 1 integers p_1, p_2, …, p_{n - 1} (1 ≤ p_i ≤ i) — the index of the vertex that is connected to vertex i + 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output n - 1 integers. The i-th integer is the answer to the i-th query — the least number of operations required to make the current tree have two centroids.\n\nWe can show that an answer always exists.\n\nThe illustrations below are of the fourth example test case.\n\nAfter the third query:\n\nAfter the fourth query:\n\nAfter the fifth query:\n\nAfter the sixth query:\n\nInput:\n```\n52131 141 2 371 2 3 2 5 2101 2 2 4 5 5 7 8 9\n```\n\nOutput:\n```\n0\n0 1\n0 1 0\n0 1 0 1 2 3\n0 1 2 1 0 1 0 1 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^5) — the number of nodes of the final tree.\n\nThe second line of each test case contains n - 1 integers p_1, p_2, …, p_{n - 1} (1 ≤ p_i ≤ i) — the index of the vertex that is connected to vertex i + 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output n - 1 integers. The i-th integer is the answer to the i-th query — the least number of operations required to make the current tree have two centroids.\n\nWe can show that an answer always exists.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "greedy",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

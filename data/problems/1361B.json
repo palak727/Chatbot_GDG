@@ -1,0 +1,19 @@
+{
+    "id": "1361B",
+    "contest_id": 1361,
+    "problem_letter": "B",
+    "title": "B. Johnny and Grandmaster",
+    "statement": "Johnny has just found the new, great tutorial: \"How to become a grandmaster?\". The tutorial tells many strange and unexpected for Johnny things, such as you have to be patient or that very important is solving many harder and harder problems.\n\nThe boy has found an online judge with tasks divided by topics they cover. He has picked p^k_i problems from i-th category (p is his favorite number). He wants to solve them in two weeks (the patience condition is too hard for Johnny, so for simplicity, he looks only at easy tasks, which can be solved in such a period). Now our future grandmaster has to decide which topics to cover first and which the second week. Help him assign topics in such a way, that workload is balanced.\n\nFormally, given n numbers p^k_i, the boy wants to divide them into two disjoint sets, minimizing the absolute difference between sums of numbers in each set. Find the minimal absolute difference. Output the result modulo 10^9+7.\n\nInput consists of multiple test cases. The first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases. Each test case is described as follows:\n\nThe first line contains two integers n and p (1 ≤ n, p ≤ 10^6). The second line contains n integers k_i (0 ≤ k_i ≤ 10^6).\n\nThe sum of n over all test cases doesn't exceed 10^6.\n\nOutput one integer — the reminder of division the answer by 1,000,000,007.\n\nYou have to minimize the difference, not it's remainder. For example, if the minimum difference is equal to 2, but there is also a distribution where the difference is 10^9 + 8, then the answer is 2, not 1.\n\nIn the first test case of the example, there're the following numbers: 4, 8, 16, 16, and 8. We can divide them into such two sets: 4, 8, 16 and 8, 16. Then the difference between the sums of numbers in sets would be 4.\n\nInput:\n```\n4\n5 2\n2 3 4 4 3\n3 1\n2 10 1000\n4 5\n0 1 1 100\n1 8\n89\n```\n\nOutput:\n```\n4\n1\n146981438\n747093407\n```",
+    "input": "Input consists of multiple test cases. The first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases. Each test case is described as follows:\n\nThe first line contains two integers n and p (1 ≤ n, p ≤ 10^6). The second line contains n integers k_i (0 ≤ k_i ≤ 10^6).\n\nThe sum of n over all test cases doesn't exceed 10^6.",
+    "output": "Output one integer — the reminder of division the answer by 1,000,000,007.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

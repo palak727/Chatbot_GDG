@@ -1,0 +1,18 @@
+{
+    "id": "2117D",
+    "contest_id": 2117,
+    "problem_letter": "D",
+    "title": "D. Retaliation",
+    "statement": "Yousef wants to explode an array a_1, a_2, …, a_n. An array gets exploded when all of its elements become equal to zero.\n\nIn one operation, Yousef can do exactly one of the following:\n\nYour task is to help Yousef determine if it is possible to explode the array using any number of operations.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print \"YES\" if Yousef can explode the array, otherwise output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the second test case, we can do the following:\n\nIn the first, third, fourth, and sixth test cases, it can be proven that it is impossible to make all elements equal to zero using any number of operations.\n\nInput:\n```\n643 6 6 3521 18 15 12 9102 6 10 2 5 5 1 2 4 10710 2 16 12 8 20 4252 101210 2\n```\n\nOutput:\n```\nNO\nYES\nNO\nNO\nYES\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print \"YES\" if Yousef can explode the array, otherwise output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

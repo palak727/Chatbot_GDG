@@ -1,0 +1,21 @@
+{
+    "id": "1984D",
+    "contest_id": 1984,
+    "problem_letter": "D",
+    "title": "D. \"a\" String Problem",
+    "statement": "You are given a string s consisting of lowercase Latin characters. Count the number of nonempty strings t ≠ \"texttta\" such that it is possible to partition^dagger s into some substrings satisfying the following conditions:\n\n^dagger A partition of a string s is an ordered sequence of some k strings t_1, t_2, …, t_k (called substrings) such that t_1 + t_2 + … + t_k = s, where + represents the concatenation operation.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s consisting of lowercase Latin characters (2 ≤ |s| ≤ 2·10^5).\n\nThe sum of |s| over all test cases does not exceed 3·10^5.\n\nFor each test case, output a single integer — the number of nonempty strings t ≠ \"texttta\" that satisfy all constraints.\n\nIn the first test case, t can be \"textttaa\", \"textttaaa\", \"textttaaaa\", or the full string.\n\nIn the second test case, t can be \"textttb\", \"textttbab\", \"textttba\", or the full string.\n\nIn the third test case, the only such t is the full string.\n\nInput:\n```\n8aaaaababacabacbaaabaaabitsetababbaaaabbbyearnineteeneightyfour\n```\n\nOutput:\n```\n4\n4\n1\n16\n1\n2\n3\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s consisting of lowercase Latin characters (2 ≤ |s| ≤ 2·10^5).\n\nThe sum of |s| over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output a single integer — the number of nonempty strings t ≠ \"texttta\" that satisfy all constraints.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "hashing",
+        "implementation",
+        "math",
+        "string suffix structures",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

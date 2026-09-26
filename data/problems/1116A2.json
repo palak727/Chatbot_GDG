@@ -1,0 +1,15 @@
+{
+    "id": "1116A2",
+    "contest_id": 1116,
+    "problem_letter": "A2",
+    "title": "A2. Generate equal superposition of four basis states",
+    "statement": "You are given N qubits in the zero state |0...0 rangle. You are also given four distinct bit vectors which describe four different basis states on N qubits |ψ_i rangle.\n\nYour task is to generate a state which is an equal superposition of the given basis states:\n\n|S rangle = 1/2 big( |ψ_0 rangle + |ψ_1 rangle + |ψ_2 rangle + |ψ_3 rangle big)\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[], bits : Bool[][]) : Unit {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

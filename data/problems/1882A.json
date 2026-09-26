@@ -1,0 +1,16 @@
+{
+    "id": "1882A",
+    "contest_id": 1882,
+    "problem_letter": "A",
+    "title": "A. Increasing Sequence",
+    "statement": "You are given a sequence a_1, a_2, …, a_n. A sequence b_1, b_2, …, b_n is called good, if it satisfies all of the following conditions:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nFor each test case, print a single integer — the minimum value of b_n among all good sequences b.\n\nIn the first test case, b = [2, 4, 5, 7, 8] is a good sequence. It can be proved that there is no good b with b_5 < 8.\n\nIn the second test case, b = [1, 2, 3, 4] is an optimal good sequence.\n\nIn the third test case, b = [2] is an optimal good sequence.\n\nInput:\n```\n351 3 2 6 742 3 4 511\n```\n\nOutput:\n```\n8\n4\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "For each test case, print a single integer — the minimum value of b_n among all good sequences b.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

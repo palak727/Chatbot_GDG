@@ -1,0 +1,18 @@
+{
+    "id": "1989F",
+    "contest_id": 1989,
+    "problem_letter": "F",
+    "title": "F. Simultaneous Coloring",
+    "statement": "You are given a matrix, consisting of n rows and m columns.\n\nYou can perform two types of actions on it:\n\nNote that you cannot choose which color to paint the row or column.\n\nIn one second, you can perform either one action or multiple actions at the same time. If you perform one action, it will be free. If you perform k > 1 actions at the same time, it will cost k^2 coins. When multiple actions are performed at the same time, for each cell affected by actions of both types, the color can be chosen independently.\n\nYou are asked to process q queries. Before each query, all cells become colorless. Initially, there are no restrictions on the color of any cells. In the i-th query, a restriction of the following form is added:\n\nThus, after i queries, there are i restrictions on the required colors of the matrix cells. After each query, output the minimum cost of painting the matrix according to the restrictions.\n\nThe first line contains three integers n, m and q (1 ≤ n, m, q ≤ 2·10^5) — the size of the matrix and the number of queries.\n\nIn the i-th of the next q lines, two integers x_i, y_i and a character c_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; c_i ∈ 'R', 'B', where 'R' means red, and 'B' means blue) — description of the i-th restriction. The cells in all queries are pairwise distinct.\n\nPrint q integers — after each query, output the minimum cost of painting the matrix according to the restrictions.\n\nInput:\n```\n2 2 41 1 R2 2 R1 2 B2 1 B\n```\n\nOutput:\n```\n0\n0\n0\n16\n```\n\nInput:\n```\n3 5 101 1 B2 5 B2 2 B2 3 R2 1 B3 2 R3 3 B1 2 R1 3 B3 1 B\n```\n\nOutput:\n```\n0\n0\n0\n0\n0\n0\n16\n16\n25\n25\n```",
+    "input": "The first line contains three integers n, m and q (1 ≤ n, m, q ≤ 2·10^5) — the size of the matrix and the number of queries.\n\nIn the i-th of the next q lines, two integers x_i, y_i and a character c_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; c_i ∈ 'R', 'B', where 'R' means red, and 'B' means blue) — description of the i-th restriction. The cells in all queries are pairwise distinct.",
+    "output": "Print q integers — after each query, output the minimum cost of painting the matrix according to the restrictions.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "divide and conquer",
+        "graphs",
+        "*3000"
+    ],
+    "rating": 3000
+}

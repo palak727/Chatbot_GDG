@@ -1,0 +1,18 @@
+{
+    "id": "1396D",
+    "contest_id": 1396,
+    "problem_letter": "D",
+    "title": "D. Rainbow Rectangles",
+    "statement": "Shrimpy Duc is a fat and greedy boy who is always hungry. After a while of searching for food to satisfy his never-ending hunger, Shrimpy Duc finds M&M candies lying unguarded on a L × L grid. There are n M&M candies on the grid, the i-th M&M is currently located at (x_i + 0.5, y_i + 0.5), and has color c_i out of a total of k colors (the size of M&Ms are insignificant).\n\nShrimpy Duc wants to steal a rectangle of M&Ms, specifically, he wants to select a rectangle with integer coordinates within the grid and steal all candies within the rectangle. Shrimpy Duc doesn't need to steal every single candy, however, he would like to steal at least one candy for each color.\n\nIn other words, he wants to select a rectangle whose sides are parallel to the coordinate axes and whose left-bottom vertex (X_1, Y_1) and right-top vertex (X_2, Y_2) are points with integer coordinates satisfying 0 ≤ X_1 < X_2 ≤ L and 0 ≤ Y_1 < Y_2 ≤ L, so that for every color 1 ≤ c ≤ k there is at least one M&M with color c that lies within that rectangle.\n\nHow many such rectangles are there? This number may be large, so you only need to find it modulo 10^9 + 7.\n\nThe first line contains three positive integers n, k, L (1 ≤ k ≤ n ≤ 2·10^3, 1 ≤ L ≤ 10^9 ) — the number of M&Ms, the number of colors and the length of the grid respectively.\n\nThe following n points describe the M&Ms. Each line contains three integers x_i, y_i, c_i (0 ≤ x_i, y_i < L, 1 ≤ c_i ≤ k) — the coordinates and color of the i-th M&M respectively.\n\nDifferent M&Ms have different coordinates (x_i ≠ x_j or y_i ≠ y_j for every i ≠ j), and for every 1 ≤ c ≤ k there is at least one M&M with color c.\n\nOutput a single integer — the number of rectangles satisfying Shrimpy Duc's conditions, modulo 10^9 + 7.\n\nGrid for the first sample:\n\nInput:\n```\n4 2 4\n3 2 2\n3 1 1\n1 1 1\n1 2 1\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n5 3 10\n6 5 3\n5 3 1\n7 9 1\n2 3 2\n5 0 2\n```\n\nOutput:\n```\n300\n```\n\nInput:\n```\n10 4 10\n5 4 4\n0 0 3\n6 0 1\n3 9 2\n8 7 1\n8 1 3\n2 1 3\n6 3 2\n3 5 3\n4 3 4\n```\n\nOutput:\n```\n226\n```",
+    "input": "The first line contains three positive integers n, k, L (1 ≤ k ≤ n ≤ 2·10^3, 1 ≤ L ≤ 10^9 ) — the number of M&Ms, the number of colors and the length of the grid respectively.\n\nThe following n points describe the M&Ms. Each line contains three integers x_i, y_i, c_i (0 ≤ x_i, y_i < L, 1 ≤ c_i ≤ k) — the coordinates and color of the i-th M&M respectively.\n\nDifferent M&Ms have different coordinates (x_i ≠ x_j or y_i ≠ y_j for every i ≠ j), and for every 1 ≤ c ≤ k there is at least one M&M with color c.",
+    "output": "Output a single integer — the number of rectangles satisfying Shrimpy Duc's conditions, modulo 10^9 + 7.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "sortings",
+        "two pointers",
+        "*3300"
+    ],
+    "rating": 3300
+}

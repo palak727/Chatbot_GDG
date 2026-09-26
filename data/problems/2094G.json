@@ -1,0 +1,18 @@
+{
+    "id": "2094G",
+    "contest_id": 2094,
+    "problem_letter": "G",
+    "title": "G. Chimpanzini Bananini",
+    "statement": "Chimpanzini Bananini stands on the brink of a momentous battle—one destined to bring finality.\n\nFor an arbitrary array b of length m, let's denote the rizziness of the array to be ∑_{i=1}^mb_i·i=b_1·1+b_2·2+b_3·3+… + b_m·m.\n\nChimpanzini Bananini gifts you an empty array. There are three types of operations you can perform on it.\n\nAfter each operation, you are interested in calculating the rizziness of your array.\n\nNote that all operations are persistent. This means that each operation modifies the array, and subsequent operations should be applied to the current state of the array after the previous operations.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer q (1 ≤ q ≤ 2·10^5) — the number of operations you perform on your array.\n\nThe following q lines first contain a single integer s (1 ≤ s ≤ 3) — the operation type.\n\nIt is guaranteed that the sum of q will not exceed 2·10^5 over all test cases. Additionally, it is guaranteed that the first operation on each test case will be one with s=3.\n\nFor each test case, output q lines, outputting the rizziness of your array after each operation.\n\nThe first six states of the array:\n\nInput:\n```\n1133 13 23 313 423 513 623 721\n```\n\nOutput:\n```\n1\n5\n14\n11\n27\n23\n48\n38\n74\n73\n122\n102\n88\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer q (1 ≤ q ≤ 2·10^5) — the number of operations you perform on your array.\n\nThe following q lines first contain a single integer s (1 ≤ s ≤ 3) — the operation type.\n\nIt is guaranteed that the sum of q will not exceed 2·10^5 over all test cases. Additionally, it is guaranteed that the first operation on each test case will be one with s=3.",
+    "output": "For each test case, output q lines, outputting the rizziness of your array after each operation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

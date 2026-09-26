@@ -1,0 +1,18 @@
+{
+    "id": "1599A",
+    "contest_id": 1599,
+    "problem_letter": "A",
+    "title": "A. Weights",
+    "statement": "You are given an array A of length N weights of masses A_1, A_2...A_N. No two weights have the same mass. You can put every weight on one side of the balance (left or right). You don't have to put weights in order A_1,...,A_N. There is also a string S consisting of characters \"L\" and \"R\", meaning that after putting the i-th weight (not A_i, but i-th weight of your choice) left or right side of the balance should be heavier. Find the order of putting the weights on the balance such that rules of string S are satisfied.\n\nThe first line contains one integer N (1 ≤ N ≤ 2*10^5) - the length of the array A The second line contains N distinct integers: A_1, A_2,...,A_N (1 ≤ A_i ≤ 10^9) - the weights given The third line contains string S of length N consisting only of letters \"L\" and \"R\" - string determining which side of the balance should be heavier after putting the i-th weight of your choice\n\nThe output contains N lines. In every line, you should print one integer and one letter - integer representing the weight you are putting on the balance in that move and the letter representing the side of the balance where you are putting the weight. If there is no solution, print -1.\n\nExplanation for the test case:\n\nafter the 1st weight: 3 L (left side is heavier)\n\nafter the 2nd weight: 2 R (left side is heavier)\n\nafter the 3rd weight: 8 R (right side is heavier)\n\nafter the 4th weight: 13 L (left side is heavier)\n\nafter the 5th weight: 7 L (left side is heavier)\n\nSo, the rules given by string S are fulfilled and our order of putting the weights is correct.\n\nInput:\n```\n5\n3 8 2 13 7\nLLRLL\n```\n\nOutput:\n```\n3 L\n2 R\n8 R\n13 L\n7 L\n```",
+    "input": "The first line contains one integer N (1 ≤ N ≤ 2*10^5) - the length of the array A The second line contains N distinct integers: A_1, A_2,...,A_N (1 ≤ A_i ≤ 10^9) - the weights given The third line contains string S of length N consisting only of letters \"L\" and \"R\" - string determining which side of the balance should be heavier after putting the i-th weight of your choice",
+    "output": "The output contains N lines. In every line, you should print one integer and one letter - integer representing the weight you are putting on the balance in that move and the letter representing the side of the balance where you are putting the weight. If there is no solution, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "two pointers",
+        "*2600"
+    ],
+    "rating": 2600
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2011H",
+    "contest_id": 2011,
+    "problem_letter": "H",
+    "title": "H. Strange Matrix",
+    "statement": "You are given a matrix a of size n × m, consisting of integers from 0 to 31 inclusive.\n\nLet's call the matrix strange if for every two distinct rows i and j, both of the following conditions hold:\n\nYou can perform the following operation any number of times: take any row of the matrix and a number y from 0 to 31 inclusive; then apply the bitwise XOR with the number y to all elements of the selected row. The cost of such an operation is equal to y.\n\nYour task is to calculate the minimum cost to make the matrix strange, or report that it is impossible.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 50; 1 ≤ k ≤ m).\n\nNext, there are n lines, the i-th of which contains m integers a_{i, 1}, a_{i, 2}, …, a_{i, m} (0 ≤ a_{i, j} ≤ 31).\n\nFor each test case, output one integer — the minimum cost to make the matrix strange, or -1 if it is impossible to make the matrix strange.\n\nInput:\n```\n32 3 10 1 01 0 13 2 20 12 34 55 5 50 5 17 4 228 5 16 21 97 25 31 30 80 0 5 15 131 2 3 4 5\n```\n\nOutput:\n```\n30\n-1\n24\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 50; 1 ≤ k ≤ m).\n\nNext, there are n lines, the i-th of which contains m integers a_{i, 1}, a_{i, 2}, …, a_{i, m} (0 ≤ a_{i, j} ≤ 31).",
+    "output": "For each test case, output one integer — the minimum cost to make the matrix strange, or -1 if it is impossible to make the matrix strange.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "graphs",
+        "greedy"
+    ],
+    "rating": null
+}

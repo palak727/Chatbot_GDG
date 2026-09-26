@@ -1,0 +1,18 @@
+{
+    "id": "1530E",
+    "contest_id": 1530,
+    "problem_letter": "E",
+    "title": "E. Minimax",
+    "statement": "Prefix function of string t = t_1 t_2 … t_n and position i in it is defined as the length k of the longest proper (not equal to the whole substring) prefix of substring t_1 t_2 … t_i which is also a suffix of the same substring.\n\nFor example, for string t = abacaba the values of the prefix function in positions 1, 2, …, 7 are equal to [0, 0, 1, 0, 1, 2, 3].\n\nLet f(t) be equal to the maximum value of the prefix function of string t over all its positions. For example, f(abacaba) = 3.\n\nYou are given a string s. Reorder its characters arbitrarily to get a string t (the number of occurrences of any character in strings s and t must be equal). The value of f(t) must be minimized. Out of all options to minimize f(t), choose the one where string t is the lexicographically smallest.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe only line of each test case contains string s (1 ≤ |s| ≤ 10^5) consisting of lowercase English letters.\n\nIt is guaranteed that the sum of lengths of s over all test cases does not exceed 10^5.\n\nFor each test case print a single string t.\n\nThe multisets of letters in strings s and t must be equal. The value of f(t), the maximum of prefix functions in string t, must be as small as possible. String t must be the lexicographically smallest string out of all strings satisfying the previous conditions.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nIn the first test case, f(t) = 0 and the values of prefix function are [0, 0, 0, 0, 0] for any permutation of letters. String ckpuv is the lexicographically smallest permutation of letters of string vkcup.\n\nIn the second test case, f(t) = 1 and the values of prefix function are [0, 1, 0, 1, 0, 1, 0].\n\nIn the third test case, f(t) = 5 and the values of prefix function are [0, 1, 2, 3, 4, 5].\n\nInput:\n```\n3\nvkcup\nabababa\nzzzzzz\n```\n\nOutput:\n```\nckpuv\naababab\nzzzzzz\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe only line of each test case contains string s (1 ≤ |s| ≤ 10^5) consisting of lowercase English letters.\n\nIt is guaranteed that the sum of lengths of s over all test cases does not exceed 10^5.",
+    "output": "For each test case print a single string t.\n\nThe multisets of letters in strings s and t must be equal. The value of f(t), the maximum of prefix functions in string t, must be as small as possible. String t must be the lexicographically smallest string out of all strings satisfying the previous conditions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1951E",
+    "contest_id": 1951,
+    "problem_letter": "E",
+    "title": "E. No Palindromes",
+    "statement": "You are given a string s consisting of lowercase Latin characters. You need to partition^dagger this string into some substrings, such that each substring is not a palindrome^ddagger.\n\n^dagger A partition of a string s is an ordered sequence of some k strings t_1, t_2, …, t_k, such that t_1 + t_2 + … + t_k = s, where + here represents the concatenation operation.\n\n^ddagger A string s is considered a palindrome if it reads the same backwards as forwards. For example, mathttracecar, mathttabccba, and mathtta are palindromes, but mathttab, mathttdokibird, and mathttkurosanji are not.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains a string s consisting of lowercase Latin characters (1 ≤ |s| ≤ 10^6).\n\nIt is guaranteed that the sum of |s| over all test cases does not exceed 10^6.\n\nFor each test case, print on one line \"YES\" if there exists a partition of s whose parts are not palindromes, or \"NO\" if there is no such partition.\n\nIf the answer is \"YES\", on the second line, print an integer k — the number of parts that s needs to be partitioned to such that each part is not a palindrome. On the third line, print k strings t_1, t_2, …, t_k representing such a partition. If there are multiple such partitions, print any of them.\n\nIn the first test case, since mathttsinktheyacht is already non-palindrome, the partition [mathttsinktheyacht] is valid.\n\nIn the second test case, as any substring of the string s is palindrome, there are no valid partitions.\n\nIn the third test case, another valid partition is [mathttuw,mathttuo, mathttwou, mathttwu].\n\nInput:\n```\n3sinktheyachtllllllllluwuowouwu\n```\n\nOutput:\n```\nYES\n1\nsinktheyacht\nNO\nYES\n3\nuw uow ouwu\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains a string s consisting of lowercase Latin characters (1 ≤ |s| ≤ 10^6).\n\nIt is guaranteed that the sum of |s| over all test cases does not exceed 10^6.",
+    "output": "For each test case, print on one line \"YES\" if there exists a partition of s whose parts are not palindromes, or \"NO\" if there is no such partition.\n\nIf the answer is \"YES\", on the second line, print an integer k — the number of parts that s needs to be partitioned to such that each part is not a palindrome. On the third line, print k strings t_1, t_2, …, t_k representing such a partition. If there are multiple such partitions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "divide and conquer",
+        "greedy",
+        "hashing",
+        "implementation",
+        "math",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

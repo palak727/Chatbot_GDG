@@ -1,0 +1,20 @@
+{
+    "id": "1772F",
+    "contest_id": 1772,
+    "problem_letter": "F",
+    "title": "F. Copy of a Copy of a Copy",
+    "statement": "It all started with a black-and-white picture, that can be represented as an n × m matrix such that all its elements are either 0 or 1. The rows are numbered from 1 to n, the columns are numbered from 1 to m.\n\nSeveral operations were performed on the picture (possibly, zero), each of one of the two kinds:\n\nNote that the order of operations could be arbitrary, they were not necessarily alternating.\n\nYou are presented with the outcome: all k copies that were made. Additionally, you are given the initial picture. However, all k+1 pictures are shuffled.\n\nRestore the sequence of the operations. If there are multiple answers, print any of them. The tests are constructed from the real sequence of operations, i. e. at least one answer always exists.\n\nThe first line contains three integers n, m and k (3 ≤ n, m ≤ 30; 0 ≤ k ≤ 100) — the number of rows and columns of the pictures and the number of copies made, respectively.\n\nThen k+1 pictures follow — k copies and the initial picture. Their order is arbitrary.\n\nEach picture consists of n lines, each consisting of m characters, each character is either 0 or 1. There is an empty line before each picture.\n\nIn the first line, print a single integer — the index of the initial picture. The pictures are numbered from 1 to k+1 in the order they appear in the input.\n\nIn the second line, print a single integer q — the number of operations.\n\nEach of the next q lines should contain an operation. The operations should be listed in order they were applied. Each operation is one of two types:\n\nEach index from 1 to k+1 should appear in the output exactly once — one of them is the index of the initial picture, the remaining k are arguments of the operations of the second kind.\n\nIf there are multiple answers, print any of them. The tests are constructed from the real sequence of operations, i. e. at least one answer always exists.\n\nInput:\n```\n3 3 1\n\n010\n111\n010\n\n010\n101\n010\n```\n\nOutput:\n```\n2\n2\n1 2 2\n2 1\n```\n\nInput:\n```\n4 5 3\n\n00000\n01000\n11100\n01000\n\n00000\n01000\n10100\n01000\n\n00000\n01010\n10100\n01000\n\n00000\n01000\n10100\n01000\n```\n\nOutput:\n```\n3\n5\n1 2 4\n2 2\n2 4\n1 3 2\n2 1\n```\n\nInput:\n```\n5 3 0\n\n110\n010\n001\n011\n001\n```\n\nOutput:\n```\n1\n0\n```",
+    "input": "The first line contains three integers n, m and k (3 ≤ n, m ≤ 30; 0 ≤ k ≤ 100) — the number of rows and columns of the pictures and the number of copies made, respectively.\n\nThen k+1 pictures follow — k copies and the initial picture. Their order is arbitrary.\n\nEach picture consists of n lines, each consisting of m characters, each character is either 0 or 1. There is an empty line before each picture.",
+    "output": "In the first line, print a single integer — the index of the initial picture. The pictures are numbered from 1 to k+1 in the order they appear in the input.\n\nIn the second line, print a single integer q — the number of operations.\n\nEach of the next q lines should contain an operation. The operations should be listed in order they were applied. Each operation is one of two types:\n\nEach index from 1 to k+1 should appear in the output exactly once — one of them is the index of the initial picture, the remaining k are arguments of the operations of the second kind.\n\nIf there are multiple answers, print any of them. The tests are constructed from the real sequence of operations, i. e. at least one answer always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

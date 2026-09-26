@@ -1,0 +1,21 @@
+{
+    "id": "2061E",
+    "contest_id": 2061,
+    "problem_letter": "E",
+    "title": "E. Kevin and And",
+    "statement": "Kevin has an integer sequence a of length n. At the same time, Kevin has m types of magic, where the i-th type of magic can be represented by an integer b_i.\n\nKevin can perform at most k (possibly zero) magic operations. In each operation, Kevin can do the following:\n\nFind the minimum possible sum of all numbers in the sequence a after performing at most k operations.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, k (1≤ n ≤ 10^5, 1≤ m ≤ 10, 0≤ k≤ nm) — the length of a, the number of types of magic, and the maximum number of operations.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i < 2^30).\n\nThe third line contains m integers b_1, b_2, …, b_m (0≤ b_i < 2^30).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output one integer — the minimum possible sum of all numbers in the sequence a after performing at most k operations.\n\nIn the first test case, one possible way could be:\n\nIn the second test case, one possible way could be:\n\nInput:\n```\n51 3 275 6 32 3 25 65 6 310 2 53 1 4 1 5 9 2 6 5 37 85 1 01073741823 1073741823 1073741823 1073741823 107374182310737418231 1 000\n```\n\nOutput:\n```\n1\n3\n11\n5368709115\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, k (1≤ n ≤ 10^5, 1≤ m ≤ 10, 0≤ k≤ nm) — the length of a, the number of types of magic, and the maximum number of operations.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i < 2^30).\n\nThe third line contains m integers b_1, b_2, …, b_m (0≤ b_i < 2^30).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output one integer — the minimum possible sum of all numbers in the sequence a after performing at most k operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

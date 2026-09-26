@@ -1,0 +1,18 @@
+{
+    "id": "1764D",
+    "contest_id": 1764,
+    "problem_letter": "D",
+    "title": "D. Doremy's Pegging Game",
+    "statement": "Doremy has n+1 pegs. There are n red pegs arranged as vertices of a regular n-sided polygon, numbered from 1 to n in anti-clockwise order. There is also a blue peg of slightly smaller diameter in the middle of the polygon. A rubber band is stretched around the red pegs.\n\nDoremy is very bored today and has decided to play a game. Initially, she has an empty array a. While the rubber band does not touch the blue peg, she will:\n\nDoremy wonders how many possible different arrays a can be produced by the following process. Since the answer can be big, you are only required to output it modulo p. p is guaranteed to be a prime number.\n\nThe first line contains two integers n and p (3 ≤ n ≤ 5000, 10^8 ≤ p ≤ 10^9) — the number of red pegs and the modulo respectively.\n\np is guaranteed to be a prime number.\n\nOutput a single integer, the number of different arrays a that can be produced by the process described above modulo p.\n\nIn the first test case, n=4, some possible arrays a that can be produced are [4,2,3] and [1,4]. However, it is not possible for a to be [1] or [1,4,3].\n\nInput:\n```\n4 100000007\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n1145 141919831\n```\n\nOutput:\n```\n105242108\n```",
+    "input": "The first line contains two integers n and p (3 ≤ n ≤ 5000, 10^8 ≤ p ≤ 10^9) — the number of red pegs and the modulo respectively.\n\np is guaranteed to be a prime number.",
+    "output": "Output a single integer, the number of different arrays a that can be produced by the process described above modulo p.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

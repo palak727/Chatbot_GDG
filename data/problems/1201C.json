@@ -1,0 +1,19 @@
+{
+    "id": "1201C",
+    "contest_id": 1201,
+    "problem_letter": "C",
+    "title": "C. Maximum Median",
+    "statement": "You are given an array a of n integers, where n is odd. You can make the following operation with it:\n\nYou want to make the median of the array the largest possible using at most k operations.\n\nThe median of the odd-sized array is the middle element after the array is sorted in non-decreasing order. For example, the median of the array [1, 5, 2, 3, 5] is 3.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 2·10^5, n is odd, 1 ≤ k ≤ 10^9) — the number of elements in the array and the largest number of operations you can make.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nPrint a single integer — the maximum possible median after the operations.\n\nIn the first example, you can increase the second element twice. Than array will be [1, 5, 5] and it's median is 5.\n\nIn the second example, it is optimal to increase the second number and than increase third and fifth. This way the answer is 3.\n\nIn the third example, you can make four operations: increase first, fourth, sixth, seventh element. This way the array will be [5, 1, 2, 5, 3, 5, 5] and the median will be 5.\n\nInput:\n```\n3 2\n1 3 5\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n5 5\n1 2 1 1 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n7 7\n4 1 2 4 3 4 4\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 2·10^5, n is odd, 1 ≤ k ≤ 10^9) — the number of elements in the array and the largest number of operations you can make.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "Print a single integer — the maximum possible median after the operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

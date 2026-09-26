@@ -1,0 +1,19 @@
+{
+    "id": "1758E",
+    "contest_id": 1758,
+    "problem_letter": "E",
+    "title": "E. Tick, Tock",
+    "statement": "Tannhaus, the clockmaker in the town of Winden, makes mysterious clocks that measure time in h hours numbered from 0 to h-1. One day, he decided to make a puzzle with these clocks.\n\nThe puzzle consists of an n × m grid of clocks, and each clock always displays some hour exactly (that is, it doesn't lie between two hours). In one move, he can choose any row or column and shift all clocks in that row or column one hour forward^dagger.\n\nThe grid of clocks is called solvable if it is possible to make all the clocks display the same time.\n\nWhile building his puzzle, Tannhaus suddenly got worried that it might not be possible to make the grid solvable. Some cells of the grid have clocks already displaying a certain initial time, while the rest of the cells are empty.\n\nGiven the partially completed grid of clocks, find the number of ways^ddagger to assign clocks in the empty cells so that the grid is solvable. The answer can be enormous, so compute it modulo 10^9 + 7.\n\n^dagger If a clock currently displays hour t and is shifted one hour forward, then the clock will instead display hour (t+1) bmod h.\n\n^ddagger Two assignments are different if there exists some cell with a clock that displays a different time in both arrangements.\n\nThe first line of input contains t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe first line of each test case consists of 3 integers n, m, and h (1 ≤ n, m ≤ 2·10^5; 1 ≤ h ≤ 10^9) — the number of rows in the grid, the number of columns in the grid, and the number of the hours in the day respectively.\n\nThe next n lines each contain m integers, describing the clock grid. The integer x (-1 ≤ x < h) in the i-th row and the j-th column represents the initial hour of the corresponding clock, or if x = -1, an empty cell.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of ways to assign clocks in the empty cells so that the grid is solvable. The answer can be huge, so output it modulo 10^9 + 7.\n\nFor the first sample, this is a possible configuration for the clocks:\n\nThis is solvable since we can:\n\nFor the second test case, it can be shown that there are no possible solvable clock configurations.\n\nInput:\n```\n52 3 41 0 -1-1 -1 22 2 101 23 54 5 10241 -1 -1 -1 -1-1 -1 -1 1000 -1-1 -1 -1 -1 69420 -1 -1 999 -13 3 3-1 -1 12 -1 12 -1 23 3 31 -1 2-1 0 -1-1 1 0\n```\n\nOutput:\n```\n4\n0\n73741817\n0\n1\n```",
+    "input": "The first line of input contains t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe first line of each test case consists of 3 integers n, m, and h (1 ≤ n, m ≤ 2·10^5; 1 ≤ h ≤ 10^9) — the number of rows in the grid, the number of columns in the grid, and the number of the hours in the day respectively.\n\nThe next n lines each contain m integers, describing the clock grid. The integer x (-1 ≤ x < h) in the i-th row and the j-th column represents the initial hour of the corresponding clock, or if x = -1, an empty cell.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of ways to assign clocks in the empty cells so that the grid is solvable. The answer can be huge, so output it modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*2500"
+    ],
+    "rating": 2500
+}

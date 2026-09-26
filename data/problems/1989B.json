@@ -1,0 +1,18 @@
+{
+    "id": "1989B",
+    "contest_id": 1989,
+    "problem_letter": "B",
+    "title": "B. Substring and Subsequence",
+    "statement": "You are given two strings a and b, both consisting of lowercase Latin letters.\n\nA subsequence of a string is a string which can be obtained by removing several (possibly zero) characters from the original string. A substring of a string is a contiguous subsequence of that string.\n\nFor example, consider the string abac:\n\nYour task is to calculate the minimum possible length of the string that contains a as a substring and b as a subsequence.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a string a (1 ≤ |a| ≤ 100), consisting of lowercase Latin letters.\n\nThe second line of each test case contains a string b (1 ≤ |b| ≤ 100), consisting of lowercase Latin letters.\n\nFor each test case, print a single integer — the minimum possible length of the string that contains a as a substring and b as a subsequence.\n\nIn the examples below, the characters that correspond to the subsequence equal to b are bolded.\n\nIn the first example, one of the possible answers is caba.\n\nIn the second example, one of the possible answers is ercf.\n\nIn the third example, one of the possible answers is mmm.\n\nIn the fourth example, one of the possible answers is contest.\n\nIn the fifth example, one of the possible answers is abcdefg.\n\nInput:\n```\n5abacbercfmmmmmmcontesttestcdeabcefg\n```\n\nOutput:\n```\n4\n4\n3\n7\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a string a (1 ≤ |a| ≤ 100), consisting of lowercase Latin letters.\n\nThe second line of each test case contains a string b (1 ≤ |b| ≤ 100), consisting of lowercase Latin letters.",
+    "output": "For each test case, print a single integer — the minimum possible length of the string that contains a as a substring and b as a subsequence.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "strings",
+        "*1200"
+    ],
+    "rating": 1200
+}

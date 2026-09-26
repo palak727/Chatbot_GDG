@@ -1,0 +1,18 @@
+{
+    "id": "1543B",
+    "contest_id": 1543,
+    "problem_letter": "B",
+    "title": "B. Customising the Track",
+    "statement": "Highway 201 is the most busy street in Rockport. Traffic cars cause a lot of hindrances to races, especially when there are a lot of them. The track which passes through this highway can be divided into n sub-tracks. You are given an array a where a_i represents the number of traffic cars in the i-th sub-track. You define the inconvenience of the track as ∑limits_{i=1}^n ∑limits_{j=i+1}^n lvert a_i-a_jrvert, where |x| is the absolute value of x.\n\nYou can perform the following operation any (possibly zero) number of times: choose a traffic car and move it from its current sub-track to any other sub-track.\n\nFind the minimum inconvenience you can achieve.\n\nThe first line of input contains a single integer t (1≤ t≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single line containing a single integer: the minimum inconvenience you can achieve by applying the given operation any (possibly zero) number of times.\n\nFor the first test case, you can move a car from the 3-rd sub-track to the 1-st sub-track to obtain 0 inconvenience.\n\nFor the second test case, moving any car won't decrease the inconvenience of the track.\n\nInput:\n```\n3\n3\n1 2 3\n4\n0 1 1 0\n10\n8 3 6 11 5 2 1 7 10 4\n```\n\nOutput:\n```\n0\n4\n21\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single line containing a single integer: the minimum inconvenience you can achieve by applying the given operation any (possibly zero) number of times.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

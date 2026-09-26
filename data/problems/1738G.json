@@ -1,0 +1,19 @@
+{
+    "id": "1738G",
+    "contest_id": 1738,
+    "problem_letter": "G",
+    "title": "G. Anti-Increasing Addicts",
+    "statement": "You are given an n × n grid.\n\nWe write (i, j) to denote the cell in the i-th row and j-th column. For each cell, you are told whether yon can delete it or not.\n\nGiven an integer k, you are asked to delete exactly (n-k+1)^2 cells from the grid such that the following condition holds.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^5) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 1000).\n\nThen n lines follow. The i-th line contains a binary string s_i of length n. The j-th character of s_i is 1 if you can delete cell (i, j), and 0 otherwise.\n\nIt's guaranteed that the sum of n^2 over all test cases does not exceed 10^6.\n\nFor each test case, if there is no way to delete exactly (n-k+1)^2 cells to meet the condition, output \"NO\" (without quotes).\n\nOtherwise, output \"YES\" (without quotes). Then, output n lines. The i-th line should contain a binary string t_i of length n. The j-th character of t_i is 0 if cell (i, j) is deleted, and 1 otherwise.\n\nIf there are multiple solutions, you can output any of them.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nFor the first test case, you only have to delete cell (1, 1).\n\nFor the second test case, you could choose to delete cells (1,1), (1,2), (4,3) and (4,4).\n\nFor the third test case, it is no solution because the cells in the diagonal will always form a strictly increasing sequence of length 5.\n\nInput:\n```\n42 210014 311100101101001115 501111101111101111101111105 21000001111011110111101111\n```\n\nOutput:\n```\nYES\n01\n11\nYES\n0011\n1111\n1111\n1100\nNO\nYES\n01111\n11000\n10000\n10000\n10000\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^5) — the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 1000).\n\nThen n lines follow. The i-th line contains a binary string s_i of length n. The j-th character of s_i is 1 if you can delete cell (i, j), and 0 otherwise.\n\nIt's guaranteed that the sum of n^2 over all test cases does not exceed 10^6.",
+    "output": "For each test case, if there is no way to delete exactly (n-k+1)^2 cells to meet the condition, output \"NO\" (without quotes).\n\nOtherwise, output \"YES\" (without quotes). Then, output n lines. The i-th line should contain a binary string t_i of length n. The j-th character of t_i is 0 if cell (i, j) is deleted, and 1 otherwise.\n\nIf there are multiple solutions, you can output any of them.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1855B",
+    "contest_id": 1855,
+    "problem_letter": "B",
+    "title": "B. Longest Divisors Interval",
+    "statement": "Given a positive integer n, find the maximum size of an interval [l, r] of positive integers such that, for every i in the interval (i.e., l ≤ i ≤ r), n is a multiple of i.\n\nGiven two integers l≤ r, the size of the interval [l, r] is r-l+1 (i.e., it coincides with the number of integers belonging to the interval).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of the description of each test case contains one integer n (1 ≤ n ≤ 10^18).\n\nFor each test case, print a single integer: the maximum size of a valid interval.\n\nIn the first test case, a valid interval with maximum size is [1, 1] (it's valid because n = 1 is a multiple of 1) and its size is 1.\n\nIn the second test case, a valid interval with maximum size is [4, 5] (it's valid because n = 40 is a multiple of 4 and 5) and its size is 2.\n\nIn the third test case, a valid interval with maximum size is [9, 11].\n\nIn the fourth test case, a valid interval with maximum size is [8, 13].\n\nIn the seventh test case, a valid interval with maximum size is [327869, 327871].\n\nInput:\n```\n1014099099042044745601699589137065729723659882203458280803877017195378264306201968835781298538648023412808056621000000000000000000\n```\n\nOutput:\n```\n1\n2\n3\n6\n4\n22\n3\n1\n2\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of the description of each test case contains one integer n (1 ≤ n ≤ 10^18).",
+    "output": "For each test case, print a single integer: the maximum size of a valid interval.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "greedy",
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

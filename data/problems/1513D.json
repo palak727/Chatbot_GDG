@@ -1,0 +1,21 @@
+{
+    "id": "1513D",
+    "contest_id": 1513,
+    "problem_letter": "D",
+    "title": "D. GCD and MST",
+    "statement": "You are given an array a of n (n ≥ 2) positive integers and an integer p. Consider an undirected weighted graph of n vertices numbered from 1 to n for which the edges between the vertices i and j (i < j) are added in the following manner:\n\nHere gcd(x, y, …) denotes the greatest common divisor (GCD) of integers x, y, ....\n\nNote that there could be multiple edges between i and j if both of the above conditions are true, and if both the conditions fail for i and j, then there is no edge between these vertices.\n\nThe goal is to find the weight of the minimum spanning tree of this graph.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 2·10^5) and p (1 ≤ p ≤ 10^9) — the number of nodes and the parameter p.\n\nThe second line contains n integers a_1, a_2, a_3, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nOutput t lines. For each test case print the weight of the corresponding graph.\n\nHere are the graphs for the four test cases of the example (the edges of a possible MST of the graphs are marked pink):\n\nFor test case 1\n\nFor test case 2\n\nFor test case 3\n\nFor test case 4\n\nInput:\n```\n4\n2 5\n10 10\n2 5\n3 3\n4 5\n5 2 4 9\n8 8\n5 3 3 6 10 100 9 15\n```\n\nOutput:\n```\n5\n3\n12\n46\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 2·10^5) and p (1 ≤ p ≤ 10^9) — the number of nodes and the parameter p.\n\nThe second line contains n integers a_1, a_2, a_3, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "Output t lines. For each test case print the weight of the corresponding graph.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "graphs",
+        "greedy",
+        "number theory",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

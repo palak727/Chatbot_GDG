@@ -1,0 +1,16 @@
+{
+    "id": "1066C",
+    "contest_id": 1066,
+    "problem_letter": "C",
+    "title": "C. Books Queries",
+    "statement": "You have got a shelf and want to put some books on it.\n\nYou are given q queries of three types:\n\nYou can assume that the first book you will put can have any position (it does not matter) and queries of type 3 are always valid (it is guaranteed that the book in each such query is already placed). You can also assume that you don't put the same book on the shelf twice, so ids don't repeat in queries of first two types.\n\nYour problem is to answer all the queries of type 3 in order they appear in the input.\n\nNote that after answering the query of type 3 all the books remain on the shelf and the relative order of books does not change.\n\nIf you are Python programmer, consider using PyPy instead of Python when you submit your code.\n\nThe first line of the input contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow. The i-th line contains the i-th query in format as in the problem statement. It is guaranteed that queries are always valid (for query type 3, it is guaranteed that the book in each such query is already placed, and for other types, it is guaranteed that the book was not placed before).\n\nIt is guaranteed that there is at least one query of type 3 in the input.\n\nIn each query the constraint 1 ≤ id ≤ 2·10^5 is met.\n\nPrint answers to queries of the type 3 in order they appear in the input.\n\nLet's take a look at the first example and let's consider queries:\n\nLet's take a look at the second example and let's consider queries:\n\nInput:\n```\n8\nL 1\nR 2\nR 3\n? 2\nL 4\n? 1\nL 5\n? 1\n```\n\nOutput:\n```\n1\n1\n2\n```\n\nInput:\n```\n10\nL 100\nR 100000\nR 123\nL 101\n? 123\nL 10\nR 115\n? 100\nR 110\n? 115\n```\n\nOutput:\n```\n0\n2\n1\n```",
+    "input": "The first line of the input contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow. The i-th line contains the i-th query in format as in the problem statement. It is guaranteed that queries are always valid (for query type 3, it is guaranteed that the book in each such query is already placed, and for other types, it is guaranteed that the book was not placed before).\n\nIt is guaranteed that there is at least one query of type 3 in the input.\n\nIn each query the constraint 1 ≤ id ≤ 2·10^5 is met.",
+    "output": "Print answers to queries of the type 3 in order they appear in the input.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

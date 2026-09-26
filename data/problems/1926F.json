@@ -1,0 +1,20 @@
+{
+    "id": "1926F",
+    "contest_id": 1926,
+    "problem_letter": "F",
+    "title": "F. Vlad and Avoiding X",
+    "statement": "Vladislav has a grid of size 7 × 7, where each cell is colored black or white. In one operation, he can choose any cell and change its color (black ↔ white).\n\nFind the minimum number of operations required to ensure that there are no black cells with four diagonal neighbors also being black.\n\nThe left image shows that initially there are two black cells violating the condition. By flipping one cell, the grid will work.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 200) — the number of test cases. Then follows the description of the test cases.\n\nEach test case consists of 7 lines, each containing 7 characters. Each of these characters is either textttW or textttB, denoting a white or black cell, respectively.\n\nFor each test case, output a single integer — the minimum number of operations required to ensure that there are no black cells with all four diagonal neighbors also being black.\n\nThe first test case is illustrated in the statement.\n\nThe second test case is illustrated below:\n\nIn the third test case, the grid already satisfies the condition.\n\nInput:\n```\n4WWWWWWWWWWWBBBWWWWWBWWWBBBBBWWWBWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBBBBBWWBBBBBWWBBBBBWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWBBBBBWBBBBBBBBBBBBBBWWWWWWWBBBBBBBBBBBBBBBBBBBBB\n```\n\nOutput:\n```\n1\n2\n0\n5\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 200) — the number of test cases. Then follows the description of the test cases.\n\nEach test case consists of 7 lines, each containing 7 characters. Each of these characters is either textttW or textttB, denoting a white or black cell, respectively.",
+    "output": "For each test case, output a single integer — the minimum number of operations required to ensure that there are no black cells with all four diagonal neighbors also being black.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1846E2",
+    "contest_id": 1846,
+    "problem_letter": "E2",
+    "title": "E2. Rudolf and Snowflakes (hard version)",
+    "statement": "This is the hard version of the problem. The only difference is that in this version n ≤ 10^18.\n\nOne winter morning, Rudolf was looking thoughtfully out the window, watching the falling snowflakes. He quickly noticed a certain symmetry in the configuration of the snowflakes. And like a true mathematician, Rudolf came up with a mathematical model of a snowflake.\n\nHe defined a snowflake as an undirected graph constructed according to the following rules:\n\nThe smallest possible snowflake for k = 4 is shown in the figure.\n\nAfter some mathematical research, Rudolf realized that such snowflakes may not have any number of vertices. Help Rudolf check whether a snowflake with n vertices can exist.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThen follow the descriptions of the test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^18) — the number of vertices for which it is necessary to check the existence of a snowflake.\n\nOutput t lines, each of which is the answer to the corresponding test case — \"YES\" if there exists such k > 1 that a snowflake with the given number of vertices can be constructed; \"NO\" otherwise.\n\nInput:\n```\n912361315255101011000000000000000000\n```\n\nOutput:\n```\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThen follow the descriptions of the test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^18) — the number of vertices for which it is necessary to check the existence of a snowflake.",
+    "output": "Output t lines, each of which is the answer to the corresponding test case — \"YES\" if there exists such k > 1 that a snowflake with the given number of vertices can be constructed; \"NO\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "implementation",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

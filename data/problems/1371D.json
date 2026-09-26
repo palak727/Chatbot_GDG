@@ -1,0 +1,18 @@
+{
+    "id": "1371D",
+    "contest_id": 1371,
+    "problem_letter": "D",
+    "title": "D. Grid-00100",
+    "statement": "A mad scientist Dr.Jubal has made a competitive programming task. Try to solve it!\n\nYou are given integers n,k. Construct a grid A with size n × n consisting of integers 0 and 1. The very important condition should be satisfied: the sum of all elements in the grid is exactly k. In other words, the number of 1 in the grid is equal to k.\n\nLet's define:\n\nFind any grid A, which satisfies the following condition. Among such grids find any, for which the value f(A) is the minimum possible. Among such tables, you can find any.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Next t lines contain descriptions of test cases.\n\nFor each test case the only line contains two integers n, k (1 ≤ n ≤ 300, 0 ≤ k ≤ n^2).\n\nIt is guaranteed that the sum of n^2 for all test cases does not exceed 10^5.\n\nFor each test case, firstly print the minimum possible value of f(A) among all tables, for which the condition is satisfied.\n\nAfter that, print n lines contain n characters each. The j-th character in the i-th line should be equal to A_{i,j}.\n\nIf there are multiple answers you can print any.\n\nIn the first test case, the sum of all elements in the grid is equal to 2, so the condition is satisfied. R_1 = 1, R_2 = 1 and C_1 = 1, C_2 = 1. Then, f(A) = (1-1)^2 + (1-1)^2 = 0, which is the minimum possible value of f(A).\n\nIn the second test case, the sum of all elements in the grid is equal to 8, so the condition is satisfied. R_1 = 3, R_2 = 3, R_3 = 2 and C_1 = 3, C_2 = 2, C_3 = 3. Then, f(A) = (3-2)^2 + (3-2)^2 = 2. It can be proven, that it is the minimum possible value of f(A).\n\nInput:\n```\n4\n2 2\n3 8\n1 0\n4 16\n```\n\nOutput:\n```\n0\n10\n01\n2\n111\n111\n101\n0\n0\n0\n1111\n1111\n1111\n1111\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Next t lines contain descriptions of test cases.\n\nFor each test case the only line contains two integers n, k (1 ≤ n ≤ 300, 0 ≤ k ≤ n^2).\n\nIt is guaranteed that the sum of n^2 for all test cases does not exceed 10^5.",
+    "output": "For each test case, firstly print the minimum possible value of f(A) among all tables, for which the condition is satisfied.\n\nAfter that, print n lines contain n characters each. The j-th character in the i-th line should be equal to A_{i,j}.\n\nIf there are multiple answers you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

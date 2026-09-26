@@ -1,0 +1,19 @@
+{
+    "id": "1644F",
+    "contest_id": 1644,
+    "problem_letter": "F",
+    "title": "F. Basis",
+    "statement": "For an array of integers a, let's define |a| as the number of elements in it.\n\nLet's denote two functions:\n\nFor example, F([2, 2, 1, 3, 5, 6, 8], 2) is calculated as follows: first, you replace each element of the array with 2 copies of it, so you obtain [2, 2, 2, 2, 1, 1, 3, 3, 5, 5, 6, 6, 8, 8]. Then, you take the first 7 elements of the array you obtained, so the result of the function is [2, 2, 2, 2, 1, 1, 3].\n\nFor example, G([1, 1, 2, 3, 5], 3, 1) = [3, 3, 2, 1, 5].\n\nAn array a is a parent of the array b if:\n\nAn array a is an ancestor of the array b if there exists a finite sequence of arrays c_0, c_1, …, c_m (m ≥ 0) such that c_0 is a, c_m is b, and for every i ∈ [1, m], c_{i-1} is a parent of c_i.\n\nAnd now, the problem itself.\n\nYou are given two integers n and k. Your goal is to construct a sequence of arrays s_1, s_2, …, s_m in such a way that:\n\nPrint the minimum number of arrays in such sequence.\n\nThe only line contains two integers n and k (1 ≤ n, k ≤ 2·10^5).\n\nPrint one integer — the minimum number of elements in a sequence of arrays meeting the constraints. Since the answer can be large, output it modulo 998244353.\n\nLet's analyze the first example.\n\nOne of the possible answers for the first example is the sequence [[2, 1, 2], [1, 2, 2]]. Every array of size 3 consisting of elements from 1 to 2 has an ancestor in this sequence:\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 10\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n13 37\n```\n\nOutput:\n```\n27643508\n```\n\nInput:\n```\n1337 42\n```\n\nOutput:\n```\n211887828\n```\n\nInput:\n```\n198756 123456\n```\n\nOutput:\n```\n159489391\n```\n\nInput:\n```\n123456 198756\n```\n\nOutput:\n```\n460526614\n```",
+    "input": "The only line contains two integers n and k (1 ≤ n, k ≤ 2·10^5).",
+    "output": "Print one integer — the minimum number of elements in a sequence of arrays meeting the constraints. Since the answer can be large, output it modulo 998244353.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

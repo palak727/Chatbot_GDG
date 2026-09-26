@@ -1,0 +1,16 @@
+{
+    "id": "2093A",
+    "contest_id": 2093,
+    "problem_letter": "A",
+    "title": "A. Ideal Generator",
+    "statement": "We call an array a, consisting of k positive integers, palindromic if [a_1, a_2, …, a_k] = [a_k, a_{k-1}, …, a_1]. For example, the arrays [1, 2, 1] and [5, 1, 1, 5] are palindromic, while the arrays [1, 2, 3] and [21, 12] are not.\n\nWe call a number k an ideal generator if any integer n (n ≥ k) can be represented as the sum of the elements of a palindromic array of length exactly k. Each element of the array must be greater than 0.\n\nFor example, the number 1 is an ideal generator because any natural number n can be generated using the array [n]. However, the number 2 is not an ideal generator — there is no palindromic array of length 2 that sums to 3.\n\nDetermine whether the given number k is an ideal generator.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains one integer k (1 ≤ k ≤ 1000).\n\nFor each number k, you need to output the word \"YES\" if it is an ideal generator, or \"NO\" otherwise.\n\nYou may output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as a positive answer).\n\nInput:\n```\n5123731000\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains one integer k (1 ≤ k ≤ 1000).",
+    "output": "For each number k, you need to output the word \"YES\" if it is an ideal generator, or \"NO\" otherwise.\n\nYou may output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

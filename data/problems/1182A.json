@@ -1,0 +1,17 @@
+{
+    "id": "1182A",
+    "contest_id": 1182,
+    "problem_letter": "A",
+    "title": "A. Filling Shapes",
+    "statement": "You have a given integer n. Find the number of ways to fill all 3 × n tiles with the shape described in the picture below. Upon filling, no empty spaces are allowed. Shapes cannot overlap.\n\nThe only line contains one integer n (1 ≤ n ≤ 60) — the length.\n\nPrint the number of ways to fill.\n\nIn the first example, there are 4 possible cases of filling.\n\nIn the second example, you cannot fill the shapes in 3 × 1 tiles.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The only line contains one integer n (1 ≤ n ≤ 60) — the length.",
+    "output": "Print the number of ways to fill.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

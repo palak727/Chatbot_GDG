@@ -1,0 +1,17 @@
+{
+    "id": "1910C",
+    "contest_id": 1910,
+    "problem_letter": "C",
+    "title": "C. Poisonous Swamp",
+    "statement": "The first location in the brand new critically acclaimed fantasy action RPG \"Ancient Staff\" is a poisonous swamp. The swamp has some lily pads growing in it. It can be represented as a 2 × n grid (2 rows and n columns), where each cell is either empty or has a lily pad in it.\n\nThere are exactly n lily pads in a swamp — one in each column. A frog is sitting on top of every lily pad. In one move, every frog must jump to an adjacent by a side cell.\n\nAfter the move, no frog can be outside the grid and no two frogs can share the same lily pad. Two frogs from adjacent cells can't jump towards each other (i.e. swap cells).\n\nIf a frog jumps to a lily pad, it survives. Otherwise, it falls into a poisonous swamp and gets devoured by an eldritch creature living on its bottom.\n\nYou can choose the direction each frogs jumps at. Determine the maximum number of frogs that can survive after one move.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of columns in a swamp grid.\n\nEach of the following two lines contains a description of a row of a swamp — a string, consisting of exactly n characters. Each character is either a dot ('.'), denoting a swamp cell, or an asterisk ('*'), denoting a lily pad with a frog.\n\nIn each column, there is exactly one dot and exactly one asterisk. The sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the maximum number of frogs that can survive after one move, if you choose the direction each frogs jumps at.\n\nThe i-th frog is the frog on the lily pad in the i-th column.\n\nIn the first testcase:\n\nInput:\n```\n35*..**.**..1*.3...***\n```\n\nOutput:\n```\n2\n0\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of columns in a swamp grid.\n\nEach of the following two lines contains a description of a row of a swamp — a string, consisting of exactly n characters. Each character is either a dot ('.'), denoting a swamp cell, or an asterisk ('*'), denoting a lily pad with a frog.\n\nIn each column, there is exactly one dot and exactly one asterisk. The sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the maximum number of frogs that can survive after one move, if you choose the direction each frogs jumps at.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1188C",
+    "contest_id": 1188,
+    "problem_letter": "C",
+    "title": "C. Array Beauty",
+    "statement": "Let's call beauty of an array b_1, b_2, …, b_n (n > 1) — minlimits_{1 ≤ i < j ≤ n} |b_i - b_j|.\n\nYou're given an array a_1, a_2, … a_n and a number k. Calculate the sum of beauty over all subsequences of the array of length exactly k. As this number can be very large, output it modulo 998244353.\n\nA sequence a is a subsequence of an array b if a can be obtained from b by deletion of several (possibly, zero or all) elements.\n\nThe first line contains integers n, k (2 ≤ k ≤ n ≤ 1000).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^5).\n\nOutput one integer — the sum of beauty over all subsequences of the array of length exactly k. As this number can be very large, output it modulo 998244353.\n\nIn the first example, there are 4 subsequences of length 3 — [1, 7, 3], [1, 3, 5], [7, 3, 5], [1, 7, 5], each of which has beauty 2, so answer is 8.\n\nIn the second example, there is only one subsequence of length 5 — the whole array, which has the beauty equal to |10-1| = 9.\n\nInput:\n```\n4 3\n1 7 3 5\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5 5\n1 10 100 1000 10000\n```\n\nOutput:\n```\n9\n```",
+    "input": "The first line contains integers n, k (2 ≤ k ≤ n ≤ 1000).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^5).",
+    "output": "Output one integer — the sum of beauty over all subsequences of the array of length exactly k. As this number can be very large, output it modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "*2500"
+    ],
+    "rating": 2500
+}

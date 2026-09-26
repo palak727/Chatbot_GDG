@@ -1,0 +1,18 @@
+{
+    "id": "1710E",
+    "contest_id": 1710,
+    "problem_letter": "E",
+    "title": "E. Two Arrays",
+    "statement": "You are given two arrays of integers a_1,a_2,…,a_n and b_1,b_2,…,b_m.\n\nAlice and Bob are going to play a game. Alice moves first and they take turns making a move.\n\nThey play on a grid of size n × m (a grid with n rows and m columns). Initially, there is a rook positioned on the first row and first column of the grid.\n\nDuring her/his move, a player can do one of the following two operations:\n\nBob wants to maximize the score while Alice wants to minimize it. If they both play this game optimally, what is the final score of the game?\n\nThe first line contains two integers n and m (1 ≤ n,m ≤ 2·10^5) — the length of the arrays a and b (which coincide with the number of rows and columns of the grid).\n\nThe second line contains the n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^8).\n\nThe third line contains the m integers b_1, b_2,…, b_n (1 ≤ b_i ≤ 5·10^8).\n\nPrint a single line containing the final score of the game.\n\nIn the first test case, Alice moves the rook to (2, 1) and Bob moves the rook to (1, 1). This process will repeat for 999 times until finally, after Alice moves the rook, Bob cannot move it back to (1, 1) because it has been visited 1000 times before. So the final score of the game is a_2+b_1=4.\n\nIn the second test case, the final score of the game is a_3+b_5.\n\nInput:\n```\n2 1\n3 2\n2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4 5\n235499701 451218171 355604420 132973458\n365049318 264083156 491406845 62875547 175951751\n```\n\nOutput:\n```\n531556171\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n,m ≤ 2·10^5) — the length of the arrays a and b (which coincide with the number of rows and columns of the grid).\n\nThe second line contains the n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^8).\n\nThe third line contains the m integers b_1, b_2,…, b_n (1 ≤ b_i ≤ 5·10^8).",
+    "output": "Print a single line containing the final score of the game.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "games",
+        "graph matchings",
+        "*2400"
+    ],
+    "rating": 2400
+}

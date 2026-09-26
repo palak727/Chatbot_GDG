@@ -1,0 +1,17 @@
+{
+    "id": "1943A",
+    "contest_id": 1943,
+    "problem_letter": "A",
+    "title": "A. MEX Game 1",
+    "statement": "Alice and Bob play yet another game on an array a of size n. Alice starts with an empty array c. Both players take turns playing, with Alice starting first.\n\nOn Alice's turn, she picks one element from a, appends that element to c, and then deletes it from a.\n\nOn Bob's turn, he picks one element from a, and then deletes it from a.\n\nThe game ends when the array a is empty. Game's score is defined to be the MEX^dagger of c. Alice wants to maximize the score while Bob wants to minimize it. Find game's final score if both players play optimally.\n\n^dagger The MEX (minimum excludant) of an array of integers is defined as the smallest non-negative integer which does not occur in the array. For example:\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, find game's score if both players play optimally.\n\nIn the first test case, a possible game with a score of 2 is as follows:\n\nAt the end, c=[1,0], which has a MEX of 2. Note that this is an example game and does not necessarily represent the optimal strategy for both players.\n\nInput:\n```\n340 0 1 140 1 2 321 1\n```\n\nOutput:\n```\n2\n1\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, find game's score if both players play optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

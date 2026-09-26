@@ -1,0 +1,20 @@
+{
+    "id": "1400F",
+    "contest_id": 1400,
+    "problem_letter": "F",
+    "title": "F. x-prime Substrings",
+    "statement": "You are given an integer value x and a string s consisting of digits from 1 to 9 inclusive.\n\nA substring of a string is a contiguous subsequence of that string.\n\nLet f(l, r) be the sum of digits of a substring s[l..r].\n\nLet's call substring s[l_1..r_1] x-prime if\n\nYou are allowed to erase some characters from the string. If you erase a character, the two resulting parts of the string are concatenated without changing their order.\n\nWhat is the minimum number of characters you should erase from the string so that there are no x-prime substrings in it? If there are no x-prime substrings in the given string s, then print 0.\n\nThe first line contains a string s (1 ≤ |s| ≤ 1000). s contains only digits from 1 to 9 inclusive.\n\nThe second line contains an integer x (1 ≤ x ≤ 20).\n\nPrint a single integer — the minimum number of characters you should erase from the string so that there are no x-prime substrings in it. If there are no x-prime substrings in the given string s, then print 0.\n\nIn the first example there are two 8-prime substrings \"8\" and \"53\". You can erase these characters to get rid of both: \"116285317\". The resulting string \"1162317\" contains no 8-prime substrings. Removing these characters is also a valid answer: \"116285317\".\n\nIn the second example you just have to erase both ones.\n\nIn the third example there are no 13-prime substrings. There are no substrings with the sum of digits equal to 13 at all.\n\nIn the fourth example you can have neither \"34\", nor \"43\" in a string. Thus, you have to erase either all threes or all fours. There are 5 of each of them, so it doesn't matter which.\n\nInput:\n```\n116285317\n8\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n314159265359\n1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n13\n13\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n3434343434\n7\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains a string s (1 ≤ |s| ≤ 1000). s contains only digits from 1 to 9 inclusive.\n\nThe second line contains an integer x (1 ≤ x ≤ 20).",
+    "output": "Print a single integer — the minimum number of characters you should erase from the string so that there are no x-prime substrings in it. If there are no x-prime substrings in the given string s, then print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "string suffix structures",
+        "strings",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1711B",
+    "contest_id": 1711,
+    "problem_letter": "B",
+    "title": "B. Party",
+    "statement": "A club plans to hold a party and will invite some of its n members. The n members are identified by the numbers 1, 2, …, n. If member i is not invited, the party will gain an unhappiness value of a_i.\n\nThere are m pairs of friends among the n members. As per tradition, if both people from a friend pair are invited, they will share a cake at the party. The total number of cakes eaten will be equal to the number of pairs of friends such that both members have been invited.\n\nHowever, the club's oven can only cook two cakes at a time. So, the club demands that the total number of cakes eaten is an even number.\n\nWhat is the minimum possible total unhappiness value of the party, respecting the constraint that the total number of cakes eaten is even?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ min(10^5,(n(n-1))/2)) — the number of club members and pairs of friends.\n\nThe second line of each test case contains n integers a_1,a_2, …,a_n (0 ≤ a_i ≤ 10^4) — the unhappiness value array.\n\nEach of the next m lines contains two integers x and y (1 ≤ x,y ≤ n, x ≠ y) indicating that x and y are friends. Each unordered pair (x,y) appears at most once in each test case.\n\nIt is guaranteed that both the sum of n and the sum of m over all test cases do not exceed 10^5.\n\nFor each test case, print a line containing a single integer – the minimum possible unhappiness value of a valid party.\n\nIn the first test case, all members can be invited. So the unhappiness value is 0.\n\nIn the second test case, the following options are possible:\n\nIn the third test case, inviting members 3,4,5 generates a valid party with the minimum possible unhappiness value.\n\nInput:\n```\n41 013 12 1 31 35 51 2 3 4 51 21 31 41 52 35 51 1 1 1 11 22 33 44 55 1\n```\n\nOutput:\n```\n0\n2\n3\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ min(10^5,(n(n-1))/2)) — the number of club members and pairs of friends.\n\nThe second line of each test case contains n integers a_1,a_2, …,a_n (0 ≤ a_i ≤ 10^4) — the unhappiness value array.\n\nEach of the next m lines contains two integers x and y (1 ≤ x,y ≤ n, x ≠ y) indicating that x and y are friends. Each unordered pair (x,y) appears at most once in each test case.\n\nIt is guaranteed that both the sum of n and the sum of m over all test cases do not exceed 10^5.",
+    "output": "For each test case, print a line containing a single integer – the minimum possible unhappiness value of a valid party.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "graphs",
+        "*1300"
+    ],
+    "rating": 1300
+}

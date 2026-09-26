@@ -1,0 +1,20 @@
+{
+    "id": "2121F",
+    "contest_id": 2121,
+    "problem_letter": "F",
+    "title": "F. Yamakasi",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n and two integers s and x. Count the number of subsegments of the array whose sum of elements equals s and whose maximum value equals x.\n\nMore formally, count the number of pairs 1 ≤ l ≤ r ≤ n such that:\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n, s, and x (1 ≤ n ≤ 2·10^5, -2·10^14 ≤ s ≤ 2·10^14, -10^9 ≤ x ≤ 10^9).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of subsegments of the array whose sum of elements equals s and whose maximum value equals x.\n\nIn the first test case, the suitable subsegment is l = 1, r = 1.\n\nIn the third test case, the suitable subsegments are l = 1, r = 1 and l = 3, r = 3.\n\nIn the fifth test case, the suitable subsegments are l = 1, r = 3 and l = 6, r = 8.\n\nIn the sixth test case, the suitable subsegments are those for which r = l + 2.\n\nIn the seventh test case, the following subsegments are suitable:\n\nInput:\n```\n91 0 001 -2 -1-23 -1 -1-1 1 -16 -3 -2-1 -1 -1 -2 -1 -18 3 22 2 -1 -2 3 -1 2 29 6 31 2 3 1 2 3 1 2 313 7 30 -1 3 3 3 -2 1 2 2 3 -1 0 32 -2 -1-2 -12 -2 -1-1 -2\n```\n\nOutput:\n```\n1\n0\n2\n0\n2\n7\n8\n0\n0\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n, s, and x (1 ≤ n ≤ 2·10^5, -2·10^14 ≤ s ≤ 2·10^14, -10^9 ≤ x ≤ 10^9).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of subsegments of the array whose sum of elements equals s and whose maximum value equals x.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "greedy",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

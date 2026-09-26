@@ -1,0 +1,18 @@
+{
+    "id": "2086F",
+    "contest_id": 2086,
+    "problem_letter": "F",
+    "title": "F. Online Palindrome",
+    "statement": "This is an interactive problem.\n\nThe jury has a string s consisting of lowercase Latin letters. The following constraints apply to this string:\n\nThere is also a string t, which is initially empty. Then, |s| steps happen. During the i-th step, the following events occur:\n\nYour task is to ensure that after the |s|-th step, the string t is a palindrome.\n\nThe interactive interaction starts immediately.\n\nDuring each step, your program will receive one character — the next character of the string s or \"0\" (zero) if the string has ended. If the character \"0\" is received, your program must terminate immediately.\n\nAfter receiving s_i, you must output the positions of the characters to be swapped, that is, two integers l and r (1 ≤ l,r ≤ i) or, if you do not want to swap characters, then \"0 0\".\n\nIf your program makes an invalid operation, for example, by trying to swap characters from non-existing positions, or the resulting string t is not a palindrome, the jury program will print one character \"X\" on a separate line. If your program receives \"X\" as the response, it should terminate immediately; otherwise, the verdict of your submission will be undefined.\n\nThe interactor in this problem is not adaptive, meaning that the string s does not change during the interaction.\n\nAfter each output request, do not forget to output a newline and flush the output buffer. Otherwise, you will receive a verdict of \"Idleness limit exceeded\". To do this, use:\n\nHack format\n\nFor hacks, use the following format.\n\nThe first line should contain a single integer |s| — the length of the string s.\n\nThe second line should contain the s itself (1 ≤ |s| ≤ 99, |s| bmod 2 = 1), consisting of lowercase Latin letters \"a\" and \"b\".\n\nInput:\n```\na\n\na\n\nb\n\n0\n```\n\nOutput:\n```\n0 0\n\n1 2\n\n2 3\n```\n\nInput:\n```\na\n\na\n\nb\n\na\n\nb\n\n0\n```\n\nOutput:\n```\n0 0\n\n2 1\n\n3 2\n\n4 4\n\n4 5\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "interactive",
+        "*3000"
+    ],
+    "rating": 3000
+}

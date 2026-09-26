@@ -1,0 +1,17 @@
+{
+    "id": "1433C",
+    "contest_id": 1433,
+    "problem_letter": "C",
+    "title": "C. Dominant Piranha",
+    "statement": "There are n piranhas with sizes a_1, a_2, …, a_n in the aquarium. Piranhas are numbered from left to right in order they live in the aquarium.\n\nScientists of the Berland State University want to find if there is dominant piranha in the aquarium. The piranha is called dominant if it can eat all the other piranhas in the aquarium (except itself, of course). Other piranhas will do nothing while the dominant piranha will eat them.\n\nBecause the aquarium is pretty narrow and long, the piranha can eat only one of the adjacent piranhas during one move. Piranha can do as many moves as it needs (or as it can). More precisely:\n\nWhen the piranha i eats some piranha, its size increases by one (a_i becomes a_i + 1).\n\nYour task is to find any dominant piranha in the aquarium or determine if there are no such piranhas.\n\nNote that you have to find any (exactly one) dominant piranha, you don't have to find all of them.\n\nFor example, if a = [5, 3, 4, 4, 5], then the third piranha can be dominant. Consider the sequence of its moves:\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (2 ≤ n ≤ 3·10^5) — the number of piranhas in the aquarium. The second line of the test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the size of the i-th piranha.\n\nIt is guaranteed that the sum of n does not exceed 3·10^5 (∑ n ≤ 3·10^5).\n\nFor each test case, print the answer: -1 if there are no dominant piranhas in the aquarium or index of any dominant piranha otherwise. If there are several answers, you can print any.\n\nThe first test case of the example is described in the problem statement.\n\nIn the second test case of the example, there are no dominant piranhas in the aquarium.\n\nIn the third test case of the example, the fourth piranha can firstly eat the piranha to the left and the aquarium becomes [4, 4, 5, 4], then it can eat any other piranha in the aquarium.\n\nInput:\n```\n6\n5\n5 3 4 4 5\n3\n1 1 1\n5\n4 4 3 4 4\n5\n5 5 4 3 2\n3\n1 1 2\n5\n5 4 3 5 5\n```\n\nOutput:\n```\n3\n-1\n4\n3\n3\n1\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (2 ≤ n ≤ 3·10^5) — the number of piranhas in the aquarium. The second line of the test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the size of the i-th piranha.\n\nIt is guaranteed that the sum of n does not exceed 3·10^5 (∑ n ≤ 3·10^5).",
+    "output": "For each test case, print the answer: -1 if there are no dominant piranhas in the aquarium or index of any dominant piranha otherwise. If there are several answers, you can print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

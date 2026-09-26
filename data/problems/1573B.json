@@ -1,0 +1,18 @@
+{
+    "id": "1573B",
+    "contest_id": 1573,
+    "problem_letter": "B",
+    "title": "B. Swaps",
+    "statement": "You are given two arrays a and b of length n. Array a contains each odd integer from 1 to 2n in an arbitrary order, and array b contains each even integer from 1 to 2n in an arbitrary order.\n\nYou can perform the following operation on those arrays:\n\nFor two different arrays x and y of the same length n, we say that x is lexicographically smaller than y if in the first position where x and y differ, the array x has a smaller element than the corresponding element in y.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n, all a_i are odd and pairwise distinct) — array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n, all b_i are even and pairwise distinct) — array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print one integer: the minimum number of operations needed to make array a lexicographically smaller than array b.\n\nWe can show that an answer always exists.\n\nIn the first example, the array a is already lexicographically smaller than array b, so no operations are required.\n\nIn the second example, we can swap 5 and 3 and then swap 2 and 4, which results in [3, 5, 1] and [4, 2, 6]. Another correct way is to swap 3 and 1 and then swap 5 and 1, which results in [1, 5, 3] and [2, 4, 6]. Yet another correct way is to swap 4 and 6 and then swap 2 and 6, which results in [5, 3, 1] and [6, 2, 4].\n\nInput:\n```\n3\n2\n3 1\n4 2\n3\n5 3 1\n2 4 6\n5\n7 5 9 1 3\n2 4 6 10 8\n```\n\nOutput:\n```\n0\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n, all a_i are odd and pairwise distinct) — array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n, all b_i are even and pairwise distinct) — array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print one integer: the minimum number of operations needed to make array a lexicographically smaller than array b.\n\nWe can show that an answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

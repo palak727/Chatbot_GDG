@@ -1,0 +1,15 @@
+{
+    "id": "2011D",
+    "contest_id": 2011,
+    "problem_letter": "D",
+    "title": "D. Among Wolves",
+    "statement": "In a game you started playing recently, there is a field that can be represented as a rectangular grid. The field has 2 rows and n columns — 2n cells in total.\n\nSome cells are empty, but some are occupied by wolves. In the beginning of the game, you have one sheep in some cell, and you'd like to save it from wolves.\n\nWolves will attack you at night, so you still have some time for preparation. You have two ways to deal with wolves:\n\nLet's say that a wolf can reach the sheep if there is a path that starts at the wolf's cell and finishes at the sheep's cell. This path shouldn't contain any cells with trenches, and each two consecutive cells in the path should be neighbors (share a side).\n\nWhat is the minimum total amount of money you should pay to ensure that none of the wolves can reach the sheep?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1200) — the number of test cases. Next, t independent cases follow.\n\nThe first line of each test case contains three integers n, h, and b (2 ≤ n ≤ 2·10^5; 1 ≤ h, b ≤ 10^9) — the size of the grid and corresponding costs.\n\nThe next two lines contain a description of the grid. The j-th character in the i-th line is either '.', 'S' or 'W':\n\nAdditional constraints:\n\nFor each test case, print a single integer — the minimum total amount of money you should pay to save your sheep.\n\nOne of the optimal strategies in the first test case of the second test can be shown like this:\n\nInput:\n```\n42 3 7S...2 3 7S..W2 7 3S..W4 999999999 1000000000W.S.W..W\n```\n\nOutput:\n```\n0\n3\n6\n2999999997\n```\n\nInput:\n```\n26 6 7W....WW.S..W6 6 7W...WW..S..W\n```\n\nOutput:\n```\n21\n20\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1200) — the number of test cases. Next, t independent cases follow.\n\nThe first line of each test case contains three integers n, h, and b (2 ≤ n ≤ 2·10^5; 1 ≤ h, b ≤ 10^9) — the size of the grid and corresponding costs.\n\nThe next two lines contain a description of the grid. The j-th character in the i-th line is either '.', 'S' or 'W':\n\nAdditional constraints:",
+    "output": "For each test case, print a single integer — the minimum total amount of money you should pay to save your sheep.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1997D",
+    "contest_id": 1997,
+    "problem_letter": "D",
+    "title": "D. Maximize the Root",
+    "statement": "You are given a rooted tree, consisting of n vertices. The vertices in the tree are numbered from 1 to n, and the root is the vertex 1. The value a_i is written at the i-th vertex.\n\nYou can perform the following operation any number of times (possibly zero): choose a vertex v which has at least one child; increase a_v by 1; and decrease a_u by 1 for all vertices u that are in the subtree of v (except v itself). However, after each operation, the values on all vertices should be non-negative.\n\nYour task is to calculate the maximum possible value written at the root using the aforementioned operation.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the initial values written at vertices.\n\nThe third line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n), where p_i is the parent of the i-th vertex in the tree. Vertex 1 is the root.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum possible value written at the root using the aforementioned operation.\n\nIn the first test case, the following sequence of operations is possible:\n\nInput:\n```\n340 1 0 21 1 323 0152 5 3 9 63 1 5 2\n```\n\nOutput:\n```\n1\n3\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the initial values written at vertices.\n\nThe third line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n), where p_i is the parent of the i-th vertex in the tree. Vertex 1 is the root.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum possible value written at the root using the aforementioned operation.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1508C",
+    "contest_id": 1508,
+    "problem_letter": "C",
+    "title": "C. Complete the MST",
+    "statement": "As a teacher, Riko Hakozaki often needs to help her students with problems from various subjects. Today, she is asked a programming task which goes as follows.\n\nYou are given an undirected complete graph with n nodes, where some edges are pre-assigned with a positive weight while the rest aren't. You need to assign all unassigned edges with non-negative weights so that in the resulting fully-assigned complete graph the XOR sum of all weights would be equal to 0.\n\nDefine the ugliness of a fully-assigned complete graph the weight of its minimum spanning tree, where the weight of a spanning tree equals the sum of weights of its edges. You need to assign the weights so that the ugliness of the resulting graph is as small as possible.\n\nAs a reminder, an undirected complete graph with n nodes contains all edges (u, v) with 1 ≤ u < v ≤ n; such a graph has (n(n-1))/2 edges.\n\nShe is not sure how to solve this problem, so she asks you to solve it for her.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ min(2·10^5, (n(n-1))/2 - 1)) — the number of nodes and the number of pre-assigned edges. The inputs are given so that there is at least one unassigned edge.\n\nThe i-th of the following m lines contains three integers u_i, v_i, and w_i (1 ≤ u_i, v_i ≤ n, u ≠ v, 1 ≤ w_i < 2^30), representing the edge from u_i to v_i has been pre-assigned with the weight w_i. No edge appears in the input more than once.\n\nPrint on one line one integer — the minimum ugliness among all weight assignments with XOR sum equal to 0.\n\nThe following image showcases the first test case. The black weights are pre-assigned from the statement, the red weights are assigned by us, and the minimum spanning tree is denoted by the blue edges.\n\nInput:\n```\n4 4\n2 1 14\n1 4 14\n3 2 15\n4 3 8\n```\n\nOutput:\n```\n15\n```\n\nInput:\n```\n6 6\n3 6 4\n2 4 1\n4 5 7\n3 4 10\n3 5 1\n5 2 15\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n5 6\n2 3 11\n5 3 7\n1 4 10\n2 4 14\n4 3 8\n2 5 6\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ min(2·10^5, (n(n-1))/2 - 1)) — the number of nodes and the number of pre-assigned edges. The inputs are given so that there is at least one unassigned edge.\n\nThe i-th of the following m lines contains three integers u_i, v_i, and w_i (1 ≤ u_i, v_i ≤ n, u ≠ v, 1 ≤ w_i < 2^30), representing the edge from u_i to v_i has been pre-assigned with the weight w_i. No edge appears in the input more than once.",
+    "output": "Print on one line one integer — the minimum ugliness among all weight assignments with XOR sum equal to 0.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

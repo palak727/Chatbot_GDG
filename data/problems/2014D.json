@@ -1,0 +1,19 @@
+{
+    "id": "2014D",
+    "contest_id": 2014,
+    "problem_letter": "D",
+    "title": "D. Robert Hood and Mrs Hood",
+    "statement": "Robin's brother and mother are visiting, and Robin gets to choose the start day for each visitor.\n\nAll days are numbered from 1 to n. Visitors stay for d continuous days, all of those d days must be between day 1 and n inclusive.\n\nRobin has a total of k risky 'jobs' planned. The i-th job takes place between days l_i and r_i inclusive, for 1 ≤ i ≤ k. If a job takes place on any of the d days, the visit overlaps with this job (the length of overlap is unimportant).\n\nRobin wants his brother's visit to overlap with the maximum number of distinct jobs, and his mother's the minimum.\n\nFind suitable start days for the visits of Robin's brother and mother. If there are multiple suitable days, choose the earliest one.\n\nThe first line of the input contains a single integer t (1≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case consists of three integers n, d, k (1 ≤ n ≤ 10^5, 1 ≤ d, k ≤ n) — the number of total days, duration of the visits, and the number of jobs.\n\nThen follow k lines of each test case, each with two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the start and end day of each job.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output two integers, the best starting days of Robin's brother and mother respectively. Both visits must fit between day 1 and n inclusive.\n\nIn the first test case, the only job fills all 2 days, both should visit on day 1.\n\nIn the second test case, day 2 overlaps with 2 jobs and day 1 overlaps with only 1.\n\nIn the third test case, Robert visits for days [1,2], Mrs. Hood visits for days [4,5].\n\nInput:\n```\n62 1 11 24 1 21 22 47 2 31 21 36 75 1 21 23 59 2 12 89 2 47 94 81 32 3\n```\n\nOutput:\n```\n1 1\n2 1\n1 4\n1 1\n1 1\n3 4\n```",
+    "input": "The first line of the input contains a single integer t (1≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case consists of three integers n, d, k (1 ≤ n ≤ 10^5, 1 ≤ d, k ≤ n) — the number of total days, duration of the visits, and the number of jobs.\n\nThen follow k lines of each test case, each with two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the start and end day of each job.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output two integers, the best starting days of Robin's brother and mother respectively. Both visits must fit between day 1 and n inclusive.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

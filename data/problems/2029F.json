@@ -1,0 +1,18 @@
+{
+    "id": "2029F",
+    "contest_id": 2029,
+    "problem_letter": "F",
+    "title": "F. Palindrome Everywhere",
+    "statement": "You are given a cycle with n vertices numbered from 0 to n-1. For each 0≤ i≤ n-1, there is an undirected edge between vertex i and vertex ((i+1)bmod n) with the color c_i (c_i=textttR or textttB).\n\nDetermine whether the following condition holds for every pair of vertices (i,j) (0≤ i < j≤ n-1):\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n≤10^6) — the number of vertices in the cycle.\n\nThe second line contains a string c of length n (c_i=textttR or textttB) — the color of each edge.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, print \"YES\" (without quotes) if there is a palindrome route between any pair of nodes, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, it is easy to show that there is a palindrome route between any two vertices.\n\nIn the second test case, for any two vertices, there exists a palindrome route with only red edges.\n\nIn the third test case, the cycle is as follows: 0colorredoversettextttRlongleftrightarrow1colorblueoversettextttBlongleftrightarrow2colorblueoversettextttBlongleftrightarrow3colorredoversettextttRlongleftrightarrow4colorblueoversettextttBlongleftrightarrow0. Take (i,j)=(0,3) as an example, then 0colorredoversettextttRlongrightarrow1colorblueoversettextttBlongrightarrow2colorblueoversettextttBlongrightarrow3colorredoversettextttRlongrightarrow4colorblueoversettextttBlongrightarrow0colorblueoversettextttBlongrightarrow4colorredoversettextttRlongrightarrow3 is a palindrome route. Thus, the condition holds for (i,j)=(0,3).\n\nIn the fourth test case, when (i,j)=(0,2), there does not exist a palindrome route.\n\nInput:\n```\n75RRRRR5RRRRB5RBBRB6RBRBRB6RRBBRB5RBRBR12RRBRRBRRBRRB\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n≤10^6) — the number of vertices in the cycle.\n\nThe second line contains a string c of length n (c_i=textttR or textttB) — the color of each edge.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, print \"YES\" (without quotes) if there is a palindrome route between any pair of nodes, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "*2500"
+    ],
+    "rating": 2500
+}

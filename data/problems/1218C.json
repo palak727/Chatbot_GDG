@@ -1,0 +1,16 @@
+{
+    "id": "1218C",
+    "contest_id": 1218,
+    "problem_letter": "C",
+    "title": "C. Jumping Transformers",
+    "statement": "You, the mighty Blackout, are standing in the upper-left (0,0) corner of NxM matrix. You must move either right or down each second.\n\nThere are K transformers jumping around the matrix in the following way. Each transformer starts jumping from position (x,y), at time t, and jumps to the next position each second. The x-axes grows downwards, and y-axes grows to the right. The order of jumping positions is defined as (x,y),(x+d,y-d),(x+d,y),(x,y+d), and is periodic. Before time t transformer is not in the matrix.\n\nYou want to arrive to the bottom-right corner (N-1,M-1), while slaying transformers and losing the least possible amount of energy. When you meet the transformer (or more of them) in the matrix field, you must kill them all, and you lose the sum of the energy amounts required to kill each transformer.\n\nAfter the transformer is killed, he of course stops jumping, falls into the abyss and leaves the matrix world. Output minimum possible amount of energy wasted.\n\nIn the first line, integers N,M (1 ≤ N, M ≤ 500), representing size of the matrix, and K (0 ≤ K ≤ 5*10^5) , the number of jumping transformers.\n\nIn next K lines, for each transformer, numbers x, y, d (d ≥ 1), t (0 ≤ t ≤ N+M-2), and e (0 ≤ e ≤ 10^9), representing starting coordinates of transformer, jumping positions distance in pattern described above, time when transformer starts jumping, and energy required to kill it.\n\nIt is guaranteed that all 4 of jumping points of the transformers are within matrix coordinates\n\nPrint single integer, the minimum possible amount of energy wasted, for Blackout to arrive at bottom-right corner.\n\nIf Blackout takes the path from (0, 0) to (2, 0), and then from (2, 0) to (2, 2) he will need to kill the first and third transformer for a total energy cost of 9. There exists no path with less energy value.\n\nInput:\n```\n3 3 5\n0 1 1 0 7\n1 1 1 0 10\n1 1 1 1 2\n1 1 1 2 2\n0 1 1 2 3\n```\n\nOutput:\n```\n9\n```",
+    "input": "In the first line, integers N,M (1 ≤ N, M ≤ 500), representing size of the matrix, and K (0 ≤ K ≤ 5*10^5) , the number of jumping transformers.\n\nIn next K lines, for each transformer, numbers x, y, d (d ≥ 1), t (0 ≤ t ≤ N+M-2), and e (0 ≤ e ≤ 10^9), representing starting coordinates of transformer, jumping positions distance in pattern described above, time when transformer starts jumping, and energy required to kill it.\n\nIt is guaranteed that all 4 of jumping points of the transformers are within matrix coordinates",
+    "output": "Print single integer, the minimum possible amount of energy wasted, for Blackout to arrive at bottom-right corner.",
+    "time_limit": "4 seconds",
+    "memory_limit": "128 megabytes",
+    "tags": [
+        "dp",
+        "*2600"
+    ],
+    "rating": 2600
+}

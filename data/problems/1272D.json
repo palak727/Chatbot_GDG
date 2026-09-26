@@ -1,0 +1,17 @@
+{
+    "id": "1272D",
+    "contest_id": 1272,
+    "problem_letter": "D",
+    "title": "D. Remove One Element",
+    "statement": "You are given an array a consisting of n integers.\n\nYou can remove at most one element from this array. Thus, the final length of the array is n-1 or n.\n\nYour task is to calculate the maximum possible length of the strictly increasing contiguous subarray of the remaining array.\n\nRecall that the contiguous subarray a with indices from l to r is a[l … r] = a_l, a_{l + 1}, …, a_r. The subarray a[l … r] is called strictly increasing if a_l < a_{l+1} < … < a_r.\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the i-th element of a.\n\nPrint one integer — the maximum possible length of the strictly increasing contiguous subarray of the array a after removing at most one element.\n\nIn the first example, you can delete a_3=5. Then the resulting array will be equal to [1, 2, 3, 4] and the length of its largest increasing subarray will be equal to 4.\n\nInput:\n```\n5\n1 2 5 3 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2\n1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n7\n6 5 4 3 2 4 3\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the i-th element of a.",
+    "output": "Print one integer — the maximum possible length of the strictly increasing contiguous subarray of the array a after removing at most one element.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1999E",
+    "contest_id": 1999,
+    "problem_letter": "E",
+    "title": "E. Triple Operations",
+    "statement": "On the board Ivy wrote down all integers from l to r, inclusive.\n\nIn an operation, she does the following:\n\nWhat is the minimum number of operations Ivy needs to make all numbers on the board equal 0? We have a proof that this is always possible.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers l and r (1 ≤ l < r ≤ 2·10^5).\n\nFor each test case, output a single integer — the minimum number of operations needed to make all numbers on the board equal 0.\n\nIn the first test case, we can perform 5 operations as follows: 1,2,3 xrightarrow[x=1,,y=2] 3,0,3 xrightarrow[x=0,,y=3] 1,0,3 xrightarrow[x=0,,y=3] 1,0,1 xrightarrow[x=0,,y=1] 0,0,1 xrightarrow[x=0,,y=1] 0,0,0 .\n\nInput:\n```\n41 32 4199999 20000019 84\n```\n\nOutput:\n```\n5\n6\n36\n263\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains two integers l and r (1 ≤ l < r ≤ 2·10^5).",
+    "output": "For each test case, output a single integer — the minimum number of operations needed to make all numbers on the board equal 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

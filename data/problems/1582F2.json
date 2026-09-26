@@ -1,0 +1,20 @@
+{
+    "id": "1582F2",
+    "contest_id": 1582,
+    "problem_letter": "F2",
+    "title": "F2. Korney Korneevich and XOR (hard version)",
+    "statement": "This is a harder version of the problem with bigger constraints.\n\nKorney Korneevich dag up an array a of length n. Korney Korneevich has recently read about the operation bitwise XOR, so he wished to experiment with it. For this purpose, he decided to find all integers x ≥ 0 such that there exists an increasing subsequence of the array a, in which the bitwise XOR of numbers is equal to x.\n\nIt didn't take a long time for Korney Korneevich to find all such x, and he wants to check his result. That's why he asked you to solve this problem!\n\nA sequence s is a subsequence of a sequence b if s can be obtained from b by deletion of several (possibly, zero or all) elements.\n\nA sequence s_1, s_2, … , s_m is called increasing if s_1 < s_2 < … < s_m.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 5000) — the elements of the array a.\n\nIn the first line print a single integer k — the number of found x values.\n\nIn the second line print k integers in increasing order x_1, x_2, … x_k (0 ≤ x_1 < … < x_k) — found x values.\n\nIn the first test case:\n\nInput:\n```\n4\n4 2 2 4\n```\n\nOutput:\n```\n4\n0 2 4 6 \n```\n\nInput:\n```\n8\n1 0 1 7 12 5 3 2\n```\n\nOutput:\n```\n12\n0 1 2 3 4 5 6 7 10 11 12 13 \n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 5000) — the elements of the array a.",
+    "output": "In the first line print a single integer k — the number of found x values.\n\nIn the second line print k integers in increasing order x_1, x_2, … x_k (0 ≤ x_1 < … < x_k) — found x values.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "greedy",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,24 @@
+{
+    "id": "2091G",
+    "contest_id": 2091,
+    "problem_letter": "G",
+    "title": "G. Gleb and Boating",
+    "statement": "Programmer Gleb frequently visits the IT Campus \"NEIMARK\" to participate in programming training sessions.\n\nNot only is Gleb a programmer, but he is also a renowned rower, so he covers part of his journey from home to the campus by kayaking along a river. Assume that Gleb starts at point 0 and must reach point s (i.e., travel s meters along a straight line). To make the challenge tougher, Gleb has decided not to go outside the segment [0, s]. The dimensions of the kayak can be neglected.\n\nGleb is a strong programmer! Initially, his power is k. Gleb's power directly affects the movement of his kayak. If his current power is x, then with one paddle stroke the kayak moves x meters in the current direction. Gleb can turn around and continue moving in the opposite direction, but such a maneuver is quite challenging, and after each turn, his power decreases by 1. The power can never become 0 — if his current power is 1, then even after turning it remains 1. Moreover, Gleb cannot make two turns in a row — after each turn, he must move at least once before making another turn. Similarly, Gleb cannot make a turn immediately after the start — he must first perform a paddle stroke.\n\nGleb wants to reach point s from point 0 without leaving the segment [0, s] and while preserving as much power as possible. Help him — given the value s and his initial power k, determine the maximum possible power he can have upon reaching point s.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nA single line of each test case contains two integers s and k (1 ≤ s ≤ 10^9, 1 ≤ k ≤ 1000, k ≤ s).\n\nIt is guaranteed that the sum of k over all test cases does not exceed 2000.\n\nFor each test case, output the maximum possible power Gleb can have at the end of his journey.\n\nOne of the variants of Gleb's movement in the first example:\n\nInput:\n```\n89 610 724 2123456 7776 499 610 499 4\n```\n\nOutput:\n```\n4\n1\n2\n775\n1\n4\n2\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nA single line of each test case contains two integers s and k (1 ≤ s ≤ 10^9, 1 ≤ k ≤ 1000, k ≤ s).\n\nIt is guaranteed that the sum of k over all test cases does not exceed 2000.",
+    "output": "For each test case, output the maximum possible power Gleb can have at the end of his journey.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "graphs",
+        "greedy",
+        "math",
+        "number theory",
+        "shortest paths",
+        "*2300"
+    ],
+    "rating": 2300
+}

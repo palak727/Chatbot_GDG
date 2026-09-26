@@ -1,0 +1,17 @@
+{
+    "id": "1677F",
+    "contest_id": 1677,
+    "problem_letter": "F",
+    "title": "F. Tokitsukaze and Gems",
+    "statement": "Tokitsukaze has a sequence with length of n. She likes gems very much. There are n kinds of gems. The gems of the i-th kind are on the i-th position, and there are a_i gems of the same kind on that position. Define G(l,r) as the multiset containing all gems on the segment [l,r] (inclusive).\n\nA multiset of gems can be represented as S=[s_1,s_2,…,s_n], which is a non-negative integer sequence of length n and means that S contains s_i gems of the i-th kind in the multiset. A multiset T=[t_1,t_2,…,t_n] is a multisubset of S=[s_1,s_2,…,s_n] if and only if t_i≤ s_i for any i satisfying 1≤ i≤ n.\n\nNow, given two positive integers k and p, you need to calculate the result of\n\n∑_{l=1}^n ∑_{r=l}^n∑limits_{[t_1,t_2,⋯,t_n] ⊆ G(l,r)}left(left(∑_{i=1}^n p^t_it_i^kright)left(∑_{i=1}^n[t_i > 0]right)right),\n\nwhere [t_i > 0]=1 if t_i > 0 and [t_i > 0]=0 if t_i=0.\n\nSince the answer can be quite large, print it modulo 998,244,353.\n\nThe first line contains three integers n, k and p (1≤ n ≤ 10^5; 1≤ k≤ 10^5; 2≤ p≤ 998,244,351) — the length of the sequence, the numbers k and p.\n\nThe second line contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 998,244,351) — the number of gems on the i-th position.\n\nPrint a single integers — the result modulo 998,244,353.\n\nInput:\n```\n5 2 2\n1 1 1 2 2\n```\n\nOutput:\n```\n6428\n```\n\nInput:\n```\n6 2 2\n2 2 2 2 2 3\n```\n\nOutput:\n```\n338940\n```",
+    "input": "The first line contains three integers n, k and p (1≤ n ≤ 10^5; 1≤ k≤ 10^5; 2≤ p≤ 998,244,351) — the length of the sequence, the numbers k and p.\n\nThe second line contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 998,244,351) — the number of gems on the i-th position.",
+    "output": "Print a single integers — the result modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,22 @@
+{
+    "id": "1383A",
+    "contest_id": 1383,
+    "problem_letter": "A",
+    "title": "A. String Transformation 1",
+    "statement": "Note that the only difference between String Transformation 1 and String Transformation 2 is in the move Koa does. In this version the letter y Koa selects must be strictly greater alphabetically than x (read statement for better understanding). You can make hacks in these problems independently.\n\nKoa the Koala has two strings A and B of the same length n (|A|=|B|=n) consisting of the first 20 lowercase English alphabet letters (ie. from a to t).\n\nIn one move Koa:\n\nNote that you can only modify letters in string A.\n\nKoa wants to know the smallest number of moves she has to do to make strings equal to each other (A = B) or to determine that there is no way to make them equal. Help her!\n\nEach test contains multiple test cases. The first line contains t (1 ≤ t ≤ 10) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of strings A and B.\n\nThe second line of each test case contains string A (|A|=n).\n\nThe third line of each test case contains string B (|B|=n).\n\nBoth strings consists of the first 20 lowercase English alphabet letters (ie. from a to t).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case:\n\nPrint on a single line the smallest number of moves she has to do to make strings equal to each other (A = B) or -1 if there is no way to make them equal.\n\nInput:\n```\n5\n3\naab\nbcc\n4\ncabc\nabcb\n3\nabc\ntsr\n4\naabd\ncccd\n5\nabcbd\nbcdda\n```\n\nOutput:\n```\n2\n-1\n3\n2\n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains t (1 ≤ t ≤ 10) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of strings A and B.\n\nThe second line of each test case contains string A (|A|=n).\n\nThe third line of each test case contains string B (|B|=n).\n\nBoth strings consists of the first 20 lowercase English alphabet letters (ie. from a to t).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case:\n\nPrint on a single line the smallest number of moves she has to do to make strings equal to each other (A = B) or -1 if there is no way to make them equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "strings",
+        "trees",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

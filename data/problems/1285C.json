@@ -1,0 +1,18 @@
+{
+    "id": "1285C",
+    "contest_id": 1285,
+    "problem_letter": "C",
+    "title": "C. Fadi and LCM",
+    "statement": "Today, Osama gave Fadi an integer X, and Fadi was wondering about the minimum possible value of max(a, b) such that LCM(a, b) equals X. Both a and b should be positive integers.\n\nLCM(a, b) is the smallest positive integer that is divisible by both a and b. For example, LCM(6, 8) = 24, LCM(4, 12) = 12, LCM(2, 3) = 6.\n\nOf course, Fadi immediately knew the answer. Can you be just like Fadi and find any such pair?\n\nThe first and only line contains an integer X (1 ≤ X ≤ 10^12).\n\nPrint two positive integers, a and b, such that the value of max(a, b) is minimum possible and LCM(a, b) equals X. If there are several possible such pairs, you can print any.\n\nInput:\n```\n2\n```\n\nOutput:\n```\n1 2\n```\n\nInput:\n```\n6\n```\n\nOutput:\n```\n2 3\n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n1 4\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1 1\n```",
+    "input": "The first and only line contains an integer X (1 ≤ X ≤ 10^12).",
+    "output": "Print two positive integers, a and b, such that the value of max(a, b) is minimum possible and LCM(a, b) equals X. If there are several possible such pairs, you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

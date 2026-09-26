@@ -1,0 +1,17 @@
+{
+    "id": "1546A",
+    "contest_id": 1546,
+    "problem_letter": "A",
+    "title": "A. AquaMoon and Two Arrays",
+    "statement": "AquaMoon and Cirno are playing an interesting game with arrays. Cirno has prepared two arrays a and b, both consist of n non-negative integers. AquaMoon can perform the following operation an arbitrary number of times (possibly zero):\n\nAquaMoon wants to make some operations to make arrays a and b equal. Two arrays a and b are considered equal if and only if a_i = b_i for all 1 ≤ i ≤ n.\n\nHelp AquaMoon to find a sequence of operations that will solve her problem or find, that it is impossible to make arrays a and b equal.\n\nPlease note, that you don't have to minimize the number of operations.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100). The sum of all a_i does not exceed 100.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 100). The sum of all b_i does not exceed 100.\n\nFor each test case print \"-1\" on the only line if it is impossible to make two arrays equal with some sequence of operations.\n\nOtherwise, print an integer m (0 ≤ m ≤ 100) in the first line — the number of operations. Then print m lines, each line consists of two integers i and j — the indices you choose for the operation.\n\nIt can be proven that if it is possible to make two arrays equal with some sequence of operations, there exists a sequence with m ≤ 100.\n\nIf there are multiple possible solutions, you can print any.\n\nIn the first example, we do the following operations:\n\nIn the second example, it's impossible to make two arrays equal.\n\nInput:\n```\n4\n4\n1 2 3 4\n3 1 2 4\n2\n1 3\n2 1\n1\n0\n0\n5\n4 3 2 1 0\n0 1 2 3 4\n```\n\nOutput:\n```\n2\n2 1\n3 1\n-1\n0\n6\n1 4\n1 4\n1 5\n1 5\n2 5\n2 5\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 100). The sum of all a_i does not exceed 100.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 100). The sum of all b_i does not exceed 100.",
+    "output": "For each test case print \"-1\" on the only line if it is impossible to make two arrays equal with some sequence of operations.\n\nOtherwise, print an integer m (0 ≤ m ≤ 100) in the first line — the number of operations. Then print m lines, each line consists of two integers i and j — the indices you choose for the operation.\n\nIt can be proven that if it is possible to make two arrays equal with some sequence of operations, there exists a sequence with m ≤ 100.\n\nIf there are multiple possible solutions, you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

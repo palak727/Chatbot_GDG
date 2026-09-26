@@ -1,0 +1,21 @@
+{
+    "id": "1338B",
+    "contest_id": 1338,
+    "problem_letter": "B",
+    "title": "B. Edge Weight Assignment",
+    "statement": "You have unweighted tree of n vertices. You have to assign a positive weight to each edge so that the following condition would hold:\n\nNote that you can put very large positive integers (like 10^{(10^10)}).\n\nIt's guaranteed that such assignment always exists under given constraints. Now let's define f as the number of distinct weights in assignment.\n\nIn this example, assignment is invalid, because bitwise XOR of all edge weights between vertex 1 and vertex 6 (3, 4, 5, 4) is not 0.\n\nWhat are the minimum and the maximum possible values of f for the given tree? Find and print both.\n\nThe first line contains integer n (3 ≤ n ≤ 10^5) — the number of vertices in given tree.\n\nThe i-th of the next n-1 lines contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) — it means there is an edge between a_i and b_i. It is guaranteed that given graph forms tree of n vertices.\n\nPrint two integers — the minimum and maximum possible value of f can be made from valid assignment of given tree. Note that it's always possible to make an assignment under given constraints.\n\nIn the first example, possible assignments for each minimum and maximum are described in picture below. Of course, there are multiple possible assignments for each minimum and maximum.\n\nIn the second example, possible assignments for each minimum and maximum are described in picture below. The f value of valid assignment of this tree is always 3.\n\nIn the third example, possible assignments for each minimum and maximum are described in picture below. Of course, there are multiple possible assignments for each minimum and maximum.\n\nInput:\n```\n6\n1 3\n2 3\n3 4\n4 5\n5 6\n```\n\nOutput:\n```\n1 4\n```\n\nInput:\n```\n6\n1 3\n2 3\n3 4\n4 5\n4 6\n```\n\nOutput:\n```\n3 3\n```\n\nInput:\n```\n7\n1 2\n2 7\n3 4\n4 7\n5 6\n6 7\n```\n\nOutput:\n```\n1 6\n```",
+    "input": "The first line contains integer n (3 ≤ n ≤ 10^5) — the number of vertices in given tree.\n\nThe i-th of the next n-1 lines contains two integers a_i and b_i (1 ≤ a_i < b_i ≤ n) — it means there is an edge between a_i and b_i. It is guaranteed that given graph forms tree of n vertices.",
+    "output": "Print two integers — the minimum and maximum possible value of f can be made from valid assignment of given tree. Note that it's always possible to make an assignment under given constraints.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dfs and similar",
+        "greedy",
+        "math",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

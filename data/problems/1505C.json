@@ -1,0 +1,17 @@
+{
+    "id": "1505C",
+    "contest_id": 1505,
+    "problem_letter": "C",
+    "title": "C. Fibonacci Words",
+    "statement": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.\n\nOutput \"YES\" or \"NO\".\n\nInput:\n```\nHELP\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nAID\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nMARY\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nANNA\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nMUG\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nCUP\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nSUM\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nPRODUCT\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.",
+    "output": "Output \"YES\" or \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2013C",
+    "contest_id": 2013,
+    "problem_letter": "C",
+    "title": "C. Password Cracking",
+    "statement": "Dimash learned that Mansur wrote something very unpleasant about him to a friend, so he decided to find out his password at all costs and discover what exactly he wrote.\n\nBelieving in the strength of his password, Mansur stated that his password — is a binary string of length n. He is also ready to answer Dimash's questions of the following type:\n\nDimash says a binary string t, and Mansur replies whether it is true that t is a substring of his password.\n\nHelp Dimash find out the password in no more than 2n operations; otherwise, Mansur will understand the trick and stop communicating with him.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nAt the beginning of each test case, first read n (1 ≤ n ≤ 100) — the size of the binary string. Then proceed to guessing it.\n\nTo guess each string s, you can make no more than 2n queries of the following type:\n\nIn response to this query, you will receive 1 if t is a substring of s, and 0 otherwise.\n\nOnce you receive the answer, output a single string in the following format:\n\nAfter that, proceed to solve the next test case.\n\nIf you make an incorrect attempt or exceed the limit of 2n attempts, you will receive -1 instead of an answer and get the verdict Wrong answer. In this case, your program should terminate immediately to avoid undefined verdicts.\n\nAfter outputting the queries, do not forget to output a newline character and flush the output buffer. Otherwise, you will receive the verdict Solution \"hung\". To flush the buffer, use:\n\nHacks:\n\nTo use hacks, use the following format of tests:\n\nThe first line should contain a single integer t (1≤ t≤ 100) — the number of test cases.\n\nThe first line of each test case should contain a single number n (1 ≤ n ≤ 100) — the length of the string. The second line should contain a binary string of size n.\n\nIn the first example, the string 010 is given. Therefore, the answers to the queries are as follows:\n\n\"? 00\" 00 is not a substring of 010, so the answer is 0.\n\n\"? 000\" 000 is not a substring, so the answer is 0.\n\n\"? 010\" 010 is a substring, so the answer is 1.\n\nIn the second example, the string is 1100, in the third 0110, and in the fourth 10.\n\nInput:\n```\n4\n3\n\n0\n\n0\n\n1\n\n4\n\n4\n\n2\n```\n\nOutput:\n```\n? 00\n\n? 000\n\n? 010\n\n! 010\n\n! 1100\n\n! 0110\n\n! 10\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

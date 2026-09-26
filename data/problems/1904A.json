@@ -1,0 +1,17 @@
+{
+    "id": "1904A",
+    "contest_id": 1904,
+    "problem_letter": "A",
+    "title": "A. Forked!",
+    "statement": "Lunchbox is done with playing chess! His queen and king just got forked again!\n\nIn chess, a fork is when a knight attacks two pieces of higher value, commonly the king and the queen. Lunchbox knows that knights can be tricky, and in the version of chess that he is playing, knights are even trickier: instead of moving 1 tile in one direction and 2 tiles in the other, knights in Lunchbox's modified game move a tiles in one direction and b tiles in the other.\n\nLunchbox is playing chess on an infinite chessboard which contains all cells (x,y) where x and y are (possibly negative) integers. Lunchbox's king and queen are placed on cells (x_K,y_K) and (x_Q,y_Q) respectively. Find the number of positions such that if a knight was placed on that cell, it would attack both the king and queen.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^8) — describing the possible moves of the knight.\n\nThe second line of each test case contains two integers x_K and y_K (0 ≤ x_K, y_K ≤ 10^8) — the position of Lunchbox's king.\n\nThe third line in a test case contains x_Q and y_Q (0 ≤ x_Q, y_Q ≤ 10^8) — the position of Lunchbox's queen.\n\nIt is guaranteed that Lunchbox's queen and king will occupy different cells. That is, (x_K,y_K) ≠ (x_Q,y_Q).\n\nFor each test case, output the number of positions on an infinite chessboard such that a knight can attack both the king and the queen.\n\nIn the first test case, the knight can move 2 squares in one direction and 1 square in the other (it is essentially the same as the knight in standard chess). A knight placed on (2, 1) or (1, 2) would attack both the king and queen.\n\nIn the second test case, a knight placed on (2, 2) would attack both the king and queen.\n\nIn the third test case, a knight placed on (4, 4) or (4, -4) would attack both the king and queen.\n\nIn the fourth test case, there are no positions where the knight can attack both the king and the queen.\n\n(Credits to EnDeRBeaT for the nice images)\n\nInput:\n```\n42 10 03 31 13 11 34 40 08 04 21 43 4\n```\n\nOutput:\n```\n2\n1\n2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^8) — describing the possible moves of the knight.\n\nThe second line of each test case contains two integers x_K and y_K (0 ≤ x_K, y_K ≤ 10^8) — the position of Lunchbox's king.\n\nThe third line in a test case contains x_Q and y_Q (0 ≤ x_Q, y_Q ≤ 10^8) — the position of Lunchbox's queen.\n\nIt is guaranteed that Lunchbox's queen and king will occupy different cells. That is, (x_K,y_K) ≠ (x_Q,y_Q).",
+    "output": "For each test case, output the number of positions on an infinite chessboard such that a knight can attack both the king and the queen.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*900"
+    ],
+    "rating": 900
+}

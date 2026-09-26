@@ -1,0 +1,19 @@
+{
+    "id": "1556D",
+    "contest_id": 1556,
+    "problem_letter": "D",
+    "title": "D. Take a Guess",
+    "statement": "This is an interactive task\n\nWilliam has a certain sequence of integers a_1, a_2, …, a_n in his mind, but due to security concerns, he does not want to reveal it to you completely. William is ready to respond to no more than 2·n of the following questions:\n\nYou can ask William these questions and you need to find the k-th smallest number of the sequence.\n\nFormally the k-th smallest number is equal to the number at the k-th place in a 1-indexed array sorted in non-decreasing order. For example in array [5, 3, 3, 10, 1] 4th smallest number is equal to 5, and 2nd and 3rd are 3.\n\nIt is guaranteed that for each element in a sequence the condition 0 ≤ a_i ≤ 10^9 is satisfied.\n\nIn the first line you will be given two integers n and k (3 ≤ n ≤ 10^4, 1 ≤ k ≤ n), which are the number of items in the sequence a and the number k.\n\nAfter that, you can ask no more than 2·n questions (not including the \"finish\" operation).\n\nEach line of your output may be of one of the following types:\n\nIn response to the first two types of queries, you will get an integer x, the result of the operation for the numbers you have selected.\n\nAfter outputting a line do not forget to output a new line character and flush the output buffer. Otherwise you will get the \"Idleness limit exceeded\". To flush the buffer use:\n\nIf you perform an incorrect query the response will be -1. After receiving response -1 you must immediately halt your program in order to receive an \"Incorrect answer\" verdict.\n\nHacking\n\nTo perform a hack you will need to use the following format:\n\nThe first line must contain two integers n and k (3 ≤ n ≤ 10^4, 1 ≤ k ≤ n), which are the number of items in the sequence a and the number k.\n\nThe second line must contain n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), the sequence a.\n\nIn the example, the hidden sequence is [1, 6, 4, 2, 3, 5, 4].\n\nBelow is the interaction in the example.\n\nInput:\n```\n7 6\n\n2\n\n7\n```\n\nOutput:\n```\nand 2 5\n\nor 5 6\n\nfinish 5\n```",
+    "input": "It is guaranteed that for each element in a sequence the condition 0 ≤ a_i ≤ 10^9 is satisfied.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1806D",
+    "contest_id": 1806,
+    "problem_letter": "D",
+    "title": "D. DSU Master",
+    "statement": "You are given an integer n and an array a of length n-1 whose elements are either 0 or 1.\n\nLet us define the value of a permutation^dagger p of length m-1 (m ≤ n) by the following process.\n\nLet G be a graph of m vertices labeled from 1 to m that does not contain any edges. For each i from 1 to m-1, perform the following operations:\n\nThen, the value of p is the number of incoming edges of vertex 1 of G.\n\nFor each k from 1 to n-1, find the sum of values of all k! permutations of length k. Since this value can be big, you are only required to compute this value under modulo 998,244,353.\n\n^dagger A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\n^ddagger The weakly connected components of a directed graph is the same as the components of the undirected version of the graph. Formally, for directed graph G, define a graph H where for all edges a → b in G, you add an undirected edge a ↔ b in H. Then the weakly connected components of G are the components of H.\n\n^daggerdagger Note that a vertex that has no edges is considered to have only incoming edges.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 5·10^5).\n\nThe second line of each test case contains n-1 integers a_1, a_2, …, a_{n-1} (a_i is 0 or 1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output n-1 integers in a line, the i-th integer should represent the answer when k=i, under modulo 998,244,353.\n\nConsider the first test case.\n\nWhen k=1, there is only 1 permutation p.\n\nTherefore when k=1, the answer is 1.\n\nWhen k=2, there are 2 permutations p.\n\nTherefore when k=2, the answer is 2+1=3.\n\nInput:\n```\n230 090 1 0 0 0 1 0 0\n```\n\nOutput:\n```\n1 3 \n1 2 7 31 167 1002 7314 60612 \n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 5·10^5).\n\nThe second line of each test case contains n-1 integers a_1, a_2, …, a_{n-1} (a_i is 0 or 1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output n-1 integers in a line, the i-th integer should represent the answer when k=i, under modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "dsu",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

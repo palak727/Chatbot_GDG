@@ -1,0 +1,17 @@
+{
+    "id": "1365B",
+    "contest_id": 1365,
+    "problem_letter": "B",
+    "title": "B. Trouble Sort",
+    "statement": "Ashish has n elements arranged in a line.\n\nThese elements are represented by two integers a_i — the value of the element and b_i — the type of the element (there are only two possible types: 0 and 1). He wants to sort the elements in non-decreasing values of a_i.\n\nHe can perform the following operation any number of times:\n\nTell him if he can sort the elements in non-decreasing values of a_i after performing any number of operations.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 500) — the size of the arrays.\n\nThe second line contains n integers a_i (1 ≤ a_i ≤ 10^5) — the value of the i-th element.\n\nThe third line containts n integers b_i (b_i ∈ {0, 1}) — the type of the i-th element.\n\nFor each test case, print \"Yes\" or \"No\" (without quotes) depending on whether it is possible to sort elements in non-decreasing order of their value.\n\nYou may print each letter in any case (upper or lower).\n\nFor the first case: The elements are already in sorted order.\n\nFor the second case: Ashish may first swap elements at positions 1 and 2, then swap elements at positions 2 and 3.\n\nFor the third case: The elements are already in sorted order.\n\nFor the fourth case: No swap operations may be performed as there is no pair of elements i and j such that b_i ≠ b_j. The elements cannot be sorted.\n\nFor the fifth case: Ashish may swap elements at positions 3 and 4, then elements at positions 1 and 2.\n\nInput:\n```\n5\n4\n10 20 20 30\n0 1 0 1\n3\n3 1 2\n0 1 1\n4\n2 2 4 8\n1 1 1 1\n3\n5 15 4\n0 0 0\n4\n20 10 100 50\n1 0 0 1\n```\n\nOutput:\n```\nYes\nYes\nYes\nNo\nYes\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 500) — the size of the arrays.\n\nThe second line contains n integers a_i (1 ≤ a_i ≤ 10^5) — the value of the i-th element.\n\nThe third line containts n integers b_i (b_i ∈ {0, 1}) — the type of the i-th element.",
+    "output": "For each test case, print \"Yes\" or \"No\" (without quotes) depending on whether it is possible to sort elements in non-decreasing order of their value.\n\nYou may print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

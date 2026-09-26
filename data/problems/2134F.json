@@ -1,0 +1,18 @@
+{
+    "id": "2134F",
+    "contest_id": 2134,
+    "problem_letter": "F",
+    "title": "F. Permutation Oddness",
+    "statement": "You are given four positive integers c_0, c_1, c_2, and c_3.\n\nLet n = c_0 + c_1 + c_2 + c_3. Consider an array a of n integers with x (0≤ x≤ 3) appearing c_x times. For any distinct permutation^{∗} b of the array a, define its oddness as^{†}^{‡}:\n\n∑_{i = 1}^{n-1} lowbit(b_i oplus b_{i+1})\n\nYour task is to count, for each integer k from 0 to 2·(n-1) (inclusive), the number of distinct permutations of a with an oddness equal to k.\n\nSince the numbers might be too large, you are only required to find them modulo 10^9 + 7.\n\n^{∗}A permutation of the array is an arrangement of its elements into any order. For example, [1,2,2] is a permutation of [2,2,1], but [1,1,2] is not. Two permutations are considered distinct if they differ in at least one position.\n\n^{†}oplus denotes the bitwise XOR operation.\n\n^{‡}lowbit(x) is the value of the lowest binary bit of x, e.g. lowbit(12)=4, lowbit(8)=8. Specifically, we define lowbit(0) = 0.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first and the only line of each test case contains four positive integers c_0, c_1, c_2, and c_3 (1 ≤ c_0, c_1, c_2, c_3 < 800, 4 ≤ c_0 + c_1 + c_2 + c_3 ≤ 800).\n\nLet n = c_0 + c_1 + c_2 + c_3. It is guaranteed that the sum of n over all test cases does not exceed 800.\n\nFor each test case, output 2·(n-1) + 1 integers in one line — the number of distinct permutations of a with an oddness equal to 0,1,…, 2·(n-1) respectively. Output the answers modulo 10^9+7.\n\nIn the first test case, the array a has 24 distinct permutations. The table below shows the oddness values for some selected permutations:\n\nOverall, among the 24 permutations:\n\nIn the second test case, the array a has 840 distinct permutations. The distribution of oddness values is as follows:\n\nInput:\n```\n31 1 1 11 2 4 13 3 3 3\n```\n\nOutput:\n```\n0 0 0 8 8 8 0\n0 0 0 8 32 126 184 244 156 72 18 0 0 0 0\n0 0 0 8 56 424 1472 5760 12128 29376 40384 65232 59920 65232 40384 29376 12128 5760 1472 424 56 8 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first and the only line of each test case contains four positive integers c_0, c_1, c_2, and c_3 (1 ≤ c_0, c_1, c_2, c_3 < 800, 4 ≤ c_0 + c_1 + c_2 + c_3 ≤ 800).\n\nLet n = c_0 + c_1 + c_2 + c_3. It is guaranteed that the sum of n over all test cases does not exceed 800.",
+    "output": "For each test case, output 2·(n-1) + 1 integers in one line — the number of distinct permutations of a with an oddness equal to 0,1,…, 2·(n-1) respectively. Output the answers modulo 10^9+7.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

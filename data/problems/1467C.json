@@ -1,0 +1,17 @@
+{
+    "id": "1467C",
+    "contest_id": 1467,
+    "problem_letter": "C",
+    "title": "C. Three Bags",
+    "statement": "You are given three bags. Each bag contains a non-empty multiset of numbers. You can perform a number of operations on these bags. In one operation, you can choose any two non-empty bags, and choose one number from each of the bags. Let's say that you choose number a from the first bag and number b from the second bag. Then, you remove b from the second bag and replace a with a-b in the first bag. Note that if there are multiple occurrences of these numbers, then you shall only remove/replace exactly one occurrence.\n\nYou have to perform these operations in such a way that you have exactly one number remaining in exactly one of the bags (the other two bags being empty). It can be shown that you can always apply these operations to receive such a configuration in the end. Among all these configurations, find the one which has the maximum number left in the end.\n\nThe first line of the input contains three space-separated integers n_1, n_2 and n_3 (1 ≤ n_1, n_2, n_3 ≤ 3·10^5, 1 ≤ n_1+n_2+n_3 ≤ 3·10^5) — the number of numbers in the three bags.\n\nThe i-th of the next three lines contain n_i space-separated integers a_{i,1}, a_{i,2}, ..., a_{i,n_i} (1 ≤ a_{i,j} ≤ 10^9) — the numbers in the i-th bag.\n\nPrint a single integer — the maximum number which you can achieve in the end.\n\nIn the first example input, let us perform the following operations:\n\n[1, 2], [6, 3, 4, 5], [5]\n\n[-5, 2], [3, 4, 5], [5] (Applying an operation to (1, 6))\n\n[-10, 2], [3, 4], [5] (Applying an operation to (-5, 5))\n\n[2], [3, 4], [15] (Applying an operation to (5, -10))\n\n[-1], [4], [15] (Applying an operation to (2, 3))\n\n[-5], [], [15] (Applying an operation to (-1, 4))\n\n[], [], [20] (Applying an operation to (15, -5))\n\nYou can verify that you cannot achieve a bigger number. Hence, the answer is 20.\n\nInput:\n```\n2 4 1\n1 2\n6 3 4 5\n5\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n3 2 2\n7 5 4\n2 9\n7 1\n```\n\nOutput:\n```\n29\n```",
+    "input": "The first line of the input contains three space-separated integers n_1, n_2 and n_3 (1 ≤ n_1, n_2, n_3 ≤ 3·10^5, 1 ≤ n_1+n_2+n_3 ≤ 3·10^5) — the number of numbers in the three bags.\n\nThe i-th of the next three lines contain n_i space-separated integers a_{i,1}, a_{i,2}, ..., a_{i,n_i} (1 ≤ a_{i,j} ≤ 10^9) — the numbers in the i-th bag.",
+    "output": "Print a single integer — the maximum number which you can achieve in the end.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

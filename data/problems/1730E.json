@@ -1,0 +1,19 @@
+{
+    "id": "1730E",
+    "contest_id": 1730,
+    "problem_letter": "E",
+    "title": "E. Maximums and Minimums",
+    "statement": "You are given an array a_1, a_2, …, a_n of positive integers.\n\nFind the number of pairs of indices (l, r), where 1 ≤ l ≤ r ≤ n, that pass the check. The check is performed in the following manner:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10) — the number of test cases. Then the test cases follow.\n\nEach test case consists of two lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5·10^5) — the size of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, print a single integer — the number of pairs of indices that pass the check.\n\nBelow x mid y denotes that y is divisible by x.\n\nIn the first test case, there is one pair (1, 1), the maximum for this pair is 1, the minimum is also 1, 1 mid 1, so the check is passed, and the answer is 1.\n\nIn the second test case, there are 3 segments:\n\nIn the third test case, there are 3 segments:\n\nInput:\n```\n61122 422 342 4 7 14716 5 18 7 7 12 14616 14 2 6 16 2\n```\n\nOutput:\n```\n1\n3\n2\n7\n10\n19\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10) — the number of test cases. Then the test cases follow.\n\nEach test case consists of two lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5·10^5) — the size of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, print a single integer — the number of pairs of indices that pass the check.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "divide and conquer",
+        "number theory",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1895F",
+    "contest_id": 1895,
+    "problem_letter": "F",
+    "title": "F. Fancy Arrays",
+    "statement": "Let's call an array a of n non-negative integers fancy if the following conditions hold:\n\nYou are given n, x and k. Your task is to calculate the number of fancy arrays of length n. Since the answer can be large, print it modulo 10^9+7.\n\nThe first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe only line of each test case contains three integers n, x and k (1 ≤ n, k ≤ 10^9; 0 ≤ x ≤ 40).\n\nFor each test case, print a single integer — the number of fancy arrays of length n, taken modulo 10^9+7.\n\nIn the first test case of the example, the following arrays are fancy:\n\nInput:\n```\n43 0 11 4 254 7 21000000000 40 1000000000\n```\n\nOutput:\n```\n9\n25\n582\n514035484\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe only line of each test case contains three integers n, x and k (1 ≤ n, k ≤ 10^9; 0 ≤ x ≤ 40).",
+    "output": "For each test case, print a single integer — the number of fancy arrays of length n, taken modulo 10^9+7.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "matrices",
+        "*2600"
+    ],
+    "rating": 2600
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1101D",
+    "contest_id": 1101,
+    "problem_letter": "D",
+    "title": "D. GCD Counting",
+    "statement": "You are given a tree consisting of n vertices. A number is written on each vertex; the number on vertex i is equal to a_i.\n\nLet's denote the function g(x, y) as the greatest common divisor of the numbers written on the vertices belonging to the simple path from vertex x to vertex y (including these two vertices). Also let's denote dist(x, y) as the number of vertices on the simple path between vertices x and y, including the endpoints. dist(x, x) = 1 for every vertex x.\n\nYour task is calculate the maximum value of dist(x, y) among such pairs of vertices that g(x, y) > 1.\n\nThe first line contains one integer n — the number of vertices (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 2·10^5) — the numbers written on vertices.\n\nThen n - 1 lines follow, each containing two integers x and y (1 ≤ x, y ≤ n, x ≠ y) denoting an edge connecting vertex x with vertex y. It is guaranteed that these edges form a tree.\n\nIf there is no pair of vertices x, y such that g(x, y) > 1, print 0. Otherwise print the maximum value of dist(x, y) among such pairs.\n\nInput:\n```\n3\n2 3 4\n1 2\n2 3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n2 3 4\n1 3\n2 3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n1 1 1\n1 2\n2 3\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n — the number of vertices (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 2·10^5) — the numbers written on vertices.\n\nThen n - 1 lines follow, each containing two integers x and y (1 ≤ x, y ≤ n, x ≠ y) denoting an edge connecting vertex x with vertex y. It is guaranteed that these edges form a tree.",
+    "output": "If there is no pair of vertices x, y such that g(x, y) > 1, print 0. Otherwise print the maximum value of dist(x, y) among such pairs.",
+    "time_limit": "4.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "number theory",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

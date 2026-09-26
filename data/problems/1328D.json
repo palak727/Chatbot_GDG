@@ -1,0 +1,20 @@
+{
+    "id": "1328D",
+    "contest_id": 1328,
+    "problem_letter": "D",
+    "title": "D. Carousel",
+    "statement": "The round carousel consists of n figures of animals. Figures are numbered from 1 to n in order of the carousel moving. Thus, after the n-th figure the figure with the number 1 follows. Each figure has its own type — the type of the animal corresponding to this figure (the horse, the tiger and so on). The type of animal of the i-th figure equals t_i.\n\nYou want to color each figure in one of the colors. You think that it's boring if the carousel contains two different figures (with the distinct types of animals) going one right after another and colored in the same color.\n\nYour task is to color the figures in such a way that the number of distinct colors used is the minimum possible and there are no figures of the different types going one right after another and colored in the same color. If you use exactly k distinct colors, then the colors of figures should be denoted with integers from 1 to k.\n\nThe input contains one or more test cases.\n\nThe first line contains one integer q (1 ≤ q ≤ 10^4) — the number of test cases in the test. Then q test cases follow. One test case is given on two lines.\n\nThe first line of the test case contains one integer n (3 ≤ n ≤ 2·10^5) — the number of figures in the carousel. Figures are numbered from 1 to n in order of carousel moving. Assume that after the n-th figure the figure 1 goes.\n\nThe second line of the test case contains n integers t_1, t_2, …, t_n (1 ≤ t_i ≤ 2·10^5), where t_i is the type of the animal of the i-th figure.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nPrint q answers, for each test case print two lines.\n\nIn the first line print one integer k — the minimum possible number of distinct colors of figures.\n\nIn the second line print n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ k), where c_i is the color of the i-th figure. If there are several answers, you can print any.\n\nInput:\n```\n4\n5\n1 2 1 2 2\n6\n1 2 2 1 2 2\n5\n1 2 1 2 3\n3\n10 10 10\n```\n\nOutput:\n```\n2\n1 2 1 2 2\n2\n2 1 2 1 2 1\n3\n2 3 2 3 1\n1\n1 1 1 \n```",
+    "input": "The input contains one or more test cases.\n\nThe first line contains one integer q (1 ≤ q ≤ 10^4) — the number of test cases in the test. Then q test cases follow. One test case is given on two lines.\n\nThe first line of the test case contains one integer n (3 ≤ n ≤ 2·10^5) — the number of figures in the carousel. Figures are numbered from 1 to n in order of carousel moving. Assume that after the n-th figure the figure 1 goes.\n\nThe second line of the test case contains n integers t_1, t_2, …, t_n (1 ≤ t_i ≤ 2·10^5), where t_i is the type of the animal of the i-th figure.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "Print q answers, for each test case print two lines.\n\nIn the first line print one integer k — the minimum possible number of distinct colors of figures.\n\nIn the second line print n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ k), where c_i is the color of the i-th figure. If there are several answers, you can print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "graphs",
+        "greedy",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

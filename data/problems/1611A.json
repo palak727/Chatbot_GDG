@@ -1,0 +1,17 @@
+{
+    "id": "1611A",
+    "contest_id": 1611,
+    "problem_letter": "A",
+    "title": "A. Make Even",
+    "statement": "Polycarp has an integer n that doesn't contain the digit 0. He can do the following operation with his number several (possibly zero) times:\n\nNote that for different operations, the values of l can be different. The number l can be equal to the length of the number n — in this case, the whole number n is reversed.\n\nPolycarp loves even numbers. Therefore, he wants to make his number even. At the same time, Polycarp is very impatient. He wants to do as few operations as possible.\n\nHelp Polycarp. Determine the minimum number of operations he needs to perform with the number n to make it even or determine that this is impossible.\n\nYou need to answer t independent test cases.\n\nThe first line contains the number t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach of the following t lines contains one integer n (1 ≤ n < 10^9). It is guaranteed that the given number doesn't contain the digit 0.\n\nPrint t lines. On each line print one integer — the answer to the corresponding test case. If it is impossible to make an even number, print -1.\n\nIn the first test case, n=3876, which is already an even number. Polycarp doesn't need to do anything, so the answer is 0.\n\nIn the second test case, n=387. Polycarp needs to do 2 operations:\n\nIt can be shown that 2 is the minimum possible number of operations that Polycarp needs to do with his number to make it even.\n\nIn the third test case, n=4489. Polycarp can reverse the whole number (choose a prefix of length l=4). It will become 9844 and this is an even number.\n\nIn the fourth test case, n=3. No matter how hard Polycarp tried, he would not be able to make an even number.\n\nInput:\n```\n4\n3876\n387\n4489\n3\n```\n\nOutput:\n```\n0\n2\n1\n-1\n```",
+    "input": "The first line contains the number t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach of the following t lines contains one integer n (1 ≤ n < 10^9). It is guaranteed that the given number doesn't contain the digit 0.",
+    "output": "Print t lines. On each line print one integer — the answer to the corresponding test case. If it is impossible to make an even number, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

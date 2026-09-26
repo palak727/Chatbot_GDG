@@ -1,0 +1,18 @@
+{
+    "id": "1792F1",
+    "contest_id": 1792,
+    "problem_letter": "F1",
+    "title": "F1. Graph Coloring (easy version)",
+    "statement": "The only difference between the easy and the hard version is the constraint on n.\n\nYou are given an undirected complete graph on n vertices. A complete graph is a graph where each pair of vertices is connected by an edge. You have to paint the edges of the graph into two colors, red and blue (each edge will have one color).\n\nA set of vertices S is red-connected if, for every pair of vertices (v_1, v_2) such that v_1 ∈ S and v_2 ∈ S, there exists a path from v_1 to v_2 that goes only through red edges and vertices from S. Similarly, a set of vertices S is blue-connected if, for every pair of vertices (v_1, v_2) such that v_1 ∈ S and v_2 ∈ S, there exists a path from v_1 to v_2 that goes only through blue edges and vertices from S.\n\nYou have to paint the graph in such a way that:\n\nCalculate the number of ways to paint the graph, and print it modulo 998244353.\n\nThe first (and only) line contains one integer n (3 ≤ n ≤ 5·10^3).\n\nPrint one integer — the number of ways to paint the graph, taken modulo 998244353.\n\nInput:\n```\n3\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n50\n```\n\nInput:\n```\n100\n```\n\nOutput:\n```\n878752271\n```\n\nInput:\n```\n1337\n```\n\nOutput:\n```\n520628749\n```",
+    "input": "The first (and only) line contains one integer n (3 ≤ n ≤ 5·10^3).",
+    "output": "Print one integer — the number of ways to paint the graph, taken modulo 998244353.",
+    "time_limit": "5.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "graphs",
+        "*2700"
+    ],
+    "rating": 2700
+}

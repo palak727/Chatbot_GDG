@@ -1,0 +1,19 @@
+{
+    "id": "2034F1",
+    "contest_id": 2034,
+    "problem_letter": "F1",
+    "title": "F1. Khayyam's Royal Decree (Easy Version)",
+    "statement": "This is the easy version of the problem. The only differences between the two versions are the constraints on k and the sum of k.\n\nIn ancient Persia, Khayyam, a clever merchant and mathematician, is playing a game with his prized treasure chest containing n red rubies worth 2 dinars each and m blue sapphires worth 1 dinar each. He also has a satchel, which starts empty, and k scrolls with pairs (r_1, b_1), (r_2, b_2), …, (r_k, b_k) that describe special conditions.\n\nThe game proceeds for n + m turns as follows:\n\nNote that the value of some gems might be affected by multiple decrees, and in that case the gems' value is doubled multiple times.\n\nDetermine the expected value of Khayyam's satchel at the end of the game, modulo 998,244,353.\n\nFormally, let M = 998,244,353. It can be shown that the exact answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 2·10^5, 0 ≤ k ≤ 500) — the number of red rubies, the number of blue sapphires, and the number of scrolls describing special conditions, respectively.\n\nEach of the next k lines contains two integers r_i, b_i (0 ≤ r_i ≤ n, 0 ≤ b_i ≤ m, 1 ≤ r_i + b_i ≤ n+m-1). It is guaranteed that the pairs (r_i, b_i) are distinct.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5, and the sum of k over all test cases does not exceed 500.\n\nFor each test case, print a single integer: the expected value of Khayyam's satchel at the end of the process, modulo 998,244,353.\n\nIn the first test case, at the end of the process, there will always be 3 red rubies and 4 blue sapphires. None of the special conditions described in the scrolls are met, so the value of Khayyam's satchel remains unchanged. The total value of the satchel at the end is always 2·3 + 1·4 = 10.\n\nIn the second test case, consider the following two cases:\n\nThus, the expected value at the end is 1/2·3 + 1/2·4 = 7/2, which is 499,122,180 modulo 998,244,353.\n\nInput:\n```\n53 4 01 1 11 03 3 21 12 23 3 22 11 210 4 51 08 06 40 27 4\n```\n\nOutput:\n```\n10\n499122180\n798595498\n149736666\n414854846\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m ≤ 2·10^5, 0 ≤ k ≤ 500) — the number of red rubies, the number of blue sapphires, and the number of scrolls describing special conditions, respectively.\n\nEach of the next k lines contains two integers r_i, b_i (0 ≤ r_i ≤ n, 0 ≤ b_i ≤ m, 1 ≤ r_i + b_i ≤ n+m-1). It is guaranteed that the pairs (r_i, b_i) are distinct.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5, and the sum of k over all test cases does not exceed 500.",
+    "output": "For each test case, print a single integer: the expected value of Khayyam's satchel at the end of the process, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

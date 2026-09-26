@@ -1,0 +1,17 @@
+{
+    "id": "1968F",
+    "contest_id": 1968,
+    "problem_letter": "F",
+    "title": "F. Equal XOR Segments",
+    "statement": "Let us call an array x_1,…,x_m interesting if it is possible to divide the array into k > 1 parts so that bitwise XOR of values from each part are equal.\n\nMore formally, you must split array x into k consecutive segments, each element of x must belong to exactly 1 segment. Let y_1,…,y_k be the XOR of elements from each part respectively. Then y_1=y_2=…=y_k must be fulfilled.\n\nFor example, if x = [1, 1, 2, 3, 0], you can split it as follows: [colorblue1], [colorgreen1], [colorred2, colorred3, colorred0]. Indeed colorblue1=colorgreen1=colorred2 oplus colorred3oplus colorred0.\n\nYou are given an array a_1,…,a_n. Your task is to answer q queries:\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (2 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the number of elements in the array and the number of queries respectively.\n\nThe next line contains n integers a_1,…,a_n (0 ≤ a_i < 2^30) — elements of the array.\n\nEach of the next q lines contains two integers l and r (1 ≤ l < r ≤ n) describing the query.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5.\n\nIt is guaranteed that the sum of q over all testcases does not exceed 2·10^5.\n\nFor each query, output \"YES\" if the subarray is interesting and \"NO\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as correct answers).\n\nExplanation for the first test case:\n\nThe first query is described in the statement.\n\nIn the second query, we should divide [1,2,3]. A possible division is [1,2],[3], since 1oplus 2=3.\n\nIt can be shown that for queries 3,4,5, the subarrays are not interesting.\n\nInput:\n```\n45 51 1 2 3 01 52 43 51 33 45 51 2 3 4 51 52 43 51 32 37 412 9 10 9 10 11 91 51 72 62 711 40 0 1 0 0 1 0 1 1 0 11 22 56 97 11\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nNO\n\nYES\nNO\nNO\nYES\nNO\n\nNO\nNO\nNO\nNO\n\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (2 ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the number of elements in the array and the number of queries respectively.\n\nThe next line contains n integers a_1,…,a_n (0 ≤ a_i < 2^30) — elements of the array.\n\nEach of the next q lines contains two integers l and r (1 ≤ l < r ≤ n) describing the query.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5.\n\nIt is guaranteed that the sum of q over all testcases does not exceed 2·10^5.",
+    "output": "For each query, output \"YES\" if the subarray is interesting and \"NO\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, the strings \"yES\", \"yes\", and \"Yes\" will be recognized as correct answers).",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "*1800"
+    ],
+    "rating": 1800
+}

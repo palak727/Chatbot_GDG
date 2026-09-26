@@ -1,0 +1,16 @@
+{
+    "id": "1832A",
+    "contest_id": 1832,
+    "problem_letter": "A",
+    "title": "A. New Palindrome",
+    "statement": "A palindrome is a string that reads the same from left to right as from right to left. For example, abacaba, aaaa, abba, racecar are palindromes.\n\nYou are given a string s consisting of lowercase Latin letters. The string s is a palindrome.\n\nYou have to check whether it is possible to rearrange the letters in it to get another palindrome (not equal to the given string s).\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a string s (2 ≤ |s| ≤ 50) consisting of lowercase Latin letters. This string is a palindrome.\n\nFor each test case, print YES if it is possible to rearrange the letters in the given string to get another palindrome. Otherwise, print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nIn the first test case, it is possible to rearrange the letters in the palindrome codedoc to obtain the string ocdedco, which is different from the given string, but also a palindrome.\n\nInput:\n```\n3codedocggaabaa\n```\n\nOutput:\n```\nYES\nNO\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a string s (2 ≤ |s| ≤ 50) consisting of lowercase Latin letters. This string is a palindrome.",
+    "output": "For each test case, print YES if it is possible to rearrange the letters in the given string to get another palindrome. Otherwise, print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

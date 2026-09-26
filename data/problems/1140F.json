@@ -1,0 +1,18 @@
+{
+    "id": "1140F",
+    "contest_id": 1140,
+    "problem_letter": "F",
+    "title": "F. Extending Set of Points",
+    "statement": "For a given set of two-dimensional points S, let's denote its extension E(S) as the result of the following algorithm:\n\nCreate another set of two-dimensional points R, which is initially equal to S. Then, while there exist four numbers x_1, y_1, x_2 and y_2 such that (x_1, y_1) ∈ R, (x_1, y_2) ∈ R, (x_2, y_1) ∈ R and (x_2, y_2) ∉ R, add (x_2, y_2) to R. When it is impossible to find such four integers, let R be the result of the algorithm.\n\nNow for the problem itself. You are given a set of two-dimensional points S, which is initially empty. You have to process two types of queries: add some point to S, or remove some point from it. After each query you have to compute the size of E(S).\n\nThe first line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThen q lines follow, each containing two integers x_i, y_i (1 ≤ x_i, y_i ≤ 3·10^5), denoting i-th query as follows: if (x_i, y_i) ∈ S, erase it from S, otherwise insert (x_i, y_i) into S.\n\nPrint q integers. i-th integer should be equal to the size of E(S) after processing first i queries.\n\nInput:\n```\n7\n1 1\n1 2\n2 1\n2 2\n1 2\n1 3\n2 1\n```\n\nOutput:\n```\n1 2 4 4 4 6 3 \n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThen q lines follow, each containing two integers x_i, y_i (1 ≤ x_i, y_i ≤ 3·10^5), denoting i-th query as follows: if (x_i, y_i) ∈ S, erase it from S, otherwise insert (x_i, y_i) into S.",
+    "output": "Print q integers. i-th integer should be equal to the size of E(S) after processing first i queries.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "*2600"
+    ],
+    "rating": 2600
+}

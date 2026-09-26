@@ -1,0 +1,17 @@
+{
+    "id": "1812J",
+    "contest_id": 1812,
+    "problem_letter": "J",
+    "title": "J. Unmysterious Language",
+    "statement": "There is an unmysterious language. You should make a submission in this language, and the judge will read your submission to determine whether it is accepted.\n\nYou can only submit in the Mysterious Language we have provided. You can view the judge's response by clicking the submission ID on the \"My Submissions\" page.\n\nInput:\n```\n \n```\n\nOutput:\n```\n \n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "strings"
+    ],
+    "rating": null
+}

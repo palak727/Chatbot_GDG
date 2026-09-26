@@ -1,0 +1,17 @@
+{
+    "id": "1336C",
+    "contest_id": 1336,
+    "problem_letter": "C",
+    "title": "C. Kaavi and Magic Spell",
+    "statement": "Kaavi, the mysterious fortune teller, deeply believes that one's fate is inevitable and unavoidable. Of course, she makes her living by predicting others' future. While doing divination, Kaavi believes that magic spells can provide great power for her to see the future.\n\nKaavi has a string T of length m and all the strings with the prefix T are magic spells. Kaavi also has a string S of length n and an empty string A.\n\nDuring the divination, Kaavi needs to perform a sequence of operations. There are two different operations:\n\nKaavi can perform no more than n operations. To finish the divination, she wants to know the number of different operation sequences to make A a magic spell (i.e. with the prefix T). As her assistant, can you help her? The answer might be huge, so Kaavi only needs to know the answer modulo 998,244,353.\n\nTwo operation sequences are considered different if they are different in length or there exists an i that their i-th operation is different.\n\nA substring is a contiguous sequence of characters within a string. A prefix of a string S is a substring of S that occurs at the beginning of S.\n\nThe first line contains a string S of length n (1 ≤ n ≤ 3000).\n\nThe second line contains a string T of length m (1 ≤ m ≤ n).\n\nBoth strings contain only lowercase Latin letters.\n\nThe output contains only one integer — the answer modulo 998,244,353.\n\nThe first test:\n\nThe red ones are the magic spells. In the first operation, Kaavi can either add the first character \"a\" at the front or the back of A, although the results are the same, they are considered as different operations. So the answer is 6×2=12.\n\nInput:\n```\nabab\nba\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\ndefineintlonglong\nsignedmain\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\nrotator\nrotator\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\ncacdcdbbbb\nbdcaccdbbb\n```\n\nOutput:\n```\n24\n```",
+    "input": "The first line contains a string S of length n (1 ≤ n ≤ 3000).\n\nThe second line contains a string T of length m (1 ≤ m ≤ n).\n\nBoth strings contain only lowercase Latin letters.",
+    "output": "The output contains only one integer — the answer modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*2200"
+    ],
+    "rating": 2200
+}

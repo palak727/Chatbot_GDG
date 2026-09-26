@@ -1,0 +1,17 @@
+{
+    "id": "2123C",
+    "contest_id": 2123,
+    "problem_letter": "C",
+    "title": "C. Prefix Min and Suffix Max",
+    "statement": "You are given an array a of distinct integers.\n\nIn one operation, you may either:\n\nNote that you may choose the entire array a.\n\nFor each element a_i, determine if there exists some sequence of operations to transform a into [a_i]; that is, make the array a consist of only one element, which is a_i. Output your answer as a binary string of length n, where the i-th character is 1 if there exists a sequence to transform a into [a_i], and 0 otherwise.\n\n^{∗}A prefix of an array is a subarray consisting of the first k elements of the array, for some integer k.\n\n^{†}A suffix of an array is a subarray consisting of the last k elements of the array, for some integer k.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 2·10^5) — the size of the array a.\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^6). It is guaranteed that all a_i are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a binary string of length n — the i-th character should be 1 if there exists a sequence of operations as described above, and 0 otherwise.\n\nIn the first sample, you can first choose the prefix of size 3. Then the array is transformed into\n\nIt can be shown that it is impossible to transform a into [3].\n\nInput:\n```\n361 3 5 4 7 2413 10 12 2071 2 3 4 5 6 7\n```\n\nOutput:\n```\n100011\n1101\n1000001\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 2·10^5) — the size of the array a.\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^6). It is guaranteed that all a_i are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a binary string of length n — the i-th character should be 1 if there exists a sequence of operations as described above, and 0 otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "*1000"
+    ],
+    "rating": 1000
+}

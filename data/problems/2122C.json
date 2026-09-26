@@ -1,0 +1,20 @@
+{
+    "id": "2122C",
+    "contest_id": 2122,
+    "problem_letter": "C",
+    "title": "C. Manhattan Pairs",
+    "statement": "You are given n points (x_i, y_i) on a 2D plane, where n is even. Select n/2 disjoint pairs (a_i, b_i) to maximize the sum of Manhattan distances between points in pairs. In other words, maximize ∑_{i=1}^{n/2} |x_a_i - x_b_i| + |y_a_i - y_b_i|.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThe i-th of the next n lines contains two integers x_i and y_i (-10^6 ≤ x_i, y_i ≤ 10^6) — the coordinates of the i-th point.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output n/2 lines, the i-th line containing two integers a_i and b_i — the indices of points in the i-th pair.\n\nIf there are multiple solutions, print any of them.\n\nIn the first test case, an optimal solution is to select the pairs (1, 4) and (2, 3), which achieves a distance sum of 5 + 3 = 8.\n\nIn the second test case, an optimal solution is to select the pairs (1, 8), (9, 10), (5, 7), (2, 3), (4, 6), which achieves a distance sum of 4 + 7 + 10 + 5 + 7 = 33.\n\nInput:\n```\n241 13 04 23 410-1 -1-1 2-2 -2-2 00 22 -3-4 -4-4 -20 1-4 -2\n```\n\nOutput:\n```\n4 1\n2 3\n8 1\n9 10\n7 5\n2 3\n6 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single even integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThe i-th of the next n lines contains two integers x_i and y_i (-10^6 ≤ x_i, y_i ≤ 10^6) — the coordinates of the i-th point.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n/2 lines, the i-th line containing two integers a_i and b_i — the indices of points in the i-th pair.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "greedy",
+        "math",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

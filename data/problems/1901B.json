@@ -1,0 +1,17 @@
+{
+    "id": "1901B",
+    "contest_id": 1901,
+    "problem_letter": "B",
+    "title": "B. Chip and Ribbon",
+    "statement": "There is a ribbon divided into n cells, numbered from 1 to n from left to right. Initially, an integer 0 is written in each cell.\n\nMonocarp plays a game with a chip. The game consists of several turns. During the first turn, Monocarp places the chip in the 1-st cell of the ribbon. During each turn except for the first turn, Monocarp does exactly one of the two following actions:\n\nAt the end of each turn, the integer written in the cell with the chip is increased by 1.\n\nMonocarp's goal is to make some turns so that the 1-st cell contains the integer c_1, the 2-nd cell contains the integer c_2, ..., the n-th cell contains the integer c_n. He wants to teleport the chip as few times as possible.\n\nHelp Monocarp calculate the minimum number of times he has to teleport the chip.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nIt can be shown that under these constraints, it is always possible to make a finite amount of turns so that the integers in the cells match the sequence c_1, c_2, …, c_n.\n\nAdditional constraint on the input: the sum of values of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print one integer — the minimum number of times Monocarp has to teleport the chip.\n\nIn the first test case of the example, Monocarp can perform the turns as follows:\n\nInput:\n```\n441 2 2 151 0 1 0 155 4 3 2 1112\n```\n\nOutput:\n```\n1\n2\n4\n11\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nIt can be shown that under these constraints, it is always possible to make a finite amount of turns so that the integers in the cells match the sequence c_1, c_2, …, c_n.\n\nAdditional constraint on the input: the sum of values of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print one integer — the minimum number of times Monocarp has to teleport the chip.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

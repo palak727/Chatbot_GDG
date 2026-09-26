@@ -1,0 +1,18 @@
+{
+    "id": "1422D",
+    "contest_id": 1422,
+    "problem_letter": "D",
+    "title": "D. Returning Home",
+    "statement": "Yura has been walking for some time already and is planning to return home. He needs to get home as fast as possible. To do this, Yura can use the instant-movement locations around the city.\n\nLet's represent the city as an area of n × n square blocks. Yura needs to move from the block with coordinates (s_x,s_y) to the block with coordinates (f_x,f_y). In one minute Yura can move to any neighboring by side block; in other words, he can move in four directions. Also, there are m instant-movement locations in the city. Their coordinates are known to you and Yura. Yura can move to an instant-movement location in no time if he is located in a block with the same coordinate x or with the same coordinate y as the location.\n\nHelp Yura to find the smallest time needed to get home.\n\nThe first line contains two integers n and m — the size of the city and the number of instant-movement locations (1 ≤ n ≤ 10^9, 0 ≤ m ≤ 10^5).\n\nThe next line contains four integers s_x s_y f_x f_y — the coordinates of Yura's initial position and the coordinates of his home ( 1 ≤ s_x, s_y, f_x, f_y ≤ n).\n\nEach of the next m lines contains two integers x_i y_i — coordinates of the i-th instant-movement location (1 ≤ x_i, y_i ≤ n).\n\nIn the only line print the minimum time required to get home.\n\nIn the first example Yura needs to reach (5, 5) from (1, 1). He can do that in 5 minutes by first using the second instant-movement location (because its y coordinate is equal to Yura's y coordinate), and then walking (4, 1) → (4, 2) → (4, 3) → (5, 3) → (5, 4) → (5, 5).\n\nInput:\n```\n5 3\n1 1 5 5\n1 2\n4 1\n3 3\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n84 5\n67 59 41 2\n39 56\n7 2\n15 3\n74 18\n22 7\n```\n\nOutput:\n```\n42\n```",
+    "input": "The first line contains two integers n and m — the size of the city and the number of instant-movement locations (1 ≤ n ≤ 10^9, 0 ≤ m ≤ 10^5).\n\nThe next line contains four integers s_x s_y f_x f_y — the coordinates of Yura's initial position and the coordinates of his home ( 1 ≤ s_x, s_y, f_x, f_y ≤ n).\n\nEach of the next m lines contains two integers x_i y_i — coordinates of the i-th instant-movement location (1 ≤ x_i, y_i ≤ n).",
+    "output": "In the only line print the minimum time required to get home.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "graphs",
+        "shortest paths",
+        "sortings",
+        "*2300"
+    ],
+    "rating": 2300
+}

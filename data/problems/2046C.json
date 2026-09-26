@@ -1,0 +1,21 @@
+{
+    "id": "2046C",
+    "contest_id": 2046,
+    "problem_letter": "C",
+    "title": "C. Adventurers",
+    "statement": "Once, four Roman merchants met in a Roman mansion to discuss their trading plans. They faced the following problem: they traded the same type of goods, and if they traded in the same city, they would inevitably incur losses. They decided to divide up the cities between them where they would trade.\n\nThe map of Rome can be represented in this problem as a plane with certain points marked — the cities of the Roman Empire.\n\nThe merchants decided to choose a certain dividing point (x_0, y_0). Then, in a city with coordinates (x_i, y_i),\n\nThe merchants want to choose (x_0, y_0) in such a way as to maximize the smallest number of cities that any of them gets (i. e., as fair as possible). Please find such a point for them.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 10^5) — the number of cities on the map.\n\nEach of the next n lines contains two integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) — the coordinates of the cities.\n\nNote that some points may coincide. This is because some cities may be so close that they cannot be distinguished on the map at the given scale.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, in the first line, print a single integer k (0 ≤ k ≤ n/4) — the maximum possible number of cities that each merchant can get at a minimum.\n\nIn the second line, print two integers x_0 and y_0 (|x_0|, |y_0| ≤ 10^9) — the coordinates of the dividing point. If there are multiple suitable points, print any of them.\n\nInput:\n```\n441 11 22 12 240 00 00 00 081 22 12 -11 -2-1 -2-2 -1-2 1-1 271 11 21 31 42 13 14 1\n```\n\nOutput:\n```\n1\n2 2\n0\n0 0\n2\n1 0\n0\n0 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 10^5) — the number of cities on the map.\n\nEach of the next n lines contains two integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) — the coordinates of the cities.\n\nNote that some points may coincide. This is because some cities may be so close that they cannot be distinguished on the map at the given scale.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, in the first line, print a single integer k (0 ≤ k ≤ n/4) — the maximum possible number of cities that each merchant can get at a minimum.\n\nIn the second line, print two integers x_0 and y_0 (|x_0|, |y_0| ≤ 10^9) — the coordinates of the dividing point. If there are multiple suitable points, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "sortings",
+        "ternary search",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2070C",
+    "contest_id": 2070,
+    "problem_letter": "C",
+    "title": "C. Limited Repainting",
+    "statement": "You are given a strip, consisting of n cells, all cells are initially colored red.\n\nIn one operation, you can choose a segment of consecutive cells and paint them blue. Before painting, the chosen cells can be either red or blue. Note that it is not possible to paint them red. You are allowed to perform at most k operations (possibly zero).\n\nFor each cell, the desired color after all operations is specified: red or blue.\n\nIt is clear that it is not always possible to satisfy all requirements within k operations. Therefore, for each cell, a penalty is also specified, which is applied if the cell ends up the wrong color after all operations. For the i-th cell, the penalty is equal to a_i.\n\nThe penalty of the final painting is calculated as the maximum penalty among all cells that are painted the wrong color. If there are no such cells, the painting penalty is equal to 0.\n\nWhat is the minimum penalty of the final painting that can be achieved?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 3·10^5; 0 ≤ k ≤ n) — the length of the strip and the maximum number of operations.\n\nThe second line contains a string s, consisting of n characters 'R' and/or 'B'. 'R' means that the cell should be painted red. 'B' means that the cell should be painted blue.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the penalty for each cell.\n\nThe sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print a single integer — the minimum penalty of the final painting.\n\nIn the first test case, you can paint the cells from 1 to 3. The painting will be BBBR. So, only cell 2 is painted the wrong color. Therefore, the penalty for it is the final penalty and equals 3.\n\nIn the second test case, the painting BBBR will now result in a penalty of 5. However, if you paint the cells from 1 to 1, resulting in BRRR, then only cell 3 is painted the wrong color. The final penalty is 3.\n\nIn the third test case, you can paint the cells from 1 to 1 and from 3 to 3. Then all cells will be the correct color, the penalty equals 0.\n\nInput:\n```\n54 1BRBR9 3 5 44 1BRBR9 5 3 44 2BRBR9 3 5 410 2BRBRBBRRBR5 1 2 4 5 3 6 1 5 45 5RRRRR5 3 1 2 4\n```\n\nOutput:\n```\n3\n3\n0\n4\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 3·10^5; 0 ≤ k ≤ n) — the length of the strip and the maximum number of operations.\n\nThe second line contains a string s, consisting of n characters 'R' and/or 'B'. 'R' means that the cell should be painted red. 'B' means that the cell should be painted blue.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the penalty for each cell.\n\nThe sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the minimum penalty of the final painting.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2077B",
+    "contest_id": 2077,
+    "problem_letter": "B",
+    "title": "B. Finding OR Sum",
+    "statement": "This is an interactive problem.\n\nThere are two hidden non-negative integers x and y (0 ≤ x, y < 2^30). You can ask no more than 2 queries of the following form.\n\nAfter this, the judge will give you another non-negative integer m (0 ≤ m < 2^30). You must answer the correct value of (m mathbin| x) + (m mathbin| y).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nTwo hidden integers x and y are chosen (0 ≤ x, y < 2^30). Note that x and y might be different for different test cases.\n\nThe interactor in this task is not adaptive. In other words, the integers x and y do not change during the interaction.\n\nTo ask a query, pick an integer n (0 ≤ n < 2^30) and print only the integer n to a line.\n\nYou will receive a single integer, the value of (n mathbin| x) + (n mathbin| y).\n\nYou may make no more than 2 queries of the following form.\n\nAfter you finish your queries, output \"!\" in a line. You will receive an integer m (0 ≤ m < 2^30). Note that the value of m is also fixed before interaction.\n\nYou must output only the value of (m mathbin| x) + (m mathbin| y) in a line. Note that this line is not considered a query and is not taken into account when counting the number of queries asked.\n\nAfter this, proceed to the next test case.\n\nIf you make more than 2 queries during an interaction, your program must terminate immediately, and you will receive the Wrong Answer verdict. Otherwise, you can get an arbitrary verdict because your solution will continue to read from a closed stream.\n\nAfter printing a query do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks\n\nTo hack, follow the test format below.\n\nThe first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains a single line with three integers x, y, m (0 ≤ x, y, m < 2^30).\n\nIn the first test, the interaction proceeds as follows.\n\nNote that the empty lines in the example input and output are for the sake of clarity and do not occur in the real interaction.\n\nInput:\n```\n2\n\n3\n\n4\n\n1\n\n0\n\n1\n```\n\nOutput:\n```\n0\n\n1\n\n!\n\n4\n\n0\n\n!\n\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1680B",
+    "contest_id": 1680,
+    "problem_letter": "B",
+    "title": "B. Robots",
+    "statement": "There is a field divided into n rows and m columns. Some cells are empty (denoted as E), other cells contain robots (denoted as R).\n\nYou can send a command to all robots at the same time. The command can be of one of the four types:\n\nWhen you send a command, all robots at the same time attempt to take one step in the direction you picked. If a robot tries to move outside the field, it explodes; otherwise, every robot moves to an adjacent cell in the chosen direction.\n\nYou can send as many commands as you want (possibly, zero), in any order. Your goal is to make at least one robot reach the upper left corner of the field. Can you do this without forcing any of the robots to explode?\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case starts with a line containing two integers n and m (1 ≤ n, m ≤ 5) — the number of rows and the number of columns, respectively. Then n lines follow; each of them contains a string of m characters. Each character is either E (empty cell or R (robot).\n\nAdditional constraint on the input: in each test case, there is at least one robot on the field.\n\nIf it is possible to make at least one robot reach the upper left corner of the field so that no robot explodes, print YES. Otherwise, print NO.\n\nExplanations for test cases of the example:\n\nInput:\n```\n61 3ERR2 2ERRE2 2ERER1 1R4 3EEEEEEERREER3 3EEEEERREE\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case starts with a line containing two integers n and m (1 ≤ n, m ≤ 5) — the number of rows and the number of columns, respectively. Then n lines follow; each of them contains a string of m characters. Each character is either E (empty cell or R (robot).\n\nAdditional constraint on the input: in each test case, there is at least one robot on the field.",
+    "output": "If it is possible to make at least one robot reach the upper left corner of the field so that no robot explodes, print YES. Otherwise, print NO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

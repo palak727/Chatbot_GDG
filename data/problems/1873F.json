@@ -1,0 +1,19 @@
+{
+    "id": "1873F",
+    "contest_id": 1873,
+    "problem_letter": "F",
+    "title": "F. Money Trees",
+    "statement": "Luca is in front of a row of n trees. The i-th tree has a_i fruit and height h_i.\n\nHe wants to choose a contiguous subarray of the array [h_l, h_{l+1}, …, h_r] such that for each i (l ≤ i < r), h_i is divisible^dagger by h_{i+1}. He will collect all the fruit from each of the trees in the subarray (that is, he will collect a_l + a_{l+1} + … + a_r fruits). However, if he collects more than k fruits in total, he will get caught.\n\nWhat is the maximum length of a subarray Luca can choose so he doesn't get caught?\n\n^dagger x is divisible by y if the ratio x/y is an integer.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first of each test case line contains two space-separated integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 10^9) — the number of trees and the maximum amount of fruits Luca can collect without getting caught.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^4) — the number of fruits in the i-th tree.\n\nThe third line of each test case contains n space-separated integers h_i (1 ≤ h_i ≤ 10^9) — the height of the i-th tree.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case output a single integer, the length of the maximum length contiguous subarray satisfying the conditions, or 0 if there is no such subarray.\n\nIn the first test case, Luca can select the subarray with l=1 and r=3.\n\nIn the second test case, Luca can select the subarray with l=3 and r=4.\n\nIn the third test case, Luca can select the subarray with l=2 and r=2.\n\nInput:\n```\n55 123 2 4 1 84 4 2 4 14 85 4 1 26 2 3 13 127 9 102 2 41 101117 102 6 3 1 5 10 672 24 24 12 4 4 2\n```\n\nOutput:\n```\n3\n2\n1\n0\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first of each test case line contains two space-separated integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 10^9) — the number of trees and the maximum amount of fruits Luca can collect without getting caught.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^4) — the number of fruits in the i-th tree.\n\nThe third line of each test case contains n space-separated integers h_i (1 ≤ h_i ≤ 10^9) — the height of the i-th tree.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output a single integer, the length of the maximum length contiguous subarray satisfying the conditions, or 0 if there is no such subarray.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

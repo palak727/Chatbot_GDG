@@ -1,0 +1,18 @@
+{
+    "id": "1937B",
+    "contest_id": 1937,
+    "problem_letter": "B",
+    "title": "B. Binary Path",
+    "statement": "You are given a 2 × n grid filled with zeros and ones. Let the number at the intersection of the i-th row and the j-th column be a_ij.\n\nThere is a grasshopper at the top-left cell (1, 1) that can only jump one cell right or downwards. It wants to reach the bottom-right cell (2, n). Consider the binary string of length n+1 consisting of numbers written in cells of the path without changing their order.\n\nYour goal is to:\n\n^dagger If two strings s and t have the same length, then s is lexicographically smaller than t if and only if in the first position where s and t differ, the string s has a smaller element than the corresponding element in t.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string a_11 a_12 … a_1n (a_1i is either 0 or 1).\n\nThe third line of each test case contains a binary string a_21 a_22 … a_2n (a_2i is either 0 or 1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output two lines:\n\nIn the first test case, the lexicographically smallest string is mathtt000. There are two paths that yield this string:\n\nIn the second test case, the lexicographically smallest string is mathtt11000. There is only one path that yields this string:\n\nInput:\n```\n32000041101110080010011111101101\n```\n\nOutput:\n```\n000\n2\n11000\n1\n001001101\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string a_11 a_12 … a_1n (a_1i is either 0 or 1).\n\nThe third line of each test case contains a binary string a_21 a_22 … a_2n (a_2i is either 0 or 1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output two lines:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

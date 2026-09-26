@@ -1,0 +1,17 @@
+{
+    "id": "1932D",
+    "contest_id": 1932,
+    "problem_letter": "D",
+    "title": "D. Card Game",
+    "statement": "Two players are playing an online card game. The game is played using a 32-card deck. Each card has a suit and a rank. There are four suits: clubs, diamonds, hearts, and spades. We will encode them with characters 'C', 'D', 'H', and 'S', respectively. And there are 8 ranks, in increasing order: '2', '3', '4', '5', '6', '7', '8', '9'.\n\nEach card is denoted by two letters: its rank and its suit. For example, the 8 of Hearts is denoted as 8H.\n\nAt the beginning of the game, one suit is chosen as the trump suit.\n\nIn each round, players make moves like this: the first player places one of his cards on the table, and the second player must beat this card with one of their cards. After that, both cards are moved to the discard pile.\n\nA card can beat another card if both cards have the same suit and the first card has a higher rank than the second. For example, 8S can beat 4S. Additionally, a trump card can beat any non-trump card, regardless of the rank of the cards, for example, if the trump suit is clubs ('C'), then 3C can beat 9D. Note that trump cards can be beaten only by the trump cards of higher rank.\n\nThere were n rounds played in the game, so the discard pile now contains 2n cards. You want to reconstruct the rounds played in the game, but the cards in the discard pile are shuffled. Find any possible sequence of n rounds that might have been played in the game.\n\nThe first line contains integer t (1 ≤ t ≤ 100) — the number of test cases. Then t test cases follow.\n\nThe first line of a test case contains the integer number n (1≤ n≤ 16).\n\nThe second line of a test case contains one character, the trump suit. It is one of \"CDHS\".\n\nThe third line of a test case contains the description of 2n cards. Each card is described by a two-character string, the first character is the rank of the card, which is one of \"23456789\", and the second one is the suit of the card, which is one of \"CDHS\". All cards are different.\n\nFor each test case print the answer to it:\n\nIf there are multiple solutions, print any of them.\n\nInput:\n```\n83S3C 9S 4C 6D 3S 7S2C3S 5D 9S 6H1H6C 5D1S7S 3S1H9S 9H1S9S 9H1C9D 8H2C9C 9S 6H 8C\n```\n\nOutput:\n```\n3C 4C\n6D 9S\n3S 7S\nIMPOSSIBLE\nIMPOSSIBLE\n3S 7S\n9S 9H\n9H 9S\nIMPOSSIBLE\n6H 9C\n9S 8C\n```",
+    "input": "The first line contains integer t (1 ≤ t ≤ 100) — the number of test cases. Then t test cases follow.\n\nThe first line of a test case contains the integer number n (1≤ n≤ 16).\n\nThe second line of a test case contains one character, the trump suit. It is one of \"CDHS\".\n\nThe third line of a test case contains the description of 2n cards. Each card is described by a two-character string, the first character is the rank of the card, which is one of \"23456789\", and the second one is the suit of the card, which is one of \"CDHS\". All cards are different.",
+    "output": "For each test case print the answer to it:\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

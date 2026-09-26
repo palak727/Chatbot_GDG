@@ -1,0 +1,17 @@
+{
+    "id": "1533C",
+    "contest_id": 1533,
+    "problem_letter": "C",
+    "title": "C. Sweets",
+    "statement": "Anya came to her friend's birthday party. There are n delicious sweets on a circle table (for convenience, we will number them from 1 to n in clockwise direction). For each of the sweets, it is known whether Anya likes it or not. Anya decided that she should eat all the sweets that are on the table, and she likes them.\n\nHowever, eating all the sweets in some random order is too boring. Therefore, Anya came up with a game that will make the process of eating sweets more interesting.\n\nThe game is played according to the following rules:\n\nFor example, let 6 sweets be arranged in a circle, Anya likes sweets 4, 5 and 6, k = 4. Then the game goes as follows:\n\nYour task is to calculate the number of sweets that Anya will eat.\n\nThe first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 5000) — the number of sweets and the parameter k.\n\nThe next line contains the string s, where s_i = 1 if Anya likes i-th sweet, and s_i = 0 otherwise.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.\n\nFor each test case, print one integer — the number of sweets that Anya will eat.\n\nThe first test case of the example is described in the statement.\n\nInput:\n```\n4\n6 4\n000111\n7 3\n0000100\n3 2\n000\n5 1\n10011\n```\n\nOutput:\n```\n4\n4\n0\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 5000) — the number of sweets and the parameter k.\n\nThe next line contains the string s, where s_i = 1 if Anya likes i-th sweet, and s_i = 0 otherwise.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case, print one integer — the number of sweets that Anya will eat.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "implementation"
+    ],
+    "rating": null
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1316E",
+    "contest_id": 1316,
+    "problem_letter": "E",
+    "title": "E. Team Building",
+    "statement": "Alice, the president of club FCB, wants to build a team for the new volleyball tournament. The team should consist of p players playing in p different positions. She also recognizes the importance of audience support, so she wants to select k people as part of the audience.\n\nThere are n people in Byteland. Alice needs to select exactly p players, one for each position, and exactly k members of the audience from this pool of n people. Her ultimate goal is to maximize the total strength of the club.\n\nThe i-th of the n persons has an integer a_i associated with him — the strength he adds to the club if he is selected as a member of the audience.\n\nFor each person i and for each position j, Alice knows s_{i, j} — the strength added by the i-th person to the club if he is selected to play in the j-th position.\n\nEach person can be selected at most once as a player or a member of the audience. You have to choose exactly one player for each position.\n\nSince Alice is busy, she needs you to help her find the maximum possible strength of the club that can be achieved by an optimal choice of players and the audience.\n\nThe first line contains 3 integers n,p,k (2 ≤ n ≤ 10^5, 1 ≤ p ≤ 7, 1 ≤ k, p+k ≤ n).\n\nThe second line contains n integers a_1,a_2,…,a_n. (1 ≤ a_i ≤ 10^9).\n\nThe i-th of the next n lines contains p integers s_{i, 1}, s_{i, 2}, …, s_{i, p}. (1 ≤ s_{i,j} ≤ 10^9)\n\nPrint a single integer res — the maximum possible strength of the club.\n\nIn the first sample, we can select person 1 to play in the 1-st position and persons 2 and 3 as audience members. Then the total strength of the club will be equal to a_2+a_3+s_{1,1}.\n\nInput:\n```\n4 1 2\n1 16 10 3\n18\n19\n13\n15\n```\n\nOutput:\n```\n44\n```\n\nInput:\n```\n6 2 3\n78 93 9 17 13 78\n80 97\n30 52\n26 17\n56 68\n60 36\n84 55\n```\n\nOutput:\n```\n377\n```\n\nInput:\n```\n3 2 1\n500 498 564\n100002 3\n422332 2\n232323 1\n```\n\nOutput:\n```\n422899\n```",
+    "input": "The first line contains 3 integers n,p,k (2 ≤ n ≤ 10^5, 1 ≤ p ≤ 7, 1 ≤ k, p+k ≤ n).\n\nThe second line contains n integers a_1,a_2,…,a_n. (1 ≤ a_i ≤ 10^9).\n\nThe i-th of the next n lines contains p integers s_{i, 1}, s_{i, 2}, …, s_{i, p}. (1 ≤ s_{i,j} ≤ 10^9)",
+    "output": "Print a single integer res — the maximum possible strength of the club.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "greedy",
+        "sortings",
+        "*2300"
+    ],
+    "rating": 2300
+}

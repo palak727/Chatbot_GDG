@@ -1,0 +1,16 @@
+{
+    "id": "2137D",
+    "contest_id": 2137,
+    "problem_letter": "D",
+    "title": "D. Replace with Occurrences",
+    "statement": "Given an array a, let f(x) be the number of occurrences of x in the array a. For example, when a=[1,2,3,1,4], then f(1)=2 and f(3)=1.\n\nYou have an array b of size n. Please determine if there is an array a of size n such that f(a_i)=b_i for all 1 ≤ i ≤ n. If there is one, construct it.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output -1 if there is no valid array a.\n\nOtherwise, print the array a of n integers on a new line. The elements should satisfy 1 ≤ a_i ≤ n.\n\nIn the first test case, it can be shown that no array matches the requirement.\n\nIn the second test case, 4, 5, 6 appear 1,2,3 times respectively. Thus, the output array is correct as f(4),f(5),f(5),f(6),f(6),f(6) are 1,2,2,3,3,3 respectively.\n\nInput:\n```\n341 2 3 461 2 2 3 3 366 6 6 6 6 6\n```\n\nOutput:\n```\n-1\n4 5 5 6 6 6\n2 2 2 2 2 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output -1 if there is no valid array a.\n\nOtherwise, print the array a of n integers on a new line. The elements should satisfy 1 ≤ a_i ≤ n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1200"
+    ],
+    "rating": 1200
+}

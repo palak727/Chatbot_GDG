@@ -1,0 +1,19 @@
+{
+    "id": "1567C",
+    "contest_id": 1567,
+    "problem_letter": "C",
+    "title": "C. Carrying Conundrum",
+    "statement": "Alice has just learned addition. However, she hasn't learned the concept of \"carrying\" fully — instead of carrying to the next column, she carries to the column two columns to the left.\n\nFor example, the regular way to evaluate the sum 2039 + 2976 would be as shown:\n\nHowever, Alice evaluates it as shown:\n\nIn particular, this is what she does:\n\nAlice comes up to Bob and says that she has added two numbers to get a result of n. However, Bob knows that Alice adds in her own way. Help Bob find the number of ordered pairs of positive integers such that when Alice adds them, she will get a result of n. Note that pairs (a, b) and (b, a) are considered different if a ≠ b.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains an integer n (2 ≤ n ≤ 10^9) — the number Alice shows Bob.\n\nFor each test case, output one integer — the number of ordered pairs of positive integers such that when Alice adds them, she will get a result of n.\n\nIn the first test case, when Alice evaluates any of the sums 1 + 9, 2 + 8, 3 + 7, 4 + 6, 5 + 5, 6 + 4, 7 + 3, 8 + 2, or 9 + 1, she will get a result of 100. The picture below shows how Alice evaluates 6 + 4:\n\nInput:\n```\n5\n100\n12\n8\n2021\n10000\n```\n\nOutput:\n```\n9\n4\n7\n44\n99\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains an integer n (2 ≤ n ≤ 10^9) — the number Alice shows Bob.",
+    "output": "For each test case, output one integer — the number of ordered pairs of positive integers such that when Alice adds them, she will get a result of n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "dp",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

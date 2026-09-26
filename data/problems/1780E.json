@@ -1,0 +1,20 @@
+{
+    "id": "1780E",
+    "contest_id": 1780,
+    "problem_letter": "E",
+    "title": "E. Josuke and Complete Graph",
+    "statement": "Josuke received a huge undirected weighted complete^dagger graph G as a gift from his grandfather. The graph contains 10^18 vertices. The peculiarity of the gift is that the weight of the edge between the different vertices u and v is equal to gcd(u, v)^ddagger. Josuke decided to experiment and make a new graph G'. To do this, he chooses two integers l ≤ r and deletes all vertices except such vertices v that l ≤ v ≤ r, and also deletes all the edges except between the remaining vertices.\n\nNow Josuke is wondering how many different weights are there in G'. Since their count turned out to be huge, he asks for your help.\n\n^dagger A complete graph is a simple undirected graph in which every pair of distinct vertices is adjacent.\n\n^ddagger gcd(x, y) denotes the greatest common divisor (GCD) of the numbers x and y.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two numbers l, r (1 ≤ l ≤ r ≤ 10^18, l ≤ 10^9).\n\nFor each test case print a single number — the number of different weights among the remaining edges.\n\nThe picture above shows that the graph has 2 different weights.\n\nIn the fifth test case, there is only one vertex from which no edges originate, so the answer is 0.\n\nInput:\n```\n72 416 242 61 103 32562 2568125 100090\n```\n\nOutput:\n```\n2\n6\n3\n5\n0\n5\n50045\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two numbers l, r (1 ≤ l ≤ r ≤ 10^18, l ≤ 10^9).",
+    "output": "For each test case print a single number — the number of different weights among the remaining edges.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "math",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

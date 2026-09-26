@@ -1,0 +1,20 @@
+{
+    "id": "1988E",
+    "contest_id": 1988,
+    "problem_letter": "E",
+    "title": "E. Range Minimum Sum",
+    "statement": "For an array [a_1,a_2,…,a_n] of length n, define f(a) as the sum of the minimum element over all subsegments. That is, f(a)=∑_{l=1}^n∑_{r=l}^n min_{l≤ i≤ r}a_i.\n\nA permutation is a sequence of integers from 1 to n of length n containing each number exactly once. You are given a permutation [a_1,a_2,…,a_n]. For each i, solve the following problem independently:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 5·10^5).\n\nThe second line of each test case contains n distinct integers a_1,…,a_n (1≤ a_i≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, print one line containing n integers. The i-th integer should be the answer when erasing a_i.\n\nIn the second test case, a=[3,1,2].\n\nInput:\n```\n41133 1 254 2 1 5 388 1 4 6 7 3 5 2\n```\n\nOutput:\n```\n0 \n4 7 5 \n19 21 27 17 19 \n79 100 72 68 67 80 73 80 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 5·10^5).\n\nThe second line of each test case contains n distinct integers a_1,…,a_n (1≤ a_i≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, print one line containing n integers. The i-th integer should be the answer when erasing a_i.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "*2300"
+    ],
+    "rating": 2300
+}

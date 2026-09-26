@@ -1,0 +1,20 @@
+{
+    "id": "1957E",
+    "contest_id": 1957,
+    "problem_letter": "E",
+    "title": "E. Carousel of Combinations",
+    "statement": "You are given an integer n. The function C(i,k) represents the number of distinct ways you can select k distinct numbers from the set 1, 2, …, i and arrange them in a circle^dagger.\n\nFind the value of ∑limits_{i=1}^n ∑limits_{j=1}^i left( C(i,j) bmod j right). Here, the operation x bmod y denotes the remainder from dividing x by y.\n\nSince this value can be very large, find it modulo 10^9+7.\n\n^dagger In a circular arrangement, sequences are considered identical if one can be rotated to match the other. For instance, [1, 2, 3] and [2, 3, 1] are equivalent in a circle.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^6).\n\nFor each test case, output a single integer on a new line — the value of the expression to be calculated modulo 10^9+7.\n\nIn the first test case, C(1,1) bmod 1 = 0.\n\nIn the second test case:\n\nInput:\n```\n4136314159\n```\n\nOutput:\n```\n0\n4\n24\n78926217\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^6).",
+    "output": "For each test case, output a single integer on a new line — the value of the expression to be calculated modulo 10^9+7.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

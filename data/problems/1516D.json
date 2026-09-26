@@ -1,0 +1,21 @@
+{
+    "id": "1516D",
+    "contest_id": 1516,
+    "problem_letter": "D",
+    "title": "D. Cut",
+    "statement": "This time Baby Ehab will only cut and not stick. He starts with a piece of paper with an array a of length n written on it, and then he does the following:\n\nFormally, he partitions the elements of a_l, a_{l + 1}, …, a_r into contiguous subarrays such that the product of every subarray is equal to its LCM. Now, for q independent ranges (l, r), tell Baby Ehab the minimum number of subarrays he needs.\n\nThe first line contains 2 integers n and q (1 ≤ n,q ≤ 10^5) — the length of the array a and the number of queries.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — the elements of the array a.\n\nEach of the next q lines contains 2 integers l and r (1 ≤ l ≤ r ≤ n) — the endpoints of this query's interval.\n\nFor each query, print its answer on a new line.\n\nThe first query asks about the whole array. You can partition it into [2], [3,10,7], and [5,14]. The first subrange has product and LCM equal to 2. The second has product and LCM equal to 210. And the third has product and LCM equal to 70. Another possible partitioning is [2,3], [10,7], and [5,14].\n\nThe second query asks about the range (2,4). Its product is equal to its LCM, so you don't need to partition it further.\n\nThe last query asks about the range (3,5). You can partition it into [10,7] and [5].\n\nInput:\n```\n6 3\n2 3 10 7 5 14\n1 6\n2 4\n3 5\n```\n\nOutput:\n```\n3\n1\n2\n```",
+    "input": "The first line contains 2 integers n and q (1 ≤ n,q ≤ 10^5) — the length of the array a and the number of queries.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — the elements of the array a.\n\nEach of the next q lines contains 2 integers l and r (1 ≤ l ≤ r ≤ n) — the endpoints of this query's interval.",
+    "output": "For each query, print its answer on a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "graphs",
+        "number theory",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

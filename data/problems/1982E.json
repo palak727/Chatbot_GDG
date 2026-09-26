@@ -1,0 +1,22 @@
+{
+    "id": "1982E",
+    "contest_id": 1982,
+    "problem_letter": "E",
+    "title": "E. Number of k-good subarrays",
+    "statement": "Let bit(x) denote the number of ones in the binary representation of a non-negative integer x.\n\nA subarray of an array is called k-good if it consists only of numbers with no more than k ones in their binary representation, i.e., a subarray (l, r) of array a is good if for any i such that l ≤ i ≤ r condition bit(a_i) ≤ k is satisfied.\n\nYou are given an array a of length n, consisting of consecutive non-negative integers starting from 0, i.e., a_i = i for 0 ≤ i ≤ n - 1 (in 0-based indexing). You need to count the number of k-good subarrays in this array.\n\nAs the answer can be very large, output it modulo 10^9 + 7.\n\nEach test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The following lines describe the test cases.\n\nThe single line of each test case contains two integers n, k (1 ≤ n ≤ 10^18, 1 ≤ k ≤ 60).\n\nFor each test case, output a single integer — the number of k-good subarrays modulo 10^9 + 7.\n\nFor the first test case a = [0, 1, 2, 3, 4, 5], k = 1.\n\nTo find the answer, let's write all the numbers in binary representation:\n\na = [colorgreen000, colorgreen001, colorgreen010, colorred011, colorgreen100, colorred101]\n\nFrom this, it can be seen that the numbers 3 and 5 have 2 ≥ (k = 1) ones in their binary representation, so the answer should include all subarrays that do not contain either 3 or 5, which are the subarrays (in 0-based indexing): (0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2), (4, 4).\n\nInput:\n```\n106 116 21 13 131 314 11337 5100000 20795569939321040850 56576460752303423268 59\n```\n\nOutput:\n```\n7\n35\n1\n6\n155\n8\n7323\n49965\n741136395\n66679884\n```",
+    "input": "Each test consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The following lines describe the test cases.\n\nThe single line of each test case contains two integers n, k (1 ≤ n ≤ 10^18, 1 ≤ k ≤ 60).",
+    "output": "For each test case, output a single integer — the number of k-good subarrays modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "math",
+        "meet-in-the-middle",
+        "*2300"
+    ],
+    "rating": 2300
+}

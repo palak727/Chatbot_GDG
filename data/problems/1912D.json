@@ -1,0 +1,16 @@
+{
+    "id": "1912D",
+    "contest_id": 1912,
+    "problem_letter": "D",
+    "title": "D. Divisibility Test",
+    "statement": "Daisy has recently learned divisibility rules for integers and she is fascinated by them. One of the tests she learned is a divisibility test by 3. You can find a sum of all digits of a decimal number and check if the resulting sum is divisible by 3. Moreover, the resulting sum of digits is congruent modulo 3 to the original number — the remainder modulo 3 is preserved. For example, 75 ≡ 7 + 5 pmod 3. Daisy is specifically interested in such remainder preserving divisibility tests.\n\nThere are more examples like that that she learned for decimal integers (integers base 10):\n\nSimilar tests can be found in other bases. For example, to test divisibility modulo 5 for octal numbers (base 8), find an alternating sum of groups of two digits. For example, 1234_8 ≡ -12_8 + 34_8 pmod 5.\n\nDaisy wants to find such rules for a given base b. She is interested in three kinds of divisibility rules:\n\nIt is not always possible to find such a divisibility rule. For example, in base 10 there is no such test for divisibility modulo 6, even though different approaches to testing divisibility by 6 exist.\n\nGiven base b and modulo n, Daisy wants to know the smallest group size k for which such a divisibility test exits.\n\nThere are several tests in the input. The first line of the input contains an integer t — the number of tests. The next t lines describe the tests.\n\nEach test consists of a line with two integers b and n — the base and the modulo (b, n ≥ 2). The sum of all b values in the input does not exceed 10^6, and the sum of all n values in the input does not exceed 10^6.\n\nWrite t lines — a line for each test in the input. On a line for a test write a single integer 0 if the divisibility test for a given b and n does not exist. Otherwise, write two integers a and k, where a is the kind of the divisibility test (1, 2, or 3) and k is the number of digits in a group for the test, such that k is the lowest among all possible divisiblity tests for the given b and n.\n\nInput:\n```\n610 310 1110 410 78 510 6\n```\n\nOutput:\n```\n2 1\n3 1\n1 2\n3 3\n3 2\n0\n```",
+    "input": "There are several tests in the input. The first line of the input contains an integer t — the number of tests. The next t lines describe the tests.\n\nEach test consists of a line with two integers b and n — the base and the modulo (b, n ≥ 2). The sum of all b values in the input does not exceed 10^6, and the sum of all n values in the input does not exceed 10^6.",
+    "output": "Write t lines — a line for each test in the input. On a line for a test write a single integer 0 if the divisibility test for a given b and n does not exist. Otherwise, write two integers a and k, where a is the kind of the divisibility test (1, 2, or 3) and k is the number of digits in a group for the test, such that k is the lowest among all possible divisiblity tests for the given b and n.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

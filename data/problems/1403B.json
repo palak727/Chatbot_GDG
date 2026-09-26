@@ -1,0 +1,20 @@
+{
+    "id": "1403B",
+    "contest_id": 1403,
+    "problem_letter": "B",
+    "title": "B. Spring cleaning",
+    "statement": "Spring cleanings are probably the most boring parts of our lives, except this year, when Flóra and her mother found a dusty old tree graph under the carpet.\n\nThis tree has N nodes (numbered from 1 to N), connected by N-1 edges. The edges gathered too much dust, so Flóra's mom decided to clean them.\n\nCleaning the edges of an arbitrary tree is done by repeating the following process: She chooses 2 different leaves (a node is a leaf if it is connected to exactly one other node by an edge), and cleans every edge lying on the shortest path between them. If this path has d edges, then the cost of cleaning this path is d.\n\nShe doesn't want to harm the leaves of the tree, so she chooses every one of them at most once. A tree is cleaned when all of its edges are cleaned. The cost of this is the sum of costs for all cleaned paths.\n\nFlóra thinks the tree they found is too small and simple, so she imagines Q variations of it. In the i-th variation, she adds a total of D_i extra leaves to the original tree: for each new leaf, she chooses a node from the original tree, and connects that node with the new leaf by an edge. Note that some nodes may stop being leaves during this step.\n\nFor all these Q variations, we are interested in the minimum cost that is required to clean the tree.\n\nThe first line contains two space-separated integer, N and Q (3 ≤ N ≤ 10^5, 1 ≤ Q ≤ 10^5) – the number of nodes the tree has and the number of variations.\n\nEach of the next N-1 lines contains two space-separated integers u and v denoting that nodes u and v are connected by an edge (1 ≤ u, v ≤ N).\n\nThe next Q lines describe the variations. The first integer in the ith line is D_i (1 ≤ D_i ≤ 10^5). Then D_i space-separated integers follow: if the jth number is a_j, it means that Flóra adds a new leaf to node a_j (1 ≤ a_j ≤ N). We may add more than one leaf to the same node. ∑_1^Q D_i ≤ 10^5 i.e. the sum of D_i in all varations is at most 10^5.\n\nAfter each variation, Flóra restarts and adds extra leaves to the original tree.\n\nYou should print Q lines. In the i-th line, print a single integer: the minimum cost required to clean the i-th variation of the tree. If the tree cannot be cleaned, print -1.\n\nThe following picture shows the second variation. A possible solution is to clean the path between leaves 1 - 6, A - 7 and B - 3.\n\nYou can download the above example and an additional (bigger) sample input here: https://gofile.io/d/8QlbsS\n\nInput:\n```\n7 3\n1 2\n2 4\n4 5\n5 6\n5 7\n3 4\n1 4\n2 2 4\n1 1\n```\n\nOutput:\n```\n-1\n10\n8\n```",
+    "input": "The first line contains two space-separated integer, N and Q (3 ≤ N ≤ 10^5, 1 ≤ Q ≤ 10^5) – the number of nodes the tree has and the number of variations.\n\nEach of the next N-1 lines contains two space-separated integers u and v denoting that nodes u and v are connected by an edge (1 ≤ u, v ≤ N).\n\nThe next Q lines describe the variations. The first integer in the ith line is D_i (1 ≤ D_i ≤ 10^5). Then D_i space-separated integers follow: if the jth number is a_j, it means that Flóra adds a new leaf to node a_j (1 ≤ a_j ≤ N). We may add more than one leaf to the same node. ∑_1^Q D_i ≤ 10^5 i.e. the sum of D_i in all varations is at most 10^5.\n\nAfter each variation, Flóra restarts and adds extra leaves to the original tree.",
+    "output": "You should print Q lines. In the i-th line, print a single integer: the minimum cost required to clean the i-th variation of the tree. If the tree cannot be cleaned, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

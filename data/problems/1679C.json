@@ -1,0 +1,17 @@
+{
+    "id": "1679C",
+    "contest_id": 1679,
+    "problem_letter": "C",
+    "title": "C. Rooks Defenders",
+    "statement": "You have a square chessboard of size n × n. Rows are numbered from top to bottom with numbers from 1 to n, and columns — from left to right with numbers from 1 to n. So, each cell is denoted with pair of integers (x, y) (1 ≤ x, y ≤ n), where x is a row number and y is a column number.\n\nYou have to perform q queries of three types:\n\nSubrectangle is a set of cells (x, y) such that for each cell two conditions are satisfied: x_1 ≤ x ≤ x_2 and y_1 ≤ y ≤ y_2.\n\nRecall that cell (a, b) is attacked by a rook placed in cell (c, d) if either a = c or b = d. In particular, the cell containing a rook is attacked by this rook.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 2·10^5) — the size of the chessboard and the number of queries, respectively.\n\nEach of the following q lines contains description of a query. Description begins with integer t (t ∈ {1, 2, 3}) which denotes type of a query:\n\nIt's guaranteed that among q queries there is at least one query of the third type.\n\nPrint the answer for each query of the third type in a separate line. Print \"Yes\" (without quotes) if each cell of the subrectangle is attacked by at least one rook.\n\nOtherwise print \"No\" (without quotes).\n\nConsider example. After the first two queries the board will look like the following picture (the letter R denotes cells in which rooks are located, the subrectangle of the query of the third type is highlighted in green):\n\nChessboard after performing the third and the fourth queries:\n\nChessboard after performing the fifth and the sixth queries:\n\nChessboard after performing the seventh and the eighth queries:\n\nChessboard after performing the last two queries:\n\nInput:\n```\n8 10\n1 2 4\n3 6 2 7 2\n1 3 2\n3 6 2 7 2\n1 4 3\n3 2 6 4 8\n2 4 3\n3 2 6 4 8\n1 4 8\n3 2 6 4 8\n```\n\nOutput:\n```\nNo\nYes\nYes\nNo\nYes\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 2·10^5) — the size of the chessboard and the number of queries, respectively.\n\nEach of the following q lines contains description of a query. Description begins with integer t (t ∈ {1, 2, 3}) which denotes type of a query:\n\nIt's guaranteed that among q queries there is at least one query of the third type.",
+    "output": "Print the answer for each query of the third type in a separate line. Print \"Yes\" (without quotes) if each cell of the subrectangle is attacked by at least one rook.\n\nOtherwise print \"No\" (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

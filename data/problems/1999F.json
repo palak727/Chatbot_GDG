@@ -1,0 +1,17 @@
+{
+    "id": "1999F",
+    "contest_id": 1999,
+    "problem_letter": "F",
+    "title": "F. Expected Median",
+    "statement": "Arul has a binary array^{∗} a of length n.\n\nHe will take all subsequences^{†} of length k (k is odd) of this array and find their median.^{‡}\n\nWhat is the sum of all these values?\n\nAs this sum can be very large, output it modulo 10^9 + 7. In other words, print the remainder of this sum when divided by 10^9 + 7.\n\n^{∗}A binary array is an array consisting only of zeros and ones.\n\n^{†}An array b is a subsequence of an array a if b can be obtained from a by the deletion of several (possibly, zero or all) elements. Subsequences don't have to be contiguous.\n\n^{‡}The median of an array of odd length k is the (k+1)/2-th element when sorted.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5, k is odd) — the length of the array and the length of the subsequence, respectively.\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 1) — the elements of the array.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the sum modulo 10^9 + 7.\n\nIn the first test case, there are four subsequences of [1,0,0,1] with length k=3:\n\nIn the second test case, all subsequences of length 1 have median 1, so the answer is 5.\n\nInput:\n```\n84 31 0 0 15 11 1 1 1 15 50 1 0 1 06 31 0 1 0 1 14 31 0 1 15 31 0 1 1 02 10 034 171 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n```\n\nOutput:\n```\n2\n5\n0\n16\n4\n7\n0\n333606206\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5, k is odd) — the length of the array and the length of the subsequence, respectively.\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 1) — the elements of the array.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the sum modulo 10^9 + 7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1730F",
+    "contest_id": 1730,
+    "problem_letter": "F",
+    "title": "F. Almost Sorted",
+    "statement": "You are given a permutation p of length n and a positive integer k. Consider a permutation q of length n such that for any integers i and j, where 1 ≤ i < j ≤ n, we have p_q_i ≤ p_q_j + k.\n\nFind the minimum possible number of inversions in a permutation q.\n\nA permutation is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nAn inversion in a permutation a is a pair of indices i and j (1 ≤ i, j ≤ n) such that i < j, but a_i > a_j.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 5000, 1 ≤ k ≤ 8).\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n).\n\nPrint the minimum possible number of inversions in the permutation q.\n\nIn the first example, the only permutation is q = [1] (0 inversions). Then p_q_1 = 1.\n\nIn the second example, the only permutation with 1 inversion is q = [1, 3, 2]. Then p_q_1 = 2, p_q_2 = 1, p_q_3 = 3.\n\nIn the third example, one of the possible permutations with 6 inversions is q = [3, 4, 5, 1, 2]. Then p_q_1 = 3, p_q_2 = 2, p_q_3 = 1, p_q_4 = 5, p_q_5 = 4.\n\nInput:\n```\n1 1\n1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n3 1\n2 3 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 2\n5 4 3 2 1\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n10 3\n5 8 6 10 2 7 4 1 9 3\n```\n\nOutput:\n```\n18\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 5000, 1 ≤ k ≤ 8).\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n).",
+    "output": "Print the minimum possible number of inversions in the permutation q.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "dp",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1805F2",
+    "contest_id": 1805,
+    "problem_letter": "F2",
+    "title": "F2. Survival of the Weakest (hard version)",
+    "statement": "This is the hard version of the problem. It differs from the easy one only in constraints on n. You can make hacks only if you lock both versions.\n\nLet a_1, a_2, …, a_n be an array of non-negative integers. Let F(a_1, a_2, …, a_n) be the sorted in the non-decreasing order array of n - 1 smallest numbers of the form a_i + a_j, where 1 ≤ i < j ≤ n. In other words, F(a_1, a_2, …, a_n) is the sorted in the non-decreasing order array of n - 1 smallest sums of all possible pairs of elements of the array a_1, a_2, …, a_n. For example, F(1, 2, 5, 7) = [1 + 2, 1 + 5, 2 + 5] = [3, 6, 7].\n\nYou are given an array of non-negative integers a_1, a_2, …, a_n. Determine the single element of the array underbraceF(F(F… F_{n-1}(a_1, a_2, …, a_n)…)). Since the answer can be quite large, output it modulo 10^9+7.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) — the initial length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the array elements.\n\nOutput a single number — the answer modulo 10^9 + 7.\n\nIn the first test, the array is transformed as follows: [1, 2, 4, 5, 6] → [3, 5, 6, 6] → [8, 9, 9] → [17, 17] → [34]. The only element of the final array is 34.\n\nIn the second test, F(a_1, a_2, …, a_n) is [2, 2, 2, 8, 8, 8, 8, 8]. This array is made up of 3 numbers of the form 1 + 1 and 5 numbers of the form 1 + 7.\n\nIn the fourth test, the array is transformed as follows: [10^9, 10^9, 777] → [10^9+777, 10^9+777] → [2·10^9 + 1554]. 2·10^9 + 1554 modulo 10^9+7 equals 1540.\n\nInput:\n```\n5\n1 2 4 5 6\n```\n\nOutput:\n```\n34\n```\n\nInput:\n```\n9\n1 1 1 7 7 7 9 9 9\n```\n\nOutput:\n```\n256\n```\n\nInput:\n```\n7\n1 7 9 2 0 0 9\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n3\n1000000000 1000000000 777\n```\n\nOutput:\n```\n1540\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) — the initial length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the array elements.",
+    "output": "Output a single number — the answer modulo 10^9 + 7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers",
+        "*3100"
+    ],
+    "rating": 3100
+}

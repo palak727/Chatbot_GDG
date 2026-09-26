@@ -1,0 +1,15 @@
+{
+    "id": "1356A3",
+    "contest_id": 1356,
+    "problem_letter": "A3",
+    "title": "A3. Distinguish Z from S",
+    "statement": "You are given an operation that implements a single-qubit unitary transformation: either the Z gate or the S gate. The operation will have Adjoint and Controlled variants defined.\n\nYour task is to perform necessary operations and measurements to figure out which unitary it was and to return 0 if it was the Z gate or 1 if it was the S gate.\n\nYou are allowed to apply the given operation and its adjoint/controlled variants exactly twice.\n\nYou have to implement an operation which takes a single-qubit operation as an input and returns an integer. Your code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Intrinsic;\n\n    operation Solve (unitary : (Qubit => Unit is Adj+Ctl)) : Int {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

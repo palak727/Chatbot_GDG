@@ -1,0 +1,20 @@
+{
+    "id": "1973F",
+    "contest_id": 1973,
+    "problem_letter": "F",
+    "title": "F. Maximum GCD Sum Queries",
+    "statement": "For k positive integers x_1, x_2, …, x_k, the value gcd(x_1, x_2, …, x_k) is the greatest common divisor of the integers x_1, x_2, …, x_k — the largest integer z such that all the integers x_1, x_2, …, x_k are divisible by z.\n\nYou are given three arrays a_1, a_2, …, a_n, b_1, b_2, …, b_n and c_1, c_2, …, c_n of length n, containing positive integers.\n\nYou also have a machine that allows you to swap a_i and b_i for any i (1 ≤ i ≤ n). Each swap costs you c_i coins.\n\nFind the maximum possible value of gcd(a_1, a_2, …, a_n) + gcd(b_1, b_2, …, b_n) that you can get by paying in total at most d coins for swapping some elements. The amount of coins you have changes a lot, so find the answer to this question for each of the q possible values d_1, d_2, …, d_q.\n\nThere are two integers on the first line — the numbers n and q (1 ≤ n ≤ 5·10^5, 1 ≤ q ≤ 5·10^5).\n\nOn the second line, there are n integers — the numbers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^8).\n\nOn the third line, there are n integers — the numbers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^8).\n\nOn the fourth line, there are n integers — the numbers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nOn the fifth line, there are q integers — the numbers d_1, d_2, …, d_q (0 ≤ d_i ≤ 10^15).\n\nPrint q integers — the maximum value you can get for each of the q possible values d.\n\nIn the first query of the first example, we are not allowed to do any swaps at all, so the answer is gcd(1, 2, 3) + gcd(4, 5, 6) = 2. In the second query, one of the ways to achieve the optimal value is to swap a_2 and b_2, then the answer is gcd(1, 5, 3) + gcd(4, 2, 6) = 3.\n\nIn the second query of the second example, it's optimal to perform swaps on positions 1 and 3, then the answer is gcd(3, 3, 6, 9, 3) + gcd(8, 4, 4, 8, 4) = 7 and we have to pay 40 coins in total.\n\nInput:\n```\n3 41 2 34 5 61 1 10 1 2 3\n```\n\nOutput:\n```\n2 3 3 3 \n```\n\nInput:\n```\n5 53 4 6 8 48 3 4 9 310 20 30 40 505 55 13 1000 113\n```\n\nOutput:\n```\n2 7 3 7 7 \n```\n\nInput:\n```\n1 13450\n```\n\nOutput:\n```\n7 \n```",
+    "input": "There are two integers on the first line — the numbers n and q (1 ≤ n ≤ 5·10^5, 1 ≤ q ≤ 5·10^5).\n\nOn the second line, there are n integers — the numbers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^8).\n\nOn the third line, there are n integers — the numbers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^8).\n\nOn the fourth line, there are n integers — the numbers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9).\n\nOn the fifth line, there are q integers — the numbers d_1, d_2, …, d_q (0 ≤ d_i ≤ 10^15).",
+    "output": "Print q integers — the maximum value you can get for each of the q possible values d.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "implementation",
+        "number theory",
+        "*3100"
+    ],
+    "rating": 3100
+}

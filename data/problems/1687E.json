@@ -1,0 +1,20 @@
+{
+    "id": "1687E",
+    "contest_id": 1687,
+    "problem_letter": "E",
+    "title": "E. Become Big For Me",
+    "statement": "Shinmyoumaru has a mallet that can turn objects bigger or smaller. She is testing it out on a sequence a and a number v whose initial value is 1. She wants to make v = gcdlimits_{i≠ j}{a_i·a_j} by no more than 10^5 operations (gcdlimits_{i≠ j}{a_i·a_j} denotes the gcd of all products of two distinct elements of the sequence a).\n\nIn each operation, she picks a subsequence b of a, and does one of the followings:\n\nNote that she does not need to guarantee that v is an integer, that is, v does not need to be a multiple of lcm(b) when performing Reduce.\n\nMoreover, she wants to guarantee that the total length of b chosen over the operations does not exceed 10^6. Fine a possible operation sequence for her. You don't need to minimize anything.\n\nThe first line contains a single integer n (2≤ n≤ 10^5) — the size of sequence a.\n\nThe second line contains n integers a_1,a_2,⋯,a_n (1≤ a_i≤ 10^6) — the sequence a.\n\nIt can be shown that the answer exists.\n\nThe first line contains a non-negative integer k (0≤ k≤ 10^5) — the number of operations.\n\nThe following k lines contains several integers. For each line, the first two integers f (f∈{0,1}) and p (1≤ p≤ n) stand for the option you choose (0 for Enlarge and 1 for Reduce) and the length of b. The other p integers of the line i_1,i_2,…,i_p (1≤ i_1 < i_2 < … < i_p≤ n) represents the indexes of the subsequence. Formally, b_j=a_i_j.\n\nTest case 1:\n\ngcdlimits_{i≠ j}{a_i·a_j}=gcd{60,90,150}=30.\n\nPerform v = v·lcm{a_1,a_2,a_3}=30.\n\nTest case 2:\n\ngcdlimits_{i≠ j}{a_i·a_j}=8.\n\nPerform v = v·lcm{a_4}=16.\n\nPerform v = v/(lcm{a_1})=8.\n\nInput:\n```\n3\n6 10 15\n```\n\nOutput:\n```\n1\n0 3 1 2 3\n```\n\nInput:\n```\n4\n2 4 8 16\n```\n\nOutput:\n```\n2\n0 1 4\n1 1 1\n```",
+    "input": "The first line contains a single integer n (2≤ n≤ 10^5) — the size of sequence a.\n\nThe second line contains n integers a_1,a_2,⋯,a_n (1≤ a_i≤ 10^6) — the sequence a.\n\nIt can be shown that the answer exists.",
+    "output": "The first line contains a non-negative integer k (0≤ k≤ 10^5) — the number of operations.\n\nThe following k lines contains several integers. For each line, the first two integers f (f∈{0,1}) and p (1≤ p≤ n) stand for the option you choose (0 for Enlarge and 1 for Reduce) and the length of b. The other p integers of the line i_1,i_2,…,i_p (1≤ i_1 < i_2 < … < i_p≤ n) represents the indexes of the subsequence. Formally, b_j=a_i_j.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*3500"
+    ],
+    "rating": 3500
+}

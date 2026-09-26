@@ -1,0 +1,19 @@
+{
+    "id": "1411G",
+    "contest_id": 1411,
+    "problem_letter": "G",
+    "title": "G. No Game No Life",
+    "statement": "Let's consider the following game of Alice and Bob on a directed acyclic graph. Each vertex may contain an arbitrary number of chips. Alice and Bob make turns alternating. Alice goes first. In one turn player can move exactly one chip along any edge outgoing from the vertex that contains this chip to the end of this edge. The one who cannot make a turn loses. Both players play optimally.\n\nConsider the following process that takes place every second on a given graph with n vertices:\n\nFind the probability that Alice will win the game. It can be shown that the answer can be represented as P/Q, where P and Q are coprime integers and Q not≡ 0 pmod998,244,353. Print the value of P·Q^{-1} bmod 998,244,353.\n\nThe first line contains two integers n and m — the number of vertices and edges of the graph (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5).\n\nThe following m lines contain edges description. The i-th of them contains two integers u_i and v_i — the beginning and the end vertices of the i-th edge (1 ≤ u_i, v_i ≤ n). It's guaranteed that the graph is acyclic.\n\nOutput a single integer — the probability of Alice victory modulo 998,244,353.\n\nInput:\n```\n1 0\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2 1\n1 2\n```\n\nOutput:\n```\n332748118\n```\n\nInput:\n```\n5 5\n1 4\n5 2\n4 3\n1 5\n5 4\n```\n\nOutput:\n```\n931694730\n```",
+    "input": "The first line contains two integers n and m — the number of vertices and edges of the graph (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5).\n\nThe following m lines contain edges description. The i-th of them contains two integers u_i and v_i — the beginning and the end vertices of the i-th edge (1 ≤ u_i, v_i ≤ n). It's guaranteed that the graph is acyclic.",
+    "output": "Output a single integer — the probability of Alice victory modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "games",
+        "math",
+        "matrices",
+        "*2700"
+    ],
+    "rating": 2700
+}

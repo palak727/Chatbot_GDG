@@ -1,0 +1,17 @@
+{
+    "id": "1830B",
+    "contest_id": 1830,
+    "problem_letter": "B",
+    "title": "B. The BOSS Can Count Pairs",
+    "statement": "You are given two arrays a and b, both of length n.\n\nYour task is to count the number of pairs of integers (i,j) such that 1 ≤ i < j ≤ n and a_i·a_j = b_i+b_j.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ n) — the elements of array a.\n\nThe third line of each test case contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ n) — the elements of array b.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of good pairs.\n\nIn the first sample, there are 2 good pairs:\n\nIn the second sample, there are 7 good pairs:\n\nInput:\n```\n332 3 23 3 184 2 8 2 1 2 7 53 5 8 8 1 1 6 584 4 8 8 8 8 8 88 8 8 8 8 8 8 8\n```\n\nOutput:\n```\n2\n7\n1\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ n) — the elements of array a.\n\nThe third line of each test case contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ n) — the elements of array b.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of good pairs.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

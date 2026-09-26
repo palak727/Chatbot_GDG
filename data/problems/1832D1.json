@@ -1,0 +1,19 @@
+{
+    "id": "1832D1",
+    "contest_id": 1832,
+    "problem_letter": "D1",
+    "title": "D1. Red-Blue Operations (Easy Version)",
+    "statement": "The only difference between easy and hard versions is the maximum values of n and q.\n\nYou are given an array, consisting of n integers. Initially, all elements are red.\n\nYou can apply the following operation to the array multiple times. During the i-th operation, you select an element of the array; then:\n\nThe operations are numbered from 1, i. e. during the first operation some element is changed by 1 and so on.\n\nYou are asked q queries of the following form:\n\nNote that the operations don't affect the array between queries, all queries are asked on the initial array a.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 1000) — the number of elements in the array and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains q integers k_1, k_2, …, k_q (1 ≤ k_j ≤ 10^9).\n\nFor each query, print a single integer — the largest minimum that the array can have after you apply exactly k operations to it.\n\nInput:\n```\n4 10\n5 2 8 4\n1 2 3 4 5 6 7 8 9 10\n```\n\nOutput:\n```\n3 4 5 6 7 8 8 10 8 12\n```\n\nInput:\n```\n5 10\n5 2 8 4 4\n1 2 3 4 5 6 7 8 9 10\n```\n\nOutput:\n```\n3 4 5 6 7 8 9 8 11 8\n```\n\nInput:\n```\n2 5\n2 3\n10 6 8 1 3\n```\n\nOutput:\n```\n10 7 8 3 3\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 1000) — the number of elements in the array and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line contains q integers k_1, k_2, …, k_q (1 ≤ k_j ≤ 10^9).",
+    "output": "For each query, print a single integer — the largest minimum that the array can have after you apply exactly k operations to it.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

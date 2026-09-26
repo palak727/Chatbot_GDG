@@ -1,0 +1,19 @@
+{
+    "id": "1580B",
+    "contest_id": 1580,
+    "problem_letter": "B",
+    "title": "B. Mathematics Curriculum",
+    "statement": "Let c_1, c_2, …, c_n be a permutation of integers 1, 2, …, n. Consider all subsegments of this permutation containing an integer x. Given an integer m, we call the integer x good if there are exactly m different values of maximum on these subsegments.\n\nCirno is studying mathematics, and the teacher asks her to count the number of permutations of length n with exactly k good numbers.\n\nUnfortunately, Cirno isn't good at mathematics, and she can't answer this question. Therefore, she asks you for help.\n\nSince the answer may be very big, you only need to tell her the number of permutations modulo p.\n\nA permutation is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nA sequence a is a subsegment of a sequence b if a can be obtained from b by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line contains four integers n, m, k, p (1 ≤ n ≤ 100, 1 ≤ m ≤ n, 1 ≤ k ≤ n, 1 ≤ p ≤ 10^9).\n\nOutput the number of permutations modulo p.\n\nIn the first test case, there are four permutations: [1, 3, 2, 4], [2, 3, 1, 4], [4, 1, 3, 2] and [4, 2, 3, 1].\n\nTake permutation [1, 3, 2, 4] as an example:\n\nFor number 1, all subsegments containing it are: [1], [1, 3], [1, 3, 2] and [1, 3, 2, 4], and there're three different maxima 1, 3 and 4.\n\nSimilarly, for number 3, there're two different maxima 3 and 4. For number 2, there're three different maxima 2, 3 and 4. And for number 4, there're only one, that is 4 itself.\n\nInput:\n```\n4 3 2 10007\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6 4 1 769626776\n```\n\nOutput:\n```\n472\n```\n\nInput:\n```\n66 11 9 786747482\n```\n\nOutput:\n```\n206331312\n```\n\nInput:\n```\n99 30 18 650457567\n```\n\nOutput:\n```\n77365367\n```",
+    "input": "The first line contains four integers n, m, k, p (1 ≤ n ≤ 100, 1 ≤ m ≤ n, 1 ≤ k ≤ n, 1 ≤ p ≤ 10^9).",
+    "output": "Output the number of permutations modulo p.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

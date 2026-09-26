@@ -1,0 +1,18 @@
+{
+    "id": "1934D1",
+    "contest_id": 1934,
+    "problem_letter": "D1",
+    "title": "D1. XOR Break — Solo Version",
+    "statement": "This is the solo version of the problem. Note that the solution of this problem may or may not share ideas with the solution of the game version. You can solve and get points for both versions independently.\n\nYou can make hacks only if both versions of the problem are solved.\n\nGiven an integer variable x with the initial value of n. A single break operation consists of the following steps:\n\nYou don't need to minimize the number of operations.\n\nHere oplus denotes the bitwise XOR operation.\n\nThe first line contains one positive integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line containing two integers n and m (1 ≤ m < n ≤ 10^18) — the initial value of x and the target value of x.\n\nFor each test case, output your answer in the following format.\n\nIf it is not possible to achieve m in 63 operations, print -1.\n\nOtherwise,\n\nThe first line should contain k (1 ≤ k ≤ 63) — where k is the number of operations required.\n\nThe next line should contain k+1 integers — the sequence where variable x changes after each break operation. The 1-st and k+1-th integers should be n and m, respectively.\n\nIn the first test case n = 7, for the first operation x = 7 if we choose y = 3 then (7 oplus 3) < 7, hence we can update x with 3 which is equal to m.\n\nIn the second test case n = 4, for the first operation x = 4.\n\nIf we choose:\n\nHence we can't do the first operation and it is impossible to make x = 2.\n\nInput:\n```\n37 34 2481885160128643072 45035996273704960\n```\n\nOutput:\n```\n1\n7 3\n-1\n3\n481885160128643072 337769972052787200 49539595901075456 45035996273704960\n```",
+    "input": "The first line contains one positive integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line containing two integers n and m (1 ≤ m < n ≤ 10^18) — the initial value of x and the target value of x.",
+    "output": "For each test case, output your answer in the following format.\n\nIf it is not possible to achieve m in 63 operations, print -1.\n\nOtherwise,\n\nThe first line should contain k (1 ≤ k ≤ 63) — where k is the number of operations required.\n\nThe next line should contain k+1 integers — the sequence where variable x changes after each break operation. The 1-st and k+1-th integers should be n and m, respectively.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "*2100"
+    ],
+    "rating": 2100
+}

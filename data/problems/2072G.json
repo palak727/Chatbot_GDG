@@ -1,0 +1,21 @@
+{
+    "id": "2072G",
+    "contest_id": 2072,
+    "problem_letter": "G",
+    "title": "G. I've Been Flipping Numbers for 300 Years and Calculated the Sum",
+    "statement": "After three hundred years of slime farming, Akito finally obtained the magical number n. Upon reaching the merchant, he wanted to exchange the number for gold, but the merchant gave the hero a quest.\n\nThe merchant said that for the quest, the skill rev(n, p) would be required, which Akito, by happy coincidence, had recently learned. rev(n, p) represents the following procedure:\n\nThe merchant's quest was to calculate the sum x = ∑limits_{p = 2}^k rev(n, p). Since this number can be quite large, only the remainder of x when divided by 10^9 + 7 is required. The merchant also mentioned that the previous traveler had been calculating this sum for three hundred years and had not finished it. But you will help Akito finish it faster, right?\n\nThe first line contains the number t (1 ≤ t ≤ 5000) — the number of test cases.\n\nIn the only line of each test case, two numbers n and k are given (1 ≤ n ≤ 3·10^5, 2 ≤ k ≤ 10^18) — the magical number and the upper limit for summation.\n\nNote that the sum of n across all test cases is not bounded.\n\nFor each test case, you need to output a single number — the remainder of x = ∑limits_{p = 2}^k rev(n, p) when divided by 10^9 + 7.\n\nIn the third test case, n = 1. The number one in any numeral system is represented by a single digit, which means rev(1, p) = 1 for any p ≥ 2. Thus, x = ∑limits_{p = 2}^k 1 = ∑limits_{p = 2}^10 1 = 10 - 2 + 1 = 9.\n\nIn the fourth test case, x = rev(4, 2) + rev(4, 3) + rev(4, 4). Let's calculate each term:\n\nIn the seventh test case, x = rev(9, 2) + rev(9, 3). Let's calculate each term:\n\nInput:\n```\n123 242 521 104 416 269 699 319 849982 44353100000 100000000717 30777 1000000000000000000\n```\n\nOutput:\n```\n3\n7594\n9\n6\n1\n33471\n10\n2006\n120792461\n584502117\n775\n46058362\n```",
+    "input": "The first line contains the number t (1 ≤ t ≤ 5000) — the number of test cases.\n\nIn the only line of each test case, two numbers n and k are given (1 ≤ n ≤ 3·10^5, 2 ≤ k ≤ 10^18) — the magical number and the upper limit for summation.\n\nNote that the sum of n across all test cases is not bounded.",
+    "output": "For each test case, you need to output a single number — the remainder of x = ∑limits_{p = 2}^k rev(n, p) when divided by 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "combinatorics",
+        "divide and conquer",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1513C",
+    "contest_id": 1513,
+    "problem_letter": "C",
+    "title": "C. Add One",
+    "statement": "You are given an integer n. You have to apply m operations to it.\n\nIn a single operation, you must replace every digit d of the number with the decimal representation of integer d + 1. For example, 1912 becomes 21023 after applying the operation once.\n\nYou have to find the length of n after applying m operations. Since the answer can be very large, print it modulo 10^9+7.\n\nThe first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases.\n\nThe only line of each test case contains two integers n (1 ≤ n ≤ 10^9) and m (1 ≤ m ≤ 2·10^5) — the initial number and the number of operations.\n\nFor each test case output the length of the resulting number modulo 10^9+7.\n\nFor the first test, 1912 becomes 21023 after 1 operation which is of length 5.\n\nFor the second test, 5 becomes 21 after 6 operations which is of length 2.\n\nFor the third test, 999 becomes 101010 after 1 operation which is of length 6.\n\nFor the fourth test, 88 becomes 1010 after 2 operations which is of length 4.\n\nInput:\n```\n5\n1912 1\n5 6\n999 1\n88 2\n12 100\n```\n\nOutput:\n```\n5\n2\n6\n4\n2115\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2·10^5) — the number of test cases.\n\nThe only line of each test case contains two integers n (1 ≤ n ≤ 10^9) and m (1 ≤ m ≤ 2·10^5) — the initial number and the number of operations.",
+    "output": "For each test case output the length of the resulting number modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "matrices",
+        "*1600"
+    ],
+    "rating": 1600
+}

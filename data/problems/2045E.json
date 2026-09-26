@@ -1,0 +1,17 @@
+{
+    "id": "2045E",
+    "contest_id": 2045,
+    "problem_letter": "E",
+    "title": "E. Narrower Passageway",
+    "statement": "You are a strategist of The ICPC Kingdom. You received an intel that there will be monster attacks on a narrow passageway near the kingdom. The narrow passageway can be represented as a grid with 2 rows (numbered from 1 to 2) and N columns (numbered from 1 to N). Denote (r, c) as the cell in row r and column c. A soldier with a power of P_{r, c} is assigned to protect (r, c) every single day.\n\nIt is known that the passageway is very foggy. Within a day, each column in the passageway has a 50% chance of being covered in fog. If a column is covered in fog, the two soldiers assigned to that column are not deployed that day. Otherwise, the assigned soldiers will be deployed.\n\nDefine a connected area [u, v] (u ≤ v) as a maximal set of consecutive columns from u to v (inclusive) such that each column in the set is not covered in fog. The following illustration is an example of connected areas. The grayed cells are cells covered in fog. There are 4 connected areas: [1, 2], [4, 6], [9, 9], and [11, 11].\n\nThe strength of a connected area [u, v] can be calculated as follows. Let m_1 and m_2 be the maximum power of the soldiers in the first and second rows of the connected area, respectively. Formally, m_r = max (P_{r, u}, P_{r, u + 1}, …, P_{r, v}) for r ∈ { 1, 2}. If m_1 = m_2, then the strength is 0. Otherwise, the strength is min (m_1, m_2).\n\nThe total strength of the deployment is the sum of the strengths for all connected areas. Determine the expected total strength of the deployment on any single day.\n\nThe first line consists of an integer N (1 ≤ N ≤ 100,000).\n\nEach of the next two lines consists of N integers P_{r, c} (1 ≤ P_{r, c} ≤ 200,000).\n\nLet M = 998,244,353. It can be shown that the expected total strength can be expressed as an irreducible fraction x/y such that x and y are integers and y not≡ 0 pmodM. Output an integer k in a single line such that 0 ≤ k < M and k·y ≡ x pmodM.\n\nExplanation for the sample input/output #1\n\nThere are 8 possible scenarios for the passageway.\n\nEach scenario is equally likely to happen. Therefore, the expected total strength is (0 + 5 + 10 + 5 + 5 + 0 + 5 + 0) / 8 = 15/4. Since 249,561,092·4 ≡ 15 pmod998,244,353, the output of this sample is 249,561,092.\n\nExplanation for the sample input/output #2\n\nThe expected total strength is 67/16.\n\nInput:\n```\n3\n8 4 5\n5 4 8\n```\n\nOutput:\n```\n249561092\n```\n\nInput:\n```\n5\n10 20 5 8 5\n5 20 7 5 8\n```\n\nOutput:\n```\n811073541\n```",
+    "input": "The first line consists of an integer N (1 ≤ N ≤ 100,000).\n\nEach of the next two lines consists of N integers P_{r, c} (1 ≤ P_{r, c} ≤ 200,000).",
+    "output": "Let M = 998,244,353. It can be shown that the expected total strength can be expressed as an irreducible fraction x/y such that x and y are integers and y not≡ 0 pmodM. Output an integer k in a single line such that 0 ≤ k < M and k·y ≡ x pmodM.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "*2700"
+    ],
+    "rating": 2700
+}

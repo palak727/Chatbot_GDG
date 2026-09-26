@@ -1,0 +1,19 @@
+{
+    "id": "1505E",
+    "contest_id": 1505,
+    "problem_letter": "E",
+    "title": "E. Cakewalk",
+    "statement": "A mouse encountered a nice big cake and decided to take a walk across it, eating the berries on top of the cake on its way. The cake is rectangular, neatly divided into squares; some of the squares have a berry in them, and some don't.\n\nThe mouse is in a bit of a hurry, though, so once she enters the cake from its northwest corner (the top left cell in the input data), she will only go east (right) or south (down), until she reaches the southeast corner (the bottom right cell). She will eat every berry in the squares she passes through, but not in the other squares.\n\nThe mouse tries to choose her path so as to maximize the number of berries consumed. However, her haste and hunger might be clouding her judgement, leading her to suboptimal decisions...\n\nThe first line of input contains two integers H and W (1 ≤ H, W ≤ 5), separated by a space, — the height and the width of the cake.\n\nThe next H lines contain a string of W characters each, representing the squares of the cake in that row: '.' represents an empty square, and '*' represents a square with a berry.\n\nOutput the number of berries the mouse will eat following her strategy.\n\nInput:\n```\n4 3\n*..\n.*.\n..*\n...\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4 4\n.*..\n*...\n...*\n..*.\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 4\n..**\n*...\n....\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 5\n..*..\n.....\n**...\n**...\n**...\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line of input contains two integers H and W (1 ≤ H, W ≤ 5), separated by a space, — the height and the width of the cake.\n\nThe next H lines contain a string of W characters each, representing the squares of the cake in that row: '.' represents an empty square, and '*' represents a square with a berry.",
+    "output": "Output the number of berries the mouse will eat following her strategy.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "greedy",
+        "implementation",
+        "shortest paths",
+        "*1800"
+    ],
+    "rating": 1800
+}

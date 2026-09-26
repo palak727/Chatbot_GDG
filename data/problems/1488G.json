@@ -1,0 +1,19 @@
+{
+    "id": "1488G",
+    "contest_id": 1488,
+    "problem_letter": "G",
+    "title": "G. Painting Numbers",
+    "statement": "You are given n integers, each integer is from 1 to n, all of them are pairwise distinct. You have to paint them red and blue (each integer should have exactly one color).\n\nThe cost of painting is the number of pairs (x, y) such that y bmod x = 0, y is red and x is blue.\n\nFor each k ∈ [1, n], calculate the maximum cost of painting if exactly k integers should have a red color.\n\nThe first line contains one integer n (2 ≤ n ≤ 10^5).\n\nFor each k ∈ [1,n] print one integer — the maximum cost of painting, if exactly k integers should be red.\n\nInput:\n```\n6\n```\n\nOutput:\n```\n3 5 6 6 5 0\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n1 0\n```\n\nInput:\n```\n11\n```\n\nOutput:\n```\n3 6 9 11 12 13 14 14 13 10 0\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 10^5).",
+    "output": "For each k ∈ [1,n] print one integer — the maximum cost of painting, if exactly k integers should be red.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "greedy",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1983D",
+    "contest_id": 1983,
+    "problem_letter": "D",
+    "title": "D. Swap Dilemma",
+    "statement": "Given two arrays of distinct positive integers a and b of length n, we would like to make both the arrays the same. Two arrays x and y of length k are said to be the same when for all 1 ≤ i ≤ k, x_i = y_i.\n\nNow in one move, you can choose some index l and r in a (l ≤ r) and swap a_l and a_r, then choose some p and q (p ≤ q) in b such that r-l=q-p and swap b_p and b_q.\n\nIs it possible to make both arrays the same?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the arrays a and b.\n\nThe second line of each test case contains n distinct integers a_1,a_2,a_3,…,a_n (1 ≤ a_i ≤ 2·10^5) — the integers in the array a.\n\nThe third line of each test case contains n distinct integers b_1,b_2,b_3,…,b_n (1 ≤ b_i ≤ 2·10^5) — the integers in the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each testcase, print \"YES\" if the arrays a and b can be made the same. Otherwise, print \"NO\". can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first testcase, you don't need to perform any operations since the arrays are same.\n\nIn the second testcase, it can be proven there exists no way to make the arrays same.\n\nIn the third testcase, one of the ways to make the arrays same is to first choose l=1, r=3, p=1, q=3 then choose l=1, r=2, p=3, q=4.\n\nInput:\n```\n641 2 3 41 2 3 451 3 4 2 57 1 2 5 441 2 3 44 3 2 131 2 31 3 251 5 7 1000 44 1 7 5 100031 4 21 3 2\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the arrays a and b.\n\nThe second line of each test case contains n distinct integers a_1,a_2,a_3,…,a_n (1 ≤ a_i ≤ 2·10^5) — the integers in the array a.\n\nThe third line of each test case contains n distinct integers b_1,b_2,b_3,…,b_n (1 ≤ b_i ≤ 2·10^5) — the integers in the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each testcase, print \"YES\" if the arrays a and b can be made the same. Otherwise, print \"NO\". can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "math",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

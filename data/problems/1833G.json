@@ -1,0 +1,22 @@
+{
+    "id": "1833G",
+    "contest_id": 1833,
+    "problem_letter": "G",
+    "title": "G. Ksyusha and Chinchilla",
+    "statement": "Ksyusha has a pet chinchilla, a tree on n vertices and huge scissors. A tree is a connected graph without cycles. During a boring physics lesson Ksyusha thought about how to entertain her pet.\n\nChinchillas like to play with branches. A branch is a tree of 3 vertices.\n\nA cut is the removal of some (not yet cut) edge in the tree. Ksyusha has plenty of free time, so she can afford to make enough cuts so that the tree splits into branches. In other words, after several (possibly zero) cuts, each vertex must belong to exactly one branch.\n\nHelp Ksyusha choose the edges to be cut or tell that it is impossible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe next n - 1 rows of each testcase contain integers v_i and u_i (1 ≤ v_i, u_i ≤ n) — the numbers of vertices that the i-th edge connects.\n\nIt is guaranteed that this set of edges forms a tree. It is also guaranteed that the sum of n over all testcases does not exceed 2·10^5.\n\nPrint the answer for each testcase.\n\nIf the desired way to cut the tree does not exist, print -1.\n\nOtherwise, print an integer k — the number of edges to be cut. In the next line, print k different integers e_i (1 ≤ e_i < n) — numbers of the edges to be cut. If k = 0, print an empty string instead.\n\nIf there are several solutions, you can print any.\n\nInput:\n```\n491 24 37 95 44 63 28 71 761 21 34 31 56 161 23 23 44 56 551 35 35 23 4\n```\n\nOutput:\n```\n2\n2 8 \n-1\n1\n3 \n-1\n```\n\nInput:\n```\n421 231 23 161 23 13 43 56 192 66 99 19 71 87 38 54 7\n```\n\nOutput:\n```\n-1\n0\n\n1\n2 \n2\n4 3 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe next n - 1 rows of each testcase contain integers v_i and u_i (1 ≤ v_i, u_i ≤ n) — the numbers of vertices that the i-th edge connects.\n\nIt is guaranteed that this set of edges forms a tree. It is also guaranteed that the sum of n over all testcases does not exceed 2·10^5.",
+    "output": "Print the answer for each testcase.\n\nIf the desired way to cut the tree does not exist, print -1.\n\nOtherwise, print an integer k — the number of edges to be cut. In the next line, print k different integers e_i (1 ≤ e_i < n) — numbers of the edges to be cut. If k = 0, print an empty string instead.\n\nIf there are several solutions, you can print any.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

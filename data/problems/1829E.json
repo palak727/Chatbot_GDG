@@ -1,0 +1,19 @@
+{
+    "id": "1829E",
+    "contest_id": 1829,
+    "problem_letter": "E",
+    "title": "E. The Lakes",
+    "statement": "You are given an n × m grid a of non-negative integers. The value a_{i,j} represents the depth of water at the i-th row and j-th column.\n\nA lake is a set of cells such that:\n\nThe volume of a lake is the sum of depths of all the cells in the lake.\n\nFind the largest volume of a lake in the grid.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 1000) — the number of rows and columns of the grid, respectively.\n\nThen n lines follow each with m integers a_{i,j} (0 ≤ a_{i,j} ≤ 1000) — the depth of the water at each cell.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer — the largest volume of a lake in the grid.\n\nInput:\n```\n53 31 2 03 4 00 0 51 103 30 1 11 0 11 1 15 51 1 1 1 11 0 0 0 11 0 5 0 11 0 0 0 11 1 1 1 15 51 1 1 1 11 0 0 0 11 1 4 0 11 0 0 0 11 1 1 1 1\n```\n\nOutput:\n```\n10\n0\n7\n16\n21\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 1000) — the number of rows and columns of the grid, respectively.\n\nThen n lines follow each with m integers a_{i,j} (0 ≤ a_{i,j} ≤ 1000) — the depth of the water at each cell.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer — the largest volume of a lake in the grid.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

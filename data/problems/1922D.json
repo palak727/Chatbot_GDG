@@ -1,0 +1,20 @@
+{
+    "id": "1922D",
+    "contest_id": 1922,
+    "problem_letter": "D",
+    "title": "D. Berserk Monsters",
+    "statement": "Monocarp is playing a computer game (yet again). Guess what is he doing? That's right, killing monsters.\n\nThere are n monsters in a row, numbered from 1 to n. The i-th monster has two parameters: attack value equal to a_i and defense value equal to d_i. In order to kill these monsters, Monocarp put a berserk spell on them, so they're attacking each other instead of Monocarp's character.\n\nThe fight consists of n rounds. Every round, the following happens:\n\nFor each round, calculate the number of monsters that will die during that round.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print n integers. The i-th integer should be equal to the number of monsters that die during the i-th round.\n\nExplanation for the first test case of the example:\n\nDuring the first round, the following happens:\n\nAfter the first round, the monsters 1 and 4 stay alive.\n\nDuring the second round, the following happens:\n\nDuring the next three rounds, only the 4-th monster is alive, so nothing happens.\n\nInput:\n```\n353 4 7 5 104 9 1 18 122 11 341 1 2 43 3 4 2\n```\n\nOutput:\n```\n3 1 0 0 0 \n0 0 \n1 1 1 0 \n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print n integers. The i-th integer should be equal to the number of monsters that die during the i-th round.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dsu",
+        "implementation",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

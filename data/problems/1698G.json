@@ -1,0 +1,20 @@
+{
+    "id": "1698G",
+    "contest_id": 1698,
+    "problem_letter": "G",
+    "title": "G. Long Binary String",
+    "statement": "There is a binary string t of length 10^100, and initally all of its bits are texttt0. You are given a binary string s, and perform the following operation some times:\n\nFind the lexicographically largest^ddagger string t satisfying these constraints, or report that no such string exists.\n\n^dagger Formally, choose an index i such that 0 ≤ i ≤ 10^100-|s|. For all 1 ≤ j ≤ |s|, if s_j = texttt1, then toggle t_{i+j}. That is, if t_{i+j}=texttt0, set t_{i+j}=texttt1. Otherwise if t_{i+j}=texttt1, set t_{i+j}=texttt0.\n\n^ddagger A binary string a is lexicographically larger than a binary string b of the same length if in the first position where a and b differ, the string a has a bit texttt1 and the corresponding bit in b is texttt0.\n\nThe only line of each test contains a single binary string s (1 ≤ |s| ≤ 35).\n\nIf no string t exists as described in the statement, output -1. Otherwise, output the integers p and q (1 ≤ p < q ≤ 10^100) such that the p-th and q-th bits of the lexicographically maximal t are texttt1.\n\nIn the first test, you can perform the following operations. texttt00000… → colorredtexttt1texttt0000… → texttt1colorredtexttt1texttt000…\n\nIn the second test, you can perform the following operations. texttt00000… → colorredtexttt001texttt00… → texttt0colorredtexttt011texttt0…\n\nIn the third test, you can perform the following operations. texttt00000… → colorredtexttt1111texttt0… → texttt1colorredtexttt0001…\n\nIt can be proven that these strings t are the lexicographically largest ones.\n\nIn the fourth test, you can't make a single bit texttt1, so it is impossible.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1 2\n```\n\nInput:\n```\n001\n```\n\nOutput:\n```\n3 4\n```\n\nInput:\n```\n1111\n```\n\nOutput:\n```\n1 5\n```\n\nInput:\n```\n00000\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n00000111110000011111000001111101010\n```\n\nOutput:\n```\n6 37452687\n```",
+    "input": "The only line of each test contains a single binary string s (1 ≤ |s| ≤ 35).",
+    "output": "If no string t exists as described in the statement, output -1. Otherwise, output the integers p and q (1 ≤ p < q ≤ 10^100) such that the p-th and q-th bits of the lexicographically maximal t are texttt1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "math",
+        "matrices",
+        "meet-in-the-middle",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,15 @@
+{
+    "id": "1357A4",
+    "contest_id": 1357,
+    "problem_letter": "A4",
+    "title": "A4. Distinguish Rz from R1",
+    "statement": "You are given an operation that implements a single-qubit unitary transformation: either the Rz gate or the R1 gate. The operation will have Adjoint and Controlled variants defined.\n\nYour task is to perform necessary operations and measurements to figure out which unitary it was and to return 0 if it was the Rz gate or 1 if it was the R1 gate.\n\nYou are allowed to apply the given operation and its adjoint/controlled variants exactly once (you can pass to it any rotation angle that you choose).\n\nYou have to implement an operation which takes a single-qubit operation unitary as an input and returns an integer. The operation unitary will accept two parameters (similarly to Rz and R1 intrinsic gates): the first parameter is the rotation angle and the second parameter is the qubit to which the rotation is applied. Your code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Intrinsic;\n\n    operation Solve (unitary : ((Double, Qubit) => Unit is Adj+Ctl)) : Int {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

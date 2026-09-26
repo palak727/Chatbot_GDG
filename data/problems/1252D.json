@@ -1,0 +1,19 @@
+{
+    "id": "1252D",
+    "contest_id": 1252,
+    "problem_letter": "D",
+    "title": "D. Find String in a Grid",
+    "statement": "You have a grid G containing R rows (numbered from 1 to R, top to bottom) and C columns (numbered from 1 to C, left to right) of uppercase characters. The character in the r^th row and the c^th column is denoted by G_{r, c}. You also have Q strings containing uppercase characters. For each of the string, you want to find the number of occurrences of the string in the grid.\n\nAn occurrence of string S in the grid is counted if S can be constructed by starting at one of the cells in the grid, going right 0 or more times, and then going down 0 or more times. Two occurrences are different if the set of cells used to construct the string is different. Formally, for each string S, you would like to count the number of tuples langle r, c, Δ r, Δ c rangle such that:\n\nInput begins with a line containing three integers: R C Q (1 ≤ R, C ≤ 500; 1 ≤ Q ≤ 200,000) representing the size of the grid and the number of strings, respectively. The next R lines each contains C uppercase characters representing the grid. The c^th character on the r^th line is G_{r, c}. The next Q lines each contains a string S containing uppercase characters. The length of this string is a positive integer not more than 200,000. The sum of the length of all Q strings combined is not more than 200,000.\n\nFor each query in the same order as input, output in a line an integer representing the number of occurrences of the string in the grid.\n\nExplanation for the sample input/output #1\n\nInput:\n```\n3 3 5\nABC\nBCD\nDAB\nABC\nBC\nBD\nAC\nA\n```\n\nOutput:\n```\n2\n3\n1\n0\n2\n```\n\nInput:\n```\n2 3 3\nAAA\nAAA\nA\nAAA\nAAAAA\n```\n\nOutput:\n```\n6\n4\n0\n```",
+    "input": "Input begins with a line containing three integers: R C Q (1 ≤ R, C ≤ 500; 1 ≤ Q ≤ 200,000) representing the size of the grid and the number of strings, respectively. The next R lines each contains C uppercase characters representing the grid. The c^th character on the r^th line is G_{r, c}. The next Q lines each contains a string S containing uppercase characters. The length of this string is a positive integer not more than 200,000. The sum of the length of all Q strings combined is not more than 200,000.",
+    "output": "For each query in the same order as input, output in a line an integer representing the number of occurrences of the string in the grid.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "strings",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2036A",
+    "contest_id": 2036,
+    "problem_letter": "A",
+    "title": "A. Quintomania",
+    "statement": "Boris Notkin composes melodies. He represents them as a sequence of notes, where each note is encoded as an integer from 0 to 127 inclusive. The interval between two notes a and b is equal to |a - b| semitones.\n\nBoris considers a melody perfect if the interval between each two adjacent notes is either 5 semitones or 7 semitones.\n\nAfter composing his latest melodies, he enthusiastically shows you his collection of works. Help Boris Notkin understand whether his melodies are perfect.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of melodies.\n\nEach melody is described by two lines.\n\nThe first line contains an integer n (2 ≤ n ≤ 50) — the number of notes in the melody.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 127) — the notes of the melody.\n\nFor each melody, output \"YES\", if it is perfect; otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nInput:\n```\n82114 109217 10376 83 88838 45 38 80 85 92 99 106563 58 65 58 658117 124 48 53 48 43 54 49595 102 107 114 1211072 77 82 75 70 75 68 75 68 75\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of melodies.\n\nEach melody is described by two lines.\n\nThe first line contains an integer n (2 ≤ n ≤ 50) — the number of notes in the melody.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 127) — the notes of the melody.",
+    "output": "For each melody, output \"YES\", if it is perfect; otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

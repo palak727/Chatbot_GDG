@@ -1,0 +1,19 @@
+{
+    "id": "1063C",
+    "contest_id": 1063,
+    "problem_letter": "C",
+    "title": "C. Dwarves, Hats and Extrasensory Abilities",
+    "statement": "This is an interactive problem.\n\nIn good old times dwarves tried to develop extrasensory abilities:\n\nAfter many centuries, dwarves finally managed to select the right place on the meadow without error. Will you be able to repeat their success?\n\nYou are asked to successively name n different integer points on the plane. After naming each new point you will be given its color — black or white. Your task is to ensure that the named points can be split by a line in such a way that all points of one color lie on the same side from the line and points of different colors lie on different sides. Moreover, no points can belong to the line. Also, you need to report any such line at the end of the process.\n\nIn this problem, the interactor is adaptive — the colors of the points in the tests are not fixed beforehand and the jury program can select them arbitrarily, in particular, depending on your program output.\n\nThe first line of the standard input stream contains an integer n (1 ≤ n ≤ 30) — the number of points your program should name.\n\nThen n times your program must print two integer coordinates x and y (0 ≤ x ≤ 10^9, 0 ≤ y ≤ 10^9). All points you print must be distinct.\n\nIn response to each coordinate pair your program will receive the string \"black\", if the point is black, or \"white\", if the point is white.\n\nWhen all n points are processed, you need to print four integers x_1, y_1, x_2 and y_2 (0 ≤ x_1, y_1 ≤ 10^9, 0 ≤ x_2, y_2 ≤ 10^9) — coordinates of points (x_1, y_1) and (x_2, y_2), which form a line, which separates n points into black and white. Points (x_1, y_1) and (x_2, y_2) should not coincide.\n\nHacks\n\nTo hack solution use the following format. The first line must contain word \"hack\", the second line should contain the number n and the last line should contain the sequence of 0 and 1 — colors of points, which will be reported to the solution. Unlike the jury tests, colors of points in hacks are always fixed in advance. Of course, the hacked solution wouldn't be able to get the information about the colors in advance.\n\nFor example, the hack corresponding to sample test will look like this:\n\n```\nhack\n5\n0 0 1 1 0\n```\n\nIn the sample input and output values are aligned only for simplicity of interpreting them chronologically. In real interaction no \"extra\" line breaks should appear.\n\nThe following picture illustrates the first test.\n\nInput:\n```\n5\n\nblack\n\nblack\n\nwhite\n\nwhite\n\nblack\n```\n\nOutput:\n```\n0 0\n\n3 1\n\n2 3\n\n4 4\n\n0 2\n\n1 3 4 1\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "geometry",
+        "interactive",
+        "*1900"
+    ],
+    "rating": 1900
+}

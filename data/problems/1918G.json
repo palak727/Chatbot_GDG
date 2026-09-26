@@ -1,0 +1,17 @@
+{
+    "id": "1918G",
+    "contest_id": 1918,
+    "problem_letter": "G",
+    "title": "G. Permutation of Given",
+    "statement": "You were given only one number, n. It didn't seem interesting to you, so you wondered if it's possible to come up with an array of length n consisting of non-zero integers, such that if each element of the array is replaced by the sum of its neighbors (the elements on the ends are replaced by their only neighbors), you obtain a permutation of the numbers in the original array.\n\nEach test case contains only one number, n (2 ≤ n ≤ 10^6).\n\nIf a solution exists, output \"YES\" (without quotes), followed by an array a (-10^9 ≤ a_i ≤ 10^9, a_i ≠ 0) that satisfies the condition of the problem. If there are multiple possible answers, output any of them.\n\nIf there is no suitable array, output \"NO\" (without quotes).\n\nThe words \"YES\" and \"NO\" can be output in any case, for example, \"YES\", \"Yes\", \"yEs\", and so on.\n\nIn the first test, the array [1, 2, -2, -1] is suitable, because if each element is replaced by the sum of its neighbors, the resulting array is [2, -1, 1, -2], which is a permutation of the original array.\n\nIn the second test, it can be shown that there is no solution.\n\nInput:\n```\n4\n```\n\nOutput:\n```\nYES\n1 2 -2 -1\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\nNO\n```",
+    "input": "Each test case contains only one number, n (2 ≤ n ≤ 10^6).",
+    "output": "If a solution exists, output \"YES\" (without quotes), followed by an array a (-10^9 ≤ a_i ≤ 10^9, a_i ≠ 0) that satisfies the condition of the problem. If there are multiple possible answers, output any of them.\n\nIf there is no suitable array, output \"NO\" (without quotes).\n\nThe words \"YES\" and \"NO\" can be output in any case, for example, \"YES\", \"Yes\", \"yEs\", and so on.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

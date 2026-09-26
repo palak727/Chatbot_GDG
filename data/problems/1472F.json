@@ -1,0 +1,20 @@
+{
+    "id": "1472F",
+    "contest_id": 1472,
+    "problem_letter": "F",
+    "title": "F. New Year's Puzzle",
+    "statement": "Every year Santa Claus gives gifts to all children. However, each country has its own traditions, and this process takes place in different ways. For example, in Berland you need to solve the New Year's puzzle.\n\nPolycarp got the following problem: given a grid strip of size 2 × n, some cells of it are blocked. You need to check if it is possible to tile all free cells using the 2 × 1 and 1 × 2 tiles (dominoes).\n\nFor example, if n = 5 and the strip looks like this (black cells are blocked):\n\nThen it can be tiled, for example, using two vertical and two horizontal tiles, as in the picture below (different tiles are marked by different colors).\n\nAnd if n = 3 and the strip looks like this:\n\nIt is impossible to tile free cells.\n\nPolycarp easily solved this task and received his New Year's gift. Can you solve it?\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is preceded by an empty line.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 2·10^5) — the length of the strip and the number of blocked cells on it.\n\nEach of the next m lines contains two integers r_i, c_i (1 ≤ r_i ≤ 2, 1 ≤ c_i ≤ n) — numbers of rows and columns of blocked cells. It is guaranteed that all blocked cells are different, i.e. (r_i, c_i) ≠ (r_j, c_j), i ≠ j.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, print on a separate line:\n\nYou can output \"YES\" and \"NO\" in any case (for example, the strings yEs, yes, Yes and YES will be recognized as positive).\n\nThe first two test cases are explained in the statement.\n\nIn the third test case the strip looks like this:\n\nInput:\n```\n3\n\n5 2\n2 2\n1 4\n\n3 2\n2 1\n2 3\n\n6 4\n2 1\n2 3\n2 4\n2 6\n```\n\nOutput:\n```\nYES\nNO\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is preceded by an empty line.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10^9, 1 ≤ m ≤ 2·10^5) — the length of the strip and the number of blocked cells on it.\n\nEach of the next m lines contains two integers r_i, c_i (1 ≤ r_i ≤ 2, 1 ≤ c_i ≤ n) — numbers of rows and columns of blocked cells. It is guaranteed that all blocked cells are different, i.e. (r_i, c_i) ≠ (r_j, c_j), i ≠ j.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print on a separate line:\n\nYou can output \"YES\" and \"NO\" in any case (for example, the strings yEs, yes, Yes and YES will be recognized as positive).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "graph matchings",
+        "greedy",
+        "sortings",
+        "*2100"
+    ],
+    "rating": 2100
+}

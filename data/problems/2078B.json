@@ -1,0 +1,20 @@
+{
+    "id": "2078B",
+    "contest_id": 2078,
+    "problem_letter": "B",
+    "title": "B. Vicious Labyrinth",
+    "statement": "There are n cells in a labyrinth, and cell i (1 ≤ i ≤ n) is n - i kilometers away from the exit. In particular, cell n is the exit. Note also that each cell is connected to the exit but is not accessible from any other cell in any way.\n\nIn each cell, there is initially exactly one person stuck in it. You want to help everyone get as close to the exit as possible by installing a teleporter in each cell i (1 ≤ i ≤ n), which translocates the person in that cell to another cell a_i.\n\nThe labyrinth owner caught you in the act. Amused, she let you continue, but under some conditions:\n\nYou must find a teleporter configuration that minimizes the sum of distances of all individuals from the exit after using the teleporter exactly k times while still satisfying the restrictions of the labyrinth owner.\n\nIf there are many possible configurations, you can output any of them.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains two integers n and k (2 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the number of cells in the labyrinth and the value k.\n\nIt is guaranteed that the total sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output n integers — the destinations of the teleporters a_1, a_2, …, a_n in order, satisfying the given conditions (1 ≤ a_i ≤ n, a_i ≠ i).\n\nIn the first test case, the position of each person is as follows.\n\nThe distance sum is (2-2) + (2-1) = 1, which is the minimum possible.\n\nIn the second test case, the position of each person is as follows.\n\nThe distance sum is (3-3) + (3-2) + (3-3) = 1, which is the minimum possible.\n\nInput:\n```\n22 13 2\n```\n\nOutput:\n```\n2 1\n2 3 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains two integers n and k (2 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the number of cells in the labyrinth and the value k.\n\nIt is guaranteed that the total sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n integers — the destinations of the teleporters a_1, a_2, …, a_n in order, satisfying the given conditions (1 ≤ a_i ≤ n, a_i ≠ i).",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1725A",
+    "contest_id": 1725,
+    "problem_letter": "A",
+    "title": "A. Accumulation of Dominoes",
+    "statement": "Pak Chanek has a grid that has N rows and M columns. Each row is numbered from 1 to N from top to bottom. Each column is numbered from 1 to M from left to right.\n\nEach tile in the grid contains a number. The numbers are arranged as follows:\n\nA domino is defined as two different tiles in the grid that touch by their sides. A domino is said to be tight if and only if the two numbers in the domino have a difference of exactly 1. Count the number of distinct tight dominoes in the grid.\n\nTwo dominoes are said to be distinct if and only if there exists at least one tile that is in one domino, but not in the other.\n\nThe only line contains two integers N and M (1 ≤ N, M ≤ 10^9) — the number of rows and columns in the grid.\n\nAn integer representing the number of distinct tight dominoes in the grid.\n\nThe picture below is the grid that Pak Chanek has in the first example.\n\nThe picture below is an example of a tight domino in the grid.\n\nInput:\n```\n3 4\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n2 1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The only line contains two integers N and M (1 ≤ N, M ≤ 10^9) — the number of rows and columns in the grid.",
+    "output": "An integer representing the number of distinct tight dominoes in the grid.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

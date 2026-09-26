@@ -1,0 +1,18 @@
+{
+    "id": "1242A",
+    "contest_id": 1242,
+    "problem_letter": "A",
+    "title": "A. Tile Painting",
+    "statement": "Ujan has been lazy lately, but now has decided to bring his yard to good shape. First, he decided to paint the path from his house to the gate.\n\nThe path consists of n consecutive tiles, numbered from 1 to n. Ujan will paint each tile in some color. He will consider the path aesthetic if for any two different tiles with numbers i and j, such that |j - i| is a divisor of n greater than 1, they have the same color. Formally, the colors of two tiles with numbers i and j should be the same if |i-j| > 1 and n bmod |i-j| = 0 (where x bmod y is the remainder when dividing x by y).\n\nUjan wants to brighten up space. What is the maximum number of different colors that Ujan can use, so that the path is aesthetic?\n\nThe first line of input contains a single integer n (1 ≤ n ≤ 10^12), the length of the path.\n\nOutput a single integer, the maximum possible number of colors that the path can be painted in.\n\nIn the first sample, two colors is the maximum number. Tiles 1 and 3 should have the same color since 4 bmod |3-1| = 0. Also, tiles 2 and 4 should have the same color since 4 bmod |4-2| = 0.\n\nIn the second sample, all five colors can be used.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line of input contains a single integer n (1 ≤ n ≤ 10^12), the length of the path.",
+    "output": "Output a single integer, the maximum possible number of colors that the path can be painted in.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

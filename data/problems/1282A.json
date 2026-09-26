@@ -1,0 +1,17 @@
+{
+    "id": "1282A",
+    "contest_id": 1282,
+    "problem_letter": "A",
+    "title": "A. Temporarily unavailable",
+    "statement": "Polycarp lives on the coordinate axis Ox and travels from the point x=a to x=b. It moves uniformly rectilinearly at a speed of one unit of distance per minute.\n\nOn the axis Ox at the point x=c the base station of the mobile operator is placed. It is known that the radius of its coverage is r. Thus, if Polycarp is at a distance less than or equal to r from the point x=c, then he is in the network coverage area, otherwise — no. The base station can be located both on the route of Polycarp and outside it.\n\nPrint the time in minutes during which Polycarp will not be in the coverage area of the network, with a rectilinear uniform movement from x=a to x=b. His speed — one unit of distance per minute.\n\nThe first line contains a positive integer t (1 ≤ t ≤ 1000) — the number of test cases. In the following lines are written t test cases.\n\nThe description of each test case is one line, which contains four integers a, b, c and r (-10^8 ≤ a,b,c ≤ 10^8, 0 ≤ r ≤ 10^8) — the coordinates of the starting and ending points of the path, the base station, and its coverage radius, respectively.\n\nAny of the numbers a, b and c can be equal (either any pair or all three numbers). The base station can be located both on the route of Polycarp and outside it.\n\nPrint t numbers — answers to given test cases in the order they are written in the test. Each answer is an integer — the number of minutes during which Polycarp will be unavailable during his movement.\n\nThe following picture illustrates the first test case.\n\nInput:\n```\n9\n1 10 7 1\n3 3 3 0\n8 2 10 4\n8 2 10 100\n-10 20 -17 2\n-3 2 2 0\n-3 1 2 0\n2 3 2 3\n-1 3 -2 2\n```\n\nOutput:\n```\n7\n0\n4\n0\n30\n5\n4\n0\n3\n```",
+    "input": "The first line contains a positive integer t (1 ≤ t ≤ 1000) — the number of test cases. In the following lines are written t test cases.\n\nThe description of each test case is one line, which contains four integers a, b, c and r (-10^8 ≤ a,b,c ≤ 10^8, 0 ≤ r ≤ 10^8) — the coordinates of the starting and ending points of the path, the base station, and its coverage radius, respectively.\n\nAny of the numbers a, b and c can be equal (either any pair or all three numbers). The base station can be located both on the route of Polycarp and outside it.",
+    "output": "Print t numbers — answers to given test cases in the order they are written in the test. Each answer is an integer — the number of minutes during which Polycarp will be unavailable during his movement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

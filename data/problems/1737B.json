@@ -1,0 +1,18 @@
+{
+    "id": "1737B",
+    "contest_id": 1737,
+    "problem_letter": "B",
+    "title": "B. Ela's Fitness and the Luxury Number",
+    "statement": "Since she started engaging in sports activities, Ela switches to trying a new sport on days she considers being \"Luxury\" days. She counts the days since she started these activities, in which the day she starts is numbered as day 1. A \"Luxury\" day is the day in which the number of this day is a luxurious number.\n\nAn integer x is called a luxurious number if it is divisible by lfloor √(x) rfloor.\n\nHere lfloor r rfloor denotes the \"floor\" of a real number r. In other words, it's the largest integer not greater than r.\n\nFor example: 8, 56, 100 are luxurious numbers, since 8 is divisible by lfloor √(8) rfloor = lfloor 2.8284 rfloor = 2, 56 is divisible lfloor √(56) rfloor = lfloor 7.4833 rfloor = 7, and 100 is divisible by lfloor √(100) rfloor = lfloor 10 rfloor = 10, respectively. On the other hand 5, 40 are not, since 5 are not divisible by lfloor √(5) rfloor = lfloor 2.2361 rfloor = 2, and 40 are not divisible by lfloor √(40) rfloor = lfloor 6.3246 rfloor = 6.\n\nBeing a friend of Ela, you want to engage in these fitness activities with her to keep her and yourself accompanied (and have fun together, of course). Between day l and day r, you want to know how many times she changes the activities.\n\nEach test contains multiple test cases. The first line has the number of test cases t (1 ≤ t ≤ 10 000). The description of the test cases follows.\n\nThe only line of each test case contains two integers l and r (1 ≤ l ≤ r ≤ 10^18) — the intervals at which you want to know how many times Ela changes her sports.\n\nFor each test case, output an integer that denotes the answer.\n\nIn the first test case, 5 luxury numbers in range [8, 19] are: 8, 9, 12, 15, 16.\n\nInput:\n```\n58 198 20119 1211 1000000000000000001234567891011 1000000000000000000\n```\n\nOutput:\n```\n5\n6\n2\n948683296\n2996666667\n```",
+    "input": "Each test contains multiple test cases. The first line has the number of test cases t (1 ≤ t ≤ 10 000). The description of the test cases follows.\n\nThe only line of each test case contains two integers l and r (1 ≤ l ≤ r ≤ 10^18) — the intervals at which you want to know how many times Ela changes her sports.",
+    "output": "For each test case, output an integer that denotes the answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

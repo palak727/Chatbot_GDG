@@ -1,0 +1,17 @@
+{
+    "id": "1236B",
+    "contest_id": 1236,
+    "problem_letter": "B",
+    "title": "B. Alice and the List of Presents",
+    "statement": "Alice got many presents these days. So she decided to pack them into boxes and send them to her friends.\n\nThere are n kinds of presents. Presents of one kind are identical (i.e. there is no way to distinguish two gifts of the same kind). Presents of different kinds are different (i.e. that is, two gifts of different kinds are distinguishable). The number of presents of each kind, that Alice has is very big, so we can consider Alice has an infinite number of gifts of each kind.\n\nAlso, there are m boxes. All of them are for different people, so they are pairwise distinct (consider that the names of m friends are written on the boxes). For example, putting the first kind of present into the first box but not into the second box, is different from putting the first kind of present into the second box but not into the first box.\n\nAlice wants to pack presents with the following rules:\n\nNow Alice wants to know how many different ways to pack the presents exists. Please, help her and calculate this number. Since the answer can be huge, output it by modulo 10^9+7.\n\nSee examples and their notes for clarification.\n\nThe first line contains two integers n and m, separated by spaces (1 ≤ n,m ≤ 10^9) — the number of kinds of presents and the number of boxes that Alice has.\n\nPrint one integer — the number of ways to pack the presents with Alice's rules, calculated by modulo 10^9+7\n\nIn the first example, there are seven ways to pack presents:\n\n{1}{}{}\n\n{}{1}{}\n\n{}{}{1}\n\n{1}{1}{}\n\n{}{1}{1}\n\n{1}{}{1}\n\n{1}{1}{1}\n\nIn the second example there are nine ways to pack presents:\n\n{}{1,2}\n\n{1}{2}\n\n{1}{1,2}\n\n{2}{1}\n\n{2}{1,2}\n\n{1,2}{}\n\n{1,2}{1}\n\n{1,2}{2}\n\n{1,2}{1,2}\n\nFor example, the way {2}{2} is wrong, because presents of the first kind should be used in the least one box.\n\nInput:\n```\n1 3\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n9\n```",
+    "input": "The first line contains two integers n and m, separated by spaces (1 ≤ n,m ≤ 10^9) — the number of kinds of presents and the number of boxes that Alice has.",
+    "output": "Print one integer — the number of ways to pack the presents with Alice's rules, calculated by modulo 10^9+7",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

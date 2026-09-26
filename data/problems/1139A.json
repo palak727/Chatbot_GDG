@@ -1,0 +1,17 @@
+{
+    "id": "1139A",
+    "contest_id": 1139,
+    "problem_letter": "A",
+    "title": "A. Even Substrings",
+    "statement": "You are given a string s=s_1s_2… s_n of length n, which only contains digits 1, 2, ..., 9.\n\nA substring s[l … r] of s is a string s_l s_{l + 1} s_{l + 2} … s_r. A substring s[l … r] of s is called even if the number represented by it is even.\n\nFind the number of even substrings of s. Note, that even if some substrings are equal as strings, but have different l and r, they are counted as different substrings.\n\nThe first line contains an integer n (1 ≤ n ≤ 65000) — the length of the string s.\n\nThe second line contains a string s of length n. The string s consists only of digits 1, 2, ..., 9.\n\nPrint the number of even substrings of s.\n\nIn the first example, the [l, r] pairs corresponding to even substrings are:\n\nIn the second example, all 10 substrings of s are even substrings. Note, that while substrings s[1 … 1] and s[2 … 2] both define the substring \"2\", they are still counted as different substrings.\n\nInput:\n```\n4\n1234\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n4\n2244\n```\n\nOutput:\n```\n10\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 65000) — the length of the string s.\n\nThe second line contains a string s of length n. The string s consists only of digits 1, 2, ..., 9.",
+    "output": "Print the number of even substrings of s.",
+    "time_limit": "0.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

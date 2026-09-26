@@ -1,0 +1,18 @@
+{
+    "id": "1638E",
+    "contest_id": 1638,
+    "problem_letter": "E",
+    "title": "E. Colorful Operations",
+    "statement": "You have an array a_1,a_2, …, a_n. Each element initially has value 0 and color 1. You are also given q queries to perform:\n\nThe first line of input contains two integers n and q (1 ≤ n,q ≤ 10^6) — the length of array a and the number of queries you have to perform.\n\nEach of the next q lines contains the query given in the form described in the problem statement.\n\nPrint the answers to the queries of the third type on separate lines.\n\nThe first sample test is explained below. Blue, red and green represent colors 1, 2 and 3 respectively.\n\nInput:\n```\n5 8\nColor 2 4 2\nAdd 2 2\nQuery 3\nColor 4 5 3\nColor 2 2 3\nAdd 3 3\nQuery 2\nQuery 5\n```\n\nOutput:\n```\n2\n5\n3\n```\n\nInput:\n```\n2 7\nAdd 1 7\nQuery 1\nAdd 2 4\nQuery 2\nColor 1 1 1\nAdd 1 1\nQuery 2\n```\n\nOutput:\n```\n7\n7\n8\n```",
+    "input": "The first line of input contains two integers n and q (1 ≤ n,q ≤ 10^6) — the length of array a and the number of queries you have to perform.\n\nEach of the next q lines contains the query given in the form described in the problem statement.",
+    "output": "Print the answers to the queries of the third type on separate lines.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*2400"
+    ],
+    "rating": 2400
+}

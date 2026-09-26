@@ -1,0 +1,16 @@
+{
+    "id": "1194A",
+    "contest_id": 1194,
+    "problem_letter": "A",
+    "title": "A. Remove a Progression",
+    "statement": "You have a list of numbers from 1 to n written from left to right on the blackboard.\n\nYou perform an algorithm consisting of several steps (steps are 1-indexed). On the i-th step you wipe the i-th number (considering only remaining numbers). You wipe the whole number (not one digit).\n\nWhen there are less than i numbers remaining, you stop your algorithm.\n\nNow you wonder: what is the value of the x-th remaining number after the algorithm is stopped?\n\nThe first line contains one integer T (1 ≤ T ≤ 100) — the number of queries. The next T lines contain queries — one per line. All queries are independent.\n\nEach line contains two space-separated integers n and x (1 ≤ x < n ≤ 10^9) — the length of the list and the position we wonder about. It's guaranteed that after the algorithm ends, the list will still contain at least x numbers.\n\nPrint T integers (one per query) — the values of the x-th number after performing the algorithm for the corresponding queries.\n\nInput:\n```\n3\n3 1\n4 2\n69 6\n```\n\nOutput:\n```\n2\n4\n12\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 100) — the number of queries. The next T lines contain queries — one per line. All queries are independent.\n\nEach line contains two space-separated integers n and x (1 ≤ x < n ≤ 10^9) — the length of the list and the position we wonder about. It's guaranteed that after the algorithm ends, the list will still contain at least x numbers.",
+    "output": "Print T integers (one per query) — the values of the x-th number after performing the algorithm for the corresponding queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2001B",
+    "contest_id": 2001,
+    "problem_letter": "B",
+    "title": "B. Generate Permutation",
+    "statement": "There is an integer sequence a of length n, where each element is initially -1.\n\nMisuki has two typewriters where the first one writes letters from left to right, with a pointer initially pointing to 1, and another writes letters from right to left with a pointer initially pointing to n.\n\nMisuki would choose one of the typewriters and use it to perform the following operations until a becomes a permutation of [1, 2, …, n]\n\nYour task is to construct any permutation p of length n, such that the minimum number of carriage return operations needed to make a = p is the same no matter which typewriter Misuki is using.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a line of n integers, representing the permutation p of length n such that the minimum number of carriage return operations needed to make a = p is the same no matter which typewriter Misuki is using, or -1 if it is impossible to do so.\n\nIf there are multiple valid permutations, you can output any of them.\n\nIn the first testcase, it's possible to make a = p = [1] using 0 carriage return operations.\n\nIn the second testcase, it is possible to make a = p = [1, 2] with the minimal number of carriage returns as follows:\n\nIf Misuki is using the first typewriter:\n\nIf Misuki is using the second typewriter:\n\nIt can be proven that the minimum number of carriage returns needed to transform a into p when using the first typewriter is 0 and it is 1 when using the second one, so this permutation is not valid.\n\nSimilarly, p = [2, 1] is also not valid, so there is no solution for n = 2.\n\nIn the third testcase, it is possibile to make a = p = [3, 1, 2] with 1 carriage return with both the first and the second typewriter. It can be proven that, for both typewriters, it is impossible to write p with 0 carriage returns.\n\nWith the first typewriter it is possible to:\n\nWith the second typewriter it is possible to:\n\nInput:\n```\n3\n1\n2\n3\n```\n\nOutput:\n```\n1\n-1\n3 1 2\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the permutation.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a line of n integers, representing the permutation p of length n such that the minimum number of carriage return operations needed to make a = p is the same no matter which typewriter Misuki is using, or -1 if it is impossible to do so.\n\nIf there are multiple valid permutations, you can output any of them.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*800"
+    ],
+    "rating": 800
+}

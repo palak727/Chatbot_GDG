@@ -1,0 +1,18 @@
+{
+    "id": "2009E",
+    "contest_id": 2009,
+    "problem_letter": "E",
+    "title": "E. Klee's SUPER DUPER LARGE Array!!!",
+    "statement": "Klee has an array a of length n containing integers [k, k+1, ..., k+n-1] in that order. Klee wants to choose an index i (1 ≤ i ≤ n) such that x = |a_1 + a_2 + … + a_i - a_{i+1} - … - a_n| is minimized. Note that for an arbitrary integer z, |z| represents the absolute value of z.\n\nOutput the minimum possible value of x.\n\nThe first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains two integers n and k (2 ≤ n, k ≤ 10^9) — the length of the array and the starting element of the array.\n\nFor each test case, output the minimum value of x on a new line.\n\nIn the first sample, a = [2, 3]. When i = 1 is chosen, x = |2-3| = 1. It can be shown this is the minimum possible value of x.\n\nIn the third sample, a = [3, 4, 5, 6, 7]. When i = 3 is chosen, x = |3 + 4 + 5 - 6 - 7| = 1. It can be shown this is the minimum possible value of x.\n\nInput:\n```\n42 27 25 31000000000 1000000000\n```\n\nOutput:\n```\n1\n5\n1\n347369930\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains two integers n and k (2 ≤ n, k ≤ 10^9) — the length of the array and the starting element of the array.",
+    "output": "For each test case, output the minimum value of x on a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "ternary search",
+        "*1400"
+    ],
+    "rating": 1400
+}

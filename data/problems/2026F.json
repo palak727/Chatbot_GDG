@@ -1,0 +1,21 @@
+{
+    "id": "2026F",
+    "contest_id": 2026,
+    "problem_letter": "F",
+    "title": "F. Bermart Ice Cream",
+    "statement": "In the Bermart chain of stores, a variety of ice cream is sold. Each type of ice cream has two parameters: price and tastiness.\n\nInitially, there is one store numbered 1, which sells nothing. You have to process q queries of the following types:\n\nThe first line contains a single integer q (1 ≤ q ≤ 3·10^4) — the number of queries.\n\nEach of the following q lines contains a query in the format described in the statement:\n\nAdditional constraints on the input data:\n\nFor each query of type 4, output a single integer — for store x, find the maximum total tastiness of a subset of types of ice cream that are sold there, such that the total price does not exceed p (each type can be used in the subset no more than once).\n\nInput:\n```\n122 1 5 72 1 3 44 1 44 1 84 1 21 12 2 4 104 1 94 2 93 14 1 94 2 9\n```\n\nOutput:\n```\n4\n11\n0\n11\n17\n4\n17\n```",
+    "input": "The first line contains a single integer q (1 ≤ q ≤ 3·10^4) — the number of queries.\n\nEach of the following q lines contains a query in the format described in the statement:\n\nAdditional constraints on the input data:",
+    "output": "For each query of type 4, output a single integer — for store x, find the maximum total tastiness of a subset of types of ice cream that are sold there, such that the total price does not exceed p (each type can be used in the subset no more than once).",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "dp",
+        "implementation",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

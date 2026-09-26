@@ -1,0 +1,20 @@
+{
+    "id": "1511D",
+    "contest_id": 1511,
+    "problem_letter": "D",
+    "title": "D. Min Cost String",
+    "statement": "Let's define the cost of a string s as the number of index pairs i and j (1 ≤ i < j < |s|) such that s_i = s_j and s_{i+1} = s_{j+1}.\n\nYou are given two positive integers n and k. Among all strings with length n that contain only the first k characters of the Latin alphabet, find a string with minimum possible cost. If there are multiple such strings with minimum cost — find any of them.\n\nThe only line contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 26).\n\nPrint the string s such that it consists of n characters, each its character is one of the k first Latin letters, and it has the minimum possible cost among all these strings. If there are multiple such strings — print any of them.\n\nInput:\n```\n9 4\n```\n\nOutput:\n```\naabacadbb\n```\n\nInput:\n```\n5 1\n```\n\nOutput:\n```\naaaaa\n```\n\nInput:\n```\n10 26\n```\n\nOutput:\n```\ncodeforces\n```",
+    "input": "The only line contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 26).",
+    "output": "Print the string s such that it consists of n characters, each its character is one of the k first Latin letters, and it has the minimum possible cost among all these strings. If there are multiple such strings — print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

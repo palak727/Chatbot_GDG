@@ -1,0 +1,19 @@
+{
+    "id": "1628D1",
+    "contest_id": 1628,
+    "problem_letter": "D1",
+    "title": "D1. Game on Sum (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference is the constraints on n, m and t. You can make hacks only if all versions of the problem are solved.\n\nAlice and Bob are given the numbers n, m and k, and play a game as follows:\n\nThe game has a score that Alice tries to maximize, and Bob tries to minimize. The score is initially 0. The game consists of n turns. Each turn, Alice picks a real number from 0 to k (inclusive) which Bob either adds to or subtracts from the score of the game. But throughout the game, Bob has to choose to add at least m out of the n turns.\n\nBob gets to know which number Alice picked before deciding whether to add or subtract the number from the score, and Alice gets to know whether Bob added or subtracted the number for the previous turn before picking the number for the current turn (except on the first turn since there was no previous turn).\n\nIf Alice and Bob play optimally, what will the final score of the game be?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nEach test case consists of a single line containing the three integers, n, m, and k (1 ≤ m ≤ n ≤ 2000, 0 ≤ k < 10^9 + 7) — the number of turns, how many of those turns Bob has to add, and the biggest number Alice can choose, respectively.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case output a single integer number — the score of the optimal game modulo 10^9 + 7.\n\nFormally, let M = 10^9 + 7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nIn the first test case, the entire game has 3 turns, and since m = 3, Bob has to add in each of them. Therefore Alice should pick the biggest number she can, which is k = 2, every turn.\n\nIn the third test case, Alice has a strategy to guarantee a score of 75/8 ≡ 375000012 pmod10^9 + 7.\n\nIn the fourth test case, Alice has a strategy to guarantee a score of 45/2 ≡ 500000026 pmod10^9 + 7.\n\nInput:\n```\n73 3 22 1 106 3 106 4 10100 1 14 4 069 4 20\n```\n\nOutput:\n```\n6\n5\n375000012\n500000026\n958557139\n0\n49735962\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nEach test case consists of a single line containing the three integers, n, m, and k (1 ≤ m ≤ n ≤ 2000, 0 ≤ k < 10^9 + 7) — the number of turns, how many of those turns Bob has to add, and the biggest number Alice can choose, respectively.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case output a single integer number — the score of the optimal game modulo 10^9 + 7.\n\nFormally, let M = 10^9 + 7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "games",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

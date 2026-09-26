@@ -1,0 +1,21 @@
+{
+    "id": "1670D",
+    "contest_id": 1670,
+    "problem_letter": "D",
+    "title": "D. Very Suspicious",
+    "statement": "Sehr Sus is an infinite hexagonal grid as pictured below, controlled by MennaFadali, ZerooCool and Hosssam.\n\nThey love equilateral triangles and want to create n equilateral triangles on the grid by adding some straight lines. The triangles must all be empty from the inside (in other words, no straight line or hexagon edge should pass through any of the triangles).\n\nYou are allowed to add straight lines parallel to the edges of the hexagons. Given n, what is the minimum number of lines you need to add to create at least n equilateral triangles as described?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then t test cases follow.\n\nEach test case contains a single integer n (1 ≤ n ≤ 10^9) — the required number of equilateral triangles.\n\nFor each test case, print the minimum number of lines needed to have n or more equilateral triangles.\n\nIn the first and second test cases only 2 lines are needed. After adding the first line, no equilateral triangles will be created no matter where it is added. But after adding the second line, two more triangles will be created at once.\n\nIn the third test case, the minimum needed is 3 lines as shown below.\n\nInput:\n```\n41234567\n```\n\nOutput:\n```\n2\n2\n3\n83\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then t test cases follow.\n\nEach test case contains a single integer n (1 ≤ n ≤ 10^9) — the required number of equilateral triangles.",
+    "output": "For each test case, print the minimum number of lines needed to have n or more equilateral triangles.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "geometry",
+        "greedy",
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

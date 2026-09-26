@@ -1,0 +1,17 @@
+{
+    "id": "1725J",
+    "contest_id": 1725,
+    "problem_letter": "J",
+    "title": "J. Journey",
+    "statement": "One day, Pak Chanek who is already bored of being alone at home decided to go traveling. While looking for an appropriate place, he found that Londonesia has an interesting structure.\n\nAccording to the information gathered by Pak Chanek, there are N cities numbered from 1 to N. The cities are connected to each other with N-1 two-directional roads, with the i-th road connecting cities U_i and V_i, and taking a time of W_i hours to be traversed. In other words, Londonesia's structure forms a tree.\n\nPak Chanek wants to go on a journey in Londonesia starting and ending in any city (not necessarily the same city) such that each city is visited at least once with the least time possible. In order for the journey to end quicker, Pak Chanek also carries an instant teleportation device for moving from one city to any city that can only be used at most once. Help Pak Chanek for finding the minimum time needed.\n\nNotes:\n\nThe first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of cities in Londonesia.\n\nThe i-th of the next N-1 lines contains three integers U_i, V_i, and W_i (1 ≤ U_i, V_i ≤ N, 1 ≤ W_i ≤ 10^9) — a two-directional road that connects cities U_i and V_i that takes W_i hours to be traversed. The roads in Londonesia form a tree.\n\nOutput one integer, which represents the minimum time in hours that is needed to visit each city at least once.\n\nIn the first example, the journey that has the minimum time is 2 → 1 xrightarrowteleport 4 → 3.\n\nIn the second example, the journey that has the minimum time is 3 → 1 → 4 → 1 → 2 xrightarrowteleport 5.\n\nInput:\n```\n4\n1 2 4\n2 3 5\n3 4 4\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5\n1 2 45\n1 3 50\n1 4 10\n1 5 65\n```\n\nOutput:\n```\n115\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of cities in Londonesia.\n\nThe i-th of the next N-1 lines contains three integers U_i, V_i, and W_i (1 ≤ U_i, V_i ≤ N, 1 ≤ W_i ≤ 10^9) — a two-directional road that connects cities U_i and V_i that takes W_i hours to be traversed. The roads in Londonesia form a tree.",
+    "output": "Output one integer, which represents the minimum time in hours that is needed to visit each city at least once.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

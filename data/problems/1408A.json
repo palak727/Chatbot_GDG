@@ -1,0 +1,16 @@
+{
+    "id": "1408A",
+    "contest_id": 1408,
+    "problem_letter": "A",
+    "title": "A. Circle Coloring",
+    "statement": "You are given three sequences: a_1, a_2, …, a_n; b_1, b_2, …, b_n; c_1, c_2, …, c_n.\n\nFor each i, a_i ≠ b_i, a_i ≠ c_i, b_i ≠ c_i.\n\nFind a sequence p_1, p_2, …, p_n, that satisfy the following conditions:\n\nIn other words, for each element, you need to choose one of the three possible values, such that no two adjacent elements (where we consider elements i,i+1 adjacent for i < n and also elements 1 and n) will have equal value.\n\nIt can be proved that in the given constraints solution always exists. You don't need to minimize/maximize anything, you need to find any proper sequence.\n\nThe first line of input contains one integer t (1 ≤ t ≤ 100): the number of test cases.\n\nThe first line of each test case contains one integer n (3 ≤ n ≤ 100): the number of elements in the given sequences.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100).\n\nThe fourth line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 100).\n\nIt is guaranteed that a_i ≠ b_i, a_i ≠ c_i, b_i ≠ c_i for all i.\n\nFor each test case, print n integers: p_1, p_2, …, p_n (p_i ∈ {a_i, b_i, c_i}, p_i ≠ p_{i mod n + 1}).\n\nIf there are several solutions, you can print any.\n\nIn the first test case p = [1, 2, 3].\n\nIt is a correct answer, because:\n\nAll possible correct answers to this test case are: [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1].\n\nIn the second test case p = [1, 2, 1, 2].\n\nIn this sequence p_1 = a_1, p_2 = a_2, p_3 = a_3, p_4 = a_4. Also we can see, that no two adjacent elements of the sequence are equal.\n\nIn the third test case p = [1, 3, 4, 3, 2, 4, 2].\n\nIn this sequence p_1 = a_1, p_2 = a_2, p_3 = b_3, p_4 = b_4, p_5 = b_5, p_6 = c_6, p_7 = c_7. Also we can see, that no two adjacent elements of the sequence are equal.\n\nInput:\n```\n5\n3\n1 1 1\n2 2 2\n3 3 3\n4\n1 2 1 2\n2 1 2 1\n3 4 3 4\n7\n1 3 3 1 1 1 1\n2 4 4 3 2 2 4\n4 2 2 2 4 4 2\n3\n1 2 1\n2 3 3\n3 1 2\n10\n1 1 1 2 2 2 3 3 3 1\n2 2 2 3 3 3 1 1 1 2\n3 3 3 1 1 1 2 2 2 3\n```\n\nOutput:\n```\n1 2 3\n1 2 1 2\n1 3 4 3 2 4 2\n1 3 2\n1 2 3 1 2 3 1 2 3 2\n```",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 100): the number of test cases.\n\nThe first line of each test case contains one integer n (3 ≤ n ≤ 100): the number of elements in the given sequences.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100).\n\nThe fourth line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 100).\n\nIt is guaranteed that a_i ≠ b_i, a_i ≠ c_i, b_i ≠ c_i for all i.",
+    "output": "For each test case, print n integers: p_1, p_2, …, p_n (p_i ∈ {a_i, b_i, c_i}, p_i ≠ p_{i mod n + 1}).\n\nIf there are several solutions, you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1584B",
+    "contest_id": 1584,
+    "problem_letter": "B",
+    "title": "B. Coloring Rectangles",
+    "statement": "David was given a red checkered rectangle of size n × m. But he doesn't like it. So David cuts the original or any other rectangle piece obtained during the cutting into two new pieces along the grid lines. He can do this operation as many times as he wants.\n\nAs a result, he will get a set of rectangles. Rectangles 1 × 1 are forbidden.\n\nDavid also knows how to paint the cells blue. He wants each rectangle from the resulting set of pieces to be colored such that any pair of adjacent cells by side (from the same piece) have different colors.\n\nWhat is the minimum number of cells David will have to paint?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The next lines contain descriptions of test cases.\n\nThe only line of each test case contains two integers n, m (1 ≤ n, m ≤ 3·10^4, n·m ≥ 2).\n\nFor each test case print a single integer — the minimum number of cells David will have to paint blue.\n\nThe following pictures show how the initial rectangle can be split and cells colored blue.\n\nIn the first test case:\n\nIn the second test case:\n\nIn the third test case:\n\nIn the fourth test case:\n\nInput:\n```\n4\n1 3\n2 2\n2 5\n3 5\n```\n\nOutput:\n```\n1\n2\n4\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The next lines contain descriptions of test cases.\n\nThe only line of each test case contains two integers n, m (1 ≤ n, m ≤ 3·10^4, n·m ≥ 2).",
+    "output": "For each test case print a single integer — the minimum number of cells David will have to paint blue.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

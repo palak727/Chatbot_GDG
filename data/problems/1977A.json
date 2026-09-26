@@ -1,0 +1,16 @@
+{
+    "id": "1977A",
+    "contest_id": 1977,
+    "problem_letter": "A",
+    "title": "A. Little Nikita",
+    "statement": "The little boy Nikita was given some cubes as a present. He decided to build a tower out of them.\n\nInitially, the tower doesn't have any cubes. In one move, Nikita either puts exactly 1 cube on top of the tower or removes exactly 1 cube from the top of the tower. Is it possible that after n moves, the resulting tower has exactly m cubes?\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 100).\n\nFor each test case, output \"Yes\" (without quotes) if Nikita can obtain a tower with m cubes, and \"No\" (without quotes) otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first test case, Nikita can put 1 cube on top of the tower 3 times in a row, so the answer is \"Yes\".\n\nIn the second test case, Nikita can only end up with either a tower with no blocks or a tower with 2 blocks, so the answer is \"No\".\n\nInput:\n```\n33 32 45 3\n```\n\nOutput:\n```\nYes\nNo\nYes\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 100).",
+    "output": "For each test case, output \"Yes\" (without quotes) if Nikita can obtain a tower with m cubes, and \"No\" (without quotes) otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

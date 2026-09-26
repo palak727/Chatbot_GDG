@@ -1,0 +1,20 @@
+{
+    "id": "1566H",
+    "contest_id": 1566,
+    "problem_letter": "H",
+    "title": "H. Xor-quiz",
+    "statement": "This is an interactive problem.\n\nYou are given two integers c and n. The jury has a randomly generated set A of distinct positive integers not greater than c (it is generated from all such possible sets with equal probability). The size of A is equal to n.\n\nYour task is to guess the set A. In order to guess it, you can ask at most lceil 0.65·c rceil queries.\n\nIn each query, you choose a single integer 1 ≤ x ≤ c. As the answer to this query you will be given the bitwise xor sum of all y, such that y ∈ A and gcd(x, y) = 1 (i.e. x and y are coprime). If there is no such y this xor sum is equal to 0.\n\nYou can ask all queries at the beginning and you will receive the answers to all your queries. After that, you won't have the possibility to ask queries.\n\nYou should find any set A', such that |A'| = n and A' and A have the same answers for all c possible queries.\n\nFirstly you are given two integers c and n (100 ≤ c ≤ 10^6, 0 ≤ n ≤ c).\n\nIn the first line you should print an integer q (0 ≤ q ≤ lceil 0.65·c rceil) — the number of queries you want to ask. After that in the same line print q integers x_1, x_2, …, x_q (1 ≤ x_i ≤ c) — the queries.\n\nFor these queries you should read q integers, i-th of them is the answer to the described query for x = x_i.\n\nAfter that you should print n distinct integers A'_1, A'_2, …, A'_n — the set A' you found.\n\nIf there are different sets A' that have the same answers for all possible queries, print any of them.\n\nIf you will ask more than lceil 0.65·c rceil queries or if the queries will be invalid, the interactor will terminate immediately and your program will receive verdict Wrong Answer.\n\nAfter printing the queries and answers do not forget to output end of line and flush the output buffer. Otherwise, you will get the Idleness limit exceeded verdict. To do flush use:\n\nHacks\n\nYou cannot make hacks in this problem.\n\nThe sample is made only for you to understand the interaction protocol. Your solution will not be tested on the sample.\n\nIn the sample A = {1, 4, 5, 6, 8, 10}. 7 queries are made, 7 ≤ lceil 0.65·10 rceil = 7, so the query limit is not exceeded.\n\nAnswers for the queries:\n\nInput:\n```\n10 6\n\n1 4 2 11 4 4 4\n```\n\nOutput:\n```\n7 10 2 3 5 7 1 6\n\n1 4 5 6 8 10\n```",
+    "input": "Firstly you are given two integers c and n (100 ≤ c ≤ 10^6, 0 ≤ n ≤ c).",
+    "output": "",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "interactive",
+        "math",
+        "number theory",
+        "*3200"
+    ],
+    "rating": 3200
+}

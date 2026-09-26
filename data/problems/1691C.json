@@ -1,0 +1,20 @@
+{
+    "id": "1691C",
+    "contest_id": 1691,
+    "problem_letter": "C",
+    "title": "C. Sum of Substrings",
+    "statement": "You are given a binary string s of length n.\n\nLet's define d_i as the number whose decimal representation is s_i s_{i+1} (possibly, with a leading zero). We define f(s) to be the sum of all the valid d_i. In other words, f(s) = ∑limits_{i=1}^{n-1} d_i.\n\nFor example, for the string s = 1011:\n\nIn one operation you can swap any two adjacent elements of the string. Find the minimum value of f(s) that can be achieved if at most k operations are allowed.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nFirst line of each test case contains two integers n and k (2 ≤ n ≤ 10^5, 0 ≤ k ≤ 10^9) — the length of the string and the maximum number of operations allowed.\n\nThe second line of each test case contains the binary string s of length n, consisting of only zeros and ones.\n\nIt is also given that sum of n over all the test cases doesn't exceed 10^5.\n\nFor each test case, print the minimum value of f(s) you can obtain with at most k operations.\n\nInput:\n```\n34 010107 100101005 200110\n```\n\nOutput:\n```\n21\n22\n12\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nFirst line of each test case contains two integers n and k (2 ≤ n ≤ 10^5, 0 ≤ k ≤ 10^9) — the length of the string and the maximum number of operations allowed.\n\nThe second line of each test case contains the binary string s of length n, consisting of only zeros and ones.\n\nIt is also given that sum of n over all the test cases doesn't exceed 10^5.",
+    "output": "For each test case, print the minimum value of f(s) you can obtain with at most k operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

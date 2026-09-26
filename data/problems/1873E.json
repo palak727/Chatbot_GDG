@@ -1,0 +1,17 @@
+{
+    "id": "1873E",
+    "contest_id": 1873,
+    "problem_letter": "E",
+    "title": "E. Building an Aquarium",
+    "statement": "You love fish, that's why you have decided to build an aquarium. You have a piece of coral made of n columns, the i-th of which is a_i units tall. Afterwards, you will build a tank around the coral as follows:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two positive integers n and x (1 ≤ n ≤ 2·10^5; 1 ≤ x ≤ 10^9) — the number of columns of the coral and the maximum amount of water you can use.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^9) — the heights of the coral.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, output a single positive integer h (h ≥ 1) — the maximum height the tank can have, so you need at most x units of water to fill up the tank.\n\nWe have a proof that under these constraints, such a value of h always exists.\n\nThe first test case is pictured in the statement. With h=4 we need 8 units of water, but if h is increased to 5 we need 13 units of water, which is more than x=9. So h=4 is optimal.\n\nIn the second test case, we can pick h=4 and add 3 units to each column, using a total of 9 units of water. It can be shown that this is optimal.\n\nIn the third test case, we can pick h=2 and use all of our water, so it is optimal.\n\nInput:\n```\n57 93 1 2 4 6 2 53 101 1 14 11 4 3 46 19842 6 5 9 1 81 10000000001\n```\n\nOutput:\n```\n4\n4\n2\n335\n1000000001\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two positive integers n and x (1 ≤ n ≤ 2·10^5; 1 ≤ x ≤ 10^9) — the number of columns of the coral and the maximum amount of water you can use.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^9) — the heights of the coral.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output a single positive integer h (h ≥ 1) — the maximum height the tank can have, so you need at most x units of water to fill up the tank.\n\nWe have a proof that under these constraints, such a value of h always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

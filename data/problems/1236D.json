@@ -1,0 +1,19 @@
+{
+    "id": "1236D",
+    "contest_id": 1236,
+    "problem_letter": "D",
+    "title": "D. Alice and the Doll",
+    "statement": "Alice got a new doll these days. It can even walk!\n\nAlice has built a maze for the doll and wants to test it. The maze is a grid with n rows and m columns. There are k obstacles, the i-th of them is on the cell (x_i, y_i), which means the cell in the intersection of the x_i-th row and the y_i-th column.\n\nHowever, the doll is clumsy in some ways. It can only walk straight or turn right at most once in the same cell (including the start cell). It cannot get into a cell with an obstacle or get out of the maze.\n\nMore formally, there exist 4 directions, in which the doll can look:\n\nStanding in some cell the doll can move into the cell in the direction it looks or it can turn right once. Turning right once, the doll switches it's direction by the following rules: 1 → 2, 2 → 3, 3 → 4, 4 → 1. Standing in one cell, the doll can make at most one turn right.\n\nNow Alice is controlling the doll's moves. She puts the doll in of the cell (1, 1) (the upper-left cell of the maze). Initially, the doll looks to the direction 1, so along the row from the first cell to the last. She wants to let the doll walk across all the cells without obstacles exactly once and end in any place. Can it be achieved?\n\nThe first line contains three integers n, m and k, separated by spaces (1 ≤ n,m ≤ 10^5, 0 ≤ k ≤ 10^5) — the size of the maze and the number of obstacles.\n\nNext k lines describes the obstacles, the i-th line contains two integer numbers x_i and y_i, separated by spaces (1 ≤ x_i ≤ n,1 ≤ y_i ≤ m), which describes the position of the i-th obstacle.\n\nIt is guaranteed that no two obstacles are in the same cell and no obstacle is in cell (1, 1).\n\nPrint 'Yes' (without quotes) if the doll can walk across all the cells without obstacles exactly once by the rules, described in the statement.\n\nIf it is impossible to walk across the maze by these rules print 'No' (without quotes).\n\nHere is the picture of maze described in the first example:\n\nIn the first example, the doll can walk in this way:\n\nInput:\n```\n3 3 2\n2 2\n2 1\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n3 3 2\n3 1\n2 2\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n3 3 8\n1 2\n1 3\n2 1\n2 2\n2 3\n3 1\n3 2\n3 3\n```\n\nOutput:\n```\nYes\n```",
+    "input": "The first line contains three integers n, m and k, separated by spaces (1 ≤ n,m ≤ 10^5, 0 ≤ k ≤ 10^5) — the size of the maze and the number of obstacles.\n\nNext k lines describes the obstacles, the i-th line contains two integer numbers x_i and y_i, separated by spaces (1 ≤ x_i ≤ n,1 ≤ y_i ≤ m), which describes the position of the i-th obstacle.\n\nIt is guaranteed that no two obstacles are in the same cell and no obstacle is in cell (1, 1).",
+    "output": "Print 'Yes' (without quotes) if the doll can walk across all the cells without obstacles exactly once by the rules, described in the statement.\n\nIf it is impossible to walk across the maze by these rules print 'No' (without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "implementation",
+        "*2300"
+    ],
+    "rating": 2300
+}

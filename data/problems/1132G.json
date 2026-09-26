@@ -1,0 +1,18 @@
+{
+    "id": "1132G",
+    "contest_id": 1132,
+    "problem_letter": "G",
+    "title": "G. Greedy Subsequences",
+    "statement": "For some array c, let's denote a greedy subsequence as a sequence of indices p_1, p_2, ..., p_l such that 1 ≤ p_1 < p_2 < … < p_l ≤ |c|, and for each i ∈ [1, l - 1], p_{i + 1} is the minimum number such that p_{i + 1} > p_i and c[p_{i + 1}] > c[p_i].\n\nYou are given an array a_1, a_2, …, a_n. For each its subsegment of length k, calculate the length of its longest greedy subsequence.\n\nThe first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^6) — the length of array a and the length of subsegments.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — array a.\n\nPrint n - k + 1 integers — the maximum lengths of greedy subsequences of each subsegment having length k. The first number should correspond to subsegment a[1..k], the second — to subsegment a[2..k + 1], and so on.\n\nIn the first example:\n\nIn the second example:\n\nInput:\n```\n6 4\n1 5 2 5 3 6\n```\n\nOutput:\n```\n2 2 3 \n```\n\nInput:\n```\n7 6\n4 5 2 5 3 6 6\n```\n\nOutput:\n```\n3 3 \n```",
+    "input": "The first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^6) — the length of array a and the length of subsegments.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — array a.",
+    "output": "Print n - k + 1 integers — the maximum lengths of greedy subsequences of each subsegment having length k. The first number should correspond to subsegment a[1..k], the second — to subsegment a[2..k + 1], and so on.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

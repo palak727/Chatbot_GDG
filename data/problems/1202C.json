@@ -1,0 +1,22 @@
+{
+    "id": "1202C",
+    "contest_id": 1202,
+    "problem_letter": "C",
+    "title": "C. You Are Given a WASD-string...",
+    "statement": "You have a string s — a sequence of commands for your toy robot. The robot is placed in some cell of a rectangular grid. He can perform four commands:\n\nLet Grid(s) be the grid of minimum possible area such that there is a position in the grid where you can place the robot in such a way that it will not fall from the grid while running the sequence of commands s. For example, if s = DSAWWAW then Grid(s) is the 4 × 3 grid:\n\nYou have 4 extra letters: one 'W', one 'A', one 'S', one 'D'. You'd like to insert at most one of these letters in any position of sequence s to minimize the area of Grid(s).\n\nWhat is the minimum area of Grid(s) you can achieve?\n\nThe first line contains one integer T (1 ≤ T ≤ 1000) — the number of queries.\n\nNext T lines contain queries: one per line. This line contains single string s (1 ≤ |s| ≤ 2·10^5, s_i ∈ {W, A, S, D}) — the sequence of commands.\n\nIt's guaranteed that the total length of s over all queries doesn't exceed 2·10^5.\n\nPrint T integers: one per query. For each query print the minimum area of Grid(s) you can achieve.\n\nIn the first query you have to get string DSAWWunderlineDAW.\n\nIn second and third queries you can not decrease the area of Grid(s).\n\nInput:\n```\n3\nDSAWWAW\nD\nWA\n```\n\nOutput:\n```\n8\n2\n4\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 1000) — the number of queries.\n\nNext T lines contain queries: one per line. This line contains single string s (1 ≤ |s| ≤ 2·10^5, s_i ∈ {W, A, S, D}) — the sequence of commands.\n\nIt's guaranteed that the total length of s over all queries doesn't exceed 2·10^5.",
+    "output": "Print T integers: one per query. For each query print the minimum area of Grid(s) you can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

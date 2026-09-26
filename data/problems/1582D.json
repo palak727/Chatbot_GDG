@@ -1,0 +1,17 @@
+{
+    "id": "1582D",
+    "contest_id": 1582,
+    "problem_letter": "D",
+    "title": "D. Vupsen, Pupsen and 0",
+    "statement": "Vupsen and Pupsen were gifted an integer array. Since Vupsen doesn't like the number 0, he threw away all numbers equal to 0 from the array. As a result, he got an array a of length n.\n\nPupsen, on the contrary, likes the number 0 and he got upset when he saw the array without zeroes. To cheer Pupsen up, Vupsen decided to come up with another array b of length n such that ∑_{i=1}^na_i·b_i=0. Since Vupsen doesn't like number 0, the array b must not contain numbers equal to 0. Also, the numbers in that array must not be huge, so the sum of their absolute values cannot exceed 10^9. Please help Vupsen to find any such array b!\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The next 2·t lines contain the description of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^4 ≤ a_i ≤ 10^4, a_i ≠ 0) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case print n integers b_1, b_2, …, b_n — elements of the array b (|b_1|+|b_2|+… +|b_n| ≤ 10^9, b_i ≠ 0, ∑_{i=1}^na_i·b_i=0).\n\nIt can be shown that the answer always exists.\n\nIn the first test case, 5·1 + 5·(-1)=5-5=0. You could also print 3 -3, for example, since 5·3 + 5·(-3)=15-15=0\n\nIn the second test case, 5·(-1) + (-2)·5 + 10·1 + (-9)·(-1) + 4·(-1)=-5-10+10+9-4=0.\n\nInput:\n```\n3\n2\n5 5\n5\n5 -2 10 -9 4\n7\n1 2 3 4 5 6 7\n```\n\nOutput:\n```\n1 -1\n-1 5 1 -1 -1\n-10 2 2 -3 5 -1 -1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The next 2·t lines contain the description of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^4 ≤ a_i ≤ 10^4, a_i ≠ 0) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case print n integers b_1, b_2, …, b_n — elements of the array b (|b_1|+|b_2|+… +|b_n| ≤ 10^9, b_i ≠ 0, ∑_{i=1}^na_i·b_i=0).\n\nIt can be shown that the answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

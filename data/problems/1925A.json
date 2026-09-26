@@ -1,0 +1,18 @@
+{
+    "id": "1925A",
+    "contest_id": 1925,
+    "problem_letter": "A",
+    "title": "A. We Got Everything Covered!",
+    "statement": "You are given two positive integers n and k.\n\nYour task is to find a string s such that all possible strings of length n that can be formed using the first k lowercase English alphabets occur as a subsequence of s.\n\nIf there are multiple answers, print the one with the smallest length. If there are still multiple answers, you may print any of them.\n\nNote: A string a is called a subsequence of another string b if a can be obtained by deleting some (possibly zero) characters from b without changing the order of the remaining characters.\n\nThe first line of input contains a single integer t (1≤ t≤ 676) denoting the number of test cases.\n\nEach test case consists of a single line of input containing two integers n (1≤ n≤ 26) and k (1≤ k≤ 26).\n\nFor each test case, print a single line containing a single string s which satisfies the above property. If there are multiple answers, print the one with the smallest length. If there are still multiple answers, you may print any of them.\n\nFor the first test case, there are two strings of length 1 which can be formed using the first 2 lowercase English alphabets, and they are present in s as a subsequence as follows:\n\nFor the second test case, there is only one string of length 2 which can be formed using the first lowercase English alphabet, and it is present in s as a subsequence as follows:\n\nFor the third test case, there are 4 strings of length 2 which can be formed using the first 2 lowercase English alphabets, and they are present in s as a subsequence as follows:\n\nFor the fourth test case, there are 9 strings of length 2 which can be formed using the first 3 lowercase English alphabets, and they are present in s as a subsequence as follows:\n\nInput:\n```\n41 22 12 22 3\n```\n\nOutput:\n```\nab\naa\nbaab\nabcbac\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 676) denoting the number of test cases.\n\nEach test case consists of a single line of input containing two integers n (1≤ n≤ 26) and k (1≤ k≤ 26).",
+    "output": "For each test case, print a single line containing a single string s which satisfies the above property. If there are multiple answers, print the one with the smallest length. If there are still multiple answers, you may print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

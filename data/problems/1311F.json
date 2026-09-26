@@ -1,0 +1,19 @@
+{
+    "id": "1311F",
+    "contest_id": 1311,
+    "problem_letter": "F",
+    "title": "F. Moving Points",
+    "statement": "There are n points on a coordinate axis OX. The i-th point is located at the integer point x_i and has a speed v_i. It is guaranteed that no two points occupy the same coordinate. All n points move with the constant speed, the coordinate of the i-th point at the moment t (t can be non-integer) is calculated as x_i + t·v_i.\n\nConsider two points i and j. Let d(i, j) be the minimum possible distance between these two points over any possible moments of time (even non-integer). It means that if two points i and j coincide at some moment, the value d(i, j) will be 0.\n\nYour task is to calculate the value ∑limits_{1 ≤ i < j ≤ n} d(i, j) (the sum of minimum distances over all pairs of points).\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThe second line of the input contains n integers x_1, x_2, …, x_n (1 ≤ x_i ≤ 10^8), where x_i is the initial coordinate of the i-th point. It is guaranteed that all x_i are distinct.\n\nThe third line of the input contains n integers v_1, v_2, …, v_n (-10^8 ≤ v_i ≤ 10^8), where v_i is the speed of the i-th point.\n\nPrint one integer — the value ∑limits_{1 ≤ i < j ≤ n} d(i, j) (the sum of minimum distances over all pairs of points).\n\nInput:\n```\n3\n1 3 2\n-100 2 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5\n2 1 4 3 5\n2 2 2 3 4\n```\n\nOutput:\n```\n19\n```\n\nInput:\n```\n2\n2 1\n-3 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThe second line of the input contains n integers x_1, x_2, …, x_n (1 ≤ x_i ≤ 10^8), where x_i is the initial coordinate of the i-th point. It is guaranteed that all x_i are distinct.\n\nThe third line of the input contains n integers v_1, v_2, …, v_n (-10^8 ≤ v_i ≤ 10^8), where v_i is the speed of the i-th point.",
+    "output": "Print one integer — the value ∑limits_{1 ≤ i < j ≤ n} d(i, j) (the sum of minimum distances over all pairs of points).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

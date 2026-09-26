@@ -1,0 +1,19 @@
+{
+    "id": "1266C",
+    "contest_id": 1266,
+    "problem_letter": "C",
+    "title": "C. Diverse Matrix",
+    "statement": "Let a be a matrix of size r × c containing positive integers, not necessarily distinct. Rows of the matrix are numbered from 1 to r, columns are numbered from 1 to c. We can construct an array b consisting of r + c integers as follows: for each i ∈ [1, r], let b_i be the greatest common divisor of integers in the i-th row, and for each j ∈ [1, c] let b_{r+j} be the greatest common divisor of integers in the j-th column.\n\nWe call the matrix diverse if all r + c numbers b_k (k ∈ [1, r + c]) are pairwise distinct.\n\nThe magnitude of a matrix equals to the maximum of b_k.\n\nFor example, suppose we have the following matrix:\n\nWe construct the array b:\n\nSo b = [1, 4, 2, 9, 7]. All values in this array are distinct, so the matrix is diverse. The magnitude is equal to 9.\n\nFor a given r and c, find a diverse matrix that minimises the magnitude. If there are multiple solutions, you may output any of them. If there are no solutions, output a single integer 0.\n\nThe only line in the input contains two space separated integers r and c (1 ≤ r,c ≤ 500) — the number of rows and the number of columns of the matrix to be found.\n\nIf there is no solution, output a single integer 0.\n\nOtherwise, output r rows. The i-th of them should contain c space-separated integers, the j-th of which is a_{i,j} — the positive integer in the i-th row and j-th column of a diverse matrix minimizing the magnitude.\n\nFurthermore, it must hold that 1 ≤ a_{i,j} ≤ 10^9. It can be shown that if a solution exists, there is also a solution with this additional constraint (still having minimum possible magnitude).\n\nIn the first example, the GCDs of rows are b_1 = 4 and b_2 = 1, and the GCDs of columns are b_3 = 2 and b_4 = 3. All GCDs are pairwise distinct and the maximum of them is 4. Since the GCDs have to be distinct and at least 1, it is clear that there are no diverse matrices of size 2 × 2 with magnitude smaller than 4.\n\nIn the second example, no matter what a_{1,1} is, b_1 = b_2 will always hold, so there are no diverse matrices.\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n4 12\n2 9\n```\n\nInput:\n```\n1 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The only line in the input contains two space separated integers r and c (1 ≤ r,c ≤ 500) — the number of rows and the number of columns of the matrix to be found.",
+    "output": "If there is no solution, output a single integer 0.\n\nOtherwise, output r rows. The i-th of them should contain c space-separated integers, the j-th of which is a_{i,j} — the positive integer in the i-th row and j-th column of a diverse matrix minimizing the magnitude.\n\nFurthermore, it must hold that 1 ≤ a_{i,j} ≤ 10^9. It can be shown that if a solution exists, there is also a solution with this additional constraint (still having minimum possible magnitude).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

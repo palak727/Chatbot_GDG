@@ -1,0 +1,17 @@
+{
+    "id": "1991A",
+    "contest_id": 1991,
+    "problem_letter": "A",
+    "title": "A. Maximize the Last Element",
+    "statement": "You are given an array a of n integers, where n is odd.\n\nIn one operation, you will remove two adjacent elements from the array a, and then concatenate the remaining parts of the array. For example, given the array [4,7,4,2,9], we can obtain the arrays [4,2,9] and [4,7,9] by the operations [underline4,7, 4,2,9] → [4,2,9] and [4,7,underline4,2,9] → [4,7,9] respectively. However, we cannot obtain the array [7,2,9] as it requires deleting non-adjacent elements [underline4,7,underline4,2,9].\n\nYou will repeatedly perform this operation until exactly one element remains in a.\n\nFind the maximum possible value of the remaining element in a.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 99; n is odd) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array a.\n\nNote that there is no bound on the sum of n over all test cases.\n\nFor each test case, output a single integer — the maximum possible value of the remaining element in a.\n\nIn the first test case, the array a is [6]. Since there is only one element, no operations are needed. The maximum possible value of the remaining element is 6.\n\nIn the second test case, the array a is [1, 3, 2]. We can remove the first two elements [underline1, 3, 2] → [2], or remove the last two elements [1, underline3, 2] → [1]. Therefore, the maximum possible value of the remaining element is 2.\n\nIn the third test case, the array a is [4, 7, 4, 2, 9]. One way to maximize the remaining element is [4, underline7, 4, 2, 9] → [underline4, 2, 9] → [9]. Therefore, the maximum possible value of the remaining element is 9.\n\nIn the fourth test case, the array a is [3, 1, 4, 1, 5, 9, 2]. It can be shown that the maximum possible value of the remaining element is 5.\n\nInput:\n```\n41631 3 254 7 4 2 973 1 4 1 5 9 2\n```\n\nOutput:\n```\n6\n2\n9\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 99; n is odd) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array a.\n\nNote that there is no bound on the sum of n over all test cases.",
+    "output": "For each test case, output a single integer — the maximum possible value of the remaining element in a.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

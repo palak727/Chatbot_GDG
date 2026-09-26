@@ -1,0 +1,16 @@
+{
+    "id": "1157A",
+    "contest_id": 1157,
+    "problem_letter": "A",
+    "title": "A. Reachable Numbers",
+    "statement": "Let's denote a function f(x) in such a way: we add 1 to x, then, while there is at least one trailing zero in the resulting number, we remove that zero. For example,\n\nWe say that some number y is reachable from x if we can apply function f to x some (possibly zero) times so that we get y as a result. For example, 102 is reachable from 10098 because f(f(f(10098))) = f(f(10099)) = f(101) = 102; and any number is reachable from itself.\n\nYou are given a number n; your task is to count how many different numbers are reachable from n.\n\nThe first line contains one integer n (1 ≤ n ≤ 10^9).\n\nPrint one integer: the number of different numbers that are reachable from n.\n\nThe numbers that are reachable from 1098 are:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1098, 1099.\n\nInput:\n```\n1098\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n10\n```\n\nOutput:\n```\n19\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^9).",
+    "output": "Print one integer: the number of different numbers that are reachable from n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1364A",
+    "contest_id": 1364,
+    "problem_letter": "A",
+    "title": "A. XXXXX",
+    "statement": "Ehab loves number theory, but for some reason he hates the number x. Given an array a, find the length of its longest subarray such that the sum of its elements isn't divisible by x, or determine that such subarray doesn't exist.\n\nAn array a is a subarray of an array b if a can be obtained from b by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line contains an integer t (1 ≤ t ≤ 5) — the number of test cases you need to solve. The description of the test cases follows.\n\nThe first line of each test case contains 2 integers n and x (1 ≤ n ≤ 10^5, 1 ≤ x ≤ 10^4) — the number of elements in the array a and the number that Ehab hates.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^4) — the elements of the array a.\n\nFor each testcase, print the length of the longest subarray whose sum isn't divisible by x. If there's no such subarray, print -1.\n\nIn the first test case, the subarray [2,3] has sum of elements 5, which isn't divisible by 3.\n\nIn the second test case, the sum of elements of the whole array is 6, which isn't divisible by 4.\n\nIn the third test case, all subarrays have an even sum, so the answer is -1.\n\nInput:\n```\n3\n3 3\n1 2 3\n3 4\n1 2 3\n2 2\n0 6\n```\n\nOutput:\n```\n2\n3\n-1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 5) — the number of test cases you need to solve. The description of the test cases follows.\n\nThe first line of each test case contains 2 integers n and x (1 ≤ n ≤ 10^5, 1 ≤ x ≤ 10^4) — the number of elements in the array a and the number that Ehab hates.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^4) — the elements of the array a.",
+    "output": "For each testcase, print the length of the longest subarray whose sum isn't divisible by x. If there's no such subarray, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "number theory",
+        "two pointers",
+        "*1200"
+    ],
+    "rating": 1200
+}

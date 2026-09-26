@@ -1,0 +1,17 @@
+{
+    "id": "1791A",
+    "contest_id": 1791,
+    "problem_letter": "A",
+    "title": "A. Codeforces Checking",
+    "statement": "Given a lowercase Latin character (letter), check if it appears in the string textttcodeforces.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 26) — the number of test cases.\n\nThe only line of each test case contains a character c — a single lowercase Latin character (letter).\n\nFor each test case, output \"YES\" (without quotes) if c satisfies the condition, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nInput:\n```\n10abcdefghij\n```\n\nOutput:\n```\nNO\nNO\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 26) — the number of test cases.\n\nThe only line of each test case contains a character c — a single lowercase Latin character (letter).",
+    "output": "For each test case, output \"YES\" (without quotes) if c satisfies the condition, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

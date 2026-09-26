@@ -1,0 +1,22 @@
+{
+    "id": "1605D",
+    "contest_id": 1605,
+    "problem_letter": "D",
+    "title": "D. Treelabeling",
+    "statement": "Eikooc and Sushi play a game.\n\nThe game is played on a tree having n nodes numbered 1 to n. Recall that a tree having n nodes is an undirected, connected graph with n-1 edges.\n\nThey take turns alternately moving a token on the tree. Eikooc makes the first move, placing the token on any node of her choice. Sushi makes the next move, followed by Eikooc, followed by Sushi, and so on. In each turn after the first, a player must move the token to a node u such that\n\nHere x oplus y denotes the bitwise XOR operation on integers x and y.\n\nBoth the players play optimally. The player who is unable to make a move loses.\n\nThe following are examples which demonstrate the rules of the game.\n\nBefore the game begins, Eikooc decides to sneakily relabel the nodes of the tree in her favour. Formally, a relabeling is a permutation p of length n (sequence of n integers wherein each integer from 1 to n occurs exactly once) where p_i denotes the new numbering of node i.\n\nShe wants to maximize the number of nodes she can choose in the first turn which will guarantee her a win. Help Eikooc find any relabeling which will help her do so.\n\nThe first line contains a single integer t~(1 ≤ t ≤ 10^5) — the number of test cases. The description of each test case is as follows.\n\nThe first line of each test case contains an integer n~(1 ≤ n ≤ 2·10^5) — the number of nodes in the tree.\n\nThe next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n; u ≠ v) — denoting an edge between nodes u and v.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case print any suitable relabeling — a permutation of length n which maximizes the number of nodes that can be chosen in the first turn that guarantee a win for Eikooc. If there are multiple such relabelings, you may print any of them.\n\nIn the first test case, Eikooc has only one choice. Sushi will have no moves to play after Eikooc chooses this node and Eikooc will win.\n\nIn the second test case, 1 oplus 2 = 3 nleq min(1, 2). Hence, after Eikooc picks either of the nodes, Sushi will have no moves to play and Eikooc will win. Both {1, 2} and {2, 1} are optimal relabelings.\n\nInput:\n```\n3\n1\n2\n1 2\n3\n1 2\n1 3\n```\n\nOutput:\n```\n1\n2 1\n1 2 3\n```",
+    "input": "The first line contains a single integer t~(1 ≤ t ≤ 10^5) — the number of test cases. The description of each test case is as follows.\n\nThe first line of each test case contains an integer n~(1 ≤ n ≤ 2·10^5) — the number of nodes in the tree.\n\nThe next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n; u ≠ v) — denoting an edge between nodes u and v.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case print any suitable relabeling — a permutation of length n which maximizes the number of nodes that can be chosen in the first turn that guarantee a win for Eikooc. If there are multiple such relabelings, you may print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dfs and similar",
+        "games",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

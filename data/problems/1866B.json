@@ -1,0 +1,18 @@
+{
+    "id": "1866B",
+    "contest_id": 1866,
+    "problem_letter": "B",
+    "title": "B. Battling with Numbers",
+    "statement": "On the trip to campus during the mid semester exam period, Chaneka thinks of two positive integers X and Y. Since the two integers can be very big, both are represented using their prime factorisations, such that:\n\nChaneka ponders about these two integers for too long throughout the trip, so Chaneka's friend commands her \"Gece, deh!\" (move fast) in order to not be late for the exam.\n\nBecause of that command, Chaneka comes up with a problem, how many pairs of positive integers p and q such that LCM(p, q) = X and GCD(p, q) = Y. Since the answer can be very big, output the answer modulo 998,244,353.\n\nNotes:\n\nThe first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of distinct primes in the prime factorisation of X.\n\nThe second line contains N integers A_1, A_2, A_3, …, A_N (2 ≤ A_1 < A_2 < … < A_N ≤ 2·10^6; each A_i is prime) — the primes in the prime factorisation of X.\n\nThe third line contains N integers B_1, B_2, B_3, …, B_N (1 ≤ B_i ≤ 10^5) — the exponents in the prime factorisation of X.\n\nThe fourth line contains a single integer M (1 ≤ M ≤ 10^5) — the number of distinct primes in the prime factorisation of Y.\n\nThe fifth line contains M integers C_1, C_2, C_3, …, C_M (2 ≤ C_1 < C_2 < … < C_M ≤ 2·10^6; each C_j is prime) — the primes in the prime factorisation of Y.\n\nThe sixth line contains M integers D_1, D_2, D_3, …, D_M (1 ≤ D_j ≤ 10^5) — the exponents in the prime factorisation of Y.\n\nAn integer representing the number of pairs of positive integers p and q such that LCM(p, q) = X and GCD(p, q) = Y, modulo 998,244,353.\n\nIn the first example, the integers are as follows:\n\nThe following are all possible pairs of p and q:\n\nIn the third example, the integers are as follows:\n\nThere is no pair p and q that simultaneously satisfies LCM(p,q)=10 and GCD(p,q)=6.\n\nInput:\n```\n4\n2 3 5 7\n2 1 1 2\n2\n3 7\n1 1\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n2\n1299721 1999993\n100000 265\n2\n1299721 1999993\n100000 265\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2\n2 5\n1 1\n2\n2 3\n1 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of distinct primes in the prime factorisation of X.\n\nThe second line contains N integers A_1, A_2, A_3, …, A_N (2 ≤ A_1 < A_2 < … < A_N ≤ 2·10^6; each A_i is prime) — the primes in the prime factorisation of X.\n\nThe third line contains N integers B_1, B_2, B_3, …, B_N (1 ≤ B_i ≤ 10^5) — the exponents in the prime factorisation of X.\n\nThe fourth line contains a single integer M (1 ≤ M ≤ 10^5) — the number of distinct primes in the prime factorisation of Y.\n\nThe fifth line contains M integers C_1, C_2, C_3, …, C_M (2 ≤ C_1 < C_2 < … < C_M ≤ 2·10^6; each C_j is prime) — the primes in the prime factorisation of Y.\n\nThe sixth line contains M integers D_1, D_2, D_3, …, D_M (1 ≤ D_j ≤ 10^5) — the exponents in the prime factorisation of Y.",
+    "output": "An integer representing the number of pairs of positive integers p and q such that LCM(p, q) = X and GCD(p, q) = Y, modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

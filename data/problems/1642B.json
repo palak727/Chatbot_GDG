@@ -1,0 +1,16 @@
+{
+    "id": "1642B",
+    "contest_id": 1642,
+    "problem_letter": "B",
+    "title": "B. Power Walking",
+    "statement": "Sam is a kindergartener, and there are n children in his group. He decided to create a team with some of his children to play \"brawl:go 2\".\n\nSam has n power-ups, the i-th has type a_i. A child's strength is equal to the number of different types among power-ups he has.\n\nFor a team of size k, Sam will distribute all n power-ups to k children in such a way that each of the k children receives at least one power-up, and each power-up is given to someone.\n\nFor each integer k from 1 to n, find the minimum sum of strengths of a team of k children Sam can get.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 3·10^5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — types of Sam's power-ups.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor every test case print n integers.\n\nThe k-th integer should be equal to the minimum sum of strengths of children in the team of size k that Sam can get.\n\nOne of the ways to give power-ups to minimise the sum of strengths in the first test case:\n\nOne of the ways to give power-ups to minimise the sum of strengths in the second test case:\n\nInput:\n```\n231 1 265 1 2 2 2 4\n```\n\nOutput:\n```\n2 2 3 \n4 4 4 4 5 6 \n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 3·10^5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — types of Sam's power-ups.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For every test case print n integers.\n\nThe k-th integer should be equal to the minimum sum of strengths of children in the team of size k that Sam can get.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

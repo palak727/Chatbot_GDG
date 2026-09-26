@@ -1,0 +1,20 @@
+{
+    "id": "1932C",
+    "contest_id": 1932,
+    "problem_letter": "C",
+    "title": "C. LR-remainders",
+    "statement": "You are given an array a of length n, a positive integer m, and a string of commands of length n. Each command is either the character 'L' or the character 'R'.\n\nProcess all n commands in the order they are written in the string s. Processing a command is done as follows:\n\nNote that after each move, the length of the array a decreases by 1, and after processing all commands, it will be empty.\n\nWrite a program that will process all commands in the order they are written in the string s (from left to right).\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then descriptions of t test cases follow.\n\nEach test case of the input is given by three lines.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10^4) — the initial length of the array a and the value to take the remainder by.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4) — the elements of the array a.\n\nThe third line contains a string s consisting of n characters 'L' and 'R'.\n\nIt is guaranteed that the sum of the values of n for all test cases in a test does not exceed 2·10^5.\n\nFor each test case, output n integers b_1, b_2, …, b_n, where b_i is the remainder when dividing the product of all elements of the current state of the array a by m at the beginning of the execution of the i-th command.\n\nIn the first test case of the example:\n\nInput:\n```\n44 63 1 4 2LRRL5 11 1 1 1 1LLLLL6 81 2 3 4 5 6RLLLRR1 1000010000R\n```\n\nOutput:\n```\n0 2 4 1 \n0 0 0 0 0 \n0 0 0 4 4 4 \n0 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then descriptions of t test cases follow.\n\nEach test case of the input is given by three lines.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10^4) — the initial length of the array a and the value to take the remainder by.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4) — the elements of the array a.\n\nThe third line contains a string s consisting of n characters 'L' and 'R'.\n\nIt is guaranteed that the sum of the values of n for all test cases in a test does not exceed 2·10^5.",
+    "output": "For each test case, output n integers b_1, b_2, …, b_n, where b_i is the remainder when dividing the product of all elements of the current state of the array a by m at the beginning of the execution of the i-th command.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "math",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

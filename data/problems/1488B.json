@@ -1,0 +1,17 @@
+{
+    "id": "1488B",
+    "contest_id": 1488,
+    "problem_letter": "B",
+    "title": "B. RBS Deletion",
+    "statement": "A bracket sequence is a string containing only characters \"(\" and \")\". A regular bracket sequence (or, shortly, an RBS) is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters \"1\" and \"+\" between the original characters of the sequence. For example:\n\nYou are given a string s, which is an RBS. You can apply any number of operations to this string. Each operation can have one of the following types:\n\nThe operation 2 can be applied at most k times. Calculate the maximum number of operations you can apply until s becomes empty.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case is described by two lines. The first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n; n is even) — the length of s and the maximum number of operations of type 2 you can apply.\n\nThe second line contains a string s of n characters '(' and ')'. This string is an RBS.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print one integer — the maximum number of operations you can apply.\n\nInput:\n```\n3\n12 2\n(()())((()))\n6 3\n()()()\n8 1\n(((())))\n```\n\nOutput:\n```\n4\n3\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case is described by two lines. The first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n; n is even) — the length of s and the maximum number of operations of type 2 you can apply.\n\nThe second line contains a string s of n characters '(' and ')'. This string is an RBS.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print one integer — the maximum number of operations you can apply.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "greedy",
+        "*1800"
+    ],
+    "rating": 1800
+}

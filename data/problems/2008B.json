@@ -1,0 +1,18 @@
+{
+    "id": "2008B",
+    "contest_id": 2008,
+    "problem_letter": "B",
+    "title": "B. Square or Not",
+    "statement": "A beautiful binary matrix is a matrix that has ones on its edges and zeros inside.\n\nToday, Sakurako was playing with a beautiful binary matrix of size r × c and created a binary string s by writing down all the rows of the matrix, starting from the first and ending with the r-th. More formally, the element from the matrix in the i-th row and j-th column corresponds to the ((i-1)*c+j)-th element of the string.\n\nYou need to check whether the beautiful matrix from which the string s was obtained could be squared. In other words, you need to check whether the string s could have been build from a square beautiful binary matrix (i.e., one where r=c).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the string.\n\nThe second line of each test case contains the string s of length n. The string is always the result of writing out the strings of a beautiful matrix.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nPrint \"Yes\", if the original matrix could have been square, and \"No\" otherwise.\n\nFor the second test case, string 1111 can be obtained from the matrix:\n\nFor the third test case, string 111101111 can be obtained from the matrix:\n\nThere is no square matrix in the fourth case, such that the string can be obtained from it.\n\nInput:\n```\n5211411119111101111911111111112111110011111\n```\n\nOutput:\n```\nNo\nYes\nYes\nNo\nNo\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the string.\n\nThe second line of each test case contains the string s of length n. The string is always the result of writing out the strings of a beautiful matrix.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "Print \"Yes\", if the original matrix could have been square, and \"No\" otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

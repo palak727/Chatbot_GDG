@@ -1,0 +1,18 @@
+{
+    "id": "1517G",
+    "contest_id": 1517,
+    "problem_letter": "G",
+    "title": "G. Starry Night Camping",
+    "statement": "At the foot of Liyushan Mountain, n tents will be carefully arranged to provide accommodation for those who are willing to experience the joy of approaching nature, the tranquility of the night, and the bright starry sky.\n\nThe i-th tent is located at the point of (x_i, y_i) and has a weight of w_i. A tent is important if and only if both x_i and y_i are even. You need to remove some tents such that for each remaining important tent (x, y), there do not exist 3 other tents (x'_1, y'_1), (x'_2, y'_2) and (x'_3, y'_3) such that both conditions are true:\n\nPlease maximize the sum of the weights of the tents that are not removed. Print the maximum value.\n\nThe first line contains a single integer n (1≤ n≤ 1,000), representing the number of tents.\n\nEach of the next n lines contains three integers x_i, y_i and w_i (-10^9≤ x_i,y_i ≤ 10^9, 1≤ w_i≤ 10^9), representing the coordinate of the i-th tent and its weight. No two tents are located at the same point.\n\nA single integer — the maximum sum of the weights of the remaining tents.\n\nHere is an illustration of the second example. Black triangles indicate the important tents. This example also indicates all 8 forbidden patterns.\n\nInput:\n```\n5\n0 0 4\n0 1 5\n1 0 3\n1 1 1\n-1 1 2\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n32\n2 2 1\n2 3 1\n3 2 1\n3 3 1\n2 6 1\n2 5 1\n3 6 1\n3 5 1\n2 8 1\n2 9 1\n1 8 1\n1 9 1\n2 12 1\n2 11 1\n1 12 1\n1 11 1\n6 2 1\n7 2 1\n6 3 1\n5 3 1\n6 6 1\n7 6 1\n5 5 1\n6 5 1\n6 8 1\n5 8 1\n6 9 1\n7 9 1\n6 12 1\n5 12 1\n6 11 1\n7 11 1\n```\n\nOutput:\n```\n24\n```",
+    "input": "The first line contains a single integer n (1≤ n≤ 1,000), representing the number of tents.\n\nEach of the next n lines contains three integers x_i, y_i and w_i (-10^9≤ x_i,y_i ≤ 10^9, 1≤ w_i≤ 10^9), representing the coordinate of the i-th tent and its weight. No two tents are located at the same point.",
+    "output": "A single integer — the maximum sum of the weights of the remaining tents.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "flows",
+        "graphs",
+        "*3300"
+    ],
+    "rating": 3300
+}

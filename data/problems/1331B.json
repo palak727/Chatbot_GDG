@@ -1,0 +1,17 @@
+{
+    "id": "1331B",
+    "contest_id": 1331,
+    "problem_letter": "B",
+    "title": "B. Limericks",
+    "statement": "```\nThere was once young lass called Mary,  \nWhose jokes were occasionally scary.  \nOn this April's Fool  \nFixed limerick rules  \nAllowed her to trip the unwary.\n\nCan she fill all the lines\nTo work at all times?\nOn juggling the words\nRight around two-thirds\nShe nearly ran out of rhymes.\n```\n\nThe input contains a single integer a (4 ≤ a ≤ 998). Not every integer in the range is a valid input for the problem; you are guaranteed that the input will be a valid integer.\n\nOutput a single number.\n\nInput:\n```\n35\n```\n\nOutput:\n```\n57\n```\n\nInput:\n```\n57\n```\n\nOutput:\n```\n319\n```\n\nInput:\n```\n391\n```\n\nOutput:\n```\n1723\n```",
+    "input": "The input contains a single integer a (4 ≤ a ≤ 998). Not every integer in the range is a valid input for the problem; you are guaranteed that the input will be a valid integer.",
+    "output": "Output a single number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "math",
+        "number theory"
+    ],
+    "rating": null
+}

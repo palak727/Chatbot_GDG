@@ -1,0 +1,19 @@
+{
+    "id": "2053A",
+    "contest_id": 2053,
+    "problem_letter": "A",
+    "title": "A. Tender Carpenter",
+    "statement": "In his dream, Cocoly would go on a long holiday with no worries around him. So he would try out for many new things, such as... being a carpenter. To learn it well, Cocoly decides to become an apprentice of Master, but in front of him lies a hard task waiting for him to solve.\n\nCocoly is given an array a_1, a_2,…, a_n. Master calls a set of integers S stable if and only if, for any possible u, v, and w from the set S (note that u, v, and w do not necessarily have to be pairwise distinct), sticks of length u, v, and w can form a non-degenerate triangle^{∗}.\n\nCocoly is asked to partition the array a into several (possibly, 1 or n) non-empty continuous subsegments^{†}, such that: for each of the subsegments, the set containing all the elements in it is stable.\n\nMaster wants Cocoly to partition a in at least two different^{‡} ways. You have to help him determine whether it is possible.\n\n^{∗}A triangle with side lengths x, y, and z is called non-degenerate if and only if:\n\n^{†}A sequence b is a subsegment of a sequence c if b can be obtained from c by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\n^{‡}Two partitions are considered different if and only if at least one of the following holds:\n\nEach test contains multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 200) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 200) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^5) — the elements in the array a.\n\nFor each test case, print textttYES if there are at least two ways to partition a, and textttNO otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings textttyEs, textttyes, textttYes, and textttYES will be recognized as positive responses.\n\nIn the first test case, here are two possible partitions:\n\nNote that some other partitions also satisfy the constraints, such as [2], [3], [5], [7] and [2], [3], [5, 7].\n\nIn the second test case, Cocoly can only partition each element as a single subsegment, resulting in [115], [9], [2], [28]. Since we only have one possible partition, the answer is textttNO.\n\nIn the third test case, please note that the partition [8, 4], [1], [6], [2] does not satisfy the constraints, because {8, 4} is not a stable set: sticks of lengths 4, 4, and 8 cannot form a non-degenerate triangle.\n\nInput:\n```\n542 3 5 74115 9 2 2858 4 1 6 261 5 4 1 4 72100000 100000\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 200) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 200) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^5) — the elements in the array a.",
+    "output": "For each test case, print textttYES if there are at least two ways to partition a, and textttNO otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings textttyEs, textttyes, textttYes, and textttYES will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "geometry",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1876D",
+    "contest_id": 1876,
+    "problem_letter": "D",
+    "title": "D. Lexichromatography",
+    "statement": "Pak Chanek loves his faculty, the Faculty of Computer Science, University of Indonesia (Fasilkom). He wants to play with the colours of the faculty's logo, blue and red.\n\nThere is an array a consisting of n elements, element i has a value of a_i. Pak Chanek wants to colour each element in the array blue or red such that these following conditions are satisfied:\n\nHow many different colourings satisfy all those conditions? Since the answer can be very big, print the answer modulo 998,244,353. Two colourings are different if and only if there is at least one element that is blue in one colouring, but red in the other.\n\n^dagger A subsequence of an array is a sequence that can be obtained from the array by deleting some elements (possibly none), without changing the order of the remaining elements.\n\n^ddagger Let p and q be two different sequences. Sequence p is said to be lexicographically less than sequence q if and only if p is a prefix of q or there is an index i such that p_j=q_j holds for every 1≤ j < i, and p_i < q_i. In particular, an empty sequence is always lexicographically less than any non-empty sequence.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of array a.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (1≤ a_i≤2·10^5).\n\nAn integer representing the number of different colourings that satisfy all of the problem's conditions, modulo 998,244,353.\n\nIn the first example, the 3 ways for colouring all elements from index 1 to index 8 are:\n\nAs an example, if we colour the elements from index 1 to index 8 to be red, red, blue, red, red, blue, blue, blue, it is not valid colouring, because for subarray a[2..6], there are 0 blue elements with value 3 and 2 red elements with value 3, making subarray a[2..6] an imbalanced subarray.\n\nInput:\n```\n8\n1 3 1 2 3 2 3 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n1\n265\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of array a.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (1≤ a_i≤2·10^5).",
+    "output": "An integer representing the number of different colourings that satisfy all of the problem's conditions, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

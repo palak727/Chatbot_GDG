@@ -3,9 +3,9 @@
     "contest_id": 2199,
     "problem_letter": "I",
     "title": "I. Strange Process",
-    "statement": "You are given three arrays:\n\nWe perform the following process on these arrays. The process consists of $$m$$ stages. During the $$i$$-th stage, the following occurs:\n\nAn array of $$m$$ numbers from $$0$$ to $$n$$ is called achievable if it can be obtained as a result of this process as the array $$b$$.\n\nYour task is to count the number of achievable arrays.\n\nThe first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 10^4$$$).\n\nThe second line contains $$m$$ integers $$c_1, c_2, \\dots, c_m$$ ($$1 $\\leq c_i \\leq 50$$$).\n\nPrint one integer — the number of achievable arrays, taken modulo $$998244353$$.",
-    "input": "Input The first line contains two integers $$n$$ and $$m$$ ($$1 $\\leq n, m \\leq 10^4$$$). The second line contains $$m$$ integers $$c_1, c_2, \\dots, c_m$$ ($$1 $\\leq c_i \\leq 50$$$).",
-    "output": "Output Print one integer — the number of achievable arrays, taken modulo $$998244353$$.",
+    "statement": "You are given three arrays:\n\nWe perform the following process on these arrays. The process consists of m stages. During the i-th stage, the following occurs:\n\nAn array of m numbers from 0 to n is called achievable if it can be obtained as a result of this process as the array b.\n\nYour task is to count the number of achievable arrays.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 10^4).\n\nThe second line contains m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ 50).\n\nPrint one integer — the number of achievable arrays, taken modulo 998244353.\n\nInput:\n```\n4 34 2 3\n```\n\nOutput:\n```\n21\n```\n\nInput:\n```\n2 41 2 3 4\n```\n\nOutput:\n```\n51\n```\n\nInput:\n```\n1 247 34\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 10^4).\n\nThe second line contains m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ 50).",
+    "output": "Print one integer — the number of achievable arrays, taken modulo 998244353.",
     "time_limit": "2 seconds",
     "memory_limit": "512 megabytes",
     "tags": [

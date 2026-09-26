@@ -1,0 +1,16 @@
+{
+    "id": "1082B",
+    "contest_id": 1082,
+    "problem_letter": "B",
+    "title": "B. Vova and Trophies",
+    "statement": "Vova has won n trophies in different competitions. Each trophy is either golden or silver. The trophies are arranged in a row.\n\nThe beauty of the arrangement is the length of the longest subsegment consisting of golden trophies. Vova wants to swap two trophies (not necessarily adjacent ones) to make the arrangement as beautiful as possible — that means, to maximize the length of the longest such subsegment.\n\nHelp Vova! Tell him the maximum possible beauty of the arrangement if he is allowed to do at most one swap.\n\nThe first line contains one integer n (2 ≤ n ≤ 10^5) — the number of trophies.\n\nThe second line contains n characters, each of them is either G or S. If the i-th character is G, then the i-th trophy is a golden one, otherwise it's a silver trophy.\n\nPrint the maximum possible length of a subsegment of golden trophies, if Vova is allowed to do at most one swap.\n\nIn the first example Vova has to swap trophies with indices 4 and 10. Thus he will obtain the sequence \"GGGGGGGSGS\", the length of the longest subsegment of golden trophies is 7.\n\nIn the second example Vova can make no swaps at all. The length of the longest subsegment of golden trophies in the sequence is 4.\n\nIn the third example Vova cannot do anything to make the length of the longest subsegment of golden trophies in the sequence greater than 0.\n\nInput:\n```\n10\nGGGSGGGSGG\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n4\nGGGG\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n3\nSSS\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 10^5) — the number of trophies.\n\nThe second line contains n characters, each of them is either G or S. If the i-th character is G, then the i-th trophy is a golden one, otherwise it's a silver trophy.",
+    "output": "Print the maximum possible length of a subsegment of golden trophies, if Vova is allowed to do at most one swap.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1600"
+    ],
+    "rating": 1600
+}

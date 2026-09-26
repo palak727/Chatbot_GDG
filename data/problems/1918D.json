@@ -1,0 +1,20 @@
+{
+    "id": "1918D",
+    "contest_id": 1918,
+    "problem_letter": "D",
+    "title": "D. Blocking Elements",
+    "statement": "You are given an array of numbers a_1, a_2, …, a_n. Your task is to block some elements of the array in order to minimize its cost. Suppose you block the elements with indices 1 ≤ b_1 < b_2 < … < b_m ≤ n. Then the cost of the array is calculated as the maximum of:\n\nFor example, if n = 6, the original array is [1, 4, 5, 3, 3, 2], and you block the elements at positions 2 and 5, then the cost of the array will be the maximum of the sum of the blocked elements (4 + 3 = 7) and the sums of the subarrays (1, 5 + 3 = 8, 2), which is max(7,1,8,2) = 8.\n\nYou need to output the minimum cost of the array after blocking.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 30,000) — the number of queries.\n\nEach test case consists of two lines. The first line contains an integer n (1 ≤ n ≤ 10^5) — the length of the array a. The second line contains n elements a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single number — the minimum cost of blocking the array.\n\nThe first test case matches with the array from the statement. To obtain a cost of 7, you need to block the elements at positions 2 and 4. In this case, the cost of the array is calculated as the maximum of:\n\nSo the cost is max(7,5) = 7.\n\nIn the second test case, you can block the elements at positions 1 and 4.\n\nIn the third test case, to obtain the answer 11, you can block the elements at positions 2 and 5. There are other ways to get this answer, for example, blocking positions 4 and 6.\n\nInput:\n```\n361 4 5 3 3 251 2 3 4 564 1 6 3 10 7\n```\n\nOutput:\n```\n7\n5\n11\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 30,000) — the number of queries.\n\nEach test case consists of two lines. The first line contains an integer n (1 ≤ n ≤ 10^5) — the length of the array a. The second line contains n elements a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single number — the minimum cost of blocking the array.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "implementation",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

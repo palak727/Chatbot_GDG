@@ -1,0 +1,21 @@
+{
+    "id": "2065H",
+    "contest_id": 2065,
+    "problem_letter": "H",
+    "title": "H. Bro Thinks He's Him",
+    "statement": "Skibidus thinks he's Him! He proved it by solving this difficult task. Can you also prove yourself?\n\nGiven a binary string^{∗} t, f(t) is defined as the minimum number of contiguous substrings, each consisting of identical characters, into which t can be partitioned. For example, f(texttt00110001) = 4 because t can be partitioned as texttt[00][11][000][1] where each bracketed segment consists of identical characters.\n\nSkibidus gives you a binary string s and q queries. In each query, a single character of the string is flipped (i.e. texttt0 changes to texttt1 and texttt1 changes to texttt0); changes are saved after the query is processed. After each query, output the sum over all f(b) where b is a non-empty subsequence^{†} of s, modulo 998,244,353.\n\n^{∗}A binary string consists of only characters texttt0 and texttt1.\n\n^{†}A subsequence of a string is a string which can be obtained by removing several (possibly zero) characters from the original string.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a binary string s (1 ≤ |s| ≤ 2·10^5).\n\nThe following line of each test case contains an integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe following line contains q integers v_1, v_2, …, v_q (1 ≤ v_i ≤ |s|), denoting s_v_i is flipped for the i'th query.\n\nIt is guaranteed that the sum of |s| and the sum of q over all test cases does not exceed 2·10^5.\n\nFor each test case, output q integers on a single line — the answer after each query modulo 998,244,353.\n\nIn the first test case, s becomes texttt001 after the first query. Let's calculate the answer for each subsequence:\n\nThe sum of these values is 10, modulo 998,244,353.\n\nInput:\n```\n310121 31011031 2 310111010157 2 4 4 1\n```\n\nOutput:\n```\n10 7 \n61 59 67 \n1495 1169 1417 1169 1396 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a binary string s (1 ≤ |s| ≤ 2·10^5).\n\nThe following line of each test case contains an integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe following line contains q integers v_1, v_2, …, v_q (1 ≤ v_i ≤ |s|), denoting s_v_i is flipped for the i'th query.\n\nIt is guaranteed that the sum of |s| and the sum of q over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output q integers on a single line — the answer after each query modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "math",
+        "matrices",
+        "*2200"
+    ],
+    "rating": 2200
+}

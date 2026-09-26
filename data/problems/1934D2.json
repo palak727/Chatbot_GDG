@@ -1,0 +1,19 @@
+{
+    "id": "1934D2",
+    "contest_id": 1934,
+    "problem_letter": "D2",
+    "title": "D2. XOR Break — Game Version",
+    "statement": "This is an interactive problem.\n\nThis is the game version of the problem. Note that the solution of this problem may or may not share ideas with the solution of the solo version. You can solve and get points for both versions independently.\n\nAlice and Bob are playing a game. The game starts with a positive integer n, with players taking turns. On each turn of the game, the following sequence of events takes place:\n\nAs Alice, your goal is to win. You can execute a maximum of 63 break operations. You have the choice to play first or second. The system will act for Bob.\n\nHere oplus denotes the bitwise XOR operation.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^18) — the number the game starts with.\n\nFor each test case, the interaction begins by reading the integer n.\n\nAfter reading n, print a single line containing either \"first\" or \"second\", denoting what you want to play as (as first or second correspondingly).\n\nOn Alice's turn, you are required to print two positive integers, p_1 and p_2 such that 0 < p_1 < p, 0 < p_2 < p and p_1 oplus p_2 = p. Here, p equals one of the two integers printed by Bob in the previous turn. If no turn has occurred previously, p is equal to n. If Alice cannot perform a break operation, print \"0 0\" to receive a Wrong answer verdict.\n\nOn Bob's turn, you should read two integers, p_1 and p_2 such that 0 < p_1 < p, 0 < p_2 < p and p_1 oplus p_2 = p. Here, p equals one of the two integers printed by Alice in the previous turn. If no turn has occurred previously, p is equal to n. If Bob cannot perform a break operation p_1 = 0 and p_2 = 0 in which case you should proceed to the next test case.\n\nIf any break operation performed by Alice is invalid, the interactor prints \"-1 -1\" and your code should promptly exit to receive a wrong answer verdict.\n\nIf Alice performs 63 turns and Bob can still execute a break operation on the current integers, the interactor prints \"-1 -1\", and your code should promptly exit to receive a wrong answer verdict.\n\nAfter printing a query, do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nIn this problem, hacks are disabled.\n\nExplanation for the interaction.\n\nThis table is for explanation only and does not reflect the actual behavior of the interactor.\n\nNote that in the last test case Bob could choose p_1 and perform a break operation but he gave up.\n\nInput:\n```\n4\n1\n\n0 0\n3\n\n\n0 0\n13\n\n\n3 4\n\n0 0\n777777770001\n\n\n0 0\n```\n\nOutput:\n```\nsecond\n\n\nfirst\n2 1\n\n\nfirst\n10 7\n\n1 2\n\n\nfirst\n777777770000 1\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^18) — the number the game starts with.",
+    "output": "",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "games",
+        "greedy",
+        "interactive",
+        "*2400"
+    ],
+    "rating": 2400
+}

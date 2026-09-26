@@ -1,0 +1,17 @@
+{
+    "id": "1559B",
+    "contest_id": 1559,
+    "problem_letter": "B",
+    "title": "B. Mocha and Red and Blue",
+    "statement": "As their story unravels, a timeless tale is told once again...\n\nShirahime, a friend of Mocha's, is keen on playing the music game Arcaea and sharing Mocha interesting puzzles to solve. This day, Shirahime comes up with a new simple puzzle and wants Mocha to solve them. However, these puzzles are too easy for Mocha to solve, so she wants you to solve them and tell her the answers. The puzzles are described as follow.\n\nThere are n squares arranged in a row, and each of them can be painted either red or blue.\n\nAmong these squares, some of them have been painted already, and the others are blank. You can decide which color to paint on each blank square.\n\nSome pairs of adjacent squares may have the same color, which is imperfect. We define the imperfectness as the number of pairs of adjacent squares that share the same color.\n\nFor example, the imperfectness of \"BRRRBBR\" is 3, with \"BB\" occurred once and \"RR\" occurred twice.\n\nYour goal is to minimize the imperfectness and print out the colors of the squares after painting.\n\nEach test contains multiple test cases.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Each test case consists of two lines.\n\nThe first line of each test case contains an integer n (1≤ n≤ 100) — the length of the squares row.\n\nThe second line of each test case contains a string s with length n, containing characters 'B', 'R' and '?'. Here 'B' stands for a blue square, 'R' for a red square, and '?' for a blank square.\n\nFor each test case, print a line with a string only containing 'B' and 'R', the colors of the squares after painting, which imperfectness is minimized. If there are multiple solutions, print any of them.\n\nIn the first test case, if the squares are painted \"BRRBRBR\", the imperfectness is 1 (since squares 2 and 3 have the same color), which is the minimum possible imperfectness.\n\nInput:\n```\n5\n7\n?R???BR\n7\n???R???\n1\n?\n1\nB\n10\n?R??RB??B?\n```\n\nOutput:\n```\nBRRBRBR\nBRBRBRB\nB\nB\nBRRBRBBRBR\n```",
+    "input": "Each test contains multiple test cases.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Each test case consists of two lines.\n\nThe first line of each test case contains an integer n (1≤ n≤ 100) — the length of the squares row.\n\nThe second line of each test case contains a string s with length n, containing characters 'B', 'R' and '?'. Here 'B' stands for a blue square, 'R' for a red square, and '?' for a blank square.",
+    "output": "For each test case, print a line with a string only containing 'B' and 'R', the colors of the squares after painting, which imperfectness is minimized. If there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

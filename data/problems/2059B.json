@@ -1,0 +1,19 @@
+{
+    "id": "2059B",
+    "contest_id": 2059,
+    "problem_letter": "B",
+    "title": "B. Cost of the Array",
+    "statement": "You are given an array a of length n and an even integer k (2 ≤ k ≤ n). You need to split the array a into exactly k non-empty subarrays^dagger such that each element of the array a belongs to exactly one subarray.\n\nNext, all subarrays with even indices (second, fourth, …, k-th) are concatenated into a single array b. After that, 0 is added to the end of the array b.\n\nThe cost of the array b is defined as the minimum index i such that b_i ≠ i. For example, the cost of the array b = [1, 2, 4, 5, 0] is 3, since b_1 = 1, b_2 = 2, and b_3 ≠ 3. Determine the minimum cost of the array b that can be obtained with an optimal partitioning of the array a into subarrays.\n\n^daggerAn array x is a subarray of an array y if x can be obtained from y by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 2·10^5, k is even) — the length of the array a and the number of subarrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum cost of the array b that can be obtained.\n\nIn the first test case, there are only two possible partitionings: [[1], [1, 1]] and [[1, 1], [1]]. In either case, b_1 = 1, and b_2 ≠ 2, so the cost is 2.\n\nIn the second test case, there is only one possible partitioning, where b = [1, 2, 3, 4, 0], so the cost is 5 (b_5 = 0 ≠ 5).\n\nIn the third test case, the following partitioning works: [[1], [1, 1], [2], [2]]. Then b = [1, 1, 2, 0], and the cost is 2.\n\nInput:\n```\n43 21 1 18 81 1 2 2 3 3 4 45 41 1 1 2 25 41 1 1000000000 2 2\n```\n\nOutput:\n```\n2\n5\n2\n1\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 2·10^5, k is even) — the length of the array a and the number of subarrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum cost of the array b that can be obtained.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

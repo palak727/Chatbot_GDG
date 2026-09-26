@@ -1,0 +1,22 @@
+{
+    "id": "1923F",
+    "contest_id": 1923,
+    "problem_letter": "F",
+    "title": "F. Shrink-Reverse",
+    "statement": "You are given a binary string s of length n (a string consisting of n characters, and each character is either 0 or 1).\n\nLet's look at s as at a binary representation of some integer, and name that integer as the value of string s. For example, the value of 000 is 0, the value of 01101 is 13, \"100000\" is 32 and so on.\n\nYou can perform at most k operations on s. Each operation should have one of the two following types:\n\nWhat is the minimum value of s you can achieve by performing at most k operations on s?\n\nThe first line contains two integers n and k (2 ≤ n ≤ 5·10^5; 1 ≤ k ≤ n) — the length of the string s and the maximum number of operations.\n\nThe second line contains the string s of length n consisting of characters 0 and/or 1.\n\nAdditional constraint on the input: s contains at least one 1.\n\nPrint a single integer — the minimum value of s you can achieve using no more than k operations. Since the answer may be too large, print it modulo 10^9 + 7.\n\nNote that you need to minimize the original value, not the remainder.\n\nIn the first example, one of the optimal strategies is the following:\n\nIn the second example, one of the optimal strategies is the following:\n\nInput:\n```\n8 210010010\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n8 201101000\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n30 30111111111111111111111111111111\n```\n\nOutput:\n```\n73741816\n```\n\nInput:\n```\n14 110110001111100\n```\n\nOutput:\n```\n3197\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 5·10^5; 1 ≤ k ≤ n) — the length of the string s and the maximum number of operations.\n\nThe second line contains the string s of length n consisting of characters 0 and/or 1.\n\nAdditional constraint on the input: s contains at least one 1.",
+    "output": "Print a single integer — the minimum value of s you can achieve using no more than k operations. Since the answer may be too large, print it modulo 10^9 + 7.\n\nNote that you need to minimize the original value, not the remainder.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "hashing",
+        "implementation",
+        "string suffix structures",
+        "strings",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1115G1",
+    "contest_id": 1115,
+    "problem_letter": "G1",
+    "title": "G1. AND oracle",
+    "statement": "Implement a quantum oracle on N qubits which implements the following function: f(vecx) = x_0 wedge x_1 wedge dotsb wedge x_{N-1}\n\nYou have to implement an operation which takes the following inputs:\n\nand performs a transformation |xrangle|yrangle → |xrangle|y oplus f(x)rangle. The operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (x : Qubit[], y : Qubit) : Unit {\n        body (...) {\n            // your code here\n        }\n        adjoint auto;\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1100"
+    ],
+    "rating": 1100
+}

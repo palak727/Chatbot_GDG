@@ -1,0 +1,19 @@
+{
+    "id": "1918A",
+    "contest_id": 1918,
+    "problem_letter": "A",
+    "title": "A. Brick Wall",
+    "statement": "A brick is a strip of size 1 × k, placed horizontally or vertically, where k can be an arbitrary number that is at least 2 (k ≥ 2).\n\nA brick wall of size n × m is such a way to place several bricks inside a rectangle n × m, that all bricks lie either horizontally or vertically in the cells, do not cross the border of the rectangle, and that each cell of the n × m rectangle belongs to exactly one brick. Here n is the height of the rectangle n × m and m is the width. Note that there can be bricks with different values of k in the same brick wall.\n\nThe wall stability is the difference between the number of horizontal bricks and the number of vertical bricks. Note that if you used 0 horizontal bricks and 2 vertical ones, then the stability will be -2, not 2.\n\nWhat is the maximal possible stability of a wall of size n × m?\n\nIt is guaranteed that under restrictions in the statement at least one n × m wall exists.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10,000), the number of test cases.\n\nThe only line of each test case contains two integers n and m (2 ≤ n,,m ≤ 10^4).\n\nFor each test case, print one integer, the maximum stability of a wall of size n × m.\n\nIn the 1st test case, the maximum stability of 2 is obtained by placing two horizontal bricks 1 × 2 one on top of the other.\n\nIn the 2nd test case, one can get the maximum stability of 28 by placing 4 horizontal bricks 1 × 2 in each of the 7 rows.\n\nInput:\n```\n52 27 816 93 510000 10000\n```\n\nOutput:\n```\n2\n28\n64\n6\n50000000\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10,000), the number of test cases.\n\nThe only line of each test case contains two integers n and m (2 ≤ n,,m ≤ 10^4).",
+    "output": "For each test case, print one integer, the maximum stability of a wall of size n × m.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1933A",
+    "contest_id": 1933,
+    "problem_letter": "A",
+    "title": "A. Turtle Puzzle: Rearrange and Negate",
+    "statement": "You are given an array a of n integers. You must perform the following two operations on the array (the first, then the second):\n\nWhat is the maximum sum of the array elements after performing these two operations (the first, then the second)?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of elements in array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-100 ≤ a_i ≤ 100) — elements of the array.\n\nFor each test case, output the maximum sum of the array elements after sequentially performing the two given operations.\n\nIn the first test case, you can first rearrange the array to get [3,-2,-3] (operation 1), then choose l = 2, r = 3 and get the sum 3 + -((-2) + (-3)) = 8 (operation 2).\n\nIn the second test case, you can do nothing in both operations and get the sum 0.\n\nIn the third test case, you can do nothing in both operations and get the sum 0 + 1 = 1.\n\nIn the fourth test case, you can first leave the order unchanged (operation 1), then choose l = 1, r = 1 and get the sum -(-99) = 99 (operation 2).\n\nIn the fifth test case, you can first leave the order unchanged (operation 1), then choose l = 2, r = 3 and get the sum 10 + -((-2) + (-3)) + 7 = 22 (operation 2).\n\nIn the sixth test case, you can first leave the order unchanged (operation 1), then choose l = 1, r = 5 and get the sum -((-1)+(-2)+(-3)+(-4)+(-5))=15 (operation 2).\n\nInput:\n```\n83-2 3 -31020 11-99410 -2 -3 75-1 -2 -3 -4 -56-41 22 -69 73 -15 -50121 2 3 4 5 6 7 8 9 10 11 12\n```\n\nOutput:\n```\n8\n0\n1\n99\n22\n15\n270\n78\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of elements in array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-100 ≤ a_i ≤ 100) — elements of the array.",
+    "output": "For each test case, output the maximum sum of the array elements after sequentially performing the two given operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

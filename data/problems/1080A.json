@@ -1,0 +1,16 @@
+{
+    "id": "1080A",
+    "contest_id": 1080,
+    "problem_letter": "A",
+    "title": "A. Petya and Origami",
+    "statement": "Petya is having a party soon, and he has decided to invite his n friends.\n\nHe wants to make invitations in the form of origami. For each invitation, he needs two red sheets, five green sheets, and eight blue sheets. The store sells an infinite number of notebooks of each color, but each notebook consists of only one color with k sheets. That is, each notebook contains k sheets of either red, green, or blue.\n\nFind the minimum number of notebooks that Petya needs to buy to invite all n of his friends.\n\nThe first line contains two integers n and k (1≤ n, k≤ 10^8) — the number of Petya's friends and the number of sheets in each notebook respectively.\n\nPrint one number — the minimum number of notebooks that Petya needs to buy.\n\nIn the first example, we need 2 red notebooks, 3 green notebooks, and 5 blue notebooks.\n\nIn the second example, we need 5 red notebooks, 13 green notebooks, and 20 blue notebooks.\n\nInput:\n```\n3 5\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n15 6\n```\n\nOutput:\n```\n38\n```",
+    "input": "The first line contains two integers n and k (1≤ n, k≤ 10^8) — the number of Petya's friends and the number of sheets in each notebook respectively.",
+    "output": "Print one number — the minimum number of notebooks that Petya needs to buy.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

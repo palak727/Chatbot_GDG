@@ -1,0 +1,18 @@
+{
+    "id": "1176A",
+    "contest_id": 1176,
+    "problem_letter": "A",
+    "title": "A. Divide it!",
+    "statement": "You are given an integer n.\n\nYou can perform any of the following operations with this number an arbitrary (possibly, zero) number of times:\n\nFor example, you can replace 30 with 15 using the first operation, with 20 using the second operation or with 24 using the third operation.\n\nYour task is to find the minimum number of moves required to obtain 1 from n or say that it is impossible to do it.\n\nYou have to answer q independent queries.\n\nThe first line of the input contains one integer q (1 ≤ q ≤ 1000) — the number of queries.\n\nThe next q lines contain the queries. For each query you are given the integer number n (1 ≤ n ≤ 10^18).\n\nPrint the answer for each query on a new line. If it is impossible to obtain 1 from n, print -1. Otherwise, print the minimum number of moves required to do it.\n\nInput:\n```\n7\n1\n10\n25\n30\n14\n27\n1000000000000000000\n```\n\nOutput:\n```\n0\n4\n6\n6\n-1\n6\n72\n```",
+    "input": "The first line of the input contains one integer q (1 ≤ q ≤ 1000) — the number of queries.\n\nThe next q lines contain the queries. For each query you are given the integer number n (1 ≤ n ≤ 10^18).",
+    "output": "Print the answer for each query on a new line. If it is impossible to obtain 1 from n, print -1. Otherwise, print the minimum number of moves required to do it.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

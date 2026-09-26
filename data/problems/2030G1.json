@@ -1,0 +1,18 @@
+{
+    "id": "2030G1",
+    "contest_id": 2030,
+    "problem_letter": "G1",
+    "title": "G1. The Destruction of the Universe (Easy Version)",
+    "statement": "This is the easy version of the problem. In this version, n ≤ 5000. You can only make hacks if both versions of the problem are solved.\n\nOrangutans are powerful beings—so powerful that they only need 1 unit of time to destroy every vulnerable planet in the universe!\n\nThere are n planets in the universe. Each planet has an interval of vulnerability [l, r], during which it will be exposed to destruction by orangutans. Orangutans can also expand the interval of vulnerability of any planet by 1 unit.\n\nSpecifically, suppose the expansion is performed on planet p with interval of vulnerability [l_p, r_p]. Then, the resulting interval of vulnerability may be either [l_p - 1, r_p] or [l_p, r_p + 1].\n\nGiven a set of planets, orangutans can destroy all planets if the intervals of vulnerability of all planets in the set intersect at least one common point. Let the score of such a set denote the minimum number of expansions that must be performed.\n\nOrangutans are interested in the sum of scores of all non-empty subsets of the planets in the universe. As the answer can be large, output it modulo 998,244,353.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of planets in the universe.\n\nThe following n lines contain two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the initial interval of vulnerability of the i-th planet.\n\nIt is guaranteed that the sum of n does not exceed 5000 over all test cases.\n\nFor each test case, output an integer — the sum of scores to destroy all non-empty subsets of the planets in the universe, modulo 998,244,353.\n\nIn the first testcase, there are seven non-empty subsets of planets we must consider:\n\nThe sum of scores of all non-empty subsets of the first testcase is 0·4 + 1·1 + 2·2 = 5.\n\nInput:\n```\n331 12 33 341 42 32 41 151 22 33 44 51 5\n```\n\nOutput:\n```\n5\n6\n24\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 5000) — the number of planets in the universe.\n\nThe following n lines contain two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the initial interval of vulnerability of the i-th planet.\n\nIt is guaranteed that the sum of n does not exceed 5000 over all test cases.",
+    "output": "For each test case, output an integer — the sum of scores to destroy all non-empty subsets of the planets in the universe, modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

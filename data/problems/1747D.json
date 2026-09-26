@@ -1,0 +1,19 @@
+{
+    "id": "1747D",
+    "contest_id": 1747,
+    "problem_letter": "D",
+    "title": "D. Yet Another Problem",
+    "statement": "You are given an array a of n integers a_1, a_2, a_3, …, a_n.\n\nYou have to answer q independent queries, each consisting of two integers l and r.\n\nYou can find more details about XOR operation here.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the length of the array a and the number of queries.\n\nThe next line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — the elements of the array a.\n\nThe i-th of the next q lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the description of the i-th query.\n\nFor each query, output a single integer — the answer to that query.\n\nIn the first query, l = 3, r = 4, subarray = [3, 3]. We can apply operation only to the subarrays of length 1, which won't change the array; hence it is impossible to make all elements equal to 0.\n\nIn the second query, l = 4, r = 6, subarray = [3, 1, 2]. We can choose the whole subarray (L = 4, R = 6) and replace all elements by their XOR (3 oplus 1 oplus 2) = 0, making the subarray [0, 0, 0].\n\nIn the fifth query, l = 1, r = 6, subarray = [3, 0, 3, 3, 1, 2]. We can make the operations as follows:\n\nInput:\n```\n7 6\n3 0 3 3 1 2 3\n3 4\n4 6\n3 7\n5 6\n1 6\n2 2\n```\n\nOutput:\n```\n-1\n1\n1\n-1\n2\n0\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the length of the array a and the number of queries.\n\nThe next line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — the elements of the array a.\n\nThe i-th of the next q lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the description of the i-th query.",
+    "output": "For each query, output a single integer — the answer to that query.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "constructive algorithms",
+        "data structures",
+        "*1900"
+    ],
+    "rating": 1900
+}

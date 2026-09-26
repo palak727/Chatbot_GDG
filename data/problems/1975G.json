@@ -1,0 +1,19 @@
+{
+    "id": "1975G",
+    "contest_id": 1975,
+    "problem_letter": "G",
+    "title": "G. Zimpha Fan Club",
+    "statement": "One day, Zimpha casually came up with a problem. As a member of \"Zimpha fan club\", you decided to solve that problem.\n\nYou are given two strings s and t of length n and m, respectively. Both strings only consist of lowercase English letters, - and *.\n\nYou need to replace all occurrences of * and -, observing the following rules:\n\nNote that you can replace two different instances of - with different characters. You can also replace each two different instances of * with different strings.\n\nSuppose s and t have been transformed into s' and t'. Now you're wondering if there's a replacement that makes s'=t'.\n\nThe first line of input contains two integers n and m (1 ≤ n, m ≤ 2·10^6) — the length of the strings s and t, respectively.\n\nThe second line contains the string s of length n. It is guaranteed that s only consists of lowercase English letters, - and *.\n\nThe third line contains the string t of length m. It is guaranteed that t only consists of lowercase English letters, - and *.\n\nFor each test case, output \"Yes\" if there is a replacement that makes s'=t', and output \"No\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).\n\nIn the second test case, we can transform both strings into ttklwxx. In s, - will be replaced with l. In t, * will be replaced by the empty string with the first and second - will be replaced with k and w respectively.\n\nIn the fifth test case, we can transform both strings into bulijiojioxdibuliduo.\n\nInput:\n```\n10 10justmonikaj-stsayori\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n7 8ttk-wxx*tt-l-xx\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n13 11asoulwangziji-soulg*z-y-\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n7 3abc*cbaa*c\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n20 18bulijiojio-dibuliduo*li*ji-*ox*i*-du*-\n```\n\nOutput:\n```\nYes\n```",
+    "input": "The first line of input contains two integers n and m (1 ≤ n, m ≤ 2·10^6) — the length of the strings s and t, respectively.\n\nThe second line contains the string s of length n. It is guaranteed that s only consists of lowercase English letters, - and *.\n\nThe third line contains the string t of length m. It is guaranteed that t only consists of lowercase English letters, - and *.",
+    "output": "For each test case, output \"Yes\" if there is a replacement that makes s'=t', and output \"No\" otherwise.\n\nYou can output \"Yes\" and \"No\" in any case (for example, strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive response).",
+    "time_limit": "12 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "fft",
+        "greedy",
+        "math",
+        "strings",
+        "*3000"
+    ],
+    "rating": 3000
+}

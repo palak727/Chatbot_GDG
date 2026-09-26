@@ -1,0 +1,20 @@
+{
+    "id": "1305G",
+    "contest_id": 1305,
+    "problem_letter": "G",
+    "title": "G. Kuroni and Antihype",
+    "statement": "Kuroni isn't good at economics. So he decided to found a new financial pyramid called Antihype. It has the following rules:\n\nn people have heard about Antihype recently, the i-th person's age is a_i. Some of them are friends, but friendship is a weird thing now: the i-th person is a friend of the j-th person if and only if a_i AND a_j = 0, where AND denotes the bitwise AND operation.\n\nNobody among the n people is a member of Antihype at the moment. They want to cooperate to join and invite each other to Antihype in a way that maximizes their combined gainings. Could you help them?\n\nThe first line contains a single integer n (1≤ n ≤ 2·10^5) — the number of people.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i ≤ 2·10^5) — the ages of the people.\n\nOutput exactly one integer — the maximum possible combined gainings of all n people.\n\nOnly the first and second persons are friends. The second can join Antihype and invite the first one, getting 2 for it.\n\nInput:\n```\n3\n1 2 3\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (1≤ n ≤ 2·10^5) — the number of people.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i ≤ 2·10^5) — the ages of the people.",
+    "output": "Output exactly one integer — the maximum possible combined gainings of all n people.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "dsu",
+        "graphs",
+        "*3500"
+    ],
+    "rating": 3500
+}

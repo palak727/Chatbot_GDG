@@ -1,0 +1,18 @@
+{
+    "id": "1585E",
+    "contest_id": 1585,
+    "problem_letter": "E",
+    "title": "E. Frequency Queries",
+    "statement": "Petya has a rooted tree with an integer written on each vertex. The vertex 1 is the root. You are to answer some questions about the tree.\n\nA tree is a connected graph without cycles. A rooted tree has a special vertex called the root. The parent of a node v is the next vertex on the shortest path from v to the root.\n\nEach question is defined by three integers v, l, and k. To get the answer to the question, you need to perform the following steps:\n\nFor example, if the sequence of integers on the path from v to the root is [2, 2, 1, 7, 1, 1, 4, 4, 4, 4], l = 2 and k = 2, then the answer is 1.\n\nPlease answer all questions about the tree.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^6). Description of the test cases follows.\n\nThe first line of each test case contains two integers n, q (1 ≤ n, q ≤ 10^6) — the number of vertices in the tree and the number of questions.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), where a_i is the number written on the i-th vertex.\n\nThe third line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n), where p_i is the parent of node i. It's guaranteed that the values p define a correct tree.\n\nEach of the next q lines contains three integers v, l, k (1 ≤ v, l, k ≤ n) — descriptions of questions.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases do not exceed 10^6.\n\nFor each question of each test case print the answer to the question. In case of multiple answers, print any.\n\nInput:\n```\n2\n3 3\n1 1 1\n1 2\n3 1 1\n3 1 2\n3 2 1\n5 5\n1 2 1 1 2\n1 1 2 2\n3 1 1\n2 1 2\n4 1 1\n4 2 1\n4 2 2\n```\n\nOutput:\n```\n1 -1 1 \n1 1 2 1 -1 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^6). Description of the test cases follows.\n\nThe first line of each test case contains two integers n, q (1 ≤ n, q ≤ 10^6) — the number of vertices in the tree and the number of questions.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), where a_i is the number written on the i-th vertex.\n\nThe third line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i ≤ n), where p_i is the parent of node i. It's guaranteed that the values p define a correct tree.\n\nEach of the next q lines contains three integers v, l, k (1 ≤ v, l, k ≤ n) — descriptions of questions.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases do not exceed 10^6.",
+    "output": "For each question of each test case print the answer to the question. In case of multiple answers, print any.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

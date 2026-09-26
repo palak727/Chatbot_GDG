@@ -1,0 +1,20 @@
+{
+    "id": "1296F",
+    "contest_id": 1296,
+    "problem_letter": "F",
+    "title": "F. Berland Beauty",
+    "statement": "There are n railway stations in Berland. They are connected to each other by n-1 railway sections. The railway network is connected, i.e. can be represented as an undirected tree.\n\nYou have a map of that network, so for each railway section you know which stations it connects.\n\nEach of the n-1 sections has some integer value of the scenery beauty. However, these values are not marked on the map and you don't know them. All these values are from 1 to 10^6 inclusive.\n\nYou asked m passengers some questions: the j-th one told you three values:\n\nYou are planning to update the map and set some value f_i on each railway section — the scenery beauty. The passengers' answers should be consistent with these values.\n\nPrint any valid set of values f_1, f_2, …, f_{n-1}, which the passengers' answer is consistent with or report that it doesn't exist.\n\nThe first line contains a single integer n (2 ≤ n ≤ 5000) — the number of railway stations in Berland.\n\nThe next n-1 lines contain descriptions of the railway sections: the i-th section description is two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), where x_i and y_i are the indices of the stations which are connected by the i-th railway section. All the railway sections are bidirected. Each station can be reached from any other station by the railway.\n\nThe next line contains a single integer m (1 ≤ m ≤ 5000) — the number of passengers which were asked questions. Then m lines follow, the j-th line contains three integers a_j, b_j and g_j (1 ≤ a_j, b_j ≤ n; a_j ≠ b_j; 1 ≤ g_j ≤ 10^6) — the departure station, the arrival station and the minimum scenery beauty along his path.\n\nIf there is no answer then print a single integer -1.\n\nOtherwise, print n-1 integers f_1, f_2, …, f_{n-1} (1 ≤ f_i ≤ 10^6), where f_i is some valid scenery beauty along the i-th railway section.\n\nIf there are multiple answers, you can print any of them.\n\nInput:\n```\n4\n1 2\n3 2\n3 4\n2\n1 2 5\n1 3 3\n```\n\nOutput:\n```\n5 3 5\n```\n\nInput:\n```\n6\n1 2\n1 6\n3 1\n1 5\n4 1\n4\n6 1 3\n3 4 1\n6 5 2\n1 2 5\n```\n\nOutput:\n```\n5 3 1 2 1 \n```\n\nInput:\n```\n6\n1 2\n1 6\n3 1\n1 5\n4 1\n4\n6 1 1\n3 4 3\n6 5 3\n1 2 4\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 5000) — the number of railway stations in Berland.\n\nThe next n-1 lines contain descriptions of the railway sections: the i-th section description is two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), where x_i and y_i are the indices of the stations which are connected by the i-th railway section. All the railway sections are bidirected. Each station can be reached from any other station by the railway.\n\nThe next line contains a single integer m (1 ≤ m ≤ 5000) — the number of passengers which were asked questions. Then m lines follow, the j-th line contains three integers a_j, b_j and g_j (1 ≤ a_j, b_j ≤ n; a_j ≠ b_j; 1 ≤ g_j ≤ 10^6) — the departure station, the arrival station and the minimum scenery beauty along his path.",
+    "output": "If there is no answer then print a single integer -1.\n\nOtherwise, print n-1 integers f_1, f_2, …, f_{n-1} (1 ≤ f_i ≤ 10^6), where f_i is some valid scenery beauty along the i-th railway section.\n\nIf there are multiple answers, you can print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "greedy",
+        "sortings",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

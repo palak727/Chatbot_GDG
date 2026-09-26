@@ -1,0 +1,17 @@
+{
+    "id": "1958H",
+    "contest_id": 1958,
+    "problem_letter": "H",
+    "title": "H. Composite Spells",
+    "statement": "Monocarp plays a fantasy RPG. His character is a mage, so he casts spells. There are two types of spells he knows — basic spells and composite spells.\n\nThere are n basic spells in Monocarp's spell book, numbered from 1 to n. Each basic spell simply changes the health of the target: either decreases it or increases it. The i-th basic spell changes the target's health value by b_i (increases by b_i if b_i is non-negative, or decreases by |b_i| if b_i is negative). If the target's health value goes to 0 or below, it dies, and all next spells cast at it do nothing.\n\nThere are also m composite spells in the spell book, numbered from n+1 to n+m. Each composite spell is a sequence of other spells, cast in specific order. A composite spell can consist both of basic spells and composite spells; the i-th spell consists of s_i other spells, and each of those spells has index strictly less than i (so there is no situation that composite spells infinitely cast each other). So, actually, each composite spell can be considered a finite sequence of basic spells, although its length might be huge. Note that the same spell can appear in a composite spell multiple times.\n\nMonocarp has decided to cast the (n+m)-th spell from his spell book. The target of this spell is a monster with an initial health value of hp. Monocarp wants to know whether the monster will be killed or not, and if it will be killed, which basic spell will kill it.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is given as follows:\n\nAdditional constraints on the input:\n\nFor each test case, print one integer:\n\nInput:\n```\n44 91 -2 3 -433 1 4 34 1 2 1 26 6 5 6 5 6 54 91 -2 3 -433 1 4 34 1 2 1 27 6 5 6 5 6 6 53 31-10 -20 3016 1 2 3 1 2 36 20-1 -5 -9 -7 -1 -143 6 5 24 3 3 7 66 4 8 4 4 6 73 6 5 7\n```\n\nOutput:\n```\n4\n4\n-1\n-1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case is given as follows:\n\nAdditional constraints on the input:",
+    "output": "For each test case, print one integer:",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "dp",
+        "*2600"
+    ],
+    "rating": 2600
+}

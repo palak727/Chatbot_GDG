@@ -1,0 +1,20 @@
+{
+    "id": "1777C",
+    "contest_id": 1777,
+    "problem_letter": "C",
+    "title": "C. Quiz Master",
+    "statement": "A school has to decide on its team for an international quiz. There are n students in the school. We can describe the students using an array a where a_i is the smartness of the i-th (1 ≤ i ≤ n) student.\n\nThere are m topics 1, 2, 3, …, m from which the quiz questions will be formed. The i-th student is considered proficient in a topic T if (a_i bmod T) = 0. Otherwise, he is a rookie in that topic.\n\nWe say that a team of students is collectively proficient in all the topics if for every topic there is a member of the team proficient in this topic.\n\nFind a team that is collectively proficient in all the topics such that the maximum difference between the smartness of any two students in that team is minimized. Output this difference.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains n and m (1 ≤ n,m ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.\n\nFor each test case, print the answer on a new line. If there is no solution, output -1.\n\nIn the first test case, we have participants with smartnesses 3 and 7, and m = 4. Thus, there is no student with smartness divisible by 2. Since 2 ≤ m, there is no way to choose a team.\n\nIn the second test case, we can select the participant with smartness 2 to be the only one on the team. This way the team will be collectively proficient in both topics 1 and 2.\n\nIn the third test case, consider the team with participants of smartnesses 4, 5, 6, 7. This way the team will be collectively proficient in all topics 1, 2, …, 7.\n\nInput:\n```\n32 43 74 23 7 2 95 76 4 3 5 7\n```\n\nOutput:\n```\n-1\n0\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains n and m (1 ≤ n,m ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.",
+    "output": "For each test case, print the answer on a new line. If there is no solution, output -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "number theory",
+        "sortings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

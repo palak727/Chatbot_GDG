@@ -1,0 +1,17 @@
+{
+    "id": "1146F",
+    "contest_id": 1146,
+    "problem_letter": "F",
+    "title": "F. Leaf Partition",
+    "statement": "You are given a rooted tree with n nodes, labeled from 1 to n. The tree is rooted at node 1. The parent of the i-th node is p_i. A leaf is node with no children. For a given set of leaves L, let f(L) denote the smallest connected subgraph that contains all leaves L.\n\nYou would like to partition the leaves such that for any two different sets x, y of the partition, f(x) and f(y) are disjoint.\n\nCount the number of ways to partition the leaves, modulo 998244353. Two ways are different if there are two leaves such that they are in the same set in one way but in different sets in the other.\n\nThe first line contains an integer n (2 ≤ n ≤ 200,000) — the number of nodes in the tree.\n\nThe next line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i < i).\n\nPrint a single integer, the number of ways to partition the leaves, modulo 998244353.\n\nIn the first example, the leaf nodes are 2,3,4,5. The ways to partition the leaves are in the following image\n\nIn the second example, the only leaf is node 10 so there is only one partition. Note that node 1 is not a leaf.\n\nInput:\n```\n5\n1 1 1 1\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n10\n1 2 3 4 5 6 7 8 9\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains an integer n (2 ≤ n ≤ 200,000) — the number of nodes in the tree.\n\nThe next line contains n-1 integers p_2, p_3, …, p_n (1 ≤ p_i < i).",
+    "output": "Print a single integer, the number of ways to partition the leaves, modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

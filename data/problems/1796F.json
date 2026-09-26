@@ -1,0 +1,18 @@
+{
+    "id": "1796F",
+    "contest_id": 1796,
+    "problem_letter": "F",
+    "title": "F. Strange Triples",
+    "statement": "Let's call a triple of positive integers (a, b, n) strange if the equality an/nb = a/b holds, where an is the concatenation of a and n and nb is the concatenation of n and b. For the purpose of concatenation, the integers are considered without leading zeroes.\n\nFor example, if a = 1, b = 5 and n = 9, then the triple is strange, because 19/95 = 1/5. But a = 7, b = 3 and n = 11 is not strange, because 711/113 ≠ 7/3.\n\nYou are given three integers A, B and N. Calculate the number of strange triples (a, b, n), such that 1 ≤ a < A, 1 ≤ b < B and 1 ≤ n < N.\n\nThe only line contains three integers A, B and N (1 ≤ A, B ≤ 10^5; 1 ≤ N ≤ 10^9).\n\nPrint one integer — the number of strange triples (a, b, n) such that 1 ≤ a < A, 1 ≤ b < B and 1 ≤ n < N.\n\nIn the first example, there are 7 strange triples: (1, 1, 1), (1, 4, 6), (1, 5, 9), (2, 2, 2), (2, 5, 6), (3, 3, 3) and (4, 4, 4).\n\nInput:\n```\n5 6 10\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n10 10 100\n```\n\nOutput:\n```\n29\n```\n\nInput:\n```\n1 10 25\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n4242 6969 133333337\n```\n\nOutput:\n```\n19536\n```\n\nInput:\n```\n94841 47471 581818184\n```\n\nOutput:\n```\n98715\n```",
+    "input": "The only line contains three integers A, B and N (1 ≤ A, B ≤ 10^5; 1 ≤ N ≤ 10^9).",
+    "output": "Print one integer — the number of strange triples (a, b, n) such that 1 ≤ a < A, 1 ≤ b < B and 1 ≤ n < N.",
+    "time_limit": "10 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

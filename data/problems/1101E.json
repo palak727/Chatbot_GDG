@@ -1,0 +1,16 @@
+{
+    "id": "1101E",
+    "contest_id": 1101,
+    "problem_letter": "E",
+    "title": "E. Polycarp's New Job",
+    "statement": "Polycarp has recently got himself a new job. He now earns so much that his old wallet can't even store all the money he has.\n\nBerland bills somehow come in lots of different sizes. However, all of them are shaped as rectangles (possibly squares). All wallets are also produced in form of rectangles (possibly squares).\n\nA bill x × y fits into some wallet h × w if either x ≤ h and y ≤ w or y ≤ h and x ≤ w. Bills can overlap with each other in a wallet and an infinite amount of bills can fit into a wallet. That implies that all the bills Polycarp currently have fit into a wallet if every single one of them fits into it independently of the others.\n\nNow you are asked to perform the queries of two types:\n\nIt is guaranteed that there is at least one query of type 1 before the first query of type 2 and that there is at least one query of type 2 in the input data.\n\nFor each query of type 2 print \"YES\" if all the bills he has earned to this moment fit into a wallet of given size. Print \"NO\" otherwise.\n\nThe first line contains a single integer n (2 ≤ n ≤ 5·10^5) — the number of queries.\n\nEach of the next n lines contains a query of one of these two types:\n\nIt is guaranteed that there is at least one query of type 1 before the first query of type 2 and that there is at least one query of type 2 in the input data.\n\nFor each query of type 2 print \"YES\" if all the bills he has earned to this moment fit into a wallet of given size. Print \"NO\" otherwise.\n\nThe queries of type 2 of the example:\n\nInput:\n```\n9\n+ 3 2\n+ 2 3\n? 1 20\n? 3 3\n? 2 3\n+ 1 5\n? 10 10\n? 1 5\n+ 1 1\n```\n\nOutput:\n```\nNO\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 5·10^5) — the number of queries.\n\nEach of the next n lines contains a query of one of these two types:\n\nIt is guaranteed that there is at least one query of type 1 before the first query of type 2 and that there is at least one query of type 2 in the input data.",
+    "output": "For each query of type 2 print \"YES\" if all the bills he has earned to this moment fit into a wallet of given size. Print \"NO\" otherwise.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

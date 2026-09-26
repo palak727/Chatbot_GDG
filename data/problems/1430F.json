@@ -1,0 +1,17 @@
+{
+    "id": "1430F",
+    "contest_id": 1430,
+    "problem_letter": "F",
+    "title": "F. Realistic Gameplay",
+    "statement": "Recently you've discovered a new shooter. They say it has realistic game mechanics.\n\nYour character has a gun with magazine size equal to k and should exterminate n waves of monsters. The i-th wave consists of a_i monsters and happens from the l_i-th moment of time up to the r_i-th moments of time. All a_i monsters spawn at moment l_i and you have to exterminate all of them before the moment r_i ends (you can kill monsters right at moment r_i). For every two consecutive waves, the second wave starts not earlier than the first wave ends (though the second wave can start at the same moment when the first wave ends) — formally, the condition r_i ≤ l_{i + 1} holds. Take a look at the notes for the examples to understand the process better.\n\nYou are confident in yours and your character's skills so you can assume that aiming and shooting are instant and you need exactly one bullet to kill one monster. But reloading takes exactly 1 unit of time.\n\nOne of the realistic mechanics is a mechanic of reloading: when you reload you throw away the old magazine with all remaining bullets in it. That's why constant reloads may cost you excessive amounts of spent bullets.\n\nYou've taken a liking to this mechanic so now you are wondering: what is the minimum possible number of bullets you need to spend (both used and thrown) to exterminate all waves.\n\nNote that you don't throw the remaining bullets away after eradicating all monsters, and you start with a full magazine.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 2000; 1 ≤ k ≤ 10^9) — the number of waves and magazine size.\n\nThe next n lines contain descriptions of waves. The i-th line contains three integers l_i, r_i and a_i (1 ≤ l_i ≤ r_i ≤ 10^9; 1 ≤ a_i ≤ 10^9) — the period of time when the i-th wave happens and the number of monsters in it.\n\nIt's guaranteed that waves don't overlap (but may touch) and are given in the order they occur, i. e. r_i ≤ l_{i + 1}.\n\nIf there is no way to clear all waves, print -1. Otherwise, print the minimum possible number of bullets you need to spend (both used and thrown) to clear all waves.\n\nIn the first example:\n\nIn the second example:\n\nInput:\n```\n2 3\n2 3 6\n3 4 3\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n2 5\n3 7 11\n10 12 15\n```\n\nOutput:\n```\n30\n```\n\nInput:\n```\n5 42\n42 42 42\n42 43 42\n43 44 42\n44 45 42\n45 45 1\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n1 10\n100 111 1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 2000; 1 ≤ k ≤ 10^9) — the number of waves and magazine size.\n\nThe next n lines contain descriptions of waves. The i-th line contains three integers l_i, r_i and a_i (1 ≤ l_i ≤ r_i ≤ 10^9; 1 ≤ a_i ≤ 10^9) — the period of time when the i-th wave happens and the number of monsters in it.\n\nIt's guaranteed that waves don't overlap (but may touch) and are given in the order they occur, i. e. r_i ≤ l_{i + 1}.",
+    "output": "If there is no way to clear all waves, print -1. Otherwise, print the minimum possible number of bullets you need to spend (both used and thrown) to clear all waves.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

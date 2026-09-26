@@ -1,0 +1,18 @@
+{
+    "id": "1211E",
+    "contest_id": 1211,
+    "problem_letter": "E",
+    "title": "E. Double Permutation Inc.",
+    "statement": "Polycarp recently became an employee of the company \"Double Permutation Inc.\" Now he is a fan of permutations and is looking for them everywhere!\n\nA permutation in this problem is a sequence of integers p_1, p_2, …, p_k such that every integer from 1 to k occurs exactly once in it. For example, the following sequences are permutations of [3, 1, 4, 2], [1] and [6, 1, 2, 3, 5, 4]. The following sequences are not permutations: [0, 1], [1, 2, 2], [1, 2, 4] and [2, 3].\n\nIn the lobby of the company's headquarter statistics on visits to the company's website for the last n days are published — the sequence a_1, a_2, …, a_n. Polycarp wants to color all the elements of this sequence in one of three colors (red, green or blue) so that:\n\nHelp Polycarp to color all n numbers so that the total number of red and green elements is maximum.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the sequence a. The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5).\n\nPrint a string s of length n such that:\n\nThe string s should maximize the total number of red and green elements when fulfilling the requirements from the main part of the problem statement. If there are several optimal answers, print any of them.\n\nInput:\n```\n5\n1 2 3 2 1\n```\n\nOutput:\n```\nRBBBG\n```\n\nInput:\n```\n3\n1 1 1\n```\n\nOutput:\n```\nBBB\n```\n\nInput:\n```\n10\n3 3 2 2 5 4 1 5 4 1\n```\n\nOutput:\n```\nRGRGRRRGGG\n```\n\nInput:\n```\n10\n3 9 3 1 2 1 2 4 4 4\n```\n\nOutput:\n```\nRBGRRGGBBB\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the sequence a. The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5).",
+    "output": "Print a string s of length n such that:\n\nThe string s should maximize the total number of red and green elements when fulfilling the requirements from the main part of the problem statement. If there are several optimal answers, print any of them.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "greedy",
+        "*2000"
+    ],
+    "rating": 2000
+}

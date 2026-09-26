@@ -1,0 +1,17 @@
+{
+    "id": "2131C",
+    "contest_id": 2131,
+    "problem_letter": "C",
+    "title": "C. Make it Equal",
+    "statement": "Given two multisets S and T of size n and a positive integer k, you may perform the following operations any number (including zero) of times on S:\n\nDetermine if it is possible to make S equal to T. Two multisets S and T are equal if every element appears the same number of times in S and T.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the size of S and the constant, respectively.\n\nThe second line contains n integers S_1,S_2,…,S_n (0 ≤ S_i ≤ 10^9) — the elements in S.\n\nThe third line contains n integers T_1,T_2,…,T_n (0 ≤ T_i ≤ 10^9) — the elements in T.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if it is possible to make S equal to T, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, we can remove one occurrence of 1 from S and insert |1-k|=|1-3|=2 into S, making S equal to T.\n\nIn the second test case, we can remove one occurrence of 4 from S and insert 4+k=4+8=12 into S, making S equal to T.\n\nIn the last test case, we can show that it is impossible to make S equal to T.\n\nInput:\n```\n51 3121 84123 56 2 98 4 112 72 82 93 20 1 01 0 1\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the size of S and the constant, respectively.\n\nThe second line contains n integers S_1,S_2,…,S_n (0 ≤ S_i ≤ 10^9) — the elements in S.\n\nThe third line contains n integers T_1,T_2,…,T_n (0 ≤ T_i ≤ 10^9) — the elements in T.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if it is possible to make S equal to T, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

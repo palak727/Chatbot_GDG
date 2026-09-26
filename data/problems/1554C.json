@@ -1,0 +1,19 @@
+{
+    "id": "1554C",
+    "contest_id": 1554,
+    "problem_letter": "C",
+    "title": "C. Mikasa",
+    "statement": "You are given two integers n and m. Find the MEX of the sequence n oplus 0, n oplus 1, …, n oplus m. Here, oplus is the bitwise XOR operator.\n\nMEX of the sequence of non-negative integers is the smallest non-negative integer that doesn't appear in this sequence. For example, MEX(0, 1, 2, 4) = 3, and MEX(1, 2021) = 0.\n\nThe first line contains a single integer t (1 ≤ t ≤ 30,000) — the number of test cases.\n\nThe first and only line of each test case contains two integers n and m (0 ≤ n, m ≤ 10^9).\n\nFor each test case, print a single integer — the answer to the problem.\n\nIn the first test case, the sequence is 3 oplus 0, 3 oplus 1, 3 oplus 2, 3 oplus 3, 3 oplus 4, 3 oplus 5, or 3, 2, 1, 0, 7, 6. The smallest non-negative integer which isn't present in the sequence i. e. the MEX of the sequence is 4.\n\nIn the second test case, the sequence is 4 oplus 0, 4 oplus 1, 4 oplus 2, 4 oplus 3, 4 oplus 4, 4 oplus 5, 4 oplus 6, or 4, 5, 6, 7, 0, 1, 2. The smallest non-negative integer which isn't present in the sequence i. e. the MEX of the sequence is 3.\n\nIn the third test case, the sequence is 3 oplus 0, 3 oplus 1, 3 oplus 2, or 3, 2, 1. The smallest non-negative integer which isn't present in the sequence i. e. the MEX of the sequence is 0.\n\nInput:\n```\n5\n3 5\n4 6\n3 2\n69 696\n123456 654321\n```\n\nOutput:\n```\n4\n3\n0\n640\n530866\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 30,000) — the number of test cases.\n\nThe first and only line of each test case contains two integers n and m (0 ≤ n, m ≤ 10^9).",
+    "output": "For each test case, print a single integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "greedy",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

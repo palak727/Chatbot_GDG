@@ -1,0 +1,20 @@
+{
+    "id": "1991I",
+    "contest_id": 1991,
+    "problem_letter": "I",
+    "title": "I. Grid Game",
+    "statement": "This is an interactive problem.\n\nYou are given a grid with n rows and m columns. You need to fill each cell with a unique integer from 1 to n·m.\n\nAfter filling the grid, you will play a game on this grid against the interactor. Players take turns selecting one of the previously unselected cells from the grid, with the interactor going first.\n\nOn the first turn, the interactor can choose any cell from the grid. After that, any chosen cell must be orthogonally adjacent to at least one previously selected cell. Two cells are considered orthogonally adjacent if they share an edge. The game continues until all cells have been selected.\n\nYour goal is to let the sum of numbers in the cells selected by you be strictly less than the sum of numbers in the cells selected by the interactor.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (4 ≤ n, m ≤ 10) — the number of rows and columns in the grid.\n\nFirst, output n lines, each containing m integers, representing the integers that you filled in the grid. Each integer from 1 to n·m should appear exactly once.\n\nThen, the game begins. The interactor and you take turns outputting coordinates to select a cell for n × m turns, with the interactor starting first.\n\nOn each player's (either you or the interactor) turn, the player will output two integers i and j (1 ≤ i ≤ n, 1 ≤ j ≤ m), denoting that the player has selected the cell on the i-th row and j-th column. This cell should not have been selected in a previous round. Additionally, if it is not the first turn, the cell must be orthogonally adjacent to at least one previously selected cell.\n\nIf any of your outputs are invalid, the jury will output \"-1\" and you will receive a Wrong Answer verdict.\n\nAt the end of all n·m turns, if the sum of numbers in the cells selected by you is not strictly less than the sum of numbers in the cells selected by the interactor, the jury will output \"-1\" and you will receive a Wrong Answer verdict.\n\nIf your program has received a Wrong Answer verdict, it must terminate immediately. Otherwise, you may receive an arbitrary verdict because your solution might be reading from a closed stream.\n\nAfter outputting, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nIn this problem, hacks are disabled.\n\nNote that this is an example game and does not necessarily represent the optimal strategy for both players.\n\nFirst, we fill a 4 × 4 grid with unique integers from 1 to 16 in the following way:\n\nNext, the game begins.\n\nIn the end, the numbers we selected were [15, 1, 16, 5, 4, 2, 11, 13], and the numbers selected by the interactor were [8, 14, 7, 9, 10, 3, 6, 12]. The sum of the numbers we selected is 67, which is less than the sum of the numbers selected by the interactor 69. Therefore, we have won this game.\n\nInput:\n```\n1\n4 4\n\n\n\n\n3 4\n\n4 4\n\n4 2\n\n4 1\n\n1 4\n\n1 2\n\n2 2\n\n2 1\n```\n\nOutput:\n```\n2 3 4 10\n12 6 11 15\n5 13 16 8\n9 7 1 14\n\n2 4\n\n4 3\n\n3 3\n\n3 1\n\n1 3\n\n1 1\n\n2 3\n\n3 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (4 ≤ n, m ≤ 10) — the number of rows and columns in the grid.",
+    "output": "",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "graph matchings",
+        "greedy",
+        "interactive",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1556E",
+    "contest_id": 1556,
+    "problem_letter": "E",
+    "title": "E. Equilibrium",
+    "statement": "William has two arrays a and b, each consisting of n items.\n\nFor some segments l..r of these arrays William wants to know if it is possible to equalize the values of items in these segments using a balancing operation. Formally, the values are equalized if for each i from l to r holds a_i = b_i.\n\nTo perform a balancing operation an even number of indices must be selected, such that l ≤ pos_1 < pos_2 < … < pos_k ≤ r. Next the items of array a at positions pos_1, pos_3, pos_5, … get incremented by one and the items of array b at positions pos_2, pos_4, pos_6, … get incremented by one.\n\nWilliam wants to find out if it is possible to equalize the values of elements in two arrays for each segment using some number of balancing operations, and what is the minimal number of operations required for that. Note that for each segment the operations are performed independently.\n\nThe first line contains a two integers n and q (2 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^5), the size of arrays a and b and the number of segments.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^9).\n\nEach of the next q lines contains two integers l_i and r_i (1 ≤ l_i < r_i ≤ n), the edges of segments.\n\nFor each segment output a single number — the minimal number of balancing operations needed or \"-1\" if it is impossible to equalize segments of arrays.\n\nFor the first segment from 2 to 6 you can do one operation with pos = [2, 3, 5, 6], after this operation the arrays will be: a = [0, 2, 2, 9, 4, 2, 7, 5], b = [2, 2, 2, 9, 4, 2, 5, 8]. Arrays are equal on a segment from 2 to 6 after this operation.\n\nFor the second segment from 1 to 7 you can do three following operations:\n\nAfter these operations, the arrays will be: a = [2, 2, 2, 9, 4, 2, 7, 5], b = [2, 2, 2, 9, 4, 2, 7, 8]. Arrays are equal on a segment from 1 to 7 after these operations.\n\nFor the third segment from 2 to 4 you can do one operation with pos = [2, 3], after the operation arrays will be: a = [0, 2, 2, 9, 3, 2, 7, 5], b = [2, 2, 2, 9, 4, 1, 5, 8]. Arrays are equal on a segment from 2 to 4 after this operation.\n\nIt is impossible to equalize the fourth and the fifth segment.\n\nInput:\n```\n8 5\n0 1 2 9 3 2 7 5\n2 2 1 9 4 1 5 8\n2 6\n1 7\n2 4\n7 8\n5 8\n```\n\nOutput:\n```\n1\n3\n1\n-1\n-1\n```",
+    "input": "The first line contains a two integers n and q (2 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^5), the size of arrays a and b and the number of segments.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^9).\n\nEach of the next q lines contains two integers l_i and r_i (1 ≤ l_i < r_i ≤ n), the edges of segments.",
+    "output": "For each segment output a single number — the minimal number of balancing operations needed or \"-1\" if it is impossible to equalize segments of arrays.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "*2200"
+    ],
+    "rating": 2200
+}

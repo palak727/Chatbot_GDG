@@ -1,0 +1,17 @@
+{
+    "id": "1118C",
+    "contest_id": 1118,
+    "problem_letter": "C",
+    "title": "C. Palindromic Matrix",
+    "statement": "Let's call some square matrix with integer values in its cells palindromic if it doesn't change after the order of rows is reversed and it doesn't change after the order of columns is reversed.\n\nFor example, the following matrices are palindromic:\n\nThe following matrices are not palindromic because they change after the order of rows is reversed:\n\nThe following matrices are not palindromic because they change after the order of columns is reversed:\n\nYou are given n^2 integers. Put them into a matrix of n rows and n columns so that each number is used exactly once, each cell contains exactly one number and the resulting matrix is palindromic. If there are multiple answers, print any. If there is no solution, print \"NO\".\n\nThe first line contains one integer n (1 ≤ n ≤ 20).\n\nThe second line contains n^2 integers a_1, a_2, …, a_{n^2} (1 ≤ a_i ≤ 1000) — the numbers to put into a matrix of n rows and n columns.\n\nIf it is possible to put all of the n^2 numbers into a matrix of n rows and n columns so that each number is used exactly once, each cell contains exactly one number and the resulting matrix is palindromic, then print \"YES\". Then print n lines with n space-separated numbers — the resulting matrix.\n\nIf it's impossible to construct any matrix, then print \"NO\".\n\nYou can print each letter in any case (upper or lower). For example, \"YeS\", \"no\" and \"yES\" are all acceptable.\n\nNote that there exist multiple answers for the first two examples.\n\nInput:\n```\n4\n1 8 8 1 2 2 2 2 2 2 2 2 1 8 8 1\n```\n\nOutput:\n```\nYES\n1 2 2 1\n8 2 2 8\n8 2 2 8\n1 2 2 1\n```\n\nInput:\n```\n3\n1 1 1 1 1 3 3 3 3\n```\n\nOutput:\n```\nYES\n1 3 1\n3 1 3\n1 3 1\n```\n\nInput:\n```\n4\n1 2 1 9 8 4 3 8 8 3 4 8 9 2 1 1\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n1\n10\n```\n\nOutput:\n```\nYES\n10 \n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 20).\n\nThe second line contains n^2 integers a_1, a_2, …, a_{n^2} (1 ≤ a_i ≤ 1000) — the numbers to put into a matrix of n rows and n columns.",
+    "output": "If it is possible to put all of the n^2 numbers into a matrix of n rows and n columns so that each number is used exactly once, each cell contains exactly one number and the resulting matrix is palindromic, then print \"YES\". Then print n lines with n space-separated numbers — the resulting matrix.\n\nIf it's impossible to construct any matrix, then print \"NO\".\n\nYou can print each letter in any case (upper or lower). For example, \"YeS\", \"no\" and \"yES\" are all acceptable.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1700"
+    ],
+    "rating": 1700
+}

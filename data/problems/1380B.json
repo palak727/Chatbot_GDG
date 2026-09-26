@@ -1,0 +1,16 @@
+{
+    "id": "1380B",
+    "contest_id": 1380,
+    "problem_letter": "B",
+    "title": "B. Universal Solution",
+    "statement": "Recently, you found a bot to play \"Rock paper scissors\" with. Unfortunately, the bot uses quite a simple algorithm to play: he has a string s = s_1 s_2 … s_n of length n where each letter is either R, S or P.\n\nWhile initializing, the bot is choosing a starting index pos (1 ≤ pos ≤ n), and then it can play any number of rounds. In the first round, he chooses \"Rock\", \"Scissors\" or \"Paper\" based on the value of s_pos:\n\nIn the second round, the bot's choice is based on the value of s_{pos + 1}. In the third round — on s_{pos + 2} and so on. After s_n the bot returns to s_1 and continues his game.\n\nYou plan to play n rounds and you've already figured out the string s but still don't know what is the starting index pos. But since the bot's tactic is so boring, you've decided to find n choices to each round to maximize the average number of wins.\n\nIn other words, let's suggest your choices are c_1 c_2 … c_n and if the bot starts from index pos then you'll win in win(pos) rounds. Find c_1 c_2 … c_n such that (win(1) + win(2) + … + win(n))/n is maximum possible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nNext t lines contain test cases — one per line. The first and only line of each test case contains string s = s_1 s_2 … s_n (1 ≤ n ≤ 2·10^5; s_i ∈ {R, S, P}) — the string of the bot.\n\nIt's guaranteed that the total length of all strings in one test doesn't exceed 2·10^5.\n\nFor each test case, print n choices c_1 c_2 … c_n to maximize the average number of wins. Print them in the same manner as the string s.\n\nIf there are multiple optimal answers, print any of them.\n\nIn the first test case, the bot (wherever it starts) will always choose \"Rock\", so we can always choose \"Paper\". So, in any case, we will win all n = 4 rounds, so the average is also equal to 4.\n\nIn the second test case:\n\nA picture from Wikipedia explaining \"Rock paper scissors\" game:\n\nInput:\n```\n3\nRRRR\nRSP\nS\n```\n\nOutput:\n```\nPPPP\nRSP\nR\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nNext t lines contain test cases — one per line. The first and only line of each test case contains string s = s_1 s_2 … s_n (1 ≤ n ≤ 2·10^5; s_i ∈ {R, S, P}) — the string of the bot.\n\nIt's guaranteed that the total length of all strings in one test doesn't exceed 2·10^5.",
+    "output": "For each test case, print n choices c_1 c_2 … c_n to maximize the average number of wins. Print them in the same manner as the string s.\n\nIf there are multiple optimal answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1400"
+    ],
+    "rating": 1400
+}

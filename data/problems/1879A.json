@@ -1,0 +1,16 @@
+{
+    "id": "1879A",
+    "contest_id": 1879,
+    "problem_letter": "A",
+    "title": "A. Rigged!",
+    "statement": "Monocarp organizes a weightlifting competition. There are n athletes participating in the competition, the i-th athlete has strength s_i and endurance e_i. The 1-st athlete is Monocarp's friend Polycarp, and Monocarp really wants Polycarp to win.\n\nThe competition will be conducted as follows. The jury will choose a positive (greater than zero) integer w, which denotes the weight of the barbell that will be used in the competition. The goal for each athlete is to lift the barbell as many times as possible. The athlete who lifts the barbell the most amount of times will be declared the winner (if there are multiple such athletes — there's no winner).\n\nIf the barbell's weight w is strictly greater than the strength of the i-th athlete s_i, then the i-th athlete will be unable to lift the barbell even one single time. Otherwise, the i-th athlete will be able to lift the barbell, and the number of times he does it will be equal to his endurance e_i.\n\nFor example, suppose there are 4 athletes with parameters s_1 = 7, e_1 = 4; s_2 = 9, e_2 = 3; s_3 = 4, e_3 = 6; s_4 = 2, e_4 = 2. If the weight of the barbell is 5, then:\n\nMonocarp wants to choose w in such a way that Polycarp (the 1-st athlete) wins the competition. Help him to choose the value of w, or report that it is impossible.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of athletes. Then n lines follow, the i-th of them contains two integers s_i and e_i (1 ≤ s_i ≤ 10^9; 1 ≤ e_i ≤ 100) — the strength and the endurance of the i-th athlete.\n\nFor each test case, print the answer as follows:\n\nThe first test case of the example is described in the statement.\n\nInput:\n```\n347 49 34 62 224 6100 10021337 31337 3\n```\n\nOutput:\n```\n5\n-1\n-1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 100) — the number of athletes. Then n lines follow, the i-th of them contains two integers s_i and e_i (1 ≤ s_i ≤ 10^9; 1 ≤ e_i ≤ 100) — the strength and the endurance of the i-th athlete.",
+    "output": "For each test case, print the answer as follows:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

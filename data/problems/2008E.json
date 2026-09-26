@@ -1,0 +1,21 @@
+{
+    "id": "2008E",
+    "contest_id": 2008,
+    "problem_letter": "E",
+    "title": "E. Alternating String",
+    "statement": "Sakurako really loves alternating strings. She calls a string s of lowercase Latin letters an alternating string if characters in the even positions are the same, if characters in the odd positions are the same, and the length of the string is even.\n\nFor example, the strings 'abab' and 'gg' are alternating, while the strings 'aba' and 'ggwp' are not.\n\nAs a good friend, you decided to gift such a string, but you couldn't find one. Luckily, you can perform two types of operations on the string:\n\nSince you are in a hurry, you need to determine the minimum number of operations required to make the string an alternating one.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single number n (1 ≤ n≤ 2·10^5) — the length of the string.\n\nThe second line of each test case contains a string s, consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of operations required to turn the string s into an alternating one.\n\nFor the string ababa, you can delete the first character to get baba, which is an alternating string.\n\nFor the string acdada, you can change the first two characters to get dadada, which is an alternating string.\n\nInput:\n```\n101a2ca3aab5ababa6acdada9ejibmyyju6bbccbc6abacba5bcbca5dcbdb\n```\n\nOutput:\n```\n1\n0\n1\n1\n2\n6\n2\n3\n1\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single number n (1 ≤ n≤ 2·10^5) — the length of the string.\n\nThe second line of each test case contains a string s, consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of operations required to turn the string s into an alternating one.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

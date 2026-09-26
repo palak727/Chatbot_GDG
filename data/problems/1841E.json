@@ -1,0 +1,18 @@
+{
+    "id": "1841E",
+    "contest_id": 1841,
+    "problem_letter": "E",
+    "title": "E. Fill the Matrix",
+    "statement": "There is a square matrix, consisting of n rows and n columns of cells, both numbered from 1 to n. The cells are colored white or black. Cells from 1 to a_i are black, and cells from a_i+1 to n are white, in the i-th column.\n\nYou want to place m integers in the matrix, from 1 to m. There are two rules:\n\nThe beauty of the matrix is the number of such j that j+1 is written in the same row, in the next column as j (in the neighbouring cell to the right).\n\nWhat's the maximum possible beauty of the matrix?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of the matrix.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n) — the number of black cells in each column.\n\nThe third line contains a single integer m (0 ≤ m ≤ ∑ limits_{i=1}^n n - a_i) — the number of integers you have to write in the matrix. Note that this number might not fit into a 32-bit integer data type.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the maximum beauty of the matrix after you write all m integers in it. Note that there are no more integers than the white cells, so the answer always exists.\n\nInput:\n```\n630 0 0942 0 3 1542 0 3 1642 0 3 110100 2 2 1 5 10 3 4 1 120110\n```\n\nOutput:\n```\n6\n3\n4\n4\n16\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the size of the matrix.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n) — the number of black cells in each column.\n\nThe third line contains a single integer m (0 ≤ m ≤ ∑ limits_{i=1}^n n - a_i) — the number of integers you have to write in the matrix. Note that this number might not fit into a 32-bit integer data type.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the maximum beauty of the matrix after you write all m integers in it. Note that there are no more integers than the white cells, so the answer always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

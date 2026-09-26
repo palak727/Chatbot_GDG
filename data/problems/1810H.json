@@ -1,0 +1,17 @@
+{
+    "id": "1810H",
+    "contest_id": 1810,
+    "problem_letter": "H",
+    "title": "H. Last Number",
+    "statement": "You are given a multiset S. Initially, S = {1,2,3, …, n}.\n\nYou will perform the following operation n-1 times.\n\nIt's easy to show that there will be exactly one number left after n-1 operations. Output that number.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Their description follows.\n\nFor each test case, one single line contains a single integer n (2 ≤ n ≤ 10^9) — the initial size of the multiset S.\n\nFor each test case, output an integer denoting the only number left after n-1 operations.\n\nWe show how the multiset S changes for n=4.\n\nThus, the answer for n = 4 is 2.\n\nInput:\n```\n524715177567\n```\n\nOutput:\n```\n1\n2\n2\n4\n33914\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Their description follows.\n\nFor each test case, one single line contains a single integer n (2 ≤ n ≤ 10^9) — the initial size of the multiset S.",
+    "output": "For each test case, output an integer denoting the only number left after n-1 operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

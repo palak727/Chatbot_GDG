@@ -1,0 +1,18 @@
+{
+    "id": "1218G",
+    "contest_id": 1218,
+    "problem_letter": "G",
+    "title": "G. Alpha planetary system",
+    "statement": "Three planets X, Y and Z within the Alpha planetary system are inhabited with an advanced civilization. The spaceports of these planets are connected by interplanetary space shuttles. The flight scheduler should decide between 1, 2 and 3 return flights for every existing space shuttle connection. Since the residents of Alpha are strong opponents of the symmetry, there is a strict rule that any two of the spaceports connected by a shuttle must have a different number of flights.\n\nFor every pair of connected spaceports, your goal is to propose a number 1, 2 or 3 for each shuttle flight, so that for every two connected spaceports the overall number of flights differs.\n\nYou may assume that:\n\n1) Every planet has at least one spaceport\n\n2) There exist only shuttle flights between spaceports of different planets\n\n3) For every two spaceports there is a series of shuttle flights enabling traveling between them\n\n4) Spaceports are not connected by more than one shuttle\n\nThe first row of the input is the integer number N (3 ≤ N ≤ 100 000), representing overall number of spaceports. The second row is the integer number M (2 ≤ M ≤ 100 000) representing number of shuttle flight connections.\n\nThird row contains N characters from the set {X, Y, Z}. Letter on I^th position indicates on which planet is situated spaceport I. For example, \"XYYXZZ\" indicates that the spaceports 0 and 3 are located at planet X, spaceports 1 and 2 are located at Y, and spaceports 4 and 5 are at Z.\n\nStarting from the fourth row, every row contains two integer numbers separated by a whitespace. These numbers are natural numbers smaller than N and indicate the numbers of the spaceports that are connected. For example, \"12 15\" indicates that there is a shuttle flight between spaceports 12 and 15.\n\nThe same representation of shuttle flights in separate rows as in the input, but also containing a third number from the set {1, 2, 3} standing for the number of shuttle flights between these spaceports.\n\nInput:\n```\n10\n15\nXXXXYYYZZZ\n0 4\n0 5\n0 6\n4 1\n4 8\n1 7\n1 9\n7 2\n7 5\n5 3\n6 2\n6 9\n8 2\n8 3\n9 3\n```\n\nOutput:\n```\n0 4 2\n0 5 2\n0 6 2\n4 1 1\n4 8 1\n1 7 2\n1 9 3\n7 2 2\n7 5 1\n5 3 1\n6 2 1\n6 9 1\n8 2 3\n8 3 1\n9 3 1\n```",
+    "input": "The first row of the input is the integer number N (3 ≤ N ≤ 100 000), representing overall number of spaceports. The second row is the integer number M (2 ≤ M ≤ 100 000) representing number of shuttle flight connections.\n\nThird row contains N characters from the set {X, Y, Z}. Letter on I^th position indicates on which planet is situated spaceport I. For example, \"XYYXZZ\" indicates that the spaceports 0 and 3 are located at planet X, spaceports 1 and 2 are located at Y, and spaceports 4 and 5 are at Z.\n\nStarting from the fourth row, every row contains two integer numbers separated by a whitespace. These numbers are natural numbers smaller than N and indicate the numbers of the spaceports that are connected. For example, \"12 15\" indicates that there is a shuttle flight between spaceports 12 and 15.",
+    "output": "The same representation of shuttle flights in separate rows as in the input, but also containing a third number from the set {1, 2, 3} standing for the number of shuttle flights between these spaceports.",
+    "time_limit": "1 second",
+    "memory_limit": "128 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "shortest paths",
+        "*3000"
+    ],
+    "rating": 3000
+}

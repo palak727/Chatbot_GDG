@@ -1,0 +1,16 @@
+{
+    "id": "1060A",
+    "contest_id": 1060,
+    "problem_letter": "A",
+    "title": "A. Phone Numbers",
+    "statement": "Let's call a string a phone number if it has length 11 and fits the pattern \"8xxxxxxxxxx\", where each \"x\" is replaced by a digit.\n\nFor example, \"80123456789\" and \"80000000000\" are phone numbers, while \"8012345678\" and \"79000000000\" are not.\n\nYou have n cards with digits, and you want to use them to make as many phone numbers as possible. Each card must be used in at most one phone number, and you don't have to use all cards. The phone numbers do not necessarily have to be distinct.\n\nThe first line contains an integer n — the number of cards with digits that you have (1 ≤ n ≤ 100).\n\nThe second line contains a string of n digits (characters \"0\", \"1\", ..., \"9\") s_1, s_2, …, s_n. The string will not contain any other characters, such as leading or trailing spaces.\n\nIf at least one phone number can be made from these cards, output the maximum number of phone numbers that can be made. Otherwise, output 0.\n\nIn the first example, one phone number, \"8000000000\", can be made from these cards.\n\nIn the second example, you can make two phone numbers from the cards, for example, \"80123456789\" and \"80123456789\".\n\nIn the third example you can't make any phone number from the given cards.\n\nInput:\n```\n11\n00000000008\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n22\n0011223344556677889988\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n11\n31415926535\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains an integer n — the number of cards with digits that you have (1 ≤ n ≤ 100).\n\nThe second line contains a string of n digits (characters \"0\", \"1\", ..., \"9\") s_1, s_2, …, s_n. The string will not contain any other characters, such as leading or trailing spaces.",
+    "output": "If at least one phone number can be made from these cards, output the maximum number of phone numbers that can be made. Otherwise, output 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "*800"
+    ],
+    "rating": 800
+}

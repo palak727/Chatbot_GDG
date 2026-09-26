@@ -1,0 +1,20 @@
+{
+    "id": "2034E",
+    "contest_id": 2034,
+    "problem_letter": "E",
+    "title": "E. Permutations Harmony",
+    "statement": "Rayan wants to present a gift to Reyhaneh to win her heart. However, Reyhaneh is particular and will only accept a k-harmonic set of permutations.\n\nWe define a k-harmonic set of permutations as a set of k pairwise distinct permutations p_1, p_2, …, p_k of size n such that for every pair of indices i and j (where 1 ≤ i, j ≤ n), the following condition holds:\n\np_1[i] + p_2[i] + … + p_k[i] = p_1[j] + p_2[j] + … + p_k[j]\n\nYour task is to help Rayan by either providing a valid k-harmonic set of permutations for given values of n and k or by determining that such a set does not exist.\n\nWe call a sequence of length n a permutation if it contains every integer from 1 to n exactly once.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases.\n\nEach test case consists of two integers n and k (1 ≤ n, k ≤ 10^5). The sum of n·k over all test cases does not exceed 5·10^5.\n\nFor each test case, if a k-harmonic set of permutations exists, print YES on the first line. Then, print k lines, each containing a distinct permutation of the integers from 1 to n.\n\nIf no such set exists, print NO on the first line.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nIf multiple answers are possible, you can output any of them.\n\nIn example 1, we have p_1 = [1, 2, 3], p_2 = [2, 3, 1], and p_3 = [3, 1, 2]. It's easy to see that p_1[1] + p_2[1] + p_3[1] = p_1[2] + p_2[2] + p_3[2] = p_1[3] + p_2[3] + p_3[3] = 6.\n\nIn example 2, we have p_1 = [1, 2, 3, 4] and p_2 = [4, 3, 2, 1]. It's easy to see that p_1[1] + p_2[1] = p_1[2] + p_2[2] = p_1[3] + p_2[3] = p_1[4] + p_2[4] = 5.\n\nIn example 3, as there are five distinct elements in p_1, it's obvious that the answer is \"No\".\n\nInput:\n```\n43 34 25 13 2\n```\n\nOutput:\n```\nYES\n1 2 3\n2 3 1\n3 1 2\nYES\n1 2 3 4\n4 3 2 1\nNO\nYES\n1 2 3\n3 2 1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000), the number of test cases.\n\nEach test case consists of two integers n and k (1 ≤ n, k ≤ 10^5). The sum of n·k over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, if a k-harmonic set of permutations exists, print YES on the first line. Then, print k lines, each containing a distinct permutation of the integers from 1 to n.\n\nIf no such set exists, print NO on the first line.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nIf multiple answers are possible, you can output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "hashing",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

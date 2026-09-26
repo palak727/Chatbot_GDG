@@ -1,0 +1,17 @@
+{
+    "id": "2128A",
+    "contest_id": 2128,
+    "problem_letter": "A",
+    "title": "A. Recycling Center",
+    "statement": "In the recycling center, there are n trash bags, the i-th bag has a weight of a_i. At each second, two actions will happen successively:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 30, 1 ≤ c ≤ 10^9).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weight of each trash bag.\n\nFor each test case, you must output a single integer — the minimum number of coins you have to spend to destroy all trash bags.\n\nIn the following explanation:\n\nIn the first test case, one solution is:\n\nIn total, you paid 2 coins, and we can prove it is optimal.\n\nIn the second test case, one solution is:\n\nInput:\n```\n45 1010 4 15 1 83 421000000000 1000000000 100000000010 3029 25 2 12 15 42 14 6 16 910 10000001 1 1 1 1 1 1 1 1 864026633\n```\n\nOutput:\n```\n2\n3\n6\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and c (1 ≤ n ≤ 30, 1 ≤ c ≤ 10^9).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weight of each trash bag.",
+    "output": "For each test case, you must output a single integer — the minimum number of coins you have to spend to destroy all trash bags.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

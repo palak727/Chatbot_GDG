@@ -1,0 +1,19 @@
+{
+    "id": "1477F",
+    "contest_id": 1477,
+    "problem_letter": "F",
+    "title": "F. Nezzar and Chocolate Bars",
+    "statement": "Nezzar buys his favorite snack — n chocolate bars with lengths l_1,l_2,…,l_n. However, chocolate bars might be too long to store them properly!\n\nIn order to solve this problem, Nezzar designs an interesting process to divide them into small pieces. Firstly, Nezzar puts all his chocolate bars into a black box. Then, he will perform the following operation repeatedly until the maximum length over all chocolate bars does not exceed k.\n\nNezzar now wonders, what is the expected number of operations he will perform to divide his chocolate bars into small pieces.\n\nIt can be shown that the answer can be represented as P/Q, where P and Q are coprime integers and Q not ≡ 0 (bmod 998,244,353). Print the value of P·Q^{-1} mod 998,244,353.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 50, 1 ≤ k ≤ 2000).\n\nThe second line contains n integers l_1, l_2, …, l_n (1 ≤ l_i, ∑_{i=1}^n l_i ≤ 2000).\n\nPrint a single integer — the expected number of operations Nezzar will perform to divide his chocolate bars into small pieces modulo 998,244,353.\n\nInput:\n```\n1 1\n2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n1 1\n1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n1 5\n1234\n```\n\nOutput:\n```\n15630811\n```\n\nInput:\n```\n2 1\n2 3\n```\n\nOutput:\n```\n476014684\n```\n\nInput:\n```\n10 33\n10 20 30 40 50 60 70 80 90 100\n```\n\nOutput:\n```\n675105648\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 50, 1 ≤ k ≤ 2000).\n\nThe second line contains n integers l_1, l_2, …, l_n (1 ≤ l_i, ∑_{i=1}^n l_i ≤ 2000).",
+    "output": "Print a single integer — the expected number of operations Nezzar will perform to divide his chocolate bars into small pieces modulo 998,244,353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math",
+        "probabilities",
+        "*3500"
+    ],
+    "rating": 3500
+}

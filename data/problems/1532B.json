@@ -1,0 +1,16 @@
+{
+    "id": "1532B",
+    "contest_id": 1532,
+    "problem_letter": "B",
+    "title": "B. Frog Jumping",
+    "statement": "A frog is currently at the point 0 on a coordinate axis Ox. It jumps by the following algorithm: the first jump is a units to the right, the second jump is b units to the left, the third jump is a units to the right, the fourth jump is b units to the left, and so on.\n\nFormally:\n\nYour task is to calculate the position of the frog after k jumps.\n\nBut... One more thing. You are watching t different frogs so you have to answer t independent queries.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of queries.\n\nEach of the next t lines contain queries (one query per line).\n\nThe query is described as three space-separated integers a, b, k (1 ≤ a, b, k ≤ 10^9) — the lengths of two types of jumps and the number of jumps, respectively.\n\nPrint t integers. The i-th integer should be the answer for the i-th query.\n\nIn the first query frog jumps 5 to the right, 2 to the left and 5 to the right so the answer is 5 - 2 + 5 = 8.\n\nIn the second query frog jumps 100 to the right, 1 to the left, 100 to the right and 1 to the left so the answer is 100 - 1 + 100 - 1 = 198.\n\nIn the third query the answer is 1 - 10 + 1 - 10 + 1 = -17.\n\nIn the fourth query the answer is 10^9 - 1 + 10^9 - 1 + 10^9 - 1 = 2999999997.\n\nIn the fifth query all frog's jumps are neutralized by each other so the answer is 0.\n\nThe sixth query is the same as the fifth but without the last jump so the answer is 1.\n\nInput:\n```\n6\n5 2 3\n100 1 4\n1 10 5\n1000000000 1 6\n1 1 1000000000\n1 1 999999999\n```\n\nOutput:\n```\n8\n198\n-17\n2999999997\n0\n1\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of queries.\n\nEach of the next t lines contain queries (one query per line).\n\nThe query is described as three space-separated integers a, b, k (1 ≤ a, b, k ≤ 10^9) — the lengths of two types of jumps and the number of jumps, respectively.",
+    "output": "Print t integers. The i-th integer should be the answer for the i-th query.",
+    "time_limit": "2 s",
+    "memory_limit": "512 MB",
+    "tags": [
+        "*special",
+        "math"
+    ],
+    "rating": null
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1067E",
+    "contest_id": 1067,
+    "problem_letter": "E",
+    "title": "E. Random Forest Rank",
+    "statement": "Let's define rank of undirected graph as rank of its adjacency matrix in mathbbR^{n × n}.\n\nGiven a tree. Each edge of this tree will be deleted with probability 1/2, all these deletions are independent. Let E be the expected rank of resulting forest. Find E·2^{n-1} modulo 998244353 (it is easy to show that E·2^{n-1} is an integer).\n\nFirst line of input contains n (1 ≤ n ≤ 5·10^5) — number of vertices.\n\nNext n-1 lines contains two integers u v (1 ≤ u, ,, v ≤ n; ,, u ≠ v) — indices of vertices connected by edge.\n\nIt is guaranteed that given graph is a tree.\n\nPrint one integer — answer to the problem.\n\nInput:\n```\n3\n1 2\n2 3\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n4\n1 2\n1 3\n1 4\n```\n\nOutput:\n```\n14\n```\n\nInput:\n```\n4\n1 2\n2 3\n3 4\n```\n\nOutput:\n```\n18\n```",
+    "input": "First line of input contains n (1 ≤ n ≤ 5·10^5) — number of vertices.\n\nNext n-1 lines contains two integers u v (1 ≤ u, ,, v ≤ n; ,, u ≠ v) — indices of vertices connected by edge.\n\nIt is guaranteed that given graph is a tree.",
+    "output": "Print one integer — answer to the problem.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "graph matchings",
+        "math",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

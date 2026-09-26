@@ -1,0 +1,16 @@
+{
+    "id": "1335A",
+    "contest_id": 1335,
+    "problem_letter": "A",
+    "title": "A. Candies and Two Sisters",
+    "statement": "There are two sisters Alice and Betty. You have n candies. You want to distribute these n candies between two sisters in such a way that:\n\nYour task is to calculate the number of ways to distribute exactly n candies between sisters in a way described above. Candies are indistinguishable.\n\nFormally, find the number of ways to represent n as the sum of n=a+b, where a and b are positive integers and a > b.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of a test case contains one integer n (1 ≤ n ≤ 2·10^9) — the number of candies you have.\n\nFor each test case, print the answer — the number of ways to distribute exactly n candies between two sisters in a way described in the problem statement. If there is no way to satisfy all the conditions, print 0.\n\nFor the test case of the example, the 3 possible ways to distribute candies are:\n\nInput:\n```\n6\n7\n1\n2\n3\n2000000000\n763243547\n```\n\nOutput:\n```\n3\n0\n0\n1\n999999999\n381621773\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of a test case contains one integer n (1 ≤ n ≤ 2·10^9) — the number of candies you have.",
+    "output": "For each test case, print the answer — the number of ways to distribute exactly n candies between two sisters in a way described in the problem statement. If there is no way to satisfy all the conditions, print 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

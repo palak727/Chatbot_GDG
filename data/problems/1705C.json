@@ -1,0 +1,17 @@
+{
+    "id": "1705C",
+    "contest_id": 1705,
+    "problem_letter": "C",
+    "title": "C. Mark and His Unfinished Essay",
+    "statement": "One night, Mark realized that there is an essay due tomorrow. He hasn't written anything yet, so Mark decided to randomly copy-paste substrings from the prompt to make the essay.\n\nMore formally, the prompt is a string s of initial length n. Mark will perform the copy-pasting operation c times. Each operation is described by two integers l and r, which means that Mark will append letters s_l s_{l+1} … s_r to the end of string s. Note that the length of s increases after this operation.\n\nOf course, Mark needs to be able to see what has been written. After copying, Mark will ask q queries: given an integer k, determine the k-th letter of the final string s.\n\nThe first line contains a single integer t (1≤ t≤ 1000) — the number of test cases.\n\nThe first line of each test case contains three integers n, c, and q (1≤ n≤ 2·10^5, 1≤ c≤ 40, and 1≤ q≤ 10^4) — the length of the initial string s, the number of copy-pasting operations, and the number of queries, respectively.\n\nThe second line of each test case contains a single string s of length n. It is guaranteed that s only contains lowercase English letters.\n\nThe following c lines describe the copy-pasting operation. Each line contains two integers l and r (1≤ l≤ r≤ 10^18). It is also guaranteed that r does not exceed the current length of s.\n\nThe last q lines of each test case describe the queries. Each line contains a single integer k (1≤ k≤ 10^18). It is also guaranteed that k does not exceed the final length of s.\n\nIt is guaranteed that the sum of n and q across all test cases does not exceed 2·10^5 and 10^4, respectively.\n\nFor each query, print the k-th letter of the final string s.\n\nIn the first test case, the copy-paste process is as follows.\n\nIn the second test case, the copy-paste process is as follows.\n\nInput:\n```\n24 3 3mark1 45 73 8110127 3 3creamii2 33 42 991112\n```\n\nOutput:\n```\nm\na\nr\ne\na\nr\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 1000) — the number of test cases.\n\nThe first line of each test case contains three integers n, c, and q (1≤ n≤ 2·10^5, 1≤ c≤ 40, and 1≤ q≤ 10^4) — the length of the initial string s, the number of copy-pasting operations, and the number of queries, respectively.\n\nThe second line of each test case contains a single string s of length n. It is guaranteed that s only contains lowercase English letters.\n\nThe following c lines describe the copy-pasting operation. Each line contains two integers l and r (1≤ l≤ r≤ 10^18). It is also guaranteed that r does not exceed the current length of s.\n\nThe last q lines of each test case describe the queries. Each line contains a single integer k (1≤ k≤ 10^18). It is also guaranteed that k does not exceed the final length of s.\n\nIt is guaranteed that the sum of n and q across all test cases does not exceed 2·10^5 and 10^4, respectively.",
+    "output": "For each query, print the k-th letter of the final string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

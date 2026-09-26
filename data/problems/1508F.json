@@ -1,0 +1,17 @@
+{
+    "id": "1508F",
+    "contest_id": 1508,
+    "problem_letter": "F",
+    "title": "F. Optimal Encoding",
+    "statement": "Touko's favorite sequence of numbers is a permutation a_1, a_2, …, a_n of 1, 2, …, n, and she wants some collection of permutations that are similar to her favorite permutation.\n\nShe has a collection of q intervals of the form [l_i, r_i] with 1 ≤ l_i ≤ r_i ≤ n. To create permutations that are similar to her favorite permutation, she coined the following definition:\n\nYuu wants to figure out all k-similar permutations for Touko, but it turns out this is a very hard task; instead, Yuu will encode the set of all k-similar permutations with directed acylic graphs (DAG). Yuu also coined the following definitions for herself:\n\nSince Yuu is free today, she wants to figure out the minimum number of edges among all k-encodings for each k from 1 to q.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 25,000, 1 ≤ q ≤ 100,000).\n\nThe second line contains n integers a_1, a_2, …, a_n which form a permutation of 1, 2, …, n.\n\nThe i-th of the following q lines contains two integers l_i and r_i. (1 ≤ l_i ≤ r_i ≤ n).\n\nPrint q lines. The k-th of them should contain a single integer — The minimum number of edges among all k-encodings.\n\nFor the first test case:\n\nInput:\n```\n4 3\n2 4 1 3\n1 3\n2 4\n1 4\n```\n\nOutput:\n```\n2\n4\n3\n```\n\nInput:\n```\n8 4\n3 7 4 8 1 5 2 6\n3 6\n1 6\n3 8\n1 8\n```\n\nOutput:\n```\n3\n5\n9\n7\n```\n\nInput:\n```\n10 10\n10 5 1 2 7 3 9 4 6 8\n2 2\n4 5\n6 8\n4 10\n4 4\n2 7\n2 2\n7 8\n3 7\n2 10\n```\n\nOutput:\n```\n0\n1\n3\n6\n6\n9\n9\n9\n9\n8\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n ≤ 25,000, 1 ≤ q ≤ 100,000).\n\nThe second line contains n integers a_1, a_2, …, a_n which form a permutation of 1, 2, …, n.\n\nThe i-th of the following q lines contains two integers l_i and r_i. (1 ≤ l_i ≤ r_i ≤ n).",
+    "output": "Print q lines. The k-th of them should contain a single integer — The minimum number of edges among all k-encodings.",
+    "time_limit": "7 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "*3500"
+    ],
+    "rating": 3500
+}

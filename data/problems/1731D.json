@@ -1,0 +1,20 @@
+{
+    "id": "1731D",
+    "contest_id": 1731,
+    "problem_letter": "D",
+    "title": "D. Valiant's New Map",
+    "statement": "Game studio \"DbZ Games\" wants to introduce another map in their popular game \"Valiant\". This time, the map named \"Panvel\" will be based on the city of Mumbai.\n\nMumbai can be represented as n × m cellular grid. Each cell (i, j) (1 ≤ i ≤ n; 1 ≤ j ≤ m) of the grid is occupied by a cuboid building of height a_{i,j}.\n\nThis time, DbZ Games want to make a map that has perfect vertical gameplay. That's why they want to choose an l × l square inside Mumbai, such that each building inside the square has a height of at least l.\n\nCan you help DbZ Games find such a square of the maximum possible size l?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains two positive integers n and m (1 ≤ n ≤ m; 1 ≤ n·m ≤ 10^6).\n\nThe i-th of next n lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^6) — heights of buildings on the i-th row.\n\nIt's guaranteed that the sum of n·m over all test cases doesn't exceed 10^6.\n\nFor each test case, print the maximum side length l of the square DbZ Games can choose.\n\nIn the first test case, we can choose the square of side l = 2 (i. e. the whole grid) since the heights of all buildings are greater than or equal to 2.\n\nIn the second test case, we can only choose the side as 1, so the answer is 1.\n\nIn the third test case, there are no squares of size 2 that have all buildings of height at least 2, so the answer is 1.\n\nInput:\n```\n42 22 34 51 31 2 32 34 4 32 1 45 61 9 4 6 5 810 9 5 8 11 624 42 32 8 11 123 1 9 69 13 313 22 60 12 14 17\n```\n\nOutput:\n```\n2\n1\n1\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains two positive integers n and m (1 ≤ n ≤ m; 1 ≤ n·m ≤ 10^6).\n\nThe i-th of next n lines contains m integers a_{i,1}, a_{i,2}, …, a_{i,m} (1 ≤ a_{i,j} ≤ 10^6) — heights of buildings on the i-th row.\n\nIt's guaranteed that the sum of n·m over all test cases doesn't exceed 10^6.",
+    "output": "For each test case, print the maximum side length l of the square DbZ Games can choose.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

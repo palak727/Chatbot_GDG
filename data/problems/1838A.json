@@ -1,0 +1,17 @@
+{
+    "id": "1838A",
+    "contest_id": 1838,
+    "problem_letter": "A",
+    "title": "A. Blackboard List",
+    "statement": "Two integers were written on a blackboard. After that, the following step was carried out n-2 times:\n\nAfter this process was complete, the list of n integers was shuffled. You are given the final list. Recover one of the initial two numbers. You do not need to recover the other one.\n\nYou are guaranteed that the input can be generated using the above process.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 100) — the size of the final list.\n\nThe next line of each test case contains n integers a_1, a_2, … a_n (-10^9 ≤ a_i ≤ 10^9) — the shuffled list of numbers written on the blackboard.\n\nIt is guaranteed that the input was generated using the process described above.\n\nFor each test case, output a single integer x — one of the two initial numbers on the blackboard.\n\nIf there are multiple solutions, print any of them.\n\nFor the first test case, a can be produced by starting with either 9 and 2, and then writing down |9-2|=7, or starting with 9 and 7 and writing down |9-7|=2. So 2, 7, and 9 are all valid answers, because they all appear in at least one valid pair.\n\nFor the second test case, we can show that the two initial numbers must have been -4 and 11.\n\nFor the fourth test case, the starting numbers could have been either 3 and 3, or 3 and 0, so 3 and 0 are both valid answers.\n\nFor the fifth test case, we can show that the starting numbers were 8 and 16.\n\nInput:\n```\n939 2 7315 -4 114-9 1 11 -1053 0 0 0 378 16 8 0 8 16 840 0 0 01027 1 24 28 2 -1 26 25 28 276600000000 800000000 0 -200000000 1000000000 80000000030 -1000000000 1000000000\n```\n\nOutput:\n```\n9\n11\n-9\n3\n8\n0\n-1\n600000000\n0\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 100) — the size of the final list.\n\nThe next line of each test case contains n integers a_1, a_2, … a_n (-10^9 ≤ a_i ≤ 10^9) — the shuffled list of numbers written on the blackboard.\n\nIt is guaranteed that the input was generated using the process described above.",
+    "output": "For each test case, output a single integer x — one of the two initial numbers on the blackboard.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

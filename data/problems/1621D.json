@@ -1,0 +1,18 @@
+{
+    "id": "1621D",
+    "contest_id": 1621,
+    "problem_letter": "D",
+    "title": "D. The Winter Hike",
+    "statement": "Circular land is an 2n × 2n grid. Rows of this grid are numbered by integers from 1 to 2n from top to bottom and columns of this grid are numbered by integers from 1 to 2n from left to right. The cell (x, y) is the cell on the intersection of row x and column y for 1 ≤ x ≤ 2n and 1 ≤ y ≤ 2n.\n\nThere are n^2 of your friends in the top left corner of the grid. That is, in each cell (x, y) with 1 ≤ x, y ≤ n there is exactly one friend. Some of the other cells are covered with snow.\n\nYour friends want to get to the bottom right corner of the grid. For this in each cell (x, y) with n+1 ≤ x, y ≤ 2n there should be exactly one friend. It doesn't matter in what cell each of friends will be.\n\nYou have decided to help your friends to get to the bottom right corner of the grid.\n\nFor this, you can give instructions of the following types:\n\nNote how friends on the grid border behave in these instructions.\n\nYou can give such instructions any number of times. You can give instructions of different types. If after any instruction one of your friends is in the cell covered with snow he becomes ill.\n\nIn order to save your friends you can remove snow from some cells before giving the first instruction:\n\nYou can do this operation any number of times.\n\nYou want to spend the minimal number of coins and give some instructions to your friends. After this, all your friends should be in the bottom right corner of the grid and none of them should be ill.\n\nPlease, find how many coins you will spend.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains the single integer n (1 ≤ n ≤ 250).\n\nEach of the next 2n lines contains 2n integers c_{i, 1}, c_{i, 2}, …, c_{i, 2n} (0 ≤ c_{i, j} ≤ 10^9) — costs of removing snow from cells. If c_{i, j} = 0 for some i, j than there is no snow in cell (i, j). Otherwise, cell (i, j) is covered with snow.\n\nIt is guaranteed that c_{i, j} = 0 for 1 ≤ i, j ≤ n.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 250.\n\nFor each test case output one integer — the minimal number of coins you should spend.\n\nIn the first test case you can remove snow from the cells (2, 1) and (2, 2) for 100 coins. Then you can give instructions\n\nIn the second test case you can remove all snow from the columns 3 and 4 for 22 coins. Then you can give instructions\n\nIt can be shown that none of the friends will become ill and that it is impossible to spend less coins.\n\nInput:\n```\n410 81 9920 0 0 00 0 0 09 9 2 29 9 9 920 0 4 20 0 2 44 2 4 22 4 2 440 0 0 0 0 0 0 20 0 0 0 0 0 2 00 0 0 0 0 2 0 00 0 0 0 2 0 0 00 0 0 2 2 0 2 20 0 2 0 1 6 2 10 2 0 0 2 4 7 42 0 0 0 2 0 1 6\n```\n\nOutput:\n```\n100\n22\n14\n42\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains the single integer n (1 ≤ n ≤ 250).\n\nEach of the next 2n lines contains 2n integers c_{i, 1}, c_{i, 2}, …, c_{i, 2n} (0 ≤ c_{i, j} ≤ 10^9) — costs of removing snow from cells. If c_{i, j} = 0 for some i, j than there is no snow in cell (i, j). Otherwise, cell (i, j) is covered with snow.\n\nIt is guaranteed that c_{i, j} = 0 for 1 ≤ i, j ≤ n.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 250.",
+    "output": "For each test case output one integer — the minimal number of coins you should spend.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

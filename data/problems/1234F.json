@@ -1,0 +1,17 @@
+{
+    "id": "1234F",
+    "contest_id": 1234,
+    "problem_letter": "F",
+    "title": "F. Yet Another Substring Reverse",
+    "statement": "You are given a string s consisting only of first 20 lowercase Latin letters ('a', 'b', ..., 't').\n\nRecall that the substring s[l; r] of the string s is the string s_l s_{l + 1} … s_r. For example, the substrings of \"codeforces\" are \"code\", \"force\", \"f\", \"for\", but not \"coder\" and \"top\".\n\nYou can perform the following operation no more than once: choose some substring s[l; r] and reverse it (i.e. the string s_l s_{l + 1} … s_r becomes s_r s_{r - 1} … s_l).\n\nYour goal is to maximize the length of the maximum substring of s consisting of distinct (i.e. unique) characters.\n\nThe string consists of distinct characters if no character in this string appears more than once. For example, strings \"abcde\", \"arctg\" and \"minecraft\" consist of distinct characters but strings \"codeforces\", \"abacaba\" do not consist of distinct characters.\n\nThe only line of the input contains one string s consisting of no more than 10^6 characters 'a', 'b', ..., 't' (first 20 lowercase Latin letters).\n\nPrint one integer — the maximum possible length of the maximum substring of s consisting of distinct characters after reversing no more than one its substring.\n\nInput:\n```\nabacaba\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\nabcdecdf\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\naabbcc\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\nabcdeefc\n```\n\nOutput:\n```\n6\n```",
+    "input": "The only line of the input contains one string s consisting of no more than 10^6 characters 'a', 'b', ..., 't' (first 20 lowercase Latin letters).",
+    "output": "Print one integer — the maximum possible length of the maximum substring of s consisting of distinct characters after reversing no more than one its substring.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

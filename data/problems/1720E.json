@@ -1,0 +1,20 @@
+{
+    "id": "1720E",
+    "contest_id": 1720,
+    "problem_letter": "E",
+    "title": "E. Misha and Paintings",
+    "statement": "Misha has a square n × n matrix, where the number in row i and column j is equal to a_{i, j}. Misha wants to modify the matrix to contain exactly k distinct integers. To achieve this goal, Misha can perform the following operation zero or more times:\n\nPlease find the minimum number of operations that Misha needs to achieve his goal.\n\nThe first input line contains two integers n and k (1 ≤ n ≤ 500, 1 ≤ k ≤ n^2) — the size of the matrix and the desired amount of distinct elements in the matrix.\n\nThen n lines follows. The i-th of them contains n integers a_{i, 1}, a_{i, 2}, …, a_{i, n} (1 ≤ a_{i,j} ≤ n^2) — the elements of the i-th row of the matrix.\n\nOutput one integer — the minimum number of operations required.\n\nIn the first test case the answer is 1, because one can change the value in the bottom right corner of the matrix to 1. The resulting matrix can be found below:\n\nIn the second test case the answer is 2. First, one can change the entire matrix to contain only 1s, and the change the value of any single cell to 2. One of the possible resulting matrices is displayed below:\n\nInput:\n```\n3 4\n1 1 1\n1 1 2\n3 4 5\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 2\n2 1 3\n2 1 1\n3 1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 3\n1 1 1\n1 1 2\n2 2 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 2\n1 1 1\n1 2 1\n2 2 2\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first input line contains two integers n and k (1 ≤ n ≤ 500, 1 ≤ k ≤ n^2) — the size of the matrix and the desired amount of distinct elements in the matrix.\n\nThen n lines follows. The i-th of them contains n integers a_{i, 1}, a_{i, 2}, …, a_{i, n} (1 ≤ a_{i,j} ≤ n^2) — the elements of the i-th row of the matrix.",
+    "output": "Output one integer — the minimum number of operations required.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

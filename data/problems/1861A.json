@@ -1,0 +1,17 @@
+{
+    "id": "1861A",
+    "contest_id": 1861,
+    "problem_letter": "A",
+    "title": "A. Prime Deletion",
+    "statement": "A prime number is a positive integer that has exactly two different positive divisors: 1 and the integer itself. For example, 2, 3, 13 and 101 are prime numbers; 1, 4, 6 and 42 are not.\n\nYou are given a sequence of digits from 1 to 9, in which every digit from 1 to 9 appears exactly once.\n\nYou are allowed to do the following operation several (maybe zero) times: choose any digit from the sequence and delete it. However, you cannot perform this operation if the sequence consists of only two digits.\n\nYour goal is to obtain a sequence which represents a prime number. Note that you cannot reorder the digits in the sequence.\n\nPrint the resulting sequence, or report that it is impossible to perform the operations so that the resulting sequence is a prime number.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing a string of 9 digits (without any characters between them). Each digit from 1 to 9 appears in this string exactly once.\n\nFor each test case, print the answer on a separate line as follows:\n\nInput:\n```\n4123456789987654321243567918576318429\n```\n\nOutput:\n```\n167\n53\n3571\n57638429\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line containing a string of 9 digits (without any characters between them). Each digit from 1 to 9 appears in this string exactly once.",
+    "output": "For each test case, print the answer on a separate line as follows:",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2028E",
+    "contest_id": 2028,
+    "problem_letter": "E",
+    "title": "E. Alice's Adventures in the Rabbit Hole",
+    "statement": "Alice is at the bottom of the rabbit hole! The rabbit hole can be modeled as a tree^{∗} which has an exit at vertex 1, and Alice starts at some vertex v. She wants to get out of the hole, but unfortunately, the Queen of Hearts has ordered her execution.\n\nEach minute, a fair coin is flipped. If it lands heads, Alice gets to move to an adjacent vertex of her current location, and otherwise, the Queen of Hearts gets to pull Alice to an adjacent vertex of the Queen's choosing. If Alice ever ends up on any of the non-root leaves^{†} of the tree, Alice loses.\n\nAssuming both of them move optimally, compute the probability that Alice manages to escape for every single starting vertex 1≤ v≤ n. Since these probabilities can be very small, output them modulo 998,244,353.\n\nFormally, let M = 998,244,353. It can be shown that the exact answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\n^{∗}A tree is a connected simple graph which has n vertices and n-1 edges.\n\n^{†}A leaf is a vertex that is connected to exactly one edge.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nThe i-th of the next n - 1 lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n and x_i ≠ y_i) — the edges of the tree. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output n integers on one line — the probabilities of Alice escaping starting from vertex 1, 2, …, n. Since these probabilities can be very small, output them modulo 998,244,353.\n\nFor the first test case:\n\nInput:\n```\n251 21 32 43 591 22 34 55 67 88 92 45 7\n```\n\nOutput:\n```\n1 499122177 499122177 0 0 \n1 499122177 0 332748118 166374059 0 443664157 720954255 0 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nThe i-th of the next n - 1 lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n and x_i ≠ y_i) — the edges of the tree. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n integers on one line — the probabilities of Alice escaping starting from vertex 1, 2, …, n. Since these probabilities can be very small, output them modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "games",
+        "greedy",
+        "math",
+        "probabilities",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

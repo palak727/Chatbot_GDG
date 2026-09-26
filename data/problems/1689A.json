@@ -1,0 +1,20 @@
+{
+    "id": "1689A",
+    "contest_id": 1689,
+    "problem_letter": "A",
+    "title": "A. Lex String",
+    "statement": "Kuznecov likes art, poetry, and music. And strings consisting of lowercase English letters.\n\nRecently, Kuznecov has found two strings, a and b, of lengths n and m respectively. They consist of lowercase English letters and no character is contained in both strings.\n\nLet another string c be initially empty. Kuznecov can do the following two types of operations:\n\nBut, he can not do more than k operations of the same type in a row. He must perform operations until either a or b becomes empty. What is the lexicographically smallest possible value of c after he finishes?\n\nA string x is lexicographically smaller than a string y if and only if one of the following holds:\n\nThere are several test cases in the input data. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains three integers n, m, and k (1≤ n,m,k ≤ 100) — parameters from the statement.\n\nThe second line of each test case contains the string a of length n.\n\nThe third line of each test case contains the string b of length m.\n\nThe strings contain only lowercase English letters. It is guaranteed that no symbol appears in a and b simultaneously.\n\nIn each test case, output a single string c — the answer to the problem.\n\nIn the first test case, it is optimal to take two 'a's from the string a and add them to the string c. Then it is forbidden to take more characters from a, hence one character 'b' from the string b has to be taken. Following that logic, we end up with c being 'aabaabaa' when string a is emptied.\n\nIn the second test case it is optimal to take as many 'a's from string a as possible, then take as many 'b's as possible from string b. In the end, we take two 'c's from the string a emptying it.\n\nInput:\n```\n36 4 2aaaaaabbbb5 9 3caacabedededeb7 7 1noskillwxhtzdy\n```\n\nOutput:\n```\naabaabaa\naaabbcc\ndihktlwlxnyoz\n```",
+    "input": "There are several test cases in the input data. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains three integers n, m, and k (1≤ n,m,k ≤ 100) — parameters from the statement.\n\nThe second line of each test case contains the string a of length n.\n\nThe third line of each test case contains the string b of length m.\n\nThe strings contain only lowercase English letters. It is guaranteed that no symbol appears in a and b simultaneously.",
+    "output": "In each test case, output a single string c — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

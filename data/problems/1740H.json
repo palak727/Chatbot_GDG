@@ -1,0 +1,17 @@
+{
+    "id": "1740H",
+    "contest_id": 1740,
+    "problem_letter": "H",
+    "title": "H. MEX Tree Manipulation",
+    "statement": "Given a rooted tree, define the value of vertex u in the tree recursively as the MEX^dagger of the values of its children. Note that it is only the children, not all of its descendants. In particular, the value of a leaf is 0.\n\nPak Chanek has a rooted tree that initially only contains a single vertex with index 1, which is the root. Pak Chanek is going to do q queries. In the i-th query, Pak Chanek is given an integer x_i. Pak Chanek needs to add a new vertex with index i+1 as the child of vertex x_i. After adding the new vertex, Pak Chanek needs to recalculate the values of all vertices and report the sum of the values of all vertices in the current tree.\n\n^dagger The MEX (minimum excluded) of an array is the smallest non-negative integer that does not belong to the array. For example, the MEX of [0,1,1,2,6,7] is 3 and the MEX of [6,9] is 0.\n\nThe first line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of operations.\n\nEach of the next q lines contains a single integer x_i (1 ≤ x_i ≤ i) — the description of the i-th query.\n\nFor each query, print a line containing an integer representing the sum of the new values of all vertices in the tree after adding the vertex.\n\nIn the first example, the tree after the 6-th query will look like this.\n\nThe sum of the values of all vertices is 0+0+1+0+1+2+0=4.\n\nInput:\n```\n7\n1\n1\n3\n2\n5\n2\n1\n```\n\nOutput:\n```\n1\n1\n3\n2\n4\n4\n7\n```\n\nInput:\n```\n8\n1\n1\n1\n1\n5\n6\n7\n8\n```\n\nOutput:\n```\n1\n1\n1\n1\n3\n2\n4\n3\n```",
+    "input": "The first line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of operations.\n\nEach of the next q lines contains a single integer x_i (1 ≤ x_i ≤ i) — the description of the i-th query.",
+    "output": "For each query, print a line containing an integer representing the sum of the new values of all vertices in the tree after adding the vertex.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "trees",
+        "*3300"
+    ],
+    "rating": 3300
+}

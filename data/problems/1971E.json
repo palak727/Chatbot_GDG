@@ -1,0 +1,18 @@
+{
+    "id": "1971E",
+    "contest_id": 1971,
+    "problem_letter": "E",
+    "title": "E. Find the Car",
+    "statement": "Timur is in a car traveling on the number line from point 0 to point n. The car starts moving from point 0 at minute 0.\n\nThere are k+1 signs on the line at points 0, a_1, a_2, …, a_k, and Timur knows that the car will arrive there at minutes 0, b_1, b_2, …, b_k, respectively. The sequences a and b are strictly increasing with a_k = n.\n\nBetween any two adjacent signs, the car travels with a constant speed. Timur has q queries: each query will be an integer d, and Timur wants you to output how many minutes it takes the car to reach point d, rounded down to the nearest integer.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and q, (k ≤ n ≤ 10^9; 1 ≤ k, q ≤ 10^5) — the final destination, the number of points Timur knows the time for, and the number of queries respectively.\n\nThe second line of each test case contains k integers a_i (1 ≤ a_i ≤ n; a_i < a_{i+1} for every 1 ≤ i ≤ k-1; a_k = n).\n\nThe third line of each test case contains k integers b_i (1 ≤ b_i ≤ 10^9; b_i < b_{i+1} for every 1 ≤ i ≤ k-1).\n\nEach of the following q lines contains a single integer d (0 ≤ d ≤ n) — the distance that Timur asks the minutes passed for.\n\nThe sum of k over all test cases doesn't exceed 10^5, and the sum of q over all test cases doesn't exceed 10^5.\n\nFor each query, output a single integer — the number of minutes passed until the car reaches the point d, rounded down.\n\nFor the first test case, the car goes from point 0 to point 10 in 10 minutes, so the speed is 1 unit per minute and:\n\nFor the second test case, between points 0 and 4, the car travels at a speed of 1 unit per minute and between 4 and 10 with a speed of 2 units per minute and:\n\nFor the fourth test case, the car travels with 1.2 units per minute, so the answers to the queries are:\n\nInput:\n```\n410 1 3101006710 2 44 104 764271000000000 1 110000000001000000000999999996 1 365265\n```\n\nOutput:\n```\n0 6 7 \n5 4 2 5 \n99999999 \n1 5 4 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and q, (k ≤ n ≤ 10^9; 1 ≤ k, q ≤ 10^5) — the final destination, the number of points Timur knows the time for, and the number of queries respectively.\n\nThe second line of each test case contains k integers a_i (1 ≤ a_i ≤ n; a_i < a_{i+1} for every 1 ≤ i ≤ k-1; a_k = n).\n\nThe third line of each test case contains k integers b_i (1 ≤ b_i ≤ 10^9; b_i < b_{i+1} for every 1 ≤ i ≤ k-1).\n\nEach of the following q lines contains a single integer d (0 ≤ d ≤ n) — the distance that Timur asks the minutes passed for.\n\nThe sum of k over all test cases doesn't exceed 10^5, and the sum of q over all test cases doesn't exceed 10^5.",
+    "output": "For each query, output a single integer — the number of minutes passed until the car reaches the point d, rounded down.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

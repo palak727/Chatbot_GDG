@@ -1,0 +1,18 @@
+{
+    "id": "1534D",
+    "contest_id": 1534,
+    "problem_letter": "D",
+    "title": "D. Lost Tree",
+    "statement": "This is an interactive problem.\n\nLittle Dormi was faced with an awkward problem at the carnival: he has to guess the edges of an unweighted tree of n nodes! The nodes of the tree are numbered from 1 to n.\n\nThe game master only allows him to ask one type of question:\n\nAdditionally, to make the game unfair challenge Little Dormi the game master will allow at most lceiln/2rceil questions, where lceil x rceil denotes the smallest integer greater than or equal to x.\n\nFaced with the stomach-churning possibility of not being able to guess the tree, Little Dormi needs your help to devise a winning strategy!\n\nNote that the game master creates the tree before the game starts, and does not change it during the game.\n\nThe first line of input contains the integer n (2 ≤ n ≤ 2,000), the number of nodes in the tree.\n\nYou will then begin interaction.\n\nWhen your program has found the tree, first output a line consisting of a single \"!\" followed by n-1 lines each with two space separated integers a and b, denoting an edge connecting nodes a and b (1 ≤ a, b ≤ n). Once you are done, terminate your program normally immediately after flushing the output stream.\n\nYou may output the edges in any order and an edge (a,b) is considered the same as an edge (b,a). Answering is not considered as a query.\n\nAfter taking input, you may make at most lceiln/2rceil queries. Each query is made in the format \"? r\", where r is an integer 1 ≤ r ≤ n that denotes the node you want to pick for that query.\n\nYou will then receive n space separated integers d_1, d_2, …, d_n, where d_i is the length of the shortest path from node r to i, followed by a newline.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nIf at any point you make an invalid query or try to make more than lceil n/2 rceil queries, the interaction will terminate immediately and you will receive a Wrong Answer verdict.\n\nHacks\n\nTo hack a solution, use the following format.\n\nThe first line contains the integer n (2 ≤ n ≤ 2,000).\n\nThe next n−1 lines contain two integers u and v (1 ≤ u,v ≤ n) denoting an edge between u and v (u ≠ v). These n-1 edges must form a tree.\n\nHere is the tree from the first example.\n\nNotice that the edges can be output in any order.\n\nAdditionally, here are the answers for querying every single node in example 1:\n\nBelow is the tree from the second example interaction.\n\nLastly, here are the answers for querying every single node in example 2:\n\nInput:\n```\n4\n\n0 1 2 2\n\n1 0 1 1\n```\n\nOutput:\n```\n? 1\n\n? 2\n\n!\n4 2\n1 2\n2 3\n```\n\nInput:\n```\n5\n\n2 2 1 1 0\n```\n\nOutput:\n```\n? 5\n\n!\n4 5\n3 5\n2 4\n1 3\n```",
+    "input": "The first line of input contains the integer n (2 ≤ n ≤ 2,000), the number of nodes in the tree.\n\nYou will then begin interaction.",
+    "output": "When your program has found the tree, first output a line consisting of a single \"!\" followed by n-1 lines each with two space separated integers a and b, denoting an edge connecting nodes a and b (1 ≤ a, b ≤ n). Once you are done, terminate your program normally immediately after flushing the output stream.\n\nYou may output the edges in any order and an edge (a,b) is considered the same as an edge (b,a). Answering is not considered as a query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

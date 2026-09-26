@@ -1,0 +1,17 @@
+{
+    "id": "1873C",
+    "contest_id": 1873,
+    "problem_letter": "C",
+    "title": "C. Target Practice",
+    "statement": "A 10 × 10 target is made out of five \"rings\" as shown. Each ring has a different point value: the outermost ring — 1 point, the next ring — 2 points, ..., the center ring — 5 points.\n\nVlad fired several arrows at the target. Help him determine how many points he got.\n\nThe input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of 10 lines, each containing 10 characters. Each character in the grid is either textttX (representing an arrow) or texttt. (representing no arrow).\n\nFor each test case, output a single integer — the total number of points of the arrows.\n\nIn the first test case, there are three arrows on the outer ring worth 1 point each, two arrows on the ring worth 3 points each, and two arrows on the ring worth 4 points each. The total score is 3 × 1 + 2 × 3 + 2 × 4 = 17.\n\nIn the second test case, there aren't any arrows, so the score is 0.\n\nInput:\n```\n4X..........................X.......X..........X......................X..X..........................X................................................................................................................................................X.......................................................XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n```\n\nOutput:\n```\n17\n0\n5\n220\n```",
+    "input": "The input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of 10 lines, each containing 10 characters. Each character in the grid is either textttX (representing an arrow) or texttt. (representing no arrow).",
+    "output": "For each test case, output a single integer — the total number of points of the arrows.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

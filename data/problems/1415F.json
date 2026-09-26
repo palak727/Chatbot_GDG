@@ -1,0 +1,16 @@
+{
+    "id": "1415F",
+    "contest_id": 1415,
+    "problem_letter": "F",
+    "title": "F. Cakes for Clones",
+    "statement": "You live on a number line. You are initially (at time moment t = 0) located at point x = 0. There are n events of the following type: at time t_i a small cake appears at coordinate x_i. To collect this cake, you have to be at this coordinate at this point, otherwise the cake spoils immediately. No two cakes appear at the same time and no two cakes appear at the same coordinate.\n\nYou can move with the speed of 1 length unit per one time unit. Also, at any moment you can create a clone of yourself at the same point where you are located. The clone can't move, but it will collect the cakes appearing at this position for you. The clone disappears when you create another clone. If the new clone is created at time moment t, the old clone can collect the cakes that appear before or at the time moment t, and the new clone can collect the cakes that appear at or after time moment t.\n\nCan you collect all the cakes (by yourself or with the help of clones)?\n\nThe first line contains a single integer n (1 ≤ n ≤ 5000) — the number of cakes.\n\nEach of the next n lines contains two integers t_i and x_i (1 ≤ t_i ≤ 10^9, -10^9 ≤ x_i ≤ 10^9) — the time and coordinate of a cake's appearance.\n\nAll times are distinct and are given in increasing order, all the coordinates are distinct.\n\nPrint \"YES\" if you can collect all cakes, otherwise print \"NO\".\n\nIn the first example you should start moving towards 5 right away, leaving a clone at position 1 at time moment 1, and collecting the cake at position 2 at time moment 2. At time moment 5 you are at the position 5 and collect a cake there, your clone collects the last cake at time moment 6.\n\nIn the second example you have to leave a clone at position 0 and start moving towards position 5. At time moment 1 the clone collects a cake. At time moment 2 you should create a new clone at the current position 2, it will collect the last cake in future. You will collect the second cake at position 5.\n\nIn the third example there is no way to collect all cakes.\n\nInput:\n```\n3\n2 2\n5 5\n6 1\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n3\n1 0\n5 5\n6 2\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n3\n2 1\n5 5\n6 0\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 5000) — the number of cakes.\n\nEach of the next n lines contains two integers t_i and x_i (1 ≤ t_i ≤ 10^9, -10^9 ≤ x_i ≤ 10^9) — the time and coordinate of a cake's appearance.\n\nAll times are distinct and are given in increasing order, all the coordinates are distinct.",
+    "output": "Print \"YES\" if you can collect all cakes, otherwise print \"NO\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "*2900"
+    ],
+    "rating": 2900
+}

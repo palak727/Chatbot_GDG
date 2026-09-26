@@ -1,0 +1,19 @@
+{
+    "id": "1821F",
+    "contest_id": 1821,
+    "problem_letter": "F",
+    "title": "F. Timber",
+    "statement": "There is a beautiful alley with trees in front of a shopping mall. Unfortunately, it has to go to make space for the parking lot.\n\nThe trees on the alley all grow in a single line. There are n spots for trees, index 0 is the shopping mall, index n+1 is the road and indices from 1 to n are the spots for trees. Some of them are taken — there grow trees of the same height k. No more than one tree grows in each spot.\n\nWhen you chop down a tree in the spot x, you can make it fall either left or right. If it falls to the left, it takes up spots from x-k to x, inclusive. If it falls to the right, it takes up spots from x to x+k, inclusive.\n\nLet m trees on the alley grow in some spots x_1, x_2, …, x_m. Let an alley be called unfortunate if all m trees can be chopped down in such a way that:\n\nCalculate the number of different unfortunate alleys with m trees of height k. Two alleys are considered different if there is a spot y such that a tree grows in y on the first alley and doesn't grow in y on the second alley.\n\nOutput the number modulo 998,244,353.\n\nThe only line contains three integers n, m and k (1 ≤ m, k ≤ n ≤ 3·10^5) — the number of spots for the trees, the number of trees and the height of each tree.\n\nPrint a single integer — the number of different unfortunate alleys with m trees of height k, modulo 998,244,353.\n\nInput:\n```\n6 1 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5 2 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n6 2 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n15 3 2\n```\n\nOutput:\n```\n311\n```",
+    "input": "The only line contains three integers n, m and k (1 ≤ m, k ≤ n ≤ 3·10^5) — the number of spots for the trees, the number of trees and the height of each tree.",
+    "output": "Print a single integer — the number of different unfortunate alleys with m trees of height k, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

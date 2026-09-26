@@ -1,0 +1,20 @@
+{
+    "id": "1950F",
+    "contest_id": 1950,
+    "problem_letter": "F",
+    "title": "F. 0, 1, 2, Tree!",
+    "statement": "Find the minimum height of a rooted tree^dagger with a+b+c vertices that satisfies the following conditions:\n\nThe tree above is rooted at the top vertex, and each vertex is labeled with the number of children it has. Here a=2, b=1, c=3, and the height is 2.\n\n^dagger A rooted tree is a connected graph without cycles, with a special vertex called the root. In a rooted tree, among any two vertices connected by an edge, one vertex is a parent (the one closer to the root), and the other one is a child.\n\nThe distance between two vertices in a tree is the number of edges in the shortest path between them. The height of a rooted tree is the maximum distance from a vertex to the root.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers a, b, and c (0 ≤ a, b, c ≤ 10^5; 1 ≤ a + b + c).\n\nThe sum of a + b + c over all test cases does not exceed 3·10^5.\n\nFor each test case, if no such tree exists, output -1. Otherwise, output one integer — the minimum height of a tree satisfying the conditions in the statement.\n\nThe first test case is pictured in the statement. It can be proven that you can't get a height smaller than 2.\n\nIn the second test case, you can form a tree with a single vertex and no edges. It has height 0, which is clearly optimal.\n\nIn the third test case, you can form a tree with two vertices joined by a single edge. It has height 1, which is clearly optimal.\n\nInput:\n```\n102 1 30 0 10 1 11 0 21 1 33 1 48 17 924 36 481 0 00 3 1\n```\n\nOutput:\n```\n2\n0\n1\n1\n-1\n3\n6\n-1\n-1\n3\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers a, b, and c (0 ≤ a, b, c ≤ 10^5; 1 ≤ a + b + c).\n\nThe sum of a + b + c over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, if no such tree exists, output -1. Otherwise, output one integer — the minimum height of a tree satisfying the conditions in the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

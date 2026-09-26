@@ -1,0 +1,21 @@
+{
+    "id": "1704E",
+    "contest_id": 1704,
+    "problem_letter": "E",
+    "title": "E. Count Seconds",
+    "statement": "Cirno has a DAG (Directed Acyclic Graph) with n nodes and m edges. The graph has exactly one node that has no out edges. The i-th node has an integer a_i on it.\n\nEvery second the following happens:\n\nFind the first moment of time when all a_i become 0. Since the answer can be very large, output it modulo 998,244,353.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 1000) — the number of vertices and edges in the graph.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the integer on vertices.\n\nEach line of the following m lines contains two integers x, y (1 ≤ x, y ≤ n), represent a directed edge from x to y. It is guaranteed that the graph is a DAG with no multi-edges, and there is exactly one node that has no out edges.\n\nIt is guaranteed that both sum of n and sum of m over all test cases are less than or equal to 10,000.\n\nFor each test case, print an integer in a separate line — the first moment of time when all a_i become 0, modulo 998,244,353.\n\nIn the first test case:\n\nSo the answer is 3.\n\nIn the third test case:\n\nThe first moment of time when all a_i become 0 is 6·998244353 + 4.\n\nInput:\n```\n53 21 1 11 22 35 51 0 0 0 01 22 33 44 51 510 11998244353 0 0 0 998244353 0 0 0 0 01 22 33 44 55 66 77 88 99 101 37 95 61293 1145 9961 9961 19191 22 33 45 41 42 46 910 10 10 10 10 101 21 32 34 36 33 56 56 16 2\n```\n\nOutput:\n```\n3\n5\n4\n28010\n110\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 1000) — the number of vertices and edges in the graph.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the integer on vertices.\n\nEach line of the following m lines contains two integers x, y (1 ≤ x, y ≤ n), represent a directed edge from x to y. It is guaranteed that the graph is a DAG with no multi-edges, and there is exactly one node that has no out edges.\n\nIt is guaranteed that both sum of n and sum of m over all test cases are less than or equal to 10,000.",
+    "output": "For each test case, print an integer in a separate line — the first moment of time when all a_i become 0, modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "graphs",
+        "implementation",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

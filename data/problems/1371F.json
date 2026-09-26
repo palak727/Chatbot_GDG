@@ -1,0 +1,18 @@
+{
+    "id": "1371F",
+    "contest_id": 1371,
+    "problem_letter": "F",
+    "title": "F. Raging Thunder",
+    "statement": "You are a warrior fighting against the machine god Thor.\n\nThor challenge you to solve the following problem:\n\nThere are n conveyors arranged in a line numbered with integers from 1 to n from left to right. Each conveyor has a symbol \"<\" or \">\". The initial state of the conveyor i is equal to the i-th character of the string s. There are n+1 holes numbered with integers from 0 to n. The hole 0 is on the left side of the conveyor 1, and for all i ≥ 1 the hole i is on the right side of the conveyor i.\n\nWhen a ball is on the conveyor i, the ball moves by the next rules:\n\nIf the symbol \"<\" is on the conveyor i, then:\n\nIf the symbol \">\" is on the conveyor i, then:\n\nYou should answer next q queries, each query is defined by the pair of integers l, r (1 ≤ l ≤ r ≤ n):\n\nThe first line contains two integers n, q (1 ≤ n ≤ 5 × 10^5 , 1 ≤ q ≤ 10^5).\n\nThe second line contains a string s of length n. It consists of characters \"<\" and \">\".\n\nNext q lines contain the descriptions of the queries, i-th of them contains two integers l, r (1 ≤ l ≤ r ≤ n), describing the i-th query.\n\nPrint q lines, in the i-th of them print the answer to the i-th query.\n\nInput:\n```\n5 6\n><>><\n2 4\n3 5\n1 5\n1 3\n2 4\n1 5\n```\n\nOutput:\n```\n3\n3\n5\n3\n2\n3\n```",
+    "input": "The first line contains two integers n, q (1 ≤ n ≤ 5 × 10^5 , 1 ≤ q ≤ 10^5).\n\nThe second line contains a string s of length n. It consists of characters \"<\" and \">\".\n\nNext q lines contain the descriptions of the queries, i-th of them contains two integers l, r (1 ≤ l ≤ r ≤ n), describing the i-th query.",
+    "output": "Print q lines, in the i-th of them print the answer to the i-th query.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

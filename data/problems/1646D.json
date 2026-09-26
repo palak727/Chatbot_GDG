@@ -1,0 +1,20 @@
+{
+    "id": "1646D",
+    "contest_id": 1646,
+    "problem_letter": "D",
+    "title": "D. Weight the Tree",
+    "statement": "You are given a tree of n vertices numbered from 1 to n. A tree is a connected undirected graph without cycles.\n\nFor each i=1,2, …, n, let w_i be the weight of the i-th vertex. A vertex is called good if its weight is equal to the sum of the weights of all its neighbors.\n\nInitially, the weights of all nodes are unassigned. Assign positive integer weights to each vertex of the tree, such that the number of good vertices in the tree is maximized. If there are multiple ways to do it, you have to find one that minimizes the sum of weights of all vertices in the tree.\n\nThe first line contains one integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nThen, n−1 lines follow. Each of them contains two integers u and v (1≤ u,v≤ n) denoting an edge between vertices u and v. It is guaranteed that the edges form a tree.\n\nIn the first line print two integers — the maximum number of good vertices and the minimum possible sum of weights for that maximum.\n\nIn the second line print n integers w_1, w_2, …, w_n (1≤ w_i≤ 10^9) — the corresponding weight assigned to each vertex. It can be proven that there exists an optimal solution satisfying these constraints.\n\nIf there are multiple optimal solutions, you may print any.\n\nThis is the tree for the first test case:\n\nThis is the tree for the second test case:\n\nInput:\n```\n4\n1 2\n2 3\n2 4\n```\n\nOutput:\n```\n3 4\n1 1 1 1 \n```\n\nInput:\n```\n3\n1 2\n1 3\n```\n\nOutput:\n```\n2 3\n1 1 1 \n```\n\nInput:\n```\n2\n1 2\n```\n\nOutput:\n```\n2 2\n1 1\n```\n\nInput:\n```\n9\n3 4\n7 6\n2 1\n8 3\n5 6\n1 8\n8 6\n9 6\n```\n\nOutput:\n```\n6 11\n1 1 1 1 1 1 1 3 1 \n```",
+    "input": "The first line contains one integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nThen, n−1 lines follow. Each of them contains two integers u and v (1≤ u,v≤ n) denoting an edge between vertices u and v. It is guaranteed that the edges form a tree.",
+    "output": "In the first line print two integers — the maximum number of good vertices and the minimum possible sum of weights for that maximum.\n\nIn the second line print n integers w_1, w_2, …, w_n (1≤ w_i≤ 10^9) — the corresponding weight assigned to each vertex. It can be proven that there exists an optimal solution satisfying these constraints.\n\nIf there are multiple optimal solutions, you may print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "implementation",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1988C",
+    "contest_id": 1988,
+    "problem_letter": "C",
+    "title": "C. Increasing Sequence with Fixed OR",
+    "statement": "You are given a positive integer n. Find the longest sequence of positive integers a=[a_1,a_2,…,a_k] that satisfies the following conditions, and print the sequence:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line of each test case contains one integer n (1≤ n≤ 10^18).\n\nIt's guaranteed that the sum of lengths of the longest valid sequences does not exceed 5·10^5.\n\nFor each testcase, print two lines. In the first line, print the length of your constructed sequence, k. In the second line, print k positive integers, denoting the sequence. If there are multiple longest sequences, you can print any of them.\n\nInput:\n```\n4131423\n```\n\nOutput:\n```\n1\n1\n3\n1 2 3\n4\n4 10 12 14\n5\n7 18 21 22 23\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line of each test case contains one integer n (1≤ n≤ 10^18).\n\nIt's guaranteed that the sum of lengths of the longest valid sequences does not exceed 5·10^5.",
+    "output": "For each testcase, print two lines. In the first line, print the length of your constructed sequence, k. In the second line, print k positive integers, denoting the sequence. If there are multiple longest sequences, you can print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

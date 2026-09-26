@@ -1,0 +1,19 @@
+{
+    "id": "1167E",
+    "contest_id": 1167,
+    "problem_letter": "E",
+    "title": "E. Range Deleting",
+    "statement": "You are given an array consisting of n integers a_1, a_2, … , a_n and an integer x. It is guaranteed that for every i, 1 ≤ a_i ≤ x.\n\nLet's denote a function f(l, r) which erases all values such that l ≤ a_i ≤ r from the array a and returns the resulting array. For example, if a = [4, 1, 1, 4, 5, 2, 4, 3], then f(2, 4) = [1, 1, 5].\n\nYour task is to calculate the number of pairs (l, r) such that 1 ≤ l ≤ r ≤ x and f(l, r) is sorted in non-descending order. Note that the empty array is also considered sorted.\n\nThe first line contains two integers n and x (1 ≤ n, x ≤ 10^6) — the length of array a and the upper limit for its elements, respectively.\n\nThe second line contains n integers a_1, a_2, … a_n (1 ≤ a_i ≤ x).\n\nPrint the number of pairs 1 ≤ l ≤ r ≤ x such that f(l, r) is sorted in non-descending order.\n\nIn the first test case correct pairs are (1, 1), (1, 2), (1, 3) and (2, 3).\n\nIn the second test case correct pairs are (1, 3), (1, 4), (2, 3), (2, 4), (3, 3) and (3, 4).\n\nInput:\n```\n3 3\n2 3 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n7 4\n1 3 1 2 2 4 3\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains two integers n and x (1 ≤ n, x ≤ 10^6) — the length of array a and the upper limit for its elements, respectively.\n\nThe second line contains n integers a_1, a_2, … a_n (1 ≤ a_i ≤ x).",
+    "output": "Print the number of pairs 1 ≤ l ≤ r ≤ x such that f(l, r) is sorted in non-descending order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "data structures",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

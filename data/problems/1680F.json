@@ -1,0 +1,20 @@
+{
+    "id": "1680F",
+    "contest_id": 1680,
+    "problem_letter": "F",
+    "title": "F. Lenient Vertex Cover",
+    "statement": "You are given a simple connected undirected graph, consisting of n vertices and m edges. The vertices are numbered from 1 to n.\n\nA vertex cover of a graph is a set of vertices such that each edge has at least one of its endpoints in the set.\n\nLet's call a lenient vertex cover such a vertex cover that at most one edge in it has both endpoints in the set.\n\nFind a lenient vertex cover of a graph or report that there is none. If there are multiple answers, then print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (2 ≤ n ≤ 10^6; n - 1 ≤ m ≤ min(10^6, (n·(n - 1))/2)) — the number of vertices and the number of edges of the graph.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the descriptions of the edges.\n\nFor each testcase, the graph is connected and doesn't have multiple edges. The sum of n over all testcases doesn't exceed 10^6. The sum of m over all testcases doesn't exceed 10^6.\n\nFor each testcase, the first line should contain YES if a lenient vertex cover exists, and NO otherwise. If it exists, the second line should contain a binary string s of length n, where s_i = 1 means that vertex i is in the vertex cover, and s_i = 0 means that vertex i isn't.\n\nIf there are multiple answers, then print any of them.\n\nHere are the graphs from the first example. The vertices in the lenient vertex covers are marked red.\n\nInput:\n```\n46 51 32 43 43 54 64 61 22 33 41 41 32 48 111 32 43 54 65 76 81 23 45 67 87 24 51 22 33 41 32 4\n```\n\nOutput:\n```\nYES\n001100\nNO\nYES\n01100110\nYES\n0110\n```\n\nInput:\n```\n110 159 43 46 41 28 28 37 29 57 85 101 42 105 35 72 9\n```\n\nOutput:\n```\nYES\n0101100100\n```\n\nInput:\n```\n110 197 95 33 41 69 41 410 57 19 28 37 310 92 109 83 21 510 79 51 2\n```\n\nOutput:\n```\nYES\n1010000011\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (2 ≤ n ≤ 10^6; n - 1 ≤ m ≤ min(10^6, (n·(n - 1))/2)) — the number of vertices and the number of edges of the graph.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the descriptions of the edges.\n\nFor each testcase, the graph is connected and doesn't have multiple edges. The sum of n over all testcases doesn't exceed 10^6. The sum of m over all testcases doesn't exceed 10^6.",
+    "output": "For each testcase, the first line should contain YES if a lenient vertex cover exists, and NO otherwise. If it exists, the second line should contain a binary string s of length n, where s_i = 1 means that vertex i is in the vertex cover, and s_i = 0 means that vertex i isn't.\n\nIf there are multiple answers, then print any of them.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "divide and conquer",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

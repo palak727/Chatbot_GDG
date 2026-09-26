@@ -1,0 +1,22 @@
+{
+    "id": "1887C",
+    "contest_id": 1887,
+    "problem_letter": "C",
+    "title": "C. Minimum Array",
+    "statement": "Given an array a of length n consisting of integers. Then the following operation is sequentially applied to it q times:\n\nLet b_j be the array a obtained after applying the first j operations (0 ≤ j ≤ q). Note that b_0 is the array a before applying any operations.\n\nYou need to find the lexicographically minimum^dagger array among all arrays b_j.\n\n^daggerAn array x is lexicographically smaller than array y if there is an index i such that x_i < y_i, and x_j = y_j for all j < i. In other words, for the first index i where the arrays differ, x_i < y_i.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of array a.\n\nThe third line of each test case contains a single integer q (0 ≤ q ≤ 5·10^5) — the number of operations on the array.\n\nIn each of the next q lines, there are three integers l_j, r_j, and x_j (1 ≤ l_j ≤ r_j ≤ n, -10^9 ≤ x_j ≤ 10^9) — the description of each operation. The operations are given in the order they are applied.\n\nIt is guaranteed that the sum of n over all test cases and the sum of q over all test cases do not exceed 5·10^5.\n\nFor each test case, output the lexicographically minimum array among all arrays b_j.\n\nIn the first test case:\n\nThus, the lexicographically minimum array is b_2.\n\nIn the second test case, the lexicographically minimum array is b_0.\n\nInput:\n```\n241 2 3 421 4 01 3 -10052 1 2 5 432 4 32 5 -21 3 1\n```\n\nOutput:\n```\n-99 -98 -97 4 \n2 1 2 5 4 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the elements of array a.\n\nThe third line of each test case contains a single integer q (0 ≤ q ≤ 5·10^5) — the number of operations on the array.\n\nIn each of the next q lines, there are three integers l_j, r_j, and x_j (1 ≤ l_j ≤ r_j ≤ n, -10^9 ≤ x_j ≤ 10^9) — the description of each operation. The operations are given in the order they are applied.\n\nIt is guaranteed that the sum of n over all test cases and the sum of q over all test cases do not exceed 5·10^5.",
+    "output": "For each test case, output the lexicographically minimum array among all arrays b_j.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "hashing",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

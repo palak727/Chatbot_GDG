@@ -1,0 +1,16 @@
+{
+    "id": "1642A",
+    "contest_id": 1642,
+    "problem_letter": "A",
+    "title": "A. Hard Way",
+    "statement": "Sam lives in Awesomeburg, its downtown has a triangular shape. Also, the following is true about the triangle:\n\nHe calls a point on the downtown's border (that is the border of the triangle) safe if he can reach this point from at least one point of the line y = 0 walking along some straight line, without crossing the interior of the triangle.\n\nFind the total length of the unsafe parts of the downtown border. It can be proven that these parts are segments and their number is finite.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nEach test case contains three lines, each of them contains two integers x_i, y_i (0 ≤ x_i, y_i ≤ 10^9) — coordinates of the vertices of the downtown's border.\n\nFor each test case print a single number — the answer to the problem.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-9}. Formally let your answer be a, jury answer be b. Your answer will be considered correct if (|a - b|)/(max(1, |b|)) ≤ 10^{-9}.\n\nIn the picture, the downtowns of the first three test cases are illustrated. Triangles are enumerated according to the indices of test cases they belong to.\n\nIn the first two test cases, all points on the borders of the downtowns are safe, thus the answers are 0.\n\nIn the following picture unsafe points for the third test case are marked with black color:\n\nIn the fourth test case, all points on the border of the downtown are safe.\n\nInput:\n```\n58 1010 46 24 60 14 214 111 213 20 04 02 40 11 10 0\n```\n\nOutput:\n```\n0.0000000\n0\n2.0000\n0.00\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nEach test case contains three lines, each of them contains two integers x_i, y_i (0 ≤ x_i, y_i ≤ 10^9) — coordinates of the vertices of the downtown's border.",
+    "output": "For each test case print a single number — the answer to the problem.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-9}. Formally let your answer be a, jury answer be b. Your answer will be considered correct if (|a - b|)/(max(1, |b|)) ≤ 10^{-9}.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "*800"
+    ],
+    "rating": 800
+}

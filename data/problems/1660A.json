@@ -1,0 +1,17 @@
+{
+    "id": "1660A",
+    "contest_id": 1660,
+    "problem_letter": "A",
+    "title": "A. Vasya and Coins",
+    "statement": "Vasya decided to go to the grocery store. He found in his wallet a coins of 1 burle and b coins of 2 burles. He does not yet know the total cost of all goods, so help him find out s (s > 0): the minimum positive integer amount of money he cannot pay without change or pay at all using only his coins.\n\nFor example, if a=1 and b=1 (he has one 1-burle coin and one 2-burle coin), then:\n\nSo for a=1 and b=1 the answer is s=4.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe description of each test case consists of one line containing two integers a_i and b_i (0 ≤ a_i, b_i ≤ 10^8) — the number of 1-burle coins and 2-burles coins Vasya has respectively.\n\nFor each test case, on a separate line print one integer s (s > 0): the minimum positive integer amount of money that Vasya cannot pay without change or pay at all.\n\nInput:\n```\n51 14 00 20 02314 2374\n```\n\nOutput:\n```\n4\n5\n1\n1\n7063\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe description of each test case consists of one line containing two integers a_i and b_i (0 ≤ a_i, b_i ≤ 10^8) — the number of 1-burle coins and 2-burles coins Vasya has respectively.",
+    "output": "For each test case, on a separate line print one integer s (s > 0): the minimum positive integer amount of money that Vasya cannot pay without change or pay at all.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

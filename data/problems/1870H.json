@@ -1,0 +1,19 @@
+{
+    "id": "1870H",
+    "contest_id": 1870,
+    "problem_letter": "H",
+    "title": "H. Standard Graph Problem",
+    "statement": "You are given a weighted directed graph with n vertices and m edges. Each vertex in the graph can be either highlighted or normal. Initially, all vertices are normal. The cost of the graph is defined as the minimum sum of edge weights that need to be selected so that from each normal vertex one can reach at least one highlighted vertex using the selected edges only. If it is not possible to select the edges, the cost is -1 instead.\n\nYour task is to compute the cost of the graph after each of the q queries. The queries can be of two types:\n\nOutput the cost of the graph after each of the q queries.\n\nThe first line contains three integers n, m, and q (3 ≤ n ≤ 2·10^5, 1 ≤ m, q ≤ 2·10^5) — the number of vertices in the graph, the number of edges, and the number of queries.\n\nThe next m lines contain the edges of the graph, one edge per line. The i-th line contains three integers u_i, v_i, and c_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i, 1 ≤ c_i ≤ 10^6) — the endpoints of the i-th edge (from u_i to v_i) and its weight (c_i).\n\nThe next q lines contain the queries, one query per line. The i-th line contains +;v_i, if it is a query of the first type, and -;v_i, if it is a query of the second type (1 ≤ v_i ≤ n).\n\nOutput q numbers. The i-th number is the cost of the graph after the first i queries.\n\nIn the first test:\n\nInput:\n```\n4 5 61 2 12 3 53 2 34 1 82 1 4+ 1- 1+ 3+ 1+ 4+ 2\n```\n\nOutput:\n```\n15\n-1\n14\n12\n4\n0\n```\n\nInput:\n```\n10 14 108 6 42 5 13 5 41 6 31 3 77 2 16 1 34 10 14 6 55 4 15 8 1010 9 19 5 19 7 6+ 7+ 8- 7+ 10+ 2- 10+ 5- 2- 5+ 3\n```\n\nOutput:\n```\n28\n24\n29\n19\n18\n24\n18\n19\n29\n20\n```",
+    "input": "The first line contains three integers n, m, and q (3 ≤ n ≤ 2·10^5, 1 ≤ m, q ≤ 2·10^5) — the number of vertices in the graph, the number of edges, and the number of queries.\n\nThe next m lines contain the edges of the graph, one edge per line. The i-th line contains three integers u_i, v_i, and c_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i, 1 ≤ c_i ≤ 10^6) — the endpoints of the i-th edge (from u_i to v_i) and its weight (c_i).\n\nThe next q lines contain the queries, one query per line. The i-th line contains +;v_i, if it is a query of the first type, and -;v_i, if it is a query of the second type (1 ≤ v_i ≤ n).",
+    "output": "Output q numbers. The i-th number is the cost of the graph after the first i queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "graphs",
+        "greedy",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

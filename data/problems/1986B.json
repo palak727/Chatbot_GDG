@@ -1,0 +1,19 @@
+{
+    "id": "1986B",
+    "contest_id": 1986,
+    "problem_letter": "B",
+    "title": "B. Matrix Stabilization",
+    "statement": "You are given a matrix of size n × m, where the rows are numbered from 1 to n from top to bottom, and the columns are numbered from 1 to m from left to right. The element at the intersection of the i-th row and the j-th column is denoted by a_ij.\n\nConsider the algorithm for stabilizing matrix a:\n\nIn this problem, cells (a, b) and (c, d) are considered neighbors if they share a common side, i.e., |a - c| + |b - d| = 1.\n\nYour task is to output the matrix a after the stabilization algorithm has been executed. It can be shown that this algorithm cannot run for an infinite number of iterations.\n\nEach test consists of multiple sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of input data. This is followed by their description.\n\nThe first line of each set of input data contains two integers n and m (1 ≤ n, m ≤ 100, n·m > 1) — the number of rows and columns of matrix a.\n\nThe next n lines describe the corresponding rows of the matrix. The i-th line contains m integers a_i1, a_i2, …, a_im (1 ≤ a_ij ≤ 10^9).\n\nIt is guaranteed that the sum of n·m over all sets of input data does not exceed 2·10^5.\n\nFor each set of input data, output n lines with m numbers in each line — the values of the cells of matrix a after the stabilization algorithm.\n\nIn the first set of input data, the algorithm will select the cell (1, 1) twice in a row and then terminate.\n\nIn the second set of input data, there is no cell whose value is strictly greater than the values of all neighboring cells.\n\nIn the third set of input data, the algorithm will select the cell (2, 2) and then terminate.\n\nIn the fourth set of input data, the algorithm will select the cell (1, 1) three times and then the cell (2, 3) twice.\n\nInput:\n```\n61 23 12 1112 21 23 42 37 4 51 8 105 492 74 31 7474 92 17 731 17 92 374 7 3 927 31 1 13 31000000000 1 10000000001 1000000000 11000000000 1 1000000000\n```\n\nOutput:\n```\n1 1 \n1 \n1 \n1 2 \n3 3 \n4 4 5 \n1 8 8 \n74 74 31 31 \n74 74 17 7 \n31 17 17 3 \n31 7 3 3 \n7 7 1 1 \n1 1 1 \n1 1 1 \n1 1 1 \n```",
+    "input": "Each test consists of multiple sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of input data. This is followed by their description.\n\nThe first line of each set of input data contains two integers n and m (1 ≤ n, m ≤ 100, n·m > 1) — the number of rows and columns of matrix a.\n\nThe next n lines describe the corresponding rows of the matrix. The i-th line contains m integers a_i1, a_i2, …, a_im (1 ≤ a_ij ≤ 10^9).\n\nIt is guaranteed that the sum of n·m over all sets of input data does not exceed 2·10^5.",
+    "output": "For each set of input data, output n lines with m numbers in each line — the values of the cells of matrix a after the stabilization algorithm.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

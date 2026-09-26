@@ -1,0 +1,18 @@
+{
+    "id": "1252K",
+    "contest_id": 1252,
+    "problem_letter": "K",
+    "title": "K. Addition Robot",
+    "statement": "Adding two numbers several times is a time-consuming task, so you want to build a robot. The robot should have a string S = S_1 S_2 … S_N of N characters on its memory that represents addition instructions. Each character of the string, S_i, is either 'A' or 'B'.\n\nYou want to be able to give Q commands to the robot, each command is either of the following types:\n\n```\n    function f(L, R, A, B):\n      FOR i from L to R\n        if S[i] = 'A'\n          A = A + B\n        else\n          B = A + B\n      return (A, B)\n  \n```\n\nYou want to implement the robot's expected behavior.\n\nInput begins with a line containing two integers: N Q (1 ≤ N, Q ≤ 100,000) representing the number of characters in the robot's memory and the number of commands, respectively. The next line contains a string S containing N characters (each either 'A' or 'B') representing the initial string in the robot's memory. The next Q lines each contains a command of the following types.\n\nFor each command of the second type in the same order as input, output in a line two integers (separated by a single space), the value of A and B returned by f(L, R, A, B), respectively. As this output can be large, you need to modulo the output by 1,000,000,007.\n\nExplanation for the sample input/output #1\n\nFor the first command, calling f(L, R, A, B) causes the following:\n\nFor the second command, string S will be updated to \"ABBBB\".\n\nFor the third command, the value of A will always be 0 and the value of B will always be 1,000,000,000. Therefore, f(L, R, A, B) will return (0, 1,000,000,000).\n\nInput:\n```\n5 3\nABAAA\n2 1 5 1 1\n1 3 5\n2 2 5 0 1000000000\n```\n\nOutput:\n```\n11 3\n0 1000000000\n```",
+    "input": "Input begins with a line containing two integers: N Q (1 ≤ N, Q ≤ 100,000) representing the number of characters in the robot's memory and the number of commands, respectively. The next line contains a string S containing N characters (each either 'A' or 'B') representing the initial string in the robot's memory. The next Q lines each contains a command of the following types.",
+    "output": "For each command of the second type in the same order as input, output in a line two integers (separated by a single space), the value of A and B returned by f(L, R, A, B), respectively. As this output can be large, you need to modulo the output by 1,000,000,007.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "math",
+        "matrices",
+        "*2100"
+    ],
+    "rating": 2100
+}

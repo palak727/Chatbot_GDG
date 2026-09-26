@@ -1,0 +1,17 @@
+{
+    "id": "1942E",
+    "contest_id": 1942,
+    "problem_letter": "E",
+    "title": "E. Farm Game",
+    "statement": "Farmer Nhoj has brought his cows over to Farmer John's farm to play a game! FJ's farm can be modeled by a number line with walls at points 0 and l + 1. On the farm, there are 2n cows, with n of the cows belonging to FJ and the other n belonging to FN. They place each of their cows at a distinct point, and no two FJ's cows nor FN's cows are adjacent. Two cows are adjacent if there are no other cows between them.\n\nFormally, if a_1, a_2, …, a_n represents the positions of FJ's cows and b_1, b_2, …, b_n represents the positions of FN's cows, then either 0 < a_1 < b_1 < a_2 < b_2 < … < a_n < b_n < l + 1 or 0 < b_1 < a_1 < b_2 < a_2 < … < b_n < a_n < l + 1.\n\nIn one move, a farmer chooses a number k (1 ≤ k ≤ n) and a direction (left or right). Then, that farmer chooses k of his cows and moves them one position towards the chosen direction. A farmer cannot move any of his cows onto the walls or onto another farmer's cow. If a farmer cannot move any cows, then that farmer loses. FJ starts the game, making the first turn.\n\nGiven l and n, find the number of possible game configurations for Farmer John to win if both farmers play optimally. It may be the case that the game will continue indefinitely, in which no farmer wins. A configuration is different from another if there is any i such that a_i or b_i is different. Output the answer modulo 998,244,353.\n\nThe first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains two integers l and n (2 ≤ l ≤ 10^6, 1 ≤ n ≤ lfloor l/2 rfloor) — the length of the number line and the number of cows each farmer will place.\n\nIt is guaranteed the sum of l over all test cases does not exceed 10^6.\n\nFor each test case output an integer: the number of game configurations where Farmer John wins if both farmers play optimally, modulo 998,244,353.\n\nLet J denote FJ's cow, N denote FN's cow, and _ denote an empty space.\n\nFor the first test case, the two possible configurations are JN or NJ. In both cases, since FJ makes the first turn and cannot make any moves, he cannot win.\n\nFor the second case there are two possible configurations for FJ to win: N_J and J_N.\n\nInput:\n```\n32 13 1420 69\n```\n\nOutput:\n```\n0\n2\n870279412\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains two integers l and n (2 ≤ l ≤ 10^6, 1 ≤ n ≤ lfloor l/2 rfloor) — the length of the number line and the number of cows each farmer will place.\n\nIt is guaranteed the sum of l over all test cases does not exceed 10^6.",
+    "output": "For each test case output an integer: the number of game configurations where Farmer John wins if both farmers play optimally, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "games",
+        "*2300"
+    ],
+    "rating": 2300
+}

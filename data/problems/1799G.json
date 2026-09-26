@@ -1,0 +1,18 @@
+{
+    "id": "1799G",
+    "contest_id": 1799,
+    "problem_letter": "G",
+    "title": "G. Count Voting",
+    "statement": "There are n people that will participate in voting. Each person has exactly one vote.\n\ni-th person has a team t_i (1 ≤ t_i ≤ n) where t_i = t_j means i, j are in the same team. By the rules each person should vote for the person from the different team. Note that it automatically means that each person can't vote for himself.\n\nEach person knows the number of votes c_i he wants to get. How many possible votings exists, such that each person will get the desired number of votes? Due to this number can be big, find it by modulo 998,244,353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 200) — the number of people.\n\nThe second line contains n integers c_1, c_2, …, c_n (0 ≤ c_i ≤ n) — desired number of votes. It is guaranteed, that ∑limits_{i=1}^n c_i = n.\n\nThe third line contains n integers t_1, t_2, …, t_n (1 ≤ t_i ≤ n) — team numbers.\n\nPrint a single integer — the number of possible votings by modulo 998,244,353.\n\nIn the first test there are two possible votings: (2, 3, 1), (3, 1, 2).\n\nIn the third test there are five possible votings: (3, 3, 2, 2, 1), (2, 3, 2, 3, 1), (3, 3, 1, 2, 2), (3, 1, 2, 3, 2), (2, 3, 1, 3, 2).\n\nInput:\n```\n3\n1 1 1\n1 2 3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n2 0 1 0 2\n1 2 3 4 5\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n5\n1 2 2 0 0\n3 5 4 3 4\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 200) — the number of people.\n\nThe second line contains n integers c_1, c_2, …, c_n (0 ≤ c_i ≤ n) — desired number of votes. It is guaranteed, that ∑limits_{i=1}^n c_i = n.\n\nThe third line contains n integers t_1, t_2, …, t_n (1 ≤ t_i ≤ n) — team numbers.",
+    "output": "Print a single integer — the number of possible votings by modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

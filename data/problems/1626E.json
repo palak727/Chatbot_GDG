@@ -1,0 +1,18 @@
+{
+    "id": "1626E",
+    "contest_id": 1626,
+    "problem_letter": "E",
+    "title": "E. Black and White Tree",
+    "statement": "You are given a tree consisting of n vertices. Some of the vertices (at least two) are black, all the other vertices are white.\n\nYou place a chip on one of the vertices of the tree, and then perform the following operations:\n\nYou are not allowed to choose the same black vertex y in two operations in a row (i. e., for every two consecutive operations, the chosen black vertex should be different).\n\nYou end your operations when the chip moves to the black vertex (if it is initially placed in a black vertex, you don't perform the operations at all), or when the number of performed operations exceeds 100^500.\n\nFor every vertex i, you have to determine if there exists a (possibly empty) sequence of operations that moves the chip to some black vertex, if the chip is initially placed on the vertex i.\n\nThe first line contains one integer n (3 ≤ n ≤ 3·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers c_1, c_2, …, c_n (0 ≤ c_i ≤ 1), where c_i = 0 means that the i-th vertex is white, and c_i = 1 means that the i-th vertex is black. At least two values of c_i are equal to 1.\n\nThen n-1 lines follow, each of them contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the endpoints of some edge. These edges form a tree.\n\nPrint n integers. The i-th integer should be equal to 1 if there exists a (possibly empty) sequence of operations that moves the chip to some black vertex if it is placed on the vertex i, and 0 if no such sequence of operations exists.\n\nInput:\n```\n8\n0 1 0 0 0 0 1 0\n8 6\n2 5\n7 8\n6 5\n4 5\n6 1\n7 3\n```\n\nOutput:\n```\n0 1 1 1 1 0 1 1 \n```",
+    "input": "The first line contains one integer n (3 ≤ n ≤ 3·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers c_1, c_2, …, c_n (0 ≤ c_i ≤ 1), where c_i = 0 means that the i-th vertex is white, and c_i = 1 means that the i-th vertex is black. At least two values of c_i are equal to 1.\n\nThen n-1 lines follow, each of them contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the endpoints of some edge. These edges form a tree.",
+    "output": "Print n integers. The i-th integer should be equal to 1 if there exists a (possibly empty) sequence of operations that moves the chip to some black vertex if it is placed on the vertex i, and 0 if no such sequence of operations exists.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "greedy",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

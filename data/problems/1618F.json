@@ -1,0 +1,21 @@
+{
+    "id": "1618F",
+    "contest_id": 1618,
+    "problem_letter": "F",
+    "title": "F. Reverse",
+    "statement": "You are given two positive integers x and y. You can perform the following operation with x: write it in its binary form without leading zeros, add 0 or 1 to the right of it, reverse the binary form and turn it into a decimal number which is assigned as the new value of x.\n\nFor example:\n\nYour task is to find out whether x can be turned into y after a certain number of operations (possibly zero).\n\nThe only line of the input contains two integers x and y (1 ≤ x, y ≤ 10^18).\n\nPrint YES if you can make x equal to y and NO if you can't.\n\nIn the first example, you don't even need to do anything.\n\nThe fourth example is described in the statement.\n\nInput:\n```\n3 3\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n7 4\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n2 8\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n34 69\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n8935891487501725 71487131900013807\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The only line of the input contains two integers x and y (1 ≤ x, y ≤ 10^18).",
+    "output": "Print YES if you can make x equal to y and NO if you can't.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dfs and similar",
+        "implementation",
+        "math",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

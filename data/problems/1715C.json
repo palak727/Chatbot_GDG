@@ -1,0 +1,19 @@
+{
+    "id": "1715C",
+    "contest_id": 1715,
+    "problem_letter": "C",
+    "title": "C. Monoblock",
+    "statement": "Stanley has decided to buy a new desktop PC made by the company \"Monoblock\", and to solve captcha on their website, he needs to solve the following task.\n\nThe awesomeness of an array is the minimum number of blocks of consecutive identical numbers in which the array could be split. For example, the awesomeness of an array\n\nYou are given an array a of length n. There are m queries of two integers i, x. A query i, x means that from now on the i-th element of the array a is equal to x.\n\nAfter each query print the sum of awesomeness values among all subsegments of array a. In other words, after each query you need to calculate ∑limits_{l = 1}^n ∑limits_{r = l}^n g(l, r), where g(l, r) is the awesomeness of the array b = [a_l, a_{l + 1}, …, a_r].\n\nIn the first line you are given with two integers n and m (1 ≤ n, m ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a.\n\nIn the next m lines you are given the descriptions of queries. Each line contains two integers i and x (1 ≤ i ≤ n, 1 ≤ x ≤ 10^9).\n\nPrint the answer to each query on a new line.\n\nAfter the first query a is equal to [1, 2, 2, 4, 5], and the answer is 29 because we can split each of the subsegments the following way:\n\nInput:\n```\n5 5\n1 2 3 4 5\n3 2\n4 2\n3 1\n2 1\n2 2\n```\n\nOutput:\n```\n29\n23\n35\n25\n35\n```",
+    "input": "In the first line you are given with two integers n and m (1 ≤ n, m ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the array a.\n\nIn the next m lines you are given the descriptions of queries. Each line contains two integers i and x (1 ≤ i ≤ n, 1 ≤ x ≤ 10^9).",
+    "output": "Print the answer to each query on a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

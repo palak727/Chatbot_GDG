@@ -1,0 +1,18 @@
+{
+    "id": "1585F",
+    "contest_id": 1585,
+    "problem_letter": "F",
+    "title": "F. Non-equal Neighbours",
+    "statement": "You are given an array of n positive integers a_1, a_2, …, a_n. Your task is to calculate the number of arrays of n positive integers b_1, b_2, …, b_n such that:\n\nThe number of such arrays can be very large, so print it modulo 998,244,353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nPrint the answer modulo 998,244,353 in a single line.\n\nIn the first test case possible arrays are [1, 2, 1] and [2, 1, 2].\n\nIn the second test case possible arrays are [1, 2], [1, 3], [2, 1] and [2, 3].\n\nInput:\n```\n3\n2 2 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\n2 3\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n3\n1 1 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "Print the answer modulo 998,244,353 in a single line.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

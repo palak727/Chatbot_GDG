@@ -1,0 +1,17 @@
+{
+    "id": "1468K",
+    "contest_id": 1468,
+    "problem_letter": "K",
+    "title": "K. The Robot",
+    "statement": "There is a robot on a checkered field that is endless in all directions. Initially, the robot is located in the cell with coordinates (0, 0). He will execute commands which are described by a string of capital Latin letters 'L', 'R', 'D', 'U'. When a command is executed, the robot simply moves in the corresponding direction:\n\nYour task is to put an obstacle in one cell of the field so that after executing the commands, the robot will return to the original cell of its path (0, 0). Of course, an obstacle cannot be placed in the starting cell (0, 0). It is guaranteed that if the obstacle is not placed, then the robot will not return to the starting cell.\n\nAn obstacle affects the movement of the robot in the following way: if it tries to go in a certain direction, and there is an obstacle, then it simply remains in place (the obstacle also remains, that is, it does not disappear).\n\nFind any such cell of the field (other than (0, 0)) that if you put an obstacle there, the robot will return to the cell (0, 0) after the execution of all commands. If there is no solution, then report it.\n\nThe first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nEach test case consists of a single line containing s — the sequence of commands, which are uppercase Latin letters 'L', 'R', 'D', 'U' only. The length of s is between 1 and 5000, inclusive. Additional constraint on s: executing this sequence of commands leads the robot to some cell other than (0, 0), if there are no obstacles.\n\nThe sum of lengths of all s in a test doesn't exceed 5000.\n\nFor each test case print a single line:\n\nIf there are multiple answers, you can print any of them.\n\nInput:\n```\n4LRUUDLLLUUDDDUUUUU\n```\n\nOutput:\n```\n-1 0\n1 2\n0 0\n0 1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nEach test case consists of a single line containing s — the sequence of commands, which are uppercase Latin letters 'L', 'R', 'D', 'U' only. The length of s is between 1 and 5000, inclusive. Additional constraint on s: executing this sequence of commands leads the robot to some cell other than (0, 0), if there are no obstacles.\n\nThe sum of lengths of all s in a test doesn't exceed 5000.",
+    "output": "For each test case print a single line:\n\nIf there are multiple answers, you can print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

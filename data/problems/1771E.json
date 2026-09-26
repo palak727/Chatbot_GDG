@@ -1,0 +1,19 @@
+{
+    "id": "1771E",
+    "contest_id": 1771,
+    "problem_letter": "E",
+    "title": "E. Hossam and a Letter",
+    "statement": "Hossam bought a new piece of ground with length n and width m, he divided it into an n·m grid, each cell being of size 1×1.\n\nSince Hossam's name starts with the letter 'H', he decided to draw the capital letter 'H' by building walls of size 1×1 on some squares of the ground. Each square 1×1 on the ground is assigned a quality degree: perfect, medium, or bad.\n\nThe process of building walls to form up letter 'H' has the following constraints:\n\nFind the maximum number of walls that can be used to draw the letter 'H'.\n\nCheck the note for more clarification.\n\nThe first line of the input contains two integer numbers n, m (1 ≤ n, m ≤ 400).\n\nThe next n lines of the input contain m characters each, describing the grid. The character '.' stands for a perfect square, the character 'm' stands for a medium square, and the character '#' stands for a bad square.\n\nPrint a single integer — the maximum number of walls that form a capital letter 'H'.\n\nIf it is not possible to draw any letter 'H', print 0.\n\nIn the first test case, we can't build the letter 'H'.\n\nFor the second test case, the figure below represents the grid and some of the valid letters 'H'. Perfect, medium, and bad squares are represented with white, yellow, and black colors respectively.\n\nInput:\n```\n2 3\n#m.\n.#.\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n7 8\n...#.m..\n..m...m.\n.#..#.m#\n...m..m.\nm.......\n..#.m.mm\n......m.\n```\n\nOutput:\n```\n16\n```",
+    "input": "The first line of the input contains two integer numbers n, m (1 ≤ n, m ≤ 400).\n\nThe next n lines of the input contain m characters each, describing the grid. The character '.' stands for a perfect square, the character 'm' stands for a medium square, and the character '#' stands for a bad square.",
+    "output": "Print a single integer — the maximum number of walls that form a capital letter 'H'.\n\nIf it is not possible to draw any letter 'H', print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

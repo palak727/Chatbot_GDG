@@ -1,0 +1,19 @@
+{
+    "id": "2124C",
+    "contest_id": 2124,
+    "problem_letter": "C",
+    "title": "C. Subset Multiplication",
+    "statement": "Alice has an array a, consisting of n positive integers. The array satisfies the beautiful property that a_i divides a_{i+1} for each 1 ≤ i ≤ n - 1.\n\nBob sees Alice's beautiful array and is jealous. To sabotage her, Bob first creates an array b of size n such that b_i=a_i for each 1 ≤ i ≤ n. Then, he chooses a positive integer x and multiplies some (possibly none, possibly all) elements in b by x.\n\nFormally, he chooses a (possibly-empty) subset S⊆{1,2,…,n}, and for each i∈ S, he sets b_i:=b_i·x.\n\nYou are given an array b, but you don't know array a and the chosen number x. Please output any integer x that Bob could choose, so that multiplying some subset of elements of the correct array a by x would result in array b. It is guaranteed that the answer exists. If there are multiple possible integers, you can output any of them.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 6·10^5) — the length of the array b.\n\nThe second line of each test case contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ 10^9) — denoting the array b.\n\nIt is guaranteed the array b can be obtained from some beautiful array a and some positive integer x as described in the statements.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 6·10^5.\n\nFor each test case, output any possible value of x (1 ≤ x ≤ 10^9) on a new line. It is guaranteed at least one value of x exists.\n\nIn the first test case, it is possible Bob selected x=343 and S={} (meaning he did not change the array a at all).\n\nIn the third test case, it is possible Bob selected x=4 and S={1,2}, meaning he multiplied both b_1 and b_2 by 4. The original array was {1,2,4,8}, which satisfies the required property.\n\nInput:\n```\n422 431 1000000000 50000000044 8 4 8742 42 14 84 28 73080 255780\n```\n\nOutput:\n```\n343\n2\n4\n6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 6·10^5) — the length of the array b.\n\nThe second line of each test case contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ 10^9) — denoting the array b.\n\nIt is guaranteed the array b can be obtained from some beautiful array a and some positive integer x as described in the statements.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 6·10^5.",
+    "output": "For each test case, output any possible value of x (1 ≤ x ≤ 10^9) on a new line. It is guaranteed at least one value of x exists.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

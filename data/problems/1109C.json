@@ -1,0 +1,18 @@
+{
+    "id": "1109C",
+    "contest_id": 1109,
+    "problem_letter": "C",
+    "title": "C. Sasha and a Patient Friend",
+    "statement": "Fedya and Sasha are friends, that's why Sasha knows everything about Fedya.\n\nFedya keeps his patience in an infinitely large bowl. But, unlike the bowl, Fedya's patience isn't infinite, that is why let v be the number of liters of Fedya's patience, and, as soon as v becomes equal to 0, the bowl will burst immediately. There is one tap in the bowl which pumps s liters of patience per second. Notice that s can be negative, in that case, the tap pumps out the patience. Sasha can do different things, so he is able to change the tap's speed. All actions that Sasha does can be represented as q queries. There are three types of queries:\n\nSince Sasha does not want to check what will happen when Fedya's patience ends, and he has already come up with the queries, he is asking you to help him and find the answer for each query of the 3-rd type.\n\nIt is guaranteed that at any moment of time, there won't be two events which happen at the same second.\n\nThe first line contans one integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the next q lines have one of the following formats:\n\nIt is guaranteed that t, s, l, r, v in all the queries are integers.\n\nAlso, it is guaranteed that there is at least one query of the 3-rd type, and there won't be a query of the 1-st type with such t, that there already exists an event which happens at that second t.\n\nFor each query of the 3-rd type, print in a new line the moment when the bowl will burst or print -1 if it won't happen.\n\nYour answer will be considered correct if it's absolute or relative error does not exceed 10^{-6}.\n\nFormally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a - b|)/(max(1, |b|)) ≤ 10^{-6}.\n\nIn the first example all the queries of the 3-rd type cover all the events, it's simulation is following:\n\nInput:\n```\n6\n1 2 1\n1 4 -3\n3 1 6 1\n3 1 6 3\n3 1 6 4\n3 1 6 5\n```\n\nOutput:\n```\n5\n5.666667\n6\n-1\n```\n\nInput:\n```\n10\n1 2 2\n1 4 4\n1 7 -10\n3 2 4 1\n3 5 6 0\n3 1 15 1\n2 4\n3 1 15 1\n1 8 1\n3 1 15 1\n```\n\nOutput:\n```\n-1\n5\n8.7\n8.1\n-1\n```\n\nInput:\n```\n5\n1 1000 9999999\n1 2000 -9999\n3 1000 2000 0\n2 1000\n3 1000 2002 1\n```\n\nOutput:\n```\n1000\n2000.0001\n```",
+    "input": "The first line contans one integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the next q lines have one of the following formats:\n\nIt is guaranteed that t, s, l, r, v in all the queries are integers.\n\nAlso, it is guaranteed that there is at least one query of the 3-rd type, and there won't be a query of the 1-st type with such t, that there already exists an event which happens at that second t.",
+    "output": "For each query of the 3-rd type, print in a new line the moment when the bowl will burst or print -1 if it won't happen.\n\nYour answer will be considered correct if it's absolute or relative error does not exceed 10^{-6}.\n\nFormally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a - b|)/(max(1, |b|)) ≤ 10^{-6}.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

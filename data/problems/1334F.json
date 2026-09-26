@@ -1,0 +1,19 @@
+{
+    "id": "1334F",
+    "contest_id": 1334,
+    "problem_letter": "F",
+    "title": "F. Strange Function",
+    "statement": "Let's denote the following function f. This function takes an array a of length n and returns an array. Initially the result is an empty array. For each integer i from 1 to n we add element a_i to the end of the resulting array if it is greater than all previous elements (more formally, if a_i > maxlimits_{1 ≤ j < i}a_j). Some examples of the function f:\n\nYou are given two arrays: array a_1, a_2, … , a_n and array b_1, b_2, … , b_m. You can delete some elements of array a (possibly zero). To delete the element a_i, you have to pay p_i coins (the value of p_i can be negative, then you get |p_i| coins, if you delete this element). Calculate the minimum number of coins (possibly negative) you have to spend for fulfilling equality f(a) = b.\n\nThe first line contains one integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the array a.\n\nThe third line contains n integers p_1, p_2, …, p_n (|p_i| ≤ 10^9) — the array p.\n\nThe fourth line contains one integer m (1 ≤ m ≤ n) — the length of array b.\n\nThe fifth line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ n, b_{i-1} < b_i) — the array b.\n\nIf the answer exists, in the first line print YES. In the second line, print the minimum number of coins you have to spend for fulfilling equality f(a) = b.\n\nOtherwise in only line print NO.\n\nInput:\n```\n11\n4 1 3 3 7 8 7 9 10 7 11\n3 5 0 -2 5 3 6 7 8 2 4\n3\n3 7 10\n```\n\nOutput:\n```\nYES\n20\n```\n\nInput:\n```\n6\n2 1 5 3 6 5\n3 -9 0 16 22 -14\n4\n2 3 5 6\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5·10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the array a.\n\nThe third line contains n integers p_1, p_2, …, p_n (|p_i| ≤ 10^9) — the array p.\n\nThe fourth line contains one integer m (1 ≤ m ≤ n) — the length of array b.\n\nThe fifth line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ n, b_{i-1} < b_i) — the array b.",
+    "output": "If the answer exists, in the first line print YES. In the second line, print the minimum number of coins you have to spend for fulfilling equality f(a) = b.\n\nOtherwise in only line print NO.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "greedy",
+        "*2500"
+    ],
+    "rating": 2500
+}

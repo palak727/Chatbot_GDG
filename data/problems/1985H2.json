@@ -1,0 +1,20 @@
+{
+    "id": "1985H2",
+    "contest_id": 1985,
+    "problem_letter": "H2",
+    "title": "H2. Maximize the Largest Component (Hard Version)",
+    "statement": "Easy and hard versions are actually different problems, so read statements of both problems completely and carefully. The only difference between the two versions is the operation.\n\nAlex has a grid with n rows and m columns consisting of '.' and '#' characters. A set of '#' cells forms a connected component if from any cell in this set, it is possible to reach any other cell in this set by only moving to another cell in the set that shares a common side. The size of a connected component is the number of cells in the set.\n\nIn one operation, Alex selects any row r (1 ≤ r ≤ n) and any column c (1 ≤ c ≤ m), then sets every cell in row r and column c to be '#'. Help Alex find the maximum possible size of the largest connected component of '#' cells that he can achieve after performing the operation at most once.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 10^6) — the number of rows and columns of the grid.\n\nThe next n lines each contain m characters. Each character is either '.' or '#'.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer — the maximum possible size of a connected component of '#' cells that Alex can achieve.\n\nIn the fourth test case, it is optimal for Alex to set all cells in row 4 and column 2 to be '#'. Doing so will lead to the largest connected component of '#' having a size of 16.\n\nIn the fifth test case, it is optimal for Alex to set all cells in row 2 and column 4 to be '#'. Doing so will lead to the largest connected component of '#' having a size of 22.\n\nInput:\n```\n61 1.4 2..#.#..#3 5.#.#...#...#.#.5 5#...#....##...#........##6 6.#..#.#..#...#...##.#.#..#.##.###..#6 8..#....#.####.#.###.#..#.##.#.##.#.##.###..##.#.\n```\n\nOutput:\n```\n1\n7\n11\n16\n22\n36\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 10^6) — the number of rows and columns of the grid.\n\nThe next n lines each contain m characters. Each character is either '.' or '#'.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer — the maximum possible size of a connected component of '#' cells that Alex can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

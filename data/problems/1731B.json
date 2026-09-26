@@ -1,0 +1,17 @@
+{
+    "id": "1731B",
+    "contest_id": 1731,
+    "problem_letter": "B",
+    "title": "B. Kill Demodogs",
+    "statement": "Demodogs from the Upside-down have attacked Hawkins again. El wants to reach Mike and also kill as many Demodogs in the way as possible.\n\nHawkins can be represented as an n × n grid. The number of Demodogs in a cell at the i-th row and the j-th column is i·j. El is at position (1, 1) of the grid, and she has to reach (n, n) where she can find Mike.\n\nThe only directions she can move are the right (from (i, j) to (i, j + 1)) and the down (from (i, j) to (i + 1, j)). She can't go out of the grid, as there are doors to the Upside-down at the boundaries.\n\nCalculate the maximum possible number of Demodogs ans she can kill on the way, considering that she kills all Demodogs in cells she visits (including starting and finishing cells).\n\nPrint 2022·ans modulo 10^9 + 7. Modulo 10^9 + 7 because the result can be too large and multiplied by 2022 because we are never gonna see it again!\n\n(Note, you firstly multiply by 2022 and only after that take the remainder.)\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 10^9) — the size of the grid.\n\nFor each test case, print a single integer — the maximum number of Demodogs that can be killed multiplied by 2022, modulo 10^9 + 7.\n\nIn the first test case, for any path chosen by her the number of Demodogs to be killed would be 7, so the answer would be 2022·7 = 14154.\n\nInput:\n```\n423501000000000\n```\n\nOutput:\n```\n14154\n44484\n171010650\n999589541\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 10^9) — the size of the grid.",
+    "output": "For each test case, print a single integer — the maximum number of Demodogs that can be killed multiplied by 2022, modulo 10^9 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

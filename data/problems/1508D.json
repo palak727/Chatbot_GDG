@@ -1,0 +1,18 @@
+{
+    "id": "1508D",
+    "contest_id": 1508,
+    "problem_letter": "D",
+    "title": "D. Swap Pass",
+    "statement": "Based on a peculiar incident at basketball practice, Akari came up with the following competitive programming problem!\n\nYou are given n points on the plane, no three of which are collinear. The i-th point initially has a label a_i, in such a way that the labels a_1, a_2, …, a_n form a permutation of 1, 2, …, n.\n\nYou are allowed to modify the labels through the following operation:\n\nA sequence of operations is valid if after applying all of the operations in the sequence in order, the k-th point ends up having the label k for all k between 1 and n inclusive, and the drawn segments don't intersect each other internally. Formally, if two of the segments intersect, then they must do so at a common endpoint of both segments.\n\nIn particular, all drawn segments must be distinct.\n\nFind any valid sequence of operations, or say that none exist.\n\nThe first line contains an integer n (3 ≤ n ≤ 2000) — the number of points.\n\nThe i-th of the following n lines contains three integers x_i, y_i, a_i (-10^6 ≤ x_i, y_i ≤ 10^6, 1 ≤ a_i ≤ n), representing that the i-th point has coordinates (x_i, y_i) and initially has label a_i.\n\nIt is guaranteed that all points are distinct, no three points are collinear, and the labels a_1, a_2, …, a_n form a permutation of 1, 2, …, n.\n\nIf it is impossible to perform a valid sequence of operations, print -1.\n\nOtherwise, print an integer k (0 ≤ k ≤ (n(n - 1))/2) — the number of operations to perform, followed by k lines, each containing two integers i and j (1 ≤ i, j ≤ n, i≠ j) — the indices of the points chosen for the operation.\n\nNote that you are not required to minimize or maximize the value of k.\n\nIf there are multiple possible answers, you may print any of them.\n\nThe following animation showcases the first sample test case. The black numbers represent the indices of the points, while the boxed orange numbers represent their labels.\n\nIn the second test case, all labels are already in their correct positions, so no operations are necessary.\n\nInput:\n```\n5\n-1 -2 2\n3 0 5\n1 3 4\n4 -3 3\n5 2 1\n```\n\nOutput:\n```\n5\n1 2\n5 3\n4 5\n1 5\n1 3\n```\n\nInput:\n```\n3\n5 4 1\n0 0 2\n-3 -2 3\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains an integer n (3 ≤ n ≤ 2000) — the number of points.\n\nThe i-th of the following n lines contains three integers x_i, y_i, a_i (-10^6 ≤ x_i, y_i ≤ 10^6, 1 ≤ a_i ≤ n), representing that the i-th point has coordinates (x_i, y_i) and initially has label a_i.\n\nIt is guaranteed that all points are distinct, no three points are collinear, and the labels a_1, a_2, …, a_n form a permutation of 1, 2, …, n.",
+    "output": "If it is impossible to perform a valid sequence of operations, print -1.\n\nOtherwise, print an integer k (0 ≤ k ≤ (n(n - 1))/2) — the number of operations to perform, followed by k lines, each containing two integers i and j (1 ≤ i, j ≤ n, i≠ j) — the indices of the points chosen for the operation.\n\nNote that you are not required to minimize or maximize the value of k.\n\nIf there are multiple possible answers, you may print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "sortings",
+        "*3000"
+    ],
+    "rating": 3000
+}

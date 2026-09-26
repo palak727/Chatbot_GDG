@@ -1,0 +1,17 @@
+{
+    "id": "1409F",
+    "contest_id": 1409,
+    "problem_letter": "F",
+    "title": "F. Subsequences of Length Two",
+    "statement": "You are given two strings s and t consisting of lowercase Latin letters. The length of t is 2 (i.e. this string consists only of two characters).\n\nIn one move, you can choose any character of s and replace it with any lowercase Latin letter. More formally, you choose some i and replace s_i (the character at the position i) with some character from 'a' to 'z'.\n\nYou want to do no more than k replacements in such a way that maximizes the number of occurrences of t in s as a subsequence.\n\nRecall that a subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.\n\nThe first line of the input contains two integers n and k (2 ≤ n ≤ 200; 0 ≤ k ≤ n) — the length of s and the maximum number of moves you can make. The second line of the input contains the string s consisting of n lowercase Latin letters. The third line of the input contains the string t consisting of two lowercase Latin letters.\n\nPrint one integer — the maximum possible number of occurrences of t in s as a subsequence if you replace no more than k characters in s optimally.\n\nIn the first example, you can obtain the string \"abab\" replacing s_1 with 'a' and s_4 with 'b'. Then the answer is 3.\n\nIn the second example, you can obtain the string \"ssddsdd\" and get the answer 10.\n\nIn the fourth example, you can obtain the string \"aaacaaa\" and get the answer 15.\n\nInput:\n```\n4 2\nbbaa\nab\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n7 3\nasddsaf\nsd\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n15 6\nqwertyhgfdsazxc\nqa\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n7 2\nabacaba\naa\n```\n\nOutput:\n```\n15\n```",
+    "input": "The first line of the input contains two integers n and k (2 ≤ n ≤ 200; 0 ≤ k ≤ n) — the length of s and the maximum number of moves you can make. The second line of the input contains the string s consisting of n lowercase Latin letters. The third line of the input contains the string t consisting of two lowercase Latin letters.",
+    "output": "Print one integer — the maximum possible number of occurrences of t in s as a subsequence if you replace no more than k characters in s optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

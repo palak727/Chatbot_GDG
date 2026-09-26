@@ -1,0 +1,22 @@
+{
+    "id": "1266D",
+    "contest_id": 1266,
+    "problem_letter": "D",
+    "title": "D. Decreasing Debts",
+    "statement": "There are n people in this world, conveniently numbered 1 through n. They are using burles to buy goods and services. Occasionally, a person might not have enough currency to buy what he wants or needs, so he borrows money from someone else, with the idea that he will repay the loan later with interest. Let d(a,b) denote the debt of a towards b, or 0 if there is no such debt.\n\nSometimes, this becomes very complex, as the person lending money can run into financial troubles before his debtor is able to repay his debt, and finds himself in the need of borrowing money.\n\nWhen this process runs for a long enough time, it might happen that there are so many debts that they can be consolidated. There are two ways this can be done:\n\nThe total debt is defined as the sum of all debts:\n\nΣ_d = ∑_{a,b} d(a,b)\n\nYour goal is to use the above rules in any order any number of times, to make the total debt as small as possible. Note that you don't have to minimise the number of non-zero debts, only the total debt.\n\nThe first line contains two space separated integers n (1 ≤ n ≤ 10^5) and m (0 ≤ m ≤ 3·10^5), representing the number of people and the number of debts, respectively.\n\nm lines follow, each of which contains three space separated integers u_i, v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i), d_i (1 ≤ d_i ≤ 10^9), meaning that the person u_i borrowed d_i burles from person v_i.\n\nOn the first line print an integer m' (0 ≤ m' ≤ 3·10^5), representing the number of debts after the consolidation. It can be shown that an answer always exists with this additional constraint.\n\nAfter that print m' lines, i-th of which contains three space separated integers u_i, v_i, d_i, meaning that the person u_i owes the person v_i exactly d_i burles. The output must satisfy 1 ≤ u_i, v_i ≤ n, u_i ≠ v_i and 0 < d_i ≤ 10^18.\n\nFor each pair i ≠ j, it should hold that u_i ≠ u_j or v_i ≠ v_j. In other words, each pair of people can be included at most once in the output.\n\nIn the first example the optimal sequence of operations can be the following:\n\nIn the second example the optimal sequence of operations can be the following:\n\nInput:\n```\n3 2\n1 2 10\n2 3 5\n```\n\nOutput:\n```\n2\n1 2 5\n1 3 5\n```\n\nInput:\n```\n3 3\n1 2 10\n2 3 15\n3 1 10\n```\n\nOutput:\n```\n1\n2 3 5\n```\n\nInput:\n```\n4 2\n1 2 12\n3 4 8\n```\n\nOutput:\n```\n2\n1 2 12\n3 4 8\n```\n\nInput:\n```\n3 4\n2 3 1\n2 3 2\n2 3 4\n2 3 8\n```\n\nOutput:\n```\n1\n2 3 15\n```",
+    "input": "The first line contains two space separated integers n (1 ≤ n ≤ 10^5) and m (0 ≤ m ≤ 3·10^5), representing the number of people and the number of debts, respectively.\n\nm lines follow, each of which contains three space separated integers u_i, v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i), d_i (1 ≤ d_i ≤ 10^9), meaning that the person u_i borrowed d_i burles from person v_i.",
+    "output": "On the first line print an integer m' (0 ≤ m' ≤ 3·10^5), representing the number of debts after the consolidation. It can be shown that an answer always exists with this additional constraint.\n\nAfter that print m' lines, i-th of which contains three space separated integers u_i, v_i, d_i, meaning that the person u_i owes the person v_i exactly d_i burles. The output must satisfy 1 ≤ u_i, v_i ≤ n, u_i ≠ v_i and 0 < d_i ≤ 10^18.\n\nFor each pair i ≠ j, it should hold that u_i ≠ u_j or v_i ≠ v_j. In other words, each pair of people can be included at most once in the output.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "graphs",
+        "greedy",
+        "implementation",
+        "math",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

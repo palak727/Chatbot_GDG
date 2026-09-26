@@ -1,0 +1,17 @@
+{
+    "id": "1175A",
+    "contest_id": 1175,
+    "problem_letter": "A",
+    "title": "A. From Hero to Zero",
+    "statement": "You are given an integer n and an integer k.\n\nIn one step you can do one of the following moves:\n\nFor example, if n = 27 and k = 3 you can do the following steps: 27 → 26 → 25 → 24 → 8 → 7 → 6 → 2 → 1 → 0.\n\nYou are asked to calculate the minimum number of steps to reach 0 from n.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of queries.\n\nThe only line of each query contains two integers n and k (1 ≤ n ≤ 10^18, 2 ≤ k ≤ 10^18).\n\nFor each query print the minimum number of steps to reach 0 from n in single line.\n\nSteps for the first test case are: 59 → 58 → 57 → 19 → 18 → 6 → 2 → 1 → 0.\n\nIn the second test case you have to divide n by k 18 times and then decrease n by 1.\n\nInput:\n```\n2\n59 3\n1000000000000000000 10\n```\n\nOutput:\n```\n8\n19\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of queries.\n\nThe only line of each query contains two integers n and k (1 ≤ n ≤ 10^18, 2 ≤ k ≤ 10^18).",
+    "output": "For each query print the minimum number of steps to reach 0 from n in single line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1849D",
+    "contest_id": 1849,
+    "problem_letter": "D",
+    "title": "D. Array Painting",
+    "statement": "You are given an array of n integers, where each integer is either 0, 1, or 2. Initially, each element of the array is blue.\n\nYour goal is to paint each element of the array red. In order to do so, you can perform operations of two types:\n\nWhat is the minimum number of coins you have to spend to achieve your goal?\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2).\n\nPrint one integer — the minimum number of coins you have to spend in order to paint all elements red.\n\nIn the first example, you can paint all elements red with having to spend only one coin as follows:\n\nIn the second example, you can paint all elements red spending only two coins as follows:\n\nInput:\n```\n3\n0 2 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4\n0 0 1 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n7\n0 1 0 0 1 0 2\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2).",
+    "output": "Print one integer — the minimum number of coins you have to spend in order to paint all elements red.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

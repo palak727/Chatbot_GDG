@@ -1,0 +1,17 @@
+{
+    "id": "1985D",
+    "contest_id": 1985,
+    "problem_letter": "D",
+    "title": "D. Manhattan Circle",
+    "statement": "Given a n by m grid consisting of '.' and '#' characters, there exists a whole manhattan circle on the grid. The top left corner of the grid has coordinates (1,1), and the bottom right corner has coordinates (n, m).\n\nPoint (a, b) belongs to the manhattan circle centered at (h, k) if |h - a| + |k - b| < r, where r is a positive constant.\n\nOn the grid, the set of points that are part of the manhattan circle is marked as '#'. Find the coordinates of the center of the circle.\n\nThe first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains n and m (1 ≤ n·m ≤ 2·10^5) — the height and width of the grid, respectively.\n\nThe next n lines contains m characters '.' or '#'. If the character is '#', then the point is part of the manhattan circle.\n\nIt is guaranteed the sum of n·m over all test cases does not exceed 2·10^5, and there is a whole manhattan circle on the grid.\n\nFor each test case, output the two integers, the coordinates of the center of the circle.\n\nInput:\n```\n65 5............#............5 5..#...###.#####.###...#..5 6.............#....###....#....1 1#5 6...#....###..#####..###....#..2 10.............#......\n```\n\nOutput:\n```\n3 3\n3 3\n4 2\n1 1\n3 4\n2 4\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains n and m (1 ≤ n·m ≤ 2·10^5) — the height and width of the grid, respectively.\n\nThe next n lines contains m characters '.' or '#'. If the character is '#', then the point is part of the manhattan circle.\n\nIt is guaranteed the sum of n·m over all test cases does not exceed 2·10^5, and there is a whole manhattan circle on the grid.",
+    "output": "For each test case, output the two integers, the coordinates of the center of the circle.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

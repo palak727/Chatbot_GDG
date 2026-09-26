@@ -1,0 +1,17 @@
+{
+    "id": "1753F",
+    "contest_id": 1753,
+    "problem_letter": "F",
+    "title": "F. Minecraft Series",
+    "statement": "Little Misha goes to the programming club and solves nothing there. It may seem strange, but when you find out that Misha is filming a Minecraft series, everything will fall into place...\n\nMisha is inspired by Manhattan, so he built a city in Minecraft that can be imagined as a table of size n × m. k students live in a city, the i-th student lives in the house, located at the intersection of the x_i-th row and the y_i-th column. Also, each student has a degree of his aggressiveness w_i. Since the city turned out to be very large, Misha decided to territorially limit the actions of his series to some square s, which sides are parallel to the coordinate axes. The length of the side of the square should be an integer from 1 to min(n, m) cells.\n\nAccording to the plot, the main hero will come to the city and accidentally fall into the square s. Possessing a unique degree of aggressiveness 0, he will be able to show his leadership qualities and assemble a team of calm, moderate and aggressive students.\n\nIn order for the assembled team to be versatile and close-knit, degrees of aggressiveness of all students of the team must be pairwise distinct and must form a single segment of consecutive integers. Formally, if there exist students with degrees of aggressiveness l, l+1, …, -1, 1, …, r-1, r inside the square s, where l ≤ 0 ≤ r, the main hero will be able to form a team of r-l+1 people (of course, he is included in this team).\n\nNotice, that it is not required to take all students from square s to the team.\n\nMisha thinks that the team should consist of at least t people. That is why he is interested, how many squares are there in the table in which the main hero will be able to form a team of at least t people. Help him to calculate this.\n\nThe first line contains four integers n, m, k and t (1 ≤ n, m ≤ 40,000, 1 ≤ n·m ≤ 40,000, 1 ≤ k ≤ 10^6, 1 ≤ t ≤ k + 1) — the number of rows and columns in the table, and the number of students living in the city, respectively.\n\nEach of the following k lines contains three integers x_i, y_i and w_i (1 ≤ x_i ≤ n, 1 ≤ y_i ≤ m, 1 ≤ lvert w_i rvert ≤ 10^9) — the number of row and column, where the i-th student is living, and the degree of his aggressiveness.\n\nPrint one integer — the number of ways to choose the square s in such way that the main hero will be able to form a team of at least t people.\n\nInput:\n```\n2 2 1 2\n1 1 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2 2 2 2\n1 1 1\n2 2 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2 2 4 2\n1 1 1\n1 1 -1\n1 2 1\n2 2 1\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains four integers n, m, k and t (1 ≤ n, m ≤ 40,000, 1 ≤ n·m ≤ 40,000, 1 ≤ k ≤ 10^6, 1 ≤ t ≤ k + 1) — the number of rows and columns in the table, and the number of students living in the city, respectively.\n\nEach of the following k lines contains three integers x_i, y_i and w_i (1 ≤ x_i ≤ n, 1 ≤ y_i ≤ m, 1 ≤ lvert w_i rvert ≤ 10^9) — the number of row and column, where the i-th student is living, and the degree of his aggressiveness.",
+    "output": "Print one integer — the number of ways to choose the square s in such way that the main hero will be able to form a team of at least t people.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "two pointers",
+        "*3500"
+    ],
+    "rating": 3500
+}

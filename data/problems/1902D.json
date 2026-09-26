@@ -1,0 +1,19 @@
+{
+    "id": "1902D",
+    "contest_id": 1902,
+    "problem_letter": "D",
+    "title": "D. Robot Queries",
+    "statement": "There is an infinite 2-dimensional grid. Initially, a robot stands in the point (0, 0). The robot can execute four commands:\n\nYou are given a sequence of commands s of length n. Your task is to answer q independent queries: given four integers x, y, l and r; determine whether the robot visits the point (x, y), while executing a sequence s, but the substring from l to r is reversed (i. e. the robot performs commands in order s_1 s_2 s_3 … s_{l-1} s_r s_{r-1} s_{r-2} … s_l s_{r+1} s_{r+2} … s_n).\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the length of the command sequence and the number of queries, respectively.\n\nThe second line contains a string s of length n, consisting of characters U, D, L and/or R.\n\nThen q lines follow, the i-th of them contains four integers x_i, y_i, l_i and r_i (-n ≤ x_i, y_i ≤ n; 1 ≤ l ≤ r ≤ n) describing the i-th query.\n\nFor each query, print YES if the robot visits the point (x, y), while executing a sequence s, but the substring from l to r is reversed; otherwise print NO.\n\nIn the first query of the first sample, the path of the robot looks as follows:\n\nIn the second query of the first sample, the path of the robot looks as follows:\n\nIn the third query of the first sample, the path of the robot looks as follows:\n\nInput:\n```\n8 3RDLLUURU-1 2 1 70 0 3 40 1 7 8\n```\n\nOutput:\n```\nYES\nYES\nNO\n```\n\nInput:\n```\n4 2RLDU0 0 2 2-1 -1 2 3\n```\n\nOutput:\n```\nYES\nNO\n```\n\nInput:\n```\n10 6DLUDLRULLD-1 0 1 10-1 -2 2 5-4 -2 6 10-1 0 3 90 1 4 7-3 -1 5 8\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the length of the command sequence and the number of queries, respectively.\n\nThe second line contains a string s of length n, consisting of characters U, D, L and/or R.\n\nThen q lines follow, the i-th of them contains four integers x_i, y_i, l_i and r_i (-n ≤ x_i, y_i ≤ n; 1 ≤ l ≤ r ≤ n) describing the i-th query.",
+    "output": "For each query, print YES if the robot visits the point (x, y), while executing a sequence s, but the substring from l to r is reversed; otherwise print NO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

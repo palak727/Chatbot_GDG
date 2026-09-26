@@ -1,0 +1,16 @@
+{
+    "id": "1067A",
+    "contest_id": 1067,
+    "problem_letter": "A",
+    "title": "A. Array Without Local Maximums",
+    "statement": "Ivan unexpectedly saw a present from one of his previous birthdays. It is array of n numbers from 1 to 200. Array is old and some numbers are hard to read. Ivan remembers that for all elements at least one of its neighbours ls not less than it, more formally:\n\na_1 ≤ a_2,\n\na_n ≤ a_{n-1} and\n\na_i ≤ max(a_{i-1}, ,, a_{i+1}) for all i from 2 to n-1.\n\nIvan does not remember the array and asks to find the number of ways to restore it. Restored elements also should be integers from 1 to 200. Since the number of ways can be big, print it modulo 998244353.\n\nFirst line of input contains one integer n (2 ≤ n ≤ 10^5) — size of the array.\n\nSecond line of input contains n integers a_i — elements of array. Either a_i = -1 or 1 ≤ a_i ≤ 200. a_i = -1 means that i-th element can't be read.\n\nPrint number of ways to restore the array modulo 998244353.\n\nIn the first example, only possible value of a_2 is 2.\n\nIn the second example, a_1 = a_2 so there are 200 different values because all restored elements should be integers between 1 and 200.\n\nInput:\n```\n3\n1 -1 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2\n-1 -1\n```\n\nOutput:\n```\n200\n```",
+    "input": "First line of input contains one integer n (2 ≤ n ≤ 10^5) — size of the array.\n\nSecond line of input contains n integers a_i — elements of array. Either a_i = -1 or 1 ≤ a_i ≤ 200. a_i = -1 means that i-th element can't be read.",
+    "output": "Print number of ways to restore the array modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "*1900"
+    ],
+    "rating": 1900
+}

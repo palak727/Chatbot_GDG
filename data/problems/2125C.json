@@ -1,0 +1,19 @@
+{
+    "id": "2125C",
+    "contest_id": 2125,
+    "problem_letter": "C",
+    "title": "C. Count Good Numbers",
+    "statement": "A prime number is a positive integer that has exactly two divisors: 1 and itself. The first several prime numbers are 2, 3, 5, 7, 11, ….\n\nPrime factorization of a positive integer is representing it as a product of prime numbers. For example:\n\nFor every positive integer, its prime factorization is unique (if you don't consider the order of primes in the product).\n\nWe call a positive integer good if all primes in its factorization consist of at least two digits. For example:\n\nYou have to calculate the number of good integers from l to r (endpoints included).\n\nThe first line contains one integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nEach test case consists of one line containing two integers l and r (2 ≤ l ≤ r ≤ 10^18).\n\nFor each test case, print one integer — the number of good integers from l to r.\n\nInput:\n```\n42 1002 100013 372 1000000000000000000\n```\n\nOutput:\n```\n21\n227\n7\n228571428571428570\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nEach test case consists of one line containing two integers l and r (2 ≤ l ≤ r ≤ 10^18).",
+    "output": "For each test case, print one integer — the number of good integers from l to r.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

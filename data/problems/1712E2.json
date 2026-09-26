@@ -1,0 +1,20 @@
+{
+    "id": "1712E2",
+    "contest_id": 1712,
+    "problem_letter": "E2",
+    "title": "E2. LCM Sum (hard version)",
+    "statement": "This version of the problem differs from the previous one only in the constraint on t. You can make hacks only if both versions of the problem are solved.\n\nYou are given two positive integers l and r.\n\nCount the number of distinct triplets of integers (i, j, k) such that l ≤ i < j < k ≤ r and lcm(i,j,k) ≥ i + j + k.\n\nHere lcm(i, j, k) denotes the least common multiple (LCM) of integers i, j, and k.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (bf1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe only line for each test case contains two integers l and r (1 ≤ l ≤ r ≤ 2·10^5, l + 2 ≤ r).\n\nFor each test case print one integer — the number of suitable triplets.\n\nIn the first test case, there are 3 suitable triplets:\n\nIn the second test case, there is 1 suitable triplet:\n\nInput:\n```\n51 43 58 8668 866 86868\n```\n\nOutput:\n```\n3\n1\n78975\n969\n109229059713337\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (bf1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe only line for each test case contains two integers l and r (1 ≤ l ≤ r ≤ 2·10^5, l + 2 ≤ r).",
+    "output": "For each test case print one integer — the number of suitable triplets.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "math",
+        "number theory",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

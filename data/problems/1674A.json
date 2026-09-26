@@ -1,0 +1,17 @@
+{
+    "id": "1674A",
+    "contest_id": 1674,
+    "problem_letter": "A",
+    "title": "A. Number Transformation",
+    "statement": "You are given two integers x and y. You want to choose two strictly positive (greater than zero) integers a and b, and then apply the following operation to x exactly a times: replace x with b·x.\n\nYou want to find two positive integers a and b such that x becomes equal to y after this process. If there are multiple possible pairs, you can choose any of them. If there is no such pair, report it.\n\nFor example:\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing two integers x and y (1 ≤ x, y ≤ 100).\n\nIf it is possible to choose a pair of positive integers a and b so that x becomes y after the aforementioned process, print these two integers. The integers you print should be not less than 1 and not greater than 10^9 (it can be shown that if the answer exists, there is a pair of integers a and b meeting these constraints). If there are multiple such pairs, print any of them.\n\nIf it is impossible to choose a pair of integers a and b so that x becomes y, print the integer 0 twice.\n\nInput:\n```\n33 75100 10042 13\n```\n\nOutput:\n```\n2 5\n3 1\n0 0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing two integers x and y (1 ≤ x, y ≤ 100).",
+    "output": "If it is possible to choose a pair of positive integers a and b so that x becomes y after the aforementioned process, print these two integers. The integers you print should be not less than 1 and not greater than 10^9 (it can be shown that if the answer exists, there is a pair of integers a and b meeting these constraints). If there are multiple such pairs, print any of them.\n\nIf it is impossible to choose a pair of integers a and b so that x becomes y, print the integer 0 twice.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

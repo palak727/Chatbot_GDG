@@ -1,0 +1,19 @@
+{
+    "id": "1278E",
+    "contest_id": 1278,
+    "problem_letter": "E",
+    "title": "E. Tests for problem D",
+    "statement": "We had a really tough time generating tests for problem D. In order to prepare strong tests, we had to solve the following problem.\n\nGiven an undirected labeled tree consisting of n vertices, find a set of segments such that:\n\nCan you solve this problem too?\n\nThe first line contains one integer n (1 ≤ n ≤ 5·10^5) — the number of vertices in the tree.\n\nThen n - 1 lines follow, each containing two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i) denoting the endpoints of the i-th edge.\n\nIt is guaranteed that the given graph is a tree.\n\nPrint n pairs of integers, the i-th pair should contain two integers l_i and r_i (1 ≤ l_i < r_i ≤ 2n) — the endpoints of the i-th segment. All 2n integers you print should be unique.\n\nIt is guaranteed that the answer always exists.\n\nInput:\n```\n6\n1 2\n1 3\n3 4\n3 5\n2 6\n```\n\nOutput:\n```\n9 12\n7 10\n3 11\n1 5\n2 4\n6 8\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1 2\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5·10^5) — the number of vertices in the tree.\n\nThen n - 1 lines follow, each containing two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i) denoting the endpoints of the i-th edge.\n\nIt is guaranteed that the given graph is a tree.",
+    "output": "Print n pairs of integers, the i-th pair should contain two integers l_i and r_i (1 ≤ l_i < r_i ≤ 2n) — the endpoints of the i-th segment. All 2n integers you print should be unique.\n\nIt is guaranteed that the answer always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "divide and conquer",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1703D",
+    "contest_id": 1703,
+    "problem_letter": "D",
+    "title": "D. Double Strings",
+    "statement": "You are given n strings s_1, s_2, …, s_n of length at most 8.\n\nFor each string s_i, determine if there exist two strings s_j and s_k such that s_i = s_j + s_k. That is, s_i is the concatenation of s_j and s_k. Note that j can be equal to k.\n\nRecall that the concatenation of strings s and t is s + t = s_1 s_2 … s_p t_1 t_2 … t_q, where p and q are the lengths of strings s and t respectively. For example, concatenation of \"code\" and \"forces\" is \"codeforces\".\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of strings.\n\nThen n lines follow, the i-th of which contains non-empty string s_i of length at most 8, consisting of lowercase English letters. Among the given n strings, there may be equal (duplicates).\n\nThe sum of n over all test cases doesn't exceed 10^5.\n\nFor each test case, output a binary string of length n. The i-th bit should be texttt1 if there exist two strings s_j and s_k where s_i = s_j + s_k, and texttt0 otherwise. Note that j can be equal to k.\n\nIn the first test case, we have the following:\n\nInput:\n```\n35ababababcabacbc3xxxxxx8codeforcescodescodforcforcesecode\n```\n\nOutput:\n```\n10100\n011\n10100101\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of strings.\n\nThen n lines follow, the i-th of which contains non-empty string s_i of length at most 8, consisting of lowercase English letters. Among the given n strings, there may be equal (duplicates).\n\nThe sum of n over all test cases doesn't exceed 10^5.",
+    "output": "For each test case, output a binary string of length n. The i-th bit should be texttt1 if there exist two strings s_j and s_k where s_i = s_j + s_k, and texttt0 otherwise. Note that j can be equal to k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

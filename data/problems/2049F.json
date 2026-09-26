@@ -1,0 +1,20 @@
+{
+    "id": "2049F",
+    "contest_id": 2049,
+    "problem_letter": "F",
+    "title": "F. MEX OR Mania",
+    "statement": "An integer sequence b_1, b_2, …, b_n is good if mex(b_1, b_2, …, b_n) - (b_1 | b_2 | … | b_n) = 1. Here, mex(c) denotes the MEX^{∗} of the collection c, and | is the bitwise OR operator.\n\nShohag has an integer sequence a_1, a_2, …, a_n. He will perform the following q updates on a:\n\nAfter each update, help him find the length of the longest good subarray^{†} of a.\n\n^{∗}The minimum excluded (MEX) of a collection of integers c_1, c_2, …, c_k is defined as the smallest non-negative integer y which does not occur in the collection c.\n\n^{†}An array d is a subarray of an array f if d can be obtained from f by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two space-separated integers n and q (1 ≤ n, q ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n).\n\nThe next q lines of each test case are of the following form:\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5 and the sum of q doesn't exceed 10^5.\n\nFor each test case, output q lines — on the i-th line output the length of the longest good subarray of a after the i-th update.\n\nIn the first test case, after the first update, the array becomes [0, 0, 1, 0, 1, 1], and here the whole array is good because mex([0, 0, 1, 0, 1, 1]) - (0 | 0 | 1 | 0 | 1 | 1) = 2 - 1 = 1.\n\nAfter the second update, the array becomes [0, 0, 3, 0, 1, 1], and here the subarray [0, 1, 1] has the maximum length among all the good subarrays.\n\nFinally, after the third update, the array becomes [0, 0, 3, 0, 1, 4], and here the subarrays [0, 0] and [0, 1] both have the maximum length among all the good subarrays.\n\nInput:\n```\n26 30 0 1 0 1 06 13 26 33 11 3 11 1\n```\n\nOutput:\n```\n6\n3\n2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two space-separated integers n and q (1 ≤ n, q ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n).\n\nThe next q lines of each test case are of the following form:\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5 and the sum of q doesn't exceed 10^5.",
+    "output": "For each test case, output q lines — on the i-th line output the length of the longest good subarray of a after the i-th update.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "dsu",
+        "implementation",
+        "*2700"
+    ],
+    "rating": 2700
+}

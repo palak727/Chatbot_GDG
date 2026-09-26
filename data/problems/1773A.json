@@ -1,0 +1,19 @@
+{
+    "id": "1773A",
+    "contest_id": 1773,
+    "problem_letter": "A",
+    "title": "A. Amazing Trick",
+    "statement": "Alice is a magician and she creates a new trick. She has n cards with different numbers from 1 to n written on them. First, she asks an audience member to shuffle the deck and put cards in a row. Let's say the i-th card from the left has the number a_i on it.\n\nThen Alice picks two permutations p and q. There is a restriction on p and q — permutations can't have fixed points. Which means ∀ i: p_i ≠ i and q_i ≠ i.\n\nAfter permutations are chosen, Alice shuffles the cards according to them. Now the i-th card from the left is the card a[p[q[i]]. The trick is considered successful if i-th card from the left has the number i on it after the shuffles.\n\nHelp Alice pick the permutations p and q or say it is not possible for the specific starting permutation a.\n\nThe first line of the input contains the number of tests t (1 ≤ t ≤ 10^5).\n\nEach test is described in two lines. The first line contains one integer n — the number of cards (1 ≤ n ≤ 10^5). The second line contains n integers a_i — the initial permutation of the cards (1 ≤ a_i ≤ n; ∀ i ≠ j: a_i ≠ a_j).\n\nIt is guaranteed that the sum of n over all tests does not exceed 10^5.\n\nPrint the answer for each test case in the same order the cases appear in the input.\n\nFor each test case, print \"Impossible\" in a single line, if no solution exists.\n\nOtherwise, print \"Possible\" in the first line, and in the following two lines print permutations p and q.\n\nInput:\n```\n422 131 2 342 1 4 355 1 4 2 3\n```\n\nOutput:\n```\nImpossible\nPossible\n3 1 2\n2 3 1\nPossible\n3 4 2 1\n3 4 2 1\nPossible\n4 1 2 5 3\n3 1 4 5 2\n```",
+    "input": "The first line of the input contains the number of tests t (1 ≤ t ≤ 10^5).\n\nEach test is described in two lines. The first line contains one integer n — the number of cards (1 ≤ n ≤ 10^5). The second line contains n integers a_i — the initial permutation of the cards (1 ≤ a_i ≤ n; ∀ i ≠ j: a_i ≠ a_j).\n\nIt is guaranteed that the sum of n over all tests does not exceed 10^5.",
+    "output": "Print the answer for each test case in the same order the cases appear in the input.\n\nFor each test case, print \"Impossible\" in a single line, if no solution exists.\n\nOtherwise, print \"Possible\" in the first line, and in the following two lines print permutations p and q.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graph matchings",
+        "math",
+        "probabilities",
+        "*1900"
+    ],
+    "rating": 1900
+}

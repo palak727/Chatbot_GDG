@@ -1,0 +1,18 @@
+{
+    "id": "2041C",
+    "contest_id": 2041,
+    "problem_letter": "C",
+    "title": "C. Cube",
+    "statement": "You are given an n× n× n big three-dimensional cube that contains n^3 numbers. You have to choose n of those numbers so that their sum is as small as possible. It is, however, forbidden to choose two numbers that are located in the same plane. That is, if we identify the positions in the cube by three Cartesian coordinates, then choosing two numbers from positions (x,y,z) and (x',y',z') is forbidden if x=x', y=y', or z=z'.\n\nThe input consists of the number n followed by n^3 numbers in the cube. The numbers are presented as n two-dimensional matrices, one for each layer of the cube. More precisely, there will be n^2 lines follow, each having n numbers. For each x, y, z (1≤ x, y, z≤ n), the number at the position (x, y, z) is listed as the z-th number in the ((x-1)× n+y)-th line.\n\nThe output consists of a single number. It is the minimum sum of n numbers chosen from the cube according to the above rules.\n\nInput:\n```\n31 2 34 5 67 8 91 1 12 2 23 3 34 3 02 1 49 8 9\n```\n\nOutput:\n```\n5\n```",
+    "input": "The input consists of the number n followed by n^3 numbers in the cube. The numbers are presented as n two-dimensional matrices, one for each layer of the cube. More precisely, there will be n^2 lines follow, each having n numbers. For each x, y, z (1≤ x, y, z≤ n), the number at the position (x, y, z) is listed as the z-th number in the ((x-1)× n+y)-th line.",
+    "output": "The output consists of a single number. It is the minimum sum of n numbers chosen from the cube according to the above rules.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "dp",
+        "*2000"
+    ],
+    "rating": 2000
+}

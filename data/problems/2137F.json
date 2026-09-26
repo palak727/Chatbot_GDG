@@ -1,0 +1,19 @@
+{
+    "id": "2137F",
+    "contest_id": 2137,
+    "problem_letter": "F",
+    "title": "F. Prefix Maximum Invariance",
+    "statement": "Given two arrays x and y both of size m, let z be another array of size m such that the prefix maximum at each position of z is the same as the prefix maximum at each position of x. Formally, max(x_1,x_2,…,x_i)=max(z_1,z_2,…,z_i) should hold for all 1 ≤ i ≤ m. Define f(x,y) to be the maximum number of positions where z_i=y_i over all possible arrays z.\n\nYou are given two sequences of integers a and b, both of size n. Please find the value of ∑_{l=1}^n∑_{r=l}^n f([a_l,a_{l+1},…,a_r], [b_l,b_{l+1},…,b_r]).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 2·n).\n\nThe third line contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ 2·n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the sum of f([a_l,a_{l+1},…,a_r], [b_l,b_{l+1},…,b_r]) over all pairs of (l,r).\n\nIn the first test case, the answer is the sum of the following:\n\nInput:\n```\n635 3 14 2 151 2 3 4 51 2 3 4 567 1 12 10 5 89 2 4 3 6 511265 1 2 6 3 43 1 6 5 2 422 21 1\n```\n\nOutput:\n```\n5\n35\n26\n0\n24\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 2·n).\n\nThe third line contains n integers b_1,b_2,…,b_n (1 ≤ b_i ≤ 2·n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the sum of f([a_l,a_{l+1},…,a_r], [b_l,b_{l+1},…,b_r]) over all pairs of (l,r).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "data structures",
+        "sortings",
+        "*1900"
+    ],
+    "rating": 1900
+}

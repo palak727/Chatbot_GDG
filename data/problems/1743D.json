@@ -1,0 +1,19 @@
+{
+    "id": "1743D",
+    "contest_id": 1743,
+    "problem_letter": "D",
+    "title": "D. Problem with Random Tests",
+    "statement": "You are given a string s consisting of n characters. Each character of s is either 0 or 1.\n\nA substring of s is a contiguous subsequence of its characters.\n\nYou have to choose two substrings of s (possibly intersecting, possibly the same, possibly non-intersecting — just any two substrings). After choosing them, you calculate the value of the chosen pair of substrings as follows:\n\nCalculate the maximum possible value you can get, and print it in binary representation without leading zeroes.\n\nThe first line contains one integer n — the number of characters in s.\n\nThe second line contains s itself, consisting of exactly n characters 0 and/or 1.\n\nAll non-example tests in this problem are generated randomly: every character of s is chosen independently of other characters; for each character, the probability of it being 1 is exactly 1/2.\n\nThis problem has exactly 40 tests. Tests from 1 to 3 are the examples; tests from 4 to 40 are generated randomly. In tests from 4 to 10, n = 5; in tests from 11 to 20, n = 1000; in tests from 21 to 40, n = 10^6.\n\nHacks are forbidden in this problem.\n\nPrint the maximum possible value you can get in binary representation without leading zeroes.\n\nIn the first example, you can choose the substrings 11010 and 101. f(s_1) = 26, f(s_2) = 5, their bitwise OR is 31, and the binary representation of 31 is 11111.\n\nIn the second example, you can choose the substrings 1110010 and 11100.\n\nInput:\n```\n5\n11010\n```\n\nOutput:\n```\n11111\n```\n\nInput:\n```\n7\n1110010\n```\n\nOutput:\n```\n1111110\n```\n\nInput:\n```\n4\n0000\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n — the number of characters in s.\n\nThe second line contains s itself, consisting of exactly n characters 0 and/or 1.\n\nAll non-example tests in this problem are generated randomly: every character of s is chosen independently of other characters; for each character, the probability of it being 1 is exactly 1/2.\n\nThis problem has exactly 40 tests. Tests from 1 to 3 are the examples; tests from 4 to 40 are generated randomly. In tests from 4 to 10, n = 5; in tests from 11 to 20, n = 1000; in tests from 21 to 40, n = 10^6.\n\nHacks are forbidden in this problem.",
+    "output": "Print the maximum possible value you can get in binary representation without leading zeroes.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "probabilities",
+        "*1700"
+    ],
+    "rating": 1700
+}

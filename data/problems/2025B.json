@@ -1,0 +1,18 @@
+{
+    "id": "2025B",
+    "contest_id": 2025,
+    "problem_letter": "B",
+    "title": "B. Binomial Coefficients, Kind Of",
+    "statement": "Recently, akshiM met a task that needed binomial coefficients to solve. He wrote a code he usually does that looked like this:\n\n```\n    for (int n = 0; n < N; n++) { // loop over n from 0 to N-1 (inclusive)\n        C[n][0] = 1;\n        C[n][n] = 1;\n        for (int k = 1; k < n; k++) // loop over k from 1 to n-1 (inclusive)\n            C[n][k] = C[n][k - 1] + C[n - 1][k - 1];\n    }\n```\n\nUnfortunately, he made an error, since the right formula is the following:\n\n```\n            C[n][k] = C[n - 1][k] + C[n - 1][k - 1]\n```\n\nBut his team member keblidA is interested in values that were produced using the wrong formula. Please help him to calculate these coefficients for t various pairs (n_i, k_i). Note that they should be calculated according to the first (wrong) formula.\n\nSince values C[n_i][k_i] may be too large, print them modulo 10^9 + 7.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of pairs. Next, t pairs are written in two lines.\n\nThe second line contains t integers n_1, n_2, …, n_t (2 ≤ n_i ≤ 10^5).\n\nThe third line contains t integers k_1, k_2, …, k_t (1 ≤ k_i < n_i).\n\nPrint t integers C[n_i][k_i] modulo 10^9 + 7.\n\nInput:\n```\n72 5 5 100000 100000 100000 1000001 2 3 1 33333 66666 99999\n```\n\nOutput:\n```\n2\n4\n8\n2\n326186014\n984426998\n303861760\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of pairs. Next, t pairs are written in two lines.\n\nThe second line contains t integers n_1, n_2, …, n_t (2 ≤ n_i ≤ 10^5).\n\nThe third line contains t integers k_1, k_2, …, k_t (1 ≤ k_i < n_i).",
+    "output": "Print t integers C[n_i][k_i] modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

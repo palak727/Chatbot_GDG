@@ -1,0 +1,20 @@
+{
+    "id": "1381A2",
+    "contest_id": 1381,
+    "problem_letter": "A2",
+    "title": "A2. Prefix Flip (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference between the versions is the constraint on n and the required number of operations. You can make hacks only if all versions of the problem are solved.\n\nThere are two binary strings a and b of length n (a binary string is a string consisting of symbols 0 and 1). In an operation, you select a prefix of a, and simultaneously invert the bits in the prefix (0 changes to 1 and 1 changes to 0) and reverse the order of the bits in the prefix.\n\nFor example, if a=001011 and you select the prefix of length 3, it becomes 011011. Then if you select the entire string, it becomes 001001.\n\nYour task is to transform the string a into b in at most 2n operations. It can be proved that it is always possible.\n\nThe first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. Next 3t lines contain descriptions of test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^5) — the length of the binary strings.\n\nThe next two lines contain two binary strings a and b of length n.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.\n\nFor each test case, output an integer k (0≤ k≤ 2n), followed by k integers p_1,…,p_k (1≤ p_i≤ n). Here k is the number of operations you use and p_i is the length of the prefix you flip in the i-th operation.\n\nIn the first test case, we have 01→ 11→ 00→ 10.\n\nIn the second test case, we have 01011→ 00101→ 11101→ 01000→ 10100→ 00100→ 11100.\n\nIn the third test case, the strings are already the same. Another solution is to flip the prefix of length 2, which will leave a unchanged.\n\nInput:\n```\n5\n2\n01\n10\n5\n01011\n11100\n2\n01\n01\n10\n0110011011\n1000110100\n1\n0\n1\n```\n\nOutput:\n```\n3 1 2 1\n6 5 2 5 3 1 2\n0\n9 4 1 2 10 4 1 2 1 5\n1 1\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. Next 3t lines contain descriptions of test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 10^5) — the length of the binary strings.\n\nThe next two lines contain two binary strings a and b of length n.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^5.",
+    "output": "For each test case, output an integer k (0≤ k≤ 2n), followed by k integers p_1,…,p_k (1≤ p_i≤ n). Here k is the number of operations you use and p_i is the length of the prefix you flip in the i-th operation.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "implementation",
+        "strings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

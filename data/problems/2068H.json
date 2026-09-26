@@ -1,0 +1,18 @@
+{
+    "id": "2068H",
+    "contest_id": 2068,
+    "problem_letter": "H",
+    "title": "H. Statues",
+    "statement": "The mayor of a city wants to place n statues at intersections around the city. The intersections in the city are at all points (x, y) with integer coordinates. Distances between intersections are measured using Manhattan distance, defined as follows: distance((x_1, y_1), (x_2, y_2)) = |x_1 - x_2| + |y_1 - y_2|.\n\nThe city council has provided the following requirements for the placement of the statues:\n\nIt is allowed to place multiple statues at the same intersection.\n\nHelp the mayor find a valid arrangement of the n statues, or determine that it does not exist.\n\nThe first line contains an integer n (3 ≤ n ≤ 50) — the number of statues.\n\nThe second line contains two integers a and b (0 ≤ a, b ≤ 10^9) — the coordinates of the intersection where the n-th statue must be placed.\n\nThe third line contains n-1 integers d_1, …, d_{n-1} (0 ≤ d_i ≤ 10^9) — the distance between the i-th statue and the (i+1)-th statue.\n\nPrint textttYES if there is a valid arrangement of the n statues. Otherwise, print textttNO.\n\nIf there is a valid arrangement, print a valid arrangement in the following n lines. The i-th of these lines must contain two integers x_i and y_i — the coordinates of the intersection where the i-th statue is placed. You can print any valid arrangement if multiple exist.\n\nIn the first sample, there is no valid arrangement of the 3 statues.\n\nIn the second sample, the sample output is shown in the following picture. Note that this is not the only valid arrangement of the 4 statues.\n\nInput:\n```\n35 89 0\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n410 67 8 5\n```\n\nOutput:\n```\nYES\n0 0\n6 -1\n11 2\n10 6\n```",
+    "input": "The first line contains an integer n (3 ≤ n ≤ 50) — the number of statues.\n\nThe second line contains two integers a and b (0 ≤ a, b ≤ 10^9) — the coordinates of the intersection where the n-th statue must be placed.\n\nThe third line contains n-1 integers d_1, …, d_{n-1} (0 ≤ d_i ≤ 10^9) — the distance between the i-th statue and the (i+1)-th statue.",
+    "output": "Print textttYES if there is a valid arrangement of the n statues. Otherwise, print textttNO.\n\nIf there is a valid arrangement, print a valid arrangement in the following n lines. The i-th of these lines must contain two integers x_i and y_i — the coordinates of the intersection where the i-th statue is placed. You can print any valid arrangement if multiple exist.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

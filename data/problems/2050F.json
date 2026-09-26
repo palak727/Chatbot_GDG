@@ -1,0 +1,19 @@
+{
+    "id": "2050F",
+    "contest_id": 2050,
+    "problem_letter": "F",
+    "title": "F. Maximum modulo equality",
+    "statement": "You are given an array a of length n and q queries l, r.\n\nFor each query, find the maximum possible m, such that all elements a_l, a_{l+1}, ..., a_r are equal modulo m. In other words, a_l bmod m = a_{l+1} bmod m = … = a_r bmod m, where a bmod b — is the remainder of division a by b. In particular, when m can be infinite, print 0.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, q (1 ≤ n, q ≤ 2·10^5) — the length of the array and the number of queries.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIn the following q lines of each test case, two integers l, r are provided (1 ≤ l ≤ r ≤ n) — the range of the query.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5, and the sum of q does not exceed 2·10^5.\n\nFor each query, output the maximum value m described in the statement.\n\nIn the first query of the first sample, 6 bmod 3 = 3 bmod 3 = 0. It can be shown that for greater m, the required condition will not be fulfilled.\n\nIn the third query of the first sample, 14 bmod 4 = 2 bmod 4 = 6 bmod 4 = 2. It can be shown that for greater m, the required condition will not be fulfilled.\n\nInput:\n```\n35 55 14 2 6 34 51 42 43 51 11 171 13 21 7 82 31 2\n```\n\nOutput:\n```\n3 1 4 1 0 \n0 \n1 6 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, q (1 ≤ n, q ≤ 2·10^5) — the length of the array and the number of queries.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIn the following q lines of each test case, two integers l, r are provided (1 ≤ l ≤ r ≤ n) — the range of the query.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5, and the sum of q does not exceed 2·10^5.",
+    "output": "For each query, output the maximum value m described in the statement.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

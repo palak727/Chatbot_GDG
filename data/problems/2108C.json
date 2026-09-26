@@ -1,0 +1,23 @@
+{
+    "id": "2108C",
+    "contest_id": 2108,
+    "problem_letter": "C",
+    "title": "C. Neo's Escape",
+    "statement": "Neo wants to escape from the Matrix. In front of him are n buttons arranged in a row. Each button has a weight given by an integer: a_1, a_2, …, a_n.\n\nNeo is immobilized, but he can create and move clones. This means he can perform an unlimited number of actions of the following two types in any order:\n\nAs soon as a clone is in front of another button that has not yet been pressed—regardless of whether he was created or moved — he immediately presses it. If the button has already been pressed, a clone does nothing — buttons can only be pressed once.\n\nFor Neo to escape, he needs to press all the buttons in such an order that the sequence of their weights is non-increasing — that is, if b_1, b_2, …, b_n are the weights of the buttons in the order they are pressed, then it must hold that b_1 ≥ b_2 ≥ ⋯ ≥ b_n.\n\nYour task is to determine the minimum number of clones that Neo needs to create in order to press all the buttons in a valid order.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of buttons.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the buttons.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the minimum number of clones that need to be created to press all the buttons in a valid order.\n\nIn the first test case, Neo can act as follows:\n\nIn the second test case, Neo can act as follows:\n\nInput:\n```\n454 3 2 1 531 1 167 8 1 5 9 2101 7 9 7 1 10 2 10 10 7\n```\n\nOutput:\n```\n2\n1\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of buttons.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the weights of the buttons.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the minimum number of clones that need to be created to press all the buttons in a valid order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "dsu",
+        "graphs",
+        "greedy",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

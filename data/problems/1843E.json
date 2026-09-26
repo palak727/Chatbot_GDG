@@ -1,0 +1,19 @@
+{
+    "id": "1843E",
+    "contest_id": 1843,
+    "problem_letter": "E",
+    "title": "E. Tracking Segments",
+    "statement": "You are given an array a consisting of n zeros. You are also given a set of m not necessarily different segments. Each segment is defined by two numbers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) and represents a subarray a_l_i, a_{l_i+1}, …, a_r_i of the array a.\n\nLet's call the segment l_i, r_i beautiful if the number of ones on this segment is strictly greater than the number of zeros. For example, if a = [1, 0, 1, 0, 1], then the segment [1, 5] is beautiful (the number of ones is 3, the number of zeros is 2), but the segment [3, 4] is not is beautiful (the number of ones is 1, the number of zeros is 1).\n\nYou also have q changes. For each change you are given the number 1 ≤ x ≤ n, which means that you must assign an element a_x the value 1.\n\nYou have to find the first change after which at least one of m given segments becomes beautiful, or report that none of them is beautiful after processing all q changes.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ m ≤ n ≤ 10^5) — the size of the array a and the number of segments, respectively.\n\nThen there are m lines consisting of two numbers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) —the boundaries of the segments.\n\nThe next line contains an integer q (1 ≤ q ≤ n) — the number of changes.\n\nThe following q lines each contain a single integer x (1 ≤ x ≤ n) — the index of the array element that needs to be set to 1. It is guaranteed that indexes in queries are distinct.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 10^5.\n\nFor each test case, output one integer — the minimum change number after which at least one of the segments will be beautiful, or -1 if none of the segments will be beautiful.\n\nIn the first case, after first 2 changes we won't have any beautiful segments, but after the third one on a segment [1; 5] there will be 3 ones and only 2 zeros, so the answer is 3.\n\nIn the second case, there won't be any beautiful segments.\n\nInput:\n```\n65 51 24 51 51 32 45531244 21 14 42235 21 51 5421345 21 51 35412355 51 51 51 51 51 431433 22 21 33231\n```\n\nOutput:\n```\n3\n-1\n3\n3\n3\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ m ≤ n ≤ 10^5) — the size of the array a and the number of segments, respectively.\n\nThen there are m lines consisting of two numbers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) —the boundaries of the segments.\n\nThe next line contains an integer q (1 ≤ q ≤ n) — the number of changes.\n\nThe following q lines each contain a single integer x (1 ≤ x ≤ n) — the index of the array element that needs to be set to 1. It is guaranteed that indexes in queries are distinct.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 10^5.",
+    "output": "For each test case, output one integer — the minimum change number after which at least one of the segments will be beautiful, or -1 if none of the segments will be beautiful.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "two pointers",
+        "*1600"
+    ],
+    "rating": 1600
+}

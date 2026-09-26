@@ -1,0 +1,18 @@
+{
+    "id": "1291A",
+    "contest_id": 1291,
+    "problem_letter": "A",
+    "title": "A. Even But Not Even",
+    "statement": "Let's define a number ebne (even but not even) if and only if its sum of digits is divisible by 2 but the number itself is not divisible by 2. For example, 13, 1227, 185217 are ebne numbers, while 12, 2, 177013, 265918 are not. If you're still unsure what ebne numbers are, you can look at the sample notes for more clarification.\n\nYou are given a non-negative integer s, consisting of n digits. You can delete some digits (they are not necessary consecutive/successive) to make the given number ebne. You cannot change the order of the digits, that is, after deleting the digits the remaining digits collapse. The resulting number shouldn't contain leading zeros. You can delete any number of digits between 0 (do not delete any digits at all) and n-1.\n\nFor example, if you are given s=222373204424185217171912 then one of possible ways to make it ebne is: 222373204424185217171912 → 2237344218521717191. The sum of digits of 2237344218521717191 is equal to 70 and is divisible by 2, but number itself is not divisible by 2: it means that the resulting number is ebne.\n\nFind any resulting number that is ebne. If it's impossible to create an ebne number from the given number report about it.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3000) — the number of digits in the original number.\n\nThe second line of each test case contains a non-negative integer number s, consisting of n digits.\n\nIt is guaranteed that s does not contain leading zeros and the sum of n over all test cases does not exceed 3000.\n\nFor each test case given in the input print the answer in the following format:\n\nIn the first test case of the example, 1227 is already an ebne number (as 1 + 2 + 2 + 7 = 12, 12 is divisible by 2, while in the same time, 1227 is not divisible by 2) so we don't need to delete any digits. Answers such as 127 and 17 will also be accepted.\n\nIn the second test case of the example, it is clearly impossible to create an ebne number from the given number.\n\nIn the third test case of the example, there are many ebne numbers we can obtain by deleting, for example, 1 digit such as 17703, 77013 or 17013. Answers such as 1701 or 770 will not be accepted as they are not ebne numbers. Answer 013 will not be accepted as it contains leading zeroes.\n\nExplanation:\n\nIn the last test case of the example, one of many other possible answers is given. Another possible answer is: 222373204424185217171912 → 22237320442418521717191 (delete the last digit).\n\nInput:\n```\n4\n4\n1227\n1\n0\n6\n177013\n24\n222373204424185217171912\n```\n\nOutput:\n```\n1227\n-1\n17703\n2237344218521717191\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3000) — the number of digits in the original number.\n\nThe second line of each test case contains a non-negative integer number s, consisting of n digits.\n\nIt is guaranteed that s does not contain leading zeros and the sum of n over all test cases does not exceed 3000.",
+    "output": "For each test case given in the input print the answer in the following format:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "strings",
+        "*900"
+    ],
+    "rating": 900
+}

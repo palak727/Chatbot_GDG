@@ -1,0 +1,19 @@
+{
+    "id": "1916D",
+    "contest_id": 1916,
+    "problem_letter": "D",
+    "title": "D. Mathematical Problem",
+    "statement": "The mathematicians of the 31st lyceum were given the following task:\n\nYou are given an odd number n, and you need to find n different numbers that are squares of integers. But it's not that simple. Each number should have a length of n (and should not have leading zeros), and the multiset of digits of all the numbers should be the same. For example, for mathtt234 and mathtt432, and mathtt11223 and mathtt32211, the multisets of digits are the same, but for mathtt123 and mathtt112233, they are not.\n\nThe mathematicians couldn't solve this problem. Can you?\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe following t lines contain one odd integer n (1 ≤ n ≤ 99) — the number of numbers to be found and their length.\n\nIt is guaranteed that the solution exists within the given constraints.\n\nIt is guaranteed that the sum of n^2 does not exceed 10^5.\n\nThe numbers can be output in any order.\n\nFor each test case, you need to output n numbers of length n — the answer to the problem.\n\nIf there are several answers, print any of them.\n\nBelow are the squares of the numbers that are the answers for the second test case:\n\nmathtt169 = mathtt13^2\n\nmathtt196 = mathtt14^2\n\nmathtt961 = mathtt31^2\n\nBelow are the squares of the numbers that are the answers for the third test case:\n\nmathtt16384 = mathtt128^2\n\nmathtt31684 = mathtt178^2\n\nmathtt36481 = mathtt191^2\n\nmathtt38416 = mathtt196^2\n\nmathtt43681 = mathtt209^2\n\nInput:\n```\n3135\n```\n\nOutput:\n```\n1\n169\n196\n961\n16384\n31684\n36481\n38416\n43681\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe following t lines contain one odd integer n (1 ≤ n ≤ 99) — the number of numbers to be found and their length.\n\nIt is guaranteed that the solution exists within the given constraints.\n\nIt is guaranteed that the sum of n^2 does not exceed 10^5.\n\nThe numbers can be output in any order.",
+    "output": "For each test case, you need to output n numbers of length n — the answer to the problem.\n\nIf there are several answers, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "geometry",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

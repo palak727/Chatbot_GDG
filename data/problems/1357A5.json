@@ -1,0 +1,15 @@
+{
+    "id": "1357A5",
+    "contest_id": 1357,
+    "problem_letter": "A5",
+    "title": "A5. Distinguish Rz(θ) from Ry(θ)",
+    "statement": "You are given an angle θ (in radians, 0.01π ≤ θ ≤ 0.99 π) and an operation that implements a single-qubit unitary transformation: either the Rz(θ) gate or the Ry(θ) gate. The operation will have Adjoint and Controlled variants defined.\n\nYour task is to perform necessary operations and measurements to figure out which unitary it was and to return 0 if it was the Rz(θ) gate or 1 if it was the Ry(θ) gate.\n\nYou are allowed to apply the given operation and its adjoint/controlled variants as many times as you need (within the time limit).\n\nYou have to implement an operation which takes a floating-point number and a single-qubit operation as an input and returns an integer. Your code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Intrinsic;\n\n    operation Solve (theta : Double, unitary : (Qubit => Unit is Adj+Ctl)) : Int {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

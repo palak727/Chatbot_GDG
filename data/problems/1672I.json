@@ -1,0 +1,17 @@
+{
+    "id": "1672I",
+    "contest_id": 1672,
+    "problem_letter": "I",
+    "title": "I. PermutationForces",
+    "statement": "You have a permutation p of integers from 1 to n.\n\nYou have a strength of s and will perform the following operation some times:\n\nIt can be shown that no matter what i you have chosen, p will be a permutation of integers from 1 to |p| after all operations.\n\nYou want to be able to transform p into the empty permutation. Find the minimum strength s that will allow you to do so.\n\nThe first line of input contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of the permutation p.\n\nThe second line of input conatains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the elements of the permutation p.\n\nIt is guaranteed that all elements in p are distinct.\n\nPrint the minimum strength s required.\n\nIn the first test case, the minimum s required is 1.\n\nHere is how we can transform p into the empty permutation with s=1:\n\nIt can be shown that with s=0, it is impossible to transform p into the empty permutation.\n\nInput:\n```\n3\n3 2 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n1\n1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n10\n1 8 4 3 7 10 6 5 9 2\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line of input contains a single integer n (1 ≤ n ≤ 5·10^5) — the length of the permutation p.\n\nThe second line of input conatains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the elements of the permutation p.\n\nIt is guaranteed that all elements in p are distinct.",
+    "output": "Print the minimum strength s required.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "*3000"
+    ],
+    "rating": 3000
+}

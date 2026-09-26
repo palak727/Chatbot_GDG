@@ -1,0 +1,17 @@
+{
+    "id": "1800B",
+    "contest_id": 1800,
+    "problem_letter": "B",
+    "title": "B. Count the Number of Pairs",
+    "statement": "Kristina has a string s of length n, consisting only of lowercase and uppercase Latin letters. For each pair of lowercase letter and its matching uppercase letter, Kristina can get 1 burl. However, pairs of characters cannot overlap, so each character can only be in one pair.\n\nFor example, if she has the string s = \"aAaaBACacbE\", she can get a burl for the following character pairs:\n\nKristina wants to get more burles for her string, so she is going to perform no more than k operations on it. In one operation, she can:\n\nFor example, when k = 2 and s = \"aAaaBACacbE\" it can perform one operation: choose s_3 = \"a\" and make it uppercase. Then she will get another pair of s_3 = \"A\" and s_8 = \"a\"\n\nFind maximum number of burles Kristina can get for her string.\n\nThe first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of each test case contains two integers n (1 ≤ n ≤ 2·10^5) and k (0 ≤ k ≤ n) — the number of characters in the string and the maximum number of operations that can be performed on it.\n\nThe second line of each test case contains a string s of length n, consisting only of lowercase and uppercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print exactly one integer on a separate line: the maximum number of burles that Kristina can get for her string s.\n\nThe first test case is explained in the problem statement.\n\nIn the second test case, it is not possible to get any pair by performing any number of operations.\n\nInput:\n```\n511 2aAaaBACacbE2 2ab4 1aaBB6 0abBAcC5 3cbccb\n```\n\nOutput:\n```\n5\n0\n1\n3\n2\n```",
+    "input": "The first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of each test case contains two integers n (1 ≤ n ≤ 2·10^5) and k (0 ≤ k ≤ n) — the number of characters in the string and the maximum number of operations that can be performed on it.\n\nThe second line of each test case contains a string s of length n, consisting only of lowercase and uppercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print exactly one integer on a separate line: the maximum number of burles that Kristina can get for her string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

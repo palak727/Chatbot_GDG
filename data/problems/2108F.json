@@ -1,0 +1,17 @@
+{
+    "id": "2108F",
+    "contest_id": 2108,
+    "problem_letter": "F",
+    "title": "F. Fallen Towers",
+    "statement": "Pizano built an array a of n towers, each consisting of a_i ≥ 0 blocks.\n\nPizano can knock down a tower so that the next a_i towers grow by 1. In other words, he can take the element a_i, increase the next a_i elements by one, and then set a_i to 0. The blocks that fall outside the array of towers disappear. If Pizano knocks down a tower with 0 blocks, nothing happens.\n\nPizano wants to knock down all n towers in any order, each exactly once. That is, for each i from 1 to n, he will knock down the tower at position i exactly once.\n\nMoreover, the resulting array of tower heights must be non-decreasing. This means that after he knocks down all n towers, for any i < j, the tower at position i must not be taller than the tower at position j.\n\nYou are required to output the maximum MEX of the resulting array of tower heights.\n\nThe MEX of an array is the smallest non-negative integer that is not present in the array.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the number of towers.\n\nThe second line of each test case contains n integers — the initial heights of the towers a_1, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the maximum MEX of the final array.\n\nExplanation for the first test case.\n\nExplanation for the second test case. Note that all towers were knocked down exactly once, and the final array of heights is non-decreasing.\n\nInput:\n```\n821 242 1 0 0105 9 3 7 1 5 1 5 4 3101 1 1 1 1 1 1 1 1 1103 2 1 0 3 2 1 0 3 255 2 0 5 51100000000074 0 1 0 2 7 7\n```\n\nOutput:\n```\n2\n3\n7\n4\n5\n4\n1\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the number of towers.\n\nThe second line of each test case contains n integers — the initial heights of the towers a_1, …, a_n (0 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the maximum MEX of the final array.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*2900"
+    ],
+    "rating": 2900
+}

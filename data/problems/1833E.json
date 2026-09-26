@@ -1,0 +1,19 @@
+{
+    "id": "1833E",
+    "contest_id": 1833,
+    "problem_letter": "E",
+    "title": "E. Round Dance",
+    "statement": "n people came to the festival and decided to dance a few round dances. There are at least 2 people in the round dance and each person has exactly two neighbors. If there are 2 people in the round dance then they have the same neighbor on each side.\n\nYou decided to find out exactly how many dances there were. But each participant of the holiday remembered exactly one neighbor. Your task is to determine what the minimum and maximum number of round dances could be.\n\nFor example, if there were 6 people at the holiday, and the numbers of the neighbors they remembered are equal [2, 1, 4, 3, 6, 5], then the minimum number of round dances is1:\n\nThe first line contains a positive number t (1 ≤ t ≤ 10^4) — the number of test cases. The following is a description of the test cases.\n\nThe first line of the description of each test case contains a positive number n (2 ≤ n ≤ 2·10^5) — the number of people at the holiday.\n\nThe second line of the description of each test case contains n integers a_i (1 ≤ a_i ≤ n, a_i ≠ i) — the number of the neighbor that the ith person remembered.\n\nIt is guaranteed that the test cases are correct and corresponds to at least one division of people into round dances.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output two integers — the minimum and maximum number of round dances that could be.\n\nInput:\n```\n1062 1 4 3 6 562 3 1 5 6 492 3 2 5 6 5 8 9 822 144 3 2 152 3 4 5 165 3 4 1 1 253 5 4 1 266 3 2 5 4 365 1 4 3 4 2\n```\n\nOutput:\n```\n1 3\n2 2\n1 3\n1 1\n1 2\n1 1\n1 1\n2 2\n1 2\n1 1\n```",
+    "input": "The first line contains a positive number t (1 ≤ t ≤ 10^4) — the number of test cases. The following is a description of the test cases.\n\nThe first line of the description of each test case contains a positive number n (2 ≤ n ≤ 2·10^5) — the number of people at the holiday.\n\nThe second line of the description of each test case contains n integers a_i (1 ≤ a_i ≤ n, a_i ≠ i) — the number of the neighbor that the ith person remembered.\n\nIt is guaranteed that the test cases are correct and corresponds to at least one division of people into round dances.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output two integers — the minimum and maximum number of round dances that could be.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "shortest paths",
+        "*1600"
+    ],
+    "rating": 1600
+}

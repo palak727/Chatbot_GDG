@@ -1,0 +1,20 @@
+{
+    "id": "1797F",
+    "contest_id": 1797,
+    "problem_letter": "F",
+    "title": "F. Li Hua and Path",
+    "statement": "Li Hua has a tree of n vertices and n-1 edges. The vertices are numbered from 1 to n.\n\nA pair of vertices (u,v) (u < v) is considered cute if exactly one of the following two statements is true:\n\nThere will be m operations. In each operation, he decides an integer k_j, then inserts a vertex numbered n+j to the tree, connecting with the vertex numbered k_j.\n\nHe wants to calculate the number of cute pairs before operations and after each operation.\n\nSuppose you were Li Hua, please solve this problem.\n\nThe first line contains the single integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nNext n-1 lines contain the edges of the tree. The i-th line contains two integers u_i and v_i (1≤ u_i,v_i≤ n; u_i≠ v_i) — the corresponding edge. The given edges form a tree.\n\nThe next line contains the single integer m (1≤ m≤ 2·10^5) — the number of operations.\n\nNext m lines contain operations — one operation per line. The j-th operation contains one integer k_j (1≤ k_j < n+j) — a vertex.\n\nPrint m+1 integers — the number of cute pairs before operations and after each operation.\n\nThe initial tree is shown in the following picture:\n\nThere are 11 cute pairs — (1,5),(2,3),(2,4),(2,6),(2,7),(3,4),(3,6),(3,7),(4,5),(5,7),(6,7).\n\nSimilarly, we can count the cute pairs after each operation and the result is 15 and 19.\n\nInput:\n```\n7\n2 1\n1 3\n1 4\n4 6\n4 7\n6 5\n2\n5\n6\n```\n\nOutput:\n```\n11\n15\n19\n```",
+    "input": "The first line contains the single integer n (2≤ n≤ 2·10^5) — the number of vertices in the tree.\n\nNext n-1 lines contain the edges of the tree. The i-th line contains two integers u_i and v_i (1≤ u_i,v_i≤ n; u_i≠ v_i) — the corresponding edge. The given edges form a tree.\n\nThe next line contains the single integer m (1≤ m≤ 2·10^5) — the number of operations.\n\nNext m lines contain operations — one operation per line. The j-th operation contains one integer k_j (1≤ k_j < n+j) — a vertex.",
+    "output": "Print m+1 integers — the number of cute pairs before operations and after each operation.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "dsu",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

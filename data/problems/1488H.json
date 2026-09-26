@@ -1,0 +1,18 @@
+{
+    "id": "1488H",
+    "contest_id": 1488,
+    "problem_letter": "H",
+    "title": "H. Build From Suffixes",
+    "statement": "You are given an integer n and a sequence a of n-1 integers, each element is either 0 or 1.\n\nYou are asked to build a string of length n such that:\n\nYou will be asked q queries of form:\n\nAfter each query print the number of different strings that satisfy the given constraints modulo 998,244,353.\n\nThe first line contains two integers n and q (2 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5) — the length of the string and the number of queries.\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (a_i ∈ {0, 1}) — the constraints on suffixes of the string.\n\nEach of the next q lines contains a query: an integer i (1 ≤ i ≤ n - 1) — flip the value of a_i (if a_i=0, then set a_i to 1, and vice versa).\n\nAfter each query print the number of different strings that satisfy the given constraints modulo 998,244,353.\n\nThe i-th suffix of a string is a continuous substring that starts from the i-th position and ends in the last position.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nTwo strings a and b of length n differ if there exists a position i such that a_i ≠ b_i.\n\nInput:\n```\n2 2\n0\n1\n1\n```\n\nOutput:\n```\n6\n10\n```\n\nInput:\n```\n3 4\n0 0\n1\n2\n1\n2\n```\n\nOutput:\n```\n20\n10\n14\n20\n```\n\nInput:\n```\n10 10\n0 0 0 1 1 1 0 1 0\n4\n1\n8\n4\n2\n9\n5\n6\n6\n8\n```\n\nOutput:\n```\n1815\n3201\n2710\n2776\n2290\n1644\n2668\n1271\n2668\n2436\n```",
+    "input": "The first line contains two integers n and q (2 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5) — the length of the string and the number of queries.\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (a_i ∈ {0, 1}) — the constraints on suffixes of the string.\n\nEach of the next q lines contains a query: an integer i (1 ≤ i ≤ n - 1) — flip the value of a_i (if a_i=0, then set a_i to 1, and vice versa).",
+    "output": "After each query print the number of different strings that satisfy the given constraints modulo 998,244,353.",
+    "time_limit": "10 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "data structures",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2118E",
+    "contest_id": 2118,
+    "problem_letter": "E",
+    "title": "E. Grid Coloring",
+    "statement": "There is a n× m grid with each cell initially white. You have to color all the cells one-by-one. After you color a cell, all the colored cells furthest from it receive a penalty. Find a coloring order, where no cell has more than 3 penalties.\n\nNote that n and m are both odd.\n\nThe distance metric used is the chessboard distance while we decide ties between cells with Manhattan distance. Formally, a cell (x_2, y_2) is further away than (x_3, y_3) from a cell (x_1, y_1) if one of the following holds:\n\nIt can be proven that at least one solution always exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains two odd integers n and m (1 ≤ n, m ≤ 4999) — the number of rows and columns.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5000.\n\nFor each test case, output n·m lines where the i-th line should contain the coordinates of the i-th cell in your coloring order. If there are multiple solutions, print any of them.\n\nThe empty lines in the example output are just for increased readability. You're not required to print them.\n\nIn the first test case, the grid can be colored as follows:\n\nInput:\n```\n33 31 11 5\n```\n\nOutput:\n```\n2 1\n2 3\n2 2\n1 1\n3 2\n3 3\n3 1\n1 3\n1 2\n\n1 1\n\n1 2\n1 4\n1 5\n1 1\n1 3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains two odd integers n and m (1 ≤ n, m ≤ 4999) — the number of rows and columns.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 5000.",
+    "output": "For each test case, output n·m lines where the i-th line should contain the coordinates of the i-th cell in your coloring order. If there are multiple solutions, print any of them.\n\nThe empty lines in the example output are just for increased readability. You're not required to print them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "greedy",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

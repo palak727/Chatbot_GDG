@@ -1,0 +1,19 @@
+{
+    "id": "1601A",
+    "contest_id": 1601,
+    "problem_letter": "A",
+    "title": "A. Array Elimination",
+    "statement": "You are given array a_1, a_2, …, a_n, consisting of non-negative integers.\n\nLet's define operation of \"elimination\" with integer parameter k (1 ≤ k ≤ n) as follows:\n\nFind all possible values of k, such that it's possible to make all elements of array a equal to 0 using a finite number of elimination operations with parameter k. It can be proven that exists at least one possible k for any array a.\n\nNote that you firstly choose k and only after that perform elimination operations with value k you've chosen initially.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 200,000) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — array a itself.\n\nIt's guaranteed that the sum of n over all test cases doesn't exceed 200,000.\n\nFor each test case, print all values k, such that it's possible to make all elements of a equal to 0 in a finite number of elimination operations with the given parameter k.\n\nPrint them in increasing order.\n\nIn the first test case:\n\nIn the second test case, if k = 2 then we can make the following elimination operations:\n\nFormal definition of bitwise AND:\n\nLet's define bitwise AND (&) as follows. Suppose we have two non-negative integers x and y, let's look at their binary representations (possibly, with leading zeroes): x_k … x_2 x_1 x_0 and y_k … y_2 y_1 y_0. Here, x_i is the i-th bit of number x, and y_i is the i-th bit of number y. Let r = x ~ & ~ y is a result of operation & on number x and y. Then binary representation of r will be r_k … r_2 r_1 r_0, where:\n\nr_i = begincases 1, ~ if ~ x_i = 1 ~ and ~ y_i = 1 0, ~ if ~ x_i = 0 ~ or ~ y_i = 0 endcases\n\nInput:\n```\n5\n4\n4 4 4 4\n4\n13 7 25 19\n6\n3 5 3 1 7 1\n1\n1\n5\n0 0 0 0 0\n```\n\nOutput:\n```\n1 2 4\n1 2\n1\n1\n1 2 3 4 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 200,000) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — array a itself.\n\nIt's guaranteed that the sum of n over all test cases doesn't exceed 200,000.",
+    "output": "For each test case, print all values k, such that it's possible to make all elements of a equal to 0 in a finite number of elimination operations with the given parameter k.\n\nPrint them in increasing order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "number theory",
+        "*1300"
+    ],
+    "rating": 1300
+}

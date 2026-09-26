@@ -1,0 +1,18 @@
+{
+    "id": "1187E",
+    "contest_id": 1187,
+    "problem_letter": "E",
+    "title": "E. Tree Painting",
+    "statement": "You are given a tree (an undirected connected acyclic graph) consisting of n vertices. You are playing a game on this tree.\n\nInitially all vertices are white. On the first turn of the game you choose one vertex and paint it black. Then on each turn you choose a white vertex adjacent (connected by an edge) to any black vertex and paint it black.\n\nEach time when you choose a vertex (even during the first turn), you gain the number of points equal to the size of the connected component consisting only of white vertices that contains the chosen vertex. The game ends when all vertices are painted black.\n\nLet's see the following example:\n\nVertices 1 and 4 are painted black already. If you choose the vertex 2, you will gain 4 points for the connected component consisting of vertices 2, 3, 5 and 6. If you choose the vertex 9, you will gain 3 points for the connected component consisting of vertices 7, 8 and 9.\n\nYour task is to maximize the number of points you gain.\n\nThe first line contains an integer n — the number of vertices in the tree (2 ≤ n ≤ 2·10^5).\n\nEach of the next n - 1 lines describes an edge of the tree. Edge i is denoted by two integers u_i and v_i, the indices of vertices it connects (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i).\n\nIt is guaranteed that the given edges form a tree.\n\nPrint one integer — the maximum number of points you gain if you will play optimally.\n\nThe first example tree is shown in the problem statement.\n\nInput:\n```\n9\n1 2\n2 3\n2 5\n2 6\n1 4\n4 9\n9 7\n9 8\n```\n\nOutput:\n```\n36\n```\n\nInput:\n```\n5\n1 2\n1 3\n2 4\n2 5\n```\n\nOutput:\n```\n14\n```",
+    "input": "The first line contains an integer n — the number of vertices in the tree (2 ≤ n ≤ 2·10^5).\n\nEach of the next n - 1 lines describes an edge of the tree. Edge i is denoted by two integers u_i and v_i, the indices of vertices it connects (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i).\n\nIt is guaranteed that the given edges form a tree.",
+    "output": "Print one integer — the maximum number of points you gain if you will play optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

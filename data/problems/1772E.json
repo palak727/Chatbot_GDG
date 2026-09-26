@@ -1,0 +1,16 @@
+{
+    "id": "1772E",
+    "contest_id": 1772,
+    "problem_letter": "E",
+    "title": "E. Permutation Game",
+    "statement": "Two players are playing a game. They have a permutation of integers 1, 2, ..., n (a permutation is an array where each element from 1 to n occurs exactly once). The permutation is not sorted in either ascending or descending order (i. e. the permutation does not have the form [1, 2, …, n] or [n, n-1, …, 1]).\n\nInitially, all elements of the permutation are colored red. The players take turns. On their turn, the player can do one of three actions:\n\nThe first player wins if the permutation is sorted in ascending order (i. e. it becomes [1, 2, …, n]). The second player wins if the permutation is sorted in descending order (i. e. it becomes [n, n-1, …, 1]). If the game lasts for 100^500 turns and nobody wins, it ends in a draw.\n\nYour task is to determine the result of the game if both players play optimally.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 5·10^5) — the size of the permutation.\n\nThe second line contains n integers p_1, p_2, …, p_n — the permutation itself. The permutation p is not sorted in either ascending or descending order.\n\nThe sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, print First if the first player wins, Second if the second player wins, and Tie if the result is a draw.\n\nLet's show how the first player wins in the first example.\n\nThey should color the elements 3 and 4 blue during their first two turns, and then they can reorder the blue elements in such a way that the permutation becomes [1, 2, 3, 4]. The second player can neither interfere with this strategy nor win faster.\n\nInput:\n```\n441 2 4 332 3 153 4 5 2 161 5 6 3 2 4\n```\n\nOutput:\n```\nFirst\nTie\nSecond\nTie\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 5·10^5) — the size of the permutation.\n\nThe second line contains n integers p_1, p_2, …, p_n — the permutation itself. The permutation p is not sorted in either ascending or descending order.\n\nThe sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, print First if the first player wins, Second if the second player wins, and Tie if the result is a draw.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1814B",
+    "contest_id": 1814,
+    "problem_letter": "B",
+    "title": "B. Long Legs",
+    "statement": "A robot is placed in a cell (0, 0) of an infinite grid. This robot has adjustable length legs. Initially, its legs have length 1.\n\nLet the robot currently be in the cell (x, y) and have legs of length m. In one move, it can perform one of the following three actions:\n\nWhat's the smallest number of moves robot has to make to reach a cell (a, b)?\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the ending cell.\n\nFor each test case, print a single integer — the smallest number of moves the robot is required to make to reach a cell (a, b) from a cell (0, 0).\n\nIn the first testcase, the robot can first jump to (0, 1), then to (1, 1). If it ever increases the length of its legs, it will only be able to jump past (1, 1).\n\nIn the second testcase, the robot can jump to (1, 0), then increase the length of its length to 2 and jump three times to reach (1, 6).\n\nIn the third testcase, the robot can increase the length of its legs three times to make it 4. Then jump to (0, 4). Then jump twice to reach (8, 4).\n\nInput:\n```\n31 11 68 4\n```\n\nOutput:\n```\n2\n5\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the ending cell.",
+    "output": "For each test case, print a single integer — the smallest number of moves the robot is required to make to reach a cell (a, b) from a cell (0, 0).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

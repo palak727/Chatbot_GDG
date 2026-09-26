@@ -1,0 +1,19 @@
+{
+    "id": "1921D",
+    "contest_id": 1921,
+    "problem_letter": "D",
+    "title": "D. Very Different Array",
+    "statement": "Petya has an array a_i of n integers. His brother Vasya became envious and decided to make his own array of n integers.\n\nTo do this, he found m integers b_i (m≥ n), and now he wants to choose some n integers of them and arrange them in a certain order to obtain an array c_i of length n.\n\nTo avoid being similar to his brother, Vasya wants to make his array as different as possible from Petya's array. Specifically, he wants the total difference D = ∑_{i=1}^n |a_i - c_i| to be as large as possible.\n\nHelp Vasya find the maximum difference D he can obtain.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains two integers n and m (1≤ n≤ m≤ 2·10^5).\n\nThe second line of each test case contains n integers a_i (1≤ a_i≤ 10^9). The third line of each test case contains m integers b_i (1≤ b_i≤ 10^9).\n\nIt is guaranteed that in a test, the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum total difference D that can be obtained.\n\nIn the first example, Vasya can, for example, create the array (1, 5, 7, 2). Then the total difference will be D = |6-1|+|1-5|+|2-7|+|4-2| = 5+4+5+2 = 16.\n\nIn the second example, all the integers available to Vasya are equal to 1, so he can only create the array (1, 1, 1), for which the difference D = 0.\n\nIn the third example, Vasya can, for example, create the array (5, 4, 3, 2, 1). Then the total difference will be D = |1-5|+|2-4|+|3-3|+|4-2|+|5-1| = 4+2+0+2+4 = 12.\n\nInput:\n```\n94 66 1 2 43 5 1 7 2 33 41 1 11 1 1 15 51 2 3 4 51 2 3 4 52 65 88 7 5 8 2 102 24 19 64 68 10 6 43 10 6 1 8 93 56 5 21 7 9 7 25 59 10 6 3 75 9 2 3 91 632 7 10 1 1 5\n```\n\nOutput:\n```\n16\n0\n12\n11\n10\n23\n15\n25\n7\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains two integers n and m (1≤ n≤ m≤ 2·10^5).\n\nThe second line of each test case contains n integers a_i (1≤ a_i≤ 10^9). The third line of each test case contains m integers b_i (1≤ b_i≤ 10^9).\n\nIt is guaranteed that in a test, the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum total difference D that can be obtained.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

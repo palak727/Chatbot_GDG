@@ -1,0 +1,19 @@
+{
+    "id": "1658D2",
+    "contest_id": 1658,
+    "problem_letter": "D2",
+    "title": "D2. 388535 (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference in the constraints between both versions are colored below in red. You can make hacks only if all versions of the problem are solved.\n\nMarin and Gojou are playing hide-and-seek with an array.\n\nGojou initially perform the following steps:\n\nMarin is then given the values of l,r and the final array a. She needs to find the secret integer x to win. Can you help her?\n\nNote that there may be multiple possible x that Gojou could have chosen. Marin can find any possible x that could have resulted in the final value of a.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nIn the first line of each test case contains two integers l and r (colorredboldsymbol0 boldsymbol≤ boldsymboll ≤ r < 2^17).\n\nThe second line contains r - l + 1 space-seperated integers of a_1,a_2,…,a_{r-l+1} (0 ≤ a_i < 2^17). It is guaranteed that array a is valid.\n\nIt is guaranteed that the sum of r - l + 1 over all test cases does not exceed 2^17.\n\nFor each test case print an integer x. If there are multiple answers, print any.\n\nIn the first test case, the original array is [7, 6, 5, 4].\n\nIn the second test case, the original array is [4, 7, 6, 5].\n\nIn the third test case, the original array is [3, 1, 2].\n\nInput:\n```\n34 73 2 1 04 74 7 6 51 30 2 1\n```\n\nOutput:\n```\n4\n0\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nIn the first line of each test case contains two integers l and r (colorredboldsymbol0 boldsymbol≤ boldsymboll ≤ r < 2^17).\n\nThe second line contains r - l + 1 space-seperated integers of a_1,a_2,…,a_{r-l+1} (0 ≤ a_i < 2^17). It is guaranteed that array a is valid.\n\nIt is guaranteed that the sum of r - l + 1 over all test cases does not exceed 2^17.",
+    "output": "For each test case print an integer x. If there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

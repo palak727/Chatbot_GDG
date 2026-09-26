@@ -1,0 +1,17 @@
+{
+    "id": "1612C",
+    "contest_id": 1612,
+    "problem_letter": "C",
+    "title": "C. Chat Ban",
+    "statement": "You are a usual chat user on the most famous streaming platform. Of course, there are some moments when you just want to chill and spam something.\n\nMore precisely, you want to spam the emote triangle of size k. It consists of 2k-1 messages. The first message consists of one emote, the second one — of two emotes, ..., the k-th one — of k emotes, the k+1-th one — of k-1 emotes, ..., and the last one — of one emote.\n\nFor example, the emote triangle for k=3 consists of 5 messages:\n\nOf course, most of the channels have auto moderation. Auto moderator of the current chat will ban you right after you spam at least x emotes in succession (you can assume you are the only user in the chat). Now you are interested — how many messages will you write before getting banned? Or maybe you will not get banned at all (i.e. will write all 2k-1 messages and complete your emote triangle successfully)? Note that if you get banned as a result of writing a message, this message is also counted.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The next t lines describe test cases.\n\nThe only line of the test case contains integers k and x (1 ≤ k ≤ 10^9; 1 ≤ x ≤ 10^18).\n\nFor each test case, print the number of messages you will write before getting banned for the corresponding values k and x.\n\nLet's analyze the test cases of the example.\n\nInput:\n```\n7\n4 6\n4 7\n1 2\n3 7\n2 5\n100 1\n1000000000 923456789987654321\n```\n\nOutput:\n```\n3\n4\n1\n4\n3\n1\n1608737403\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The next t lines describe test cases.\n\nThe only line of the test case contains integers k and x (1 ≤ k ≤ 10^9; 1 ≤ x ≤ 10^18).",
+    "output": "For each test case, print the number of messages you will write before getting banned for the corresponding values k and x.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

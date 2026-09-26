@@ -1,0 +1,17 @@
+{
+    "id": "1657A",
+    "contest_id": 1657,
+    "problem_letter": "A",
+    "title": "A. Integer Moves",
+    "statement": "There's a chip in the point (0, 0) of the coordinate plane. In one operation, you can move the chip from some point (x_1, y_1) to some point (x_2, y_2) if the Euclidean distance between these two points is an integer (i.e. √((x_1-x_2)^2+(y_1-y_2)^2) is integer).\n\nYour task is to determine the minimum number of operations required to move the chip from the point (0, 0) to the point (x, y).\n\nThe first line contains a single integer t (1 ≤ t ≤ 3000) — number of test cases.\n\nThe single line of each test case contains two integers x and y (0 ≤ x, y ≤ 50) — the coordinates of the destination point.\n\nFor each test case, print one integer — the minimum number of operations required to move the chip from the point (0, 0) to the point (x, y).\n\nIn the first example, one operation (0, 0) → (8, 6) is enough. √((0-8)^2+(0-6)^2)=√(64+36)=√(100)=10 is an integer.\n\nIn the second example, the chip is already at the destination point.\n\nIn the third example, the chip can be moved as follows: (0, 0) → (5, 12) → (9, 15). √((0-5)^2+(0-12)^2)=√(25+144)=√(169)=13 and √((5-9)^2+(12-15)^2)=√(16+9)=√(25)=5 are integers.\n\nInput:\n```\n38 60 09 15\n```\n\nOutput:\n```\n1\n0\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 3000) — number of test cases.\n\nThe single line of each test case contains two integers x and y (0 ≤ x, y ≤ 50) — the coordinates of the destination point.",
+    "output": "For each test case, print one integer — the minimum number of operations required to move the chip from the point (0, 0) to the point (x, y).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

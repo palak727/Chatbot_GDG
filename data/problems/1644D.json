@@ -1,0 +1,18 @@
+{
+    "id": "1644D",
+    "contest_id": 1644,
+    "problem_letter": "D",
+    "title": "D. Cross Coloring",
+    "statement": "There is a sheet of paper that can be represented with a grid of size n × m: n rows and m columns of cells. All cells are colored in white initially.\n\nq operations have been applied to the sheet. The i-th of them can be described as follows:\n\nThe sheet after applying all q operations is called a coloring. Two colorings are different if there exists at least one cell that is colored in different colors.\n\nHow many different colorings are there? Print the number modulo 998,244,353.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains four integers n, m, k and q (1 ≤ n, m, k, q ≤ 2·10^5) — the size of the sheet, the number of non-white colors and the number of operations.\n\nThe i-th of the following q lines contains a description of the i-th operation — two integers x_i and y_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m) — the row and the column the operation is applied to.\n\nThe sum of q over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the number of different colorings modulo 998,244,353.\n\nInput:\n```\n21 1 3 21 11 12 2 2 32 11 12 2\n```\n\nOutput:\n```\n3\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of the testcase contains four integers n, m, k and q (1 ≤ n, m, k, q ≤ 2·10^5) — the size of the sheet, the number of non-white colors and the number of operations.\n\nThe i-th of the following q lines contains a description of the i-th operation — two integers x_i and y_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m) — the row and the column the operation is applied to.\n\nThe sum of q over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the number of different colorings modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

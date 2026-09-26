@@ -1,0 +1,16 @@
+{
+    "id": "1650B",
+    "contest_id": 1650,
+    "problem_letter": "B",
+    "title": "B. DIV + MOD",
+    "statement": "Not so long ago, Vlad came up with an interesting function:\n\nFor example, with a=3 and x=11, the value f_3(11) = leftlfloor11/3rightrfloor + 11 bmod 3 = 3 + 2 = 5.\n\nThe number a is fixed and known to Vlad. Help Vlad find the maximum value of f_a(x) if x can take any integer value from l to r inclusive (l ≤ x ≤ r).\n\nThe first line of input data contains an integer t (1 ≤ t ≤ 10^4) — the number of input test cases.\n\nThis is followed by t lines, each of which contains three integers l_i, r_i and a_i (1 ≤ l_i ≤ r_i ≤ 10^9, 1 ≤ a_i ≤ 10^9) — the left and right boundaries of the segment and the fixed value of a.\n\nFor each test case, output one number on a separate line — the maximum value of the function on a given segment for a given a.\n\nIn the first sample:\n\nAs an answer, obviously, f_3(2) and f_3(4) are suitable.\n\nInput:\n```\n51 4 35 8 46 10 61 1000000000 100000000010 12 8\n```\n\nOutput:\n```\n2\n4\n5\n999999999\n5\n```",
+    "input": "The first line of input data contains an integer t (1 ≤ t ≤ 10^4) — the number of input test cases.\n\nThis is followed by t lines, each of which contains three integers l_i, r_i and a_i (1 ≤ l_i ≤ r_i ≤ 10^9, 1 ≤ a_i ≤ 10^9) — the left and right boundaries of the segment and the fixed value of a.",
+    "output": "For each test case, output one number on a separate line — the maximum value of the function on a given segment for a given a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

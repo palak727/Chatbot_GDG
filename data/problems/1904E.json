@@ -1,0 +1,20 @@
+{
+    "id": "1904E",
+    "contest_id": 1904,
+    "problem_letter": "E",
+    "title": "E. Tree Queries",
+    "statement": "Since Hayate didn't get any Christmas presents from Santa, he is instead left solving a tree query problem.\n\nHayate has a tree with n nodes.\n\nHayate now wants you to answer q queries. Each query consists of a node x and k other additional nodes a_1,a_2,…,a_k. These k+1 nodes are guaranteed to be all distinct.\n\nFor each query, you must find the length of the longest simple path starting at node x^dagger after removing nodes a_1,a_2,…,a_k along with all edges connected to at least one of nodes a_1,a_2,…,a_k.\n\n^dagger A simple path of length k starting at node x is a sequence of distinct nodes x=u_0,u_1,…,u_k such that there exists a edge between nodes u_{i-1} and u_i for all 1 ≤ i ≤ k.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of nodes of the tree and the number of queries.\n\nThe following n - 1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nThe following q lines describe the queries. Each line contains the integers x, k and a_1,a_2,…,a_k (1 ≤ x ≤ n, 0 ≤ k < n, 1 ≤ a_i ≤ n) — the starting node, the number of removed nodes and the removed nodes.\n\nIt is guaranteed that for each query, x,a_1,a_2,…,a_k are all distinct.\n\nIt is guaranteed that the sum of k over all queries will not exceed 2·10^5.\n\nFor each query, output a single integer denoting the answer for that query.\n\nIn the first example, the tree is as follows:\n\nIn the first query, no nodes are missing. The longest simple path starting from node 2 is 2 → 1 → 3 → 4. Thus, the answer is 3.\n\nIn the third query, nodes 1 and 6 are missing and the tree is shown below. The longest simple path starting from node 2 is 2 → 5. Thus, the answer is 1.\n\nInput:\n```\n7 7\n1 2\n1 3\n3 4\n2 5\n2 6\n6 7\n2 0\n2 1 1\n2 2 1 6\n3 1 4\n3 1 1\n5 0\n5 2 1 6\n```\n\nOutput:\n```\n3\n2\n1\n4\n1\n4\n1\n```\n\nInput:\n```\n4 4\n1 2\n1 3\n2 4\n2 1 3\n3 1 4\n2 1 4\n2 3 1 3 4\n```\n\nOutput:\n```\n1\n2\n2\n0\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of nodes of the tree and the number of queries.\n\nThe following n - 1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nThe following q lines describe the queries. Each line contains the integers x, k and a_1,a_2,…,a_k (1 ≤ x ≤ n, 0 ≤ k < n, 1 ≤ a_i ≤ n) — the starting node, the number of removed nodes and the removed nodes.\n\nIt is guaranteed that for each query, x,a_1,a_2,…,a_k are all distinct.\n\nIt is guaranteed that the sum of k over all queries will not exceed 2·10^5.",
+    "output": "For each query, output a single integer denoting the answer for that query.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

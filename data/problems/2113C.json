@@ -1,0 +1,18 @@
+{
+    "id": "2113C",
+    "contest_id": 2113,
+    "problem_letter": "C",
+    "title": "C. Smilo and Minecraft",
+    "statement": "The boy Smilo is playing Minecraft! To prepare for the battle with the dragon, he needs a lot of golden apples, and for that, he requires a lot of gold. Therefore, Smilo goes to the mine.\n\nThe mine is a rectangular grid of size n × m, where each cell can be either gold ore, stone, or an empty cell. Smilo can blow up dynamite in any empty cell. When dynamite explodes in an empty cell with coordinates (x, y), all cells within a square of side 2k + 1 centered at cell (x, y) become empty. If gold ore was located strictly inside this square (not on the boundary), it disappears. However, if the gold ore was on the boundary of this square, Smilo collects that gold.\n\nDynamite can only be detonated inside the mine, but the explosion square can extend beyond the mine's boundaries.\n\nDetermine the maximum amount of gold that Smilo can collect.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m, k ≤ 500) — the number of rows, columns, and the explosion parameter k, respectively.\n\nEach of the following n lines contains m characters, each of which is equal to '.', '#', or 'g', where '.' — is an empty cell, '#' — is stone, 'g' — is gold. It is guaranteed that at least one of the cells is empty.\n\nIt is guaranteed that the sum n·m across all test cases does not exceed 2.5·10^5.\n\nFor each test case, output a single integer — the maximum amount of gold that can be obtained.\n\nIn the first test case, Smilo can detonate the dynamite in any empty cell and obtain 2 gold:\n\nIn the second test case, no matter what Smilo does, he will not be able to obtain any gold:\n\nIn the third test case, it is possible to detonate the dynamite in the bottom right corner to obtain 2 gold, and then make another explosion one cell to the left to obtain the remaining 2 gold:\n\nInput:\n```\n32 3 1#.#g.g2 3 2#.#g.g3 4 2.gg.g..#g##.\n```\n\nOutput:\n```\n2\n0\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and k (1 ≤ n, m, k ≤ 500) — the number of rows, columns, and the explosion parameter k, respectively.\n\nEach of the following n lines contains m characters, each of which is equal to '.', '#', or 'g', where '.' — is an empty cell, '#' — is stone, 'g' — is gold. It is guaranteed that at least one of the cells is empty.\n\nIt is guaranteed that the sum n·m across all test cases does not exceed 2.5·10^5.",
+    "output": "For each test case, output a single integer — the maximum amount of gold that can be obtained.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "*1700"
+    ],
+    "rating": 1700
+}

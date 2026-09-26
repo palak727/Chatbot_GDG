@@ -1,0 +1,15 @@
+{
+    "id": "1357C2",
+    "contest_id": 1357,
+    "problem_letter": "C2",
+    "title": "C2. Prepare superposition of basis states with the same parity",
+    "statement": "You are given N qubits in the state |0...0 rangle, and an integer parity ∈ {0, 1}. Your task is to prepare an equal superposition of all basis states that have the given parity of the number of 1s in their binary notation, i.e., the basis states that have an even number of 1s if parity = 0 or the basis states that have an odd number of 1s if parity = 1.\n\nFor example, for N = 2 the required state would be\n\nYou are not allowed to use any gates except the Pauli gates (X, Y and Z), the Hadamard gate and the controlled versions of those (you are allowed to use multiple qubits as controls in the controlled versions of gates). However, you are allowed to use measurements.\n\nYou have to implement an operation which takes an array of N qubits and an integer as an input and has no output. The \"output\" of your solution is the state in which it left the input qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Intrinsic;\n\n    operation Solve (qs : Qubit[], parity : Int) : Unit {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

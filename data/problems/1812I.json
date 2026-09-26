@@ -1,0 +1,15 @@
+{
+    "id": "1812I",
+    "contest_id": 1812,
+    "problem_letter": "I",
+    "title": "I. Mountain Climber",
+    "statement": "The first line of input contains t (1 ≤ t ≤ 25) — the number of test cases.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 100) consisting only of lowercase English letters.\n\nFor each test case, print YES or NO.\n\nInput:\n```\n23bigflashingclumpiunderpasspassundertranquilizingpoleandrejdumplingbocchiryonijikakitasingingsongsalperentoxicpiearibucketpotatoflamestormscarletsmaisakurajimamisakamikotoninfiasylveonpikachumewheniseearulhiiarul\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nYES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nYES\nNO\nNO\nNO\nNO\nNO\n```",
+    "input": "The first line of input contains t (1 ≤ t ≤ 25) — the number of test cases.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 100) consisting only of lowercase English letters.",
+    "output": "For each test case, print YES or NO.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

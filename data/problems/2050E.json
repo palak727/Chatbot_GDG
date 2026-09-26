@@ -1,0 +1,18 @@
+{
+    "id": "2050E",
+    "contest_id": 2050,
+    "problem_letter": "E",
+    "title": "E. Three Strings",
+    "statement": "You are given three strings: a, b, and c, consisting of lowercase Latin letters. The string c was obtained in the following way:\n\nFor example, from the strings a=colorredabra and b=colorbluecada, without character replacements, the strings colorbluecacolorredabcolorbluedcolorredracolorbluea, colorredabracolorbluecada, colorredacolorbluecadacolorredbra could be obtained.\n\nFind the minimum number of characters that could have been changed in string c.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains one string of lowercase Latin letters a (1 ≤ |a| ≤ 10^3) — the first string, where |a| denotes the length of string a.\n\nThe second line of each test case contains one string of lowercase Latin letters b (1 ≤ |b| ≤ 10^3) — the second string, where |b| denotes the length of string b.\n\nThe third line of each test case contains one string of lowercase Latin letters c (|c| = |a| + |b|) — the third string.\n\nIt is guaranteed that the sum of |a| across all test cases does not exceed 2·10^3. Also, the sum of |b| across all test cases does not exceed 2·10^3.\n\nFor each test case, output a single integer — the minimum number of characters that could have been changed in string c.\n\nInput:\n```\n7abcbabcdacbdabbaaabbxxxyyyxyxyxyabcddecfcodeshorsecodeforceseggannieegaegaeg\n```\n\nOutput:\n```\n1\n0\n2\n0\n3\n2\n3\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains one string of lowercase Latin letters a (1 ≤ |a| ≤ 10^3) — the first string, where |a| denotes the length of string a.\n\nThe second line of each test case contains one string of lowercase Latin letters b (1 ≤ |b| ≤ 10^3) — the second string, where |b| denotes the length of string b.\n\nThe third line of each test case contains one string of lowercase Latin letters c (|c| = |a| + |b|) — the third string.\n\nIt is guaranteed that the sum of |a| across all test cases does not exceed 2·10^3. Also, the sum of |b| across all test cases does not exceed 2·10^3.",
+    "output": "For each test case, output a single integer — the minimum number of characters that could have been changed in string c.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

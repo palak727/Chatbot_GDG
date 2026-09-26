@@ -1,0 +1,18 @@
+{
+    "id": "1468I",
+    "contest_id": 1468,
+    "problem_letter": "I",
+    "title": "I. Plane Tiling",
+    "statement": "You are given five integers n, dx_1, dy_1, dx_2 and dy_2. You have to select n distinct pairs of integers (x_i, y_i) in such a way that, for every possible pair of integers (x, y), there exists exactly one triple of integers (a, b, i) meeting the following constraints:\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains two integers dx_1 and dy_1 (-10^6 ≤ dx_1, dy_1 ≤ 10^6).\n\nThe third line contains two integers dx_2 and dy_2 (-10^6 ≤ dx_2, dy_2 ≤ 10^6).\n\nIf it is impossible to correctly select n pairs of integers, print NO.\n\nOtherwise, print YES in the first line, and then n lines, the i-th of which contains two integers x_i and y_i (-10^9 ≤ x_i, y_i ≤ 10^9).\n\nIf there are multiple solutions, print any of them.\n\nInput:\n```\n4\n2 0\n0 2\n```\n\nOutput:\n```\nYES\n0 0\n0 1\n1 0\n1 1\n```\n\nInput:\n```\n5\n2 6\n1 5\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n2\n3 4\n1 2\n```\n\nOutput:\n```\nYES\n0 0\n0 1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains two integers dx_1 and dy_1 (-10^6 ≤ dx_1, dy_1 ≤ 10^6).\n\nThe third line contains two integers dx_2 and dy_2 (-10^6 ≤ dx_2, dy_2 ≤ 10^6).",
+    "output": "If it is impossible to correctly select n pairs of integers, print NO.\n\nOtherwise, print YES in the first line, and then n lines, the i-th of which contains two integers x_i and y_i (-10^9 ≤ x_i, y_i ≤ 10^9).\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "geometry",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

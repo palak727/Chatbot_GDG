@@ -1,0 +1,20 @@
+{
+    "id": "1861C",
+    "contest_id": 1861,
+    "problem_letter": "C",
+    "title": "C. Queries for the Array",
+    "statement": "Monocarp had an array a consisting of integers. Initially, this array was empty.\n\nMonocarp performed three types of queries to this array:\n\nYou are given a sequence s of q characters 0, 1, + and/or -. These are the characters that were written out by Monocarp, given in the exact order he wrote them out.\n\nYou have to check if this sequence is consistent, i. e. it was possible for Monocarp to perform the queries so that the sequence of characters he wrote out is exactly s.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 2·10^5). This string consists of characters 0, 1, + and/or -. This is the sequence of characters written by Monocarp, in the order he wrote them.\n\nAdditional constraints on the input:\n\nFor each test case, print YES if it was possible for Monocarp to perform the queries so that the sequence of characters he wrote is exactly s. Otherwise, print NO.\n\nYou can print each letter in any register.\n\nIn the first test case, Monocarp could perform the following sequence of queries:\n\nIn the fifth test case, Monocarp could perform the following sequence of queries:\n\nIn all other test cases of the example test, it is impossible for Monocarp to write the sequence s when performing the queries according to the statement.\n\nInput:\n```\n7++1+++1--0+00++0-+1-+0++0+-1+-0+1-+0\n```\n\nOutput:\n```\nYES\nNO\nNO\nNO\nYES\nNO\nNO\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 2·10^5). This string consists of characters 0, 1, + and/or -. This is the sequence of characters written by Monocarp, in the order he wrote them.\n\nAdditional constraints on the input:",
+    "output": "For each test case, print YES if it was possible for Monocarp to perform the queries so that the sequence of characters he wrote is exactly s. Otherwise, print NO.\n\nYou can print each letter in any register.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "implementation",
+        "strings",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

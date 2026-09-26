@@ -1,0 +1,16 @@
+{
+    "id": "1725L",
+    "contest_id": 1725,
+    "problem_letter": "L",
+    "title": "L. Lemper Cooking Competition",
+    "statement": "Pak Chanek is participating in a lemper cooking competition. In the competition, Pak Chanek has to cook lempers with N stoves that are arranged sequentially from stove 1 to stove N. Initially, stove i has a temperature of A_i degrees. A stove can have a negative temperature.\n\nPak Chanek realises that, in order for his lempers to be cooked, he needs to keep the temperature of each stove at a non-negative value. To make it happen, Pak Chanek can do zero or more operations. In one operation, Pak Chanek chooses one stove i with 2 ≤ i ≤ N-1, then:\n\nPak Chanek wants to know the minimum number of operations he needs to do such that the temperatures of all stoves are at non-negative values. Help Pak Chanek by telling him the minimum number of operations needed or by reporting if it is not possible to do.\n\nThe first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of stoves.\n\nThe second line contains N integers A_1, A_2, …, A_N (-10^9 ≤ A_i ≤ 10^9) — the initial temperatures of the stoves.\n\nOutput an integer representing the minimum number of operations needed to make the temperatures of all stoves at non-negative values or output -1 if it is not possible.\n\nFor the first example, a sequence of operations that can be done is as follows:\n\nThere is no other sequence of operations such that the number of operations needed is fewer than 4.\n\nInput:\n```\n7\n2 -1 -1 5 2 -2 9\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5\n-1 -2 -3 -4 -5\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of stoves.\n\nThe second line contains N integers A_1, A_2, …, A_N (-10^9 ≤ A_i ≤ 10^9) — the initial temperatures of the stoves.",
+    "output": "Output an integer representing the minimum number of operations needed to make the temperatures of all stoves at non-negative values or output -1 if it is not possible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

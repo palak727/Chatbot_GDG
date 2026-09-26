@@ -1,0 +1,18 @@
+{
+    "id": "2009G2",
+    "contest_id": 2009,
+    "problem_letter": "G2",
+    "title": "G2. Yunli's Subarray Queries (hard version)",
+    "statement": "This is the hard version of the problem. In this version, it is guaranteed that r ≥ l+k-1 for all queries.\n\nFor an arbitrary array b, Yunli can perform the following operation any number of times:\n\nDenote f(b) as the minimum number of operations she needs to perform until there exists a consecutive subarray^{∗} of length at least k in b.\n\nYunli is given an array a of size n and asks you q queries. In each query, you must output ∑_{j=l+k-1}^r f([a_l, a_{l+1}, …, a_j]).\n\n^{∗}If there exists a consecutive subarray of length k that starts at index i (1 ≤ i ≤ |b|-k+1), then b_j = b_{j-1} + 1 for all i < j ≤ i+k-1.\n\nThe first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and q (1 ≤ k ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the length of the array, the length of the consecutive subarray, and the number of queries.\n\nThe following line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n).\n\nThe following q lines contain two integers l and r (1 ≤ l ≤ r ≤ n, r ≥ l+k-1) — the bounds of the query.\n\nIt is guaranteed the sum of n over all test cases does not exceed 2·10^5 and the sum of q over all test cases does not exceed 2·10^5.\n\nOutput ∑_{j=l+k-1}^r f([a_l, a_{l+1}, …, a_j]) for each query on a new line.\n\nIn the second query of the first testcase, we calculate the following function values:\n\nThe answer to this query is 3+2=5.\n\nInput:\n```\n37 5 31 2 3 2 1 2 31 72 73 78 4 24 3 1 1 2 4 3 23 61 55 4 24 5 1 2 31 41 5\n```\n\nOutput:\n```\n6\n5\n2\n2\n5\n2\n3\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, k, and q (1 ≤ k ≤ n ≤ 2·10^5, 1 ≤ q ≤ 2·10^5) — the length of the array, the length of the consecutive subarray, and the number of queries.\n\nThe following line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n).\n\nThe following q lines contain two integers l and r (1 ≤ l ≤ r ≤ n, r ≥ l+k-1) — the bounds of the query.\n\nIt is guaranteed the sum of n over all test cases does not exceed 2·10^5 and the sum of q over all test cases does not exceed 2·10^5.",
+    "output": "Output ∑_{j=l+k-1}^r f([a_l, a_{l+1}, …, a_j]) for each query on a new line.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

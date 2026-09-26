@@ -1,0 +1,17 @@
+{
+    "id": "2045C",
+    "contest_id": 2045,
+    "problem_letter": "C",
+    "title": "C. Saraga",
+    "statement": "The word saraga is an abbreviation of sarana olahraga, an Indonesian term for a sports facility. It is created by taking the prefix sara of the word sarana and the suffix ga of the word olahraga. Interestingly, it can also be created by the prefix sa of the word sarana and the suffix raga of the word olahraga.\n\nAn abbreviation of two strings S and T is interesting if there are at least two different ways to split the abbreviation into two non-empty substrings such that the first substring is a prefix of S and the second substring is a suffix of T.\n\nYou are given two strings S and T. You want to create an interesting abbreviation of strings S and T with minimum length, or determine if it is impossible to create an interesting abbreviation.\n\nThe first line consists of a string S (1 ≤ |S| ≤ 200,000).\n\nThe second line consists of a string T (1 ≤ |T| ≤ 200,000).\n\nBoth strings S and T only consist of lowercase English letters.\n\nIf it is impossible to create an interesting abbreviation, output -1.\n\nOtherwise, output a string in a single line representing an interesting abbreviation of strings S and T with minimum length. If there are multiple solutions, output any of them.\n\nExplanation for the sample input/output #1\n\nYou can split saga into s and aga, or sa and ga. The abbreviation saraga is interesting, but saga has a smaller length.\n\nExplanation for the sample input/output #2\n\nThe abbreviation belhijau is also interesting with minimum length, so it is another valid solution.\n\nInput:\n```\nsarana\nolahraga\n```\n\nOutput:\n```\nsaga\n```\n\nInput:\n```\nberhiber\nwortelhijau\n```\n\nOutput:\n```\nberhijau\n```\n\nInput:\n```\nicpc\nicpc\n```\n\nOutput:\n```\nicpc\n```\n\nInput:\n```\nicpc\njakarta\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line consists of a string S (1 ≤ |S| ≤ 200,000).\n\nThe second line consists of a string T (1 ≤ |T| ≤ 200,000).\n\nBoth strings S and T only consist of lowercase English letters.",
+    "output": "If it is impossible to create an interesting abbreviation, output -1.\n\nOtherwise, output a string in a single line representing an interesting abbreviation of strings S and T with minimum length. If there are multiple solutions, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

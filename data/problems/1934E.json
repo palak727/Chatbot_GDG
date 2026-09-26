@@ -1,0 +1,18 @@
+{
+    "id": "1934E",
+    "contest_id": 1934,
+    "problem_letter": "E",
+    "title": "E. Weird LCM Operations",
+    "statement": "Given an integer n, you construct an array a of n integers, where a_i = i for all integers i in the range [1, n]. An operation on this array is defined as follows:\n\nAfter all the operations a_i ≤ 10^18 should hold for all 1 ≤ i ≤ n.\n\nWe can show that an answer always exists.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^2) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains an integer n (3 ≤ n ≤ 3·10^4) — the length of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^4.\n\nThe first line should contain an integer k (0 ≤ k ≤ lfloor n/6 rfloor + 5) — where k is the number of operations.\n\nThe next k lines should contain the description of each operation i.e. 3 integers i, j and k, where 1 ≤ i, j, k ≤ n and all must be distinct.\n\nIn the third test case, a = [1, 2, 3, 4, 5, 6, 7].\n\nFirst operation:\n\ni = 3, j = 5, k = 7\n\nx = 3, y = 5, z = 7.\n\na = [1, 2, lcm(y,z), 4, lcm(x,z), 6, lcm(x,y)] = [1, 2, colorred35, 4, colorred21, 6, colorred15].\n\nSecond operation:\n\ni = 5, j = 6, k = 7\n\nx = 21, y = 6, z = 15.\n\na = [1, 2, 35, 4, lcm(y,z), lcm(x,z), lcm(x,y)] = [1, 2, 35, 4, colorred30, colorred105, colorred42].\n\nThird operation:\n\ni = 2, j = 3, k = 4\n\nx = 2, y = 35, z = 4.\n\na = [1, lcm(y,z), lcm(x,z), lcm(x,y), 30, 105, 42] = [1, colorred140, colorred4, colorred70, 30, 105, 42].\n\nSubsequences whose GCD equal to i is as follows:\n\ngcd(a_1, a_2) = gcd(1, 140) = 1\n\ngcd(a_3, a_4) = gcd(4, 70) = 2\n\ngcd(a_5, a_6, a_7) = gcd(30, 105, 42) = 3\n\ngcd(a_2, a_3) = gcd(140, 4) = 4\n\ngcd(a_2, a_4, a_5, a_6) = gcd(140, 70, 30, 105) = 5\n\ngcd(a_5, a_7) = gcd(30, 42) = 6\n\ngcd(a_2, a_4, a_6, a_7) = gcd(140, 70, 105, 42) = 7\n\nInput:\n```\n3347\n```\n\nOutput:\n```\n1\n1 2 3\n1\n1 3 4\n3\n3 5 7\n5 6 7\n2 3 4\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^2) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains an integer n (3 ≤ n ≤ 3·10^4) — the length of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^4.",
+    "output": "The first line should contain an integer k (0 ≤ k ≤ lfloor n/6 rfloor + 5) — where k is the number of operations.\n\nThe next k lines should contain the description of each operation i.e. 3 integers i, j and k, where 1 ≤ i, j, k ≤ n and all must be distinct.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "number theory",
+        "*3000"
+    ],
+    "rating": 3000
+}

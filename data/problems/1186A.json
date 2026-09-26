@@ -1,0 +1,16 @@
+{
+    "id": "1186A",
+    "contest_id": 1186,
+    "problem_letter": "A",
+    "title": "A. Vus the Cossack and a Contest",
+    "statement": "Vus the Cossack holds a programming competition, in which n people participate. He decided to award them all with pens and notebooks. It is known that Vus has exactly m pens and k notebooks.\n\nDetermine whether the Cossack can reward all participants, giving each of them at least one pen and at least one notebook.\n\nThe first line contains three integers n, m, and k (1 ≤ n, m, k ≤ 100) — the number of participants, the number of pens, and the number of notebooks respectively.\n\nPrint \"Yes\" if it possible to reward all the participants. Otherwise, print \"No\".\n\nYou can print each letter in any case (upper or lower).\n\nIn the first example, there are 5 participants. The Cossack has 8 pens and 6 notebooks. Therefore, he has enough pens and notebooks.\n\nIn the second example, there are 3 participants. The Cossack has 9 pens and 3 notebooks. He has more than enough pens but only the minimum needed number of notebooks.\n\nIn the third example, there are 8 participants but only 5 pens. Since the Cossack does not have enough pens, the answer is \"No\".\n\nInput:\n```\n5 8 6\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n3 9 3\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n8 5 20\n```\n\nOutput:\n```\nNo\n```",
+    "input": "The first line contains three integers n, m, and k (1 ≤ n, m, k ≤ 100) — the number of participants, the number of pens, and the number of notebooks respectively.",
+    "output": "Print \"Yes\" if it possible to reward all the participants. Otherwise, print \"No\".\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

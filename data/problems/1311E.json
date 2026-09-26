@@ -1,0 +1,18 @@
+{
+    "id": "1311E",
+    "contest_id": 1311,
+    "problem_letter": "E",
+    "title": "E. Construct the Binary Tree",
+    "statement": "You are given two integers n and d. You need to construct a rooted binary tree consisting of n vertices with a root at the vertex 1 and the sum of depths of all vertices equals to d.\n\nA tree is a connected graph without cycles. A rooted tree has a special vertex called the root. A parent of a vertex v is the last different from v vertex on the path from the root to the vertex v. The depth of the vertex v is the length of the path from the root to the vertex v. Children of vertex v are all vertices for which v is the parent. The binary tree is such a tree that no vertex has more than 2 children.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers n and d (2 ≤ n, d ≤ 5000) — the number of vertices in the tree and the required sum of depths of all vertices.\n\nIt is guaranteed that the sum of n and the sum of d both does not exceed 5000 (∑ n ≤ 5000, ∑ d ≤ 5000).\n\nFor each test case, print the answer.\n\nIf it is impossible to construct such a tree, print \"NO\" (without quotes) in the first line. Otherwise, print \"YES\" in the first line. Then print n-1 integers p_2, p_3, …, p_n in the second line, where p_i is the parent of the vertex i. Note that the sequence of parents you print should describe some binary tree.\n\nPictures corresponding to the first and the second test cases of the example:\n\nInput:\n```\n3\n5 7\n10 19\n10 18\n```\n\nOutput:\n```\nYES\n1 2 1 3 \nYES\n1 2 3 3 9 9 2 1 6 \nNO\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers n and d (2 ≤ n, d ≤ 5000) — the number of vertices in the tree and the required sum of depths of all vertices.\n\nIt is guaranteed that the sum of n and the sum of d both does not exceed 5000 (∑ n ≤ 5000, ∑ d ≤ 5000).",
+    "output": "For each test case, print the answer.\n\nIf it is impossible to construct such a tree, print \"NO\" (without quotes) in the first line. Otherwise, print \"YES\" in the first line. Then print n-1 integers p_2, p_3, …, p_n in the second line, where p_i is the parent of the vertex i. Note that the sequence of parents you print should describe some binary tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

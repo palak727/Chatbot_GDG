@@ -1,0 +1,19 @@
+{
+    "id": "1442D",
+    "contest_id": 1442,
+    "problem_letter": "D",
+    "title": "D. Sum",
+    "statement": "You are given n non-decreasing arrays of non-negative numbers.\n\nVasya repeats the following operation k times:\n\nVasya wants to maximize the sum of the elements in his pocket.\n\nThe first line contains two integers n and k (1 ≤ n, k ≤ 3,000): the number of arrays and operations.\n\nEach of the next n lines contain an array. The first integer in each line is t_i (1 ≤ t_i ≤ 10^6): the size of the i-th array. The following t_i integers a_{i, j} (0 ≤ a_{i, 1} ≤ … ≤ a_{i, t_i} ≤ 10^8) are the elements of the i-th array.\n\nIt is guaranteed that k ≤ ∑limits_{i=1}^n t_i ≤ 10^6.\n\nPrint one integer: the maximum possible sum of all elements in Vasya's pocket after k operations.\n\nInput:\n```\n3 3\n2 5 10\n3 1 2 3\n2 1 20\n```\n\nOutput:\n```\n26\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n, k ≤ 3,000): the number of arrays and operations.\n\nEach of the next n lines contain an array. The first integer in each line is t_i (1 ≤ t_i ≤ 10^6): the size of the i-th array. The following t_i integers a_{i, j} (0 ≤ a_{i, 1} ≤ … ≤ a_{i, t_i} ≤ 10^8) are the elements of the i-th array.\n\nIt is guaranteed that k ≤ ∑limits_{i=1}^n t_i ≤ 10^6.",
+    "output": "Print one integer: the maximum possible sum of all elements in Vasya's pocket after k operations.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "*2800"
+    ],
+    "rating": 2800
+}

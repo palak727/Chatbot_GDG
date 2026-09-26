@@ -1,0 +1,18 @@
+{
+    "id": "1699B",
+    "contest_id": 1699,
+    "problem_letter": "B",
+    "title": "B. Almost Ternary Matrix",
+    "statement": "You are given two even integers n and m. Your task is to find any binary matrix a with n rows and m columns where every cell (i,j) has exactly two neighbours with a different value than a_{i,j}.\n\nTwo cells in the matrix are considered neighbours if and only if they share a side. More formally, the neighbours of cell (x,y) are: (x-1,y), (x,y+1), (x+1,y) and (x,y-1).\n\nIt can be proven that under the given constraints, an answer always exists.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The following lines contain the descriptions of the test cases.\n\nThe only line of each test case contains two even integers n and m (2 ≤ n,m ≤ 50) — the height and width of the binary matrix, respectively.\n\nFor each test case, print n lines, each of which contains m numbers, equal to 0 or 1 — any binary matrix which satisfies the constraints described in the statement.\n\nIt can be proven that under the given constraints, an answer always exists.\n\nWhite means 0, black means 1.\n\nInput:\n```\n32 42 24 4\n```\n\nOutput:\n```\n1 0 0 1\n0 1 1 0\n1 0\n0 1\n1 0 1 0\n0 0 1 1\n1 1 0 0\n0 1 0 1\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The following lines contain the descriptions of the test cases.\n\nThe only line of each test case contains two even integers n and m (2 ≤ n,m ≤ 50) — the height and width of the binary matrix, respectively.",
+    "output": "For each test case, print n lines, each of which contains m numbers, equal to 0 or 1 — any binary matrix which satisfies the constraints described in the statement.\n\nIt can be proven that under the given constraints, an answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "matrices",
+        "*900"
+    ],
+    "rating": 900
+}

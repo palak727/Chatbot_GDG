@@ -1,0 +1,19 @@
+{
+    "id": "1346F",
+    "contest_id": 1346,
+    "problem_letter": "F",
+    "title": "F. Dune II: Battle For Arrakis",
+    "statement": "You're at the last mission in one very old and very popular strategy game Dune II: Battle For Arrakis. The map of the mission can be represented as a rectangular matrix of size n × m. Initially, there are a_{i, j} units of your army in the cell (i, j).\n\nYou want to prepare for the final battle, so you want to move all your army into exactly one cell of the map (i.e. nm-1 cells should contain 0 units of the army and the remaining cell should contain the entire army).\n\nTo do this, you can do some (possibly, zero) number of moves. During one move, you can select exactly one unit from some cell and move it to one of the adjacent by side cells. I.e. from the cell (i, j) you can move the unit to cells:\n\nOf course, you want to move all your army into exactly one cell as fast as possible. So, you want to know the minimum number of moves you need to do that.\n\nAnd, of course, life goes on, so the situation on the map changes. There are q updates, the i-th update is denoted by three integers x, y, z. This update affects the army in the cell (x, y): after this update, the number of units in the cell (x, y) becomes z (i.e. you replace a_{x, y} with z).\n\nAlso, you want to determine, for each i, the minimum number of moves needed to move your entire army into exactly one cell with the first i updates applied to the initial map. In other words, the map after the i-th update equals the initial map with the first i updates applied to it.\n\nThe first line of the input contains three integers n, m and q (1 ≤ n, m ≤ 1000; 1 ≤ q ≤ 5000) — the size of the matrix and the number of updates correspondingly.\n\nThe next n lines contain m integers each, where the j-th integer in the i-th line is a_{i, j} (1 ≤ a_{i, j} ≤ 10^9) — the number of units in the cell (i, j).\n\nThe next q lines contain three integers each, where the i-th line contains three integers x_i, y_i and z_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; 1 ≤ z_i ≤ 10^9) — the cell in which the number of units updates and the new number of units in this cell correspondingly.\n\nPrint q+1 integers r_0, r_1, r_2, …, r_n, where r_0 is the minimum number of moves you need to move all your army into exactly one cell, and r_i for all i from 1 to q is the minimum number of moves you need to move all your army into exactly one cell after the first i updates.\n\nInput:\n```\n3 3 1\n1 2 3\n2 1 2\n1 1 2\n2 3 100\n```\n\nOutput:\n```\n21 22 \n```\n\nInput:\n```\n4 4 3\n2 5 6 3\n4 8 10 5\n2 6 7 1\n8 4 2 1\n1 1 8\n2 3 4\n4 4 5\n```\n\nOutput:\n```\n123 135 129 145 \n```",
+    "input": "The first line of the input contains three integers n, m and q (1 ≤ n, m ≤ 1000; 1 ≤ q ≤ 5000) — the size of the matrix and the number of updates correspondingly.\n\nThe next n lines contain m integers each, where the j-th integer in the i-th line is a_{i, j} (1 ≤ a_{i, j} ≤ 10^9) — the number of units in the cell (i, j).\n\nThe next q lines contain three integers each, where the i-th line contains three integers x_i, y_i and z_i (1 ≤ x_i ≤ n; 1 ≤ y_i ≤ m; 1 ≤ z_i ≤ 10^9) — the cell in which the number of units updates and the new number of units in this cell correspondingly.",
+    "output": "Print q+1 integers r_0, r_1, r_2, …, r_n, where r_0 is the minimum number of moves you need to move all your army into exactly one cell, and r_i for all i from 1 to q is the minimum number of moves you need to move all your army into exactly one cell after the first i updates.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "greedy",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

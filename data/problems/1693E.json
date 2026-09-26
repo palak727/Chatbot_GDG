@@ -1,0 +1,17 @@
+{
+    "id": "1693E",
+    "contest_id": 1693,
+    "problem_letter": "E",
+    "title": "E. Outermost Maximums",
+    "statement": "Yeri has an array of n + 2 non-negative integers : a_0, a_1, ..., a_n, a_{n + 1}.\n\nWe know that a_0 = a_{n + 1} = 0.\n\nShe wants to make all the elements of a equal to zero in the minimum number of operations.\n\nIn one operation she can do one of the following:\n\nHelp her find the minimum number of operations needed to make all elements of a equal to zero.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n).\n\nPrint a single integer — the minimum number of operations needed to make all elements of a equal to zero.\n\nIn the first sample, you get langle 1, underline1, 2, 4, 0, 2 rangle by performing the first operation and langle 1, 4, 2, underline2, 0, 2 rangle by performing the second operation.\n\nOne way to achieve our goal is shown below. (The underlines show the last change.) langle 1, 4, 2, 4, 0, 2 rangle → langle 1, 4, 2, underline2, 0, 2 rangle → langle 1, underline1, 2, 2, 0, 2 rangle → langle 1, 1, 2, 2, 0, underline0 rangle → langle 1, 1, 2, underline0, 0, 0 rangle → langle 1, 1, underline0, 0, 0, 0 rangle → langle underline0, 1, 0, 0, 0, 0 rangle → langle 0, underline0, 0, 0, 0, 0 rangle\n\nIn the third sample each element is already equal to zero so no operations are needed.\n\nInput:\n```\n6\n1 4 2 4 0 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n5\n1 3 5 4 2\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n0 0 0 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n).",
+    "output": "Print a single integer — the minimum number of operations needed to make all elements of a equal to zero.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "*3400"
+    ],
+    "rating": 3400
+}

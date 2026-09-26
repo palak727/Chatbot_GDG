@@ -1,0 +1,18 @@
+{
+    "id": "1091G",
+    "contest_id": 1091,
+    "problem_letter": "G",
+    "title": "G. New Year and the Factorisation Collaboration",
+    "statement": "Integer factorisation is hard. The RSA Factoring Challenge offered $100,000 for factoring RSA-1024, a 1024-bit long product of two prime numbers. To this date, nobody was able to claim the prize. We want you to factorise a 1024-bit number.\n\nSince your programming language of choice might not offer facilities for handling large integers, we will provide you with a very simple calculator.\n\nTo use this calculator, you can print queries on the standard output and retrieve the results from the standard input. The operations are as follows:\n\nFind the factorisation of n that is a product of between 2 and 10 distinct prime numbers, all of form 4x + 3 for some integer x.\n\nBecause of technical issues, we restrict number of requests to 100.\n\nThe only line contains a single integer n (21 ≤ n ≤ 2^1024). It is guaranteed that n is a product of between 2 and 10 distinct prime numbers, all of form 4x + 3 for some integer x.\n\nYou can print as many queries as you wish, adhering to the time limit (see the Interaction section for more details).\n\nWhen you think you know the answer, output a single line of form ! k p_1 p_2 ... p_k, where k is the number of prime factors of n, and p_i are the distinct prime factors. You may print the factors in any order.\n\nHacks input\n\nFor hacks, use the following format:.\n\nThe first should contain k (2 ≤ k ≤ 10) — the number of prime factors of n.\n\nThe second should contain k space separated integers p_1, p_2, …, p_k (21 ≤ n ≤ 2^1024) — the prime factors of n. All prime factors have to be of form 4x + 3 for some integer x. They all have to be distinct.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise you will get Idleness limit exceeded. To do this, use:\n\nThe number of queries is not limited. However, your program must (as always) fit in the time limit. The run time of the interactor is also counted towards the time limit. The maximum runtime of each query is given below.\n\nNote that the sample input contains extra empty lines so that it easier to read. The real input will not contain any empty lines and you do not need to output extra empty lines.\n\nWe start by reading the first line containing the integer n = 21. Then, we ask for:\n\nWe conclude that our calculator is working, stop fooling around and realise that 21 = 3·7.\n\nInput:\n```\n21\n\n7\n\n17\n\n15\n\n17\n\n11\n\n-1\n\n15\n```\n\nOutput:\n```\n+ 12 16\n\n- 6 10\n\n* 8 15\n\n/ 5 4\n\nsqrt 16\n\nsqrt 5\n\n^ 6 12\n\n! 2 3 7\n```",
+    "input": "The only line contains a single integer n (21 ≤ n ≤ 2^1024). It is guaranteed that n is a product of between 2 and 10 distinct prime numbers, all of form 4x + 3 for some integer x.",
+    "output": "You can print as many queries as you wish, adhering to the time limit (see the Interaction section for more details).\n\nWhen you think you know the answer, output a single line of form ! k p_1 p_2 ... p_k, where k is the number of prime factors of n, and p_i are the distinct prime factors. You may print the factors in any order.\n\nHacks input\n\nFor hacks, use the following format:.\n\nThe first should contain k (2 ≤ k ≤ 10) — the number of prime factors of n.\n\nThe second should contain k space separated integers p_1, p_2, …, p_k (21 ≤ n ≤ 2^1024) — the prime factors of n. All prime factors have to be of form 4x + 3 for some integer x. They all have to be distinct.",
+    "time_limit": "6 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "interactive",
+        "math",
+        "number theory",
+        "*3200"
+    ],
+    "rating": 3200
+}

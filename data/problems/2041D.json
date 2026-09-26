@@ -1,0 +1,19 @@
+{
+    "id": "2041D",
+    "contest_id": 2041,
+    "problem_letter": "D",
+    "title": "D. Drunken Maze",
+    "statement": "You are given a two-dimensional maze with a start and end position. Your task is to find the fastest way to get from the start to the end position. The fastest way is to make the minimum number of steps where one step is going left, right, up, or down. Of course, you cannot walk through walls.\n\nThere is, however, a catch: If you make more than three steps in the same direction, you lose balance and fall down. Therefore, it is forbidden to make more than three consecutive steps in the same direction. It is okay to walk three times to the right, then one step to the left, and then again three steps to the right. This has the same effect as taking five steps to the right, but is slower.\n\nThe first line contains two numbers n and m, which are the height and width of the maze. This is followed by an ASCII-representation of the maze where tt# is a wall, tt. is an empty space, and tt S and tt T are the start and end positions.\n\nThe minimum number of steps to reach the end position from the start position or -1 if that is impossible.\n\nInput:\n```\n7 12#############S........T##.########.##..........##..........##..#..#....#############\n```\n\nOutput:\n```\n15\n```\n\nInput:\n```\n5 8#########......##.####.##...T#S#########\n```\n\nOutput:\n```\n14\n```\n\nInput:\n```\n5 8#########.#S...##.####.##...T#.#########\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two numbers n and m, which are the height and width of the maze. This is followed by an ASCII-representation of the maze where tt# is a wall, tt. is an empty space, and tt S and tt T are the start and end positions.",
+    "output": "The minimum number of steps to reach the end position from the start position or -1 if that is impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "graphs",
+        "shortest paths",
+        "*1700"
+    ],
+    "rating": 1700
+}

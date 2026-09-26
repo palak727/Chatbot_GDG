@@ -1,0 +1,20 @@
+{
+    "id": "1956A",
+    "contest_id": 1956,
+    "problem_letter": "A",
+    "title": "A. Nene's Game",
+    "statement": "Nene invented a new game based on an increasing sequence of integers a_1, a_2, …, a_k.\n\nIn this game, initially n players are lined up in a row. In each of the rounds of this game, the following happens:\n\nOnce no one is kicked out of the game in some round, all the players that are still in the game are declared as winners.\n\nFor example, consider the game with a=[3, 5] and n=5 players. Let the players be named player A, player B, …, player E in the order they are lined up initially. Then,\n\nNene has not yet decided how many people would join the game initially. Nene gave you q integers n_1, n_2, …, n_q and you should answer the following question for each 1 ≤ i ≤ q independently:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 250). The description of test cases follows.\n\nThe first line case contains two integers k and q (1 ≤ k, q ≤ 100) — the length of the sequence a and the number of values n_i you should solve this problem for.\n\nThe second line contains k integers a_1,a_2,…,a_k (1≤ a_1 < a_2 < … < a_k≤ 100) — the sequence a.\n\nThe third line contains q integers n_1,n_2,…,n_q (1≤ n_i ≤ 100).\n\nFor each test case, output q integers: the i-th (1≤ i ≤ q) of them should be the number of players declared as winners if initially n_i players join the game.\n\nThe first test case was explained in the statement.\n\nIn the second test case, when n=1, the only player stays in the game in the first round. After that, the game ends and the only player is declared as a winner.\n\nInput:\n```\n62 13 555 32 4 6 7 91 3 55 43 4 5 6 71 2 3 42 369 961 10 1001 1100503 310 20 301 10 100\n```\n\nOutput:\n```\n2 \n1 1 1 \n1 2 2 2 \n1 10 68 \n50 \n1 9 9 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 250). The description of test cases follows.\n\nThe first line case contains two integers k and q (1 ≤ k, q ≤ 100) — the length of the sequence a and the number of values n_i you should solve this problem for.\n\nThe second line contains k integers a_1,a_2,…,a_k (1≤ a_1 < a_2 < … < a_k≤ 100) — the sequence a.\n\nThe third line contains q integers n_1,n_2,…,n_q (1≤ n_i ≤ 100).",
+    "output": "For each test case, output q integers: the i-th (1≤ i ≤ q) of them should be the number of players declared as winners if initially n_i players join the game.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "games",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

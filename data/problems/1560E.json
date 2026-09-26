@@ -1,0 +1,19 @@
+{
+    "id": "1560E",
+    "contest_id": 1560,
+    "problem_letter": "E",
+    "title": "E. Polycarp and String Transformation",
+    "statement": "Polycarp has a string s. Polycarp performs the following actions until the string s is empty (t is initially an empty string):\n\nPolycarp performs this sequence of actions strictly in this order.\n\nNote that after Polycarp finishes the actions, the string s will be empty and the string t will be equal to some value (that is undefined and depends on the order of removing).\n\nE.g. consider s=\"abacaba\" so the actions may be performed as follows:\n\nYou need to restore the initial value of the string s using only the final value of t and find the order of removing letters from s.\n\nThe first line contains one integer T (1 ≤ T ≤ 10^4) — the number of test cases. Then T test cases follow.\n\nEach test case contains one string t consisting of lowercase letters of the Latin alphabet. The length of t doesn't exceed 5·10^5. The sum of lengths of all strings t in the test cases doesn't exceed 5·10^5.\n\nFor each test case output in a separate line:\n\nThe first test case is considered in the statement.\n\nInput:\n```\n7\nabacabaaacaac\nnowyouknowthat\npolycarppoycarppoyarppyarppyrpprppp\nisi\neverywherevrywhrvryhrvrhrvhv\nhaaha\nqweqeewew\n```\n\nOutput:\n```\nabacaba bac\n-1\npolycarp lcoayrp\nis si\neverywhere ewyrhv\n-1\n-1\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 10^4) — the number of test cases. Then T test cases follow.\n\nEach test case contains one string t consisting of lowercase letters of the Latin alphabet. The length of t doesn't exceed 5·10^5. The sum of lengths of all strings t in the test cases doesn't exceed 5·10^5.",
+    "output": "For each test case output in a separate line:",
+    "time_limit": "3 s",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "implementation",
+        "sortings",
+        "strings",
+        "*1800"
+    ],
+    "rating": 1800
+}

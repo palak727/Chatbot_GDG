@@ -1,0 +1,22 @@
+{
+    "id": "1721F",
+    "contest_id": 1721,
+    "problem_letter": "F",
+    "title": "F. Matching Reduction",
+    "statement": "You are given a bipartite graph with n_1 vertices in the first part, n_2 vertices in the second part, and m edges. The maximum matching in this graph is the maximum possible (by size) subset of edges of this graph such that no vertex is incident to more than one chosen edge.\n\nYou have to process two types of queries to this graph:\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query. Use functions fflush in C++ and BufferedWriter.flush in Java languages after each writing in your program.\n\nThe first line contains four integers n_1, n_2, m and q (1 ≤ n_1, n_2 ≤ 2·10^5; 1 ≤ m ≤ min(n_1·n_2, 2·10^5); 1 ≤ q ≤ 2·10^5).\n\nThen m lines follow. The i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n_1; 1 ≤ y_i ≤ n_2) meaning that the i-th edge connects the vertex x_i in the first part and the vertex y_i in the second part. There are no pairs of vertices that are connected by more than one edge.\n\nThen q lines follow. The i-th of them contains one integer, 1 or 2, denoting the i-th query. Additional constraints on queries:\n\nFor a query of type 1, print the answer in three lines as follows:\n\nFor a query of type 2, print the answer in two lines as follows:\n\nAfter printing the answer to a query, don't forget to flush the output.\n\nIn this problem, you may receive the verdict \"Idleness Limit Exceeded\" since it is in online mode. If it happens, it means that either the output format is wrong, or you don't meet some constraint of the problem. You may treat this verdict as \"Wrong Answer\".\n\nFor your convenience, the output for queries in the example is separated by the line ===. Don't print this line in your program, it is done only to make sure that it's easy to distinguish between answers for different queries in the statement.\n\nInput:\n```\n3 4 4 4\n2 2\n1 3\n2 1\n3 4\n1\n2\n1\n2\n```\n\nOutput:\n```\n1\n-4\n3\n===\n2\n1 2\n===\n1\n2\n2\n===\n1\n2\n```",
+    "input": "The first line contains four integers n_1, n_2, m and q (1 ≤ n_1, n_2 ≤ 2·10^5; 1 ≤ m ≤ min(n_1·n_2, 2·10^5); 1 ≤ q ≤ 2·10^5).\n\nThen m lines follow. The i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n_1; 1 ≤ y_i ≤ n_2) meaning that the i-th edge connects the vertex x_i in the first part and the vertex y_i in the second part. There are no pairs of vertices that are connected by more than one edge.\n\nThen q lines follow. The i-th of them contains one integer, 1 or 2, denoting the i-th query. Additional constraints on queries:",
+    "output": "For a query of type 1, print the answer in three lines as follows:\n\nFor a query of type 2, print the answer in two lines as follows:\n\nAfter printing the answer to a query, don't forget to flush the output.",
+    "time_limit": "8 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "flows",
+        "graph matchings",
+        "graphs",
+        "interactive",
+        "*2800"
+    ],
+    "rating": 2800
+}

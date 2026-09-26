@@ -1,0 +1,20 @@
+{
+    "id": "2038D",
+    "contest_id": 2038,
+    "problem_letter": "D",
+    "title": "D. Divide OR Conquer",
+    "statement": "You are given an array [a_1, a_2, … a_n] consisting of integers between 0 and 10^9. You have to split this array into several segments (possibly one) in such a way that each element belongs to exactly one segment.\n\nLet the first segment be the array [a_l_1, a_{l_1 + 1}, …, a_r_1], the second segment be [a_l_2, a_{l_2+ 1}, …, a_r_2], ..., the last segment be [a_l_k, a_{l_k+ 1}, …, a_r_k]. Since every element should belong to exactly one array, l_1 = 1, r_k = n, and r_i + 1 = l_{i+1} for each i from 1 to k-1. The split should meet the following condition: f([a_l_1, a_{l_1 + 1}, …, a_r_1]) ≤ f([a_l_2, a_{l_2+ 1}, …, a_r_2]) ≤ … ≤ f([a_l_k, a_{l_k+1}, …, a_r_k]), where f(a) is the bitwise OR of all elements of the array a.\n\nCalculate the number of ways to split the array, and print it modulo 998,244,353. Two ways are considered different if the sequences [l_1, r_1, l_2, r_2, …, l_k, r_k] denoting the splits are different.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10 ^9) — the elements of the given array.\n\nPrint one integer — the number of ways to split the array, taken modulo 998,244,353.\n\nIn the first two examples, every way to split the array is valid.\n\nIn the third example, there are three valid ways to split the array:\n\nIf you split the array into two arrays [3, 4] and [6], the bitwise OR of the first array is 7, and the bitwise OR of the second array is 6; 7 > 6, so this way to split the array is invalid.\n\nInput:\n```\n31 2 3\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n51000 1000 1000 1000 1000\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n33 4 6\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10 ^9) — the elements of the given array.",
+    "output": "Print one integer — the number of ways to split the array, taken modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "dp",
+        "implementation",
+        "*2400"
+    ],
+    "rating": 2400
+}

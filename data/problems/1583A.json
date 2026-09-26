@@ -1,0 +1,17 @@
+{
+    "id": "1583A",
+    "contest_id": 1583,
+    "problem_letter": "A",
+    "title": "A. Windblume Ode",
+    "statement": "A bow adorned with nameless flowers that bears the earnest hopes of an equally nameless person.\n\nYou have obtained the elegant bow known as the Windblume Ode. Inscribed in the weapon is an array of n (n ≥ 3) positive distinct integers (i.e. different, no duplicates are allowed).\n\nFind the largest subset (i.e. having the maximum number of elements) of this array such that its sum is a composite number. A positive integer x is called composite if there exists a positive integer y such that 1 < y < x and x is divisible by y.\n\nIf there are multiple subsets with this largest size with the composite sum, you can output any of them. It can be proven that under the constraints of the problem such a non-empty subset always exists.\n\nEach test consists of multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 100) — the length of the array.\n\nThe second line of each test case contains n distinct integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 200) — the elements of the array.\n\nEach test case should have two lines of output.\n\nThe first line should contain a single integer x: the size of the largest subset with composite sum. The next line should contain x space separated integers representing the indices of the subset of the initial array.\n\nIn the first test case, the subset {a_2, a_1} has a sum of 9, which is a composite number. The only subset of size 3 has a prime sum equal to 11. Note that you could also have selected the subset {a_1, a_3} with sum 8 + 2 = 10, which is composite as it's divisible by 2.\n\nIn the second test case, the sum of all elements equals to 21, which is a composite number. Here we simply take the whole array as our subset.\n\nInput:\n```\n4\n3\n8 1 2\n4\n6 9 4 2\n9\n1 2 3 4 5 6 7 8 9\n3\n200 199 198\n```\n\nOutput:\n```\n2\n2 1\n4\n2 1 4 3\n9\n6 9 1 2 3 4 5 7 8\n3\n1 2 3 \n```",
+    "input": "Each test consists of multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 100) — the length of the array.\n\nThe second line of each test case contains n distinct integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 200) — the elements of the array.",
+    "output": "Each test case should have two lines of output.\n\nThe first line should contain a single integer x: the size of the largest subset with composite sum. The next line should contain x space separated integers representing the indices of the subset of the initial array.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

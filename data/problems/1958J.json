@@ -1,0 +1,16 @@
+{
+    "id": "1958J",
+    "contest_id": 1958,
+    "problem_letter": "J",
+    "title": "J. Necromancer",
+    "statement": "Monocarp is playing a computer game. In this game, his character is a necromancer. He is fighting n monsters numbered from 1 to n. Each monster has two parameters: health and strength.\n\nMonocarp considers q scenarios of the battle. In each scenario, he chooses some segment [l, r] of monsters and calculates the number of moves it takes to defeat all these monsters.\n\nEach scenario proceeds as follows. First, Monocarp kills monster l and revives it as a zombie (this does not count as a move). Then each move the following happens: let i be the index of the first monster in the segment [l, r] that is still alive. All zombies attack monster i, reducing its health by their total strength. After that, if monster i has 0 or less health, it dies and Monocarp revives it as a zombie.\n\nWhen the monster is revived, the zombie's strength is equal to the monster's strength.\n\nHelp Monocarp for each scenario to calculate how many moves it will take to kill all the monsters in the segment.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of monsters and the number of scenarios, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4), where a_i is the number of health points of the i-th monster.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^4), where b_i is the strength of the i-th monster.\n\nThen q lines follow. The j-th of them contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the boundaries of the j-th scenario.\n\nFor each scenario, print a single integer — the number of moves it will take to kill all the monsters in the segment.\n\nInput:\n```\n7 54 5 9 9 4 2 41 3 3 1 2 3 33 51 46 61 72 6\n```\n\nOutput:\n```\n4\n10\n0\n13\n7\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of monsters and the number of scenarios, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4), where a_i is the number of health points of the i-th monster.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^4), where b_i is the strength of the i-th monster.\n\nThen q lines follow. The j-th of them contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the boundaries of the j-th scenario.",
+    "output": "For each scenario, print a single integer — the number of moves it will take to kill all the monsters in the segment.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "*3200"
+    ],
+    "rating": 3200
+}

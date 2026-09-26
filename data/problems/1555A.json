@@ -1,0 +1,17 @@
+{
+    "id": "1555A",
+    "contest_id": 1555,
+    "problem_letter": "A",
+    "title": "A. PizzaForces",
+    "statement": "PizzaForces is Petya's favorite pizzeria. PizzaForces makes and sells pizzas of three sizes: small pizzas consist of 6 slices, medium ones consist of 8 slices, and large pizzas consist of 10 slices each. Baking them takes 15, 20 and 25 minutes, respectively.\n\nPetya's birthday is today, and n of his friends will come, so he decided to make an order from his favorite pizzeria. Petya wants to order so much pizza that each of his friends gets at least one slice of pizza. The cooking time of the order is the total baking time of all the pizzas in the order.\n\nYour task is to determine the minimum number of minutes that is needed to make pizzas containing at least n slices in total. For example:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nEach testcase consists of a single line that contains a single integer n (1 ≤ n ≤ 10^16) — the number of Petya's friends.\n\nFor each testcase, print one integer — the minimum number of minutes that is needed to bake pizzas containing at least n slices in total.\n\nInput:\n```\n6\n12\n15\n300\n1\n9999999999999999\n3\n```\n\nOutput:\n```\n30\n40\n750\n15\n25000000000000000\n15\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nEach testcase consists of a single line that contains a single integer n (1 ≤ n ≤ 10^16) — the number of Petya's friends.",
+    "output": "For each testcase, print one integer — the minimum number of minutes that is needed to bake pizzas containing at least n slices in total.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

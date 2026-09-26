@@ -1,0 +1,20 @@
+{
+    "id": "2023D",
+    "contest_id": 2023,
+    "problem_letter": "D",
+    "title": "D. Many Games",
+    "statement": "Recently, you received a rare ticket to the only casino in the world where you can actually earn something, and you want to take full advantage of this opportunity.\n\nThe conditions in this casino are as follows:\n\nYou need to choose a set of games in advance that you will play in such a way as to maximize the expected value of your winnings.\n\nIn this case, if you choose to play the games with indices i_1 < i_2 < … < i_k, you will win in all of them with a probability of ∏limits_{j=1}^k p_i_j/100, and in that case, your winnings will be equal to ∑limits_{j=1}^k w_i_j.\n\nThat is, the expected value of your winnings will be left(∏limits_{j=1}^k p_i_j/100right)·left(∑limits_{j=1}^k w_i_jright).\n\nTo avoid going bankrupt, the casino owners have limited the expected value of winnings for each individual game. Thus, for all i (1 ≤ i ≤ n), it holds that w_i·p_i ≤ 2·10^5.\n\nYour task is to find the maximum expected value of winnings that can be obtained by choosing some set of games in the casino.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of games offered to play.\n\nThe i-th of the following n lines contains two integers p_i and w_i (1 ≤ p_i ≤ 100, 1 ≤ w_i, p_i·w_i ≤ 2·10^5) — the probability of winning and the size of the winnings in the i-th game.\n\nOutput a single number — the maximum expected value of winnings in the casino that can be obtained by choosing some subset of games.\n\nYour answer will be accepted if the relative or absolute error does not exceed 10^{-6}. Formally, if a is your answer and b is the jury's answer, it will be accepted if (|a-b|)/(max(b, 1)) ≤ 10^{-6}.\n\nIn the first example, you can choose the first and third games. In this case, the expected value of winnings will be left(p_1/100·p_3/100right)·(w_1 + w_3) = left(80/100·50/100right)·(80 + 200) = 112.\n\nIn the second example, you can choose the first and second games. In this case, the expected value of winnings will be left(p_1/100·p_2/100right)·(w_1 + w_2) = left(100/100·100/100right)·(1 + 1) = 2.\n\nIn the third example, you can choose only the second game. In this case, the expected value of winnings will be p_2/100·w_2 = 2/100·1000 = 20.\n\nInput:\n```\n380 8070 10050 200\n```\n\nOutput:\n```\n112.00000000\n```\n\nInput:\n```\n2100 1100 1\n```\n\nOutput:\n```\n2.00000000\n```\n\nInput:\n```\n41 1002 10002 1003 1\n```\n\nOutput:\n```\n20.00000000\n```\n\nInput:\n```\n534 80478 20999 19161 43990 79\n```\n\nOutput:\n```\n395.20423800\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of games offered to play.\n\nThe i-th of the following n lines contains two integers p_i and w_i (1 ≤ p_i ≤ 100, 1 ≤ w_i, p_i·w_i ≤ 2·10^5) — the probability of winning and the size of the winnings in the i-th game.",
+    "output": "Output a single number — the maximum expected value of winnings in the casino that can be obtained by choosing some subset of games.\n\nYour answer will be accepted if the relative or absolute error does not exceed 10^{-6}. Formally, if a is your answer and b is the jury's answer, it will be accepted if (|a-b|)/(max(b, 1)) ≤ 10^{-6}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "probabilities",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2068F",
+    "contest_id": 2068,
+    "problem_letter": "F",
+    "title": "F. Mascot Naming",
+    "statement": "When organizing a big event, organizers often handle side tasks outside their expertise. For example, the chief judge of EUC 2025 must find a name for the event's official mascot while satisfying certain constraints:\n\n^{texttt*} A string x is a subsequence of a string y if x can be obtained from y by erasing some characters (at any positions) while keeping the remaining characters in the same order. For example, textttabc is a subsequence of textttaxbycz but not of textttacbxyz.\n\nThe first line contains an integer n (1≤ n≤ 200,000) — the number of words that shall appear as subsequences.\n\nThe i-th of the following n lines contains the string s_i (1≤ |s_i| ≤ 200,000, s_i consists of lowercase English letters) — the i-th word in the list of words that shall appear as subsequences. The total length of these n words is at most 200,000, i.e., |s_1| + |s_2| + ⋯ + |s_n| ≤ 200,000.\n\nThe last line contains the string t (1≤ |t| ≤ 200,000, t consists of lowercase English letters) — the name of last year's mascot.\n\nPrint textttYES if there is a valid name for the mascot. Otherwise, print textttNO.\n\nIf there is a valid name, on the next line print a valid name. The string you print must have length at most 1,000,000 and must consist of lowercase English letters. One can prove that if a valid name for the mascot exists, then there is one satisfying these additional constraints.\n\nIf there are multiple solutions, print any of them.\n\nIn the first sample, the words that must appear as subsequences are textttporto and texttteuc, while the word that must not appear as a subsequence is textttprague. There are many valid names for the mascot, e.g., textttporetuco or textttxxxpppeortoucyyyy.\n\nIf textttporetuco is chosen as the name of the mascot, observe that textttporto and texttteuc are subsequences (highlighted in textttPOReTucO and textttporEtUCo, respectively), while textttprague is not, as desired.\n\nThe string textttporetuc is not a valid mascot name because it does not contain the word textttporto as a subsequence. Also the string textttporetucoague is not a valid mascot name because it contains textttprague as a subsequence.\n\nInput:\n```\n2portoeucprague\n```\n\nOutput:\n```\nYES\nporetuco\n```\n\nInput:\n```\n6creditdebitmoneyrichbankcapitalismtrap\n```\n\nOutput:\n```\nYES\nmoncrdebditeychankpitalism\n```\n\nInput:\n```\n2axiomchoiceio\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n4aaaaababbbbbba\n```\n\nOutput:\n```\nYES\naaabbb\n```",
+    "input": "The first line contains an integer n (1≤ n≤ 200,000) — the number of words that shall appear as subsequences.\n\nThe i-th of the following n lines contains the string s_i (1≤ |s_i| ≤ 200,000, s_i consists of lowercase English letters) — the i-th word in the list of words that shall appear as subsequences. The total length of these n words is at most 200,000, i.e., |s_1| + |s_2| + ⋯ + |s_n| ≤ 200,000.\n\nThe last line contains the string t (1≤ |t| ≤ 200,000, t consists of lowercase English letters) — the name of last year's mascot.",
+    "output": "Print textttYES if there is a valid name for the mascot. Otherwise, print textttNO.\n\nIf there is a valid name, on the next line print a valid name. The string you print must have length at most 1,000,000 and must consist of lowercase English letters. One can prove that if a valid name for the mascot exists, then there is one satisfying these additional constraints.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1418G",
+    "contest_id": 1418,
+    "problem_letter": "G",
+    "title": "G. Three Occurrences",
+    "statement": "You are given an array a consisting of n integers. We denote the subarray a[l..r] as the array [a_l, a_{l + 1}, …, a_r] (1 ≤ l ≤ r ≤ n).\n\nA subarray is considered good if every integer that occurs in this subarray occurs there exactly thrice. For example, the array [1, 2, 2, 2, 1, 1, 2, 2, 2] has three good subarrays:\n\nCalculate the number of good subarrays of the given array a.\n\nThe first line contains one integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n).\n\nPrint one integer — the number of good subarrays of the array a.\n\nInput:\n```\n9\n1 2 2 2 1 1 2 2 2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n10\n1 2 3 4 1 2 3 1 2 3\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n12\n1 2 3 4 3 4 2 1 3 4 2 1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n).",
+    "output": "Print one integer — the number of good subarrays of the array a.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "hashing",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

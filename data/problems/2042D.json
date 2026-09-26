@@ -1,0 +1,19 @@
+{
+    "id": "2042D",
+    "contest_id": 2042,
+    "problem_letter": "D",
+    "title": "D. Recommendations",
+    "statement": "Suppose you are working in some audio streaming service. The service has n active users and 10^9 tracks users can listen to. Users can like tracks and, based on likes, the service should recommend them new tracks.\n\nTracks are numbered from 1 to 10^9. It turned out that tracks the i-th user likes form a segment [l_i, r_i].\n\nLet's say that the user j is a predictor for user i (j ≠ i) if user j likes all tracks the i-th user likes (and, possibly, some other tracks too).\n\nAlso, let's say that a track is strongly recommended for user i if the track is not liked by the i-th user yet, but it is liked by every predictor for the i-th user.\n\nCalculate the number of strongly recommended tracks for each user i. If a user doesn't have any predictors, then print 0 for that user.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next, t cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of users.\n\nThe next n lines contain two integers l_i and r_i per line (1 ≤ l_i ≤ r_i ≤ 10^9) — the segment of tracks the i-th user likes.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print n integers, where the i-th integer is the number of strongly recommended tracks for the i-th user (or 0, if that user doesn't have any predictors).\n\nIn the first test case:\n\nIn the second test case, the second user is a predictor for the first user. Therefore, all tracks, except 42, are strongly recommended for the first user.\n\nIn the third test case, the first user has two predictors: users 2 and 3, but there is no track that is liked by them and not liked by the first user himself.\n\nInput:\n```\n433 82 54 5242 421 1000000000342 421 100000000042 4261 103 103 75 74 41 2\n```\n\nOutput:\n```\n0\n0\n1\n999999999\n0\n0\n0\n0\n0\n2\n3\n2\n4\n8\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Next, t cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of users.\n\nThe next n lines contain two integers l_i and r_i per line (1 ≤ l_i ≤ r_i ≤ 10^9) — the segment of tracks the i-th user likes.\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print n integers, where the i-th integer is the number of strongly recommended tracks for the i-th user (or 0, if that user doesn't have any predictors).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

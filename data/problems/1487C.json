@@ -1,0 +1,22 @@
+{
+    "id": "1487C",
+    "contest_id": 1487,
+    "problem_letter": "C",
+    "title": "C. Minimum Ties",
+    "statement": "A big football championship will occur soon! n teams will compete in it, and each pair of teams will play exactly one game against each other.\n\nThere are two possible outcomes of a game:\n\nThe score of a team is the number of points it gained during all games that it played.\n\nYou are interested in a hypothetical situation when all teams get the same score at the end of the championship. A simple example of that situation is when all games result in ties, but you want to minimize the number of ties as well.\n\nYour task is to describe a situation (choose the result of each game) so that all teams get the same score, and the number of ties is the minimum possible.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen the test cases follow. Each test case is described by one line containing one integer n (2 ≤ n ≤ 100) — the number of teams.\n\nFor each test case, print (n(n - 1))/2 integers describing the results of the games in the following order: the first integer should correspond to the match between team 1 and team 2, the second — between team 1 and team 3, then 1 and 4, ..., 1 and n, 2 and 3, 2 and 4, ..., 2 and n, and so on, until the game between the team n - 1 and the team n.\n\nThe integer corresponding to the game between the team x and the team y should be 1 if x wins, -1 if y wins, or 0 if the game results in a tie.\n\nAll teams should get the same score, and the number of ties should be the minimum possible. If there are multiple optimal answers, print any of them. It can be shown that there always exists a way to make all teams have the same score.\n\nIn the first test case of the example, both teams get 1 point since the game between them is a tie.\n\nIn the second test case of the example, team 1 defeats team 2 (team 1 gets 3 points), team 1 loses to team 3 (team 3 gets 3 points), and team 2 wins against team 3 (team 2 gets 3 points).\n\nInput:\n```\n2\n2\n3\n```\n\nOutput:\n```\n0 \n1 -1 1 \n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen the test cases follow. Each test case is described by one line containing one integer n (2 ≤ n ≤ 100) — the number of teams.",
+    "output": "For each test case, print (n(n - 1))/2 integers describing the results of the games in the following order: the first integer should correspond to the match between team 1 and team 2, the second — between team 1 and team 3, then 1 and 4, ..., 1 and n, 2 and 3, 2 and 4, ..., 2 and n, and so on, until the game between the team n - 1 and the team n.\n\nThe integer corresponding to the game between the team x and the team y should be 1 if x wins, -1 if y wins, or 0 if the game results in a tie.\n\nAll teams should get the same score, and the number of ties should be the minimum possible. If there are multiple optimal answers, print any of them. It can be shown that there always exists a way to make all teams have the same score.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "implementation",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2127B",
+    "contest_id": 2127,
+    "problem_letter": "B",
+    "title": "B. Hamiiid, Haaamid... Hamid?",
+    "statement": "Mani has locked Hamid in a 1 × n grid. Initially, some cells of the grid contain walls and the rest are empty, and Hamid is in an empty cell.\n\nIn each day, the following events happen in order:\n\nHere is an example of a possible sequence of actions when n=6:\n\nHamid is always aware of where the walls are. He wants to minimize the number of days that he needs to escape the grid, while Mani wants to maximize it.\n\nYou have to determine the number of days Hamid needs to escape the grid if they both act optimally.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (2 ≤ n ≤ 2·10^5, 1 ≤ x ≤ n) — the size of the grid and the initial position of Hamid. He is at the x-th cell from left to right initially.\n\nThe second line contains a string s of length n (s_i=texttt\"#\" or texttt\".\") — the initial state of the grid. The i-th cell of the grid contains a wall if s_i= texttt\"#\", and it is empty if s_i=texttt\".\".\n\nIt is guaranteed that the x-th cell is empty, and there are at least two empty cells in the grid.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of days Hamid needs to escape the grid if they both act optimally.\n\nIn the first test case, Mani must build a wall in cell 2, so Hamid can escape from the left side of the grid on the first day.\n\nIn the second test case, if Mani places the wall to the left of Hamid, Hamid can escape from the right. And if the wall is to Hamid's right, he can escape from the left. Thus, the answer is 1.\n\nIn the third test case:\n\nIt can be shown that both players acted optimally in the above illustration.\n\nIn the fourth test case, we have shown an example of actions in the statements. Note that the players did not act optimally in this example.\n\nInput:\n```\n43 1..#4 2....5 3##..#6 4#...#.\n```\n\nOutput:\n```\n1\n1\n3\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (2 ≤ n ≤ 2·10^5, 1 ≤ x ≤ n) — the size of the grid and the initial position of Hamid. He is at the x-th cell from left to right initially.\n\nThe second line contains a string s of length n (s_i=texttt\"#\" or texttt\".\") — the initial state of the grid. The i-th cell of the grid contains a wall if s_i= texttt\"#\", and it is empty if s_i=texttt\".\".\n\nIt is guaranteed that the x-th cell is empty, and there are at least two empty cells in the grid.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of days Hamid needs to escape the grid if they both act optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

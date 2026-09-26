@@ -1,0 +1,19 @@
+{
+    "id": "1988A",
+    "contest_id": 1988,
+    "problem_letter": "A",
+    "title": "A. Split the Multiset",
+    "statement": "A multiset is a set of numbers in which there can be equal elements, and the order of the numbers does not matter. For example, {2,2,4} is a multiset.\n\nYou have a multiset S. Initially, the multiset contains only one positive integer n. That is, S={n}. Additionally, there is a given positive integer k.\n\nIn one operation, you can select any positive integer u in S and remove one copy of u from S. Then, insert no more than k positive integers into S so that the sum of all inserted integers is equal to u.\n\nFind the minimum number of operations to make S contain n ones.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line of each testcase contains two integers n,k (1≤ n≤ 1000,2≤ k≤ 1000).\n\nFor each testcase, print one integer, which is the required answer.\n\nFor the first test case, initially S={1}, already satisfying the requirement. Therefore, we need zero operations.\n\nFor the second test case, initially S={5}. We can apply the following operations:\n\nUsing 4 operations in total, we achieve the goal.\n\nFor the third test case, initially S={6}. We can apply the following operations:\n\nUsing 3 operations in total, we achieve the goal.\n\nFor the fourth test case, initially S={16}. We can apply the following operations:\n\nUsing 5 operations in total, we achieve the goal.\n\nInput:\n```\n41 55 26 316 4\n```\n\nOutput:\n```\n0\n4\n3\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line of each testcase contains two integers n,k (1≤ n≤ 1000,2≤ k≤ 1000).",
+    "output": "For each testcase, print one integer, which is the required answer.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2022E2",
+    "contest_id": 2022,
+    "problem_letter": "E2",
+    "title": "E2. Billetes MX (Hard Version)",
+    "statement": "This is the hard version of the problem. In this version, it is guaranteed that q ≤ 10^5. You can make hacks only if both versions of the problem are solved.\n\nAn integer grid A with p rows and q columns is called beautiful if:\n\nThere is a partially filled integer grid G with n rows and m columns where only k cells are filled. Polycarp wants to know how many ways he can assign integers to the unfilled cells so that the grid is beautiful.\n\nHowever, Monocarp thinks that this problem is too easy. Therefore, he will perform q updates on the grid. In each update, he will choose an unfilled cell and assign an integer to it. Note that these updates are persistent. That is, changes made to the grid will apply when processing future updates.\n\nFor each of the q + 1 states of the grid, the initial state and after each of the q queries, determine the number of ways Polycarp can assign integers to the unfilled cells so that the grid is beautiful. Since this number can be very large, you are only required to output their values modulo 10^9+7.\n\nThe first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers n, m, k and q (2 ≤ n, m ≤ 10^5; 0 ≤ k, q ≤ 10^5) — the number of rows, the number of columns, the number of fixed cells, and the number of updates.\n\nThe following k lines contain three integers r, c and v (1 ≤ r ≤ n, 1 ≤ c ≤ m; 0 ≤ v < 2^30) indicating that G_{r, c} is assigned the integer v.\n\nThe following q lines contain three integers r, c and v (1 ≤ r ≤ n, 1 ≤ c ≤ m; 0 ≤ v < 2^30) indicating that G_{r, c} is assigned the integer v.\n\nIt is guaranteed that the pairs (r,c) over all assignments are distinct.\n\nIt is guaranteed that the sum of n, m, k and q over all test cases does not exceed 10^5 respectively.\n\nFor each test case, output q + 1 lines. The i-th line of output should contain the answer of the i-th state of the grid modulo 10^9 + 7.\n\nIn the first test case of the example, we initially have the following grid:\n\nIt can be proven that the only valid value for tile (3, 3) is 0, so the first answer is 1. For the second query, the grid does not satisfy the condition, and thus the answer is 0.\n\nInput:\n```\n33 3 8 12 1 63 2 121 2 62 2 01 3 101 1 02 3 123 1 103 3 12 5 2 01 1 101 2 302 5 0 21 1 101 2 30\n```\n\nOutput:\n```\n1\n0\n489373567\n651321892\n769740174\n489373567\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers n, m, k and q (2 ≤ n, m ≤ 10^5; 0 ≤ k, q ≤ 10^5) — the number of rows, the number of columns, the number of fixed cells, and the number of updates.\n\nThe following k lines contain three integers r, c and v (1 ≤ r ≤ n, 1 ≤ c ≤ m; 0 ≤ v < 2^30) indicating that G_{r, c} is assigned the integer v.\n\nThe following q lines contain three integers r, c and v (1 ≤ r ≤ n, 1 ≤ c ≤ m; 0 ≤ v < 2^30) indicating that G_{r, c} is assigned the integer v.\n\nIt is guaranteed that the pairs (r,c) over all assignments are distinct.\n\nIt is guaranteed that the sum of n, m, k and q over all test cases does not exceed 10^5 respectively.",
+    "output": "For each test case, output q + 1 lines. The i-th line of output should contain the answer of the i-th state of the grid modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "data structures",
+        "dsu",
+        "graphs",
+        "*2600"
+    ],
+    "rating": 2600
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1419F",
+    "contest_id": 1419,
+    "problem_letter": "F",
+    "title": "F. Rain of Fire",
+    "statement": "There are n detachments on the surface, numbered from 1 to n, the i-th detachment is placed in a point with coordinates (x_i, y_i). All detachments are placed in different points.\n\nBrimstone should visit each detachment at least once. You can choose the detachment where Brimstone starts.\n\nTo move from one detachment to another he should first choose one of four directions of movement (up, right, left or down) and then start moving with the constant speed of one unit interval in a second until he comes to a detachment. After he reaches an arbitrary detachment, he can repeat the same process.\n\nEach t seconds an orbital strike covers the whole surface, so at that moment Brimstone should be in a point where some detachment is located. He can stay with any detachment as long as needed.\n\nBrimstone is a good commander, that's why he can create at most one detachment and place it in any empty point with integer coordinates he wants before his trip. Keep in mind that Brimstone will need to visit this detachment, too.\n\nHelp Brimstone and find such minimal t that it is possible to check each detachment. If there is no such t report about it.\n\nThe first line contains a single integer n (2 ≤ n ≤ 1000) — the number of detachments.\n\nIn each of the next n lines there is a pair of integers x_i, y_i (|x_i|, |y_i| ≤ 10^9) — the coordinates of i-th detachment.\n\nIt is guaranteed that all points are different.\n\nOutput such minimal integer t that it is possible to check all the detachments adding at most one new detachment.\n\nIf there is no such t, print -1.\n\nIn the first test it is possible to place a detachment in (0, 0), so that it is possible to check all the detachments for t = 100. It can be proven that it is impossible to check all detachments for t < 100; thus the answer is 100.\n\nIn the second test, there is no such t that it is possible to check all detachments, even with adding at most one new detachment, so the answer is -1.\n\nIn the third test, it is possible to place a detachment in (1, 0), so that Brimstone can check all the detachments for t = 2. It can be proven that it is the minimal such t.\n\nIn the fourth test, there is no need to add any detachments, because the answer will not get better (t = 2). It can be proven that it is the minimal such t.\n\nInput:\n```\n4\n100 0\n0 100\n-100 0\n0 -100\n```\n\nOutput:\n```\n100\n```\n\nInput:\n```\n7\n0 2\n1 0\n-3 0\n0 -2\n-1 -1\n-1 -3\n-2 -3\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n5\n0 0\n0 -1\n3 0\n-2 0\n-2 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n0 0\n2 0\n0 -1\n-2 0\n-2 1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 1000) — the number of detachments.\n\nIn each of the next n lines there is a pair of integers x_i, y_i (|x_i|, |y_i| ≤ 10^9) — the coordinates of i-th detachment.\n\nIt is guaranteed that all points are different.",
+    "output": "Output such minimal integer t that it is possible to check all the detachments adding at most one new detachment.\n\nIf there is no such t, print -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

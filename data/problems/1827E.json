@@ -1,0 +1,20 @@
+{
+    "id": "1827E",
+    "contest_id": 1827,
+    "problem_letter": "E",
+    "title": "E. Bus Routes",
+    "statement": "There is a country consisting of n cities and n - 1 bidirectional roads connecting them such that we can travel between any two cities using these roads. In other words, these cities and roads form a tree.\n\nThere are m bus routes connecting the cities together. A bus route between city x and city y allows you to travel between any two cities in the simple path between x and y with this route.\n\nDetermine if for every pair of cities u and v, you can travel from u to v using at most two bus routes.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 5·10^5, 0 ≤ m ≤ 5·10^5) — the number of cities and the number of bus routes.\n\nThen n - 1 lines follow. Each line contains two integers u and v denoting a road connecting city u and city v (1 ≤ u, v ≤ n, u ≠ v). It is guaranteed that these cities and roads form a tree.\n\nThen m lines follow. Each line contains two integers x and y denoting a bus route between city x and city y (1 ≤ x, y ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5 and the sum of m over all test cases does not exceed 5·10^5.\n\nFor each test case, output \"YES\" if you can travel between any pair of cities using at most two bus routes.\n\nOtherwise, output \"NO\". In the next line, output two cities x and y (1 ≤ x, y ≤ n) such that it is impossible to reach city y from city x using at most two bus routes.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nHere are the graphs of test case 1, 2, and 4:\n\nInput:\n```\n45 21 22 33 42 51 45 25 11 22 33 42 51 52 01 26 31 22 33 44 55 61 32 54 6\n```\n\nOutput:\n```\nYES\nNO\n1 3\nNO\n1 2\nNO\n1 6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 5·10^5, 0 ≤ m ≤ 5·10^5) — the number of cities and the number of bus routes.\n\nThen n - 1 lines follow. Each line contains two integers u and v denoting a road connecting city u and city v (1 ≤ u, v ≤ n, u ≠ v). It is guaranteed that these cities and roads form a tree.\n\nThen m lines follow. Each line contains two integers x and y denoting a bus route between city x and city y (1 ≤ x, y ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5 and the sum of m over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output \"YES\" if you can travel between any pair of cities using at most two bus routes.\n\nOtherwise, output \"NO\". In the next line, output two cities x and y (1 ≤ x, y ≤ n) such that it is impossible to reach city y from city x using at most two bus routes.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "dfs and similar",
+        "greedy",
+        "trees",
+        "*3400"
+    ],
+    "rating": 3400
+}

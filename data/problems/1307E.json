@@ -1,0 +1,21 @@
+{
+    "id": "1307E",
+    "contest_id": 1307,
+    "problem_letter": "E",
+    "title": "E. Cow and Treats",
+    "statement": "After a successful year of milk production, Farmer John is rewarding his cows with their favorite treat: tasty grass!\n\nOn the field, there is a row of n units of grass, each with a sweetness s_i. Farmer John has m cows, each with a favorite sweetness f_i and a hunger value h_i. He would like to pick two disjoint subsets of cows to line up on the left and right side of the grass row. There is no restriction on how many cows must be on either side. The cows will be treated in the following manner:\n\nNote that grass does not grow back. Also, to prevent cows from getting upset, not every cow has to feed since FJ can choose a subset of them.\n\nSurprisingly, FJ has determined that sleeping cows are the most satisfied. If FJ orders optimally, what is the maximum number of sleeping cows that can result, and how many ways can FJ choose the subset of cows on the left and right side to achieve that maximum number of sleeping cows (modulo 10^9+7)? The order in which FJ sends the cows does not matter as long as no cows get upset.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 5000, 1 ≤ m ≤ 5000) — the number of units of grass and the number of cows.\n\nThe second line contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ n) — the sweetness values of the grass.\n\nThe i-th of the following m lines contains two integers f_i and h_i (1 ≤ f_i, h_i ≤ n) — the favorite sweetness and hunger value of the i-th cow. No two cows have the same hunger and favorite sweetness simultaneously.\n\nOutput two integers — the maximum number of sleeping cows that can result and the number of ways modulo 10^9+7.\n\nIn the first example, FJ can line up the cows as follows to achieve 2 sleeping cows:\n\nIn the second example, FJ can line up the cows as follows to achieve 1 sleeping cow:\n\nIn the third example, FJ can line up the cows as follows to achieve 2 sleeping cows:\n\nIn the fourth example, FJ cannot end up with any sleeping cows, so there will be no cows lined up on either side.\n\nInput:\n```\n5 2\n1 1 1 1 1\n1 2\n1 3\n```\n\nOutput:\n```\n2 2\n```\n\nInput:\n```\n5 2\n1 1 1 1 1\n1 2\n1 4\n```\n\nOutput:\n```\n1 4\n```\n\nInput:\n```\n3 2\n2 3 2\n3 1\n2 1\n```\n\nOutput:\n```\n2 4\n```\n\nInput:\n```\n5 1\n1 1 1 1 1\n2 5\n```\n\nOutput:\n```\n0 1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 5000, 1 ≤ m ≤ 5000) — the number of units of grass and the number of cows.\n\nThe second line contains n integers s_1, s_2, …, s_n (1 ≤ s_i ≤ n) — the sweetness values of the grass.\n\nThe i-th of the following m lines contains two integers f_i and h_i (1 ≤ f_i, h_i ≤ n) — the favorite sweetness and hunger value of the i-th cow. No two cows have the same hunger and favorite sweetness simultaneously.",
+    "output": "Output two integers — the maximum number of sleeping cows that can result and the number of ways modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

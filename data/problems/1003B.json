@@ -3,13 +3,14 @@
     "contest_id": 1003,
     "problem_letter": "B",
     "title": "B. Binary String Constructing",
-    "statement": "You are given three integers a, b and x. Your task is to construct a binary string s of length n = a + b such that there are exactly a zeroes, exactly b ones and exactly x indices i (where 1  i < n) such that s_i  s_{i + 1}. It is guaranteed that the answer always exists.\nFor example, for the string \"01010\" there are four indices i such that 1  i < n and s_i  s_{i + 1} (i = 1, 2, 3, 4). For the string \"111001\" there are two such indices i (i = 3, 5).\nRecall that binary string is a non-empty sequence of characters where each character is either 0 or 1.\nThe first line of the input contains three integers a, b and x (1  a, b  100, 1  x < a + b).\nPrint only one string s, where s is any binary string satisfying conditions described above. It is guaranteed that the answer always exists.\nAll possible answers for the first example: \nAll possible answers for the second example: ",
+    "statement": "You are given three integers a, b and x. Your task is to construct a binary string s of length n = a + b such that there are exactly a zeroes, exactly b ones and exactly x indices i (where 1 ≤ i < n) such that s_i ≠ s_{i + 1}. It is guaranteed that the answer always exists.\n\nFor example, for the string \"01010\" there are four indices i such that 1 ≤ i < n and s_i ≠ s_{i + 1} (i = 1, 2, 3, 4). For the string \"111001\" there are two such indices i (i = 3, 5).\n\nRecall that binary string is a non-empty sequence of characters where each character is either 0 or 1.\n\nThe first line of the input contains three integers a, b and x (1 ≤ a, b ≤ 100, 1 ≤ x < a + b).\n\nPrint only one string s, where s is any binary string satisfying conditions described above. It is guaranteed that the answer always exists.\n\nAll possible answers for the first example:\n\nAll possible answers for the second example:\n\nInput:\n```\n2 2 1\n```\n\nOutput:\n```\n1100\n```\n\nInput:\n```\n3 3 3\n```\n\nOutput:\n```\n101100\n```\n\nInput:\n```\n5 3 6\n```\n\nOutput:\n```\n01010100\n```",
     "input": "The first line of the input contains three integers a, b and x (1 ≤ a, b ≤ 100, 1 ≤ x < a + b).",
-    "output": "Print only one string $$$s$$$, where $$$s$$$ is any binary string satisfying conditions described above. It is guaranteed that the answer always exists.",
+    "output": "Print only one string s, where s is any binary string satisfying conditions described above. It is guaranteed that the answer always exists.",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
         "constructive algorithms",
         "*1300"
-    ]
+    ],
+    "rating": 1300
 }

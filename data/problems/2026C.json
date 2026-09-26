@@ -1,0 +1,21 @@
+{
+    "id": "2026C",
+    "contest_id": 2026,
+    "problem_letter": "C",
+    "title": "C. Action Figures",
+    "statement": "There is a shop that sells action figures near Monocarp's house. A new set of action figures will be released shortly; this set contains n figures, the i-th figure costs i coins and is available for purchase from day i to day n.\n\nFor each of the n days, Monocarp knows whether he can visit the shop.\n\nEvery time Monocarp visits the shop, he can buy any number of action figures which are sold in the shop (of course, he cannot buy an action figure that is not yet available for purchase). If Monocarp buys at least two figures during the same day, he gets a discount equal to the cost of the most expensive figure he buys (in other words, he gets the most expensive of the figures he buys for free).\n\nMonocarp wants to buy exactly one 1-st figure, one 2-nd figure, ..., one n-th figure from the set. He cannot buy the same figure twice. What is the minimum amount of money he has to spend?\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraints on the input:\n\nFor each test case, print one integer — the minimum amount of money Monocarp has to spend.\n\nIn the first test case, Monocarp buys the 1-st figure on the 1-st day and spends 1 coin.\n\nIn the second test case, Monocarp can buy the 1-st and the 3-rd figure on the 3-rd day, the 2-nd and the 4-th figure on the 4-th day, and the 5-th and the 6-th figure on the 6-th day. Then, he will spend 1+2+5=8 coins.\n\nIn the third test case, Monocarp can buy the 2-nd and the 3-rd figure on the 3-rd day, and all other figures on the 7-th day. Then, he will spend 1+2+4+5+6 = 18 coins.\n\nInput:\n```\n411610110171110001511111\n```\n\nOutput:\n```\n1\n8\n18\n6\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraints on the input:",
+    "output": "For each test case, print one integer — the minimum amount of money Monocarp has to spend.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

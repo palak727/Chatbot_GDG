@@ -1,0 +1,19 @@
+{
+    "id": "1955B",
+    "contest_id": 1955,
+    "problem_letter": "B",
+    "title": "B. Progressive Square",
+    "statement": "A progressive square of size n is an n × n matrix. Maxim chooses three integers a_{1,1}, c, and d and constructs a progressive square according to the following rules:\n\na_{i+1,j} = a_{i,j} + c\n\na_{i,j+1} = a_{i,j} + d\n\nFor example, if n = 3, a_{1,1} = 1, c=2, and d=3, then the progressive square looks as follows:\n\nbeginpmatrix 1 & 4 & 7 3 & 6 & 9 5 & 8 & 11 endpmatrix\n\nLast month Maxim constructed a progressive square and remembered the values of n, c, and d. Recently, he found an array b of n^2 integers in random order and wants to make sure that these elements are the elements of that specific square.\n\nIt can be shown that for any values of n, a_{1,1}, c, and d, there exists exactly one progressive square that satisfies all the rules.\n\nThe first line contains an integer t (1 ≤ t ≤ 10 ^ 4) — the number of test cases.\n\nThe first line of each test case contains three integers n, c, and d (2 ≤ n ≤ 500, 1 ≤ c, d ≤ 10^6) — the size of the square and the values of c and d as described in the statement.\n\nThe second line of each test case contains n·n integers b_1, b_2, …, b_{n·n} (1 ≤ b_i ≤ 10^9) — the elements found by Maxim.\n\nIt is guaranteed that the sum of n ^ 2 over all test cases does not exceed 25·10 ^ 4.\n\nFor each test case, output \"YES\" in a separate line if a progressive square for the given n, c, and d can be constructed from the array elements a, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nInput:\n```\n53 2 33 9 6 5 7 1 10 4 83 2 33 9 6 5 7 1 11 4 82 100 100400 300 400 5003 2 33 9 6 6 5 1 11 4 84 4 415 27 7 19 23 23 11 15 7 3 19 23 11 15 11 15\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10 ^ 4) — the number of test cases.\n\nThe first line of each test case contains three integers n, c, and d (2 ≤ n ≤ 500, 1 ≤ c, d ≤ 10^6) — the size of the square and the values of c and d as described in the statement.\n\nThe second line of each test case contains n·n integers b_1, b_2, …, b_{n·n} (1 ≤ b_i ≤ 10^9) — the elements found by Maxim.\n\nIt is guaranteed that the sum of n ^ 2 over all test cases does not exceed 25·10 ^ 4.",
+    "output": "For each test case, output \"YES\" in a separate line if a progressive square for the given n, c, and d can be constructed from the array elements a, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "implementation",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

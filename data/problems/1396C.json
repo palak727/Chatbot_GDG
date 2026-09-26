@@ -1,0 +1,18 @@
+{
+    "id": "1396C",
+    "contest_id": 1396,
+    "problem_letter": "C",
+    "title": "C. Monster Invaders",
+    "statement": "Ziota found a video game called \"Monster Invaders\".\n\nSimilar to every other shooting RPG game, \"Monster Invaders\" involves killing monsters and bosses with guns.\n\nFor the sake of simplicity, we only consider two different types of monsters and three different types of guns.\n\nNamely, the two types of monsters are:\n\nAnd the three types of guns are:\n\nThe guns are initially not loaded, and the Ziota can only reload 1 gun at a time.\n\nThe levels of the game can be considered as an array a_1, a_2, …, a_n, in which the i-th stage has a_i normal monsters and 1 boss. Due to the nature of the game, Ziota cannot use the Pistol (the first type of gun) or AWP (the third type of gun) to shoot the boss before killing all of the a_i normal monsters.\n\nIf Ziota damages the boss but does not kill it immediately, he is forced to move out of the current level to an arbitrary adjacent level (adjacent levels of level i (1 < i < n) are levels i - 1 and i + 1, the only adjacent level of level 1 is level 2, the only adjacent level of level n is level n - 1). Ziota can also choose to move to an adjacent level at any time. Each move between adjacent levels are managed by portals with d teleportation time.\n\nIn order not to disrupt the space-time continuum within the game, it is strictly forbidden to reload or shoot monsters during teleportation.\n\nZiota starts the game at level 1. The objective of the game is rather simple, to kill all the bosses in all the levels. He is curious about the minimum time to finish the game (assuming it takes no time to shoot the monsters with a loaded gun and Ziota has infinite ammo on all the three guns). Please help him find this value.\n\nThe first line of the input contains five integers separated by single spaces: n (2 ≤ n ≤ 10^6) — the number of stages, r_1, r_2, r_3 (1 ≤ r_1 ≤ r_2 ≤ r_3 ≤ 10^9) — the reload time of the three guns respectively, d (1 ≤ d ≤ 10^9) — the time of moving between adjacent levels.\n\nThe second line of the input contains n integers separated by single spaces a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6, 1 ≤ i ≤ n).\n\nPrint one integer, the minimum time to finish the game.\n\nIn the first test case, the optimal strategy is:\n\nNote that here, we do not finish at level n, but when all the bosses are killed.\n\nInput:\n```\n4 1 3 4 3\n3 2 5 1\n```\n\nOutput:\n```\n34\n```\n\nInput:\n```\n4 2 4 4 1\n4 5 1 2\n```\n\nOutput:\n```\n31\n```",
+    "input": "The first line of the input contains five integers separated by single spaces: n (2 ≤ n ≤ 10^6) — the number of stages, r_1, r_2, r_3 (1 ≤ r_1 ≤ r_2 ≤ r_3 ≤ 10^9) — the reload time of the three guns respectively, d (1 ≤ d ≤ 10^9) — the time of moving between adjacent levels.\n\nThe second line of the input contains n integers separated by single spaces a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6, 1 ≤ i ≤ n).",
+    "output": "Print one integer, the minimum time to finish the game.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "*2300"
+    ],
+    "rating": 2300
+}

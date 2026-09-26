@@ -1,0 +1,20 @@
+{
+    "id": "1523C",
+    "contest_id": 1523,
+    "problem_letter": "C",
+    "title": "C. Compression and Expansion",
+    "statement": "William is a huge fan of planning ahead. That is why he starts his morning routine by creating a nested list of upcoming errands.\n\nA valid nested list is any list which can be created from a list with one item \"1\" by applying some operations. Each operation inserts a new item into the list, on a new line, just after one of existing items a_1 ,., a_2 ,., a_3 ,., ,⋯, ,.,a_k and can be one of two types:\n\nWhen William decided to save a Word document with the list of his errands he accidentally hit a completely different keyboard shortcut from the \"Ctrl-S\" he wanted to hit. It's not known exactly what shortcut he pressed but after triggering it all items in the list were replaced by a single number: the last number originally written in the item number.\n\nWilliam wants you to help him restore a fitting original nested list.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^3), which is the number of lines in the list.\n\nEach of the next n lines contains a single integer a_i (1 ≤ a_i ≤ n), which is what remains of William's nested list.\n\nIt is guaranteed that in each test case at least one fitting list exists.\n\nIt is guaranteed that the sum of values n across all test cases does not exceed 10^3.\n\nFor each test case output n lines which represent a valid nested list, which could become the data provided to you by William.\n\nIf there are multiple answers, print any.\n\nIn the second example test case one example of a fitting list is:\n\n1\n\n1.1\n\n1.1.1\n\n1.1.2\n\n1.2\n\n1.2.1\n\n2\n\n2.1\n\n2.2\n\nThis list can be produced by using the sequence of operations shown below:\n\nInput:\n```\n2\n4\n1\n1\n2\n3\n9\n1\n1\n1\n2\n2\n1\n2\n1\n2\n```\n\nOutput:\n```\n1\n1.1\n1.2\n1.3\n1\n1.1\n1.1.1\n1.1.2\n1.2\n1.2.1\n2\n2.1\n2.2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^3), which is the number of lines in the list.\n\nEach of the next n lines contains a single integer a_i (1 ≤ a_i ≤ n), which is what remains of William's nested list.\n\nIt is guaranteed that in each test case at least one fitting list exists.\n\nIt is guaranteed that the sum of values n across all test cases does not exceed 10^3.",
+    "output": "For each test case output n lines which represent a valid nested list, which could become the data provided to you by William.\n\nIf there are multiple answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

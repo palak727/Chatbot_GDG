@@ -1,0 +1,20 @@
+{
+    "id": "1427E",
+    "contest_id": 1427,
+    "problem_letter": "E",
+    "title": "E. Xum",
+    "statement": "You have a blackboard and initially only an odd number x is written on it. Your goal is to write the number 1 on the blackboard.\n\nYou may write new numbers on the blackboard with the following two operations.\n\nThe single line of the input contains the odd integer x (3 ≤ x ≤ 999,999).\n\nPrint on the first line the number q of operations you perform. Then q lines should follow, each describing one operation.\n\nYou can perform at most 100,000 operations (that is, q≤ 100,000) and all numbers written on the blackboard must be in the range [0, 5·10^18]. It can be proven that under such restrictions the required sequence of operations exists. You can output any suitable sequence of operations.\n\nInput:\n```\n3\n```\n\nOutput:\n```\n5\n3 + 3\n3 ^ 6\n3 + 5\n3 + 6\n8 ^ 9\n```\n\nInput:\n```\n123\n```\n\nOutput:\n```\n10\n123 + 123\n123 ^ 246\n141 + 123\n246 + 123\n264 ^ 369\n121 + 246\n367 ^ 369\n30 + 30\n60 + 60\n120 ^ 121\n```",
+    "input": "The single line of the input contains the odd integer x (3 ≤ x ≤ 999,999).",
+    "output": "Print on the first line the number q of operations you perform. Then q lines should follow, each describing one operation.\n\nYou can perform at most 100,000 operations (that is, q≤ 100,000) and all numbers written on the blackboard must be in the range [0, 5·10^18]. It can be proven that under such restrictions the required sequence of operations exists. You can output any suitable sequence of operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "math",
+        "matrices",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

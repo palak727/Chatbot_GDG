@@ -1,0 +1,17 @@
+{
+    "id": "1952C",
+    "contest_id": 1952,
+    "problem_letter": "C",
+    "title": "C. They Have Fooled",
+    "statement": "The first line contains one integer n (0 ≤ n ≤ 12).\n\nOne integer — the answer.\n\nInput:\n```\n0\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n9\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n (0 ≤ n ≤ 12).",
+    "output": "One integer — the answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "brute force",
+        "schedules"
+    ],
+    "rating": null
+}

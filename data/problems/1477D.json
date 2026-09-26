@@ -1,0 +1,18 @@
+{
+    "id": "1477D",
+    "contest_id": 1477,
+    "problem_letter": "D",
+    "title": "D. Nezzar and Hidden Permutations",
+    "statement": "Nezzar designs a brand new game \"Hidden Permutations\" and shares it with his best friend, Nanako.\n\nAt the beginning of the game, Nanako and Nezzar both know integers n and m. The game goes in the following way:\n\nHowever, Nezzar accidentally knows Nanako's unordered pairs and decides to take advantage of them. Please help Nezzar find out two permutations p and q such that the score is maximized.\n\nThe first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases.\n\nThe first line of each test case contains two integers n,m (1 ≤ n ≤ 5·10^5, 0 ≤ m ≤ min((n(n-1))/2,5·10^5)).\n\nThen m lines follow, i-th of them contains two integers l_i,r_i (1 ≤ l_i,r_i ≤ n, l_i ≠ r_i), describing the i-th unordered pair Nanako chooses. It is guaranteed that all m unordered pairs are distinct.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 5·10^5, and the sum of m for all test cases does not exceed 5·10^5.\n\nFor each test case, print two permutations p_1,p_2,…,p_n and q_1,q_2,…,q_n such that the score Nezzar gets is maximized.\n\nFor first test case, for each pair given by Nanako:\n\nAs Nezzar does not lose instantly, Nezzar gains the score of 4 as p_i ≠ q_i for all 1 ≤ i ≤ 4. Obviously, it is the maximum possible score Nezzar can get.\n\nInput:\n```\n3\n4 2\n1 2\n3 4\n6 4\n1 2\n1 3\n3 5\n3 6\n2 1\n1 2\n```\n\nOutput:\n```\n1 2 3 4\n3 4 1 2\n2 3 4 1 6 5\n1 4 3 2 5 6\n1 2\n1 2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 5·10^5) — the number of test cases.\n\nThe first line of each test case contains two integers n,m (1 ≤ n ≤ 5·10^5, 0 ≤ m ≤ min((n(n-1))/2,5·10^5)).\n\nThen m lines follow, i-th of them contains two integers l_i,r_i (1 ≤ l_i,r_i ≤ n, l_i ≠ r_i), describing the i-th unordered pair Nanako chooses. It is guaranteed that all m unordered pairs are distinct.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 5·10^5, and the sum of m for all test cases does not exceed 5·10^5.",
+    "output": "For each test case, print two permutations p_1,p_2,…,p_n and q_1,q_2,…,q_n such that the score Nezzar gets is maximized.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "*2800"
+    ],
+    "rating": 2800
+}

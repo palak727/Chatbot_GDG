@@ -1,0 +1,22 @@
+{
+    "id": "1967C",
+    "contest_id": 1967,
+    "problem_letter": "C",
+    "title": "C. Fenwick Tree",
+    "statement": "Let lowbit(x) denote the value of the lowest binary bit of x, e.g. lowbit(12)=4, lowbit(8)=8.\n\nFor an array a of length n, if an array s of length n satisfies s_k=left(∑limits_{i=k-lowbit(k)+1}^ka_iright)bmod 998,244,353 for all k, then s is called the Fenwick Tree of a. Let's denote it as s=f(a).\n\nFor a positive integer k and an array a, f^k(a) is defined as follows:\n\nf^k(a)= begincases f(a)&ifk=1 f(f^{k-1}(a))&otherwise. endcases\n\nYou are given an array b of length n and a positive integer k. Find an array a that satisfies 0≤ a_i < 998,244,353 and f^k(a)=b. It can be proved that an answer always exists. If there are multiple possible answers, you may print any of them.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and k (1≤ k≤ 10^9), representing the length of the array and the number of times the function f is performed.\n\nThe second line of each test case contains an array b_1, b_2, …, b_n (0≤ b_i < 998,244,353).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single line, containing a valid array a of length n.\n\nIn the first test case, it can be seen that f^1([1,1,1,1,1,1,1,1])=[1,2,1,4,1,2,1,8].\n\nIn the second test case, it can be seen that f^2([1,2,3,4,5,6])=f^1([1,3,3,10,5,11])=[1,4,3,17,5,16].\n\nInput:\n```\n28 11 2 1 4 1 2 1 86 21 4 3 17 5 16\n```\n\nOutput:\n```\n1 1 1 1 1 1 1 1\n1 2 3 4 5 6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and k (1≤ k≤ 10^9), representing the length of the array and the number of times the function f is performed.\n\nThe second line of each test case contains an array b_1, b_2, …, b_n (0≤ b_i < 998,244,353).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single line, containing a valid array a of length n.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "dp",
+        "math",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

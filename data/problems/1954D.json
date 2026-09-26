@@ -1,0 +1,19 @@
+{
+    "id": "1954D",
+    "contest_id": 1954,
+    "problem_letter": "D",
+    "title": "D. Colored Balls",
+    "statement": "There are balls of n different colors; the number of balls of the i-th color is a_i.\n\nThe balls can be combined into groups. Each group should contain at most 2 balls, and no more than 1 ball of each color.\n\nConsider all 2^n sets of colors. For a set of colors, let's denote its value as the minimum number of groups the balls of those colors can be distributed into. For example, if there are three colors with 3, 1 and 7 balls respectively, they can be combined into 7 groups (and not less than 7), so the value of that set of colors is 7.\n\nYour task is to calculate the sum of values over all 2^n possible sets of colors. Since the answer may be too large, print it modulo 998,244,353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5000) — the number of colors.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5000) — the number of balls of the i-th color.\n\nAdditional constraint on input: the total number of balls doesn't exceed 5000.\n\nPrint a single integer — the sum of values of all 2^n sets of colors, taken modulo 998,244,353.\n\nConsider the first example. There are 8 sets of colors:\n\nSo, the sum of values over all 2^n sets of colors is 11.\n\nInput:\n```\n31 1 2\n```\n\nOutput:\n```\n11\n```\n\nInput:\n```\n15\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n41 3 3 7\n```\n\nOutput:\n```\n76\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 5000) — the number of colors.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5000) — the number of balls of the i-th color.\n\nAdditional constraint on input: the total number of balls doesn't exceed 5000.",
+    "output": "Print a single integer — the sum of values of all 2^n sets of colors, taken modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

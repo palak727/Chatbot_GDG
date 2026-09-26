@@ -1,0 +1,20 @@
+{
+    "id": "1736D",
+    "contest_id": 1736,
+    "problem_letter": "D",
+    "title": "D. Equal Binary Subsequences",
+    "statement": "Everool has a binary string s of length 2n. Note that a binary string is a string consisting of only characters 0 and 1. He wants to partition s into two disjoint equal subsequences. He needs your help to do it.\n\nYou are allowed to do the following operation exactly once.\n\nIn other words, you can select a sequence of indices b_1, b_2, …, b_m, where 1 ≤ b_1 < b_2 < … < b_m ≤ 2n. After that you simultaneously set s_b_1 := s_b_m, s_b_2 := s_b_1, …, s_b_m := s_{b_{m-1}}.\n\nCan you partition s into two disjoint equal subsequences after performing the allowed operation exactly once?\n\nA partition of s into two disjoint equal subsequences s^p and s^q is two increasing arrays of indices p_1, p_2, …, p_n and q_1, q_2, …, q_n, such that each integer from 1 to 2n is encountered in either p or q exactly once, s^p = s_p_1 s_p_2 … s_p_n, s^q = s_q_1 s_q_2 … s_q_n, and s^p = s^q.\n\nIf it is not possible to partition after performing any kind of operation, report -1.\n\nIf it is possible to do the operation and partition s into two disjoint subsequences s^p and s^q, such that s^p = s^q, print elements of b and indices of s^p, i. e. the values p_1, p_2, …, p_n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5), where 2n is the length of the binary string.\n\nThe second line of each test case contains the binary string s of length 2n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, follow the following output format.\n\nIf there is no solution, print -1.\n\nOtherwise,\n\nIf there are multiple solutions, print any.\n\nIn the first test case, b is empty. So string s is not changed. Now s^p = s_1 s_2 = mathtt10, and s^q = s_3s_4 = mathtt10.\n\nIn the second test case, b=[3,5]. Initially s_3=mathtt0, and s_5=mathtt1. On performing the operation, we simultaneously set s_3=mathtt1, and s_5=mathtt0.\n\nSo s is updated to 101000 on performing the operation.\n\nNow if we take characters at indices [1,2,5] in s^p, we get s_1=mathtt100. Also characters at indices [3,4,6] are in s^q. Thus s^q=100. We are done as s^p=s^q.\n\nIn fourth test case, it can be proved that it is not possible to partition the string after performing any operation.\n\nInput:\n```\n4\n2\n1010\n3\n100010\n2\n1111\n2\n1110\n```\n\nOutput:\n```\n0\n1 2\n2 3 5\n1 2 5\n3 2 3 4\n1 4\n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5), where 2n is the length of the binary string.\n\nThe second line of each test case contains the binary string s of length 2n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, follow the following output format.\n\nIf there is no solution, print -1.\n\nOtherwise,\n\nIf there are multiple solutions, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "greedy",
+        "implementation",
+        "strings",
+        "*2200"
+    ],
+    "rating": 2200
+}

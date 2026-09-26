@@ -1,0 +1,18 @@
+{
+    "id": "1740G",
+    "contest_id": 1740,
+    "problem_letter": "G",
+    "title": "G. Dangerous Laser Power",
+    "statement": "Pak Chanek has an n × m grid of portals. The portal on the i-th row and j-th column is denoted as portal (i,j). The portals (1,1) and (n,m) are on the north-west and south-east corner of the grid respectively.\n\nThe portal (i,j) has two settings:\n\nWhen a laser enters face k of portal (i, j) with speed x_in, it leaves the portal going out of face (k+2+t_{i,j}) bmod 4 with speed x_out = max(x_in,s_{i,j}). The portal also has to consume x_out - x_in units of energy.\n\nPak Chanek is very bored today. He will shoot 4nm lasers with an initial speed of 1, one into each face of each portal. Each laser will travel throughout this grid of portals until it moves outside the grid or it has passed through 10^100 portals.\n\nAt the end, Pak Chanek thinks that a portal is good if and only if the total energy consumed by that portal modulo 2 is equal to its type. Given the strength settings of all portals, find a way to assign the type settings of each portal such that the number of good portals is maximised.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 1000) — the number of rows and columns in the grid.\n\nThe i-th of the next n lines contains m integers, with the j-th integer being s_{i,j} (1 ≤ s_{i,j} ≤ 10^9) — the strength of portal (i, j).\n\nPrint n lines with each line containing a string of length m consisting of characters 0 or 1 representing the type settings. The j-th character in the i-th string is the type setting of portal (i, j).\n\nIf there are multiple solutions, you can output any of them.\n\nIn the first example, let's consider the laser Pak Chanek shoots into face 1 of portal (2, 2). The laser travels as follows:\n\nThe illustration of the travel of the laser above is as follows.\n\nAs an example, consider portal (2, 3). We can calculate that the total energy consumed by that portal in the end will be 32. Since 32 bmod 2 = 0 and t_{2,3} = 0, then it is a good portal.\n\nInput:\n```\n2 3\n8 8 2\n6 5 7\n```\n\nOutput:\n```\n110\n100\n```\n\nInput:\n```\n1 2\n420 69\n```\n\nOutput:\n```\n10\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 1000) — the number of rows and columns in the grid.\n\nThe i-th of the next n lines contains m integers, with the j-th integer being s_{i,j} (1 ≤ s_{i,j} ≤ 10^9) — the strength of portal (i, j).",
+    "output": "Print n lines with each line containing a string of length m consisting of characters 0 or 1 representing the type settings. The j-th character in the i-th string is the type setting of portal (i, j).\n\nIf there are multiple solutions, you can output any of them.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "sortings",
+        "*3100"
+    ],
+    "rating": 3100
+}

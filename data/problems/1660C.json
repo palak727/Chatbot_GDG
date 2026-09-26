@@ -1,0 +1,18 @@
+{
+    "id": "1660C",
+    "contest_id": 1660,
+    "problem_letter": "C",
+    "title": "C. Get an Even String",
+    "statement": "A string a=a_1a_2… a_n is called even if it consists of a concatenation (joining) of strings of length 2 consisting of the same characters. In other words, a string a is even if two conditions are satisfied at the same time:\n\nFor example, the following strings are even: \"\" (empty string), \"tt\", \"aabb\", \"oooo\", and \"ttrrrroouuuuuuuukk\". The following strings are not even: \"aaa\", \"abab\" and \"abba\".\n\nGiven a string s consisting of lowercase Latin letters. Find the minimum number of characters to remove from the string s to make it even. The deleted characters do not have to be consecutive.\n\nThe first line of input data contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nEach test case consists of one string s (1 ≤ |s| ≤ 2·10^5), where |s| — the length of the string s. The string consists of lowercase Latin letters.\n\nIt is guaranteed that the sum of |s| on all test cases does not exceed 2·10^5.\n\nFor each test case, print a single number — the minimum number of characters that must be removed to make s even.\n\nIn the first test case you can remove the characters with indices 6, 7, and 9 to get an even string \"aabbddcc\".\n\nIn the second test case, each character occurs exactly once, so in order to get an even string, you must remove all characters from the string.\n\nIn the third test case, you can get an even string \"aaaabb\" by removing, for example, 4-th and 6-th characters, or a string \"aabbbb\" by removing the 5-th character and any of the first three.\n\nInput:\n```\n6aabbdabdccczyxaaababbbaabbccoaoaaaoobmefbmuyw\n```\n\nOutput:\n```\n3\n3\n2\n0\n2\n7\n```",
+    "input": "The first line of input data contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nEach test case consists of one string s (1 ≤ |s| ≤ 2·10^5), where |s| — the length of the string s. The string consists of lowercase Latin letters.\n\nIt is guaranteed that the sum of |s| on all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single number — the minimum number of characters that must be removed to make s even.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "strings",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1706D2",
+    "contest_id": 1706,
+    "problem_letter": "D2",
+    "title": "D2. Chopping Carrots (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference between the versions is the constraints on n, k, a_i, and the sum of n over all test cases. You can make hacks only if both versions of the problem are solved.\n\nNote the unusual memory limit.\n\nYou are given an array of integers a_1, a_2, …, a_n of length n, and an integer k.\n\nThe cost of an array of integers p_1, p_2, …, p_n of length n is maxlimits_{1 ≤ i ≤ n}left(left lfloor a_i/p_i right rfloor right) - minlimits_{1 ≤ i ≤ n}left(left lfloor a_i/p_i right rfloor right).\n\nHere, lfloor x/y rfloor denotes the integer part of the division of x by y. Find the minimum cost of an array p such that 1 ≤ p_i ≤ k for all 1 ≤ i ≤ n.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print a single integer — the minimum possible cost of an array p satisfying the condition above.\n\nIn the first test case, the optimal array is p = [1, 1, 1, 2, 2]. The resulting array of values of lfloor a_i/p_i rfloor is [4, 5, 6, 4, 5]. The cost of p is maxlimits_{1 ≤ i ≤ n}(lfloor a_i/p_i rfloor) - minlimits_{1 ≤ i ≤ n}(lfloor a_i/p_i rfloor) = 6 - 4 = 2. We can show that there is no array (satisfying the condition from the statement) with a smaller cost.\n\nIn the second test case, one of the optimal arrays is p = [12, 12, 12, 12, 12], which results in all lfloor a_i/p_i rfloor being 0.\n\nIn the third test case, the only possible array is p = [1, 1, 1].\n\nInput:\n```\n75 24 5 6 8 115 124 5 6 8 113 12 9 157 32 3 5 5 6 9 106 5654 286 527 1436 2450 26813 9516 340 22412 21 3\n```\n\nOutput:\n```\n2\n0\n13\n1\n4\n7\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print a single integer — the minimum possible cost of an array p satisfying the condition above.",
+    "time_limit": "4 seconds",
+    "memory_limit": "64 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "greedy",
+        "math",
+        "number theory",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

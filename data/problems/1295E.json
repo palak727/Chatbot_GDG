@@ -1,0 +1,17 @@
+{
+    "id": "1295E",
+    "contest_id": 1295,
+    "problem_letter": "E",
+    "title": "E. Permutation Separation",
+    "statement": "You are given a permutation p_1, p_2, … , p_n (an array where each integer from 1 to n appears exactly once). The weight of the i-th element of this permutation is a_i.\n\nAt first, you separate your permutation into two non-empty sets — prefix and suffix. More formally, the first set contains elements p_1, p_2, … , p_k, the second — p_{k+1}, p_{k+2}, … , p_n, where 1 ≤ k < n.\n\nAfter that, you may move elements between sets. The operation you are allowed to do is to choose some element of the first set and move it to the second set, or vice versa (move from the second set to the first). You have to pay a_i dollars to move the element p_i.\n\nYour goal is to make it so that each element of the first set is less than each element of the second set. Note that if one of the sets is empty, this condition is met.\n\nFor example, if p = [3, 1, 2] and a = [7, 1, 4], then the optimal strategy is: separate p into two parts [3, 1] and [2] and then move the 2-element into first set (it costs 4). And if p = [3, 5, 1, 6, 2, 4], a = [9, 1, 9, 9, 1, 9], then the optimal strategy is: separate p into two parts [3, 5, 1] and [6, 2, 4], and then move the 2-element into first set (it costs 1), and 5-element into second set (it also costs 1).\n\nCalculate the minimum number of dollars you have to spend.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) — the length of permutation.\n\nThe second line contains n integers p_1, p_2, … , p_n (1 ≤ p_i ≤ n). It's guaranteed that this sequence contains each element from 1 to n exactly once.\n\nThe third line contains n integers a_1, a_2, … , a_n (1 ≤ a_i ≤ 10^9).\n\nPrint one integer — the minimum number of dollars you have to spend.\n\nInput:\n```\n3\n3 1 2\n7 1 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4\n2 4 1 3\n5 9 8 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6\n3 5 1 6 2 4\n9 1 9 9 1 9\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) — the length of permutation.\n\nThe second line contains n integers p_1, p_2, … , p_n (1 ≤ p_i ≤ n). It's guaranteed that this sequence contains each element from 1 to n exactly once.\n\nThe third line contains n integers a_1, a_2, … , a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "Print one integer — the minimum number of dollars you have to spend.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "*2200"
+    ],
+    "rating": 2200
+}

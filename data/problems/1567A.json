@@ -1,0 +1,17 @@
+{
+    "id": "1567A",
+    "contest_id": 1567,
+    "problem_letter": "A",
+    "title": "A. Domino Disaster",
+    "statement": "Alice has a grid with 2 rows and n columns. She fully covers the grid using n dominoes of size 1 × 2 — Alice may place them vertically or horizontally, and each cell should be covered by exactly one domino.\n\nNow, she decided to show one row of the grid to Bob. Help Bob and figure out what the other row of the grid looks like!\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the width of the grid.\n\nThe second line of each test case contains a string s consisting of n characters, each of which is either L, R, U, or D, representing the left, right, top, or bottom half of a domino, respectively (see notes for better understanding). This string represents one of the rows of the grid.\n\nAdditional constraint on the input: each input corresponds to at least one valid tiling.\n\nFor each test case, output one string — the other row of the grid, using the same format as the input string. If there are multiple answers, print any.\n\nIn the first test case, Alice shows Bob the top row, the whole grid may look like:\n\nIn the second test case, Alice shows Bob the bottom row, the whole grid may look like:\n\nIn the third test case, Alice shows Bob the bottom row, the whole grid may look like:\n\nIn the fourth test case, Alice shows Bob the top row, the whole grid may look like:\n\nInput:\n```\n4\n1\nU\n2\nLR\n5\nLRDLR\n6\nUUUUUU\n```\n\nOutput:\n```\nD\nLR\nLRULR\nDDDDDD\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the width of the grid.\n\nThe second line of each test case contains a string s consisting of n characters, each of which is either L, R, U, or D, representing the left, right, top, or bottom half of a domino, respectively (see notes for better understanding). This string represents one of the rows of the grid.\n\nAdditional constraint on the input: each input corresponds to at least one valid tiling.",
+    "output": "For each test case, output one string — the other row of the grid, using the same format as the input string. If there are multiple answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1717D",
+    "contest_id": 1717,
+    "problem_letter": "D",
+    "title": "D. Madoka and The Corruption Scheme",
+    "statement": "Madoka decided to entrust the organization of a major computer game tournament \"OSU\"!\n\nIn this tournament, matches are held according to the \"Olympic system\". In other words, there are 2^n participants in the tournament, numbered with integers from 1 to 2^n. There are n rounds in total in the tournament. In the i-th round there are 2^{n - i} matches between two players (one of whom is right, the other is left), after which the winners go further along the tournament grid, and the losing participants are eliminated from the tournament. Herewith, the relative order in the next round does not change. And the winner of the tournament — is the last remaining participant.\n\nBut the smaller the participant's number, the more he will pay Madoka if he wins, so Madoka wants the participant with the lowest number to win. To do this, she can arrange the participants in the first round as she likes, and also determine for each match who will win — the participant on the left or right.\n\nBut Madoka knows that tournament sponsors can change the winner in matches no more than k times. (That is, if the participant on the left won before the change, then the participant on the right will win after the change, and if the participant on the right won, then the participant on the left will win after the change).\n\nPrint the minimum possible number of the winner in the tournament, which Madoka can get regardless of changes in sponsors. But since the answer can be very large, output it modulo 10^9 + 7. Note that we need to minimize the answer, and only then take it modulo.\n\nThe first and the only line contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ min(2^n - 1, 10^9)) — the number of rounds in the tournament and the number of outcomes that sponsors can change.\n\nPrint exactly one integer — the minimum number of the winner modulo 10^9 + 7\n\nIn the first example, there is only one match between players 1 and 2, so the sponsors can always make player 2 wins.\n\nThe tournament grid from the second example is shown in the picture in the statement.\n\nInput:\n```\n1 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\n7\n```",
+    "input": "The first and the only line contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ min(2^n - 1, 10^9)) — the number of rounds in the tournament and the number of outcomes that sponsors can change.",
+    "output": "Print exactly one integer — the minimum number of the winner modulo 10^9 + 7",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

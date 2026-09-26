@@ -1,0 +1,17 @@
+{
+    "id": "1575G",
+    "contest_id": 1575,
+    "problem_letter": "G",
+    "title": "G. GCD Festival",
+    "statement": "Mr. Chanek has an array a of n integers. The prettiness value of a is denoted as:\n\n∑_{i=1}^n ∑_{j=1}^n gcd(a_i, a_j)·gcd(i, j)\n\nwhere gcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.\n\nIn other words, the prettiness value of an array a is the total sum of gcd(a_i, a_j)·gcd(i, j) for all pairs (i, j).\n\nHelp Mr. Chanek find the prettiness value of a, and output the result modulo 10^9 + 7!\n\nThe first line contains an integer n (2 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nOutput an integer denoting the prettiness value of a modulo 10^9 + 7.\n\nInput:\n```\n5\n3 6 2 1 4\n```\n\nOutput:\n```\n77\n```",
+    "input": "The first line contains an integer n (2 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).",
+    "output": "Output an integer denoting the prettiness value of a modulo 10^9 + 7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

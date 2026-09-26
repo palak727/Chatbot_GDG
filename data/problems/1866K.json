@@ -1,0 +1,22 @@
+{
+    "id": "1866K",
+    "contest_id": 1866,
+    "problem_letter": "K",
+    "title": "K. Keen Tree Calculation",
+    "statement": "There is a tree of N vertices and N-1 edges. The i-th edge connects vertices U_i and V_i and has a length of W_i.\n\nChaneka, the owner of the tree, asks you Q times. For the j-th question, the following is the question format:\n\nNotes:\n\nThe first line contains a single integer N (2≤ N≤10^5) — the number of vertices in the tree.\n\nThe i-th of the next N-1 lines contains three integers U_i, V_i, and W_i (1 ≤ U_i,V_i ≤ N; 1≤ W_i≤10^9) — an edge that connects vertices U_i and V_i with a length of W_i. The edges form a tree.\n\nThe (N+1)-th line contains a single integer Q (1≤ Q≤10^5) — the number of questions.\n\nThe j-th of the next Q lines contains two integers X_j and K_j as described (1 ≤ X_j ≤ N; 1 ≤ K_j ≤ 10^9).\n\nOutput Q lines with an integer in each line. The integer in the j-th line represents the diameter of the tree on the j-th question.\n\nIn the first example, the following is the tree without any changes.\n\nThe following is the tree on the 1-st question.\n\nThe maximum distance is between vertices 6 and 7, which is 6+6+6=18, so the diameter is 18.\n\nThe following is the tree on the 2-nd question.\n\nThe maximum distance is between vertices 2 and 6, which is 3+2+6=11, so the diameter is 11.\n\nInput:\n```\n7\n5 1 2\n1 4 2\n3 4 1\n2 5 3\n6 1 6\n4 7 2\n2\n4 3\n3 2\n```\n\nOutput:\n```\n18\n11\n```\n\nInput:\n```\n3\n1 2 1000000000\n2 3 1000000000\n1\n2 1000000000\n```\n\nOutput:\n```\n2000000000000000000\n```",
+    "input": "The first line contains a single integer N (2≤ N≤10^5) — the number of vertices in the tree.\n\nThe i-th of the next N-1 lines contains three integers U_i, V_i, and W_i (1 ≤ U_i,V_i ≤ N; 1≤ W_i≤10^9) — an edge that connects vertices U_i and V_i with a length of W_i. The edges form a tree.\n\nThe (N+1)-th line contains a single integer Q (1≤ Q≤10^5) — the number of questions.\n\nThe j-th of the next Q lines contains two integers X_j and K_j as described (1 ≤ X_j ≤ N; 1 ≤ K_j ≤ 10^9).",
+    "output": "Output Q lines with an integer in each line. The integer in the j-th line represents the diameter of the tree on the j-th question.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "geometry",
+        "graphs",
+        "implementation",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

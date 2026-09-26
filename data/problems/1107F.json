@@ -1,0 +1,20 @@
+{
+    "id": "1107F",
+    "contest_id": 1107,
+    "problem_letter": "F",
+    "title": "F. Vasya and Endless Credits",
+    "statement": "Vasya wants to buy himself a nice new car. Unfortunately, he lacks some money. Currently he has exactly 0 burles.\n\nHowever, the local bank has n credit offers. Each offer can be described with three numbers a_i, b_i and k_i. Offers are numbered from 1 to n. If Vasya takes the i-th offer, then the bank gives him a_i burles at the beginning of the month and then Vasya pays bank b_i burles at the end of each month for the next k_i months (including the month he activated the offer). Vasya can take the offers any order he wants.\n\nEach month Vasya can take no more than one credit offer. Also each credit offer can not be used more than once. Several credits can be active at the same time. It implies that Vasya pays bank the sum of b_i over all the i of active credits at the end of each month.\n\nVasya wants to buy a car in the middle of some month. He just takes all the money he currently has and buys the car of that exact price.\n\nVasya don't really care what he'll have to pay the bank back after he buys a car. He just goes out of the country on his car so that the bank can't find him anymore.\n\nWhat is the maximum price that car can have?\n\nThe first line contains one integer n (1 ≤ n ≤ 500) — the number of credit offers.\n\nEach of the next n lines contains three integers a_i, b_i and k_i (1 ≤ a_i, b_i, k_i ≤ 10^9).\n\nPrint one integer — the maximum price of the car.\n\nIn the first example, the following sequence of offers taken is optimal: 4 → 3.\n\nThe amount of burles Vasya has changes the following way: 5 → 32 → -86 → .... He takes the money he has in the middle of the second month (32 burles) and buys the car.\n\nThe negative amount of money means that Vasya has to pay the bank that amount of burles.\n\nIn the second example, the following sequence of offers taken is optimal: 3 → 1 → 2.\n\nThe amount of burles Vasya has changes the following way: 0 → 300 → 338 → 1337 → 236 → -866 → ....\n\nInput:\n```\n4\n10 9 2\n20 33 1\n30 115 1\n5 3 2\n```\n\nOutput:\n```\n32\n```\n\nInput:\n```\n3\n40 1 2\n1000 1100 5\n300 2 1\n```\n\nOutput:\n```\n1337\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 500) — the number of credit offers.\n\nEach of the next n lines contains three integers a_i, b_i and k_i (1 ≤ a_i, b_i, k_i ≤ 10^9).",
+    "output": "Print one integer — the maximum price of the car.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "flows",
+        "graph matchings",
+        "graphs",
+        "sortings",
+        "*2600"
+    ],
+    "rating": 2600
+}

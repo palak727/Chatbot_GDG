@@ -1,0 +1,18 @@
+{
+    "id": "1260C",
+    "contest_id": 1260,
+    "problem_letter": "C",
+    "title": "C. Infinite Fence",
+    "statement": "You are a rebel leader and you are planning to start a revolution in your country. But the evil Government found out about your plans and set your punishment in the form of correctional labor.\n\nYou must paint a fence which consists of 10^100 planks in two colors in the following way (suppose planks are numbered from left to right from 0):\n\nFurthermore, the Government added one additional restriction to make your punishment worse. Let's list all painted planks of the fence in ascending order: if there are k consecutive planks with the same color in this list, then the Government will state that you failed the labor and execute you immediately. If you don't paint the fence according to the four aforementioned conditions, you will also be executed.\n\nThe question is: will you be able to accomplish the labor (the time is not important) or the execution is unavoidable and you need to escape at all costs.\n\nThe first line contains single integer T (1 ≤ T ≤ 1000) — the number of test cases.\n\nThe next T lines contain descriptions of test cases — one per line. Each test case contains three integers r, b, k (1 ≤ r, b ≤ 10^9, 2 ≤ k ≤ 10^9) — the corresponding coefficients.\n\nPrint T words — one per line. For each test case print REBEL (case insensitive) if the execution is unavoidable or OBEY (case insensitive) otherwise.\n\nInput:\n```\n4\n1 1 2\n2 10 4\n5 2 3\n3 2 2\n```\n\nOutput:\n```\nOBEY\nREBEL\nOBEY\nOBEY\n```",
+    "input": "The first line contains single integer T (1 ≤ T ≤ 1000) — the number of test cases.\n\nThe next T lines contain descriptions of test cases — one per line. Each test case contains three integers r, b, k (1 ≤ r, b ≤ 10^9, 2 ≤ k ≤ 10^9) — the corresponding coefficients.",
+    "output": "Print T words — one per line. For each test case print REBEL (case insensitive) if the execution is unavoidable or OBEY (case insensitive) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1077E",
+    "contest_id": 1077,
+    "problem_letter": "E",
+    "title": "E. Thematic Contests",
+    "statement": "Polycarp has prepared n competitive programming problems. The topic of the i-th problem is a_i, and some problems' topics may coincide.\n\nPolycarp has to host several thematic contests. All problems in each contest should have the same topic, and all contests should have pairwise distinct topics. He may not use all the problems. It is possible that there are no contests for some topics.\n\nPolycarp wants to host competitions on consecutive days, one contest per day. Polycarp wants to host a set of contests in such a way that:\n\nYour task is to calculate the maximum number of problems in the set of thematic contests. Note, that you should not maximize the number of contests.\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of problems Polycarp has prepared.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) where a_i is the topic of the i-th problem.\n\nPrint one integer — the maximum number of problems in the set of thematic contests.\n\nIn the first example the optimal sequence of contests is: 2 problems of the topic 1, 4 problems of the topic 2, 8 problems of the topic 10.\n\nIn the second example the optimal sequence of contests is: 3 problems of the topic 3, 6 problems of the topic 6.\n\nIn the third example you can take all the problems with the topic 1337 (the number of such problems is 3 so the answer is 3) and host a single contest.\n\nInput:\n```\n18\n2 1 2 10 2 10 10 2 2 1 10 10 10 10 1 1 10 10\n```\n\nOutput:\n```\n14\n```\n\nInput:\n```\n10\n6 6 6 3 6 1000000000 3 3 6 6\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n3\n1337 1337 1337\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of problems Polycarp has prepared.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) where a_i is the topic of the i-th problem.",
+    "output": "Print one integer — the maximum number of problems in the set of thematic contests.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

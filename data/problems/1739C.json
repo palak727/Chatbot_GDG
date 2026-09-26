@@ -1,0 +1,19 @@
+{
+    "id": "1739C",
+    "contest_id": 1739,
+    "problem_letter": "C",
+    "title": "C. Card Game",
+    "statement": "Consider a game with n cards (n is even). Each card has a number written on it, between 1 and n. All numbers on the cards are different. We say that a card with number x is stronger than a card with number y if x > y.\n\nTwo players, Alex and Boris, play this game. In the beginning, each of them receives exactly n/2 cards, so each card belongs to exactly one player. Then, they take turns. Alex goes first, then Boris, then Alex again, and so on.\n\nOn a player's turn, he must play exactly one of his cards. Then, if the opponent doesn't have any cards stronger than the card played, the opponent loses, and the game ends. Otherwise, the opponent has to play a stronger card (exactly one card as well). These two cards are removed from the game, and the turn ends. If there are no cards left, the game ends in a draw; otherwise it's the opponent's turn.\n\nConsider all possible ways to distribute the cards between two players, so that each of them receives exactly half of the cards. You have to calculate three numbers:\n\nYou may assume that both players play optimally (i. e. if a player can win no matter how his opponent plays, he wins). Two ways to distribute the cards are different if there is at least one card such that, in one of these ways, it is given to Alex, and in the other way, it is given to Boris.\n\nFor example, suppose n = 4, Alex receives the cards [2, 3], and Boris receives the cards [1, 4]. Then the game may go as follows:\n\nSo, in this case, the game ends in a draw.\n\nThe first line contains one integer t (1 ≤ t ≤ 30) — the number of test cases.\n\nThen, t lines follow. The i-th line contains one even integer n (2 ≤ n ≤ 60).\n\nFor each test case, print three integers:\n\nSince the answers can be large, print them modulo 998244353.\n\nIn the first test case, Alex wins if he receives the card 2 (he plays it, and Boris cannot respond). If Alex receives the card 1, the game ends in a draw.\n\nIn the second test case:\n\nInput:\n```\n5246860\n```\n\nOutput:\n```\n1 0 1\n3 2 1\n12 7 1\n42 27 1\n341102826 248150916 1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 30) — the number of test cases.\n\nThen, t lines follow. The i-th line contains one even integer n (2 ≤ n ≤ 60).",
+    "output": "For each test case, print three integers:\n\nSince the answers can be large, print them modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "dp",
+        "games",
+        "*1500"
+    ],
+    "rating": 1500
+}

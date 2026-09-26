@@ -1,0 +1,18 @@
+{
+    "id": "1601E",
+    "contest_id": 1601,
+    "problem_letter": "E",
+    "title": "E. Phys Ed Online",
+    "statement": "Students of one unknown college don't have PE courses. That's why q of them decided to visit a gym nearby by themselves. The gym is open for n days and has a ticket system. At the i-th day, the cost of one ticket is equal to a_i. You are free to buy more than one ticket per day.\n\nYou can activate a ticket purchased at day i either at day i or any day later. Each activated ticket is valid only for k days. In other words, if you activate ticket at day t, it will be valid only at days t, t + 1, …, t + k - 1.\n\nYou know that the j-th student wants to visit the gym at each day from l_j to r_j inclusive. Each student will use the following strategy of visiting the gym at any day i (l_j ≤ i ≤ r_j):\n\nNote that each student will visit gym only starting l_j, so each student has to buy at least one ticket at day l_j.\n\nHelp students to calculate the minimum amount of money they have to spend in order to go to the gym.\n\nThe first line contains three integers n, q and k (1 ≤ n, q ≤ 300,000; 1 ≤ k ≤ n) — the number of days, the number of students and the number of days each ticket is still valid.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the cost of one ticket at the corresponding day.\n\nEach of the next q lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the segment of days the corresponding student want to visit the gym.\n\nFor each student, print the minimum possible amount of money they have to spend in order to go to the gym at desired days.\n\nLet's see how each student have to spend their money:\n\nInput:\n```\n7 5 2\n2 15 6 3 7 5 6\n1 2\n3 7\n5 5\n7 7\n3 5\n```\n\nOutput:\n```\n2\n12\n7\n6\n9\n```",
+    "input": "The first line contains three integers n, q and k (1 ≤ n, q ≤ 300,000; 1 ≤ k ≤ n) — the number of days, the number of students and the number of days each ticket is still valid.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the cost of one ticket at the corresponding day.\n\nEach of the next q lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the segment of days the corresponding student want to visit the gym.",
+    "output": "For each student, print the minimum possible amount of money they have to spend in order to go to the gym at desired days.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1450F",
+    "contest_id": 1450,
+    "problem_letter": "F",
+    "title": "F. The Struggling Contestant",
+    "statement": "To help those contestants who struggle a lot in contests, the headquarters of Codeforces are planning to introduce Division 5. In this new division, the tags of all problems will be announced prior to the round to help the contestants.\n\nThe contest consists of n problems, where the tag of the i-th problem is denoted by an integer a_i.\n\nYou want to AK (solve all problems). To do that, you must solve the problems in some order. To make the contest funnier, you created extra limitations on yourself. You do not want to solve two problems consecutively with the same tag since it is boring. Also, you are afraid of big jumps in difficulties while solving them, so you want to minimize the number of times that you solve two problems consecutively that are not adjacent in the contest order.\n\nFormally, your solve order can be described by a permutation p of length n. The cost of a permutation is defined as the number of indices i (1≤ i < n) where |p_{i+1}-p_i| > 1. You have the requirement that a_p_i≠ a_{p_{i+1}} for all 1≤ i < n.\n\nYou want to know the minimum possible cost of permutation that satisfies the requirement. If no permutations meet this requirement, you should report about it.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of problems in the contest.\n\nThe next line contains n integers a_1,a_2,… a_n (1 ≤ a_i ≤ n) — the tags of the problems.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, if there are no permutations that satisfy the required condition, print -1. Otherwise, print the minimum possible cost of a permutation that satisfies the required condition.\n\nIn the first test case, let p=[5, 4, 3, 2, 1, 6]. The cost is 1 because we jump from p_5=1 to p_6=6, and |6-1| > 1. This permutation is valid because we don't solve problems with the same tag twice in a row. We cannot find a permutation with a cost smaller than 1.\n\nIn the second test case, let p=[1,5,2,4,3]. The cost is 3 because |p_2-p_1| > 1, |p_3-p_2| > 1, and |p_4-p_3| > 1. The permutation is valid because we don't solve problems with the same tag twice in a row. We cannot find a permutation with a cost smaller than 3.\n\nIn the third test case, for any order of solving the problems, we will solve two problems with the same tag consecutively, so the answer is -1.\n\nInput:\n```\n4\n6\n2 1 2 3 1 1\n5\n1 1 1 2 2\n8\n7 7 2 7 7 1 8 7\n10\n1 2 3 4 1 1 2 3 4 1\n```\n\nOutput:\n```\n1\n3\n-1\n2\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of problems in the contest.\n\nThe next line contains n integers a_1,a_2,… a_n (1 ≤ a_i ≤ n) — the tags of the problems.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, if there are no permutations that satisfy the required condition, print -1. Otherwise, print the minimum possible cost of a permutation that satisfies the required condition.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*2400"
+    ],
+    "rating": 2400
+}

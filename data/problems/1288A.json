@@ -1,0 +1,19 @@
+{
+    "id": "1288A",
+    "contest_id": 1288,
+    "problem_letter": "A",
+    "title": "A. Deadline",
+    "statement": "Adilbek was assigned to a special project. For Adilbek it means that he has n days to run a special program and provide its results. But there is a problem: the program needs to run for d days to calculate the results.\n\nFortunately, Adilbek can optimize the program. If he spends x (x is a non-negative integer) days optimizing the program, he will make the program run in leftlceil d/(x + 1) rightrceil days (leftlceil a rightrceil is the ceiling function: leftlceil 2.4 rightrceil = 3, leftlceil 2 rightrceil = 2). The program cannot be run and optimized simultaneously, so the total number of days he will spend is equal to x + leftlceil d/(x + 1) rightrceil.\n\nWill Adilbek be able to provide the generated results in no more than n days?\n\nThe first line contains a single integer T (1 ≤ T ≤ 50) — the number of test cases.\n\nThe next T lines contain test cases – one per line. Each line contains two integers n and d (1 ≤ n ≤ 10^9, 1 ≤ d ≤ 10^9) — the number of days before the deadline and the number of days the program runs.\n\nPrint T answers — one per test case. For each test case print YES (case insensitive) if Adilbek can fit in n days or NO (case insensitive) otherwise.\n\nIn the first test case, Adilbek decides not to optimize the program at all, since d ≤ n.\n\nIn the second test case, Adilbek can spend 1 day optimizing the program and it will run leftlceil 5/2 rightrceil = 3 days. In total, he will spend 4 days and will fit in the limit.\n\nIn the third test case, it's impossible to fit in the limit. For example, if Adilbek will optimize the program 2 days, it'll still work leftlceil 11/(2+1) rightrceil = 4 days.\n\nInput:\n```\n3\n1 1\n4 5\n5 11\n```\n\nOutput:\n```\nYES\nYES\nNO\n```",
+    "input": "The first line contains a single integer T (1 ≤ T ≤ 50) — the number of test cases.\n\nThe next T lines contain test cases – one per line. Each line contains two integers n and d (1 ≤ n ≤ 10^9, 1 ≤ d ≤ 10^9) — the number of days before the deadline and the number of days the program runs.",
+    "output": "Print T answers — one per test case. For each test case print YES (case insensitive) if Adilbek can fit in n days or NO (case insensitive) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "ternary search",
+        "*1100"
+    ],
+    "rating": 1100
+}

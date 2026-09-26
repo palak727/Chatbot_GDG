@@ -1,0 +1,16 @@
+{
+    "id": "1572F",
+    "contest_id": 1572,
+    "problem_letter": "F",
+    "title": "F. Stations",
+    "statement": "There are n cities in a row numbered from 1 to n.\n\nThe cities will be building broadcasting stations. The station in the i-th city has height h_i and range w_i. It can broadcast information to city j if the following constraints are met:\n\nAt the beginning, for every city i, h_i = 0 and w_i = i.\n\nThen q events will take place. During i-th event one of the following will happen:\n\nYour task is to react to all events and print answers to all queries.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — number of cities and number of events.\n\nThen q lines follow. The i-th line begins with an integer p_i (p_i = 1 or p_i = 2).\n\nIf p_i = 1 a station will be rebuilt. Then two integers c_i and g_i (1 ≤ c_i ≤ g_i ≤ n) follow — the city in which the station is rebuilt and its new broadcasting range.\n\nIf p_i = 2 you are given a query. Then two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) follow — the range of cities in the query.\n\nFor each query, print in a single line the sum of b_j over the given interval.\n\nIn the first test case, only station 1 reaches city 1 before and after it is rebuilt.\n\nIn the second test case, after each rebuild, the array b looks as follows:\n\nInput:\n```\n1 3\n2 1 1\n1 1 1\n2 1 1\n```\n\nOutput:\n```\n1\n1\n```\n\nInput:\n```\n5 10\n1 3 4\n2 3 5\n1 1 5\n2 1 5\n1 4 5\n2 2 4\n1 2 3\n2 1 3\n1 5 5\n2 2 5\n```\n\nOutput:\n```\n4\n10\n5\n4\n5\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — number of cities and number of events.\n\nThen q lines follow. The i-th line begins with an integer p_i (p_i = 1 or p_i = 2).\n\nIf p_i = 1 a station will be rebuilt. Then two integers c_i and g_i (1 ≤ c_i ≤ g_i ≤ n) follow — the city in which the station is rebuilt and its new broadcasting range.\n\nIf p_i = 2 you are given a query. Then two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) follow — the range of cities in the query.",
+    "output": "For each query, print in a single line the sum of b_j over the given interval.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*3400"
+    ],
+    "rating": 3400
+}

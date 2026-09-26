@@ -1,0 +1,19 @@
+{
+    "id": "1617A",
+    "contest_id": 1617,
+    "problem_letter": "A",
+    "title": "A. Forbidden Subsequence",
+    "statement": "You are given strings S and T, consisting of lowercase English letters. It is guaranteed that T is a permutation of the string abc.\n\nFind string S', the lexicographically smallest permutation of S such that T is not a subsequence of S'.\n\nString a is a permutation of string b if the number of occurrences of each distinct character is the same in both strings.\n\nA string a is a subsequence of a string b if a can be obtained from b by deletion of several (possibly, zero or all) elements.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a string S (1 ≤ |S| ≤ 100), consisting of lowercase English letters.\n\nThe second line of each test case contains a string T that is a permutation of the string abc. (Hence, |T| = 3).\n\nNote that there is no limit on the sum of |S| across all test cases.\n\nFor each test case, output a single string S', the lexicographically smallest permutation of S such that T is not a subsequence of S'.\n\nIn the first test case, both aaaabbc and aaaabcb are lexicographically smaller than aaaacbb, but they contain abc as a subsequence.\n\nIn the second test case, abccc is the smallest permutation of cccba and does not contain acb as a subsequence.\n\nIn the third test case, bcdis is the smallest permutation of dbsic and does not contain bac as a subsequence.\n\nInput:\n```\n7\nabacaba\nabc\ncccba\nacb\ndbsic\nbac\nabracadabra\nabc\ndddddddddddd\ncba\nbbc\nabc\nac\nabc\n```\n\nOutput:\n```\naaaacbb\nabccc\nbcdis\naaaaacbbdrr\ndddddddddddd\nbbc\nac\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a string S (1 ≤ |S| ≤ 100), consisting of lowercase English letters.\n\nThe second line of each test case contains a string T that is a permutation of the string abc. (Hence, |T| = 3).\n\nNote that there is no limit on the sum of |S| across all test cases.",
+    "output": "For each test case, output a single string S', the lexicographically smallest permutation of S such that T is not a subsequence of S'.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

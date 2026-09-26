@@ -3,7 +3,7 @@
     "contest_id": 1002,
     "problem_letter": "A3",
     "title": "A3. Generate superposition of two basis states",
-    "statement": "You are given N qubits ( 1 ≤ N ≤ 8 ) in zero state . You are also given two bitstrings bits 0 and bits 1 which describe two different basis states on N qubits and .\n\nYour task is to generate a state which is an equal superposition of the given basis states:\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:",
+    "statement": "You are given N qubits (1 ≤ N ≤ 8) in zero state . You are also given two bitstrings bits0 and bits1 which describe two different basis states on N qubits and .\n\nYour task is to generate a state which is an equal superposition of the given basis states:\n\nYou have to implement an operation which takes the following inputs:\n\nThe operation doesn't have an output; its \"output\" is the state in which it leaves the qubits.\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[], bits0 : Bool[], bits1 : Bool[]) : ()\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "input": "",
     "output": "",
     "time_limit": "1 second",

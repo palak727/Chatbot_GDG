@@ -1,0 +1,18 @@
+{
+    "id": "1091D",
+    "contest_id": 1091,
+    "problem_letter": "D",
+    "title": "D. New Year and the Permutation Concatenation",
+    "statement": "Let n be an integer. Consider all permutations on integers 1 to n in lexicographic order, and concatenate them into one big sequence p. For example, if n = 3, then p = [1, 2, 3, 1, 3, 2, 2, 1, 3, 2, 3, 1, 3, 1, 2, 3, 2, 1]. The length of this sequence will be n·n!.\n\nLet 1 ≤ i ≤ j ≤ n·n! be a pair of indices. We call the sequence (p_i, p_{i+1}, …, p_{j-1}, p_j) a subarray of p. Its length is defined as the number of its elements, i.e., j - i + 1. Its sum is the sum of all its elements, i.e., ∑_{k=i}^j p_k.\n\nYou are given n. Find the number of subarrays of p of length n having sum (n(n+1))/2. Since this number may be large, output it modulo 998244353 (a prime number).\n\nThe only line contains one integer n (1 ≤ n ≤ 10^6), as described in the problem statement.\n\nOutput a single integer — the number of subarrays of length n having sum (n(n+1))/2, modulo 998244353.\n\nIn the first sample, there are 16 subarrays of length 3. In order of appearance, they are:\n\n[1, 2, 3], [2, 3, 1], [3, 1, 3], [1, 3, 2], [3, 2, 2], [2, 2, 1], [2, 1, 3], [1, 3, 2], [3, 2, 3], [2, 3, 1], [3, 1, 3], [1, 3, 1], [3, 1, 2], [1, 2, 3], [2, 3, 2], [3, 2, 1].\n\nTheir sums are 6, 6, 7, 6, 7, 5, 6, 6, 8, 6, 7, 5, 6, 6, 7, 6. As (n(n+1))/2 = 6, the answer is 9.\n\nInput:\n```\n3\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n56\n```\n\nInput:\n```\n10\n```\n\nOutput:\n```\n30052700\n```",
+    "input": "The only line contains one integer n (1 ≤ n ≤ 10^6), as described in the problem statement.",
+    "output": "Output a single integer — the number of subarrays of length n having sum (n(n+1))/2, modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

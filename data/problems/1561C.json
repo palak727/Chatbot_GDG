@@ -1,0 +1,18 @@
+{
+    "id": "1561C",
+    "contest_id": 1561,
+    "problem_letter": "C",
+    "title": "C. Deep Down Below",
+    "statement": "In a certain video game, the player controls a hero characterized by a single integer value: power. The hero will have to beat monsters that are also characterized by a single integer value: armor.\n\nOn the current level, the hero is facing n caves. To pass the level, the hero must enter all the caves in some order, each cave exactly once, and exit every cave safe and sound. When the hero enters cave i, he will have to fight k_i monsters in a row: first a monster with armor a_{i, 1}, then a monster with armor a_{i, 2} and so on, finally, a monster with armor a_{i, k_i}.\n\nThe hero can beat a monster if and only if the hero's power is strictly greater than the monster's armor. If the hero can't beat the monster he's fighting, the game ends and the player loses. Note that once the hero enters a cave, he can't exit it before he fights all the monsters in it, strictly in the given order.\n\nEach time the hero beats a monster, the hero's power increases by 1.\n\nFind the smallest possible power the hero must start the level with to be able to enter all the caves in some order and beat all the monsters.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of caves.\n\nThe i-th of the next n lines contains an integer k_i (1 ≤ k_i ≤ 10^5) — the number of monsters in the i-th cave, followed by k_i integers a_{i, 1}, a_{i, 2}, …, a_{i, k_i} (1 ≤ a_{i, j} ≤ 10^9) — armor levels of the monsters in cave i in order the hero has to fight them.\n\nIt is guaranteed that the sum of k_i over all test cases does not exceed 10^5.\n\nFor each test case print a single integer — the smallest possible power the hero must start the level with to be able to enter all the caves in some order and beat all the monsters.\n\nIn the first test case, the hero has to beat a single monster with armor 42, it's enough to have power 43 to achieve that.\n\nIn the second test case, the hero can pass the level with initial power 13 as follows:\n\nInput:\n```\n2\n1\n1 42\n2\n3 10 15 8\n2 12 11\n```\n\nOutput:\n```\n43\n13\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of caves.\n\nThe i-th of the next n lines contains an integer k_i (1 ≤ k_i ≤ 10^5) — the number of monsters in the i-th cave, followed by k_i integers a_{i, 1}, a_{i, 2}, …, a_{i, k_i} (1 ≤ a_{i, j} ≤ 10^9) — armor levels of the monsters in cave i in order the hero has to fight them.\n\nIt is guaranteed that the sum of k_i over all test cases does not exceed 10^5.",
+    "output": "For each test case print a single integer — the smallest possible power the hero must start the level with to be able to enter all the caves in some order and beat all the monsters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

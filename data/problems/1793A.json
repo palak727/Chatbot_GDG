@@ -1,0 +1,17 @@
+{
+    "id": "1793A",
+    "contest_id": 1793,
+    "problem_letter": "A",
+    "title": "A. Yet Another Promotion",
+    "statement": "The famous store \"Second Food\" sells groceries only two days a month. And the prices in each of days differ. You wanted to buy n kilos of potatoes for a month. You know that on the first day of the month 1 kilo of potatoes costs a coins, and on the second day b coins. In \"Second Food\" you can buy any integer kilograms of potatoes.\n\nFortunately, \"Second Food\" has announced a promotion for potatoes, which is valid only on the first day of the month — for each m kilos of potatoes you buy, you get 1 kilo as a gift! In other words, you can get m + 1 kilograms by paying for m kilograms.\n\nFind the minimum number of coins that you have to spend to buy at least n kilos of potatoes.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the prices of 1 kilo of potatoes on the first and second days, respectively.\n\nThe second line contains two integers n and m (1 ≤ n, m ≤ 10^9) — the required amount of potatoes to buy and the amount of potatoes to use the promotion.\n\nFor each test case print one integer — the minimum number of coins that you have to pay to buy at least n kilos of potatoes.\n\nIn the first test case, on the first day you buy 1 kilo and get 1 more for a promotion. On the second day, you can buy 1 kilo of potatoes. Thus, you will spend 5+4=9 coins in total.\n\nIn the second test case, on the first day you buy 2 kilo and get another 1 more for a promotion. This way you will spend 2·5 = 10 coins.\n\nInput:\n```\n55 43 15 43 23 43 520 1510 21000000000 9000000001000000000 8\n```\n\nOutput:\n```\n9\n10\n9\n135\n888888888900000000\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the prices of 1 kilo of potatoes on the first and second days, respectively.\n\nThe second line contains two integers n and m (1 ≤ n, m ≤ 10^9) — the required amount of potatoes to buy and the amount of potatoes to use the promotion.",
+    "output": "For each test case print one integer — the minimum number of coins that you have to pay to buy at least n kilos of potatoes.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

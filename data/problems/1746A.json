@@ -1,0 +1,17 @@
+{
+    "id": "1746A",
+    "contest_id": 1746,
+    "problem_letter": "A",
+    "title": "A. Maxmina",
+    "statement": "You have an array a of size n consisting only of zeroes and ones and an integer k. In one operation you can do one of the following:\n\nDetermine if it's possible to turn a into [1] after several (possibly zero) operations.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 50), the size of array a and the length of segments that you can perform second type operation on.\n\nThe second line contains n integers a_1, a_2, …, a_n (a_i is 0 or 1), elements of array a.\n\nFor each test case, if it is possible to turn a into [1], print \"YES\", otherwise print \"NO\".\n\nIn the first test case, you can perform the second type operation on second and third elements so a becomes [0, 1], then you can perform the second type operation on first and second elements, so a turns to [1].\n\nIn the fourth test case, it's obvious to see that you can't make any 1, no matter what you do.\n\nIn the fifth test case, you can first perform a type 2 operation on the first three elements so that a becomes [1, 0, 0, 1], then perform a type 2 operation on the elements in positions two through four, so that a becomes [1, 1], and finally perform the first type operation on the remaining elements, so that a becomes [1].\n\nInput:\n```\n73 20 1 05 31 0 1 1 02 21 14 40 0 0 06 30 0 1 0 0 17 51 1 1 1 1 1 15 30 0 1 0 0\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nYES\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (2 ≤ k ≤ n ≤ 50), the size of array a and the length of segments that you can perform second type operation on.\n\nThe second line contains n integers a_1, a_2, …, a_n (a_i is 0 or 1), elements of array a.",
+    "output": "For each test case, if it is possible to turn a into [1], print \"YES\", otherwise print \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

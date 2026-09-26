@@ -1,0 +1,21 @@
+{
+    "id": "1849E",
+    "contest_id": 1849,
+    "problem_letter": "E",
+    "title": "E. Max to the Right of Min",
+    "statement": "You are given a permutation p of length n — an array, consisting of integers from 1 to n, all distinct.\n\nLet p_{l,r} denote a subarray — an array formed by writing down elements from index l to index r, inclusive.\n\nLet maxpos_{l,r} denote the index of the maximum element on p_{l,r}. Similarly, let minpos_{l,r} denote the index of the minimum element on it.\n\nCalculate the number of subarrays p_{l,r} such that maxpos_{l,r} > minpos_{l,r}.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of elements in the permutation.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). All p_i are distinct.\n\nPrint a single integer — the number of subarrays p_{l,r} such that maxpos_{l,r} > minpos_{l,r}.\n\nInput:\n```\n3\n1 2 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6\n5 3 6 1 4 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n10\n5 1 6 2 8 3 4 10 9 7\n```\n\nOutput:\n```\n38\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of elements in the permutation.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). All p_i are distinct.",
+    "output": "Print a single integer — the number of subarrays p_{l,r} such that maxpos_{l,r} > minpos_{l,r}.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "dsu",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

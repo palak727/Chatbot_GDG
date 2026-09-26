@@ -1,0 +1,19 @@
+{
+    "id": "1616F",
+    "contest_id": 1616,
+    "problem_letter": "F",
+    "title": "F. Tricolor Triangles",
+    "statement": "You are given a simple undirected graph with n vertices and m edges. Edge i is colored in the color c_i, which is either 1, 2, or 3, or left uncolored (in this case, c_i = -1).\n\nYou need to color all of the uncolored edges in such a way that for any three pairwise adjacent vertices 1 ≤ a < b < c ≤ n, the colors of the edges a ↔ b, b ↔ c, and a ↔ c are either pairwise different, or all equal. In case no such coloring exists, you need to determine that.\n\nThe first line of input contains one integer t (1 ≤ t ≤ 10): the number of test cases.\n\nThe following lines contain the description of the test cases.\n\nIn the first line you are given two integers n and m (3 ≤ n ≤ 64, 0 ≤ m ≤ min(256, (n(n-1))/2)): the number of vertices and edges in the graph.\n\nEach of the next m lines contains three integers a_i, b_i, and c_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i, c_i is either -1, 1, 2, or 3), denoting an edge between a_i and b_i with color c_i. It is guaranteed that no two edges share the same endpoints.\n\nFor each test case, print m integers d_1, d_2, …, d_m, where d_i is the color of the i-th edge in your final coloring. If there is no valid way to finish the coloring, print -1.\n\nInput:\n```\n4\n3 3\n1 2 1\n2 3 2\n3 1 -1\n3 3\n1 2 1\n2 3 1\n3 1 -1\n4 4\n1 2 -1\n2 3 -1\n3 4 -1\n4 1 -1\n3 3\n1 2 1\n2 3 1\n3 1 2\n```\n\nOutput:\n```\n1 2 3 \n1 1 1 \n1 2 2 3 \n-1\n```",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 10): the number of test cases.\n\nThe following lines contain the description of the test cases.\n\nIn the first line you are given two integers n and m (3 ≤ n ≤ 64, 0 ≤ m ≤ min(256, (n(n-1))/2)): the number of vertices and edges in the graph.\n\nEach of the next m lines contains three integers a_i, b_i, and c_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i, c_i is either -1, 1, 2, or 3), denoting an edge between a_i and b_i with color c_i. It is guaranteed that no two edges share the same endpoints.",
+    "output": "For each test case, print m integers d_1, d_2, …, d_m, where d_i is the color of the i-th edge in your final coloring. If there is no valid way to finish the coloring, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "graphs",
+        "math",
+        "matrices",
+        "*2900"
+    ],
+    "rating": 2900
+}

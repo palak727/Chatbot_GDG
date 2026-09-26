@@ -1,0 +1,21 @@
+{
+    "id": "2025F",
+    "contest_id": 2025,
+    "problem_letter": "F",
+    "title": "F. Choose Your Queries",
+    "statement": "You are given an array a, consisting of n integers (numbered from 1 to n). Initially, they are all zeroes.\n\nYou have to process q queries. The i-th query consists of two different integers x_i and y_i. During the i-th query, you have to choose an integer p (which is either x_i or y_i) and an integer d (which is either 1 or -1), and assign a_p = a_p + d.\n\nAfter each query, every element of a should be a non-negative integer.\n\nProcess all queries in such a way that the sum of all elements of a after the last query is the minimum possible.\n\nThe first line contains two integers n and q (2 ≤ n ≤ 3·10^5; 1 ≤ q ≤ 3·10^5) — the number of elements in a and the number of queries, respectively.\n\nThen q lines follow. The i-th of these lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i) — the description of the i-th query.\n\nFor each query, print a line containing two characters:\n\nIf there are multiple answers, print any of them.\n\nInput:\n```\n3 41 23 23 11 2\n```\n\nOutput:\n```\ny+\nx+\nx-\ny-\n```\n\nInput:\n```\n4 41 22 33 43 2\n```\n\nOutput:\n```\ny+\ny+\nx-\ny-\n```\n\nInput:\n```\n4 22 14 3\n```\n\nOutput:\n```\ny+\nx+\n```",
+    "input": "The first line contains two integers n and q (2 ≤ n ≤ 3·10^5; 1 ≤ q ≤ 3·10^5) — the number of elements in a and the number of queries, respectively.\n\nThen q lines follow. The i-th of these lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n; x_i ≠ y_i) — the description of the i-th query.",
+    "output": "For each query, print a line containing two characters:\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1335F",
+    "contest_id": 1335,
+    "problem_letter": "F",
+    "title": "F. Robots on a Grid",
+    "statement": "There is a rectangular grid of size n × m. Each cell of the grid is colored black ('0') or white ('1'). The color of the cell (i, j) is c_{i, j}. You are also given a map of directions: for each cell, there is a direction s_{i, j} which is one of the four characters 'U', 'R', 'D' and 'L'.\n\nIt is guaranteed that the top row doesn't contain characters 'U', the bottom row doesn't contain characters 'D', the leftmost column doesn't contain characters 'L' and the rightmost column doesn't contain characters 'R'.\n\nYou want to place some robots in this field (at most one robot in a cell). The following conditions should be satisfied.\n\nThe robots make an infinite number of moves.\n\nYour task is to place the maximum number of robots to satisfy all the conditions described above and among all such ways, you have to choose one where the number of black cells occupied by robots before all movements is the maximum possible. Note that you can place robots only before all movements.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains two integers n and m (1 < nm ≤ 10^6) — the number of rows and the number of columns correspondingly.\n\nThe next n lines contain m characters each, where the j-th character of the i-th line is c_{i, j} (c_{i, j} is either '0' if the cell (i, j) is black or '1' if the cell (i, j) is white).\n\nThe next n lines also contain m characters each, where the j-th character of the i-th line is s_{i, j} (s_{i, j} is 'U', 'R', 'D' or 'L' and describes the direction of the cell (i, j)).\n\nIt is guaranteed that the sum of the sizes of fields does not exceed 10^6 (∑ nm ≤ 10^6).\n\nFor each test case, print two integers — the maximum number of robots you can place to satisfy all the conditions described in the problem statement and the maximum number of black cells occupied by robots before all movements if the number of robots placed is maximized. Note that you can place robots only before all movements.\n\nInput:\n```\n3\n1 2\n01\nRL\n3 3\n001\n101\n110\nRLL\nDLD\nULL\n3 3\n000\n000\n000\nRRD\nRLD\nULL\n```\n\nOutput:\n```\n2 1\n4 3\n2 2\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains two integers n and m (1 < nm ≤ 10^6) — the number of rows and the number of columns correspondingly.\n\nThe next n lines contain m characters each, where the j-th character of the i-th line is c_{i, j} (c_{i, j} is either '0' if the cell (i, j) is black or '1' if the cell (i, j) is white).\n\nThe next n lines also contain m characters each, where the j-th character of the i-th line is s_{i, j} (s_{i, j} is 'U', 'R', 'D' or 'L' and describes the direction of the cell (i, j)).\n\nIt is guaranteed that the sum of the sizes of fields does not exceed 10^6 (∑ nm ≤ 10^6).",
+    "output": "For each test case, print two integers — the maximum number of robots you can place to satisfy all the conditions described in the problem statement and the maximum number of black cells occupied by robots before all movements if the number of robots placed is maximized. Note that you can place robots only before all movements.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "matrices",
+        "*2200"
+    ],
+    "rating": 2200
+}

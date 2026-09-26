@@ -1,0 +1,21 @@
+{
+    "id": "2049E",
+    "contest_id": 2049,
+    "problem_letter": "E",
+    "title": "E. Broken Queries",
+    "statement": "You, a wizard whose creation was destroyed by a dragon, are determined to hunt it down with a magical AOE tracker. But it seems to be toyed with...\n\nThis is an interactive problem.\n\nThere is a hidden binary array a of length n (n is a power of 2) and a hidden integer k (2 ≤ k ≤ n - 1). The array a contains exactly one 1 (and all other elements are 0). For two integers l and r (1 ≤ l ≤ r ≤ n), define the range sum s(l, r) = a_l + a_{l+1} + ⋯ + a_r.\n\nYou have a magical device that takes ranges and returns range sums, but it returns the opposite result when the range has length at least k. Formally, in one query, you can give it a pair of integers [l, r] where 1 ≤ l ≤ r ≤ n, and it will return either 0 or 1 according to the following rules:\n\nFind k using at most 33 queries.\n\nThe device is not adaptive. It means that the hidden a and k are fixed before the interaction and will not change during the interaction.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains one positive integer n (4 ≤ n ≤ 2^30) — the length of the hidden array. It is guaranteed that n is a power of 2; that is, n = 2^m for some non-negative integer m.\n\nYou can make queries in the following way — print one line of the form \"mathtt?,l,r\" where 1 ≤ l ≤ r ≤ n. After that, read a single integer: 0 or 1, as described in the statement.\n\nIf you want to print the answer k, output \"mathtt!,k\". Then, the interaction continues with the next test case.\n\nPrinting the answer does not count towards the number of queries made.\n\nAfter printing each query do not forget to output the end of line and flush^{∗} the output. Otherwise, you will get Idleness limit exceeded verdict.\n\nIf, at any interaction step, you read -1 instead of valid data, your solution must exit immediately. This means that your solution will receive Wrong answer because of an invalid query or any other mistake. Failing to exit can result in an arbitrary verdict because your solution will continue to read from a closed stream.\n\nHacks\n\nThe format of the hacks should be the following: the first line should contain one integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases should follow.\n\nThe first and only line of each test case should contain three integers n, p, and k (4 ≤ n ≤ 2^30, 1 ≤ p ≤ n, 2 ≤ k ≤ n - 1) — the length of the hidden array a, the position of the only 1 in a, and the hidden k. n must be a power of 2.\n\n^{∗}To flush, use:\n\nIn the first test case, k = 6 and the 1 in the hidden array is at index 6, so a = [0, 0, 0, 0, 0, 1, 0, 0].\n\nIn the second test case, k = 2 and the 1 in the hidden array is at index 3, so a = [0, 0, 1, 0].\n\nNote that the example solution may not have enough information to determine k above; this is only an example.\n\nInput:\n```\n2\n8\n\n0\n\n0\n\n1\n\n0\n\n4\n\n1\n\n0\n```\n\nOutput:\n```\n? 3 5\n\n? 1 8\n\n? 4 8\n\n? 3 8\n\n! 6\n\n? 3 3\n\n? 3 4\n\n! 2\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "*2400"
+    ],
+    "rating": 2400
+}

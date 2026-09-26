@@ -1,0 +1,17 @@
+{
+    "id": "1504A",
+    "contest_id": 1504,
+    "problem_letter": "A",
+    "title": "A.  Déjà Vu",
+    "statement": "A palindrome is a string that reads the same backward as forward. For example, the strings \"z\", \"aaa\", \"aba\", and \"abccba\" are palindromes, but \"codeforces\" and \"ab\" are not. You hate palindromes because they give you déjà vu.\n\nThere is a string s. You must insert exactly one character 'a' somewhere in s. If it is possible to create a string that is not a palindrome, you should find one example. Otherwise, you should report that it is impossible.\n\nFor example, suppose s= \"cbabc\". By inserting an 'a', you can create \"acbabc\", \"cababc\", \"cbaabc\", \"cbabac\", or \"cbabca\". However \"cbaabc\" is a palindrome, so you must output one of the other options.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s consisting of lowercase English letters.\n\nThe total length of all strings does not exceed 3·10^5.\n\nFor each test case, if there is no solution, output \"NO\".\n\nOtherwise, output \"YES\" followed by your constructed string of length |s|+1 on the next line. If there are multiple solutions, you may print any.\n\nYou can print each letter of \"YES\" and \"NO\" in any case (upper or lower).\n\nThe first test case is described in the statement.\n\nIn the second test case, we can make either \"aab\" or \"aba\". But \"aba\" is a palindrome, so \"aab\" is the only correct answer.\n\nIn the third test case, \"zaza\" and \"zzaa\" are correct answers, but not \"azza\".\n\nIn the fourth test case, \"baa\" is the only correct answer.\n\nIn the fifth test case, we can only make \"aa\", which is a palindrome. So the answer is \"NO\".\n\nIn the sixth test case, \"anutforajaroftuna\" is a palindrome, but inserting 'a' elsewhere is valid.\n\nInput:\n```\n6\ncbabc\nab\nzza\nba\na\nnutforajaroftuna\n```\n\nOutput:\n```\nYES\ncbabac\nYES\naab\nYES\nzaza\nYES\nbaa\nNO\nYES\nnutforajarofatuna\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s consisting of lowercase English letters.\n\nThe total length of all strings does not exceed 3·10^5.",
+    "output": "For each test case, if there is no solution, output \"NO\".\n\nOtherwise, output \"YES\" followed by your constructed string of length |s|+1 on the next line. If there are multiple solutions, you may print any.\n\nYou can print each letter of \"YES\" and \"NO\" in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

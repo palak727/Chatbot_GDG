@@ -1,0 +1,18 @@
+{
+    "id": "1852D",
+    "contest_id": 1852,
+    "problem_letter": "D",
+    "title": "D. Miriany and Matchstick",
+    "statement": "Miriany's matchstick is a 2 × n grid that needs to be filled with characters A or B.\n\nHe has already filled in the first row of the grid and would like you to fill in the second row. You must do so in a way such that the number of adjacent pairs of cells with different characters^dagger is equal to k. If it is impossible, report so.\n\n^dagger An adjacent pair of cells with different characters is a pair of cells (r_1, c_1) and (r_2, c_2) (1 ≤ r_1, r_2 ≤ 2, 1 ≤ c_1, c_2 ≤ n) such that |r_1 - r_2| + |c_1 - c_2| = 1 and the characters in (r_1, c_1) and (r_2, c_2) are different.\n\nThe first line consists of an integer t, the number of test cases (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case has two integers, n and k (1 ≤ n ≤ 2·10^5, 0 ≤ k ≤ 3·n) – the number of columns of the matchstick, and the number of adjacent pairs of cells with different characters required.\n\nThe following line contains string s of n characters (s_i is either A or B) – Miriany's top row of the matchstick.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, if there is no way to fill the second row with the number of adjacent pairs of cells with different characters equals k, output \"NO\".\n\nOtherwise, output \"YES\". Then, print n characters that a valid bottom row for Miriany's matchstick consists of. If there are several answers, output any of them.\n\nIn the first test case, it can be proved that there exists no possible way to fill in row 2 of the grid such that k = 1.\n\nFor the second test case, BABB is one possible answer.\n\nThe grid below is the result of filling in BABB as the second row.\n\nThe pairs of different characters are shown below in red:\n\n—————————————————\n\nbeginarray|c|c| hline A & A & colorredA & A cr hline B & A & colorredB & B cr hline endarray\n\n—————————————————\n\nbeginarray|c|c| hline A & A & A & colorredA cr hline B & A & B & colorredB cr hline endarray\n\n—————————————————\n\nbeginarray|c|c| hline A & A & A & A cr hline colorredB & colorredA & B & B cr hline endarray\n\n—————————————————\n\nbeginarray|c|c| hline A & A & A & A cr hline B & colorredA & colorredB & B cr hline endarray\n\nThere are a total of 5 pairs, which satisfies k.\n\nInput:\n```\n410 1ABBAAABBAA4 5AAAA9 17BAAABBAAB4 9ABAB\n```\n\nOutput:\n```\nNO\nYES\nBABB\nYES\nABABAABAB\nNO\n```",
+    "input": "The first line consists of an integer t, the number of test cases (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case has two integers, n and k (1 ≤ n ≤ 2·10^5, 0 ≤ k ≤ 3·n) – the number of columns of the matchstick, and the number of adjacent pairs of cells with different characters required.\n\nThe following line contains string s of n characters (s_i is either A or B) – Miriany's top row of the matchstick.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if there is no way to fill the second row with the number of adjacent pairs of cells with different characters equals k, output \"NO\".\n\nOtherwise, output \"YES\". Then, print n characters that a valid bottom row for Miriany's matchstick consists of. If there are several answers, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*2800"
+    ],
+    "rating": 2800
+}

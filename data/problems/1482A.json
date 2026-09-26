@@ -1,0 +1,16 @@
+{
+    "id": "1482A",
+    "contest_id": 1482,
+    "problem_letter": "A",
+    "title": "A. Prison Break",
+    "statement": "Michael is accused of violating the social distancing rules and creating a risk of spreading coronavirus. He is now sent to prison. Luckily, Michael knows exactly what the prison looks like from the inside, especially since it's very simple.\n\nThe prison can be represented as a rectangle a× b which is divided into ab cells, each representing a prison cell, common sides being the walls between cells, and sides on the perimeter being the walls leading to freedom. Before sentencing, Michael can ask his friends among the prison employees to make (very well hidden) holes in some of the walls (including walls between cells and the outermost walls). Michael wants to be able to get out of the prison after this, no matter which cell he is placed in. However, he also wants to break as few walls as possible.\n\nYour task is to find out the smallest number of walls to be broken so that there is a path to the outside from every cell after this.\n\nThe first line contains a single integer t (1≤ t≤ 100) — the number of test cases.\n\nEach of the following t lines contains two integers a and b (1≤ a, b≤ 100), representing a corresponding test case.\n\nFor each test case print the single integer on a separate line — the answer to the problem.\n\nSome possible escape plans for the example test cases are shown below. Broken walls are shown in gray, not broken walls are shown in black.\n\nInput:\n```\n2\n2 2\n1 3\n```\n\nOutput:\n```\n4\n3\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 100) — the number of test cases.\n\nEach of the following t lines contains two integers a and b (1≤ a, b≤ 100), representing a corresponding test case.",
+    "output": "For each test case print the single integer on a separate line — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

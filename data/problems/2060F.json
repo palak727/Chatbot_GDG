@@ -1,0 +1,18 @@
+{
+    "id": "2060F",
+    "contest_id": 2060,
+    "problem_letter": "F",
+    "title": "F. Multiplicative Arrays",
+    "statement": "You're given integers k and n. For each integer x from 1 to k, count the number of integer arrays a such that all of the following are satisfied:\n\nNote that two arrays b and c are different if either their lengths are different, or if there exists an index 1 ≤ i ≤ |b| such that b_i≠ c_i.\n\nOutput the answer modulo 998,244,353.\n\nThe first line contains an integer t (1 ≤ t≤ 10^3) — the number of independent test cases.\n\nThe only line of each test case contains two integers k and n (1 ≤ k ≤ 10^5, 1≤ n ≤ 9·10^8).\n\nIt is guaranteed that the sum of k over all test cases does not exceed 10^5.\n\nFor each test case, output k space-separated integers on a new line: the number of arrays for x=1,2,…,k, modulo 998,244,353.\n\nIn the first test case, there are 2 arrays a with |a|≤ 2 and the product of elements equal to 1:\n\nThere are 3 arrays a with |a|≤ 2 and the product of elements equal to 2:\n\nInput:\n```\n32 24 310 6969420\n```\n\nOutput:\n```\n2 3\n3 6 6 10\n6969420 124188773 124188773 729965558 124188773 337497990 124188773 50981194 729965558 337497990\n```",
+    "input": "The first line contains an integer t (1 ≤ t≤ 10^3) — the number of independent test cases.\n\nThe only line of each test case contains two integers k and n (1 ≤ k ≤ 10^5, 1≤ n ≤ 9·10^8).\n\nIt is guaranteed that the sum of k over all test cases does not exceed 10^5.",
+    "output": "For each test case, output k space-separated integers on a new line: the number of arrays for x=1,2,…,k, modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

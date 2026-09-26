@@ -1,0 +1,16 @@
+{
+    "id": "1584G",
+    "contest_id": 1584,
+    "problem_letter": "G",
+    "title": "G. Eligible Segments",
+    "statement": "You are given n distinct points p_1, p_2, …, p_n on the plane and a positive integer R.\n\nFind the number of pairs of indices (i, j) such that 1 ≤ i < j ≤ n, and for every possible k (1 ≤ k ≤ n) the distance from the point p_k to the segment between points p_i and p_j is at most R.\n\nThe first line contains two integers n, R (1 ≤ n ≤ 3000, 1 ≤ R ≤ 10^5) — the number of points and the maximum distance between a point and a segment.\n\nEach of the next n lines contains two integers x_i, y_i (-10^5 ≤ x_i, y_i ≤ 10^5) that define the i-th point p_i=(x_i, y_i). All points are distinct.\n\nIt is guaranteed that the answer does not change if the parameter R is changed by at most 10^{-2}.\n\nPrint the number of suitable pairs (i, j).\n\nIn the first example, the only pair of points (-3, 0), (3, 0) is suitable. The distance to the segment between these points from the points (0, 1) and (0, -1) is equal to 1, which is less than R=2.\n\nIn the second example, all possible pairs of points are eligible.\n\nInput:\n```\n4 2\n0 1\n0 -1\n3 0\n-3 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 3\n1 -1\n-1 -1\n0 1\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains two integers n, R (1 ≤ n ≤ 3000, 1 ≤ R ≤ 10^5) — the number of points and the maximum distance between a point and a segment.\n\nEach of the next n lines contains two integers x_i, y_i (-10^5 ≤ x_i, y_i ≤ 10^5) that define the i-th point p_i=(x_i, y_i). All points are distinct.\n\nIt is guaranteed that the answer does not change if the parameter R is changed by at most 10^{-2}.",
+    "output": "Print the number of suitable pairs (i, j).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "*3200"
+    ],
+    "rating": 3200
+}

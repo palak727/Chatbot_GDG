@@ -1,0 +1,19 @@
+{
+    "id": "1238D",
+    "contest_id": 1238,
+    "problem_letter": "D",
+    "title": "D. AB-string",
+    "statement": "The string t_1t_2 … t_k is good if each letter of this string belongs to at least one palindrome of length greater than 1.\n\nA palindrome is a string that reads the same backward as forward. For example, the strings A, BAB, ABBA, BAABBBAAB are palindromes, but the strings AB, ABBBAA, BBBA are not.\n\nHere are some examples of good strings:\n\nYou are given a string s of length n, consisting of only letters A and B.\n\nYou have to calculate the number of good substrings of string s.\n\nThe first line contains one integer n (1 ≤ n ≤ 3·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of letters A and B.\n\nPrint one integer — the number of good substrings of string s.\n\nIn the first test case there are six good substrings: s_1 … s_2, s_1 … s_4, s_1 … s_5, s_3 … s_4, s_3 … s_5 and s_4 … s_5.\n\nIn the second test case there are three good substrings: s_1 … s_2, s_1 … s_3 and s_2 … s_3.\n\nInput:\n```\n5\nAABBB\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n3\nAAA\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n7\nAAABABB\n```\n\nOutput:\n```\n15\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 3·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of letters A and B.",
+    "output": "Print one integer — the number of good substrings of string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "dp",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

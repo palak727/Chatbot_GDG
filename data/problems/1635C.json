@@ -1,0 +1,17 @@
+{
+    "id": "1635C",
+    "contest_id": 1635,
+    "problem_letter": "C",
+    "title": "C. Differential Sorting",
+    "statement": "You are given an array a of n elements.\n\nYour can perform the following operation no more than n times: Select three indices x,y,z (1 ≤ x < y < z ≤ n) and replace a_x with a_y - a_z. After the operation, |a_x| need to be less than 10^18.\n\nYour goal is to make the resulting array non-decreasing. If there are multiple solutions, you can output any. If it is impossible to achieve, you should report it as well.\n\nEach test contains multiple test cases. The first line will contain a single integer t (1 ≤ t ≤ 10000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the size of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, … ,a_n (-10^9 ≤ a_i ≤ 10^9), the elements of a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print -1 in a single line if there is no solution. Otherwise in the first line you should print a single integer m (0 ≤ m ≤ n) — number of operations you performed.\n\nThen the i-th of the following m lines should contain three integers x,y,z (1 ≤ x < y < z ≤ n)— description of the i-th operation.\n\nIf there are multiple solutions, you can output any. Note that you don't have to minimize the number of operations in this task.\n\nIn the first example, the array becomes\n\n[-6,-4,2,-1,2] after the first operation,\n\n[-6,-4,-3,-1,2] after the second operation.\n\nIn the second example, it is impossible to make the array sorted after any sequence of operations.\n\nIn the third example, the array is already sorted, so we don't need to perform any operations.\n\nInput:\n```\n3\n5\n5 -4 2 -1 2\n3\n4 3 2\n3\n-3 -2 -1\n```\n\nOutput:\n```\n2\n1 2 3\n3 4 5\n-1\n0\n```",
+    "input": "Each test contains multiple test cases. The first line will contain a single integer t (1 ≤ t ≤ 10000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the size of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, … ,a_n (-10^9 ≤ a_i ≤ 10^9), the elements of a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print -1 in a single line if there is no solution. Otherwise in the first line you should print a single integer m (0 ≤ m ≤ n) — number of operations you performed.\n\nThen the i-th of the following m lines should contain three integers x,y,z (1 ≤ x < y < z ≤ n)— description of the i-th operation.\n\nIf there are multiple solutions, you can output any. Note that you don't have to minimize the number of operations in this task.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

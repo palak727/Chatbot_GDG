@@ -1,0 +1,18 @@
+{
+    "id": "1817E",
+    "contest_id": 1817,
+    "problem_letter": "E",
+    "title": "E. Half-sum",
+    "statement": "You're given a multiset of non-negative integers {a_1, a_2, …, a_n}.\n\nIn one step you take two elements x and y of the multiset, remove them and insert their mean value (x + y)/2 back into the multiset.\n\nYou repeat the step described above until you are left with only two numbers A and B. What is the maximum possible value of their absolute difference |A-B|?\n\nSince the answer is not an integer number, output it modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the size of the multiset.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the multiset.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer, the answer to the problem modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output an integer x such that 0 ≤ x < M and x·q ≡ p pmodM.\n\nIn the first case, you can't do any operations, so the answer is |7-3|=4.\n\nIn the second case, one of the optimal sequence of operations:\n\nIn the third case, the exact answer is 3/2, and 500,000,005·2 ≡ 3 pmod10^9+7.\n\nInput:\n```\n527 341 2 10 1131 2 3664 32 64 16 64 041 1 1 1\n```\n\nOutput:\n```\n4\n9\n500000005\n59\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the size of the multiset.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the multiset.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer, the answer to the problem modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output an integer x such that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "divide and conquer",
+        "greedy",
+        "*3400"
+    ],
+    "rating": 3400
+}

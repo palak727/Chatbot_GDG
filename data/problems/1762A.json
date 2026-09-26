@@ -1,0 +1,18 @@
+{
+    "id": "1762A",
+    "contest_id": 1762,
+    "problem_letter": "A",
+    "title": "A. Divide and Conquer",
+    "statement": "An array b is good if the sum of elements of b is even.\n\nYou are given an array a consisting of n positive integers. In one operation, you can select an index i and change a_i := lfloor a_i/2 rfloor. ^dagger\n\nFind the minimum number of operations (possibly 0) needed to make a good. It can be proven that it is always possible to make a good.\n\n^dagger lfloor x rfloor denotes the floor function — the largest integer less than or equal to x. For example, lfloor 2.7 rfloor = 2, lfloor π rfloor = 3 and lfloor 5 rfloor =5.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the array a.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^6) — representing the array a.\n\nDo note that the sum of n over all test cases is not bounded.\n\nFor each test case, output the minimum number of operations needed to make a good.\n\nIn the first test case, array a is already good.\n\nIn the second test case, we can perform on index 2 twice. After the first operation, array a becomes [7,2]. After performing on index 2 again, a becomes [7,1], which is good. It can be proved that it is not possible to make a good in less number of operations.\n\nIn the third test case, a becomes [0,2,4] if we perform the operation on index 1 once. As [0,2,4] is good, answer is 1.\n\nIn the fourth test case, we need to perform the operation on index 1 four times. After all operations, a becomes [0]. It can be proved that it is not possible to make a good in less number of operations.\n\nInput:\n```\n441 1 1 127 431 2 4115\n```\n\nOutput:\n```\n0\n2\n1\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the array a.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^6) — representing the array a.\n\nDo note that the sum of n over all test cases is not bounded.",
+    "output": "For each test case, output the minimum number of operations needed to make a good.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

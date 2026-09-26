@@ -1,0 +1,16 @@
+{
+    "id": "1345A",
+    "contest_id": 1345,
+    "problem_letter": "A",
+    "title": "A. Puzzle Pieces",
+    "statement": "You are given a special jigsaw puzzle consisting of n·m identical pieces. Every piece has three tabs and one blank, as pictured below.\n\nThe jigsaw puzzle is considered solved if the following conditions hold:\n\nThrough rotation and translation of the pieces, determine if it is possible to solve the jigsaw puzzle.\n\nThe test consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. Next t lines contain descriptions of test cases.\n\nEach test case contains two integers n and m (1 ≤ n,m ≤ 10^5).\n\nFor each test case output a single line containing \"YES\" if it is possible to solve the jigsaw puzzle, or \"NO\" otherwise. You can print each letter in any case (upper or lower).\n\nFor the first test case, this is an example solution:\n\nFor the second test case, we can show that no solution exists.\n\nFor the third test case, this is an example solution:\n\nInput:\n```\n3\n1 3\n100000 100000\n2 2\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The test consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 1000) — the number of test cases. Next t lines contain descriptions of test cases.\n\nEach test case contains two integers n and m (1 ≤ n,m ≤ 10^5).",
+    "output": "For each test case output a single line containing \"YES\" if it is possible to solve the jigsaw puzzle, or \"NO\" otherwise. You can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

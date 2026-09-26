@@ -1,0 +1,21 @@
+{
+    "id": "2030E",
+    "contest_id": 2030,
+    "problem_letter": "E",
+    "title": "E. MEXimize the Score",
+    "statement": "Suppose we partition the elements of an array b into any number k of non-empty multisets S_1, S_2, …, S_k, where k is an arbitrary positive integer. Define the score of b as the maximum value of MEX(S_1)^{∗} + MEX(S_2) + … + MEX(S_k) over all possible partitions of b for any integer k.\n\nEnvy is given an array a of size n. Since he knows that calculating the score of a is too easy for you, he instead asks you to calculate the sum of scores of all 2^n - 1 non-empty subsequences of a.^{†} Since this answer may be large, please output it modulo 998,244,353.\n\n^{∗}MEX of a collection of integers c_1, c_2, …, c_k is defined as the smallest non-negative integer x that does not occur in the collection c. For example, MEX([0,1,2,2]) = 3 and MEX([1,2,2]) = 0\n\n^{†}A sequence x is a subsequence of a sequence y if x can be obtained from y by deleting several (possibly, zero or all) elements.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the answer, modulo 998,244,353.\n\nIn the first testcase, we must consider seven subsequences:\n\nIn the last testcase, all subsequences have a score of 0.\n\nInput:\n```\n430 0 140 0 1 150 0 1 2 241 1 1 1\n```\n\nOutput:\n```\n11\n26\n53\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < n) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the answer, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

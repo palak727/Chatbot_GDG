@@ -1,0 +1,21 @@
+{
+    "id": "1971F",
+    "contest_id": 1971,
+    "problem_letter": "F",
+    "title": "F. Circle Perimeter",
+    "statement": "Given an integer r, find the number of lattice points that have a Euclidean distance from (0, 0) greater than or equal to r but strictly less than r+1.\n\nA lattice point is a point with integer coordinates. The Euclidean distance from (0, 0) to the point (x,y) is √(x^2 + y^2).\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a single integer r (1 ≤ r ≤ 10^5).\n\nThe sum of r over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the number of lattice points that have an Euclidean distance d from (0, 0) such that r ≤ d < r+1.\n\nThe points for the first three test cases are shown below.\n\nInput:\n```\n6123451984\n```\n\nOutput:\n```\n8\n16\n20\n24\n40\n12504\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a single integer r (1 ≤ r ≤ 10^5).\n\nThe sum of r over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the number of lattice points that have an Euclidean distance d from (0, 0) such that r ≤ d < r+1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dfs and similar",
+        "geometry",
+        "implementation",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1391C",
+    "contest_id": 1391,
+    "problem_letter": "C",
+    "title": "C. Cyclic Permutations",
+    "statement": "A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array) and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nConsider a permutation p of length n, we build a graph of size n using it as follows:\n\nIn cases where no such j exists, we make no edges. Also, note that we make edges between the corresponding indices, not the values at those indices.\n\nFor clarity, consider as an example n = 4, and p = [3,1,4,2]; here, the edges of the graph are (1,3),(2,1),(2,3),(4,3).\n\nA permutation p is cyclic if the graph built using p has at least one simple cycle.\n\nGiven n, find the number of cyclic permutations of length n. Since the number may be very large, output it modulo 10^9+7.\n\nPlease refer to the Notes section for the formal definition of a simple cycle\n\nThe first and only line contains a single integer n (3 ≤ n ≤ 10^6).\n\nOutput a single integer 0 ≤ x < 10^9+7, the number of cyclic permutations of length n modulo 10^9+7.\n\nThere are 16 cyclic permutations for n = 4. [4,2,1,3] is one such permutation, having a cycle of length four: 4 → 3 → 2 → 1 → 4.\n\nNodes v_1, v_2, …, v_k form a simple cycle if the following conditions hold:\n\nInput:\n```\n4\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n583291\n```\n\nOutput:\n```\n135712853\n```",
+    "input": "The first and only line contains a single integer n (3 ≤ n ≤ 10^6).",
+    "output": "Output a single integer 0 ≤ x < 10^9+7, the number of cyclic permutations of length n modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "graphs",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

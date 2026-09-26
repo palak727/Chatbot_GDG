@@ -1,0 +1,18 @@
+{
+    "id": "1672F1",
+    "contest_id": 1672,
+    "problem_letter": "F1",
+    "title": "F1. Array Shuffling",
+    "statement": "oolimry has an array a of length n which he really likes. Today, you have changed his array to b, a permutation of a, to make him sad.\n\nBecause oolimry is only a duck, he can only perform the following operation to restore his array:\n\nThe sadness of the array b is the minimum number of operations needed to transform b into a.\n\nGiven the array a, find any array b which is a permutation of a that has the maximum sadness over all permutations of the array a.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print n integers b_1, b_2, …, b_n — describing the array b. If there are multiple answers, you may print any.\n\nIn the first test case, the array [1,2] has sadness 1. We can transform [1,2] into [2,1] using one operation with (i,j)=(1,2).\n\nIn the second test case, the array [3,3,2,1] has sadness 2. We can transform [3,3,2,1] into [1,2,3,3] with two operations with (i,j)=(1,4) and (i,j)=(2,3) respectively.\n\nInput:\n```\n222 141 2 3 3\n```\n\nOutput:\n```\n1 2\n3 3 2 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print n integers b_1, b_2, …, b_n — describing the array b. If there are multiple answers, you may print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "*2000"
+    ],
+    "rating": 2000
+}

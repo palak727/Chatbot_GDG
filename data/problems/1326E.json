@@ -1,0 +1,17 @@
+{
+    "id": "1326E",
+    "contest_id": 1326,
+    "problem_letter": "E",
+    "title": "E. Bombs",
+    "statement": "You are given a permutation, p_1, p_2, …, p_n.\n\nImagine that some positions of the permutation contain bombs, such that there exists at least one position without a bomb.\n\nFor some fixed configuration of bombs, consider the following process. Initially, there is an empty set, A.\n\nFor each i from 1 to n:\n\nAfter the process is completed, A will be non-empty. The cost of the configuration of bombs equals the largest element in A.\n\nYou are given another permutation, q_1, q_2, …, q_n.\n\nFor each 1 ≤ i ≤ n, find the cost of a configuration of bombs such that there exists a bomb in positions q_1, q_2, …, q_{i-1}.\n\nFor example, for i=1, you need to find the cost of a configuration without bombs, and for i=n, you need to find the cost of a configuration with bombs in positions q_1, q_2, …, q_{n-1}.\n\nThe first line contains a single integer, n (2 ≤ n ≤ 300,000).\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n).\n\nThe third line contains n distinct integers q_1, q_2, …, q_n (1 ≤ q_i ≤ n).\n\nPrint n space-separated integers, such that the i-th of them equals the cost of a configuration of bombs in positions q_1, q_2, …, q_{i-1}.\n\nIn the first test:\n\nIn the second test:\n\nLet's consider the process for i = 4. There are three bombs on positions q_1 = 5, q_2 = 2, and q_3 = 1.\n\nAt the beginning, A = {}.\n\nIn the end, we have A = {1, 4, 5}, so the cost of the configuration is equal to 5.\n\nInput:\n```\n3\n3 2 1\n1 2 3\n```\n\nOutput:\n```\n3 2 1 \n```\n\nInput:\n```\n6\n2 3 6 1 5 4\n5 2 1 4 6 3\n```\n\nOutput:\n```\n6 5 5 5 4 1 \n```",
+    "input": "The first line contains a single integer, n (2 ≤ n ≤ 300,000).\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n).\n\nThe third line contains n distinct integers q_1, q_2, …, q_n (1 ≤ q_i ≤ n).",
+    "output": "Print n space-separated integers, such that the i-th of them equals the cost of a configuration of bombs in positions q_1, q_2, …, q_{i-1}.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

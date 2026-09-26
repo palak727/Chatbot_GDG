@@ -1,0 +1,18 @@
+{
+    "id": "1787I",
+    "contest_id": 1787,
+    "problem_letter": "I",
+    "title": "I. Treasure Hunt",
+    "statement": "Define the beauty value of a sequence b_1,b_2,…,b_c as the maximum value of ∑limits_{i=1}^qb_i + ∑limits_{i=s}^tb_i, where q, s, t are all integers and s > q or t≤ q. Note that b_i = 0 when i < 1 or i > c, ∑limits_{i=s}^tb_i = 0 when s > t.\n\nFor example, when b = [-1,-2,-3], we may have q = 0, s = 3, t = 2 so the beauty value is 0 + 0 = 0. And when b = [-1,2,-3], we have q = s = t = 2 so the beauty value is 1 + 2 = 3.\n\nYou are given a sequence a of length n, determine the sum of the beauty value of all non-empty subsegments a_l,a_{l+1},…,a_r (1≤ l≤ r≤ n) of the sequence a.\n\nPrint the answer modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains an integer T (1 ≤ T ≤ 10^4) — the number of test cases.\n\nThe first line contains an integer n (1≤ n≤ 10^6) — the length of a.\n\nThe second line contains n integers a_1,a_2,…,a_n (-10^6 ≤ a_i ≤ 10^6) — the given sequence.\n\nIt's guaranteed that the sum of n does not exceed 10^6.\n\nFor each test case, print a line containing a single integer — the answer modulo 998,244,353.\n\nIn the second test case, for the subsequence [-26,43,-41,34,13], when q=5, s=2, t=5, ∑limits_{i=1}^qb_i + ∑limits_{i=s}^tb_i = 23 + 49 = 72.\n\nIn the third test case, there is only one non-empty consecutive subsequence [74]. When q=1, s=1, t=1, ∑limits_{i=1}^qb_i + ∑limits_{i=s}^tb_i = 148.\n\nInput:\n```\n4780 59 100 -52 -86 -62 758-48 -14 -26 43 -41 34 13 551742056 -60 62 13 88 -48 64 36 -10 19 94 25 -69 88 87 79 -70 74 -26 59\n```\n\nOutput:\n```\n5924\n2548\n148\n98887\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer T (1 ≤ T ≤ 10^4) — the number of test cases.\n\nThe first line contains an integer n (1≤ n≤ 10^6) — the length of a.\n\nThe second line contains n integers a_1,a_2,…,a_n (-10^6 ≤ a_i ≤ 10^6) — the given sequence.\n\nIt's guaranteed that the sum of n does not exceed 10^6.",
+    "output": "For each test case, print a line containing a single integer — the answer modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "two pointers",
+        "*3400"
+    ],
+    "rating": 3400
+}

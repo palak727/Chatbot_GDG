@@ -1,0 +1,18 @@
+{
+    "id": "1715B",
+    "contest_id": 1715,
+    "problem_letter": "B",
+    "title": "B. Beautiful Array",
+    "statement": "Stanley defines the beauty of an array a of length n, which contains non-negative integers, as follows: ∑limits_{i = 1}^n left lfloor a_i/k right rfloor, which means that we divide each element by k, round it down, and sum up the resulting values.\n\nStanley told Sam the integer k and asked him to find an array a of n non-negative integers, such that the beauty is equal to b and the sum of elements is equal to s. Help Sam — find any of the arrays satisfying the conditions above.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains integers n, k, b, s (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 10^9, 0 ≤ b ≤ 10^9, 0 ≤ s ≤ 10^18).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case print -1 if such array a does not exist. Otherwise print n non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18) — the answer.\n\nIn the first, the second, the fifth and the sixth test cases of the example it is possible to show that such array does not exist.\n\nIn the third testcase of the example a = [0, 0, 19]. The sum of elements in it is equal to 19, the beauty of it is equal to left ( left lfloor 0/6 right rfloor + left lfloor 0/6 right rfloor + left lfloor 19/6 right rfloor right ) = (0 + 0 + 3) = 3.\n\nIn the fourth testcase of the example a = [0, 3, 3, 3, 29]. The sum of elements in it is equal to 38, the beauty of it is equal to (0 + 0 + 0 + 0 + 7) = 7.\n\nInput:\n```\n81 6 3 1003 6 3 123 6 3 195 4 7 385 4 7 8099978 1000000000 100000000 10000000000000000001 1 0 04 1000000000 1000000000 1000000000000000000\n```\n\nOutput:\n```\n-1\n-1\n0 0 19\n0 3 3 3 29\n-1\n-1\n0\n0 0 0 1000000000000000000\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains integers n, k, b, s (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 10^9, 0 ≤ b ≤ 10^9, 0 ≤ s ≤ 10^18).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print -1 if such array a does not exist. Otherwise print n non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18) — the answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

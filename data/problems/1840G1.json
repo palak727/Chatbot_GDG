@@ -1,0 +1,20 @@
+{
+    "id": "1840G1",
+    "contest_id": 1840,
+    "problem_letter": "G1",
+    "title": "G1. In Search of Truth (Easy Version)",
+    "statement": "The only difference between easy and hard versions is the maximum number of queries. In this version, you are allowed to ask at most 2023 queries.\n\nThis is an interactive problem.\n\nYou are playing a game. The circle is divided into n sectors, sectors are numbered from 1 to n in some order. You are in the adjacent room and do not know either the number of sectors or their numbers. There is also an arrow that initially points to some sector. Initially, the host tells you the number of the sector to which the arrow points. After that, you can ask the host to move the arrow k sectors counterclockwise or clockwise at most 2023 times. And each time you are told the number of the sector to which the arrow points.\n\nYour task is to determine the integer n — the number of sectors in at most 2023 queries.\n\nIt is guaranteed that 1 ≤ n ≤ 10^6.\n\nThe input consists of a single integer x (1 ≤ x ≤ n) — the number of the initial sector.\n\nAfter you determine the integer n — the number of sectors, you should output \"! n\" (1 ≤ n ≤ 10^6). After that the program should immediately terminate.\n\nNote that, printing the answer does not count as a query.\n\nIt is guaranteed that the integer n and the numbers of the sectors are fixed initially and will not be changed by the jury program depending on the queries.\n\nAfter reading the description of the input, you may ask queries. Queries can be of two types:\n\nAfter each query, you should read an integer x (1 ≤ x ≤ n) — the number of the current sector to which the arrow points.\n\nYou are allowed to make at most 2023 queries in total.\n\nIf you make too many queries, you will get Wrong answer.\n\nAfter printing a query or the answer, do not forget to output a the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks\n\nTo hack, use the following test format.\n\nIn the first line, output a single integer n (1 ≤ n ≤ 10^6) — the number of sectors.\n\nIn the second line, output n different integers 1 ≤ a_1, a_2, …, a_n ≤ n — the numbers of the sectors in clockwise order, the arrow initially points to the sector with the number a_1.\n\nInput:\n```\n1\n\n5\n\n6\n\n7\n\n2\n\n10\n\n9\n\n8\n\n4\n\n3\n\n1\n```\n\nOutput:\n```\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n+ 1\n\n! 10\n```",
+    "input": "The input consists of a single integer x (1 ≤ x ≤ n) — the number of the initial sector.",
+    "output": "After you determine the integer n — the number of sectors, you should output \"! n\" (1 ≤ n ≤ 10^6). After that the program should immediately terminate.\n\nNote that, printing the answer does not count as a query.\n\nIt is guaranteed that the integer n and the numbers of the sectors are fixed initially and will not be changed by the jury program depending on the queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "meet-in-the-middle",
+        "probabilities",
+        "*2200"
+    ],
+    "rating": 2200
+}

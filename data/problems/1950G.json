@@ -1,0 +1,22 @@
+{
+    "id": "1950G",
+    "contest_id": 1950,
+    "problem_letter": "G",
+    "title": "G. Shuffling Songs",
+    "statement": "Vladislav has a playlist consisting of n songs, numbered from 1 to n. Song i has genre g_i and writer w_i. He wants to make a playlist in such a way that every pair of adjacent songs either have the same writer or are from the same genre (or both). He calls such a playlist exciting. Both g_i and w_i are strings of length no more than 10^4.\n\nIt might not always be possible to make an exciting playlist using all the songs, so the shuffling process occurs in two steps. First, some amount (possibly zero) of the songs are removed, and then the remaining songs in the playlist are rearranged to make it exciting.\n\nSince Vladislav doesn't like when songs get removed from his playlist, he wants the making playlist to perform as few removals as possible. Help him find the minimum number of removals that need to be performed in order to be able to rearrange the rest of the songs to make the playlist exciting.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 16) — the number of songs in the original playlist.\n\nThen n lines follow, the i-th of which contains two strings of lowercase letters g_i and w_i (1 ≤ |g_i|, |w_i| ≤ 10^4) — the genre and the writer of the i-th song. Where |g_i| and |w_i| are lengths of the strings.\n\nThe sum of 2^n over all test cases does not exceed 2^16.\n\nThe sum of |g_i| + |w_i| over all test cases does not exceed 4·10^5.\n\nFor each test case, output a single integer — the minimum number of removals necessary so that the resulting playlist can be made exciting.\n\nIn the first test case, the playlist is already exciting.\n\nIn the second test case, if you have the songs in the order 4, 3, 1, 2, it is exciting, so you don't need to remove any songs.\n\nIn the third test case, you can remove songs 4, 5, 6, 7. Then the playlist with songs in the order 1, 2, 3 is exciting.\n\nInput:\n```\n41pop taylorswift4electronic themotanselectronic carlasdreamspop themotanspop irinarimes7rap eminemrap drdrerap kanyewestpop taylorswiftindierock arcticmonkeysindierock arcticmonkeyspunkrock theoffspring4a bc de fg h\n```\n\nOutput:\n```\n0\n0\n4\n3\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 16) — the number of songs in the original playlist.\n\nThen n lines follow, the i-th of which contains two strings of lowercase letters g_i and w_i (1 ≤ |g_i|, |w_i| ≤ 10^4) — the genre and the writer of the i-th song. Where |g_i| and |w_i| are lengths of the strings.\n\nThe sum of 2^n over all test cases does not exceed 2^16.\n\nThe sum of |g_i| + |w_i| over all test cases does not exceed 4·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of removals necessary so that the resulting playlist can be made exciting.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "hashing",
+        "implementation",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

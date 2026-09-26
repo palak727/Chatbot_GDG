@@ -1,0 +1,18 @@
+{
+    "id": "1864H",
+    "contest_id": 1864,
+    "problem_letter": "H",
+    "title": "H. Asterism Stream",
+    "statement": "Bogocubic is playing a game with amenotiomoi. First, Bogocubic fixed an integer n, and then he gave amenotiomoi an integer x which is initially equal to 1.\n\nIn one move amenotiomoi performs one of the following operations with the same probability:\n\nBogocubic wants to find the expected number of moves amenotiomoi has to do to make x greater than or equal to n. Help him find this number modulo 998,244,353.\n\nFormally, let M = 998,244,353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer y that 0 ≤ y < M and y·q ≡ p pmodM.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains one integer n (1 ≤ n ≤ 10^18).\n\nFor each test case, output a single integer — the expected number of moves modulo 998,244,353.\n\nIn the first test case, n≤ x without any operations, so the answer is 0.\n\nIn the second test case, for n = 4, here is the list of all possible sequences of operations and their probabilities:\n\nSo the expected number of moves is 4·left(3·1/8right) + 2·left(2·1/4 right) =5/2 ≡ 499122179 pmod998244353.\n\nIn the third test case, for n = 8, the expected number of moves is 137/32≡ 717488133pmod998244353.\n\nIn the fourth test case, for n = 15, the expected number of moves is 24977/4096 ≡ 900515847 pmod998244353.\n\nInput:\n```\n714815998244353296574916252563317494288321850420024\n```\n\nOutput:\n```\n0\n499122179\n717488133\n900515847\n93715054\n44488799\n520723508\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains one integer n (1 ≤ n ≤ 10^18).",
+    "output": "For each test case, output a single integer — the expected number of moves modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "matrices",
+        "*3200"
+    ],
+    "rating": 3200
+}

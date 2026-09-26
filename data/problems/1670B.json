@@ -1,0 +1,18 @@
+{
+    "id": "1670B",
+    "contest_id": 1670,
+    "problem_letter": "B",
+    "title": "B. Dorms War",
+    "statement": "Hosssam decided to sneak into Hemose's room while he is sleeping and change his laptop's password. He already knows the password, which is a string s of length n. He also knows that there are k special letters of the alphabet: c_1,c_2,…, c_k.\n\nHosssam made a program that can do the following.\n\nFor example, suppose the string s is \"abcdef\" and the special characters are 'b' and 'd'. If he runs the program once, the positions 1 and 3 will be deleted as they come before special characters, so the password becomes \"bdef\". If he runs the program again, it deletes position 1, and the password becomes \"def\". If he is wise, he won't run it a third time.\n\nHosssam wants to know how many times he can run the program on Hemose's laptop without waking him up from the sound of the error message. Can you help him?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the initial length of the password.\n\nThe next line contains a string s consisting of n lowercase English letters — the initial password.\n\nThe next line contains an integer k (1 ≤ k ≤ 26), followed by k distinct lowercase letters c_1,c_2,…,c_k — the special letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the maximum number of times Hosssam can run the program without displaying the error message, on a new line.\n\nIn the first test case, the program can run 5 times as follows: iloveslim → ilovslim → iloslim → ilslim → islim → slim\n\nIn the second test case, the program can run 2 times as follows: joobeel → oel → el\n\nIn the third test case, the program can run 3 times as follows: basiozi → bioi → ii → i.\n\nIn the fourth test case, the program can run 5 times as follows: khater → khatr → khar → khr → kr → r\n\nIn the fifth test case, the program can run only once as follows: abobeih → h\n\nIn the sixth test case, the program cannot run as none of the characters in the password is a special character.\n\nInput:\n```\n109iloveslim1 s7joobeel2 o e7basiozi2 s i6khater1 r7abobeih6 a b e h i o5zondl5 a b c e f6shoman2 a h7shetwey2 h y5samez1 m6mouraz1 m\n```\n\nOutput:\n```\n5\n2\n3\n5\n1\n0\n3\n5\n2\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the initial length of the password.\n\nThe next line contains a string s consisting of n lowercase English letters — the initial password.\n\nThe next line contains an integer k (1 ≤ k ≤ 26), followed by k distinct lowercase letters c_1,c_2,…,c_k — the special letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the maximum number of times Hosssam can run the program without displaying the error message, on a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

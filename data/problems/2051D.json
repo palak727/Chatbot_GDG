@@ -1,0 +1,18 @@
+{
+    "id": "2051D",
+    "contest_id": 2051,
+    "problem_letter": "D",
+    "title": "D. Counting Pairs",
+    "statement": "You are given a sequence a, consisting of n integers, where the i-th element of the sequence is equal to a_i. You are also given two integers x and y (x ≤ y).\n\nA pair of integers (i, j) is considered interesting if the following conditions are met:\n\nYour task is to determine the number of interesting pairs of integers for the given sequence a.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the number of interesting pairs of integers for the given sequence a.\n\nIn the first example, there are 4 interesting pairs of integers:\n\nInput:\n```\n74 8 104 6 3 66 22 274 9 6 3 4 53 8 103 2 13 1 12 3 43 3 63 2 14 4 123 3 2 16 8 81 1 2 2 2 3\n```\n\nOutput:\n```\n4\n7\n0\n0\n1\n5\n6\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the number of interesting pairs of integers for the given sequence a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "sortings",
+        "two pointers",
+        "*1200"
+    ],
+    "rating": 1200
+}

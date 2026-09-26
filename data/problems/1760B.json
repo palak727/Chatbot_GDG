@@ -1,0 +1,18 @@
+{
+    "id": "1760B",
+    "contest_id": 1760,
+    "problem_letter": "B",
+    "title": "B. Atilla's Favorite Problem",
+    "statement": "In order to write a string, Atilla needs to first learn all letters that are contained in the string.\n\nAtilla needs to write a message which can be represented as a string s. He asks you what is the minimum alphabet size required so that one can write this message.\n\nThe alphabet of size x (1 ≤ x ≤ 26) contains only the first x Latin letters. For example an alphabet of size 4 contains only the characters texttta, textttb, textttc and textttd.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the string.\n\nThe second line of each test case contains a string s of length n, consisting of lowercase Latin letters.\n\nFor each test case, output a single integer — the minimum alphabet size required to so that Atilla can write his message s.\n\nFor the first test case, Atilla needs to know only the character texttta, so the alphabet of size 1 which only contains texttta is enough.\n\nFor the second test case, Atilla needs to know the characters textttd, texttto, textttw, textttn. The smallest alphabet size that contains all of them is 23 (such alphabet can be represented as the string textttabcdefghijklmnopqrstuvw).\n\nInput:\n```\n51a4down10codeforces3bcf5zzzzz\n```\n\nOutput:\n```\n1\n23\n19\n6\n26\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the string.\n\nThe second line of each test case contains a string s of length n, consisting of lowercase Latin letters.",
+    "output": "For each test case, output a single integer — the minimum alphabet size required to so that Atilla can write his message s.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

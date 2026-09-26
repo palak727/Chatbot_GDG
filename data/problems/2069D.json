@@ -1,0 +1,20 @@
+{
+    "id": "2069D",
+    "contest_id": 2069,
+    "problem_letter": "D",
+    "title": "D. Palindrome Shuffle",
+    "statement": "You are given a string s consisting of lowercase Latin letters.\n\nYou can perform the following operation with the string s: choose a contiguous substring (possibly empty) of s and shuffle it (reorder the characters in the substring as you wish).\n\nRecall that a palindrome is a string that reads the same way from the first character to the last and from the last character to the first. For example, the strings a, bab, acca, bcabcbacb are palindromes, but the strings ab, abbbaa, cccb are not.\n\nYour task is to determine the minimum possible length of the substring on which the aforementioned operation must be performed in order to convert the given string s into a palindrome.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s (2 ≤ |s| ≤ 2·10^5), consisting of lowercase Latin letters.\n\nAdditional constraints on the input:\n\nFor each test case, print a single integer — the minimum possible length of the substring on which the aforementioned operation must be performed in order to convert the given string s into a palindrome.\n\nIn the first example, you can perform the operation as follows: baba → baab.\n\nIn the second example, the string is already a palindrome, so we can shuffle an empty substring.\n\nIn the third example, you can perform the operation as follows: ddaa → adda.\n\nIn the fourth example, you can perform the operation as follows: acbacddacbca → acbcaddacbca.\n\nInput:\n```\n4babaccddaaacbacddacbca\n```\n\nOutput:\n```\n2\n0\n3\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a string s (2 ≤ |s| ≤ 2·10^5), consisting of lowercase Latin letters.\n\nAdditional constraints on the input:",
+    "output": "For each test case, print a single integer — the minimum possible length of the substring on which the aforementioned operation must be performed in order to convert the given string s into a palindrome.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "hashing",
+        "strings",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

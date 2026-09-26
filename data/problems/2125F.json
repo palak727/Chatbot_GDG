@@ -1,0 +1,18 @@
+{
+    "id": "2125F",
+    "contest_id": 2125,
+    "problem_letter": "F",
+    "title": "F. Timofey and Docker",
+    "statement": "Not so long ago, a certain Timofey learned about docker and now wants to present a report about it at a conference. He has already prepared the text s.\n\nThere are n people attending the conference. The i-th attendee will understand Timofey's report if the number of occurrences of the word \"docker\" as a contiguous substring in the text is not less than l_i and not greater than r_i.\n\nTo ensure that as many people as possible learn about docker, Timofey can change characters in his text.\n\nHelp Timofey determine the minimum number of characters that need to be changed so that the topic is understood by the maximum possible number of attendees.\n\nEach test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains one string s (1 ≤ |s| ≤ 5·10^5) — Timofey's text, which consists of lowercase Latin letters.\n\nThe second line of each test case contains one integer n (1 ≤ n ≤ 5·10^5) — the number of attendees.\n\nThe next n lines of each test case contain two integers l_i, r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nAdditional constraints on the input data:\n\nFor each test case, print one integer — the minimum number of characters that need to be changed so that the topic is understood by the maximum number of attendees.\n\nLet's consider the first test in more detail:\n\nInput:\n```\n2dockerdockerxxxxxx33 32 41 5ljglsjfkdieufj51 53 32 43 72 9\n```\n\nOutput:\n```\n6\n11\n```\n\nInput:\n```\n4dockerdockerdockerdockzzdockzz41 11 14 54 5docker51 12 23 34 45 5ddddddoooooocccccckkkkkkeeeeeerrrrrr101 200500 6001 6006 66 6500 20006 40089 904 71 10dockerdockerdockerdockzzdockzz42 22 24 54 5\n```\n\nOutput:\n```\n2\n0\n30\n1\n```",
+    "input": "Each test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains one string s (1 ≤ |s| ≤ 5·10^5) — Timofey's text, which consists of lowercase Latin letters.\n\nThe second line of each test case contains one integer n (1 ≤ n ≤ 5·10^5) — the number of attendees.\n\nThe next n lines of each test case contain two integers l_i, r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nAdditional constraints on the input data:",
+    "output": "For each test case, print one integer — the minimum number of characters that need to be changed so that the topic is understood by the maximum number of attendees.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "divide and conquer",
+        "dp",
+        "*3000"
+    ],
+    "rating": 3000
+}

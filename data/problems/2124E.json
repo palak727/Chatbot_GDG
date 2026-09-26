@@ -1,0 +1,18 @@
+{
+    "id": "2124E",
+    "contest_id": 2124,
+    "problem_letter": "E",
+    "title": "E. Make it Zero",
+    "statement": "You are given an array a, consisting of n positive integers. You are allowed to do the following operation:\n\nYour task is to change all the elements to 0. Find the minimum number of operations required.\n\nThen, output a way to perform the operations. If it is impossible to change all the elements of a to 0 no matter how many operations are used, print -1 instead. It can be shown that under the constraints of this problem, the smallest number of operations required is at most 17.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 5·10^4) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^12) — denoting the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.\n\nFor each test case, output -1 if there is no solution.\n\nOtherwise, first output an integer s (1 ≤ s ≤ 17) – the minimum number of operations to change all the elements of a to 0.\n\nThen, in the next s lines, output n integers in each line b_1,b_2,…,b_n (0 ≤ b_i ≤ a_i) — denoting the array b for each operation.\n\nAfter performing the operations, all the elements of a should be changed to 0.\n\nIn the first test case, we can simply choose b=a in our operation. This is valid because b_1+b_2=b_3.\n\nIn the second test case, it can be proven that it is impossible to change all the elements of a to 0.\n\nInput:\n```\n331 2 322 545 3 1 5\n```\n\nOutput:\n```\n1\n1 2 3\n-1\n2\n3 1 1 1\n2 2 0 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 5·10^4) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^12) — denoting the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.",
+    "output": "For each test case, output -1 if there is no solution.\n\nOtherwise, first output an integer s (1 ≤ s ≤ 17) – the minimum number of operations to change all the elements of a to 0.\n\nThen, in the next s lines, output n integers in each line b_1,b_2,…,b_n (0 ≤ b_i ≤ a_i) — denoting the array b for each operation.\n\nAfter performing the operations, all the elements of a should be changed to 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1401E",
+    "contest_id": 1401,
+    "problem_letter": "E",
+    "title": "E. Divide Square",
+    "statement": "There is a square of size 10^6 × 10^6 on the coordinate plane with four points (0, 0), (0, 10^6), (10^6, 0), and (10^6, 10^6) as its vertices.\n\nYou are going to draw segments on the plane. All segments are either horizontal or vertical and intersect with at least one side of the square.\n\nNow you are wondering how many pieces this square divides into after drawing all segments. Write a program calculating the number of pieces of the square.\n\nThe first line contains two integers n and m (0 ≤ n, m ≤ 10^5) — the number of horizontal segments and the number of vertical segments.\n\nThe next n lines contain descriptions of the horizontal segments. The i-th line contains three integers y_i, lx_i and rx_i (0 < y_i < 10^6; 0 ≤ lx_i < rx_i ≤ 10^6), which means the segment connects (lx_i, y_i) and (rx_i, y_i).\n\nThe next m lines contain descriptions of the vertical segments. The i-th line contains three integers x_i, ly_i and ry_i (0 < x_i < 10^6; 0 ≤ ly_i < ry_i ≤ 10^6), which means the segment connects (x_i, ly_i) and (x_i, ry_i).\n\nIt's guaranteed that there are no two segments on the same line, and each segment intersects with at least one of square's sides.\n\nPrint the number of pieces the square is divided into after drawing all the segments.\n\nThe sample is like this:\n\nInput:\n```\n3 3\n2 3 1000000\n4 0 4\n3 0 1000000\n4 0 1\n2 0 5\n3 1 1000000\n```\n\nOutput:\n```\n7\n```",
+    "input": "The first line contains two integers n and m (0 ≤ n, m ≤ 10^5) — the number of horizontal segments and the number of vertical segments.\n\nThe next n lines contain descriptions of the horizontal segments. The i-th line contains three integers y_i, lx_i and rx_i (0 < y_i < 10^6; 0 ≤ lx_i < rx_i ≤ 10^6), which means the segment connects (lx_i, y_i) and (rx_i, y_i).\n\nThe next m lines contain descriptions of the vertical segments. The i-th line contains three integers x_i, ly_i and ry_i (0 < x_i < 10^6; 0 ≤ ly_i < ry_i ≤ 10^6), which means the segment connects (x_i, ly_i) and (x_i, ry_i).\n\nIt's guaranteed that there are no two segments on the same line, and each segment intersects with at least one of square's sides.",
+    "output": "Print the number of pieces the square is divided into after drawing all the segments.",
+    "time_limit": "2 seconds",
+    "memory_limit": "384 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "implementation",
+        "sortings",
+        "*2400"
+    ],
+    "rating": 2400
+}

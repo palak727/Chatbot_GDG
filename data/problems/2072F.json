@@ -1,0 +1,22 @@
+{
+    "id": "2072F",
+    "contest_id": 2072,
+    "problem_letter": "F",
+    "title": "F. Goodbye, Banker Life",
+    "statement": "Monsters are approaching the city, and to protect it, Akito must create a protective field around the city. As everyone knows, protective fields come in various levels. Akito has chosen the field of level n. To construct the field, a special phrase is required, which is the n-th row of the Great Magical Triangle, represented as a two-dimensional array. We will call this array T.\n\nThe triangle is defined as follows:\n\nHelp Akito find the integers in the n-th row of the infinite triangle before the monsters reach the city.\n\nThe first line contains the integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nIn the only line of each test case, there are two integers n and k (1 ≤ n ≤ 10^6, 1 ≤ k < 2^31) — the row index that Akito needs and the integer in the first row of the Great Magical Triangle, respectively.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.\n\nFor each test case, output n integers — the elements of the n-th row of the Great Magical Triangle.\n\nIn the first example, the first row of the Great Magical Triangle is [5] by definition.\n\nIn the second example, T_{2,1} = T_{1,1} = 10 and T_{2,2} = T_{1, 1} = 10.\n\nInput:\n```\n51 52 103 169 11 52\n```\n\nOutput:\n```\n5\n10 10\n16 0 16\n1 0 0 0 0 0 0 0 1\n52\n```",
+    "input": "The first line contains the integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nIn the only line of each test case, there are two integers n and k (1 ≤ n ≤ 10^6, 1 ≤ k < 2^31) — the row index that Akito needs and the integer in the first row of the Great Magical Triangle, respectively.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.",
+    "output": "For each test case, output n integers — the elements of the n-th row of the Great Magical Triangle.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "2-sat",
+        "bitmasks",
+        "combinatorics",
+        "constructive algorithms",
+        "fft",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

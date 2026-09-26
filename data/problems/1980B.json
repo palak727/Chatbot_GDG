@@ -1,0 +1,16 @@
+{
+    "id": "1980B",
+    "contest_id": 1980,
+    "problem_letter": "B",
+    "title": "B. Choosing Cubes",
+    "statement": "Dmitry has n cubes, numbered from left to right from 1 to n. The cube with index f is his favorite.\n\nDmitry threw all the cubes on the table, and the i-th cube showed the value a_i (1 ≤ a_i ≤ 100). After that, he arranged the cubes in non-increasing order of their values, from largest to smallest. If two cubes show the same value, they can go in any order.\n\nAfter sorting, Dmitry removed the first k cubes. Then he became interested in whether he removed his favorite cube (note that its position could have changed after sorting).\n\nFor example, if n=5, f=2, a = [4, colorgreen3, 3, 2, 3] (the favorite cube is highlighted in green), and k = 2, the following could have happened:\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. Then follow the descriptions of the test cases.\n\nThe first line of each test case description contains three integers n, f, and k (1 ≤ f, k ≤ n ≤ 100) — the number of cubes, the index of Dmitry's favorite cube, and the number of removed cubes, respectively.\n\nThe second line of each test case description contains n integers a_i (1 ≤ a_i ≤ 100) — the values shown on the cubes.\n\nFor each test case, output one line — \"YES\" if the cube will be removed in all cases, \"NO\" if it will not be removed in any case, \"MAYBE\" if it may be either removed or left.\n\nYou can output the answer in any case. For example, the strings \"YES\", \"nO\", \"mAyBe\" will be accepted as answers.\n\nInput:\n```\n125 2 24 3 3 2 35 5 34 2 1 3 55 5 25 2 4 1 35 5 51 2 5 4 35 5 43 1 2 4 55 5 54 3 2 1 56 5 31 2 3 1 2 310 1 11 1 1 1 1 1 1 1 1 11 1 1425 2 32 2 1 1 22 1 12 15 3 13 3 2 3 2\n```\n\nOutput:\n```\nMAYBE\nYES\nNO\nYES\nYES\nYES\nMAYBE\nMAYBE\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. Then follow the descriptions of the test cases.\n\nThe first line of each test case description contains three integers n, f, and k (1 ≤ f, k ≤ n ≤ 100) — the number of cubes, the index of Dmitry's favorite cube, and the number of removed cubes, respectively.\n\nThe second line of each test case description contains n integers a_i (1 ≤ a_i ≤ 100) — the values shown on the cubes.",
+    "output": "For each test case, output one line — \"YES\" if the cube will be removed in all cases, \"NO\" if it will not be removed in any case, \"MAYBE\" if it may be either removed or left.\n\nYou can output the answer in any case. For example, the strings \"YES\", \"nO\", \"mAyBe\" will be accepted as answers.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1594E2",
+    "contest_id": 1594,
+    "problem_letter": "E2",
+    "title": "E2. Rubik's Cube Coloring (hard version)",
+    "statement": "It is the hard version of the problem. The difference is that in this version, there are nodes with already chosen colors.\n\nTheofanis is starving, and he wants to eat his favorite food, sheftalia. However, he should first finish his homework. Can you help him with this problem?\n\nYou have a perfect binary tree of 2^k - 1 nodes — a binary tree where all vertices i from 1 to 2^{k - 1} - 1 have exactly two children: vertices 2i and 2i + 1. Vertices from 2^{k - 1} to 2^k - 1 don't have any children. You want to color its vertices with the 6 Rubik's cube colors (White, Green, Red, Blue, Orange and Yellow).\n\nLet's call a coloring good when all edges connect nodes with colors that are neighboring sides in the Rubik's cube.\n\nMore formally:\n\nHowever, there are n special nodes in the tree, colors of which are already chosen.\n\nYou want to calculate the number of the good colorings of the binary tree. Two colorings are considered different if at least one node is colored with a different color.\n\nThe answer may be too large, so output the answer modulo 10^9+7.\n\nThe first line contains the integers k (1 ≤ k ≤ 60) — the number of levels in the perfect binary tree you need to color.\n\nThe second line contains the integer n (1 ≤ n ≤ min(2^k - 1, 2000)) — the number of nodes, colors of which are already chosen.\n\nThe next n lines contains integer v (1 ≤ v ≤ 2^k - 1) and string s — the index of the node and the color of the node (s is one of the white, yellow, green, blue, red and orange).\n\nIt is guaranteed that each node v appears in the input at most once.\n\nPrint one integer — the number of the different colorings modulo 10^9+7.\n\nIn the picture below, you can see one of the correct colorings of the first test example.\n\nInput:\n```\n3\n2\n5 orange\n2 white\n```\n\nOutput:\n```\n1024\n```\n\nInput:\n```\n2\n2\n1 white\n2 white\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n10\n3\n1 blue\n4 red\n5 orange\n```\n\nOutput:\n```\n328925088\n```",
+    "input": "The first line contains the integers k (1 ≤ k ≤ 60) — the number of levels in the perfect binary tree you need to color.\n\nThe second line contains the integer n (1 ≤ n ≤ min(2^k - 1, 2000)) — the number of nodes, colors of which are already chosen.\n\nThe next n lines contains integer v (1 ≤ v ≤ 2^k - 1) and string s — the index of the node and the color of the node (s is one of the white, yellow, green, blue, red and orange).\n\nIt is guaranteed that each node v appears in the input at most once.",
+    "output": "Print one integer — the number of the different colorings modulo 10^9+7.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "math",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

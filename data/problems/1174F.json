@@ -1,0 +1,21 @@
+{
+    "id": "1174F",
+    "contest_id": 1174,
+    "problem_letter": "F",
+    "title": "F. Ehab and the Big Finale",
+    "statement": "This is an interactive problem.\n\nYou're given a tree consisting of n nodes, rooted at node 1. A tree is a connected graph with no cycles.\n\nWe chose a hidden node x. In order to find this node, you can ask queries of two types:\n\nNode a is called an ancestor of node b if a ≠ b and the shortest path from node 1 to node b passes through node a. Note that in this problem a node is not an ancestor of itself.\n\nCan you find x in no more than 36 queries? The hidden node is fixed in each test beforehand and does not depend on your queries.\n\nThe first line contains the integer n (2 ≤ n ≤ 2·10^5) — the number of nodes in the tree.\n\nEach of the next n-1 lines contains two space-separated integers u and v (1 ≤ u,v ≤ n) that mean there's an edge between nodes u and v. It's guaranteed that the given graph is a tree.\n\nTo print the answer, print \"! x\" (without quotes).\n\nTo ask a question, print it in one of the formats above:\n\nAfter each question, you should read the answer: either the distance or the second vertex on the path, as mentioned in the legend.\n\nIf we answer with -1 instead of a valid answer, that means you exceeded the number of queries, made an invalid query, or violated the condition in the second type of queries. Exit immediately after receiving -1 and you will see Wrong answer verdict. Otherwise, you can get an arbitrary verdict because your solution will continue to read from a closed stream.\n\nAfter printing a query, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks:\n\nThe first line should contain two integers n and x (2 ≤ n ≤ 2·10^5, 1 ≤ x ≤ n).\n\nEach of the next n-1 lines should contain two integers u and v (1 ≤ u,v ≤ n) that mean there is an edge between nodes u and v. The edges must form a tree.\n\nIn the first example, the hidden node is node 5.\n\nWe first ask about the distance between node x and node 2. The answer is 3, so node x is either 4 or 5. We then ask about the second node in the path from node 3 to node x. Note here that node 3 is an ancestor of node 5. We receive node 5 as the answer. Finally, we report that the hidden node is node 5.\n\nInput:\n```\n5\n1 2\n1 3\n3 4\n3 5\n3\n5\n```\n\nOutput:\n```\nd 2\ns 3\n! 5\n```",
+    "input": "The first line contains the integer n (2 ≤ n ≤ 2·10^5) — the number of nodes in the tree.\n\nEach of the next n-1 lines contains two space-separated integers u and v (1 ≤ u,v ≤ n) that mean there's an edge between nodes u and v. It's guaranteed that the given graph is a tree.",
+    "output": "To print the answer, print \"! x\" (without quotes).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "graphs",
+        "implementation",
+        "interactive",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

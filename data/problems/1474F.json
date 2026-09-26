@@ -1,0 +1,18 @@
+{
+    "id": "1474F",
+    "contest_id": 1474,
+    "problem_letter": "F",
+    "title": "F. 1 2 3 4 ...",
+    "statement": "Igor had a sequence d_1, d_2, …, d_n of integers. When Igor entered the classroom there was an integer x written on the blackboard.\n\nIgor generated sequence p using the following algorithm:\n\nFor example, if x = 3, and d = [1, -1, 2], p will be equal [3, 4, 3, 4, 5].\n\nIgor decided to calculate the length of the longest increasing subsequence of p and the number of them.\n\nA sequence a is a subsequence of a sequence b if a can be obtained from b by deletion of several (possibly, zero or all) elements.\n\nA sequence a is an increasing sequence if each element of a (except the first one) is strictly greater than the previous element.\n\nFor p = [3, 4, 3, 4, 5], the length of longest increasing subsequence is 3 and there are 3 of them: [underline3, underline4, 3, 4, underline5], [underline3, 4, 3, underline4, underline5], [3, 4, underline3, underline4, underline5].\n\nThe first line contains a single integer n (1 ≤ n ≤ 50) — the length of the sequence d.\n\nThe second line contains a single integer x (-10^9 ≤ x ≤ 10^9) — the integer on the blackboard.\n\nThe third line contains n integers d_1, d_2, …, d_n (-10^9 ≤ d_i ≤ 10^9).\n\nPrint two integers:\n\nYou should print only the second number modulo 998244353.\n\nThe first test case was explained in the statement.\n\nIn the second test case p = [100, 101, 102, 103, 104, 105, 104, 103, 102, 103, 104, 105, 106, 107, 108].\n\nIn the third test case p = [1, 2, …, 2000000000].\n\nInput:\n```\n3\n3\n1 -1 2\n```\n\nOutput:\n```\n3 3\n```\n\nInput:\n```\n3\n100\n5 -3 6\n```\n\nOutput:\n```\n9 7\n```\n\nInput:\n```\n3\n1\n999999999 0 1000000000\n```\n\nOutput:\n```\n2000000000 1\n```\n\nInput:\n```\n5\n34\n1337 -146 42 -69 228\n```\n\nOutput:\n```\n1393 3876\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 50) — the length of the sequence d.\n\nThe second line contains a single integer x (-10^9 ≤ x ≤ 10^9) — the integer on the blackboard.\n\nThe third line contains n integers d_1, d_2, …, d_n (-10^9 ≤ d_i ≤ 10^9).",
+    "output": "Print two integers:\n\nYou should print only the second number modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "matrices",
+        "*3000"
+    ],
+    "rating": 3000
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1850C",
+    "contest_id": 1850,
+    "problem_letter": "C",
+    "title": "C. Word on the Paper",
+    "statement": "On an 8 × 8 grid of dots, a word consisting of lowercase Latin letters is written vertically in one column, from top to bottom. What is it?\n\nThe input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of 8 lines, each containing 8 characters. Each character in the grid is either texttt. (representing a dot) or a lowercase Latin letter (texttta–textttz).\n\nThe word lies entirely in a single column and is continuous from the beginning to the ending (without gaps). See the sample input for better understanding.\n\nFor each test case, output a single line containing the word made up of lowercase Latin letters (texttta–textttz) that is written vertically in one column from top to bottom.\n\nInput:\n```\n5...................................i.....................................l.......o.......s.......t....................................................................t.......h.......e................................................g.......a.......m.......ea.......a.......a.......a.......a.......a.......a.......a.......\n```\n\nOutput:\n```\ni\nlost\nthe\ngame\naaaaaaaa\n```",
+    "input": "The input consists of multiple test cases. The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of 8 lines, each containing 8 characters. Each character in the grid is either texttt. (representing a dot) or a lowercase Latin letter (texttta–textttz).\n\nThe word lies entirely in a single column and is continuous from the beginning to the ending (without gaps). See the sample input for better understanding.",
+    "output": "For each test case, output a single line containing the word made up of lowercase Latin letters (texttta–textttz) that is written vertically in one column from top to bottom.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1186E",
+    "contest_id": 1186,
+    "problem_letter": "E",
+    "title": "E. Vus the Cossack and a Field",
+    "statement": "Vus the Cossack has a field with dimensions n × m, which consists of \"0\" and \"1\". He is building an infinite field from this field. He is doing this in this way:\n\nFor example, if the initial field was:\n\nAfter the first iteration, the field will be like this:\n\nAfter the second iteration, the field will be like this:\n\nAnd so on...\n\nLet's numerate lines from top to bottom from 1 to infinity, and columns from left to right from 1 to infinity. We call the submatrix (x_1, y_1, x_2, y_2) all numbers that have coordinates (x, y) such that x_1 ≤ x ≤ x_2 and y_1 ≤ y ≤ y_2.\n\nThe Cossack needs sometimes to find the sum of all the numbers in submatrices. Since he is pretty busy right now, he is asking you to find the answers!\n\nThe first line contains three integers n, m, q (1 ≤ n, m ≤ 1,000, 1 ≤ q ≤ 10^5) — the dimensions of the initial matrix and the number of queries.\n\nEach of the next n lines contains m characters c_ij (0 ≤ c_ij ≤ 1) — the characters in the matrix.\n\nEach of the next q lines contains four integers x_1, y_1, x_2, y_2 (1 ≤ x_1 ≤ x_2 ≤ 10^9, 1 ≤ y_1 ≤ y_2 ≤ 10^9) — the coordinates of the upper left cell and bottom right cell, between which you need to find the sum of all numbers.\n\nFor each query, print the answer.\n\nThe first example is explained in the legend.\n\nInput:\n```\n2 2 5\n10\n11\n1 1 8 8\n2 4 5 6\n1 2 7 8\n3 3 6 8\n5 6 7 8\n```\n\nOutput:\n```\n32\n5\n25\n14\n4\n```\n\nInput:\n```\n2 3 7\n100\n101\n4 12 5 17\n5 4 9 4\n1 4 13 18\n12 1 14 9\n3 10 7 18\n3 15 12 17\n8 6 8 12\n```\n\nOutput:\n```\n6\n3\n98\n13\n22\n15\n3\n```",
+    "input": "The first line contains three integers n, m, q (1 ≤ n, m ≤ 1,000, 1 ≤ q ≤ 10^5) — the dimensions of the initial matrix and the number of queries.\n\nEach of the next n lines contains m characters c_ij (0 ≤ c_ij ≤ 1) — the characters in the matrix.\n\nEach of the next q lines contains four integers x_1, y_1, x_2, y_2 (1 ≤ x_1 ≤ x_2 ≤ 10^9, 1 ≤ y_1 ≤ y_2 ≤ 10^9) — the coordinates of the upper left cell and bottom right cell, between which you need to find the sum of all numbers.",
+    "output": "For each query, print the answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "divide and conquer",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

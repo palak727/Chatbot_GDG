@@ -1,0 +1,20 @@
+{
+    "id": "1868D",
+    "contest_id": 1868,
+    "problem_letter": "D",
+    "title": "D. Flower-like Pseudotree",
+    "statement": "A pseudotree is a connected graph which has exactly one cycle and no self-loops. Note that a pseudotree may contain multiple-edges. It can be shown that a pseudotree with n vertices always contains n edges.\n\nAfter deleting all edges on the cycle in the pseudotree, a forest^dagger will be formed. It can be shown that each tree in the forest will contain exactly one vertex which is on cycle before removing the edges. If all trees in the forest have the same depth^ddagger when picking the vertex on cycle as root, we call the original pseudotree flower-like.\n\nOur friend sszcdjr, had a flower-like pseudotree with n vertices and n edges. However, he forgot all the edges in the pseudotree. Fortunately, he still remembers the degrees of vertices. Specifically, the degree of the i-th vertex is d_i.\n\nYou have to help sszcdjr construct a possible flower-like pseudotree with n vertices, where the degree of the i-th vertex is exactly d_i, or tell him that it is impossible.\n\n^dagger A forest is a graph in which all connectivity components are trees. A connected graph without cycles and self-loops is called a tree.\n\n^ddagger The depth of a tree with a root is the maximum distance from the root to the vertex of this tree.\n\nThe first line of the input contains a single integer t (1≤ t≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^6) — the number of vertices.\n\nThe second line of each test case contains n integers d_1,d_2,…,d_n (1≤ d_i≤ n) — the degree of each vertex.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, if there exist a possible flower-like pseudotree:\n\nIf there are multiple answers, you may output any of them.\n\nOtherwise, print \"No\" (without quotes) in the only line of output.\n\nYou can output the first line of each test case in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, the only possible flower-like psuedotree is:\n\nAfter deleting all edges on the cycle in the pseudotree, each tree has depth 0.\n\nIn the second test case, it can be proven that there's no such flower-like psuedotree.\n\nIn the third test case, one of the possible flower-like psuedotrees is:\n\nInput:\n```\n632 2 241 2 3 474 3 3 1 1 1 161 1 2 2 3 3101 1 5 2 1 1 1 1 1 691 1 3 1 1 4 1 1 5\n```\n\nOutput:\n```\nYes\n1 2\n2 3\n3 1\nNo\nYes\n1 2\n2 3\n3 1\n1 4\n1 5\n2 6\n3 7\nYes\n5 6\n6 5\n1 3\n2 4\n3 5\n4 6\nNo\nYes\n3 6\n6 9\n9 3\n1 3\n2 6\n4 6\n5 9\n7 9\n8 9\n```",
+    "input": "The first line of the input contains a single integer t (1≤ t≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^6) — the number of vertices.\n\nThe second line of each test case contains n integers d_1,d_2,…,d_n (1≤ d_i≤ n) — the degree of each vertex.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, if there exist a possible flower-like pseudotree:\n\nIf there are multiple answers, you may output any of them.\n\nOtherwise, print \"No\" (without quotes) in the only line of output.\n\nYou can output the first line of each test case in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "implementation",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

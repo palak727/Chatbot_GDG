@@ -1,0 +1,20 @@
+{
+    "id": "1646B",
+    "contest_id": 1646,
+    "problem_letter": "B",
+    "title": "B. Quality vs Quantity",
+    "statement": "defmyred#1colorredunderlinebf#1 defmyblue#1colorblueoverlinebf#1 defREDmyredRed defBLUEmyblueBlue\n\nYou are given a sequence of n non-negative integers a_1, a_2, …, a_n. Initially, all the elements of the sequence are unpainted. You can paint each number RED or BLUE (but not both), or leave it unpainted.\n\nFor a color c, Count(c) is the number of elements in the sequence painted with that color and Sum(c) is the sum of the elements in the sequence painted with that color.\n\nFor example, if the given sequence is [2, 8, 6, 3, 1] and it is painted this way: [myblue2, 8, myred6, myblue3, 1] (where 6 is painted red, 2 and 3 are painted blue, 1 and 8 are unpainted) then Sum(RED)=6, Sum(BLUE)=2+3=5, Count(RED)=1, and Count(BLUE)=2.\n\nDetermine if it is possible to paint the sequence so that Sum(RED) > Sum(BLUE) and Count(RED) < Count(BLUE).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n≤ 2·10^5) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (0≤ a_i≤ 10^9) — the given sequence.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print YES if it is possible to paint the given sequence satisfying the above requirements, and NO otherwise.\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).\n\nIn the first test case, there is no possible way to paint the sequence. For example, if you paint the sequence this way: [myblue1,myblue2,myred3] (where 3 is painted red, 1 and 2 are painted blue) then Count(RED)=1 < Count(BLUE)=2, but Sum(RED)=3 ngtr Sum(BLUE)=3. So, this is not a possible way to paint the sequence.\n\nIn the second test case, a possible way to paint the sequence is described in the statement. We can see that Sum(RED)=6 > Sum(BLUE)=5 and Count(RED)=1 < Count(BLUE)=2.\n\nIn the third test case, there is no possible way to paint the sequence. For example, if you paint the sequence this way: [myred3,myred5,myblue4, myblue2] (where 3 and 5 are painted red, 4 and 2 are painted blue) then Sum(RED) = 8 > Sum(BLUE) = 6 but Count(RED) = 2 nless Count(BLUE) = 2. So, this is not a possible way to paint the sequence.\n\nIn the fourth test case, it can be proven that there is no possible way to paint the sequence satisfying sum and count constraints.\n\nInput:\n```\n431 2 352 8 6 3 143 5 4 251000000000 1000000000 1000000000 1000000000 1000000000\n```\n\nOutput:\n```\nNO\nYES\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n≤ 2·10^5) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (0≤ a_i≤ 10^9) — the given sequence.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print YES if it is possible to paint the given sequence satisfying the above requirements, and NO otherwise.\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

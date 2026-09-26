@@ -1,0 +1,16 @@
+{
+    "id": "1631A",
+    "contest_id": 1631,
+    "problem_letter": "A",
+    "title": "A. Min Max Swap",
+    "statement": "You are given two arrays a and b of n positive integers each. You can apply the following operation to them any number of times:\n\nFind the minimum possible value of max(a_1, a_2, …, a_n)·max(b_1, b_2, …, b_n) you can get after applying such operation any number of times (possibly zero).\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 100) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10,000) where a_i is the i-th element of the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10,000) where b_i is the i-th element of the array b.\n\nFor each test case, print a single integer, the minimum possible value of max(a_1, a_2, …, a_n)·max(b_1, b_2, …, b_n) you can get after applying such operation any number of times.\n\nIn the first test, you can apply the operations at indices 2 and 6, then a = [1, 4, 6, 5, 1, 5] and b = [3, 2, 3, 2, 2, 2], max(1, 4, 6, 5, 1, 5)·max(3, 2, 3, 2, 2, 2) = 6·3 = 18.\n\nIn the second test, no matter how you apply the operations, a = [3, 3, 3] and b = [3, 3, 3] will always hold, so the answer is max(3, 3, 3)·max(3, 3, 3) = 3·3 = 9.\n\nIn the third test, you can apply the operation at index 1, then a = [2, 2], b = [1, 1], so the answer is max(2, 2)·max(1, 1) = 2·1 = 2.\n\nInput:\n```\n361 2 6 5 1 23 4 3 2 2 533 3 33 3 321 22 1\n```\n\nOutput:\n```\n18\n9\n2\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 100) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10,000) where a_i is the i-th element of the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10,000) where b_i is the i-th element of the array b.",
+    "output": "For each test case, print a single integer, the minimum possible value of max(a_1, a_2, …, a_n)·max(b_1, b_2, …, b_n) you can get after applying such operation any number of times.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

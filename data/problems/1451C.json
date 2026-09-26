@@ -1,0 +1,20 @@
+{
+    "id": "1451C",
+    "contest_id": 1451,
+    "problem_letter": "C",
+    "title": "C. String Equality",
+    "statement": "Ashish has two strings a and b, each of length n, and an integer k. The strings only contain lowercase English letters.\n\nHe wants to convert string a into string b by performing some (possibly zero) operations on a.\n\nIn one move, he can either\n\nNote that he can perform any number of operations, and the operations can only be performed on string a.\n\nHelp Ashish determine if it is possible to convert string a into b after performing some (possibly zero) operations on it.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of each test case is as follows.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 10^6) and k (1 ≤ k ≤ n).\n\nThe second line of each test case contains the string a of length n consisting of lowercase English letters.\n\nThe third line of each test case contains the string b of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of values n among all test cases does not exceed 10^6.\n\nFor each test case, print \"Yes\" if Ashish can convert a into b after some moves, else print \"No\".\n\nYou may print the letters of the answer in any case (upper or lower).\n\nIn the first test case it can be shown that it is impossible to convert a into b.\n\nIn the second test case,\n\n\"abba\" xrightarrowinc \"acca\" xrightarrowinc … xrightarrowinc \"azza\".\n\nHere \"swap\" denotes an operation of the first type, and \"inc\" denotes an operation of the second type.\n\nIn the fourth test case,\n\n\"aaabba\" xrightarrowswap \"aaabab\" xrightarrowswap \"aaaabb\" xrightarrowinc … xrightarrowinc \"ddaabb\" xrightarrowinc … xrightarrowinc \"ddddbb\" xrightarrowinc … xrightarrowinc \"ddddcc\".\n\nInput:\n```\n4\n3 3\nabc\nbcd\n4 2\nabba\nazza\n2 1\nzz\naa\n6 2\naaabba\nddddcc\n```\n\nOutput:\n```\nNo\nYes\nNo\nYes\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of each test case is as follows.\n\nThe first line of each test case contains two integers n (2 ≤ n ≤ 10^6) and k (1 ≤ k ≤ n).\n\nThe second line of each test case contains the string a of length n consisting of lowercase English letters.\n\nThe third line of each test case contains the string b of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of values n among all test cases does not exceed 10^6.",
+    "output": "For each test case, print \"Yes\" if Ashish can convert a into b after some moves, else print \"No\".\n\nYou may print the letters of the answer in any case (upper or lower).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "hashing",
+        "implementation",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

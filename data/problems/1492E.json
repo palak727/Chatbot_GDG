@@ -1,0 +1,20 @@
+{
+    "id": "1492E",
+    "contest_id": 1492,
+    "problem_letter": "E",
+    "title": "E. Almost Fault-Tolerant Database",
+    "statement": "You are storing an integer array of length m in a database. To maintain internal integrity and protect data, the database stores n copies of this array.\n\nUnfortunately, the recent incident may have altered the stored information in every copy in the database.\n\nIt's believed, that the incident altered at most two elements in every copy. You need to recover the original array based on the current state of the database.\n\nIn case there are multiple ways to restore the array, report any. If there is no array that differs from every copy in no more than two positions, report that as well.\n\nThe first line contains integers n and m (2 ≤ n; 1 ≤ m; n·m ≤ 250,000) — the number of copies and the size of the array.\n\nEach of the following n lines describes one of the currently stored copies in the database, it consists of m integers s_{i, 1}, s_{i, 2}, …, s_{i, m} (1 ≤ s_{i, j} ≤ 10^9).\n\nIf there is an array consistent with all given copies, print \"Yes\" and then the array itself. The array must have length m and contain integers between 1 and 10^9 only.\n\nOtherwise, print \"No\".\n\nIf there are multiple possible arrays, print any of them.\n\nIn the first example, the array [1, 10, 1, 100] differs from first and second copies in just one position, and from the third copy in two positions.\n\nIn the second example, array [1, 1, 1, 1, 1, 1, 1] is the same as the first copy and differs from all other copies in at most two positions.\n\nIn the third example, there is no array differing in at most two positions from every database's copy.\n\nInput:\n```\n3 4\n1 10 10 100\n1 1 1 100\n10 100 1 100\n```\n\nOutput:\n```\nYes\n1 10 1 100\n```\n\nInput:\n```\n10 7\n1 1 1 1 1 1 1\n1 1 1 1 1 1 2\n1 1 1 1 1 2 2\n1 1 1 1 2 2 1\n1 1 1 2 2 1 1\n1 1 2 2 1 1 1\n1 2 2 1 1 1 1\n2 2 1 1 1 1 1\n2 1 1 1 1 1 1\n1 1 1 1 1 1 1\n```\n\nOutput:\n```\nYes\n1 1 1 1 1 1 1\n```\n\nInput:\n```\n2 5\n2 2 1 1 1\n1 1 2 2 2\n```\n\nOutput:\n```\nNo\n```",
+    "input": "The first line contains integers n and m (2 ≤ n; 1 ≤ m; n·m ≤ 250,000) — the number of copies and the size of the array.\n\nEach of the following n lines describes one of the currently stored copies in the database, it consists of m integers s_{i, 1}, s_{i, 2}, …, s_{i, m} (1 ≤ s_{i, j} ≤ 10^9).",
+    "output": "If there is an array consistent with all given copies, print \"Yes\" and then the array itself. The array must have length m and contain integers between 1 and 10^9 only.\n\nOtherwise, print \"No\".\n\nIf there are multiple possible arrays, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "greedy",
+        "implementation",
+        "*2500"
+    ],
+    "rating": 2500
+}

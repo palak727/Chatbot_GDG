@@ -1,0 +1,17 @@
+{
+    "id": "1505G",
+    "contest_id": 1505,
+    "problem_letter": "G",
+    "title": "G. Encoded message",
+    "statement": "The first line of the input contains a single integer N (1 ≤ N ≤ 24). The next N lines contain 5 space-separated integers each. The first three integers will be between 0 and 2, inclusive. The last two integers will be between 0 and 3, inclusive. The sum of the first three integers will be equal to the sum of the last two integers.\n\nOutput the result – a string of lowercase English letters.\n\nInput:\n```\n1\n1 0 0 1 0\n```\n\nOutput:\n```\na\n```\n\nInput:\n```\n10\n2 0 0 1 1\n1 1 1 2 1\n2 1 0 1 2\n1 1 0 1 1\n2 1 0 2 1\n1 1 1 2 1\n1 2 1 3 1\n2 0 0 1 1\n1 1 0 1 1\n1 1 2 2 2\n```\n\nOutput:\n```\ncodeforcez\n```",
+    "input": "The first line of the input contains a single integer N (1 ≤ N ≤ 24). The next N lines contain 5 space-separated integers each. The first three integers will be between 0 and 2, inclusive. The last two integers will be between 0 and 3, inclusive. The sum of the first three integers will be equal to the sum of the last two integers.",
+    "output": "Output the result – a string of lowercase English letters.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "*2600"
+    ],
+    "rating": 2600
+}

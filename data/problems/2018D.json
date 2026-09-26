@@ -1,0 +1,22 @@
+{
+    "id": "2018D",
+    "contest_id": 2018,
+    "problem_letter": "D",
+    "title": "D. Max Plus Min Plus Size",
+    "statement": "You are given an array a_1, a_2, …, a_n of positive integers.\n\nYou can color some elements of the array red, but there cannot be two adjacent red elements (i.e., for 1 ≤ i ≤ n-1, at least one of a_i and a_{i+1} must not be red).\n\nYour score is the maximum value of a red element, plus the minimum value of a red element, plus the number of red elements. Find the maximum score you can get.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer: the maximum possible score you can get after coloring some elements red according to the statement.\n\nIn the first test case, you can color the array as follows: [colorred5, 4, colorred5]. Your score is max([5, 5]) + min([5, 5]) + size([5, 5]) = 5+5+2 = 12. This is the maximum score you can get.\n\nIn the second test case, you can color the array as follows: [4, colorred5, 4]. Your score is max([5]) + min([5]) + size([5]) = 5+5+1 = 11. This is the maximum score you can get.\n\nIn the third test case, you can color the array as follows: [colorred3, 3, colorred3, 3, colorred4, 1, 2, colorred3, 5, colorred4]. Your score is max([3, 3, 4, 3, 4]) + min([3, 3, 4, 3, 4]) + size([3, 3, 4, 3, 4]) = 4+3+5 = 12. This is the maximum score you can get.\n\nInput:\n```\n435 4 534 5 4103 3 3 3 4 1 2 3 5 41017 89 92 42 29 41 92 14 70 45\n```\n\nOutput:\n```\n12\n11\n12\n186\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer: the maximum possible score you can get after coloring some elements red according to the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "dsu",
+        "greedy",
+        "implementation",
+        "matrices",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

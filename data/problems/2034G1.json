@@ -1,0 +1,19 @@
+{
+    "id": "2034G1",
+    "contest_id": 2034,
+    "problem_letter": "G1",
+    "title": "G1. Simurgh's Watch (Easy Version)",
+    "statement": "The only difference between the two versions of the problem is whether overlaps are considered at all points or only at integer points.\n\nThe legendary Simurgh, a mythical bird, is responsible for keeping watch over vast lands, and for this purpose, she has enlisted n vigilant warriors. Each warrior is alert during a specific time segment [l_i, r_i], where l_i is the start time (included) and r_i is the end time (included), both positive integers.\n\nOne of Simurgh's trusted advisors, Zal, is concerned that if multiple warriors are stationed at the same time and all wear the same color, the distinction between them might be lost, causing confusion in the watch. To prevent this, whenever multiple warriors are on guard at the same moment (which can be non-integer), there must be at least one color which is worn by exactly one warrior.\n\nSo the task is to determine the minimum number of colors required and assign a color c_i to each warrior's segment [l_i, r_i] such that, for every (real) time t contained in at least one segment, there exists one color which belongs to exactly one segment containing t.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nThe sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case:\n\nWe can represent each warrior's watch segment as an interval on the X-axis;\n\nIn test case 1, we have two independent intervals, which can be colored with the same color.\n\nIn test case 2, point 2 is common to two intervals, meaning we cannot color them with the same color.\n\nIn test case 3, the intervals can be colored as shown below (intervals are colored with the selected color; areas are colored if this color occurs exactly once at this point in time):\n\nIn test case 4, the intervals can be colored as shown below:\n\nIn test case 5, the intervals can be colored as shown below. The image on the right demonstrates an example of incorrect coloring for this test case; there is no unique color at the moment 5.5:\n\nInput:\n```\n521 23 421 22 331 42 53 651 42 83 75 106 951 52 63 74 76 7\n```\n\nOutput:\n```\n1\n1 1\n2\n1 2\n2\n1 2 1\n3\n2 3 1 2 1\n3\n2 1 3 1 1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nThe sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*3500"
+    ],
+    "rating": 3500
+}

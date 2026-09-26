@@ -1,0 +1,20 @@
+{
+    "id": "1978E",
+    "contest_id": 1978,
+    "problem_letter": "E",
+    "title": "E. Computing Machine",
+    "statement": "Sasha has two binary strings s and t of the same length n, consisting of the characters 0 and 1.\n\nThere is also a computing machine that can perform two types of operations on binary strings a and b of the same length k:\n\nSasha became interested in the following: if we consider the string a=s_ls_{l+1}… s_r and the string b=t_lt_{l+1}… t_r, what is the maximum number of 1 characters in the string a that can be obtained using the computing machine. Since Sasha is very curious but lazy, it is up to you to answer this question for several pairs (l_i, r_i) that interest him.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the strings s and t.\n\nThe second line of each test case contains a binary string s of length n, consisting of the characters 0 and 1.\n\nThe third line of each test case contains a binary string t of length n, consisting of the characters 0 and 1.\n\nThe fourth line of each test case contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe i-th of the following lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the boundaries of the i-th pair of substrings that interest Sasha.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5 and the sum of q over all test cases does not exceed 2·10^5.\n\nFor each test case, output q integers — the answers to all queries.\n\nIn the first test case:\n\nIn the second test case:\n\nInput:\n```\n341111000021 22 441010110121 31 4601010101101052 31 62 54 43 6\n```\n\nOutput:\n```\n2\n3\n2\n3\n1\n4\n3\n1\n2\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the strings s and t.\n\nThe second line of each test case contains a binary string s of length n, consisting of the characters 0 and 1.\n\nThe third line of each test case contains a binary string t of length n, consisting of the characters 0 and 1.\n\nThe fourth line of each test case contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe i-th of the following lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the boundaries of the i-th pair of substrings that interest Sasha.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5 and the sum of q over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output q integers — the answers to all queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "implementation",
+        "*2000"
+    ],
+    "rating": 2000
+}

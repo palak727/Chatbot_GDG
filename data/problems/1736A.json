@@ -1,0 +1,18 @@
+{
+    "id": "1736A",
+    "contest_id": 1736,
+    "problem_letter": "A",
+    "title": "A. Make A Equal to B",
+    "statement": "You are given two arrays a and b of n elements, each element is either 0 or 1.\n\nYou can make operations of 2 kinds.\n\nFind the minimum number of operations required to make a equal to b.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 400) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the arrays a and b.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (a_i is 0 or 1), representing the array a.\n\nThe third line of each test case contains n space-separated integers b_1,b_2,…,b_n (b_i is 0 or 1), representing the array b.\n\nFor each test case, print the minimum number of operations required to make a equal to b.\n\nIn the first case, we need only one operation: change a_1 to 1-a_i. Now a = [0, 0] which is equal to b.\n\nIn the second case, the optimal way is to rearrange a to get the array [0, 1, 11. Now a = [0, 0, 1] which is equal to b.\n\nIn the second case, one of optimal ways would be to first change a_3 to 1 - a_3, then rearrange a.\n\nIn the third case, no operation is needed.\n\nIn the fourth case, the optimal way is to rearrange a to get the array [0, 1, 1, 0].\n\nInput:\n```\n531 0 10 0 141 1 0 00 1 1 121 11 141 0 0 10 1 1 0101\n```\n\nOutput:\n```\n1\n2\n0\n1\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 400) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the arrays a and b.\n\nThe second line of each test case contains n space-separated integers a_1,a_2,…,a_n (a_i is 0 or 1), representing the array a.\n\nThe third line of each test case contains n space-separated integers b_1,b_2,…,b_n (b_i is 0 or 1), representing the array b.",
+    "output": "For each test case, print the minimum number of operations required to make a equal to b.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

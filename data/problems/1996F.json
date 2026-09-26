@@ -1,0 +1,18 @@
+{
+    "id": "1996F",
+    "contest_id": 1996,
+    "problem_letter": "F",
+    "title": "F. Bomb",
+    "statement": "Sparkle gives you two arrays a and b of length n. Initially, your score is 0. In one operation, you can choose an integer i and add a_i to your score. Then, you must set a_i = max(0, a_i - b_i).\n\nYou only have time to perform k operations before Sparkle sets off a nuclear bomb! What is the maximum score you can acquire after k operations?\n\nThe first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the length of the arrays and the number of operations you can perform.\n\nThe following line contains n integers a_1, a_2, ... a_n (1 ≤ a_i ≤ 10^9).\n\nThe following line contains n integers b_1, b_2, ... b_n (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer, the maximum score you can acquire after k operations.\n\nInput:\n```\n53 45 6 72 3 45 932 52 68 64 1418 14 53 24 85 10001 2 3 4 55 4 3 2 11 10000001000000110 63 3 5 10 6 8 6 8 7 76 1 7 4 1 1 8 9 3 1\n```\n\nOutput:\n```\n21\n349\n27\n500000500000\n47\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the length of the arrays and the number of operations you can perform.\n\nThe following line contains n integers a_1, a_2, ... a_n (1 ≤ a_i ≤ 10^9).\n\nThe following line contains n integers b_1, b_2, ... b_n (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer, the maximum score you can acquire after k operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

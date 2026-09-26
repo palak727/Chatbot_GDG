@@ -1,0 +1,22 @@
+{
+    "id": "2114F",
+    "contest_id": 2114,
+    "problem_letter": "F",
+    "title": "F. Small Operations",
+    "statement": "Given an integer x and an integer k. In one operation, you can perform one of two actions:\n\nFind the minimum number of operations required to make the number x equal to y, or determine that it is impossible.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers x, y and k (1 ≤ x, y, k ≤ 10^6).\n\nIt is guaranteed that the sum of x and the sum of y across all test cases does not exceed 10^8.\n\nFor each test case, output -1 if it is impossible to achieve x=y using the given operations, and the minimum number of required operations otherwise.\n\nInput:\n```\n84 6 34 5 34 6 210 45 3780 23 4211 270 231 982800 131 6 2\n```\n\nOutput:\n```\n2\n-1\n-1\n3\n3\n3\n6\n-1\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains three integers x, y and k (1 ≤ x, y, k ≤ 10^6).\n\nIt is guaranteed that the sum of x and the sum of y across all test cases does not exceed 10^8.",
+    "output": "For each test case, output -1 if it is impossible to achieve x=y using the given operations, and the minimum number of required operations otherwise.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "math",
+        "number theory",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

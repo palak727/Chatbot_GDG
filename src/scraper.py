@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import html
 import os
 import re
 import sys
@@ -12,15 +13,236 @@ from typing import Any
 
 import cloudscraper
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
+from bs4.element import NavigableString, PageElement
 
 from config import PROBLEMS_DIR
-from src.utils import format_latex
 
 API_URL = "https://codeforces.com/api/problemset.problems"
 REQUEST_DELAY = 1.0  # seconds between HTML scrape requests
 MAX_SCRAPE_RETRIES = 3
 MIN_STATEMENT_LENGTH = 40
+
+_TEX_SYMBOLS = {
+    "alpha": "α", "beta": "β", "gamma": "γ", "delta": "δ",
+    "epsilon": "ε", "varepsilon": "ϵ", "zeta": "ζ", "eta": "η",
+    "theta": "θ", "vartheta": "ϑ", "iota": "ι", "kappa": "κ",
+    "lambda": "λ", "mu": "μ", "nu": "ν", "xi": "ξ", "pi": "π",
+    "varpi": "ϖ", "rho": "ρ", "varrho": "ϱ", "sigma": "σ",
+    "varsigma": "ς", "tau": "τ", "upsilon": "υ", "phi": "φ",
+    "varphi": "ϕ", "chi": "χ", "psi": "ψ", "omega": "ω",
+    "Gamma": "Γ", "Delta": "Δ", "Theta": "Θ", "Lambda": "Λ",
+    "Xi": "Ξ", "Pi": "Π", "Sigma": "Σ", "Upsilon": "Υ",
+    "Phi": "Φ", "Psi": "Ψ", "Omega": "Ω", "le": "≤", "leq": "≤",
+    "ge": "≥", "geq": "≥", "lt": "<", "gt": ">", "neq": "≠",
+    "ne": "≠", "approx": "≈", "equiv": "≡", "in": "∈", "notin": "∉",
+    "ni": "∋", "subset": "⊂", "subseteq": "⊆", "supset": "⊃",
+    "supseteq": "⊇", "cup": "∪", "cap": "∩", "cdot": "·",
+    "times": "×", "div": "÷", "pm": "±", "mp": "∓", "to": "→",
+    "rightarrow": "→", "leftarrow": "←", "leftrightarrow": "↔",
+    "infty": "∞", "partial": "∂", "nabla": "∇", "forall": "∀",
+    "exists": "∃", "emptyset": "∅", "angle": "∠", "perp": "⊥",
+    "parallel": "∥", "ldots": "…", "dots": "…", "cdots": "⋯",
+    "sum": "∑", "prod": "∏", "int": "∫", "lim": "lim",
+}
+_TEX_STYLE_COMMANDS = {"text", "textrm", "textit", "mathrm", "mathbf", "mathit", "operatorname"}
+
+
+def _read_tex_group(text: str, start: int) -> tuple[str, int]:
+    """Read a brace-delimited TeX group starting at start, including nested groups."""
+    if start >= len(text) or text[start] != "{":
+        return "", start
+    depth = 0
+    for position in range(start, len(text)):
+        if text[position] == "{":
+            depth += 1
+        elif text[position] == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start + 1 : position], position + 1
+    return text[start + 1 :], len(text)
+
+
+def _plain_tex(text: str) -> str:
+    """Convert Codeforces TeX source to readable Unicode/plain-text notation."""
+    text = html.unescape(text)
+    for pattern in (
+        r"\$\$\$(.*?)\$\$\$",
+        r"\$\$(.*?)\$\$",
+        r"\\\((.*?)\\\)",
+        r"\\\[(.*?)\\\]",
+        r"(?<!\$)\$(?!\$)(.*?)(?<!\$)\$",
+    ):
+        text = re.sub(pattern, r"\1", text, flags=re.DOTALL)
+
+    output: list[str] = []
+    position = 0
+    while position < len(text):
+        character = text[position]
+        if character == "\\":
+            position += 1
+            if position >= len(text):
+                break
+            if text[position].isalpha():
+                end = position + 1
+                while end < len(text) and text[end].isalpha():
+                    end += 1
+                command = text[position:end]
+                position = end
+                if command in {"frac", "dfrac", "tfrac", "binom"}:
+                    numerator, next_position = _read_tex_group(text, position)
+                    denominator, final_position = _read_tex_group(text, next_position)
+                    if final_position > next_position:
+                        top = _plain_tex(numerator).strip()
+                        bottom = _plain_tex(denominator).strip()
+                        if command == "binom":
+                            output.append(f"{top} choose {bottom}")
+                        else:
+                            numerator_text = top if re.fullmatch(r"[\wα-ωΑ-Ω]+", top) else f"({top})"
+                            denominator_text = bottom if re.fullmatch(r"[\wα-ωΑ-Ω]+", bottom) else f"({bottom})"
+                            output.append(f"{numerator_text}/{denominator_text}")
+                        position = final_position
+                        continue
+                if command == "sqrt":
+                    root_index = ""
+                    if position < len(text) and text[position] == "[":
+                        close = text.find("]", position + 1)
+                        if close >= 0:
+                            root_index = "[" + _plain_tex(text[position + 1 : close]) + "]"
+                            position = close + 1
+                    radicand, final_position = _read_tex_group(text, position)
+                    if final_position > position:
+                        output.append(f"√{root_index}({_plain_tex(radicand)})")
+                        position = final_position
+                        continue
+                    output.append("√")
+                    continue
+                if command in _TEX_STYLE_COMMANDS:
+                    content, final_position = _read_tex_group(text, position)
+                    if final_position > position:
+                        output.append(_plain_tex(content))
+                        position = final_position
+                        continue
+                output.append(_TEX_SYMBOLS.get(command, command))
+                continue
+
+            escaped = text[position]
+            position += 1
+            if escaped in "{}_%#&$":
+                output.append(escaped)
+            elif escaped == "\\":
+                output.append(" ")
+            else:
+                output.append(escaped)
+            continue
+
+        if character in "_^" and position + 1 < len(text) and text[position + 1] == "{":
+            group, final_position = _read_tex_group(text, position + 1)
+            if final_position > position + 1:
+                value = _plain_tex(group)
+                if re.fullmatch(r"[\wα-ωΑ-Ω]+", value):
+                    output.extend((character, value))
+                else:
+                    output.extend((character, "{", value, "}"))
+                position = final_position
+                continue
+        if character in "{}":
+            position += 1
+            continue
+        output.append(character)
+        position += 1
+
+    result = "".join(output)
+    result = re.sub(r"[ \t\r\f\v]+", " ", result)
+    result = re.sub(r"\s*·\s*", "·", result)
+    return result.strip()
+
+
+def _math_attribute(node: Tag) -> str:
+    for attribute in ("data-tex", "data-latex", "aria-label", "alt", "title", "text"):
+        value = node.get(attribute)
+        if value:
+            return str(value)
+    image = node.find("img")
+    if image:
+        for attribute in ("alt", "aria-label", "title"):
+            value = image.get(attribute)
+            if value:
+                return str(value)
+    return ""
+
+
+def _html_text(node: PageElement) -> str:
+    """Extract visible text, using accessible/TeX alternatives for math markup."""
+    if isinstance(node, NavigableString):
+        return str(node)
+    if not isinstance(node, Tag) or node.name in {"script", "style"}:
+        return ""
+
+    classes = set(node.get_attribute_list("class"))
+    if "MathJax" in classes:
+        if node.find_previous_sibling(class_="MathJax_Preview"):
+            return ""
+        return _math_attribute(node)
+    if "MathJax_Preview" in classes:
+        return node.get_text()
+
+    math_source = node.get("data-tex") or node.get("data-latex")
+    if math_source:
+        return str(math_source)
+    if node.name == "img":
+        return _math_attribute(node)
+
+    content = "".join(_html_text(child) for child in node.children)
+    if node.name == "sub":
+        return "_" + (content if len(content) == 1 else "{" + content + "}")
+    if node.name == "sup":
+        return "^" + (content if len(content) == 1 else "{" + content + "}")
+    if node.name == "br":
+        return "\n"
+    return content
+
+
+def _clean_content_blocks(container: Tag) -> str:
+    blocks = [
+        block
+        for block in container.find_all(["p", "pre"])
+        if block.name != "pre" or not block.find_parent(class_="sample-tests")
+    ]
+    if not blocks:
+        blocks = [container]
+
+    cleaned: list[str] = []
+    for block in blocks:
+        if block.name == "pre":
+            content = html.unescape(_html_text(block)).strip("\n")
+            if content:
+                cleaned.append(f"```\n{content}\n```")
+        else:
+            content = _plain_tex(_html_text(block))
+            content = re.sub(r"\s+", " ", content).strip()
+            if content:
+                cleaned.append(content)
+    return "\n\n".join(cleaned)
+
+
+def _clean_sample_tests(sample_tests: Tag) -> str:
+    samples: list[str] = []
+    for sample in sample_tests.find_all("div", class_="sample-test"):
+        sections: list[str] = []
+        for section in sample.find_all("div", recursive=False):
+            section_classes = set(section.get_attribute_list("class"))
+            if not section_classes.intersection({"input", "output"}):
+                continue
+            title = section.find(class_="title")
+            pre = section.find("pre")
+            if pre:
+                label = title.get_text(" ", strip=True) if title else "Example"
+                code = _html_text(pre).strip("\n")
+                sections.append(f"{label}:\n```\n{code}\n```")
+        if sections:
+            samples.append("\n\n".join(sections))
+    return "\n\n".join(samples)
 
 
 def fetch_api_problems() -> list[dict[str, Any]]:
@@ -41,23 +263,18 @@ def fetch_api_problems() -> list[dict[str, Any]]:
 
 
 def _clean_statement_html(problem_div) -> str:
-    """Extract and clean problem statement text with LaTeX preserved."""
-    paragraphs = problem_div.find_all("p")
-    lines: list[str] = []
-    for p in paragraphs:
-        text = p.get_text(separator=" ", strip=True)
-        text = re.sub(r"\$\$\$(.*?)\$\$\$", r"$$\1$$", text, flags=re.DOTALL)
-        text = re.sub(r"\$(.*?)\$", r"$\1$", text)
-        lines.append(format_latex(text))
-    return "\n\n".join(lines)
+    """Extract statement text, math notation, and formatted sample examples."""
+    statement = _clean_content_blocks(problem_div)
+    sample_tests = problem_div.find(class_="sample-tests")
+    samples = _clean_sample_tests(sample_tests) if sample_tests else ""
+    return "\n\n".join(part for part in (statement, samples) if part)
 
 
 def _clean_spec_div(spec_div) -> str:
     """Extract input/output specification text."""
     if not spec_div:
         return ""
-    text = spec_div.get_text(separator=" ", strip=True)
-    return format_latex(text)
+    return _clean_content_blocks(spec_div)
 
 
 def scrape_statement(

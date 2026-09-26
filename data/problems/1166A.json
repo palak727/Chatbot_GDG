@@ -1,0 +1,17 @@
+{
+    "id": "1166A",
+    "contest_id": 1166,
+    "problem_letter": "A",
+    "title": "A. Silent Classroom",
+    "statement": "There are n students in the first grade of Nlogonia high school. The principal wishes to split the students into two classrooms (each student must be in exactly one of the classrooms). Two distinct students whose name starts with the same letter will be chatty if they are put in the same classroom (because they must have a lot in common). Let x be the number of such pairs of students in a split. Pairs (a, b) and (b, a) are the same and counted only once.\n\nFor example, if there are 6 students: \"olivia\", \"jacob\", \"tanya\", \"jack\", \"oliver\" and \"jessica\", then:\n\nYou are given the list of the n names. What is the minimum x we can obtain by splitting the students into classrooms?\n\nNote that it is valid to place all of the students in one of the classrooms, leaving the other one empty.\n\nThe first line contains a single integer n (1≤ n ≤ 100) — the number of students.\n\nAfter this n lines follow.\n\nThe i-th line contains the name of the i-th student.\n\nIt is guaranteed each name is a string of lowercase English letters of length at most 20. Note that multiple students may share the same name.\n\nThe output must consist of a single integer x — the minimum possible number of chatty pairs.\n\nIn the first sample the minimum number of pairs is 1. This can be achieved, for example, by putting everyone except jose in one classroom, and jose in the other, so jorge and jerry form the only chatty pair.\n\nIn the second sample the minimum number of pairs is 2. This can be achieved, for example, by putting kambei, gorobei, shichiroji and kyuzo in one room and putting heihachi, katsushiro and kikuchiyo in the other room. In this case the two pairs are kambei and kyuzo, and katsushiro and kikuchiyo.\n\nIn the third sample the minimum number of pairs is 4. This can be achieved by placing three of the students named mike in one classroom and the other two students in another classroom. Thus there will be three chatty pairs in one classroom and one chatty pair in the other classroom.\n\nInput:\n```\n4\njorge\njose\noscar\njerry\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n7\nkambei\ngorobei\nshichiroji\nkyuzo\nheihachi\nkatsushiro\nkikuchiyo\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\nmike\nmike\nmike\nmike\nmike\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains a single integer n (1≤ n ≤ 100) — the number of students.\n\nAfter this n lines follow.\n\nThe i-th line contains the name of the i-th student.\n\nIt is guaranteed each name is a string of lowercase English letters of length at most 20. Note that multiple students may share the same name.",
+    "output": "The output must consist of a single integer x — the minimum possible number of chatty pairs.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

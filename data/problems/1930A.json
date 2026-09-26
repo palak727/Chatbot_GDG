@@ -1,0 +1,17 @@
+{
+    "id": "1930A",
+    "contest_id": 1930,
+    "problem_letter": "A",
+    "title": "A. Maximise The Score",
+    "statement": "There are 2n positive integers written on a whiteboard. Being bored, you decided to play a one-player game with the numbers on the whiteboard.\n\nYou start with a score of 0. You will increase your score by performing the following move exactly n times:\n\nNote that after performing the move n times, there will be no more integers written on the whiteboard.\n\nFind the maximum final score you can achieve if you optimally perform the n moves.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of integers written on the whiteboard is 2n.\n\nThe second line of each test case contains 2n integers a_1,a_2,…,a_2n (1 ≤ a_i ≤ 10^7) — the numbers written on the whiteboard.\n\nFor each test case, output the maximum final score that you can achieve.\n\nIn the first test case, you can only make one move. You select x=2 and y=3, and your score will be min(x,y)=2.\n\nIn the second test case, the following is a sequence of moves that achieves a final score of 2:\n\nIn the third test case, you will perform the move thrice, adding 1 to the score each time.\n\nInput:\n```\n312 321 1 2 131 1 1 1 1 1\n```\n\nOutput:\n```\n2\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of integers written on the whiteboard is 2n.\n\nThe second line of each test case contains 2n integers a_1,a_2,…,a_2n (1 ≤ a_i ≤ 10^7) — the numbers written on the whiteboard.",
+    "output": "For each test case, output the maximum final score that you can achieve.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

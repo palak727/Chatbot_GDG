@@ -1,0 +1,17 @@
+{
+    "id": "1968B",
+    "contest_id": 1968,
+    "problem_letter": "B",
+    "title": "B. Prefiquence",
+    "statement": "You are given two binary strings a and b. A binary string is a string consisting of the characters '0' and '1'.\n\nYour task is to determine the maximum possible number k such that a prefix of string a of length k is a subsequence of string b.\n\nA sequence a is a subsequence of a sequence b if a can be obtained from b by the deletion of several (possibly, zero or all) elements.\n\nThe first line consists of a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1≤ n,m ≤ 2·10^5) — the length of string a and the length of string b, respectively.\n\nThe second line of each test case contains a binary string a of length n.\n\nThe third line of each test case contains a binary string b of length m.\n\nIt is guaranteed that the sum of values n over all test cases does not exceed 2·10^5. Similarly, the sum of values m over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single number — the maximum k, such that the first k characters of a form a subsequence of b.\n\nIn the first example, the string '10' is a subsequence of '1colorred11colorred0' but the string '100' is not. So the answer is 2.\n\nIn the fifth example, a='100', b='1colorred101colorred0', whole string a is a subsequence of string b. So the answer is 3.\n\nIn the sixth example, string b does not contain '1' so the answer is 0.\n\nInput:\n```\n65 41001111103 31001101 311114 4101111113 5100110103 11000\n```\n\nOutput:\n```\n2\n2\n1\n1\n3\n0\n```",
+    "input": "The first line consists of a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1≤ n,m ≤ 2·10^5) — the length of string a and the length of string b, respectively.\n\nThe second line of each test case contains a binary string a of length n.\n\nThe third line of each test case contains a binary string b of length m.\n\nIt is guaranteed that the sum of values n over all test cases does not exceed 2·10^5. Similarly, the sum of values m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single number — the maximum k, such that the first k characters of a form a subsequence of b.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

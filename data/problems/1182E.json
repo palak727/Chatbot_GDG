@@ -1,0 +1,19 @@
+{
+    "id": "1182E",
+    "contest_id": 1182,
+    "problem_letter": "E",
+    "title": "E. Product Oriented Recurrence",
+    "statement": "Let f_x = c^{2x-6}·f_{x-1}·f_{x-2}·f_{x-3} for x ≥ 4.\n\nYou have given integers n, f_1, f_2, f_3, and c. Find f_n bmod (10^9+7).\n\nThe only line contains five integers n, f_1, f_2, f_3, and c (4 ≤ n ≤ 10^18, 1 ≤ f_1, f_2, f_3, c ≤ 10^9).\n\nPrint f_n bmod (10^9 + 7).\n\nIn the first example, f_4 = 90, f_5 = 72900.\n\nIn the second example, f_17 ≈ 2.28 × 10^29587.\n\nInput:\n```\n5 1 2 5 3\n```\n\nOutput:\n```\n72900\n```\n\nInput:\n```\n17 97 41 37 11\n```\n\nOutput:\n```\n317451037\n```",
+    "input": "The only line contains five integers n, f_1, f_2, f_3, and c (4 ≤ n ≤ 10^18, 1 ≤ f_1, f_2, f_3, c ≤ 10^9).",
+    "output": "Print f_n bmod (10^9 + 7).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "matrices",
+        "number theory",
+        "*2300"
+    ],
+    "rating": 2300
+}

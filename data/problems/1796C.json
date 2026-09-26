@@ -1,0 +1,17 @@
+{
+    "id": "1796C",
+    "contest_id": 1796,
+    "problem_letter": "C",
+    "title": "C. Maximum Set",
+    "statement": "A set of positive integers S is called beautiful if, for every two integers x and y from this set, either x divides y or y divides x (or both).\n\nYou are given two integers l and r. Consider all beautiful sets consisting of integers not less than l and not greater than r. You have to print two numbers:\n\nSince the second number can be very large, print it modulo 998244353.\n\nThe first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing two integers l and r (1 ≤ l ≤ r ≤ 10^6).\n\nFor each test case, print two integers — the maximum possible size of a beautiful set consisting of integers from l to r, and the number of such sets with maximum possible size. Since the second number can be very large, print it modulo 998244353.\n\nIn the first test case, the maximum possible size of a beautiful set with integers from 3 to 11 is 2. There are 4 such sets which have the maximum possible size:\n\nInput:\n```\n43 1113 371 224 100\n```\n\nOutput:\n```\n2 4\n2 6\n5 1\n5 7\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing two integers l and r (1 ≤ l ≤ r ≤ 10^6).",
+    "output": "For each test case, print two integers — the maximum possible size of a beautiful set consisting of integers from l to r, and the number of such sets with maximum possible size. Since the second number can be very large, print it modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

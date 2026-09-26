@@ -1,0 +1,19 @@
+{
+    "id": "1862A",
+    "contest_id": 1862,
+    "problem_letter": "A",
+    "title": "A. Gift Carpet",
+    "statement": "Recently, Tema and Vika celebrated Family Day. Their friend Arina gave them a carpet, which can be represented as an n·m table of lowercase Latin letters.\n\nVika hasn't seen the gift yet, but Tema knows what kind of carpets she likes. Vika will like the carpet if she can read her name on. She reads column by column from left to right and chooses one or zero letters from current column.\n\nFormally, the girl will like the carpet if it is possible to select four distinct columns in order from left to right such that the first column contains \"v\", the second one contains \"i\", the third one contains \"k\", and the fourth one contains \"a\".\n\nHelp Tema understand in advance whether Vika will like Arina's gift.\n\nEach test consists of multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 20) — the sizes of the carpet.\n\nThe next n lines contain m lowercase Latin letters each, describing the given carpet.\n\nFor each set of input data, output \"YES\" if Vika will like the carpet, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first sample, Vika can read her name from left to right.\n\nIn the second sample, Vika cannot read the character \"v\", so she will not like the carpet.\n\nInput:\n```\n51 4vika3 3badcarpet4 4vvvviiiikkkkaaaa4 4vkakiiaiavvkviaa4 7vbickdavbickdavbickdavbickda\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "Each test consists of multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n, m ≤ 20) — the sizes of the carpet.\n\nThe next n lines contain m lowercase Latin letters each, describing the given carpet.",
+    "output": "For each set of input data, output \"YES\" if Vika will like the carpet, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

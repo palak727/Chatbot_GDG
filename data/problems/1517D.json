@@ -1,0 +1,18 @@
+{
+    "id": "1517D",
+    "contest_id": 1517,
+    "problem_letter": "D",
+    "title": "D. Explorer Space",
+    "statement": "You are wandering in the explorer space of the 2050 Conference.\n\nThe explorer space can be viewed as an undirected weighted grid graph with size n× m. The set of vertices is {(i, j)|1≤ i≤ n, 1≤ j≤ m}. Two vertices (i_1,j_1) and (i_2, j_2) are connected by an edge if and only if |i_1-i_2|+|j_1-j_2|=1.\n\nAt each step, you can walk to any vertex connected by an edge with your current vertex. On each edge, there are some number of exhibits. Since you already know all the exhibits, whenever you go through an edge containing x exhibits, your boredness increases by x.\n\nFor each starting vertex (i, j), please answer the following question: What is the minimum possible boredness if you walk from (i, j) and go back to it after exactly k steps?\n\nYou can use any edge for multiple times but the boredness on those edges are also counted for multiple times. At each step, you cannot stay on your current vertex. You also cannot change direction while going through an edge. Before going back to your starting vertex (i, j) after k steps, you can visit (i, j) (or not) freely.\n\nThe first line contains three integers n, m and k (2≤ n, m≤ 500, 1≤ k≤ 20).\n\nThe j-th number (1≤ j ≤ m - 1) in the i-th line of the following n lines is the number of exibits on the edge between vertex (i, j) and vertex (i, j+1).\n\nThe j-th number (1≤ j≤ m) in the i-th line of the following n-1 lines is the number of exibits on the edge between vertex (i, j) and vertex (i+1, j).\n\nThe number of exhibits on each edge is an integer between 1 and 10^6.\n\nOutput n lines with m numbers each. The j-th number in the i-th line, answer_ij, should be the minimum possible boredness if you walk from (i, j) and go back to it after exactly k steps.\n\nIf you cannot go back to vertex (i, j) after exactly k steps, answer_ij should be -1.\n\nIn the first example, the answer is always 10 no matter how you walk.\n\nIn the second example, answer_21 = 10, the path is (2,1) → (1,1) → (1,2) → (2,2) → (2,1), the boredness is 4 + 1 + 2 + 3 = 10.\n\nInput:\n```\n3 3 10\n1 1\n1 1\n1 1\n1 1 1\n1 1 1\n```\n\nOutput:\n```\n10 10 10\n10 10 10\n10 10 10\n```\n\nInput:\n```\n2 2 4\n1\n3\n4 2\n```\n\nOutput:\n```\n4 4\n10 6\n```\n\nInput:\n```\n2 2 3\n1\n2\n3 4\n```\n\nOutput:\n```\n-1 -1\n-1 -1\n```",
+    "input": "The first line contains three integers n, m and k (2≤ n, m≤ 500, 1≤ k≤ 20).\n\nThe j-th number (1≤ j ≤ m - 1) in the i-th line of the following n lines is the number of exibits on the edge between vertex (i, j) and vertex (i, j+1).\n\nThe j-th number (1≤ j≤ m) in the i-th line of the following n-1 lines is the number of exibits on the edge between vertex (i, j) and vertex (i+1, j).\n\nThe number of exhibits on each edge is an integer between 1 and 10^6.",
+    "output": "Output n lines with m numbers each. The j-th number in the i-th line, answer_ij, should be the minimum possible boredness if you walk from (i, j) and go back to it after exactly k steps.\n\nIf you cannot go back to vertex (i, j) after exactly k steps, answer_ij should be -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "shortest paths",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1760F",
+    "contest_id": 1760,
+    "problem_letter": "F",
+    "title": "F. Quests",
+    "statement": "There are n quests. If you complete the i-th quest, you will gain a_i coins. You can only complete at most one quest per day. However, once you complete a quest, you cannot do the same quest again for k days. (For example, if k=2 and you do quest 1 on day 1, then you cannot do it on day 2 or 3, but you can do it again on day 4.)\n\nYou are given two integers c and d. Find the maximum value of k such that you can gain at least c coins over d days. If no such k exists, output Impossible. If k can be arbitrarily large, output Infinity.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n,c,d (2 ≤ n ≤ 2·10^5; 1 ≤ c ≤ 10^16; 1 ≤ d ≤ 2·10^5) — the number of quests, the number of coins you need, and the number of days.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the rewards for the quests.\n\nThe sum of n over all test cases does not exceed 2·10^5, and the sum of d over all test cases does not exceed 2·10^5.\n\nFor each test case, output one of the following.\n\nIn the first test case, one way to earn 5 coins over 4 days with k=2 is as follows:\n\nIn the second test case, we can make over 20 coins on the first day itself by doing the first quest to earn 100 coins, so the value of k can be arbitrarily large, since we never need to do another quest.\n\nIn the third test case, no matter what we do, we can't earn 100 coins over 3 days.\n\nInput:\n```\n62 5 41 22 20 10100 103 100 37 2 64 20 34 5 6 74 100000000000 20228217734 927368 26389746 6278969742 20 45 1\n```\n\nOutput:\n```\n2\nInfinity\nImpossible\n1\n12\n0\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n,c,d (2 ≤ n ≤ 2·10^5; 1 ≤ c ≤ 10^16; 1 ≤ d ≤ 2·10^5) — the number of quests, the number of coins you need, and the number of days.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the rewards for the quests.\n\nThe sum of n over all test cases does not exceed 2·10^5, and the sum of d over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one of the following.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,22 @@
+{
+    "id": "1902F",
+    "contest_id": 1902,
+    "problem_letter": "F",
+    "title": "F. Trees and XOR Queries Again",
+    "statement": "You are given a tree consisting of n vertices. There is an integer written on each vertex; the i-th vertex has integer a_i written on it.\n\nYou have to process q queries. The i-th query consists of three integers x_i, y_i and k_i. For this query, you have to answer if it is possible to choose a set of vertices v_1, v_2, …, v_m (possibly empty) such that:\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^20 - 1).\n\nThen n-1 lines follow. Each of them contains two integers u and v (1 ≤ u, v ≤ n; u ≠ v) denoting an edge of the tree.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow. The i-th of them contains three integers x_i, y_i and k_i (1 ≤ x_i, y_i ≤ n; 0 ≤ k_i ≤ 2^20 - 1).\n\nFor each query, print YES if it is possible to form a set of vertices meeting the constraints. Otherwise, print NO.\n\nYou can print each letter in any case.\n\nInput:\n```\n40 1 2 102 13 24 283 3 03 4 13 4 71 3 11 3 21 3 101 4 101 4 11\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^20 - 1).\n\nThen n-1 lines follow. Each of them contains two integers u and v (1 ≤ u, v ≤ n; u ≠ v) denoting an edge of the tree.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThen q lines follow. The i-th of them contains three integers x_i, y_i and k_i (1 ≤ x_i, y_i ≤ n; 0 ≤ k_i ≤ 2^20 - 1).",
+    "output": "For each query, print YES if it is possible to form a set of vertices meeting the constraints. Otherwise, print NO.\n\nYou can print each letter in any case.",
+    "time_limit": "6.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "divide and conquer",
+        "graphs",
+        "implementation",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

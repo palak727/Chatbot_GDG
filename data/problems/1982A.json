@@ -1,0 +1,19 @@
+{
+    "id": "1982A",
+    "contest_id": 1982,
+    "problem_letter": "A",
+    "title": "A. Soccer",
+    "statement": "Dima loves watching soccer. In such a game, the score on the scoreboard is represented as x : y, where x is the number of goals of the first team, and y is the number of goals of the second team. At any given time, only one team can score a goal, so the score x : y can change to either (x + 1) : y, or x : (y + 1).\n\nWhile watching a soccer game, Dima was distracted by very important matters, and after some time, he returned to watching the game. Dima remembers the score right before he was distracted, and the score right after he returned. Given these two scores, he wonders the following question. Is it possible that, while Dima was not watching the game, the teams never had an equal score?\n\nIt is guaranteed that at neither of the two time points Dima remembers the teams had equal scores. However, it is possible that the score did not change during his absence.\n\nHelp Dima and answer the question!\n\nEach test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers x_1, y_1 (0 ≤ x_1, y_1 ≤ 10^9, x_1 ≠ y_1) — the score before Dima was distracted.\n\nThe second line of each test case contains two integers x_2, y_2 (x_1 ≤ x_2 ≤ 10^9, y_1 ≤ y_2 ≤ 10^9, x_2 ≠ y_2) — the score when Dima returned.\n\nFor each test case, output \"YES\" without quotes if it is possible, that the teams never had a tie while Dima was away, otherwise output \"NO\" without quotes.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, the score before Dima left was 1 : 0. When he leaves, the first team scores several goals in a row until the score becomes 5 : 0, so the answer is YES.\n\nIn the second test case, the score could only change as follows:\n\nIn this scenario, there is a moment when the teams have an equal score, so the answer is NO.\n\nIn the third test case, one of the possible developments is:\n\nIn this scenario, there was no time when the score was equal, so the answer is YES.\n\nInput:\n```\n61 05 01 23 21 24 51 24 31 21 2998244353 01000000000 999999999\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nYES\n```",
+    "input": "Each test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows the description of the test cases.\n\nThe first line of each test case contains two integers x_1, y_1 (0 ≤ x_1, y_1 ≤ 10^9, x_1 ≠ y_1) — the score before Dima was distracted.\n\nThe second line of each test case contains two integers x_2, y_2 (x_1 ≤ x_2 ≤ 10^9, y_1 ≤ y_2 ≤ 10^9, x_2 ≠ y_2) — the score when Dima returned.",
+    "output": "For each test case, output \"YES\" without quotes if it is possible, that the teams never had a tie while Dima was away, otherwise output \"NO\" without quotes.\n\nYou can output each letter in any case (for example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

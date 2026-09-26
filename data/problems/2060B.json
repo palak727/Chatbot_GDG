@@ -1,0 +1,17 @@
+{
+    "id": "2060B",
+    "contest_id": 2060,
+    "problem_letter": "B",
+    "title": "B. Farmer John's Card Game",
+    "statement": "Farmer John's n cows are playing a card game! Farmer John has a deck of n·m cards numbered from 0 to n·m-1. He distributes m cards to each of his n cows.\n\nFarmer John wants the game to be fair, so each cow should only be able to play 1 card per round. He decides to determine a turn order, determined by a permutation^{∗} p of length n, such that the p_i'th cow will be the i'th cow to place a card on top of the center pile in a round.\n\nIn other words, the following events happen in order in each round:\n\nThere is a catch. Initially, the center pile contains a card numbered -1. In order to place a card, the number of the card must be greater than the number of the card on top of the center pile. Then, the newly placed card becomes the top card of the center pile. If a cow cannot place any card in their deck, the game is considered to be lost.\n\nFarmer John wonders: does there exist p such that it is possible for all of his cows to empty their deck after playing all m rounds of the game? If so, output any valid p. Otherwise, output -1.\n\n^{∗}A permutation of length n contains each integer from 1 to n exactly once\n\nThe first line contains an integer t (1 ≤ t ≤ 400) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 2,000) — the number of cows and the number of cards each cow receives.\n\nThe following n lines contain m integers each – the cards received by each cow. It is guaranteed all given numbers (across all n lines) are distinct and in the range from 0 to n·m - 1, inclusive.\n\nIt is guaranteed the sum of n·m over all test cases does not exceed 2,000.\n\nFor each test case, output the following on a new line:\n\nIn the first test case, one turn order that allows all cards to be played is by having the first cow go before the second cow. The cards played will be 0→1→2→3→4→5.\n\nIn the second test case, there is only one cow, so having the cow play all of her cards in increasing order will empty the deck.\n\nIn the third test case, it can be shown there is no valid turn order that allows all cards to be played.\n\nInput:\n```\n42 30 4 21 5 31 102 21 20 34 11203\n```\n\nOutput:\n```\n1 2\n1\n-1\n3 1 2 4\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 400) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n·m ≤ 2,000) — the number of cows and the number of cards each cow receives.\n\nThe following n lines contain m integers each – the cards received by each cow. It is guaranteed all given numbers (across all n lines) are distinct and in the range from 0 to n·m - 1, inclusive.\n\nIt is guaranteed the sum of n·m over all test cases does not exceed 2,000.",
+    "output": "For each test case, output the following on a new line:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1000"
+    ],
+    "rating": 1000
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1312D",
+    "contest_id": 1312,
+    "problem_letter": "D",
+    "title": "D. Count the Arrays",
+    "statement": "Your task is to calculate the number of arrays such that:\n\nThe first line contains two integers n and m (2 ≤ n ≤ m ≤ 2·10^5).\n\nPrint one integer — the number of arrays that meet all of the aforementioned conditions, taken modulo 998244353.\n\nThe arrays in the first example are:\n\nInput:\n```\n3 4\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n3 5\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n42 1337\n```\n\nOutput:\n```\n806066790\n```\n\nInput:\n```\n100000 200000\n```\n\nOutput:\n```\n707899035\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ m ≤ 2·10^5).",
+    "output": "Print one integer — the number of arrays that meet all of the aforementioned conditions, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

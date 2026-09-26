@@ -1,0 +1,18 @@
+{
+    "id": "2065C1",
+    "contest_id": 2065,
+    "problem_letter": "C1",
+    "title": "C1. Skibidus and Fanum Tax (easy version)",
+    "statement": "This is the easy version of the problem. In this version, m = 1.\n\nSkibidus has obtained two arrays a and b, containing n and m elements respectively. For each integer i from 1 to n, he is allowed to perform the operation at most once:\n\nSkibidus needs your help determining whether he can sort a in non-decreasing order^{∗} by performing the above operation some number of times.\n\n^{∗}a is sorted in non-decreasing order if a_1 ≤ a_2 ≤ … ≤ a_n.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5, textbfm = 1).\n\nThe following line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe following line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 2·10^5.\n\nFor each test case, if it is possible to sort a in non-decreasing order, print \"YES\" on a new line. Otherwise, print \"NO\" on a new line.\n\nYou can output the answer in any case. For example, the strings \"yEs\", \"yes\", and \"Yes\" will also be recognized as positive responses.\n\nIn the first test case, [5] is already sorted.\n\nIn the second test case, it can be shown that it is impossible.\n\nIn the third test case, we can set a_3:=b_1-a_3=6-2=4. The sequence [1,4,4,5] is in nondecreasing order.\n\nIn the last case, we can apply operations on each index. The sequence becomes [-1,0,1], which is in nondecreasing order.\n\nInput:\n```\n51 1593 11 4 334 11 4 2 564 15 4 10 543 19 8 78\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 2·10^5, textbfm = 1).\n\nThe following line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe following line of each test case contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n and the sum of m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if it is possible to sort a in non-decreasing order, print \"YES\" on a new line. Otherwise, print \"NO\" on a new line.\n\nYou can output the answer in any case. For example, the strings \"yEs\", \"yes\", and \"Yes\" will also be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "*1100"
+    ],
+    "rating": 1100
+}

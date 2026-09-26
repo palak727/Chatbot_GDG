@@ -1,0 +1,17 @@
+{
+    "id": "1097C",
+    "contest_id": 1097,
+    "problem_letter": "C",
+    "title": "C. Yuhao and a Parenthesis",
+    "statement": "One day, Yuhao came across a problem about checking if some bracket sequences are correct bracket sequences.\n\nA bracket sequence is any non-empty sequence of opening and closing parentheses. A bracket sequence is called a correct bracket sequence if it's possible to obtain a correct arithmetic expression by inserting characters \"+\" and \"1\" into this sequence. For example, the sequences \"(())()\", \"()\" and \"(()(()))\" are correct, while the bracket sequences \")(\", \"(()\" and \"(()))(\" are not correct.\n\nYuhao found this problem too simple for him so he decided to make the problem harder. You are given many (not necessarily correct) bracket sequences. The task is to connect some of them into ordered pairs so that each bracket sequence occurs in at most one pair and the concatenation of the bracket sequences in each pair is a correct bracket sequence. The goal is to create as many pairs as possible.\n\nThis problem unfortunately turned out to be too difficult for Yuhao. Can you help him and solve it?\n\nThe first line contains one integer n (1 ≤ n ≤ 10^5) — the number of bracket sequences.\n\nEach of the following n lines contains one bracket sequence — a non-empty string which consists only of characters \"(\" and \")\".\n\nThe sum of lengths of all bracket sequences in the input is at most 5·10^5.\n\nNote that a bracket sequence may appear in the input multiple times. In this case, you can use each copy of the sequence separately. Also note that the order in which strings appear in the input doesn't matter.\n\nPrint a single integer — the maximum number of pairs which can be made, adhering to the conditions in the statement.\n\nIn the first example, it's optimal to construct two pairs: \"(( )())\" and \"( )\".\n\nInput:\n```\n7\n)())\n)\n((\n((\n(\n)\n)\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n(\n((\n(((\n(())\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2\n(())\n()\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^5) — the number of bracket sequences.\n\nEach of the following n lines contains one bracket sequence — a non-empty string which consists only of characters \"(\" and \")\".\n\nThe sum of lengths of all bracket sequences in the input is at most 5·10^5.\n\nNote that a bracket sequence may appear in the input multiple times. In this case, you can use each copy of the sequence separately. Also note that the order in which strings appear in the input doesn't matter.",
+    "output": "Print a single integer — the maximum number of pairs which can be made, adhering to the conditions in the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1400"
+    ],
+    "rating": 1400
+}

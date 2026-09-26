@@ -1,0 +1,18 @@
+{
+    "id": "1571I",
+    "contest_id": 1571,
+    "problem_letter": "I",
+    "title": "I. Physical Examination",
+    "statement": "Polycarp plans to undergo a full physical examination at his local clinic. There are n doctors, numbered from 1 to n. The i-th doctor takes patients from minute L_i to minute R_i, so Polycarp can visit him at any minute in this range. It takes each doctor exactly one minute to examine Polycarp's health.\n\nPolycarp wants to arrive at the clinic at some minute x and visit all n doctors in some order without waiting or visiting any doctor several times.\n\nMore formally, he chooses an integer x and a permutation p_1, p_2, …, p_n (a sequence of n integers from 1 to n such that each integer appears exactly once), then proceeds to visit:\n\nThe p_i-th doctor should be able to take patients at minute x+i-1, so the following should hold: L[p_i] ≤ x + i - 1 ≤ R[p_i].\n\nDetermine if it's possible for Polycarp to choose such a minute x and a permutation p that he'll be able to visit all n doctors in without waiting or visiting any doctor several times. If there are multiple answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 10^5) — the number of doctors.\n\nThe second line of the testcase contains n integers L_1, L_2, … L_n (1 ≤ L_i ≤ 10^9).\n\nThe third line of the testcase contains n integers R_1, R_2, … R_n (L_i ≤ R_i ≤ 10^9).\n\nThe sum of n over all testcases doesn't exceed 10^5.\n\nFor each testcase print an answer.\n\nIf there exists such a minute x and a permutation p that Polycarp is able to visit all n doctors without waiting or visiting any doctor several times, then print x in the first line and a permutation p in the second line. If there are multiple answers, print any of them.\n\nOtherwise, print -1 in the only line.\n\nIn the third testcase it's impossible to visit all doctors, because Polycarp has to visit doctor 2 at minute 2 and doctor 1 at minute 4. However, that would require him to wait a minute between the visits, which is not allowed.\n\nIn the fourth testcase all doctors take patients in the span of 2 minutes. However, since there are three of them, Polycarp can't visit them all.\n\nInput:\n```\n5\n3\n2 3 1\n3 3 2\n8\n6 6 5 4 9 4 3 6\n7 6 10 6 9 6 6 8\n2\n4 2\n4 2\n3\n2 2 2\n3 3 3\n1\n5\n10\n```\n\nOutput:\n```\n1\n3 1 2 \n3\n7 4 6 2 1 8 5 3 \n-1\n-1\n7\n1 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThen the descriptions of t testcases follow.\n\nThe first line of the testcase contains a single integer n (1 ≤ n ≤ 10^5) — the number of doctors.\n\nThe second line of the testcase contains n integers L_1, L_2, … L_n (1 ≤ L_i ≤ 10^9).\n\nThe third line of the testcase contains n integers R_1, R_2, … R_n (L_i ≤ R_i ≤ 10^9).\n\nThe sum of n over all testcases doesn't exceed 10^5.",
+    "output": "For each testcase print an answer.\n\nIf there exists such a minute x and a permutation p that Polycarp is able to visit all n doctors without waiting or visiting any doctor several times, then print x in the first line and a permutation p in the second line. If there are multiple answers, print any of them.\n\nOtherwise, print -1 in the only line.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "binary search",
+        "data structures",
+        "*3200"
+    ],
+    "rating": 3200
+}

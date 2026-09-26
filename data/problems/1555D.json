@@ -1,0 +1,19 @@
+{
+    "id": "1555D",
+    "contest_id": 1555,
+    "problem_letter": "D",
+    "title": "D. Say No to Palindromes",
+    "statement": "Let's call the string beautiful if it does not contain a substring of length at least 2, which is a palindrome. Recall that a palindrome is a string that reads the same way from the first character to the last and from the last character to the first. For example, the strings a, bab, acca, bcabcbacb are palindromes, but the strings ab, abbbaa, cccb are not.\n\nLet's define cost of a string as the minimum number of operations so that the string becomes beautiful, if in one operation it is allowed to change any character of the string to one of the first 3 letters of the Latin alphabet (in lowercase).\n\nYou are given a string s of length n, each character of the string is one of the first 3 letters of the Latin alphabet (in lowercase).\n\nYou have to answer m queries — calculate the cost of the substring of the string s from l_i-th to r_i-th position, inclusive.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of the string s and the number of queries.\n\nThe second line contains the string s, it consists of n characters, each character one of the first 3 Latin letters.\n\nThe following m lines contain two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — parameters of the i-th query.\n\nFor each query, print a single integer — the cost of the substring of the string s from l_i-th to r_i-th position, inclusive.\n\nConsider the queries of the example test.\n\nInput:\n```\n5 4\nbaacb\n1 3\n1 5\n4 5\n2 3\n```\n\nOutput:\n```\n1\n2\n0\n1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of the string s and the number of queries.\n\nThe second line contains the string s, it consists of n characters, each character one of the first 3 Latin letters.\n\nThe following m lines contain two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — parameters of the i-th query.",
+    "output": "For each query, print a single integer — the cost of the substring of the string s from l_i-th to r_i-th position, inclusive.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

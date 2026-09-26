@@ -1,0 +1,21 @@
+{
+    "id": "2092F",
+    "contest_id": 2092,
+    "problem_letter": "F",
+    "title": "F. Andryusha and CCB",
+    "statement": "Let us define the beauty of a binary string z as the number of indices i such that 1 ≤ i < |z| and z_i ≠ z_{i+1}.\n\nWhile waiting for his friends from the CCB, Andryusha baked a pie, represented by a binary string s of length n. To avoid offending anyone, he wants to divide this string into k substrings such that each digit belongs to exactly one substring, and the beauties of all substrings are the same.\n\nAndryusha does not know the exact number of friends from the CCB who will come to his house, so he wants to find the number of values of k for which it is possible to split the pie into exactly k parts with equal beauties.\n\nHowever, Andryusha's brother, Tristan, decided that this formulation of the problem is too simple. Therefore, he wants you to find the number of such values of k for each prefix of the string. In other words, for each i from 1 to n, you need to find the number of values of k for which it is possible to split the prefix s_1 s_2 … s_i into exactly k parts with equal beauties.\n\nEach test consists of several test cases. The first line of the input data contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the binary string.\n\nThe second line of each test case contains a binary string of length n, consisting only of digits 0 and 1.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.\n\nFor each test case, output a single line containing n integers c_i (0 ≤ c_i ≤ n) — the number of values of k for which it is possible to split the prefix s_1 s_2 … s_i into exactly k parts with equal beauties.\n\nIn the third case, the values of k that satisfy the conditions are:\n\nInput:\n```\n350001110010101010170010100\n```\n\nOutput:\n```\n1 2 3 4 5\n1 2 2 3 2 4 2 4 3 4\n1 2 3 3 4 3 4\n```",
+    "input": "Each test consists of several test cases. The first line of the input data contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the binary string.\n\nThe second line of each test case contains a binary string of length n, consisting only of digits 0 and 1.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single line containing n integers c_i (0 ≤ c_i ≤ n) — the number of values of k for which it is possible to split the prefix s_1 s_2 … s_i into exactly k parts with equal beauties.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "strings",
+        "*2900"
+    ],
+    "rating": 2900
+}

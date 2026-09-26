@@ -1,0 +1,17 @@
+{
+    "id": "1594F",
+    "contest_id": 1594,
+    "problem_letter": "F",
+    "title": "F. Ideal Farm",
+    "statement": "Theofanis decided to visit his uncle's farm. There are s animals and n animal pens on the farm. For utility purpose, animal pens are constructed in one row.\n\nUncle told Theofanis that a farm is lucky if you can distribute all animals in all pens in such a way that there are no empty pens and there is at least one continuous segment of pens that has exactly k animals in total.\n\nMoreover, a farm is ideal if it's lucky for any distribution without empty pens.\n\nNeither Theofanis nor his uncle knows if their farm is ideal or not. Can you help them to figure it out?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first and only line of each test case contains three integers s, n, and k (1 ≤ s, n, k ≤ 10^18; n ≤ s).\n\nFor each test case, print YES (case-insensitive), if the farm is ideal, or NO (case-insensitive) otherwise.\n\nFor the first and the second test case, the only possible combination is [1] so there always will be a subsegment with 1 animal but not with 2 animals.\n\nInput:\n```\n4\n1 1 1\n1 1 2\n100 50 200\n56220 47258 14497\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first and only line of each test case contains three integers s, n, and k (1 ≤ s, n, k ≤ 10^18; n ≤ s).",
+    "output": "For each test case, print YES (case-insensitive), if the farm is ideal, or NO (case-insensitive) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1102E",
+    "contest_id": 1102,
+    "problem_letter": "E",
+    "title": "E. Monotonic Renumeration",
+    "statement": "You are given an array a consisting of n integers. Let's denote monotonic renumeration of array a as an array b consisting of n integers such that all of the following conditions are met:\n\nFor example, if a = [1, 2, 1, 2, 3], then two possible monotonic renumerations of a are b = [0, 0, 0, 0, 0] and b = [0, 0, 0, 0, 1].\n\nYour task is to calculate the number of different monotonic renumerations of a. The answer may be large, so print it modulo 998244353.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nPrint one integer — the number of different monotonic renumerations of a, taken modulo 998244353.\n\nInput:\n```\n5\n1 2 1 2 3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\n100 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n1 3 3 7\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "Print one integer — the number of different monotonic renumerations of a, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

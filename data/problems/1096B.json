@@ -1,0 +1,18 @@
+{
+    "id": "1096B",
+    "contest_id": 1096,
+    "problem_letter": "B",
+    "title": "B. Substring Removal",
+    "statement": "You are given a string s of length n consisting only of lowercase Latin letters.\n\nA substring of a string is a contiguous subsequence of that string. So, string \"forces\" is substring of string \"codeforces\", but string \"coder\" is not.\n\nYour task is to calculate the number of ways to remove exactly one substring from this string in such a way that all remaining characters are equal (the number of distinct characters either zero or one).\n\nIt is guaranteed that there is at least two different characters in s.\n\nNote that you can remove the whole string and it is correct. Also note that you should remove at least one character.\n\nSince the answer can be rather large (not very large though) print it modulo 998244353.\n\nIf you are Python programmer, consider using PyPy instead of Python when you submit your code.\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of the input contains the string s of length n consisting only of lowercase Latin letters.\n\nIt is guaranteed that there is at least two different characters in s.\n\nPrint one integer — the number of ways modulo 998244353 to remove exactly one substring from s in such way that all remaining characters are equal.\n\nLet s[l; r] be the substring of s from the position l to the position r inclusive.\n\nThen in the first example you can remove the following substrings:\n\nIn the second example you can remove the following substrings:\n\nIn the third example you can remove the following substrings:\n\nInput:\n```\n4\nabaa\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n7\naacdeee\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n2\naz\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of the input contains the string s of length n consisting only of lowercase Latin letters.\n\nIt is guaranteed that there is at least two different characters in s.",
+    "output": "Print one integer — the number of ways modulo 998244353 to remove exactly one substring from s in such way that all remaining characters are equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "strings",
+        "*1300"
+    ],
+    "rating": 1300
+}

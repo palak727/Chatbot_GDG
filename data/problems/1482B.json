@@ -1,0 +1,17 @@
+{
+    "id": "1482B",
+    "contest_id": 1482,
+    "problem_letter": "B",
+    "title": "B. Restore Modulo",
+    "statement": "For the first place at the competition, Alex won many arrays of integers and was assured that these arrays are very expensive. After the award ceremony Alex decided to sell them. There is a rule in arrays pawnshop: you can sell array only if it can be compressed to a generator.\n\nThis generator takes four non-negative numbers n, m, c, s. n and m must be positive, s non-negative and for c it must be true that 0 ≤ c < m. The array a of length n is created according to the following rules:\n\nFor example, if n = 5, m = 7, c = 4, and s = 10, then a = [3, 0, 4, 1, 5].\n\nPrice of such an array is the value of m in this generator.\n\nAlex has a question: how much money he can get for each of the arrays. Please, help him to understand for every array whether there exist four numbers n, m, c, s that generate this array. If yes, then maximize m.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of arrays.\n\nThe first line of array description contains a single integer n (1 ≤ n ≤ 10^5) — the size of this array.\n\nThe second line of array description contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9 ) — elements of the array.\n\nIt is guaranteed that the sum of array sizes does not exceed 10^5.\n\nFor every array print:\n\nInput:\n```\n6\n6\n1 9 17 6 14 3\n3\n4 2 2\n3\n7 3 4\n3\n2 2 4\n5\n0 1000000000 0 1000000000 0\n2\n1 1\n```\n\nOutput:\n```\n19 8\n-1\n-1\n-1\n2000000000 1000000000\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of arrays.\n\nThe first line of array description contains a single integer n (1 ≤ n ≤ 10^5) — the size of this array.\n\nThe second line of array description contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9 ) — elements of the array.\n\nIt is guaranteed that the sum of array sizes does not exceed 10^5.",
+    "output": "For every array print:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1941C",
+    "contest_id": 1941,
+    "problem_letter": "C",
+    "title": "C. Rudolf and the Ugly String",
+    "statement": "Rudolf has a string s of length n. Rudolf considers the string s to be ugly if it contains the substring^dagger \"pie\" or the substring \"map\", otherwise the string s will be considered beautiful.\n\nFor example, \"ppiee\", \"mmap\", \"dfpiefghmap\" are ugly strings, while \"mathp\", \"ppiiee\" are beautiful strings.\n\nRudolf wants to shorten the string s by removing some characters to make it beautiful.\n\nThe main character doesn't like to strain, so he asks you to make the string beautiful by removing the minimum number of characters. He can remove characters from any positions in the string (not just from the beginning or end of the string).\n\n^dagger String a is a substring of b if there exists a consecutive segment of characters in string b equal to a.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the string s.\n\nThe next line of each test case contains the string s of length n. The string s consists of lowercase Latin letters.\n\nThe sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output a single integer — the minimum number of characters that need to be deleted to make the string s beautiful. If the string is initially beautiful, then output 0.\n\nIn the first test case, for example, you can delete the 4th and 9th characters to make the string beautiful.\n\nIn the second test case, the string is already beautiful.\n\nInput:\n```\n69mmapnapie9azabazapi8mappppie18mapmapmapmapmapmap1p11pppiepieeee\n```\n\nOutput:\n```\n2\n0\n2\n6\n0\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the string s.\n\nThe next line of each test case contains the string s of length n. The string s consists of lowercase Latin letters.\n\nThe sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output a single integer — the minimum number of characters that need to be deleted to make the string s beautiful. If the string is initially beautiful, then output 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "strings",
+        "*900"
+    ],
+    "rating": 900
+}

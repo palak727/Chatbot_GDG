@@ -1,0 +1,19 @@
+{
+    "id": "1523E",
+    "contest_id": 1523,
+    "problem_letter": "E",
+    "title": "E. Crypto Lights",
+    "statement": "To monitor cryptocurrency exchange rates trader William invented a wonderful device consisting of n lights arranged in a row. The device functions in the following way:\n\nInitially, all lights on William's device are turned off. At the beginning of a new iteration the device randomly, with a uniform distribution, picks a light that is turned off and turns it on, telling William which cryptocurrency he should invest in. After this iteration if any k consecutive lights contain more than one turned on light, then the device finishes working.\n\nWilliam doesn't like uncertainty, so he wants you to calculate the expected value of the number of lights that are turned on in the device after it finishes working.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). Description of the test cases follows.\n\nThe only line for each test case contains two integers n and k (2 ≤ k ≤ n ≤ 10^5), which are the total number of lights and the length of subsegment of lights that are being checked, respectively.\n\nFor each test case print the answer, modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nExplanation of the first sample test case:\n\nLet's write out all possible sequences of light toggles, which will make the device complete its operation:\n\nThen the final expected value will be equal to 2/6 + 3/6 + 2/6 + 2/6 + 2/6 + 3/6 = 14/6 = 7/3.\n\nThen the required output will be 333333338, since 333333338·3 ≡ 7 pmod10^9+7.\n\nInput:\n```\n3\n3 2\n15 2\n40 15\n```\n\nOutput:\n```\n333333338\n141946947\n329622137\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). Description of the test cases follows.\n\nThe only line for each test case contains two integers n and k (2 ≤ k ≤ n ≤ 10^5), which are the total number of lights and the length of subsegment of lights that are being checked, respectively.",
+    "output": "For each test case print the answer, modulo 10^9+7.\n\nFormally, let M = 10^9+7. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2600"
+    ],
+    "rating": 2600
+}

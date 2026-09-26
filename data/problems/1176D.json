@@ -1,0 +1,20 @@
+{
+    "id": "1176D",
+    "contest_id": 1176,
+    "problem_letter": "D",
+    "title": "D. Recover it!",
+    "statement": "Authors guessed an array a consisting of n integers; each integer is not less than 2 and not greater than 2·10^5. You don't know the array a, but you know the array b which is formed from it with the following sequence of operations:\n\nHere p_a_i means the a_i-th prime number. The first prime p_1 = 2, the second one is p_2 = 3, and so on.\n\nYour task is to recover any suitable array a that forms the given array b. It is guaranteed that the answer exists (so the array b is obtained from some suitable array a). If there are multiple answers, you can print any.\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains 2n integers b_1, b_2, …, b_2n (2 ≤ b_i ≤ 2750131), where b_i is the i-th element of b. 2750131 is the 199999-th prime number.\n\nIn the only line of the output print n integers a_1, a_2, …, a_n (2 ≤ a_i ≤ 2·10^5) in any order — the array a from which the array b can be obtained using the sequence of moves given in the problem statement. If there are multiple answers, you can print any.\n\nInput:\n```\n3\n3 5 2 3 2 4\n```\n\nOutput:\n```\n3 4 2 \n```\n\nInput:\n```\n1\n2750131 199999\n```\n\nOutput:\n```\n199999 \n```\n\nInput:\n```\n1\n3 6\n```\n\nOutput:\n```\n6 \n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of elements in a.\n\nThe second line of the input contains 2n integers b_1, b_2, …, b_2n (2 ≤ b_i ≤ 2750131), where b_i is the i-th element of b. 2750131 is the 199999-th prime number.",
+    "output": "In the only line of the output print n integers a_1, a_2, …, a_n (2 ≤ a_i ≤ 2·10^5) in any order — the array a from which the array b can be obtained using the sequence of moves given in the problem statement. If there are multiple answers, you can print any.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "number theory",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

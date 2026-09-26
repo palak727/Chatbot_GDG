@@ -1,0 +1,17 @@
+{
+    "id": "1810D",
+    "contest_id": 1810,
+    "problem_letter": "D",
+    "title": "D. Climbing the Tree",
+    "statement": "The snails are climbing a tree. The tree height is h meters, and snails start at position 0.\n\nEach snail has two attributes a and b (a > b). Starting from the 1-st day, one snail climbs the tree like this: during the daylight hours of the day, he climbs up a meters; during the night, the snail rests, and he slides down b meters. If on the n-th day, the snail reaches position h for the first time (that is, the top of the tree), he will finish climbing, and we say that the snail spends n days climbing the tree. Note that on the last day of climbing, the snail doesn't necessarily climb up a meters, in case his distance to the top is smaller than a.\n\nUnfortunately, you don't know the exact tree height h at first, but you know that h is a positive integer. There are q events of two kinds.\n\nYou need to deal with all the events in order.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows their description.\n\nThe first line of each test case contains one integer q (1≤ q ≤ 2·10^5) — the number of events.\n\nFor the following q lines, the first integer of each line is either 1 or 2, denoting the event type.\n\nIf the event type is 1, then three integers a, b, and n (1≤ a,b,n ≤ 10^9, a > b) follow.\n\nIf the event type is 2, then two integers a and b (1≤ a,b ≤ 10^9, a > b) follow.\n\nIt is guaranteed that the sum of q over all test cases does not exceed 2·10^5.\n\nFor each test case, output q integers in one line, one for each event, in order. Specifically,\n\nIn the first test case, we can determine h=7 through the first message, so we know the second snail and the third snail need to spend 2 and 5 days respectively to reach the top.\n\nLet's show how the second snail climbs:\n\nIn the third test case, the second snail's message contradicts the first snail's, because the second snail says he spent 3 days, and he can climb at most 1+1+2=4 meters in the first 3 days. However, the first snail only needs 1 day to climb 4 meters.\n\nInput:\n```\n531 3 2 52 4 12 3 231 6 5 12 3 12 6 231 4 2 21 2 1 32 10 291 7 3 61 2 1 82 5 11 10 9 71 8 1 21 10 5 81 10 7 72 7 41 9 4 291 2 1 61 8 5 61 4 2 72 9 11 5 1 41 5 2 71 7 1 91 9 1 42 10 8\n```\n\nOutput:\n```\n1 2 5\n1 -1 1\n1 0 1\n1 0 -1 0 0 0 1 8 0\n1 0 0 1 0 0 0 0 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follows their description.\n\nThe first line of each test case contains one integer q (1≤ q ≤ 2·10^5) — the number of events.\n\nFor the following q lines, the first integer of each line is either 1 or 2, denoting the event type.\n\nIf the event type is 1, then three integers a, b, and n (1≤ a,b,n ≤ 10^9, a > b) follow.\n\nIf the event type is 2, then two integers a and b (1≤ a,b ≤ 10^9, a > b) follow.\n\nIt is guaranteed that the sum of q over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output q integers in one line, one for each event, in order. Specifically,",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

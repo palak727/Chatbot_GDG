@@ -1,0 +1,18 @@
+{
+    "id": "2096G",
+    "contest_id": 2096,
+    "problem_letter": "G",
+    "title": "G. Wonderful Guessing Game",
+    "statement": "This is an interactive problem.\n\nYou are a proud teacher at the Millennium Science School. Today, a student named Alice challenges you to a guessing game.\n\nAlice is thinking of an integer from 1 to n, and you must guess it by asking her some queries.\n\nTo make things harder, she says you must ask all the queries first, and she will ignore exactly 1 query.\n\nFor each query, you choose an array of k distinct integers from 1 to n, where k is even. Then, Alice will respond with one of the following:\n\nAlice is impatient, so you must find a strategy that minimizes the number of queries. Can you do it?\n\nFormally, let f(n) be the minimum number of queries required to determine Alice's number. Then you must find a strategy that uses exactly f(n) queries.\n\nNote that the interactor is adaptive, which means Alice's number is not fixed at the beginning and may depend on your queries. However, it is guaranteed that there exists at least one number that is consistent with Alice's responses.\n\nWe can show that f(n) ≤ 20 for all n such that 2 ≤ n ≤ 2·10^5.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the maximum possible value of Alice's number.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nThe interaction begins by reading the integer n.\n\nThen, output a single integer q (1 ≤ q ≤ 20) — the number of queries.\n\nTo ask a query, output a line in the following format:\n\nOnce you've asked all q queries, read a string s (|s| = q) — the responses to the queries as described above.\n\nWhen you know Alice's number, output a single integer x (1 ≤ x ≤ n) — the value of the number.\n\nThen, move on to the next test case, or terminate the program if there are no more test cases.\n\nAfter outputting all q queries, do not forget to output the end of the line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nNote that even if you correctly determine Alice's number but use more than f(n) queries, you will get Wrong answer.\n\nFor this problem, hacks are disabled.\n\nIn the first test case, n = 3. We ask 2 queries: [1, 2], and [1, 2] again.\n\nFrom the information above, we can determine that Alice's number is 3.\n\nIt can be shown that all valid strategies for n = 3 require at least 2 queries.\n\nIn the second test case, n = 5. We ask 3 queries: [3, 2, 4, 1], [5, 4, 3, 1], and [1, 5, 3, 4].\n\nFrom the information above, we can determine that Alice's number is 1.\n\nIt can be shown that all valid strategies for n = 5 require at least 3 queries.\n\nInput:\n```\n2\n3\n\n\n\n?N\n\n5\n\n\n\n\nR?L\n```\n\nOutput:\n```\n2\n2 1 2\n2 1 2\n\n3\n\n3\n4 3 2 4 1\n4 5 4 3 1\n4 1 5 3 4\n\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the maximum possible value of Alice's number.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "*3200"
+    ],
+    "rating": 3200
+}

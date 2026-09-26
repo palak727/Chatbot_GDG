@@ -1,0 +1,18 @@
+{
+    "id": "2061C",
+    "contest_id": 2061,
+    "problem_letter": "C",
+    "title": "C. Kevin and Puzzle",
+    "statement": "Kevin enjoys logic puzzles.\n\nHe played a game with n classmates who stand in a line. The i-th person from the left says that there are a_i liars to their left (not including themselves).\n\nEach classmate is either honest or a liar, with the restriction that no two liars can stand next to each other. Honest classmates always say the truth. Liars can say either the truth or lies, meaning their statements are considered unreliable.\n\nKevin wants to determine the number of distinct possible game configurations modulo 998,244,353. Two configurations are considered different if at least one classmate is honest in one configuration and a liar in the other.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n ≤ 2·10^5) — the number of classmates.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i ≤ n) — the number of liars to the left of the i-th person they claimed.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the number of distinct game configurations modulo 998,244,353.\n\nWe will use colorredred to mark liars and colorblueblue to mark honest people.\n\nIn the first test case, the only possible way is (colorred0,colorblue1,colorred2).\n\nIn the second test case, two possible ways are (colorblue0,colorblue0,colorblue0,colorblue0,colorblue0) and (colorblue0,colorblue0,colorblue0,colorblue0,colorred0).\n\nIn the third test case, three possible ways are (colorblue0,colorblue0,colorred1,colorblue1,colorred2), (colorblue0,colorred0,colorblue1,colorred1,colorblue2), (colorblue0,colorred0,colorblue1,colorblue1,colorred2).\n\nInput:\n```\n830 1 250 0 0 0 050 0 1 1 250 1 2 3 450 0 1 1 155 1 5 2 51042 3 1 1\n```\n\nOutput:\n```\n1\n2\n3\n0\n4\n1\n2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n ≤ 2·10^5) — the number of classmates.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i ≤ n) — the number of liars to the left of the i-th person they claimed.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the number of distinct game configurations modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "2-sat",
+        "combinatorics",
+        "dp",
+        "*1600"
+    ],
+    "rating": 1600
+}

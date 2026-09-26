@@ -1,0 +1,18 @@
+{
+    "id": "2097D",
+    "contest_id": 2097,
+    "problem_letter": "D",
+    "title": "D. Homework",
+    "statement": "Some teachers work at the educational center \"Sirius\" while simultaneously studying at the university. In this case, the trip does not exempt them from completing their homework, so they do their homework right on the plane. Artem is one of those teachers, and he was assigned the following homework at the university.\n\nWith an arbitrary string a of even length m, he can perform the following operation. Artem splits the string a into two halves x and y of equal length, after which he performs exactly one of three actions:\n\nUnfortunately, Artem fell asleep on the plane, so you will have to complete his homework. Artem has two binary strings s and t of length n, each consisting of n characters 0 or 1. Determine whether it is possible to make string s equal to string t with an arbitrary number of operations.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the strings s and t.\n\nThe second line of each test case contains the string s of length n, consisting only of characters 0 and 1.\n\nThe third line of each test case contains the string t of length n, consisting only of characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output \"Yes\" (without quotes) if it is possible to make string s equal to string t, and \"No\" otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first test case, the string 00001001 can be transformed into the string 10101001 in two operations. The sequence of actions is illustrated in the figure below:\n\nIn the second test case, the string 00000000 cannot be transformed into any string other than 00000000, as no non-zero elements can be formed during any operation.\n\nInput:\n```\n380000100110101001800000000000010016010110100010\n```\n\nOutput:\n```\nYes\nNo\nYes\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the length of the strings s and t.\n\nThe second line of each test case contains the string s of length n, consisting only of characters 0 and 1.\n\nThe third line of each test case contains the string t of length n, consisting only of characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output \"Yes\" (without quotes) if it is possible to make string s equal to string t, and \"No\" otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "math",
+        "matrices",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1526E",
+    "contest_id": 1526,
+    "problem_letter": "E",
+    "title": "E. Oolimry and Suffix Array",
+    "statement": "Once upon a time, Oolimry saw a suffix array. He wondered how many strings can produce this suffix array.\n\nMore formally, given a suffix array of length n and having an alphabet size k, count the number of strings that produce such a suffix array.\n\nLet s be a string of length n. Then the i-th suffix of s is the substring s[i … n-1]. A suffix array is the array of integers that represent the starting indexes of all the suffixes of a given string, after the suffixes are sorted in the lexicographic order. For example, the suffix array of oolimry is [3,2,4,1,0,5,6] as the array of sorted suffixes is [textttimry,textttlimry,textttmry,textttolimry,textttoolimry,textttry,texttty].\n\nA string x is lexicographically smaller than string y, if either x is a prefix of y (and x≠ y), or there exists such i that x_i < y_i, and for any 1≤ j < i , x_j = y_j.\n\nThe first line contain 2 integers n and k (1 ≤ n ≤ 200000,1 ≤ k ≤ 200000) — the length of the suffix array and the alphabet size respectively.\n\nThe second line contains n integers s_0, s_1, s_2, …, s_{n-1} (0 ≤ s_i ≤ n-1) where s_i is the i-th element of the suffix array i.e. the starting position of the i-th lexicographically smallest suffix. It is guaranteed that for all 0 ≤ i < j ≤ n-1, s_i ≠ s_j.\n\nPrint how many strings produce such a suffix array. Since the number can be very large, print the answer modulo 998244353.\n\nIn the first test case, \"abb\" is the only possible solution.\n\nIn the second test case, it can be easily shown no possible strings exist as all the letters have to be equal.\n\nIn the fourth test case, one possible string is \"ddbacef\".\n\nPlease remember to print your answers modulo 998244353.\n\nInput:\n```\n3 2\n0 2 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 1\n0 1 2 3 4\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n6 200000\n0 1 2 3 4 5\n```\n\nOutput:\n```\n822243495\n```\n\nInput:\n```\n7 6\n3 2 4 1 0 5 6\n```\n\nOutput:\n```\n36\n```",
+    "input": "The first line contain 2 integers n and k (1 ≤ n ≤ 200000,1 ≤ k ≤ 200000) — the length of the suffix array and the alphabet size respectively.\n\nThe second line contains n integers s_0, s_1, s_2, …, s_{n-1} (0 ≤ s_i ≤ n-1) where s_i is the i-th element of the suffix array i.e. the starting position of the i-th lexicographically smallest suffix. It is guaranteed that for all 0 ≤ i < j ≤ n-1, s_i ≠ s_j.",
+    "output": "Print how many strings produce such a suffix array. Since the number can be very large, print the answer modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1904D2",
+    "contest_id": 1904,
+    "problem_letter": "D2",
+    "title": "D2. Set To Max (Hard Version)",
+    "statement": "This is the hard version of the problem. The only differences between the two versions of this problem are the constraints on n and the time limit. You can make hacks only if all versions of the problem are solved.\n\nYou are given two arrays a and b of length n.\n\nYou can perform the following operation some (possibly zero) times:\n\nDetermine if you can make array a equal to array b.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the elements of array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" (without quotes) if you can make a into b using any number of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).\n\nIn the first test case, we can achieve array b by applying a single operation: (l,r)=(2,3).\n\nIn the second test case, it can be shown we cannot achieve array b in any amount of operations.\n\nIn the third test case, we can achieve array b by applying two operations: (l,r)=(2,5). followed by (l,r)=(1,3).\n\nIn the fourth and fifth test cases, it can be shown we cannot achieve array b in any amount of operations.\n\nInput:\n```\n551 2 3 2 41 3 3 2 453 4 2 2 43 4 3 4 453 2 1 1 13 3 3 2 221 11 231 1 22 1 2\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the elements of array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the elements of array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" (without quotes) if you can make a into b using any number of operations, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\" and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

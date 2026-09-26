@@ -1,0 +1,17 @@
+{
+    "id": "1842A",
+    "contest_id": 1842,
+    "problem_letter": "A",
+    "title": "A. Tenzing and Tsondu",
+    "statement": "Tsondu and Tenzing are playing a card game. Tsondu has n monsters with ability values a_1, a_2, …, a_n while Tenzing has m monsters with ability values b_1, b_2, …, b_m.\n\nTsondu and Tenzing take turns making moves, with Tsondu going first. In each move, the current player chooses two monsters: one on their side and one on the other side. Then, these monsters will fight each other. Suppose the ability values for the chosen monsters are x and y respectively, then the ability values of the monsters will become x-y and y-x respectively. If the ability value of any monster is smaller than or equal to 0, the monster dies.\n\nThe game ends when at least one player has no monsters left alive. The winner is the player with at least one monster left alive. If both players have no monsters left alive, the game ends in a draw.\n\nFind the result of the game when both players play optimally.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 2·10^3) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 50) — the number of monsters Tsondu and Tenzing have respectively.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the ability values of Tsondu's monsters.\n\nThe third line of each test case contains m integers b_1,b_2,…,b_m (1 ≤ b_i ≤ 10^9) — the ability values of Tenzing's monsters.\n\nFor each test case, output \"Tsondu\" if Tsondu wins, \"Tenzing\" if Tenzing wins, and \"Draw\" if the game ends in a draw. (Output without quotes.)\n\nNote that the output is case-sensitive. For example, if the answer is \"Tsondu\", the outputs \"tsondu\", \"TSONDU\", and \"tSonDu\" will all be recognized as incorrect outputs.\n\nConsider the first test case. It can be shown that Tsondu has a winning strategy. The following is a possible way that Tsondu can win (note that the players may not be playing optimally in this example):\n\nInput:\n```\n61 391 2 32 31 21 1 13 21 2 31 13 31 1 12 2 210 101 2 3 3 2 2 1 1 2 23 3 3 3 2 1 1 1 1 110 101 2 3 4 5 6 7 8 9 106 7 8 9 10 11 1 1 1 1\n```\n\nOutput:\n```\nTsondu\nDraw\nTsondu\nTenzing\nDraw\nDraw\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 2·10^3) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 50) — the number of monsters Tsondu and Tenzing have respectively.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9) — the ability values of Tsondu's monsters.\n\nThe third line of each test case contains m integers b_1,b_2,…,b_m (1 ≤ b_i ≤ 10^9) — the ability values of Tenzing's monsters.",
+    "output": "For each test case, output \"Tsondu\" if Tsondu wins, \"Tenzing\" if Tenzing wins, and \"Draw\" if the game ends in a draw. (Output without quotes.)\n\nNote that the output is case-sensitive. For example, if the answer is \"Tsondu\", the outputs \"tsondu\", \"TSONDU\", and \"tSonDu\" will all be recognized as incorrect outputs.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

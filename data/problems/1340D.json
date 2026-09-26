@@ -1,0 +1,19 @@
+{
+    "id": "1340D",
+    "contest_id": 1340,
+    "problem_letter": "D",
+    "title": "D. Nastya and Time Machine",
+    "statement": "Denis came to Nastya and discovered that she was not happy to see him... There is only one chance that she can become happy. Denis wants to buy all things that Nastya likes so she will certainly agree to talk to him.\n\nThe map of the city where they live has a lot of squares, some of which are connected by roads. There is exactly one way between each pair of squares which does not visit any vertex twice. It turns out that the graph of the city is a tree.\n\nDenis is located at vertex 1 at the time 0. He wants to visit every vertex at least once and get back as soon as possible.\n\nDenis can walk one road in 1 time. Unfortunately, the city is so large that it will take a very long time to visit all squares. Therefore, Denis took a desperate step. He pulled out his pocket time machine, which he constructed in his basement. With its help, Denis can change the time to any non-negative time, which is less than the current time.\n\nBut the time machine has one feature. If the hero finds himself in the same place and at the same time twice, there will be an explosion of universal proportions and Nastya will stay unhappy. Therefore, Denis asks you to find him a route using a time machine that he will get around all squares and will return to the first and at the same time the maximum time in which he visited any square will be minimal.\n\nFormally, Denis's route can be represented as a sequence of pairs: {v_1, t_1}, {v_2, t_2}, {v_3, t_3}, …, {v_k, t_k}, where v_i is number of square, and t_i is time in which the boy is now.\n\nThe following conditions must be met:\n\nYou need to find a route such that the maximum time in any square will be minimal, that is, the route for which max(t_1, t_2, …, t_k) will be the minimum possible.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of squares in the city.\n\nThe next n - 1 lines contain two integers u and v (1 ≤ v, u ≤ n, u ≠ v) - the numbers of the squares connected by the road.\n\nIt is guaranteed that the given graph is a tree.\n\nIn the first line output the integer k (1 ≤ k ≤ 10^6) — the length of the path of Denis.\n\nIn the next k lines output pairs v_i, t_i — pairs that describe Denis's route (as in the statement).\n\nAll route requirements described in the statements must be met.\n\nIt is guaranteed that under given restrictions there is at least one route and an answer whose length does not exceed 10^6. If there are several possible answers, print any.\n\nInput:\n```\n5\n1 2\n2 3\n2 4\n4 5\n```\n\nOutput:\n```\n13\n1 0\n2 1\n3 2\n3 1\n2 2\n4 3\n4 1\n5 2\n5 1\n4 2\n2 3\n2 0\n1 1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of squares in the city.\n\nThe next n - 1 lines contain two integers u and v (1 ≤ v, u ≤ n, u ≠ v) - the numbers of the squares connected by the road.\n\nIt is guaranteed that the given graph is a tree.",
+    "output": "In the first line output the integer k (1 ≤ k ≤ 10^6) — the length of the path of Denis.\n\nIn the next k lines output pairs v_i, t_i — pairs that describe Denis's route (as in the statement).\n\nAll route requirements described in the statements must be met.\n\nIt is guaranteed that under given restrictions there is at least one route and an answer whose length does not exceed 10^6. If there are several possible answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

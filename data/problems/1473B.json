@@ -1,0 +1,19 @@
+{
+    "id": "1473B",
+    "contest_id": 1473,
+    "problem_letter": "B",
+    "title": "B. String LCM",
+    "statement": "Let's define a multiplication operation between a string a and a positive integer x: a·x is the string that is a result of writing x copies of a one after another. For example, \"abc\"·~2~= \"abcabc\", \"a\"·~5~= \"aaaaa\".\n\nA string a is divisible by another string b if there exists an integer x such that b·x = a. For example, \"abababab\" is divisible by \"ab\", but is not divisible by \"ababab\" or \"aa\".\n\nLCM of two strings s and t (defined as LCM(s, t)) is the shortest non-empty string that is divisible by both s and t.\n\nYou are given two strings s and t. Find LCM(s, t) or report that it does not exist. It can be shown that if LCM(s, t) exists, it is unique.\n\nThe first line contains one integer q (1 ≤ q ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines, containing strings s and t (1 ≤ |s|, |t| ≤ 20). Each character in each of these strings is either 'a' or 'b'.\n\nFor each test case, print LCM(s, t) if it exists; otherwise, print -1. It can be shown that if LCM(s, t) exists, it is unique.\n\nIn the first test case, \"baba\" = \"baba\"·~1~= \"ba\"·~2.\n\nIn the second test case, \"aaaaaa\" = \"aa\"·~3~= \"aaa\"·~2.\n\nInput:\n```\n3\nbaba\nba\naa\naaa\naba\nab\n```\n\nOutput:\n```\nbaba\naaaaaa\n-1\n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines, containing strings s and t (1 ≤ |s|, |t| ≤ 20). Each character in each of these strings is either 'a' or 'b'.",
+    "output": "For each test case, print LCM(s, t) if it exists; otherwise, print -1. It can be shown that if LCM(s, t) exists, it is unique.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

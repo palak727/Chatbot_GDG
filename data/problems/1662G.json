@@ -1,0 +1,17 @@
+{
+    "id": "1662G",
+    "contest_id": 1662,
+    "problem_letter": "G",
+    "title": "G. Gastronomic Event",
+    "statement": "SWERC organizers want to hold a gastronomic event.\n\nThe location of the event is a building with n rooms connected by n-1 corridors (each corridor connects two rooms) so that it is possible to go from any room to any other room.\n\nIn each room you have to set up the tasting of a typical Italian dish. You can choose from n typical Italian dishes rated from 1 to n depending on how good they are (n is the best possible rating). The n dishes have distinct ratings.\n\nYou want to assign the n dishes to the n rooms so that the number of pleasing tours is maximal. A pleasing tour is a nonempty sequence of rooms so that:\n\nThe first line contains an integer n (2≤ n≤ 1,000,000) — the number of rooms.\n\nThe second line contains n-1 integers p_2, p_3, ⋯ , p_n (1 ≤ p_i < i). Each p_i indicates that there is a corridor between room i and room p_i. It is guaranteed that the building has the property that it is possible to go from any room to any other room.\n\nPrint the maximum number of pleasing tours.\n\nIn the first sample, it is optimal to place the dish with rating 1 in room 1, the dish with rating 2 in room 3, the dish with rating 3 in room 2, the dish with rating 4 in room 5 and the dish with rating 5 in room 4.\n\nAll the 13 possible pleasing tours are: (1), (2), (3), (4), (5), (1,2), (3,2), (2,4), (2,5), (1,2,4), (1,2,5), (3,2,4), (3,2,5).\n\nThere are also other ways to assign the dishes to the rooms so that there are 13 pleasing tours.\n\nInput:\n```\n5\n1 2 2 2\n```\n\nOutput:\n```\n13\n```\n\nInput:\n```\n10\n1 2 3 4 3 2 7 8 7\n```\n\nOutput:\n```\n47\n```",
+    "input": "The first line contains an integer n (2≤ n≤ 1,000,000) — the number of rooms.\n\nThe second line contains n-1 integers p_2, p_3, ⋯ , p_n (1 ≤ p_i < i). Each p_i indicates that there is a corridor between room i and room p_i. It is guaranteed that the building has the property that it is possible to go from any room to any other room.",
+    "output": "Print the maximum number of pleasing tours.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "trees"
+    ],
+    "rating": null
+}

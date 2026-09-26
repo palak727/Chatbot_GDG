@@ -1,0 +1,17 @@
+{
+    "id": "2040A",
+    "contest_id": 2040,
+    "problem_letter": "A",
+    "title": "A. Game of Division",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n of length n and an integer k.\n\nTwo players are playing a game. The first player chooses an index 1 ≤ i ≤ n. Then the second player chooses a different index 1 ≤ j ≤ n, i ≠ j. The first player wins if |a_i - a_j| is not divisible by k. Otherwise, the second player wins.\n\nWe play as the first player. Determine whether it is possible to win, and if so, which index i should be chosen.\n\nThe absolute value of a number x is denoted by |x| and is equal to x if x ≥ 0, and -x otherwise.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100; 1 ≤ k ≤ 100) — the length of the array and the number k.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array a.\n\nFor each test case, if it is impossible for the first player to win, print \"NO\" (without quotes).\n\nOtherwise, print \"YES\" (without quotes) and on the next line the appropriate index 1 ≤ i ≤ n. If there are multiple solutions, print any of them.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer.\n\nIn the first test case, the first player can choose a_2 = 2. Then:\n\nIn the second test case:\n\nInput:\n```\n73 21 2 34 21 2 4 55 310 7 3 4 55 31 31 15 55 362 117 172 217 181 36\n```\n\nOutput:\n```\nYES\n2\nNO\nYES\n3\nNO\nNO\nYES\n2\nYES\n1\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100; 1 ≤ k ≤ 100) — the length of the array and the number k.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — the elements of the array a.",
+    "output": "For each test case, if it is impossible for the first player to win, print \"NO\" (without quotes).\n\nOtherwise, print \"YES\" (without quotes) and on the next line the appropriate index 1 ≤ i ≤ n. If there are multiple solutions, print any of them.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

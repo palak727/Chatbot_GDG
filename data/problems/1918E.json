@@ -1,0 +1,21 @@
+{
+    "id": "1918E",
+    "contest_id": 1918,
+    "problem_letter": "E",
+    "title": "E. ace5 and Task Order",
+    "statement": "This is an interactive problem!\n\nIn the new round, there were n tasks with difficulties from 1 to n. The coordinator, who decided to have the first round with tasks in unsorted order of difficulty, rearranged the tasks, resulting in a permutation of difficulties from 1 to n. After that, the coordinator challenged ace5 to guess the permutation in the following way.\n\nInitially, the coordinator chooses a number x from 1 to n.\n\nace5 can make queries of the form: ? i. The answer will be:\n\nThe task for ace5 is to guess the permutation in no more than 40n queries. Since ace5 is too busy writing the announcement, he has entrusted this task to you.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe interaction between your program and the jury's program begins with reading a positive integer n (1 ≤ n ≤ 2000) — the length of the hidden permutation.\n\nTo make a query, output a line in the format \"? i\", where 1 ≤ i ≤ n.\n\nAs an answer, you will receive:\n\nYou can make no more than 40n queries. To output the answer, you need to print \"! a_1 a_2 ... a_n\", where 1 ≤ a_i ≤ n, and all of them are distinct. Outputting the answer does not count as a query.\n\nIf your program makes more than 40n queries for one test case, or makes an invalid query, then the response to the query will be -1. After receiving such a response, your program should immediately terminate to receive the verdict Wrong Answer. Otherwise, it may receive any other verdict.\n\nAfter outputting a query, do not forget to print a newline and flush the output buffer. Otherwise, you will receive the verdict Presentation Error. To flush the buffer, use:\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nThe interactor in this problem is not adaptive.\n\nHacks:\n\nTo make a hack, use the following format:\n\nThe first line contains a single integer t — the number of test cases.\n\nThe description of each test case should consist of two lines. The first line contains the numbers n and x (1 ≤ x ≤ n ≤ 2000) — the length of the hidden permutation and the initial value of the number x. The second line contains n distinct numbers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the permutation that the jury should choose in this test case.\n\nSum of n over all test cases should not exceed 2000.\n\nIn the first test, the hidden permutation is a = [2,4,1,5,3], and the initial value of x is 3.\n\nIn the second test, the hidden permutation is a = [2,1], and the initial value of x is 1.\n\nInput:\n```\n2\n5\n\n>\n\n=\n\n<\n\n=\n\n<\n\n<\n\n2\n\n>\n```\n\nOutput:\n```\n? 4\n\n? 2\n\n? 1\n\n? 5\n\n? 1\n\n? 3\n\n! 2 4 1 5 3\n\n? 1\n\n! 2 1 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "implementation",
+        "interactive",
+        "probabilities",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

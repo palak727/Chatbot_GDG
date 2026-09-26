@@ -1,0 +1,17 @@
+{
+    "id": "1722D",
+    "contest_id": 1722,
+    "problem_letter": "D",
+    "title": "D. Line",
+    "statement": "There are n people in a horizontal line, each looking either to the left or the right. Each person counts the number of people in the direction they are looking. The value of the line is the sum of each person's count.\n\nFor example, in the arrangement LRRLL, where L stands for a person looking left and R stands for a person looking right, the counts for each person are [0, 3, 2, 3, 4], and the value is 0+3+2+3+4=12.\n\nYou are given the initial arrangement of people in the line. For each k from 1 to n, determine the maximum value of the line if you can change the direction of at most k people.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the line.\n\nThe following line contains a string consisting of n characters, each of which is either L or R, representing a person facing left or right, respectively — the description of the line.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nPlease note that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).\n\nFor each test case, output n space-separated non-negative integers — the maximum value of the line if you can change the direction of at most k people for each k from 1 to n, inclusive.\n\nIn the first test case:\n\nIn the second test case, it is optimal to only change the direction of the first person for all k from 1 to 5 (that is, make the line RRRLL).\n\nInput:\n```\n63LLR5LRRLL1L12LRRRLLLRLLRL10LLLLLRRRRR9LRLRLRLRL\n```\n\nOutput:\n```\n3 5 5 \n16 16 16 16 16 \n0 \n86 95 98 101 102 102 102 102 102 102 102 102 \n29 38 45 52 57 62 65 68 69 70 \n44 50 54 56 56 56 56 56 56 \n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the line.\n\nThe following line contains a string consisting of n characters, each of which is either L or R, representing a person facing left or right, respectively — the description of the line.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nPlease note that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).",
+    "output": "For each test case, output n space-separated non-negative integers — the maximum value of the line if you can change the direction of at most k people for each k from 1 to n, inclusive.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

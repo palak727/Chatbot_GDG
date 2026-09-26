@@ -1,0 +1,20 @@
+{
+    "id": "1426E",
+    "contest_id": 1426,
+    "problem_letter": "E",
+    "title": "E. Rock, Paper, Scissors",
+    "statement": "Alice and Bob have decided to play the game \"Rock, Paper, Scissors\".\n\nThe game consists of several rounds, each round is independent of each other. In each round, both players show one of the following things at the same time: rock, paper or scissors. If both players showed the same things then the round outcome is a draw. Otherwise, the following rules applied:\n\nAlice and Bob decided to play exactly n rounds of the game described above. Alice decided to show rock a_1 times, show scissors a_2 times and show paper a_3 times. Bob decided to show rock b_1 times, show scissors b_2 times and show paper b_3 times. Though, both Alice and Bob did not choose the sequence in which they show things. It is guaranteed that a_1 + a_2 + a_3 = n and b_1 + b_2 + b_3 = n.\n\nYour task is to find two numbers:\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 10^9) — the number of rounds.\n\nThe second line of the input contains three integers a_1, a_2, a_3 (0 ≤ a_i ≤ n) — the number of times Alice will show rock, scissors and paper, respectively. It is guaranteed that a_1 + a_2 + a_3 = n.\n\nThe third line of the input contains three integers b_1, b_2, b_3 (0 ≤ b_j ≤ n) — the number of times Bob will show rock, scissors and paper, respectively. It is guaranteed that b_1 + b_2 + b_3 = n.\n\nPrint two integers: the minimum and the maximum number of rounds Alice can win.\n\nIn the first example, Alice will not win any rounds if she shows scissors and then paper and Bob shows rock and then scissors. In the best outcome, Alice will win one round if she shows paper and then scissors, and Bob shows rock and then scissors.\n\nIn the second example, Alice will not win any rounds if Bob shows the same things as Alice each round.\n\nIn the third example, Alice always shows paper and Bob always shows rock so Alice will win all three rounds anyway.\n\nInput:\n```\n2\n0 1 1\n1 1 0\n```\n\nOutput:\n```\n0 1\n```\n\nInput:\n```\n15\n5 5 5\n5 5 5\n```\n\nOutput:\n```\n0 15\n```\n\nInput:\n```\n3\n0 0 3\n3 0 0\n```\n\nOutput:\n```\n3 3\n```\n\nInput:\n```\n686\n479 178 29\n11 145 530\n```\n\nOutput:\n```\n22 334\n```\n\nInput:\n```\n319\n10 53 256\n182 103 34\n```\n\nOutput:\n```\n119 226\n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 10^9) — the number of rounds.\n\nThe second line of the input contains three integers a_1, a_2, a_3 (0 ≤ a_i ≤ n) — the number of times Alice will show rock, scissors and paper, respectively. It is guaranteed that a_1 + a_2 + a_3 = n.\n\nThe third line of the input contains three integers b_1, b_2, b_3 (0 ≤ b_j ≤ n) — the number of times Bob will show rock, scissors and paper, respectively. It is guaranteed that b_1 + b_2 + b_3 = n.",
+    "output": "Print two integers: the minimum and the maximum number of rounds Alice can win.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "flows",
+        "greedy",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

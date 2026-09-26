@@ -1,0 +1,17 @@
+{
+    "id": "1999G1",
+    "contest_id": 1999,
+    "problem_letter": "G1",
+    "title": "G1. Ruler (easy version)",
+    "statement": "This is the easy version of the problem. The only difference between the two versions is that in this version, you can make at most 10 queries.\n\nThis is an interactive problem. If you are unsure how interactive problems work, then it is recommended to read the guide for participants.\n\nWe have a secret ruler that is missing one number x (2 ≤ x ≤ 999). When you measure an object of length y, the ruler reports the following values:\n\nThe ruler above is missing the number 4, so it correctly measures the first segment as length 3 but incorrectly measures the second segment as length 6 even though it is actually 5.\n\nYou need to find the value of x. To do that, you can make queries of the following form:\n\nFind the value of x. You can ask at most 10 queries.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThere is no initial input for each test case. You should begin the interaction by asking a query.\n\nTo make a query, output a single line of the form texttt?~a~b (1 ≤ a, b ≤ 1000). In response, you will be told the measured area of the rectangle, according to our secret ruler.\n\nWhen you are ready to print the answer, output a single line of the form texttt!~x (2 ≤ x ≤ 999). After that, proceed to process the next test case or terminate the program if it was the last test case. Printing the answer does not count as a query.\n\nThe interactor is not adaptive, meaning that the answer is known before the participant asks the queries and doesn't depend on the queries asked by the participant.\n\nIf your program makes more than 10 queries for one set of input data, makes an invalid query, or prints the wrong value of x, then the response to the query will be -1. After receiving such a response, your program should immediately terminate to receive the verdict Wrong Answer. Otherwise, you can get an arbitrary verdict because your solution will continue to read from a closed stream.\n\nAfter printing a query do not forget to output the end of line and flush the output. Otherwise, you may get Idleness limit exceeded verdict. To do this, use:\n\nHacks\n\nTo make a hack, use the following format.\n\nThe first line should contain a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case should contain a single integer x (2 ≤ x ≤ 999) — the missing number on the ruler.\n\nIn the first test, the interaction proceeds as follows.\n\nNote that the line breaks in the example input and output are for the sake of clarity, and do not occur in the real interaction.\n\nInput:\n```\n2\n\n18\n\n25\n\n\n9999\n```\n\nOutput:\n```\n? 3 5\n\n? 4 4\n\n! 4\n? 99 100\n\n! 100\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "interactive",
+        "*1500"
+    ],
+    "rating": 1500
+}

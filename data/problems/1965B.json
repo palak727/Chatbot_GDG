@@ -1,0 +1,19 @@
+{
+    "id": "1965B",
+    "contest_id": 1965,
+    "problem_letter": "B",
+    "title": "B. Missing Subsequence Sum",
+    "statement": "You are given two integers n and k. Find a sequence a of non-negative integers of size at most 25 such that the following conditions hold.\n\nA sequence b is a subsequence of a if b can be obtained from a by the deletion of several (possibly, zero or all) elements, without changing the order of the remaining elements. For example, [5, 2, 3] is a subsequence of [1, 5, 7, 8, 2, 4, 3].\n\nIt can be shown that under the given constraints, a solution always exists.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nEach test case consists of a single line containing two integers n and k (2 ≤ n ≤ 10^6, 1 ≤ k ≤ n) — the parameters described above.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^7.\n\nThe first line of output for each test case should contain a single integer m (1 ≤ m ≤ 25) — the size of your chosen sequence.\n\nThe second line of output for each test case should contain m integers a_i (0 ≤ a_i ≤ 10^9) — the elements of your chosen sequence.\n\nIf there are multiple solutions, print any.\n\nIn the first example, we just need a subsequence that adds up to 1, but not one that adds up to 2. So the array a=[1] suffices.\n\nIn the second example, all elements are greater than k=1, so no subsequence adds up to 1. Every other integer between 1 and n is present in the array, so there is a subsequence of size 1 adding up to each of those numbers.\n\nInput:\n```\n52 26 18 89 310 7\n```\n\nOutput:\n```\n1\n1\n5\n2 3 4 5 6\n7\n1 1 1 1 1 1 1\n4\n7 1 4 1\n4\n1 2 8 3\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nEach test case consists of a single line containing two integers n and k (2 ≤ n ≤ 10^6, 1 ≤ k ≤ n) — the parameters described above.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^7.",
+    "output": "The first line of output for each test case should contain a single integer m (1 ≤ m ≤ 25) — the size of your chosen sequence.\n\nThe second line of output for each test case should contain m integers a_i (0 ≤ a_i ≤ 10^9) — the elements of your chosen sequence.\n\nIf there are multiple solutions, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1213B",
+    "contest_id": 1213,
+    "problem_letter": "B",
+    "title": "B. Bad Prices",
+    "statement": "Polycarp analyzes the prices of the new berPhone. At his disposal are the prices for n last days: a_1, a_2, …, a_n, where a_i is the price of berPhone on the day i.\n\nPolycarp considers the price on the day i to be bad if later (that is, a day with a greater number) berPhone was sold at a lower price. For example, if n=6 and a=[3, 9, 4, 6, 7, 5], then the number of days with a bad price is 3 — these are days 2 (a_2=9), 4 (a_4=6) and 5 (a_5=7).\n\nPrint the number of days with a bad price.\n\nYou have to answer t independent data sets.\n\nThe first line contains an integer t (1 ≤ t ≤ 10000) — the number of sets of input data in the test. Input data sets must be processed independently, one after another.\n\nEach input data set consists of two lines. The first line contains an integer n (1 ≤ n ≤ 150000) — the number of days. The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), where a_i is the price on the i-th day.\n\nIt is guaranteed that the sum of n over all data sets in the test does not exceed 150000.\n\nPrint t integers, the j-th of which should be equal to the number of days with a bad price in the j-th input data set.\n\nInput:\n```\n5\n6\n3 9 4 6 7 5\n1\n1000000\n2\n2 1\n10\n31 41 59 26 53 58 97 93 23 84\n7\n3 2 1 2 3 4 5\n```\n\nOutput:\n```\n3\n0\n1\n8\n2\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10000) — the number of sets of input data in the test. Input data sets must be processed independently, one after another.\n\nEach input data set consists of two lines. The first line contains an integer n (1 ≤ n ≤ 150000) — the number of days. The second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), where a_i is the price on the i-th day.\n\nIt is guaranteed that the sum of n over all data sets in the test does not exceed 150000.",
+    "output": "Print t integers, the j-th of which should be equal to the number of days with a bad price in the j-th input data set.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

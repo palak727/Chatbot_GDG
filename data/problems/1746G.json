@@ -1,0 +1,22 @@
+{
+    "id": "1746G",
+    "contest_id": 1746,
+    "problem_letter": "G",
+    "title": "G. Olympiad Training",
+    "statement": "Anton decided to get ready for an Olympiad in Informatics. Ilya prepared n tasks for him to solve. It is possible to submit the solution for the i-th task in the first d_i days only. Anton cannot solve more than one task a day. Ilya estimated the usefulness of the i-th tasks as r_i and divided the tasks into three topics, the topic of the i-th task is type_i.\n\nAnton wants to solve exactly a tasks on the first topic, b tasks on the second topic and c tasks on the third topic. Tell Anton if it is possible to do so, and if it is, calculate the maximum total usefulness of the tasks he may solve.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers n, a, b, c (1 ≤ n ≤ 10^5, 0 ≤ a, b, c ≤ n).\n\nThe following n lines contain three integers each — r_i, type_i, d_i (0 ≤ r_i ≤ 10^9, 1 ≤ type_i ≤ 3, 1 ≤ d_i ≤ n).\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case print -1 if Anton cannot reach his goal; otherwise, print the maximum usefulness of the tasks he will solve.\n\nIn the first test case from the sample test Anton can solve tasks 2 and 4.\n\nIn the second test case from the sample test it is impossible to fulfill Anton's wish.\n\nIn the third test case from the sample test it is optimal to solve tasks 2, 3 and 4.\n\nIn the last test case from the sample test it is optimal to solve tasks 1, 2 and 4.\n\nInput:\n```\n44 1 1 01 2 11 1 10 1 21 2 23 1 1 11 1 27 2 19 3 24 2 1 0100 2 15 2 37 1 25 1 25 1 1 110 3 19 2 320 1 116 1 41 3 4\n```\n\nOutput:\n```\n2\n-1\n17\n35\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains four integers n, a, b, c (1 ≤ n ≤ 10^5, 0 ≤ a, b, c ≤ n).\n\nThe following n lines contain three integers each — r_i, type_i, d_i (0 ≤ r_i ≤ 10^9, 1 ≤ type_i ≤ 3, 1 ≤ d_i ≤ n).\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print -1 if Anton cannot reach his goal; otherwise, print the maximum usefulness of the tasks he will solve.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "flows",
+        "geometry",
+        "implementation",
+        "sortings",
+        "*3500"
+    ],
+    "rating": 3500
+}

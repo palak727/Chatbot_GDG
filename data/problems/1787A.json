@@ -1,0 +1,17 @@
+{
+    "id": "1787A",
+    "contest_id": 1787,
+    "problem_letter": "A",
+    "title": "A. Exponential Equation",
+    "statement": "You are given an integer n.\n\nFind any pair of integers (x,y) (1≤ x,y≤ n) such that x^y·y+y^x·x = n.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case contains one line with a single integer n (1≤ n≤ 10^9).\n\nFor each test case, if possible, print two integers x and y (1≤ x,y≤ n). If there are multiple answers, print any.\n\nOtherwise, print -1.\n\nIn the third test case, 2^3·3+3^2·2 = 42, so (2,3),(3,2) will be considered as legal solutions.\n\nIn the fourth test case, 5^5·5+5^5·5 = 31250, so (5,5) is a legal solution.\n\nInput:\n```\n537423125020732790\n```\n\nOutput:\n```\n-1\n-1\n2 3\n5 5\n3 13\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case contains one line with a single integer n (1≤ n≤ 10^9).",
+    "output": "For each test case, if possible, print two integers x and y (1≤ x,y≤ n). If there are multiple answers, print any.\n\nOtherwise, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

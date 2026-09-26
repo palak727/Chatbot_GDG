@@ -1,0 +1,17 @@
+{
+    "id": "1505D",
+    "contest_id": 1505,
+    "problem_letter": "D",
+    "title": "D. Xenolith? Hippodrome?",
+    "statement": "The input contains two integers N, M (1 ≤ N ≤ 1024, 2 ≤ M ≤ 16), separated by a single space.\n\nOutput \"YES\" or \"NO\".\n\nInput:\n```\n2 3\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n3 2\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n33 16\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n26 5\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The input contains two integers N, M (1 ≤ N ≤ 1024, 2 ≤ M ≤ 16), separated by a single space.",
+    "output": "Output \"YES\" or \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

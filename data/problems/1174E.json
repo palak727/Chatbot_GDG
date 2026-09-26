@@ -1,0 +1,19 @@
+{
+    "id": "1174E",
+    "contest_id": 1174,
+    "problem_letter": "E",
+    "title": "E. Ehab and the Expected GCD Problem",
+    "statement": "Let's define a function f(p) on a permutation p as follows. Let g_i be the greatest common divisor (GCD) of elements p_1, p_2, ..., p_i (in other words, it is the GCD of the prefix of length i). Then f(p) is the number of distinct elements among g_1, g_2, ..., g_n.\n\nLet f_max(n) be the maximum value of f(p) among all permutations p of integers 1, 2, ..., n.\n\nGiven an integers n, count the number of permutations p of integers 1, 2, ..., n, such that f(p) is equal to f_max(n). Since the answer may be large, print the remainder of its division by 1000,000,007 = 10^9 + 7.\n\nThe only line contains the integer n (2 ≤ n ≤ 10^6) — the length of the permutations.\n\nThe only line should contain your answer modulo 10^9+7.\n\nConsider the second example: these are the permutations of length 3:\n\nThe maximum value f_max(3) = 2, and there are 4 permutations p such that f(p)=2.\n\nInput:\n```\n2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6\n```\n\nOutput:\n```\n120\n```",
+    "input": "The only line contains the integer n (2 ≤ n ≤ 10^6) — the length of the permutations.",
+    "output": "The only line should contain your answer modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

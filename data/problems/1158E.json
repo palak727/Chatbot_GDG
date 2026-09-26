@@ -1,0 +1,19 @@
+{
+    "id": "1158E",
+    "contest_id": 1158,
+    "problem_letter": "E",
+    "title": "E. Strange device",
+    "statement": "It is an interactive problem.\n\nVasya enjoys solving quizzes. He found a strange device and wants to know how it works.\n\nThis device encrypted with the tree (connected undirected graph without cycles) with n vertices, numbered with integers from 1 to n. To solve this quiz you should guess this tree.\n\nFortunately, this device can make one operation, using which you should guess the cipher. You can give the device an array d_1, d_2, …, d_n of non-negative integers. On the device, there are n lamps, i-th of them is connected with i-th vertex of the tree. For all i the light will turn on the i-th lamp, if there exist such vertex of the tree with number j ≠ i that dist(i, j) ≤ d_j. Let's define dist(i, j) as the distance between vertices i and j in tree or number of edges on the simple path between vertices i and j.\n\nVasya wants to solve this quiz using ≤ 80 operations with the device and guess the tree. Help him!\n\nIn the beginning, your program should read one integer n — the number of vertices of the tree which encrypts the device (2 ≤ n ≤ 1000).\n\nAfter that, you can make several operations in the following format. To do operation print a symbol\"?\" (without quotes) and n integers d_1, d_2, …, d_n, separated by spaces after it. Please note, that for all i you can only use the numbers, satisfying the inequality 0 ≤ d_i < n. After that, you should read a string s with length n, consisting of symbols \"0\" and \"1\" (without quotes). For all i the symbol s_i is equal to \"0\", if the lamp on the device, connected with i-th vertex of the tree is switched off and \"1\" otherwise.\n\nAfter several operations, you should print guessed tree. To do it print the only symbol \"!\" (without quotes). In the next n-1 lines print 2 integers a_i, b_i — indexes of the vertices connected by i-th edge of the tree. This numbers should satisfy the conditions 1 ≤ a_i, b_i ≤ n and a_i ≠ b_i. This edges should form a tree, which is equal to the hidden tree. After that, your program should terminate.\n\nIt is guaranteed, that in each test the tree is fixed before and won't change depending on your program's operations.\n\nYour program can make from 0 to 80 operations with the device and after that guess the tree equal with the hidden.\n\nIf your program will make more than 80 operations it can get any verdict, because it will continue reading from closed input. If your program will make operation or print the answer in the incorrect format, it can get any verdict too. Be careful.\n\nDon't forget to flush the output after printing questions and answers.\n\nTo flush the output, you can use:\n\nHacks:\n\nThe first line should contain one integer n — the number of vertices in the tree (2 ≤ n ≤ 1000). Next n-1 lines should contain 2 integers a_i, b_i — indexes of the vertices connected by i-th edge of the tree (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i). All edges should form a tree. Be careful, extra spaces or line breaks are not allowed.\n\nIt is a picture of the tree which encrypt the device from the first test:\n\nIt is a table of pairwise distances between vertices in this tree:\n\nInput:\n```\n5\n00000\n11011\n11100\n10010\n```\n\nOutput:\n```\n? 0 0 0 0 0\n? 1 1 2 0 2\n? 0 0 0 1 0\n? 0 1 0 0 1\n!\n4 2\n1 5\n3 4\n4 1\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "interactive",
+        "math",
+        "trees",
+        "*3400"
+    ],
+    "rating": 3400
+}

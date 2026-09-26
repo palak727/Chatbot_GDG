@@ -1,0 +1,16 @@
+{
+    "id": "1875D",
+    "contest_id": 1875,
+    "problem_letter": "D",
+    "title": "D. Jellyfish and Mex",
+    "statement": "You are given an array of n nonnegative integers a_1, a_2, …, a_n.\n\nLet m be a variable that is initialized to 0, Jellyfish will perform the following operation n times:\n\nNow Jellyfish wants to know the minimum possible final value of m if he performs all the operations optimally.\n\n^dagger The MEX (minimum excluded) of an array is the smallest non-negative integer that does not belong to the array. For instance:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the integers in the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.\n\nFor each test case, output a single integer — the minimum value of m if the operations are performed optimally.\n\nIn the first test case, we delete elements from a in the following order: [5,2,colorred1,0,3,0,4,0] → [5,2,0,3,colorred0,4,0] → [5,2,colorred0,3,4,0] → [5,2,3,4,colorred0] → [5,2,colorred3,4] → [colorred5,2,4] → [colorred2,4] → [colorred4] → [~]. The value of m will be 1+1+1+0+0+0+0+0=3.\n\nInput:\n```\n485 2 1 0 3 0 4 021 251 0 2 114514 080 1 2 0 1 2 0 3\n```\n\nOutput:\n```\n3\n0\n2\n7\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the integers in the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case, output a single integer — the minimum value of m if the operations are performed optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "*1600"
+    ],
+    "rating": 1600
+}

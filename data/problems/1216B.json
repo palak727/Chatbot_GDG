@@ -1,0 +1,18 @@
+{
+    "id": "1216B",
+    "contest_id": 1216,
+    "problem_letter": "B",
+    "title": "B. Shooting",
+    "statement": "Recently Vasya decided to improve his pistol shooting skills. Today his coach offered him the following exercise. He placed n cans in a row on a table. Cans are numbered from left to right from 1 to n. Vasya has to knock down each can exactly once to finish the exercise. He is allowed to choose the order in which he will knock the cans down.\n\nVasya knows that the durability of the i-th can is a_i. It means that if Vasya has already knocked x cans down and is now about to start shooting the i-th one, he will need (a_i·x + 1) shots to knock it down. You can assume that if Vasya starts shooting the i-th can, he will be shooting it until he knocks it down.\n\nYour task is to choose such an order of shooting so that the number of shots required to knock each of the n given cans down exactly once is minimum possible.\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 1,000) — the number of cans.\n\nThe second line of the input contains the sequence a_1, a_2, …, a_n (1 ≤ a_i ≤ 1,000), where a_i is the durability of the i-th can.\n\nIn the first line print the minimum number of shots required to knock each of the n given cans down exactly once.\n\nIn the second line print the sequence consisting of n distinct integers from 1 to n — the order of indices of cans that minimizes the number of shots required. If there are several answers, you can print any of them.\n\nIn the first example Vasya can start shooting from the first can. He knocks it down with the first shot because he haven't knocked any other cans down before. After that he has to shoot the third can. To knock it down he shoots 20·1 + 1 = 21 times. After that only second can remains. To knock it down Vasya shoots 10·2 + 1 = 21 times. So the total number of shots is 1 + 21 + 21 = 43.\n\nIn the second example the order of shooting does not matter because all cans have the same durability.\n\nInput:\n```\n3\n20 10 20\n```\n\nOutput:\n```\n43\n1 3 2 \n```\n\nInput:\n```\n4\n10 10 10 10\n```\n\nOutput:\n```\n64\n2 1 4 3 \n```\n\nInput:\n```\n6\n5 4 5 4 4 5\n```\n\nOutput:\n```\n69\n6 1 3 5 2 4 \n```\n\nInput:\n```\n2\n1 4\n```\n\nOutput:\n```\n3\n2 1 \n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 1,000) — the number of cans.\n\nThe second line of the input contains the sequence a_1, a_2, …, a_n (1 ≤ a_i ≤ 1,000), where a_i is the durability of the i-th can.",
+    "output": "In the first line print the minimum number of shots required to knock each of the n given cans down exactly once.\n\nIn the second line print the sequence consisting of n distinct integers from 1 to n — the order of indices of cans that minimizes the number of shots required. If there are several answers, you can print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

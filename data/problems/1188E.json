@@ -1,0 +1,16 @@
+{
+    "id": "1188E",
+    "contest_id": 1188,
+    "problem_letter": "E",
+    "title": "E. Problem from Red Panda",
+    "statement": "At Moscow Workshops ICPC team gets a balloon for each problem they solved first. Team MSU Red Panda got so many balloons that they didn't know how to spend them. So they came up with a problem with them.\n\nThere are several balloons, not more than 10^6 in total, each one is colored in one of k colors. We can perform the following operation: choose k-1 balloons such that they are of k-1 different colors, and recolor them all into remaining color. We can perform this operation any finite number of times (for example, we can only perform the operation if there are at least k-1 different colors among current balls).\n\nHow many different balloon configurations can we get? Only number of balloons of each color matters, configurations differing only by the order of balloons are counted as equal. As this number can be very large, output it modulo 998244353.\n\nThe first line contains a single integer k (2 ≤ k ≤ 10^5) —the number of colors.\n\nThe second line contains k integers a_1, a_2, …, a_k (0 ≤ a_i) —initial configuration of balloons. a_i is number of balloons of color i. The total number of balloons doesn't exceed 10^6. In other words,\n\na_1 + a_2 + a_3 + … + a_k ≤ 10^6.\n\nOutput number of possible configurations modulo 998244353.\n\nIn the first example, there are 3 configurations we can get: [0, 1, 2], [2, 0, 1], [1, 2, 0].\n\nIn the second example, we can apply the operation not more than once, and possible configurations are: [1, 1, 1, 1], [0, 0, 0, 4], [0, 0, 4, 0], [0, 4, 0, 0], [4, 0, 0, 0].\n\nIn the third example, we can't apply any operations, so the only achievable configuration is the starting one.\n\nInput:\n```\n3\n0 1 2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4\n1 1 1 1\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n5\n0 0 1 2 3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n2 2 8\n```\n\nOutput:\n```\n31\n```",
+    "input": "The first line contains a single integer k (2 ≤ k ≤ 10^5) —the number of colors.\n\nThe second line contains k integers a_1, a_2, …, a_k (0 ≤ a_i) —initial configuration of balloons. a_i is number of balloons of color i. The total number of balloons doesn't exceed 10^6. In other words,\n\na_1 + a_2 + a_3 + … + a_k ≤ 10^6.",
+    "output": "Output number of possible configurations modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "*3300"
+    ],
+    "rating": 3300
+}

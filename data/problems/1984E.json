@@ -1,0 +1,18 @@
+{
+    "id": "1984E",
+    "contest_id": 1984,
+    "problem_letter": "E",
+    "title": "E. Shuffle",
+    "statement": "Two hungry red pandas, Oscar and Lura, have a tree T with n nodes. They are willing to perform the following shuffle procedure on the whole tree T exactly once. With this shuffle procedure, they will create a new tree out of the nodes of the old tree.\n\nAfter this, Oscar and Lura are left with a new tree T_2. They can only eat leaves and are very hungry, so please find the maximum number of leaves over all trees that can be created in exactly one shuffle.\n\nNote that leaves are all nodes with degree 1. Thus, the root may be considered as a leaf if it has only one child.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of every test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of nodes within the original tree T.\n\nThe next n - 1 lines each contain two integers u and v (1 ≤ u, v ≤ n) — an edge within the original tree T. The given edges form a tree.\n\nThe sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output a single integer — the maximum number of leaves achievable with exactly one shuffle procedure on the whole tree.\n\nIn the first test case, it can be shown that the maximum number of leaves is 4. To accomplish this, we can start our shuffle with selecting node 3 as the new root.\n\nIn our second test case, we have a line of five nodes. It can be shown that the maximum number of leaves after one shuffle is 3. We can start off with node 2, which forces node 1 to become a leaf. Then, if we select node 4 on the right side, we will also have nodes 3 and 5 as leaves.\n\nThe third test case is a star graph with six nodes. The number of leaves cannot increase, thus our answer will be 5 (if we start the shuffling with the original root node).\n\nInput:\n```\n451 21 32 42 551 22 33 44 561 21 31 41 51 6109 38 110 68 57 84 61 310 12 7\n```\n\nOutput:\n```\n4\n3\n5\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of every test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of nodes within the original tree T.\n\nThe next n - 1 lines each contain two integers u and v (1 ≤ u, v ≤ n) — an edge within the original tree T. The given edges form a tree.\n\nThe sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output a single integer — the maximum number of leaves achievable with exactly one shuffle procedure on the whole tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1895D",
+    "contest_id": 1895,
+    "problem_letter": "D",
+    "title": "D. XOR Construction",
+    "statement": "You are given n-1 integers a_1, a_2, …, a_{n-1}.\n\nYour task is to construct an array b_1, b_2, …, b_n such that:\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (0 ≤ a_i ≤ 2n).\n\nAdditional constraint on the input: it's always possible to construct at least one valid array b from the given sequence a.\n\nPrint n integers b_1, b_2, …, b_n. If there are multiple such arrays, you may print any of them.\n\nInput:\n```\n42 1 2\n```\n\nOutput:\n```\n0 2 3 1 \n```\n\nInput:\n```\n61 6 1 4 1\n```\n\nOutput:\n```\n2 3 5 4 0 1 \n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5).\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (0 ≤ a_i ≤ 2n).\n\nAdditional constraint on the input: it's always possible to construct at least one valid array b from the given sequence a.",
+    "output": "Print n integers b_1, b_2, …, b_n. If there are multiple such arrays, you may print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "data structures",
+        "math",
+        "string suffix structures",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

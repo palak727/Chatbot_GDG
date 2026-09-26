@@ -1,0 +1,18 @@
+{
+    "id": "1637E",
+    "contest_id": 1637,
+    "problem_letter": "E",
+    "title": "E. Best Pair",
+    "statement": "You are given an array a of length n. Let cnt_x be the number of elements from the array which are equal to x. Let's also define f(x, y) as (cnt_x + cnt_y)·(x + y).\n\nAlso you are given m bad pairs (x_i, y_i). Note that if (x, y) is a bad pair, then (y, x) is also bad.\n\nYour task is to find the maximum value of f(u, v) over all pairs (u, v), such that u ≠ v, that this pair is not bad, and also that u and v each occur in the array a. It is guaranteed that such a pair exists.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 3·10^5, 0 ≤ m ≤ 3·10^5) — the length of the array and the number of bad pairs.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ 10^9), which represent a bad pair. It is guaranteed that no bad pair occurs twice in the input. It is also guaranteed that cnt_x_i > 0 and cnt_y_i > 0.\n\nIt is guaranteed that for each test case there is a pair of integers (u, v), u ≠ v, that is not bad, and such that both of these numbers occur in a.\n\nIt is guaranteed that the total sum of n and the total sum of m don't exceed 3·10^5.\n\nFor each test case print a single integer — the answer to the problem.\n\nIn the first test case 3, 6, 7 occur in the array.\n\nThe answer to the problem is max(40, 39) = 40.\n\nInput:\n```\n36 16 3 6 7 3 33 62 03 47 41 2 2 3 1 5 11 53 51 32 5\n```\n\nOutput:\n```\n40\n14\n15\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n ≤ 3·10^5, 0 ≤ m ≤ 3·10^5) — the length of the array and the number of bad pairs.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ 10^9), which represent a bad pair. It is guaranteed that no bad pair occurs twice in the input. It is also guaranteed that cnt_x_i > 0 and cnt_y_i > 0.\n\nIt is guaranteed that for each test case there is a pair of integers (u, v), u ≠ v, that is not bad, and such that both of these numbers occur in a.\n\nIt is guaranteed that the total sum of n and the total sum of m don't exceed 3·10^5.",
+    "output": "For each test case print a single integer — the answer to the problem.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "implementation",
+        "*2100"
+    ],
+    "rating": 2100
+}

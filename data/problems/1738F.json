@@ -1,0 +1,22 @@
+{
+    "id": "1738F",
+    "contest_id": 1738,
+    "problem_letter": "F",
+    "title": "F. Connectivity Addicts",
+    "statement": "This is an interactive problem.\n\nGiven a simple undirected graph with n vertices numbered from 1 to n, your task is to color all the vertices such that for every color c, the following conditions hold:\n\nInitially, you are only given the number n of vertices and the degree of each vertex.\n\nIn each query, you can choose a vertex u. As a response, you will be given the k-th edge incident to u, if this is the k-th query on vertex u.\n\nYou are allowed to make at most n queries.\n\nAn undirected graph is simple if it does not contain multiple edges or self-loops.\n\nThe degree of a vertex is the number of edges incident to it.\n\nA set S of vertices is connected if for every two different vertices u, v ∈ S, there is a path, which only passes through vertices in S, that connects u and v. That is, there is a sequence of edges (u_1, v_1), (u_2, v_2), …, (u_k, v_k) with k ≥ 1 such that\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The following lines contain the description and the interactive section of each test case.\n\nFor each test case, you begin the interaction by reading an integer n (1≤ n ≤ 1000) in the first line, indicating the number of vertices in the graph.\n\nThe second line contains n integers d_1, d_2, …, d_n (0 ≤ d_i ≤ n - 1), where d_i is the degree of vertex i.\n\nTo make a query on vertex u (1 ≤ u ≤ n), you should output\n\nTo give the answer, you should output\n\nIt is guaranteed that the graph is a simple undirected graph.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.\n\nIn case your query format is invalid, or you have made more than n \"?\" queries, you will receive Wrong Answer verdict.\n\nAfter printing a query, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHack Format\n\nThe first line of the hack contains an integer t (1 ≤ t ≤ 1000), indicating the number of test cases. The following lines contain the description of each test case.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 1000), indicating the number of vertices in the graph.\n\nThen n lines follow. The i-th line contains an integer d_i (0 ≤ d_i ≤ n - 1), indicating the degree of vertex i, and then d_i distinct integers e_{i,1}, e_{i,2}, …, e_{i,d_i} (1 ≤ e_{i, j} ≤ n and e_{i,j} ≠ i), where left(i, e_{i,j}right) is the j-th edge incident to vertex i.\n\nIt should be guaranteed that the graph is a simple undirected graph.\n\nIt should be guaranteed that the sum of n over all test cases does not exceed 1000.\n\nIn the example, there is only one test case.\n\nIn the test case, there are n = 5 vertices with vertices 1, 2, 3, 4 of degree 2 and vertex 5 of degree 0. It is obvious that vertex 5 is isolated, i.e., it does not connect to any other vertices.\n\nA possible interaction is shown in the sample input and output, where 4 \"?\" queries are made on vertex 1 twice and vertex 3 twice. According to the responses to these queries, we know that each of vertex 1 and vertex 3 connects to two vertices 2 and 4.\n\nA possible solution is shown in the sample output, where vertex 1 and vertex 2 are colored by 1, vertex 3 and vertex 4 are colored by 2, and vertex 5 is colored by 3. It can be seen that this solution satisfies the required conditions as follows.\n\nInput:\n```\n1\n5\n2 2 2 2 0\n\n2\n\n4\n\n2\n\n4\n```\n\nOutput:\n```\n? 1\n\n? 1\n\n? 3\n\n? 3\n\n! 1 1 2 2 3\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "graphs",
+        "greedy",
+        "interactive",
+        "shortest paths",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1511B",
+    "contest_id": 1511,
+    "problem_letter": "B",
+    "title": "B. GCD Length",
+    "statement": "You are given three integers a, b and c.\n\nFind two positive integers x and y (x > 0, y > 0) such that:\n\ngcd(x, y) denotes the greatest common divisor (GCD) of integers x and y.\n\nOutput x and y. If there are multiple answers, output any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 285) — the number of testcases.\n\nEach of the next t lines contains three integers a, b and c (1 ≤ a, b ≤ 9, 1 ≤ c ≤ min(a, b)) — the required lengths of the numbers.\n\nIt can be shown that the answer exists for all testcases under the given constraints.\n\nAdditional constraint on the input: all testcases are different.\n\nFor each testcase print two positive integers — x and y (x > 0, y > 0) such that\n\nIn the example:\n\nInput:\n```\n4\n2 3 1\n2 2 2\n6 6 2\n1 1 1\n```\n\nOutput:\n```\n11 492\n13 26\n140133 160776\n1 1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 285) — the number of testcases.\n\nEach of the next t lines contains three integers a, b and c (1 ≤ a, b ≤ 9, 1 ≤ c ≤ min(a, b)) — the required lengths of the numbers.\n\nIt can be shown that the answer exists for all testcases under the given constraints.\n\nAdditional constraint on the input: all testcases are different.",
+    "output": "For each testcase print two positive integers — x and y (x > 0, y > 0) such that",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

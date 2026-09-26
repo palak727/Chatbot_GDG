@@ -1,0 +1,18 @@
+{
+    "id": "1299C",
+    "contest_id": 1299,
+    "problem_letter": "C",
+    "title": "C. Water Balance",
+    "statement": "There are n water tanks in a row, i-th of them contains a_i liters of water. The tanks are numbered from 1 to n from left to right.\n\nYou can perform the following operation: choose some subsegment [l, r] (1≤ l ≤ r ≤ n), and redistribute water in tanks l, l+1, …, r evenly. In other words, replace each of a_l, a_{l+1}, …, a_r by (a_l + a_{l+1} + … + a_r)/(r-l+1). For example, if for volumes [1, 3, 6, 7] you choose l = 2, r = 3, new volumes of water will be [1, 4.5, 4.5, 7]. You can perform this operation any number of times.\n\nWhat is the lexicographically smallest sequence of volumes of water that you can achieve?\n\nAs a reminder:\n\nA sequence a is lexicographically smaller than a sequence b of the same length if and only if the following holds: in the first (leftmost) position where a and b differ, the sequence a has a smaller element than the corresponding element in b.\n\nThe first line contains an integer n (1 ≤ n ≤ 10^6) — the number of water tanks.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — initial volumes of water in the water tanks, in liters.\n\nBecause of large input, reading input as doubles is not recommended.\n\nPrint the lexicographically smallest sequence you can get. In the i-th line print the final volume of water in the i-th tank.\n\nYour answer is considered correct if the absolute or relative error of each a_i does not exceed 10^{-9}.\n\nFormally, let your answer be a_1, a_2, …, a_n, and the jury's answer be b_1, b_2, …, b_n. Your answer is accepted if and only if (|a_i - b_i|)/(max(1, |b_i|)) ≤ 10^{-9} for each i.\n\nIn the first sample, you can get the sequence by applying the operation for subsegment [1, 3].\n\nIn the second sample, you can't get any lexicographically smaller sequence.\n\nInput:\n```\n4\n7 5 5 7\n```\n\nOutput:\n```\n5.666666667\n5.666666667\n5.666666667\n7.000000000\n```\n\nInput:\n```\n5\n7 8 8 10 12\n```\n\nOutput:\n```\n7.000000000\n8.000000000\n8.000000000\n10.000000000\n12.000000000\n```\n\nInput:\n```\n10\n3 9 5 5 1 7 5 3 8 7\n```\n\nOutput:\n```\n3.000000000\n5.000000000\n5.000000000\n5.000000000\n5.000000000\n5.000000000\n5.000000000\n5.000000000\n7.500000000\n7.500000000\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 10^6) — the number of water tanks.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — initial volumes of water in the water tanks, in liters.\n\nBecause of large input, reading input as doubles is not recommended.",
+    "output": "Print the lexicographically smallest sequence you can get. In the i-th line print the final volume of water in the i-th tank.\n\nYour answer is considered correct if the absolute or relative error of each a_i does not exceed 10^{-9}.\n\nFormally, let your answer be a_1, a_2, …, a_n, and the jury's answer be b_1, b_2, …, b_n. Your answer is accepted if and only if (|a_i - b_i|)/(max(1, |b_i|)) ≤ 10^{-9} for each i.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "greedy",
+        "*2100"
+    ],
+    "rating": 2100
+}

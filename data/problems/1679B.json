@@ -1,0 +1,17 @@
+{
+    "id": "1679B",
+    "contest_id": 1679,
+    "problem_letter": "B",
+    "title": "B. Stone Age Problem",
+    "statement": "Once upon a time Mike and Mike decided to come up with an outstanding problem for some stage of ROI (rare olympiad in informatics). One of them came up with a problem prototype but another stole the idea and proposed that problem for another stage of the same olympiad. Since then the first Mike has been waiting for an opportunity to propose the original idea for some other contest... Mike waited until this moment!\n\nYou are given an array a of n integers. You are also given q queries of two types:\n\nAfter performing each query you have to calculate the sum of all elements in the array.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of elements in the array and the number of queries, respectively.\n\nThe second line contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array a.\n\nEach of the following q lines contains a description of the corresponding query. Description begins with integer t (t ∈ {1, 2}) which denotes a type of the query:\n\nPrint q integers, each on a separate line. In the i-th line print the sum of all elements in the array after performing the first i queries.\n\nConsider array from the example and the result of performing each query:\n\nInput:\n```\n5 5\n1 2 3 4 5\n1 1 5\n2 10\n1 5 11\n1 4 1\n2 1\n```\n\nOutput:\n```\n19\n50\n51\n42\n5\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of elements in the array and the number of queries, respectively.\n\nThe second line contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array a.\n\nEach of the following q lines contains a description of the corresponding query. Description begins with integer t (t ∈ {1, 2}) which denotes a type of the query:",
+    "output": "Print q integers, each on a separate line. In the i-th line print the sum of all elements in the array after performing the first i queries.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

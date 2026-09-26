@@ -1,0 +1,16 @@
+{
+    "id": "1142D",
+    "contest_id": 1142,
+    "problem_letter": "D",
+    "title": "D. Foreigner",
+    "statement": "Traveling around the world you noticed that many shop owners raise prices to inadequate values if the see you are a foreigner.\n\nYou define inadequate numbers as follows:\n\nHere lfloor x / 10 rfloor denotes x/10 rounded down.\n\nThus, if x is the m-th in increasing order inadequate number, and m gives the remainder c when divided by 11, then integers 10·x + 0, 10·x + 1 …, 10·x + (c - 1) are inadequate, while integers 10·x + c, 10·x + (c + 1), …, 10·x + 9 are not inadequate.\n\nThe first several inadequate integers are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 30, 31, 32 …. After that, since 4 is the fourth inadequate integer, 40, 41, 42, 43 are inadequate, while 44, 45, 46, …, 49 are not inadequate; since 10 is the 10-th inadequate number, integers 100, 101, 102, …, 109 are all inadequate. And since 20 is the 11-th inadequate number, none of 200, 201, 202, …, 209 is inadequate.\n\nYou wrote down all the prices you have seen in a trip. Unfortunately, all integers got concatenated in one large digit string s and you lost the bounds between the neighboring integers. You are now interested in the number of substrings of the resulting string that form an inadequate number. If a substring appears more than once at different positions, all its appearances are counted separately.\n\nThe only line contains the string s (1 ≤ |s| ≤ 10^5), consisting only of digits. It is guaranteed that the first digit of s is not zero.\n\nIn the only line print the number of substrings of s that form an inadequate number.\n\nIn the first example the inadequate numbers in the string are 1, 2, 4, 21, 40, 402.\n\nIn the second example the inadequate numbers in the string are 1 and 10, and 1 appears twice (on the first and on the second positions).\n\nInput:\n```\n4021\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n110\n```\n\nOutput:\n```\n3\n```",
+    "input": "The only line contains the string s (1 ≤ |s| ≤ 10^5), consisting only of digits. It is guaranteed that the first digit of s is not zero.",
+    "output": "In the only line print the number of substrings of s that form an inadequate number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "*2800"
+    ],
+    "rating": 2800
+}

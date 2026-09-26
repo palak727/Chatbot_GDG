@@ -1,0 +1,19 @@
+{
+    "id": "1882E1",
+    "contest_id": 1882,
+    "problem_letter": "E1",
+    "title": "E1. Two Permutations (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the two versions is that you do not have to minimize the number of operations in this version. You can make hacks only if both versions of the problem are solved.\n\nYou have two permutations^dagger p_1, p_2, …, p_n (of integers 1 to n) and q_1, q_2, …, q_m (of integers 1 to m). Initially p_i=a_i for i=1, 2, …, n, and q_j = b_j for j = 1, 2, …, m. You can apply the following operation on the permutations several (possibly, zero) times.\n\nIn one operation, p and q will change according to the following three steps:\n\nYour goal is to simultaneously make p_i=i for i=1, 2, …, n, and q_j = j for j = 1, 2, …, m.\n\nFind any valid way to achieve the goal using at most 10,000 operations, or say that none exists. Please note that you do not have to minimize the number of operations.\n\nIt can be proved that if it is possible to achieve the goal, then there exists a way to do so using at most 10,000 operations.\n\n^dagger A permutation of length k is an array consisting of k distinct integers from 1 to k in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (k=3 but there is 4 in the array).\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 2500).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ m).\n\nIt is guaranteed that a and b are permutations.\n\nIf there is no solution, print a single integer -1.\n\nOtherwise, print an integer k (0 ≤ k ≤ 10,000) — the number of operations to perform, followed by k lines, each containing two integers i and j (1 ≤ i ≤ n, 1 ≤ j ≤ m) — the integers chosen for the operation.\n\nIf there are multiple solutions, print any of them.\n\nPlease note that you do not have to minimize the number of operations.\n\nIn the first example, we can achieve the goal within 2 operations:\n\nIn the third example, it is impossible to achieve the goal.\n\nInput:\n```\n3 5\n2 1 3\n5 2 1 4 3\n```\n\nOutput:\n```\n2\n3 4\n2 4\n```\n\nInput:\n```\n4 4\n3 4 2 1\n2 4 1 3\n```\n\nOutput:\n```\n5\n4 2\n3 3\n1 4\n3 2\n4 1\n```\n\nInput:\n```\n2 2\n1 2\n2 1\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 2500).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ m).\n\nIt is guaranteed that a and b are permutations.",
+    "output": "If there is no solution, print a single integer -1.\n\nOtherwise, print an integer k (0 ≤ k ≤ 10,000) — the number of operations to perform, followed by k lines, each containing two integers i and j (1 ≤ i ≤ n, 1 ≤ j ≤ m) — the integers chosen for the operation.\n\nIf there are multiple solutions, print any of them.\n\nPlease note that you do not have to minimize the number of operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

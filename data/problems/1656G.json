@@ -1,0 +1,18 @@
+{
+    "id": "1656G",
+    "contest_id": 1656,
+    "problem_letter": "G",
+    "title": "G. Cycle Palindrome",
+    "statement": "We say that a sequence of n integers a_1, a_2, …, a_n is a palindrome if for all 1 ≤ i ≤ n, a_i = a_{n-i+1}. You are given a sequence of n integers a_1, a_2, …, a_n and you have to find, if it exists, a cycle permutation σ so that the sequence a_{σ(1)}, a_{σ(2)}, …, a_{σ(n)} is a palindrome.\n\nA permutation of 1, 2, …, n is a bijective function from {1, 2, …, n} to {1, 2, …, n}. We say that a permutation σ is a cycle permutation if 1, σ(1), σ^2(1), …, σ^{n-1}(1) are pairwise different numbers. Here σ^m(1) denotes underbraceσ(σ(… σ_{m times}(1) …)).\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 3·10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the size of the sequence.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ n).\n\nThe sum of n for all test cases is at most 2·10^5.\n\nFor each test case, output one line with YES if a cycle permutation exists, otherwise output one line with NO.\n\nIf the answer is YES, output one additional line with n integers σ(1), σ(2), …, σ(n), the permutation. If there is more than one permutation, you may print any.\n\nInput:\n```\n3\n4\n1 2 2 1\n3\n1 2 1\n7\n1 3 3 3 1 2 2\n```\n\nOutput:\n```\nYES\n3 1 4 2 \nNO\nYES\n5 3 7 2 6 4 1 \n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 3·10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the size of the sequence.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ n).\n\nThe sum of n for all test cases is at most 2·10^5.",
+    "output": "For each test case, output one line with YES if a cycle permutation exists, otherwise output one line with NO.\n\nIf the answer is YES, output one additional line with n integers σ(1), σ(2), …, σ(n), the permutation. If there is more than one permutation, you may print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "math",
+        "*3200"
+    ],
+    "rating": 3200
+}

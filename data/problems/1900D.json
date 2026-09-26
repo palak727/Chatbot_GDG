@@ -1,0 +1,20 @@
+{
+    "id": "1900D",
+    "contest_id": 1900,
+    "problem_letter": "D",
+    "title": "D. Small GCD",
+    "statement": "Let a, b, and c be integers. We define function f(a, b, c) as follows:\n\nOrder the numbers a, b, c in such a way that a ≤ b ≤ c. Then return gcd(a, b), where gcd(a, b) denotes the greatest common divisor (GCD) of integers a and b.\n\nSo basically, we take the gcd of the 2 smaller values and ignore the biggest one.\n\nYou are given an array a of n elements. Compute the sum of f(a_i, a_j, a_k) for each i, j, k, such that 1 ≤ i < j < k ≤ n.\n\nMore formally, compute ∑_{i = 1}^n ∑_{j = i+1}^n ∑_{k =j +1}^n f(a_i, a_j, a_k).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 8·10^4) — length of the array a.\n\nThe second line of each test case contains n integers, a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 8·10^4.\n\nFor each test case, output a single number — the sum from the problem statement.\n\nIn the first test case, the values of f are as follows:\n\nIn the second test case, there are 56 ways to choose values of i, j, k. The sum over all f(a_i,a_j,a_k) is 203.\n\nInput:\n```\n252 3 6 12 1786 12 8 10 15 12 18 16\n```\n\nOutput:\n```\n24\n203\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 8·10^4) — length of the array a.\n\nThe second line of each test case contains n integers, a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 8·10^4.",
+    "output": "For each test case, output a single number — the sum from the problem statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

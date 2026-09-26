@@ -1,0 +1,17 @@
+{
+    "id": "1717B",
+    "contest_id": 1717,
+    "problem_letter": "B",
+    "title": "B. Madoka and Underground Competitions",
+    "statement": "Madoka decided to participate in an underground sports programming competition. And there was exactly one task in it:\n\nA square table of size n × n, where n is a multiple of k, is called good if only the characters '.' and 'X' are written in it, as well as in any subtable of size 1 × k or k × 1, there is at least one character 'X'. In other words, among any k consecutive vertical or horizontal cells, there must be at least one containing the character 'X'.\n\nOutput any good table that has the minimum possible number of characters 'X', and also the symbol 'X' is written in the cell (r, c). Rows are numbered from 1 to n from top to bottom, columns are numbered from 1 to n from left to right.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Description of the test cases follows.\n\nThe first and the only line of each test case contains four integers n, k, r, c (1 ≤ n ≤ 500, 1 ≤ k ≤ n, 1 ≤ r, c ≤ n) — the size of the table, the integer k and the coordinates of the cell, which must contain the character 'X'. It is guaranteed that n is a multiple of k.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.\n\nFor each test case, output n lines, each consisting of n characters '.' and 'X', — the desired table. If there are several answers, then you can output anyone.\n\nLet's analyze the first test case.\n\nThe following tables can be printed as the correct answer:\n\nNote that the following table is invalid because cell (3, 2) does not contain the character 'X':\n\nIn the second test case, the only correct table is:\n\nInput:\n```\n33 3 3 22 1 1 26 3 4 2\n```\n\nOutput:\n```\nX..\n..X\n.X.\nXX\nXX\n.X..X.\nX..X..\n..X..X\n.X..X.\nX..X..\n..X..X\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Description of the test cases follows.\n\nThe first and the only line of each test case contains four integers n, k, r, c (1 ≤ n ≤ 500, 1 ≤ k ≤ n, 1 ≤ r, c ≤ n) — the size of the table, the integer k and the coordinates of the cell, which must contain the character 'X'. It is guaranteed that n is a multiple of k.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.",
+    "output": "For each test case, output n lines, each consisting of n characters '.' and 'X', — the desired table. If there are several answers, then you can output anyone.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

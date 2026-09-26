@@ -1,0 +1,19 @@
+{
+    "id": "1872E",
+    "contest_id": 1872,
+    "problem_letter": "E",
+    "title": "E. Data Structures Fan",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n, as well as a binary string^dagger s consisting of n characters.\n\nAugustin is a big fan of data structures. Therefore, he asked you to implement a data structure that can answer q queries. There are two types of queries:\n\nPlease help Augustin to answer all the queries!\n\nFor example, if n = 4, a = [1, 2, 3, 6], s = texttt1001, consider the following series of queries:\n\n^dagger A binary string is a string containing only characters texttt0 or texttt1.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case description contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of the test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of the test case contains the binary string s of length n.\n\nThe fourth line of the test case contains one integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThe subsequent q lines of the test case describe the queries. The first number of each query, tp ∈ {1, 2}, characterizes the type of the query: if tp = 1, then 2 integers 1 ≤ l ≤ r ≤ n follow, meaning that the operation of type 1 should be performed with parameters l, r, and if tp = 2, then one integer g ∈ {0, 1} follows, meaning that the operation of type 2 should be performed with parameter g.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5, and also that the sum of q over all test cases does not exceed 10^5.\n\nFor each test case, and for each query of type 2 in it, output the answer to the corresponding query.\n\nLet's analyze the first test case:\n\nInput:\n```\n551 2 3 4 50100072 02 11 2 42 02 11 1 32 1612 12 14 14 5 500100132 11 2 42 147 7 7 777111132 01 2 32 021000000000 9961791791112 151 42 20 47 70001151 3 41 1 11 3 41 2 42 0\n```\n\nOutput:\n```\n3 2 6 7 7 \n11 7 \n0 0 \n16430827 \n47 \n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case description contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of the test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nThe third line of the test case contains the binary string s of length n.\n\nThe fourth line of the test case contains one integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThe subsequent q lines of the test case describe the queries. The first number of each query, tp ∈ {1, 2}, characterizes the type of the query: if tp = 1, then 2 integers 1 ≤ l ≤ r ≤ n follow, meaning that the operation of type 1 should be performed with parameters l, r, and if tp = 2, then one integer g ∈ {0, 1} follows, meaning that the operation of type 2 should be performed with parameter g.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5, and also that the sum of q over all test cases does not exceed 10^5.",
+    "output": "For each test case, and for each query of type 2 in it, output the answer to the corresponding query.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "data structures",
+        "dp",
+        "*1500"
+    ],
+    "rating": 1500
+}

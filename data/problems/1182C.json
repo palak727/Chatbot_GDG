@@ -1,0 +1,18 @@
+{
+    "id": "1182C",
+    "contest_id": 1182,
+    "problem_letter": "C",
+    "title": "C. Beautiful Lyrics",
+    "statement": "You are given n words, each of which consists of lowercase alphabet letters. Each word contains at least one vowel. You are going to choose some of the given words and make as many beautiful lyrics as possible.\n\nEach lyric consists of two lines. Each line consists of two words separated by whitespace.\n\nA lyric is beautiful if and only if it satisfies all conditions below.\n\nAlso, letters \"a\", \"e\", \"o\", \"i\", and \"u\" are vowels. Note that \"y\" is never vowel.\n\nFor example of a beautiful lyric,\n\n\"whatsup yowowowow\"\n\nFor example of a not beautiful lyric,\n\n\"iam mcdic\"\n\nHow many beautiful lyrics can you write from given words? Note that you cannot use a word more times than it is given to you. For example, if a word is given three times, you can use it at most three times.\n\nThe first line contains single integer n (1 ≤ n ≤ 10^5) — the number of words.\n\nThe i-th of the next n lines contains string s_i consisting lowercase alphabet letters — the i-th word. It is guaranteed that the sum of the total word length is equal or less than 10^6. Each word contains at least one vowel.\n\nIn the first line, print m — the number of maximum possible beautiful lyrics.\n\nIn next 2m lines, print m beautiful lyrics (two lines per lyric).\n\nIf there are multiple answers, print any.\n\nIn the first example, those beautiful lyrics are one of the possible answers. Let's look at the first lyric on the sample output of the first example. \"about proud hooray round\" forms a beautiful lyric because \"about\" and \"hooray\" have same number of vowels, \"proud\" and \"round\" have same number of vowels, and both lines have same last vowel. On the other hand, you cannot form any beautiful lyric with the word \"codeforces\".\n\nIn the second example, you cannot form any beautiful lyric from given words.\n\nIn the third example, you can use the word \"same\" up to three times.\n\nInput:\n```\n14\nwow\nthis\nis\nthe\nfirst\nmcdics\ncodeforces\nround\nhooray\ni\nam\nproud\nabout\nthat\n```\n\nOutput:\n```\n3\nabout proud\nhooray round\nwow first\nthis is\ni that\nmcdics am\n```\n\nInput:\n```\n7\narsijo\nsuggested\nthe\nidea\nfor\nthis\nproblem\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n4\nsame\nsame\nsame\ndiffer\n```\n\nOutput:\n```\n1\nsame differ\nsame same\n```",
+    "input": "The first line contains single integer n (1 ≤ n ≤ 10^5) — the number of words.\n\nThe i-th of the next n lines contains string s_i consisting lowercase alphabet letters — the i-th word. It is guaranteed that the sum of the total word length is equal or less than 10^6. Each word contains at least one vowel.",
+    "output": "In the first line, print m — the number of maximum possible beautiful lyrics.\n\nIn next 2m lines, print m beautiful lyrics (two lines per lyric).\n\nIf there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "strings",
+        "*1700"
+    ],
+    "rating": 1700
+}

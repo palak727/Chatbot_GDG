@@ -1,0 +1,19 @@
+{
+    "id": "1626D",
+    "contest_id": 1626,
+    "problem_letter": "D",
+    "title": "D. Martial Arts Tournament",
+    "statement": "Monocarp is planning to host a martial arts tournament. There will be three divisions based on weight: lightweight, middleweight and heavyweight. The winner of each division will be determined by a single elimination system.\n\nIn particular, that implies that the number of participants in each division should be a power of two. Additionally, each division should have a non-zero amount of participants.\n\nn participants have registered for the tournament so far, the i-th of them weighs a_i. To split participants into divisions, Monocarp is going to establish two integer weight boundaries x and y (x < y).\n\nAll participants who weigh strictly less than x will be considered lightweight. All participants who weigh greater or equal to y will be considered heavyweight. The remaining participants will be considered middleweight.\n\nIt's possible that the distribution doesn't make the number of participants in each division a power of two. It can also lead to empty divisions. To fix the issues, Monocarp can invite an arbitrary number of participants to each division.\n\nNote that Monocarp can't kick out any of the n participants who have already registered for the tournament.\n\nHowever, he wants to invite as little extra participants as possible. Help Monocarp to choose x and y in such a way that the total amount of extra participants required is as small as possible. Output that amount.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of the registered participants.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the weights of the registered participants.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the smallest number of extra participants Monocarp is required to invite after he chooses the weight boundaries x and y.\n\nIn the first testcase of the example, Monocarp can choose x=2 and y=3. Lightweight, middleweight and heavyweight divisions will have 2, 1 and 1 participants, respectively. They all are powers of two, so no extra participants are required.\n\nIn the second testcase of the example, regardless of the choice of x and y, one division will have 1 participant, the rest will have 0. Thus, Monocarp will have to invite 1 participant into both of the remaining divisions.\n\nIn the third testcase of the example, Monocarp can choose x=1 and y=2. Lightweight, middleweight and heavyweight divisions will have 0, 3 and 3 participants, respectively. So an extra participant is needed in each division.\n\nIn the fourth testcase of the example, Monocarp can choose x=8 and y=9. Lightweight, middleweight and heavyweight divisions will have 8, 0 and 0 participants, respectively. Middleweight and heavyweight division need an extra participant each.\n\nInput:\n```\n443 1 2 11162 2 2 1 1 186 3 6 3 6 3 6 6\n```\n\nOutput:\n```\n0\n2\n3\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of the registered participants.\n\nThe second line of each testcase contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the weights of the registered participants.\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the smallest number of extra participants Monocarp is required to invite after he chooses the weight boundaries x and y.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

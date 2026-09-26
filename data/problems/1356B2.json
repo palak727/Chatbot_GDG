@@ -1,0 +1,15 @@
+{
+    "id": "1356B2",
+    "contest_id": 1356,
+    "problem_letter": "B2",
+    "title": "B2. Decrement",
+    "statement": "Implement a unitary operation on a register of N qubits that decrements the number written in the register modulo 2^N.\n\nYour operation should take a register of type LittleEndian - an array of qubits that encodes an unsigned integer in little-endian format, with the least significant bit written first (corresponding to the array element with index 0). The \"output\" of your solution is the state in which it left the input qubits.\n\nFor example, if the qubits passed to your operation are in the state 1/(√(2))(|00rangle + |01rangle) = 1/(√(2))(|0rangle + |2rangle), they should be transformed to the state 1/(√(2))(|(0-1) mod 2^2rangle + |(2-1) mod 2^2rangle) = 1/(√(2))(|3rangle + |1rangle) = 1/(√(2))(|11rangle + |10rangle).\n\nYour code should have the following signature (note that your operation should have Adjoint and Controlled variants defined for it; is Adj+Ctl in the operation signature will generate them automatically based on your code):\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Arithmetic;\n    open Microsoft.Quantum.Intrinsic;\n\n    operation Solve (register : LittleEndian) : Unit is Adj+Ctl {\n        // your code here\n    }\n}\n```\n\nYour code is not allowed to use measurements or arbitrary rotation gates (so, for example, using the library operation IncrementByInteger will cause runtime error). This operation can be implemented using just the X gate and its controlled variants.",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

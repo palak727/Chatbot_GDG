@@ -1,0 +1,18 @@
+{
+    "id": "1943E1",
+    "contest_id": 1943,
+    "problem_letter": "E1",
+    "title": "E1. MEX Game 2 (Easy Version)",
+    "statement": "This is the easy version of the problem. The only difference between the two versions is the constraint on t, m and the sum of m. You can make hacks only if both versions of the problem are solved.\n\nAlice and Bob play yet another game on an array a of size n. Alice starts with an empty array c. Both players take turns playing, with Alice starting first.\n\nOn Alice's turn, she picks one element from a, appends that element to c, and then deletes it from a.\n\nOn Bob's turn, he picks at most k elements from a, and then deletes it from a.\n\nThe game ends when the array a is empty. Alice's score is defined to be the MEX^dagger of c. Alice wants to maximize her score while Bob wants to minimize it. Find Alice's final score if both players play optimally.\n\nThe array will be given in compressed format. Instead of giving the elements present in the array, we will be giving their frequencies. Formally, you will be given m, the maximum element in the array, and then m + 1 integers f_0, f_1, …, f_m, where f_i represents the number of times i occurs in the array a.\n\n^dagger The MEX (minimum excludant) of an array of integers is defined as the smallest non-negative integer which does not occur in the array. For example:\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers m and k (1 ≤ m ≤ 50, 1 ≤ k ≤ 10^9).\n\nThe second line contains m + 1 integers f_0, f_1, …, f_m (1 ≤ f_i ≤ 10^9).\n\nIt is guaranteed the sum of m over all test cases does not exceed 1000.\n\nFor each test case, find Alice's score if both players play optimally.\n\nIn the first test case, the array a is [0, 0, 0, 0, 1, 1, 1, 1, 1]. A possible game with a score of 2 is as follows:\n\nAt the end, c=[0,1] which has a MEX of 2. Note that this is an example game and does not necessarily represent the optimal strategy for both players.\n\nIn the second test case, Alice can choose a 0 in her first turn, guaranteeing that her score is at least 1. While Bob can remove all copies of element 1 in his first turn, thus guaranteeing that Alice's score cannot exceed 1. So Alice's score is 1 if both players play optimally.\n\nInput:\n```\n51 44 52 10000000001000000000 1000000000 10000000003 22 3 100 11 12 23 11 1 1 1\n```\n\nOutput:\n```\n2\n1\n3\n2\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers m and k (1 ≤ m ≤ 50, 1 ≤ k ≤ 10^9).\n\nThe second line contains m + 1 integers f_0, f_1, …, f_m (1 ≤ f_i ≤ 10^9).\n\nIt is guaranteed the sum of m over all test cases does not exceed 1000.",
+    "output": "For each test case, find Alice's score if both players play optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "*2900"
+    ],
+    "rating": 2900
+}

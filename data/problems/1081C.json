@@ -1,0 +1,18 @@
+{
+    "id": "1081C",
+    "contest_id": 1081,
+    "problem_letter": "C",
+    "title": "C. Colorful Bricks",
+    "statement": "On his free time, Chouti likes doing some housework. He has got one new task, paint some bricks in the yard.\n\nThere are n bricks lined in a row on the ground. Chouti has got m paint buckets of different colors at hand, so he painted each brick in one of those m colors.\n\nHaving finished painting all bricks, Chouti was satisfied. He stood back and decided to find something fun with these bricks. After some counting, he found there are k bricks with a color different from the color of the brick on its left (the first brick is not counted, for sure).\n\nSo as usual, he needs your help in counting how many ways could he paint the bricks. Two ways of painting bricks are different if there is at least one brick painted in different colors in these two ways. Because the answer might be quite big, you only need to output the number of ways modulo 998,244,353.\n\nThe first and only line contains three integers n, m and k (1 ≤ n,m ≤ 2000, 0 ≤ k ≤ n-1) — the number of bricks, the number of colors, and the number of bricks, such that its color differs from the color of brick to the left of it.\n\nPrint one integer — the number of ways to color bricks modulo 998,244,353.\n\nIn the first example, since k=0, the color of every brick should be the same, so there will be exactly m=3 ways to color the bricks.\n\nIn the second example, suppose the two colors in the buckets are yellow and lime, the following image shows all 4 possible colorings.\n\nInput:\n```\n3 3 0\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3 2 1\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first and only line contains three integers n, m and k (1 ≤ n,m ≤ 2000, 0 ≤ k ≤ n-1) — the number of bricks, the number of colors, and the number of bricks, such that its color differs from the color of brick to the left of it.",
+    "output": "Print one integer — the number of ways to color bricks modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

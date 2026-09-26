@@ -1,0 +1,19 @@
+{
+    "id": "2114D",
+    "contest_id": 2114,
+    "problem_letter": "D",
+    "title": "D. Come a Little Closer",
+    "statement": "The game field is a matrix of size 10^9 × 10^9, with a cell at the intersection of the a-th row and the b-th column denoted as (a, b).\n\nThere are n monsters on the game field, with the i-th monster located in the cell (x_i, y_i), while the other cells are empty. No more than one monster can occupy a single cell.\n\nYou can move one monster to any cell on the field that is not occupied by another monster at most once .\n\nAfter that, you must select one rectangle on the field; all monsters within the selected rectangle will be destroyed. You must pay 1 coin for each cell in the selected rectangle.\n\nYour task is to find the minimum number of coins required to destroy all the monsters.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of monsters on the field.\n\nThe following n lines contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ 10^9) — the coordinates of the cell with the i-th monster. All pairs (x_i, y_i) are distinct.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum cost to destroy all n monsters.\n\nBelow are examples of optimal moves, with the cells of the rectangle to be selected highlighted in green.\n\nInput:\n```\n731 11 22 151 12 66 43 38 241 11 10000000001000000000 11000000000 100000000011 151 24 24 33 13 231 12 52 244 33 14 41 2\n```\n\nOutput:\n```\n3\n32\n1000000000000000000\n1\n6\n4\n8\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of monsters on the field.\n\nThe following n lines contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ 10^9) — the coordinates of the cell with the i-th monster. All pairs (x_i, y_i) are distinct.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum cost to destroy all n monsters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

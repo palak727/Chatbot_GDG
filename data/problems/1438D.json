@@ -1,0 +1,18 @@
+{
+    "id": "1438D",
+    "contest_id": 1438,
+    "problem_letter": "D",
+    "title": "D. Powerful Ksenia",
+    "statement": "Ksenia has an array a consisting of n positive integers a_1, a_2, …, a_n.\n\nIn one operation she can do the following:\n\nShe wants to make all a_i equal in at most n operations, or to determine that it is impossible to do so. She wouldn't ask for your help, but please, help her!\n\nThe first line contains one integer n (3 ≤ n ≤ 10^5) — the length of a.\n\nThe second line contains n integers, a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of a.\n\nPrint YES or NO in the first line depending on whether it is possible to make all elements equal in at most n operations.\n\nIf it is possible, print an integer m (0 ≤ m ≤ n), which denotes the number of operations you do.\n\nIn each of the next m lines, print three distinct integers i, j, k, representing one operation.\n\nIf there are many such operation sequences possible, print any. Note that you do not have to minimize the number of operations.\n\nIn the first example, the array becomes [4 oplus 1 oplus 7, 2, 4 oplus 1 oplus 7, 4 oplus 1 oplus 7, 2] = [2, 2, 2, 2, 2].\n\nInput:\n```\n5\n4 2 1 7 2\n```\n\nOutput:\n```\nYES\n1\n1 3 4\n```\n\nInput:\n```\n4\n10 4 49 22\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains one integer n (3 ≤ n ≤ 10^5) — the length of a.\n\nThe second line contains n integers, a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of a.",
+    "output": "Print YES or NO in the first line depending on whether it is possible to make all elements equal in at most n operations.\n\nIf it is possible, print an integer m (0 ≤ m ≤ n), which denotes the number of operations you do.\n\nIn each of the next m lines, print three distinct integers i, j, k, representing one operation.\n\nIf there are many such operation sequences possible, print any. Note that you do not have to minimize the number of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

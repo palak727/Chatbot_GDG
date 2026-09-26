@@ -1,0 +1,17 @@
+{
+    "id": "1761D",
+    "contest_id": 1761,
+    "problem_letter": "D",
+    "title": "D. Carry Bit",
+    "statement": "Let f(x,y) be the number of carries of x+y in binary (i. e. f(x,y)=g(x)+g(y)-g(x+y), where g(x) is the number of ones in the binary representation of x).\n\nGiven two integers n and k, find the number of ordered pairs (a,b) such that 0 ≤ a,b < 2^n, and f(a,b) equals k. Note that for a≠ b, (a,b) and (b,a) are considered as two different pairs.\n\nAs this number may be large, output it modulo 10^9+7.\n\nThe only line of each test contains two integers n and k (0≤ k < n≤ 10^6).\n\nOutput a single integer — the answer modulo 10^9+7.\n\nHere are some examples for understanding carries:\n\nbeginaligned &beginarrayr 1_{}1_{}1 + _11_{}0_{}0 hline 1_{}0_{}1_{}1 endarray &beginarrayr 1_{}0_{}1 + _{}0_{}0_11 hline 0_{}1_{}1_{}0 endarray & &beginarrayr 1_{}0_{}1 + _10_11_11 hline 1_{}0_{}0_{}0 endarray endaligned\n\nSo f(7,4)=1, f(5,1)=1 and f(5,3)=3.\n\nIn the first test case, all the pairs meeting the constraints are (1,1),(1,5),(2,2),(2,3),(3,2),(4,4),(4,5),(4,6),(4,7),(5,1),(5,4),(5,6),(6,4),(6,5),(7,4).\n\nInput:\n```\n3 1\n```\n\nOutput:\n```\n15\n```\n\nInput:\n```\n3 0\n```\n\nOutput:\n```\n27\n```\n\nInput:\n```\n998 244\n```\n\nOutput:\n```\n573035660\n```",
+    "input": "The only line of each test contains two integers n and k (0≤ k < n≤ 10^6).",
+    "output": "Output a single integer — the answer modulo 10^9+7.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

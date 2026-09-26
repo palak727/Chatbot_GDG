@@ -1,0 +1,17 @@
+{
+    "id": "1663C",
+    "contest_id": 1663,
+    "problem_letter": "C",
+    "title": "C. Pōja Verdon",
+    "statement": "Aenar has an array a consisting of n integers.\n\nThe first line is the integer n (1 ≤ n ≤ 100).\n\nThe second line contains n integers a_i (0 ≤ a_i ≤ 3979) — the contents of the array.\n\nOutput a single number.",
+    "input": "The first line is the integer n (1 ≤ n ≤ 100).\n\nThe second line contains n integers a_i (0 ≤ a_i ≤ 3979) — the contents of the array.",
+    "output": "Output a single number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "math"
+    ],
+    "rating": null
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1397B",
+    "contest_id": 1397,
+    "problem_letter": "B",
+    "title": "B. Power Sequence",
+    "statement": "Let's call a list of positive integers a_0, a_1, ..., a_{n-1} a power sequence if there is a positive integer c, so that for every 0 ≤ i ≤ n-1 then a_i = c^i.\n\nGiven a list of n positive integers a_0, a_1, ..., a_{n-1}, you are allowed to:\n\nFind the minimum cost to transform a_0, a_1, ..., a_{n-1} into a power sequence.\n\nThe first line contains an integer n (3 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_0, a_1, ..., a_{n-1} (1 ≤ a_i ≤ 10^9).\n\nPrint the minimum cost to transform a_0, a_1, ..., a_{n-1} into a power sequence.\n\nIn the first example, we first reorder {1, 3, 2} into {1, 2, 3}, then increment a_2 to 4 with cost 1 to get a power sequence {1, 2, 4}.\n\nInput:\n```\n3\n1 3 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n1000000000 1000000000 1000000000\n```\n\nOutput:\n```\n1999982505\n```",
+    "input": "The first line contains an integer n (3 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_0, a_1, ..., a_{n-1} (1 ≤ a_i ≤ 10^9).",
+    "output": "Print the minimum cost to transform a_0, a_1, ..., a_{n-1} into a power sequence.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "number theory",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

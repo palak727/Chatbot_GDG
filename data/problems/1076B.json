@@ -1,0 +1,18 @@
+{
+    "id": "1076B",
+    "contest_id": 1076,
+    "problem_letter": "B",
+    "title": "B. Divisor Subtraction",
+    "statement": "You are given an integer number n. The following algorithm is applied to it:\n\nDetermine the number of subtrations the algorithm will make.\n\nThe only line contains a single integer n (2 ≤ n ≤ 10^10).\n\nPrint a single integer — the number of subtractions the algorithm will make.\n\nIn the first example 5 is the smallest prime divisor, thus it gets subtracted right away to make a 0.\n\nIn the second example 2 is the smallest prime divisor at both steps.\n\nInput:\n```\n5\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n2\n```",
+    "input": "The only line contains a single integer n (2 ≤ n ≤ 10^10).",
+    "output": "Print a single integer — the number of subtractions the algorithm will make.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

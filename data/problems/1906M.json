@@ -1,0 +1,17 @@
+{
+    "id": "1906M",
+    "contest_id": 1906,
+    "problem_letter": "M",
+    "title": "M. Triangle Construction",
+    "statement": "You are given a regular N-sided polygon. Label one arbitrary side as side 1, then label the next sides in clockwise order as side 2, 3, …, N. There are A_i special points on side i. These points are positioned such that side i is divided into A_i + 1 segments with equal length.\n\nFor instance, suppose that you have a regular 4-sided polygon, i.e., a square. The following illustration shows how the special points are located within each side when A = [3, 1, 4, 6]. The uppermost side is labelled as side 1.\n\nYou want to create as many non-degenerate triangles as possible while satisfying the following requirements. Each triangle consists of 3 distinct special points (not necessarily from different sides) as its corners. Each special point can only become the corner of at most 1 triangle. All triangles must not intersect with each other.\n\nDetermine the maximum number of non-degenerate triangles that you can create.\n\nA triangle is non-degenerate if it has a positive area.\n\nThe first line consists of an integer N (3 ≤ N ≤ 200,000).\n\nThe following line consists of N integers A_i (1 ≤ A_i ≤ 2·10^9).\n\nOutput a single integer representing the maximum number of non-degenerate triangles that you can create.\n\nExplanation for the sample input/output #1\n\nOne possible construction which achieves maximum number of non-degenerate triangles can be seen in the following illustration.\n\nExplanation for the sample input/output #2\n\nOne possible construction which achieves maximum number of non-degenerate triangles can be seen in the following illustration.\n\nInput:\n```\n4\n3 1 4 6\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6\n1 2 1 2 1 2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3\n1 1 1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line consists of an integer N (3 ≤ N ≤ 200,000).\n\nThe following line consists of N integers A_i (1 ≤ A_i ≤ 2·10^9).",
+    "output": "Output a single integer representing the maximum number of non-degenerate triangles that you can create.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

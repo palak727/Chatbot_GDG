@@ -1,0 +1,18 @@
+{
+    "id": "1571G",
+    "contest_id": 1571,
+    "problem_letter": "G",
+    "title": "G. A Battle Against a Dragon",
+    "statement": "A squad of n warriors is defending a castle from a dragon attack. There are m barricades between the castle and the dragon.\n\nThe warriors are numbered from 1 to n. The i-th warrior knows k_i attacks: the j-th of them deals a_{i,j} damage to the dragon and can only be applied if there are exactly b_{i,j} barricades between the castle and the dragon.\n\nThe warriors make turns one after another, starting from warrior 1. After warrior n makes his turn, the total damage to the dragon is calculated. The i-th warrior performs exactly one of three possible moves in his turn:\n\nThe total damage is the sum of damages dealt by the warriors who chose to deploy their attacks in their turn. What is the maximum total damage the warriors can deal to the dragon?\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 3·10^5) — the number of warriors and the initial number of barricades.\n\nThen the descriptions of attacks for each warrior follow. The i-th description consists of three lines.\n\nThe first line contains a single integer k_i (1 ≤ k_i ≤ m + 1) — the number of attacks the i-th warrior knows.\n\nThe second line contains k_i integers a_{i,1}, a_{i,2}, …, a_{i,k_i} (1 ≤ a_{i,j} ≤ 10^9) — the damage of each attack.\n\nThe third line contains k_i integers b_{i,1}, b_{i,2}, …, b_{i,k_i} (0 ≤ b_{i,j} ≤ m) — the required number of barricades for each attack. b_{i,j} for the i-th warrior are pairwise distinct. The attacks are listed in the increasing order of the barricades requirement, so b_{i,1} < b_{i,2} < … < b_{i,k_i}.\n\nThe sum of k_i over all warriors doesn't exceed 3·10^5.\n\nPrint a single integer — the maximum total damage the warriors can deal to the dragon.\n\nIn the first example, the optimal choice is the following:\n\nThe total damage is 10.\n\nIf the first warrior used his attack or skipped his turn, then the second warrior would only be able to deploy his second attack. Thus, the total damage would be 2+5=7 or 5.\n\nIn the second example, the first warrior skips his move, the second warrior skips his move and the third warrior deploys his only attack.\n\nIn the third example, two equivalent options are:\n\nBoth options yield 30 total damage.\n\nInput:\n```\n2 4\n1\n2\n4\n2\n10 5\n3 4\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n3 3\n1\n1\n0\n1\n20\n2\n1\n100\n3\n```\n\nOutput:\n```\n100\n```\n\nInput:\n```\n2 1\n2\n10 10\n0 1\n2\n30 20\n0 1\n```\n\nOutput:\n```\n30\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 3·10^5) — the number of warriors and the initial number of barricades.\n\nThen the descriptions of attacks for each warrior follow. The i-th description consists of three lines.\n\nThe first line contains a single integer k_i (1 ≤ k_i ≤ m + 1) — the number of attacks the i-th warrior knows.\n\nThe second line contains k_i integers a_{i,1}, a_{i,2}, …, a_{i,k_i} (1 ≤ a_{i,j} ≤ 10^9) — the damage of each attack.\n\nThe third line contains k_i integers b_{i,1}, b_{i,2}, …, b_{i,k_i} (0 ≤ b_{i,j} ≤ m) — the required number of barricades for each attack. b_{i,j} for the i-th warrior are pairwise distinct. The attacks are listed in the increasing order of the barricades requirement, so b_{i,1} < b_{i,2} < … < b_{i,k_i}.\n\nThe sum of k_i over all warriors doesn't exceed 3·10^5.",
+    "output": "Print a single integer — the maximum total damage the warriors can deal to the dragon.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "dp",
+        "*2500"
+    ],
+    "rating": 2500
+}

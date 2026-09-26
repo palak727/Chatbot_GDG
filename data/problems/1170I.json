@@ -1,0 +1,16 @@
+{
+    "id": "1170I",
+    "contest_id": 1170,
+    "problem_letter": "I",
+    "title": "I. Good Subsets",
+    "statement": "You are given n segments on the Ox axis. The i-th segment is given as a pair l_i, r_i, where l_i is the position of the left end of the i-th segment and r_i is the position of the right end of the i-th segment. Segments may intersect, overlap, or even coincide. A segment is a set of numbers (including floating-point numbers) lying between the segment ends or coinciding with them. Formally, the segment [l, r]={x~|~x ∈ BbbR,~l ≤ x ≤ r}.\n\nLet the union of segments be the set of all axis points covered by the set of segments. Let's call a subset of the given segments good if its union equals the union of all n segments.\n\nYour task is to calculate the number of good subsets of the given n segments. Since the answer may be very large, print it modulo 998244353.\n\nThe first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of segments.\n\nThe next n lines contain segments. The i-th segment is given as a pair l_i, r_i (1 ≤ l_i ≤ r_i ≤ 10^9), where l_i is the left border of the segment and r_i is the right border of the segment. Segments may intersect, overlap, or even coincide.\n\nPrint the number of good subsets of the given set of segments. Since the answer may be very large, print it modulo 998244353.\n\nInput:\n```\n3\n1 1\n2 6\n1 6\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2\n3 4\n2 5\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n1 2\n5 5\n2 3\n1 3\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line of the input contains one integer n (1 ≤ n ≤ 2·10^5) — the number of segments.\n\nThe next n lines contain segments. The i-th segment is given as a pair l_i, r_i (1 ≤ l_i ≤ r_i ≤ 10^9), where l_i is the left border of the segment and r_i is the right border of the segment. Segments may intersect, overlap, or even coincide.",
+    "output": "Print the number of good subsets of the given set of segments. Since the answer may be very large, print it modulo 998244353.",
+    "time_limit": "6 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "dp"
+    ],
+    "rating": null
+}

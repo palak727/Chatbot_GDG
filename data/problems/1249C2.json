@@ -1,0 +1,19 @@
+{
+    "id": "1249C2",
+    "contest_id": 1249,
+    "problem_letter": "C2",
+    "title": "C2. Good Numbers (hard version)",
+    "statement": "The only difference between easy and hard versions is the maximum value of n.\n\nYou are given a positive integer number n. You really love good numbers so you want to find the smallest good number greater than or equal to n.\n\nThe positive integer is called good if it can be represented as a sum of distinct powers of 3 (i.e. no duplicates of powers of 3 are allowed).\n\nFor example:\n\nNote, that there exist other representations of 19 and 20 as sums of powers of 3 but none of them consists of distinct powers of 3.\n\nFor the given positive integer n find such smallest m (n ≤ m) that m is a good number.\n\nYou have to answer q independent queries.\n\nThe first line of the input contains one integer q (1 ≤ q ≤ 500) — the number of queries. Then q queries follow.\n\nThe only line of the query contains one integer n (1 ≤ n ≤ 10^18).\n\nFor each query, print such smallest integer m (where n ≤ m) that m is a good number.\n\nInput:\n```\n8\n1\n2\n6\n13\n14\n3620\n10000\n1000000000000000000\n```\n\nOutput:\n```\n1\n3\n9\n13\n27\n6561\n19683\n1350851717672992089\n```",
+    "input": "The first line of the input contains one integer q (1 ≤ q ≤ 500) — the number of queries. Then q queries follow.\n\nThe only line of the query contains one integer n (1 ≤ n ≤ 10^18).",
+    "output": "For each query, print such smallest integer m (where n ≤ m) that m is a good number.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "meet-in-the-middle",
+        "*1500"
+    ],
+    "rating": 1500
+}

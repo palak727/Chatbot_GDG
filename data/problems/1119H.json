@@ -1,0 +1,17 @@
+{
+    "id": "1119H",
+    "contest_id": 1119,
+    "problem_letter": "H",
+    "title": "H. Triple",
+    "statement": "You have received your birthday gifts — n triples of integers! The i-th of them is lbrace a_i, b_i, c_i rbrace. All numbers are greater than or equal to 0, and strictly smaller than 2^k, where k is a fixed integer.\n\nOne day, you felt tired playing with triples. So you came up with three new integers x, y, z, and then formed n arrays. The i-th array consists of a_i repeated x times, b_i repeated y times and c_i repeated z times. Thus, each array has length (x + y + z).\n\nYou want to choose exactly one integer from each array such that the XOR (bitwise exclusive or) of them is equal to t. Output the number of ways to choose the numbers for each t between 0 and 2^k - 1, inclusive, modulo 998244353.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 17) — the number of arrays and the binary length of all numbers.\n\nThe second line contains three integers x, y, z (0 ≤ x,y,z ≤ 10^9) — the integers you chose.\n\nThen n lines follow. The i-th of them contains three integers a_i, b_i and c_i (0 ≤ a_i , b_i , c_i ≤ 2^k - 1) — the integers forming the i-th array.\n\nPrint a single line containing 2^k integers. The i-th of them should be the number of ways to choose exactly one integer from each array so that their XOR is equal to t = i-1 modulo 998244353.\n\nIn the first example, the array we formed is (1, 0, 0, 1, 1, 1), we have two choices to get 0 as the XOR and four choices to get 1.\n\nIn the second example, two arrays are (0, 1, 1, 2) and (1, 2, 2, 3). There are sixteen (4·4) choices in total, 4 of them (1 oplus 1 and 2 oplus 2, two options for each) give 0, 2 of them (0 oplus 1 and 2 oplus 3) give 1, 4 of them (0 oplus 2 and 1 oplus 3, two options for each) give 2, and finally 6 of them (0 oplus 3, 2 oplus 1 and four options for 1 oplus 2) give 3.\n\nInput:\n```\n1 1\n1 2 3\n1 0 1\n```\n\nOutput:\n```\n2 4 \n```\n\nInput:\n```\n2 2\n1 2 1\n0 1 2\n1 2 3\n```\n\nOutput:\n```\n4 2 4 6 \n```\n\nInput:\n```\n4 3\n1 2 3\n1 3 7\n0 2 5\n1 0 6\n3 3 2\n```\n\nOutput:\n```\n198 198 126 126 126 126 198 198 \n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 17) — the number of arrays and the binary length of all numbers.\n\nThe second line contains three integers x, y, z (0 ≤ x,y,z ≤ 10^9) — the integers you chose.\n\nThen n lines follow. The i-th of them contains three integers a_i, b_i and c_i (0 ≤ a_i , b_i , c_i ≤ 2^k - 1) — the integers forming the i-th array.",
+    "output": "Print a single line containing 2^k integers. The i-th of them should be the number of ways to choose exactly one integer from each array so that their XOR is equal to t = i-1 modulo 998244353.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "fft",
+        "math",
+        "*3200"
+    ],
+    "rating": 3200
+}

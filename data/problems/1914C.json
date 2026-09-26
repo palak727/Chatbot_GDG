@@ -1,0 +1,17 @@
+{
+    "id": "1914C",
+    "contest_id": 1914,
+    "problem_letter": "C",
+    "title": "C. Quests",
+    "statement": "Monocarp is playing a computer game. In order to level up his character, he can complete quests. There are n quests in the game, numbered from 1 to n.\n\nMonocarp can complete quests according to the following rules:\n\nNote that Monocarp can complete the same quest multiple times.\n\nFor each completion, the character gets some amount of experience points:\n\nMonocarp is a very busy person, so he has free time to complete no more than k quests. Your task is to calculate the maximum possible total experience Monocarp can get if he can complete no more than k quests.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 2·10^5) — the number of quests and the maximum number of quests Monocarp can complete, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^3).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^3).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum possible total experience Monocarp can get if he can complete no more than k quests.\n\nIn the first test case, one of the possible quest completion sequences is as follows: 1, 1, 2, 3, 2, 4, 4; its total experience is equal to underline4 + 1 + underline3 + underline1 + 1 + underline2 + 1 = 13 (the underlined numbers correspond to the instances when we complete a quest for the first time).\n\nIn the second test case, one of the possible quest completion sequences is as follows: 1, 1; its total experience is equal to underline1 + 3 = 4.\n\nIn the third test case, one of the possible quest completion sequences is as follows: 1, 2, 2, 2, 3; its total experience is equal to underline3 + underline2 + 3 + 3 + underline4 = 15.\n\nInput:\n```\n44 74 3 1 21 1 1 13 21 2 53 1 85 53 2 4 1 42 3 1 4 76 41 4 5 4 5 101 5 1 2 5 1\n```\n\nOutput:\n```\n13\n4\n15\n15\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 2·10^5) — the number of quests and the maximum number of quests Monocarp can complete, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^3).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^3).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum possible total experience Monocarp can get if he can complete no more than k quests.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

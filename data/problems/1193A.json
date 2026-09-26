@@ -1,0 +1,17 @@
+{
+    "id": "1193A",
+    "contest_id": 1193,
+    "problem_letter": "A",
+    "title": "A. Amusement Park",
+    "statement": "You have been hired to supervise the project of a new amusement park. The park will have a special gimmick: directed slides that can get customers from one attraction to another quickly and in an entertaining way.\n\nThe park owner has given you the current project: a list of planned attractions and a list of slides that should be built between them. However, him being a businessman, he casually envisioned the impossible: among other things, he projected a slide coming from the Haunted Castle to the Roller Coaster, another from the Roller Coaster to the Drop Tower, and a third from the Drop Tower to the Haunted Castle. As the slides can only go downhill, it is evident why this is a problem. You don't have the luxury of ignoring the laws of physics when building the park, so you have to request changes in the project. Maybe he would accept reversing the slide between the Drop Tower and the Haunted Castle?\n\nFormally:\n\nFor a given project, find and report the sum of costs all legal proposals. Since this number may be large, output it modulo 998,244,353.\n\nThe first line contains two space-separated integers n, m (1 ≤ n ≤ 18, 0 ≤ m ≤ n(n-1)/2) – the number of attractions and the number of slides, respectively. The attractions are numbered 1 through n.\n\nThen, m lines follow. The i-th of these lines contains two space-separated integers a_i, b_i (1 ≤ a_i, b_i ≤ n) denoting a slide from a_i to b_i.\n\nYou may assume that:\n\nOutput one line with a single integer, the sum of costs of all legal proposals modulo 998,244,353.\n\nSubtask 1 (7 points): n ≤ 3\n\nSubtask 2 (12 points): n ≤ 6\n\nSubtask 3 (23 points): n ≤ 10\n\nSubtask 4 (21 points): n ≤ 15\n\nSubtask 5 (37 points): no additional constraints\n\nIn the first example, there are two proposals:\n\nIn the second example, there are eight proposals with the slide directions as follows:\n\nThe second proposal is not legal, as there is a slide sequence 1 → 2 → 3 → 1. This means that the attraction 1 has to be strictly higher than ifself, which is clearly impossible. Similarly, the seventh proposal is not legal. The answer is thus 0 + 1 + 2 + 1 + 2 + 3 = 9.\n\nInput:\n```\n2 1\n1 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 3\n1 2\n2 3\n1 3\n```\n\nOutput:\n```\n9\n```",
+    "input": "The first line contains two space-separated integers n, m (1 ≤ n ≤ 18, 0 ≤ m ≤ n(n-1)/2) – the number of attractions and the number of slides, respectively. The attractions are numbered 1 through n.\n\nThen, m lines follow. The i-th of these lines contains two space-separated integers a_i, b_i (1 ≤ a_i, b_i ≤ n) denoting a slide from a_i to b_i.\n\nYou may assume that:",
+    "output": "Output one line with a single integer, the sum of costs of all legal proposals modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*special",
+        "dp",
+        "math"
+    ],
+    "rating": null
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1848D",
+    "contest_id": 1848,
+    "problem_letter": "D",
+    "title": "D. Vika and Bonuses",
+    "statement": "A new bonus system has been introduced at Vika's favorite cosmetics store, \"Golden Pear\"!\n\nThe system works as follows: suppose a customer has b bonuses. Before paying for the purchase, the customer can choose one of two options:\n\nFor example, if a customer had 24 bonuses, he can either get a discount of 24 or accumulate an additional 4 bonuses, after which his account will have 28 bonuses.\n\nAt the moment, Vika has already accumulated s bonuses.\n\nThe girl knows that during the remaining time of the bonus system, she will make k more purchases at the \"Golden Pear\" store network.\n\nAfter familiarizing herself with the rules of the bonus system, Vika became interested in the maximum total discount she can get.\n\nHelp the girl answer this question.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe test case consists of a single line containing two integers s and k (0 ≤ s ≤ 10^9, 1 ≤ k ≤ 10^9) — the current number of bonuses in Vika's account and how many more purchases the girl will make.\n\nFor each test case, output a single integer — the maximum total discount that can be obtained through the bonus system.\n\nIn the first test case, Vika can accumulate bonuses after the first and second purchases, after which she can get a discount of 4.\n\nIn the second test case, Vika can get a discount of 11 three times, and the total discount will be 33.\n\nIn the third example, regardless of Vika's actions, she will always get a total discount of 0.\n\nInput:\n```\n61 311 30 1795 1000000000723252212 856168102728598293 145725253\n```\n\nOutput:\n```\n4\n33\n0\n9999999990\n1252047198518668448\n106175170582793129\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe test case consists of a single line containing two integers s and k (0 ≤ s ≤ 10^9, 1 ≤ k ≤ 10^9) — the current number of bonuses in Vika's account and how many more purchases the girl will make.",
+    "output": "For each test case, output a single integer — the maximum total discount that can be obtained through the bonus system.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "ternary search",
+        "*2200"
+    ],
+    "rating": 2200
+}

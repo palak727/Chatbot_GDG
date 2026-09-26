@@ -1,0 +1,19 @@
+{
+    "id": "1552B",
+    "contest_id": 1552,
+    "problem_letter": "B",
+    "title": "B. Running for Gold",
+    "statement": "The Olympic Games have just started and Federico is eager to watch the marathon race.\n\nThere will be n athletes, numbered from 1 to n, competing in the marathon, and all of them have taken part in 5 important marathons, numbered from 1 to 5, in the past. For each 1≤ i≤ n and 1≤ j≤ 5, Federico remembers that athlete i ranked r_{i,j}-th in marathon j (e.g., r_{2,4}=3 means that athlete 2 was third in marathon 4).\n\nFederico considers athlete x superior to athlete y if athlete x ranked better than athlete y in at least 3 past marathons, i.e., r_{x,j} < r_{y,j} for at least 3 distinct values of j.\n\nFederico believes that an athlete is likely to get the gold medal at the Olympics if he is superior to all other athletes.\n\nFind any athlete who is likely to get the gold medal (that is, an athlete who is superior to all other athletes), or determine that there is no such athlete.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 50,000) — the number of athletes.\n\nThen n lines follow, each describing the ranking positions of one athlete.\n\nThe i-th of these lines contains the 5 integers r_{i,1},,r_{i,2},,r_{i,3},,r_{i,4},, r_{i,5} (1≤ r_{i,j}≤ 50,000) — the ranking positions of athlete i in the past 5 marathons. It is guaranteed that, in each of the 5 past marathons, the n athletes have distinct ranking positions, i.e., for each 1≤ j≤ 5, the n values r_{1,j},, r_{2, j},, …,, r_{n, j} are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 50,000.\n\nFor each test case, print a single integer — the number of an athlete who is likely to get the gold medal (that is, an athlete who is superior to all other athletes). If there are no such athletes, print -1. If there is more than such one athlete, print any of them.\n\nExplanation of the first test case: There is only one athlete, therefore he is superior to everyone else (since there is no one else), and thus he is likely to get the gold medal.\n\nExplanation of the second test case: There are n=3 athletes.\n\nExplanation of the third test case: There are n=3 athletes.\n\nExplanation of the fourth test case: There are n=6 athletes.\n\nInput:\n```\n4\n1\n50000 1 50000 50000 50000\n3\n10 10 20 30 30\n20 20 30 10 10\n30 30 10 20 20\n3\n1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3\n6\n9 5 3 7 1\n7 4 1 6 8\n5 6 7 3 2\n6 7 8 8 6\n4 2 2 4 5\n8 3 6 9 4\n```\n\nOutput:\n```\n1\n-1\n1\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 50,000) — the number of athletes.\n\nThen n lines follow, each describing the ranking positions of one athlete.\n\nThe i-th of these lines contains the 5 integers r_{i,1},,r_{i,2},,r_{i,3},,r_{i,4},, r_{i,5} (1≤ r_{i,j}≤ 50,000) — the ranking positions of athlete i in the past 5 marathons. It is guaranteed that, in each of the 5 past marathons, the n athletes have distinct ranking positions, i.e., for each 1≤ j≤ 5, the n values r_{1,j},, r_{2, j},, …,, r_{n, j} are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 50,000.",
+    "output": "For each test case, print a single integer — the number of an athlete who is likely to get the gold medal (that is, an athlete who is superior to all other athletes). If there are no such athletes, print -1. If there is more than such one athlete, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "graphs",
+        "greedy",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

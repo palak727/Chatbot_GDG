@@ -1,0 +1,17 @@
+{
+    "id": "1841A",
+    "contest_id": 1841,
+    "problem_letter": "A",
+    "title": "A. Game with Board",
+    "statement": "Alice and Bob play a game. They have a blackboard; initially, there are n integers written on it, and each integer is equal to 1.\n\nAlice and Bob take turns; Alice goes first. On their turn, the player has to choose several (at least two) equal integers on the board, wipe them and write a new integer which is equal to their sum.\n\nFor example, if the board currently contains integers {1, 1, 2, 2, 2, 3}, then the following moves are possible:\n\nIf a player cannot make a move (all integers on the board are different), that player wins the game.\n\nDetermine who wins if both players play optimally.\n\nThe first line contains one integer t (1 ≤ t ≤ 99) — the number of test cases.\n\nEach test case consists of one line containing one integer n (2 ≤ n ≤ 100) — the number of integers equal to 1 on the board.\n\nFor each test case, print Alice if Alice wins when both players play optimally. Otherwise, print Bob.\n\nIn the first test case, n = 3, so the board initially contains integers {1, 1, 1}. We can show that Bob can always win as follows: there are two possible first moves for Alice.\n\nIn the second test case, n = 6, so the board initially contains integers {1, 1, 1, 1, 1, 1}. Alice can win by, for example, choosing two integers equal to 1, wiping them and writing 2 on the first turn. Then the board becomes {1, 1, 1, 1, 2}, and there are three possible responses for Bob:\n\nInput:\n```\n236\n```\n\nOutput:\n```\nBob\nAlice\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 99) — the number of test cases.\n\nEach test case consists of one line containing one integer n (2 ≤ n ≤ 100) — the number of integers equal to 1 on the board.",
+    "output": "For each test case, print Alice if Alice wins when both players play optimally. Otherwise, print Bob.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "*800"
+    ],
+    "rating": 800
+}

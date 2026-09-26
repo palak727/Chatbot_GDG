@@ -1,0 +1,22 @@
+{
+    "id": "2112E",
+    "contest_id": 2112,
+    "problem_letter": "E",
+    "title": "E. Tree Colorings",
+    "statement": "Consider a rooted undirected tree. Each vertex can be colored blue, green, or yellow. A coloring is called beautiful if it meets these conditions:\n\nYou are given an integer m. Your task is to calculate the minimum number of vertices in a tree with exactly m beautiful colorings.\n\nThe first line contains a single integer (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe only line of each test case contains a single integer m (1 ≤ m ≤ 5·10^5).\n\nFor each test case, print a single integer — the minimum number of vertices in a tree with exactly m beautiful colorings. If such a tree does not exist, print -1.\n\nIn the following notes, let g describe green color, b be blue, and y be yellow.\n\nIn the first example, consider a simple tree with just 1 vertex. This tree has exactly 1 beautiful coloring: the root is green.\n\nIn the second example, consider a simple tree with 2 vertices with a root at the 1-st vertex. There are exactly 3 beautiful colorings: [g, g], [g, b] and [g, y].\n\nIn the third example, consider a bamboo tree with 3 vertices with a root at the 1-st vertex. There are exactly 5 beautiful colorings: [g, g, g], [g, g, b], [g, g, y], [g, b, b] and [g, y, y].\n\nIn the fifth example, consider a tree with 3 vertices with a root at the 1-st vertex, and the other 2 vertices connected to it. There are exactly 9 beautiful colorings: [g, g, g], [g, g, b], [g, g, y], [g, b, g], [g, b, b], [g, b, y], [g, y, g], [g, y, b] and [g, y, y].\n\nInput:\n```\n513579\n```\n\nOutput:\n```\n1\n2\n3\n4\n3\n```",
+    "input": "The first line contains a single integer (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe only line of each test case contains a single integer m (1 ≤ m ≤ 5·10^5).",
+    "output": "For each test case, print a single integer — the minimum number of vertices in a tree with exactly m beautiful colorings. If such a tree does not exist, print -1.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "math",
+        "number theory",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

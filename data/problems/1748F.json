@@ -1,0 +1,17 @@
+{
+    "id": "1748F",
+    "contest_id": 1748,
+    "problem_letter": "F",
+    "title": "F. Circular Xor Reversal",
+    "statement": "You have an array a_0, a_1, …, a_{n-1} of length n. Initially, a_i = 2^i for all 0 ≤ i < n. Note that array a is zero-indexed.\n\nYou want to reverse this array (that is, make a_i equal to 2^{n-1-i} for all 0 ≤ i < n). To do this, you can perform the following operation no more than 250,000 times:\n\nHere, oplus denotes the bitwise XOR operation.\n\nYour task is to find any sequence of operations that will result in the array a being reversed. It can be shown that under the given constraints, a solution always exists.\n\nThe first line contains a single integer n (2 ≤ n ≤ 400) — the length of the array a.\n\nOn the first line print one integer k (0 ≤ k ≤ 250,000) — the number of operations performed.\n\nOn the second line print k integers i_1,i_2,…,i_k (0 ≤ i_j < n). Here, i_j should be the integer selected on the j-th operation.\n\nNote that you don't need to minimize the number of operations.\n\nIn the notes, the elements on which the operations are performed are colored red.\n\nIn the first test case, array a will change in the following way:\n\n[1,colorred2] → [colorred1,3] → [2,colorred3] → [2,1].\n\nIn the second test case, array a will change in the following way:\n\n[1,colorred2,4] → [colorred1,6,4] → [7,colorred6,4] → [colorred7,2,4] → [5,2,colorred4] → [5,colorred2,1] → [colorred5,3,1] → [6,colorred3,1] → [colorred6,2,1] → [4,2,1].\n\nInput:\n```\n2\n```\n\nOutput:\n```\n3\n1 0 1\n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n9\n1 0 1 0 2 1 0 1 0 \n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 400) — the length of the array a.",
+    "output": "On the first line print one integer k (0 ≤ k ≤ 250,000) — the number of operations performed.\n\nOn the second line print k integers i_1,i_2,…,i_k (0 ≤ i_j < n). Here, i_j should be the integer selected on the j-th operation.\n\nNote that you don't need to minimize the number of operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "*3000"
+    ],
+    "rating": 3000
+}

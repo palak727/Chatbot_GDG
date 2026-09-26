@@ -1,0 +1,20 @@
+{
+    "id": "1674E",
+    "contest_id": 1674,
+    "problem_letter": "E",
+    "title": "E. Breaking the Wall",
+    "statement": "Monocarp plays \"Rage of Empires II: Definitive Edition\" — a strategic computer game. Right now he's planning to attack his opponent in the game, but Monocarp's forces cannot enter the opponent's territory since the opponent has built a wall.\n\nThe wall consists of n sections, aligned in a row. The i-th section initially has durability a_i. If durability of some section becomes 0 or less, this section is considered broken.\n\nTo attack the opponent, Monocarp needs to break at least two sections of the wall (any two sections: possibly adjacent, possibly not). To do this, he plans to use an onager — a special siege weapon. The onager can be used to shoot any section of the wall; the shot deals 2 damage to the target section and 1 damage to adjacent sections. In other words, if the onager shoots at the section x, then the durability of the section x decreases by 2, and the durability of the sections x - 1 and x + 1 (if they exist) decreases by 1 each.\n\nMonocarp can shoot at any sections any number of times, he can even shoot at broken sections.\n\nMonocarp wants to calculate the minimum number of onager shots needed to break at least two sections. Help him!\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of sections.\n\nThe second line contains the sequence of integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), where a_i is the initial durability of the i-th section.\n\nPrint one integer — the minimum number of onager shots needed to break at least two sections of the wall.\n\nIn the first example, it is possible to break the 2-nd and the 4-th section in 10 shots, for example, by shooting the third section 10 times. After that, the durabilities become [20, 0, 10, 0, 20]. Another way of doing it is firing 5 shots at the 2-nd section, and another 5 shots at the 4-th section. After that, the durabilities become [15, 0, 20, 0, 15].\n\nIn the second example, it is enough to shoot the 2-nd section once. Then the 1-st and the 3-rd section will be broken.\n\nIn the third example, it is enough to shoot the 2-nd section twice (then the durabilities become [5, 2, 4, 8, 5, 8]), and then shoot the 3-rd section twice (then the durabilities become [5, 0, 0, 6, 5, 8]). So, four shots are enough to break the 2-nd and the 3-rd section.\n\nInput:\n```\n5\n20 10 30 10 20\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n3\n1 8 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n6\n7 6 6 8 5 8\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6\n14 3 8 10 15 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4\n1 100 100 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3\n40 10 10\n```\n\nOutput:\n```\n7\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of sections.\n\nThe second line contains the sequence of integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6), where a_i is the initial durability of the i-th section.",
+    "output": "Print one integer — the minimum number of onager shots needed to break at least two sections of the wall.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

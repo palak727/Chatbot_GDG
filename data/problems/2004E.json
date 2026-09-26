@@ -1,0 +1,19 @@
+{
+    "id": "2004E",
+    "contest_id": 2004,
+    "problem_letter": "E",
+    "title": "E. Not a Nim Problem",
+    "statement": "Two players, Alice and Bob, are playing a game. They have n piles of stones, with the i-th pile initially containing a_i stones.\n\nOn their turn, a player can choose any pile of stones and take any positive number of stones from it, with one condition:\n\nThe player who cannot make a move loses. Both players play optimally (that is, if a player has a strategy that allows them to win, no matter how the opponent responds, they will win). Alice goes first.\n\nDetermine who will win.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n across all test cases does not exceed 3·10^5.\n\nFor each test case, output Alice if Alice wins, or Bob if Bob wins.\n\nInput:\n```\n333 2 943 3 6 151 2 3 4 5\n```\n\nOutput:\n```\nBob\nAlice\nBob\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraint on the input: the sum of n across all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output Alice if Alice wins, or Bob if Bob wins.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "games",
+        "math",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

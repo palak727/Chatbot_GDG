@@ -1,0 +1,19 @@
+{
+    "id": "2034A",
+    "contest_id": 2034,
+    "problem_letter": "A",
+    "title": "A. King Keykhosrow's Mystery",
+    "statement": "There is a tale about the wise King Keykhosrow who owned a grand treasury filled with treasures from across the Persian Empire. However, to prevent theft and ensure the safety of his wealth, King Keykhosrow's vault was sealed with a magical lock that could only be opened by solving a riddle.\n\nThe riddle involves two sacred numbers a and b. To unlock the vault, the challenger must determine the smallest key number m that satisfies two conditions:\n\nOnly by finding the smallest correct value of m can one unlock the vault and access the legendary treasures!\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 100), the number of test cases.\n\nEach test case consists of a single line containing two integers a and b (1 ≤ a, b ≤ 1000).\n\nFor each test case, print the smallest integer m that satisfies the conditions above.\n\nIn the first test case, you can see that:\n\nInput:\n```\n24 6472 896\n```\n\nOutput:\n```\n12\n52864\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 100), the number of test cases.\n\nEach test case consists of a single line containing two integers a and b (1 ≤ a, b ≤ 1000).",
+    "output": "For each test case, print the smallest integer m that satisfies the conditions above.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "chinese remainder theorem",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

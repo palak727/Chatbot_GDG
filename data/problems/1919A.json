@@ -1,0 +1,17 @@
+{
+    "id": "1919A",
+    "contest_id": 1919,
+    "problem_letter": "A",
+    "title": "A. Wallet Exchange",
+    "statement": "Alice and Bob are bored, so they decide to play a game with their wallets. Alice has a coins in her wallet, while Bob has b coins in his wallet.\n\nBoth players take turns playing, with Alice making the first move. In each turn, the player will perform the following steps in order:\n\nThe player who cannot make a valid move on their turn loses. If both Alice and Bob play optimally, determine who will win the game.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the number of coins in Alice's and Bob's wallets, respectively.\n\nFor each test case, output \"Alice\" if Alice will win the game, and \"Bob\" if Bob will win the game.\n\nIn the first test case, an example of the game is shown below:\n\nIn the second test case, an example of the game is shown below:\n\nInput:\n```\n101 11 45 34 511 983 911032 9307839204 72811000000000 100000000053110 2024\n```\n\nOutput:\n```\nBob\nAlice\nBob\nAlice\nBob\nBob\nAlice\nAlice\nBob\nBob\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first and only line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the number of coins in Alice's and Bob's wallets, respectively.",
+    "output": "For each test case, output \"Alice\" if Alice will win the game, and \"Bob\" if Bob will win the game.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

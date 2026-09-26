@@ -1,0 +1,19 @@
+{
+    "id": "1547G",
+    "contest_id": 1547,
+    "problem_letter": "G",
+    "title": "G. How Many Paths?",
+    "statement": "You are given a directed graph G which can contain loops (edges from a vertex to itself). Multi-edges are absent in G which means that for all ordered pairs (u, v) exists at most one edge from u to v. Vertices are numbered from 1 to n.\n\nA path from u to v is a sequence of edges such that:\n\nWe will assume that the empty sequence of edges is a path from u to u.\n\nFor each vertex v output one of four values:\n\nLet's look at the example shown in the figure.\n\nThen:\n\nThe first contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow. Before each test case, there is an empty line.\n\nThe first line of the test case contains two integers n and m (1 ≤ n ≤ 4·10^5, 0 ≤ m ≤ 4·10^5) — numbers of vertices and edges in graph respectively. The next m lines contain edges descriptions. Each line contains two integers a_i, b_i (1 ≤ a_i, b_i ≤ n) — the start and the end of the i-th edge. The vertices of the graph are numbered from 1 to n. The given graph can contain loops (it is possible that a_i = b_i), but cannot contain multi-edges (it is not possible that a_i = a_j and b_i = b_j for i ≠ j).\n\nThe sum of n over all test cases does not exceed 4·10^5. Similarly, the sum of m over all test cases does not exceed 4·10^5.\n\nOutput t lines. The i-th line should contain an answer for the i-th test case: a sequence of n integers from -1 to 2.\n\nInput:\n```\n5\n\n6 7\n1 4\n1 3\n3 4\n4 5\n2 1\n5 5\n5 6\n\n1 0\n\n3 3\n1 2\n2 3\n3 1\n\n5 0\n\n4 4\n1 2\n2 3\n1 4\n4 3\n```\n\nOutput:\n```\n1 0 1 2 -1 -1 \n1 \n-1 -1 -1 \n1 0 0 0 0 \n1 1 2 1 \n```",
+    "input": "The first contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow. Before each test case, there is an empty line.\n\nThe first line of the test case contains two integers n and m (1 ≤ n ≤ 4·10^5, 0 ≤ m ≤ 4·10^5) — numbers of vertices and edges in graph respectively. The next m lines contain edges descriptions. Each line contains two integers a_i, b_i (1 ≤ a_i, b_i ≤ n) — the start and the end of the i-th edge. The vertices of the graph are numbered from 1 to n. The given graph can contain loops (it is possible that a_i = b_i), but cannot contain multi-edges (it is not possible that a_i = a_j and b_i = b_j for i ≠ j).\n\nThe sum of n over all test cases does not exceed 4·10^5. Similarly, the sum of m over all test cases does not exceed 4·10^5.",
+    "output": "Output t lines. The i-th line should contain an answer for the i-th test case: a sequence of n integers from -1 to 2.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "trees",
+        "*2100"
+    ],
+    "rating": 2100
+}

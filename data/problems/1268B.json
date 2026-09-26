@@ -1,0 +1,18 @@
+{
+    "id": "1268B",
+    "contest_id": 1268,
+    "problem_letter": "B",
+    "title": "B. Domino for Young",
+    "statement": "You are given a Young diagram.\n\nGiven diagram is a histogram with n columns of lengths a_1, a_2, …, a_n (a_1 ≥ a_2 ≥ … ≥ a_n ≥ 1).\n\nYour goal is to find the largest number of non-overlapping dominos that you can draw inside of this histogram, a domino is a 1 × 2 or 2 × 1 rectangle.\n\nThe first line of input contain one integer n (1 ≤ n ≤ 300,000): the number of columns in the given histogram.\n\nThe next line of input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 300,000, a_i ≥ a_{i+1}): the lengths of columns.\n\nOutput one integer: the largest number of non-overlapping dominos that you can draw inside of the given Young diagram.\n\nSome of the possible solutions for the example:\n\nInput:\n```\n5\n3 2 2 2 1\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line of input contain one integer n (1 ≤ n ≤ 300,000): the number of columns in the given histogram.\n\nThe next line of input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 300,000, a_i ≥ a_{i+1}): the lengths of columns.",
+    "output": "Output one integer: the largest number of non-overlapping dominos that you can draw inside of the given Young diagram.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

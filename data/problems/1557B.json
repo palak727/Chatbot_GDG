@@ -1,0 +1,17 @@
+{
+    "id": "1557B",
+    "contest_id": 1557,
+    "problem_letter": "B",
+    "title": "B. Moamen and k-subarrays",
+    "statement": "Moamen has an array of n distinct integers. He wants to sort that array in non-decreasing order by doing the following operations in order exactly once:\n\nA sequence a is a subarray of a sequence b if a can be obtained from b by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nCan you tell Moamen if there is a way to sort the array in non-decreasing order using the operations written above?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ |a_i| ≤ 10^9). It is guaranteed that all numbers are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, you should output a single string.\n\nIf Moamen can sort the array in non-decreasing order, output \"YES\" (without quotes). Otherwise, output \"NO\" (without quotes).\n\nYou can print each letter of \"YES\" and \"NO\" in any case (upper or lower).\n\nIn the first test case, a = [6, 3, 4, 2, 1], and k = 4, so we can do the operations as follows:\n\nIn the second test case, there is no way to sort the array by splitting it into only 2 subarrays.\n\nAs an example, if we split it into { [1, -4], [0, -2] }, we can reorder them into { [1, -4], [0, -2] } or { [0, -2], [1, -4] }. However, after merging the subarrays, it is impossible to get a sorted array.\n\nInput:\n```\n3\n5 4\n6 3 4 2 1\n4 2\n1 -4 0 -2\n5 1\n1 2 3 4 5\n```\n\nOutput:\n```\nYes\nNo\nYes\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ |a_i| ≤ 10^9). It is guaranteed that all numbers are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, you should output a single string.\n\nIf Moamen can sort the array in non-decreasing order, output \"YES\" (without quotes). Otherwise, output \"NO\" (without quotes).\n\nYou can print each letter of \"YES\" and \"NO\" in any case (upper or lower).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

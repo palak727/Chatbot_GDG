@@ -1,0 +1,16 @@
+{
+    "id": "1883F",
+    "contest_id": 1883,
+    "problem_letter": "F",
+    "title": "F. You Are So Beautiful",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n. Calculate the number of subarrays of this array 1 ≤ l ≤ r ≤ n, such that:\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by their description.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the size of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the number of suitable subarrays.\n\nIn the first test case, there is exactly one subarray (1, 1) that suits us.\n\nIn the second test case, there is exactly one subarray (1, 2) that suits us. Subarrays (1, 1) and (2, 2) do not suit us, as the subsequence [1] occurs twice in the array.\n\nIn the third test case, all subarrays except (1, 1) and (3, 3) are suitable.\n\nInput:\n```\n61121 131 2 142 3 2 154 5 4 5 4101 7 7 2 3 4 3 2 1 100\n```\n\nOutput:\n```\n1\n1\n4\n7\n4\n28\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by their description.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the size of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the number of suitable subarrays.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1743A",
+    "contest_id": 1743,
+    "problem_letter": "A",
+    "title": "A. Password",
+    "statement": "Monocarp has forgotten the password to his mobile phone. The password consists of 4 digits from 0 to 9 (note that it can start with the digit 0).\n\nMonocarp remembers that his password had exactly two different digits, and each of these digits appeared exactly two times in the password. Monocarp also remembers some digits which were definitely not used in the password.\n\nYou have to calculate the number of different sequences of 4 digits that could be the password for Monocarp's mobile phone (i. e. these sequences should meet all constraints on Monocarp's password).\n\nThe first line contains a single integer t (1 ≤ t ≤ 200) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 8) — the number of digits for which Monocarp remembers that they were not used in the password.\n\nThe second line contains n different integers a_1, a_2, … a_n (0 ≤ a_i ≤ 9) representing the digits that were not used in the password. Note that the digits a_1, a_2, …, a_n are given in ascending order.\n\nFor each testcase, print one integer — the number of different 4-digit sequences that meet the constraints.\n\nIn the first example, all possible passwords are: \"3377\", \"3737\", \"3773\", \"7337\", \"7373\", \"7733\".\n\nInput:\n```\n280 1 2 4 5 6 8 918\n```\n\nOutput:\n```\n6\n216\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 200) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 8) — the number of digits for which Monocarp remembers that they were not used in the password.\n\nThe second line contains n different integers a_1, a_2, … a_n (0 ≤ a_i ≤ 9) representing the digits that were not used in the password. Note that the digits a_1, a_2, …, a_n are given in ascending order.",
+    "output": "For each testcase, print one integer — the number of different 4-digit sequences that meet the constraints.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

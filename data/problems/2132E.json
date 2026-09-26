@@ -1,0 +1,20 @@
+{
+    "id": "2132E",
+    "contest_id": 2132,
+    "problem_letter": "E",
+    "title": "E. Arithmetics Competition",
+    "statement": "In the arithmetic competition, participants need to achieve the highest possible sum from the cards they have. In the team \"fst_ezik\", Vadim has n cards with numbers a_i, and Kostya has m cards with numbers b_i. In each of the q rounds, they want to win, but this time the rules of the competition are slightly different from the usual ones.\n\nIn each round, the participants are given three numbers x_i, y_i, and z_i. The team \"fst_ezik\" must choose exactly z_i cards from all the cards they have, but Vadim can choose no more than x_i cards from his set, and Kostya can choose no more than y_i cards from his set. Help them find the highest possible sum for each of the q rounds.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nIn the first line of each test case, three integers n, m, q are given (1 ≤ n, m ≤ 2·10^5, 1 ≤ q ≤ 10^5) — the number of cards Vadim has, the number of cards Kostya has, and the number of rounds in the competition.\n\nThe second line contains n integers a_i — the numbers on Vadim's cards (1 ≤ a_i ≤ 10^9).\n\nThe third line contains m integers b_i — the numbers on Kostya's cards (1 ≤ b_i ≤ 10^9).\n\nThe following q lines describe the rounds with three integers x_i, y_i, z_i (0 ≤ x_i ≤ n, 0 ≤ y_i ≤ m, 0 ≤ z_i ≤ x_i + y_i) — the limit on the number of cards Vadim can choose, the limit on the number of cards Kostya can choose, and the number of cards they need to select together.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5, the sum of m across all test cases does not exceed 2·10^5, and the sum of q across all test cases does not exceed 10^5.\n\nFor each test case, output q numbers — the highest possible sum for the corresponding round.\n\nInput:\n```\n43 4 510 20 301 2 3 40 0 03 4 73 4 41 4 42 2 45 5 2500000000 300000000 100000000 900000000 700000000800000000 400000000 1000000000 600000000 2000000001 4 35 2 64 4 1100 100 20 20100 100 20 204 4 53 3 62 363 711286 121 1021 1 13 1 11 2 01 3 20 1 03 3 3\n```\n\nOutput:\n```\n0\n70\n64\n39\n57\n2700000000\n4200000000\n420\n711\n711\n0\n997\n0\n1360\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nIn the first line of each test case, three integers n, m, q are given (1 ≤ n, m ≤ 2·10^5, 1 ≤ q ≤ 10^5) — the number of cards Vadim has, the number of cards Kostya has, and the number of rounds in the competition.\n\nThe second line contains n integers a_i — the numbers on Vadim's cards (1 ≤ a_i ≤ 10^9).\n\nThe third line contains m integers b_i — the numbers on Kostya's cards (1 ≤ b_i ≤ 10^9).\n\nThe following q lines describe the rounds with three integers x_i, y_i, z_i (0 ≤ x_i ≤ n, 0 ≤ y_i ≤ m, 0 ≤ z_i ≤ x_i + y_i) — the limit on the number of cards Vadim can choose, the limit on the number of cards Kostya can choose, and the number of cards they need to select together.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5, the sum of m across all test cases does not exceed 2·10^5, and the sum of q across all test cases does not exceed 10^5.",
+    "output": "For each test case, output q numbers — the highest possible sum for the corresponding round.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "sortings",
+        "ternary search",
+        "*1700"
+    ],
+    "rating": 1700
+}

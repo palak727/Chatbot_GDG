@@ -1,0 +1,17 @@
+{
+    "id": "1749A",
+    "contest_id": 1749,
+    "problem_letter": "A",
+    "title": "A. Cowardly Rooks",
+    "statement": "There's a chessboard of size n × n. m rooks are placed on it in such a way that:\n\nA rook attacks all cells that are in its row or column.\n\nIs it possible to move exactly one rook (you can choose which one to move) into a different cell so that no two rooks still attack each other? A rook can move into any cell in its row or column if no other rook stands on its path.\n\nThe first line contains a single integer t (1 ≤ t ≤ 2000) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n, m ≤ 8) — the size of the chessboard and the number of the rooks.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n) — the position of the i-th rook: x_i is the row and y_i is the column.\n\nNo two rooks occupy the same cell. No two rooks attack each other.\n\nFor each testcase, print \"YES\" if it's possible to move exactly one rook into a different cell so that no two rooks still attack each other. Otherwise, print \"NO\".\n\nIn the first testcase, the rooks are in the opposite corners of a 2 × 2 board. Each of them has a move into a neighbouring corner, but moving there means getting attacked by another rook.\n\nIn the second testcase, there's a single rook in a middle of a 3 × 3 board. It has 4 valid moves, and every move is fine because there's no other rook to attack it.\n\nInput:\n```\n22 21 22 13 12 2\n```\n\nOutput:\n```\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2000) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n, m ≤ 8) — the size of the chessboard and the number of the rooks.\n\nThe i-th of the next m lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n) — the position of the i-th rook: x_i is the row and y_i is the column.\n\nNo two rooks occupy the same cell. No two rooks attack each other.",
+    "output": "For each testcase, print \"YES\" if it's possible to move exactly one rook into a different cell so that no two rooks still attack each other. Otherwise, print \"NO\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

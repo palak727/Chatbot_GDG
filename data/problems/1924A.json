@@ -1,0 +1,20 @@
+{
+    "id": "1924A",
+    "contest_id": 1924,
+    "problem_letter": "A",
+    "title": "A. Did We Get Everything Covered?",
+    "statement": "You are given two integers n and k along with a string s.\n\nYour task is to check whether all possible strings of length n that can be formed using the first k lowercase English alphabets occur as a subsequence of s. If the answer is NO, you also need to print a string of length n that can be formed using the first k lowercase English alphabets which does not occur as a subsequence of s.\n\nIf there are multiple answers, you may print any of them.\n\nNote: A string a is called a subsequence of another string b if a can be obtained by deleting some (possibly zero) characters from b without changing the order of the remaining characters.\n\nThe first line of input contains a single integer t , (1 ≤ t ≤ 10^5), the number of test cases.\n\nThe first line of each test case contains 3 integers n , (1 ≤ n ≤ 26), : k , (1 ≤ k ≤ 26), : m , (1 ≤ m ≤ 1000), where n and k are the same as described in the input and m is the length of the string s.\n\nThe second line of each test case contains a single string s of length m, comprising only of the first k lowercase English alphabets.\n\nIt is guaranteed that the sum of m and the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, print YES if all possible strings of length n that can be formed using the first k lowercase English alphabets occur as a subsequence of s, else print NO.\n\nIf your answer is NO, print a string of length n that can be formed using the first k lowercase English alphabets which does not occur as a subsequence of s in the next line.\n\nYou may print each letter of YES or NO in any case (for example, YES, yES, YeS will all be recognized as a positive answer).\n\nFor the first test case, all possible strings (aa, ab, ba, bb) of length 2 that can be formed using the first 2 English alphabets occur as a subsequence of abba.\n\nFor the second test case, the string aa is not a subsequence of abb.\n\nInput:\n```\n32 2 4abba2 2 3abb3 3 10aabbccabab\n```\n\nOutput:\n```\nYES\nNO\naa\nNO\nccc\n```",
+    "input": "The first line of input contains a single integer t , (1 ≤ t ≤ 10^5), the number of test cases.\n\nThe first line of each test case contains 3 integers n , (1 ≤ n ≤ 26), : k , (1 ≤ k ≤ 26), : m , (1 ≤ m ≤ 1000), where n and k are the same as described in the input and m is the length of the string s.\n\nThe second line of each test case contains a single string s of length m, comprising only of the first k lowercase English alphabets.\n\nIt is guaranteed that the sum of m and the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, print YES if all possible strings of length n that can be formed using the first k lowercase English alphabets occur as a subsequence of s, else print NO.\n\nIf your answer is NO, print a string of length n that can be formed using the first k lowercase English alphabets which does not occur as a subsequence of s in the next line.\n\nYou may print each letter of YES or NO in any case (for example, YES, yES, YeS will all be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "shortest paths",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1618A",
+    "contest_id": 1618,
+    "problem_letter": "A",
+    "title": "A. Polycarp and Sums of Subsequences",
+    "statement": "Polycarp had an array a of 3 positive integers. He wrote out the sums of all non-empty subsequences of this array, sorted them in non-decreasing order, and got an array b of 7 integers.\n\nFor example, if a = {1, 4, 3}, then Polycarp wrote out 1, 4, 3, 1 + 4 = 5, 1 + 3 = 4, 4 + 3 = 7, 1 + 4 + 3 = 8. After sorting, he got an array b = {1, 3, 4, 4, 5, 7, 8}.\n\nUnfortunately, Polycarp lost the array a. He only has the array b left. Help him to restore the array a.\n\nThe first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line which contains 7 integers b_1, b_2, …, b_7 (1 ≤ b_i ≤ 10^9; b_i ≤ b_{i+1}).\n\nAdditional constraint on the input: there exists at least one array a which yields this array b as described in the statement.\n\nFor each test case, print 3 integers — a_1, a_2 and a_3. If there can be several answers, print any of them.\n\nThe subsequence of the array a is a sequence that can be obtained from a by removing zero or more of its elements.\n\nTwo subsequences are considered different if index sets of elements included in them are different. That is, the values of the elements don't matter in the comparison of subsequences. In particular, any array of length 3 has exactly 7 different non-empty subsequences.\n\nInput:\n```\n5\n1 3 4 4 5 7 8\n1 2 3 4 5 6 7\n300000000 300000000 300000000 600000000 600000000 600000000 900000000\n1 1 2 999999998 999999999 999999999 1000000000\n1 2 2 3 3 4 5\n```\n\nOutput:\n```\n1 4 3\n4 1 2\n300000000 300000000 300000000\n999999998 1 1\n1 2 2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nEach test case consists of one line which contains 7 integers b_1, b_2, …, b_7 (1 ≤ b_i ≤ 10^9; b_i ≤ b_{i+1}).\n\nAdditional constraint on the input: there exists at least one array a which yields this array b as described in the statement.",
+    "output": "For each test case, print 3 integers — a_1, a_2 and a_3. If there can be several answers, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

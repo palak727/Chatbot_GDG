@@ -1,0 +1,19 @@
+{
+    "id": "1658F",
+    "contest_id": 1658,
+    "problem_letter": "F",
+    "title": "F. Juju and Binary String",
+    "statement": "The cuteness of a binary string is the number of texttt1s divided by the length of the string. For example, the cuteness of texttt01101 is 3/5.\n\nJuju has a binary string s of length n. She wants to choose some non-intersecting subsegments of s such that their concatenation has length m and it has the same cuteness as the string s.\n\nMore specifically, she wants to find two arrays l and r of equal length k such that 1 ≤ l_1 ≤ r_1 < l_2 ≤ r_2 < … < l_k ≤ r_k ≤ n, and also:\n\nJuju does not like splitting the string into many parts, so she also wants to minimize the value of k. Find the minimum value of k such that there exist l and r that satisfy the constraints above or determine that it is impossible to find such l and r for any k.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ m ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, if there is no valid pair of l and r, print -1.\n\nOtherwise, print k + 1 lines.\n\nIn the first line, print a number k (1 ≤ k ≤ m) — the minimum number of subsegments required.\n\nThen print k lines, the i-th should contain l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the range of the i-th subsegment. Note that you should output the subsegments such that the inequality l_1 ≤ r_1 < l_2 ≤ r_2 < … < l_k ≤ r_k is true.\n\nIn the first example, the cuteness of texttt0011 is the same as the cuteness of texttt01.\n\nIn the second example, the cuteness of texttt11000011 is 1/2 and there is no subsegment of size 6 with the same cuteness. So we must use 2 disjoint subsegments texttt10 and texttt0011.\n\nIn the third example, there are 8 ways to split the string such that ∑limits_{i=1}^k (r_i - l_i + 1) = 3 but none of them has the same cuteness as texttt0101.\n\nIn the last example, we don't have to split the string.\n\nInput:\n```\n44 200118 6110000114 301015 511111\n```\n\nOutput:\n```\n1\n2 3\n2\n2 3\n5 8\n-1\n1\n1 5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ m ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string s of length n.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, if there is no valid pair of l and r, print -1.\n\nOtherwise, print k + 1 lines.\n\nIn the first line, print a number k (1 ≤ k ≤ m) — the minimum number of subsegments required.\n\nThen print k lines, the i-th should contain l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the range of the i-th subsegment. Note that you should output the subsegments such that the inequality l_1 ≤ r_1 < l_2 ≤ r_2 < … < l_k ≤ r_k is true.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

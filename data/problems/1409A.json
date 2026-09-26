@@ -1,0 +1,17 @@
+{
+    "id": "1409A",
+    "contest_id": 1409,
+    "problem_letter": "A",
+    "title": "A. Yet Another Two Integers Problem",
+    "statement": "You are given two integers a and b.\n\nIn one move, you can choose some integer k from 1 to 10 and add it to a or subtract it from a. In other words, you choose an integer k ∈ [1; 10] and perform a := a + k or a := a - k. You may use different values of k in different moves.\n\nYour task is to find the minimum number of moves required to obtain b from a.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers a and b (1 ≤ a, b ≤ 10^9).\n\nFor each test case, print the answer: the minimum number of moves required to obtain b from a.\n\nIn the first test case of the example, you don't need to do anything.\n\nIn the second test case of the example, the following sequence of moves can be applied: 13 → 23 → 32 → 42 (add 10, add 9, add 10).\n\nIn the third test case of the example, the following sequence of moves can be applied: 18 → 10 → 4 (subtract 8, subtract 6).\n\nInput:\n```\n6\n5 5\n13 42\n18 4\n1337 420\n123456789 1000000000\n100500 9000\n```\n\nOutput:\n```\n0\n3\n2\n92\n87654322\n9150\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers a and b (1 ≤ a, b ≤ 10^9).",
+    "output": "For each test case, print the answer: the minimum number of moves required to obtain b from a.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

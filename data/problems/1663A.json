@@ -1,0 +1,17 @@
+{
+    "id": "1663A",
+    "contest_id": 1663,
+    "problem_letter": "A",
+    "title": "A. Who Tested?",
+    "statement": "A. Who Tested?time limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard output",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "expression parsing",
+        "trees"
+    ],
+    "rating": null
+}

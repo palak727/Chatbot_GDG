@@ -1,0 +1,19 @@
+{
+    "id": "1925B",
+    "contest_id": 1925,
+    "problem_letter": "B",
+    "title": "B. A Balanced Problemset?",
+    "statement": "Jay managed to create a problem of difficulty x and decided to make it the second problem for Codeforces Round #921.\n\nBut Yash fears that this problem will make the contest highly unbalanced, and the coordinator will reject it. So, he decided to break it up into a problemset of n sub-problems such that the difficulties of all the sub-problems are a positive integer and their sum is equal to x.\n\nThe coordinator, Aleksey, defines the balance of a problemset as the GCD of the difficulties of all sub-problems in the problemset.\n\nFind the maximum balance that Yash can achieve if he chooses the difficulties of the sub-problems optimally.\n\nThe first line of input contains a single integer t (1≤ t≤ 10^3) denoting the number of test cases.\n\nEach test case contains a single line of input containing two integers x (1≤ x≤ 10^8) and n (1≤ n≤ x).\n\nFor each test case, print a single line containing a single integer denoting the maximum balance of the problemset Yash can achieve.\n\nFor the first test case, one possible way is to break up the problem of difficulty 10 into a problemset having three problems of difficulties 4, 2 and 4 respectively, giving a balance equal to 2.\n\nFor the second test case, there is only one way to break up the problem of difficulty 5 into a problemset of 5 problems with each problem having a difficulty 1 giving a balance equal to 1.\n\nInput:\n```\n310 35 5420 69\n```\n\nOutput:\n```\n2\n1\n6\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 10^3) denoting the number of test cases.\n\nEach test case contains a single line of input containing two integers x (1≤ x≤ 10^8) and n (1≤ n≤ x).",
+    "output": "For each test case, print a single line containing a single integer denoting the maximum balance of the problemset Yash can achieve.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

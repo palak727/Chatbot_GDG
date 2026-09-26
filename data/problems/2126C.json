@@ -1,0 +1,17 @@
+{
+    "id": "2126C",
+    "contest_id": 2126,
+    "problem_letter": "C",
+    "title": "C. I Will Definitely Make It",
+    "statement": "You are given n towers, numbered from 1 to n. Tower i has a height of h_i. At time 0, you are on the tower with index k, and the current water level is 1.\n\nEvery second, the water level rises by 1 unit. At any moment, if the water level becomes strictly greater than the height of the tower you are on, you perish.\n\nYou have a magical ability: at moment x, you can start teleporting from tower i to tower j, which will take lvert h_i - h_j rvert seconds. That is, until moment x + lvert h_i - h_j rvert, you will be on tower i, and at moment x + lvert h_i - h_j rvert, you will move to tower j. You can start a new teleportation at the same moment you just arrived at tower j.\n\nFor example, if n=k=4, h=[4, 4, 4, 2], then if you start teleporting from tower 4 to tower 1 at moment 0, the movement will look as follows:\n\nNote that if the height of tower 1 were 5, you would not be able to teleport to it immediately, as you would be submerged at moment 2.\n\nYour goal is to reach any tower with the maximum height before the water covers you.\n\nDetermine if this is possible.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5) — the number of towers and the index of the tower you are initially on.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10^9) — the heights of the towers.\n\nIt is guaranteed that the sum of all n across all test cases does not exceed 10^5.\n\nFor each test case, output one line: \"YES\", if you can reach the tower with the maximum height before the water covers you, or \"NO\" otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first test case, the only possible path is: 3 → 2 → 1 → 4 → 5.\n\nIn the second test case, regardless of the order, it will not be possible to reach the tallest tower.\n\nIn the third test case, one of the possible paths is: 4 → 1.\n\nInput:\n```\n55 33 2 1 4 53 11 3 44 44 4 4 26 22 3 6 9 1 24 21 2 5 6\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5) — the number of towers and the index of the tower you are initially on.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10^9) — the heights of the towers.\n\nIt is guaranteed that the sum of all n across all test cases does not exceed 10^5.",
+    "output": "For each test case, output one line: \"YES\", if you can reach the tower with the maximum height before the water covers you, or \"NO\" otherwise.\n\nYou may output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

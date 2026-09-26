@@ -1,0 +1,18 @@
+{
+    "id": "1310D",
+    "contest_id": 1310,
+    "problem_letter": "D",
+    "title": "D. Tourism",
+    "statement": "Masha lives in a country with n cities numbered from 1 to n. She lives in the city number 1.\n\nThere is a direct train route between each pair of distinct cities i and j, where i ≠ j. In total there are n(n-1) distinct routes. Every route has a cost, cost for route from i to j may be different from the cost of route from j to i.\n\nMasha wants to start her journey in city 1, take exactly k routes from one city to another and as a result return to the city 1. Masha is really careful with money, so she wants the journey to be as cheap as possible. To do so Masha doesn't mind visiting a city multiple times or even taking the same route multiple times.\n\nMasha doesn't want her journey to have odd cycles. Formally, if you can select visited by Masha city v, take odd number of routes used by Masha in her journey and return to the city v, such journey is considered unsuccessful.\n\nHelp Masha to find the cheapest (with minimal total cost of all taken routes) successful journey.\n\nFirst line of input had two integer numbers n,k (2 ≤ n ≤ 80; 2 ≤ k ≤ 10): number of cities in the country and number of routes in Masha's journey. It is guaranteed that k is even.\n\nNext n lines hold route descriptions: j-th number in i-th line represents the cost of route from i to j if i ≠ j, and is 0 otherwise (there are no routes i → i). All route costs are integers from 0 to 10^8.\n\nOutput a single integer — total cost of the cheapest Masha's successful journey.\n\nInput:\n```\n5 8\n0 1 2 2 0\n0 0 1 1 2\n0 1 0 0 0\n2 1 1 0 0\n2 0 1 2 0\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 2\n0 1 1\n2 0 1\n2 2 0\n```\n\nOutput:\n```\n3\n```",
+    "input": "First line of input had two integer numbers n,k (2 ≤ n ≤ 80; 2 ≤ k ≤ 10): number of cities in the country and number of routes in Masha's journey. It is guaranteed that k is even.\n\nNext n lines hold route descriptions: j-th number in i-th line represents the cost of route from i to j if i ≠ j, and is 0 otherwise (there are no routes i → i). All route costs are integers from 0 to 10^8.",
+    "output": "Output a single integer — total cost of the cheapest Masha's successful journey.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "probabilities",
+        "*2300"
+    ],
+    "rating": 2300
+}

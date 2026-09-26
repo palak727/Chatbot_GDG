@@ -1,0 +1,21 @@
+{
+    "id": "1867D",
+    "contest_id": 1867,
+    "problem_letter": "D",
+    "title": "D. Cyclic Operations",
+    "statement": "Egor has an array a of length n, initially consisting of zeros. However, he wanted to turn it into another array b of length n.\n\nSince Egor doesn't take easy paths, only the following operation can be used (possibly zero or several times):\n\nHe became interested in whether it is possible to get the array b using only these operations. Since Egor is still a beginner programmer, he asked you to help him solve this problem.\n\nThe operation % means taking the remainder, that is, a%b is equal to the remainder of dividing the number a by the number b.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^5) - the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).\n\nThe second line contains the array b_1, b_2, …, b_n (1 ≤ b_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" (without quotes) if there is a way to get the array b using only the given operation. Otherwise, output \"NO\" (without quotes). You can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be accepted as a positive answer.\n\nLet's consider the first example:\n\nIn the second example, it can be proven that the array b cannot be obtained, therefore the answer is NO.\n\nInput:\n```\n65 32 3 5 3 44 22 4 3 11 113 11 2 35 35 4 3 2 16 11 2 3 1 5 6\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nNO\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^5) - the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).\n\nThe second line contains the array b_1, b_2, …, b_n (1 ≤ b_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" (without quotes) if there is a way to get the array b using only the given operation. Otherwise, output \"NO\" (without quotes). You can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

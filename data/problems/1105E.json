@@ -1,0 +1,19 @@
+{
+    "id": "1105E",
+    "contest_id": 1105,
+    "problem_letter": "E",
+    "title": "E. Helping Hiasat",
+    "statement": "Hiasat registered a new account in NeckoForces and when his friends found out about that, each one of them asked to use his name as Hiasat's handle.\n\nLuckily for Hiasat, he can change his handle in some points in time. Also he knows the exact moments friends will visit his profile page. Formally, you are given a sequence of events of two types:\n\nThe friend s will be happy, if each time he visits Hiasat's profile his handle would be s.\n\nHiasat asks you to help him, find the maximum possible number of happy friends he can get.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 10^5, 1 ≤ m ≤ 40) — the number of events and the number of friends.\n\nThen n lines follow, each denoting an event of one of two types:\n\nIt's guaranteed, that each friend's name consists only of lowercase Latin letters.\n\nIt's guaranteed, that the first event is always of the first type and each friend will visit Hiasat's profile at least once.\n\nPrint a single integer — the maximum number of happy friends.\n\nIn the first example, the best way is to change the handle to the \"motarack\" in the first event and to the \"light\" in the fourth event. This way, \"motarack\" and \"light\" will be happy, but \"mike\" will not.\n\nIn the second example, you can choose either \"alice\", \"bob\" or \"tanyaromanova\" and only that friend will be happy.\n\nInput:\n```\n5 3\n1\n2 motarack\n2 mike\n1\n2 light\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 3\n1\n2 alice\n2 bob\n2 tanyaromanova\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 10^5, 1 ≤ m ≤ 40) — the number of events and the number of friends.\n\nThen n lines follow, each denoting an event of one of two types:\n\nIt's guaranteed, that each friend's name consists only of lowercase Latin letters.\n\nIt's guaranteed, that the first event is always of the first type and each friend will visit Hiasat's profile at least once.",
+    "output": "Print a single integer — the maximum number of happy friends.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "meet-in-the-middle",
+        "*2200"
+    ],
+    "rating": 2200
+}

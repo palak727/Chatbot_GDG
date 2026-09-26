@@ -1,0 +1,18 @@
+{
+    "id": "1956E1",
+    "contest_id": 1956,
+    "problem_letter": "E1",
+    "title": "E1. Nene vs. Monsters (Easy Version)",
+    "statement": "This is the easy version of the problem. The only difference between the versions is the constraints on a_i. You can make hacks only if both versions of the problem are solved.\n\nNene is fighting with n monsters, located in a circle. These monsters are numbered from 1 to n, and the i-th (1 ≤ i ≤ n) monster's current energy level is a_i.\n\nSince the monsters are too strong, Nene decided to fight with them using the Attack Your Neighbour spell. When Nene uses this spell, the following actions happen in the following order one by one:\n\nWhen the monster with energy level x attacks the monster with the energy level y, the energy level of the defending monster becomes max(0, y-x) (the energy level of the attacking monster remains equal to x).\n\nNene is going to use this spell 10^100 times and deal with the monsters that will still have a non-zero energy level herself. She wants you to determine which monsters will have a non-zero energy level once she will use the described spell 10^100 times.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of test cases follows.\n\nThe first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2·10^5) — the current energy levels of monsters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case,\n\nIf m=0, you may either output an empty line or don't output it.\n\nIn the first test case, the following actions happen during the first 3 uses of the spell in this order:\n\nAfter each of the next uses of the spell, energy levels of monsters do not change. Thus, only the 1-st monster has a non-zero energy level in the end.\n\nIn the second test case, both monsters initially have zero energy level.\n\nInput:\n```\n532 5 320 041 5 7 244 2 1 2131 1 4 5 1 4 1 9 1 9 8 1 0\n```\n\nOutput:\n```\n1\n1 \n0\n\n1\n1 \n2\n1 3 \n6\n1 3 6 8 10 12 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of test cases follows.\n\nThe first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2·10^5) — the current energy levels of monsters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case,\n\nIf m=0, you may either output an empty line or don't output it.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

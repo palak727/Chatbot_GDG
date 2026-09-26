@@ -1,0 +1,18 @@
+{
+    "id": "1791D",
+    "contest_id": 1791,
+    "problem_letter": "D",
+    "title": "D. Distinct Split",
+    "statement": "Let's denote the f(x) function for a string x as the number of distinct characters that the string contains. For example f(textttabc) = 3, f(textttbbbbb) = 1, and f(textttbabacaba) = 3.\n\nGiven a string s, split it into two non-empty strings a and b such that f(a) + f(b) is the maximum possible. In other words, find the maximum possible value of f(a) + f(b) such that a + b = s (the concatenation of string a and string b is equal to string s).\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum possible value of f(a) + f(b) such that a + b = s.\n\nFor the first test case, there is only one valid way to split textttaa into two non-empty strings texttta and texttta, and f(texttta) + f(texttta) = 1 + 1 = 2.\n\nFor the second test case, by splitting textttabcabcd into textttabc and textttabcd we can get the answer of f(textttabc) + f(textttabcd) = 3 + 4 = 7 which is maximum possible.\n\nFor the third test case, it doesn't matter how we split the string, the answer will always be 2.\n\nInput:\n```\n52aa7abcabcd5aaaaa10paiumoment4aazz\n```\n\nOutput:\n```\n2\n7\n2\n10\n3\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum possible value of f(a) + f(b) such that a + b = s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

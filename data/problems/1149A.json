@@ -1,0 +1,19 @@
+{
+    "id": "1149A",
+    "contest_id": 1149,
+    "problem_letter": "A",
+    "title": "A. Prefix Sum Primes",
+    "statement": "We're giving away nice huge bags containing number tiles! A bag we want to present to you contains n tiles. Each of them has a single number written on it — either 1 or 2.\n\nHowever, there is one condition you must fulfill in order to receive the prize. You will need to put all the tiles from the bag in a sequence, in any order you wish. We will then compute the sums of all prefixes in the sequence, and then count how many of these sums are prime numbers. If you want to keep the prize, you will need to maximize the number of primes you get.\n\nCan you win the prize? Hurry up, the bags are waiting!\n\nThe first line of the input contains a single integer n (1 ≤ n ≤ 200,000) — the number of number tiles in the bag. The following line contains n space-separated integers a_1, a_2, …, a_n (a_i ∈ {1, 2}) — the values written on the tiles.\n\nOutput a permutation b_1, b_2, …, b_n of the input sequence (a_1, a_2, …, a_n) maximizing the number of the prefix sums being prime numbers. If there are multiple optimal permutations, output any.\n\nThe first solution produces the prefix sums 1, colorblue2, colorblue3, colorblue5, colorblue7 (four primes constructed), while the prefix sums in the second solution are 1, colorblue2, colorblue3, colorblue5, 6, colorblue7, 8, 10, colorblue11 (five primes). Primes are marked bold and blue. In each of these cases, the number of produced primes is maximum possible.\n\nInput:\n```\n5\n1 2 1 2 1\n```\n\nOutput:\n```\n1 1 1 2 2\n```\n\nInput:\n```\n9\n1 1 2 1 1 1 2 1 1\n```\n\nOutput:\n```\n1 1 1 2 1 1 1 2 1\n```",
+    "input": "The first line of the input contains a single integer n (1 ≤ n ≤ 200,000) — the number of number tiles in the bag. The following line contains n space-separated integers a_1, a_2, …, a_n (a_i ∈ {1, 2}) — the values written on the tiles.",
+    "output": "Output a permutation b_1, b_2, …, b_n of the input sequence (a_1, a_2, …, a_n) maximizing the number of the prefix sums being prime numbers. If there are multiple optimal permutations, output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

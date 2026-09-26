@@ -1,0 +1,19 @@
+{
+    "id": "2039C1",
+    "contest_id": 2039,
+    "problem_letter": "C1",
+    "title": "C1. Shohag Loves XOR (Easy Version)",
+    "statement": "This is the easy version of the problem. The differences between the two versions are highlighted in bold. You can only make hacks if both versions of the problem are solved.\n\nShohag has two integers x and m. Help him count the number of integers 1 ≤ y ≤ m such that x ≠ y and x oplus y is a divisor^{∗} of either x, y, or both. Here oplus is the bitwise XOR operator.\n\n^{∗}The number b is a divisor of the number a if there exists an integer c such that a = b·c.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains two space-separated integers x and m (1 ≤ x ≤ 10^6, 1 ≤ m ≤ 10^18).\n\nIt is guaranteed that the sum of x over all test cases does not exceed 10^7.\n\nFor each test case, print a single integer — the number of suitable y.\n\nIn the first test case, for x = 6, there are 3 valid values for y among the integers from 1 to m = 9, and they are 4, 5, and 7.\n\nIn the second test case, for x = 5, there are 2 valid values for y among the integers from 1 to m = 7, and they are 4 and 6.\n\nInput:\n```\n56 95 72 36 44 1\n```\n\nOutput:\n```\n3\n2\n1\n1\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains two space-separated integers x and m (1 ≤ x ≤ 10^6, 1 ≤ m ≤ 10^18).\n\nIt is guaranteed that the sum of x over all test cases does not exceed 10^7.",
+    "output": "For each test case, print a single integer — the number of suitable y.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

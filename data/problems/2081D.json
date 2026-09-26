@@ -1,0 +1,23 @@
+{
+    "id": "2081D",
+    "contest_id": 2081,
+    "problem_letter": "D",
+    "title": "D. MST in Modulo Graph",
+    "statement": "You are given a complete graph with n vertices, where the i-th vertex has a weight p_i. The weight of the edge connecting vertex x and vertex y is equal to max(p_x, p_y) bmod min(p_x, p_y).\n\nFind the smallest total weight of a set of n - 1 edges that connect all n vertices in this graph.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test contains an integer n (1 ≤ n ≤ 5·10^5).\n\nThe next line of each test contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 5·10^5).\n\nThe sum of n over all test cases does not exceed 5·10^5.\n\nThe sum of max(p_1,p_2,…,p_n) over all test cases does not exceed 5·10^5.\n\nFor each test case, output a single integer — the weight of the minimum spanning tree.\n\nIn the first test case, one of the possible ways to connect the edges is to draw the edges (1, 2), (1, 4), (1, 5), (2, 3). The weight of the first edge is max(p_1, p_2) bmod min(p_1, p_2)=4 bmod 3 = 1, and the weights of all other edges are 0.\n\nInput:\n```\n454 3 3 4 4102 10 3 2 9 9 4 6 4 61233 56 48 41 89 73 99 150 55 100 111 130711 45 14 19 19 8 10\n```\n\nOutput:\n```\n1\n0\n44\n10\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test contains an integer n (1 ≤ n ≤ 5·10^5).\n\nThe next line of each test contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ 5·10^5).\n\nThe sum of n over all test cases does not exceed 5·10^5.\n\nThe sum of max(p_1,p_2,…,p_n) over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output a single integer — the weight of the minimum spanning tree.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dsu",
+        "graphs",
+        "greedy",
+        "math",
+        "number theory",
+        "sortings",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

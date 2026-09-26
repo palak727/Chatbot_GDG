@@ -1,0 +1,18 @@
+{
+    "id": "1866L",
+    "contest_id": 1866,
+    "problem_letter": "L",
+    "title": "L. Lihmuf Balling",
+    "statement": "After working at a factory (Lihmuf Sorting), Lihmuf wants to play a game with his good friend, Pak Chanek. There are N boxes numbered from 1 to N. The i-th box contains i balls. Pak Chanek and Lihmuf will play a game using those boxes.\n\nThere will be N turns numbered from 1 to N. On each turn, Pak Chanek chooses one box and takes all balls from that box, then Lihmuf does the same thing for one box he chooses (it is possible that the two chosen boxes are the same).\n\nGiven an integer M. Before the game begins, Lihmuf must choose an integer K satisfying 1 ≤ K ≤ M. It is known that on the j-th turn, Pak Chanek will choose the j-th box, while Lihmuf will choose the y-th box, with y=((j × K - 1) bmod N) + 1. Help Lihmuf choose the correct value of K so that he will get as many balls as possible! If there are more than one possible values of K that result in the maximum total balls, find the minimum such value of K.\n\nKeep in mind that each box can be chosen more than once, but after a box is chosen for the first time, the box becomes empty.\n\nThe only line contains two integers N and M (1 ≤ N ≤ 10^9; 1 ≤ M ≤ 2000) — the number of boxes and the maximum limit for the value of K.\n\nAn integer representing the value of K that will make Lihmuf get as many balls as possible. If there are more than one possible value of K that result in the maximum total balls, find the minimum such value of K.\n\nIn the first example, if Lihmuf chooses K=1, the game will go as follows:\n\nIn total, Lihmuf gets 0+0+0=0 balls.\n\nThe maximum total balls that can be earned by Lihmuf is 0 because he can only choose K=1. Therefore, K=1 is the minimum possible value of K that results in the maximum total balls.\n\nIn the second example, if Lihmuf chooses K=3, the game will go as follows:\n\nIn total, Lihmuf gets 3+0+4+0+0=7 balls.\n\nIt can be obtained that 7 is the maximum total balls that can be earned by Lihmuf. The possible values of K that result in 7 total balls are 3 and 4. Therefore, K=3 is the minimum possible value of K that results in the maximum total balls.\n\nInput:\n```\n3 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 4\n```\n\nOutput:\n```\n3\n```",
+    "input": "The only line contains two integers N and M (1 ≤ N ≤ 10^9; 1 ≤ M ≤ 2000) — the number of boxes and the maximum limit for the value of K.",
+    "output": "An integer representing the value of K that will make Lihmuf get as many balls as possible. If there are more than one possible value of K that result in the maximum total balls, find the minimum such value of K.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1503E",
+    "contest_id": 1503,
+    "problem_letter": "E",
+    "title": "E. 2-Coloring",
+    "statement": "There is a grid with n rows and m columns. Every cell of the grid should be colored either blue or yellow.\n\nA coloring of the grid is called stupid if every row has exactly one segment of blue cells and every column has exactly one segment of yellow cells.\n\nIn other words, every row must have at least one blue cell, and all blue cells in a row must be consecutive. Similarly, every column must have at least one yellow cell, and all yellow cells in a column must be consecutive.\n\nHow many stupid colorings of the grid are there? Two colorings are considered different if there is some cell that is colored differently.\n\nThe only line contains two integers n, m (1≤ n, m≤ 2021).\n\nOutput a single integer — the number of stupid colorings modulo 998244353.\n\nIn the first test case, these are the only two stupid 2× 2 colorings.\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 3\n```\n\nOutput:\n```\n294\n```\n\nInput:\n```\n2020 2021\n```\n\nOutput:\n```\n50657649\n```",
+    "input": "The only line contains two integers n, m (1≤ n, m≤ 2021).",
+    "output": "Output a single integer — the number of stupid colorings modulo 998244353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1799C",
+    "contest_id": 1799,
+    "problem_letter": "C",
+    "title": "C. Double Lexicographically Minimum",
+    "statement": "You are given a string s. You can reorder the characters to form a string t. Define t_max to be the lexicographical maximum of t and t in reverse order.\n\nGiven s determine the lexicographically minimum value of t_max over all reorderings t of s.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Descriptions of test cases follow.\n\nThe first and only line of each test case contains a string s (1 ≤ |s| ≤ 10^5). s consists of only lowercase English letters.\n\nIt is guaranteed that the sum of |s| over all test cases does not exceed 10^5.\n\nFor each test case print the lexicographically minimum value of t_max over all reorderings t of s.\n\nFor the first test case, there is only one reordering of s, namely \"a\".\n\nFor the second test case, there are three reorderings of s.\n\nThe lexicographical minimum of t_max over all cases is \"aba\".\n\nInput:\n```\n12aaababbabcaabbaabbbaaabbabbbabbbbabbcceagaffcaba\n```\n\nOutput:\n```\na\naba\nbab\nbca\nabba\nabbba\nababa\nbbab\nbbabb\nbbcca\nagea\nacffba\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Descriptions of test cases follow.\n\nThe first and only line of each test case contains a string s (1 ≤ |s| ≤ 10^5). s consists of only lowercase English letters.\n\nIt is guaranteed that the sum of |s| over all test cases does not exceed 10^5.",
+    "output": "For each test case print the lexicographically minimum value of t_max over all reorderings t of s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1700"
+    ],
+    "rating": 1700
+}

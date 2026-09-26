@@ -1,0 +1,19 @@
+{
+    "id": "1864B",
+    "contest_id": 1864,
+    "problem_letter": "B",
+    "title": "B. Swap and Reverse",
+    "statement": "You are given a string s of length n consisting of lowercase English letters, and an integer k. In one step you can perform any one of the two operations below:\n\nYou can make as many steps as you want (possibly, zero). Your task is to find the lexicographically smallest string you can obtain after some number of steps.\n\nA string a is lexicographically smaller than a string b of the same length if and only if the following holds:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k < n ≤ 10^5).\n\nThe second line of each test case contains the string s of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print the lexicographically smallest string after doing some (possibly, zero) steps.\n\nIn the first test case, we can obtain the string \"aimn\" using the following operations:\n\nIt can be proven that we cannot obtain any string lexicographically smaller than \"aimn\". Therefore, \"aimn\" is the answer.\n\nIn the second test case, we can obtain the string \"aandp\" using the following operations:\n\nIt can be proven that we cannot obtain any string lexicographically smaller than \"aandp\". Therefore, \"aandp\" is the answer.\n\nInput:\n```\n54 2nima5 3panda9 2theforces7 3amirfar6 4rounds\n```\n\nOutput:\n```\naimn\naandp\nceefhorst\naafmirr\ndnorsu\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ k < n ≤ 10^5).\n\nThe second line of each test case contains the string s of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print the lexicographically smallest string after doing some (possibly, zero) steps.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1747A",
+    "contest_id": 1747,
+    "problem_letter": "A",
+    "title": "A. Two Groups",
+    "statement": "You are given an array a consisting of n integers. You want to distribute these n integers into two groups s_1 and s_2 (groups can be empty) so that the following conditions are satisfied:\n\nHere sum(s_1) denotes the sum of the numbers in the group s_1, and sum(s_2) denotes the sum of the numbers in the group s_2.\n\nDetermine the maximum possible value of |sum(s_1)| - |sum(s_2)|.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2 … a_n (-10^9 ≤ a_i ≤ 10^9) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum possible value of |sum(s_1)| - |sum(s_2)|.\n\nIn the first testcase, we can distribute as s_1 = {10}, s_2 = {-10}. Then the value will be |10| - |-10| = 0.\n\nIn the second testcase, we can distribute as s_1 = {0, 11, -1}, s_2 = {-2}. Then the value will be |0 + 11 - 1| - |-2| = 10 - 2 = 8.\n\nIn the third testcase, we can distribute as s_1 = {2, 3, 2}, s_2 = {}. Then the value will be |2 + 3 + 2| - |0| = 7.\n\nIn the fourth testcase, we can distribute as s_1 = {-9, -4, 0}, s_2 = {2, 0}. Then the value will be |-9 - 4 + 0| - |2 + 0| = 13 - 2 = 11.\n\nInput:\n```\n4210 -104-2 -1 11 032 3 25-9 2 0 0 -4\n```\n\nOutput:\n```\n0\n8\n7\n11\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1,a_2 … a_n (-10^9 ≤ a_i ≤ 10^9) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum possible value of |sum(s_1)| - |sum(s_2)|.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

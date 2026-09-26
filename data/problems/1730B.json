@@ -1,0 +1,21 @@
+{
+    "id": "1730B",
+    "contest_id": 1730,
+    "problem_letter": "B",
+    "title": "B. Meeting on the Line",
+    "statement": "n people live on the coordinate line, the i-th one lives at the point x_i (1 ≤ i ≤ n). They want to choose a position x_0 to meet. The i-th person will spend |x_i - x_0| minutes to get to the meeting place. Also, the i-th person needs t_i minutes to get dressed, so in total he or she needs t_i + |x_i - x_0| minutes.\n\nHere |y| denotes the absolute value of y.\n\nThese people ask you to find a position x_0 that minimizes the time in which all n people can gather at the meeting place.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then the test cases follow.\n\nEach test case consists of three lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of people.\n\nThe second line contains n integers x_1, x_2, …, x_n (0 ≤ x_i ≤ 10^8) — the positions of the people.\n\nThe third line contains n integers t_1, t_2, …, t_n (0 ≤ t_i ≤ 10^8), where t_i is the time i-th person needs to get dressed.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single real number — the optimum position x_0. It can be shown that the optimal position x_0 is unique.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{−6}. Formally, let your answer be a, the jury's answer be b. Your answer will be considered correct if (|a−b|)/(max(1,|b|)) ≤ 10^{−6}.\n\nInput:\n```\n710323 10 021 40 031 2 30 0 031 2 34 1 233 3 35 3 365 4 7 2 10 43 2 5 1 4 6\n```\n\nOutput:\n```\n0\n2\n2.5\n2\n1\n3\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. Then the test cases follow.\n\nEach test case consists of three lines.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of people.\n\nThe second line contains n integers x_1, x_2, …, x_n (0 ≤ x_i ≤ 10^8) — the positions of the people.\n\nThe third line contains n integers t_1, t_2, …, t_n (0 ≤ t_i ≤ 10^8), where t_i is the time i-th person needs to get dressed.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single real number — the optimum position x_0. It can be shown that the optimal position x_0 is unique.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{−6}. Formally, let your answer be a, the jury's answer be b. Your answer will be considered correct if (|a−b|)/(max(1,|b|)) ≤ 10^{−6}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "geometry",
+        "greedy",
+        "implementation",
+        "math",
+        "ternary search",
+        "*1600"
+    ],
+    "rating": 1600
+}

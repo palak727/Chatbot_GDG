@@ -1,0 +1,18 @@
+{
+    "id": "1571H",
+    "contest_id": 1571,
+    "problem_letter": "H",
+    "title": "H. Laser Beams",
+    "statement": "Ira is developing a computer game. This game features randomized generation and difficulty of levels. To achieve randomized difficulty, some enemies in each level are randomly replaced with stronger ones.\n\nTo describe how do the levels in the game look, let's introduce a coordinate system in such a way that Ox axis goes from left to right, and Oy axis goes from bottom to top. A level is a rectangle with opposite corners in points (0, 0) and (a, b). Each enemy's position is a point in this rectangle.\n\nAs for now, Ira has implemented one type of enemy in the game, in two different versions — basic and upgraded. Both versions of enemies Ira has implemented fire laser rays in several directions:\n\nLaser rays pass through enemies and are blocked only by the borders of the level (sides of the rectangle that denotes the level). Enemies are unaffected by lasers.\n\nThe level Ira is working on has n enemies. The i-th enemy is in the point (x_i, y_i), and it has a probability of p_i to be upgraded (it's either upgraded with probability p_i, or basic with probability 1-p_i). All these events are independent.\n\nIra wants to estimate the expected difficulty. She considers that a good way to evaluate the difficulty of the level is to count the number of parts in which the level is divided by the laser rays. So, she wants to calculate the expected number of these parts.\n\nHelp her to do the evaluation of the level!\n\nThe first line contains three integers n, a and b (1 ≤ n ≤ 100; 2 ≤ a, b ≤ 100) — the number of enemies in the level and the dimensions of the level.\n\nThen n lines follow, the i-th of them contains three integers x_i, y_i and p'_i (1 ≤ x_i ≤ a - 1; 1 ≤ y_i ≤ b - 1; 1 ≤ p'_i ≤ 999999), meaning that the i-th enemy is located at (x_i, y_i) and has a probability of (p'_i)/(10^6) to be upgraded.\n\nNo two enemies are located in the same point.\n\nPrint one integer — the expected number of parts in which the lasers divide the level, taken modulo 998244353 (i. e. let the expected number of parts be x/y as an irreducible fraction; you have to print x·y^{-1} bmod 998244353, where y^{-1} is a number such that y·y^{-1} bmod 998244353 = 1).\n\nExplanation to the first example:\n\nWith probability 1/2, the only enemy is not upgraded and the level looks like this (4 parts):\n\nWith probability 1/2, the only enemy is upgraded and the level looks like this (8 parts):\n\nSo, the expected number of parts is 4·1/2 + 8·1/2 = 6.\n\nInput:\n```\n1 2 2\n1 1 500000\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n2 3 2\n1 1 500000\n2 1 500000\n```\n\nOutput:\n```\n499122187\n```",
+    "input": "The first line contains three integers n, a and b (1 ≤ n ≤ 100; 2 ≤ a, b ≤ 100) — the number of enemies in the level and the dimensions of the level.\n\nThen n lines follow, the i-th of them contains three integers x_i, y_i and p'_i (1 ≤ x_i ≤ a - 1; 1 ≤ y_i ≤ b - 1; 1 ≤ p'_i ≤ 999999), meaning that the i-th enemy is located at (x_i, y_i) and has a probability of (p'_i)/(10^6) to be upgraded.\n\nNo two enemies are located in the same point.",
+    "output": "Print one integer — the expected number of parts in which the lasers divide the level, taken modulo 998244353 (i. e. let the expected number of parts be x/y as an irreducible fraction; you have to print x·y^{-1} bmod 998244353, where y^{-1} is a number such that y·y^{-1} bmod 998244353 = 1).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "geometry",
+        "probabilities",
+        "*2900"
+    ],
+    "rating": 2900
+}

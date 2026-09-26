@@ -1,0 +1,18 @@
+{
+    "id": "2043G",
+    "contest_id": 2043,
+    "problem_letter": "G",
+    "title": "G. Problem with Queries",
+    "statement": "You are given an array a, consisting of n integers. Your task is to process q queries of two types:\n\nNote that the queries in this task are encoded; each subsequent query can only be decoded after calculating the answer to the preceding query of the second type.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThe third line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThe next q lines describe the queries in one of the following formats:\n\nThe queries are encoded as follows: let last be the answer to the latest processed query of the second type (initially, last = 0).\n\nDon't forget to update the value of last after answering each query of the second type.\n\nAdditional constraint on the input: there is at least one query of the second type.\n\nFor each query of the second type, print the answer — the number of pairs of indices (i, j) such that l ≤ i < j ≤ r and a_i ≠ a_j.\n\nIn the first example, the actual queries (after decoding) are:\n\nInput:\n```\n31 2 352 0 21 0 22 0 21 2 02 1 0\n```\n\nOutput:\n```\n3 2 0 \n```\n\nInput:\n```\n71 3 4 4 7 1 332 1 62 1 02 5 6\n```\n\nOutput:\n```\n13 18 0 \n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThe third line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nThe next q lines describe the queries in one of the following formats:\n\nThe queries are encoded as follows: let last be the answer to the latest processed query of the second type (initially, last = 0).\n\nDon't forget to update the value of last after answering each query of the second type.\n\nAdditional constraint on the input: there is at least one query of the second type.",
+    "output": "For each query of the second type, print the answer — the number of pairs of indices (i, j) such that l ≤ i < j ≤ r and a_i ≠ a_j.",
+    "time_limit": "8 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "*3000"
+    ],
+    "rating": 3000
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1801F",
+    "contest_id": 1801,
+    "problem_letter": "F",
+    "title": "F. Another n-dimensional chocolate bar",
+    "statement": "Vasya and his friends want to cut a chocolate bar to get at least k pieces, while Vasya wants to maximize the volume of the smallest of them. It is possible to cut the chocolate bar only at the junction of the lobules, and each incision must pass through the entire chocolate bar along some hyperplane involved in the formation of lobules. Only after making all the cuts, Vasya disassembles the chocolate into pieces.\n\nMore formally, Vasya wants to choose the numbers b_1, b_2, …, b_n (1 ≤ b_i ≤ a_i) — the number of parts into which Vasya will cut the chocolate bar along each dimension. The condition b_1·b_2·…·b_n ≥ k must be met to get at least k pieces after all cuts. It can be noted that with optimal cutting with such parameters, the minimum piece will contain lfloor a_1/b_1 rfloor dotsm lfloor a_n/b_n rfloor slices, and its volume will be equal to lfloor a_1/b_1 rfloor dotsm lfloor a_n/b_n rfloor·1/(a_1 a_2 ⋯ a_n).\n\nVasya wants to get the maximum possible value of the volume of the minimum piece multiplied by k, that is, he wants to maximize the number of lfloor a_1/b_1 rfloor dotsm lfloor a_n/b_n rfloor·1/(a_1 a_2 ⋯ a_n)·k. Help him with this.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 100, 1 ≤ k ≤ 10^7) — the dimension of the chocolate bar, and how many parts it needs to be divided into.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7) — the number of pieces on which the chocolate is placed along each of the dimensions.\n\nPrint one number — the maximum possible volume of the smallest of the obtained pieces, multiplied by k, with an absolute or relative error of no more than 10^{-9}.\n\nIf it is impossible to cut a chocolate bar into at least k pieces under the given restrictions, output 0.\n\nIn the first example, a one – dimensional chocolate bar can be divided as follows:\n\nThen the answer will be 2/5·2 = 0.8\n\nIn the second example, the chocolate bar can be cut as follows:\n\nThen the answer will be 2/5·3/10·6 = 0.72\n\nIn the third example, the chocolate bar can be cut as follows:\n\nThen the answer will be 2/4·1/4·7 = 0.875\n\nInput:\n```\n1 2\n5\n```\n\nOutput:\n```\n0.8\n```\n\nInput:\n```\n2 6\n5 10\n```\n\nOutput:\n```\n0.72\n```\n\nInput:\n```\n2 7\n4 4\n```\n\nOutput:\n```\n0.875\n```\n\nInput:\n```\n2 3\n4 5\n```\n\nOutput:\n```\n0.75\n```\n\nInput:\n```\n4 444\n57 179 239 2\n```\n\nOutput:\n```\n0.97557326850704739751\n```\n\nInput:\n```\n2 5\n2 2\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 100, 1 ≤ k ≤ 10^7) — the dimension of the chocolate bar, and how many parts it needs to be divided into.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^7) — the number of pieces on which the chocolate is placed along each of the dimensions.",
+    "output": "Print one number — the maximum possible volume of the smallest of the obtained pieces, multiplied by k, with an absolute or relative error of no more than 10^{-9}.\n\nIf it is impossible to cut a chocolate bar into at least k pieces under the given restrictions, output 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "meet-in-the-middle",
+        "number theory",
+        "*2700"
+    ],
+    "rating": 2700
+}

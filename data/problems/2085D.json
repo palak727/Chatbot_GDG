@@ -1,0 +1,18 @@
+{
+    "id": "2085D",
+    "contest_id": 2085,
+    "problem_letter": "D",
+    "title": "D. Serval and Kaitenzushi Buffet",
+    "statement": "Serval has just found a Kaitenzushi buffet restaurant. Kaitenzushi means that there is a conveyor belt in the restaurant, delivering plates of sushi in front of the customer, Serval.\n\nIn this restaurant, each plate contains exactly k pieces of sushi and the i-th plate has a deliciousness d_i. Serval will have a meal in this restaurant for n minutes, and within the n minutes, he must eat up all the pieces of sushi he took from the belt.\n\nDenote the counter for uneaten taken pieces of sushi as r. Initially, r=0. In the i-th minute (1≤ i≤ n), only the i-th plate of sushi will be delivered in front of Serval, and he can do one of the following:\n\nNote that after the n minutes, the value of r must be 0.\n\nServal wants to maximize the sum of the deliciousnesses of all the plates he took. Help him find it out!\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1≤ k < n≤ 2·10^5) — the number of minutes of the meal and the number of sushi pieces in each plate.\n\nThe second line contains n integers d_1, d_2, …, d_n (1≤ d_i≤ 10^9) — the deliciousness of each plate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum possible sum of the deliciousnesses of all the plates Serval took.\n\nIn the first test case, it can be shown that Serval can eat up at most one plate of sushi. Since the second plate of sushi has the greatest deliciousness 6 among all the plates, he will take it from the belt in the second minute, and then eat it up in the following 2 minutes.\n\nIn the second test case, it can be shown that it is optimal for Serval to eat up the first, third, and sixth plates of sushi. The sum of the deliciousnesses of these plates is 3 + 4 + 9 = 16.\n\nInput:\n```\n55 23 6 4 1 27 13 1 4 1 5 9 24 34 3 2 16 21 3 5 2 4 66 11000000000 1 1000000000 1 1000000000 1\n```\n\nOutput:\n```\n6\n16\n4\n6\n3000000000\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1≤ k < n≤ 2·10^5) — the number of minutes of the meal and the number of sushi pieces in each plate.\n\nThe second line contains n integers d_1, d_2, …, d_n (1≤ d_i≤ 10^9) — the deliciousness of each plate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum possible sum of the deliciousnesses of all the plates Serval took.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "graph matchings",
+        "greedy",
+        "*2000"
+    ],
+    "rating": 2000
+}

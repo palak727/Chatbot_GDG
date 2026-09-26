@@ -1,0 +1,18 @@
+{
+    "id": "2117F",
+    "contest_id": 2117,
+    "problem_letter": "F",
+    "title": "F. Wildflower",
+    "statement": "Yousef has a rooted tree^{∗} consisting of exactly n vertices, which is rooted at vertex 1. You would like to give Yousef an array a of length n, where each a_i (1 ≤ i ≤ n) can either be 1 or 2.\n\nLet s_u denote the sum of a_v where vertex v is in the subtree^{†} of vertex u. Yousef considers the tree special if all the values in s are pairwise distinct (i.e., all subtree sums are unique).\n\nYour task is to help Yousef count the number of different arrays a that result in the tree being special. Two arrays b and c are different if there exists an index i such that b_i ≠ c_i.\n\nAs the result can be very large, you should print it modulo 10^9 + 7.\n\n^{∗}A tree is a connected undirected graph with n - 1 edges.\n\n^{†}The subtree of a vertex v is the set of all vertices that pass through v on a simple path to the root. Note that vertex v is also included in the set.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of several lines. The first line of the test case contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThen n−1 lines follow, each of them contains two integers u and v (1 ≤ u,v ≤ n, u ≠ v) which describe a pair of vertices connected by an edge. It is guaranteed that the given graph is a tree and has no loops or multiple edges.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print one integer x — the number of different arrays a that result in the tree being special, modulo 10^9 + 7.\n\nThe tree given in the fifth test case:\n\nInput:\n```\n721 281 22 33 82 44 55 66 7101 22 33 44 55 64 77 84 99 1071 44 23 23 52 66 771 22 33 43 54 66 775 74 61 61 32 66 753 41 21 32 5\n```\n\nOutput:\n```\n4\n24\n0\n16\n48\n0\n4\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of several lines. The first line of the test case contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThen n−1 lines follow, each of them contains two integers u and v (1 ≤ u,v ≤ n, u ≠ v) which describe a pair of vertices connected by an edge. It is guaranteed that the given graph is a tree and has no loops or multiple edges.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print one integer x — the number of different arrays a that result in the tree being special, modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

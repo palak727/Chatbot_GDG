@@ -1,0 +1,21 @@
+{
+    "id": "1848F",
+    "contest_id": 1848,
+    "problem_letter": "F",
+    "title": "F. Vika and Wiki",
+    "statement": "Recently, Vika was studying her favorite internet resource - Wikipedia.\n\nOn the expanses of Wikipedia, she read about an interesting mathematical operation bitwise XOR, denoted by oplus.\n\nVika began to study the properties of this mysterious operation. To do this, she took an array a consisting of n non-negative integers and applied the following operation to all its elements at the same time: a_i = a_i oplus a_{(i+1) bmod n}. Here x bmod y denotes the remainder of dividing x by y. The elements of the array are numbered starting from 0.\n\nSince it is not enough to perform the above actions once for a complete study, Vika repeats them until the array a becomes all zeros.\n\nDetermine how many of the above actions it will take to make all elements of the array a zero. If this moment never comes, output -1.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2^20) - the length of the array a.\n\nIt is guaranteed that n can be represented as 2^k for some integer k (0 ≤ k ≤ 20).\n\nThe second line contains n integers a_0, a_1, a_2, …, a_{n-1} (0 ≤ a_i ≤ 10^9) - the elements of the array a.\n\nOutput a single number - the minimum number of actions required to make all elements of the array a zero, or -1 if the array a will never become zero.\n\nIn the first example, after one operation, the array a will become equal to [3, 3, 3, 3]. After one more operation, it will become equal to [0, 0, 0, 0].\n\nIn the second example, the array a initially consists only of zeros.\n\nIn the third example, after one operation, the array a will become equal to [0].\n\nInput:\n```\n4\n1 2 1 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\n0 0\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n1\n14\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n8\n0 1 2 3 4 5 6 7\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2^20) - the length of the array a.\n\nIt is guaranteed that n can be represented as 2^k for some integer k (0 ≤ k ≤ 20).\n\nThe second line contains n integers a_0, a_1, a_2, …, a_{n-1} (0 ≤ a_i ≤ 10^9) - the elements of the array a.",
+    "output": "Output a single number - the minimum number of actions required to make all elements of the array a zero, or -1 if the array a will never become zero.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "combinatorics",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*2400"
+    ],
+    "rating": 2400
+}

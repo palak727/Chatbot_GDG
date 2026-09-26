@@ -1,0 +1,17 @@
+{
+    "id": "1684B",
+    "contest_id": 1684,
+    "problem_letter": "B",
+    "title": "B. Z mod X = C",
+    "statement": "You are given three positive integers a, b, c (a < b < c). You have to find three positive integers x, y, z such that:\n\nx bmod y = a, y bmod z = b, z bmod x = c.\n\nHere p bmod q denotes the remainder from dividing p by q. It is possible to show that for such constraints the answer always exists.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. Description of the test cases follows.\n\nEach test case contains a single line with three integers a, b, c (1 ≤ a < b < c ≤ 10^8).\n\nFor each test case output three positive integers x, y, z (1 ≤ x, y, z ≤ 10^18) such that x bmod y = a, y bmod z = b, z bmod x = c.\n\nYou can output any correct answer.\n\nIn the first test case:\n\nx bmod y = 12 bmod 11 = 1;\n\ny bmod z = 11 bmod 4 = 3;\n\nz bmod x = 4 bmod 12 = 4.\n\nInput:\n```\n4\n1 3 4\n127 234 421\n2 7 8\n59 94 388\n```\n\nOutput:\n```\n12 11 4\n1063 234 1484\n25 23 8\n2221 94 2609\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. Description of the test cases follows.\n\nEach test case contains a single line with three integers a, b, c (1 ≤ a < b < c ≤ 10^8).",
+    "output": "For each test case output three positive integers x, y, z (1 ≤ x, y, z ≤ 10^18) such that x bmod y = a, y bmod z = b, z bmod x = c.\n\nYou can output any correct answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

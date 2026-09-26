@@ -1,0 +1,17 @@
+{
+    "id": "2068K",
+    "contest_id": 2068,
+    "problem_letter": "K",
+    "title": "K. Amusement Park Rides",
+    "statement": "Ivan, Dmitrii, and Pjotr are celebrating Ivan's birthday at an amusement park with n attractions. The i-th attraction operates at minutes a_i, 2a_i, 3a_i, … (i.e., every a_i minutes).\n\nEach minute, the friends can either ride exactly one available attraction together or wait. Since the rides are very short, they can board another attraction the next minute. They may ride the attractions in any order.\n\nThey want to experience each ride exactly once before heading off to enjoy the birthday cake. What is the earliest time by which they can finish all n attractions?\n\nEach test contains multiple test cases. The first line contains an integer t (1≤ t≤ 2000) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line contains an integer n (1≤ n ≤ 2000) — the number of attractions.\n\nThe second line contains n integers a_1,, a_2,,…,, a_n (1 ≤ a_i ≤ 10^9) — the values determining when the various attractions operate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, print the earliest time the three friends can finish all n attractions.\n\nIn the first test case, the three friends can ride the i-th attraction at the i-th minute. Since there are 4 attractions, they need 4 minutes to ride them all.\n\nIn the third test case, the three friends can ride the attractions in order at minutes 1,, 2,, 3,, 4,, 6,, 8 respectively. Therefore, they can ride all attractions in 8 minutes. One can show that it is impossible to finish all the attractions earlier.\n\nInput:\n```\n341 2 3 441 1 1 161 2 1 2 2 2\n```\n\nOutput:\n```\n4\n4\n8\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1≤ t≤ 2000) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line contains an integer n (1≤ n ≤ 2000) — the number of attractions.\n\nThe second line contains n integers a_1,, a_2,,…,, a_n (1 ≤ a_i ≤ 10^9) — the values determining when the various attractions operate.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, print the earliest time the three friends can finish all n attractions.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "flows",
+        "graphs",
+        "*3000"
+    ],
+    "rating": 3000
+}

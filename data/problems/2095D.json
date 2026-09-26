@@ -1,0 +1,16 @@
+{
+    "id": "2095D",
+    "contest_id": 2095,
+    "problem_letter": "D",
+    "title": "D. Where Am I?",
+    "statement": "Output two real numbers -90 ≤ a ≤ 90 and -180 ≤ b ≤ 180, with up to 6 digits after the decimal point.\n\nInput:\n```\n​\n```\n\nOutput:\n```\n​\n```",
+    "input": "",
+    "output": "Output two real numbers -90 ≤ a ≤ 90 and -180 ≤ b ≤ 180, with up to 6 digits after the decimal point.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "geometry"
+    ],
+    "rating": null
+}

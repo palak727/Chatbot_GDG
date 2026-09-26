@@ -1,0 +1,18 @@
+{
+    "id": "1505B",
+    "contest_id": 1505,
+    "problem_letter": "B",
+    "title": "B. DMCA",
+    "statement": "Many people are aware of DMCA – Digital Millennium Copyright Act. But another recently proposed DMCA – Digital Millennium Calculation Act – is much less known.\n\nIn this problem you need to find a root of a number according to this new DMCA law.\n\nThe input contains a single integer a (1 ≤ a ≤ 1000000).\n\nOutput the result – an integer number.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n81\n```\n\nOutput:\n```\n9\n```",
+    "input": "The input contains a single integer a (1 ≤ a ≤ 1000000).",
+    "output": "Output the result – an integer number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

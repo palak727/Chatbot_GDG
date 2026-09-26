@@ -1,0 +1,18 @@
+{
+    "id": "1209C",
+    "contest_id": 1209,
+    "problem_letter": "C",
+    "title": "C. Paint the Digits",
+    "statement": "You are given a sequence of n digits d_1d_2 … d_n. You need to paint all the digits in two colors so that:\n\nFor example, for the sequence d=914 the only valid coloring is 211 (paint in the color 1 two last digits, paint in the color 2 the first digit). But 122 is not a valid coloring (9 concatenated with 14 is not a non-decreasing sequence).\n\nIt is allowed that either of the two colors is not used at all. Digits painted in the same color are not required to have consecutive positions.\n\nFind any of the valid ways to paint the given sequence of digits or determine that it is impossible to do.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10000) — the number of test cases in the input.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of a given sequence of digits.\n\nThe next line contains a sequence of n digits d_1d_2 … d_n (0 ≤ d_i ≤ 9). The digits are written in a row without spaces or any other separators. The sequence can start with 0.\n\nIt is guaranteed that the sum of the values ​​of n for all test cases in the input does not exceed 2·10^5.\n\nPrint t lines — the answers to each of the test cases in the input.\n\nIf there is a solution for a test case, the corresponding output line should contain any of the valid colorings written as a string of n digits t_1t_2 … t_n (1 ≤ t_i ≤ 2), where t_i is the color the i-th digit is painted in. If there are several feasible solutions, print any of them.\n\nIf there is no solution, then the corresponding output line should contain a single character '-' (the minus sign).\n\nIn the first test case, d=040425524644. The output t=121212211211 is correct because 0022444 (painted in 1) concatenated with 44556 (painted in 2) is 002244444556 which is a sorted sequence of n given digits.\n\nInput:\n```\n5\n12\n040425524644\n1\n0\n9\n123456789\n2\n98\n3\n987\n```\n\nOutput:\n```\n121212211211\n1\n222222222\n21\n-\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10000) — the number of test cases in the input.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5) — the length of a given sequence of digits.\n\nThe next line contains a sequence of n digits d_1d_2 … d_n (0 ≤ d_i ≤ 9). The digits are written in a row without spaces or any other separators. The sequence can start with 0.\n\nIt is guaranteed that the sum of the values ​​of n for all test cases in the input does not exceed 2·10^5.",
+    "output": "Print t lines — the answers to each of the test cases in the input.\n\nIf there is a solution for a test case, the corresponding output line should contain any of the valid colorings written as a string of n digits t_1t_2 … t_n (1 ≤ t_i ≤ 2), where t_i is the color the i-th digit is painted in. If there are several feasible solutions, print any of them.\n\nIf there is no solution, then the corresponding output line should contain a single character '-' (the minus sign).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

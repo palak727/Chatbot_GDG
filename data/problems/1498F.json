@@ -1,0 +1,22 @@
+{
+    "id": "1498F",
+    "contest_id": 1498,
+    "problem_letter": "F",
+    "title": "F. Christmas Game",
+    "statement": "Alice and Bob are going to celebrate Christmas by playing a game with a tree of presents. The tree has n nodes (numbered 1 to n, with some node r as its root). There are a_i presents are hanging from the i-th node.\n\nBefore beginning the game, a special integer k is chosen. The game proceeds as follows:\n\nFor each possible root of the tree, find who among Alice or Bob wins the game.\n\nNote: The depth of a node i in a tree with root r is defined as the number of edges on the simple path from node r to node i. The depth of root r itself is zero.\n\nThe first line contains two space-separated integers n and k (3 ≤ n ≤ 10^5, 1 ≤ k ≤ 20).\n\nThe next n-1 lines each contain two integers x and y (1 ≤ x, y ≤ n, x ≠ y), denoting an undirected edge between the two nodes x and y. These edges form a tree of n nodes.\n\nThe next line contains n space-separated integers denoting the array a (0 ≤ a_i ≤ 10^9).\n\nOutput n integers, where the i-th integer is 1 if Alice wins the game when the tree is rooted at node i, or 0 otherwise.\n\nLet us calculate the answer for sample input with root node as 1 and as 2.\n\nRoot node 1\n\nAlice always wins in this case. One possible gameplay between Alice and Bob is:\n\nBob is now unable to make a move and hence loses.\n\nRoot node 2\n\nBob always wins in this case. One such gameplay is:\n\nAlice is now unable to make a move and hence loses.\n\nInput:\n```\n5 1\n1 2\n1 3\n5 2\n4 3\n0 3 2 4 4\n```\n\nOutput:\n```\n1 0 0 1 1 \n```",
+    "input": "The first line contains two space-separated integers n and k (3 ≤ n ≤ 10^5, 1 ≤ k ≤ 20).\n\nThe next n-1 lines each contain two integers x and y (1 ≤ x, y ≤ n, x ≠ y), denoting an undirected edge between the two nodes x and y. These edges form a tree of n nodes.\n\nThe next line contains n space-separated integers denoting the array a (0 ≤ a_i ≤ 10^9).",
+    "output": "Output n integers, where the i-th integer is 1 if Alice wins the game when the tree is rooted at node i, or 0 otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "games",
+        "math",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

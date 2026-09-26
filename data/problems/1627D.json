@@ -1,0 +1,19 @@
+{
+    "id": "1627D",
+    "contest_id": 1627,
+    "problem_letter": "D",
+    "title": "D. Not Adding",
+    "statement": "You have an array a_1, a_2, …, a_n consisting of n distinct integers. You are allowed to perform the following operation on it:\n\nNote that the array changes after each operation, and the subsequent operations are performed on the new array.\n\nWhat is the maximum number of times you can perform the operation on the array?\n\nThe first line consists of a single integer n (2 ≤ n ≤ 10^6).\n\nThe second line consists of n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6). All a_i are distinct.\n\nOutput a single line containing one integer — the maximum number of times the operation can be performed on the given array.\n\nIn the first example, one of the ways to perform maximum number of operations on the array is:\n\nIt can be proved that there is no way to perform more than 3 operations on the original array.\n\nIn the second example one can add 3, then 1, then 5, and 2.\n\nInput:\n```\n5\n4 20 1 25 30\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3\n6 10 15\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line consists of a single integer n (2 ≤ n ≤ 10^6).\n\nThe second line consists of n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6). All a_i are distinct.",
+    "output": "Output a single line containing one integer — the maximum number of times the operation can be performed on the given array.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

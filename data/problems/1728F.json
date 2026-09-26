@@ -1,0 +1,18 @@
+{
+    "id": "1728F",
+    "contest_id": 1728,
+    "problem_letter": "F",
+    "title": "F. Fishermen",
+    "statement": "There are n fishermen who have just returned from a fishing trip. The i-th fisherman has caught a fish of size a_i.\n\nThe fishermen will choose some order in which they are going to tell the size of the fish they caught (the order is just a permutation of size n). However, they are not entirely honest, and they may \"increase\" the size of the fish they have caught.\n\nFormally, suppose the chosen order of the fishermen is [p_1, p_2, p_3, …, p_n]. Let b_i be the value which the i-th fisherman in the order will tell to the other fishermen. The values b_i are chosen as follows:\n\nFor example, let n = 7, a = [1, 8, 2, 3, 2, 2, 3]. If the chosen order is p = [1, 6, 7, 5, 3, 2, 4], then:\n\nYou have to choose the order of fishermen in a way that yields the minimum possible ∑limits_{i=1}^n b_i.\n\nThe first line contains one integer n (1 ≤ n ≤ 1000) — the number of fishermen.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).\n\nPrint one integer — the minimum possible value of ∑limits_{i=1}^n b_i you can obtain by choosing the order of fishermen optimally.\n\nInput:\n```\n7\n1 8 2 3 2 2 3\n```\n\nOutput:\n```\n33\n```\n\nInput:\n```\n10\n5 6 5 6 5 6 5 6 5 6\n```\n\nOutput:\n```\n165\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 1000) — the number of fishermen.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).",
+    "output": "Print one integer — the minimum possible value of ∑limits_{i=1}^n b_i you can obtain by choosing the order of fishermen optimally.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "flows",
+        "graph matchings",
+        "greedy",
+        "*3100"
+    ],
+    "rating": 3100
+}

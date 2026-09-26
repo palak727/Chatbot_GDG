@@ -1,0 +1,21 @@
+{
+    "id": "2053E",
+    "contest_id": 2053,
+    "problem_letter": "E",
+    "title": "E. Resourceful Caterpillar Sequence",
+    "statement": "There is a tree consisting of n vertices. Let a caterpillar be denoted by an integer pair (p, q) (1 ≤ p, q ≤ n, p ≠ q): its head is at vertex p, its tail is at vertex q, and it dominates all the vertices on the simple path from p to q (including p and q). The caterpillar sequence of (p, q) is defined as the sequence consisting only of the vertices on the simple path, sorted in the ascending order of the distance to p.\n\nNora and Aron are taking turns moving the caterpillar, with Nora going first. Both players will be using his or her own optimal strategy:\n\nIn Nora's turn, she must choose a vertex u adjacent to vertex p, which is not dominated by the caterpillar, and move all the vertices in it by one edge towards vertex u^{∗}. In Aron's turn, he must choose a vertex v adjacent to vertex q, which is not dominated by the caterpillar, and move all the vertices in it by one edge towards vertex v. Note that the moves allowed to the two players are different.\n\nWhenever p is a leaf^{†}, Nora wins^{‡}. Whenever q is a leaf, Aron wins. If either initially both p and q are leaves, or after 10^100 turns the game has not ended, the result is a tie.\n\nPlease count the number of integer pairs (p, q) with 1 ≤ p, q ≤ n and p ≠ q such that, if the caterpillar is initially (p, q), Aron wins the game.\n\n^{∗}In other words: Let the current caterpillar sequence be c_1, c_2, …, c_k, then after the move, the new caterpillar sequence becomes d(u, c_1), d(u, c_2), …, d(u, c_k). Here, d(x, y) is the next vertex on the simple path from y to x.\n\n^{†}In a tree, a vertex is called a leaf if and only if its degree is 1.\n\n^{‡}Therefore, Nora never fails to choose a vertex u when the game has not ended. The same goes for Aron.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe following n - 1 lines each contain two integers u and v (1 ≤ u, v ≤ n), denoting an edge between vertices u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 4·10^5.\n\nFor each test case, output a single line containing an integer: the number of integer pairs (p, q) which make Aron win.\n\nIn the first test case, all possible caterpillars are (1, 2) and (2, 1), resulting in a tie at the beginning, since both p and q are leaves.\n\nIn the second test case, the caterpillars that allow Aron to win are the following: (1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5). Let's look at some specific caterpillars.\n\nInput:\n```\n521 251 21 32 42 5121 611 24 812 32 76 128 12 35 129 210 3101 22 33 44 55 64 76 84 94 10251 1611 226 143 120 1423 1725 1910 113 1810 62 214 511 124 99 138 66 13 78 1910 2415 131 23 417 8\n```\n\nOutput:\n```\n0\n6\n40\n27\n171\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe following n - 1 lines each contain two integers u and v (1 ≤ u, v ≤ n), denoting an edge between vertices u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 4·10^5.",
+    "output": "For each test case, output a single line containing an integer: the number of integer pairs (p, q) which make Aron win.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "graphs",
+        "greedy",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

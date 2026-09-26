@@ -1,0 +1,18 @@
+{
+    "id": "1096A",
+    "contest_id": 1096,
+    "problem_letter": "A",
+    "title": "A. Find Divisible",
+    "statement": "You are given a range of positive integers from l to r.\n\nFind such a pair of integers (x, y) that l ≤ x, y ≤ r, x ≠ y and x divides y.\n\nIf there are multiple answers, print any of them.\n\nYou are also asked to answer T independent queries.\n\nThe first line contains a single integer T (1 ≤ T ≤ 1000) — the number of queries.\n\nEach of the next T lines contains two integers l and r (1 ≤ l ≤ r ≤ 998244353) — inclusive borders of the range.\n\nIt is guaranteed that testset only includes queries, which have at least one suitable pair.\n\nPrint T lines, each line should contain the answer — two integers x and y such that l ≤ x, y ≤ r, x ≠ y and x divides y. The answer in the i-th line should correspond to the i-th query from the input.\n\nIf there are multiple answers, print any of them.\n\nInput:\n```\n3\n1 10\n3 14\n1 10\n```\n\nOutput:\n```\n1 7\n3 9\n5 10\n```",
+    "input": "The first line contains a single integer T (1 ≤ T ≤ 1000) — the number of queries.\n\nEach of the next T lines contains two integers l and r (1 ≤ l ≤ r ≤ 998244353) — inclusive borders of the range.\n\nIt is guaranteed that testset only includes queries, which have at least one suitable pair.",
+    "output": "Print T lines, each line should contain the answer — two integers x and y such that l ≤ x, y ≤ r, x ≠ y and x divides y. The answer in the i-th line should correspond to the i-th query from the input.\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

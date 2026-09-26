@@ -1,0 +1,17 @@
+{
+    "id": "1136C",
+    "contest_id": 1136,
+    "problem_letter": "C",
+    "title": "C. Nastya Is Transposing Matrices",
+    "statement": "Nastya came to her informatics lesson, and her teacher who is, by the way, a little bit famous here gave her the following task.\n\nTwo matrices A and B are given, each of them has size n × m. Nastya can perform the following operation to matrix A unlimited number of times:\n\nNastya's task is to check whether it is possible to transform the matrix A to the matrix B.\n\nAs it may require a lot of operations, you are asked to answer this question for Nastya.\n\nA square submatrix of matrix M is a matrix which consist of all elements which comes from one of the rows with indeces x, x+1, …, x+k-1 of matrix M and comes from one of the columns with indeces y, y+1, …, y+k-1 of matrix M. k is the size of square submatrix. In other words, square submatrix is the set of elements of source matrix which form a solid square (i.e. without holes).\n\nThe first line contains two integers n and m separated by space (1 ≤ n, m ≤ 500) — the numbers of rows and columns in A and B respectively.\n\nEach of the next n lines contains m integers, the j-th number in the i-th of these lines denotes the j-th element of the i-th row of the matrix A (1 ≤ A_ij ≤ 10^9).\n\nEach of the next n lines contains m integers, the j-th number in the i-th of these lines denotes the j-th element of the i-th row of the matrix B (1 ≤ B_ij ≤ 10^9).\n\nPrint \"YES\" (without quotes) if it is possible to transform A to B and \"NO\" (without quotes) otherwise.\n\nYou can print each letter in any case (upper or lower).\n\nConsider the third example. The matrix A initially looks as follows.\n\nbeginbmatrix 1 & 2 & 3 4 & 5 & 6 7 & 8 & 9 endbmatrix\n\nThen we choose the whole matrix as transposed submatrix and it becomes\n\nbeginbmatrix 1 & 4 & 7 2 & 5 & 8 3 & 6 & 9 endbmatrix\n\nThen we transpose the submatrix with corners in cells (2, 2) and (3, 3).\n\nbeginbmatrix 1 & 4 & 7 2 & textbf5 & textbf8 3 & textbf6 & textbf9 endbmatrix\n\nSo matrix becomes\n\nbeginbmatrix 1 & 4 & 7 2 & 5 & 6 3 & 8 & 9 endbmatrix\n\nand it is B.\n\nInput:\n```\n2 2\n1 1\n6 1\n1 6\n1 1\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n2 2\n4 4\n4 5\n5 4\n4 4\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n3 3\n1 2 3\n4 5 6\n7 8 9\n1 4 7\n2 5 6\n3 8 9\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The first line contains two integers n and m separated by space (1 ≤ n, m ≤ 500) — the numbers of rows and columns in A and B respectively.\n\nEach of the next n lines contains m integers, the j-th number in the i-th of these lines denotes the j-th element of the i-th row of the matrix A (1 ≤ A_ij ≤ 10^9).\n\nEach of the next n lines contains m integers, the j-th number in the i-th of these lines denotes the j-th element of the i-th row of the matrix B (1 ≤ B_ij ≤ 10^9).",
+    "output": "Print \"YES\" (without quotes) if it is possible to transform A to B and \"NO\" (without quotes) otherwise.\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

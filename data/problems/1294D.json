@@ -1,0 +1,19 @@
+{
+    "id": "1294D",
+    "contest_id": 1294,
+    "problem_letter": "D",
+    "title": "D. MEX maximizing",
+    "statement": "Recall that MEX of an array is a minimum non-negative integer that does not belong to the array. Examples:\n\nYou are given an empty array a=[] (in other words, a zero-length array). You are also given a positive integer x.\n\nYou are also given q queries. The j-th query consists of one integer y_j and means that you have to append one element y_j to the array. The array length increases by 1 after a query.\n\nIn one move, you can choose any index i and set a_i := a_i + x or a_i := a_i - x (i.e. increase or decrease any element of the array by x). The only restriction is that a_i cannot become negative. Since initially the array is empty, you can perform moves only after the first query.\n\nYou have to maximize the MEX (minimum excluded) of the array if you can perform any number of such operations (you can even perform the operation multiple times with one element).\n\nYou have to find the answer after each of q queries (i.e. the j-th answer corresponds to the array of length j).\n\nOperations are discarded before each query. I.e. the array a after the j-th query equals to [y_1, y_2, …, y_j].\n\nThe first line of the input contains two integers q, x (1 ≤ q, x ≤ 4·10^5) — the number of queries and the value of x.\n\nThe next q lines describe queries. The j-th query consists of one integer y_j (0 ≤ y_j ≤ 10^9) and means that you have to append one element y_j to the array.\n\nPrint the answer to the initial problem after each query — for the query j print the maximum value of MEX after first j queries. Note that queries are dependent (the array changes after each query) but operations are independent between queries.\n\nIn the first example:\n\nInput:\n```\n7 3\n0\n1\n2\n2\n0\n0\n10\n```\n\nOutput:\n```\n1\n2\n3\n3\n4\n4\n7\n```\n\nInput:\n```\n4 3\n1\n2\n1\n2\n```\n\nOutput:\n```\n0\n0\n0\n0\n```",
+    "input": "The first line of the input contains two integers q, x (1 ≤ q, x ≤ 4·10^5) — the number of queries and the value of x.\n\nThe next q lines describe queries. The j-th query consists of one integer y_j (0 ≤ y_j ≤ 10^9) and means that you have to append one element y_j to the array.",
+    "output": "Print the answer to the initial problem after each query — for the query j print the maximum value of MEX after first j queries. Note that queries are dependent (the array changes after each query) but operations are independent between queries.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

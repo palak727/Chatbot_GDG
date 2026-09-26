@@ -1,0 +1,18 @@
+{
+    "id": "1351B",
+    "contest_id": 1351,
+    "problem_letter": "B",
+    "title": "B. Square?",
+    "statement": "Vasya claims that he had a paper square. He cut it into two rectangular parts using one vertical or horizontal cut. Then Vasya informed you the dimensions of these two rectangular parts. You need to check whether Vasya originally had a square. In other words, check if it is possible to make a square using two given rectangles.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow.\n\nEach test case is given in two lines.\n\nThe first line contains two integers a_1 and b_1 (1 ≤ a_1, b_1 ≤ 100) — the dimensions of the first one obtained after cutting rectangle. The sizes are given in random order (that is, it is not known which of the numbers is the width, and which of the numbers is the length).\n\nThe second line contains two integers a_2 and b_2 (1 ≤ a_2, b_2 ≤ 100) — the dimensions of the second obtained after cutting rectangle. The sizes are given in random order (that is, it is not known which of the numbers is the width, and which of the numbers is the length).\n\nPrint t answers, each of which is a string \"YES\" (in the case of a positive answer) or \"NO\" (in the case of a negative answer). The letters in words can be printed in any case (upper or lower).\n\nInput:\n```\n3\n2 3\n3 1\n3 2\n1 3\n3 3\n1 3\n```\n\nOutput:\n```\nYes\nYes\nNo\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases in the input. Then t test cases follow.\n\nEach test case is given in two lines.\n\nThe first line contains two integers a_1 and b_1 (1 ≤ a_1, b_1 ≤ 100) — the dimensions of the first one obtained after cutting rectangle. The sizes are given in random order (that is, it is not known which of the numbers is the width, and which of the numbers is the length).\n\nThe second line contains two integers a_2 and b_2 (1 ≤ a_2, b_2 ≤ 100) — the dimensions of the second obtained after cutting rectangle. The sizes are given in random order (that is, it is not known which of the numbers is the width, and which of the numbers is the length).",
+    "output": "Print t answers, each of which is a string \"YES\" (in the case of a positive answer) or \"NO\" (in the case of a negative answer). The letters in words can be printed in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

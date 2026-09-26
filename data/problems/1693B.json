@@ -1,0 +1,19 @@
+{
+    "id": "1693B",
+    "contest_id": 1693,
+    "problem_letter": "B",
+    "title": "B. Fake Plastic Trees",
+    "statement": "We are given a rooted tree consisting of n vertices numbered from 1 to n. The root of the tree is the vertex 1 and the parent of the vertex v is p_v.\n\nThere is a number written on each vertex, initially all numbers are equal to 0. Let's denote the number written on the vertex v as a_v.\n\nFor each v, we want a_v to be between l_v and r_v (l_v ≤ a_v ≤ r_v).\n\nIn a single operation we do the following:\n\nWhat's the minimum number of operations needed to achieve our goal?\n\nThe first line contains an integer t (1≤ t≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of the vertices in the tree.\n\nThe second line of each test case contains n - 1 integers, p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i denotes the parent of the vertex i.\n\nThe i-th of the following n lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case output the minimum number of operations needed.\n\nIn the first test case, we can achieve the goal with a single operation: choose v = 2 and c = [1, 2], resulting in a_1 = 1, a_2 = 2.\n\nIn the second test case, we can achieve the goal with two operations: first, choose v = 2 and c = [3, 3], resulting in a_1 = 3, a_2 = 3, a_3 = 0. Then, choose v = 3, c = [2, 7], resulting in a_1 = 5, a_2 = 3, a_3 = 7.\n\nInput:\n```\n4211 52 931 14 52 46 1041 2 16 95 64 52 451 2 3 45 54 43 32 21 1\n```\n\nOutput:\n```\n1\n2\n2\n5\n```",
+    "input": "The first line contains an integer t (1≤ t≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the number of the vertices in the tree.\n\nThe second line of each test case contains n - 1 integers, p_2, p_3, …, p_n (1 ≤ p_i < i), where p_i denotes the parent of the vertex i.\n\nThe i-th of the following n lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case output the minimum number of operations needed.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

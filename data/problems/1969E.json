@@ -1,0 +1,20 @@
+{
+    "id": "1969E",
+    "contest_id": 1969,
+    "problem_letter": "E",
+    "title": "E. Unique Array",
+    "statement": "You are given an integer array a of length n. A subarray of a is one of its contiguous subsequences (i. e. an array [a_l, a_{l+1}, …, a_r] for some integers l and r such that 1 ≤ l < r ≤ n). Let's call a subarray unique if there is an integer that occurs exactly once in the subarray.\n\nYou can perform the following operation any number of times (possibly zero): choose an element of the array and replace it with any integer.\n\nYour task is to calculate the minimum number of aforementioned operation in order for all the subarrays of the array a to be unique.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a single integer — the minimum number of aforementioned operation in order for all the subarrays of the array a to be unique.\n\nIn the second test case, you can replace the 1-st and the 3-rd element, for example, like this: [3, 4, 1, 4].\n\nIn the third test case, you can replace the 4-th element, for example, like this: [3, 1, 2, 3, 2].\n\nInput:\n```\n432 1 244 4 4 453 1 2 1 251 3 2 1 2\n```\n\nOutput:\n```\n0\n2\n1\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nAdditional constraint on the input: the sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the minimum number of aforementioned operation in order for all the subarrays of the array a to be unique.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "*2400"
+    ],
+    "rating": 2400
+}

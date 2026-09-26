@@ -1,0 +1,19 @@
+{
+    "id": "1400E",
+    "contest_id": 1400,
+    "problem_letter": "E",
+    "title": "E. Clear the Multiset",
+    "statement": "You have a multiset containing several integers. Initially, it contains a_1 elements equal to 1, a_2 elements equal to 2, ..., a_n elements equal to n.\n\nYou may apply two types of operations:\n\nWhat is the minimum number of operations required to delete all elements from the multiset?\n\nThe first line contains one integer n (1 ≤ n ≤ 5000).\n\nThe second line contains n integers a_1, a_2, ..., a_n (0 ≤ a_i ≤ 10^9).\n\nPrint one integer — the minimum number of operations required to delete all elements from the multiset.\n\nInput:\n```\n4\n1 4 1 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n1 0 1 0 1\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 5000).\n\nThe second line contains n integers a_1, a_2, ..., a_n (0 ≤ a_i ≤ 10^9).",
+    "output": "Print one integer — the minimum number of operations required to delete all elements from the multiset.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "*2200"
+    ],
+    "rating": 2200
+}

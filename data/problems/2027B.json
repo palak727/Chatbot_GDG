@@ -1,0 +1,17 @@
+{
+    "id": "2027B",
+    "contest_id": 2027,
+    "problem_letter": "B",
+    "title": "B. Stalin Sort",
+    "statement": "Stalin Sort is a humorous sorting algorithm designed to eliminate elements which are out of place instead of bothering to sort them properly, lending itself to an mathcalO(n) time complexity.\n\nIt goes as follows: starting from the second element in the array, if it is strictly smaller than the previous element (ignoring those which have already been deleted), then delete it. Continue iterating through the array until it is sorted in non-decreasing order. For example, the array [1, 4, 2, 3, 6, 5, 5, 7, 7] becomes [1, 4, 6, 7, 7] after a Stalin Sort.\n\nWe define an array as vulnerable if you can sort it in non-increasing order by repeatedly applying a Stalin Sort to any of its subarrays^{∗}, as many times as is needed.\n\nGiven an array a of n integers, determine the minimum number of integers which must be removed from the array to make it vulnerable.\n\n^{∗}An array a is a subarray of an array b if a can be obtained from b by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. This is followed by descriptions of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, output a single integer — the minimum number of integers which must be removed from the array to make it vulnerable.\n\nIn the first test case, the optimal answer is to remove the numbers 3 and 9. Then we are left with a = [6, 4, 2, 5, 2]. To show this array is vulnerable, we can first apply a Stalin Sort on the subarray [4, 2, 5] to get a = [6, 4, 5, 2] and then apply a Stalin Sort on the subarray [6, 4, 5] to get a = [6, 2], which is non-increasing.\n\nIn the second test case, the array is already non-increasing, so we don't have to remove any integers.\n\nInput:\n```\n673 6 4 9 2 5 255 4 4 2 282 2 4 4 6 6 10 101100096 8 9 10 12 9 7 5 47300000000 600000000 400000000 900000000 200000000 400000000 200000000\n```\n\nOutput:\n```\n2\n0\n6\n0\n4\n2\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases. This is followed by descriptions of the test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2000) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, output a single integer — the minimum number of integers which must be removed from the array to make it vulnerable.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*1100"
+    ],
+    "rating": 1100
+}

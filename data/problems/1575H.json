@@ -1,0 +1,17 @@
+{
+    "id": "1575H",
+    "contest_id": 1575,
+    "problem_letter": "H",
+    "title": "H. Holiday Wall Ornaments",
+    "statement": "The Winter holiday will be here soon. Mr. Chanek wants to decorate his house's wall with ornaments. The wall can be represented as a binary string a of length n. His favorite nephew has another binary string b of length m (m ≤ n).\n\nMr. Chanek's nephew loves the non-negative integer k. His nephew wants exactly k occurrences of b as substrings in a.\n\nHowever, Mr. Chanek does not know the value of k. So, for each k (0 ≤ k ≤ n - m + 1), find the minimum number of elements in a that have to be changed such that there are exactly k occurrences of b in a.\n\nA string s occurs exactly k times in t if there are exactly k different pairs (p,q) such that we can obtain s by deleting p characters from the beginning and q characters from the end of t.\n\nThe first line contains two integers n and m (1 ≤ m ≤ n ≤ 500) — size of the binary string a and b respectively.\n\nThe second line contains a binary string a of length n.\n\nThe third line contains a binary string b of length m.\n\nOutput n - m + 2 integers — the (k+1)-th integer denotes the minimal number of elements in a that have to be changed so there are exactly k occurrences of b as a substring in a.\n\nFor k = 0, to make the string a have no occurrence of 101, you can do one character change as follows.\n\n100101011 → 100100011\n\nFor k = 1, you can also change a single character.\n\n100101011 → 100001011\n\nFor k = 2, no changes are needed.\n\nInput:\n```\n9 3\n100101011\n101\n```\n\nOutput:\n```\n1 1 0 1 6 -1 -1 -1\n```",
+    "input": "The first line contains two integers n and m (1 ≤ m ≤ n ≤ 500) — size of the binary string a and b respectively.\n\nThe second line contains a binary string a of length n.\n\nThe third line contains a binary string b of length m.",
+    "output": "Output n - m + 2 integers — the (k+1)-th integer denotes the minimal number of elements in a that have to be changed so there are exactly k occurrences of b as a substring in a.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*2200"
+    ],
+    "rating": 2200
+}

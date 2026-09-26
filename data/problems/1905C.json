@@ -1,0 +1,17 @@
+{
+    "id": "1905C",
+    "contest_id": 1905,
+    "problem_letter": "C",
+    "title": "C. Largest Subsequence",
+    "statement": "Given is a string s of length n. In one operation you can select the lexicographically largest^dagger subsequence of string s and cyclic shift it to the right^ddagger.\n\nYour task is to calculate the minimum number of operations it would take for s to become sorted, or report that it never reaches a sorted state.\n\n^daggerA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\n^ddaggerBy cyclic shifting the string t_1t_2… t_m to the right, we get the string t_mt_1… t_{m-1}.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains a single string s of length n, consisting of lowercase English letters.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of operations required to make s sorted, or -1 if it's impossible.\n\nIn the first test case, the string s is already sorted, so we need no operations.\n\nIn the second test case, doing one operation, we will select cb and cyclic shift it. The string s is now abc which is sorted.\n\nIn the third test case, s cannot be sorted.\n\nIn the fourth test case we will perform the following operations:\n\nThus, we need 2 operations.\n\nInput:\n```\n65aaabc3acb3bac4zbca15czddeneeeemigec13cdefmopqsvxzz\n```\n\nOutput:\n```\n0\n1\n-1\n2\n6\n0\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line of each test case contains a single string s of length n, consisting of lowercase English letters.\n\nIt is guaranteed that sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of operations required to make s sorted, or -1 if it's impossible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

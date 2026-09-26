@@ -1,0 +1,19 @@
+{
+    "id": "1485D",
+    "contest_id": 1485,
+    "problem_letter": "D",
+    "title": "D. Multiples and Power Differences",
+    "statement": "You are given a matrix a consisting of positive integers. It has n rows and m columns.\n\nConstruct a matrix b consisting of positive integers. It should have the same size as a, and the following conditions should be met:\n\nWe can show that the answer always exists.\n\nThe first line contains two integers n and m (2 ≤ n,m ≤ 500).\n\nEach of the following n lines contains m integers. The j-th integer in the i-th line is a_{i,j} (1 ≤ a_{i,j} ≤ 16).\n\nThe output should contain n lines each containing m integers. The j-th integer in the i-th line should be b_{i,j}.\n\nIn the first example, the matrix a can be used as the matrix b, because the absolute value of the difference between numbers in any adjacent pair of cells is 1 = 1^4.\n\nIn the third example:\n\nInput:\n```\n2 2\n1 2\n2 3\n```\n\nOutput:\n```\n1 2\n2 3\n```\n\nInput:\n```\n2 3\n16 16 16\n16 16 16\n```\n\nOutput:\n```\n16 32 48\n32 48 64\n```\n\nInput:\n```\n2 2\n3 11\n12 8\n```\n\nOutput:\n```\n327 583\n408 664\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n,m ≤ 500).\n\nEach of the following n lines contains m integers. The j-th integer in the i-th line is a_{i,j} (1 ≤ a_{i,j} ≤ 16).",
+    "output": "The output should contain n lines each containing m integers. The j-th integer in the i-th line should be b_{i,j}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

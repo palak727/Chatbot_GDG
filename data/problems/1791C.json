@@ -1,0 +1,17 @@
+{
+    "id": "1791C",
+    "contest_id": 1791,
+    "problem_letter": "C",
+    "title": "C. Prepend and Append",
+    "statement": "Timur initially had a binary string^dagger s (possibly of length 0). He performed the following operation several (possibly zero) times:\n\n^dagger A binary string is a string (possibly the empty string) whose characters are either texttt0 or texttt1.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2000) — the length of Timur's final string.\n\nThe second line of each test case contains a string s of length n consisting of characters texttt0 or texttt1, denoting the final string.\n\nFor each test case, output a single nonnegative integer — the shortest possible length of Timur's original string. Note that Timur's original string could have been empty, in which case you should output 0.\n\nIn the first test case, the shortest possible string Timur started with is texttt0, and he performed the following operation: texttt0 → colorredtexttt1texttt0colorredtexttt0.\n\nIn the second test case, the shortest possible string Timur started with is texttt11, and he performed the following operation: texttt11 → colorredtexttt0texttt11colorredtexttt1.\n\nIn the third test case, the shortest possible string Timur started with is texttt10101, and he didn't perform any operations.\n\nIn the fourth test case, the shortest possible string Timur started with is the empty string (which we denote by ϵ), and he performed the following operations: ϵ → colorredtexttt1textttcolorredtexttt0 → colorredtexttt0texttt10colorredtexttt1 → colorredtexttt1texttt0101colorredtexttt0.\n\nIn the fifth test case, the shortest possible string Timur started with is texttt101, and he performed the following operations: texttt101 → colorredtexttt0texttt101colorredtexttt1 → colorredtexttt1texttt01011colorredtexttt0.\n\nInput:\n```\n931004011151010161010107101011011210211101011011010\n```\n\nOutput:\n```\n1\n2\n5\n0\n3\n1\n0\n2\n4\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2000) — the length of Timur's final string.\n\nThe second line of each test case contains a string s of length n consisting of characters texttt0 or texttt1, denoting the final string.",
+    "output": "For each test case, output a single nonnegative integer — the shortest possible length of Timur's original string. Note that Timur's original string could have been empty, in which case you should output 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

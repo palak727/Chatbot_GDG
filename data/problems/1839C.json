@@ -1,0 +1,16 @@
+{
+    "id": "1839C",
+    "contest_id": 1839,
+    "problem_letter": "C",
+    "title": "C. Insert Zero and Invert Prefix",
+    "statement": "You have a sequence a_1, a_2, …, a_n of length n, each element of which is either 0 or 1, and a sequence b, which is initially empty.\n\nYou are going to perform n operations. On each of them you will increase the length of b by 1.\n\nYou can find examples of operations in the Notes section.\n\nDetermine if there exists a sequence of operations that makes b equal to a. If such sequence of operations exists, find it.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the sequence a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1) — the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case:\n\nIn the first test case,\n\nHence, sequence b changes in the following way: [,] xrightarrowp , = , 0 [, underline0 ,] xrightarrowp , = , 0 [, underline0, 0 ,] xrightarrowp , = , 2 [, 1, 1, underline0 ,] xrightarrowp , = , 1 [, 0, underline0, 1, 0 ,] xrightarrowp , = , 3 [, 1, 1, 0, underline0, 0 ,]. In the end the sequence b is equal to the sequence a, so this way to perform operations is one of the correct answers.\n\nIn the second test case, n = 1 and the only achiveable sequence b is [, 0 , ].\n\nIn the third test case, there are six possible sequences of operations:\n\nNone of them makes b equal to [, 0, 1, 1 ,], so the answer is \"NO\".\n\nInput:\n```\n451 1 0 0 01130 1 161 0 0 1 1 0\n```\n\nOutput:\n```\nYES\n0 0 2 1 3\nNO\nNO\nYES\n0 1 0 2 4 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 10^5) — the length of the sequence a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1) — the sequence a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1300"
+    ],
+    "rating": 1300
+}

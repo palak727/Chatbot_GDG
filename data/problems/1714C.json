@@ -1,0 +1,16 @@
+{
+    "id": "1714C",
+    "contest_id": 1714,
+    "problem_letter": "C",
+    "title": "C. Minimum Varied Number",
+    "statement": "Find the minimum number with the given sum of digits s such that all digits in it are distinct (i.e. all digits are unique).\n\nFor example, if s=20, then the answer is 389. This is the minimum number in which all digits are different and the sum of the digits is 20 (3+8+9=20).\n\nFor the given s print the required number.\n\nThe first line contains an integer t (1 ≤ t ≤ 45) — the number of test cases.\n\nEach test case is specified by a line that contains the only integer s (1 ≤ s ≤ 45).\n\nPrint t integers — the answers to the given test cases.\n\nInput:\n```\n42084510\n```\n\nOutput:\n```\n389\n8\n123456789\n19\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 45) — the number of test cases.\n\nEach test case is specified by a line that contains the only integer s (1 ≤ s ≤ 45).",
+    "output": "Print t integers — the answers to the given test cases.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

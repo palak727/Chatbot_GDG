@@ -1,0 +1,18 @@
+{
+    "id": "1952E",
+    "contest_id": 1952,
+    "problem_letter": "E",
+    "title": "E. Sweep Line",
+    "statement": "The first line contains one integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2) — the array a.\n\nOutput a single integer — the number of solutions, modulo 20240401.\n\nIn the first sample, the array looks like this:\n\nObviously, the answer here is 1 pmod20240401.\n\nIn the second sample, the array looks like this:\n\nI do not know why the answer here is 2 pmod20240401, I had to take a guess.\n\nIn the third sample, the array looks like this:\n\nIf the answer here is not 0 pmod20240401, I am literally going to explode.\n\nInput:\n```\n71 1 2 1 1 2 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n71 1 2 1 1 1 0\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n70 1 2 1 1 1 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2) — the array a.",
+    "output": "Output a single integer — the number of solutions, modulo 20240401.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "games",
+        "math"
+    ],
+    "rating": null
+}

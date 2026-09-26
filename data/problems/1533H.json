@@ -1,0 +1,18 @@
+{
+    "id": "1533H",
+    "contest_id": 1533,
+    "problem_letter": "H",
+    "title": "H. Submatrices",
+    "statement": "You are given matrix s that contains n rows and m columns. Each element of a matrix is one of the 5 first Latin letters (in upper case).\n\nFor each k (1 ≤ k ≤ 5) calculate the number of submatrices that contain exactly k different letters. Recall that a submatrix of matrix s is a matrix that can be obtained from s after removing several (possibly zero) first rows, several (possibly zero) last rows, several (possibly zero) first columns, and several (possibly zero) last columns. If some submatrix can be obtained from s in two or more ways, you have to count this submatrix the corresponding number of times.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 800).\n\nThen n lines follow, each containing the string s_i (|s_i| = m) — i-th row of the matrix.\n\nFor each k (1 ≤ k ≤ 5) print one integer — the number of submatrices that contain exactly k different letters.\n\nInput:\n```\n2 3\nABB\nABA\n```\n\nOutput:\n```\n9 9 0 0 0 \n```\n\nInput:\n```\n6 6\nEDCECE\nEDDCEB\nACCECC\nBAEEDC\nDDDDEC\nDDAEAD\n```\n\nOutput:\n```\n56 94 131 103 57 \n```\n\nInput:\n```\n3 10\nAEAAEEEEEC\nCEEAAEEEEE\nCEEEEAACAA\n```\n\nOutput:\n```\n78 153 99 0 0 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 800).\n\nThen n lines follow, each containing the string s_i (|s_i| = m) — i-th row of the matrix.",
+    "output": "For each k (1 ≤ k ≤ 5) print one integer — the number of submatrices that contain exactly k different letters.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "bitmasks",
+        "data structures",
+        "dp"
+    ],
+    "rating": null
+}

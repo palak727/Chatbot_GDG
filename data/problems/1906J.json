@@ -1,0 +1,17 @@
+{
+    "id": "1906J",
+    "contest_id": 1906,
+    "problem_letter": "J",
+    "title": "J. Count BFS Graph",
+    "statement": "You are currently researching a graph traversal algorithm called the Breadth First Search (BFS). Suppose you have an input graph of N nodes (numbered from 1 to N). The graph is represented by an adjacency matrix M, for which node u can traverse to node v if M_{u, v} is 1, otherwise it is 0. Your algorithm will output the order the nodes are visited in the BFS. The pseudocode of the algorithm is presented as follows.\n\n```\n    BFS(M[1..N][1..N]):\n        let A be an empty array\n        let Q be an empty queue\n\n        append 1 to A\n        push 1 to Q\n\n        while Q is not empty:\n            pop the front element of Q into u\n            for v = 1 to N:\n                if M[u][v] == 1 and v is not in A:\n                    append v to A\n                    push v to Q\n\n        return A\n```\n\nDuring your research, you are interested in the following problem. Given an array A such that A is a permutation of 1 to N and A_1 = 1. How many simple undirected graph with N nodes and adjacency matrix M such that BFS(M) = A? Since the answer can be very large, calculate the answer modulo 998,244,353.\n\nA simple graph has no self-loop (M_{i, i} = 0 for 1 ≤ i ≤ N) and there is at most one edge that connects a pair of nodes. In an undirected graph, if node u is adjacent to node v, then node v is also adjacent to node u; formally, M_{u, v} = M_{v, u} for 1 ≤ u < v ≤ N.\n\nTwo graphs are considered different if there is an edge that exists in one graph but not the other. In other words, two graphs are considered different if their adjacency matrices are different.\n\nThe first line consists of an integer N (2 ≤ N ≤ 5000).\n\nThe second line consists of N integers A_i. The array A is a permutation of 1 to N and A_1 = 1.\n\nOutput an integer representing the number of simple undirected graphs with N nodes and adjacency matrix M such that BFS(M) = A. Since the answer can be very large, output the answer modulo 998,244,353.\n\nExplanation for the sample input/output #1\n\nThe following illustration shows all graphs that satisfy the requirements.\n\nExplanation for the sample input/output #2\n\nThe only graph that satisfies the requirements is a graph with two edges: one that connects nodes 1 and 3, and another one that connects nodes 3 and 2.\n\nInput:\n```\n3\n1 2 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3\n1 3 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n1 3 2 4 5\n```\n\nOutput:\n```\n17\n```\n\nInput:\n```\n11\n1 2 3 4 5 6 7 8 9 10 11\n```\n\nOutput:\n```\n379394847\n```",
+    "input": "The first line consists of an integer N (2 ≤ N ≤ 5000).\n\nThe second line consists of N integers A_i. The array A is a permutation of 1 to N and A_1 = 1.",
+    "output": "Output an integer representing the number of simple undirected graphs with N nodes and adjacency matrix M such that BFS(M) = A. Since the answer can be very large, output the answer modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*2100"
+    ],
+    "rating": 2100
+}

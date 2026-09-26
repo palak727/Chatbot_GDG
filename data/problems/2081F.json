@@ -1,0 +1,17 @@
+{
+    "id": "2081F",
+    "contest_id": 2081,
+    "problem_letter": "F",
+    "title": "F. Hot Matrix",
+    "statement": "Piggy Zhou loves matrices, especially those that make him get excited, called hot matrix.\n\nA hot matrix of size n × n can be defined as follows. Let a_{i, j} denote the element in the i-th row, j-th column (1 ≤ i, j ≤ n).\n\nNow, Piggy Zhou gives you a number n, and you need to provide him with a hot matrix if the hot matrix exists for the given n, or inform him that he will never get excited if the hot matrix does not exist for the given n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains one integer n (1 ≤ n ≤ 3000).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 3000.\n\nFor each test case, print \"NO\" (without quotes) if the hot matrix does not exist for the given n.\n\nOtherwise, print \"YES\" (without quotes) on the first line. Then output n rows, with n numbers in each row, representing the hot matrix of size n× n that meets the requirements of the problem.\n\nIf there are multiple solutions, print any of them.\n\nIn the first, second and fourth test case, it can be verified that the matrix provided in the example meets all the conditions stated in the problem.\n\nIn the third test case, by enumerating all possible matrices, it can be proven that there is no hot matrix that satisfies the conditions of the problem.\n\nInput:\n```\n41234\n```\n\nOutput:\n```\nYES\n0\nYES\n0 1\n1 0\nNO\nYES\n0 1 2 3\n1 3 0 2\n2 0 3 1\n3 2 1 0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains one integer n (1 ≤ n ≤ 3000).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 3000.",
+    "output": "For each test case, print \"NO\" (without quotes) if the hot matrix does not exist for the given n.\n\nOtherwise, print \"YES\" (without quotes) on the first line. Then output n rows, with n numbers in each row, representing the hot matrix of size n× n that meets the requirements of the problem.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*3300"
+    ],
+    "rating": 3300
+}

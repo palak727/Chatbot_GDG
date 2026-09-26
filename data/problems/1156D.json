@@ -1,0 +1,20 @@
+{
+    "id": "1156D",
+    "contest_id": 1156,
+    "problem_letter": "D",
+    "title": "D. 0-1-Tree",
+    "statement": "You are given a tree (an undirected connected acyclic graph) consisting of n vertices and n - 1 edges. A number is written on each edge, each number is either 0 (let's call such edges 0-edges) or 1 (those are 1-edges).\n\nLet's call an ordered pair of vertices (x, y) (x ≠ y) valid if, while traversing the simple path from x to y, we never go through a 0-edge after going through a 1-edge. Your task is to calculate the number of valid pairs in the tree.\n\nThe first line contains one integer n (2 ≤ n ≤ 200000) — the number of vertices in the tree.\n\nThen n - 1 lines follow, each denoting an edge of the tree. Each edge is represented by three integers x_i, y_i and c_i (1 ≤ x_i, y_i ≤ n, 0 ≤ c_i ≤ 1, x_i ≠ y_i) — the vertices connected by this edge and the number written on it, respectively.\n\nIt is guaranteed that the given edges form a tree.\n\nPrint one integer — the number of valid pairs of vertices.\n\nThe picture corresponding to the first example:\n\nInput:\n```\n7\n2 1 1\n3 2 0\n4 2 1\n5 2 0\n6 7 1\n7 2 1\n```\n\nOutput:\n```\n34\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 200000) — the number of vertices in the tree.\n\nThen n - 1 lines follow, each denoting an edge of the tree. Each edge is represented by three integers x_i, y_i and c_i (1 ≤ x_i, y_i ≤ n, 0 ≤ c_i ≤ 1, x_i ≠ y_i) — the vertices connected by this edge and the number written on it, respectively.\n\nIt is guaranteed that the given edges form a tree.",
+    "output": "Print one integer — the number of valid pairs of vertices.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "divide and conquer",
+        "dp",
+        "dsu",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

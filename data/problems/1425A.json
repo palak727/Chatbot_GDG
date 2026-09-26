@@ -1,0 +1,17 @@
+{
+    "id": "1425A",
+    "contest_id": 1425,
+    "problem_letter": "A",
+    "title": "A. Arena of Greed",
+    "statement": "Lately, Mr. Chanek frequently plays the game Arena of Greed. As the name implies, the game's goal is to find the greediest of them all, who will then be crowned king of Compfestnesia.\n\nThe game is played by two people taking turns, where Mr. Chanek takes the first turn. Initially, there is a treasure chest containing N gold coins. The game ends if there are no more gold coins in the chest. In each turn, the players can make one of the following moves:\n\nBoth players will try to maximize the number of coins they have. Mr. Chanek asks your help to find the maximum number of coins he can get at the end of the game if both he and the opponent plays optimally.\n\nThe first line contains a single integer T (1 ≤ T ≤ 10^5) denotes the number of test cases.\n\nThe next T lines each contain a single integer N (1 ≤ N ≤ 10^18).\n\nT lines, each line is the answer requested by Mr. Chanek.\n\nFor the first case, the game is as follows:\n\nFor the second case, the game is as follows:\n\nInput:\n```\n2\n5\n6\n```\n\nOutput:\n```\n2\n4\n```",
+    "input": "The first line contains a single integer T (1 ≤ T ≤ 10^5) denotes the number of test cases.\n\nThe next T lines each contain a single integer N (1 ≤ N ≤ 10^18).",
+    "output": "T lines, each line is the answer requested by Mr. Chanek.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*1400"
+    ],
+    "rating": 1400
+}

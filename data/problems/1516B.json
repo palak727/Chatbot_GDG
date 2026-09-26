@@ -1,0 +1,19 @@
+{
+    "id": "1516B",
+    "contest_id": 1516,
+    "problem_letter": "B",
+    "title": "B. AGAGA XOOORRR",
+    "statement": "Baby Ehab is known for his love for a certain operation. He has an array a of length n, and he decided to keep doing the following operation on it:\n\nNow he asks you if he can make all elements of the array equal. Since babies like to make your life harder, he requires that you leave at least 2 elements remaining.\n\nThe first line contains an integer t (1 ≤ t ≤ 15) — the number of test cases you need to solve.\n\nThe first line of each test case contains an integers n (2 ≤ n ≤ 2000) — the number of elements in the array a.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — the elements of the array a.\n\nIf Baby Ehab can make all elements equal while leaving at least 2 elements standing, print \"YES\". Otherwise, print \"NO\".\n\nIn the first sample, he can remove the first 2 elements, 0 and 2, and replace them by 0 oplus 2=2. The array will be [2,2], so all the elements are equal.\n\nIn the second sample, there's no way to make all the elements equal.\n\nInput:\n```\n2\n3\n0 2 2\n4\n2 3 1 10\n```\n\nOutput:\n```\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 15) — the number of test cases you need to solve.\n\nThe first line of each test case contains an integers n (2 ≤ n ≤ 2000) — the number of elements in the array a.\n\nThe second line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — the elements of the array a.",
+    "output": "If Baby Ehab can make all elements equal while leaving at least 2 elements standing, print \"YES\". Otherwise, print \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "greedy",
+        "*1500"
+    ],
+    "rating": 1500
+}

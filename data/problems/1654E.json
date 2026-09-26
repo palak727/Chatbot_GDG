@@ -1,0 +1,19 @@
+{
+    "id": "1654E",
+    "contest_id": 1654,
+    "problem_letter": "E",
+    "title": "E. Arithmetic Operations",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n.\n\nYou can do the following operation any number of times (possibly zero):\n\nWhat is the minimum number of operations needed to turn a into an arithmetic progression? The array a is an arithmetic progression if a_{i+1}-a_i=a_i-a_{i-1} for any 2 ≤ i ≤ n-1.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nPrint a single integer: the minimum number of operations needed to turn a into an arithmetic progression.\n\nIn the first test, you can get the array a = [11, 10, 9, 8, 7, 6, 5, 4, 3] by performing 6 operations:\n\na is an arithmetic progression: in fact, a_{i+1}-a_i=a_i-a_{i-1}=-1 for any 2 ≤ i ≤ n-1.\n\nThere is no sequence of less than 6 operations that makes a an arithmetic progression.\n\nIn the second test, you can get the array a = [-1, 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38] by performing 10 operations.\n\nIn the third test, you can get the array a = [100000, 80000, 60000, 40000, 20000, 0, -20000, -40000, -60000, -80000] by performing 7 operations.\n\nInput:\n```\n9\n3 2 7 8 6 9 5 4 1\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n14\n19 2 15 8 9 14 17 13 4 14 4 11 15 7\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n10\n100000 1 60000 2 20000 4 8 16 32 64\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n4\n10000 20000 10000 1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).",
+    "output": "Print a single integer: the minimum number of operations needed to turn a into an arithmetic progression.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "graphs",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

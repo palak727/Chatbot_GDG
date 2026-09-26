@@ -1,0 +1,16 @@
+{
+    "id": "1604A",
+    "contest_id": 1604,
+    "problem_letter": "A",
+    "title": "A. Era",
+    "statement": "Shohag has an integer sequence a_1, a_2, …, a_n. He can perform the following operation any number of times (possibly, zero):\n\nFor example, if a=[3,3,4] and he selects k = 2, then after the operation he can obtain one of the sequences [underline2,3,3,4], [3,underline2,3,4], [3,3,underline2,4], or [3,3,4,underline2].\n\nShohag wants this sequence to satisfy the following condition: for each 1 ≤ i ≤ |a|, a_i ≤ i. Here, |a| denotes the size of a.\n\nHelp him to find the minimum number of operations that he has to perform to achieve this goal. We can show that under the constraints of the problem it's always possible to achieve this goal in a finite number of operations.\n\nThe first line contains a single integer t (1 ≤ t ≤ 200) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the initial length of the sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the sequence.\n\nFor each test case, print a single integer — the minimum number of operations needed to perform to achieve the goal mentioned in the statement.\n\nIn the first test case, we have to perform at least one operation, as a_2=3 > 2. We can perform the operation [1, 3, 4] → [1, underline2, 3, 4] (the newly inserted element is underlined), now the condition is satisfied.\n\nIn the second test case, Shohag can perform the following operations:\n\n[1, 2, 5, 7, 4] → [1, 2, underline3, 5, 7, 4] → [1, 2, 3, underline4, 5, 7, 4] → [1, 2, 3, 4, 5, underline3, 7, 4].\n\nIn the third test case, the sequence already satisfies the condition.\n\nInput:\n```\n4\n3\n1 3 4\n5\n1 2 5 7 4\n1\n1\n3\n69 6969 696969\n```\n\nOutput:\n```\n1\n3\n0\n696966\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 200) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the initial length of the sequence.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the sequence.",
+    "output": "For each test case, print a single integer — the minimum number of operations needed to perform to achieve the goal mentioned in the statement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

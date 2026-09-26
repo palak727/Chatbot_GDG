@@ -1,0 +1,17 @@
+{
+    "id": "1844A",
+    "contest_id": 1844,
+    "problem_letter": "A",
+    "title": "A. Subtraction Game",
+    "statement": "You are given two positive integers, a and b (a < b).\n\nFor some positive integer n, two players will play a game starting with a pile of n stones. They take turns removing exactly a or exactly b stones from the pile. The player who is unable to make a move loses.\n\nFind a positive integer n such that the second player to move in this game has a winning strategy. This means that no matter what moves the first player makes, the second player can carefully choose their moves (possibly depending on the first player's moves) to ensure they win.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains two integers, a and b (1 ≤ a < b ≤ 100).\n\nFor each test case, output any positive integer n (1 ≤ n ≤ 10^6) such that the second player to move wins.\n\nIt can be proven that such an n always exists under the constraints of the problem.\n\nIn the first test case, when n = 2, the first player must remove a = 1 stone. Then, the second player can respond by removing a = 1 stone. The first player can no longer make a move, so the second player wins.\n\nIn the second test case, when n = 6, the first player has two options:\n\nIn the third test case, the first player cannot make any moves when n = 3, so the second player immediately wins.\n\nInput:\n```\n31 41 59 26\n```\n\nOutput:\n```\n2\n6\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). The description of the test cases follows.\n\nThe only line of each test case contains two integers, a and b (1 ≤ a < b ≤ 100).",
+    "output": "For each test case, output any positive integer n (1 ≤ n ≤ 10^6) such that the second player to move wins.\n\nIt can be proven that such an n always exists under the constraints of the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "*800"
+    ],
+    "rating": 800
+}

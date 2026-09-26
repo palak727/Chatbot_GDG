@@ -1,0 +1,22 @@
+{
+    "id": "2043E",
+    "contest_id": 2043,
+    "problem_letter": "E",
+    "title": "E. Matrix Transformation",
+    "statement": "You are given two matrices A and B of size n × m, filled with integers between 0 and 10^9. You can perform the following operations on matrix A in any order and any number of times:\n\nThe value of x may be chosen differently for different operations.\n\nDetermine whether it is possible to transform matrix A into matrix B using the given operations any number of times (including zero).\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then, t test cases follow.\n\nEach test case is given as follows:\n\nFor each test case, output Yes if it is possible to transform the matrix A into the matrix B; otherwise, output No. Each letter can be output in any case, upper or lower.\n\nLet's consider the second set of input data and show a sequence of operations that transforms matrix A into matrix B:\n\nInitially, the matrix looks like this:\n\nbeginbmatrix 10&10 42&42 endbmatrix\n\nApply an operation of the first type with parameters i = 1 and x = 0. As a result, we get the matrix:\n\nbeginbmatrix 0&0 42&42 endbmatrix\n\nApply an operation of the first type with parameters i = 2 and x = 0. As a result, we get the matrix:\n\nbeginbmatrix 0&0 0&0 endbmatrix\n\nApply an operation of the second type with parameters j = 1 and x = 21. As a result, we get the matrix:\n\nbeginbmatrix 21&0 21&0 endbmatrix\n\nApply an operation of the second type with parameters j = 2 and x = 21. As a result, we get the matrix:\n\nbeginbmatrix 21&21 21&21 endbmatrix\n\nThus, we have transformed matrix A into matrix B.\n\nInput:\n```\n41 112132 210 1042 4221 2121 212 274 1042 10621 8585 212 41 2 3 45 6 7 83 2 3 41 0 1 0\n```\n\nOutput:\n```\nYes\nYes\nNo\nYes\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then, t test cases follow.\n\nEach test case is given as follows:",
+    "output": "For each test case, output Yes if it is possible to transform the matrix A into the matrix B; otherwise, output No. Each letter can be output in any case, upper or lower.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "implementation",
+        "*2300"
+    ],
+    "rating": 2300
+}

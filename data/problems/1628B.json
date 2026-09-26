@@ -1,0 +1,17 @@
+{
+    "id": "1628B",
+    "contest_id": 1628,
+    "problem_letter": "B",
+    "title": "B. Peculiar Movie Preferences",
+    "statement": "Mihai plans to watch a movie. He only likes palindromic movies, so he wants to skip some (possibly zero) scenes to make the remaining parts of the movie palindromic.\n\nYou are given a list s of n non-empty strings of length at most 3, representing the scenes of Mihai's movie.\n\nA subsequence of s is called awesome if it is non-empty and the concatenation of the strings in the subsequence, in order, is a palindrome.\n\nCan you help Mihai check if there is at least one awesome subsequence of s?\n\nA palindrome is a string that reads the same backward as forward, for example strings \"z\", \"aaa\", \"aba\", \"abccba\" are palindromes, but strings \"codeforces\", \"reality\", \"ab\" are not.\n\nA sequence a is a non-empty subsequence of a non-empty sequence b if a can be obtained from b by deletion of several (possibly zero, but not all) elements.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of scenes in the movie.\n\nThen follows n lines, the i-th of which containing a single non-empty string s_i of length at most 3, consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print \"YES\" if there is an awesome subsequence of s, or \"NO\" otherwise (case insensitive).\n\nIn the first test case, an awesome subsequence of s is [ab, cc, ba]\n\nInput:\n```\n65zxabcczxba2abbad4codeforces3abc3abcdcba2abab\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of scenes in the movie.\n\nThen follows n lines, the i-th of which containing a single non-empty string s_i of length at most 3, consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print \"YES\" if there is an awesome subsequence of s, or \"NO\" otherwise (case insensitive).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*1700"
+    ],
+    "rating": 1700
+}

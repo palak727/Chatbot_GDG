@@ -1,0 +1,18 @@
+{
+    "id": "1610F",
+    "contest_id": 1610,
+    "problem_letter": "F",
+    "title": "F. Mashtali: a Space Oddysey",
+    "statement": "Lee was planning to get closer to Mashtali's heart to proceed with his evil plan(which we're not aware of, yet), so he decided to beautify Mashtali's graph. But he made several rules for himself. And also he was too busy with his plans that he didn't have time for such minor tasks, so he asked you for help.\n\nMashtali's graph is an undirected weighted graph with n vertices and m edges with weights equal to either 1 or 2. Lee wants to direct the edges of Mashtali's graph so that it will be as beautiful as possible.\n\nLee thinks that the beauty of a directed weighted graph is equal to the number of its Oddysey vertices. A vertex v is an Oddysey vertex if |d^+(v) - d^-(v)| = 1, where d^+(v) is the sum of weights of the outgoing from v edges, and d^-(v) is the sum of the weights of the incoming to v edges.\n\nFind the largest possible beauty of a graph that Lee can achieve by directing the edges of Mashtali's graph. In addition, find any way to achieve it.\n\nNote that you have to orient each edge.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 10^5;; 1 ≤ m ≤ 10^5) — the numbers of vertices and edges in the graph.\n\nThe i-th line of the following m lines contains three integers u_i, v_i and w_i ( 1 ≤ u_i , v_i ≤ n;; u_i ≠ v_i;; bfw_i ∈ {1, 2} ) — the endpoints of the i-th edge and its weight.\n\nNote that the graph doesn't have to be connected, and it might contain multiple edges.\n\nIn the first line print a single integer — the maximum beauty of the graph Lee can achieve.\n\nIn the second line print a string of length m consisting of 1s and 2s — directions of the edges.\n\nIf you decide to direct the i-th edge from vertex u_i to vertex v_i, i-th character of the string should be 1. Otherwise, it should be 2.\n\nExplanation for the first sample:\n\nExplanation for the third sample:\n\nInput:\n```\n6 7\n1 2 1\n1 3 2\n2 3 2\n1 4 1\n4 5 1\n2 5 2\n2 6 2\n```\n\nOutput:\n```\n2\n1212212\n```\n\nInput:\n```\n6 7\n1 2 2\n1 3 2\n2 3 2\n1 4 2\n4 5 2\n2 5 2\n2 6 2\n```\n\nOutput:\n```\n0\n1212212\n```\n\nInput:\n```\n6 7\n1 2 1\n1 3 1\n2 3 1\n1 4 1\n4 5 1\n2 5 1\n2 6 1\n```\n\nOutput:\n```\n2\n1212212\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 10^5;; 1 ≤ m ≤ 10^5) — the numbers of vertices and edges in the graph.\n\nThe i-th line of the following m lines contains three integers u_i, v_i and w_i ( 1 ≤ u_i , v_i ≤ n;; u_i ≠ v_i;; bfw_i ∈ {1, 2} ) — the endpoints of the i-th edge and its weight.\n\nNote that the graph doesn't have to be connected, and it might contain multiple edges.",
+    "output": "In the first line print a single integer — the maximum beauty of the graph Lee can achieve.\n\nIn the second line print a string of length m consisting of 1s and 2s — directions of the edges.\n\nIf you decide to direct the i-th edge from vertex u_i to vertex v_i, i-th character of the string should be 1. Otherwise, it should be 2.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "*3000"
+    ],
+    "rating": 3000
+}

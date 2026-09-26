@@ -1,0 +1,21 @@
+{
+    "id": "1976E",
+    "contest_id": 1976,
+    "problem_letter": "E",
+    "title": "E. Splittable Permutations",
+    "statement": "Initially, we had one array, which was a permutation of size n (an array of size n where each integer from 1 to n appears exactly once).\n\nWe performed q operations. During the i-th operation, we did the following:\n\nFor example, suppose the initial array was [6, 3, 4, 1, 2, 5], and we performed the following operations:\n\nYou are given two integers n and q, and two sequences [l_1, l_2, …, l_q] and [r_1, r_2, …, r_q]. A permutation of size n is called valid if we can perform q operations and produce the given sequences [l_1, l_2, …, l_q] and [r_1, r_2, …, r_q].\n\nCalculate the number of valid permutations.\n\nThe first line contains two integers n and q (1 ≤ q < n ≤ 3·10^5).\n\nThe second line contains q integers l_1, l_2, …, l_q (1 ≤ l_i ≤ n).\n\nThe third line contains q integers r_1, r_2, …, r_q (1 ≤ r_i ≤ n).\n\nAdditional constraint on the input: there exists at least one permutation which can produce the given sequences [l_1, l_2, …, l_q] and [r_1, r_2, …, r_q].\n\nPrint one integer — the number of valid permutations, taken modulo 998244353.\n\nInput:\n```\n6 36 4 45 5 2\n```\n\nOutput:\n```\n30\n```\n\nInput:\n```\n10 1109\n```\n\nOutput:\n```\n1814400\n```\n\nInput:\n```\n4 124\n```\n\nOutput:\n```\n8\n```",
+    "input": "The first line contains two integers n and q (1 ≤ q < n ≤ 3·10^5).\n\nThe second line contains q integers l_1, l_2, …, l_q (1 ≤ l_i ≤ n).\n\nThe third line contains q integers r_1, r_2, …, r_q (1 ≤ r_i ≤ n).\n\nAdditional constraint on the input: there exists at least one permutation which can produce the given sequences [l_1, l_2, …, l_q] and [r_1, r_2, …, r_q].",
+    "output": "Print one integer — the number of valid permutations, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dfs and similar",
+        "greedy",
+        "math",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

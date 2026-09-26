@@ -1,0 +1,16 @@
+{
+    "id": "1110A",
+    "contest_id": 1110,
+    "problem_letter": "A",
+    "title": "A. Parity",
+    "statement": "You are given an integer n (n ≥ 0) represented with k digits in base (radix) b. So,\n\nn = a_1·b^{k-1} + a_2·b^{k-2} + … a_{k-1}·b + a_k.\n\nFor example, if b=17, k=3 and a=[11, 15, 7] then n=11·17^2+15·17+7=3179+255+7=3441.\n\nDetermine whether n is even or odd.\n\nThe first line contains two integers b and k (2≤ b≤ 100, 1≤ k≤ 10^5) — the base of the number and the number of digits.\n\nThe second line contains k integers a_1, a_2, …, a_k (0≤ a_i < b) — the digits of n.\n\nThe representation of n contains no unnecessary leading zero. That is, a_1 can be equal to 0 only if k = 1.\n\nPrint \"even\" if n is even, otherwise print \"odd\".\n\nYou can print each letter in any case (upper or lower).\n\nIn the first example, n = 3·13^2 + 2·13 + 7 = 540, which is even.\n\nIn the second example, n = 123456789 is odd.\n\nIn the third example, n = 32·99^4 + 92·99^3 + 85·99^2 + 74·99 + 4 = 3164015155 is odd.\n\nIn the fourth example n = 2.\n\nInput:\n```\n13 3\n3 2 7\n```\n\nOutput:\n```\neven\n```\n\nInput:\n```\n10 9\n1 2 3 4 5 6 7 8 9\n```\n\nOutput:\n```\nodd\n```\n\nInput:\n```\n99 5\n32 92 85 74 4\n```\n\nOutput:\n```\nodd\n```\n\nInput:\n```\n2 2\n1 0\n```\n\nOutput:\n```\neven\n```",
+    "input": "The first line contains two integers b and k (2≤ b≤ 100, 1≤ k≤ 10^5) — the base of the number and the number of digits.\n\nThe second line contains k integers a_1, a_2, …, a_k (0≤ a_i < b) — the digits of n.\n\nThe representation of n contains no unnecessary leading zero. That is, a_1 can be equal to 0 only if k = 1.",
+    "output": "Print \"even\" if n is even, otherwise print \"odd\".\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

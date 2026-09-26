@@ -1,0 +1,18 @@
+{
+    "id": "1554D",
+    "contest_id": 1554,
+    "problem_letter": "D",
+    "title": "D. Diane",
+    "statement": "You are given an integer n. Find any string s of length n consisting only of English lowercase letters such that each non-empty substring of s occurs in s an odd number of times. If there are multiple such strings, output any. It can be shown that such string always exists under the given constraints.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a single line containing the string s. If there are multiple such strings, output any. It can be shown that such string always exists under the given constraints.\n\nIn the first test case, each substring of \"abc\" occurs exactly once.\n\nIn the third test case, each substring of \"bbcaabbba\" occurs an odd number of times. In particular, \"b\" occurs 5 times, \"a\" and \"bb\" occur 3 times each, and each of the remaining substrings occurs exactly once.\n\nInput:\n```\n4\n3\n5\n9\n19\n```\n\nOutput:\n```\nabc\ndiane\nbbcaabbba\nyouarethecutestuwuu\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 500) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single line containing the string s. If there are multiple such strings, output any. It can be shown that such string always exists under the given constraints.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*1800"
+    ],
+    "rating": 1800
+}

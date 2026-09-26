@@ -1,0 +1,21 @@
+{
+    "id": "2035D",
+    "contest_id": 2035,
+    "problem_letter": "D",
+    "title": "D. Yet Another Real Number Problem",
+    "statement": "You are given an array b of length m. You can perform the following operation any number of times (possibly zero):\n\nSince this problem is too easy, you are given an array a of length n and need to solve the problem for each prefix of a.\n\nIn other words, denoting the maximum sum of b after performing any number of such operations as f(b), you need to output f([a_1]), f([a_1,a_2]), …, f([a_1,a_2,…,a_n]) modulo 10^9+7 respectively.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the starting values of array a.\n\nIt is guaranteed that the sum of n over all test cases will not exceed 2·10^5.\n\nFor each test case, output n integers representing the answer for each prefix of a modulo 10^9+7.\n\nFor each prefix in the first example, a possible array after operations is:\n\nInput:\n```\n3101 2 3 4 5 6 7 8 9 10111 6 9 4 7 4 4 10 3 2 34527792568 502211460 850237282 374773208\n```\n\nOutput:\n```\n1 3 8 13 46 59 126 149 1174 1311 \n1 7 22 26 70 74 150 1303 1306 1308 1568 \n527792568 83665723 399119771 773892979 \n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the starting values of array a.\n\nIt is guaranteed that the sum of n over all test cases will not exceed 2·10^5.",
+    "output": "For each test case, output n integers representing the answer for each prefix of a modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "greedy",
+        "implementation",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

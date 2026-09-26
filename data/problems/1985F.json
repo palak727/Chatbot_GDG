@@ -1,0 +1,17 @@
+{
+    "id": "1985F",
+    "contest_id": 1985,
+    "problem_letter": "F",
+    "title": "F. Final Boss",
+    "statement": "You are facing the final boss in your favorite video game. The boss enemy has h health. Your character has n attacks. The i'th attack deals a_i damage to the boss but has a cooldown of c_i turns, meaning the next time you can use this attack is turn x + c_i if your current turn is x. Each turn, you can use all attacks that are not currently on cooldown, all at once. If all attacks are on cooldown, you do nothing for the turn and skip to the next turn.\n\nInitially, all attacks are not on cooldown. How many turns will you take to beat the boss? The boss is beaten when its health is 0 or less.\n\nThe first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains two integers h and n (1 ≤ h, n ≤ 2·10^5) – the health of the boss and the number of attacks you have.\n\nThe following line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 2·10^5) – the damage of your attacks.\n\nThe following line of each test case contains n integers c_1, c_2, ..., c_n (1 ≤ c_i ≤ 2·10^5) – the cooldown of your attacks.\n\nIt is guaranteed that the sum of h and n over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer, the minimum number of turns required to beat the boss.\n\nFor the first test case, you can use attacks 1 and 2 on the first turn, dealing 3 damage in total, and slaying the boss.\n\nFor the second case, you can beat the boss in 3 turns by using the following attacks:\n\nTurn 1: Use attacks 1 and 2, dealing 3 damage to the boss. The boss now has 2 health left.\n\nTurn 2: Use attack 2, dealing 1 damage to the boss. The boss now has 1 health left.\n\nTurn 3: Use attack 1, dealing 2 damage to the boss. The boss now has -1 health left. Since its health is less than or equal to 0, you beat the boss.\n\nFor the sixth test case: remember to use 64-bit integers as the answer can get large.\n\nInput:\n```\n83 22 12 15 22 12 150 35 6 75 6 750 32 2 23 3 390000 2200000 2000001 1100000 112000006 73 2 3 2 3 1 26 5 9 5 10 7 721 61 1 1 1 1 15 5 8 10 7 6\n```\n\nOutput:\n```\n1\n3\n15\n25\n1\n19999800001\n1\n21\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains two integers h and n (1 ≤ h, n ≤ 2·10^5) – the health of the boss and the number of attacks you have.\n\nThe following line of each test case contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 2·10^5) – the damage of your attacks.\n\nThe following line of each test case contains n integers c_1, c_2, ..., c_n (1 ≤ c_i ≤ 2·10^5) – the cooldown of your attacks.\n\nIt is guaranteed that the sum of h and n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer, the minimum number of turns required to beat the boss.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "*1500"
+    ],
+    "rating": 1500
+}

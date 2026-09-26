@@ -1,0 +1,19 @@
+{
+    "id": "1862C",
+    "contest_id": 1862,
+    "problem_letter": "C",
+    "title": "C. Flower City Fence",
+    "statement": "Anya lives in the Flower City. By order of the city mayor, she has to build a fence for herself.\n\nThe fence consists of n planks, each with a height of a_i meters. According to the order, the heights of the planks must not increase. In other words, it is true that a_i ≥ a_j for all i < j.\n\nAnya became curious whether her fence is symmetrical with respect to the diagonal. In other words, will she get the same fence if she lays all the planks horizontally in the same order.\n\nFor example, for n = 5, a = [5, 4, 3, 2, 1], the fence is symmetrical. Because if all the planks are laid horizontally, the fence will be [5, 4, 3, 2, 1], as shown in the diagram.\n\nOn the left is the fence [5, 4, 3, 2, 1], on the right is the same fence laid horizontally\n\nBut for n = 3, a = [4, 2, 1], the fence is not symmetrical. Because if all the planks are laid horizontally, the fence will be [3, 2, 1, 1], as shown in the diagram.\n\nOn the left is the fence [4, 2, 1], on the right is the same fence laid horizontally\n\nHelp Anya and determine whether her fence is symmetrical.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of a test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the fence.\n\nThe second line of a test case contains n integers a_1 ≥ a_2 ≥ a_3 ≥ … ≥ a_n (1 ≤ a_i ≤ 10^9) — the heights of the planks.\n\nThe sum of the values of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if the fence is symmetrical, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be accepted as a positive answer.\n\nIn the first and second test cases of the example, the fence is symmetrical.\n\nIn the third test case of the example, the fence is not symmetrical. If the planks are laid horizontally, the fence will be [3, 2, 1, 1].\n\nIn the fourth test case of the example, the fence is not symmetrical. If the planks are laid horizontally, the fence will be [1, 1].\n\nIn the fifth and sixth test cases of the example, the fence is symmetrical.\n\nIn the seventh test case of the example, the fence is not symmetrical. If the planks are laid horizontally, the fence will be [2, 1, 1, 1, 1, 1].\n\nInput:\n```\n755 4 3 2 133 1 134 2 11255 3 3 1 155 5 5 3 326 1\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of a test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the fence.\n\nThe second line of a test case contains n integers a_1 ≥ a_2 ≥ a_3 ≥ … ≥ a_n (1 ≤ a_i ≤ 10^9) — the heights of the planks.\n\nThe sum of the values of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if the fence is symmetrical, otherwise output \"NO\".\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "implementation",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1874D",
+    "contest_id": 1874,
+    "problem_letter": "D",
+    "title": "D. Jellyfish and Miku",
+    "statement": "There are n + 1 cities with numbers from 0 to n, connected by n roads. The i-th (1 ≤ i ≤ n) road connects city i-1 and city i bi-directionally. After Jellyfish flew back to city 0, she found out that she had left her Miku fufu in city n.\n\nEach road has a positive integer level of beauty. Denote the beauty of the i-th road as a_i.\n\nJellyfish is trying to find her fufu. Because of her poor sense of direction, she doesn't know which way to go. Every day, she randomly chooses a road connected to the city she currently is in and traverses it. Let s be the sum of the beauty of the roads connected to the current city. For each road connected to the current city, Jellyfish will traverse the road with a probability of frac x s, where x is the beauty of the road, reaching the city on the other side of the road.\n\nJellyfish will start at city 0, and she will get only her fufu back when she reaches city n.\n\nYou want to choose the beauty of the roads such that the expected number of days Jellyfish takes to find her fufu will be the minimum possible. However, due to limited funding, the sum of beauties of all roads must be less than or equal to m.\n\nFind the minimum expected number of days Jellyfish needs to get her fufu back if the beauty of the roads is chosen optimally.\n\nThe first and only line of the input contains two integers n and m (1 ≤ n ≤ m ≤ 3000) — the number of the roads and the maximum sum of beauty of the roads.\n\nOutput the minimum expected number of days Jellyfish needs to get her fufu back if the beauty of the roads is chosen optimally.\n\nYour answer will be accepted if the absolute or relative error does not exceed 10^{-9}. Formally, let your answer be a, and the jury's answer be b. Your answer is considered correct if (|a-b|)/(max(1,|b|)) ≤ 10^{-9}.\n\nIn the first example, the optimal assignment of beauty is a=[1, 2, 5]. The expected number of days Jellyfish needs to get her fufu back is 5.2.\n\nInput:\n```\n3 8\n```\n\nOutput:\n```\n5.200000000000\n```\n\nInput:\n```\n10 98\n```\n\nOutput:\n```\n37.721155173329\n```",
+    "input": "The first and only line of the input contains two integers n and m (1 ≤ n ≤ m ≤ 3000) — the number of the roads and the maximum sum of beauty of the roads.",
+    "output": "Output the minimum expected number of days Jellyfish needs to get her fufu back if the beauty of the roads is chosen optimally.\n\nYour answer will be accepted if the absolute or relative error does not exceed 10^{-9}. Formally, let your answer be a, and the jury's answer be b. Your answer is considered correct if (|a-b|)/(max(1,|b|)) ≤ 10^{-9}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "divide and conquer",
+        "dp",
+        "math",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

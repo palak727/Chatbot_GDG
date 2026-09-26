@@ -1,0 +1,17 @@
+{
+    "id": "1669G",
+    "contest_id": 1669,
+    "problem_letter": "G",
+    "title": "G. Fall Down",
+    "statement": "There is a grid with n rows and m columns, and three types of cells:\n\nAll stones fall down until they meet the floor (the bottom row), an obstacle, or other stone which is already immovable. (In other words, all the stones just fall down as long as they can fall.)\n\nSimulate the process. What does the resulting grid look like?\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 50) — the number of rows and the number of columns in the grid, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either '.', '*', or 'o' — an empty cell, a stone, or an obstacle, respectively.\n\nFor each test case, output a grid with n rows and m columns, showing the result of the process.\n\nYou don't need to output a new line after each test, it is in the samples just for clarity.\n\nInput:\n```\n3\n6 10\n.*.*....*.\n.*.......*\n...o....o.\n.*.*....*.\n..........\n.o......o*\n2 9\n...***ooo\n.*o.*o.*o\n5 5\n*****\n*....\n*****\n....*\n*****\n```\n\nOutput:\n```\n..........\n...*....*.\n.*.o....o.\n.*........\n.*......**\n.o.*....o*\n\n....**ooo\n.*o**o.*o\n\n.....\n*...*\n*****\n*****\n*****\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n, m ≤ 50) — the number of rows and the number of columns in the grid, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either '.', '*', or 'o' — an empty cell, a stone, or an obstacle, respectively.",
+    "output": "For each test case, output a grid with n rows and m columns, showing the result of the process.\n\nYou don't need to output a new line after each test, it is in the samples just for clarity.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

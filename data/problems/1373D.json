@@ -1,0 +1,19 @@
+{
+    "id": "1373D",
+    "contest_id": 1373,
+    "problem_letter": "D",
+    "title": "D. Maximum Sum on Even Positions",
+    "statement": "You are given an array a consisting of n integers. Indices of the array start from zero (i. e. the first element is a_0, the second one is a_1, and so on).\n\nYou can reverse at most one subarray (continuous subsegment) of this array. Recall that the subarray of a with borders l and r is a[l; r] = a_l, a_{l + 1}, …, a_r.\n\nYour task is to reverse such a subarray that the sum of elements on even positions of the resulting array is maximized (i. e. the sum of elements a_0, a_2, …, a_2k for integer k = lfloor(n-1)/2rfloor should be maximum possible).\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of a. The second line of the test case contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9), where a_i is the i-th element of a.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).\n\nFor each test case, print the answer on the separate line — the maximum possible sum of elements on even positions after reversing at most one subarray (continuous subsegment) of a.\n\nInput:\n```\n4\n8\n1 7 3 4 7 6 2 9\n5\n1 2 1 2 1\n10\n7 8 4 5 7 6 8 9 7 3\n4\n3 1 2 1\n```\n\nOutput:\n```\n26\n5\n37\n5\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of the test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of a. The second line of the test case contains n integers a_0, a_1, …, a_{n-1} (1 ≤ a_i ≤ 10^9), where a_i is the i-th element of a.\n\nIt is guaranteed that the sum of n does not exceed 2·10^5 (∑ n ≤ 2·10^5).",
+    "output": "For each test case, print the answer on the separate line — the maximum possible sum of elements on even positions after reversing at most one subarray (continuous subsegment) of a.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

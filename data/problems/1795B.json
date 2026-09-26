@@ -1,0 +1,18 @@
+{
+    "id": "1795B",
+    "contest_id": 1795,
+    "problem_letter": "B",
+    "title": "B. Ideal Point",
+    "statement": "You are given n one-dimensional segments (each segment is denoted by two integers — its endpoints).\n\nLet's define the function f(x) as the number of segments covering point x (a segment covers the point x if l ≤ x ≤ r, where l is the left endpoint and r is the right endpoint of the segment).\n\nAn integer point x is called ideal if it belongs to more segments than any other integer point, i. e. f(y) < f(x) is true for any other integer point y.\n\nYou are given an integer k. Your task is to determine whether it is possible to remove some (possibly zero) segments, so that the given point k becomes ideal.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 50).\n\nThen n lines follow, i-th line of them contains two integers l_i and r_i (1 ≤ l_i, r_i ≤ 50; l_i ≤ r_i) — the endpoints of the i-th segment.\n\nFor each test case, print YES if it is possible to remove some (possibly zero) segments, so that the given point k becomes ideal, otherwise print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nIn the first example, the point 3 is already ideal (it is covered by three segments), so you don't have to delete anything.\n\nIn the fourth example, you can delete everything except the segment [5, 5].\n\nInput:\n```\n44 31 37 92 53 62 91 43 71 32 43 51 46 75 5\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n, k ≤ 50).\n\nThen n lines follow, i-th line of them contains two integers l_i and r_i (1 ≤ l_i, r_i ≤ 50; l_i ≤ r_i) — the endpoints of the i-th segment.",
+    "output": "For each test case, print YES if it is possible to remove some (possibly zero) segments, so that the given point k becomes ideal, otherwise print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "geometry",
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1373E",
+    "contest_id": 1373,
+    "problem_letter": "E",
+    "title": "E. Sum of Digits",
+    "statement": "Let f(x) be the sum of digits of a decimal number x.\n\nFind the smallest non-negative integer x such that f(x) + f(x + 1) + … + f(x + k) = n.\n\nThe first line contains one integer t (1 ≤ t ≤ 150) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (1 ≤ n ≤ 150, 0 ≤ k ≤ 9).\n\nFor each test case, print one integer without leading zeroes. If there is no such x that f(x) + f(x + 1) + … + f(x + k) = n, print -1; otherwise, print the minimum x meeting that constraint.\n\nInput:\n```\n7\n1 0\n1 1\n42 7\n13 7\n99 1\n99 0\n99 2\n```\n\nOutput:\n```\n1\n0\n4\n-1\n599998\n99999999999\n7997\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 150) — the number of test cases.\n\nEach test case consists of one line containing two integers n and k (1 ≤ n ≤ 150, 0 ≤ k ≤ 9).",
+    "output": "For each test case, print one integer without leading zeroes. If there is no such x that f(x) + f(x + 1) + … + f(x + k) = n, print -1; otherwise, print the minimum x meeting that constraint.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*2200"
+    ],
+    "rating": 2200
+}

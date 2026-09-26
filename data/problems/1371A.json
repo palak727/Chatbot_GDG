@@ -1,0 +1,16 @@
+{
+    "id": "1371A",
+    "contest_id": 1371,
+    "problem_letter": "A",
+    "title": "A. Magical Sticks",
+    "statement": "A penguin Rocher has n sticks. He has exactly one stick with length i for all 1 ≤ i ≤ n.\n\nHe can connect some sticks. If he connects two sticks that have lengths a and b, he gets one stick with length a + b. Two sticks, that were used in the operation disappear from his set and the new connected stick appears in his set and can be used for the next connections.\n\nHe wants to create the maximum number of sticks that have the same length. It is not necessary to make all sticks have the same length, some sticks can have the other length. How many sticks with the equal length he can create?\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Next t lines contain descriptions of test cases.\n\nFor each test case, the only line contains a single integer n (1 ≤ n ≤ 10^9).\n\nFor each test case, print a single integer — the answer to the problem.\n\nIn the third case, he can connect two sticks with lengths 1 and 2 and he will get one stick with length 3. So, he will have two sticks with lengths 3.\n\nIn the fourth case, he can connect two sticks with lengths 1 and 3 and he will get one stick with length 4. After that, he will have three sticks with lengths {2, 4, 4}, so two sticks have the same length, and one stick has the other length.\n\nInput:\n```\n4\n1\n2\n3\n4\n```\n\nOutput:\n```\n1\n1\n2\n2\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Next t lines contain descriptions of test cases.\n\nFor each test case, the only line contains a single integer n (1 ≤ n ≤ 10^9).",
+    "output": "For each test case, print a single integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

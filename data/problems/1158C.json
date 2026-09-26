@@ -1,0 +1,22 @@
+{
+    "id": "1158C",
+    "contest_id": 1158,
+    "problem_letter": "C",
+    "title": "C. Permutation recovery",
+    "statement": "Vasya has written some permutation p_1, p_2, …, p_n of integers from 1 to n, so for all 1 ≤ i ≤ n it is true that 1 ≤ p_i ≤ n and all p_1, p_2, …, p_n are different. After that he wrote n numbers next_1, next_2, …, next_n. The number next_i is equal to the minimal index i < j ≤ n, such that p_j > p_i. If there is no such j let's let's define as next_i = n + 1.\n\nIn the evening Vasya went home from school and due to rain, his notebook got wet. Now it is impossible to read some written numbers. Permutation and some values next_i are completely lost! If for some i the value next_i is lost, let's say that next_i = -1.\n\nYou are given numbers next_1, next_2, …, next_n (maybe some of them are equal to -1). Help Vasya to find such permutation p_1, p_2, …, p_n of integers from 1 to n, that he can write it to the notebook and all numbers next_i, which are not equal to -1, will be correct.\n\nThe first line contains one integer t — the number of test cases (1 ≤ t ≤ 100,000).\n\nNext 2·t lines contains the description of test cases,two lines for each. The first line contains one integer n — the length of the permutation, written by Vasya (1 ≤ n ≤ 500,000). The second line contains n integers next_1, next_2, …, next_n, separated by spaces (next_i = -1 or i < next_i ≤ n + 1).\n\nIt is guaranteed, that the sum of n in all test cases doesn't exceed 500,000.\n\nIn hacks you can only use one test case, so T = 1.\n\nPrint T lines, in i-th of them answer to the i-th test case.\n\nIf there is no such permutations p_1, p_2, …, p_n of integers from 1 to n, that Vasya could write, print the only number -1.\n\nIn the other case print n different integers p_1, p_2, …, p_n, separated by spaces (1 ≤ p_i ≤ n). All defined values of next_i which are not equal to -1 should be computed correctly p_1, p_2, …, p_n using defenition given in the statement of the problem. If there exists more than one solution you can find any of them.\n\nIn the first test case for permutation p = [1, 2, 3] Vasya should write next = [2, 3, 4], because each number in permutation is less than next. It's easy to see, that it is the only satisfying permutation.\n\nIn the third test case, any permutation can be the answer because all numbers next_i are lost.\n\nIn the fourth test case, there is no satisfying permutation, so the answer is -1.\n\nInput:\n```\n6\n3\n2 3 4\n2\n3 3\n3\n-1 -1 -1\n3\n3 4 -1\n1\n2\n4\n4 -1 4 5\n```\n\nOutput:\n```\n1 2 3\n2 1\n2 1 3\n-1\n1\n3 2 1 4\n```",
+    "input": "The first line contains one integer t — the number of test cases (1 ≤ t ≤ 100,000).\n\nNext 2·t lines contains the description of test cases,two lines for each. The first line contains one integer n — the length of the permutation, written by Vasya (1 ≤ n ≤ 500,000). The second line contains n integers next_1, next_2, …, next_n, separated by spaces (next_i = -1 or i < next_i ≤ n + 1).\n\nIt is guaranteed, that the sum of n in all test cases doesn't exceed 500,000.\n\nIn hacks you can only use one test case, so T = 1.",
+    "output": "Print T lines, in i-th of them answer to the i-th test case.\n\nIf there is no such permutations p_1, p_2, …, p_n of integers from 1 to n, that Vasya could write, print the only number -1.\n\nIn the other case print n different integers p_1, p_2, …, p_n, separated by spaces (1 ≤ p_i ≤ n). All defined values of next_i which are not equal to -1 should be computed correctly p_1, p_2, …, p_n using defenition given in the statement of the problem. If there exists more than one solution you can find any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "*2100"
+    ],
+    "rating": 2100
+}

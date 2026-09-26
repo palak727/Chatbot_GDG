@@ -1,0 +1,21 @@
+{
+    "id": "1779D",
+    "contest_id": 1779,
+    "problem_letter": "D",
+    "title": "D. Boris and His Amazing Haircut",
+    "statement": "Boris thinks that chess is a tedious game. So he left his tournament early and went to a barber shop as his hair was a bit messy.\n\nHis current hair can be described by an array a_1,a_2,…, a_n, where a_i is the height of the hair standing at position i. His desired haircut can be described by an array b_1,b_2,…, b_n in a similar fashion.\n\nThe barber has m razors. Each has its own size and can be used at most once. In one operation, he chooses a razor and cuts a segment of Boris's hair. More formally, an operation is:\n\nNotice that some razors might have equal sizes — the barber can choose some size x only as many times as the number of razors with size x.\n\nHe may perform as many operations as he wants, as long as any razor is used at most once and a_i = b_i for each 1 ≤ i ≤ n at the end. He does not have to use all razors.\n\nCan you determine whether the barber can give Boris his desired haircut?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 20,000). The description of the test cases follows.\n\nThe first line of each test case contains a positive integer n (3≤ n≤ 2·10^5) — the length of arrays a and b.\n\nThe second line of each test case contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — Boris's current hair.\n\nThe third line of each test case contains n positive integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — Boris's desired hair.\n\nThe fourth line of each test case contains a positive integer m (1 ≤ m ≤ 2·10^5) — the number of razors.\n\nThe fifth line of each test case contains m positive integers x_1,x_2, …, x_m (1 ≤ x_i ≤ 10^9) — the sizes of the razors.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.\n\nFor each test case, print \"YES\" if the barber can cut Boris's hair as desired. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, Boris's hair is initially [3,3,3]. Let us describe a sequence of 2 operations the barber can perform:\n\nIn the third test case, no operation has to be done since Boris's hair is already as desired.\n\nIn the fourth test case, no cuts will be able to increase the third element in [1,1,1] in a way that the array becomes [1,1,2].\n\nInput:\n```\n733 3 32 1 221 263 4 4 6 3 43 1 2 3 2 333 2 3101 2 3 4 5 6 7 8 9 101 2 3 4 5 6 7 8 9 10101 2 3 4 5 6 7 8 9 1031 1 11 1 2124 2 4 3 1 5 6 3 5 6 2 1137 9 4 5 3 3 3 6 8 10 3 2 55 3 1 5 3 2 2 5 8 5 1 1 581 5 3 5 4 2 3 1137 9 4 5 3 3 3 6 8 10 3 2 55 3 1 5 3 2 2 5 8 5 1 1 571 5 3 4 2 3 1319747843 2736467 9385783972039844 2039844 203984412039844\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 20,000). The description of the test cases follows.\n\nThe first line of each test case contains a positive integer n (3≤ n≤ 2·10^5) — the length of arrays a and b.\n\nThe second line of each test case contains n positive integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — Boris's current hair.\n\nThe third line of each test case contains n positive integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 10^9) — Boris's desired hair.\n\nThe fourth line of each test case contains a positive integer m (1 ≤ m ≤ 2·10^5) — the number of razors.\n\nThe fifth line of each test case contains m positive integers x_1,x_2, …, x_m (1 ≤ x_i ≤ 10^9) — the sizes of the razors.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, print \"YES\" if the barber can cut Boris's hair as desired. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "dsu",
+        "greedy",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

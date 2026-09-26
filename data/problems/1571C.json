@@ -1,0 +1,17 @@
+{
+    "id": "1571C",
+    "contest_id": 1571,
+    "problem_letter": "C",
+    "title": "C. Rhyme",
+    "statement": "Let's say that two strings s and t rhyme if both strings have length at least k, and their last k characters are equal. For example, if k = 3, the strings abcd and cebcd rhyme, the strings ab and ab don't rhyme, the strings aaaa and aaaaa rhyme, the strings abcd and abce don't rhyme.\n\nYou have n pairs of strings (s_i, t_i), and for each pair of strings you know, should they rhyme or should not.\n\nFind all possible non-negative integer values for k such that pairs that have to rhyme, rhyme and pairs that must not rhyme, don't rhyme.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of string pairs.\n\nNext n lines contains descriptions of pairs — one per line. The i-th line contains space-separated strings s_i and t_i and marker r_i. Strings are non-empty, consist of lowercase Latin letters and each have length at most 2·10^5. The marker r_i equals to 1 if strings have to rhyme, or 0 if they must not rhyme.\n\nIt's guaranteed that for each test case there is at least one pair with r_i equal to 1 and that the total length of all strings over all test cases doesn't exceed 4·10^5.\n\nFor each test case, firstly print integer m — the number of possible non-negative integer values of k such that pairs that have to rhyme, rhyme and pairs that must not rhyme, don't rhyme. Next, print all these values of k (without repetitions). You can print them in any order.\n\nIn the first test case, if k is at least 1 then kotlin and heroes don't rhyme.\n\nIn the second test case, for k = 2 join and kotlin rhyme, and episode and eight don't rhyme.\n\nInput:\n```\n3\n1\nkotlin heroes 1\n2\njoin kotlin 1\nepisode eight 0\n4\nabc abcdef 0\nxyz zzz 1\naaa bba 0\nc d 0\n```\n\nOutput:\n```\n1\n0\n2\n1 2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of string pairs.\n\nNext n lines contains descriptions of pairs — one per line. The i-th line contains space-separated strings s_i and t_i and marker r_i. Strings are non-empty, consist of lowercase Latin letters and each have length at most 2·10^5. The marker r_i equals to 1 if strings have to rhyme, or 0 if they must not rhyme.\n\nIt's guaranteed that for each test case there is at least one pair with r_i equal to 1 and that the total length of all strings over all test cases doesn't exceed 4·10^5.",
+    "output": "For each test case, firstly print integer m — the number of possible non-negative integer values of k such that pairs that have to rhyme, rhyme and pairs that must not rhyme, don't rhyme. Next, print all these values of k (without repetitions). You can print them in any order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1956B",
+    "contest_id": 1956,
+    "problem_letter": "B",
+    "title": "B. Nene and the Card Game",
+    "statement": "You and Nene are playing a card game. The deck with 2n cards is used to play this game. Each card has an integer from 1 to n on it, and each of integers 1 through n appears exactly on 2 cards. Additionally, there is a table where cards are placed during the game (initially, the table is empty).\n\nIn the beginning of the game, these 2n cards are distributed between you and Nene so that each player receives n cards.\n\nAfter it, you and Nene alternatively take 2n turns, i.e. each person takes n turns, starting with you. On each turn:\n\nNote that turns are made publicly: each player can see all the cards on the table at each moment.\n\nNene is very smart so she always selects cards optimally in order to maximize her score in the end of the game (after 2n rounds). If she has several optimal moves, she selects the move that minimizes your score in the end of the game.\n\nMore formally, Nene always takes turns optimally in order to maximize her score in the end of the game in the first place and to minimize your score in the end of the game in the second place.\n\nAssuming that the cards are already distributed and cards in your hand have integers a_1, a_2, …, a_n written on them, what is the maximum number of points you can get by taking your turns optimally?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of test cases follows.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of cards you and Nene receive in the beginning of the game.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the integers on the cards in your hand. It is guaranteed that each integer from 1 through n appears in the sequence a_1, a_2, …, a_n at most 2 times.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer: the maximum number of points you can get.\n\nIn the first test case, the integers written on your cards are 1, 1, 2 and 3. The integers written on Nene's cards are 2, 3, 4 and 4. The game may proceed as follows:\n\nAt the end of the game, you scored 1 point, and Nene scored 3. It can be shown that you cannot score more than 1 point if Nene plays optimally, so the answer is 1.\n\nIn the second test case, if both players play optimally, you score 2 points and Nene scores 6 points.\n\nInput:\n```\n541 1 2 387 4 1 2 8 8 5 587 1 4 5 3 4 2 631 2 311\n```\n\nOutput:\n```\n1\n2\n1\n0\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of test cases follows.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of cards you and Nene receive in the beginning of the game.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the integers on the cards in your hand. It is guaranteed that each integer from 1 through n appears in the sequence a_1, a_2, …, a_n at most 2 times.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer: the maximum number of points you can get.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

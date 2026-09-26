@@ -1,0 +1,18 @@
+{
+    "id": "1307F",
+    "contest_id": 1307,
+    "problem_letter": "F",
+    "title": "F. Cow and Vacation",
+    "statement": "Bessie is planning a vacation! In Cow-lifornia, there are n cities, with n-1 bidirectional roads connecting them. It is guaranteed that one can reach any city from any other city.\n\nBessie is considering v possible vacation plans, with the i-th one consisting of a start city a_i and destination city b_i.\n\nIt is known that only r of the cities have rest stops. Bessie gets tired easily, and cannot travel across more than k consecutive roads without resting. In fact, she is so desperate to rest that she may travel through the same city multiple times in order to do so.\n\nFor each of the vacation plans, does there exist a way for Bessie to travel from the starting city to the destination city?\n\nThe first line contains three integers n, k, and r (2 ≤ n ≤ 2·10^5, 1 ≤ k,r ≤ n) — the number of cities, the maximum number of roads Bessie is willing to travel through in a row without resting, and the number of rest stops.\n\nEach of the following n-1 lines contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), meaning city x_i and city y_i are connected by a road.\n\nThe next line contains r integers separated by spaces — the cities with rest stops. Each city will appear at most once.\n\nThe next line contains v (1 ≤ v ≤ 2·10^5) — the number of vacation plans.\n\nEach of the following v lines contain two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i) — the start and end city of the vacation plan.\n\nIf Bessie can reach her destination without traveling across more than k roads without resting for the i-th vacation plan, print YES. Otherwise, print NO.\n\nThe graph for the first example is shown below. The rest stop is denoted by red.\n\nFor the first query, Bessie can visit these cities in order: 1, 2, 3.\n\nFor the second query, Bessie can visit these cities in order: 3, 2, 4, 5.\n\nFor the third query, Bessie cannot travel to her destination. For example, if she attempts to travel this way: 3, 2, 4, 5, 6, she travels on more than 2 roads without resting.\n\nThe graph for the second example is shown below.\n\nInput:\n```\n6 2 1\n1 2\n2 3\n2 4\n4 5\n5 6\n2\n3\n1 3\n3 5\n3 6\n```\n\nOutput:\n```\nYES\nYES\nNO\n```\n\nInput:\n```\n8 3 3\n1 2\n2 3\n3 4\n4 5\n4 6\n6 7\n7 8\n2 5 8\n2\n7 1\n8 1\n```\n\nOutput:\n```\nYES\nNO\n```",
+    "input": "The first line contains three integers n, k, and r (2 ≤ n ≤ 2·10^5, 1 ≤ k,r ≤ n) — the number of cities, the maximum number of roads Bessie is willing to travel through in a row without resting, and the number of rest stops.\n\nEach of the following n-1 lines contain two integers x_i and y_i (1 ≤ x_i, y_i ≤ n, x_i ≠ y_i), meaning city x_i and city y_i are connected by a road.\n\nThe next line contains r integers separated by spaces — the cities with rest stops. Each city will appear at most once.\n\nThe next line contains v (1 ≤ v ≤ 2·10^5) — the number of vacation plans.\n\nEach of the following v lines contain two integers a_i and b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i) — the start and end city of the vacation plan.",
+    "output": "If Bessie can reach her destination without traveling across more than k roads without resting for the i-th vacation plan, print YES. Otherwise, print NO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "trees",
+        "*3300"
+    ],
+    "rating": 3300
+}

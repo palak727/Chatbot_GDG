@@ -1,0 +1,18 @@
+{
+    "id": "1972A",
+    "contest_id": 1972,
+    "problem_letter": "A",
+    "title": "A. Contest Proposal",
+    "statement": "A contest contains n problems and the difficulty of the i-th problem is expected to be at most b_i. There are already n problem proposals and the difficulty of the i-th problem is a_i. Initially, both a_1, a_2, …, a_n and b_1, b_2, …, b_n are sorted in non-decreasing order.\n\nSome of the problems may be more difficult than expected, so the writers must propose more problems. When a new problem with difficulty w is proposed, the most difficult problem will be deleted from the contest, and the problems will be sorted in a way that the difficulties are non-decreasing.\n\nIn other words, in each operation, you choose an integer w, insert it into the array a, sort array a in non-decreasing order, and remove the last element from it.\n\nFind the minimum number of new problems to make a_i≤ b_i for all i.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains only one positive integer n (1 ≤ n ≤ 100), representing the number of problems.\n\nThe second line of each test case contains an array a of length n (1≤ a_1≤ a_2≤⋯≤ a_n≤ 10^9).\n\nThe third line of each test case contains an array b of length n (1≤ b_1≤ b_2≤⋯≤ b_n≤ 10^9).\n\nFor each test case, print an integer as your answer in a new line.\n\nIn the first test case:\n\nIt can be proved that it's impossible to reach the goal by proposing fewer new problems.\n\nIn the second test case:\n\nIt can be proved that it's impossible to reach the goal by proposing fewer new problems.\n\nInput:\n```\n261000 1400 2000 2000 2200 2700800 1200 1500 1800 2200 300064 5 6 7 8 91 2 3 4 5 6\n```\n\nOutput:\n```\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 100). The description of the test cases follows.\n\nThe first line of each test case contains only one positive integer n (1 ≤ n ≤ 100), representing the number of problems.\n\nThe second line of each test case contains an array a of length n (1≤ a_1≤ a_2≤⋯≤ a_n≤ 10^9).\n\nThe third line of each test case contains an array b of length n (1≤ b_1≤ b_2≤⋯≤ b_n≤ 10^9).",
+    "output": "For each test case, print an integer as your answer in a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

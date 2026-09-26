@@ -1,0 +1,19 @@
+{
+    "id": "1567D",
+    "contest_id": 1567,
+    "problem_letter": "D",
+    "title": "D. Expression Evaluation Error",
+    "statement": "On the board, Bob wrote n positive integers in base 10 with sum s (i. e. in decimal numeral system). Alice sees the board, but accidentally interprets the numbers on the board as base-11 integers and adds them up (in base 11).\n\nWhat numbers should Bob write on the board, so Alice's sum is as large as possible?\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers s and n (1 ≤ s ≤ 10^9; 1 ≤ n ≤ min(100, s)) — the sum and amount of numbers on the board, respectively. Numbers s and n are given in decimal notation (base 10).\n\nFor each test case, output n positive integers — the numbers Bob should write on the board, so Alice's sum is as large as possible. If there are multiple answers, print any of them.\n\nIn the first test case, 70_10 + 27_10 = 97_10, and Alice's sum is 70_11 + 27_11 = 97_11 = 9·11 + 7 = 106_10. (Here x_b represents the number x in base b.) It can be shown that it is impossible for Alice to get a larger sum than 106_10.\n\nIn the second test case, Bob can only write a single number on the board, so he must write 17.\n\nIn the third test case, 3_10 + 4_10 + 100_10 + 4_10 = 111_10, and Alice's sum is 3_11 + 4_11 + 100_11 + 4_11 = 110_11 = 1·11^2 + 1·11 = 132_10. It can be shown that it is impossible for Alice to get a larger sum than 132_10.\n\nInput:\n```\n6\n97 2\n17 1\n111 4\n100 2\n10 9\n999999 3\n```\n\nOutput:\n```\n70 27 \n17 \n3 4 100 4\n10 90\n1 1 2 1 1 1 1 1 1 \n999900 90 9\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers s and n (1 ≤ s ≤ 10^9; 1 ≤ n ≤ min(100, s)) — the sum and amount of numbers on the board, respectively. Numbers s and n are given in decimal notation (base 10).",
+    "output": "For each test case, output n positive integers — the numbers Bob should write on the board, so Alice's sum is as large as possible. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

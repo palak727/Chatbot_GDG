@@ -1,0 +1,18 @@
+{
+    "id": "2052E",
+    "contest_id": 2052,
+    "problem_letter": "E",
+    "title": "E. Expression Correction",
+    "statement": "Eve is studying mathematics in school. They've already learned how to perform addition and subtraction of decimal numbers and are practicing it by solving fun puzzles. The specific type of the puzzle they are solving is described below. They are given an equality with addition and subtraction which may or may not be a correct one. They have to verify the equality, and if it is not a correct one, then they have to tell if it is possible to turn it into a correct one by moving one digit to a different place in the equality.\n\nLet us formally define the equality in this puzzle:\n\nThe puzzle is pretty straightforward once you know how to add and subtract decimal numbers, but it is tenuous. It is easy to get distracted and make a mistake while performing computation. Your task is to write a program that solves the expression correction puzzle to help Eve.\n\nThe input file consists of a single line — an equality as defined in the problem statement. The total length of the input string does not exceed 100 characters.\n\nWrite a single line to the output. If the input contains a correct equality, output a single word \"Correct\". Otherwise, if the input equality can be turned into a correct one by moving one digit, output the resulting correct equality. If there are multiple possible correct equalities after moving one digit, you may output any one of them. Otherwise, output a single word \"Impossible\".\n\nInput:\n```\n2+2=4\n```\n\nOutput:\n```\nCorrect\n```\n\nInput:\n```\n123456789+9876543210=111111110+11-1\n```\n\nOutput:\n```\n123456789+987654321=1111111100+11-1\n```\n\nInput:\n```\n10+9=10\n```\n\nOutput:\n```\nImpossible\n```\n\nInput:\n```\n24=55-13\n```\n\nOutput:\n```\n42=55-13\n```\n\nInput:\n```\n1000000000-10=9999999999\n```\n\nOutput:\n```\nImpossible\n```",
+    "input": "The input file consists of a single line — an equality as defined in the problem statement. The total length of the input string does not exceed 100 characters.",
+    "output": "Write a single line to the output. If the input contains a correct equality, output a single word \"Correct\". Otherwise, if the input equality can be turned into a correct one by moving one digit, output the resulting correct equality. If there are multiple possible correct equalities after moving one digit, you may output any one of them. Otherwise, output a single word \"Impossible\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "expression parsing",
+        "strings",
+        "*1900"
+    ],
+    "rating": 1900
+}

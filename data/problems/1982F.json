@@ -1,0 +1,18 @@
+{
+    "id": "1982F",
+    "contest_id": 1982,
+    "problem_letter": "F",
+    "title": "F. Sorting Problem Again",
+    "statement": "You have an array a of n elements. There are also q modifications of the array. Before the first modification and after each modification, you would like to know the following:\n\nWhat is the minimum length subarray that needs to be sorted in non-decreasing order in order for the array a to be completely sorted in non-decreasing order?\n\nMore formally, you want to select a subarray of the array (l, r) with the minimum value of r - l + 1. After that, you will sort the elements a_l, a_{l + 1}, …, a_r and want the condition a_i ≤ a_{i + 1} to hold for all 1 ≤ i < n. If the array is already sorted in non-decreasing order, then l and r should be considered as equal to -1.\n\nNote that finding such (l, r) does not change the array in any way. The modifications themselves take the form: assign a_pos = x for given pos and x.\n\nEach test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10) — the number of test cases. Then follows the description of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line of each test case contains n integers a_i (0 ≤ |a_i| ≤ 10^9) — the initial elements of the array a.\n\nThe third line of each test case contains a number q (0 ≤ q ≤ 5·10^5) — the number of modifications to the array.\n\nThe following q lines of each test case contain two integers pos_i (1 ≤ pos_i ≤ n) and val_i (0 ≤ |val_i| ≤ 10^9) — this means that for the i-th modification, a_pos_i is assigned the value val_i.\n\nIt is guaranteed that the sum of n and the sum of q for all test cases does not exceed 5·10^5.\n\nFor each test case, output q + 1 lines. Each line should contain 2 integers l, r — the boundaries of the minimum subarray, such that sorting it will make the array a completely sorted. If a is already sorted, then output l = -1, r = -1.\n\nLet's consider the first test case:\n\nThe red segments indicate the subarrays that need to be sorted in order for the entire array to be sorted in non-decreasing order.\n\nInput:\n```\n252 2 3 4 532 14 11 151 2 3 4 591 42 35 23 11 15 14 13 12 1\n```\n\nOutput:\n```\n-1 -1\n1 2\n1 4\n3 4\n-1 -1\n1 3\n1 3\n1 5\n1 5\n2 5\n2 5\n2 5\n2 5\n-1 -1\n```",
+    "input": "Each test consists of several test cases. The first line contains an integer t (1 ≤ t ≤ 10) — the number of test cases. Then follows the description of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^5).\n\nThe second line of each test case contains n integers a_i (0 ≤ |a_i| ≤ 10^9) — the initial elements of the array a.\n\nThe third line of each test case contains a number q (0 ≤ q ≤ 5·10^5) — the number of modifications to the array.\n\nThe following q lines of each test case contain two integers pos_i (1 ≤ pos_i ≤ n) and val_i (0 ≤ |val_i| ≤ 10^9) — this means that for the i-th modification, a_pos_i is assigned the value val_i.\n\nIt is guaranteed that the sum of n and the sum of q for all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output q + 1 lines. Each line should contain 2 integers l, r — the boundaries of the minimum subarray, such that sorting it will make the array a completely sorted. If a is already sorted, then output l = -1, r = -1.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "sortings",
+        "*2600"
+    ],
+    "rating": 2600
+}

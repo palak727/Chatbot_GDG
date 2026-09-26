@@ -1,0 +1,17 @@
+{
+    "id": "1928A",
+    "contest_id": 1928,
+    "problem_letter": "A",
+    "title": "A. Rectangle Cutting",
+    "statement": "Bob has a rectangle of size a × b. He tries to cut this rectangle into two rectangles with integer sides by making a cut parallel to one of the sides of the original rectangle. Then Bob tries to form some other rectangle from the two resulting rectangles, and he can rotate and move these two rectangles as he wishes.\n\nNote that if two rectangles differ only by a 90^circ rotation, they are considered the same. For example, the rectangles 6 × 4 and 4 × 6 are considered the same.\n\nThus, from the 2 × 6 rectangle, another rectangle can be formed, because it can be cut into two 2 × 3 rectangles, and then these two rectangles can be used to form the 4 × 3 rectangle, which is different from the 2 × 6 rectangle.\n\nHowever, from the 2 × 1 rectangle, another rectangle cannot be formed, because it can only be cut into two rectangles of 1 × 1, and from these, only the 1 × 2 and 2 × 1 rectangles can be formed, which are considered the same.\n\nHelp Bob determine if he can obtain some other rectangle, or if he is just wasting his time.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by the description of the test cases.\n\nThe single line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the size of Bob's rectangle.\n\nFor each test case, output \"Yes\" if Bob can obtain another rectangle from the a × b rectangle. Otherwise, output \"No\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive answers.\n\nIn the first test case, the 1 × 1 rectangle cannot be cut into two rectangles, so another rectangle cannot be obtained from it.\n\nIn the fourth test case, the 3 × 2 rectangle can be cut into two 3 × 1 rectangles, and from these, the 1 × 6 rectangle can be formed.\n\nIn the fifth test case, the 2 × 2 rectangle can be cut into two 1 × 2 rectangles, and from these, the 1 × 4 rectangle can be formed.\n\nInput:\n```\n71 12 12 63 22 22 46 3\n```\n\nOutput:\n```\nNo\nNo\nYes\nYes\nYes\nYes\nNo\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by the description of the test cases.\n\nThe single line of each test case contains two integers a and b (1 ≤ a, b ≤ 10^9) — the size of Bob's rectangle.",
+    "output": "For each test case, output \"Yes\" if Bob can obtain another rectangle from the a × b rectangle. Otherwise, output \"No\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive answers.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

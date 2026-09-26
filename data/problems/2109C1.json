@@ -1,0 +1,20 @@
+{
+    "id": "2109C1",
+    "contest_id": 2109,
+    "problem_letter": "C1",
+    "title": "C1. Hacking Numbers (Easy Version)",
+    "statement": "This is the easy version of the problem. In this version, you can send at most 7 commands. You can make hacks only if all versions of the problem are solved.\n\nThis is an interactive problem.\n\nWelcome, Duelists! In this interactive challenge, there is an unknown integer x (1 ≤ x ≤ 10^9). You must make it equal to a given integer in the input n. By harnessing the power of \"Mathmech\" monsters, you can send a command to do one of the following:\n\nYou have to make x equal to n using at most 7 commands.\n\n^{∗}S(n) is a function that returns the sum of all the individual digits of a non-negative integer n. For example, S(123) = 1 + 2 + 3 = 6\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^9).\n\nThe interaction for each test case begins by reading the integer n.\n\nTo send a command, output a line in the following format:\n\nThe jury will output \"1\" if x + y is within [1, 10^18] (successful), and \"0\" otherwise. If successful, update x ← x + y.\n\nThe jury will output \"1\" if x·y is within [1, 10^18] (successful), and \"0\" otherwise. If successful, update x ← x·y.\n\nThe jury will output \"1\" if y is a divisor of x (successful), and \"0\" otherwise. If successful, update x ← x/y.\n\nThe jury will always output \"1\" and update x ← S(x).\n\nNote that commands are case sensitive.\n\nWhen you have determined that x is equal to n, output a line in the following format:\n\nNote that answering does not count toward your limit of 7 commands.\n\nIf your program makes more than 7 commands for one test case, or makes an invalid command, then the response to the command will be \"-1\". After receiving such a response, your program should immediately terminate to receive the verdict Wrong Answer. Otherwise, it may receive any other verdict.\n\nAfter printing a command, do not forget to output the end of the line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nThe interactor is non-adaptive. The unknown integer x does not change during the interaction.\n\nHacks\n\nTo hack, use the following format.\n\nThe first line should contain a single integer t (1 ≤ t ≤ 5000) — the number of test cases.\n\nThe first line of each test case should contain two positive integers n and x (1 ≤ n,x ≤ 10^9) — denoting the unknown integer and the target value to which it should be made equal, respectively.\n\nNote that the empty lines in the example input and output are for the sake of clarity, and do not occur in the real interaction.\n\nInput:\n```\n2\n100\n\n0\n\n1\n\n1\n\n1\n\n5\n\n1\n\n1\n\n1\n```\n\nOutput:\n```\nadd -10\n\nadd 1\n\nmul 10\n\n!\n\ndigit\n\ndiv 2\n\n!\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first and only line of each test case contains one integer n (1 ≤ n ≤ 10^9).",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

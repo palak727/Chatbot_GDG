@@ -1,0 +1,17 @@
+{
+    "id": "1068C",
+    "contest_id": 1068,
+    "problem_letter": "C",
+    "title": "C. Colored Rooks",
+    "statement": "Ivan is a novice painter. He has n dyes of different colors. He also knows exactly m pairs of colors which harmonize with each other.\n\nIvan also enjoy playing chess. He has 5000 rooks. He wants to take k rooks, paint each of them in one of n colors and then place this k rooks on a chessboard of size 10^9 × 10^9.\n\nLet's call the set of rooks on the board connected if from any rook we can get to any other rook in this set moving only through cells with rooks from this set. Assume that rooks can jump over other rooks, in other words a rook can go to any cell which shares vertical and to any cell which shares horizontal.\n\nIvan wants his arrangement of rooks to have following properties:\n\nPlease help Ivan find such an arrangement.\n\nThe first line of input contains 2 integers n, m (1 ≤ n ≤ 100, 0 ≤ m ≤ min(1000, ,, (n(n-1))/2)) — number of colors and number of pairs of colors which harmonize with each other.\n\nIn next m lines pairs of colors which harmonize with each other are listed. Colors are numbered from 1 to n. It is guaranteed that no pair occurs twice in this list.\n\nPrint n blocks, i-th of them describes rooks of i-th color.\n\nIn the first line of block print one number a_i (1 ≤ a_i ≤ 5000) — number of rooks of color i. In each of next a_i lines print two integers x and y (1 ≤ x, ,, y ≤ 10^9) — coordinates of the next rook.\n\nAll rooks must be on different cells.\n\nTotal number of rooks must not exceed 5000.\n\nIt is guaranteed that the solution exists.\n\nRooks arrangements for all three examples (red is color 1, green is color 2 and blue is color 3).\n\nInput:\n```\n3 2\n1 2\n2 3\n```\n\nOutput:\n```\n2\n3 4\n1 4\n4\n1 2\n2 2\n2 4\n5 4\n1\n5 1\n```\n\nInput:\n```\n3 3\n1 2\n2 3\n3 1\n```\n\nOutput:\n```\n1\n1 1\n1\n1 2\n1\n1 3\n```\n\nInput:\n```\n3 1\n1 3\n```\n\nOutput:\n```\n1\n1 1\n1\n2 2\n1\n3 1\n```",
+    "input": "The first line of input contains 2 integers n, m (1 ≤ n ≤ 100, 0 ≤ m ≤ min(1000, ,, (n(n-1))/2)) — number of colors and number of pairs of colors which harmonize with each other.\n\nIn next m lines pairs of colors which harmonize with each other are listed. Colors are numbered from 1 to n. It is guaranteed that no pair occurs twice in this list.",
+    "output": "Print n blocks, i-th of them describes rooks of i-th color.\n\nIn the first line of block print one number a_i (1 ≤ a_i ≤ 5000) — number of rooks of color i. In each of next a_i lines print two integers x and y (1 ≤ x, ,, y ≤ 10^9) — coordinates of the next rook.\n\nAll rooks must be on different cells.\n\nTotal number of rooks must not exceed 5000.\n\nIt is guaranteed that the solution exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "*1700"
+    ],
+    "rating": 1700
+}

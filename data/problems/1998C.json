@@ -1,0 +1,20 @@
+{
+    "id": "1998C",
+    "contest_id": 1998,
+    "problem_letter": "C",
+    "title": "C. Perform Operations to Maximize Score",
+    "statement": "You are given an array a of length n and an integer k. You are also given a binary array b of length n.\n\nYou can perform the following operation at most k times:\n\nYour score is defined to be maxlimits_{i = 1}^n left( a_i + median(c_i) right), where c_i denotes the array of length n-1 that you get by deleting a_i from a. In other words, your score is the maximum value of a_i + median(c_i) over all i from 1 to n.\n\nFind the maximum score that you can achieve if you perform the operations optimally.\n\nFor an arbitrary array p, median(p) is defined as the leftlfloor (|p|+1)/2 rightrfloor-th smallest element of p. For example, median left( [3,2,1,3] right) = 2 and median left( [6,2,4,5,1] right) = 4.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case begins with two integers n and k (2 ≤ n ≤ 2·10^5, 0 ≤ k ≤ 10^9) — the length of the a and the number of operations you can perform.\n\nThe following line contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — denoting the array a.\n\nThe following line contains n space separated integers b_1, b_2, …, b_n (b_i is 0 or 1) — denoting the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum value of score you can get on a new line.\n\nFor the first test case, it is optimal to perform 5 operations on both elements so a = [8,8]. So, the maximum score we can achieve is max(8 + median[8], 8 + median[8]) = 16, as c_1 = [a_2] = [8]. It can be proven that you cannot get a better score.\n\nFor the second test case, you are not able to perform operations on any elements, so a remains [3,3,3]. So, the maximum score we can achieve is 3 + median[3, 3] = 6, as c_1 = [a_2, a_3] = [3, 3]. It can be proven that you cannot get a better score.\n\nInput:\n```\n82 103 31 13 103 3 30 0 04 42 1 5 10 1 0 15 47 5 2 5 40 0 1 0 15 15 15 15 2 111 0 0 1 15 210 11 4 10 151 1 0 1 04 41 1 2 51 1 0 02 10000000001000000000 10000000001 1\n```\n\nOutput:\n```\n16\n6\n8\n13\n21\n26\n8\n3000000000\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case begins with two integers n and k (2 ≤ n ≤ 2·10^5, 0 ≤ k ≤ 10^9) — the length of the a and the number of operations you can perform.\n\nThe following line contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — denoting the array a.\n\nThe following line contains n space separated integers b_1, b_2, …, b_n (b_i is 0 or 1) — denoting the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum value of score you can get on a new line.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}

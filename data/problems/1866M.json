@@ -1,0 +1,20 @@
+{
+    "id": "1866M",
+    "contest_id": 1866,
+    "problem_letter": "M",
+    "title": "M. Mighty Rock Tower",
+    "statement": "Pak Chanek comes up with an idea in the midst of boredom to play a game. The game is a rock tower game. There is a big rock that is used as a base. There are also N small identical rocks that Pak Chanek will use to build a rock tower with a height of N above the base rock.\n\nInitially, there are no small rocks that are located above the base rock. In other words, the height of the tower above the base rock is initially 0. In one move, Pak Chanek can place one small rock onto the top of the tower which makes the height of the tower above the base rock increase by 1. Each time Pak Chanek place one small rock, the following will happen after the small rock is placed:\n\nIf the tower successfully reaches a height of N without any rocks falling after that, then the game is ended.\n\nIf given an integer array [P_1, P_2, …, P_N], what is the expected value of the number of moves that Pak Chanek needs to do to end the game? It can be proven that the expected value can be represented as an simple fraction P/Q where Q is coprime to 998,244,353. Output the value of P × Q^{-1} modulo 998,244,353.\n\nThe first line contains a single integer N (1 ≤ N ≤ 2·10^5) — the required height of the rock tower.\n\nThe second line contains N integers P_1, P_2, P_3, …, P_N (0 ≤ P_i ≤ 99).\n\nAn integer representing the expected value of the number of moves that Pak Chanek needs to do to end the game, modulo 998,244,353.\n\nIn the first example, the expected value of the number of moves that Pak Chanek needs to do to end the game is 19/2.\n\nInput:\n```\n2\n80 50\n```\n\nOutput:\n```\n499122186\n```\n\nInput:\n```\n3\n25 16 20\n```\n\nOutput:\n```\n879786027\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 2·10^5) — the required height of the rock tower.\n\nThe second line contains N integers P_1, P_2, P_3, …, P_N (0 ≤ P_i ≤ 99).",
+    "output": "An integer representing the expected value of the number of moves that Pak Chanek needs to do to end the game, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2400"
+    ],
+    "rating": 2400
+}

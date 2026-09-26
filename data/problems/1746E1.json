@@ -1,0 +1,19 @@
+{
+    "id": "1746E1",
+    "contest_id": 1746,
+    "problem_letter": "E1",
+    "title": "E1. Joking (Easy Version)",
+    "statement": "The only difference between this problem and the hard version is the maximum number of questions.\n\nThis is an interactive problem.\n\nThere is a hidden integer 1 ≤ x ≤ n which you have to find. In order to find it you can ask at most 82 questions.\n\nIn each question you can choose a non-empty integer set S and ask if x belongs to S or not, after each question, if x belongs to S, you'll receive \"YES\", otherwise \"NO\".\n\nBut the problem is that not all answers are necessarily true (some of them are joking), it's just guaranteed that for each two consecutive questions, at least one of them is answered correctly.\n\nAdditionally to the questions, you can make at most 2 guesses for the answer x. Each time you make a guess, if you guess x correctly, you receive \":)\" and your program should terminate, otherwise you'll receive \":(\".\n\nAs a part of the joking, we will not fix the value of x in the beginning. Instead, it can change throughout the interaction as long as all the previous responses are valid as described above.\n\nNote that your answer guesses are always answered correctly. If you ask a question before and after a guess, at least one of these two questions is answered correctly, as normal.\n\nThe only line of the input contains a single integer n (1 ≤ n ≤ 10^5), the maximum possible value of x.\n\nFor each question, if you want to ask about a set S, first print the character '?', then print the size of S and then print the elements of S one by one. Each element should be an integer between 1 and n, the elements must be distinct. After each question, read a string \"YES\" or \"NO\", as explained in the statement. You can make at most 82 such questions.\n\nIf you want to guess for x, first print the character '!' and then print your guess. After each guess, read \":)\" or \":(\". If you guess x correctly, the answer is \":)\" and your program should terminate immediately, otherwise you'll receive \":(\". You can make at most 2 such guesses.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacking is not allowed in this problem.\n\nIf the answer of the first question were correct, then x would have been equal to 6, but as we can see in the first guess, 6 is not the answer.\n\nSo the answer of the first question is joking. As we know, the answer of at least one of our two questions is correct, since the answer of the first question was joking, the answer of the second question should be correct.\n\nSo we will understand that x is not equal to 1, 2, 3 or 4, and we also knew that x is not equal to 6 either. Hence x should be equal to 5.\n\nInput:\n```\n6\n\nNO\n\n:(\n\nNO\n\n:)\n```\n\nOutput:\n```\n? 5 1 2 5 4 3\n\n! 6\n\n? 4 1 2 3 4\n\n! 5\n```",
+    "input": "The only line of the input contains a single integer n (1 ≤ n ≤ 10^5), the maximum possible value of x.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "interactive",
+        "ternary search",
+        "*2500"
+    ],
+    "rating": 2500
+}

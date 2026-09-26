@@ -1,0 +1,18 @@
+{
+    "id": "1796A",
+    "contest_id": 1796,
+    "problem_letter": "A",
+    "title": "A. Typical Interview Problem",
+    "statement": "The FB-string is formed as follows. Initially, it is empty. We go through all positive integers, starting from 1, in ascending order, and do the following for each integer:\n\nNote that if an integer is divisible by both 3 and 5, we append F, and then B, not in the opposite order.\n\nThe first 10 characters of the FB-string are FBFFBFFBFB: the first F comes from the integer 3, the next character (B) comes from 5, the next F comes from the integer 6, and so on. It's easy to see that this string is infinitely long. Let f_i be the i-th character of FB-string; so, f_1 is F, f_2 is B, f_3 is F, f_4 is F, and so on.\n\nYou are given a string s, consisting of characters F and/or B. You have to determine whether it is a substring (contiguous subsequence) of the FB-string. In other words, determine if it is possible to choose two integers l and r (1 ≤ l ≤ r) so that the string f_l f_{l+1} f_{l+2} … f_r is exactly s.\n\nFor example:\n\nThe first line contains one integer t (1 ≤ t ≤ 2046) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer k (1 ≤ k ≤ 10) — the number of characters in s. The second line contains s, which is a string of exactly k characters. Each character of s is either F or B.\n\nFor each test case, print YES if s is a substring of the FB-string, or NO otherwise.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nInput:\n```\n33FFB8BFFBFFBF3BBB\n```\n\nOutput:\n```\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2046) — the number of test cases.\n\nEach test case consists of two lines. The first line contains one integer k (1 ≤ k ≤ 10) — the number of characters in s. The second line contains s, which is a string of exactly k characters. Each character of s is either F or B.",
+    "output": "For each test case, print YES if s is a substring of the FB-string, or NO otherwise.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

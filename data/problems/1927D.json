@@ -1,0 +1,22 @@
+{
+    "id": "1927D",
+    "contest_id": 1927,
+    "problem_letter": "D",
+    "title": "D. Find the Different Ones!",
+    "statement": "You are given an array a of n integers, and q queries.\n\nEach query is represented by two integers l and r (1 ≤ l ≤ r ≤ n). Your task is to find, for each query, two indices i and j (or determine that they do not exist) such that:\n\nIn other words, for each query, you need to find a pair of different elements among a_l, a_{l+1}, …, a_r, or report that such a pair does not exist.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array a.\n\nThe third line of each test case contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe next q lines contain two integers each, l and r (1 ≤ l < r ≤ n) — the boundaries of the query.\n\nIt is guaranteed that the sum of the values of n across all test cases does not exceed 2·10^5. Similarly, it is guaranteed that the sum of the values of q across all test cases does not exceed 2·10^5.\n\nFor each query, output two integers separated by space: i and j (l ≤ i, j ≤ r), for which a_i ≠ a_j. If such a pair does not exist, output i=-1 and j=-1.\n\nYou may separate the outputs for the test cases with empty lines. This is not a mandatory requirement.\n\nInput:\n```\n551 1 2 1 131 51 21 3630 20 20 10 10 2051 22 32 42 63 545 2 3 441 21 42 32 451 4 3 2 451 52 43 43 54 552 3 1 4 271 21 41 52 42 53 54 5\n```\n\nOutput:\n```\n2 3\n-1 -1\n1 3\n\n2 1\n-1 -1\n4 2\n4 6\n5 3\n\n1 2\n1 2\n2 3\n3 2\n\n1 3\n2 4\n3 4\n5 3\n5 4\n\n1 2\n4 2\n1 3\n2 3\n3 2\n5 4\n5 4\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the elements of the array a.\n\nThe third line of each test case contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nThe next q lines contain two integers each, l and r (1 ≤ l < r ≤ n) — the boundaries of the query.\n\nIt is guaranteed that the sum of the values of n across all test cases does not exceed 2·10^5. Similarly, it is guaranteed that the sum of the values of q across all test cases does not exceed 2·10^5.",
+    "output": "For each query, output two integers separated by space: i and j (l ≤ i, j ≤ r), for which a_i ≠ a_j. If such a pair does not exist, output i=-1 and j=-1.\n\nYou may separate the outputs for the test cases with empty lines. This is not a mandatory requirement.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "dsu",
+        "greedy",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

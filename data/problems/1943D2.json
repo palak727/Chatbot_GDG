@@ -1,0 +1,17 @@
+{
+    "id": "1943D2",
+    "contest_id": 1943,
+    "problem_letter": "D2",
+    "title": "D2. Counting Is Fun (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference between the two versions is the constraint on n. You can make hacks only if both versions of the problem are solved.\n\nAn array b of m non-negative integers is said to be good if all the elements of b can be made equal to 0 using the following operation some (possibly, zero) times:\n\nYou are given two positive integers n, k and a prime number p.\n\nOver all (k+1)^n arrays of length n such that 0 ≤ a_i ≤ k for all 1 ≤ i ≤ n, count the number of good arrays.\n\nSince the number might be too large, you are only required to find it modulo p.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three positive integers n, k and p (3 ≤ n ≤ 3000, 1 ≤ k ≤ n, 10^8 < p < 10^9) — the length of the array a, the upper bound on the elements of a and modulus p.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^7, and p is prime.\n\nFor each test case, on a new line, output the number of good arrays modulo p.\n\nIn the first test case, the 4 good arrays a are:\n\nInput:\n```\n43 1 9982448534 1 9982443533 2 998244353343 343 998244353\n```\n\nOutput:\n```\n4\n7\n10\n456615865\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three positive integers n, k and p (3 ≤ n ≤ 3000, 1 ≤ k ≤ n, 10^8 < p < 10^9) — the length of the array a, the upper bound on the elements of a and modulus p.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^7, and p is prime.",
+    "output": "For each test case, on a new line, output the number of good arrays modulo p.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*2800"
+    ],
+    "rating": 2800
+}

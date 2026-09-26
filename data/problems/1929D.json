@@ -1,0 +1,19 @@
+{
+    "id": "1929D",
+    "contest_id": 1929,
+    "problem_letter": "D",
+    "title": "D. Sasha and a Walk in the City",
+    "statement": "Sasha wants to take a walk with his girlfriend in the city. The city consists of n intersections, numbered from 1 to n. Some of them are connected by roads, and from any intersection, there is exactly one simple path^dagger to any other intersection. In other words, the intersections and the roads between them form a tree.\n\nSome of the intersections are considered dangerous. Since it is unsafe to walk alone in the city, Sasha does not want to visit three or more dangerous intersections during the walk.\n\nSasha calls a set of intersections good if the following condition is satisfied:\n\nHowever, Sasha does not know which intersections are dangerous, so he is interested in the number of different good sets of intersections in the city. Since this number can be very large, output it modulo 998,244,353.\n\n^daggerA simple path is a path that passes through each intersection at most once.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5) — the number of intersections in the city.\n\nThe next (n - 1) lines describe the roads. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i) — the numbers of the intersections connected by the i-th road.\n\nIt is guaranteed that these roads form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, output a single integer — the number of good sets of intersections modulo 998,244,353.\n\nIn the first test case, there are 2^3 = 8 sets of intersections. All of them are good, except for the set {1, 2, 3}, because if intersections 1, 2, and 3 are dangerous, then the simple path 1 - 2 - 3 contains 3 dangerous intersections. Thus, there are 7 good sets.\n\nIn the second test case, there are 2^4 = 16 sets of intersections. Among them, the sets {1, 2, 3, 4}, {1, 2, 3}, {1, 3, 4}, {2, 3, 4} are not good. Thus, there are a total of 12 good sets. The city layout is shown below:\n\nInput:\n```\n431 33 243 42 33 151 23 45 12 341 22 33 4\n```\n\nOutput:\n```\n7\n12\n16\n11\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5) — the number of intersections in the city.\n\nThe next (n - 1) lines describe the roads. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i) — the numbers of the intersections connected by the i-th road.\n\nIt is guaranteed that these roads form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output a single integer — the number of good sets of intersections modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

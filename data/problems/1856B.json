@@ -1,0 +1,17 @@
+{
+    "id": "1856B",
+    "contest_id": 1856,
+    "problem_letter": "B",
+    "title": "B. Good Arrays",
+    "statement": "You are given an array of positive integers a of length n.\n\nLet's call an array of positive integers b of length n good if:\n\nDoes a good array exist?\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10 ^ 9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output \"YES\" (without quotes) if there exists a good array, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\",\"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, a possible good array is [3, 3, 3]. Some examples of not good arrays are:\n\nIn the second test case, [1, 1] is the only array of positive integers of length 2 that has the sum of it's elements equal to 2. Since [1, 1] is not a good array, the answer is \"NO\".\n\nInput:\n```\n636 1 221 143 1 2 411751 2 1 1 13618343152 819343431 1000000000\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10 ^ 9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output \"YES\" (without quotes) if there exists a good array, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\",\"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

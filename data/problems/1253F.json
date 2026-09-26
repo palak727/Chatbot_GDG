@@ -1,0 +1,20 @@
+{
+    "id": "1253F",
+    "contest_id": 1253,
+    "problem_letter": "F",
+    "title": "F. Cheap Robot",
+    "statement": "You're given a simple, undirected, connected, weighted graph with n nodes and m edges.\n\nNodes are numbered from 1 to n. There are exactly k centrals (recharge points), which are nodes 1, 2, …, k.\n\nWe consider a robot moving into this graph, with a battery of capacity c, not fixed by the constructor yet. At any time, the battery contains an integer amount x of energy between 0 and c inclusive.\n\nTraversing an edge of weight w_i is possible only if x ≥ w_i, and costs w_i energy points (x := x - w_i).\n\nMoreover, when the robot reaches a central, its battery is entirely recharged (x := c).\n\nYou're given q independent missions, the i-th mission requires to move the robot from central a_i to central b_i.\n\nFor each mission, you should tell the minimum capacity required to acheive it.\n\nThe first line contains four integers n, m, k and q (2 ≤ k ≤ n ≤ 10^5 and 1 ≤ m, q ≤ 3·10^5).\n\nThe i-th of the next m lines contains three integers u_i, v_i and w_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i, 1 ≤ w_i ≤ 10^9), that mean that there's an edge between nodes u and v, with a weight w_i.\n\nIt is guaranteed that the given graph is simple (there is no self-loop, and there is at most one edge between every pair of nodes) and connected.\n\nThe i-th of the next q lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ k, a_i ≠ b_i).\n\nYou have to output q lines, where the i-th line contains a single integer : the minimum capacity required to acheive the i-th mission.\n\nIn the first example, the graph is the chain 10 - 9 - 2^C - 4 - 1^C - 5 - 7 - 3^C - 8 - 6, where centrals are nodes 1, 2 and 3.\n\nFor the mission (2, 3), there is only one simple path possible. Here is a simulation of this mission when the capacity is 12.\n\nNote that if value of c was lower than 12, we would have less than 8 energy points on node 4, and we would be unable to use the edge 4 ↔ 1 of weight 8. Hence 12 is the minimum capacity required to acheive the mission.\n\n—\n\nThe graph of the second example is described here (centrals are red nodes):\n\nThe robot can acheive the mission (3, 1) with a battery of capacity c = 38, using the path 3 → 9 → 8 → 7 → 2 → 7 → 6 → 5 → 4 → 1\n\nThe robot can acheive the mission (2, 3) with a battery of capacity c = 15, using the path 2 → 7 → 8 → 9 → 3\n\nInput:\n```\n10 9 3 1\n10 9 11\n9 2 37\n2 4 4\n4 1 8\n1 5 2\n5 7 3\n7 3 2\n3 8 4\n8 6 13\n2 3\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n9 11 3 2\n1 3 99\n1 4 5\n4 5 3\n5 6 3\n6 4 11\n6 7 21\n7 2 6\n7 8 4\n8 9 3\n9 2 57\n9 3 2\n3 1\n2 3\n```\n\nOutput:\n```\n38\n15\n```",
+    "input": "The first line contains four integers n, m, k and q (2 ≤ k ≤ n ≤ 10^5 and 1 ≤ m, q ≤ 3·10^5).\n\nThe i-th of the next m lines contains three integers u_i, v_i and w_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i, 1 ≤ w_i ≤ 10^9), that mean that there's an edge between nodes u and v, with a weight w_i.\n\nIt is guaranteed that the given graph is simple (there is no self-loop, and there is at most one edge between every pair of nodes) and connected.\n\nThe i-th of the next q lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ k, a_i ≠ b_i).",
+    "output": "You have to output q lines, where the i-th line contains a single integer : the minimum capacity required to acheive the i-th mission.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "dsu",
+        "graphs",
+        "shortest paths",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

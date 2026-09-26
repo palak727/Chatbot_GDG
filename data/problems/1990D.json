@@ -1,0 +1,20 @@
+{
+    "id": "1990D",
+    "contest_id": 1990,
+    "problem_letter": "D",
+    "title": "D. Grid Puzzle",
+    "statement": "You are given an array a of size n.\n\nThere is an n × n grid. In the i-th row, the first a_i cells are black and the other cells are white. In other words, note (i,j) as the cell in the i-th row and j-th column, cells (i,1), (i,2), …, (i,a_i) are black, and cells (i,a_i+1), …, (i,n) are white.\n\nYou can do the following operations any number of times in any order:\n\nFind the minimum number of operations to dye all cells white.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nIt's guaranteed that the sum of n over all test cases will not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of operations to dye all cells white.\n\nIn the first test case, you don't need to do any operation.\n\nIn the second test case, you can do:\n\nIt can be proven 3 is the minimum number of operations.\n\nIn the third test case, you can do:\n\nIt can be proven 2 is the minimum number of operations.\n\nInput:\n```\n101042 4 4 243 2 1 030 3 030 1 333 1 043 1 0 340 2 2 261 3 4 2 0 482 2 5 2 3 4 2 4\n```\n\nOutput:\n```\n0\n3\n2\n1\n2\n2\n3\n2\n4\n6\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case:\n\nIt's guaranteed that the sum of n over all test cases will not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of operations to dye all cells white.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "greedy",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

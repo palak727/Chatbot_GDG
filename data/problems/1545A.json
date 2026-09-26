@@ -1,0 +1,16 @@
+{
+    "id": "1545A",
+    "contest_id": 1545,
+    "problem_letter": "A",
+    "title": "A. AquaMoon and Strange Sort",
+    "statement": "AquaMoon has n friends. They stand in a row from left to right, and the i-th friend from the left wears a T-shirt with a number a_i written on it. Each friend has a direction (left or right). In the beginning, the direction of each friend is right.\n\nAquaMoon can make some operations on friends. On each operation, AquaMoon can choose two adjacent friends and swap their positions. After each operation, the direction of both chosen friends will also be flipped: left to right and vice versa.\n\nAquaMoon hopes that after some operations, the numbers written on the T-shirt of n friends in the row, read from left to right, become non-decreasing. Also she wants, that all friends will have a direction of right at the end. Please find if it is possible.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of Aquamoon's friends.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — the numbers, written on the T-shirts.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 10^5.\n\nFor each test case, if there exists a possible sequence of operations, print \"YES\" (without quotes); otherwise, print \"NO\" (without quotes).\n\nYou can print each letter in any case (upper or lower).\n\nThe possible list of operations in the first test case:\n\nInput:\n```\n3\n4\n4 3 2 5\n4\n3 3 2 2\n5\n1 2 3 5 4\n```\n\nOutput:\n```\nYES\nYES\nNO\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of Aquamoon's friends.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — the numbers, written on the T-shirts.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 10^5.",
+    "output": "For each test case, if there exists a possible sequence of operations, print \"YES\" (without quotes); otherwise, print \"NO\" (without quotes).\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

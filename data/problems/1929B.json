@@ -1,0 +1,18 @@
+{
+    "id": "1929B",
+    "contest_id": 1929,
+    "problem_letter": "B",
+    "title": "B. Sasha and the Drawing",
+    "statement": "Even in kindergarten, Sasha liked a girl. Therefore, he wanted to give her a drawing and attract her attention.\n\nAs a drawing, he decided to draw a square grid of size n × n, in which some cells are colored. But coloring the cells is difficult, so he wants to color as few cells as possible. But at the same time, he wants at least k diagonals to have at least one colored cell. Note that the square grid of size n × n has a total of 4n - 2 diagonals.\n\nHelp little Sasha to make the girl fall in love with him and tell him the minimum number of cells he needs to color.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and k (2 ≤ n ≤ 10^8, 1 ≤ k ≤ 4n - 2) — the size of the square grid and the minimum number of diagonals in which there should be at least one colored cell.\n\nFor each test case, output a single integer — the minimum number of cells that need to be colored.\n\nIn the pictures below, the colored cells are marked in black, and all diagonals are marked in purple.\n\nIn the first test case, you can color 2 cells so that 4 diagonals contain at least one colored cell:\n\nIn the third test case, you can color 6 cells so that all 10 diagonals contain at least one colored cell:\n\nInput:\n```\n73 43 33 103 94 77 112 3\n```\n\nOutput:\n```\n2\n2\n6\n5\n4\n6\n2\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and k (2 ≤ n ≤ 10^8, 1 ≤ k ≤ 4n - 2) — the size of the square grid and the minimum number of diagonals in which there should be at least one colored cell.",
+    "output": "For each test case, output a single integer — the minimum number of cells that need to be colored.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

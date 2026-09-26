@@ -1,0 +1,19 @@
+{
+    "id": "1348F",
+    "contest_id": 1348,
+    "problem_letter": "F",
+    "title": "F. Phoenix and Memory",
+    "statement": "Phoenix is trying to take a photo of his n friends with labels 1, 2, …, n who are lined up in a row in a special order. But before he can take the photo, his friends get distracted by a duck and mess up their order.\n\nNow, Phoenix must restore the order but he doesn't remember completely! He only remembers that the i-th friend from the left had a label between a_i and b_i inclusive. Does there exist a unique way to order his friends based of his memory?\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of friends.\n\nThe i-th of the next n lines contain two integers a_i and b_i (1 ≤ a_i ≤ b_i ≤ n) — Phoenix's memory of the i-th position from the left.\n\nIt is guaranteed that Phoenix's memory is valid so there is at least one valid ordering.\n\nIf Phoenix can reorder his friends in a unique order, print YES followed by n integers — the i-th integer should be the label of the i-th friend from the left.\n\nOtherwise, print NO. Then, print any two distinct valid orderings on the following two lines. If are multiple solutions, print any.\n\nInput:\n```\n4\n4 4\n1 3\n2 4\n3 4\n```\n\nOutput:\n```\nYES\n4 1 2 3 \n```\n\nInput:\n```\n4\n1 3\n2 4\n3 4\n2 3\n```\n\nOutput:\n```\nNO\n1 3 4 2 \n1 2 4 3 \n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of friends.\n\nThe i-th of the next n lines contain two integers a_i and b_i (1 ≤ a_i ≤ b_i ≤ n) — Phoenix's memory of the i-th position from the left.\n\nIt is guaranteed that Phoenix's memory is valid so there is at least one valid ordering.",
+    "output": "If Phoenix can reorder his friends in a unique order, print YES followed by n integers — the i-th integer should be the label of the i-th friend from the left.\n\nOtherwise, print NO. Then, print any two distinct valid orderings on the following two lines. If are multiple solutions, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

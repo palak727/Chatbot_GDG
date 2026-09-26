@@ -1,0 +1,18 @@
+{
+    "id": "1499G",
+    "contest_id": 1499,
+    "problem_letter": "G",
+    "title": "G. Graph Coloring",
+    "statement": "You are given a bipartite graph consisting of n_1 vertices in the first part, n_2 vertices in the second part, and m edges, numbered from 1 to m. You have to color each edge into one of two colors, red and blue. You have to minimize the following value: ∑ limits_{v ∈ V} |r(v) - b(v)|, where V is the set of vertices of the graph, r(v) is the number of red edges incident to v, and b(v) is the number of blue edges incident to v.\n\nSounds classical and easy, right? Well, you have to process q queries of the following format:\n\nNote that if an edge was red or blue in some coloring, it may change its color in next colorings.\n\nThe hash of the coloring is calculated as follows: let R be the set of indices of red edges, then the hash is (∑ limits_{i ∈ R} 2^i) bmod 998244353.\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query. Use functions fflush in C++ and BufferedWriter.flush in Java languages after each writing in your program.\n\nThe first line contains three integers n_1, n_2 and m (1 ≤ n_1, n_2, m ≤ 2·10^5).\n\nThen m lines follow, the i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n_1; 1 ≤ y_i ≤ n_2) meaning that the i-th edge connects the vertex x_i from the first part and the vertex y_i from the second part.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries you have to process.\n\nThe next q lines contain the queries in the format introduced in the statement.\n\nAdditional constraints on the input:\n\nTo answer a query of type 1, print one integer — the hash of the optimal coloring.\n\nTo answer a query of type 2, print one line. It should begin with the integer k — the number of red edges. Then, k distinct integer should follow — the indices of red edges in your coloring, in any order. Each index should correspond to an existing edge, and the hash of the coloring you produce should be equal to the hash you printed as the answer to the previous query.\n\nIf there are multiple answers to a query, you may print any of them.\n\nInput:\n```\n3 4 2\n1 2\n3 4\n10\n1 1 3\n1 2 3\n2\n1 3 3\n2\n1 2 4\n2\n1 2 1\n1 1 1\n2\n```\n\nOutput:\n```\n8\n8\n1 3\n40\n2 3 5\n104\n3 5 6 3\n104\n360\n4 5 6 3 8\n```",
+    "input": "The first line contains three integers n_1, n_2 and m (1 ≤ n_1, n_2, m ≤ 2·10^5).\n\nThen m lines follow, the i-th of them contains two integers x_i and y_i (1 ≤ x_i ≤ n_1; 1 ≤ y_i ≤ n_2) meaning that the i-th edge connects the vertex x_i from the first part and the vertex y_i from the second part.\n\nThe next line contains one integer q (1 ≤ q ≤ 2·10^5) — the number of queries you have to process.\n\nThe next q lines contain the queries in the format introduced in the statement.\n\nAdditional constraints on the input:",
+    "output": "To answer a query of type 1, print one integer — the hash of the optimal coloring.\n\nTo answer a query of type 2, print one line. It should begin with the integer k — the number of red edges. Then, k distinct integer should follow — the indices of red edges in your coloring, in any order. Each index should correspond to an existing edge, and the hash of the coloring you produce should be equal to the hash you printed as the answer to the previous query.\n\nIf there are multiple answers to a query, you may print any of them.",
+    "time_limit": "7 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "graphs",
+        "interactive",
+        "*3100"
+    ],
+    "rating": 3100
+}

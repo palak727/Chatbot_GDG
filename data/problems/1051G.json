@@ -1,0 +1,18 @@
+{
+    "id": "1051G",
+    "contest_id": 1051,
+    "problem_letter": "G",
+    "title": "G. Distinctification",
+    "statement": "Suppose you are given a sequence S of k pairs of integers (a_1, b_1), (a_2, b_2), …, (a_k, b_k).\n\nYou can perform the following operations on it:\n\nEach operation can be performed arbitrary number of times (possibly zero).\n\nLet f(S) be minimum possible x such that there exists a sequence of operations with total cost x, after which all a_i from S are pairwise distinct.\n\nNow for the task itself ...\n\nYou are given a sequence P consisting of n pairs of integers (a_1, b_1), (a_2, b_2), …, (a_n, b_n). All b_i are pairwise distinct. Let P_i be the sequence consisting of the first i pairs of P. Your task is to calculate the values of f(P_1), f(P_2), …, f(P_n).\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of pairs in sequence P.\n\nNext n lines contain the elements of P: i-th of the next n lines contains two integers a_i and b_i (1 ≤ a_i ≤ 2·10^5, 1 ≤ b_i ≤ n). It is guaranteed that all values of b_i are pairwise distinct.\n\nPrint n integers — the i-th number should be equal to f(P_i).\n\nInput:\n```\n5\n1 1\n3 3\n5 5\n4 2\n2 4\n```\n\nOutput:\n```\n0\n0\n0\n-5\n-16\n```\n\nInput:\n```\n4\n2 4\n2 3\n2 2\n1 1\n```\n\nOutput:\n```\n0\n3\n7\n1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of pairs in sequence P.\n\nNext n lines contain the elements of P: i-th of the next n lines contains two integers a_i and b_i (1 ≤ a_i ≤ 2·10^5, 1 ≤ b_i ≤ n). It is guaranteed that all values of b_i are pairwise distinct.",
+    "output": "Print n integers — the i-th number should be equal to f(P_i).",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "greedy",
+        "*2900"
+    ],
+    "rating": 2900
+}

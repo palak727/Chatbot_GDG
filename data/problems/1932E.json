@@ -1,0 +1,18 @@
+{
+    "id": "1932E",
+    "contest_id": 1932,
+    "problem_letter": "E",
+    "title": "E. Final Countdown",
+    "statement": "You are in a nuclear laboratory that is about to explode and destroy the Earth. You must save the Earth before the final countdown reaches zero.\n\nThe countdown consists of n (1 ≤ n ≤ 4·10^5) mechanical indicators, each showing one decimal digit. You noticed that when the countdown changes its state from x to x-1, it doesn't happen in one move. Instead, each change of a single digit takes one second.\n\nSo, for example, if the countdown shows 42, then it will change to 41 in one second, because only one digit is changed, but if the countdown shows 2300, then it will change to 2299 in three seconds, because the three last digits are changed.\n\nFind out how much time is left before the countdown reaches zero.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 4·10^5).\n\nThe second line contains a string of n digits, the current state of the countdown. It is guaranteed that at least one digit is not zero.\n\nThe sum of n for all tests does not exceed 4·10^5.\n\nFor each test case, print a single integer without leading zeroes, the number of seconds left before the countdown reaches zero. Note that this number may be huge.\n\nIn the first example, there are four changes that take 2 seconds: 40 to 39, 30 to 29, 20 to 19, and 10 to 09, other changes take 1 second each. So the total time is 2·4 + 1·(42-4) = 46.\n\nInput:\n```\n52425123452994000527456480697259671309012631002\n```\n\nOutput:\n```\n46\n13715\n108\n5\n507200774732968121125145546\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 4·10^5).\n\nThe second line contains a string of n digits, the current state of the countdown. It is guaranteed that at least one digit is not zero.\n\nThe sum of n for all tests does not exceed 4·10^5.",
+    "output": "For each test case, print a single integer without leading zeroes, the number of seconds left before the countdown reaches zero. Note that this number may be huge.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

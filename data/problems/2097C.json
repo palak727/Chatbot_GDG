@@ -1,0 +1,20 @@
+{
+    "id": "2097C",
+    "contest_id": 2097,
+    "problem_letter": "C",
+    "title": "C. Bermuda Triangle",
+    "statement": "The Bermuda Triangle — a mysterious area in the Atlantic Ocean where, according to rumors, ships and airplanes disappear without a trace. Some blame magnetic anomalies, others — portals to other worlds, but the truth remains hidden in a fog of mysteries.\n\nA regular passenger flight 814 was traveling from Miami to Nassau on a clear sunny day. Nothing foreshadowed trouble until the plane entered a zone of strange flickering fog. Radio communication was interrupted, the instruments spun wildly, and flashes of unearthly light flickered outside the windows.\n\nFor simplicity, we will assume that the Bermuda Triangle and the airplane are on a plane, and the vertices of the triangle have coordinates (0, 0), (0, n), and (n, 0). Initially, the airplane is located at the point (x, y) strictly inside the Bermuda Triangle and is moving with a velocity vector (v_x, v_y). All instruments have failed, so the crew cannot control the airplane.\n\nThe airplane can escape from the triangle if it ever reaches exactly one of the vertices of the triangle. However, if at any moment (possibly non-integer) the airplane hits the boundary of the triangle (but not at a vertex), its velocity vector is immediately reflected relative to that side^dagger, and the airplane continues to move in the new direction.\n\nDetermine whether the airplane can ever escape from the Bermuda Triangle (i.e., reach exactly one of its vertices). If this is possible, also calculate how many times before that moment the airplane will hit the boundary of the triangle (each touch of the boundary, even at the same point, counts; crossing a vertex does not count).\n\n^dagger Reflection occurs according to the usual laws of physics. The angle of incidence equals the angle of reflection.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains five integers n, x, y, v_x, and v_y (3 ≤ n ≤ 10^9, 1 ≤ x, y, x+y < n, 1 ≤ v_x, v_y ≤ 10^9) — numbers describing the vertices of the triangle, the initial coordinates of the airplane, and the initial velocity vector.\n\nFor each test case, output a single integer — the number of times the airplane will hit the boundary of the triangle before it escapes. If the airplane never escapes from the triangle, output -1.\n\nAn illustration for the first test case is provided below:\n\nIn the second test case, the answer is the same as in the first, as all initial data, except for the speed, are the same, but the airplanes are initially moving in the same direction.\n\nIn the third test case, the answer is -1, as the airplane will move exclusively along the segments marked in green. An illustration is provided below:\n\nInput:\n```\n66 2 2 5 26 2 2 20 84 1 2 1 14 1 1 1 24 1 1 2 16 2 3 2 3\n```\n\nOutput:\n```\n2\n2\n-1\n-1\n-1\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains five integers n, x, y, v_x, and v_y (3 ≤ n ≤ 10^9, 1 ≤ x, y, x+y < n, 1 ≤ v_x, v_y ≤ 10^9) — numbers describing the vertices of the triangle, the initial coordinates of the airplane, and the initial velocity vector.",
+    "output": "For each test case, output a single integer — the number of times the airplane will hit the boundary of the triangle before it escapes. If the airplane never escapes from the triangle, output -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "chinese remainder theorem",
+        "geometry",
+        "implementation",
+        "math",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1089F",
+    "contest_id": 1089,
+    "problem_letter": "F",
+    "title": "F. Fractions",
+    "statement": "You are given a positive integer n.\n\nFind a sequence of fractions a_i/b_i, i = 1 … k (where a_i and b_i are positive integers) for some k such that:\n\nbegincases b_i divides n, 1 < b_i < n for i = 1 … k 1 ≤ a_i < b_i for i = 1 … k ∑limits_{i=1}^k a_i/b_i = 1 - 1/n endcases\n\nThe input consists of a single integer n (2 ≤ n ≤ 10^9).\n\nIn the first line print \"YES\" if there exists such a sequence of fractions or \"NO\" otherwise.\n\nIf there exists such a sequence, next lines should contain a description of the sequence in the following format.\n\nThe second line should contain integer k (1 ≤ k ≤ 100,000) — the number of elements in the sequence. It is guaranteed that if such a sequence exists, then there exists a sequence of length at most 100,000.\n\nNext k lines should contain fractions of the sequence with two integers a_i and b_i on each line.\n\nIn the second example there is a sequence 1/2, 1/3 such that 1/2 + 1/3 = 1 - 1/6.\n\nInput:\n```\n2\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n6\n```\n\nOutput:\n```\nYES\n2\n1 2\n1 3\n```",
+    "input": "The input consists of a single integer n (2 ≤ n ≤ 10^9).",
+    "output": "In the first line print \"YES\" if there exists such a sequence of fractions or \"NO\" otherwise.\n\nIf there exists such a sequence, next lines should contain a description of the sequence in the following format.\n\nThe second line should contain integer k (1 ≤ k ≤ 100,000) — the number of elements in the sequence. It is guaranteed that if such a sequence exists, then there exists a sequence of length at most 100,000.\n\nNext k lines should contain fractions of the sequence with two integers a_i and b_i on each line.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

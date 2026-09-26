@@ -1,0 +1,21 @@
+{
+    "id": "1763B",
+    "contest_id": 1763,
+    "problem_letter": "B",
+    "title": "B. Incinerate",
+    "statement": "To destroy humanity, The Monster Association sent n monsters to Earth's surface. The i-th monster has health h_i and power p_i.\n\nWith his last resort attack, True Spiral Incineration Cannon, Genos can deal k damage to all monsters alive. In other words, Genos can reduce the health of all monsters by k (if k > 0) with a single attack.\n\nHowever, after every attack Genos makes, the monsters advance. With their combined efforts, they reduce Genos' attack damage by the power of the ^daggerweakest monster ^ddaggeralive. In other words, the minimum p_i among all currently living monsters is subtracted from the value of k after each attack.\n\n^daggerThe Weakest monster is the one with the least power.\n\n^ddaggerA monster is alive if its health is strictly greater than 0.\n\nWill Genos be successful in killing all the monsters?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers, n and k (1 ≤ n, k ≤ 10^5) — the number of monsters and Genos' initial attack damage. Then two lines follow, each containing n integers describing the arrays h and p (1 ≤ h_i, p_i ≤ 10^9).\n\nIt's guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the answer — \"YES\" (without quotes) if Genos could kill all monsters and \"NO\" otherwise.\n\nIn the first example, after Genos' first attack, h and k will update to:\n\nInput:\n```\n36 718 5 13 9 10 12 7 2 1 2 63 45 5 54 4 43 22 1 31 1 1\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers, n and k (1 ≤ n, k ≤ 10^5) — the number of monsters and Genos' initial attack damage. Then two lines follow, each containing n integers describing the arrays h and p (1 ≤ h_i, p_i ≤ 10^9).\n\nIt's guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the answer — \"YES\" (without quotes) if Genos could kill all monsters and \"NO\" otherwise.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "implementation",
+        "math",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

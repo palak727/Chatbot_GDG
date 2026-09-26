@@ -1,0 +1,15 @@
+{
+    "id": "2087A",
+    "contest_id": 2087,
+    "problem_letter": "A",
+    "title": "A. Password Generator",
+    "statement": "Monocarp is going to register on the Codeforces website, but he can't come up with a sufficiently secure password. The requirements that his password must meet are as follows:\n\nWrite a program that generates a password that meets all the requirements.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing three integers a, b, and c (1 ≤ a, b, c ≤ 10).\n\nFor each test case, output one line containing any suitable password. It can be shown that there is always at least one password that meets the requirements.\n\nInput:\n```\n22 1 63 3 6\n```\n\nOutput:\n```\nabaCaba42\nb3sTpAs5w0rD\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of one line containing three integers a, b, and c (1 ≤ a, b, c ≤ 10).",
+    "output": "For each test case, output one line containing any suitable password. It can be shown that there is always at least one password that meets the requirements.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

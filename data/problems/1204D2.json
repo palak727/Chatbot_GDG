@@ -1,0 +1,19 @@
+{
+    "id": "1204D2",
+    "contest_id": 1204,
+    "problem_letter": "D2",
+    "title": "D2. Kirk and a Binary String (hard version)",
+    "statement": "The only difference between easy and hard versions is the length of the string. You can hack this problem if you solve it. But you can hack the previous problem only if you solve both problems.\n\nKirk has a binary string s (a string which consists of zeroes and ones) of length n and he is asking you to find a binary string t of the same length which satisfies the following conditions:\n\nA non-decreasing subsequence of a string p is a sequence of indices i_1, i_2, …, i_k such that i_1 < i_2 < … < i_k and p_i_1 ≤ p_i_2 ≤ … ≤ p_i_k. The length of the subsequence is k.\n\nIf there are multiple substrings which satisfy the conditions, output any.\n\nThe first line contains a binary string of length not more than 10^5.\n\nOutput a binary string which satisfied the above conditions. If there are many such strings, output any of them.\n\nIn the first example:\n\nThe second example is similar to the first one.\n\nInput:\n```\n110\n```\n\nOutput:\n```\n010\n```\n\nInput:\n```\n010\n```\n\nOutput:\n```\n010\n```\n\nInput:\n```\n0001111\n```\n\nOutput:\n```\n0000000\n```\n\nInput:\n```\n0111001100111011101000\n```\n\nOutput:\n```\n0011001100001011101000\n```",
+    "input": "The first line contains a binary string of length not more than 10^5.",
+    "output": "Output a binary string which satisfied the above conditions. If there are many such strings, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

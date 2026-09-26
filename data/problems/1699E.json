@@ -1,0 +1,21 @@
+{
+    "id": "1699E",
+    "contest_id": 1699,
+    "problem_letter": "E",
+    "title": "E. Three Days Grace",
+    "statement": "Ibti was thinking about a good title for this problem that would fit the round theme (numerus ternarium). He immediately thought about the third derivative, but that was pretty lame so he decided to include the best band in the world — Three Days Grace.\n\nYou are given a multiset A with initial size n, whose elements are integers between 1 and m. In one operation, do the following:\n\nNote that the size of the multiset A increases by 1 after each operation.\n\nWe define the balance of the multiset A as max(a_i) - min(a_i). Find the minimum possible balance after performing any number (possible zero) of operations.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe second line of each test case contains two integers n and m (1 ≤ n ≤ 10^6, 1 ≤ m ≤ 5·10^6) — the initial size of the multiset, and the maximum value of an element.\n\nThe third line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ m) — the elements in the initial multiset.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6 and the sum of m across all test cases does not exceed 5·10^6.\n\nFor each test case, print a single integer — the minimum possible balance.\n\nIn the first test case, we can apply the operation on each of the 4s with (p,q) = (2,2) and make the multiset {2,2,2,2,2,2,2} with balance max({2,2,2,2,2,2,2}) - min({2,2,2,2,2,2,2}) = 0. It is obvious we cannot make this balance less than 0.\n\nIn the second test case, we can apply an operation on 12 with (p,q) = (3,4). After this our multiset will be {3,4,2,3}. We can make one more operation on 4 with (p,q) = (2,2), making the multiset {3,2,2,2,3} with balance equal to 1.\n\nIn the third test case, we can apply an operation on 35 with (p,q) = (5,7). The final multiset is {6,5,7} and has a balance equal to 7-5 = 2.\n\nIn the forth test case, we cannot apply any operation, so the balance is 5 - 1 = 4.\n\nInput:\n```\n45 102 4 2 4 23 5012 2 32 406 352 51 5\n```\n\nOutput:\n```\n0\n1\n2\n4\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe second line of each test case contains two integers n and m (1 ≤ n ≤ 10^6, 1 ≤ m ≤ 5·10^6) — the initial size of the multiset, and the maximum value of an element.\n\nThe third line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ m) — the elements in the initial multiset.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 10^6 and the sum of m across all test cases does not exceed 5·10^6.",
+    "output": "For each test case, print a single integer — the minimum possible balance.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "math",
+        "number theory",
+        "two pointers",
+        "*2600"
+    ],
+    "rating": 2600
+}

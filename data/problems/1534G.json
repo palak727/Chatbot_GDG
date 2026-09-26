@@ -1,0 +1,19 @@
+{
+    "id": "1534G",
+    "contest_id": 1534,
+    "problem_letter": "G",
+    "title": "G. A New Beginning",
+    "statement": "Annie has gotten bored of winning every coding contest and farming unlimited rating. Today, she is going to farm potatoes instead.\n\nAnnie's garden is an infinite 2D plane. She has n potatoes to plant, and the i-th potato must be planted at (x_i,y_i). Starting at the point (0, 0), Annie begins walking, in one step she can travel one unit right or up (increasing her x or y coordinate by 1 respectively). At any point (X,Y) during her walk she can plant some potatoes at arbitrary points using her potato gun, consuming max(|X-x|,|Y-y|) units of energy in order to plant a potato at (x,y). Find the minimum total energy required to plant every potato.\n\nNote that Annie may plant any number of potatoes from any point.\n\nThe first line contains the integer n (1 ≤ n ≤ 800,000).\n\nThe next n lines contain two integers x_i and y_i (0 ≤ x_i,y_i ≤ 10^9), representing the location of the i-th potato. It is possible that some potatoes should be planted in the same location.\n\nPrint the minimum total energy to plant all potatoes.\n\nIn example 1, Annie can travel to each spot directly and plant a potato with no energy required.\n\nIn example 2, moving to (1,0), Annie plants the second potato using 1 energy. Next, she travels to (1,1) and plants the first potato with 0 energy.\n\nInput:\n```\n2\n1 1\n2 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2\n1 1\n2 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3\n5 5\n7 7\n4 9\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n10\n5 1\n4 0\n9 6\n0 2\n10 1\n9 10\n3 10\n0 10\n8 9\n1 5\n```\n\nOutput:\n```\n19\n```\n\nInput:\n```\n10\n1 1\n2 2\n2 0\n4 2\n4 0\n2 0\n0 2\n4 0\n4 2\n5 1\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains the integer n (1 ≤ n ≤ 800,000).\n\nThe next n lines contain two integers x_i and y_i (0 ≤ x_i,y_i ≤ 10^9), representing the location of the i-th potato. It is possible that some potatoes should be planted in the same location.",
+    "output": "Print the minimum total energy to plant all potatoes.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "geometry",
+        "sortings",
+        "*3300"
+    ],
+    "rating": 3300
+}

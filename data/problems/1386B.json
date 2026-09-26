@@ -1,0 +1,20 @@
+{
+    "id": "1386B",
+    "contest_id": 1386,
+    "problem_letter": "B",
+    "title": "B. Mixture",
+    "statement": "Serge, the chef of the famous restaurant \"Salt, Pepper & Garlic\" is trying to obtain his first Michelin star. He has been informed that a secret expert plans to visit his restaurant this evening.\n\nEven though the expert's name hasn't been disclosed, Serge is certain he knows which dish from the menu will be ordered as well as what the taste preferences of the expert are. Namely, the expert requires an extremely precise proportion of salt, pepper and garlic powder in his dish.\n\nSerge keeps a set of bottles with mixtures of salt, pepper and garlic powder on a special shelf in the kitchen. For each bottle, he knows the exact amount of each of the ingredients in kilograms. Serge can combine any number of bottled mixtures (or just use one of them directly) to get a mixture of particular proportions needed for a certain dish.\n\nLuckily, the absolute amount of a mixture that needs to be added to a dish is so small that you can assume that the amounts in the bottles will always be sufficient. However, the numeric values describing the proportions may be quite large.\n\nSerge would like to know whether it is possible to obtain the expert's favourite mixture from the available bottles, and if so—what is the smallest possible number of bottles needed to achieve that.\n\nFurthermore, the set of bottles on the shelf may change over time as Serge receives new ones or lends his to other chefs. So he would like to answer this question after each such change.\n\nFor example, assume that expert's favorite mixture is 1:1:1 and there are three bottles of mixtures on the shelf:\n\nTo obtain the desired mixture it is enough to use an equivalent amount of mixtures from bottles 1 and 2. If bottle 2 is removed, then it is no longer possible to obtain it.\n\nWrite a program that helps Serge to solve this task!\n\nThe first row contains three non-negative integers S_f, P_f and G_f (0 ≤ S_f, P_f, G_f; 0 < S_f+P_f+G_f ≤ 10^6) describing the amount of salt, pepper and garlic powder in the expert's favourite mixture. For any real α > 0, (αS_f, αP_f, αG_f) also is an expert's favourite mixture.\n\nIn the second row, there is a positive integer N (number of changes on the shelf, N ≤ 100,000). You should assume that initially the shelf is empty.\n\nEach of the next N rows describes a single change on the shelf:\n\nOutput N rows. The j-th row (1 ≤ j ≤ N) should contain the number x_j, the smallest number of bottles needed to prepare a mixture with the expert's favourite proportions of salt, pepper and garlic powder using the bottles available after the first j changes on the shelf, or 0 if it is not possible.\n\nSubtasks:\n\nPay attention that in the example, bottles 1 and 3 contain the same proportions of salt, pepper and garlic powder.\n\nInput:\n```\n1 2 3\n6\nA 5 6 7\nA 3 10 17\nR 1\nA 15 18 21\nA 5 10 15\nR 3\n```\n\nOutput:\n```\n0\n2\n0\n2\n1\n1\n```",
+    "input": "The first row contains three non-negative integers S_f, P_f and G_f (0 ≤ S_f, P_f, G_f; 0 < S_f+P_f+G_f ≤ 10^6) describing the amount of salt, pepper and garlic powder in the expert's favourite mixture. For any real α > 0, (αS_f, αP_f, αG_f) also is an expert's favourite mixture.\n\nIn the second row, there is a positive integer N (number of changes on the shelf, N ≤ 100,000). You should assume that initially the shelf is empty.\n\nEach of the next N rows describes a single change on the shelf:",
+    "output": "Output N rows. The j-th row (1 ≤ j ≤ N) should contain the number x_j, the smallest number of bottles needed to prepare a mixture with the expert's favourite proportions of salt, pepper and garlic powder using the bottles available after the first j changes on the shelf, or 0 if it is not possible.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "geometry",
+        "math",
+        "sortings",
+        "*2900"
+    ],
+    "rating": 2900
+}

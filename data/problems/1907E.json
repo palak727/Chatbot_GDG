@@ -1,0 +1,18 @@
+{
+    "id": "1907E",
+    "contest_id": 1907,
+    "problem_letter": "E",
+    "title": "E. Good Triples",
+    "statement": "Given a non-negative integer number n (n ≥ 0). Let's say a triple of non-negative integers (a, b, c) is good if a + b + c = n, and digsum(a) + digsum(b) + digsum(c) = digsum(n), where digsum(x) is the sum of digits of number x.\n\nFor example, if n = 26, then the pair (4, 12, 10) is good, because 4 + 12 + 10 = 26, and (4) + (1 + 2) + (1 + 0) = (2 + 6).\n\nYour task is to find the number of good triples for the given number n. The order of the numbers in a triple matters. For example, the triples (4, 12, 10) and (10, 12, 4) are two different triples.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Descriptions of test cases follow.\n\nThe first and only line of the test case contains one integer n (0 ≤ n ≤ 10^7).\n\nFor each test case output one integer, the number of good triples for the given integer n. Order of integers in a triple matters.\n\nIn the first example, the good triples are (0, 0, 11), (0, 1, 10), (0, 10, 1), (0, 11, 0), (1, 0, 10), (1, 10, 0), (10, 0, 1), (10, 1, 0), (11, 0, 0).\n\nIn the second example, there is only one good triple (0, 0, 0).\n\nInput:\n```\n121101234531419992718999999910000000\n```\n\nOutput:\n```\n9\n1\n3\n6\n10\n15\n21\n1350\n166375\n29160\n1522435234375\n3\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Descriptions of test cases follow.\n\nThe first and only line of the test case contains one integer n (0 ≤ n ≤ 10^7).",
+    "output": "For each test case output one integer, the number of good triples for the given integer n. Order of integers in a triple matters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

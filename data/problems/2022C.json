@@ -1,0 +1,17 @@
+{
+    "id": "2022C",
+    "contest_id": 2022,
+    "problem_letter": "C",
+    "title": "C. Gerrymandering",
+    "statement": "Álvaro and José are the only candidates running for the presidency of Tepito, a rectangular grid of 2 rows and n columns, where each cell represents a house. It is guaranteed that n is a multiple of 3.\n\nUnder the voting system of Tepito, the grid will be split into districts, which consist of any 3 houses that are connected^{∗}. Each house will belong to exactly one district.\n\nEach district will cast a single vote. The district will vote for Álvaro or José respectively if at least 2 houses in that district select them. Therefore, a total of 2n/3 votes will be cast.\n\nAs Álvaro is the current president, he knows exactly which candidate each house will select. If Álvaro divides the houses into districts optimally, determine the maximum number of votes he can get.\n\n^{∗}A set of cells is connected if there is a path between any 2 cells that requires moving only up, down, left and right through cells in the set.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (3 ≤ n ≤ 10^5; n is a multiple of 3) — the number of columns of Tepito.\n\nThe following two lines each contain a string of length n. The i-th line contains the string s_i, consisting of the characters textttA and textttJ. If s_{i,j}=textttA, the house in the i-th row and j-th column will select Álvaro. Otherwise if s_{i,j}=textttJ, the house will select José.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the maximum number of districts Álvaro can win by optimally dividing the houses into districts.\n\nThe image below showcases the optimal arrangement of districts Álvaro can use for each test case in the example.\n\nInput:\n```\n43AAAAJJ6JAJAJJJJAJAJ6AJJJAJAJJAAA9AJJJJAJAJJAAJJJJJA\n```\n\nOutput:\n```\n2\n2\n3\n2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (3 ≤ n ≤ 10^5; n is a multiple of 3) — the number of columns of Tepito.\n\nThe following two lines each contain a string of length n. The i-th line contains the string s_i, consisting of the characters textttA and textttJ. If s_{i,j}=textttA, the house in the i-th row and j-th column will select Álvaro. Otherwise if s_{i,j}=textttJ, the house will select José.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the maximum number of districts Álvaro can win by optimally dividing the houses into districts.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

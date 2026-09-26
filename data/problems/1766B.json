@@ -1,0 +1,16 @@
+{
+    "id": "1766B",
+    "contest_id": 1766,
+    "problem_letter": "B",
+    "title": "B. Notepad#",
+    "statement": "You want to type the string s, consisting of n lowercase Latin letters, using your favorite text editor Notepad#.\n\nNotepad# supports two kinds of operations:\n\nCan you type string s in strictly less than n operations?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains a string s, consisting of n lowercase Latin letters.\n\nThe sum of n doesn't exceed 2·10^5 over all testcases.\n\nFor each testcase, print \"YES\" if you can type string s in strictly less than n operations. Otherwise, print \"NO\".\n\nIn the first testcase, you can start with typing \"codef\" (5 operations), then copy \"o\" (1 operation) from an already typed part, then finish with typing \"rces\" (4 operations). That will be 10 operations, which is not strictly less than n. There exist other ways to type \"codeforces\". However, no matter what you do, you can't do less than n operations.\n\nIn the second testcase, you can type \"labac\" (5 operations), then copy \"aba\" (1 operation), finishing the string in 6 operations.\n\nInput:\n```\n610codeforces8labacaba5uohhh16isthissuffixtree1x4momo\n```\n\nOutput:\n```\nNO\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains a string s, consisting of n lowercase Latin letters.\n\nThe sum of n doesn't exceed 2·10^5 over all testcases.",
+    "output": "For each testcase, print \"YES\" if you can type string s in strictly less than n operations. Otherwise, print \"NO\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

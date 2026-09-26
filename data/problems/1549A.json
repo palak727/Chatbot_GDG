@@ -1,0 +1,17 @@
+{
+    "id": "1549A",
+    "contest_id": 1549,
+    "problem_letter": "A",
+    "title": "A. Gregor and Cryptography",
+    "statement": "Gregor is learning about RSA cryptography, and although he doesn't understand how RSA works, he is now fascinated with prime numbers and factoring them.\n\nGregor's favorite prime number is P. Gregor wants to find two bases of P. Formally, Gregor is looking for two integers a and b which satisfy both of the following properties.\n\nHelp Gregor find two bases of his favorite prime number!\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000).\n\nEach subsequent line contains the integer P (5 ≤ P ≤ 10^9), with P guaranteed to be prime.\n\nYour output should consist of t lines. Each line should consist of two integers a and b (2 ≤ a < b ≤ P). If there are multiple possible solutions, print any.\n\nThe first query is P=17. a=3 and b=5 are valid bases in this case, because 17 bmod 3 = 17 bmod 5 = 2. There are other pairs which work as well.\n\nIn the second query, with P=5, the only solution is a=2 and b=4.\n\nInput:\n```\n2\n17\n5\n```\n\nOutput:\n```\n3 5\n2 4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000).\n\nEach subsequent line contains the integer P (5 ≤ P ≤ 10^9), with P guaranteed to be prime.",
+    "output": "Your output should consist of t lines. Each line should consist of two integers a and b (2 ≤ a < b ≤ P). If there are multiple possible solutions, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

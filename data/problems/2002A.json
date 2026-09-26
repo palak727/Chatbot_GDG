@@ -1,0 +1,18 @@
+{
+    "id": "2002A",
+    "contest_id": 2002,
+    "problem_letter": "A",
+    "title": "A. Distanced Coloring",
+    "statement": "You received an n× m grid from a mysterious source. The source also gave you a magic positive integer constant k.\n\nThe source told you to color the grid with some colors, satisfying the following condition:\n\nYou don't like using too many colors. Please find the minimum number of colors needed to color the grid.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤1000). The description of the test cases follows.\n\nThe only line of each test case consists of three positive integers n, m, k (1≤ n,m,k≤10^4) — the dimensions of the grid and the magic constant.\n\nFor each test case, print a single integer — the minimum number of colors needed to color the grid.\n\nIn the first test case, one of the optimal constructions is:\n\nIn the second test case, the color of all cells must be pairwise different, so the answer is 5.\n\nInput:\n```\n63 3 25 1 100007 3 43 2 78 9 62 5 4\n```\n\nOutput:\n```\n4\n5\n12\n6\n36\n8\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤1000). The description of the test cases follows.\n\nThe only line of each test case consists of three positive integers n, m, k (1≤ n,m,k≤10^4) — the dimensions of the grid and the magic constant.",
+    "output": "For each test case, print a single integer — the minimum number of colors needed to color the grid.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

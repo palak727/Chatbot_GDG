@@ -3,13 +3,14 @@
     "contest_id": 1001,
     "problem_letter": "F",
     "title": "F. Distinguish multi-qubit basis states",
-    "statement": "You are given N qubits which are guaranteed to be in one of two basis states on N qubits. You are also given two bitstrings bits0 and bits1 which describe these basis states.\nYour task is to perform necessary operations and measurements to figure out which state it was and to return 0 if it was the state described with bits0 or 1 if it was the state described with bits1. The state of the qubits after the operations does not matter.\nYou have to implement an operation which takes the following inputs:\nAn array of boolean values represents a basis state as follows: the i-th element of the array is true if the i-th qubit is in state , and false if it is in state . For example, array [true; false] describes 2-qubit state .\nYour code should have the following signature:",
-    "input": "You have to implement an operation which takes the following inputs:",
+    "statement": "You are given N qubits which are guaranteed to be in one of two basis states on N qubits. You are also given two bitstrings bits0 and bits1 which describe these basis states.\n\nYour task is to perform necessary operations and measurements to figure out which state it was and to return 0 if it was the state described with bits0 or 1 if it was the state described with bits1. The state of the qubits after the operations does not matter.\n\nYou have to implement an operation which takes the following inputs:\n\nAn array of boolean values represents a basis state as follows: the i-th element of the array is true if the i-th qubit is in state , and false if it is in state . For example, array [true; false] describes 2-qubit state .\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[], bits0 : Bool[], bits1 : Bool[]) : Int\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
+    "input": "You have to implement an operation which takes the following inputs:\n\nAn array of boolean values represents a basis state as follows: the i-th element of the array is true if the i-th qubit is in state , and false if it is in state . For example, array [true; false] describes 2-qubit state .\n\nYour code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (qs : Qubit[], bits0 : Bool[], bits1 : Bool[]) : Int\n    {\n        body\n        {\n            // your code here\n        }\n    }\n}\n```",
     "output": "",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [
-        "*special problem",
+        "*special",
         "*1300"
-    ]
+    ],
+    "rating": 1300
 }

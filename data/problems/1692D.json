@@ -1,0 +1,17 @@
+{
+    "id": "1692D",
+    "contest_id": 1692,
+    "problem_letter": "D",
+    "title": "D. The Clock",
+    "statement": "Victor has a 24-hour clock that shows the time in the format \"HH:MM\" (00 ≤ HH ≤ 23, 00 ≤ MM ≤ 59). He looks at the clock every x minutes, and the clock is currently showing time s.\n\nHow many different palindromes will Victor see in total after looking at the clock every x minutes, the first time being at time s?\n\nFor example, if the clock starts out as 03:12 and Victor looks at the clock every 360 minutes (i.e. every 6 hours), then he will see the times 03:12, 09:12, 15:12, 21:12, 03:12, and the times will continue to repeat. Here the time 21:12 is the only palindrome he will ever see, so the answer is 1.\n\nA palindrome is a string that reads the same backward as forward. For example, the times 12:21, 05:50, 11:11 are palindromes but 13:13, 22:10, 02:22 are not.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of each test case follows.\n\nThe only line of each test case contains a string s of length 5 with the format \"HH:MM\" where \"HH\" is from \"00\" to \"23\" and \"MM\" is from \"00\" to \"59\" (both \"HH\" and \"MM\" have exactly two digits) and an integer x (1 ≤ x ≤ 1440) — the number of minutes Victor takes to look again at the clock.\n\nFor each test case, output a single integer — the number of different palindromes Victor will see if he looks at the clock every x minutes starting from time s.\n\nThe first test case is explained in the statement.\n\nInput:\n```\n603:12 36000:00 113:22 215:15 1011:11 144022:30 27\n```\n\nOutput:\n```\n1\n16\n10\n0\n1\n1\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of each test case follows.\n\nThe only line of each test case contains a string s of length 5 with the format \"HH:MM\" where \"HH\" is from \"00\" to \"23\" and \"MM\" is from \"00\" to \"59\" (both \"HH\" and \"MM\" have exactly two digits) and an integer x (1 ≤ x ≤ 1440) — the number of minutes Victor takes to look again at the clock.",
+    "output": "For each test case, output a single integer — the number of different palindromes Victor will see if he looks at the clock every x minutes starting from time s.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

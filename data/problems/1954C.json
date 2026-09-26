@@ -1,0 +1,18 @@
+{
+    "id": "1954C",
+    "contest_id": 1954,
+    "problem_letter": "C",
+    "title": "C. Long Multiplication",
+    "statement": "You are given two integers x and y of the same length, consisting of digits from 1 to 9.\n\nYou can perform the following operation any number of times (possibly zero): swap the i-th digit in x and the i-th digit in y.\n\nFor example, if x=73 and y=31, you can swap the 2-nd digits and get x=71 and y=33.\n\nYour task is to maximize the product of x and y using the aforementioned operation any number of times. If there are multiple answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer x (1 ≤ x < 10^100).\n\nThe second line of each test case contains a single integer y (1 ≤ y < 10^100).\n\nAdditional constraint on input: the integers x and y consist only of digits from 1 to 9.\n\nFor each test case, print two lines — the first line should contain the number x after performing the operations; similarly, the second line should contain the number y after performing the operations. If there are multiple answers, print any of them.\n\nInput:\n```\n373312535163982\n```\n\nOutput:\n```\n71\n33\n5\n2\n3912\n3586\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer x (1 ≤ x < 10^100).\n\nThe second line of each test case contains a single integer y (1 ≤ y < 10^100).\n\nAdditional constraint on input: the integers x and y consist only of digits from 1 to 9.",
+    "output": "For each test case, print two lines — the first line should contain the number x after performing the operations; similarly, the second line should contain the number y after performing the operations. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

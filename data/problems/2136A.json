@@ -1,0 +1,17 @@
+{
+    "id": "2136A",
+    "contest_id": 2136,
+    "problem_letter": "A",
+    "title": "A. In the Dream",
+    "statement": "Two football teams, the RiOI team and the KDOI team, are about to have a football match. A football match consists of two halves — the first half and the second half. At the beginning of the match, both teams have a score of 0.\n\nAs a fan of both teams, Aquawave knows that the two teams have similar levels, so neither team will score three consecutive goals in the same half.\n\nAquawave had a dream the night before the match, in which:\n\nYou have to determine whether Aquawave's dream can come true according to the above information.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains four integers a, b, c, and d (0 ≤ a ≤ c ≤ 100, 0≤ b ≤ d ≤ 100) — the score at the end of the first half and the score at the end of the second half.\n\nFor each test case, print \"YES\" if Aquawave's dream can come true. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nWe will use textttR to represent the RiOI team's goal, and textttK to represent the KDOI team's goal.\n\nIn the first test case, the only goal order is:\n\nIn the second test case, the only goal order is:\n\nIn the third test case, one possible goal order is:\n\nIn the fourth test case, at the end of the first half, the KDOI team has scored 100 goals, while the RiOI team did not score any goals. Thus, in Aquawave's dream, the KDOI team scored 100 consecutive goals in the first half, which is impossible.\n\nInput:\n```\n111 4 1 44 1 4 11 4 2 50 100 0 1001 4 2 93 1 13 58 11 17 3619 41 30 5020 38 30 600 0 0 0100 100 100 100\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nYES\nNO\nNO\nYES\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe only line of each test case contains four integers a, b, c, and d (0 ≤ a ≤ c ≤ 100, 0≤ b ≤ d ≤ 100) — the score at the end of the first half and the score at the end of the second half.",
+    "output": "For each test case, print \"YES\" if Aquawave's dream can come true. Otherwise, print \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

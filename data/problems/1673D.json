@@ -1,0 +1,18 @@
+{
+    "id": "1673D",
+    "contest_id": 1673,
+    "problem_letter": "D",
+    "title": "D. Lost Arithmetic Progression",
+    "statement": "Long ago, you thought of two finite arithmetic progressions A and B. Then you found out another sequence C containing all elements common to both A and B. It is not hard to see that C is also a finite arithmetic progression. After many years, you forgot what A was but remember B and C. You are, for some reason, determined to find this lost arithmetic progression. Before you begin this eternal search, you want to know how many different finite arithmetic progressions exist which can be your lost progression A.\n\nTwo arithmetic progressions are considered different if they differ in their first term, common difference or number of terms.\n\nIt may be possible that there are infinitely many such progressions, in which case you won't even try to look for them! Print -1 in all such cases.\n\nEven if there are finite number of them, the answer might be very large. So, you are only interested to find the answer modulo 10^9+7.\n\nThe first line of input contains a single integer t (1≤ t≤ 100) denoting the number of testcases.\n\nThe first line of each testcase contains three integers b, q and y (-10^9≤ b≤ 10^9, 1≤ q≤ 10^9, 2≤ y≤ 10^9) denoting the first term, common difference and number of terms of B respectively.\n\nThe second line of each testcase contains three integers c, r and z (-10^9≤ c≤ 10^9, 1≤ r≤ 10^9, 2≤ z≤ 10^9) denoting the first term, common difference and number of terms of C respectively.\n\nFor each testcase, print a single line containing a single integer.\n\nIf there are infinitely many finite arithmetic progressions which could be your lost progression A, print -1.\n\nOtherwise, print the number of finite arithmetic progressions which could be your lost progression A modulo 10^9+7. In particular, if there are no such finite arithmetic progressions, print 0.\n\nFor the first testcase, B={-3,-2,-1,0,1,2,3} and C={-1,1,3,5}. There is no such arithmetic progression which can be equal to A because 5 is not present in B and for any A, 5 should not be present in C also.\n\nFor the second testcase, B={-9,-6,-3,0,3,6,9,12,15,18,21} and C={0,6,12}. There are 10 possible arithmetic progressions which can be A:\n\nFor the third testcase, B={2,7,12,17,22} and C={7,12,17,22}. There are infinitely many arithmetic progressions which can be A like:\n\nInput:\n```\n8-3 1 7-1 2 4-9 3 110 6 32 5 57 5 42 2 1110 5 30 2 92 4 3-11 4 121 12 2-27 4 7-17 8 2-8400 420 10000000000 4620 10\n```\n\nOutput:\n```\n0\n10\n-1\n0\n-1\n21\n0\n273000\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 100) denoting the number of testcases.\n\nThe first line of each testcase contains three integers b, q and y (-10^9≤ b≤ 10^9, 1≤ q≤ 10^9, 2≤ y≤ 10^9) denoting the first term, common difference and number of terms of B respectively.\n\nThe second line of each testcase contains three integers c, r and z (-10^9≤ c≤ 10^9, 1≤ r≤ 10^9, 2≤ z≤ 10^9) denoting the first term, common difference and number of terms of C respectively.",
+    "output": "For each testcase, print a single line containing a single integer.\n\nIf there are infinitely many finite arithmetic progressions which could be your lost progression A, print -1.\n\nOtherwise, print the number of finite arithmetic progressions which could be your lost progression A modulo 10^9+7. In particular, if there are no such finite arithmetic progressions, print 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

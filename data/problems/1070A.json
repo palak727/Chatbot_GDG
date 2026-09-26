@@ -1,0 +1,19 @@
+{
+    "id": "1070A",
+    "contest_id": 1070,
+    "problem_letter": "A",
+    "title": "A. Find a Number",
+    "statement": "You are given two positive integers d and s. Find minimal positive integer n which is divisible by d and has sum of digits equal to s.\n\nThe first line contains two positive integers d and s (1 ≤ d ≤ 500, 1 ≤ s ≤ 5000) separated by space.\n\nPrint the required number or -1 if it doesn't exist.\n\nInput:\n```\n13 50\n```\n\nOutput:\n```\n699998\n```\n\nInput:\n```\n61 2\n```\n\nOutput:\n```\n1000000000000000000000000000001\n```\n\nInput:\n```\n15 50\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two positive integers d and s (1 ≤ d ≤ 500, 1 ≤ s ≤ 5000) separated by space.",
+    "output": "Print the required number or -1 if it doesn't exist.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "number theory",
+        "shortest paths",
+        "*2200"
+    ],
+    "rating": 2200
+}

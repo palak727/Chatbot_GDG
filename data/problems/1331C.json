@@ -1,0 +1,16 @@
+{
+    "id": "1331C",
+    "contest_id": 1331,
+    "problem_letter": "C",
+    "title": "C. ...And after happily lived ever they",
+    "statement": "The input contains a single integer a (0 ≤ a ≤ 63).\n\nOutput a single number.\n\nInput:\n```\n2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5\n```\n\nOutput:\n```\n24\n```\n\nInput:\n```\n35\n```\n\nOutput:\n```\n50\n```",
+    "input": "The input contains a single integer a (0 ≤ a ≤ 63).",
+    "output": "Output a single number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "bitmasks"
+    ],
+    "rating": null
+}

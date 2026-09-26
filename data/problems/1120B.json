@@ -1,0 +1,19 @@
+{
+    "id": "1120B",
+    "contest_id": 1120,
+    "problem_letter": "B",
+    "title": "B. Once in a casino",
+    "statement": "One player came to a casino and found a slot machine where everything depends only on how he plays. The rules follow.\n\nA positive integer a is initially on the screen. The player can put a coin into the machine and then add 1 to or subtract 1 from any two adjacent digits. All digits must remain from 0 to 9 after this operation, and the leading digit must not equal zero. In other words, it is forbidden to add 1 to 9, to subtract 1 from 0 and to subtract 1 from the leading 1. Once the number on the screen becomes equal to b, the player wins the jackpot. a and b have the same number of digits.\n\nHelp the player to determine the minimal number of coins he needs to spend in order to win the jackpot and tell how to play.\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5) standing for the length of numbers a and b.\n\nThe next two lines contain numbers a and b, each one on a separate line (10^{n-1} ≤ a, b < 10^n).\n\nIf it is impossible to win the jackpot, print a single integer -1.\n\nOtherwise, the first line must contain the minimal possible number c of coins the player has to spend.\n\nmin(c, 10^5) lines should follow, i-th of them containing two integers d_i and s_i (1≤ d_i≤ n - 1, s_i = ± 1) denoting that on the i-th step the player should add s_i to the d_i-th and (d_i + 1)-st digits from the left (e. g. d_i = 1 means that two leading digits change while d_i = n - 1 means that there are two trailing digits which change).\n\nPlease notice that the answer may be very big and in case c > 10^5 you should print only the first 10^5 moves. Your answer is considered correct if it is possible to finish your printed moves to win the jackpot in the minimal possible number of coins. In particular, if there are multiple ways to do this, you can output any of them.\n\nIn the first example, we can make a +1 operation on the two first digits, transforming number textbf223 into textbf333, and then make a -1 operation on the last two digits, transforming 3textbf33 into 3textbf22.\n\nIt's also possible to do these operations in reverse order, which makes another correct answer.\n\nIn the last example, one can show that it's impossible to transform 35 into 44.\n\nInput:\n```\n3\n223\n322\n```\n\nOutput:\n```\n2\n1 1\n2 -1\n```\n\nInput:\n```\n2\n20\n42\n```\n\nOutput:\n```\n2\n1 1\n1 1\n```\n\nInput:\n```\n2\n35\n44\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 10^5) standing for the length of numbers a and b.\n\nThe next two lines contain numbers a and b, each one on a separate line (10^{n-1} ≤ a, b < 10^n).",
+    "output": "If it is impossible to win the jackpot, print a single integer -1.\n\nOtherwise, the first line must contain the minimal possible number c of coins the player has to spend.\n\nmin(c, 10^5) lines should follow, i-th of them containing two integers d_i and s_i (1≤ d_i≤ n - 1, s_i = ± 1) denoting that on the i-th step the player should add s_i to the d_i-th and (d_i + 1)-st digits from the left (e. g. d_i = 1 means that two leading digits change while d_i = n - 1 means that there are two trailing digits which change).\n\nPlease notice that the answer may be very big and in case c > 10^5 you should print only the first 10^5 moves. Your answer is considered correct if it is possible to finish your printed moves to win the jackpot in the minimal possible number of coins. In particular, if there are multiple ways to do this, you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

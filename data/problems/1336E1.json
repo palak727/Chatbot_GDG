@@ -1,0 +1,19 @@
+{
+    "id": "1336E1",
+    "contest_id": 1336,
+    "problem_letter": "E1",
+    "title": "E1. Chiori and Doll Picking (easy version)",
+    "statement": "This is the easy version of the problem. The only difference between easy and hard versions is the constraint of m. You can make hacks only if both versions are solved.\n\nChiori loves dolls and now she is going to decorate her bedroom!\n\nAs a doll collector, Chiori has got n dolls. The i-th doll has a non-negative integer value a_i (a_i < 2^m, m is given). Chiori wants to pick some (maybe zero) dolls for the decoration, so there are 2^n different picking ways.\n\nLet x be the bitwise-xor-sum of values of dolls Chiori picks (in case Chiori picks no dolls x = 0). The value of this picking way is equal to the number of 1-bits in the binary representation of x. More formally, it is also equal to the number of indices 0 ≤ i < m, such that leftlfloor x/(2^i) rightrfloor is odd.\n\nTell her the number of picking ways with value i for each integer i from 0 to m. Due to the answers can be very huge, print them by modulo 998,244,353.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 35) — the number of dolls and the maximum value of the picking way.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^m) — the values of dolls.\n\nPrint m+1 integers p_0, p_1, …, p_m — p_i is equal to the number of picking ways with value i by modulo 998,244,353.\n\nInput:\n```\n4 4\n3 5 8 14\n```\n\nOutput:\n```\n2 2 6 6 0 \n```\n\nInput:\n```\n6 7\n11 45 14 9 19 81\n```\n\nOutput:\n```\n1 2 11 20 15 10 5 0 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 35) — the number of dolls and the maximum value of the picking way.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^m) — the values of dolls.",
+    "output": "Print m+1 integers p_0, p_1, …, p_m — p_i is equal to the number of picking ways with value i by modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

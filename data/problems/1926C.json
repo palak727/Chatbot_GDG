@@ -1,0 +1,17 @@
+{
+    "id": "1926C",
+    "contest_id": 1926,
+    "problem_letter": "C",
+    "title": "C. Vlad and a Sum of Sum of Digits",
+    "statement": "Please note that the time limit for this problem is only 0.5 seconds per test.\n\nVladislav wrote the integers from 1 to n, inclusive, on the board. Then he replaced each integer with the sum of its digits.\n\nWhat is the sum of the numbers on the board now?\n\nFor example, if n=12 then initially the numbers on the board are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. Then after the replacement, the numbers become: 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3. The sum of these numbers is 1+2+3+4+5+6+7+8+9+1+2+3=51. Thus, for n=12 the answer is 51.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the largest number Vladislav writes.\n\nFor each test case, output a single integer — the sum of the numbers at the end of the process.\n\nInput:\n```\n71212314342024200000\n```\n\nOutput:\n```\n51\n1\n3\n6\n18465\n28170\n4600002\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the largest number Vladislav writes.",
+    "output": "For each test case, output a single integer — the sum of the numbers at the end of the process.",
+    "time_limit": "0.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

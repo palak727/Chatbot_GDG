@@ -1,0 +1,16 @@
+{
+    "id": "1980A",
+    "contest_id": 1980,
+    "problem_letter": "A",
+    "title": "A. Problem Generator",
+    "statement": "Vlad is planning to hold m rounds next month. Each round should contain one problem of difficulty levels 'A', 'B', 'C', 'D', 'E', 'F', and 'G'.\n\nVlad already has a bank of n problems, where the i-th problem has a difficulty level of a_i. There may not be enough of these problems, so he may have to come up with a few more problems.\n\nVlad wants to come up with as few problems as possible, so he asks you to find the minimum number of problems he needs to come up with in order to hold m rounds.\n\nFor example, if m=1, n = 10, a= 'BGECDCBDED', then he needs to come up with two problems: one of difficulty level 'A' and one of difficulty level 'F'.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 50, 1 ≤ m ≤ 5) — the number of problems in the bank and the number of upcoming rounds, respectively.\n\nThe second line of each test case contains a string a of n characters from 'A' to 'G' — the difficulties of the problems in the bank.\n\nFor each test case, output a single integer — the minimum number of problems that need to come up with to hold m rounds.\n\nInput:\n```\n310 1BGECDCBDED10 2BGECDCBDED9 1BBCDEFFGG\n```\n\nOutput:\n```\n2\n5\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 50, 1 ≤ m ≤ 5) — the number of problems in the bank and the number of upcoming rounds, respectively.\n\nThe second line of each test case contains a string a of n characters from 'A' to 'G' — the difficulties of the problems in the bank.",
+    "output": "For each test case, output a single integer — the minimum number of problems that need to come up with to hold m rounds.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

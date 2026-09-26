@@ -1,0 +1,16 @@
+{
+    "id": "2095G",
+    "contest_id": 2095,
+    "problem_letter": "G",
+    "title": "G. Definitely a Geometry Problem",
+    "statement": "Megumin is a wizard who can cast powerful magic spells that affect large areas. She is obsessed with the extremely devastating Explosion spell that can destroy everything around its target.\n\nThere are currently n slimes in the wild. Each slime's location can be described in 2D Cartesian coordinates. Megumin wishes to kill at least k slimes so she can earn more experience points to level up her Explosion. To do that, she can choose any circle on the plane and cast an Explosion spell which kills every slime inside or on the border of the circle.\n\nHowever, the Explosion magic requires a large amount of mana to cast, and Megumin can only use it once per day. The amount of mana used is equal to the area inside the circle she chooses. What is the minimum amount of mana she needs to spend to kill k slimes with a single Explosion?\n\nThe first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^5) — the number of slimes and how many slimes Megumin needs to defeat.\n\nEach of the next n lines contains two integers x and y (-10^9 ≤ x, y ≤ 10^9), denoting the coordinates (x, y) of a slime's location. It is guaranteed that all locations are distinct and that no three slimes lie on the same circle.\n\nPrint one real number — the answer.\n\nYour answer is considered correct if its absolute or relative error does not exceed 10^{-6}. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^{-6}.\n\nIn the first example, Megumin can hit the slime with a circle centered at (0, 0) with radius 0.\n\nIn the second example, Megumin can hit the first and last slimes with a circle centered at (1, 0) with radius 1.\n\nInput:\n```\n1 10 0\n```\n\nOutput:\n```\n0.000000000000000\n```\n\nInput:\n```\n3 20 0100 02 0\n```\n\nOutput:\n```\n3.141592653589793\n```",
+    "input": "The first line contains two integers n and k (1 ≤ k ≤ n ≤ 10^5) — the number of slimes and how many slimes Megumin needs to defeat.\n\nEach of the next n lines contains two integers x and y (-10^9 ≤ x, y ≤ 10^9), denoting the coordinates (x, y) of a slime's location. It is guaranteed that all locations are distinct and that no three slimes lie on the same circle.",
+    "output": "Print one real number — the answer.\n\nYour answer is considered correct if its absolute or relative error does not exceed 10^{-6}. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^{-6}.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "geometry"
+    ],
+    "rating": null
+}

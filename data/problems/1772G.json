@@ -1,0 +1,21 @@
+{
+    "id": "1772G",
+    "contest_id": 1772,
+    "problem_letter": "G",
+    "title": "G. Gaining Rating",
+    "statement": "Monocarp is playing chess on one popular website. He has n opponents he can play with. The i-th opponent has rating equal to a_i. Monocarp's initial rating is x. Monocarp wants to raise his rating to the value y (y > x).\n\nWhen Monocarp is playing against one of the opponents, he will win if his current rating is bigger or equal to the opponent's rating. If Monocarp wins, his rating is increased by 1, otherwise it is decreased by 1. The rating of his opponent does not change.\n\nMonocarp wants to gain rating y playing as few games as possible. But he can't just grind it, playing against weak opponents. The website has a rule that you should play against all opponents as evenly as possible. Speaking formally, if Monocarp wants to play against an opponent i, there should be no other opponent j such that Monocarp has played more games against i than against j.\n\nCalculate the minimum possible number of games Monocarp needs to gain rating y or say it's impossible. Note that ratings of Monocarp's opponents don't change, while Monocarp's rating does change.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, x and y (1 ≤ n ≤ 2·10^5; 1 ≤ x < y ≤ 10^12) — the number of Monocarp's opponents, his initial and desired ratings.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12) — ratings of Monocarp's opponents.\n\nAdditional constraint on the input: the total sum of n over all t test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the minimum number of games Monocarp needs to play to gain rating y, or -1 if it's impossible.\n\nIn the first test case, Monocarp can use the following strategy:\n\nIn the second test case, it can be proven that whichever games Monocarp plays, he can't get his rating higher than 4.\n\nInput:\n```\n37 2 103 1 9 2 5 20 87 1 103 1 9 2 5 20 85 10 12100 1 200 11 300\n```\n\nOutput:\n```\n20\n-1\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, x and y (1 ≤ n ≤ 2·10^5; 1 ≤ x < y ≤ 10^12) — the number of Monocarp's opponents, his initial and desired ratings.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12) — ratings of Monocarp's opponents.\n\nAdditional constraint on the input: the total sum of n over all t test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the minimum number of games Monocarp needs to play to gain rating y, or -1 if it's impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

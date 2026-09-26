@@ -1,0 +1,20 @@
+{
+    "id": "1898E",
+    "contest_id": 1898,
+    "problem_letter": "E",
+    "title": "E. Sofia and Strings",
+    "statement": "Sofia has a string s of length n, consisting only of lowercase English letters. She can perform operations of the following types with this string.\n\nSofia wants to obtain the string t of length m after performing zero or more operations on string s as described above. Please determine whether it is possible or not.\n\nThe first line contains one integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains two integers n, m (1≤ m ≤ n ≤ 2·10^5) — the lengths of string s and t, respectively.\n\nThe second line of each test case contains the string s of length n, consisting only of lowercase English letters.\n\nThe third line of each test case contains the string t of length m, consisting only of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if Sofia can obtain the string t from s using the operations above. Otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, Sofia can perform the following operation:\n\nIn the second test case, Sofia can perform the following operations:\n\nIn the third test case, it can be shown that it is impossible to obtain t from s using the provided operations.\n\nInput:\n```\n85 5sofiaafios3 2cbabc5 1sofiae15 7anavolimilovanaaamanan26 4abcdefghijklmnopqrstuvwxyznope26 4zyxwvutsrqponmlkjihgfedcbanope7 3apricotcat3 3cbaacb\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains two integers n, m (1≤ m ≤ n ≤ 2·10^5) — the lengths of string s and t, respectively.\n\nThe second line of each test case contains the string s of length n, consisting only of lowercase English letters.\n\nThe third line of each test case contains the string t of length m, consisting only of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if Sofia can obtain the string t from s using the operations above. Otherwise, output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "sortings",
+        "strings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

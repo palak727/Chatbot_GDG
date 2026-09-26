@@ -1,0 +1,19 @@
+{
+    "id": "2118F",
+    "contest_id": 2118,
+    "problem_letter": "F",
+    "title": "F. Shifts and Swaps",
+    "statement": "You are given arrays a and b of length n and an integer m.\n\nThe arrays only contain integers from 1 to m, and both arrays contain all integers from 1 to m.\n\nYou may repeatedly perform either of the following operations on a:\n\nIs it possible to transform the first array into the second?\n\n^{∗}A left cyclic shift of a zero-indexed array p of length n is an array q such that q_i = p_{(i + 1) bmod n} for all 0 ≤ i < n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ m ≤ n ≤ 5·10^5) — the length of the arrays and the number of distinct elements in a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ m) — denoting the array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ m) — denoting the array b.\n\nIt is guaranteed that both arrays contain all integers from 1 to m.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output \"YES\" if it is possible to transform the first array into the second and \"NO\" otherwise. You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, you can transform array a into array b with the following steps:\n\nIn the second test case, it can be proven that it is impossible to transform array a into array b with the given operations.\n\nInput:\n```\n83 31 2 33 2 14 31 1 2 31 2 2 34 41 3 2 42 3 4 16 31 1 2 1 2 32 1 1 2 3 15 42 3 4 1 13 2 1 1 49 72 4 6 7 3 1 5 4 66 7 3 5 6 4 2 4 19 88 3 5 6 5 4 1 7 27 5 3 5 8 4 6 2 18 62 1 5 4 6 3 5 46 1 5 2 4 5 3 4\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nYES\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (2 ≤ m ≤ n ≤ 5·10^5) — the length of the arrays and the number of distinct elements in a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ m) — denoting the array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ m) — denoting the array b.\n\nIt is guaranteed that both arrays contain all integers from 1 to m.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output \"YES\" if it is possible to transform the first array into the second and \"NO\" otherwise. You can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "graphs",
+        "hashing",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

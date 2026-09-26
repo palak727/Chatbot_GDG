@@ -1,0 +1,18 @@
+{
+    "id": "1788A",
+    "contest_id": 1788,
+    "problem_letter": "A",
+    "title": "A. One and Two",
+    "statement": "You are given a sequence a_1, a_2, …, a_n. Each element of a is 1 or 2.\n\nFind out if an integer k exists so that the following conditions are met.\n\nIf there exist multiple k that satisfy the given condition, print the smallest.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 1000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2).\n\nFor each test case, if there is no such k, print -1.\n\nOtherwise, print the smallest possible k.\n\nFor the first test case, k=2 satisfies the condition since a_1·a_2 = a_3·a_4·a_5·a_6 = 4. k=3 also satisfies the given condition, but the smallest should be printed.\n\nFor the second test case, there is no k that satisfies a_1·a_2·…·a_k = a_{k+1}·a_{k+2}·…·a_n\n\nFor the third test case, k=1, 2, and 3 satisfy the given condition, so the answer is 1.\n\nInput:\n```\n362 2 1 2 1 231 2 141 1 1 1\n```\n\nOutput:\n```\n2\n-1\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 1000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2).",
+    "output": "For each test case, if there is no such k, print -1.\n\nOtherwise, print the smallest possible k.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1374B",
+    "contest_id": 1374,
+    "problem_letter": "B",
+    "title": "B. Multiply by 2, divide by 6",
+    "statement": "You are given an integer n. In one move, you can either multiply n by two or divide n by 6 (if it is divisible by 6 without the remainder).\n\nYour task is to find the minimum number of moves needed to obtain 1 from n or determine if it's impossible to do that.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains one integer n (1 ≤ n ≤ 10^9).\n\nFor each test case, print the answer — the minimum number of moves needed to obtain 1 from n if it's possible to do that or -1 if it's impossible to obtain 1 from n.\n\nConsider the sixth test case of the example. The answer can be obtained by the following sequence of moves from the given integer 15116544:\n\nInput:\n```\n7\n1\n2\n3\n12\n12345\n15116544\n387420489\n```\n\nOutput:\n```\n0\n-1\n2\n-1\n-1\n12\n36\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains one integer n (1 ≤ n ≤ 10^9).",
+    "output": "For each test case, print the answer — the minimum number of moves needed to obtain 1 from n if it's possible to do that or -1 if it's impossible to obtain 1 from n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

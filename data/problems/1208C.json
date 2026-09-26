@@ -1,0 +1,16 @@
+{
+    "id": "1208C",
+    "contest_id": 1208,
+    "problem_letter": "C",
+    "title": "C. Magic Grid",
+    "statement": "Let us define a magic grid to be a square matrix of integers of size n × n, satisfying the following conditions.\n\nYou are given an integer n which is a multiple of 4. Construct a magic grid of size n × n.\n\nThe only line of input contains an integer n (4 ≤ n ≤ 1000). It is guaranteed that n is a multiple of 4.\n\nPrint a magic grid, i.e. n lines, the i-th of which contains n space-separated integers, representing the i-th row of the grid.\n\nIf there are multiple answers, print any. We can show that an answer always exists.\n\nIn the first example, XOR of each row and each column is 13.\n\nIn the second example, XOR of each row and each column is 60.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n8 9 1 13\n3 12 7 5\n0 2 4 11\n6 10 15 14\n```\n\nInput:\n```\n8\n```\n\nOutput:\n```\n19 55 11 39 32 36 4 52\n51 7 35 31 12 48 28 20\n43 23 59 15 0 8 16 44\n3 47 27 63 24 40 60 56\n34 38 6 54 17 53 9 37\n14 50 30 22 49 5 33 29\n2 10 18 46 41 21 57 13\n26 42 62 58 1 45 25 61\n```",
+    "input": "The only line of input contains an integer n (4 ≤ n ≤ 1000). It is guaranteed that n is a multiple of 4.",
+    "output": "Print a magic grid, i.e. n lines, the i-th of which contains n space-separated integers, representing the i-th row of the grid.\n\nIf there are multiple answers, print any. We can show that an answer always exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1800"
+    ],
+    "rating": 1800
+}

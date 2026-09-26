@@ -1,0 +1,20 @@
+{
+    "id": "2077G",
+    "contest_id": 2077,
+    "problem_letter": "G",
+    "title": "G. RGB Walking",
+    "statement": "You are given a connected graph with n vertices and m bidirectional edges with weight not exceeding x. The i-th edge connects vertices u_i and v_i, has weight w_i, and is assigned a color c_i (1 ≤ i ≤ m, 1 ≤ u_i, v_i ≤ n). The color c_i is either red, green, or blue. It is guaranteed that there is at least one edge of each color.\n\nFor a walk where vertices and edges may be repeated, let s_r, s_g, s_b denote the sum of the weights of the red, green, and blue edges that the walk passes through, respectively. If an edge is traversed multiple times, each traversal is counted separately.\n\nFind the minimum value of max(s_r, s_g, s_b) - min(s_r, s_g, s_b) over all possible walks from vertex 1 to vertex n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and x (4 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ 2·10^5, 1 ≤ x ≤ 2·10^5) — the number of vertices, the number of edges in the graph, and the upper bound on the weight of the edges, respectively.\n\nThe next m lines each contain three integers u_i, v_i, w_i and a letter c_i (1 ≤ u_i, v_i ≤ n, 1 ≤ w_i ≤ x), representing a bidirectional edge between vertices u_i and v_i with weight w_i and color c_i. The color c_i is either 'r', 'g', or 'b', denoting red, green, and blue, respectively.\n\nIt is guaranteed that the graph is connected and contains at least one edge of each color. The graph may also contain multiple edges and self-loops.\n\nAdditionally, it is guaranteed that the total sum of all values of n, the total sum of all values of m, and the total sum of all values of x across all test cases do not exceed 2·10^5 individually.\n\nFor each test case, output a single integer — the minimum value of max(s_r, s_g, s_b) - min(s_r, s_g, s_b) over all walks from vertex 1 to vertex n.\n\nIn the first test case, the optimal path is 1 → 2 → 3 → 4. The edges used are:\n\nWe have s_r = 2, s_g = 3, and s_b = 2. Thus, the answer is 1.\n\nIn the second test case, one of the optimal paths is 1 → 1 → 2 → 1 → 2 → 3 → 4. The edges used are:\n\nWe have s_r = s_g = s_b = 4. Thus, the answer is 0.\n\nInput:\n```\n34 3 31 2 2 r2 3 3 g3 4 2 b4 5 41 2 1 r1 1 1 r2 1 1 r2 3 4 g3 4 4 b4 6 41 2 2 r1 2 2 r2 3 3 b1 3 4 r1 4 1 g3 4 4 g\n```\n\nOutput:\n```\n1\n0\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, and x (4 ≤ n ≤ 2·10^5, n-1 ≤ m ≤ 2·10^5, 1 ≤ x ≤ 2·10^5) — the number of vertices, the number of edges in the graph, and the upper bound on the weight of the edges, respectively.\n\nThe next m lines each contain three integers u_i, v_i, w_i and a letter c_i (1 ≤ u_i, v_i ≤ n, 1 ≤ w_i ≤ x), representing a bidirectional edge between vertices u_i and v_i with weight w_i and color c_i. The color c_i is either 'r', 'g', or 'b', denoting red, green, and blue, respectively.\n\nIt is guaranteed that the graph is connected and contains at least one edge of each color. The graph may also contain multiple edges and self-loops.\n\nAdditionally, it is guaranteed that the total sum of all values of n, the total sum of all values of m, and the total sum of all values of x across all test cases do not exceed 2·10^5 individually.",
+    "output": "For each test case, output a single integer — the minimum value of max(s_r, s_g, s_b) - min(s_r, s_g, s_b) over all walks from vertex 1 to vertex n.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "chinese remainder theorem",
+        "dfs and similar",
+        "graphs",
+        "number theory",
+        "*3500"
+    ],
+    "rating": 3500
+}

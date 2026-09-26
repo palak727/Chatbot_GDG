@@ -1,0 +1,17 @@
+{
+    "id": "1184A2",
+    "contest_id": 1184,
+    "problem_letter": "A2",
+    "title": "A2. Heidi Learns Hashing (Medium)",
+    "statement": "After learning about polynomial hashing, Heidi decided to learn about shift-xor hashing. In particular, she came across this interesting problem.\n\nGiven a bitstring y ∈ {0,1}^n find out the number of different k (0 ≤ k < n) such that there exists x ∈ {0,1}^n for which y = x oplus mboxshift^k(x).\n\nIn the above, oplus is the xor operation and mboxshift^k is the operation of shifting a bitstring cyclically to the right k times. For example, 001 oplus 111 = 110 and mboxshift^3(00010010111000) = 00000010010111.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5), the length of the bitstring y.\n\nThe second line contains the bitstring y.\n\nOutput a single integer: the number of suitable values of k.\n\nIn the first example:\n\nThere is no x such that x oplus x = 1010, hence the answer is 3.\n\nInput:\n```\n4\n1010\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 2·10^5), the length of the bitstring y.\n\nThe second line contains the bitstring y.",
+    "output": "Output a single integer: the number of suitable values of k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1053E",
+    "contest_id": 1053,
+    "problem_letter": "E",
+    "title": "E. Euler tour",
+    "statement": "Euler is a little, cute squirrel. When the autumn comes, he collects some reserves for winter. The interesting fact is that Euler likes to collect acorns in a specific way. A tree can be described as n acorns connected by n - 1 branches, such that there is exactly one way between each pair of acorns. Let's enumerate the acorns from 1 to n.\n\nThe squirrel chooses one acorn (not necessary with number 1) as a start, and visits them in a way called \"Euler tour\" (see notes), collecting each acorn when he visits it for the last time.\n\nToday morning Kate was observing Euler. She took a sheet of paper and wrote down consecutive indices of acorns on his path. Unfortunately, during her way to home it started raining and some of numbers became illegible. Now the girl is very sad, because she has to present the observations to her teacher.\n\n\"Maybe if I guess the lacking numbers, I'll be able to do it!\" she thought. Help her and restore any valid Euler tour of some tree or tell that she must have made a mistake.\n\nThe first line contains a single integer n (1 ≤ n ≤ 5·10^5), denoting the number of acorns in the tree.\n\nThe second line contains 2n - 1 integers a_1, a_2, …, a_{2n-1} (0 ≤ a_i ≤ n) — the Euler tour of the tree that Kate wrote down. 0 means an illegible number, which has to be guessed.\n\nIf there is no Euler tour satisfying the given description, output \"no\" in the first line.\n\nOtherwise, on the first line output \"yes\", and then in the second line print the Euler tour which satisfy the given description.\n\nAny valid Euler tour will be accepted, since the teacher doesn't know how exactly the initial tree looks.\n\nAn Euler tour of a tree with n acorns is a sequence of 2n - 1 indices of acorns. such that each acorn occurs at least once, the first and the last acorns are same and each two consecutive acorns are directly connected with a branch.\n\nInput:\n```\n2\n1 0 0\n```\n\nOutput:\n```\nyes\n1 2 1\n```\n\nInput:\n```\n4\n1 0 3 2 0 0 0\n```\n\nOutput:\n```\nyes\n1 4 3 2 3 4 1\n```\n\nInput:\n```\n5\n0 1 2 3 4 1 0 0 0\n```\n\nOutput:\n```\nno\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 5·10^5), denoting the number of acorns in the tree.\n\nThe second line contains 2n - 1 integers a_1, a_2, …, a_{2n-1} (0 ≤ a_i ≤ n) — the Euler tour of the tree that Kate wrote down. 0 means an illegible number, which has to be guessed.",
+    "output": "If there is no Euler tour satisfying the given description, output \"no\" in the first line.\n\nOtherwise, on the first line output \"yes\", and then in the second line print the Euler tour which satisfy the given description.\n\nAny valid Euler tour will be accepted, since the teacher doesn't know how exactly the initial tree looks.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1373B",
+    "contest_id": 1373,
+    "problem_letter": "B",
+    "title": "B. 01 Game",
+    "statement": "Alica and Bob are playing a game.\n\nInitially they have a binary string s consisting of only characters 0 and 1.\n\nAlice and Bob make alternating moves: Alice makes the first move, Bob makes the second move, Alice makes the third one, and so on. During each move, the current player must choose two different adjacent characters of string s and delete them. For example, if s = 1011001 then the following moves are possible:\n\nIf a player can't make any move, they lose. Both players play optimally. You have to determine if Alice can win.\n\nFirst line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nOnly line of each test case contains one string s (1 ≤ |s| ≤ 100), consisting of only characters 0 and 1.\n\nFor each test case print answer in the single line.\n\nIf Alice can win print DA (YES in Russian) in any register. Otherwise print NET (NO in Russian) in any register.\n\nIn the first test case after Alice's move string s become empty and Bob can not make any move.\n\nIn the second test case Alice can not make any move initially.\n\nIn the third test case after Alice's move string s turn into 01. Then, after Bob's move string s become empty and Alice can not make any move.\n\nInput:\n```\n3\n01\n1111\n0011\n```\n\nOutput:\n```\nDA\nNET\nNET\n```",
+    "input": "First line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nOnly line of each test case contains one string s (1 ≤ |s| ≤ 100), consisting of only characters 0 and 1.",
+    "output": "For each test case print answer in the single line.\n\nIf Alice can win print DA (YES in Russian) in any register. Otherwise print NET (NO in Russian) in any register.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1575L",
+    "contest_id": 1575,
+    "problem_letter": "L",
+    "title": "L. Longest Array Deconstruction",
+    "statement": "Mr. Chanek gives you a sequence a indexed from 1 to n. Define f(a) as the number of indices where a_i = i.\n\nYou can pick an element from the current sequence and remove it, then concatenate the remaining elements together. For example, if you remove the 3-rd element from the sequence [4, 2, 3, 1], the resulting sequence will be [4, 2, 1].\n\nYou want to remove some elements from a in order to maximize f(a), using zero or more operations. Find the largest possible f(a).\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5) — the initial length of the sequence.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the initial sequence a.\n\nOutput an integer denoting the largest f(a) that can be obtained by doing zero or more operations.\n\nIn the first example, f(A) = 3 by doing the following operations.\n\n[2,1,textbf4,2,5,3,7] → [textbf2,1,2,5,3,7] → [1,2,5,3,textbf7] → [1,2,textbf5,3] → [1,2,3]\n\nIn the second example, f(A) = 2 and no additional operation is needed.\n\nInput:\n```\n7\n2 1 4 2 5 3 7\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4\n4 2 3 1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5) — the initial length of the sequence.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the initial sequence a.",
+    "output": "Output an integer denoting the largest f(a) that can be obtained by doing zero or more operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "sortings",
+        "*2100"
+    ],
+    "rating": 2100
+}

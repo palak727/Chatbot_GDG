@@ -1,0 +1,18 @@
+{
+    "id": "1992B",
+    "contest_id": 1992,
+    "problem_letter": "B",
+    "title": "B. Angry Monk",
+    "statement": "To celebrate his recovery, k1o0n has baked an enormous n metres long potato casserole.\n\nTurns out, Noobish_Monk just can't stand potatoes, so he decided to ruin k1o0n's meal. He has cut it into k pieces, of lengths a_1, a_2, …, a_k meters.\n\nk1o0n wasn't keen on that. Luckily, everything can be fixed. In order to do that, k1o0n can do one of the following operations:\n\nHelp k1o0n to find the minimum number of operations he needs to do in order to merge the casserole into one piece with length n.\n\nFor example, if n=5, k=2 and a = [3, 2], it is optimal to do the following:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nDescription of each test case consists of two lines. The first line contains two integers n and k (2 ≤ n ≤ 10^9, 2 ≤ k ≤ 10^5) — length of casserole and the number of pieces.\n\nThe second line contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ n - 1, ∑ a_i = n) — lengths of pieces of casserole, which Noobish_Monk has cut.\n\nIt is guaranteed that the sum of k over all t test cases doesn't exceed 2·10^5.\n\nFor each test case, output the minimum number of operations K1o0n needs to restore his pie after the terror of Noobish_Monk.\n\nInput:\n```\n45 33 1 15 23 211 42 3 1 516 61 6 1 1 1 6\n```\n\nOutput:\n```\n2\n3\n9\n15\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4).\n\nDescription of each test case consists of two lines. The first line contains two integers n and k (2 ≤ n ≤ 10^9, 2 ≤ k ≤ 10^5) — length of casserole and the number of pieces.\n\nThe second line contains k integers a_1, a_2, …, a_k (1 ≤ a_i ≤ n - 1, ∑ a_i = n) — lengths of pieces of casserole, which Noobish_Monk has cut.\n\nIt is guaranteed that the sum of k over all t test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output the minimum number of operations K1o0n needs to restore his pie after the terror of Noobish_Monk.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

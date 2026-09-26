@@ -1,0 +1,16 @@
+{
+    "id": "1651A",
+    "contest_id": 1651,
+    "problem_letter": "A",
+    "title": "A. Playoff",
+    "statement": "Consider a playoff tournament where 2^n athletes compete. The athletes are numbered from 1 to 2^n.\n\nThe tournament is held in n stages. In each stage, the athletes are split into pairs in such a way that each athlete belongs exactly to one pair. In each pair, the athletes compete against each other, and exactly one of them wins. The winner of each pair advances to the next stage, the athlete who was defeated gets eliminated from the tournament.\n\nThe pairs are formed as follows:\n\nWhen athletes x and y compete, the winner is decided as follows:\n\nThe following picture describes the way the tournament with n = 3 goes.\n\nYour task is the following one: given the integer n, determine the index of the athlete who wins the tournament.\n\nThe first line contains one integer t (1 ≤ t ≤ 30) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 30).\n\nFor each test case, print one integer — the index of the winner of the tournament.\n\nThe case n = 3 is shown in the picture from the statement.\n\nIf n = 1, then there's only one match between athletes 1 and 2. Since 1 + 2 = 3 is an odd number, the athlete with the lower index wins. So, the athlete 1 is the winner.\n\nInput:\n```\n231\n```\n\nOutput:\n```\n7\n1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 30) — the number of test cases.\n\nEach test case consists of one line containing one integer n (1 ≤ n ≤ 30).",
+    "output": "For each test case, print one integer — the index of the winner of the tournament.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

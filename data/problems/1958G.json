@@ -1,0 +1,16 @@
+{
+    "id": "1958G",
+    "contest_id": 1958,
+    "problem_letter": "G",
+    "title": "G. Observation Towers",
+    "statement": "Consider a segment of an OX axis from 1 to n. There are k observation towers on this segment.\n\nEach tower has two parameters — the coordinate x_i and the height h_i. The coordinates of all towers are distinct. From tower i, you can see point j if |x_i - j| ≤ h_i (where |a| is an absolute value of a).\n\nYou can increase the height of any tower by 1 for one coin. The height of each tower can be increased any number of times (including zero).\n\nYou need to process q independent queries. In the i-th query, two different points l and r are given. You need to calculate the minimum number of coins required to be able to see both of these points (from one tower or from different towers).\n\nThe first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the length of the segment of an OX axis and the number of observation towers.\n\nThe second line contains k integers x_1, x_2, …, x_k (1 ≤ x_i ≤ n) — the coordinates of the observation towers. The coordinates of all towers are distinct.\n\nThe third line contains k integers h_1, h_2, …, h_k (0 ≤ h_i ≤ n) — the heights of the observation towers.\n\nThe fourth line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nEach of the next q lines contains two integers l and r (1 ≤ l < r ≤ n) — the description of the next query.\n\nFor each query, output a single integer — the minimum number of coins required to be able to see both points (from one tower or from different towers).\n\nInput:\n```\n20 32 15 106 2 031 2010 113 4\n```\n\nOutput:\n```\n3 1 0\n```\n\nInput:\n```\n10 22 91 234 55 61 10\n```\n\nOutput:\n```\n2 2 0\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the length of the segment of an OX axis and the number of observation towers.\n\nThe second line contains k integers x_1, x_2, …, x_k (1 ≤ x_i ≤ n) — the coordinates of the observation towers. The coordinates of all towers are distinct.\n\nThe third line contains k integers h_1, h_2, …, h_k (0 ≤ h_i ≤ n) — the heights of the observation towers.\n\nThe fourth line contains a single integer q (1 ≤ q ≤ 2·10^5) — the number of queries.\n\nEach of the next q lines contains two integers l and r (1 ≤ l < r ≤ n) — the description of the next query.",
+    "output": "For each query, output a single integer — the minimum number of coins required to be able to see both points (from one tower or from different towers).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*2400"
+    ],
+    "rating": 2400
+}

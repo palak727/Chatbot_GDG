@@ -1,0 +1,16 @@
+{
+    "id": "2124B",
+    "contest_id": 2124,
+    "problem_letter": "B",
+    "title": "B. Minimise Sum",
+    "statement": "This problem differs from problem G. In this problem, you must output the minimum sum of prefix minimums after at most one operation.\n\nYou are given an array a of length n, with elements satisfying boldsymbol0 ≤ a_i ≤ n. You can perform the following operation at most once:\n\nOutput the minimum possible value of min(a_1) + min(a_1,a_2) + … + min(a_1, a_2, …, a_n) that you can get.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of a.\n\nThe following line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n) — denoting the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer on a new line, the minimum possible value of min(a_1) + min(a_1,a_2) + … + min(a_1, a_2, …, a_n).\n\nIn the second test case, it is optimal to perform the operation with i=2 and j=3.\n\nIn the third test case, it is optimal to not perform any operations. The answer is 3.\n\nInput:\n```\n321 231 2 343 0 2 3\n```\n\nOutput:\n```\n2\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the length of a.\n\nThe following line contains n space-separated integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n) — denoting the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer on a new line, the minimum possible value of min(a_1) + min(a_1,a_2) + … + min(a_1, a_2, …, a_n).",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

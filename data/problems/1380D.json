@@ -1,0 +1,20 @@
+{
+    "id": "1380D",
+    "contest_id": 1380,
+    "problem_letter": "D",
+    "title": "D. Berserk And Fireball",
+    "statement": "There are n warriors in a row. The power of the i-th warrior is a_i. All powers are pairwise distinct.\n\nYou have two types of spells which you may cast:\n\nFor example, let the powers of warriors be [2, 3, 7, 8, 11, 5, 4], and k = 3. If you cast Berserk on warriors with powers 8 and 11, the resulting sequence of powers becomes [2, 3, 7, 11, 5, 4]. Then, for example, if you cast Fireball on consecutive warriors with powers [7, 11, 5], the resulting sequence of powers becomes [2, 3, 4].\n\nYou want to turn the current sequence of warriors powers a_1, a_2, …, a_n into b_1, b_2, …, b_m. Calculate the minimum amount of mana you need to spend on it.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of sequence a and the length of sequence b respectively.\n\nThe second line contains three integers x, k, y (1 ≤ x, y, ≤ 10^9; 1 ≤ k ≤ n) — the cost of fireball, the range of fireball and the cost of berserk respectively.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n). It is guaranteed that all integers a_i are pairwise distinct.\n\nThe fourth line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ n). It is guaranteed that all integers b_i are pairwise distinct.\n\nPrint the minimum amount of mana for turning the sequnce a_1, a_2, …, a_n into b_1, b_2, …, b_m, or -1 if it is impossible.\n\nInput:\n```\n5 2\n5 2 3\n3 1 4 5 2\n3 5\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n4 4\n5 1 4\n4 3 1 2\n2 4 3 1\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n4 4\n2 1 11\n1 3 2 4\n1 3 2 4\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 2·10^5) — the length of sequence a and the length of sequence b respectively.\n\nThe second line contains three integers x, k, y (1 ≤ x, y, ≤ 10^9; 1 ≤ k ≤ n) — the cost of fireball, the range of fireball and the cost of berserk respectively.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n). It is guaranteed that all integers a_i are pairwise distinct.\n\nThe fourth line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ n). It is guaranteed that all integers b_i are pairwise distinct.",
+    "output": "Print the minimum amount of mana for turning the sequnce a_1, a_2, …, a_n into b_1, b_2, …, b_m, or -1 if it is impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

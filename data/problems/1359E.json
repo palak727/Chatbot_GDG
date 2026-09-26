@@ -1,0 +1,18 @@
+{
+    "id": "1359E",
+    "contest_id": 1359,
+    "problem_letter": "E",
+    "title": "E. Modular Stability",
+    "statement": "We define x bmod y as the remainder of division of x by y (% operator in C++ or Java, mod operator in Pascal).\n\nLet's call an array of positive integers [a_1, a_2, …, a_k] stable if for every permutation p of integers from 1 to k, and for every non-negative integer x, the following condition is met:\n\nThat is, for each non-negative integer x, the value of (((x bmod a_1) bmod a_2) … bmod a_{k - 1}) bmod a_k does not change if we reorder the elements of the array a.\n\nFor two given integers n and k, calculate the number of stable arrays [a_1, a_2, …, a_k] such that 1 ≤ a_1 < a_2 < … < a_k ≤ n.\n\nThe only line contains two integers n and k (1 ≤ n, k ≤ 5·10^5).\n\nPrint one integer — the number of stable arrays [a_1, a_2, …, a_k] such that 1 ≤ a_1 < a_2 < … < a_k ≤ n. Since the answer may be large, print it modulo 998244353.\n\nInput:\n```\n7 3\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n3 7\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n1337 42\n```\n\nOutput:\n```\n95147305\n```\n\nInput:\n```\n1 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n500000 1\n```\n\nOutput:\n```\n500000\n```",
+    "input": "The only line contains two integers n and k (1 ≤ n, k ≤ 5·10^5).",
+    "output": "Print one integer — the number of stable arrays [a_1, a_2, …, a_k] such that 1 ≤ a_1 < a_2 < … < a_k ≤ n. Since the answer may be large, print it modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

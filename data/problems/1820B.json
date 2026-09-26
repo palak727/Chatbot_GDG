@@ -1,0 +1,18 @@
+{
+    "id": "1820B",
+    "contest_id": 1820,
+    "problem_letter": "B",
+    "title": "B. JoJo's Incredible Adventures",
+    "statement": "Did you think there was going to be a JoJo legend here? But no, that was me, Dio!\n\nGiven a binary string s of length n, consisting of characters 0 and 1. Let's build a square table of size n × n, consisting of 0 and 1 characters as follows.\n\nIn the first row of the table write the original string s. In the second row of the table write cyclic shift of the string s by one to the right. In the third row of the table, write the cyclic shift of line s by two to the right. And so on. Thus, the row with number k will contain a cyclic shift of string s by k to the right. The rows are numbered from 0 to n - 1 top-to-bottom.\n\nIn the resulting table we need to find the rectangle consisting only of ones that has the largest area.\n\nWe call a rectangle the set of all cells (i, j) in the table, such that x_1 ≤ i ≤ x_2 and y_1 ≤ j ≤ y_2 for some integers 0 ≤ x_1 ≤ x_2 < n and 0 ≤ y_1 ≤ y_2 < n.\n\nRecall that the cyclic shift of string s by k to the right is the string s_{n-k+1} … s_n s_1 s_2 … s_{n-k}. For example, the cyclic shift of the string \"01011\" by 0 to the right is the string itself \"01011\", its cyclic shift by 3 to the right is the string \"01101\".\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of test cases follows.\n\nThe first and the only line of each test case contains a single binary string s (1 ≤ lvert s rvert ≤ 2·10^5), consisting of characters 0 and 1.\n\nIt is guaranteed that the sum of string lengths |s| over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum area of a rectangle consisting only of ones. If there is no such rectangle, output 0.\n\nIn the first test case, there is a table 1 × 1 consisting of a single character 0, so there are no rectangles consisting of ones, and the answer is 0.\n\nIn the second test case, there is a table 1 × 1, consisting of a single character 1, so the answer is 1.\n\nIn the third test case, there is a table:\n\nIn the fourth test case, there is a table:\n\nIn the fifth test case, there is a table:\n\nRectangles with maximum area are shown in bold.\n\nInput:\n```\n501101011110101010\n```\n\nOutput:\n```\n0\n1\n2\n6\n1\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of test cases follows.\n\nThe first and the only line of each test case contains a single binary string s (1 ≤ lvert s rvert ≤ 2·10^5), consisting of characters 0 and 1.\n\nIt is guaranteed that the sum of string lengths |s| over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum area of a rectangle consisting only of ones. If there is no such rectangle, output 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "strings",
+        "two pointers",
+        "*1100"
+    ],
+    "rating": 1100
+}

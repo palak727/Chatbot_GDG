@@ -1,0 +1,17 @@
+{
+    "id": "1696E",
+    "contest_id": 1696,
+    "problem_letter": "E",
+    "title": "E. Placing Jinas",
+    "statement": "We say an infinite sequence a_0, a_1, a_2, … is non-increasing if and only if for all i≥ 0, a_i ≥ a_{i+1}.\n\nThere is an infinite right and down grid. The upper-left cell has coordinates (0,0). Rows are numbered 0 to infinity from top to bottom, columns are numbered from 0 to infinity from left to right.\n\nThere is also a non-increasing infinite sequence a_0, a_1, a_2, …. You are given a_0, a_1, …, a_n; for all i > n, a_i=0. For every pair of x, y, the cell with coordinates (x,y) (which is located at the intersection of x-th row and y-th column) is white if y < a_x and black otherwise.\n\nInitially there is one doll named Jina on (0,0). You can do the following operation.\n\nNote that multiple dolls can be present at a cell at the same time; in one operation, you remove only one. Your goal is to make all white cells contain 0 dolls.\n\nWhat's the minimum number of operations needed to achieve the goal? Print the answer modulo 10^9+7.\n\nThe first line of input contains one integer n (1≤ n≤ 2·10^5).\n\nThe second line of input contains n+1 integers a_0,a_1,…,a_n (0≤ a_i≤ 2·10^5).\n\nIt is guaranteed that the sequence a is non-increasing.\n\nPrint one integer — the answer to the problem, modulo 10^9+7.\n\nConsider the first example. In the given grid, cells (0,0),(0,1),(1,0),(1,1) are white, and all other cells are black. Let us use triples to describe the grid: triple (x,y,z) means that there are z dolls placed on cell (x,y). Initially the state of the grid is (0,0,1).\n\nOne of the optimal sequence of operations is as follows:\n\nNow all white cells contain 0 dolls, so we have achieved the goal with 5 operations.\n\nInput:\n```\n2\n2 2 0\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n10\n12 11 8 8 6 6 6 5 3 2 1\n```\n\nOutput:\n```\n2596\n```",
+    "input": "The first line of input contains one integer n (1≤ n≤ 2·10^5).\n\nThe second line of input contains n+1 integers a_0,a_1,…,a_n (0≤ a_i≤ 2·10^5).\n\nIt is guaranteed that the sequence a is non-increasing.",
+    "output": "Print one integer — the answer to the problem, modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

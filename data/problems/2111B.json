@@ -1,0 +1,19 @@
+{
+    "id": "2111B",
+    "contest_id": 2111,
+    "problem_letter": "B",
+    "title": "B. Fibonacci Cubes",
+    "statement": "There are n Fibonacci cubes, where the side of the i-th cube is equal to f_i, where f_i is the i-th Fibonacci number.\n\nIn this problem, the Fibonacci numbers are defined as follows:\n\nThere are also m empty boxes, where the i-th box has a width of w_i, a length of l_i, and a height of h_i.\n\nFor each of the m boxes, you need to determine whether all the cubes can fit inside that box. The cubes must be placed in the box following these rules:\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nIn the first line of each test case, there are two integers n and m (2 ≤ n ≤ 10, 1 ≤ m ≤ 2·10^5) — the number of cubes and the number of empty boxes.\n\nThe next m lines of each test case contain 3 integers w_i, l_i, and h_i (1 ≤ w_i, l_i, h_i ≤ 150) — the dimensions of the i-th box.\n\nAdditional constraints on the input:\n\nFor each test case, output a string of length m, where the i-th character is equal to \"1\" if all n cubes can fit into the i-th box; otherwise, the i-th character is equal to \"0\".\n\nIn the first test case, only one box is suitable. The cubes can be placed in it as follows:\n\nInput:\n```\n25 43 1 210 10 109 8 1314 7 202 63 3 31 2 12 1 23 2 22 3 13 2 4\n```\n\nOutput:\n```\n0010\n100101\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nIn the first line of each test case, there are two integers n and m (2 ≤ n ≤ 10, 1 ≤ m ≤ 2·10^5) — the number of cubes and the number of empty boxes.\n\nThe next m lines of each test case contain 3 integers w_i, l_i, and h_i (1 ≤ w_i, l_i, h_i ≤ 150) — the dimensions of the i-th box.\n\nAdditional constraints on the input:",
+    "output": "For each test case, output a string of length m, where the i-th character is equal to \"1\" if all n cubes can fit into the i-th box; otherwise, the i-th character is equal to \"0\".",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

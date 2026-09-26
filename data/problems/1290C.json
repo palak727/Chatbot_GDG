@@ -1,0 +1,18 @@
+{
+    "id": "1290C",
+    "contest_id": 1290,
+    "problem_letter": "C",
+    "title": "C. Prefix Enlightenment",
+    "statement": "There are n lamps on a line, numbered from 1 to n. Each one has an initial state off (0) or on (1).\n\nYou're given k subsets A_1, …, A_k of {1, 2, …, n}, such that the intersection of any three subsets is empty. In other words, for all 1 ≤ i_1 < i_2 < i_3 ≤ k, A_i_1 ∩ A_i_2 ∩ A_i_3 = varnothing.\n\nIn one operation, you can choose one of these k subsets and switch the state of all lamps in it. It is guaranteed that, with the given subsets, it's possible to make all lamps be simultaneously on using this type of operation.\n\nLet m_i be the minimum number of operations you have to do in order to make the i first lamps be simultaneously on. Note that there is no condition upon the state of other lamps (between i+1 and n), they can be either off or on.\n\nYou have to compute m_i for all 1 ≤ i ≤ n.\n\nThe first line contains two integers n and k (1 ≤ n, k ≤ 3·10^5).\n\nThe second line contains a binary string of length n, representing the initial state of each lamp (the lamp i is off if s_i = 0, on if s_i = 1).\n\nThe description of each one of the k subsets follows, in the following format:\n\nThe first line of the description contains a single integer c (1 ≤ c ≤ n) — the number of elements in the subset.\n\nThe second line of the description contains c distinct integers x_1, …, x_c (1 ≤ x_i ≤ n) — the elements of the subset.\n\nIt is guaranteed that:\n\nYou must output n lines. The i-th line should contain a single integer m_i — the minimum number of operations required to make the lamps 1 to i be simultaneously on.\n\nIn the first example:\n\nIn the second example:\n\nInput:\n```\n7 3\n0011100\n3\n1 4 6\n3\n3 4 7\n2\n2 3\n```\n\nOutput:\n```\n1\n2\n3\n3\n3\n3\n3\n```\n\nInput:\n```\n8 6\n00110011\n3\n1 3 8\n5\n1 2 5 6 7\n2\n6 8\n2\n3 5\n2\n4 7\n1\n2\n```\n\nOutput:\n```\n1\n1\n1\n1\n1\n1\n4\n4\n```\n\nInput:\n```\n5 3\n00011\n3\n1 2 3\n1\n4\n3\n3 4 5\n```\n\nOutput:\n```\n1\n1\n1\n1\n1\n```\n\nInput:\n```\n19 5\n1001001001100000110\n2\n2 3\n2\n5 6\n2\n8 9\n5\n12 13 14 15 16\n1\n19\n```\n\nOutput:\n```\n0\n1\n1\n1\n2\n2\n2\n3\n3\n3\n3\n4\n4\n4\n4\n4\n4\n4\n5\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n, k ≤ 3·10^5).\n\nThe second line contains a binary string of length n, representing the initial state of each lamp (the lamp i is off if s_i = 0, on if s_i = 1).\n\nThe description of each one of the k subsets follows, in the following format:\n\nThe first line of the description contains a single integer c (1 ≤ c ≤ n) — the number of elements in the subset.\n\nThe second line of the description contains c distinct integers x_1, …, x_c (1 ≤ x_i ≤ n) — the elements of the subset.\n\nIt is guaranteed that:",
+    "output": "You must output n lines. The i-th line should contain a single integer m_i — the minimum number of operations required to make the lamps 1 to i be simultaneously on.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*2400"
+    ],
+    "rating": 2400
+}

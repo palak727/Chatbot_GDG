@@ -1,0 +1,18 @@
+{
+    "id": "1870A",
+    "contest_id": 1870,
+    "problem_letter": "A",
+    "title": "A. MEXanized Array",
+    "statement": "You are given three non-negative integers n, k, and x. Find the maximum possible sum of elements in an array consisting of non-negative integers, which has n elements, its MEX is equal to k, and all its elements do not exceed x. If such an array does not exist, output -1.\n\nThe MEX (minimum excluded) of an array is the smallest non-negative integer that does not belong to the array. For instance:\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then follows the description of the test cases.\n\nThe only line of each test case contains three integers n, k, and x (1 ≤ n, k, x ≤ 200).\n\nFor each test case, output a single number — the maximum sum of elements in a valid array, or -1, if such an array does not exist.\n\nIn the first test case, the maximum sum is 7, and one of the valid arrays is [0, 1, 2, 2, 2].\n\nIn the second test case, there are no valid arrays of length n.\n\nIn the third test case, the maximum sum is 57, and one of the valid arrays is [0, 1, 28, 28].\n\nInput:\n```\n95 3 34 7 54 2 2812 10 657 51 122200 1 2002 2 13 2 14 7 10\n```\n\nOutput:\n```\n7\n-1\n57\n-1\n2007\n39800\n1\n2\n-1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then follows the description of the test cases.\n\nThe only line of each test case contains three integers n, k, and x (1 ≤ n, k, x ≤ 200).",
+    "output": "For each test case, output a single number — the maximum sum of elements in a valid array, or -1, if such an array does not exist.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

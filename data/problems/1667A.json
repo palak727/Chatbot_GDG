@@ -1,0 +1,18 @@
+{
+    "id": "1667A",
+    "contest_id": 1667,
+    "problem_letter": "A",
+    "title": "A. Make it Increasing",
+    "statement": "You are given an array a consisting of n positive integers, and an array b, with length n. Initially b_i=0 for each 1 ≤ i ≤ n.\n\nIn one move you can choose an integer i (1 ≤ i ≤ n), and add a_i to b_i or subtract a_i from b_i. What is the minimum number of moves needed to make b increasing (that is, every element is strictly greater than every element before it)?\n\nThe first line contains a single integer n (2 ≤ n ≤ 5000).\n\nThe second line contains n integers, a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nPrint a single integer, the minimum number of moves to make b increasing.\n\nExample 1: you can subtract a_1 from b_1, and add a_3, a_4, and a_5 to b_3, b_4, and b_5 respectively. The final array will be [-1, 0, 3, 4, 5] after 4 moves.\n\nExample 2: you can reach [-3, -2, -1, 0, 1, 2, 3] in 10 moves.\n\nInput:\n```\n5\n1 2 3 4 5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n7\n1 2 1 2 1 2 1\n```\n\nOutput:\n```\n10\n```\n\nInput:\n```\n8\n1 8 2 7 3 6 4 5\n```\n\nOutput:\n```\n16\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 5000).\n\nThe second line contains n integers, a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.",
+    "output": "Print a single integer, the minimum number of moves to make b increasing.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

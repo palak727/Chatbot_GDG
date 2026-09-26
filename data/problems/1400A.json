@@ -1,0 +1,17 @@
+{
+    "id": "1400A",
+    "contest_id": 1400,
+    "problem_letter": "A",
+    "title": "A. String Similarity",
+    "statement": "A binary string is a string where each character is either 0 or 1. Two binary strings a and b of equal length are similar, if they have the same character in some position (there exists an integer i such that a_i = b_i). For example:\n\nYou are given an integer n and a binary string s consisting of 2n-1 characters. Let's denote s[l..r] as the contiguous substring of s starting with l-th character and ending with r-th character (in other words, s[l..r] = s_l s_{l + 1} s_{l + 2} … s_r).\n\nYou have to construct a binary string w of length n which is similar to all of the following strings: s[1..n], s[2..n+1], s[3..n+2], ..., s[n..2n-1].\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe second line of each test case contains the binary string s of length 2n - 1. Each character s_i is either 0 or 1.\n\nFor each test case, print the corresponding binary string w of length n. If there are multiple such strings — print any of them. It can be shown that at least one string w meeting the constraints always exists.\n\nThe explanation of the sample case (equal characters in equal positions are bold):\n\nThe first test case:\n\nThe second test case:\n\nThe third test case:\n\nThe fourth test case:\n\nInput:\n```\n4\n1\n1\n3\n00000\n4\n1110000\n2\n101\n```\n\nOutput:\n```\n1\n000\n1010\n00\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe second line of each test case contains the binary string s of length 2n - 1. Each character s_i is either 0 or 1.",
+    "output": "For each test case, print the corresponding binary string w of length n. If there are multiple such strings — print any of them. It can be shown that at least one string w meeting the constraints always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

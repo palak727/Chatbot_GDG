@@ -1,0 +1,17 @@
+{
+    "id": "2048H",
+    "contest_id": 2048,
+    "problem_letter": "H",
+    "title": "H. Kevin and Strange Operation",
+    "statement": "Kevin is exploring problems related to binary strings in Chinatown. When he was at a loss, a stranger approached him and introduced a peculiar operation:\n\nFor example, suppose the current binary string is 01001, and you choose p = 4 . Perform t_i = max(t_i, t_{i+1}) for t_1, t_2, and t_3 , transforming the string into 11001, then delete t_4 , resulting in 1101.\n\nKevin finds this strange operation quite interesting. Thus, he wants to ask you: Given a binary string s , how many distinct non-empty binary strings can you obtain through any number of operations (possibly zero)?\n\nSince the answer may be very large, you only need to output the result modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case, the only line contains a binary string s ( 1 ≤ lvert s rvert ≤ 10^6 ).\n\nIt is guaranteed that the sum of lvert s rvert over all test cases does not exceed 10^6.\n\nFor each test case, print a single integer in the only line of the output — the number of distinct non-empty binary strings you can obtain, modulo 998,244,353.\n\nIn the first test case, all the binary strings you can obtain are: 11001, 1001, 1101, 001, 101, 111, 01, 11, and 1. There are 9 in total.\n\nInput:\n```\n211001000110111001100\n```\n\nOutput:\n```\n9\n73\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1≤ t ≤ 10^4) — the number of test cases.\n\nFor each test case, the only line contains a binary string s ( 1 ≤ lvert s rvert ≤ 10^6 ).\n\nIt is guaranteed that the sum of lvert s rvert over all test cases does not exceed 10^6.",
+    "output": "For each test case, print a single integer in the only line of the output — the number of distinct non-empty binary strings you can obtain, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "*3100"
+    ],
+    "rating": 3100
+}

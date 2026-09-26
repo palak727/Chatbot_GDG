@@ -1,0 +1,18 @@
+{
+    "id": "1715A",
+    "contest_id": 1715,
+    "problem_letter": "A",
+    "title": "A. Crossmarket",
+    "statement": "Stanley and Megan decided to shop in the \"Crossmarket\" grocery store, which can be represented as a matrix with n rows and m columns.\n\nStanley and Megan can move to an adjacent cell using 1 unit of power. Two cells are considered adjacent if they share an edge. To speed up the shopping process, Megan brought her portals with her, and she leaves one in each cell she visits (if there is no portal yet). If a person (Stanley or Megan) is in a cell with a portal, that person can use 1 unit of power to teleport to any other cell with a portal, including Megan's starting cell.\n\nThey decided to split up: Stanley will go from the upper-left cell (cell with coordinates (1, 1)) to the lower-right cell (cell with coordinates (n, m)), whilst Megan needs to get from the lower-left cell (cell with coordinates (n, 1)) to the upper-right cell (cell with coordinates (1, m)).\n\nWhat is the minimum total energy needed for them both to do that?\n\nNote that they can choose the time they move. Time does not affect energy.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line in the test case contains two integers n and m (1 ≤ n, m ≤ 10^5).\n\nFor each test case print a single integer on a new line – the answer.\n\nIn the first test case they can stick to the following plan:\n\nThe total energy spent is (2 + 6) + (2 + 1 + 2) + (2)= 15, which is our final answer.\n\nInput:\n```\n77 55 71 1100000 10000057 2281 55 1\n```\n\nOutput:\n```\n15\n15\n0\n299998\n340\n5\n5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nThe only line in the test case contains two integers n and m (1 ≤ n, m ≤ 10^5).",
+    "output": "For each test case print a single integer on a new line – the answer.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

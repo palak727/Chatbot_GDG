@@ -1,0 +1,20 @@
+{
+    "id": "1701F",
+    "contest_id": 1701,
+    "problem_letter": "F",
+    "title": "F. Points",
+    "statement": "A triple of points i, j and k on a coordinate line is called beautiful if i < j < k and k - i ≤ d.\n\nYou are given a set of points on a coordinate line, initially empty. You have to process queries of three types:\n\nThe first line contains two integers q and d (1 ≤ q, d ≤ 2·10^5) — the number of queries and the parameter for defining if a triple is beautiful, respectively.\n\nThe second line contains q integers a_1, a_2, …, a_q (1 ≤ a_i ≤ 2·10^5) denoting the queries. The integer a_i denotes the i-th query in the following way:\n\nFor each query, print one integer — the number of beautiful triples after processing the respective query.\n\nInput:\n```\n7 5\n8 5 3 2 1 5 6\n```\n\nOutput:\n```\n0\n0\n1\n2\n5\n1\n5\n```",
+    "input": "The first line contains two integers q and d (1 ≤ q, d ≤ 2·10^5) — the number of queries and the parameter for defining if a triple is beautiful, respectively.\n\nThe second line contains q integers a_1, a_2, …, a_q (1 ≤ a_i ≤ 2·10^5) denoting the queries. The integer a_i denotes the i-th query in the following way:",
+    "output": "For each query, print one integer — the number of beautiful triples after processing the respective query.",
+    "time_limit": "6.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "implementation",
+        "math",
+        "matrices",
+        "*2500"
+    ],
+    "rating": 2500
+}

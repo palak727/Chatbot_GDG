@@ -1,0 +1,20 @@
+{
+    "id": "1486F",
+    "contest_id": 1486,
+    "problem_letter": "F",
+    "title": "F. Pairs of Paths",
+    "statement": "You are given a tree consisting of n vertices, and m simple vertex paths. Your task is to find how many pairs of those paths intersect at exactly one vertex. More formally you have to find the number of pairs (i, j) (1 ≤ i < j ≤ m) such that path_i and path_j have exactly one vertex in common.\n\nFirst line contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nNext n - 1 lines describe the tree. Each line contains two integers u and v (1 ≤ u, v ≤ n) describing an edge between vertices u and v.\n\nNext line contains a single integer m (1 ≤ m ≤ 3·10^5).\n\nNext m lines describe paths. Each line describes a path by it's two endpoints u and v (1 ≤ u, v ≤ n). The given path is all the vertices on the shortest path from u to v (including u and v).\n\nOutput a single integer — the number of pairs of paths that intersect at exactly one vertex.\n\nThe tree in the first example and paths look like this. Pairs (1,4) and (3,4) intersect at one vertex.\n\nIn the second example all three paths contain the same single vertex, so all pairs (1, 2), (1, 3) and (2, 3) intersect at one vertex.\n\nThe third example is the same as the first example with two additional paths. Pairs (1,4), (1,5), (2,5), (3,4), (3,5), (3,6) and (5,6) intersect at one vertex.\n\nInput:\n```\n5\n1 2\n1 3\n1 4\n3 5\n4\n2 3\n2 4\n3 4\n3 5\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1\n3\n1 1\n1 1\n1 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5\n1 2\n1 3\n1 4\n3 5\n6\n2 3\n2 4\n3 4\n3 5\n1 1\n1 2\n```\n\nOutput:\n```\n7\n```",
+    "input": "First line contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nNext n - 1 lines describe the tree. Each line contains two integers u and v (1 ≤ u, v ≤ n) describing an edge between vertices u and v.\n\nNext line contains a single integer m (1 ≤ m ≤ 3·10^5).\n\nNext m lines describe paths. Each line describes a path by it's two endpoints u and v (1 ≤ u, v ≤ n). The given path is all the vertices on the shortest path from u to v (including u and v).",
+    "output": "Output a single integer — the number of pairs of paths that intersect at exactly one vertex.",
+    "time_limit": "6 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

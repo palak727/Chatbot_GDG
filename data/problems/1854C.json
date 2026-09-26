@@ -1,0 +1,19 @@
+{
+    "id": "1854C",
+    "contest_id": 1854,
+    "problem_letter": "C",
+    "title": "C. Expected Destruction",
+    "statement": "You have a set S of n distinct integers between 1 and m.\n\nEach second you do the following steps:\n\nWhat is the expected number of seconds until S is empty?\n\nOutput the answer modulo 1,000,000,007.\n\nFormally, let P = 1,000,000,007. It can be shown that the answer can be expressed as an irreducible fraction a/b, where a and b are integers and b not ≡ 0 pmodP. Output the integer equal to a·b^{-1} bmod P. In other words, output an integer z such that 0 ≤ z < P and z·b ≡ a pmodP.\n\nThe first line contains two integers n and m (1 ≤ n ≤ m ≤ 500) — the number of elements in the set S and the upper bound on the value of the elements in S.\n\nThe second line contains n integers S_1,,S_2,,…,,S_n (1 ≤ S_1 < S_2 < … < S_n ≤ m) — the elements of the set S.\n\nOutput a single integer — the expected number of seconds until S is empty, modulo 1,000,000,007.\n\nFor test 1, here is a list of all the possible scenarios and their probabilities:\n\nAdding them up, we get 1/2·4 + 1/4·4 + 1/4·3 = 15/4. We see that 750000009·4 ≡ 15 pmod1,000,000,007.\n\nInput:\n```\n2 3\n1 3\n```\n\nOutput:\n```\n750000009\n```\n\nInput:\n```\n5 10\n1 2 3 4 5\n```\n\nOutput:\n```\n300277731\n```\n\nInput:\n```\n5 10\n2 3 6 8 9\n```\n\nOutput:\n```\n695648216\n```\n\nInput:\n```\n1 100\n1\n```\n\nOutput:\n```\n100\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ m ≤ 500) — the number of elements in the set S and the upper bound on the value of the elements in S.\n\nThe second line contains n integers S_1,,S_2,,…,,S_n (1 ≤ S_1 < S_2 < … < S_n ≤ m) — the elements of the set S.",
+    "output": "Output a single integer — the expected number of seconds until S is empty, modulo 1,000,000,007.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "*2500"
+    ],
+    "rating": 2500
+}

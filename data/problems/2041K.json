@@ -1,0 +1,19 @@
+{
+    "id": "2041K",
+    "contest_id": 2041,
+    "problem_letter": "K",
+    "title": "K. Trophic Balance Species",
+    "statement": "In an interdisciplinary collaboration, an ecosystem scientist and a computer scientist join forces to analyze the structure of a complex ecosystem using computational methods. The ecosystem scientist models the ecosystem as a directed graph D = (V, A), where each species is represented by a node v ∈ V, and each feeding relationship is represented as a directed edge (x, y) ∈ A from prey x to predator y. This graph structure allows them to simulate the flow of energy throughout the ecosystem from one species to another.\n\nTwo essential features of the ecosystem are defined:\n\nConsider an ecosystem with n = 4 species and m = 3 feeding relationships:\n\nThe directed edges representing the feeding relationships are as follows:\n\nNow, consider the set S={3,4} (Foxes and Hawks). There are no directed paths between Foxes (Node 3) and Hawks (Node 4); Foxes cannot reach Hawks, and Hawks cannot reach Foxes through any directed paths. Therefore, this set qualifies as an independent trophic group.\n\nExamination of Species\n\nAmong these species, Rabbits have the smallest absolute difference of 1, indicating that they are a trophic balance species within the ecosystem.\n\nIt is known that any independent trophic group in the ecosystem has a size of at most k. The task is to find the set of all trophic balance species in the ecosystem.\n\nThe first line contains exactly two integers n and m, where n (resp. m) denotes the number of nodes (resp. edges) in the directed graph D induced by the investigated ecosystem. The nodes are numbered as 1, 2, …, n. Then, m lines follow. The i-th line contains two integers x_i and y_i indicating a directed edge from node x_i to node y_i.\n\nOutput on a single line the node identidiers of all trophic balance species in ascending order. For any two consecutive node identifiers, separate them by a space.\n\nInput:\n```\n4 31 22 32 4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 51 21 31 42 33 2\n```\n\nOutput:\n```\n2 3 4\n```",
+    "input": "The first line contains exactly two integers n and m, where n (resp. m) denotes the number of nodes (resp. edges) in the directed graph D induced by the investigated ecosystem. The nodes are numbered as 1, 2, …, n. Then, m lines follow. The i-th line contains two integers x_i and y_i indicating a directed edge from node x_i to node y_i.",
+    "output": "Output on a single line the node identidiers of all trophic balance species in ascending order. For any two consecutive node identifiers, separate them by a space.",
+    "time_limit": "3 seconds",
+    "memory_limit": "128 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dfs and similar",
+        "graphs",
+        "*3100"
+    ],
+    "rating": 3100
+}

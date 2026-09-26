@@ -1,0 +1,20 @@
+{
+    "id": "1582C",
+    "contest_id": 1582,
+    "problem_letter": "C",
+    "title": "C. Grandma Capa Knits a Scarf",
+    "statement": "Grandma Capa has decided to knit a scarf and asked Grandpa Sher to make a pattern for it, a pattern is a string consisting of lowercase English letters. Grandpa Sher wrote a string s of length n.\n\nGrandma Capa wants to knit a beautiful scarf, and in her opinion, a beautiful scarf can only be knit from a string that is a palindrome. She wants to change the pattern written by Grandpa Sher, but to avoid offending him, she will choose one lowercase English letter and erase some (at her choice, possibly none or all) occurrences of that letter in string s.\n\nShe also wants to minimize the number of erased symbols from the pattern. Please help her and find the minimum number of symbols she can erase to make string s a palindrome, or tell her that it's impossible. Notice that she can only erase symbols equal to the one letter she chose.\n\nA string is a palindrome if it is the same from the left to the right and from the right to the left. For example, the strings 'kek', 'abacaba', 'r' and 'papicipap' are palindromes, while the strings 'abb' and 'iq' are not.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The next 2·t lines contain the description of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the string.\n\nThe second line of each test case contains the string s consisting of n lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case print the minimum number of erased symbols required to make the string a palindrome, if it is possible, and -1, if it is impossible.\n\nIn the first test case, you can choose a letter 'a' and erase its first and last occurrences, you will get a string 'bcaacb', which is a palindrome. You can also choose a letter 'b' and erase all its occurrences, you will get a string 'acaaca', which is a palindrome as well.\n\nIn the second test case, it can be shown that it is impossible to choose a letter and erase some of its occurrences to get a palindrome.\n\nIn the third test case, you don't have to erase any symbols because the string is already a palindrome.\n\nInput:\n```\n5\n8\nabcaacab\n6\nxyzxyz\n4\nabba\n8\nrprarlap\n10\nkhyyhhyhky\n```\n\nOutput:\n```\n2\n-1\n0\n3\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The next 2·t lines contain the description of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the length of the string.\n\nThe second line of each test case contains the string s consisting of n lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case print the minimum number of erased symbols required to make the string a palindrome, if it is possible, and -1, if it is impossible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "strings",
+        "two pointers",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2025G",
+    "contest_id": 2025,
+    "problem_letter": "G",
+    "title": "G. Variable Damage",
+    "statement": "Monocarp is gathering an army to fight a dragon in a videogame.\n\nThe army consists of two parts: the heroes and the defensive artifacts. Each hero has one parameter — his health. Each defensive artifact also has one parameter — its durability.\n\nBefore the battle begins, Monocarp distributes artifacts to the heroes so that each hero receives at most one artifact.\n\nThe battle consists of rounds that proceed as follows:\n\nThe battle ends when there are no heroes left alive.\n\nInitially, the army is empty. There are q queries: add a hero with health x or an artifact with durability y to the army. After each query, determine the maximum number of rounds that Monocarp can survive if he distributes the artifacts optimally.\n\nThe first line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nIn the i-th of the following q lines, there are two integers t_i and v_i (t_i ∈ {1, 2}; 1 ≤ v_i ≤ 10^9) — the type of the query and the value of the query parameter. If the type is 1, a hero with health v_i is added. If the type is 2, an artifact with durability v_i is added.\n\nPrint q integers. After each query, output the maximum number of rounds that Monocarp can survive if he distributes the artifacts optimally.\n\nLet's consider the first example.\n\nInput:\n```\n32 51 41 10\n```\n\nOutput:\n```\n0\n8\n19\n```\n\nInput:\n```\n101 91 62 41 81 32 101 31 61 102 6\n```\n\nOutput:\n```\n9\n15\n19\n27\n30\n39\n42\n48\n59\n65\n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nIn the i-th of the following q lines, there are two integers t_i and v_i (t_i ∈ {1, 2}; 1 ≤ v_i ≤ 10^9) — the type of the query and the value of the query parameter. If the type is 1, a hero with health v_i is added. If the type is 2, an artifact with durability v_i is added.",
+    "output": "Print q integers. After each query, output the maximum number of rounds that Monocarp can survive if he distributes the artifacts optimally.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "flows",
+        "*3000"
+    ],
+    "rating": 3000
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1779F",
+    "contest_id": 1779,
+    "problem_letter": "F",
+    "title": "F. Xorcerer's Stones",
+    "statement": "Misha had been banned from playing chess for good since he was accused of cheating with an engine. Therefore, he retired and decided to become a xorcerer.\n\nOne day, while taking a walk in a park, Misha came across a rooted tree with nodes numbered from 1 to n. The root of the tree is node 1.\n\nFor each 1≤ i≤ n, node i contains a_i stones in it. Misha has recently learned a new spell in his xorcery class and wants to test it out. A spell consists of:\n\nMisha can perform at most 2n spells and he wants to remove all stones from the tree. More formally, he wants a_i=0 to hold for each 1≤ i ≤ n. Can you help him perform the spells?\n\nA tree with n nodes is a connected acyclic graph which contains n-1 edges. The subtree of node i is the set of all nodes j such that i lies on the simple path from 1 (the root) to j. We consider i to be contained in its own subtree.\n\nThe first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the size of the tree\n\nThe second line contains an array of integers a_1,a_2,…, a_n (0 ≤ a_i ≤ 31), describing the number of stones in each node initially.\n\nThe third line contains an array of integers p_2,p_3,…, p_n (1 ≤ p_i ≤ i-1), where p_i means that there is an edge connecting p_i and i.\n\nIf there is not a valid sequence of spells, output -1.\n\nOtherwise, output a single integer q (0 ≤ q ≤ 2n) in the first line — the number of performed spells.\n\nIn the second line output a sequence of integers v_1,v_2,…,v_q (1 ≤ v_i ≤ n) — the i-th spell will be performed on the subtree of node v_i. Please note that order matters.\n\nIf multiple solutions exist, output any. You don't have to minimize the number of operations.\n\nPlease refer to the following pictures for an explanation of the third test. Only the first 4 spells are shown since the last 2 do nothing. The first picture represents the tree initially with the number of stones for each node written above it in green. Changes applied by the current spell are highlighted in red.\n\nInput:\n```\n2\n13 13\n1\n```\n\nOutput:\n```\n1\n1\n```\n\nInput:\n```\n7\n5 2 8 3 4 1 31\n1 1 2 2 3 3\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n9\n3 31 1 2 7 30 7 3 1\n1 1 1 2 5 5 3 4\n```\n\nOutput:\n```\n6\n3 2 3 1 2 2\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the size of the tree\n\nThe second line contains an array of integers a_1,a_2,…, a_n (0 ≤ a_i ≤ 31), describing the number of stones in each node initially.\n\nThe third line contains an array of integers p_2,p_3,…, p_n (1 ≤ p_i ≤ i-1), where p_i means that there is an edge connecting p_i and i.",
+    "output": "If there is not a valid sequence of spells, output -1.\n\nOtherwise, output a single integer q (0 ≤ q ≤ 2n) in the first line — the number of performed spells.\n\nIn the second line output a sequence of integers v_1,v_2,…,v_q (1 ≤ v_i ≤ n) — the i-th spell will be performed on the subtree of node v_i. Please note that order matters.\n\nIf multiple solutions exist, output any. You don't have to minimize the number of operations.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

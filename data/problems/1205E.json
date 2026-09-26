@@ -1,0 +1,17 @@
+{
+    "id": "1205E",
+    "contest_id": 1205,
+    "problem_letter": "E",
+    "title": "E. Expected Value Again",
+    "statement": "You are given integers n, k. Let's consider the alphabet consisting of k different elements.\n\nLet beauty f(s) of the string s be the number of indexes i, 1≤ i < |s|, for which prefix of s of length i equals to suffix of s of length i. For example, beauty of the string abacaba equals 2, as for i = 1, 3 prefix and suffix of length i are equal.\n\nConsider all words of length n in the given alphabet. Find the expected value of f(s)^2 of a uniformly chosen at random word. We can show that it can be expressed as P/Q, where P and Q are coprime and Q isn't divided by 10^9 + 7. Output P·Q^{-1} bmod 10^9 + 7.\n\nThe first and the only line contains two integers n, k (1≤ n ≤ 10^5, 1≤ k≤ 10^9) — the length of a string and the size of alphabet respectively.\n\nOutput a single integer — P× Q^{-1} bmod 10^9 + 7.\n\nIn the first example, there are 9 words of length 2 in alphabet of size 3 — aa, ab, ac, ba, bb, bc, ca, cb, cc. 3 of them have beauty 1 and 6 of them have beauty 0, so the average value is 1/3.\n\nIn the third example, there is only one such word, and it has beauty 99, so the average value is 99^2.\n\nInput:\n```\n2 3\n```\n\nOutput:\n```\n333333336\n```\n\nInput:\n```\n1 5\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n100 1\n```\n\nOutput:\n```\n9801\n```\n\nInput:\n```\n10 10\n```\n\nOutput:\n```\n412377396\n```",
+    "input": "The first and the only line contains two integers n, k (1≤ n ≤ 10^5, 1≤ k≤ 10^9) — the length of a string and the size of alphabet respectively.",
+    "output": "Output a single integer — P× Q^{-1} bmod 10^9 + 7.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "strings",
+        "*3100"
+    ],
+    "rating": 3100
+}

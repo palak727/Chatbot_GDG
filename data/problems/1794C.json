@@ -1,0 +1,19 @@
+{
+    "id": "1794C",
+    "contest_id": 1794,
+    "problem_letter": "C",
+    "title": "C. Scoring Subsequences",
+    "statement": "The score of a sequence [s_1, s_2, …, s_d] is defined as displaystyle (s_1·s_2·…·s_d)/(d!), where d!=1·2·…·d. In particular, the score of an empty sequence is 1.\n\nFor a sequence [s_1, s_2, …, s_d], let m be the maximum score among all its subsequences. Its cost is defined as the maximum length of a subsequence with a score of m.\n\nYou are given a non-decreasing sequence [a_1, a_2, …, a_n] of integers of length n. In other words, the condition a_1 ≤ a_2 ≤ … ≤ a_n is satisfied. For each k=1, 2, … , n, find the cost of the sequence [a_1, a_2, … , a_k].\n\nA sequence x is a subsequence of a sequence y if x can be obtained from y by deletion of several (possibly, zero or all) elements.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 10^5) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n) — the given sequence. It is guaranteed that its elements are in non-decreasing order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output n integers — the costs of sequences [a_1, a_2, … , a_k] in ascending order of k.\n\nIn the first test case:\n\nInput:\n```\n331 2 321 155 5 5 5 5\n```\n\nOutput:\n```\n1 1 2 \n1 1 \n1 2 3 4 5 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1≤ n≤ 10^5) — the length of the given sequence.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n) — the given sequence. It is guaranteed that its elements are in non-decreasing order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output n integers — the costs of sequences [a_1, a_2, … , a_k] in ascending order of k.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

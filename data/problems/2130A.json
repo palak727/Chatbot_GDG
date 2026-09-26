@@ -1,0 +1,17 @@
+{
+    "id": "2130A",
+    "contest_id": 2130,
+    "problem_letter": "A",
+    "title": "A. Submission is All You Need",
+    "statement": "For a multiset T consisting of non-negative integers, we define:\n\nFind the maximum possible score that can be obtained.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe second line of each test case contains n integers S_1, S_2, …, S_n (0 ≤ S_i ≤ 50).\n\nFor each test case, print a single integer — the maximum possible score that can be obtained.\n\nIn the first test case, a possible optimal strategy is as follows:\n\nAfter that, you cannot do any further operations. It can be proven that 3 is the maximum possible score that can be obtained.\n\nInput:\n```\n230 1 131 2 3\n```\n\nOutput:\n```\n3\n6\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50).\n\nThe second line of each test case contains n integers S_1, S_2, …, S_n (0 ≤ S_i ≤ 50).",
+    "output": "For each test case, print a single integer — the maximum possible score that can be obtained.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

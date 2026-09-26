@@ -1,0 +1,18 @@
+{
+    "id": "1469F",
+    "contest_id": 1469,
+    "problem_letter": "F",
+    "title": "F. Power Sockets",
+    "statement": "// We decided to drop the legend about the power sockets but feel free to come up with your own :^)\n\nDefine a chain:\n\nYou are given n chains of lengths l_1, l_2, …, l_n. You plan to build a tree using some of them.\n\nThe distance between two vertices of the tree is the number of edges on the shortest path between them.\n\nIf there is at least k white vertices in the resulting tree, then the value of the tree is the distance between the root and the k-th closest white vertex.\n\nWhat's the minimum value of the tree you can obtain? If there is no way to build a tree with at least k white vertices, then print -1.\n\nThe first line contains two integers n and k (1 ≤ n ≤ 2·10^5, 2 ≤ k ≤ 10^9) — the number of chains and the minimum number of white vertices a tree should have to have a value.\n\nThe second line contains n integers l_1, l_2, …, l_n (3 ≤ l_i ≤ 2·10^5) — the lengths of the chains.\n\nPrint a single integer. If there is no way to build a tree with at least k white vertices, then print -1. Otherwise, print the minimum value the tree can have.\n\nYou are allowed to not use all the chains, so it's optimal to only use chain of length 4 in the second example.\n\nInput:\n```\n1 2\n3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 3\n4 3 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3 5\n4 3 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2 10\n5 7\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and k (1 ≤ n ≤ 2·10^5, 2 ≤ k ≤ 10^9) — the number of chains and the minimum number of white vertices a tree should have to have a value.\n\nThe second line contains n integers l_1, l_2, …, l_n (3 ≤ l_i ≤ 2·10^5) — the lengths of the chains.",
+    "output": "Print a single integer. If there is no way to build a tree with at least k white vertices, then print -1. Otherwise, print the minimum value the tree can have.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

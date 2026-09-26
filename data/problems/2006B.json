@@ -1,0 +1,21 @@
+{
+    "id": "2006B",
+    "contest_id": 2006,
+    "problem_letter": "B",
+    "title": "B. Iris and the Tree",
+    "statement": "Given a rooted tree with the root at vertex 1. For any vertex i (1 < i ≤ n) in the tree, there is an edge connecting vertices i and p_i (1 ≤ p_i < i), with a weight equal to t_i.\n\nIris does not know the values of t_i, but she knows that displaystyle∑_{i=2}^n t_i = w and each of the t_i is a non-negative integer.\n\nThe vertices of the tree are numbered in a special way: the numbers of the vertices in each subtree are consecutive integers. In other words, the vertices of the tree are numbered in the order of a depth-first search.\n\nWe define dist(u, v) as the length of the simple path between vertices u and v in the tree.\n\nNext, there will be n - 1 events:\n\nAfter each event, Iris wants to know the maximum possible value of dist(i, i bmod n + 1) independently for each i (1≤ i≤ n). She only needs to know the sum of these n values. Please help Iris quickly get the answers.\n\nNote that when calculating the maximum possible values of dist(i, i bmod n + 1) and dist(j, j bmod n + 1) for i ≠ j, the unknown edge weights may be different.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and w (2 ≤ n ≤ 2·10^5, 0 ≤ w ≤ 10^12) — the number of vertices in the tree and the sum of the edge weights.\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) — the description of the edges of the tree.\n\nThen follow n-1 lines indicating the events. Each line contains two integers x and y (2 ≤ x ≤ n, 0 ≤ y ≤ w), indicating that t_x = y.\n\nIt is guaranteed that all x in the events are distinct. It is also guaranteed that the sum of all y equals w.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one line containing n-1 integers, each representing the answer after each event.\n\nIn the first test case, dist(1, 2) = dist(2, 1) = t_2 = w = 10^12, so dist(1, 2) + dist(2, 1) = 2·10^12.\n\nIn the second test case, the tree after Iris found out all t_x is shown below:\n\ndist(1, 2) = t_2, dist(2, 3) = t_2 + t_3, dist(3, 4) = t_3 + t_4, dist(4, 1) = t_4. After the first event, she found out that t_2 = 2, so dist(1, 2) = 2. At the same time:\n\nThus, the answer is 2 + 9 + 7 + 7 = 25.\n\nAfter the second event, she found out that t_4 = 4, then t_3 = w - t_2 - t_4 = 4. dist(1, 2) = 2, dist(2, 3) = 2 + 3 = 5, dist(3, 4) = 3 + 4 = 7, dist(4, 1) = 4. Thus, the answer is 2 + 5 + 7 + 4 = 18.\n\nInput:\n```\n42 100000000000012 10000000000004 91 1 12 24 43 36 1001 2 3 2 16 173 322 44 265 2110 5111 2 2 4 2 1 1 8 83 26 1610 2569 1282 15 88 644 47 32\n```\n\nOutput:\n```\n2000000000000\n25 18 18\n449 302 247 200 200\n4585 4473 2681 1567 1454 1322 1094 1022 1022\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and w (2 ≤ n ≤ 2·10^5, 0 ≤ w ≤ 10^12) — the number of vertices in the tree and the sum of the edge weights.\n\nThe second line of each test case contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) — the description of the edges of the tree.\n\nThen follow n-1 lines indicating the events. Each line contains two integers x and y (2 ≤ x ≤ n, 0 ≤ y ≤ w), indicating that t_x = y.\n\nIt is guaranteed that all x in the events are distinct. It is also guaranteed that the sum of all y equals w.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one line containing n-1 integers, each representing the answer after each event.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "math",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

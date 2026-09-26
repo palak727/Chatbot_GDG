@@ -1,0 +1,21 @@
+{
+    "id": "1750E",
+    "contest_id": 1750,
+    "problem_letter": "E",
+    "title": "E. Bracket Cost",
+    "statement": "Daemon Targaryen decided to stop looking like a Metin2 character. He turned himself into the most beautiful thing, a bracket sequence.\n\nFor a bracket sequence, we can do two kind of operations:\n\nWe define the cost of a bracket sequence as the minimum number of such operations to make it balanced^ddagger.\n\nGiven a bracket sequence s of length n, find the sum of costs across all its (n(n+1))/2 non-empty substrings. Note that for each substring we calculate the cost independently.\n\n^dagger A string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\n^ddagger A sequence of brackets is called balanced if one can turn it into a valid math expression by adding characters + and 1. For example, sequences \"(())()\", \"()\", and \"(()(()))\" are balanced, while \")(\", \"(()\", and \"(()))(\" are not.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the bracket sequence.\n\nThe second line of each test case contains a string s, consisting only of characters '(' and ')', of length n — the bracket sequence.\n\nIt is guaranteed that sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the sum of costs of all substrings of s.\n\nIn the first test case, there is the only substring \")\". Its cost is 1 because we can insert '(' to the beginning of this substring and get a string \"()\", that is a balanced string.\n\nIn the second test case, the cost of each substring of length one is 1. The cost of a substring \")(\" is 1 because we can cyclically shift it to right and get a string \"()\". The cost of strings \")()\" and \"()(\" is 1 because its enough to insert one bracket to each of them. The cost of substring \")()(\" is 1 because we can cyclically shift it to right and get a string \"()()\". So there are 4 + 2 + 2 + 1 = 9 substring of cost 1 and 1 substring of cost 0. So the sum of the costs is 9.\n\nIn the third test case,\n\nSo the sum of the costs is 6.\n\nInput:\n```\n51)4)()(3())5(((((10)(())))())\n```\n\nOutput:\n```\n1\n9\n6\n35\n112\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the bracket sequence.\n\nThe second line of each test case contains a string s, consisting only of characters '(' and ')', of length n — the bracket sequence.\n\nIt is guaranteed that sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the sum of costs of all substrings of s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "strings",
+        "*2400"
+    ],
+    "rating": 2400
+}

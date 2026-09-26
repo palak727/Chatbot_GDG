@@ -1,0 +1,19 @@
+{
+    "id": "2133A",
+    "contest_id": 2133,
+    "problem_letter": "A",
+    "title": "A. Redstone?",
+    "statement": "Steve stumbled upon a collection of n gears, where gear i has a_i teeth, and he wants to arrange them into a row.\n\nAfter he arranges them, Steve will spin the leftmost gear at a speed of 1 revolution per second. For each of the other gears, let x be the number of teeth it has, y be the number of teeth of the gear to its left, and z be the speed the gear to its left spins at. Then, its speed will be y/x·z revolutions per second.\n\nSteve considers the contraption satisfactory if the rightmost gear spins at a speed of 1 revolution per second. Determine whether Steve can rearrange the gears into a satisfactory contraption.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 100) — the number of gears Steve has.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (2 ≤ a_i ≤ 100) — the number of teeth of each gear.\n\nFor each test case, print \"YES\" if Steve can rearrange the gears in a satisfactory way, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, the second gear will always spin at speed 5/5·1 = 1 revolution per second, so any arrangement is satisfactory.\n\nIn the second test case, one possible arrangement is [6, 3, 9, 6]. Then:\n\nIn the third test case, neither of the possible arrangements [2, 3] and [3, 2] are satisfactory.\n\nInput:\n```\n525 546 3 6 922 3730 10 12 10 10 9 1852 4 8 16 32\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 100) — the number of gears Steve has.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (2 ≤ a_i ≤ 100) — the number of teeth of each gear.",
+    "output": "For each test case, print \"YES\" if Steve can rearrange the gears in a satisfactory way, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

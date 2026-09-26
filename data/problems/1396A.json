@@ -1,0 +1,18 @@
+{
+    "id": "1396A",
+    "contest_id": 1396,
+    "problem_letter": "A",
+    "title": "A. Multiples of Length",
+    "statement": "You are given an array a of n integers.\n\nYou want to make all elements of a equal to zero by doing the following operation exactly three times:\n\nIt can be proven that it is always possible to make all elements of a equal to zero.\n\nThe first line contains one integer n (1 ≤ n ≤ 100,000): the number of elements of the array.\n\nThe second line contains n elements of an array a separated by spaces: a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nThe output should contain six lines representing three operations.\n\nFor each operation, print two lines:\n\nInput:\n```\n4\n1 3 2 4\n```\n\nOutput:\n```\n1 1 \n-1\n3 4\n4 2\n2 4\n-3 -6 -6\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 100,000): the number of elements of the array.\n\nThe second line contains n elements of an array a separated by spaces: a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).",
+    "output": "The output should contain six lines representing three operations.\n\nFor each operation, print two lines:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

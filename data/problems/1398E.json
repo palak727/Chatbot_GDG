@@ -1,0 +1,21 @@
+{
+    "id": "1398E",
+    "contest_id": 1398,
+    "problem_letter": "E",
+    "title": "E. Two Types of Spells",
+    "statement": "Polycarp plays a computer game (yet again). In this game, he fights monsters using magic spells.\n\nThere are two types of spells: fire spell of power x deals x damage to the monster, and lightning spell of power y deals y damage to the monster and doubles the damage of the next spell Polycarp casts. Each spell can be cast only once per battle, but Polycarp can cast them in any order.\n\nFor example, suppose that Polycarp knows three spells: a fire spell of power 5, a lightning spell of power 1, and a lightning spell of power 8. There are 6 ways to choose the order in which he casts the spells:\n\nInitially, Polycarp knows 0 spells. His spell set changes n times, each time he either learns a new spell or forgets an already known one. After each change, calculate the maximum possible damage Polycarp may deal using the spells he knows.\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of changes to the spell set.\n\nEach of the next n lines contains two integers tp and d (0 ≤ tp_i ≤ 1; -10^9 ≤ d ≤ 10^9; d_i ≠ 0) — the description of the change. If tp_i if equal to 0, then Polycarp learns (or forgets) a fire spell, otherwise he learns (or forgets) a lightning spell.\n\nIf d_i > 0, then Polycarp learns a spell of power d_i. Otherwise, Polycarp forgets a spell with power -d_i, and it is guaranteed that he knew that spell before the change.\n\nIt is guaranteed that the powers of all spells Polycarp knows after each change are different (Polycarp never knows two spells with the same power).\n\nAfter each change, print the maximum damage Polycarp can deal with his current set of spells.\n\nInput:\n```\n6\n1 5\n0 10\n1 -5\n0 5\n1 11\n0 -10\n```\n\nOutput:\n```\n5\n25\n10\n15\n36\n21\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5) — the number of changes to the spell set.\n\nEach of the next n lines contains two integers tp and d (0 ≤ tp_i ≤ 1; -10^9 ≤ d ≤ 10^9; d_i ≠ 0) — the description of the change. If tp_i if equal to 0, then Polycarp learns (or forgets) a fire spell, otherwise he learns (or forgets) a lightning spell.\n\nIf d_i > 0, then Polycarp learns a spell of power d_i. Otherwise, Polycarp forgets a spell with power -d_i, and it is guaranteed that he knew that spell before the change.\n\nIt is guaranteed that the powers of all spells Polycarp knows after each change are different (Polycarp never knows two spells with the same power).",
+    "output": "After each change, print the maximum damage Polycarp can deal with his current set of spells.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "sortings",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1438A",
+    "contest_id": 1438,
+    "problem_letter": "A",
+    "title": "A. Specific Tastes of Andre",
+    "statement": "Andre has very specific tastes. Recently he started falling in love with arrays.\n\nAndre calls an nonempty array b good, if sum of its elements is divisible by the length of this array. For example, array [2, 3, 1] is good, as sum of its elements — 6 — is divisible by 3, but array [1, 1, 2, 3] isn't good, as 7 isn't divisible by 4.\n\nAndre calls an array a of length n perfect if the following conditions hold:\n\nGiven a positive integer n, output any perfect array of length n. We can show that for the given constraints such an array always exists.\n\nAn array c is a subarray of an array d if c can be obtained from d by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first and only line of every test case contains a single integer n (1 ≤ n ≤ 100).\n\nFor every test, output any perfect array of length n on a separate line.\n\nArray [19, 33] is perfect as all 3 its subarrays: [19], [33], [19, 33], have sums divisible by their lengths, and therefore are good.\n\nInput:\n```\n3\n1\n2\n4\n```\n\nOutput:\n```\n24\n19 33\n7 37 79 49\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first and only line of every test case contains a single integer n (1 ≤ n ≤ 100).",
+    "output": "For every test, output any perfect array of length n on a separate line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

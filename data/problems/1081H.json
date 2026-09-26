@@ -1,0 +1,18 @@
+{
+    "id": "1081H",
+    "contest_id": 1081,
+    "problem_letter": "H",
+    "title": "H. Palindromic Magic",
+    "statement": "After learning some fancy algorithms about palindromes, Chouti found palindromes very interesting, so he wants to challenge you with this problem.\n\nChouti has got two strings A and B. Since he likes palindromes, he would like to pick a as some non-empty palindromic substring of A and b as some non-empty palindromic substring of B. Concatenating them, he will get string ab.\n\nChouti thinks strings he could get this way are interesting, so he wants to know how many different strings he can get.\n\nThe first line contains a single string A (1 ≤ |A| ≤ 2·10^5).\n\nThe second line contains a single string B (1 ≤ |B| ≤ 2·10^5).\n\nStrings A and B contain only lowercase English letters.\n\nThe first and only line should contain a single integer — the number of possible strings.\n\nIn the first example, attainable strings are\n\nIn the second example, attainable strings are \"aa\", \"aaa\", \"aaaa\", \"aaaba\", \"aab\", \"aaba\", \"ab\", \"abaa\", \"abaaa\", \"abaaba\", \"abab\", \"ba\", \"baa\", \"baba\", \"bb\".\n\nNotice that though \"a\"+\"aa\"=\"aa\"+\"a\"=\"aaa\", \"aaa\" will only be counted once.\n\nInput:\n```\naa\naba\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\naaba\nabaa\n```\n\nOutput:\n```\n15\n```",
+    "input": "The first line contains a single string A (1 ≤ |A| ≤ 2·10^5).\n\nThe second line contains a single string B (1 ≤ |B| ≤ 2·10^5).\n\nStrings A and B contain only lowercase English letters.",
+    "output": "The first and only line should contain a single integer — the number of possible strings.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "hashing",
+        "strings",
+        "*3500"
+    ],
+    "rating": 3500
+}

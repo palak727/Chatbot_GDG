@@ -1,0 +1,18 @@
+{
+    "id": "1083E",
+    "contest_id": 1083,
+    "problem_letter": "E",
+    "title": "E. The Fair Nut and Rectangles",
+    "statement": "The Fair Nut got stacked in planar world. He should solve this task to get out.\n\nYou are given n rectangles with vertexes in (0, 0), (x_i, 0), (x_i, y_i), (0, y_i). For each rectangle, you are also given a number a_i. Choose some of them that the area of union minus sum of a_i of the chosen ones is maximum.\n\nIt is guaranteed that there are no nested rectangles.\n\nNut has no idea how to find the answer, so he asked for your help.\n\nThe first line contains one integer n (1 ≤ n ≤ 10^6) — the number of rectangles.\n\nEach of the next n lines contains three integers x_i, y_i and a_i (1 ≤ x_i, y_i ≤ 10^9, 0 ≤ a_i ≤ x_i·y_i).\n\nIt is guaranteed that there are no nested rectangles.\n\nIn a single line print the answer to the problem — the maximum value which you can achieve.\n\nIn the first example, the right answer can be achieved by choosing the first and the second rectangles.\n\nIn the second example, the right answer can also be achieved by choosing the first and the second rectangles.\n\nInput:\n```\n3\n4 4 8\n1 5 0\n5 2 10\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n6 2 4\n1 6 2\n2 4 3\n5 3 8\n```\n\nOutput:\n```\n10\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 10^6) — the number of rectangles.\n\nEach of the next n lines contains three integers x_i, y_i and a_i (1 ≤ x_i, y_i ≤ 10^9, 0 ≤ a_i ≤ x_i·y_i).\n\nIt is guaranteed that there are no nested rectangles.",
+    "output": "In a single line print the answer to the problem — the maximum value which you can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "geometry",
+        "*2400"
+    ],
+    "rating": 2400
+}

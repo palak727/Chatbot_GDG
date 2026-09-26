@@ -1,0 +1,20 @@
+{
+    "id": "1976C",
+    "contest_id": 1976,
+    "problem_letter": "C",
+    "title": "C. Job Interview",
+    "statement": "Monocarp is opening his own IT company. He wants to hire n programmers and m testers.\n\nThere are n+m+1 candidates, numbered from 1 to n+m+1 in chronological order of their arriving time. The i-th candidate has programming skill a_i and testing skill b_i (a person's programming skill is different from their testing skill). The skill of the team is the sum of the programming skills of all candidates hired as programmers, and the sum of the testing skills of all candidates hired as testers.\n\nWhen a candidate arrives to interview, Monocarp tries to assign them to the most suitable position for them (if their programming skill is higher, then he hires them as a programmer, otherwise as a tester). If all slots for that position are filled, Monocarp assigns them to the other position.\n\nYour task is, for each candidate, calculate the skill of the team if everyone except them comes to interview. Note that it means that exactly n+m candidates will arrive, so all n+m positions in the company will be filled.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input: the sum of (n + m + 1) over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print n + m + 1 integers, where the i-th integer should be equal to the skill of the team if everyone except the i-th candidate comes to interview.\n\nLet's consider the third test case of the example:\n\nInput:\n```\n41 02 11 20 24 5 55 4 11 22 1 5 45 2 3 13 14 3 3 4 15 5 4 5 2\n```\n\nOutput:\n```\n1 2 \n5 6 9 \n8 11 11 12 \n13 13 13 12 15 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three lines:\n\nAdditional constraint on the input: the sum of (n + m + 1) over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print n + m + 1 integers, where the i-th integer should be equal to the skill of the team if everyone except the i-th candidate comes to interview.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*1600"
+    ],
+    "rating": 1600
+}

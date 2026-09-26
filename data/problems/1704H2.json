@@ -1,0 +1,18 @@
+{
+    "id": "1704H2",
+    "contest_id": 1704,
+    "problem_letter": "H2",
+    "title": "H2. Game of AI (hard version)",
+    "statement": "This is the hard version of this problem. The difference between easy and hard versions is the constraint on k and the time limit. Notice that you need to calculate the answer for all positive integers n ∈ [1,k] in this version. You can make hacks only if both versions of the problem are solved.\n\nCirno is playing a war simulator game with n towers (numbered from 1 to n) and n bots (numbered from 1 to n). The i-th tower is initially occupied by the i-th bot for 1 ≤ i ≤ n.\n\nBefore the game, Cirno first chooses a permutation p = [p_1, p_2, …, p_n] of length n (A permutation of length n is an array of length n where each integer between 1 and n appears exactly once). After that, she can choose a sequence a = [a_1, a_2, …, a_n] (1 ≤ a_i ≤ n and a_i ≠ i for all 1 ≤ i ≤ n).\n\nThe game has n rounds of attacks. In the i-th round, if the p_i-th bot is still in the game, it will begin its attack, and as the result the a_p_i-th tower becomes occupied by the p_i-th bot; the bot that previously occupied the a_p_i-th tower will no longer occupy it. If the p_i-th bot is not in the game, nothing will happen in this round.\n\nAfter each round, if a bot doesn't occupy any towers, it will be eliminated and leave the game. Please note that no tower can be occupied by more than one bot, but one bot can occupy more than one tower during the game.\n\nAt the end of the game, Cirno will record the result as a sequence b = [b_1, b_2, …, b_n], where b_i is the number of the bot that occupies the i-th tower at the end of the game.\n\nHowever, as a mathematics master, she wants you to solve the following counting problem instead of playing games:\n\nCount the number of different pairs of sequences a, b from all possible choices of sequence a and permutation p.\n\nCalculate the answers for all n such that 1 ≤ n ≤ k. Since these numbers may be large, output them modulo M.\n\nThe only line contains two positive integers k and M (1≤ k≤ 10^5, 2≤ M≤ 10^9 ). It is guaranteed that 2^18 is a divisor of M-1 and M is a prime number.\n\nOutput k lines, where the i-th line contains a non-negative integer, which is the answer for n=i modulo M.\n\nFor n=1, no valid sequence a exists. We regard the answer as 0.\n\nFor n=2, there is only one possible array a: [2, 1].\n\nSo the number of different pairs of sequences (a,b) is 2 ([2, 1], [1, 1] and [2, 1], [2, 2]) for n=2.\n\nInput:\n```\n8 998244353\n```\n\nOutput:\n```\n0\n2\n24\n360\n6800\n153150\n4057452\n123391016\n```",
+    "input": "The only line contains two positive integers k and M (1≤ k≤ 10^5, 2≤ M≤ 10^9 ). It is guaranteed that 2^18 is a divisor of M-1 and M is a prime number.",
+    "output": "Output k lines, where the i-th line contains a non-negative integer, which is the answer for n=i modulo M.",
+    "time_limit": "12 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "fft",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1787E",
+    "contest_id": 1787,
+    "problem_letter": "E",
+    "title": "E. The Harmonization of XOR",
+    "statement": "You are given an array of exactly n numbers [1,2,3,…,n] along with integers k and x.\n\nPartition the array in exactly k non-empty disjoint subsequences such that the bitwise XOR of all numbers in each subsequence is x, and each number is in exactly one subsequence. Notice that there are no constraints on the length of each subsequence.\n\nA sequence a is a subsequence of a sequence b if a can be obtained from b by the deletion of several (possibly, zero or all) elements.\n\nFor example, for n = 15, k = 6, x = 7, the following scheme is valid:\n\nThe following scheme is invalid, since 8, 15 do not appear:\n\nThe following scheme is invalid, since 3 appears twice, and 1, 2 do not appear:\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and the only line of each test case contains three integers n, k, x (1 ≤ k ≤ n ≤ 2·10^5; 1≤ x ≤ 10^9) — the length of the array, the number of subsequences and the required XOR.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.\n\nFor each test case, if it is possible to partition the sequence, print \"YES\" in the first line. In the i-th of the following k lines first print the length s_i of the i-th subsequence, then print s_i integers, representing the elements in the i-th subsequence. If there are multiple answers, print any. Note that you can print a subsequence in any order.\n\nIf it is not possible to partition the sequence, print \"NO\".\n\nIn the first test case, we construct the following 6 subsequences:\n\nIn the second test case, we construct the following 4 subsequences:\n\nThe following solution is considered correct in this test case as well:\n\nInput:\n```\n715 6 711 4 55 3 24 1 46 1 711 5 511 6 5\n```\n\nOutput:\n```\nYES\n3 6 10 11\n3 5 12 14\n3 3 9 13\n3 1 2 4\n2 8 15\n1 7\nYES\n2 1 4\n2 2 7\n2 3 6\n5 5 8 9 10 11\nNO\nYES\n4 1 2 3 4\nYES\n6 1 2 3 4 5 6\nNO\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and the only line of each test case contains three integers n, k, x (1 ≤ k ≤ n ≤ 2·10^5; 1≤ x ≤ 10^9) — the length of the array, the number of subsequences and the required XOR.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.",
+    "output": "For each test case, if it is possible to partition the sequence, print \"YES\" in the first line. In the i-th of the following k lines first print the length s_i of the i-th subsequence, then print s_i integers, representing the elements in the i-th subsequence. If there are multiple answers, print any. Note that you can print a subsequence in any order.\n\nIf it is not possible to partition the sequence, print \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

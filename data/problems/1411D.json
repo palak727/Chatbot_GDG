@@ -1,0 +1,19 @@
+{
+    "id": "1411D",
+    "contest_id": 1411,
+    "problem_letter": "D",
+    "title": "D. Grime Zoo",
+    "statement": "Currently, XXOC's rap is a string consisting of zeroes, ones, and question marks. Unfortunately, haters gonna hate. They will write x angry comments for every occurrence of subsequence 01 and y angry comments for every occurrence of subsequence 10. You should replace all the question marks with 0 or 1 in such a way that the number of angry comments would be as small as possible.\n\nString b is a subsequence of string a, if it can be obtained by removing some characters from a. Two occurrences of a subsequence are considered distinct if sets of positions of remaining characters are distinct.\n\nThe first line contains string s — XXOC's rap (1 ≤ |s| ≤ 10^5). The second line contains two integers x and y — the number of angry comments XXOC will recieve for every occurrence of 01 and 10 accordingly (0 ≤ x, y ≤ 10^6).\n\nOutput a single integer — the minimum number of angry comments.\n\nIn the first example one of the optimum ways to replace is 001. Then there will be 2 subsequences 01 and 0 subsequences 10. Total number of angry comments will be equal to 2·2 + 0·3 = 4.\n\nIn the second example one of the optimum ways to replace is 11111. Then there will be 0 subsequences 01 and 0 subsequences 10. Total number of angry comments will be equal to 0·13 + 0·37 = 0.\n\nIn the third example one of the optimum ways to replace is 1100. Then there will be 0 subsequences 01 and 4 subsequences 10. Total number of angry comments will be equal to 0·239 + 4·7 = 28.\n\nIn the fourth example one of the optimum ways to replace is 01101001. Then there will be 8 subsequences 01 and 8 subsequences 10. Total number of angry comments will be equal to 8·5 + 8·7 = 96.\n\nInput:\n```\n0?1\n2 3\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n?????\n13 37\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n?10?\n239 7\n```\n\nOutput:\n```\n28\n```\n\nInput:\n```\n01101001\n5 7\n```\n\nOutput:\n```\n96\n```",
+    "input": "The first line contains string s — XXOC's rap (1 ≤ |s| ≤ 10^5). The second line contains two integers x and y — the number of angry comments XXOC will recieve for every occurrence of 01 and 10 accordingly (0 ≤ x, y ≤ 10^6).",
+    "output": "Output a single integer — the minimum number of angry comments.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "strings",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1635D",
+    "contest_id": 1635,
+    "problem_letter": "D",
+    "title": "D. Infinite Set",
+    "statement": "You are given an array a consisting of n distinct positive integers.\n\nLet's consider an infinite integer set S which contains all integers x that satisfy at least one of the following conditions:\n\nFor example, if a = [1,2] then the 10 smallest elements in S will be {1,2,3,4,5,7,8,9,11,12}.\n\nFind the number of elements in S that are strictly smaller than 2^p. Since this number may be too large, print it modulo 10^9 + 7.\n\nThe first line contains two integers n and p (1 ≤ n, p ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that all the numbers in a are distinct.\n\nPrint a single integer, the number of elements in S that are strictly smaller than 2^p. Remember to print it modulo 10^9 + 7.\n\nIn the first example, the elements smaller than 2^4 are {1, 3, 4, 6, 7, 9, 12, 13, 15}.\n\nIn the second example, the elements smaller than 2^7 are {5,11,20,23,39,41,44,47,79,80,83,89,92,95}.\n\nInput:\n```\n2 4\n6 1\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4 7\n20 39 5 200\n```\n\nOutput:\n```\n14\n```\n\nInput:\n```\n2 200000\n48763 1000000000\n```\n\nOutput:\n```\n448201910\n```",
+    "input": "The first line contains two integers n and p (1 ≤ n, p ≤ 2·10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that all the numbers in a are distinct.",
+    "output": "Print a single integer, the number of elements in S that are strictly smaller than 2^p. Remember to print it modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math",
+        "matrices",
+        "number theory",
+        "strings",
+        "*1800"
+    ],
+    "rating": 1800
+}

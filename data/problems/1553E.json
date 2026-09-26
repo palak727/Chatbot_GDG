@@ -1,0 +1,22 @@
+{
+    "id": "1553E",
+    "contest_id": 1553,
+    "problem_letter": "E",
+    "title": "E. Permutation Shift",
+    "statement": "An identity permutation of length n is an array [1, 2, 3, …, n].\n\nWe performed the following operations to an identity permutation of length n:\n\nYou are given the values of n and m, and the resulting array. Your task is to find all possible values of k in the cyclic shift operation.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and m (3 ≤ n ≤ 3·10^5; 0 ≤ m ≤ n/3).\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, each integer from 1 to n appears in this sequence exactly once) — the resulting array.\n\nThe sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, print the answer in the following way:\n\nConsider the example:\n\nInput:\n```\n4\n4 1\n2 3 1 4\n3 1\n1 2 3\n3 1\n3 2 1\n6 0\n1 2 3 4 6 5\n```\n\nOutput:\n```\n1 3\n1 0\n3 0 1 2\n0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nEach test case consists of two lines. The first line contains two integers n and m (3 ≤ n ≤ 3·10^5; 0 ≤ m ≤ n/3).\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, each integer from 1 to n appears in this sequence exactly once) — the resulting array.\n\nThe sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, print the answer in the following way:",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

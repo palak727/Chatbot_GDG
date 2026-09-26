@@ -1,0 +1,15 @@
+{
+    "id": "2087H",
+    "contest_id": 2087,
+    "problem_letter": "H",
+    "title": "H. Nim with Special Numbers",
+    "statement": "Let's recall the rules of the game \"Nim\". The game is played by two players who take turns. They have a certain number of piles of stones (the piles can be of the same size or different sizes; the size is defined as the number of stones in a pile). On their turn, a player must choose any non-empty pile of stones and remove any number of stones from it (at least one). The player who cannot make a move loses.\n\nIn this problem, a modified version of the game will be used. There is a special set of numbers S that prohibits certain moves. For each number s_i in this set, if the current size of the pile of stones is strictly greater than s_i, it cannot be made strictly less than s_i in one move. In other words, if the current size of the pile is x, and the player tries to make a move that results in a size of y, and x > s_i > y for some number s_i ∈ S, such a move is not allowed.\n\nYour task is as follows. Initially, the set S is empty. You need to process queries of three types:\n\nThe first line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nEach query is given in one line in one of the following formats:\n\nFor each query of type 2, output First if the player making the first move will win, or Second if they will lose.\n\nInput:\n```\n112 2 1 41 22 2 1 42 3 3 1 41 32 3 3 1 42 2 1 41 42 2 1 51 22 2 1 5\n```\n\nOutput:\n```\nFirst\nSecond\nSecond\nSecond\nSecond\nFirst\nSecond\n```",
+    "input": "The first line contains a single integer q (1 ≤ q ≤ 3·10^5) — the number of queries.\n\nEach query is given in one line in one of the following formats:",
+    "output": "For each query of type 2, output First if the player making the first move will win, or Second if they will lose.",
+    "time_limit": "8 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

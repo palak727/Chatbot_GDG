@@ -1,0 +1,21 @@
+{
+    "id": "1918F",
+    "contest_id": 1918,
+    "problem_letter": "F",
+    "title": "F. Caterpillar on a Tree",
+    "statement": "The caterpillar decided to visit every node of the tree. Initially, it is sitting at the root.\n\nThe tree is represented as a rooted tree with the root at the node 1. Each crawl to a neighboring node takes 1 minute for the caterpillar.\n\nAnd there is a trampoline under the tree. If the caterpillar detaches from the tree and falls onto the trampoline, it will end up at the root of the tree in 0 seconds. But the trampoline is old and can withstand no more than k caterpillar's falls.\n\nWhat is the minimum time the caterpillar can take to visit all the nodes of the tree?\n\nMore formally, we need to find the minimum time required to visit all the nodes of the tree, if the caterpillar starts at the root (node 1) and moves using two methods.\n\nThe second method (teleportation) can be used at most k times. The caterpillar can finish the journey at any node.\n\nThe first line of the input contains two integers: n (2 ≤ n ≤ 2·10^5) — the number of nodes in the tree, and k (0 ≤ k ≤ 10^9) — the maximum number of teleports to the root.\n\nThe second line contains n-1 integers p_2, p_3, ..., p_n (1 ≤ p_i ≤ n) — the ancestors in the tree for nodes 2, 3, …, n; node 1 is the root.\n\nPrint a single number in a single line — the minimum number of minutes required to visit all the nodes of the tree.\n\nThe figure shows one of the ways to traverse the tree from the first test in 9 minutes.\n\nInput:\n```\n8 1\n1 1 2 2 4 3 3\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4 0\n4 4 1\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line of the input contains two integers: n (2 ≤ n ≤ 2·10^5) — the number of nodes in the tree, and k (0 ≤ k ≤ 10^9) — the maximum number of teleports to the root.\n\nThe second line contains n-1 integers p_2, p_3, ..., p_n (1 ≤ p_i ≤ n) — the ancestors in the tree for nodes 2, 3, …, n; node 1 is the root.",
+    "output": "Print a single number in a single line — the minimum number of minutes required to visit all the nodes of the tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "implementation",
+        "sortings",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

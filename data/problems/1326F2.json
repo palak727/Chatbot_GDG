@@ -1,0 +1,18 @@
+{
+    "id": "1326F2",
+    "contest_id": 1326,
+    "problem_letter": "F2",
+    "title": "F2. Wise Men (Hard Version)",
+    "statement": "This is the hard version of the problem. The difference is constraints on the number of wise men and the time limit. You can make hacks only if all versions of this task are solved.\n\nn wise men live in a beautiful city. Some of them know each other.\n\nFor each of the n! possible permutations p_1, p_2, …, p_n of the wise men, let's generate a binary string of length n-1: for each 1 ≤ i < n set s_i=1 if p_i and p_{i+1} know each other, and s_i=0 otherwise.\n\nFor all possible 2^{n-1} binary strings, find the number of permutations that produce this binary string.\n\nThe first line of input contains one integer n (2 ≤ n ≤ 18) — the number of wise men in the city.\n\nThe next n lines contain a binary string of length n each, such that the j-th character of the i-th string is equal to '1' if wise man i knows wise man j, and equals '0' otherwise.\n\nIt is guaranteed that if the i-th man knows the j-th man, then the j-th man knows i-th man and no man knows himself.\n\nPrint 2^{n-1} space-separated integers. For each 0 ≤ x < 2^{n-1}:\n\nIn the first test, each wise man knows each other, so every permutation will produce the string 11.\n\nIn the second test:\n\nInput:\n```\n3\n011\n101\n110\n```\n\nOutput:\n```\n0 0 0 6 \n```\n\nInput:\n```\n4\n0101\n1000\n0001\n1010\n```\n\nOutput:\n```\n2 2 6 2 2 6 2 2 \n```",
+    "input": "The first line of input contains one integer n (2 ≤ n ≤ 18) — the number of wise men in the city.\n\nThe next n lines contain a binary string of length n each, such that the j-th character of the i-th string is equal to '1' if wise man i knows wise man j, and equals '0' otherwise.\n\nIt is guaranteed that if the i-th man knows the j-th man, then the j-th man knows i-th man and no man knows himself.",
+    "output": "Print 2^{n-1} space-separated integers. For each 0 ≤ x < 2^{n-1}:",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math",
+        "*3200"
+    ],
+    "rating": 3200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1550B",
+    "contest_id": 1550,
+    "problem_letter": "B",
+    "title": "B. Maximum Cost Deletion",
+    "statement": "You are given a string s of length n consisting only of the characters 0 and 1.\n\nYou perform the following operation until the string becomes empty: choose some consecutive substring of equal characters, erase it from the string and glue the remaining two parts together (any of them can be empty) in the same order. For example, if you erase the substring 111 from the string 111110, you will get the string 110. When you delete a substring of length l, you get a·l + b points.\n\nYour task is to calculate the maximum number of points that you can score in total, if you have to make the given string empty.\n\nThe first line contains a single integer t (1 ≤ t ≤ 2000) — the number of testcases.\n\nThe first line of each testcase contains three integers n, a and b (1 ≤ n ≤ 100; -100 ≤ a, b ≤ 100) — the length of the string s and the parameters a and b.\n\nThe second line contains the string s. The string s consists only of the characters 0 and 1.\n\nFor each testcase, print a single integer — the maximum number of points that you can score.\n\nIn the first example, it is enough to delete the entire string, then we will get 2·3 + 0 = 6 points.\n\nIn the second example, if we delete characters one by one, then for each deleted character we will get (-2)·1 + 5 = 3 points, i. e. 15 points in total.\n\nIn the third example, we can delete the substring 00 from the string 100111, we get 1·2 + (-4) = -2 points, and the string will be equal to 1111, removing it entirely we get 1·4 + (-4) = 0 points. In total, we got -2 points for 2 operations.\n\nInput:\n```\n3\n3 2 0\n000\n5 -2 5\n11001\n6 1 -4\n100111\n```\n\nOutput:\n```\n6\n15\n-2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2000) — the number of testcases.\n\nThe first line of each testcase contains three integers n, a and b (1 ≤ n ≤ 100; -100 ≤ a, b ≤ 100) — the length of the string s and the parameters a and b.\n\nThe second line contains the string s. The string s consists only of the characters 0 and 1.",
+    "output": "For each testcase, print a single integer — the maximum number of points that you can score.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1167C",
+    "contest_id": 1167,
+    "problem_letter": "C",
+    "title": "C. News Distribution",
+    "statement": "In some social network, there are n users communicating with each other in m groups of friends. Let's analyze the process of distributing some news between users.\n\nInitially, some user x receives the news from some source. Then he or she sends the news to his or her friends (two users are friends if there is at least one group such that both of them belong to this group). Friends continue sending the news to their friends, and so on. The process ends when there is no pair of friends such that one of them knows the news, and another one doesn't know.\n\nFor each user x you have to determine what is the number of users that will know the news if initially only user x starts distributing it.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 5·10^5) — the number of users and the number of groups of friends, respectively.\n\nThen m lines follow, each describing a group of friends. The i-th line begins with integer k_i (0 ≤ k_i ≤ n) — the number of users in the i-th group. Then k_i distinct integers follow, denoting the users belonging to the i-th group.\n\nIt is guaranteed that ∑ limits_{i = 1}^m k_i ≤ 5·10^5.\n\nPrint n integers. The i-th integer should be equal to the number of users that will know the news if user i starts distributing it.\n\nInput:\n```\n7 5\n3 2 5 4\n0\n2 1 2\n1 1\n2 6 7\n```\n\nOutput:\n```\n4 4 1 4 4 2 2 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 5·10^5) — the number of users and the number of groups of friends, respectively.\n\nThen m lines follow, each describing a group of friends. The i-th line begins with integer k_i (0 ≤ k_i ≤ n) — the number of users in the i-th group. Then k_i distinct integers follow, denoting the users belonging to the i-th group.\n\nIt is guaranteed that ∑ limits_{i = 1}^m k_i ≤ 5·10^5.",
+    "output": "Print n integers. The i-th integer should be equal to the number of users that will know the news if user i starts distributing it.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*1400"
+    ],
+    "rating": 1400
+}

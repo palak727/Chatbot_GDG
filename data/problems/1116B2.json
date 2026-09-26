@@ -1,0 +1,15 @@
+{
+    "id": "1116B2",
+    "contest_id": 1116,
+    "problem_letter": "B2",
+    "title": "B2. Not A, not B or not C?",
+    "statement": "You are given a qubit which is guaranteed to be in one of the following states:\n\nThese states are not orthogonal, and thus can not be distinguished perfectly. Your task is to figure out in which state the qubit is not. More formally:\n\nYour solution will be called 1000 times, each time the state of the qubit will be chosen as |Arangle, |Brangle or |Crangle with equal probability. The state of the qubit after the operations does not matter.\n\nYou have to implement an operation which takes a qubit as an input and returns an integer. Your code should have the following signature:\n\n```\nnamespace Solution {\n    open Microsoft.Quantum.Primitive;\n    open Microsoft.Quantum.Canon;\n\n    operation Solve (q : Qubit) : Int {\n        // your code here\n    }\n}\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

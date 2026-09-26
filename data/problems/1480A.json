@@ -1,0 +1,18 @@
+{
+    "id": "1480A",
+    "contest_id": 1480,
+    "problem_letter": "A",
+    "title": "A. Yet Another String Game",
+    "statement": "Homer has two friends Alice and Bob. Both of them are string fans.\n\nOne day, Alice and Bob decide to play a game on a string s = s_1 s_2 … s_n of length n consisting of lowercase English letters. They move in turns alternatively and Alice makes the first move.\n\nIn a move, a player must choose an index i (1 ≤ i ≤ n) that has not been chosen before, and change s_i to any other lowercase English letter c that c ≠ s_i.\n\nWhen all indices have been chosen, the game ends.\n\nThe goal of Alice is to make the final string lexicographically as small as possible, while the goal of Bob is to make the final string lexicographically as large as possible. Both of them are game experts, so they always play games optimally. Homer is not a game expert, so he wonders what the final string will be.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nEach test contains multiple test cases. The first line contains t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 50) consisting of lowercase English letters.\n\nFor each test case, print the final string in a single line.\n\nIn the first test case: Alice makes the first move and must change the only letter to a different one, so she changes it to 'b'.\n\nIn the second test case: Alice changes the first letter to 'a', then Bob changes the second letter to 'z', Alice changes the third letter to 'a' and then Bob changes the fourth letter to 'z'.\n\nIn the third test case: Alice changes the first letter to 'b', and then Bob changes the second letter to 'y'.\n\nInput:\n```\n3\na\nbbbb\naz\n```\n\nOutput:\n```\nb\nazaz\nby\n```",
+    "input": "Each test contains multiple test cases. The first line contains t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe only line of each test case contains a single string s (1 ≤ |s| ≤ 50) consisting of lowercase English letters.",
+    "output": "For each test case, print the final string in a single line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1268D",
+    "contest_id": 1268,
+    "problem_letter": "D",
+    "title": "D. Invertation in Tournament",
+    "statement": "You are given a tournament — complete directed graph.\n\nIn one operation you can pick any vertex v and change the direction of all edges with v on one of the ends (i.e all edges u → v change their orientation to v → u and vice versa).\n\nYou want to make the tournament strongly connected with the smallest possible number of such operations if it is possible.\n\nAlso, if it is possible, you need to find the number of ways to make this number of operations to make graph strongly connected (two ways are different if for some i vertex that we chose on i-th operation in one way is different from vertex that we chose on i-th operation in another way). You only need to find this value modulo 998,244,353.\n\nThe first line of input contains one integer n (3 ≤ n ≤ 2000): the number of vertices in the tournament.\n\nFollowing n lines contain a description of the given tournament, each of them contains a binary string of length n. If j-th character of i-th string is equal to '1', then the graph has an edge i → j.\n\nIt is guaranteed that there are no edges i → i and the graph has exactly one edge among i → j and j → i for different i and j.\n\nIf it is not possible to convert tournament to strongly connected with the given operations, output \"-1\".\n\nOtherwise, output two integers: the smallest number of operations that you need to make the given graph strongly connected and the number of ways to do this number of operations to make graph strongly connected, modulo 998,244,353.\n\nInput:\n```\n3\n010\n001\n100\n```\n\nOutput:\n```\n0 1\n```\n\nInput:\n```\n4\n0010\n1000\n0100\n1110\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n6\n010000\n001000\n100000\n111001\n111100\n111010\n```\n\nOutput:\n```\n2 18\n```",
+    "input": "The first line of input contains one integer n (3 ≤ n ≤ 2000): the number of vertices in the tournament.\n\nFollowing n lines contain a description of the given tournament, each of them contains a binary string of length n. If j-th character of i-th string is equal to '1', then the graph has an edge i → j.\n\nIt is guaranteed that there are no edges i → i and the graph has exactly one edge among i → j and j → i for different i and j.",
+    "output": "If it is not possible to convert tournament to strongly connected with the given operations, output \"-1\".\n\nOtherwise, output two integers: the smallest number of operations that you need to make the given graph strongly connected and the number of ways to do this number of operations to make graph strongly connected, modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "divide and conquer",
+        "graphs",
+        "math",
+        "*3200"
+    ],
+    "rating": 3200
+}

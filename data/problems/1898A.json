@@ -1,0 +1,18 @@
+{
+    "id": "1898A",
+    "contest_id": 1898,
+    "problem_letter": "A",
+    "title": "A. Milica and String",
+    "statement": "Milica has a string s of length n, consisting only of characters A and B. She wants to modify s so it contains exactly k instances of B. In one operation, she can do the following:\n\nMilica does not want to perform too many operations in order not to waste too much time on them.\n\nShe asks you to find the minimum number of operations required to modify s so it contains exactly k instances of B. She also wants you to find these operations (that is, integer i and character c selected in each operation).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (3 ≤ n ≤ 100, 0 ≤ k ≤ n) — the length of the string s and the number of characters B Milica wants to appear in s in the end.\n\nThe second line of each test case contains the string s of length n, consisting only of characters A and B.\n\nFor each test case, in the first line output a single integer m — the minimum number of operations Milica should perform.\n\nIn the j-th of the next m lines output an integer i (1 ≤ i ≤ n) and a character c (c is 'A' or 'B') — the parameters of the j-th operation as described in the statement.\n\nIf there are multiple solutions with the minimum possible number of operations, output any of them.\n\nIn the first test case, there are already 2 characters B in s, so Milica does not have to perform any operations.\n\nIn the second test case, the only way to achieve 3 characters B in s in one operation is to replace the first character of s by B on the first operation: AABAB → BABAB.\n\nIn the third test case, the only way to achieve 0 characters B in s in one operation is to replace the first 5 characters of s by A on the first operation: BBBBB → AAAAA.\n\nIn the fourth test case, one of the ways to achieve 0 characters B in s in one operation is to replace the first 2 characters of s by A on the first operation: BAA → AAA. Note that \"1 A\" and \"3 A\" are also correct one-operation solutions.\n\nInput:\n```\n5\n5 2\nAAABB\n5 3\nAABAB\n5 0\nBBBBB\n3 0\nBAA\n10 3\nBBBABBBBAB\n```\n\nOutput:\n```\n0\n1\n1 B\n1\n5 A\n1\n2 A\n1\n6 A\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (3 ≤ n ≤ 100, 0 ≤ k ≤ n) — the length of the string s and the number of characters B Milica wants to appear in s in the end.\n\nThe second line of each test case contains the string s of length n, consisting only of characters A and B.",
+    "output": "For each test case, in the first line output a single integer m — the minimum number of operations Milica should perform.\n\nIn the j-th of the next m lines output an integer i (1 ≤ i ≤ n) and a character c (c is 'A' or 'B') — the parameters of the j-th operation as described in the statement.\n\nIf there are multiple solutions with the minimum possible number of operations, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

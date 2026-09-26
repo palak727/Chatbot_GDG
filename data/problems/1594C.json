@@ -1,0 +1,19 @@
+{
+    "id": "1594C",
+    "contest_id": 1594,
+    "problem_letter": "C",
+    "title": "C. Make Them Equal",
+    "statement": "Theofanis has a string s_1 s_2 … s_n and a character c. He wants to make all characters of the string equal to c using the minimum number of operations.\n\nIn one operation he can choose a number x (1 ≤ x ≤ n) and for every position i, where i is not divisible by x, replace s_i with c.\n\nFind the minimum number of operations required to make all the characters equal to c and the x-s that he should use in his operations.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains the integer n (3 ≤ n ≤ 3·10^5) and a lowercase Latin letter c — the length of the string s and the character the resulting string should consist of.\n\nThe second line of each test case contains a string s of lowercase Latin letters — the initial string.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case, firstly print one integer m — the minimum number of operations required to make all the characters equal to c.\n\nNext, print m integers x_1, x_2, …, x_m (1 ≤ x_j ≤ n) — the x-s that should be used in the order they are given.\n\nIt can be proved that under given constraints, an answer always exists. If there are multiple answers, print any.\n\nLet's describe what happens in the third test case:\n\nInput:\n```\n3\n4 a\naaaa\n4 a\nbaaa\n4 b\nbzyx\n```\n\nOutput:\n```\n0\n1\n2\n2 \n2 3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains the integer n (3 ≤ n ≤ 3·10^5) and a lowercase Latin letter c — the length of the string s and the character the resulting string should consist of.\n\nThe second line of each test case contains a string s of lowercase Latin letters — the initial string.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case, firstly print one integer m — the minimum number of operations required to make all the characters equal to c.\n\nNext, print m integers x_1, x_2, …, x_m (1 ≤ x_j ≤ n) — the x-s that should be used in the order they are given.\n\nIt can be proved that under given constraints, an answer always exists. If there are multiple answers, print any.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "strings",
+        "*1200"
+    ],
+    "rating": 1200
+}

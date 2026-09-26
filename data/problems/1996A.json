@@ -1,0 +1,18 @@
+{
+    "id": "1996A",
+    "contest_id": 1996,
+    "problem_letter": "A",
+    "title": "A. Legs",
+    "statement": "It's another beautiful day on Farmer John's farm.\n\nAfter Farmer John arrived at his farm, he counted n legs. It is known only chickens and cows live on the farm, and a chicken has 2 legs while a cow has 4.\n\nWhat is the minimum number of animals Farmer John can have on his farm assuming he counted the legs of all animals?\n\nThe first line contains single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nEach test case contains an integer n (2 ≤ n ≤ 2·10^3, n is even).\n\nFor each test case, output an integer, the minimum number of animals Farmer John can have on his farm.\n\nInput:\n```\n3268\n```\n\nOutput:\n```\n1\n2\n2\n```",
+    "input": "The first line contains single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nEach test case contains an integer n (2 ≤ n ≤ 2·10^3, n is even).",
+    "output": "For each test case, output an integer, the minimum number of animals Farmer John can have on his farm.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "ternary search",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1157D",
+    "contest_id": 1157,
+    "problem_letter": "D",
+    "title": "D. N Problems During K Days",
+    "statement": "Polycarp has to solve exactly n problems to improve his programming skill before an important programming competition. But this competition will be held very soon, most precisely, it will start in k days. It means that Polycarp has exactly k days for training!\n\nPolycarp doesn't want to procrastinate, so he wants to solve at least one problem during each of k days. He also doesn't want to overwork, so if he solves x problems during some day, he should solve no more than 2x problems during the next day. And, at last, he wants to improve his skill, so if he solves x problems during some day, he should solve at least x+1 problem during the next day.\n\nMore formally: let [a_1, a_2, …, a_k] be the array of numbers of problems solved by Polycarp. The i-th element of this array is the number of problems Polycarp solves during the i-th day of his training. Then the following conditions must be satisfied:\n\nYour problem is to find any array a of length k satisfying the conditions above or say that it is impossible to do it.\n\nThe first line of the input contains two integers n and k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ 10^5) — the number of problems Polycarp wants to solve and the number of days Polycarp wants to train.\n\nIf it is impossible to find any array a of length k satisfying Polycarp's rules of training, print \"NO\" in the first line.\n\nOtherwise print \"YES\" in the first line, then print k integers a_1, a_2, …, a_k in the second line, where a_i should be the number of problems Polycarp should solve during the i-th day. If there are multiple answers, you can print any.\n\nInput:\n```\n26 6\n```\n\nOutput:\n```\nYES\n1 2 4 5 6 8 \n```\n\nInput:\n```\n8 3\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n1 1\n```\n\nOutput:\n```\nYES\n1 \n```\n\nInput:\n```\n9 4\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line of the input contains two integers n and k (1 ≤ n ≤ 10^9, 1 ≤ k ≤ 10^5) — the number of problems Polycarp wants to solve and the number of days Polycarp wants to train.",
+    "output": "If it is impossible to find any array a of length k satisfying Polycarp's rules of training, print \"NO\" in the first line.\n\nOtherwise print \"YES\" in the first line, then print k integers a_1, a_2, …, a_k in the second line, where a_i should be the number of problems Polycarp should solve during the i-th day. If there are multiple answers, you can print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

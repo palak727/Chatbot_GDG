@@ -1,0 +1,16 @@
+{
+    "id": "1952D",
+    "contest_id": 1952,
+    "problem_letter": "D",
+    "title": "D. Are You a Procrastinator?",
+    "statement": "!\n\n!\n\n!\n\n!\n\n!\n\nInput:\n```\n?\n```\n\nOutput:\n```\n?\n```",
+    "input": "!",
+    "output": "!",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

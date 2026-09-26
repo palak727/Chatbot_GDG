@@ -1,0 +1,18 @@
+{
+    "id": "1906B",
+    "contest_id": 1906,
+    "problem_letter": "B",
+    "title": "B. Button Pressing",
+    "statement": "You are given N buttons (numbered from 1 to N) and N lamps (numbered from 1 to N). Each lamp can either be on or off. Initially, lamp i is on if A_i = 1, and off if A_i = 0.\n\nButton i is connected to lamp i - 1 (if i > 1) and lamp i + 1 (if i < N). In one move, you can press a button i only if lamp i is on. When a button is pressed, the state of the lamps connected to this button is toggled. Formally, the lamps will be on if it was off previously, and the lamps will be off if it was on previously. Note that lamp i is not connected to button i, thus, the state of lamp i does not change if button i is pressed.\n\nAfter zero or more moves, you want lamp i to be on if B_i = 1, and off if B_i = 0. Determine if it is possible to achieve this task.\n\nThis problem has multiple test cases. The first line consists of an integer T (1 ≤ T ≤ 1000), which represents the number of test cases. Each test case consists of three lines.\n\nThe first line of each test case consists of an integer N (3 ≤ N ≤ 200,000). The sum of N over all test cases does not exceed 200,000.\n\nThe second line of each test case consists of a string A of length N. Each character of A can either be 0 or 1. The i-th character represents the initial state of lamp i.\n\nThe third line of each test case consists of a string A of length N. Each character of B can either be 0 or 1. The i-th character represents the desired final state of lamp i.\n\nFor each test case, output YES in a single line if the final state of all lamps can be reached after zero or more moves, or NO otherwise.\n\nExplanation for the sample input/output #1\n\nFor the first test case, by pressing the buttons 4, 2, 4, 3, 1, 2 in sequence, the condition of the buttons changes as: 0101 → 0111 → 1101 → 1111 → 1010 → 1110 → 0100.\n\nFor the second test case, you are unable to press any button, hence it is impossible to reach the final state.\n\nInput:\n```\n2\n4\n0101\n0100\n3\n000\n010\n```\n\nOutput:\n```\nYES\nNO\n```\n\nInput:\n```\n5\n7\n0101011\n1111010\n5\n11111\n00000\n4\n1101\n1101\n6\n101010\n100100\n3\n000\n000\n```\n\nOutput:\n```\nNO\nNO\nYES\nYES\nYES\n```",
+    "input": "This problem has multiple test cases. The first line consists of an integer T (1 ≤ T ≤ 1000), which represents the number of test cases. Each test case consists of three lines.\n\nThe first line of each test case consists of an integer N (3 ≤ N ≤ 200,000). The sum of N over all test cases does not exceed 200,000.\n\nThe second line of each test case consists of a string A of length N. Each character of A can either be 0 or 1. The i-th character represents the initial state of lamp i.\n\nThe third line of each test case consists of a string A of length N. Each character of B can either be 0 or 1. The i-th character represents the desired final state of lamp i.",
+    "output": "For each test case, output YES in a single line if the final state of all lamps can be reached after zero or more moves, or NO otherwise.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "hashing",
+        "*2600"
+    ],
+    "rating": 2600
+}

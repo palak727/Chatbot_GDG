@@ -1,0 +1,18 @@
+{
+    "id": "1872A",
+    "contest_id": 1872,
+    "problem_letter": "A",
+    "title": "A. Two Vessels",
+    "statement": "You have two vessels with water. The first vessel contains a grams of water, and the second vessel contains b grams of water. Both vessels are very large and can hold any amount of water.\n\nYou also have an empty cup that can hold up to c grams of water.\n\nIn one move, you can scoop up to c grams of water from any vessel and pour it into the other vessel. Note that the mass of water poured in one move does not have to be an integer.\n\nWhat is the minimum number of moves required to make the masses of water in the vessels equal? Note that you cannot perform any actions other than the described moves.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nEach test case consists of a single line containing three integers a, b, and c (1 ≤ a, b, c ≤ 100) — the mass of water in the vessels and the capacity of the cup, respectively.\n\nFor each test case, output a single number — the minimum number of moves required to make the masses of water in the vessels equal. It can be shown, that it is always possible.\n\nIn the first test case, only one move is enough: if we pour 2 grams of water from the second vessel into the first one, both vessels will contain 5 grams of water.\n\nIn the second example test case, three moves are enough:\n\nNote that this is not the only way to equalize the vessels in 3 moves, but there is no way to do it in 2 moves.\n\nIn the third example test case, the vessels initially contain the same amount of water, so no moves are needed. The answer is 0.\n\nInput:\n```\n63 7 217 4 317 17 117 21 1001 100 197 4 3\n```\n\nOutput:\n```\n1\n3\n0\n1\n50\n16\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nEach test case consists of a single line containing three integers a, b, and c (1 ≤ a, b, c ≤ 100) — the mass of water in the vessels and the capacity of the cup, respectively.",
+    "output": "For each test case, output a single number — the minimum number of moves required to make the masses of water in the vessels equal. It can be shown, that it is always possible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

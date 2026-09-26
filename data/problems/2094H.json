@@ -1,0 +1,19 @@
+{
+    "id": "2094H",
+    "contest_id": 2094,
+    "problem_letter": "H",
+    "title": "H. La Vaca Saturno Saturnita",
+    "statement": "Saturnita's mood depends on an array a of length n, which only he knows the meaning of, and a function f(k, a, l, r), which only he knows how to compute. Shown below is the pseudocode for his function f(k, a, l, r).\n\n```\nfunction f(k, a, l, r):\n   ans := 0\n   for i from l to r (inclusive):\n      while k is divisible by a[i]:\n         k := k/a[i]\n      ans := ans + k\n   return ans\n```\n\nYou are given q queries, each containing integers k, l, and r. For each query, please output f(k,a,l,r).\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 5·10^4).\n\nThe following line contains n integers a_1,a_2,…,a_n (2 ≤ a_i ≤ 10^5).\n\nThe following q lines each contain three integers k, l, and r (1 ≤ k ≤ 10^5, 1 ≤ l ≤ r ≤ n).\n\nIt is guaranteed that the sum of n does not exceed 10^5 over all test cases, and the sum of q does not exceed 5·10^4 over all test cases.\n\nFor each query, output the answer on a new line.\n\nInput:\n```\n25 32 3 5 7 112 1 52 2 42310 1 54 318 12 8 9216 1 248 2 482944 1 4\n```\n\nOutput:\n```\n5\n6\n1629\n13\n12\n520\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 5·10^4).\n\nThe following line contains n integers a_1,a_2,…,a_n (2 ≤ a_i ≤ 10^5).\n\nThe following q lines each contain three integers k, l, and r (1 ≤ k ≤ 10^5, 1 ≤ l ≤ r ≤ n).\n\nIt is guaranteed that the sum of n does not exceed 10^5 over all test cases, and the sum of q does not exceed 5·10^4 over all test cases.",
+    "output": "For each query, output the answer on a new line.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

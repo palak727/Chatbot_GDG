@@ -1,0 +1,16 @@
+{
+    "id": "1669A",
+    "contest_id": 1669,
+    "problem_letter": "A",
+    "title": "A. Division?",
+    "statement": "Codeforces separates its users into 4 divisions by their rating:\n\nGiven a rating, print in which division the rating belongs.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe description of each test case consists of one line containing one integer rating (-5000 ≤ rating ≤ 5000).\n\nFor each test case, output a single line containing the correct division in the format \"Division X\", where X is an integer between 1 and 4 representing the division for the corresponding rating.\n\nFor test cases 1-4, the corresponding ratings are -789, 1299, 1300, 1399, so all of them are in division 4.\n\nFor the fifth test case, the corresponding rating is 1400, so it is in division 3.\n\nFor the sixth test case, the corresponding rating is 1679, so it is in division 2.\n\nFor the seventh test case, the corresponding rating is 2300, so it is in division 1.\n\nInput:\n```\n7-789129913001399140016792300\n```\n\nOutput:\n```\nDivision 4Division 4Division 4Division 4Division 3Division 2Division 1\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe description of each test case consists of one line containing one integer rating (-5000 ≤ rating ≤ 5000).",
+    "output": "For each test case, output a single line containing the correct division in the format \"Division X\", where X is an integer between 1 and 4 representing the division for the corresponding rating.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

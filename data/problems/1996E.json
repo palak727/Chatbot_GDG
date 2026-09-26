@@ -1,0 +1,19 @@
+{
+    "id": "1996E",
+    "contest_id": 1996,
+    "problem_letter": "E",
+    "title": "E. Decode",
+    "statement": "In a desperate attempt to obtain your waifu favorite character, you have hacked into the source code of the game. After days of struggling, you finally find the binary string that encodes the gacha system of the game. In order to decode it, you must first solve the following problem.\n\nYou are given a binary string s of length n. For each pair of integers (l, r) (1 ≤ l ≤ r ≤ n), count the number of pairs (x, y) (l ≤ x ≤ y ≤ r) such that the amount of mathtt0 equals the amount of mathtt1 in the substring s_xs_{x+1}...s_y.\n\nOutput the sum of counts over all possible (l, r) modulo 10^9+7.\n\nThe first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case contains a binary string s (1 ≤ |s| ≤ 2·10^5). It is guaranteed s only contains characters mathtt0 and mathtt1.\n\nIt is guaranteed the sum of |s| over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer, the answer modulo 10^9+7.\n\nInput:\n```\n4000001010101110011100111000000111\n```\n\nOutput:\n```\n0\n130\n147\n70\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case contains a binary string s (1 ≤ |s| ≤ 2·10^5). It is guaranteed s only contains characters mathtt0 and mathtt1.\n\nIt is guaranteed the sum of |s| over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer, the answer modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "implementation",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1927F",
+    "contest_id": 1927,
+    "problem_letter": "F",
+    "title": "F. Microcycle",
+    "statement": "Given an undirected weighted graph with n vertices and m edges. There is at most one edge between each pair of vertices in the graph, and the graph does not contain loops (edges from a vertex to itself). The graph is not necessarily connected.\n\nA cycle in the graph is called simple if it doesn't pass through the same vertex twice and doesn't contain the same edge twice.\n\nFind any simple cycle in this graph in which the weight of the lightest edge is minimal.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follow the descriptions of the test cases.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ m ≤ min((n·(n - 1))/2, 2·10^5)) — the size of the graph and the number of edges.\n\nThe next m lines of the test case contain three integers u, v, and w (1 ≤ u, v ≤ n, u ≠ v, 1 ≤ w ≤ 10^6) — vertices u and v are connected by an edge of weight w.\n\nIt is guaranteed that there is at most one edge between each pair of vertices. Note that under the given constraints, there is always at least one simple cycle in the graph.\n\nIt is guaranteed that the sum of the values of m for all test cases does not exceed 2·10^5.\n\nFor each test case, output a pair of numbers b and k, where:\n\nOn the next line, output k numbers from 1 to n — the vertices of the cycle in traversal order.\n\nNote that the answer always exists, as under the given constraints, there is always at least one simple cycle in the graph.\n\nInput:\n```\n56 61 2 12 3 13 1 14 5 15 6 16 4 16 61 2 102 3 83 1 54 5 1005 6 406 4 36 151 2 45 2 86 1 76 3 106 5 13 2 84 3 45 3 62 6 65 4 54 1 36 4 54 2 13 1 71 5 54 62 3 21 3 101 4 13 4 72 4 51 2 24 52 1 103 1 34 2 61 4 72 3 3\n```\n\nOutput:\n```\n1 3\n1 2 3 \n3 3\n6 4 5 \n1 5\n4 2 1 6 3 \n1 4\n1 4 3 2 \n3 3\n2 3 1 \n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then follow the descriptions of the test cases.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ m ≤ min((n·(n - 1))/2, 2·10^5)) — the size of the graph and the number of edges.\n\nThe next m lines of the test case contain three integers u, v, and w (1 ≤ u, v ≤ n, u ≠ v, 1 ≤ w ≤ 10^6) — vertices u and v are connected by an edge of weight w.\n\nIt is guaranteed that there is at most one edge between each pair of vertices. Note that under the given constraints, there is always at least one simple cycle in the graph.\n\nIt is guaranteed that the sum of the values of m for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a pair of numbers b and k, where:\n\nOn the next line, output k numbers from 1 to n — the vertices of the cycle in traversal order.\n\nNote that the answer always exists, as under the given constraints, there is always at least one simple cycle in the graph.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "implementation",
+        "sortings",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

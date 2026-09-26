@@ -1,0 +1,17 @@
+{
+    "id": "1687F",
+    "contest_id": 1687,
+    "problem_letter": "F",
+    "title": "F. Koishi's Unconscious Permutation",
+    "statement": "Koishi is unconsciously permuting n numbers: 1, 2, …, n.\n\nShe thinks the permutation p is beautiful if s=∑limits_{i=1}^{n-1} [p_i+1=p_{i+1}]. [x] equals to 1 if x holds, or 0 otherwise.\n\nFor each k∈[0,n-1], she wants to know the number of beautiful permutations of length n satisfying k=∑limits_{i=1}^{n-1}[p_i < p_{i+1}].\n\nThere is one line containing two intergers n (1 ≤ n ≤ 250,000) and s (0 ≤ s < n).\n\nPrint one line with n intergers. The i-th integers represents the answer of k=i-1, modulo 998244353.\n\nLet f(p)=∑limits_{i=1}^{n-1}[p_i < p_{i+1}].\n\nTestcase 1:\n\n[2,1] is the only beautiful permutation. And f([2,1])=0.\n\nTestcase 2:\n\nBeautiful permutations:\n\n[1,2,4,3], [1,3,4,2], [1,4,2,3], [2,1,3,4], [2,3,1,4], [3,1,2,4], [3,4,2,1], [4,2,3,1], [4,3,1,2]. The first six of them satisfy f(p)=2, while others satisfy f(p)=1.\n\nInput:\n```\n2 0\n```\n\nOutput:\n```\n1 0\n```\n\nInput:\n```\n4 1\n```\n\nOutput:\n```\n0 3 6 0\n```\n\nInput:\n```\n8 3\n```\n\nOutput:\n```\n0 0 0 35 770 980 70 0\n```",
+    "input": "There is one line containing two intergers n (1 ≤ n ≤ 250,000) and s (0 ≤ s < n).",
+    "output": "Print one line with n intergers. The i-th integers represents the answer of k=i-1, modulo 998244353.",
+    "time_limit": "12 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "fft",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

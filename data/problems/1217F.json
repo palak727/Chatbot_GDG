@@ -1,0 +1,20 @@
+{
+    "id": "1217F",
+    "contest_id": 1217,
+    "problem_letter": "F",
+    "title": "F. Forced Online Queries Problem",
+    "statement": "You are given an undirected graph with n vertices numbered from 1 to n. Initially there are no edges.\n\nYou are asked to perform some queries on the graph. Let last be the answer to the latest query of the second type, it is set to 0 before the first such query. Then the queries are the following:\n\nGood luck!\n\nThe first line contains two integer numbers n and m (2 ≤ n, m ≤ 2·10^5) — the number of vertices and the number of queries, respectively.\n\nEach of the following m lines contains a query of one of two aforementioned types. It is guaranteed that there is at least one query of the second type.\n\nPrint a string, consisting of characters '0' and '1'. The i-th character should be the answer to the i-th query of the second type. Therefore the length of the string should be equal to the number of queries of the second type.\n\nThe converted queries in the first example are:\n\nThe converted queries in the second example are:\n\nInput:\n```\n5 9\n1 1 2\n1 1 3\n2 3 2\n1 2 4\n2 3 4\n1 2 4\n2 3 4\n1 1 3\n2 4 3\n```\n\nOutput:\n```\n1010\n```\n\nInput:\n```\n3 9\n1 1 2\n1 2 3\n1 3 1\n2 1 3\n1 3 2\n2 2 3\n1 1 2\n2 1 2\n2 1 2\n```\n\nOutput:\n```\n1101\n```",
+    "input": "The first line contains two integer numbers n and m (2 ≤ n, m ≤ 2·10^5) — the number of vertices and the number of queries, respectively.\n\nEach of the following m lines contains a query of one of two aforementioned types. It is guaranteed that there is at least one query of the second type.",
+    "output": "Print a string, consisting of characters '0' and '1'. The i-th character should be the answer to the i-th query of the second type. Therefore the length of the string should be equal to the number of queries of the second type.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

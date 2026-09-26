@@ -1,0 +1,16 @@
+{
+    "id": "1701A",
+    "contest_id": 1701,
+    "problem_letter": "A",
+    "title": "A. Grass Field",
+    "statement": "There is a field of size 2 × 2. Each cell of this field can either contain grass or be empty. The value a_{i, j} is 1 if the cell (i, j) contains grass, or 0 otherwise.\n\nIn one move, you can choose one row and one column and cut all the grass in this row and this column. In other words, you choose the row x and the column y, then you cut the grass in all cells a_{x, i} and all cells a_{i, y} for all i from 1 to 2. After you cut the grass from a cell, it becomes empty (i. e. its value is replaced by 0).\n\nYour task is to find the minimum number of moves required to cut the grass in all non-empty cells of the field (i. e. make all a_{i, j} zeros).\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 16) — the number of test cases. Then t test cases follow.\n\nThe test case consists of two lines, each of these lines contains two integers. The j-th integer in the i-th row is a_{i, j}. If a_{i, j} = 0 then the cell (i, j) is empty, and if a_{i, j} = 1 the cell (i, j) contains grass.\n\nFor each test case, print one integer — the minimum number of moves required to cut the grass in all non-empty cells of the field (i. e. make all a_{i, j} zeros) in the corresponding test case.\n\nInput:\n```\n30 00 01 00 11 11 1\n```\n\nOutput:\n```\n0\n1\n2\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 16) — the number of test cases. Then t test cases follow.\n\nThe test case consists of two lines, each of these lines contains two integers. The j-th integer in the i-th row is a_{i, j}. If a_{i, j} = 0 then the cell (i, j) is empty, and if a_{i, j} = 1 the cell (i, j) contains grass.",
+    "output": "For each test case, print one integer — the minimum number of moves required to cut the grass in all non-empty cells of the field (i. e. make all a_{i, j} zeros) in the corresponding test case.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

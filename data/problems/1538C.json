@@ -1,0 +1,19 @@
+{
+    "id": "1538C",
+    "contest_id": 1538,
+    "problem_letter": "C",
+    "title": "C. Number of Pairs",
+    "statement": "You are given an array a of n integers. Find the number of pairs (i, j) (1 ≤ i < j ≤ n) where the sum of a_i + a_j is greater than or equal to l and less than or equal to r (that is, l ≤ a_i + a_j ≤ r).\n\nFor example, if n = 3, a = [5, 1, 2], l = 4 and r = 7, then two pairs are suitable:\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nThe first line of each test case contains three integers n, l, r (1 ≤ n ≤ 2·10^5, 1 ≤ l ≤ r ≤ 10^9) — the length of the array and the limits on the sum in the pair.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n overall test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of index pairs (i, j) (i < j), such that l ≤ a_i + a_j ≤ r.\n\nInput:\n```\n4\n3 4 7\n5 1 2\n5 5 8\n5 1 2 4 3\n4 100 1000\n1 1 1 1\n5 9 13\n2 5 5 1 1\n```\n\nOutput:\n```\n2\n7\n0\n1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nThe first line of each test case contains three integers n, l, r (1 ≤ n ≤ 2·10^5, 1 ≤ l ≤ r ≤ 10^9) — the length of the array and the limits on the sum in the pair.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n overall test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of index pairs (i, j) (i < j), such that l ≤ a_i + a_j ≤ r.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "math",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

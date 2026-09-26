@@ -1,0 +1,19 @@
+{
+    "id": "1601F",
+    "contest_id": 1601,
+    "problem_letter": "F",
+    "title": "F. Two Sorts",
+    "statement": "Integers from 1 to n (inclusive) were sorted lexicographically (considering integers as strings). As a result, array a_1, a_2, …, a_n was obtained.\n\nCalculate value of (∑_{i = 1}^n ((i - a_i) mod 998244353)) mod 10^9 + 7.\n\nx mod y here means the remainder after division x by y. This remainder is always non-negative and doesn't exceed y - 1. For example, 5 mod 3 = 2, (-1) mod 6 = 5.\n\nThe first line contains the single integer n (1 ≤ n ≤ 10^12).\n\nPrint one integer — the required sum.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nFor example, 42 is lexicographically smaller than 6, because they differ in the first digit, and 4 < 6; 42 < 420, because 42 is a prefix of 420.\n\nLet's denote 998244353 as M.\n\nIn the first example, array a is equal to [1, 2, 3].\n\nAs a result, (0 + 0 + 0) mod 10^9 + 7 = 0\n\nIn the second example, array a is equal to [1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9].\n\nAs a result, (0 + 998244345 + 998244345 + 998244345 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3) mod 10^9 + 7 = 2994733059 mod 10^9 + 7 = 994733045\n\nInput:\n```\n3\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n12\n```\n\nOutput:\n```\n994733045\n```\n\nInput:\n```\n21\n```\n\nOutput:\n```\n978932159\n```\n\nInput:\n```\n1000000000000\n```\n\nOutput:\n```\n289817887\n```",
+    "input": "The first line contains the single integer n (1 ≤ n ≤ 10^12).",
+    "output": "Print one integer — the required sum.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "dfs and similar",
+        "math",
+        "meet-in-the-middle",
+        "*3400"
+    ],
+    "rating": 3400
+}

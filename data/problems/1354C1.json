@@ -1,0 +1,19 @@
+{
+    "id": "1354C1",
+    "contest_id": 1354,
+    "problem_letter": "C1",
+    "title": "C1. Simple Polygon Embedding",
+    "statement": "The statement of this problem is the same as the statement of problem C2. The only difference is that, in problem C1, n is always even, and in C2, n is always odd.\n\nYou are given a regular polygon with 2·n vertices (it's convex and has equal sides and equal angles) and all its sides have length 1. Let's name it as 2n-gon.\n\nYour task is to find the square of the minimum size such that you can embed 2n-gon in the square. Embedding 2n-gon in the square means that you need to place 2n-gon in the square in such way that each point which lies inside or on a border of 2n-gon should also lie inside or on a border of the square.\n\nYou can rotate 2n-gon and/or the square.\n\nThe first line contains a single integer T (1 ≤ T ≤ 200) — the number of test cases.\n\nNext T lines contain descriptions of test cases — one per line. Each line contains single even integer n (2 ≤ n ≤ 200). Don't forget you need to embed 2n-gon, not an n-gon.\n\nPrint T real numbers — one per test case. For each test case, print the minimum length of a side of the square 2n-gon can be embedded in. Your answer will be considered correct if its absolute or relative error doesn't exceed 10^{-6}.\n\nInput:\n```\n3\n2\n4\n200\n```\n\nOutput:\n```\n1.000000000\n2.414213562\n127.321336469\n```",
+    "input": "The first line contains a single integer T (1 ≤ T ≤ 200) — the number of test cases.\n\nNext T lines contain descriptions of test cases — one per line. Each line contains single even integer n (2 ≤ n ≤ 200). Don't forget you need to embed 2n-gon, not an n-gon.",
+    "output": "Print T real numbers — one per test case. For each test case, print the minimum length of a side of the square 2n-gon can be embedded in. Your answer will be considered correct if its absolute or relative error doesn't exceed 10^{-6}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "geometry",
+        "math",
+        "ternary search",
+        "*1400"
+    ],
+    "rating": 1400
+}

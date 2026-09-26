@@ -1,0 +1,17 @@
+{
+    "id": "2020B",
+    "contest_id": 2020,
+    "problem_letter": "B",
+    "title": "B. Brightness Begins",
+    "statement": "Imagine you have n light bulbs numbered 1, 2, …, n. Initially, all bulbs are on. To flip the state of a bulb means to turn it off if it used to be on, and to turn it on otherwise.\n\nNext, you do the following:\n\nAfter performing all operations, there will be several bulbs that are still on. Your goal is to make this number exactly k.\n\nFind the smallest suitable n such that after performing the operations there will be exactly k bulbs on. We can show that an answer always exists.\n\n^dagger An integer x is divisible by y if there exists an integer z such that x = y·z.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer k (1 ≤ k ≤ 10^18).\n\nFor each test case, output n — the minimum number of bulbs.\n\nIn the first test case, the minimum number of bulbs is 2. Let's denote the state of all bulbs with an array, where 1 corresponds to a turned on bulb, and 0 corresponds to a turned off bulb. Initially, the array is [1, 1].\n\nIn the end, there are k = 1 bulbs on. We can also show that the answer cannot be less than 2.\n\nIn the second test case, the minimum number of bulbs is 5. Initially, the array is [1, 1, 1, 1, 1].\n\nIn the end, there are k = 3 bulbs on. We can also show that the answer cannot be smaller than 5.\n\nInput:\n```\n3138\n```\n\nOutput:\n```\n2\n5\n11\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer k (1 ≤ k ≤ 10^18).",
+    "output": "For each test case, output n — the minimum number of bulbs.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

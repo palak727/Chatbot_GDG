@@ -1,0 +1,18 @@
+{
+    "id": "1979A",
+    "contest_id": 1979,
+    "problem_letter": "A",
+    "title": "A. Guess the Maximum",
+    "statement": "Alice and Bob came up with a rather strange game. They have an array of integers a_1, a_2,…, a_n. Alice chooses a certain integer k and tells it to Bob, then the following happens:\n\nHelp Alice find the maximum k at which she is guaranteed to win.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^4) — the number of elements in the array.\n\nThe second line of each test case contains n integers a_1, a_2,…, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.\n\nFor each test case, output one integer — the maximum integer k at which Alice is guaranteed to win.\n\nIn the first test case, all possible subsegments that Bob can choose look as follows: [2, 4], [2, 4, 1], [2, 4, 1, 7], [4, 1], [4, 1, 7], [1, 7]. The maximums on the subsegments are respectively equal to 4, 4, 7, 4, 7, 7. It can be shown that 3 is the largest integer such that any of the maximums will be strictly greater than it.\n\nIn the third test case, the only segment that Bob can choose is [1, 1]. So the answer is 0.\n\nInput:\n```\n642 4 1 751 2 3 4 521 1337 8 16510 10 10 10 9103 12 9 5 2 3 2 9 8 2\n```\n\nOutput:\n```\n3\n1\n0\n15\n9\n2\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 5·10^4) — the number of elements in the array.\n\nThe second line of each test case contains n integers a_1, a_2,…, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^4.",
+    "output": "For each test case, output one integer — the maximum integer k at which Alice is guaranteed to win.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2044G1",
+    "contest_id": 2044,
+    "problem_letter": "G1",
+    "title": "G1. Medium Demon Problem (easy version)",
+    "statement": "This is the easy version of the problem. The key difference between the two versions is highlighted in bold.\n\nA group of n spiders has come together to exchange plushies. Initially, each spider has 1 plushie. Every year, if spider i has at least one plushie, he will give exactly one plushie to spider r_i. Otherwise, he will do nothing. Note that all plushie transfers happen at the same time. In this version, if any spider has more than 1 plushie at any point in time, they will throw all but 1 away.\n\nThe process is stable in the current year if each spider has the same number of plushies (before the current year's exchange) as he did the previous year (before the previous year's exchange). Note that year 1 can never be stable.\n\nFind the first year in which the process becomes stable.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the number of spiders.\n\nThe following line contains n integers r_1, r_2, …, r_n (1 ≤ r_i ≤ n, r_i ≠ i) — the recipient of the plushie of each spider.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer on a new line, the first year in which the process becomes stable.\n\nFor the second test case:\n\nFor the third test case:\n\nInput:\n```\n522 152 3 4 5 152 1 4 2 354 1 1 5 4104 3 9 1 6 7 9 10 10 3\n```\n\nOutput:\n```\n2\n2\n5\n4\n5\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10^5) — the number of spiders.\n\nThe following line contains n integers r_1, r_2, …, r_n (1 ≤ r_i ≤ n, r_i ≠ i) — the recipient of the plushie of each spider.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer on a new line, the first year in which the process becomes stable.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "graph matchings",
+        "graphs",
+        "implementation",
+        "trees",
+        "*1700"
+    ],
+    "rating": 1700
+}

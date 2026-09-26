@@ -1,0 +1,17 @@
+{
+    "id": "1276D",
+    "contest_id": 1276,
+    "problem_letter": "D",
+    "title": "D. Tree Elimination",
+    "statement": "Vasya has a tree with n vertices numbered from 1 to n, and n - 1 edges numbered from 1 to n - 1. Initially each vertex contains a token with the number of the vertex written on it.\n\nVasya plays a game. He considers all edges of the tree by increasing of their indices. For every edge he acts as follows:\n\nThe result of the game is the sequence of numbers Vasya has written down. Note that there may be many possible resulting sequences depending on the choice of endpoints when tokens are removed.\n\nVasya has played for such a long time that he thinks he exhausted all possible resulting sequences he can obtain. He wants you to verify him by computing the number of distinct sequences modulo 998,244,353.\n\nThe first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices of the tree.\n\nThe next n - 1 lines describe edges of the tree. The i-th of these lines contains two integers u_i, v_i (1 ≤ u_i, v_i ≤ n) — endpoints of the edge with index i. It is guaranteed that the given graph is indeed a tree.\n\nPrint a single integer — the number of distinct sequences modulo 998,244,353.\n\nIn the first sample case the distinct sequences are (1), (2, 1), (2, 3, 1), (2, 3, 4, 1), (2, 3, 4, 5).\n\nInt the second sample case the distinct sequences are (2, 6, 5, 3), (2, 6, 5, 7), (2, 6, 7, 2), (2, 6, 7, 5), (2, 7, 3), (2, 7, 5), (7, 1, 3), (7, 1, 5), (7, 2, 3), (7, 2, 5).\n\nInput:\n```\n5\n1 2\n1 3\n1 4\n1 5\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n7\n7 2\n7 6\n1 2\n7 5\n4 7\n3 5\n```\n\nOutput:\n```\n10\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices of the tree.\n\nThe next n - 1 lines describe edges of the tree. The i-th of these lines contains two integers u_i, v_i (1 ≤ u_i, v_i ≤ n) — endpoints of the edge with index i. It is guaranteed that the given graph is indeed a tree.",
+    "output": "Print a single integer — the number of distinct sequences modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "trees",
+        "*2900"
+    ],
+    "rating": 2900
+}

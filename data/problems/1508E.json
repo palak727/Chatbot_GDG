@@ -1,0 +1,21 @@
+{
+    "id": "1508E",
+    "contest_id": 1508,
+    "problem_letter": "E",
+    "title": "E. Tree Calendar",
+    "statement": "Yuu Koito and Touko Nanami are newlyweds! On the wedding day, Yuu gifted Touko a directed tree with n nodes and rooted at 1, and a labeling a which is some DFS order of the tree. Every edge in this tree is directed away from the root.\n\nAfter calling dfs(1) the following algorithm returns a as a DFS order of a tree rooted at 1 :\n\n```\norder := 0\na := array of length n \n\nfunction dfs(u):\n    order := order + 1\n    a[u] := order\n    for all v such that there is a directed edge (u -> v):\n        dfs(v)\n```\n\nNote that there may be different DFS orders for a given tree.\n\nTouko likes the present so much she decided to play with it! On each day following the wedding day, Touko performs this procedure once:\n\nDays have passed since their wedding, and Touko has somehow forgotten which date the wedding was and what was the original labeling a! Fearing that Yuu might get angry, Touko decided to ask you to derive these two pieces of information using the current labeling.\n\nBeing her good friend, you need to find the number of days that have passed since the wedding, and the original labeling of the tree. However, there is a chance that Touko might have messed up her procedures, which result in the current labeling being impossible to obtain from some original labeling; in that case, please inform Touko as well.\n\nThe first line of the input contains an integer n (2 ≤ n ≤ 3·10^5) — the number of nodes on the tree.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n, all a_i are distinct) — the current labeling of the tree.\n\nEach of the next n - 1 lines contains two integers u_i and v_i (1 ≤ u, v ≤ n, u ≠ v), describing an directed edge from u_i to v_i. The edges form a directed tree rooted at 1.\n\nIf the current labeling is impossible to arrive at from any DFS order, print NO.\n\nElse, on the first line, print YES. On the second line, print a single integer denoting the number of days since the wedding. On the third line, print n numbers space-separated denoting the original labeling of the tree.\n\nIf there are multiple correct outputs, print any. This means: you are allowed to output any pair (DFS order, number of days), such that we get the current configuration from the DFS order you provided in exactly the number of days you provided.\n\nThe following animation showcases the first sample test case. The white label inside the node represents the index of the node i, while the boxed orange label represents the value a_i.\n\nInput:\n```\n7\n4 5 2 1 7 6 3\n1 5\n7 6\n1 2\n2 7\n3 4\n1 3\n```\n\nOutput:\n```\nYES\n5\n1 4 2 3 7 6 5\n```\n\nInput:\n```\n7\n7 6 5 3 1 4 2\n4 3\n2 5\n3 7\n1 4\n7 2\n2 6\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line of the input contains an integer n (2 ≤ n ≤ 3·10^5) — the number of nodes on the tree.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ n, all a_i are distinct) — the current labeling of the tree.\n\nEach of the next n - 1 lines contains two integers u_i and v_i (1 ≤ u, v ≤ n, u ≠ v), describing an directed edge from u_i to v_i. The edges form a directed tree rooted at 1.",
+    "output": "If the current labeling is impossible to arrive at from any DFS order, print NO.\n\nElse, on the first line, print YES. On the second line, print a single integer denoting the number of days since the wedding. On the third line, print n numbers space-separated denoting the original labeling of the tree.\n\nIf there are multiple correct outputs, print any. This means: you are allowed to output any pair (DFS order, number of days), such that we get the current configuration from the DFS order you provided in exactly the number of days you provided.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "sortings",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

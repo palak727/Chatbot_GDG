@@ -1,0 +1,15 @@
+{
+    "id": "1145F",
+    "contest_id": 1145,
+    "problem_letter": "F",
+    "title": "F. Neat Words",
+    "statement": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.\n\nOutput \"YES\" or \"NO\".\n\nInput:\n```\nNEAT\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nWORD\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nCODER\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nAPRILFOOL\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\nAI\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nJUROR\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\nYES\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The input consists of a single string of uppercase letters A-Z. The length of the string is between 1 and 10 characters, inclusive.",
+    "output": "Output \"YES\" or \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

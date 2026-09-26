@@ -1,0 +1,18 @@
+{
+    "id": "1446A",
+    "contest_id": 1446,
+    "problem_letter": "A",
+    "title": "A. Knapsack",
+    "statement": "You have a knapsack with the capacity of W. There are also n items, the i-th one has weight w_i.\n\nYou want to put some of these items into the knapsack in such a way that their total weight C is at least half of its size, but (obviously) does not exceed it. Formally, C should satisfy: lceil W/2rceil ≤ C ≤ W.\n\nOutput the list of items you will put into the knapsack or determine that fulfilling the conditions is impossible.\n\nIf there are several possible lists of items satisfying the conditions, you can output any. Note that you don't have to maximize the sum of weights of items in the knapsack.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains integers n and W (1 ≤ n ≤ 200,000, 1≤ W ≤ 10^18).\n\nThe second line of each test case contains n integers w_1, w_2, …, w_n (1 ≤ w_i ≤ 10^9) — weights of the items.\n\nThe sum of n over all test cases does not exceed 200,000.\n\nFor each test case, if there is no solution, print a single integer -1.\n\nIf there exists a solution consisting of m items, print m in the first line of the output and m integers j_1, j_2, ..., j_m (1 ≤ j_i ≤ n, all j_i are distinct) in the second line of the output — indices of the items you would like to pack into the knapsack.\n\nIf there are several possible lists of items satisfying the conditions, you can output any. Note that you don't have to maximize the sum of weights items in the knapsack.\n\nIn the first test case, you can take the item of weight 3 and fill the knapsack just right.\n\nIn the second test case, all the items are larger than the knapsack's capacity. Therefore, the answer is -1.\n\nIn the third test case, you fill the knapsack exactly in half.\n\nInput:\n```\n3\n1 3\n3\n6 2\n19 8 19 69 9 4\n7 12\n1 1 1 17 1 1 1\n```\n\nOutput:\n```\n1\n1\n-1\n6\n1 2 3 5 6 7\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains integers n and W (1 ≤ n ≤ 200,000, 1≤ W ≤ 10^18).\n\nThe second line of each test case contains n integers w_1, w_2, …, w_n (1 ≤ w_i ≤ 10^9) — weights of the items.\n\nThe sum of n over all test cases does not exceed 200,000.",
+    "output": "For each test case, if there is no solution, print a single integer -1.\n\nIf there exists a solution consisting of m items, print m in the first line of the output and m integers j_1, j_2, ..., j_m (1 ≤ j_i ≤ n, all j_i are distinct) in the second line of the output — indices of the items you would like to pack into the knapsack.\n\nIf there are several possible lists of items satisfying the conditions, you can output any. Note that you don't have to maximize the sum of weights items in the knapsack.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

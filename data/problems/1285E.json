@@ -1,0 +1,23 @@
+{
+    "id": "1285E",
+    "contest_id": 1285,
+    "problem_letter": "E",
+    "title": "E. Delete a Segment",
+    "statement": "There are n segments on a Ox axis [l_1, r_1], [l_2, r_2], ..., [l_n, r_n]. Segment [l, r] covers all points from l to r inclusive, so all x such that l ≤ x ≤ r.\n\nSegments can be placed arbitrarily — be inside each other, coincide and so on. Segments can degenerate into points, that is l_i=r_i is possible.\n\nUnion of the set of segments is such a set of segments which covers exactly the same set of points as the original set. For example:\n\nObviously, a union is a set of pairwise non-intersecting segments.\n\nYou are asked to erase exactly one segment of the given n so that the number of segments in the union of the rest n-1 segments is maximum possible.\n\nFor example, if n=4 and there are segments [1, 4], [2, 3], [3, 6], [5, 7], then:\n\nThus, you are required to erase the third segment to get answer 2.\n\nWrite a program that will find the maximum number of segments in the union of n-1 segments if you erase any of the given n segments.\n\nNote that if there are multiple equal segments in the given set, then you can erase only one of them anyway. So the set after erasing will have exactly n-1 segments.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test. Then the descriptions of t test cases follow.\n\nThe first of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of segments in the given set. Then n lines follow, each contains a description of a segment — a pair of integers l_i, r_i (-10^9 ≤ l_i ≤ r_i ≤ 10^9), where l_i and r_i are the coordinates of the left and right borders of the i-th segment, respectively.\n\nThe segments are given in an arbitrary order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nPrint t integers — the answers to the t given test cases in the order of input. The answer is the maximum number of segments in the union of n-1 segments if you erase any of the given n segments.\n\nInput:\n```\n3\n4\n1 4\n2 3\n3 6\n5 7\n3\n5 5\n5 5\n5 5\n6\n3 3\n1 1\n5 5\n1 5\n2 2\n4 4\n```\n\nOutput:\n```\n2\n1\n5\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test. Then the descriptions of t test cases follow.\n\nThe first of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of segments in the given set. Then n lines follow, each contains a description of a segment — a pair of integers l_i, r_i (-10^9 ≤ l_i ≤ r_i ≤ 10^9), where l_i and r_i are the coordinates of the left and right borders of the i-th segment, respectively.\n\nThe segments are given in an arbitrary order.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "Print t integers — the answers to the t given test cases in the order of input. The answer is the maximum number of segments in the union of n-1 segments if you erase any of the given n segments.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "graphs",
+        "sortings",
+        "trees",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1521D",
+    "contest_id": 1521,
+    "problem_letter": "D",
+    "title": "D. Nastia Plays with a Tree",
+    "statement": "Nastia has an unweighted tree with n vertices and wants to play with it!\n\nThe girl will perform the following operation with her tree, as long as she needs:\n\nWhat is the minimum number of operations Nastia needs to get a bamboo from a tree? A bamboo is a tree in which no node has a degree greater than 2.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nNext n - 1 lines of each test cases describe the edges of the tree in form a_i, b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i).\n\nIt's guaranteed the given graph is a tree and the sum of n in one test doesn't exceed 2·10^5.\n\nFor each test case in the first line print a single integer k — the minimum number of operations required to obtain a bamboo from the initial tree.\n\nIn the next k lines print 4 integers x_1, y_1, x_2, y_2 (1 ≤ x_1, y_1, x_2, y_2 ≤ n, x_1 ≠ y_1, x_2 ≠ y_2) — this way you remove the edge (x_1, y_1) and add an undirected edge (x_2, y_2).\n\nNote that the edge (x_1, y_1) must be present in the graph at the moment of removing.\n\nNote the graph can be unconnected after a certain operation.\n\nConsider the first test case of the example:\n\nInput:\n```\n2\n7\n1 2\n1 3\n2 4\n2 5\n3 6\n3 7\n4\n1 2\n1 3\n3 4\n```\n\nOutput:\n```\n2\n2 5 6 7\n3 6 4 5\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nNext n - 1 lines of each test cases describe the edges of the tree in form a_i, b_i (1 ≤ a_i, b_i ≤ n, a_i ≠ b_i).\n\nIt's guaranteed the given graph is a tree and the sum of n in one test doesn't exceed 2·10^5.",
+    "output": "For each test case in the first line print a single integer k — the minimum number of operations required to obtain a bamboo from the initial tree.\n\nIn the next k lines print 4 integers x_1, y_1, x_2, y_2 (1 ≤ x_1, y_1, x_2, y_2 ≤ n, x_1 ≠ y_1, x_2 ≠ y_2) — this way you remove the edge (x_1, y_1) and add an undirected edge (x_2, y_2).\n\nNote that the edge (x_1, y_1) must be present in the graph at the moment of removing.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

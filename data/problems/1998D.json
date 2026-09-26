@@ -1,0 +1,20 @@
+{
+    "id": "1998D",
+    "contest_id": 1998,
+    "problem_letter": "D",
+    "title": "D. Determine Winning Islands in Race",
+    "statement": "Two of Farmer John's cows, Bessie and Elsie, are planning to race on n islands. There are n - 1 main bridges, connecting island i to island i + 1 for all 1 ≤ i ≤ n - 1. Additionally, there are m alternative bridges. Elsie can use both main and alternative bridges, while Bessie can only use main bridges. All bridges are one way and can only be used to travel from an island with a lower index to an island with a higher index.\n\nInitially, Elsie starts on island 1, and Bessie starts on island s. The cows alternate turns, with Bessie making the first turn. Suppose the cow is on island i. During a cow's turn, if there are any bridges connecting island i to island j, then the cow can move to island j. Then, island i collapses, and all bridges connecting to island i also collapse. Also, note the following:\n\nThe race ends once either cow reaches island n. It can be shown that regardless of the cows' strategies, at least one cow reaches island n. Bessie wins if and only if she reaches island n first.\n\nFor each 1 ≤ s ≤ n - 1, determine whether Bessie wins if she starts the race on island s. Assume both cows follow optimal strategies to ensure their own respective victories.\n\nThe first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) – the number of islands and the number of alternative bridges.\n\nThe next m lines of each test case contain u and v (1 ≤ u < v ≤ n) – the islands that the alternative bridge connects. It is guaranteed all alternative bridges are distinct, and they do not coincide with the main bridges.\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^5.\n\nFor each test case, output a binary string of length n - 1 on a new line. The i'th character is 1 if it is possible for Bessie to win if she starts on island i. Otherwise, it is 0.\n\nIn the first test case, there are no alternative bridges for Elsie to overtake Bessie and reach island n first, so Bessie will win on all islands because she always moves first.\n\nIn the second case, Bessie will lose if she starts on island 3 because:\n\nInput:\n```\n56 06 12 66 11 510 41 31 62 73 815 32 84 98 15\n```\n\nOutput:\n```\n11111\n11011\n10011\n100001111\n11000111000111\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains n and m (2 ≤ n ≤ 2·10^5, 0 ≤ m ≤ 2·10^5) – the number of islands and the number of alternative bridges.\n\nThe next m lines of each test case contain u and v (1 ≤ u < v ≤ n) – the islands that the alternative bridge connects. It is guaranteed all alternative bridges are distinct, and they do not coincide with the main bridges.\n\nIt is guaranteed that neither the sum of n nor the sum of m over all test cases exceeds 2·10^5.",
+    "output": "For each test case, output a binary string of length n - 1 on a new line. The i'th character is 1 if it is possible for Bessie to win if she starts on island i. Otherwise, it is 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*2100"
+    ],
+    "rating": 2100
+}

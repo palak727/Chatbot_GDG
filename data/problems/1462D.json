@@ -1,0 +1,18 @@
+{
+    "id": "1462D",
+    "contest_id": 1462,
+    "problem_letter": "D",
+    "title": "D. Add to Neighbour and Remove",
+    "statement": "Polycarp was given an array of a[1 … n] of n integers. He can perform the following operation with the array a no more than n times:\n\nThe two items above together denote one single operation.\n\nFor example, if Polycarp has an array a = [3, 1, 6, 6, 2], then it can perform the following sequence of operations with it:\n\nNote that Polycarp could stop performing operations at any time.\n\nPolycarp wondered how many minimum operations he would need to perform to make all the elements of a equal (i.e., he wants all a_i are equal to each other).\n\nThe first line contains a single integer t (1 ≤ t ≤ 3000) — the number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3000) — the length of the array. The next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3000.\n\nFor each test case, output a single number — the minimum number of operations that Polycarp needs to perform so that all elements of the a array are the same (equal).\n\nIn the first test case of the example, the answer can be constructed like this (just one way among many other ways):\n\n[3, 1, 6, 6, 2] xrightarrow[]i=4,~add~to~left [3, 1, 12, 2] xrightarrow[]i=2,~add~to~right [3, 13, 2] xrightarrow[]i=1,~add~to~right [16, 2] xrightarrow[]i=2,~add~to~left [18]. All elements of the array [18] are the same.\n\nIn the second test case of the example, the answer can be constructed like this (just one way among other ways):\n\n[1, 2, 2, 1] xrightarrow[]i=1,~add~to~right [3, 2, 1] xrightarrow[]i=3,~add~to~left [3, 3]. All elements of the array [3, 3] are the same.\n\nIn the third test case of the example, Polycarp doesn't need to perform any operations since [2, 2, 2] contains equal (same) elements only.\n\nIn the fourth test case of the example, the answer can be constructed like this (just one way among other ways):\n\n[6, 3, 2, 1] xrightarrow[]i=3,~add~to~right [6, 3, 3] xrightarrow[]i=3,~add~to~left [6, 6]. All elements of the array [6, 6] are the same.\n\nInput:\n```\n4\n5\n3 1 6 6 2\n4\n1 2 2 1\n3\n2 2 2\n4\n6 3 2 1\n```\n\nOutput:\n```\n4\n2\n0\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 3000) — the number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3000) — the length of the array. The next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5) — array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3000.",
+    "output": "For each test case, output a single number — the minimum number of operations that Polycarp needs to perform so that all elements of the a array are the same (equal).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "number theory",
+        "*1400"
+    ],
+    "rating": 1400
+}

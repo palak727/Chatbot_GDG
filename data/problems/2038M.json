@@ -1,0 +1,17 @@
+{
+    "id": "2038M",
+    "contest_id": 2038,
+    "problem_letter": "M",
+    "title": "M. Royal Flush",
+    "statement": "Consider the following game. There is a deck, which consists of cards of n different suits. For each suit, there are 13 cards in the deck, all with different ranks (the ranks are 2, 3, 4, ..., 10, Jack, Queen, King and Ace).\n\nInitially, the deck is shuffled randomly (all (13n)! possible orders of cards have the same probability). You draw 5 topmost cards from the deck. Then, every turn of the game, the following events happen, in the given order:\n\nYour goal is to find a strategy that allows you to win in the minimum expected number of turns. Note that the turn when the game ends is not counted (for example, if the 5 cards you draw initially already form a Royal Flush, you win in 0 turns).\n\nCalculate the minimum possible expected number of turns required to win the game.\n\nThe only line contains one integer n (1 ≤ n ≤ 4) — the number of suits used in the game.\n\nPrint the minimum expected number of turns.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-6}. Formally, let your answer be a, and the jury's answer be b. Your answer will be accepted if and only if (|a - b|)/(max(1, |b|)) ≤ 10^{-6}.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n3.598290598\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n8.067171309\n```",
+    "input": "The only line contains one integer n (1 ≤ n ≤ 4) — the number of suits used in the game.",
+    "output": "Print the minimum expected number of turns.\n\nYour answer will be considered correct if its absolute or relative error does not exceed 10^{-6}. Formally, let your answer be a, and the jury's answer be b. Your answer will be accepted if and only if (|a - b|)/(max(1, |b|)) ≤ 10^{-6}.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "implementation",
+        "*2800"
+    ],
+    "rating": 2800
+}

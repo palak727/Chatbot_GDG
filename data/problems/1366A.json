@@ -1,0 +1,18 @@
+{
+    "id": "1366A",
+    "contest_id": 1366,
+    "problem_letter": "A",
+    "title": "A. Shovels and Swords",
+    "statement": "Polycarp plays a well-known computer game (we won't mention its name). In this game, he can craft tools of two types — shovels and swords. To craft a shovel, Polycarp spends two sticks and one diamond; to craft a sword, Polycarp spends two diamonds and one stick.\n\nEach tool can be sold for exactly one emerald. How many emeralds can Polycarp earn, if he has a sticks and b diamonds?\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (0 ≤ a, b ≤ 10^9) — the number of sticks and the number of diamonds, respectively.\n\nFor each test case print one integer — the maximum number of emeralds Polycarp can earn.\n\nIn the first test case Polycarp can earn two emeralds as follows: craft one sword and one shovel.\n\nIn the second test case Polycarp does not have any diamonds, so he cannot craft anything.\n\nInput:\n```\n4\n4 4\n1000000000 0\n7 15\n8 7\n```\n\nOutput:\n```\n2\n0\n7\n5\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers a and b (0 ≤ a, b ≤ 10^9) — the number of sticks and the number of diamonds, respectively.",
+    "output": "For each test case print one integer — the maximum number of emeralds Polycarp can earn.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

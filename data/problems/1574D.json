@@ -1,0 +1,23 @@
+{
+    "id": "1574D",
+    "contest_id": 1574,
+    "problem_letter": "D",
+    "title": "D. The Strongest Build",
+    "statement": "Ivan is playing yet another roguelike computer game. He controls a single hero in the game. The hero has n equipment slots. There is a list of c_i items for the i-th slot, the j-th of them increases the hero strength by a_{i,j}. The items for each slot are pairwise distinct and are listed in the increasing order of their strength increase. So, a_{i,1} < a_{i,2} < … < a_{i,c_i}.\n\nFor each slot Ivan chooses exactly one item. Let the chosen item for the i-th slot be the b_i-th item in the corresponding list. The sequence of choices [b_1, b_2, …, b_n] is called a build.\n\nThe strength of a build is the sum of the strength increases of the items in it. Some builds are banned from the game. There is a list of m pairwise distinct banned builds. It's guaranteed that there's at least one build that's not banned.\n\nWhat is the build with the maximum strength that is not banned from the game? If there are multiple builds with maximum strength, print any of them.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10) — the number of equipment slots.\n\nThe i-th of the next n lines contains the description of the items for the i-th slot. First, one integer c_i (1 ≤ c_i ≤ 2·10^5) — the number of items for the i-th slot. Then c_i integers a_{i,1}, a_{i,2}, …, a_{i,c_i} (1 ≤ a_{i,1} < a_{i,2} < … < a_{i,c_i} ≤ 10^8).\n\nThe sum of c_i doesn't exceed 2·10^5.\n\nThe next line contains a single integer m (0 ≤ m ≤ 10^5) — the number of banned builds.\n\nEach of the next m lines contains a description of a banned build — a sequence of n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ c_i).\n\nThe builds are pairwise distinct, and there's at least one build that's not banned.\n\nPrint the build with the maximum strength that is not banned from the game. If there are multiple builds with maximum strength, print any of them.\n\nInput:\n```\n3\n3 1 2 3\n2 1 5\n3 2 4 6\n2\n3 2 3\n3 2 2\n```\n\nOutput:\n```\n2 2 3 \n```\n\nInput:\n```\n3\n3 1 2 3\n2 1 5\n3 2 4 6\n2\n3 2 3\n2 2 3\n```\n\nOutput:\n```\n1 2 3\n```\n\nInput:\n```\n3\n3 1 2 3\n2 1 5\n3 2 4 6\n2\n3 2 3\n2 2 3\n```\n\nOutput:\n```\n3 2 2\n```\n\nInput:\n```\n4\n1 10\n1 4\n1 7\n1 3\n0\n```\n\nOutput:\n```\n1 1 1 1 \n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10) — the number of equipment slots.\n\nThe i-th of the next n lines contains the description of the items for the i-th slot. First, one integer c_i (1 ≤ c_i ≤ 2·10^5) — the number of items for the i-th slot. Then c_i integers a_{i,1}, a_{i,2}, …, a_{i,c_i} (1 ≤ a_{i,1} < a_{i,2} < … < a_{i,c_i} ≤ 10^8).\n\nThe sum of c_i doesn't exceed 2·10^5.\n\nThe next line contains a single integer m (0 ≤ m ≤ 10^5) — the number of banned builds.\n\nEach of the next m lines contains a description of a banned build — a sequence of n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ c_i).\n\nThe builds are pairwise distinct, and there's at least one build that's not banned.",
+    "output": "Print the build with the maximum strength that is not banned from the game. If there are multiple builds with maximum strength, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "hashing",
+        "implementation",
+        "*2000"
+    ],
+    "rating": 2000
+}

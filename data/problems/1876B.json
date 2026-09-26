@@ -1,0 +1,18 @@
+{
+    "id": "1876B",
+    "contest_id": 1876,
+    "problem_letter": "B",
+    "title": "B. Effects of Anti Pimples",
+    "statement": "Chaneka has an array [a_1,a_2,…,a_n]. Initially, all elements are white. Chaneka will choose one or more different indices and colour the elements at those chosen indices black. Then, she will choose all white elements whose indices are multiples of the index of at least one black element and colour those elements green. After that, her score is the maximum value of a_i out of all black and green elements.\n\nThere are 2^n-1 ways for Chaneka to choose the black indices. Find the sum of scores for all possible ways Chaneka can choose the black indices. Since the answer can be very big, print the answer modulo 998,244,353.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the size of array a.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (0≤ a_i≤10^5).\n\nAn integer representing the sum of scores for all possible ways Chaneka can choose the black indices, modulo 998,244,353.\n\nIn the first example, below are the 15 possible ways to choose the black indices:\n\nThe total sum is 19+14+19+9+19+19+19+19+14+19+19+19+19+19+19 = 265.\n\nInput:\n```\n4\n19 14 19 9\n```\n\nOutput:\n```\n265\n```\n\nInput:\n```\n1\n0\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n15\n90000 9000 99000 900 90900 9900 99900 90 90090 9090 99090 990 90990 9990 99990\n```\n\nOutput:\n```\n266012571\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the size of array a.\n\nThe second line contains n integers a_1,a_2,a_3,…,a_n (0≤ a_i≤10^5).",
+    "output": "An integer representing the sum of scores for all possible ways Chaneka can choose the black indices, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "number theory",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

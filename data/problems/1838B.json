@@ -1,0 +1,17 @@
+{
+    "id": "1838B",
+    "contest_id": 1838,
+    "problem_letter": "B",
+    "title": "B. Minimize Permutation Subarrays",
+    "statement": "You are given a permutation p of size n. You want to minimize the number of subarrays of p that are permutations. In order to do so, you must perform the following operation exactly once:\n\nFor example, if p = [5, 1, 4, 2, 3] and we choose i = 2, j = 3, the resulting array will be [5, 4, 1, 2, 3]. If instead we choose i = j = 5, the resulting array will be [5, 1, 4, 2, 3].\n\nWhich choice of i and j will minimize the number of subarrays that are permutations?\n\nA permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\nAn array a is a subarray of an array b if a can be obtained from b by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the size of the permutation.\n\nThe next line of each test case contains n integers p_1, p_2, … p_n (1 ≤ p_i ≤ n, all p_i are distinct) — the elements of the permutation p.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output two integers i and j (1 ≤ i, j ≤ n) — the indices to swap in p.\n\nIf there are multiple solutions, print any of them.\n\nFor the first test case, there are four possible arrays after the swap:\n\nFor the third sample case, after we swap elements at positions 2 and 5, the resulting array is [1, 4, 2, 5, 3]. The only subarrays that are permutations are [1] and [1, 4, 2, 5, 3]. We can show that this is minimal.\n\nInput:\n```\n831 2 331 3 251 3 2 5 464 5 6 1 2 398 7 6 3 2 1 4 5 9107 10 5 1 9 8 3 2 6 4108 5 10 9 2 1 3 4 6 7102 3 5 7 10 1 8 6 4 9\n```\n\nOutput:\n```\n2 3\n1 1\n5 2\n1 4\n9 5\n8 8\n6 10\n5 4\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (3 ≤ n ≤ 2·10^5) — the size of the permutation.\n\nThe next line of each test case contains n integers p_1, p_2, … p_n (1 ≤ p_i ≤ n, all p_i are distinct) — the elements of the permutation p.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output two integers i and j (1 ≤ i, j ≤ n) — the indices to swap in p.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

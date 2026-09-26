@@ -1,0 +1,19 @@
+{
+    "id": "2038C",
+    "contest_id": 2038,
+    "problem_letter": "C",
+    "title": "C. DIY",
+    "statement": "You are given a list of n integers a_1, a_2, …, a_n. You need to pick 8 elements from the list and use them as coordinates of four points. These four points should be corners of a rectangle which has its sides parallel to the coordinate axes. Your task is to pick coordinates in such a way that the resulting rectangle has the maximum possible area. The rectangle can be degenerate, i. e. its area can be 0. Each integer can be used as many times as it occurs in the list (or less).\n\nThe first line contains one integer t (1 ≤ t ≤ 25,000) — the number of test cases.\n\nThe first line of each test case contains one integer n (8 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print the answer as follows:\n\nInput:\n```\n316-5 1 1 2 2 3 3 4 4 5 5 6 6 7 7 1080 0 -1 2 2 1 1 380 0 0 0 0 5 0 5\n```\n\nOutput:\n```\nYES\n1 2 1 7 6 2 6 7\nNO\nYES\n0 0 0 5 0 0 0 5\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 25,000) — the number of test cases.\n\nThe first line of each test case contains one integer n (8 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print the answer as follows:",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "greedy",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

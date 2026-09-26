@@ -1,0 +1,20 @@
+{
+    "id": "1676F",
+    "contest_id": 1676,
+    "problem_letter": "F",
+    "title": "F. Longest Strike",
+    "statement": "Given an array a of length n and an integer k, you are tasked to find any two numbers l and r (l ≤ r) such that:\n\nIf no numbers satisfy the conditions, output -1.\n\nFor example, if a=[11, 11, 12, 13, 13, 14, 14] and k=2, then:\n\nA pair of l and r for which the first condition holds and r-l is maximal is l = 13, r = 14.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains the integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n) — the length of the array a and the minimum amount of times each number in the range [l, r] should appear respectively.\n\nThen a single line follows, containing n integers describing the array a (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case output 2 numbers, l and r that satisfy the conditions, or \"-1\" if no numbers satisfy the conditions.\n\nIf multiple answers exist, you can output any.\n\nInput:\n```\n47 211 11 12 13 13 14 145 16 3 5 2 16 44 3 4 3 3 414 21 1 2 2 2 3 3 3 3 4 4 4 4 4\n```\n\nOutput:\n```\n13 14\n1 3\n-1\n1 4\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains the integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n) — the length of the array a and the minimum amount of times each number in the range [l, r] should appear respectively.\n\nThen a single line follows, containing n integers describing the array a (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output 2 numbers, l and r that satisfy the conditions, or \"-1\" if no numbers satisfy the conditions.\n\nIf multiple answers exist, you can output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "sortings",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

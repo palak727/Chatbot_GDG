@@ -1,0 +1,17 @@
+{
+    "id": "2062C",
+    "contest_id": 2062,
+    "problem_letter": "C",
+    "title": "C. Cirno and Operations",
+    "statement": "Cirno has a sequence a of length n. She can perform either of the following two operations for any (possibly, zero) times unless the current length of a is 1:\n\nFind the maximum possible sum of elements of a after all operations.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of input test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 50) — the length of sequence a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (|a_i|≤ 1000) — the sequence a.\n\nFor each test case, print an integer representing the maximum possible sum.\n\nIn the first test case, Cirno can not perform any operation, so the answer is -1000.\n\nIn the second test case, Cirno firstly reverses the sequence, then replaces the sequence with its difference sequence: [5,-3]→[-3,5]→[8]. It can be proven that this maximizes the sum, so the answer is 8.\n\nIn the third test case, Cirno can choose not to operate, so the answer is 1001.\n\nInput:\n```\n51-100025 -321000 199 7 9 -9 9 -8 7 -8 911678 201 340 444 453 922 128 987 127 752 0\n```\n\nOutput:\n```\n-1000\n8\n1001\n2056\n269891\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of input test cases.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 50) — the length of sequence a.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (|a_i|≤ 1000) — the sequence a.",
+    "output": "For each test case, print an integer representing the maximum possible sum.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1253D",
+    "contest_id": 1253,
+    "problem_letter": "D",
+    "title": "D. Harmonious Graph",
+    "statement": "You're given an undirected graph with n nodes and m edges. Nodes are numbered from 1 to n.\n\nThe graph is considered harmonious if and only if the following property holds:\n\nIn other words, in a harmonious graph, if from a node l we can reach a node r through edges (l < r), then we should able to reach nodes (l+1), (l+2), …, (r-1) too.\n\nWhat is the minimum number of edges we need to add to make the graph harmonious?\n\nThe first line contains two integers n and m (3 ≤ n ≤ 200 000 and 1 ≤ m ≤ 200 000).\n\nThe i-th of the next m lines contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i), that mean that there's an edge between nodes u and v.\n\nIt is guaranteed that the given graph is simple (there is no self-loop, and there is at most one edge between every pair of nodes).\n\nPrint the minimum number of edges we have to add to the graph to make it harmonious.\n\nIn the first example, the given graph is not harmonious (for instance, 1 < 6 < 7, node 1 can reach node 7 through the path 1 → 2 → 7, but node 1 can't reach node 6). However adding the edge (2, 4) is sufficient to make it harmonious.\n\nIn the second example, the given graph is already harmonious.\n\nInput:\n```\n14 8\n1 2\n2 7\n3 4\n6 3\n5 7\n3 8\n6 8\n11 12\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n200000 3\n7 9\n9 8\n4 5\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two integers n and m (3 ≤ n ≤ 200 000 and 1 ≤ m ≤ 200 000).\n\nThe i-th of the next m lines contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n, u_i ≠ v_i), that mean that there's an edge between nodes u and v.\n\nIt is guaranteed that the given graph is simple (there is no self-loop, and there is at most one edge between every pair of nodes).",
+    "output": "Print the minimum number of edges we have to add to the graph to make it harmonious.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

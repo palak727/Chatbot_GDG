@@ -1,0 +1,18 @@
+{
+    "id": "1795A",
+    "contest_id": 1795,
+    "problem_letter": "A",
+    "title": "A. Two Towers",
+    "statement": "There are two towers consisting of blocks of two colors: red and blue. Both towers are represented by strings of characters B and/or R denoting the order of blocks in them from the bottom to the top, where B corresponds to a blue block, and R corresponds to a red block.\n\nYou can perform the following operation any number of times: choose a tower with at least two blocks, and move its top block to the top of the other tower.\n\nThe pair of towers is beautiful if no pair of touching blocks has the same color; i. e. no red block stands on top of another red block, and no blue block stands on top of another blue block.\n\nYou have to check if it is possible to perform any number of operations (possibly zero) to make the pair of towers beautiful.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of three lines:\n\nFor each test case, print YES if it is possible to perform several (possibly zero) operations in such a way that the pair of towers becomes beautiful; otherwise print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).\n\nIn the first test case, you can move the top block from the first tower to the second tower (see the third picture).\n\nIn the second test case, you can move the top block from the second tower to the first tower 6 times.\n\nIn the third test case, the pair of towers is already beautiful.\n\nInput:\n```\n44 3BRBBRBR4 7BRBRRRBRBRB3 4RBRBRBR5 4BRBRRBRBR\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nEach test case consists of three lines:",
+    "output": "For each test case, print YES if it is possible to perform several (possibly zero) operations in such a way that the pair of towers becomes beautiful; otherwise print NO.\n\nYou may print each letter in any case (YES, yes, Yes will all be recognized as positive answer, NO, no and nO will all be recognized as negative answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

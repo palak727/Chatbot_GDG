@@ -1,0 +1,20 @@
+{
+    "id": "1383D",
+    "contest_id": 1383,
+    "problem_letter": "D",
+    "title": "D. Rearrange",
+    "statement": "Koa the Koala has a matrix A of n rows and m columns. Elements of this matrix are distinct integers from 1 to n·m (each number from 1 to n·m appears exactly once in the matrix).\n\nFor any matrix M of n rows and m columns let's define the following:\n\nKoa defines S(A) = (X, Y) as the spectrum of A, where X is the set of the maximum values in rows of A and Y is the set of the maximum values in columns of A.\n\nMore formally:\n\nKoa asks you to find some matrix A' of n rows and m columns, such that each number from 1 to n·m appears exactly once in the matrix, and the following conditions hold:\n\nMore formally: t is bitonic if there exists some position p (1 ≤ p ≤ k) such that: t_1 < t_2 < … < t_p > t_{p+1} > … > t_k.\n\nHelp Koa to find such matrix or to determine that it doesn't exist.\n\nThe first line of the input contains two integers n and m (1 ≤ n, m ≤ 250) — the number of rows and columns of A.\n\nEach of the ollowing n lines contains m integers. The j-th integer in the i-th line denotes element A_ij (1 ≤ A_ij ≤ n·m) of matrix A. It is guaranteed that every number from 1 to n·m appears exactly once among elements of the matrix.\n\nIf such matrix doesn't exist, print -1 on a single line.\n\nOtherwise, the output must consist of n lines, each one consisting of m space separated integers — a description of A'.\n\nThe j-th number in the i-th line represents the element A'_ij.\n\nEvery integer from 1 to n·m should appear exactly once in A', every row and column in A' must be bitonic and S(A) = S(A') must hold.\n\nIf there are many answers print any.\n\nLet's analyze the first sample:\n\nFor matrix A we have:\n\nFor matrix A' we have:\n\nInput:\n```\n3 3\n3 5 6\n1 7 9\n4 8 2\n```\n\nOutput:\n```\n9 5 1\n7 8 2\n3 6 4\n```\n\nInput:\n```\n2 2\n4 1\n3 2\n```\n\nOutput:\n```\n4 1\n3 2\n```\n\nInput:\n```\n3 4\n12 10 8 6\n3 4 5 7\n2 11 9 1\n```\n\nOutput:\n```\n12 8 6 1\n10 11 9 2\n3 4 5 7\n```",
+    "input": "The first line of the input contains two integers n and m (1 ≤ n, m ≤ 250) — the number of rows and columns of A.\n\nEach of the ollowing n lines contains m integers. The j-th integer in the i-th line denotes element A_ij (1 ≤ A_ij ≤ n·m) of matrix A. It is guaranteed that every number from 1 to n·m appears exactly once among elements of the matrix.",
+    "output": "If such matrix doesn't exist, print -1 on a single line.\n\nOtherwise, the output must consist of n lines, each one consisting of m space separated integers — a description of A'.\n\nThe j-th number in the i-th line represents the element A'_ij.\n\nEvery integer from 1 to n·m should appear exactly once in A', every row and column in A' must be bitonic and S(A) = S(A') must hold.\n\nIf there are many answers print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "sortings",
+        "*2800"
+    ],
+    "rating": 2800
+}

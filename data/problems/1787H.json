@@ -1,0 +1,19 @@
+{
+    "id": "1787H",
+    "contest_id": 1787,
+    "problem_letter": "H",
+    "title": "H. Codeforces Scoreboard",
+    "statement": "You are participating in a Codeforces Round with n problems.\n\nYou spend exactly one minute to solve each problem, the time it takes to submit a problem can be ignored. You can only solve at most one problem at any time. The contest starts at time 0, so you can make your first submission at any time t ≥ 1 minutes. Whenever you submit a problem, it is always accepted.\n\nThe scoring of the i-th problem can be represented by three integers k_i, b_i, and a_i. If you solve it at time t minutes, you get max(b_i - k_i·t,a_i) points.\n\nYour task is to choose an order to solve all these n problems to get the maximum possible score. You can assume the contest is long enough to solve all problems.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of problems.\n\nThe n lines follow, the i-th of them contains three integers k_i, b_i, a_i (1≤ k_i,b_i,a_i≤ 10^9; a_i < b_i), denoting that you get the score of max(b_i - k_i·t,a_i) if you solve the i-th task at time t minutes.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.\n\nFor each test case, print a line containing a single integer — the maximum score you can get.\n\nIn the second test case, the points for all problems at each minute are listed below.\n\nThe points displayed in red denote one of the optimal orders with the score 53.\n\nInput:\n```\n4410000 1000000000 200610000 1000000000 99992 999991010 10101000000000 1000000000 99999999961 8 19 29 42 14 34 13 12 19 510 12 584 10 14 19 81 14 34 15 62 9 61 11 102 19 124 19 14105 12 75 39 122 39 113 23 155 30 113 17 135 29 143 17 113 36 183 9 8\n```\n\nOutput:\n```\n3999961003\n53\n78\n180\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the number of problems.\n\nThe n lines follow, the i-th of them contains three integers k_i, b_i, a_i (1≤ k_i,b_i,a_i≤ 10^9; a_i < b_i), denoting that you get the score of max(b_i - k_i·t,a_i) if you solve the i-th task at time t minutes.\n\nIt's guaranteed that the sum of n does not exceed 2·10^5.",
+    "output": "For each test case, print a line containing a single integer — the maximum score you can get.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "geometry",
+        "*3300"
+    ],
+    "rating": 3300
+}

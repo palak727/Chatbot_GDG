@@ -1,0 +1,16 @@
+{
+    "id": "1717C",
+    "contest_id": 1717,
+    "problem_letter": "C",
+    "title": "C. Madoka and Formal Statement",
+    "statement": "Given an array of integer a_1, a_2, …, a_n. In one operation you can make a_i := a_i + 1 if i < n and a_i ≤ a_{i + 1}, or i = n and a_i ≤ a_1.\n\nYou need to check whether the array a_1, a_2, …, a_n can become equal to the array b_1, b_2, …, b_n in some number of operations (possibly, zero). Two arrays a and b of length n are called equal if a_i = b_i for all integers i from 1 to n.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 4·10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) – the length of the array.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) – the elements of the array a.\n\nThe third line of each test case contains n integers b_1, …, b_n (1 ≤ b_i ≤ 10^9) – the elements of the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if you can get the array b, otherwise output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as positive answer).\n\nIn the first test case, the array a is already equal to the array b.\n\nIn the second test case, we can't get the array b, because to do this we need to decrease a_1.\n\nIn the fifth test case, we can apply operations in order to the elements with indices 4, 3, 3,2,2,2,1,1,1,1, and then get the array [5,5,5,5,5]. After that, you can apply operations in order to elements with indices 5,4,4,3,1 and already get an array [6,5,6,7,6].\n\nInput:\n```\n531 2 51 2 522 21 343 4 1 26 4 2 532 4 14 5 351 2 3 4 56 5 6 7 6\n```\n\nOutput:\n```\nYES\nNO\nNO\nNO\nYES\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 4·10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) – the length of the array.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) – the elements of the array a.\n\nThe third line of each test case contains n integers b_1, …, b_n (1 ≤ b_i ≤ 10^9) – the elements of the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if you can get the array b, otherwise output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

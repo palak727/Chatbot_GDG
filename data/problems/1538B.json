@@ -1,0 +1,17 @@
+{
+    "id": "1538B",
+    "contest_id": 1538,
+    "problem_letter": "B",
+    "title": "B. Friends and Candies",
+    "statement": "Polycarp has n friends, the i-th of his friends has a_i candies. Polycarp's friends do not like when they have different numbers of candies. In other words they want all a_i to be the same. To solve this, Polycarp performs the following set of actions exactly once:\n\nNote that the number k is not fixed in advance and can be arbitrary. Your task is to find the minimum value of k.\n\nFor example, if n=4 and a=[4, 5, 2, 5], then Polycarp could make the following distribution of the candies:\n\nNote that in this example Polycarp cannot choose k=1 friend so that he can redistribute candies so that in the end all a_i are equal.\n\nFor the data n and a, determine the minimum value k. With this value k, Polycarp should be able to select k friends and redistribute their candies so that everyone will end up with the same number of candies.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^4).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case output:\n\nInput:\n```\n5\n4\n4 5 2 5\n2\n0 4\n5\n10 8 5 1 4\n1\n10000\n7\n1 1 1 1 1 1 1\n```\n\nOutput:\n```\n2\n1\n-1\n0\n0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^4).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case output:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

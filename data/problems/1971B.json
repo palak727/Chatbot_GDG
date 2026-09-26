@@ -1,0 +1,17 @@
+{
+    "id": "1971B",
+    "contest_id": 1971,
+    "problem_letter": "B",
+    "title": "B. Different String",
+    "statement": "You are given a string s consisting of lowercase English letters.\n\nRearrange the characters of s to form a new string r that is not equal to s, or report that it's impossible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a string s of length at most 10 consisting of lowercase English letters.\n\nFor each test case, if no such string r exists as described in the statement, output \"NO\" (without quotes).\n\nOtherwise, output \"YES\" (without quotes). Then, output one line — the string r, consisting of letters of string s.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nIf multiple answers are possible, you can output any of them.\n\nIn the first test case, another possible answer is textttforcescode.\n\nIn the second test case, all rearrangements of textttaaaaa are equal to textttaaaaa.\n\nInput:\n```\n8codeforcesaaaaaxxxxycodnutdealermwisththhhhhhhhhh\n```\n\nOutput:\n```\nYES\nforcodesec\nNO\nYES\nxxyxx\nYES\noc\nNO\nYES\nundertale\nYES\nthtsiwm\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains a string s of length at most 10 consisting of lowercase English letters.",
+    "output": "For each test case, if no such string r exists as described in the statement, output \"NO\" (without quotes).\n\nOtherwise, output \"YES\" (without quotes). Then, output one line — the string r, consisting of letters of string s.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nIf multiple answers are possible, you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

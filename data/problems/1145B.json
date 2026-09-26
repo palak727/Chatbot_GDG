@@ -1,0 +1,16 @@
+{
+    "id": "1145B",
+    "contest_id": 1145,
+    "problem_letter": "B",
+    "title": "B. Kanban Numbers",
+    "statement": "The input contains a single integer a (1 ≤ a ≤ 99).\n\nOutput \"YES\" or \"NO\".\n\nInput:\n```\n5\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n13\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n24\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n46\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The input contains a single integer a (1 ≤ a ≤ 99).",
+    "output": "Output \"YES\" or \"NO\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "brute force"
+    ],
+    "rating": null
+}

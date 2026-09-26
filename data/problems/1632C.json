@@ -1,0 +1,20 @@
+{
+    "id": "1632C",
+    "contest_id": 1632,
+    "problem_letter": "C",
+    "title": "C. Strange Test",
+    "statement": "Igor is in 11th grade. Tomorrow he will have to write an informatics test by the strictest teacher in the school, Pavel Denisovich.\n\nIgor knows how the test will be conducted: first of all, the teacher will give each student two positive integers a and b (a < b). After that, the student can apply any of the following operations any number of times:\n\nTo get full marks on the test, the student has to tell the teacher the minimum required number of operations to make a and b equal.\n\nIgor already knows which numbers the teacher will give him. Help him figure out what is the minimum number of operations needed to make a equal to b.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe only line for each test case contains two integers a and b (1 ≤ a < b ≤ 10^6).\n\nIt is guaranteed that the sum of b over all test cases does not exceed 10^6.\n\nFor each test case print one integer — the minimum required number of operations to make a and b equal.\n\nIn the first test case, it is optimal to apply the third operation.\n\nIn the second test case, it is optimal to apply the first operation three times.\n\nIn the third test case, it is optimal to apply the second operation and then the third operation.\n\nInput:\n```\n5\n1 3\n5 8\n2 5\n3 19\n56678 164422\n```\n\nOutput:\n```\n1\n3\n2\n1\n23329\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe only line for each test case contains two integers a and b (1 ≤ a < b ≤ 10^6).\n\nIt is guaranteed that the sum of b over all test cases does not exceed 10^6.",
+    "output": "For each test case print one integer — the minimum required number of operations to make a and b equal.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "dp",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

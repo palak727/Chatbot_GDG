@@ -1,0 +1,17 @@
+{
+    "id": "1741A",
+    "contest_id": 1741,
+    "problem_letter": "A",
+    "title": "A. Compare T-Shirt Sizes",
+    "statement": "Two T-shirt sizes are given: a and b. The T-shirt size is either a string M or a string consisting of several (possibly zero) characters X and one of the characters S or L.\n\nFor example, strings M, XXL, S, XXXXXXXS could be the size of some T-shirts. And the strings XM, LL, SX are not sizes.\n\nThe letter M stands for medium, S for small, L for large. The letter X refers to the degree of size (from eXtra). For example, XXL is extra-extra-large (bigger than XL, and smaller than XXXL).\n\nYou need to compare two given sizes of T-shirts a and b.\n\nThe T-shirts are compared as follows:\n\nFor example:\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line, in which a and b T-shirt sizes are written. The lengths of the strings corresponding to the T-shirt sizes do not exceed 50. It is guaranteed that all sizes are correct.\n\nFor each test case, print on a separate line the result of comparing a and b T-shirt sizes (lines \"<\", \">\" or \"=\" without quotes).\n\nInput:\n```\n6XXXS XSXXXL XLXL MXXL XXLXXXXXS ML M\n```\n\nOutput:\n```\n<\n>\n>\n=\n<\n>\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of one line, in which a and b T-shirt sizes are written. The lengths of the strings corresponding to the T-shirt sizes do not exceed 50. It is guaranteed that all sizes are correct.",
+    "output": "For each test case, print on a separate line the result of comparing a and b T-shirt sizes (lines \"<\", \">\" or \"=\" without quotes).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

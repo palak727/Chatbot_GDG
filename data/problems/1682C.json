@@ -1,0 +1,19 @@
+{
+    "id": "1682C",
+    "contest_id": 1682,
+    "problem_letter": "C",
+    "title": "C. LIS or Reverse LIS?",
+    "statement": "You are given an array a of n positive integers.\n\nLet LIS(a) denote the length of longest strictly increasing subsequence of a. For example,\n\nWe define array a' as the array obtained after reversing the array a i.e. a' = [a_n, a_{n-1}, … , a_1].\n\nThe beauty of array a is defined as min(LIS(a),LIS(a')).\n\nYour task is to determine the maximum possible beauty of the array a if you can rearrange the array a arbitrarily.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1,a_2, … ,a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum possible beauty of a after rearranging its elements arbitrarily.\n\nIn the first test case, a = [6, 6, 6] and a' = [6, 6, 6]. LIS(a) = LIS(a') = 1. Hence the beauty is min(1, 1) = 1.\n\nIn the second test case, a can be rearranged to [2, 5, 4, 5, 4, 2]. Then a' = [2, 4, 5, 4, 5, 2]. LIS(a) = LIS(a') = 3. Hence the beauty is 3 and it can be shown that this is the maximum possible beauty.\n\nIn the third test case, a can be rearranged to [1, 2, 3, 2]. Then a' = [2, 3, 2, 1]. LIS(a) = 3, LIS(a') = 2. Hence the beauty is min(3, 2) = 2 and it can be shown that 2 is the maximum possible beauty.\n\nInput:\n```\n336 6 662 5 4 5 2 441 3 2 2\n```\n\nOutput:\n```\n1\n3\n2\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of array a.\n\nThe second line of each test case contains n integers a_1,a_2, … ,a_n (1 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum possible beauty of a after rearranging its elements arbitrarily.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

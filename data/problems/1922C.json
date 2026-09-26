@@ -1,0 +1,18 @@
+{
+    "id": "1922C",
+    "contest_id": 1922,
+    "problem_letter": "C",
+    "title": "C. Closest Cities",
+    "statement": "There are n cities located on the number line, the i-th city is in the point a_i. The coordinates of the cities are given in ascending order, so a_1 < a_2 < … < a_n.\n\nThe distance between two cities x and y is equal to |a_x - a_y|.\n\nFor each city i, let's define the closest city j as the city such that the distance between i and j is not greater than the distance between i and each other city k. For example, if the cities are located in points [0, 8, 12, 15, 20], then:\n\nThe cities are located in such a way that for every city, the closest city is unique. For example, it is impossible for the cities to be situated in points [1, 2, 3], since this would mean that the city 2 has two closest cities (1 and 3, both having distance 1).\n\nYou can travel between cities. Suppose you are currently in the city x. Then you can perform one of the following actions:\n\nYou are given m queries. In each query, you will be given two cities, and you have to calculate the minimum number of coins you have to spend to travel from one city to the other city.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case is given in the following format:\n\nAdditional constraints on the input:\n\nFor each query, print one integer — the minimum number of coins you have to spend.\n\nLet's consider the first two queries in the example from the statement:\n\nInput:\n```\n150 8 12 15 2051 41 53 43 25 1\n```\n\nOutput:\n```\n3\n8\n1\n4\n14\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case is given in the following format:\n\nAdditional constraints on the input:",
+    "output": "For each query, print one integer — the minimum number of coins you have to spend.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

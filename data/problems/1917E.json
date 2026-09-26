@@ -1,0 +1,17 @@
+{
+    "id": "1917E",
+    "contest_id": 1917,
+    "problem_letter": "E",
+    "title": "E. Construct Matrix",
+    "statement": "You are given an even integer n and an integer k. Your task is to construct a matrix of size n × n consisting of numbers 0 and 1 in such a way that the following conditions are true, or report that it is impossible:\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 130) — the number of test cases. The description of the test cases follows.\n\nEach test case is described by a single line, which contains two integers n and k (2 ≤ n ≤ 1000, n is even, 0 ≤ k ≤ n^2).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.\n\nFor each test case, output textttYes if it's possible to construct a matrix that satisfies all of the problem's conditions, and textttNo otherwise.\n\nIf it is possible to construct a matrix, the i-th of the next n lines should contain n integers representing the elements in the i-th row of the matrix.\n\nIn the first example, all conditions are satisfied:\n\nIn the third example, it can be shown that it's impossible to find a matrix satisfying all the problem's conditions.\n\nInput:\n```\n5\n4 0\n6 6\n6 5\n4 2\n6 36\n```\n\nOutput:\n```\nYes\n0 0 0 0\n0 0 0 0\n0 0 0 0\n0 0 0 0\nYes\n1 0 0 0 0 0\n0 1 0 0 0 0\n0 0 1 0 0 0\n0 0 0 1 0 0\n0 0 0 0 1 0\n0 0 0 0 0 1\nNo\nNo\nYes\n1 1 1 1 1 1\n1 1 1 1 1 1\n1 1 1 1 1 1\n1 1 1 1 1 1\n1 1 1 1 1 1\n1 1 1 1 1 1\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 130) — the number of test cases. The description of the test cases follows.\n\nEach test case is described by a single line, which contains two integers n and k (2 ≤ n ≤ 1000, n is even, 0 ≤ k ≤ n^2).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2000.",
+    "output": "For each test case, output textttYes if it's possible to construct a matrix that satisfies all of the problem's conditions, and textttNo otherwise.\n\nIf it is possible to construct a matrix, the i-th of the next n lines should contain n integers representing the elements in the i-th row of the matrix.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

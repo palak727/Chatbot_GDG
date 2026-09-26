@@ -1,0 +1,16 @@
+{
+    "id": "1095D",
+    "contest_id": 1095,
+    "problem_letter": "D",
+    "title": "D. Circular Dance",
+    "statement": "There are n kids, numbered from 1 to n, dancing in a circle around the Christmas tree. Let's enumerate them in a clockwise direction as p_1, p_2, ..., p_n (all these numbers are from 1 to n and are distinct, so p is a permutation). Let the next kid for a kid p_i be kid p_{i + 1} if i < n and p_1 otherwise. After the dance, each kid remembered two kids: the next kid (let's call him x) and the next kid for x. Each kid told you which kids he/she remembered: the kid i remembered kids a_{i, 1} and a_{i, 2}. However, the order of a_{i, 1} and a_{i, 2} can differ from their order in the circle.\n\nYou have to restore the order of the kids in the circle using this information. If there are several answers, you may print any. It is guaranteed that at least one solution exists.\n\nIf you are Python programmer, consider using PyPy instead of Python when you submit your code.\n\nThe first line of the input contains one integer n (3 ≤ n ≤ 2·10^5) — the number of the kids.\n\nThe next n lines contain 2 integers each. The i-th line contains two integers a_{i, 1} and a_{i, 2} (1 ≤ a_{i, 1}, a_{i, 2} ≤ n, a_{i, 1} ≠ a_{i, 2}) — the kids the i-th kid remembered, given in arbitrary order.\n\nPrint n integers p_1, p_2, ..., p_n — permutation of integers from 1 to n, which corresponds to the order of kids in the circle. If there are several answers, you may print any (for example, it doesn't matter which kid is the first in the circle). It is guaranteed that at least one solution exists.\n\nInput:\n```\n5\n3 5\n1 4\n2 4\n1 5\n2 3\n```\n\nOutput:\n```\n3 2 4 1 5 \n```\n\nInput:\n```\n3\n2 3\n3 1\n1 2\n```\n\nOutput:\n```\n3 1 2 \n```",
+    "input": "The first line of the input contains one integer n (3 ≤ n ≤ 2·10^5) — the number of the kids.\n\nThe next n lines contain 2 integers each. The i-th line contains two integers a_{i, 1} and a_{i, 2} (1 ≤ a_{i, 1}, a_{i, 2} ≤ n, a_{i, 1} ≠ a_{i, 2}) — the kids the i-th kid remembered, given in arbitrary order.",
+    "output": "Print n integers p_1, p_2, ..., p_n — permutation of integers from 1 to n, which corresponds to the order of kids in the circle. If there are several answers, you may print any (for example, it doesn't matter which kid is the first in the circle). It is guaranteed that at least one solution exists.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

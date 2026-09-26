@@ -1,0 +1,18 @@
+{
+    "id": "2114A",
+    "contest_id": 2114,
+    "problem_letter": "A",
+    "title": "A. Square Year",
+    "statement": "One can notice the following remarkable mathematical fact: the number 2025 can be represented as (20+25)^2.\n\nYou are given a year represented by a string s, consisting of exactly 4 characters. Thus, leading zeros are allowed in the year representation. For example, \"0001\", \"0185\", \"1375\" are valid year representations. You need to express it in the form (a + b)^2, where a and b are non-negative integers, or determine that it is impossible.\n\nFor example, if s = \"0001\", you can choose a = 0, b = 1, and write the year as (0 + 1)^2 = 1.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe following lines describe the test cases.\n\nThe only line of each test case contains a string s, consisting of exactly 4 characters. Each character is a digit from 0 to 9.\n\nOn a separate line for each test case, output:\n\nInput:\n```\n500011001100049002025\n```\n\nOutput:\n```\n0 1\n-1\n-1\n34 36\n20 25\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe following lines describe the test cases.\n\nThe only line of each test case contains a string s, consisting of exactly 4 characters. Each character is a digit from 0 to 9.",
+    "output": "On a separate line for each test case, output:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

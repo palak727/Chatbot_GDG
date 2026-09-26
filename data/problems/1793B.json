@@ -1,0 +1,17 @@
+{
+    "id": "1793B",
+    "contest_id": 1793,
+    "problem_letter": "B",
+    "title": "B. Fedya and Array",
+    "statement": "For his birthday recently Fedya was given an array a of n integers arranged in a circle, For each pair of neighboring numbers (a_1 and a_2, a_2 and a_3, …, a_{n - 1} and a_n, a_n and a_1) the absolute difference between them is equal to 1.\n\nLet's call a local maximum an element, which is greater than both of its neighboring elements. Also call a local minimum an element, which is less than both of its neighboring elements. Note, that elements a_1 and a_n are neighboring elements.\n\nUnfortunately, Fedya lost an array, but he remembered in it the sum of local maximums x and the sum of local minimums y.\n\nGiven x and y, help Fedya find any matching array of minimum length.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nEach line of each test case contain two integers x and y (-10^9 ≤ y < x ≤ 10^9) — the sum of local maximums and the sum of local minimums, respectively.\n\nFor each test case, in the first line print one integer n — the minimum length of matching arrays.\n\nIn the second line print n integers a_1, a_2, …, a_n (-10^9 leqslant a_i leqslant 10^9) — the array elements such that the the absolute difference between each pair of neighboring is equal to 1.\n\nIf there are multiple solutions, print any of them.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nIn the first test case, the local maximums are the numbers at 3, 7 and 10 positions, and the local minimums are the numbers at 1, 6 and 8 positions. x = a_3 + a_7 + a_10 = 2 + 0 + 1 = 3, y = a_1 + a_6 + a_8 = 0 + (-1) + (-1) = -2.\n\nIn the second test case, the local maximums are the numbers at 2 and 10 positions, and the local minimums are the numbers at 1 and 3 positions. x = a_2 + a_10 = -1 + 5 = 4, y = a_1 + a_3 = -2 + (-2) = -4.\n\nIn the third test case, the local maximums are the numbers at 1 and 5 positions, and the local minimums are the numbers at 3 and 6 positions.\n\nInput:\n```\n43 -24 -42 -15 -3\n```\n\nOutput:\n```\n10\n0 1 2 1 0 -1 0 -1 0 1\n16\n-2 -1 -2 -1 0 1 2 3 4 5 4 3 2 1 0 -1 \n6\n1 0 -1 0 1 0\n16\n2 3 2 1 0 -1 0 -1 0 -1 0 1 2 1 0 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). Description of the test cases follows.\n\nEach line of each test case contain two integers x and y (-10^9 ≤ y < x ≤ 10^9) — the sum of local maximums and the sum of local minimums, respectively.",
+    "output": "For each test case, in the first line print one integer n — the minimum length of matching arrays.\n\nIn the second line print n integers a_1, a_2, …, a_n (-10^9 leqslant a_i leqslant 10^9) — the array elements such that the the absolute difference between each pair of neighboring is equal to 1.\n\nIf there are multiple solutions, print any of them.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

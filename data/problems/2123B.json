@@ -1,0 +1,16 @@
+{
+    "id": "2123B",
+    "contest_id": 2123,
+    "problem_letter": "B",
+    "title": "B. Tournament",
+    "statement": "You are given an array of integers a_1,a_2,…,a_n. A tournament is held with n players. Player i has strength a_i.\n\nWhile more than k players remain,\n\nGiven integers j and k (1 ≤ j,k ≤ n), determine if there is any way for player j to be one of the last k remaining players.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, j, and k (2≤ n ≤ 2·10^5, 1≤ j, k≤ n).\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (1≤ a_i≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output on a single line \"YES\" if player j can be one of the last k remaining players, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first sample, suppose that players 2 and 5 are chosen. Then player 2 defeats player 5. Now, the remaining player strengths are\n\nIn the third sample, it can be shown that there is no way for player 1 to be the last player remaining.\n\nInput:\n```\n35 2 33 2 4 4 15 4 15 3 4 5 26 1 11 2 3 4 5 6\n```\n\nOutput:\n```\nYES\nYES\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains three integers n, j, and k (2≤ n ≤ 2·10^5, 1≤ j, k≤ n).\n\nThe second line of each test case contains n integers, a_1,a_2,…,a_n (1≤ a_i≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output on a single line \"YES\" if player j can be one of the last k remaining players, and \"NO\" otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

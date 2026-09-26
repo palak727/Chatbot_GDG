@@ -1,0 +1,17 @@
+{
+    "id": "2045B",
+    "contest_id": 2045,
+    "problem_letter": "B",
+    "title": "B. ICPC Square",
+    "statement": "ICPC Square is a hotel provided by the ICPC Committee for the accommodation of the participants. It consists of N floors (numbered from 1 to N). This hotel has a very unique elevator. If a person is currently at floor x, by riding the elevator once, they can go to floor y if and only if y is a multiple of x and y - x ≤ D.\n\nYou are currently at floor S. You want to go to the highest possible floor by riding the elevator zero or more times. Determine the highest floor you can reach.\n\nA single line consisting of three integers N D S (2 ≤ N ≤ 10^12; 1 ≤ D ≤ N - 1; 1 ≤ S ≤ N).\n\nOutput a single integer representing the highest floor you can reach by riding the elevator zero or more times.\n\nExplanation for the sample input/output #1\n\nFirst, ride the elevator from floor 3 to floor 15. This is possible because 15 is a multiple of 3 and 15 - 3 ≤ 35. Then, ride the elevator from floor 15 to floor 30. This is possible because 30 is a multiple of 15 and 30 - 15 ≤ 35. Finally, ride the elevator from floor 30 to floor 60. This is possible because 60 is a multiple of 30 and 60 - 30 ≤ 35.\n\nInput:\n```\n64 35 3\n```\n\nOutput:\n```\n60\n```\n\nInput:\n```\n2024 2023 1273\n```\n\nOutput:\n```\n1273\n```",
+    "input": "A single line consisting of three integers N D S (2 ≤ N ≤ 10^12; 1 ≤ D ≤ N - 1; 1 ≤ S ≤ N).",
+    "output": "Output a single integer representing the highest floor you can reach by riding the elevator zero or more times.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*2000"
+    ],
+    "rating": 2000
+}

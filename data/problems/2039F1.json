@@ -1,0 +1,19 @@
+{
+    "id": "2039F1",
+    "contest_id": 2039,
+    "problem_letter": "F1",
+    "title": "F1. Shohag Loves Counting (Easy Version)",
+    "statement": "This is the easy version of the problem. The only differences between the two versions of this problem are the constraints on t, m, and the sum of m. You can only make hacks if both versions of the problem are solved.\n\nFor an integer array a of length n, define f(k) as the greatest common divisor (GCD) of the maximum values of all subarrays^{∗} of length k. For example, if the array is [2, 1, 4, 6, 2], then f(3) = gcd(max([2, 1, 4]), max([1, 4, 6]), max([4, 6, 2])) = gcd(4, 6, 6) = 2.\n\nAn array is good if f(i) ≠ f(j) is satisfied over all pairs 1 ≤ i < j ≤ n.\n\nShohag has an integer m. Help him count the number, modulo 998,244,353, of non-empty good arrays of arbitrary length such that each element of the array is an integer from 1 to m.\n\n^{∗}An array d is a subarray of an array c if d can be obtained from c by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains an integer m (1 ≤ m ≤ 10^5).\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.\n\nFor each test case, output an integer — the number of valid arrays modulo 998,244,353.\n\nIn the first test case, the valid arrays are [1], [1, 2], [2], and [2, 1].\n\nIn the second test case, there are a total of 29 valid arrays. In particular, the array [2, 1, 4] with length n = 3 is valid because all elements are from 1 to m = 5 and f(1), f(2) and f(n = 3) all are distinct:\n\nInput:\n```\n3259\n```\n\nOutput:\n```\n4\n29\n165\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains an integer m (1 ≤ m ≤ 10^5).\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.",
+    "output": "For each test case, output an integer — the number of valid arrays modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "number theory",
+        "*2800"
+    ],
+    "rating": 2800
+}

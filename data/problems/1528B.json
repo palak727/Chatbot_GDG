@@ -1,0 +1,18 @@
+{
+    "id": "1528B",
+    "contest_id": 1528,
+    "problem_letter": "B",
+    "title": "B. Kavi on Pairing Duty",
+    "statement": "Kavi has 2n points lying on the OX axis, i-th of which is located at x = i.\n\nKavi considers all ways to split these 2n points into n pairs. Among those, he is interested in good pairings, which are defined as follows:\n\nConsider n segments with ends at the points in correspondent pairs. The pairing is called good, if for every 2 different segments A and B among those, at least one of the following holds:\n\nConsider the following example:\n\nA is a good pairing since the red segment lies completely inside the blue segment.\n\nB is a good pairing since the red and the blue segment have the same length.\n\nC is not a good pairing since none of the red or blue segments lies inside the other, neither do they have the same size.\n\nKavi is interested in the number of good pairings, so he wants you to find it for him. As the result can be large, find this number modulo 998244353.\n\nTwo pairings are called different, if some two points are in one pair in some pairing and in different pairs in another.\n\nThe single line of the input contains a single integer n (1≤ n ≤ 10^6).\n\nPrint the number of good pairings modulo 998244353.\n\nThe good pairings for the second example are:\n\nIn the third example, the good pairings are:\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n100\n```\n\nOutput:\n```\n688750769\n```",
+    "input": "The single line of the input contains a single integer n (1≤ n ≤ 10^6).",
+    "output": "Print the number of good pairings modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

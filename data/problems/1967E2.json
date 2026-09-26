@@ -1,0 +1,18 @@
+{
+    "id": "1967E2",
+    "contest_id": 1967,
+    "problem_letter": "E2",
+    "title": "E2. Again Counting Arrays (Hard Version)",
+    "statement": "This is the hard version of the problem. The differences between the two versions are the constraints on n, m, b_0 and the time limit. You can make hacks only if both versions are solved.\n\nLittle R has counted many sets before, and now she decides to count arrays.\n\nLittle R thinks an array b_0, …, b_n consisting of non-negative integers is continuous if and only if, for each i such that 1 ≤ i ≤ n, lvert b_i - b_{i-1} rvert = 1 is satisfied. She likes continuity, so she only wants to generate continuous arrays.\n\nIf Little R is given b_0 and a_1, …, a_n, she will try to generate a non-negative continuous array b, which has no similarity with a. More formally, for all 1 ≤ i ≤ n, a_i ≠ b_i holds.\n\nHowever, Little R does not have any array a. Instead, she gives you n, m and b_0. She wants to count the different integer arrays a_1, …, a_n satisfying:\n\nNote that b_i ≥ 0, but the b_i can be arbitrarily large.\n\nSince the actual answer may be enormous, please just tell her the answer modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains three integers n, m, and b_0 (1 ≤ n ≤ 2·10^6, 1 ≤ m ≤ 2·10^6, 0 ≤ b_0 ≤ 2·10^6) — the length of the array a_1, …, a_n, the maximum possible element in a_1, …, a_n, and the initial element of the array b_0, …, b_n.\n\nIt is guaranteed that the sum of n over all test cases does not exceeds 10^7.\n\nFor each test case, output a single line containing an integer: the number of different arrays a_1, …, a_n satisfying the conditions, modulo 998,244,353.\n\nIn the first test case, for example, when a = [1, 2, 1], we can set b = [1, 0, 1, 0]. When a = [1, 1, 2], we can set b = [1, 2, 3, 4]. In total, there are 6 valid choices of a_1, …, a_n: in fact, it can be proved that only a = [2, 1, 1] and a = [2, 1, 2] make it impossible to construct a non-negative continuous b_0, …, b_n, so the answer is 2^3 - 2 = 6.\n\nInput:\n```\n63 2 15 5 313 4 1100 6 7100 11 31000 424 132\n```\n\nOutput:\n```\n6\n3120\n59982228\n943484039\n644081522\n501350342\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains three integers n, m, and b_0 (1 ≤ n ≤ 2·10^6, 1 ≤ m ≤ 2·10^6, 0 ≤ b_0 ≤ 2·10^6) — the length of the array a_1, …, a_n, the maximum possible element in a_1, …, a_n, and the initial element of the array b_0, …, b_n.\n\nIt is guaranteed that the sum of n over all test cases does not exceeds 10^7.",
+    "output": "For each test case, output a single line containing an integer: the number of different arrays a_1, …, a_n satisfying the conditions, modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*3500"
+    ],
+    "rating": 3500
+}

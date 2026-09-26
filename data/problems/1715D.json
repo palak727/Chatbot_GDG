@@ -1,0 +1,19 @@
+{
+    "id": "1715D",
+    "contest_id": 1715,
+    "problem_letter": "D",
+    "title": "D. 2+ doors",
+    "statement": "The Narrator has an integer array a of length n, but he will only tell you the size n and q statements, each of them being three integers i, j, x, which means that a_i mid a_j = x, where | denotes the bitwise OR operation.\n\nFind the lexicographically smallest array a that satisfies all the statements.\n\nAn array a is lexicographically smaller than an array b of the same length if and only if the following holds:\n\nIn the first line you are given with two integers n and q (1 ≤ n ≤ 10^5, 0 ≤ q ≤ 2·10^5).\n\nIn the next q lines you are given with three integers i, j, and x (1 ≤ i, j ≤ n, 0 ≤ x < 2^30) — the statements.\n\nIt is guaranteed that all q statements hold for at least one array.\n\nOn a single line print n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — array a.\n\nIn the first sample, these are all the arrays satisfying the statements:\n\nInput:\n```\n4 3\n1 2 3\n1 3 2\n4 1 2\n```\n\nOutput:\n```\n0 3 2 2 \n```\n\nInput:\n```\n1 0\n```\n\nOutput:\n```\n0 \n```\n\nInput:\n```\n2 1\n1 1 1073741823\n```\n\nOutput:\n```\n1073741823 0 \n```",
+    "input": "In the first line you are given with two integers n and q (1 ≤ n ≤ 10^5, 0 ≤ q ≤ 2·10^5).\n\nIn the next q lines you are given with three integers i, j, and x (1 ≤ i, j ≤ n, 0 ≤ x < 2^30) — the statements.\n\nIt is guaranteed that all q statements hold for at least one array.",
+    "output": "On a single line print n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30) — array a.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "2-sat",
+        "bitmasks",
+        "graphs",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

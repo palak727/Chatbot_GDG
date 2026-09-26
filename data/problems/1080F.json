@@ -1,0 +1,18 @@
+{
+    "id": "1080F",
+    "contest_id": 1080,
+    "problem_letter": "F",
+    "title": "F. Katya and Segments Sets",
+    "statement": "It is a very important day for Katya. She has a test in a programming class. As always, she was given an interesting problem that she solved very fast. Can you solve that problem?\n\nYou are given n ordered segments sets. Each segment can be represented as a pair of two integers [l, r] where l≤ r. Each set can contain an arbitrary number of segments (even 0). It is possible that some segments are equal.\n\nYou are also given m queries, each of them can be represented as four numbers: a, b, x, y. For each segment, find out whether it is true that each set p (a≤ p≤ b) contains at least one segment [l, r] that lies entirely on the segment [x, y], that is x≤ l≤ r≤ y.\n\nFind out the answer to each query.\n\nNote that you need to solve this problem online. That is, you will get a new query only after you print the answer for the previous query.\n\nThe first line contains three integers n, m, and k (1≤ n,m≤ 10^5, 1≤ k≤ 3·10^5) — the number of sets, queries, and segments respectively.\n\nEach of the next k lines contains three integers l, r, and p (1≤ l≤ r≤ 10^9, 1≤ p≤ n) — the limits of the segment and the index of a set, to which this segment belongs.\n\nEach of the next m lines contains four integers a, b, x, y (1≤ a≤ b≤ n, 1≤ x≤ y≤ 10^9) — the description of the query.\n\nFor each query, print \"yes\" or \"no\" in a new line.\n\nAfter printing a query, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nFor the first query, the answer is negative since the second set does not contain a segment that lies on the segment [2, 3].\n\nIn the second query, the first set contains [2, 3], and the second set contains [2, 4].\n\nIn the third query, the first set contains [2, 3], the second set contains [2, 4], and the third set contains [2, 5].\n\nIn the fourth query, the second set does not contain a segment that lies on the segment [3, 6].\n\nIn the fifth query, the second set contains [2, 4], the third set contains [2, 5], and the fourth contains [7, 9].\n\nInput:\n```\n5 5 9\n3 6 3\n1 3 1\n2 4 2\n1 2 3\n4 6 5\n2 5 3\n7 9 4\n2 3 1\n4 10 4\n1 2 2 3\n1 2 2 4\n1 3 1 5\n2 3 3 6\n2 4 2 9\n```\n\nOutput:\n```\nno\nyes\nyes\nno\nyes\n```",
+    "input": "The first line contains three integers n, m, and k (1≤ n,m≤ 10^5, 1≤ k≤ 3·10^5) — the number of sets, queries, and segments respectively.\n\nEach of the next k lines contains three integers l, r, and p (1≤ l≤ r≤ 10^9, 1≤ p≤ n) — the limits of the segment and the index of a set, to which this segment belongs.\n\nEach of the next m lines contains four integers a, b, x, y (1≤ a≤ b≤ n, 1≤ x≤ y≤ 10^9) — the description of the query.",
+    "output": "For each query, print \"yes\" or \"no\" in a new line.",
+    "time_limit": "3.5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "interactive",
+        "sortings",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1452E",
+    "contest_id": 1452,
+    "problem_letter": "E",
+    "title": "E. Two Editorials",
+    "statement": "Berland regional ICPC contest has just ended. There were m participants numbered from 1 to m, who competed on a problemset of n problems numbered from 1 to n.\n\nNow the editorial is about to take place. There are two problem authors, each of them is going to tell the tutorial to exactly k consecutive tasks of the problemset. The authors choose the segment of k consecutive tasks for themselves independently of each other. The segments can coincide, intersect or not intersect at all.\n\nThe i-th participant is interested in listening to the tutorial of all consecutive tasks from l_i to r_i. Each participant always chooses to listen to only the problem author that tells the tutorials to the maximum number of tasks he is interested in. Let this maximum number be a_i. No participant can listen to both of the authors, even if their segments don't intersect.\n\nThe authors want to choose the segments of k consecutive tasks for themselves in such a way that the sum of a_i over all participants is maximized.\n\nThe first line contains three integers n, m and k (1 ≤ n, m ≤ 2000, 1 ≤ k ≤ n) — the number of problems, the number of participants and the length of the segment of tasks each of the problem authors plans to tell the tutorial to.\n\nThe i-th of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the segment of tasks the i-th participant is interested in listening to the tutorial to.\n\nPrint a single integer — the maximum sum of a_i over all participants.\n\nIn the first example the first author can tell the tutorial to problems from 1 to 3 and the second one — from 6 to 8. That way the sequence of a_i will be [3, 2, 3, 3, 3]. Notice that the last participant can't listen to both author, he only chooses the one that tells the maximum number of problems he's interested in.\n\nIn the second example the first one can tell problems 2 to 4, the second one — 4 to 6.\n\nIn the third example the first one can tell problems 1 to 1, the second one — 2 to 2. Or 4 to 4 and 3 to 3. Every pair of different problems will get the same sum of 2.\n\nIn the fourth example the first one can tell problems 1 to 5, the second one — 1 to 5 as well.\n\nInput:\n```\n10 5 3\n1 3\n2 4\n6 9\n6 9\n1 8\n```\n\nOutput:\n```\n14\n```\n\nInput:\n```\n10 3 3\n2 4\n4 6\n3 5\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n4 4 1\n3 3\n1 1\n2 2\n4 4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5 4 5\n1 2\n2 3\n3 4\n4 5\n```\n\nOutput:\n```\n8\n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ n, m ≤ 2000, 1 ≤ k ≤ n) — the number of problems, the number of participants and the length of the segment of tasks each of the problem authors plans to tell the tutorial to.\n\nThe i-th of the next m lines contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n) — the segment of tasks the i-th participant is interested in listening to the tutorial to.",
+    "output": "Print a single integer — the maximum sum of a_i over all participants.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*2500"
+    ],
+    "rating": 2500
+}

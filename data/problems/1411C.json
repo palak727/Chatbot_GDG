@@ -1,0 +1,18 @@
+{
+    "id": "1411C",
+    "contest_id": 1411,
+    "problem_letter": "C",
+    "title": "C. Peaceful Rooks",
+    "statement": "You are given a n × n chessboard. Rows and columns of the board are numbered from 1 to n. Cell (x, y) lies on the intersection of column number x and row number y.\n\nRook is a chess piece, that can in one turn move any number of cells vertically or horizontally. There are m rooks (m < n) placed on the chessboard in such a way that no pair of rooks attack each other. I.e. there are no pair of rooks that share a row or a column.\n\nIn one turn you can move one of the rooks any number of cells vertically or horizontally. Additionally, it shouldn't be attacked by any other rook after movement. What is the minimum number of moves required to place all the rooks on the main diagonal?\n\nThe main diagonal of the chessboard is all the cells (i, i), where 1 ≤ i ≤ n.\n\nThe first line contains the number of test cases t (1 ≤ t ≤ 10^3). Description of the t test cases follows.\n\nThe first line of each test case contains two integers n and m — size of the chessboard and the number of rooks (2 ≤ n ≤ 10^5, 1 ≤ m < n). Each of the next m lines contains two integers x_i and y_i — positions of rooks, i-th rook is placed in the cell (x_i, y_i) (1 ≤ x_i, y_i ≤ n). It's guaranteed that no two rooks attack each other in the initial placement.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each of t test cases print a single integer — the minimum number of moves required to place all the rooks on the main diagonal.\n\nIt can be proved that this is always possible.\n\nPossible moves for the first three test cases:\n\nInput:\n```\n4\n3 1\n2 3\n3 2\n2 1\n1 2\n5 3\n2 3\n3 1\n1 2\n5 4\n4 5\n5 1\n2 2\n3 3\n```\n\nOutput:\n```\n1\n3\n4\n2\n```",
+    "input": "The first line contains the number of test cases t (1 ≤ t ≤ 10^3). Description of the t test cases follows.\n\nThe first line of each test case contains two integers n and m — size of the chessboard and the number of rooks (2 ≤ n ≤ 10^5, 1 ≤ m < n). Each of the next m lines contains two integers x_i and y_i — positions of rooks, i-th rook is placed in the cell (x_i, y_i) (1 ≤ x_i, y_i ≤ n). It's guaranteed that no two rooks attack each other in the initial placement.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each of t test cases print a single integer — the minimum number of moves required to place all the rooks on the main diagonal.\n\nIt can be proved that this is always possible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*1700"
+    ],
+    "rating": 1700
+}

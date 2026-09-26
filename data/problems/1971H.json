@@ -1,0 +1,18 @@
+{
+    "id": "1971H",
+    "contest_id": 1971,
+    "problem_letter": "H",
+    "title": "H. ±1",
+    "statement": "Bob has a grid with 3 rows and n columns, each of which contains either a_i or -a_i for some integer 1 ≤ i ≤ n. For example, one possible grid for n=4 is shown below:\n\nbeginbmatrix a_1 & -a_2 & -a_3 & -a_2 -a_4 & a_4 & -a_1 & -a_3 a_1 & a_2 & -a_2 & a_4 endbmatrix\n\nAlice and Bob play a game as follows:\n\nFor example, suppose Alice gives Bob the array [1, -1, -1, 1] for the grid above. Then the following will happen (colors are added for clarity):\n\nbeginbmatrix colorreda_1 & colorgreen-a_2 & colorblue-a_3 & colorgreen-a_2 -a_4 & a_4 & colorred-a_1 & colorblue-a_3 colorreda_1 & colorgreena_2 & colorgreen-a_2 & a_4 endbmatrix xrightarrow[colorred1,colorgreen-1,colorblue-1,1] beginbmatrix colorred1 & colorgreen1 & colorblue1 & colorgreen1 -1 & 1 & colorred-1 & colorblue1 colorred1 & colorgreen-1 & colorgreen1 & 1 endbmatrix xrightarrowsort each column beginbmatrix -1 & -1 & -1 & 1 1 & 1 & 1 & 1 1 & 1 & 1 & 1 endbmatrix,. Since the middle row is all 1, Alice wins.\n\nGiven Bob's grid, determine whether or not Alice can choose the array a to win the game.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 500) — the number of columns of Bob's grid.\n\nThe next three lines each contain n integers, the i-th of which contains g_{i,1}, g_{i,2}, …, g_{i,n} (-n ≤ g_{i,j} ≤ n, g_{i,j} ≠ 0), representing Bob's grid.\n\nIf cell x > 0 is in the input, that cell in Bob's grid should contain a_x; if x < 0 is in the input, that cell in Bob's grid should contain -a_{-x}. See the sample input and notes for a better understanding.\n\nFor each test case, output \"YES\" (without quotes) if Alice can win, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nThe first test case is described in the statement.\n\nIn the second test case, Bob's grid is as follows:\n\nbeginbmatrix a_1 & a_2 -a_1 & -a_2 a_2 & -a_2 endbmatrix\n\nFor the last column to have 1 in the middle row when sorted, Alice must pick a_2 = -1. However, it is then impossible to choose a_1 such that the first column has 1 in the middle when sorted. Thus, Alice cannot win.\n\nIn the third test case, Alice can pick a = [1,1,1,1,1].\n\nInput:\n```\n441 -2 -3 -2-4 4 -1 -31 2 -2 421 2-1 -22 -251 2 3 4 5-2 3 -4 -5 -13 -5 1 2 261 3 -6 2 5 21 3 -2 -3 -6 -5-2 -1 -3 2 3 1\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 500) — the number of columns of Bob's grid.\n\nThe next three lines each contain n integers, the i-th of which contains g_{i,1}, g_{i,2}, …, g_{i,n} (-n ≤ g_{i,j} ≤ n, g_{i,j} ≠ 0), representing Bob's grid.\n\nIf cell x > 0 is in the input, that cell in Bob's grid should contain a_x; if x < 0 is in the input, that cell in Bob's grid should contain -a_{-x}. See the sample input and notes for a better understanding.",
+    "output": "For each test case, output \"YES\" (without quotes) if Alice can win, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yEs\", \"yes\", and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "2-sat",
+        "dfs and similar",
+        "graphs",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1656C",
+    "contest_id": 1656,
+    "problem_letter": "C",
+    "title": "C. Make Equal With Mod",
+    "statement": "You are given an array of n non-negative integers a_1, a_2, …, a_n. You can make the following operation: choose an integer x ≥ 2 and replace each number of the array by the remainder when dividing that number by x, that is, for all 1 ≤ i ≤ n set a_i to a_i bmod x.\n\nDetermine if it is possible to make all the elements of the array equal by applying the operation zero or more times.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) where a_i is the i-th element of the array.\n\nThe sum of n for all test cases is at most 2·10^5.\n\nFor each test case, print a line with YES if you can make all elements of the list equal by applying the operation. Otherwise, print NO.\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as a positive answer).\n\nIn the first test case, one can apply the operation with x = 3 to obtain the array [2, 2, 0, 2], and then apply the operation with x = 2 to obtain [0, 0, 0, 0].\n\nIn the second test case, all numbers are already equal.\n\nIn the fourth test case, applying the operation with x = 4 results in the array [1, 1, 1, 1].\n\nInput:\n```\n442 5 6 831 1 154 1 7 0 845 9 17 5\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) where a_i is the i-th element of the array.\n\nThe sum of n for all test cases is at most 2·10^5.",
+    "output": "For each test case, print a line with YES if you can make all elements of the list equal by applying the operation. Otherwise, print NO.\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "number theory",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1705A",
+    "contest_id": 1705,
+    "problem_letter": "A",
+    "title": "A. Mark the Photographer",
+    "statement": "Mark is asked to take a group photo of 2n people. The i-th person has height h_i units.\n\nTo do so, he ordered these people into two rows, the front row and the back row, each consisting of n people. However, to ensure that everyone is seen properly, the j-th person of the back row must be at least x units taller than the j-th person of the front row for each j between 1 and n, inclusive.\n\nHelp Mark determine if this is possible.\n\nThe first line contains one integer t (1≤ t≤ 100) — the number of test cases. Each test case consists of two lines.\n\nThe first line of each test case contains two positive integers n and x (1≤ n≤ 100, 1≤ x≤ 10^3) — the number of people in each row and the minimum difference Mark wants.\n\nThe second line of each test case contains 2n positive integers h_1,h_2,…,h_2n (1≤ h_i≤ 10^3) — the height of each person in units.\n\nNote that the sum of n over all test cases is not bounded.\n\nFor each test case, print a single line containing \"YES\" if Mark could arrange people satisfying his condition and \"NO\" otherwise.\n\nYou may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answers).\n\nIn the first test case, one possible order is to have the third, fifth, and sixth person on the back row and the second, first, and fourth on the front row. The heights of the people will look like this.\n\nIt works because\n\nIn the second test case, it can be shown there is no way to order people in a way that satisfies the condition.\n\nIn the third test case, the only way to arrange people to satisfy the condition is to have the first person on the back row and the second person on the front row.\n\nInput:\n```\n33 61 3 9 10 12 163 12 5 2 2 2 51 28 6\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1≤ t≤ 100) — the number of test cases. Each test case consists of two lines.\n\nThe first line of each test case contains two positive integers n and x (1≤ n≤ 100, 1≤ x≤ 10^3) — the number of people in each row and the minimum difference Mark wants.\n\nThe second line of each test case contains 2n positive integers h_1,h_2,…,h_2n (1≤ h_i≤ 10^3) — the height of each person in units.\n\nNote that the sum of n over all test cases is not bounded.",
+    "output": "For each test case, print a single line containing \"YES\" if Mark could arrange people satisfying his condition and \"NO\" otherwise.\n\nYou may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answers).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

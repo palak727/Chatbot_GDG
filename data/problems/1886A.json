@@ -1,0 +1,18 @@
+{
+    "id": "1886A",
+    "contest_id": 1886,
+    "problem_letter": "A",
+    "title": "A. Sum of Three",
+    "statement": "Monocarp has an integer n.\n\nHe wants to represent his number as a sum of three distinct positive integers x, y, and z. Additionally, Monocarp wants none of the numbers x, y, and z to be divisible by 3.\n\nYour task is to help Monocarp to find any valid triplet of distinct positive integers x, y, and z, or report that such a triplet does not exist.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe only line of each testcase contains a single integer n (1 ≤ n ≤ 10^9).\n\nFor each testcase, if there is no valid triplet x, y, and z, print NO on the first line.\n\nOtherwise, print YES on the first line. On the second line, print any valid triplet of distinct positive integers x, y, and z such that x + y + z = n, and none of the printed numbers are divisible by 3. If there are multiple valid triplets, you can print any of them.\n\nIn the first testcase, one of the valid triplets is x = 4, y = 5, z = 1. None of these numbers are divisible by three, and 4 + 5 + 1 = 10.\n\nIn the second testcase, there is no valid triplet.\n\nIn the third testcase, one of the valid triplets is x = 2, y = 8, z = 5. None of these numbers are divisible by three, and 2 + 8 + 5 = 15.\n\nIn the fourth testcase, there is no valid triplet.\n\nInput:\n```\n4104159\n```\n\nOutput:\n```\nYES\n4 5 1\nNO\nYES\n2 8 5\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe only line of each testcase contains a single integer n (1 ≤ n ≤ 10^9).",
+    "output": "For each testcase, if there is no valid triplet x, y, and z, print NO on the first line.\n\nOtherwise, print YES on the first line. On the second line, print any valid triplet of distinct positive integers x, y, and z such that x + y + z = n, and none of the printed numbers are divisible by 3. If there are multiple valid triplets, you can print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

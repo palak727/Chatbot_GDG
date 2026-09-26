@@ -1,0 +1,18 @@
+{
+    "id": "1575D",
+    "contest_id": 1575,
+    "problem_letter": "D",
+    "title": "D. Divisible by Twenty-Five",
+    "statement": "Mr. Chanek has an integer represented by a string s. Zero or more digits have been erased and are denoted by the character _. There are also zero or more digits marked by the character X, meaning they're the same digit.\n\nMr. Chanek wants to count the number of possible integer s, where s is divisible by 25. Of course, s must not contain any leading zero. He can replace the character _ with any digit. He can also replace the character X with any digit, but it must be the same for every character X.\n\nAs a note, a leading zero is any 0 digit that comes before the first nonzero digit in a number string in positional notation. For example, 0025 has two leading zeroes. An exception is the integer zero, (0 has no leading zero, but 0000 has three leading zeroes).\n\nOne line containing the string s (1 ≤ |s| ≤ 8). The string s consists of the characters 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, _, and X.\n\nOutput an integer denoting the number of possible integer s.\n\nIn the first example, the only possible s is 25.\n\nIn the second and third example, s ∈ {100, 200,300,400,500,600,700,800,900}.\n\nIn the fifth example, all possible s will have at least one leading zero.\n\nInput:\n```\n25\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n_00\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n_XX\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n0_25\n```\n\nOutput:\n```\n0\n```",
+    "input": "One line containing the string s (1 ≤ |s| ≤ 8). The string s consists of the characters 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, _, and X.",
+    "output": "Output an integer denoting the number of possible integer s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "*1800"
+    ],
+    "rating": 1800
+}

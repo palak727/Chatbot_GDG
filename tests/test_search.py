@@ -1,6 +1,11 @@
 import unittest
+from typing import cast
 
-from src.search import filter_problems, is_problem_id_query, match_by_id
+import faiss
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+from src.search import filter_problems, is_problem_id_query, match_by_id, semantic_search
 
 
 PROBLEMS = [
@@ -41,6 +46,40 @@ class SearchFilterTests(unittest.TestCase):
             [p["id"] for p in filter_problems(PROBLEMS, rating_min=800, rating_max=2400)],
             ["1A", "4C"],
         )
+
+    def test_filtered_semantic_search_matches_restricted_faiss_index(self):
+        class Model:
+            calls = 0
+
+            def encode(self, texts, convert_to_numpy=True):
+                self.calls += 1
+                return np.array([[0.0]], dtype=np.float32)
+
+        vectors = np.array([[0], [1], [-1], [2], [3], [-4], [4], [5]], dtype=np.float32)
+        index = faiss.IndexFlatL2(1)
+        index.add(vectors)
+        problems = [{"id": f"{i}A"} for i in range(len(vectors))]
+        candidate_indices = [1, 2, 5, 6]
+        model = cast(SentenceTransformer, Model())
+
+        actual = semantic_search(
+            "query", index, problems, model, k=3, candidate_indices=candidate_indices
+        )
+
+        restricted_index = faiss.IndexFlatL2(1)
+        restricted_index.add(vectors[candidate_indices])
+        distances, local_indices = restricted_index.search(
+            np.array([[0.0]], dtype=np.float32), 3
+        )
+        expected = [
+            (problems[candidate_indices[i]]["id"], float(distance))
+            for distance, i in zip(distances[0], local_indices[0])
+        ]
+
+        self.assertEqual(
+            [(problem["id"], distance) for problem, distance in actual], expected
+        )
+        self.assertEqual(model.calls, 1)
 
 
 if __name__ == "__main__":

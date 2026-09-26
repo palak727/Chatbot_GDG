@@ -1,0 +1,16 @@
+{
+    "id": "2045I",
+    "contest_id": 2045,
+    "problem_letter": "I",
+    "title": "I. Microwavable Subsequence",
+    "statement": "You are given an array of N integers: [A_1, A_2, …, A_N].\n\nA subsequence can be derived from an array by removing zero or more elements without changing the order of the remaining elements. For example, [2, 1, 2], [3, 3], [1], and [3, 2, 1, 3, 2] are subsequences of array [3, 2, 1, 3, 2], while [1, 2, 3] is not a subsequence of array [3, 2, 1, 3, 2].\n\nA subsequence is microwavable if the subsequence consists of at most two distinct values and each element differs from its adjacent elements. For example, [2, 1, 2], [3, 2, 3, 2], and [1] are microwavable, while [3, 3] and [3, 2, 1, 3, 2] are not microwavable.\n\nDenote a function f(x, y) as the length of the longest microwavable subsequence of array A such that each element within the subsequence is either x or y. Find the sum of f(x, y) for all 1 ≤ x < y ≤ M.\n\nThe first line consists of two integers N M (1 ≤ N, M ≤ 300,000).\n\nThe second line consists of N integers A_i (1 ≤ A_i ≤ M).\n\nOutput a single integer representing the sum of f(x, y) for all 1 ≤ x < y ≤ M.\n\nExplanation for the sample input/output #1\n\nThe value of f(1, 2) is 3, taken from the subsequence [2, 1, 2] that can be obtained by removing A_1 and A_4. The value of f(1, 3) is 3, taken from the subsequence [3, 1, 3] that can be obtained by removing A_2 and A_5. The value of f(2, 3) is 4, taken from the subsequence [3, 2, 3, 2] that can be obtained by removing A_3. The value of f(1, 4), f(2, 4), and f(3, 4) are all 1.\n\nExplanation for the sample input/output #2\n\nThe value of f(1, 2) and f(1, 3) are both 1, while the value of f(2, 3) is 0.\n\nInput:\n```\n5 4\n3 2 1 3 2\n```\n\nOutput:\n```\n13\n```\n\nInput:\n```\n3 3\n1 1 1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line consists of two integers N M (1 ≤ N, M ≤ 300,000).\n\nThe second line consists of N integers A_i (1 ≤ A_i ≤ M).",
+    "output": "Output a single integer representing the sum of f(x, y) for all 1 ≤ x < y ≤ M.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "*2100"
+    ],
+    "rating": 2100
+}

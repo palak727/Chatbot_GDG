@@ -1,0 +1,17 @@
+{
+    "id": "2106A",
+    "contest_id": 2106,
+    "problem_letter": "A",
+    "title": "A. Dr. TC",
+    "statement": "In order to test his patients' intelligence, Dr. TC created the following test.\n\nFirst, he creates a binary string^{∗} s having n characters. Then, he creates n binary strings a_1, a_2, …, a_n. It is known that a_i is created by first copying s, then flipping the i'th character (texttt1 becomes texttt0 and vice versa). After creating all n strings, he arranges them into a grid where the i'th row is a_i.\n\nFor example,\n\nThe patient needs to count the number of 1s written on the board in less than a second. Can you pass the test?\n\n^{∗}A binary string is a string that only consists of characters texttt1 and texttt0.\n\nThe first line of the input consists of a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10) — the length of the binary string s.\n\nThe second line of each test case contains a single binary string s of size n.\n\nFor each test case, output a single integer, the number of texttt1s on the board.\n\nThe first example is explained in the statement.\n\nFor the second example, the only string written on the board will be the string texttt0; therefore, the answer is 0.\n\nIn the third example, the following strings will be written on the board: [texttt10000, texttt01000, texttt00100, texttt00010, texttt00001]; so there are five texttt1s written on the board.\n\nInput:\n```\n53101115000002113010\n```\n\nOutput:\n```\n5\n0\n5\n2\n4\n```",
+    "input": "The first line of the input consists of a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10) — the length of the binary string s.\n\nThe second line of each test case contains a single binary string s of size n.",
+    "output": "For each test case, output a single integer, the number of texttt1s on the board.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

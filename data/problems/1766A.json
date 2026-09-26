@@ -1,0 +1,17 @@
+{
+    "id": "1766A",
+    "contest_id": 1766,
+    "problem_letter": "A",
+    "title": "A. Extremely Round",
+    "statement": "Let's call a positive integer extremely round if it has only one non-zero digit. For example, 5000, 4, 1, 10, 200 are extremely round integers; 42, 13, 666, 77, 101 are not.\n\nYou are given an integer n. You have to calculate the number of extremely round integers x such that 1 ≤ x ≤ n.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThen, t lines follow. The i-th of them contains one integer n (1 ≤ n ≤ 999999) — the description of the i-th test case.\n\nFor each test case, print one integer — the number of extremely round integers x such that 1 ≤ x ≤ n.\n\nInput:\n```\n594213100111\n```\n\nOutput:\n```\n9\n13\n10\n19\n19\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThen, t lines follow. The i-th of them contains one integer n (1 ≤ n ≤ 999999) — the description of the i-th test case.",
+    "output": "For each test case, print one integer — the number of extremely round integers x such that 1 ≤ x ≤ n.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

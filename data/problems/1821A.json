@@ -1,0 +1,17 @@
+{
+    "id": "1821A",
+    "contest_id": 1821,
+    "problem_letter": "A",
+    "title": "A. Matching",
+    "statement": "An integer template is a string consisting of digits and/or question marks.\n\nA positive (strictly greater than 0) integer matches the integer template if it is possible to replace every question mark in the template with a digit in such a way that we get the decimal representation of that integer without any leading zeroes.\n\nFor example:\n\nYou are given an integer template consisting of at most 5 characters. Calculate the number of positive (strictly greater than 0) integers that match it.\n\nThe first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 5) consisting of digits and/or question marks — the integer template for the corresponding test case.\n\nFor each test case, print one integer — the number of positive (strictly greater than 0) integers that match the template.\n\nInput:\n```\n8???09031??7?5?9??99\n```\n\nOutput:\n```\n90\n9\n0\n1\n0\n100\n90\n100\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing the string s (1 ≤ |s| ≤ 5) consisting of digits and/or question marks — the integer template for the corresponding test case.",
+    "output": "For each test case, print one integer — the number of positive (strictly greater than 0) integers that match the template.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

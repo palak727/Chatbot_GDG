@@ -1,0 +1,21 @@
+{
+    "id": "1995B2",
+    "contest_id": 1995,
+    "problem_letter": "B2",
+    "title": "B2. Bouquet (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference is that in this version, instead of listing the number of petals for each flower, the number of petals and the quantity of flowers in the store is set for all types of flowers.\n\nA girl is preparing for her birthday and wants to buy the most beautiful bouquet. There are a total of n different types of flowers in the store, each of which is characterized by the number of petals and the quantity of this type of flower. A flower with k petals costs k coins. The girl has decided that the difference in the number of petals between any two flowers she will use to decorate her cake should not exceed one. At the same time, the girl wants to assemble a bouquet with the maximum possible number of petals. Unfortunately, she only has m coins, and she cannot spend more. What is the maximum total number of petals she can assemble in the bouquet?\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. This is followed by descriptions of the test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10^18) — the number of types of flowers in the store and the number of coins the girl possesses, respectively. The second line of each test case contains n different integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of petals of the i-th flower type in the store (for different indexes i ≠ j, it must be a_i ≠ a_j). The third line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9), where c_i is the quantity of the i-th flower type in the store.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print one integer — the maximum possible number of petals in a bouquet that a girl can collect, observing all the conditions listed above.\n\nIn the first test case, some valid bouquets are (1, 1, 2, 2), (2, 2, 3), (1, 1), (2, 2). The maximum over all valid bouquets not greater than 10 is 7 for (2, 2, 3). In the second test case, you can assemble a valid bouquet with (206, 206, 207, 207, 207) with a sum of 1033, which is the maximum number of petals the girl can buy. In the third test case, you can assemble a valid bouquet with (5, 5, 5, 4) with a sum of 19. It can be seen that no valid bouquet can have 20 petals.\n\nInput:\n```\n73 101 2 32 2 13 1033206 207 10003 4 16 204 2 7 5 6 11 2 1 3 1 78 100000239 30 610 122 24 40 8 212 13123 112 1456 124 100 123 109826 132 4 11 1 3 52 2 1 2 2 18 10330206 210 200 201 198 199 222 10009 10 11 12 13 14 15 162 1000000000011 1287312315 753297050\n```\n\nOutput:\n```\n7\n1033\n19\n99990\n13\n10000\n9999999999\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. This is followed by descriptions of the test cases.\n\nThe first line of each test case contains two integers n, m (1 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 10^18) — the number of types of flowers in the store and the number of coins the girl possesses, respectively. The second line of each test case contains n different integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9), where a_i is the number of petals of the i-th flower type in the store (for different indexes i ≠ j, it must be a_i ≠ a_j). The third line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^9), where c_i is the quantity of the i-th flower type in the store.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print one integer — the maximum possible number of petals in a bouquet that a girl can collect, observing all the conditions listed above.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

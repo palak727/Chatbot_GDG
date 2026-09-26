@@ -1,0 +1,18 @@
+{
+    "id": "1811A",
+    "contest_id": 1811,
+    "problem_letter": "A",
+    "title": "A. Insert Digit",
+    "statement": "You have a positive number of length n and one additional digit.\n\nYou can insert this digit anywhere in the number, including at the beginning or at the end.\n\nYour task is to make the result as large as possible.\n\nFor example, you have the number 76543, and the additional digit is 4. Then the maximum number you can get is 765443, and it can be obtained in two ways — by inserting a digit after the 3th or after the 4th digit of the number.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of the description of each test case contains two integers n and d (1 ≤ n ≤ 2·10^5; 0 ≤ d ≤ 9) — the length of the number and an additional digit, respectively.\n\nThe second line of the description of each test case contains a string consisting of n digits — the number that you have initially. It is guaranteed that the number does not contain leading zeros.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output a string consisting of n + 1 digits — the maximum possible number that can be obtained.\n\nInput:\n```\n115 4765431 012 5443 66665 6135795 89753119 498765432101234567895 7737378 1200000007 0705895912 1828127127732\n```\n\nOutput:\n```\n765443\n10\n544\n6666\n613579\n987531\n98765443210123456789\n773737\n210000000\n70589590\n8281271277321\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of the description of each test case contains two integers n and d (1 ≤ n ≤ 2·10^5; 0 ≤ d ≤ 9) — the length of the number and an additional digit, respectively.\n\nThe second line of the description of each test case contains a string consisting of n digits — the number that you have initially. It is guaranteed that the number does not contain leading zeros.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a string consisting of n + 1 digits — the maximum possible number that can be obtained.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

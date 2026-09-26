@@ -1,0 +1,26 @@
+{
+    "id": "1895E",
+    "contest_id": 1895,
+    "problem_letter": "E",
+    "title": "E. Infinite Card Game",
+    "statement": "Monocarp and Bicarp are playing a card game. Each card has two parameters: an attack value and a defence value. A card s beats another card t if the attack of s is strictly greater than the defence of t.\n\nMonocarp has n cards, the i-th of them has an attack value of ax_i and a defence value of ay_i. Bicarp has m cards, the j-th of them has an attack value of bx_j and a defence value of by_j.\n\nOn the first move, Monocarp chooses one of his cards and plays it. Bicarp has to respond with his own card that beats that card. After that, Monocarp has to respond with a card that beats Bicarp's card. After that, it's Bicarp's turn, and so forth.\n\nAfter a card is beaten, it returns to the hand of the player who played it. It implies that each player always has the same set of cards to play as at the start of the game. The game ends when the current player has no cards that beat the card which their opponent just played, and the current player loses.\n\nIf the game lasts for 100^500 moves, it's declared a draw.\n\nBoth Monocarp and Bicarp play optimally. That is, if a player has a winning strategy regardless of his opponent's moves, he plays for a win. Otherwise, if he has a drawing strategy, he plays for a draw.\n\nYou are asked to calculate three values:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 3·10^5) — the number of cards Monocarp has.\n\nThe second line contains n integers ax_1, ax_2, …, ax_n (1 ≤ ax_i ≤ 10^6) — the attack values of Monocarp's cards.\n\nThe third line contains n integers ay_1, ay_2, …, ay_n (1 ≤ ay_i ≤ 10^6) — the defence values of Monocarp's cards.\n\nThe fourth line contains a single integer m (1 ≤ m ≤ 3·10^5) — the number of cards Bicarp has.\n\nThe fifth line contains m integers bx_1, bx_2, …, bx_m (1 ≤ bx_j ≤ 10^6) — the attack values of Bicarp's cards.\n\nThe sixth line contains m integers by_1, by_2, …, by_m (1 ≤ by_j ≤ 10^6) — the defence values of Bicarp's cards.\n\nAdditional constraints on the input: the sum of n over all test cases doesn't exceed 3·10^5, the sum of m over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print three integers:\n\nInput:\n```\n338 7 47 1 1028 45 1098 8 5 5 5 4 4 1 42 7 5 2 8 9 7 1 9109 8 7 6 5 5 4 3 2 17 1 6 7 5 8 8 4 9 611051105\n```\n\nOutput:\n```\n1 1 1\n2 4 3\n0 1 0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 3·10^5) — the number of cards Monocarp has.\n\nThe second line contains n integers ax_1, ax_2, …, ax_n (1 ≤ ax_i ≤ 10^6) — the attack values of Monocarp's cards.\n\nThe third line contains n integers ay_1, ay_2, …, ay_n (1 ≤ ay_i ≤ 10^6) — the defence values of Monocarp's cards.\n\nThe fourth line contains a single integer m (1 ≤ m ≤ 3·10^5) — the number of cards Bicarp has.\n\nThe fifth line contains m integers bx_1, bx_2, …, bx_m (1 ≤ bx_j ≤ 10^6) — the attack values of Bicarp's cards.\n\nThe sixth line contains m integers by_1, by_2, …, by_m (1 ≤ by_j ≤ 10^6) — the defence values of Bicarp's cards.\n\nAdditional constraints on the input: the sum of n over all test cases doesn't exceed 3·10^5, the sum of m over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print three integers:",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "games",
+        "graphs",
+        "greedy",
+        "sortings",
+        "two pointers",
+        "*2300"
+    ],
+    "rating": 2300
+}

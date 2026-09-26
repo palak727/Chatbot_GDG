@@ -1,0 +1,19 @@
+{
+    "id": "1444C",
+    "contest_id": 1444,
+    "problem_letter": "C",
+    "title": "C. Team-Building",
+    "statement": "The new academic year has started, and Berland's university has n first-year students. They are divided into k academic groups, however, some of the groups might be empty. Among the students, there are m pairs of acquaintances, and each acquaintance pair might be both in a common group or be in two different groups.\n\nAlice is the curator of the first years, she wants to host an entertaining game to make everyone know each other. To do that, she will select two different academic groups and then divide the students of those groups into two teams. The game requires that there are no acquaintance pairs inside each of the teams.\n\nAlice wonders how many pairs of groups she can select, such that it'll be possible to play a game after that. All students of the two selected groups must take part in the game.\n\nPlease note, that the teams Alice will form for the game don't need to coincide with groups the students learn in. Moreover, teams may have different sizes (or even be empty).\n\nThe first line contains three integers n, m and k (1 ≤ n ≤ 500,000; 0 ≤ m ≤ 500,000; 2 ≤ k ≤ 500,000) — the number of students, the number of pairs of acquaintances and the number of groups respectively.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ k), where c_i equals to the group number of the i-th student.\n\nNext m lines follow. The i-th of them contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n), denoting that students a_i and b_i are acquaintances. It's guaranteed, that a_i ≠ b_i, and that no (unordered) pair is mentioned more than once.\n\nPrint a single integer — the number of ways to choose two different groups such that it's possible to select two teams to play the game.\n\nThe acquaintances graph for the first example is shown in the picture below (next to each student there is their group number written).\n\nIn that test we can select the following groups:\n\nIn the second example, we can select any group pair. Please note, that even though the third group has no students, we still can select it (with some other group) for the game.\n\nInput:\n```\n6 8 3\n1 1 2 2 3 3\n1 3\n1 5\n1 6\n2 5\n2 6\n3 4\n3 5\n5 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 3 3\n1 1 2 2\n1 2\n2 3\n3 4\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n4 4 2\n1 1 1 2\n1 2\n2 3\n3 1\n1 4\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n5 5 2\n1 2 1 2 1\n1 2\n2 3\n3 4\n4 5\n5 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ n ≤ 500,000; 0 ≤ m ≤ 500,000; 2 ≤ k ≤ 500,000) — the number of students, the number of pairs of acquaintances and the number of groups respectively.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ k), where c_i equals to the group number of the i-th student.\n\nNext m lines follow. The i-th of them contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ n), denoting that students a_i and b_i are acquaintances. It's guaranteed, that a_i ≠ b_i, and that no (unordered) pair is mentioned more than once.",
+    "output": "Print a single integer — the number of ways to choose two different groups such that it's possible to select two teams to play the game.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*2500"
+    ],
+    "rating": 2500
+}

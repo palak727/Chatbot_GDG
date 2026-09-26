@@ -1,0 +1,19 @@
+{
+    "id": "2000F",
+    "contest_id": 2000,
+    "problem_letter": "F",
+    "title": "F. Color Rows and Columns",
+    "statement": "You have n rectangles, the i-th of which has a width of a_i and a height of b_i.\n\nYou can perform the following operation an unlimited number of times: choose a rectangle and a cell in it, and then color it.\n\nEach time you completely color any row or column, you earn 1 point. Your task is to score at least k points with as few operations as possible.\n\nSuppose you have a rectangle with a width of 6 and a height of 3. You can score 4 points by coloring all the cells in any 4 columns, thus performing 12 operations.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The following are the descriptions of the test cases.\n\nThe first line of each test case description contains two integers n and k (1 ≤ n ≤ 1000, 1 ≤ k ≤ 100) — the number of rectangles in the case and the required number of points.\n\nThe next n lines contain the descriptions of the rectangles. The i-th line contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 100) — the width and height of the i-th rectangle.\n\nIt is guaranteed that the sum of the values of n across all test cases does not exceed 1000.\n\nFor each test case, output a single integer — the minimum number of operations required to score at least k points. If it is impossible to score at least k points, output -1.\n\nInput:\n```\n71 46 31 54 45 101 11 11 11 11 12 1001 25 63 112 23 34 43 259 24 38 104 185 48 58 36 2\n```\n\nOutput:\n```\n12\n14\n5\n-1\n17\n80\n35\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The following are the descriptions of the test cases.\n\nThe first line of each test case description contains two integers n and k (1 ≤ n ≤ 1000, 1 ≤ k ≤ 100) — the number of rectangles in the case and the required number of points.\n\nThe next n lines contain the descriptions of the rectangles. The i-th line contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 100) — the width and height of the i-th rectangle.\n\nIt is guaranteed that the sum of the values of n across all test cases does not exceed 1000.",
+    "output": "For each test case, output a single integer — the minimum number of operations required to score at least k points. If it is impossible to score at least k points, output -1.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

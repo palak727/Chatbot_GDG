@@ -1,0 +1,19 @@
+{
+    "id": "1753D",
+    "contest_id": 1753,
+    "problem_letter": "D",
+    "title": "D. The Beach",
+    "statement": "Andrew loves the sea. That's why, at the height of the summer season, he decided to go to the beach, taking a sunbed with him to sunbathe.\n\nThe beach is a rectangular field with n rows and m columns. Some cells of the beach are free, some have roads, stones, shops and other non-movable objects. Some of two adjacent along the side cells can have sunbeds located either horizontally or vertically.\n\nAndrew hopes to put his sunbed somewhere, but that's a bad luck, there may no longer be free places for him! That's why Andrew asked you to help him to find a free place for his sunbed. Andrew's sunbed also should be places on two adjacent cells.\n\nIf there are no two adjacent free cells, then in order to free some place for a sunbed, you will have to disturb other tourists. You can do the following actions:\n\nIn any moment each sunbed occupies two adjacent free cells. You cannot move more than one sunbed at a time.\n\nHelp Andrew to free a space for his sunbed, causing the minimum possible number of units of discomfort to other tourists, or detect that it is impossible.\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 300,000, 1 ≤ n·m ≤ 300,000) — the number of rows and columns in rectangle.\n\nThe second line contains two integers p and q (1 ≤ p, q ≤ 10^9) — the number of units of discomfort caused by rotation and shift of a sunbed, respectively.\n\nEach of the following n lines contains m characters, describing cells of the rectangle. Each lines consists of characters \"L\", \"R\", \"D\", \"U\", \".\" and \"#\", denoting the type of the cell. Characters \"L\", \"R\", \"D\" and \"U\" denote a half of a sunbed placed in the cell — left, right, bottom and top half, respectively. Character \".\" denotes a free cell and character \"#\" — a cell, occupied by some non-movable object.\n\nPrint one integer — the minimum possible number of units of discomfort, caused to other tourists, to free a space for a sunbed. If it is impossible to free a space for a sunbed, print -1.\n\nIn the first example we can shift upper sunbed to the left and lower sunbed — to the right. Andrew will be able to put his sunbed vertically in the middle of the beach. We well cause 2 + 2 = 4 units of discomfort. It is easy to prove that it is an optimal answer.\n\nInput:\n```\n2 55 2.LR####LR.\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2 34 5LR.#.#\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n4 310 10.LR###UU#DD.\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n3 610 7.U##.##DLR##.##LR.\n```\n\nOutput:\n```\n24\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 300,000, 1 ≤ n·m ≤ 300,000) — the number of rows and columns in rectangle.\n\nThe second line contains two integers p and q (1 ≤ p, q ≤ 10^9) — the number of units of discomfort caused by rotation and shift of a sunbed, respectively.\n\nEach of the following n lines contains m characters, describing cells of the rectangle. Each lines consists of characters \"L\", \"R\", \"D\", \"U\", \".\" and \"#\", denoting the type of the cell. Characters \"L\", \"R\", \"D\" and \"U\" denote a half of a sunbed placed in the cell — left, right, bottom and top half, respectively. Character \".\" denotes a free cell and character \"#\" — a cell, occupied by some non-movable object.",
+    "output": "Print one integer — the minimum possible number of units of discomfort, caused to other tourists, to free a space for a sunbed. If it is impossible to free a space for a sunbed, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "shortest paths",
+        "*2400"
+    ],
+    "rating": 2400
+}

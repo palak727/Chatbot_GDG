@@ -1,0 +1,17 @@
+{
+    "id": "2047A",
+    "contest_id": 2047,
+    "problem_letter": "A",
+    "title": "A. Alyona and a Square Jigsaw Puzzle",
+    "statement": "Alyona assembles an unusual square Jigsaw Puzzle. She does so in n days in the following manner:\n\nFor example, she places the first 14 pieces in the following order:\n\nAlyona is happy if at the end of the day the assembled part of the puzzle does not have any started but unfinished layers. Given the number of pieces she assembles on each day, find the number of days Alyona is happy on.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line contains a single integer n (1 ≤ n ≤ 100), the number of days.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100, a_1 = 1), where a_i is the number of pieces Alyona assembles on the i-th day.\n\nIt is guaranteed in each test case that at the end of the n days, there are no unfinished layers.\n\nFor each test case, print a single integer: the number of days when Alyona is happy.\n\nIn the first test case, in the only day Alyona finishes the only layer.\n\nIn the second test case, on the first day, Alyona finishes the first layer, and on the second day, she finishes the second layer.\n\nIn the third test case, she finishes the second layer in a few days.\n\nIn the fourth test case, she finishes the second layer and immediately starts the next one on the same day, therefore, she is not happy on that day. She is only happy on the first and last days.\n\nIn the fifth test case, Alyona is happy on the first, fourth, and last days.\n\nInput:\n```\n51121 851 3 2 1 271 2 1 10 2 7 2141 10 10 100 1 1 10 1 10 2 10 2 10 1\n```\n\nOutput:\n```\n1\n2\n2\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line contains a single integer n (1 ≤ n ≤ 100), the number of days.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100, a_1 = 1), where a_i is the number of pieces Alyona assembles on the i-th day.\n\nIt is guaranteed in each test case that at the end of the n days, there are no unfinished layers.",
+    "output": "For each test case, print a single integer: the number of days when Alyona is happy.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

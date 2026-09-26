@@ -1,0 +1,18 @@
+{
+    "id": "1822E",
+    "contest_id": 1822,
+    "problem_letter": "E",
+    "title": "E. Making Anti-Palindromes",
+    "statement": "You are given a string s, consisting of lowercase English letters. In one operation, you are allowed to swap any two characters of the string s.\n\nA string s of length n is called an anti-palindrome, if s[i] ≠ s[n - i + 1] for every i (1 ≤ i ≤ n). For example, the strings \"codeforces\", \"string\" are anti-palindromes, but the strings \"abacaba\", \"abc\", \"test\" are not.\n\nDetermine the minimum number of operations required to make the string s an anti-palindrome, or output -1, if this is not possible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of n lowercase English letters.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of operations required to make the string s an anti-palindrome, or -1 if this is not possible.\n\nIn the first test case, the string \"codeforces\" is already an anti-palindrome, so the answer is 0.\n\nIn the second test case, it can be shown that the string \"abc\" cannot be transformed into an anti-palindrome by performing the allowed operations, so the answer is -1.\n\nIn the third test case, it is enough to swap the second and the fifth characters of the string \"taarrrataa\", and the new string \"trararataa\" will be an anti-palindrome, so the answer is 1.\n\nInput:\n```\n1010codeforces3abc10taarrrataa10dcbdbdcccc4wwww12cabbaccabaac10aadaaaaddc14aacdaaaacadcdc6abccba12dcbcaebacccd\n```\n\nOutput:\n```\n0\n-1\n1\n1\n-1\n3\n-1\n2\n2\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains the string s, consisting of n lowercase English letters.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of operations required to make the string s an anti-palindrome, or -1 if this is not possible.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

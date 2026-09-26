@@ -1,0 +1,17 @@
+{
+    "id": "1825A",
+    "contest_id": 1825,
+    "problem_letter": "A",
+    "title": "A. LuoTianyi and the Palindrome String",
+    "statement": "LuoTianyi gives you a palindrome^dagger string s, and she wants you to find out the length of the longest non-empty subsequence^ddagger of s which is not a palindrome string. If there is no such subsequence, output -1 instead.\n\n^dagger A palindrome is a string that reads the same backward as forward. For example, strings \"z\", \"aaa\", \"aba\", \"abccba\" are palindromes, but strings \"codeforces\", \"reality\", \"ab\" are not.\n\n^ddagger A string a is a subsequence of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from b. For example, strings \"a\", \"aaa\", \"bab\" are subsequences of string \"abaab\", but strings \"codeforces\", \"bbb\", \"h\" are not.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first and the only line of each test case contains a single string s (1 ≤ |s| ≤ 50) consisting of lowercase English letters — the string that LuoTianyi gives you. It's guaranteed that s is a palindrome string.\n\nFor each test case, output a single integer — the length of the longest non-empty subsequence which is not a palindrome string. If there is no such subsequence, output -1.\n\nIn the first test case, \"abcaba\" is a subsequence of \"abacaba\" as we can delete the third letter of \"abacaba\" to get \"abcaba\", and \"abcaba\" is not a palindrome string. We can prove that \"abcaba\" is an example of the longest subsequences of \"abacaba\" that isn't palindrome, so that the answer is 6.\n\nIn the second test case, we can only get \"a\" and \"aa\", but they are all palindrome strings, so the answer is -1.\n\nInput:\n```\n4abacabaaaacodeforcesecrofedoclol\n```\n\nOutput:\n```\n6\n-1\n18\n2\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe first and the only line of each test case contains a single string s (1 ≤ |s| ≤ 50) consisting of lowercase English letters — the string that LuoTianyi gives you. It's guaranteed that s is a palindrome string.",
+    "output": "For each test case, output a single integer — the length of the longest non-empty subsequence which is not a palindrome string. If there is no such subsequence, output -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

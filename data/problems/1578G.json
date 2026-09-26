@@ -1,0 +1,17 @@
+{
+    "id": "1578G",
+    "contest_id": 1578,
+    "problem_letter": "G",
+    "title": "G. Game of Chance",
+    "statement": "The King wants to marry off his daughter, and he wants her husband to have the greatest innate luckiness possible. To find such a person he decided to hold a heads-or-tails tournament.\n\nIf person A with luckiness x and person B with luckiness y play heads-or-tails against each other, person A wins with probability x/(x+y).\n\nThe tournament has several rounds. Each round some participants are split into pairs. Each pair plays against each other, and the loser leaves the tournament.\n\nThe participants are numbered from 1 to n. During the first round, a number k (1 ≤ k ≤ n) is selected such that n-k/2 is a power of 2 (such k always exists and is unique). Only participants numbered from 1 to k take part in the first round. It ensures that in all other rounds the number of participants is the power of 2.\n\nDuring other rounds, all the participants who still have not left the tournament take part. If during some round, participants numbered p_1 < … < p_2m take part, then they are split into pairs in the following manner: participant p_{2i-1} plays against participant p_2i for each i from 1 to m.\n\nThe rounds are held until only one participant is left. He is declared the winner of the tournament and he will marry the King's daughter. The princess can't wait to find out who is her future husband. She asked every participant to tell her his luckiness. Assuming they did not lie, she wants to know the probability of each participant winning the tournament. As you are the best friend of the princess, she asks you to help her.\n\nThe first line of the input contains the number of participants, n (2 ≤ n ≤ 3·10^5). The second line of the input contains n integer numbers, a_1, …, a_n (1 ≤ a_i ≤ 10^9). The luckiness of the i-th participant equals to a_i.\n\nPrint n numbers p_i. The i-th number should be the probability of the i-th participant winning the tournament. The absolute error of your answer must not exceed 10^{-9}.\n\nHere is an example of a tournament bracket, showing the winning probability in each pair.\n\nInput:\n```\n5\n1 4 1 1 4\n```\n\nOutput:\n```\n0.026 0.3584 0.0676 0.0616 0.4864\n```",
+    "input": "The first line of the input contains the number of participants, n (2 ≤ n ≤ 3·10^5). The second line of the input contains n integer numbers, a_1, …, a_n (1 ≤ a_i ≤ 10^9). The luckiness of the i-th participant equals to a_i.",
+    "output": "Print n numbers p_i. The i-th number should be the probability of the i-th participant winning the tournament. The absolute error of your answer must not exceed 10^{-9}.",
+    "time_limit": "6 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "math",
+        "probabilities",
+        "*3500"
+    ],
+    "rating": 3500
+}

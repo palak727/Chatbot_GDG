@@ -1,0 +1,18 @@
+{
+    "id": "1574B",
+    "contest_id": 1574,
+    "problem_letter": "B",
+    "title": "B. Combinatorics Homework",
+    "statement": "You are given four integer values a, b, c and m.\n\nCheck if there exists a string that contains:\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nEach of the next t lines contains the description of the testcase — four integers a, b, c and m (1 ≤ a, b, c ≤ 10^8; 0 ≤ m ≤ 10^8).\n\nFor each testcase print \"YES\" if there exists a string that satisfies all the requirements. Print \"NO\" if there are no such strings.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).\n\nIn the first testcase strings \"ABCAB\" or \"BCABA\" satisfy the requirements. There exist other possible strings.\n\nIn the second testcase there's no way to put adjacent equal letters if there's no letter that appears at least twice.\n\nIn the third testcase string \"CABBCC\" satisfies the requirements. There exist other possible strings.\n\nInput:\n```\n3\n2 2 1 0\n1 1 1 1\n1 2 3 2\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nEach of the next t lines contains the description of the testcase — four integers a, b, c and m (1 ≤ a, b, c ≤ 10^8; 0 ≤ m ≤ 10^8).",
+    "output": "For each testcase print \"YES\" if there exists a string that satisfies all the requirements. Print \"NO\" if there are no such strings.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

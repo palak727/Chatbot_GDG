@@ -1,0 +1,19 @@
+{
+    "id": "1603C",
+    "contest_id": 1603,
+    "problem_letter": "C",
+    "title": "C. Extreme Extension",
+    "statement": "For an array b of n integers, the extreme value of this array is the minimum number of times (possibly, zero) the following operation has to be performed to make b non-decreasing:\n\nFor example, if b = [2, 4, 3] and index 2 gets selected, then the possible arrays after this operation are [2, underline1, underline3, 3], [2, underline2, underline2, 3], or [2, underline3, underline1, 3]. And consequently, for this array, this single operation is enough to make it non-decreasing: [2, 4, 3] → [2, underline2, underline2, 3].\n\nIt's easy to see that every array of positive integers can be made non-decreasing this way.\n\nYouKn0wWho has an array a of n integers. Help him find the sum of extreme values of all nonempty subarrays of a modulo 998,244,353. If a subarray appears in a multiple times, its extreme value should be counted the number of times it appears.\n\nAn array d is a subarray of an array c if d can be obtained from c by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.\n\nFor each test case, print a single integer — the sum of extreme values of all subarrays of a modulo 998,244,353.\n\nLet f(l, r) denote the extreme value of [a_l, a_{l+1}, …, a_r].\n\nIn the first test case,\n\n[5, 4, 3] → [underline3, underline2, 4, 3] → [3, 2, underline2, underline2, 3] → [underline1, underline2, 2, 2, 2, 3];\n\nSo the total sum of extreme values of all subarrays of a = 3 + 1 + 1 + 0 + 0 + 0 = 5.\n\nInput:\n```\n4\n3\n5 4 3\n4\n3 2 1 4\n1\n69\n8\n7264 40515 28226 92776 35285 21709 75124 48163\n```\n\nOutput:\n```\n5\n9\n0\n117\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^5).\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.",
+    "output": "For each test case, print a single integer — the sum of extreme values of all subarrays of a modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "math",
+        "number theory",
+        "*2300"
+    ],
+    "rating": 2300
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1634E",
+    "contest_id": 1634,
+    "problem_letter": "E",
+    "title": "E. Fair Share",
+    "statement": "You are given m arrays of positive integers. Each array is of even length.\n\nYou need to split all these integers into two equal multisets L and R, that is, each element of each array should go into one of two multisets (but not both). Additionally, for each of the m arrays, exactly half of its elements should go into L, and the rest should go into R.\n\nGive an example of such a division or determine that no such division exists.\n\nThe first line contains an integer m (1 ≤ m ≤ 10 ^ 5) — the number of arrays.\n\nThe next 2·m lines contain descriptions of the arrays.\n\nFor each array, the first line contains an even integer n (2 ≤ n ≤ 2·10 ^ 5) — the length of the array. The second line consists of n space-separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10 ^ 9) — array elements.\n\nIt is guaranteed that the sum of n over all arrays does not exceed 2·10^5.\n\nIf the answer exists, print \"YES\", and then print m lines.\n\nOn each line, for each element, print the letter \"L\" or \"R\" (capitalized, without spaces), depending on which multiset the element should go into.\n\nIf there is no answer, print \"NO\" on the only line.\n\nIn the first array, we add the first element to R and the second to L. Now L = {2}, and R = {1}.\n\nIn the second array, we add the first and third elements to L and the rest to R. Now L = {1, 2, 3} and R = {1, 2, 3}.\n\nIn the third array, we add elements 2, 3, and 6 to L, and others — to R. As a result, L = R = {1, 1, 2, 2, 3, 3}.\n\nInput:\n```\n3\n2\n1 2\n4\n1 2 3 3\n6\n1 1 2 2 3 3\n```\n\nOutput:\n```\nYES\nRL\nLRLR\nRLLRRL\n```",
+    "input": "The first line contains an integer m (1 ≤ m ≤ 10 ^ 5) — the number of arrays.\n\nThe next 2·m lines contain descriptions of the arrays.\n\nFor each array, the first line contains an even integer n (2 ≤ n ≤ 2·10 ^ 5) — the length of the array. The second line consists of n space-separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10 ^ 9) — array elements.\n\nIt is guaranteed that the sum of n over all arrays does not exceed 2·10^5.",
+    "output": "If the answer exists, print \"YES\", and then print m lines.\n\nOn each line, for each element, print the letter \"L\" or \"R\" (capitalized, without spaces), depending on which multiset the element should go into.\n\nIf there is no answer, print \"NO\" on the only line.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "graph matchings",
+        "graphs",
+        "*2400"
+    ],
+    "rating": 2400
+}

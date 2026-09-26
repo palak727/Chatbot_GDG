@@ -1,0 +1,19 @@
+{
+    "id": "1555F",
+    "contest_id": 1555,
+    "problem_letter": "F",
+    "title": "F. Good Graph",
+    "statement": "You have an undirected graph consisting of n vertices with weighted edges.\n\nA simple cycle is a cycle of the graph without repeated vertices. Let the weight of the cycle be the XOR of weights of edges it consists of.\n\nLet's say the graph is good if all its simple cycles have weight 1. A graph is bad if it's not good.\n\nInitially, the graph is empty. Then q queries follow. Each query has the next type:\n\nFor each query print, was the edge added or not.\n\nThe first line contains two integers n and q (3 ≤ n ≤ 3·10^5; 1 ≤ q ≤ 5·10^5) — the number of vertices and queries.\n\nNext q lines contain queries — one per line. Each query contains three integers u, v and x (1 ≤ u, v ≤ n; u ≠ v; 0 ≤ x ≤ 1) — the vertices of the edge and its weight.\n\nIt's guaranteed that there are no multiple edges in the input.\n\nFor each query, print YES if the edge was added to the graph, or NO otherwise (both case-insensitive).\n\nInput:\n```\n9 12\n6 1 0\n1 3 1\n3 6 0\n6 2 0\n6 4 1\n3 4 1\n2 4 0\n2 5 0\n4 5 0\n7 8 1\n8 9 1\n9 7 0\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nNO\nYES\nYES\nNO\nYES\nYES\nNO\n```",
+    "input": "The first line contains two integers n and q (3 ≤ n ≤ 3·10^5; 1 ≤ q ≤ 5·10^5) — the number of vertices and queries.\n\nNext q lines contain queries — one per line. Each query contains three integers u, v and x (1 ≤ u, v ≤ n; u ≠ v; 0 ≤ x ≤ 1) — the vertices of the edge and its weight.\n\nIt's guaranteed that there are no multiple edges in the input.",
+    "output": "For each query, print YES if the edge was added to the graph, or NO otherwise (both case-insensitive).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2067A",
+    "contest_id": 2067,
+    "problem_letter": "A",
+    "title": "A. Adjacent Digit Sums",
+    "statement": "You are given two numbers x, y. You need to determine if there exists an integer n such that S(n) = x, S(n + 1) = y.\n\nHere, S(a) denotes the sum of the digits of the number a in the decimal numeral system.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers x, y (1 ≤ x ≤ 1000, 1 ≤ y ≤ 1000).\n\nFor each test case, print \"NO\" if a suitable n does not exist. Otherwise, output \"YES\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).\n\nIn the first test case, for example, n = 100 works. S(100) = 1, S(101) = 2.\n\nIn the second test case, it can be shown that S(n) ≠ S(n+1) for all n; therefore, the answer is No.\n\nIn the fourth test case, n = 10^111-1 works, which is a number consisting of 111 digits of 9.\n\nInput:\n```\n71 277 77997 999999 11000 11 1118 1\n```\n\nOutput:\n```\nYes\nNo\nNo\nYes\nNo\nNo\nYes\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers x, y (1 ≤ x ≤ 1000, 1 ≤ y ≤ 1000).",
+    "output": "For each test case, print \"NO\" if a suitable n does not exist. Otherwise, output \"YES\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

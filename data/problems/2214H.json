@@ -1,0 +1,15 @@
+{
+    "id": "2214H",
+    "contest_id": 2214,
+    "problem_letter": "H",
+    "title": "H. Double Vision",
+    "statement": "H. Double Visiontime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard output If you cannot read this, you may be colorblind. ExampleInput ​Output ​\n\nInput:\n```\n​\n```\n\nOutput:\n```\n​\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special"
+    ],
+    "rating": null
+}

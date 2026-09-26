@@ -1,0 +1,16 @@
+{
+    "id": "1556A",
+    "contest_id": 1556,
+    "problem_letter": "A",
+    "title": "A. A Variety of Operations",
+    "statement": "William has two numbers a and b initially both equal to zero. William mastered performing three different operations with them quickly. Before performing each operation some positive integer k is picked, which is then used to perform one of the following operations: (note, that for each operation you can choose a new positive integer k)\n\nNote that after performing operations, numbers a and b may become negative as well.\n\nWilliam wants to find out the minimal number of operations he would have to perform to make a equal to his favorite number c and b equal to his second favorite number d.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe only line of each test case contains two integers c and d (0 ≤ c, d ≤ 10^9), which are William's favorite numbers and which he wants a and b to be transformed into.\n\nFor each test case output a single number, which is the minimal number of operations which William would have to perform to make a equal to c and b equal to d, or -1 if it is impossible to achieve this using the described operations.\n\nLet us demonstrate one of the suboptimal ways of getting a pair (3, 5):\n\nInput:\n```\n6\n1 2\n3 5\n5 3\n6 6\n8 0\n0 0\n```\n\nOutput:\n```\n-1\n2\n2\n1\n2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe only line of each test case contains two integers c and d (0 ≤ c, d ≤ 10^9), which are William's favorite numbers and which he wants a and b to be transformed into.",
+    "output": "For each test case output a single number, which is the minimal number of operations which William would have to perform to make a equal to c and b equal to d, or -1 if it is impossible to achieve this using the described operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

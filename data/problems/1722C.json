@@ -1,0 +1,17 @@
+{
+    "id": "1722C",
+    "contest_id": 1722,
+    "problem_letter": "C",
+    "title": "C. Word Game",
+    "statement": "Three guys play a game: first, each person writes down n distinct words of length 3. Then, they total up the number of points as follows:\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 1000) — the number of words written by each person.\n\nThe following three lines each contain n distinct strings — the words written by each person. Each string consists of 3 lowercase English characters.\n\nFor each test case, output three space-separated integers — the number of points each of the three guys earned. You should output the answers in the same order as the input; the i-th integer should be the number of points earned by the i-th guy.\n\nIn the first test case:\n\nInput:\n```\n31abcdefabc3orz for qaqqaq orz forcod for ces5iat roc hem ica llybac ter iol ogi stsbac roc lly iol iat\n```\n\nOutput:\n```\n1 3 1 \n2 2 6 \n9 11 5 \n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 1000) — the number of words written by each person.\n\nThe following three lines each contain n distinct strings — the words written by each person. Each string consists of 3 lowercase English characters.",
+    "output": "For each test case, output three space-separated integers — the number of points each of the three guys earned. You should output the answers in the same order as the input; the i-th integer should be the number of points earned by the i-th guy.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

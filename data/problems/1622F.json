@@ -1,0 +1,19 @@
+{
+    "id": "1622F",
+    "contest_id": 1622,
+    "problem_letter": "F",
+    "title": "F. Quadratic Set",
+    "statement": "Let's call a set of positive integers a_1, a_2, …, a_k quadratic if the product of the factorials of its elements is a square of an integer, i. e. ∏limits_{i=1}^k a_i! = m^2, for some integer m.\n\nYou are given a positive integer n.\n\nYour task is to find a quadratic subset of a set 1, 2, …, n of maximum size. If there are multiple answers, print any of them.\n\nA single line contains a single integer n (1 ≤ n ≤ 10^6).\n\nIn the first line, print a single integer — the size of the maximum subset. In the second line, print the subset itself in an arbitrary order.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1\n1 \n```\n\nInput:\n```\n4\n```\n\nOutput:\n```\n3\n1 3 4 \n```\n\nInput:\n```\n7\n```\n\nOutput:\n```\n4\n1 4 5 6 \n```\n\nInput:\n```\n9\n```\n\nOutput:\n```\n7\n1 2 4 5 6 7 9 \n```",
+    "input": "A single line contains a single integer n (1 ≤ n ≤ 10^6).",
+    "output": "In the first line, print a single integer — the size of the maximum subset. In the second line, print the subset itself in an arbitrary order.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "hashing",
+        "math",
+        "number theory",
+        "*2900"
+    ],
+    "rating": 2900
+}

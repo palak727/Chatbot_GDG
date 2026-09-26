@@ -1,0 +1,19 @@
+{
+    "id": "2077A",
+    "contest_id": 2077,
+    "problem_letter": "A",
+    "title": "A. Breach of Faith",
+    "statement": "You and your team have worked tirelessly until you have a sequence a_1, a_2, …, a_{2n+1} of positive integers satisfying these properties.\n\nHowever, the people you worked with sabotaged you because they wanted to publish this sequence first. They deleted one number from this sequence and shuffled the rest, leaving you with a sequence b_1, b_2, …, b_2n. You have forgotten the sequence a and want to find a way to recover it.\n\nIf there are many possible sequences, you can output any of them. It can be proven under the constraints of the problem that at least one sequence a exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains 2n distinct integers b_1, b_2, …, b_2n (1 ≤ b_i ≤ 10^9), denoting the sequence b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output 2n+1 distinct integers, denoting the sequence a (1 ≤ a_i ≤ 10^18).\n\nIf there are multiple possible sequences, you can output any of them. The sequence a should satisfy the given conditions, and it should be possible to obtain b after deleting one element from a and shuffling the remaining elements.\n\nInput:\n```\n419 228 6 1 4399 2 86 33 14 7721 6 3 2\n```\n\nOutput:\n```\n7 9 2\n1 8 4 6 9\n86 99 2 77 69 14 33\n4 6 1 2 3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains 2n distinct integers b_1, b_2, …, b_2n (1 ≤ b_i ≤ 10^9), denoting the sequence b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output 2n+1 distinct integers, denoting the sequence a (1 ≤ a_i ≤ 10^18).\n\nIf there are multiple possible sequences, you can output any of them. The sequence a should satisfy the given conditions, and it should be possible to obtain b after deleting one element from a and shuffling the remaining elements.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

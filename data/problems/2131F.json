@@ -1,0 +1,21 @@
+{
+    "id": "2131F",
+    "contest_id": 2131,
+    "problem_letter": "F",
+    "title": "F. Unjust Binary Life",
+    "statement": "Yuri is given two binary strings a and b, both of which are of length n. The two strings dynamically define an n × n grid. Let (i, j) denote the cell in the i-th row and j-th column. The initial value of cell (i, j) has the value of a_i oplus b_j, where oplus denotes the bitwise XOR operation. .\n\nYuri's journey always starts at cell (1, 1). From a cell (i, j), she can only move down to (i + 1, j) or right to (i, j + 1). Her journey is possible if there exists a valid path such that all cells on the path, including (1, 1), have a value of 0.\n\nBefore her departure, she can do the following operation for any number of times:\n\nLet f(x, y) denote the minimum required operations so that Yuri can make her journey to the cell (x,y). You must determine the sum of f(x, y) over all 1 ≤ x, y ≤ n.\n\nNote that each of these n^2 cases is independent, meaning you need to assume the grid is in its original state in each case (i.e., no actual operations are performed).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string a (|a| = n, a_i ∈ {0, 1}).\n\nThe third line of each test case contains a binary string b (|b| = n, b_i ∈ {0, 1}).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the sum of minimum operations over all possible cells.\n\nIn the first test case, the 2 × 2 grid is shown below.\n\n11 11\n\nIn the initial state, Yuri cannot reach any cell.\n\nYuri can flip a_1 so that the grid becomes:\n\n00 11\n\nand Yuri can travel to cells (1,1) and (1,2).\n\nOn the other hand, Yuri can flip b_1 so that the grid becomes:\n\n01 01\n\nand Yuri can travel to cells (1,1) and (2,1).\n\nTo move to the cell (2,2), it can be shown that she must perform at least two operations. For example, she can flip both a_1 and a_2 so that the grid becomes:\n\n00 00\n\nTherefore, the answer is 1+1+1+2=5.\n\nInput:\n```\n32110020101410101101\n```\n\nOutput:\n```\n5\n4\n24\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains a binary string a (|a| = n, a_i ∈ {0, 1}).\n\nThe third line of each test case contains a binary string b (|b| = n, b_i ∈ {0, 1}).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the sum of minimum operations over all possible cells.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "math",
+        "sortings",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2056A",
+    "contest_id": 2056,
+    "problem_letter": "A",
+    "title": "A. Shape Perimeter",
+    "statement": "There is an m by m square stamp on an infinite piece of paper. Initially, the bottom-left corner of the square stamp is aligned with the bottom-left corner of the paper. You are given two integer sequences x and y, each of length n. For each step i from 1 to n, the following happens:\n\nNote that the elements of sequences x and y have a special constraint: 1≤ x_i, y_i≤ m - 1.\n\nNote that you do not press the stamp at the bottom-left corner of the paper. Refer to the notes section for better understanding.\n\nIt can be proven that after all the operations, the colored shape on the paper formed by the stamp is a single connected region. Find the perimeter of this colored shape.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 100, 2 ≤ m ≤ 100) — the number of operations performed and the side length of the square stamp.\n\nThe i-th of the next n lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ m - 1) — the distance that the stamp will be moved right and up during the i-th operation, respectively.\n\nNote that there are no constraints on the sum of n over all test cases.\n\nFor each test case, output a single integer representing the perimeter of the colored shape on the paper.\n\nIn the first example, the stamp has a side length of 3 and is pressed 4 times at coordinates (1, 1), (3, 3), (5, 4), and (6, 6). The piece of paper looks like that afterwards:\n\nHere, the square formed by the first press is colored blue, the second red, the third green, and the fourth purple. The combined shape, whose perimeter we need to calculate, looks like that:\n\nFrom the diagram, it can be seen that this shape has a perimeter of 32.\n\nInput:\n```\n34 31 12 22 11 21 21 16 73 61 13 16 65 46 1\n```\n\nOutput:\n```\n32\n8\n96\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 100, 2 ≤ m ≤ 100) — the number of operations performed and the side length of the square stamp.\n\nThe i-th of the next n lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ m - 1) — the distance that the stamp will be moved right and up during the i-th operation, respectively.\n\nNote that there are no constraints on the sum of n over all test cases.",
+    "output": "For each test case, output a single integer representing the perimeter of the colored shape on the paper.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

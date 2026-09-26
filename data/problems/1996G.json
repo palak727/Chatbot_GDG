@@ -1,0 +1,20 @@
+{
+    "id": "1996G",
+    "contest_id": 1996,
+    "problem_letter": "G",
+    "title": "G. Penacony",
+    "statement": "On Penacony, The Land of the Dreams, there exists n houses and n roads. There exists a road between house i and i+1 for all 1 ≤ i ≤ n-1 and a road between house n and house 1. All roads are bidirectional. However, due to the crisis on Penacony, the overseeing family has gone into debt and may not be able to maintain all roads.\n\nThere are m pairs of friendships between the residents of Penacony. If the resident living in house a is friends with the resident living in house b, there must be a path between houses a and b through maintained roads.\n\nWhat is the minimum number of roads that must be maintained?\n\nThe first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) – the number of houses and the number of friendships.\n\nThe next m lines contain two integers a and b (1 ≤ a < b ≤ n) – the resident in house a is friends with the resident in house b. It is guaranteed all (a, b) are distinct.\n\nIt is guaranteed the sum of n and m over all test cases does not exceed 2·10^5.\n\nFor each test case, output an integer, the minimum number of roads that must be maintained.\n\nFor the first test case, the following roads must be maintained:\n\nInput:\n```\n78 31 82 74 513 41 132 123 114 1010 22 33 410 43 85 102 104 104 11 35 23 51 45 22 51 3\n```\n\nOutput:\n```\n4\n7\n2\n7\n2\n3\n3\n```",
+    "input": "The first line contains t (1 ≤ t ≤ 10^4) – the number of test cases.\n\nThe first line of each test case contains two integers n and m (3 ≤ n ≤ 2·10^5, 1 ≤ m ≤ 2·10^5) – the number of houses and the number of friendships.\n\nThe next m lines contain two integers a and b (1 ≤ a < b ≤ n) – the resident in house a is friends with the resident in house b. It is guaranteed all (a, b) are distinct.\n\nIt is guaranteed the sum of n and m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output an integer, the minimum number of roads that must be maintained.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "graphs",
+        "greedy",
+        "hashing",
+        "*2200"
+    ],
+    "rating": 2200
+}

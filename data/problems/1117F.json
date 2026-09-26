@@ -1,0 +1,17 @@
+{
+    "id": "1117F",
+    "contest_id": 1117,
+    "problem_letter": "F",
+    "title": "F. Crisp String",
+    "statement": "You are given a string of length n. Each character is one of the first p lowercase Latin letters.\n\nYou are also given a matrix A with binary values of size p × p. This matrix is symmetric (A_ij = A_ji). A_ij = 1 means that the string can have the i-th and j-th letters of Latin alphabet adjacent.\n\nLet's call the string crisp if all of the adjacent characters in it can be adjacent (have 1 in the corresponding cell of matrix A).\n\nYou are allowed to do the following move. Choose any letter, remove all its occurrences and join the remaining parts of the string without changing their order. For example, removing letter 'a' from \"abacaba\" will yield \"bcb\".\n\nThe string you are given is crisp. The string should remain crisp after every move you make.\n\nYou are allowed to do arbitrary number of moves (possible zero). What is the shortest resulting string you can obtain?\n\nThe first line contains two integers n and p (1 ≤ n ≤ 10^5, 1 ≤ p ≤ 17) — the length of the initial string and the length of the allowed prefix of Latin alphabet.\n\nThe second line contains the initial string. It is guaranteed that it contains only first p lowercase Latin letters and that is it crisp. Some of these p first Latin letters might not be present in the string.\n\nEach of the next p lines contains p integer numbers — the matrix A (0 ≤ A_ij ≤ 1, A_ij = A_ji). A_ij = 1 means that the string can have the i-th and j-th letters of Latin alphabet adjacent.\n\nPrint a single integer — the length of the shortest string after you make arbitrary number of moves (possible zero).\n\nIn the first example no letter can be removed from the initial string.\n\nIn the second example you can remove letters in order: 'b', 'c', 'a'. The strings on the intermediate steps will be: \"abacaba\" → \"aacaa\" → \"aaaa\" → \"\".\n\nIn the third example you can remove letter 'b' and that's it.\n\nIn the fourth example you can remove letters in order 'c', 'b', but not in the order 'b', 'c' because two letters 'c' can't be adjacent.\n\nInput:\n```\n7 3\nabacaba\n0 1 1\n1 0 0\n1 0 0\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n7 3\nabacaba\n1 1 1\n1 0 0\n1 0 0\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n7 4\nbacadab\n0 1 1 1\n1 0 0 0\n1 0 0 0\n1 0 0 0\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n3 3\ncbc\n0 0 0\n0 0 1\n0 1 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two integers n and p (1 ≤ n ≤ 10^5, 1 ≤ p ≤ 17) — the length of the initial string and the length of the allowed prefix of Latin alphabet.\n\nThe second line contains the initial string. It is guaranteed that it contains only first p lowercase Latin letters and that is it crisp. Some of these p first Latin letters might not be present in the string.\n\nEach of the next p lines contains p integer numbers — the matrix A (0 ≤ A_ij ≤ 1, A_ij = A_ji). A_ij = 1 means that the string can have the i-th and j-th letters of Latin alphabet adjacent.",
+    "output": "Print a single integer — the length of the shortest string after you make arbitrary number of moves (possible zero).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "*2500"
+    ],
+    "rating": 2500
+}

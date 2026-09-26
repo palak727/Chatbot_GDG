@@ -1,0 +1,18 @@
+{
+    "id": "2068C",
+    "contest_id": 2068,
+    "problem_letter": "C",
+    "title": "C. Ads",
+    "statement": "You have n videos on your watchlist on the popular platform YooCube. The i-th video lasts d_i minutes.\n\nYooCube has recently increased the frequency of their ads. Ads are shown only between videos. After finishing a video, an ad is shown if either of these two conditions is true:\n\nYou want to watch the n videos in your watchlist. Given that you have just watched an ad, and that you can choose the order of the n videos, what is the minimum number of ads that you are forced to watch? You can start a new video immediately after the previous video or ad ends, and you don't have to watch any ad after you finish.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100,000) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100,000, 1 ≤ k ≤ 30,000) — the number of videos in your watchlist and the parameter that determines when ads are shown.\n\nThe second line contains n integers d_1, d_2, …, d_n (1 ≤ d_i ≤ 10,000) — the lengths of the videos.\n\nThe sum of the values of n over all test cases does not exceed 10^6.\n\nFor each test case, print the minimum number of ads that you need to watch.\n\nIn the first test case, a possible viewing order is 4, 1, 8, 2, 5, 6, 7, 3 (the corresponding lengths being 3, 4, 14, 5, 17, 17, 18, 18). With this order, you will have to watch an ad after the first three videos and then another after the second three videos. Note that you don't have to watch an ad after you finish watching all your videos.\n\nInput:\n```\n58 254 5 18 3 17 17 18 147 2120 14 1 4 20 8 48 120 5 9 4 14 12 2 208 372 13 13 11 12 19 16 184 3815 3 14 7\n```\n\nOutput:\n```\n2\n2\n7\n2\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100,000) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100,000, 1 ≤ k ≤ 30,000) — the number of videos in your watchlist and the parameter that determines when ads are shown.\n\nThe second line contains n integers d_1, d_2, …, d_n (1 ≤ d_i ≤ 10,000) — the lengths of the videos.\n\nThe sum of the values of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, print the minimum number of ads that you need to watch.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1513A",
+    "contest_id": 1513,
+    "problem_letter": "A",
+    "title": "A. Array and Peaks",
+    "statement": "A sequence of n integers is called a permutation if it contains all integers from 1 to n exactly once.\n\nGiven two integers n and k, construct a permutation a of numbers from 1 to n which has exactly k peaks. An index i of an array a of size n is said to be a peak if 1 < i < n and a_i > a_{i-1} and a_i > a_{i+1}. If such permutation is not possible, then print -1.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen t lines follow, each containing two space-separated integers n (1 ≤ n ≤ 100) and k (0 ≤ k ≤ n) — the length of an array and the required number of peaks.\n\nOutput t lines. For each test case, if there is no permutation with given length and number of peaks, then print -1. Otherwise print a line containing n space-separated integers which forms a permutation of numbers from 1 to n and contains exactly k peaks.\n\nIf there are multiple answers, print any.\n\nIn the second test case of the example, we have array a = [2,4,1,5,3]. Here, indices i=2 and i=4 are the peaks of the array. This is because (a_2 > a_1 , a_2 > a_3) and (a_4 > a_3, a_4 > a_5).\n\nInput:\n```\n5\n1 0\n5 2\n6 6\n2 1\n6 1\n```\n\nOutput:\n```\n1 \n2 4 1 5 3 \n-1\n-1\n1 3 6 5 4 2\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen t lines follow, each containing two space-separated integers n (1 ≤ n ≤ 100) and k (0 ≤ k ≤ n) — the length of an array and the required number of peaks.",
+    "output": "Output t lines. For each test case, if there is no permutation with given length and number of peaks, then print -1. Otherwise print a line containing n space-separated integers which forms a permutation of numbers from 1 to n and contains exactly k peaks.\n\nIf there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

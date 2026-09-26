@@ -1,0 +1,19 @@
+{
+    "id": "1798B",
+    "contest_id": 1798,
+    "problem_letter": "B",
+    "title": "B. Three Sevens",
+    "statement": "Lottery \"Three Sevens\" was held for m days. On day i, n_i people with the numbers a_{i, 1}, …, a_{i, n_i} participated in the lottery.\n\nIt is known that in each of the m days, only one winner was selected from the lottery participants. The lottery winner on day i was not allowed to participate in the lottery in the days from i+1 to m.\n\nUnfortunately, the information about the lottery winners has been lost. You need to find any possible list of lottery winners on days from 1 to m or determine that no solution exists.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50,000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer m (1 ≤ m ≤ 50,000) — the number of days in which the lottery was held.\n\nNext, for each i from 1 to m, follows a two-line block of data.\n\nThe first line of each block contains a single integer n_i (1 ≤ n_i ≤ 50,000) — the number of lottery participants on day i.\n\nThe second line of the block contains integers a_{i, 1}, …, a_{i, n_i} (1 ≤ a_{i, j} ≤ 50,000) — lottery participants on day i. It is guaranteed that all the numbers a_{i, 1}, …, a_{i, n_i} are pairwise distinct.\n\nIt is guaranteed that the sum of n_i over all blocks of all test cases does not exceed 50,000.\n\nFor each test case, if there is no solution, print a single integer -1.\n\nOtherwise, print m integers p_1, p_2, …, p_m (1 ≤ p_i ≤ 50,000) — lottery winners on days from 1 to m. If there are multiple solutions, print any of them.\n\nIn the first test case, one of the answers is [8, 2, 1] since the participant with the number 8 participated on day 1, but did not participate on days 2 and 3; the participant with the number 2 participated on day 2, but did not participate on day 3; and the participant with the number 1 participated on day 3. Note that this is not the only possible answer, for example, [8, 9, 4] is also a correct answer.\n\nIn the second test case, both lottery participants participated on both days, so any possible lottery winner on the day 1 must have participated on the day 2, which is not allowed. Thus, there is no correct answer.\n\nIn the third test case, only one participant participated on days 2, 3, 4, and on day 1 there is only one participant who did not participate in the lottery on days 2, 3, 4 — participant 2, which means [2, 1, 4, 3] is the only correct answer to this test case.\n\nInput:\n```\n3341 2 4 832 9 121 4221 222 1441 2 3 4111413\n```\n\nOutput:\n```\n8 2 1 \n-1\n2 1 4 3 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50,000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer m (1 ≤ m ≤ 50,000) — the number of days in which the lottery was held.\n\nNext, for each i from 1 to m, follows a two-line block of data.\n\nThe first line of each block contains a single integer n_i (1 ≤ n_i ≤ 50,000) — the number of lottery participants on day i.\n\nThe second line of the block contains integers a_{i, 1}, …, a_{i, n_i} (1 ≤ a_{i, j} ≤ 50,000) — lottery participants on day i. It is guaranteed that all the numbers a_{i, 1}, …, a_{i, n_i} are pairwise distinct.\n\nIt is guaranteed that the sum of n_i over all blocks of all test cases does not exceed 50,000.",
+    "output": "For each test case, if there is no solution, print a single integer -1.\n\nOtherwise, print m integers p_1, p_2, …, p_m (1 ≤ p_i ≤ 50,000) — lottery winners on days from 1 to m. If there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "greedy",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

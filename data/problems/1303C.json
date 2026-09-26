@@ -1,0 +1,18 @@
+{
+    "id": "1303C",
+    "contest_id": 1303,
+    "problem_letter": "C",
+    "title": "C. Perfect Keyboard",
+    "statement": "Polycarp wants to assemble his own keyboard. Layouts with multiple rows are too complicated for him — his keyboard will consist of only one row, where all 26 lowercase Latin letters will be arranged in some order.\n\nPolycarp uses the same password s on all websites where he is registered (it is bad, but he doesn't care). He wants to assemble a keyboard that will allow to type this password very easily. He doesn't like to move his fingers while typing the password, so, for each pair of adjacent characters in s, they should be adjacent on the keyboard. For example, if the password is abacaba, then the layout cabdefghi... is perfect, since characters a and c are adjacent on the keyboard, and a and b are adjacent on the keyboard. It is guaranteed that there are no two adjacent equal characters in s, so, for example, the password cannot be password (two characters s are adjacent).\n\nCan you help Polycarp with choosing the perfect layout of the keyboard, if it is possible?\n\nThe first line contains one integer T (1 ≤ T ≤ 1000) — the number of test cases.\n\nThen T lines follow, each containing one string s (1 ≤ |s| ≤ 200) representing the test case. s consists of lowercase Latin letters only. There are no two adjacent equal characters in s.\n\nFor each test case, do the following:\n\nInput:\n```\n5\nababa\ncodedoca\nabcda\nzxzytyz\nabcdefghijklmnopqrstuvwxyza\n```\n\nOutput:\n```\nYES\nbacdefghijklmnopqrstuvwxyz\nYES\nedocabfghijklmnpqrstuvwxyz\nNO\nYES\nxzytabcdefghijklmnopqrsuvw\nNO\n```",
+    "input": "The first line contains one integer T (1 ≤ T ≤ 1000) — the number of test cases.\n\nThen T lines follow, each containing one string s (1 ≤ |s| ≤ 200) representing the test case. s consists of lowercase Latin letters only. There are no two adjacent equal characters in s.",
+    "output": "For each test case, do the following:",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

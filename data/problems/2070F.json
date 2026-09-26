@@ -1,0 +1,19 @@
+{
+    "id": "2070F",
+    "contest_id": 2070,
+    "problem_letter": "F",
+    "title": "F. Friends and Pizza",
+    "statement": "Monocarp has n pizzas, the i-th pizza consists of a_i slices. Pizzas are denoted by uppercase Latin letters from A to the n-th letter of the Latin alphabet.\n\nMonocarp also has m friends, and he wants to invite exactly two of them to eat pizza. For each friend, Monocarp knows which pizzas that friend likes.\n\nAfter the friends arrive at Monocarp's house, for each pizza, the following happens:\n\nFor each k from 0 to ∑ a_i, calculate the number of ways to choose exactly two friends to invite so that the friends don't quarrel, and Monocarp eats exactly k slices.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 20; 2 ≤ m ≤ 5·10^5) — the number of pizzas and the number of friends, respectively.\n\nThe second line contains m strings s_1, s_2, …, s_m (1 ≤ |s_i| ≤ n), where s_i is a string consisting of distinct characters from A to the n-th letter of the Latin alphabet, denoting which pizzas the i-th friend likes. In every string s_i, the characters are sorted in lexicographical (alphabetic) order.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^4) — the sizes of the pizzas.\n\nPrint ∑ a_i + 1 integers, where the k-th integer (starting from 0) should be the number of ways to choose exactly two friends to invite so that the friends don't quarrel, and Monocarp eats exactly k slices.\n\nLet's consider all pairs of friends from the first example:\n\nInput:\n```\n3 6A AB ABC AB BC C2 3 5\n```\n\nOutput:\n```\n4 0 0 1 0 2 0 0 0 0 0 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 20; 2 ≤ m ≤ 5·10^5) — the number of pizzas and the number of friends, respectively.\n\nThe second line contains m strings s_1, s_2, …, s_m (1 ≤ |s_i| ≤ n), where s_i is a string consisting of distinct characters from A to the n-th letter of the Latin alphabet, denoting which pizzas the i-th friend likes. In every string s_i, the characters are sorted in lexicographical (alphabetic) order.\n\nThe third line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^4) — the sizes of the pizzas.",
+    "output": "Print ∑ a_i + 1 integers, where the k-th integer (starting from 0) should be the number of ways to choose exactly two friends to invite so that the friends don't quarrel, and Monocarp eats exactly k slices.",
+    "time_limit": "8 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "divide and conquer",
+        "dp",
+        "fft",
+        "*3000"
+    ],
+    "rating": 3000
+}

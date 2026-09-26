@@ -1,0 +1,17 @@
+{
+    "id": "1269A",
+    "contest_id": 1269,
+    "problem_letter": "A",
+    "title": "A. Equation",
+    "statement": "Let's call a positive integer composite if it has at least one divisor other than 1 and itself. For example:\n\nYou are given a positive integer n. Find two composite integers a,b such that a-b=n.\n\nIt can be proven that solution always exists.\n\nThe input contains one integer n (1 ≤ n ≤ 10^7): the given integer.\n\nPrint two composite integers a,b (2 ≤ a, b ≤ 10^9, a-b=n).\n\nIt can be proven, that solution always exists.\n\nIf there are several possible solutions, you can print any.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n9 8\n```\n\nInput:\n```\n512\n```\n\nOutput:\n```\n4608 4096\n```",
+    "input": "The input contains one integer n (1 ≤ n ≤ 10^7): the given integer.",
+    "output": "Print two composite integers a,b (2 ≤ a, b ≤ 10^9, a-b=n).\n\nIt can be proven, that solution always exists.\n\nIf there are several possible solutions, you can print any.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

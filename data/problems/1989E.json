@@ -1,0 +1,18 @@
+{
+    "id": "1989E",
+    "contest_id": 1989,
+    "problem_letter": "E",
+    "title": "E. Distance to Different",
+    "statement": "Consider an array a of n integers, where every element is from 1 to k, and every integer from 1 to k appears at least once.\n\nLet the array b be constructed as follows: for the i-th element of a, b_i is the distance to the closest element in a which is not equal to a_i. In other words, b_i = min limits_{j ∈ [1, n], a_j ≠ a_i} |i - j|.\n\nFor example, if a = [1, 1, 2, 3, 3, 3, 3, 1], then b = [2, 1, 1, 1, 2, 2, 1, 1].\n\nCalculate the number of different arrays b you can obtain if you consider all possible arrays a, and print it modulo 998244353.\n\nThe only line of the input contains two integers n and k (2 ≤ n ≤ 2·10^5; 2 ≤ k ≤ min(n, 10)).\n\nPrint one integer — the number of different arrays b you can obtain, taken modulo 998244353.\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n4 3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6 2\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n6 5\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n133 7\n```\n\nOutput:\n```\n336975971\n```",
+    "input": "The only line of the input contains two integers n and k (2 ≤ n ≤ 2·10^5; 2 ≤ k ≤ min(n, 10)).",
+    "output": "Print one integer — the number of different arrays b you can obtain, taken modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

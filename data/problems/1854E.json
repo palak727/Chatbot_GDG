@@ -1,0 +1,20 @@
+{
+    "id": "1854E",
+    "contest_id": 1854,
+    "problem_letter": "E",
+    "title": "E. Game Bundles",
+    "statement": "Rishi is developing games in the 2D metaverse and wants to offer game bundles to his customers. Each game has an associated enjoyment value. A game bundle consists of a subset of games whose total enjoyment value adds up to 60.\n\nYour task is to choose k games, where 1 ≤ k ≤ 60, along with their respective enjoyment values a_1, a_2, …, a_k, in such a way that exactly m distinct game bundles can be formed.\n\nThe input is a single integer m (1 ≤ m ≤ 10^10) — the desired number of game bundles.\n\nThe first line should contain an integer k (1 ≤ k ≤ 60) — the number of games.\n\nThe second line should contain k integers, a_1, a_2, …, a_k (1 ≤ a_1, a_2, …, a_k ≤ 60) — the enjoyment values of the k games.\n\nIn the first sample, any subset of size 3 is a game bundle. There are 4 such subsets.\n\nInput:\n```\n4\n```\n\nOutput:\n```\n4\n20 20 20 20\n```\n\nInput:\n```\n722\n```\n\nOutput:\n```\n15\n15 14 13 12 11 10 9 8 7 6 5 4 3 2 1\n```\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1\n60\n```",
+    "input": "The input is a single integer m (1 ≤ m ≤ 10^10) — the desired number of game bundles.",
+    "output": "The first line should contain an integer k (1 ≤ k ≤ 60) — the number of games.\n\nThe second line should contain k integers, a_1, a_2, …, a_k (1 ≤ a_1, a_2, …, a_k ≤ 60) — the enjoyment values of the k games.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "*3000"
+    ],
+    "rating": 3000
+}

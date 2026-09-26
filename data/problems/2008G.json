@@ -1,0 +1,19 @@
+{
+    "id": "2008G",
+    "contest_id": 2008,
+    "problem_letter": "G",
+    "title": "G. Sakurako's Task",
+    "statement": "Sakurako has prepared a task for you:\n\nShe gives you an array of n integers and allows you to choose i and j such that i ≠ j and a_i ≥ a_j, and then assign a_i = a_i - a_j or a_i = a_i + a_j. You can perform this operation any number of times for any i and j, as long as they satisfy the conditions.\n\nSakurako asks you what is the maximum possible value of mex_k^{∗} of the array after any number of operations.\n\n^{∗}mex_k is the k-th non-negative integer that is absent in the array. For example, mex_1({1,2,3 })=0, since 0 is the first element that is not in the array, and mex_2({0,2,4 })=3, since 3 is the second element that is not in the array.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1≤ n≤ 2·10^5,1≤ k≤ 10^9) — the number of elements in the array and the value k for mex_k.\n\nThe second line of each test case contains n integers a_1, a_2, …,a_n (1≤ a_i≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum mex_k that can be achieved through the operations.\n\nInput:\n```\n61 332 101 13 11 2 33 21 2 44 52 2 2 164 52 2 2 3\n```\n\nOutput:\n```\n2\n11\n3\n4\n8\n8\n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1≤ n≤ 2·10^5,1≤ k≤ 10^9) — the number of elements in the array and the value k for mex_k.\n\nThe second line of each test case contains n integers a_1, a_2, …,a_n (1≤ a_i≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum mex_k that can be achieved through the operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "math",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

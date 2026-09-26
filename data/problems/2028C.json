@@ -1,0 +1,19 @@
+{
+    "id": "2028C",
+    "contest_id": 2028,
+    "problem_letter": "C",
+    "title": "C. Alice's Adventures in Cutting Cake",
+    "statement": "Alice is at the Mad Hatter's tea party! There is a long sheet cake made up of n sections with tastiness values a_1, a_2, …, a_n. There are m creatures at the tea party, excluding Alice.\n\nAlice will cut the cake into m + 1 pieces. Formally, she will partition the cake into m + 1 subarrays, where each subarray consists of some number of adjacent sections. The tastiness of a piece is the sum of tastiness of its sections. Afterwards, she will divvy these m + 1 pieces up among the m creatures and herself (her piece can be empty). However, each of the m creatures will only be happy when the tastiness of its piece is v or more.\n\nAlice wants to make sure every creature is happy. Limited by this condition, she also wants to maximize the tastiness of her own piece. Can you help Alice find the maximum tastiness her piece can have? If there is no way to make sure every creature is happy, output -1.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, v (1≤ m≤ n≤ 2·10^5; 1≤ v≤ 10^9) — the number of sections, the number of creatures, and the creatures' minimum requirement for tastiness, respectively.\n\nThe next line contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the tastinesses of the sections.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output the maximum tastiness Alice can achieve for her piece, or -1 if there is no way to make sure every creature is happy.\n\nFor the first test case, Alice can give the first and second section as their own pieces, and then take the remaining 10 + 1 + 1 + 10 = 22 tastiness for herself. We can show that she cannot do any better.\n\nFor the second test case, Alice could give the first and second section as one piece, and the sixth section as one piece. She can then take the remaining 10 + 1 + 1 = 12 tastiness for herself. We can show that she cannot do any better.\n\nFor the seventh test case, Alice cannot give each creature a piece of at least 12 tastiness.\n\nInput:\n```\n76 2 11 1 10 1 1 106 2 21 1 10 1 1 106 2 31 1 10 1 1 106 2 101 1 10 1 1 106 2 111 1 10 1 1 106 2 121 1 10 1 1 106 2 121 1 1 1 10 10\n```\n\nOutput:\n```\n22\n12\n2\n2\n2\n0\n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, m, v (1≤ m≤ n≤ 2·10^5; 1≤ v≤ 10^9) — the number of sections, the number of creatures, and the creatures' minimum requirement for tastiness, respectively.\n\nThe next line contains n space separated integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the tastinesses of the sections.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output the maximum tastiness Alice can achieve for her piece, or -1 if there is no way to make sure every creature is happy.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "two pointers",
+        "*1600"
+    ],
+    "rating": 1600
+}

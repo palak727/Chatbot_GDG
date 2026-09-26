@@ -1,0 +1,20 @@
+{
+    "id": "1525E",
+    "contest_id": 1525,
+    "problem_letter": "E",
+    "title": "E. Assimilation IV",
+    "statement": "Monocarp is playing a game \"Assimilation IV\". In this game he manages a great empire: builds cities and conquers new lands.\n\nMonocarp's empire has n cities. In order to conquer new lands he plans to build one Monument in each city. The game is turn-based and, since Monocarp is still amateur, he builds exactly one Monument per turn.\n\nMonocarp has m points on the map he'd like to control using the constructed Monuments. For each point he knows the distance between it and each city. Monuments work in the following way: when built in some city, a Monument controls all points at distance at most 1 to this city. Next turn, the Monument controls all points at distance at most 2, the turn after — at distance at most 3, and so on. Monocarp will build n Monuments in n turns and his empire will conquer all points that are controlled by at least one Monument.\n\nMonocarp can't figure out any strategy, so during each turn he will choose a city for a Monument randomly among all remaining cities (cities without Monuments). Monocarp wants to know how many points (among m of them) he will conquer at the end of turn number n. Help him to calculate the expected number of conquered points!\n\nThe first line contains two integers n and m (1 ≤ n ≤ 20; 1 ≤ m ≤ 5·10^4) — the number of cities and the number of points.\n\nNext n lines contains m integers each: the j-th integer of the i-th line d_{i, j} (1 ≤ d_{i, j} ≤ n + 1) is the distance between the i-th city and the j-th point.\n\nIt can be shown that the expected number of points Monocarp conquers at the end of the n-th turn can be represented as an irreducible fraction x/y. Print this fraction modulo 998,244,353, i. e. value x·y^{-1} bmod 998244353 where y^{-1} is such number that y·y^{-1} bmod 998244353 = 1.\n\nLet's look at all possible orders of cities Monuments will be build in:\n\nInput:\n```\n3 5\n1 4 4 3 4\n1 4 1 4 2\n1 4 4 4 3\n```\n\nOutput:\n```\n166374062\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 20; 1 ≤ m ≤ 5·10^4) — the number of cities and the number of points.\n\nNext n lines contains m integers each: the j-th integer of the i-th line d_{i, j} (1 ≤ d_{i, j} ≤ n + 1) is the distance between the i-th city and the j-th point.",
+    "output": "It can be shown that the expected number of points Monocarp conquers at the end of the n-th turn can be represented as an irreducible fraction x/y. Print this fraction modulo 998,244,353, i. e. value x·y^{-1} bmod 998244353 where y^{-1} is such number that y·y^{-1} bmod 998244353 = 1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "probabilities",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

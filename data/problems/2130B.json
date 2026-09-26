@@ -1,0 +1,16 @@
+{
+    "id": "2130B",
+    "contest_id": 2130,
+    "problem_letter": "B",
+    "title": "B. Pathless",
+    "statement": "There is an array a_1, a_2, …, a_n consisting of values 0, 1, and 2, and an integer s. It is guaranteed that a_1, a_2, …, a_n contains at least one 0, one 1, and one 2.\n\nAlice wants to start from index 1 and perform steps of length 1 to the right or to the left, and reach index n at the end. While Alice moves, she calculates the sum of the values she is visiting, and she wants the sum to be exactly s.\n\nFormally, Alice wants to find a sequence [i_1, i_2, …, i_m] of indices, such that:\n\nHowever, Bob wants to rearrange a_1, a_2, …, a_n to prevent Alice from achieving her target. Determine whether it is possible to rearrange a_1, a_2, …, a_n such that Alice cannot find her target sequence (even if Alice is smart enough). If it is possible, you also need to output the rearranged array a_1, a_2, …, a_n.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and s (3 ≤ n ≤ 50, 0 ≤ s ≤ 1000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2).\n\nIt is guaranteed that a contains at least one 0, one 1, and one 2.\n\nFor each test case, if it is possible to rearrange a such that Alice cannot find her target sequence, output n integers — such rearrangement of a. Otherwise, output -1 instead.\n\nIn the first test case, any rearrangement of a can prevent Alice from achieving her target.\n\nIn the second test case, regardless of rearranging a, Alice can always find the sequence [1,2,3] as her target sequence.\n\nIn the third test case,there is no rearrangement of a that can prevent Alice from achieving her target. For example, for a=[0,2,1], Alice can find the sequence [1,2,3,2,3] as her target sequence.\n\nInput:\n```\n63 20 1 23 30 1 23 60 1 23 40 1 23 100 1 25 10002 0 1 1 2\n```\n\nOutput:\n```\n0 1 2\n-1\n-1\n0 2 1 \n-1\n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and s (3 ≤ n ≤ 50, 0 ≤ s ≤ 1000).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2).\n\nIt is guaranteed that a contains at least one 0, one 1, and one 2.",
+    "output": "For each test case, if it is possible to rearrange a such that Alice cannot find her target sequence, output n integers — such rearrangement of a. Otherwise, output -1 instead.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1100"
+    ],
+    "rating": 1100
+}

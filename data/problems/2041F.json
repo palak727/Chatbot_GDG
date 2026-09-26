@@ -1,0 +1,18 @@
+{
+    "id": "2041F",
+    "contest_id": 2041,
+    "problem_letter": "F",
+    "title": "F. Segmentation Folds",
+    "statement": "Peter loves folding segments. There is a segment on a number line occupying the interval [ell, r]. Since it is the prime time for folding the segments, Peter decides to fold the segment carefully. In each step, he chooses one of the two following operations whenever possible:\n\nA folding sequence refers to a sequence of operations specified above. Peter wants to fold the segment several times, resulting in the shortest possible interval whose length that cannot be further reduced. The length of an interval [ell, r] is defined naturally to be r-ell. Let's consider the following example. Suppose that we are folding a segment initially occupying the interval [1, 30]. There are three folding sequences that lead to the shortest possible resulting interval, as shown in the following figure.\n\nPlease help Peter determine the number of folding sequences such that the resulting interval has a shortest possible length. Output the number modulo 998244353.\n\n^{∗}Recall that an integer p > 1 is a prime number if there do not exist integers a, b > 1 such that p=ab.\n\nThe first line contains an integer t, denoting the number of test cases. In each of the following t lines, there are two integers ell and r.\n\nFor each test case, please output a line denoting the number of ways to fold the given segment such that the resulting segment has the shortest possible length, modulo 998244353.\n\nInput:\n```\n3\n1 30\n16 18\n142857 240135\n```\n\nOutput:\n```\n3\n1\n63\n```",
+    "input": "The first line contains an integer t, denoting the number of test cases. In each of the following t lines, there are two integers ell and r.",
+    "output": "For each test case, please output a line denoting the number of ways to fold the given segment such that the resulting segment has the shortest possible length, modulo 998244353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

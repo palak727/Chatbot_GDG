@@ -1,0 +1,17 @@
+{
+    "id": "1958F",
+    "contest_id": 1958,
+    "problem_letter": "F",
+    "title": "F. Narrow Paths",
+    "statement": "Monocarp is wandering through a matrix consisting of 2 rows and n columns. Let's denote the cell in the i-th row and j-th column as (i, j). Monocarp starts at cell (1, 1) and wants to reach cell (2, n).\n\nIn one move, Monocarp can move in one of two directions:\n\nMonocarp can't go outside the matrix.\n\nPolycarp wants to prevent Monocarp from freely wandering through the matrix. To do this, he wants to choose exactly k different cells in the matrix and block them. He cannot choose cells (1, 1) and (2, n).\n\nFor each i from 0 to n, Polycarp wants to know how many ways he can block exactly k cells, so that Monocarp has exactly i different paths from (1, 1) to (2, n). Two paths are considered different if there exists a cell that Monocarp visits in one path but not in the other.\n\nAs the number of ways can be quite large, output it modulo 10^9 + 7.\n\nThe only line contains two integers n and k (2 ≤ n ≤ 2·10^5; 2 ≤ k ≤ 2·n - 2) — the number of columns in the matrix and the number of cells Polycarp wants to block.\n\nOutput n + 1 integers: for each i from 0 to n, the number of ways to block exactly k cells, so that Monocarp has exactly i different paths from (1, 1) to (2, n). Output all answers modulo 10^9 + 7.\n\nInput:\n```\n2 2\n```\n\nOutput:\n```\n1 0 0\n```\n\nInput:\n```\n10 2\n```\n\nOutput:\n```\n45 24 21 18 15 12 9 6 3 0 0\n```\n\nInput:\n```\n10 5\n```\n\nOutput:\n```\n7812 420 210 90 30 6 0 0 0 0 0\n```\n\nInput:\n```\n22 10\n```\n\nOutput:\n```\n467563090 1847560 1016158 534820 267410 125840 55055 22022 7865 2420 605 110 11 0 0 0 0 0 0 0 0 0 0\n```",
+    "input": "The only line contains two integers n and k (2 ≤ n ≤ 2·10^5; 2 ≤ k ≤ 2·n - 2) — the number of columns in the matrix and the number of cells Polycarp wants to block.",
+    "output": "Output n + 1 integers: for each i from 0 to n, the number of ways to block exactly k cells, so that Monocarp has exactly i different paths from (1, 1) to (2, n). Output all answers modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "combinatorics",
+        "*2000"
+    ],
+    "rating": 2000
+}

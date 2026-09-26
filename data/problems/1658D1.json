@@ -1,0 +1,17 @@
+{
+    "id": "1658D1",
+    "contest_id": 1658,
+    "problem_letter": "D1",
+    "title": "D1. 388535 (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference in the constraints between both versions is colored below in red. You can make hacks only if all versions of the problem are solved.\n\nMarin and Gojou are playing hide-and-seek with an array.\n\nGojou initially performs the following steps:\n\nMarin is then given the values of l,r and the final array a. She needs to find the secret integer x to win. Can you help her?\n\nNote that there may be multiple possible x that Gojou could have chosen. Marin can find any possible x that could have resulted in the final value of a.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nIn the first line of each test case contains two integers l and r ( colorredboldsymbol0 boldsymbol= boldsymboll ≤ r < 2^17).\n\nThe second line contains r - l + 1 integers of a_1,a_2,…,a_{r-l+1} (0 ≤ a_i < 2^17). It is guaranteed that a can be generated using the steps performed by Gojou.\n\nIt is guaranteed that the sum of r - l + 1 over all test cases does not exceed 2^17.\n\nFor each test case print an integer x. If there are multiple answers, print any.\n\nIn the first test case, the original array is [3, 2, 1, 0].\n\nIn the second test case, the original array is [0, 3, 2, 1].\n\nIn the third test case, the original array is [2, 1, 0].\n\nInput:\n```\n30 33 2 1 00 34 7 6 50 21 2 3\n```\n\nOutput:\n```\n0\n4\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nIn the first line of each test case contains two integers l and r ( colorredboldsymbol0 boldsymbol= boldsymboll ≤ r < 2^17).\n\nThe second line contains r - l + 1 integers of a_1,a_2,…,a_{r-l+1} (0 ≤ a_i < 2^17). It is guaranteed that a can be generated using the steps performed by Gojou.\n\nIt is guaranteed that the sum of r - l + 1 over all test cases does not exceed 2^17.",
+    "output": "For each test case print an integer x. If there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

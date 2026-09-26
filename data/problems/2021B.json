@@ -1,0 +1,19 @@
+{
+    "id": "2021B",
+    "contest_id": 2021,
+    "problem_letter": "B",
+    "title": "B. Maximize Mex",
+    "statement": "You are given an array a of n positive integers and an integer x. You can do the following two-step operation any (possibly zero) number of times:\n\nFind the maximum value of the MEX of a if you perform the operations optimally.\n\nThe MEX (minimum excluded value) of an array is the smallest non-negative integer that is not in the array. For example:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 2·10^5; 1 ≤ x ≤ 10^9) — the length of the array and the integer to be used in the operation.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer: the maximum MEX of a if you perform the operations optimally.\n\nIn the first test case, the MEX of a is 4 without performing any operations, which is the maximum.\n\nIn the second test case, the MEX of a is 5 without performing any operations. If we perform two operations both with i=1, we will have the array a=[5,3,4,1,0,2]. Then, the MEX of a will become 6, which is the maximum.\n\nIn the third test case, the MEX of a is 0 without performing any operations, which is the maximum.\n\nInput:\n```\n36 30 3 2 1 5 26 21 3 4 1 0 24 52 5 10 3\n```\n\nOutput:\n```\n4\n6\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and x (1 ≤ n ≤ 2·10^5; 1 ≤ x ≤ 10^9) — the length of the array and the integer to be used in the operation.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the given array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer: the maximum MEX of a if you perform the operations optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

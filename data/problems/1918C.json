@@ -1,0 +1,19 @@
+{
+    "id": "1918C",
+    "contest_id": 1918,
+    "problem_letter": "C",
+    "title": "C. XOR-distance",
+    "statement": "You are given integers a, b, r. Find the smallest value of |(a oplus x) - (b oplus x)| among all 0 ≤ x ≤ r.\n\noplus is the operation of bitwise XOR, and |y| is absolute value of y.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains integers a, b, r (0 ≤ a, b, r ≤ 10^18).\n\nFor each test case, output a single number — the smallest possible value.\n\nIn the first test, when r = 0, then x is definitely equal to 0, so the answer is |4 oplus 0 - 6 oplus 0| = |4 - 6| = 2.\n\nIn the second test:\n\nTherefore, the answer is 1.\n\nIn the third test, the minimum is achieved when x = 1.\n\nInput:\n```\n104 6 00 3 29 6 1092 256 23165 839 2011 14 52 7 296549 34359 13851853686404475946 283666553522252166 127929199446003072735268590557942972 916721749674600979 895150420120690183\n```\n\nOutput:\n```\n2\n1\n1\n164\n542\n5\n3\n37102\n27934920819538516\n104449824168870225\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case contains integers a, b, r (0 ≤ a, b, r ≤ 10^18).",
+    "output": "For each test case, output a single number — the smallest possible value.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1200E",
+    "contest_id": 1200,
+    "problem_letter": "E",
+    "title": "E. Compress Words",
+    "statement": "Amugae has a sentence consisting of n words. He want to compress this sentence into one word. Amugae doesn't like repetitions, so when he merges two words into one word, he removes the longest prefix of the second word that coincides with a suffix of the first word. For example, he merges \"sample\" and \"please\" into \"samplease\".\n\nAmugae will merge his sentence left to right (i.e. first merge the first two words, then merge the result with the third word and so on). Write a program that prints the compressed word after the merging process ends.\n\nThe first line contains an integer n (1 ≤ n ≤ 10^5), the number of the words in Amugae's sentence.\n\nThe second line contains n words separated by single space. Each words is non-empty and consists of uppercase and lowercase English letters and digits ('A', 'B', ..., 'Z', 'a', 'b', ..., 'z', '0', '1', ..., '9'). The total length of the words does not exceed 10^6.\n\nIn the only line output the compressed word after the merging process ends as described in the problem.\n\nInput:\n```\n5\nI want to order pizza\n```\n\nOutput:\n```\nIwantorderpizza\n```\n\nInput:\n```\n5\nsample please ease in out\n```\n\nOutput:\n```\nsampleaseinout\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 10^5), the number of the words in Amugae's sentence.\n\nThe second line contains n words separated by single space. Each words is non-empty and consists of uppercase and lowercase English letters and digits ('A', 'B', ..., 'Z', 'a', 'b', ..., 'z', '0', '1', ..., '9'). The total length of the words does not exceed 10^6.",
+    "output": "In the only line output the compressed word after the merging process ends as described in the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "hashing",
+        "implementation",
+        "string suffix structures",
+        "strings",
+        "*2000"
+    ],
+    "rating": 2000
+}

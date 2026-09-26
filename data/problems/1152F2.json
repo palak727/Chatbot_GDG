@@ -1,0 +1,18 @@
+{
+    "id": "1152F2",
+    "contest_id": 1152,
+    "problem_letter": "F2",
+    "title": "F2. Neko Rules the Catniverse (Large Version)",
+    "statement": "This problem is same as the previous one, but has larger constraints.\n\nAki is playing a new video game. In the video game, he will control Neko, the giant cat, to fly between planets in the Catniverse.\n\nThere are n planets in the Catniverse, numbered from 1 to n. At the beginning of the game, Aki chooses the planet where Neko is initially located. Then Aki performs k - 1 moves, where in each move Neko is moved from the current planet x to some other planet y such that:\n\nThis way, Neko will visit exactly k different planets. Two ways of visiting planets are called different if there is some index i such that, the i-th planet visited in the first way is different from the i-th planet visited in the second way.\n\nWhat is the total number of ways to visit k planets this way? Since the answer can be quite large, print it modulo 10^9 + 7.\n\nThe only line contains three integers n, k and m (1 ≤ n ≤ 10^9, 1 ≤ k ≤ min(n, 12), 1 ≤ m ≤ 4) — the number of planets in the Catniverse, the number of planets Neko needs to visit and the said constant m.\n\nPrint exactly one integer — the number of different ways Neko can visit exactly k planets. Since the answer can be quite large, print it modulo 10^9 + 7.\n\nIn the first example, there are 4 ways Neko can visit all the planets:\n\nIn the second example, there are 9 ways Neko can visit exactly 2 planets:\n\nIn the third example, with m = 4, Neko can visit all the planets in any order, so there are 5! = 120 ways Neko can visit all the planets.\n\nIn the fourth example, Neko only visit exactly 1 planet (which is also the planet he initially located), and there are 100 ways to choose the starting planet for Neko.\n\nInput:\n```\n3 3 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4 2 1\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n5 5 4\n```\n\nOutput:\n```\n120\n```\n\nInput:\n```\n100 1 2\n```\n\nOutput:\n```\n100\n```",
+    "input": "The only line contains three integers n, k and m (1 ≤ n ≤ 10^9, 1 ≤ k ≤ min(n, 12), 1 ≤ m ≤ 4) — the number of planets in the Catniverse, the number of planets Neko needs to visit and the said constant m.",
+    "output": "Print exactly one integer — the number of different ways Neko can visit exactly k planets. Since the answer can be quite large, print it modulo 10^9 + 7.",
+    "time_limit": "7 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "matrices",
+        "*3000"
+    ],
+    "rating": 3000
+}

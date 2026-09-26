@@ -1,0 +1,20 @@
+{
+    "id": "1332C",
+    "contest_id": 1332,
+    "problem_letter": "C",
+    "title": "C. K-Complete Word",
+    "statement": "Word s of length n is called k-complete if\n\nFor example, \"abaaba\" is a 3-complete word, while \"abccba\" is not.\n\nBob is given a word s of length n consisting of only lowercase Latin letters and an integer k, such that n is divisible by k. He wants to convert s to any k-complete word.\n\nTo do this Bob can choose some i (1 ≤ i ≤ n) and replace the letter at position i with some other lowercase Latin letter.\n\nSo now Bob wants to know the minimum number of letters he has to replace to convert s to any k-complete word.\n\nNote that Bob can do zero changes if the word s is already k-complete.\n\nYou are required to answer t test cases independently.\n\nThe first line contains a single integer t (1 ≤ t≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k < n ≤ 2·10^5, n is divisible by k).\n\nThe second line of each test case contains a word s of length n.\n\nIt is guaranteed that word s only contains lowercase Latin letters. And it is guaranteed that the sum of n over all test cases will not exceed 2·10^5.\n\nFor each test case, output one integer, representing the minimum number of characters he has to replace to convert s to any k-complete word.\n\nIn the first test case, one optimal solution is aaaaaa.\n\nIn the second test case, the given word itself is k-complete.\n\nInput:\n```\n4\n6 2\nabaaba\n6 3\nabaaba\n36 9\nhippopotomonstrosesquippedaliophobia\n21 7\nwudixiaoxingxingheclp\n```\n\nOutput:\n```\n2\n0\n23\n16\n```",
+    "input": "The first line contains a single integer t (1 ≤ t≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ k < n ≤ 2·10^5, n is divisible by k).\n\nThe second line of each test case contains a word s of length n.\n\nIt is guaranteed that word s only contains lowercase Latin letters. And it is guaranteed that the sum of n over all test cases will not exceed 2·10^5.",
+    "output": "For each test case, output one integer, representing the minimum number of characters he has to replace to convert s to any k-complete word.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1500"
+    ],
+    "rating": 1500
+}

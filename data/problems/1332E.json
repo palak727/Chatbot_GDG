@@ -1,0 +1,19 @@
+{
+    "id": "1332E",
+    "contest_id": 1332,
+    "problem_letter": "E",
+    "title": "E. Height All the Same",
+    "statement": "Alice has got addicted to a game called Sirtet recently.\n\nIn Sirtet, player is given an n × m grid. Initially a_{i,j} cubes are stacked up in the cell (i,j). Two cells are called adjacent if they share a side. Player can perform the following operations:\n\nCubes mentioned above are identical in height.\n\nHere is an illustration of the game. States on the right are obtained by performing one of the above operations on the state on the left, and grey cubes are added due to the operation.\n\nPlayer's goal is to make the height of all cells the same (i.e. so that each cell has the same number of cubes in it) using above operations.\n\nAlice, however, has found out that on some starting grids she may never reach the goal no matter what strategy she uses. Thus, she is wondering the number of initial grids such that\n\nPlease help Alice with it. Notice that the answer might be large, please output the desired value modulo 998,244,353.\n\nThe only line contains four integers n, m, L and R (1≤ n,m,L,R ≤ 10^9, L ≤ R, n·m ≥ 2).\n\nOutput one integer, representing the desired answer modulo 998,244,353.\n\nIn the first sample, the only initial grid that satisfies the requirements is a_{1,1}=a_{2,1}=a_{1,2}=a_{2,2}=1. Thus the answer should be 1.\n\nIn the second sample, initial grids that satisfy the requirements are a_{1,1}=a_{1,2}=1 and a_{1,1}=a_{1,2}=2. Thus the answer should be 2.\n\nInput:\n```\n2 2 1 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n1 2 1 2\n```\n\nOutput:\n```\n2\n```",
+    "input": "The only line contains four integers n, m, L and R (1≤ n,m,L,R ≤ 10^9, L ≤ R, n·m ≥ 2).",
+    "output": "Output one integer, representing the desired answer modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "math",
+        "matrices",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1997F",
+    "contest_id": 1997,
+    "problem_letter": "F",
+    "title": "F. Chips on a Line",
+    "statement": "You have n chips, and you are going to place all of them in one of x points, numbered from 1 to x. There can be multiple chips in each point.\n\nAfter placing the chips, you can perform the following four operations (in any order, any number of times):\n\nNote that the coordinates of the chips you place during the operations cannot be less than 1, but can be greater than x.\n\nDenote the cost of chip placement as the minimum number of chips which can be present on the line after you perform these operations, starting from the placement you've chosen.\n\nFor example, the cost of placing two chips in points 3 and one chip in point 5 is 2, because you can reduce the number of chips to 2 as follows:\n\nYou are given three integers n, x and m. Calculate the number of placements of exactly n chips in points from 1 to x having cost equal to m, and print it modulo 998244353. Two placements are considered different if the number of chips in some point differs between these placements.\n\nThe only line contains three integers n, x and m (1 ≤ m ≤ n ≤ 1000; 2 ≤ x ≤ 10).\n\nPrint one integer — the number of placements with cost equal to m, taken modulo 998244353.\n\nIn the first example, there are five ways to place 2 chips in points from 1 to 3 so that the cost is 1:\n\nInput:\n```\n2 3 1\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n42 10 5\n```\n\nOutput:\n```\n902673363\n```\n\nInput:\n```\n1000 10 8\n```\n\nOutput:\n```\n187821763\n```",
+    "input": "The only line contains three integers n, x and m (1 ≤ m ≤ n ≤ 1000; 2 ≤ x ≤ 10).",
+    "output": "Print one integer — the number of placements with cost equal to m, taken modulo 998244353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "greedy",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2087C",
+    "contest_id": 2087,
+    "problem_letter": "C",
+    "title": "C. Coin Game",
+    "statement": "There are some coins arranged in a line, numbered from 1 from left to right. There are three types of coins: gold, silver, and bronze.\n\nTwo players play a game; players take turns, and the first player makes the first turn. In one turn, the player chooses one of the three types of coins, and then collects all coins of that type which are still not taken by the other player. The game continues until all the coins are collected. Both players play optimally, and each player wants to maximize the number of coins he/she gets.\n\nYour task is to answer q independent queries of the following form: how many coins can the first player collect if the game is played using only coins with indices from l to r inclusive.\n\nThe first line contains a string s (1 ≤ |s| ≤ 10^5), consisting of the characters G, S, and/or B. G means that the coin is gold. S means that the coin is silver. B means that the coin is bronze.\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThen q lines follow; each of them contains two integers l and r (1 ≤ l ≤ r ≤ |s|).\n\nFor each query, print a single integer — the number of coins the first player can collect if the game is played using only coins with indices from l to r inclusive.\n\nLet's consider the queries from the example:\n\nInput:\n```\nBGSSBGB51 72 61 53 34 7\n```\n\nOutput:\n```\n5\n3\n3\n1\n3\n```",
+    "input": "The first line contains a string s (1 ≤ |s| ≤ 10^5), consisting of the characters G, S, and/or B. G means that the coin is gold. S means that the coin is silver. B means that the coin is bronze.\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThen q lines follow; each of them contains two integers l and r (1 ≤ l ≤ r ≤ |s|).",
+    "output": "For each query, print a single integer — the number of coins the first player can collect if the game is played using only coins with indices from l to r inclusive.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "greedy"
+    ],
+    "rating": null
+}

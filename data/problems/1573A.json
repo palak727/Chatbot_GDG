@@ -1,0 +1,16 @@
+{
+    "id": "1573A",
+    "contest_id": 1573,
+    "problem_letter": "A",
+    "title": "A. Countdown",
+    "statement": "You are given a digital clock with n digits. Each digit shows an integer from 0 to 9, so the whole clock shows an integer from 0 to 10^n-1. The clock will show leading zeroes if the number is smaller than 10^{n-1}.\n\nYou want the clock to show 0 with as few operations as possible. In an operation, you can do one of the following:\n\nYour task is to determine the minimum number of operations needed to make the clock show 0.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — number of digits on the clock.\n\nThe second line of each test case contains a string of n digits s_1, s_2, …, s_n (0 ≤ s_1, s_2, …, s_n ≤ 9) — the number on the clock.\n\nNote: If the number is smaller than 10^{n-1} the clock will show leading zeroes.\n\nFor each test case, print one integer: the minimum number of operations needed to make the clock show 0.\n\nIn the first example, it's optimal to just decrease the number 7 times.\n\nIn the second example, we can first swap the first and last position and then decrease the number by 1.\n\nIn the third example, the clock already shows 0, so we don't have to perform any operations.\n\nInput:\n```\n7\n3\n007\n4\n1000\n5\n00000\n3\n103\n4\n2020\n9\n123456789\n30\n001678294039710047203946100020\n```\n\nOutput:\n```\n7\n2\n0\n5\n6\n53\n115\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^3).\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — number of digits on the clock.\n\nThe second line of each test case contains a string of n digits s_1, s_2, …, s_n (0 ≤ s_1, s_2, …, s_n ≤ 9) — the number on the clock.\n\nNote: If the number is smaller than 10^{n-1} the clock will show leading zeroes.",
+    "output": "For each test case, print one integer: the minimum number of operations needed to make the clock show 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

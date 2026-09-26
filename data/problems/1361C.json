@@ -1,0 +1,21 @@
+{
+    "id": "1361C",
+    "contest_id": 1361,
+    "problem_letter": "C",
+    "title": "C. Johnny and Megan's Necklace",
+    "statement": "Johnny's younger sister Megan had a birthday recently. Her brother has bought her a box signed as \"Your beautiful necklace — do it yourself!\". It contains many necklace parts and some magic glue.\n\nThe necklace part is a chain connecting two pearls. Color of each pearl can be defined by a non-negative integer. The magic glue allows Megan to merge two pearls (possibly from the same necklace part) into one. The beauty of a connection of pearls in colors u and v is defined as follows: let 2^k be the greatest power of two dividing u oplus v — exclusive or of u and v. Then the beauty equals k. If u = v, you may assume that beauty is equal to 20.\n\nEach pearl can be combined with another at most once. Merging two parts of a necklace connects them. Using the glue multiple times, Megan can finally build the necklace, which is a cycle made from connected necklace parts (so every pearl in the necklace is combined with precisely one other pearl in it). The beauty of such a necklace is the minimum beauty of a single connection in it. The girl wants to use all available necklace parts to build exactly one necklace consisting of all of them with the largest possible beauty. Help her!\n\nThe first line contains n (1 ≤ n ≤ 5·10^5) — the number of necklace parts in the box. Each of the next n lines contains two integers a and b (0 ≤ a, b < 2^20), which denote colors of pearls presented in the necklace parts. Pearls in the i-th line have indices 2i - 1 and 2i respectively.\n\nThe first line should contain a single integer b denoting the maximum possible beauty of a necklace built from all given parts.\n\nThe following line should contain 2n distinct integers p_i (1 ≤ p_i ≤ 2n) — the indices of initial pearls in the order in which they appear on a cycle. Indices of pearls belonging to the same necklace part have to appear at neighboring positions in this permutation (so 1,4,3,2 is not a valid output, whereas 2,1,4,3 and 4,3,1,2 are). If there are many possible answers, you can print any.\n\nIn the first example the following pairs of pearls are combined: (7, 9), (10, 5), (6, 1), (2, 3) and (4, 8). The beauties of connections equal correspondingly: 3, 3, 3, 20, 20.\n\nThe following drawing shows this construction.\n\nInput:\n```\n5\n13 11\n11 1\n3 5\n17 1\n9 27\n```\n\nOutput:\n```\n3\n8 7 9 10 5 6 1 2 3 4 \n```\n\nInput:\n```\n5\n13 11\n11 1\n3 5\n17 1\n7 29\n```\n\nOutput:\n```\n2\n8 7 10 9 5 6 4 3 2 1 \n```\n\nInput:\n```\n1\n1 1\n```\n\nOutput:\n```\n20\n2 1 \n```",
+    "input": "The first line contains n (1 ≤ n ≤ 5·10^5) — the number of necklace parts in the box. Each of the next n lines contains two integers a and b (0 ≤ a, b < 2^20), which denote colors of pearls presented in the necklace parts. Pearls in the i-th line have indices 2i - 1 and 2i respectively.",
+    "output": "The first line should contain a single integer b denoting the maximum possible beauty of a necklace built from all given parts.\n\nThe following line should contain 2n distinct integers p_i (1 ≤ p_i ≤ 2n) — the indices of initial pearls in the order in which they appear on a cycle. Indices of pearls belonging to the same necklace part have to appear at neighboring positions in this permutation (so 1,4,3,2 is not a valid output, whereas 2,1,4,3 and 4,3,1,2 are). If there are many possible answers, you can print any.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "*2500"
+    ],
+    "rating": 2500
+}

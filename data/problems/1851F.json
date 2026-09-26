@@ -1,0 +1,20 @@
+{
+    "id": "1851F",
+    "contest_id": 1851,
+    "problem_letter": "F",
+    "title": "F. Lisa and the Martians",
+    "statement": "Lisa was kidnapped by martians! It okay, because she has watched a lot of TV shows about aliens, so she knows what awaits her. Let's call integer martian if it is a non-negative integer and strictly less than 2^k, for example, when k = 12, the numbers 51, 1960, 0 are martian, and the numbers π, -1, 21/8, 4096 are not.\n\nThe aliens will give Lisa n martian numbers a_1, a_2, …, a_n. Then they will ask her to name any martian number x. After that, Lisa will select a pair of numbers a_i, a_j (i ≠ j) in the given sequence and count (a_i oplus x) & (a_j oplus x). The operation oplus means Bitwise exclusive OR, the operation & means Bitwise And. For example, (5 oplus 17) & (23 oplus 17) = (00101_2 oplus 10001_2) & (10111_2 oplus 10001_2) = 10100_2 & 00110_2 = 00100_2 = 4.\n\nLisa is sure that the higher the calculated value, the higher her chances of returning home. Help the girl choose such i, j, x that maximize the calculated value.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — number of testcases.\n\nEach testcase is described by two lines.\n\nThe first line contains integers n, k (2 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 30) — the length of the sequence of martian numbers and the value of k.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^k) — a sequence of martian numbers.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5.\n\nFor each testcase, print three integers i, j, x (1 ≤ i, j ≤ n, i ≠ j, 0 ≤ x < 2^k). The value of (a_i oplus x) & (a_j oplus x) should be the maximum possible.\n\nIf there are several solutions, you can print any one.\n\nFirst testcase: (3 oplus 14) & (1 oplus 14) = (0011_2 oplus 1110_2) & (0001_2 oplus 1110_2) = 1101_2 = 1101_2 & 1111_2 = 1101_2 = 13.\n\nSecond testcase: (1 oplus 0) & (1 oplus 0) = 1.\n\nThird testcase: (9 oplus 4082) & (13 oplus 4082) = 4091.\n\nFourth testcase: (3 oplus 7) & (0 oplus 7) = 4.\n\nInput:\n```\n105 43 9 1 4 133 11 0 16 12144 1580 1024 100 9 134 37 3 0 43 20 0 12 412 29 46 14 9 4 4 4 5 10 22 11 02 411 49 42 11 10 1 6 9 11 0 5\n```\n\nOutput:\n```\n1 3 14\n1 3 0\n5 6 4082\n2 3 7\n1 2 3\n1 2 15\n4 5 11\n1 2 0\n1 2 0\n2 7 4\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — number of testcases.\n\nEach testcase is described by two lines.\n\nThe first line contains integers n, k (2 ≤ n ≤ 2·10^5, 1 ≤ k ≤ 30) — the length of the sequence of martian numbers and the value of k.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^k) — a sequence of martian numbers.\n\nIt is guaranteed that the sum of n over all testcases does not exceed 2·10^5.",
+    "output": "For each testcase, print three integers i, j, x (1 ≤ i, j ≤ n, i ≠ j, 0 ≤ x < 2^k). The value of (a_i oplus x) & (a_j oplus x) should be the maximum possible.\n\nIf there are several solutions, you can print any one.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "math",
+        "strings",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

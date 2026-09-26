@@ -1,0 +1,20 @@
+{
+    "id": "1133F2",
+    "contest_id": 1133,
+    "problem_letter": "F2",
+    "title": "F2. Spanning Tree with One Fixed Degree",
+    "statement": "You are given an undirected unweighted connected graph consisting of n vertices and m edges. It is guaranteed that there are no self-loops or multiple edges in the given graph.\n\nYour task is to find any spanning tree of this graph such that the degree of the first vertex (vertex with label 1 on it) is equal to D (or say that there are no such spanning trees). Recall that the degree of a vertex is the number of edges incident to it.\n\nThe first line contains three integers n, m and D (2 ≤ n ≤ 2·10^5, n - 1 ≤ m ≤ min(2·10^5, (n(n-1))/2), 1 ≤ D < n) — the number of vertices, the number of edges and required degree of the first vertex, respectively.\n\nThe following m lines denote edges: edge i is represented by a pair of integers v_i, u_i (1 ≤ v_i, u_i ≤ n, u_i ≠ v_i), which are the indices of vertices connected by the edge. There are no loops or multiple edges in the given graph, i. e. for each pair (v_i, u_i) there are no other pairs (v_i, u_i) or (u_i, v_i) in the list of edges, and for each pair (v_i, u_i) the condition v_i ≠ u_i is satisfied.\n\nIf there is no spanning tree satisfying the condition from the problem statement, print \"NO\" in the first line.\n\nOtherwise print \"YES\" in the first line and then print n-1 lines describing the edges of a spanning tree such that the degree of the first vertex (vertex with label 1 on it) is equal to D. Make sure that the edges of the printed spanning tree form some subset of the input edges (order doesn't matter and edge (v, u) is considered the same as the edge (u, v)).\n\nIf there are multiple possible answers, print any of them.\n\nThe picture corresponding to the first and second examples:\n\nThe picture corresponding to the third example:\n\nInput:\n```\n4 5 1\n1 2\n1 3\n1 4\n2 3\n3 4\n```\n\nOutput:\n```\nYES\n2 1\n2 3\n3 4\n```\n\nInput:\n```\n4 5 3\n1 2\n1 3\n1 4\n2 3\n3 4\n```\n\nOutput:\n```\nYES\n1 2\n1 3\n4 1\n```\n\nInput:\n```\n4 4 3\n1 2\n1 4\n2 3\n3 4\n```\n\nOutput:\n```\nNO\n```",
+    "input": "The first line contains three integers n, m and D (2 ≤ n ≤ 2·10^5, n - 1 ≤ m ≤ min(2·10^5, (n(n-1))/2), 1 ≤ D < n) — the number of vertices, the number of edges and required degree of the first vertex, respectively.\n\nThe following m lines denote edges: edge i is represented by a pair of integers v_i, u_i (1 ≤ v_i, u_i ≤ n, u_i ≠ v_i), which are the indices of vertices connected by the edge. There are no loops or multiple edges in the given graph, i. e. for each pair (v_i, u_i) there are no other pairs (v_i, u_i) or (u_i, v_i) in the list of edges, and for each pair (v_i, u_i) the condition v_i ≠ u_i is satisfied.",
+    "output": "If there is no spanning tree satisfying the condition from the problem statement, print \"NO\" in the first line.\n\nOtherwise print \"YES\" in the first line and then print n-1 lines describing the edges of a spanning tree such that the degree of the first vertex (vertex with label 1 on it) is equal to D. Make sure that the edges of the printed spanning tree form some subset of the input edges (order doesn't matter and edge (v, u) is considered the same as the edge (u, v)).\n\nIf there are multiple possible answers, print any of them.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

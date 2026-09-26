@@ -1,0 +1,17 @@
+{
+    "id": "1890B",
+    "contest_id": 1890,
+    "problem_letter": "B",
+    "title": "B. Qingshan Loves Strings",
+    "statement": "Qingshan has a string s, while Daniel has a string t. Both strings only contain texttt0 and texttt1.\n\nA string a of length k is good if and only if\n\nFor example, texttt1, texttt101, texttt0101 are good, while texttt11, texttt1001, texttt001100 are not good.\n\nQingshan wants to make s good. To do this, she can do the following operation any number of times (possibly, zero):\n\nPlease tell Qingshan if it is possible to make s good.\n\nThe input consists of multiple test cases. The first line contains a single integer T (1≤ T≤ 2000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 50) — the length of the strings s and t, respectively.\n\nThe second line of each test case contains a string s of length n.\n\nThe third line of each test case contains a string t of length m.\n\nIt is guaranteed that s and t only contain texttt0 and texttt1.\n\nFor each test case, print \"YES\" (without quotes), if it is possible to make s good, and \"NO\" (without quotes) otherwise.\n\nYou can print letters in any case (upper or lower).\n\nIn the first test case, s is good initially, so you can get a good s by doing zero operations.\n\nIn the second test case, you can do the following two operations (the inserted string t is underlined):\n\nand get s = texttt101010101, which is good.\n\nIn the third test case, there is no way to make s good after any number of operations.\n\nInput:\n```\n51 1103 31110103 2111006 7101100101010110 2100100100010\n```\n\nOutput:\n```\nYes\nYes\nNo\nNo\nNo\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer T (1≤ T≤ 2000) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1 ≤ n,m ≤ 50) — the length of the strings s and t, respectively.\n\nThe second line of each test case contains a string s of length n.\n\nThe third line of each test case contains a string t of length m.\n\nIt is guaranteed that s and t only contain texttt0 and texttt1.",
+    "output": "For each test case, print \"YES\" (without quotes), if it is possible to make s good, and \"NO\" (without quotes) otherwise.\n\nYou can print letters in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2085B",
+    "contest_id": 2085,
+    "problem_letter": "B",
+    "title": "B. Serval and Final MEX",
+    "statement": "You are given an array a consisting of n≥ 4 non-negative integers.\n\nYou need to perform the following operation on a until its length becomes 1:\n\nServal wants the final element in a to be 0. Help him!\n\nMore formally, you have to find a sequence of operations, such that after performing these operations in order, the length of a becomes 1, and the final element in a is 0.\n\nIt can be shown that at least one valid operation sequence exists under the constraints of the problem, and the length of any valid operation sequence does not exceed n.\n\nNote that you do not need to minimize the number of operations.\n\n^{∗}The minimum excluded (MEX) of a collection of integers b_1, b_2, …, b_k is defined as the smallest non-negative integer x which does not occur in the collection b.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4≤ n≤ 5000) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i≤ n) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.\n\nFor each test case, output a single integer k (0≤ k≤ n) in the first line of output — the length of the operation sequence.\n\nThen, output k lines, the i-th line containing two integers l_i and r_i (1≤ l_i < r_i≤ |a|) — the two indices you choose in the i-th operation, where |a| denotes the length of the array before this operation.\n\nIf there are multiple answers, you may print any of them.\n\nIn the first test case, since mex([1,2,3,4])=0, after the only operation, the array becomes [0].\n\nIn the second test case, the array a changes as follows: [underline0,1,0,0,1]→ [underline2,0,0,1]→ [underline1,0,1]→ [underline2,1]→ [0].\n\nIn the third test case, the array a changes as follows: [0,0,0,0,underline0,0]→ [0,0,underline0,0,1]→ [underline0,0,1,1]→ [underline1,1,1]→ [0].\n\nInput:\n```\n641 2 3 450 1 0 0 160 0 0 0 0 065 4 3 2 1 040 0 1 141 0 0 0\n```\n\nOutput:\n```\n1\n1 4\n4\n1 2\n1 2\n1 2\n1 2\n4\n5 6\n3 4\n1 2\n1 3\n3\n4 5\n4 5\n1 4\n2\n1 2\n1 3\n2\n2 4\n1 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4≤ n≤ 5000) — the length of the array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0≤ a_i≤ n) — the elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case, output a single integer k (0≤ k≤ n) in the first line of output — the length of the operation sequence.\n\nThen, output k lines, the i-th line containing two integers l_i and r_i (1≤ l_i < r_i≤ |a|) — the two indices you choose in the i-th operation, where |a| denotes the length of the array before this operation.\n\nIf there are multiple answers, you may print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

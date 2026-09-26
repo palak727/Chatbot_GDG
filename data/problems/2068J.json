@@ -1,0 +1,17 @@
+{
+    "id": "2068J",
+    "contest_id": 2068,
+    "problem_letter": "J",
+    "title": "J. The Ultimate Wine Tasting Event",
+    "statement": "Rumors of the excellence of Gabriella's wine tasting events have toured the world and made it to the headlines of prestigious wine magazines. Now, she has been asked to organize an event at the EUC 2025!\n\nThis time she selected 2n bottles of wine, of which exactly n are of white wine, and exactly n of red wine. She arranged them in a line as usual, in a predetermined order described by a string s of length 2n: for 1 ≤ i ≤ 2n, the i-th bottle from the left is white wine if s_i = textttW and red wine if s_i = textttR.\n\nTo spice things up for the attendees (which include EUC contestants), Gabriella came up with the following wine-themed problem:\n\nConsider a way of dividing the 2n bottles into two disjoint subsets, each containing n bottles. Then, for every 1 ≤ i ≤ n, swap the i-th bottle in the first subset (from the left) and the i-th bottle of the second subset (also from the left). Is it possible to choose the subsets so that, after this operation is done exactly once, the white wines occupy the first n positions?\n\nThe first line contains an integer t (1 ≤ t ≤ 500) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — where 2n is the total number of bottles.\n\nThe second line of each test case contains a string s of length 2n, describing the bottle arrangement — the i-th character of s (1 ≤ i ≤ 2n) is textttW for a white wine and textttR for a red wine.\n\nIt is guaranteed that s contains exactly n textttW's and n textttR's.\n\nFor each test case, print textttYES if it is possible to divide the bottles as explained in the statement. Otherwise, print textttNO.\n\nIn the first test case, we can make one subset out of the bottles at positions 1, 2, 3 and 7 (which are, respectively: white, red, red, red) and the other subset out of the bottles at positions 4, 5, 6, 8 (which are, respectively: white, white, white, red). We will then swap pairs (1, 4), (2, 5), (3, 6) and (7, 8), after which the white wines will occupy the first 4 positions, and the red wines the last 4 positions.\n\nIn the second test case, there is only one possible way to form the subsets: one with the first bottle, and one with the second bottle. After swapping, the resulting arrangement is textttRW, therefore there is no solution.\n\nInput:\n```\n34WRRWWWRR1WR20WWWWRRWRRRRRWRRWRWRRWRRWWWWWWWRWWRWWRRRR\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 500) — the number of test cases. The descriptions of the t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — where 2n is the total number of bottles.\n\nThe second line of each test case contains a string s of length 2n, describing the bottle arrangement — the i-th character of s (1 ≤ i ≤ 2n) is textttW for a white wine and textttR for a red wine.\n\nIt is guaranteed that s contains exactly n textttW's and n textttR's.",
+    "output": "For each test case, print textttYES if it is possible to divide the bottles as explained in the statement. Otherwise, print textttNO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "*2000"
+    ],
+    "rating": 2000
+}

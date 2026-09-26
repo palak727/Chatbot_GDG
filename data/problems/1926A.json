@@ -1,0 +1,16 @@
+{
+    "id": "1926A",
+    "contest_id": 1926,
+    "problem_letter": "A",
+    "title": "A. Vlad and the Best of Five",
+    "statement": "Vladislav has a string of length 5, whose characters are each either textttA or textttB.\n\nWhich letter appears most frequently: textttA or textttB?\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 32) — the number of test cases.\n\nThe only line of each test case contains a string of length 5 consisting of letters textttA and textttB.\n\nAll t strings in a test are different (distinct).\n\nFor each test case, output one letter (textttA or textttB) denoting the character that appears most frequently in the string.\n\nInput:\n```\n8ABABBABABABBBABAAAAABBBBBBABAAAAAABBAAAA\n```\n\nOutput:\n```\nB\nA\nB\nA\nB\nA\nA\nA\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 32) — the number of test cases.\n\nThe only line of each test case contains a string of length 5 consisting of letters textttA and textttB.\n\nAll t strings in a test are different (distinct).",
+    "output": "For each test case, output one letter (textttA or textttB) denoting the character that appears most frequently in the string.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

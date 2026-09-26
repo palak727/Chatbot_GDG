@@ -1,0 +1,17 @@
+{
+    "id": "1066D",
+    "contest_id": 1066,
+    "problem_letter": "D",
+    "title": "D. Boxes Packing",
+    "statement": "Maksim has n objects and m boxes, each box has size exactly k. Objects are numbered from 1 to n in order from left to right, the size of the i-th object is a_i.\n\nMaksim wants to pack his objects into the boxes and he will pack objects by the following algorithm: he takes one of the empty boxes he has, goes from left to right through the objects, and if the i-th object fits in the current box (the remaining size of the box is greater than or equal to a_i), he puts it in the box, and the remaining size of the box decreases by a_i. Otherwise he takes the new empty box and continues the process above. If he has no empty boxes and there is at least one object not in some box then Maksim cannot pack the chosen set of objects.\n\nMaksim wants to know the maximum number of objects he can pack by the algorithm above. To reach this target, he will throw out the leftmost object from the set until the remaining set of objects can be packed in boxes he has. Your task is to say the maximum number of objects Maksim can pack in boxes he has.\n\nEach time when Maksim tries to pack the objects into the boxes, he will make empty all the boxes he has before do it (and the relative order of the remaining set of objects will not change).\n\nThe first line of the input contains three integers n, m, k (1 ≤ n, m ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the number of objects, the number of boxes and the size of each box.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ k), where a_i is the size of the i-th object.\n\nPrint the maximum number of objects Maksim can pack using the algorithm described in the problem statement.\n\nIn the first example Maksim can pack only 4 objects. Firstly, he tries to pack all the 5 objects. Distribution of objects will be [5], [2, 1]. Maxim cannot pack the next object in the second box and he has no more empty boxes at all. Next he will throw out the first object and the objects distribution will be [2, 1], [4, 2]. So the answer is 4.\n\nIn the second example it is obvious that Maksim cannot pack all the objects starting from first, second, third and fourth (in all these cases the distribution of objects is [4]), but he can pack the last object ([1]).\n\nIn the third example Maksim can pack all the objects he has. The distribution will be [1, 2], [3], [1, 1].\n\nInput:\n```\n5 2 6\n5 2 1 4 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5 1 4\n4 2 3 4 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 3 3\n1 2 3 1 1\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line of the input contains three integers n, m, k (1 ≤ n, m ≤ 2·10^5, 1 ≤ k ≤ 10^9) — the number of objects, the number of boxes and the size of each box.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ k), where a_i is the size of the i-th object.",
+    "output": "Print the maximum number of objects Maksim can pack using the algorithm described in the problem statement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "implementation",
+        "*1800"
+    ],
+    "rating": 1800
+}

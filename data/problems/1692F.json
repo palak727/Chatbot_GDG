@@ -1,0 +1,17 @@
+{
+    "id": "1692F",
+    "contest_id": 1692,
+    "problem_letter": "F",
+    "title": "F. 3SUM",
+    "statement": "Given an array a of positive integers with length n, determine if there exist three distinct indices i, j, k such that a_i + a_j + a_k ends in the digit 3.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 2·10^5.\n\nOutput t lines, each of which contains the answer to the corresponding test case. Output \"YES\" if there exist three distinct indices i, j, k satisfying the constraints in the statement, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, you can select i=1, j=4, k=3. Then a_1 + a_4 + a_3 = 20 + 84 + 19 = 123, which ends in the digit 3.\n\nIn the second test case, you can select i=1, j=2, k=3. Then a_1 + a_2 + a_3 = 1 + 11 + 1 = 13, which ends in the digit 3.\n\nIn the third test case, it can be proven that no such i, j, k exist. Note that i=4, j=4, k=4 is not a valid solution, since although a_4 + a_4 + a_4 = 1111 + 1111 + 1111 = 3333, which ends in the digit 3, the indices need to be distinct.\n\nIn the fourth test case, it can be proven that no such i, j, k exist.\n\nIn the fifth test case, you can select i=4, j=3, k=1. Then a_4 + a_3 + a_1 = 4 + 8 + 1 = 13, which ends in the digit 3.\n\nIn the sixth test case, you can select i=1, j=2, k=6. Then a_1 + a_2 + a_6 = 16 + 38 + 99 = 153, which ends in the digit 3.\n\nInput:\n```\n6420 22 19 8441 11 1 202241100 1100 1100 1111512 34 56 78 9041 9 8 4616 38 94 25 18 99\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (3 ≤ n ≤ 2·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 2·10^5.",
+    "output": "Output t lines, each of which contains the answer to the corresponding test case. Output \"YES\" if there exist three distinct indices i, j, k satisfying the constraints in the statement, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

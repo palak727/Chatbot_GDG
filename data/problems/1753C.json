@@ -1,0 +1,18 @@
+{
+    "id": "1753C",
+    "contest_id": 1753,
+    "problem_letter": "C",
+    "title": "C. Wish I Knew How to Sort",
+    "statement": "You are given a binary array a (all elements of the array are 0 or 1) of length n. You wish to sort this array, but unfortunately, your algorithms teacher forgot to teach you sorting algorithms. You perform the following operations until a is sorted:\n\nWhat is the expected number of such operations you will perform before the array becomes sorted?\n\nIt can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmod998,244,353. Output the integer equal to p·q^{-1} bmod 998,244,353. In other words, output such an integer x that 0 ≤ x < 998,244,353 and x·q ≡ p pmod998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 200,000) — the number of elements in the binary array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (a_i ∈ {0, 1}) — elements of the array.\n\nIt's guaranteed that sum of n over all test cases does not exceed 200,000.\n\nFor each test case print one integer — the value p·q^{-1} bmod 998,244,353.\n\nConsider the first test case. If the pair of indices (2, 3) will be chosen, these elements will be swapped and array will become sorted. Otherwise, if one of pairs (1, 2) or (1, 3) will be selected, nothing will happen. So, the probability that the array will become sorted after one operation is 1/3, the probability that the array will become sorted after two operations is 2/3·1/3, the probability that the array will become sorted after three operations is 2/3·2/3·1/3 and so on. The expected number of operations is ∑ limits_{i=1}^{∞} left(2/3 right)^{i - 1}·1/3·i = 3.\n\nIn the second test case the array is already sorted so the expected number of operations is zero.\n\nIn the third test case the expected number of operations equals to 75/4 so the answer is 75·4^{-1} ≡ 249,561,107 pmod 998,244,353.\n\nInput:\n```\n330 1 050 0 1 1 161 1 1 0 0 1\n```\n\nOutput:\n```\n3\n0\n249561107\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 200,000) — the number of elements in the binary array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (a_i ∈ {0, 1}) — elements of the array.\n\nIt's guaranteed that sum of n over all test cases does not exceed 200,000.",
+    "output": "For each test case print one integer — the value p·q^{-1} bmod 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "probabilities",
+        "*2000"
+    ],
+    "rating": 2000
+}

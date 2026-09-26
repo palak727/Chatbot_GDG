@@ -1,0 +1,19 @@
+{
+    "id": "1916A",
+    "contest_id": 1916,
+    "problem_letter": "A",
+    "title": "A. 2023",
+    "statement": "In a sequence a, whose product was equal to 2023, k numbers were removed, leaving a sequence b of length n. Given the resulting sequence b, find any suitable sequence a and output which k elements were removed from it, or state that such a sequence could not have existed.\n\nNotice that you are not guaranteed that such array exists.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains two integers n (1 ≤ n, k ≤ 5) — the size of sequence b and the number of numbers removed from sequence a.\n\nThe second line contains n integers b_1,b_2, …,b_n (1 ≤ b_i ≤ 2023) — the remaining sequence. The values of b_i might not be divisors of 2023.\n\nFor each test case, output \"YES\" if the sequence a exists, and in the following line output k non-negative integers that were removed from the sequence a. If the sequence a does not exist, output \"NO\" in a single line.\n\nYou can output the answer in any case (uppercase or lowercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive answers.\n\nIn third test case product is equal to 289·7 = 2023.\n\nIn fourth test case product is already equal to 2023.\n\nIn seventh test case product is equal to 7·17·17 = 2023.\n\nInput:\n```\n72 25 23 17 17 74 21 289 1 13 17 17 171 12891 120231 31\n```\n\nOutput:\n```\nNO\nNO\nYES\n7 1\nYES\n1\nYES\n7\nYES\n1\nYES\n7 17 17\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. This is followed by a description of the test cases.\n\nThe first line of each test case contains two integers n (1 ≤ n, k ≤ 5) — the size of sequence b and the number of numbers removed from sequence a.\n\nThe second line contains n integers b_1,b_2, …,b_n (1 ≤ b_i ≤ 2023) — the remaining sequence. The values of b_i might not be divisors of 2023.",
+    "output": "For each test case, output \"YES\" if the sequence a exists, and in the following line output k non-negative integers that were removed from the sequence a. If the sequence a does not exist, output \"NO\" in a single line.\n\nYou can output the answer in any case (uppercase or lowercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive answers.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "number theory",
+        "*800"
+    ],
+    "rating": 800
+}

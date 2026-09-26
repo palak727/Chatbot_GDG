@@ -1,0 +1,22 @@
+{
+    "id": "1926G",
+    "contest_id": 1926,
+    "problem_letter": "G",
+    "title": "G. Vlad and Trouble at MIT",
+    "statement": "Vladislav has a son who really wanted to go to MIT. The college dormitory at MIT (Moldova Institute of Technology) can be represented as a tree with n vertices, each vertex being a room with exactly one student. A tree is a connected undirected graph with n vertices and n-1 edges.\n\nTonight, there are three types of students:\n\nInitially, all the edges are thin walls which allow music to pass through, so when a partying student puts music on, it will be heard in every room. However, we can place some thick walls on any edges — thick walls don't allow music to pass through them.\n\nThe university wants to install some thick walls so that every partying student can play music, and no sleepy student can hear it.\n\nBecause the university lost a lot of money in a naming rights lawsuit, they ask you to find the minimum number of thick walls they will need to use.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nThe second line of each test case contains n-1 integers a_2, … , a_n (1 ≤ a_i < i) — it means there is an edge between i and a_i in the tree.\n\nThe third line of each test case contains a string s of length n consisting of characters textttP, textttS, and textttC, denoting that student i is of type s_i.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the minimum number of thick walls needed.\n\nIn the first case, we can install one thick wall between rooms 1 and 2, as shown below. We cannot install 0 walls, since then the music from room 3 will reach room 2 where a student wants to sleep, so the answer is 1. There are other valid solutions.\n\nInput:\n```\n331 1CSP41 2 2PCSS41 2 2PPSS\n```\n\nOutput:\n```\n1\n1\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nThe second line of each test case contains n-1 integers a_2, … , a_n (1 ≤ a_i < i) — it means there is an edge between i and a_i in the tree.\n\nThe third line of each test case contains a string s of length n consisting of characters textttP, textttS, and textttC, denoting that student i is of type s_i.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the minimum number of thick walls needed.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "flows",
+        "graphs",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

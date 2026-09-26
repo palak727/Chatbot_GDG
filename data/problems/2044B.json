@@ -1,0 +1,17 @@
+{
+    "id": "2044B",
+    "contest_id": 2044,
+    "problem_letter": "B",
+    "title": "B. Normal Problem",
+    "statement": "A string consisting of only characters 'p', 'q', and 'w' is painted on a glass window of a store. Ship walks past the store, standing directly in front of the glass window, and observes string a. Ship then heads inside the store, looks directly at the same glass window, and observes string b.\n\nShip gives you string a. Your job is to find and output b.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains a string a (1 ≤ |a| ≤ 100) — the string Ship observes from outside the store. It is guaranteed that a only contains characters 'p', 'q', and 'w'.\n\nFor each test case, output string b, the string Ship observes from inside the store, on a new line.\n\nInput:\n```\n5qwqppppppppwwwqqqwqpqwpqwwqppqpqpqpq\n```\n\nOutput:\n```\npwp\nqqqqq\npppwwwqqq\nqpwwpqwpqpw\npqpqpqpq\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe only line of each test case contains a string a (1 ≤ |a| ≤ 100) — the string Ship observes from outside the store. It is guaranteed that a only contains characters 'p', 'q', and 'w'.",
+    "output": "For each test case, output string b, the string Ship observes from inside the store, on a new line.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

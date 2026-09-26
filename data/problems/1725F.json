@@ -1,0 +1,18 @@
+{
+    "id": "1725F",
+    "contest_id": 1725,
+    "problem_letter": "F",
+    "title": "F. Field Photography",
+    "statement": "Pak Chanek is traveling to Manado. It turns out that OSN (Indonesian National Scientific Olympiad) 2019 is being held. The contestants of OSN 2019 are currently lining up in a field to be photographed. The field is shaped like a grid of size N × 10^100 with N rows and 10^100 columns. The rows are numbered from 1 to N from north to south, the columns are numbered from 1 to 10^100 from west to east. The tile in row r and column c is denoted as (r,c).\n\nThere are N provinces that participate in OSN 2019. Initially, each contestant who represents province i stands in tile (i, p) for each p satisfying L_i ≤ p ≤ R_i. So, we can see that there are R_i-L_i+1 contestants who represent province i.\n\nPak Chanek has a variable Z that is initially equal to 0. In one operation, Pak Chanek can choose a row i and a positive integer k. Then, Pak Chanek will do one of the two following possibilities:\n\nAfter each operation, the value of Z will change into Z OR k, with OR being the bitwise OR operation. Note that Pak Chanek can do operations to the same row more than once. Also note that Pak Chanek is not allowed to move contestants out of the grid.\n\nThere are Q questions. For the j-th question, you are given a positive integer W_j, Pak Chanek must do zero or more operations so that the final value of Z is exactly W_j. Define M as the biggest number such that after all operations, there is at least one column that contains exactly M contestants. For each question, you must find the biggest possible M for all sequences of operations that can be done by Pak Chanek. Note that the operations done by Pak Chanek for one question do not carry over to other questions.\n\nThe first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of rows in the grid and also the number of provinces that participate in OSN 2019.\n\nThe i-th of the next N lines contains two integers L_i and R_i (1 ≤ L_i ≤ R_i ≤ 10^9) describing the positions of the contestants who represent province i.\n\nThe next line contains a single integer Q (1 ≤ Q ≤ 10^5) — the number of questions.\n\nThe j-th of the next Q lines contains a single integer W_j (1 ≤ W_j ≤ 10^9) — the required final value of Z for the j-th question.\n\nOutput Q lines, with the j-th line containing an integer that is the answer to the j-th question.\n\nFor the 1-st question, Pak Chanek can do the following operations to get M=2:\n\nNow, columns 14 and 15 each contains exactly 2 contestants.\n\nFor the 2-nd question, Pak Chanek can do the following operations to get M=3:\n\nNow, column 11 contains exactly 3 contestants.\n\nThe following is an illustration of the example operations for the 2-nd question.\n\nInput:\n```\n3\n1 5\n10 11\n8 8\n2\n12\n5\n```\n\nOutput:\n```\n2\n3\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 10^5) — the number of rows in the grid and also the number of provinces that participate in OSN 2019.\n\nThe i-th of the next N lines contains two integers L_i and R_i (1 ≤ L_i ≤ R_i ≤ 10^9) describing the positions of the contestants who represent province i.\n\nThe next line contains a single integer Q (1 ≤ Q ≤ 10^5) — the number of questions.\n\nThe j-th of the next Q lines contains a single integer W_j (1 ≤ W_j ≤ 10^9) — the required final value of Z for the j-th question.",
+    "output": "Output Q lines, with the j-th line containing an integer that is the answer to the j-th question.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "sortings",
+        "*2100"
+    ],
+    "rating": 2100
+}

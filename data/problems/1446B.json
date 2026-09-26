@@ -1,0 +1,17 @@
+{
+    "id": "1446B",
+    "contest_id": 1446,
+    "problem_letter": "B",
+    "title": "B. Catching Cheaters",
+    "statement": "You are given two strings A and B representing essays of two students who are suspected cheaters. For any two strings C, D we define their similarity score S(C,D) as 4·LCS(C,D) - |C| - |D|, where LCS(C,D) denotes the length of the Longest Common Subsequence of strings C and D.\n\nYou believe that only some part of the essays could have been copied, therefore you're interested in their substrings.\n\nCalculate the maximal similarity score over all pairs of substrings. More formally, output maximal S(C, D) over all pairs (C, D), where C is some substring of A, and D is some substring of B.\n\nIf X is a string, |X| denotes its length.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nA string a is a subsequence of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters.\n\nPay attention to the difference between the substring and subsequence, as they both appear in the problem statement.\n\nYou may wish to read the Wikipedia page about the Longest Common Subsequence problem.\n\nThe first line contains two positive integers n and m (1 ≤ n, m ≤ 5000) — lengths of the two strings A and B.\n\nThe second line contains a string consisting of n lowercase Latin letters — string A.\n\nThe third line contains a string consisting of m lowercase Latin letters — string B.\n\nOutput maximal S(C, D) over all pairs (C, D), where C is some substring of A, and D is some substring of B.\n\nFor the first case:\n\nabb from the first string and abab from the second string have LCS equal to abb.\n\nThe result is S(abb, abab) = (4·|abb|) - |abb| - |abab| = 4·3 - 3 - 4 = 5.\n\nInput:\n```\n4 5\nabba\nbabab\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n8 10\nbbbbabab\nbbbabaaaaa\n```\n\nOutput:\n```\n12\n```\n\nInput:\n```\n7 7\nuiibwws\nqhtkxcn\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains two positive integers n and m (1 ≤ n, m ≤ 5000) — lengths of the two strings A and B.\n\nThe second line contains a string consisting of n lowercase Latin letters — string A.\n\nThe third line contains a string consisting of m lowercase Latin letters — string B.",
+    "output": "Output maximal S(C, D) over all pairs (C, D), where C is some substring of A, and D is some substring of B.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*1800"
+    ],
+    "rating": 1800
+}

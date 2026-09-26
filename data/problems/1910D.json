@@ -1,0 +1,17 @@
+{
+    "id": "1910D",
+    "contest_id": 1910,
+    "problem_letter": "D",
+    "title": "D. Remove and Add",
+    "statement": "You are given an array a_1, a_2, …, a_n, consisting of n integers.\n\nYou goal is to make is strictly increasing. To achieve that, you perform each of the following operations exactly once:\n\nNote that you are not allowed to rearrange the elements of the array.\n\nFor the resulting array a', a'_1 < a'_2 < … < a'_{n-1} should hold. Determine if it's possible to achieve that.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of elements of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print YES if it's possible to remove one element and add 1 to some elements (possibly, none or all), so that the array becomes strictly increasing. Otherwise, print NO.\n\nIn the first testcase, you can remove the third element and add 1 to the second and the last element. a' will become [4, 5, 6], which is strictly increasing.\n\nIn the second testcase, there is no way to perform the operations, so that the result is strictly increasing.\n\nIn the third testcase, you can remove either of the elements.\n\nIn the fourth testcase, you are already given a strictly increasing array, but you still have to remove an element. The result a' can be [1, 3], for example.\n\nInput:\n```\n844 4 1 554 4 1 5 5210 531 2 332 1 141 1 1 141 3 1 251 1 3 3 1\n```\n\nOutput:\n```\nYES\nNO\nYES\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of elements of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6).\n\nThe sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print YES if it's possible to remove one element and add 1 to some elements (possibly, none or all), so that the array becomes strictly increasing. Otherwise, print NO.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "greedy",
+        "*1800"
+    ],
+    "rating": 1800
+}

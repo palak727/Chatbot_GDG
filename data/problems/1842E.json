@@ -1,0 +1,20 @@
+{
+    "id": "1842E",
+    "contest_id": 1842,
+    "problem_letter": "E",
+    "title": "E. Tenzing and Triangle",
+    "statement": "There are n pairwise-distinct points and a line x+y=k on a two-dimensional plane. The i-th point is at (x_i,y_i). All points have non-negative coordinates and are strictly below the line. Alternatively, 0 ≤ x_i,y_i, x_i+y_i < k.\n\nTenzing wants to erase all the points. He can perform the following two operations:\n\nThe blue area of the following picture describes the triangle with a=1,b=1 with cost =1·A.\n\nHelp Tenzing find the minimum cost to erase all of the points.\n\nThe first line of the input contains three integers n, k and A (1≤ n,k≤ 2·10^5, 1≤ A≤ 10^4) — the number of points, the coefficient describing the hypotenuse of the triangle and the coefficient describing the cost of drawing a triangle.\n\nThe following n lines of the input the i-th line contains three integers x_i,y_i,c_i (0≤ x_i,y_i,x_i+y_i < k, 1≤ c_i≤ 10^4) — the coordinate of the i-th points and the cost of erasing it using the second operation. It is guaranteed that the coordinates are pairwise distinct.\n\nOutput a single integer —the minimum cost needed to erase all of the points.\n\nThe picture of the first example:\n\nTenzing do the following operations:\n\nThe picture of the second example:\n\nInput:\n```\n4 6 1\n1 2 1\n2 1 1\n1 1 1\n3 2 6\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n6 7 1\n4 2 1\n3 3 1\n5 1 4\n3 2 5\n4 1 1\n0 6 4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n10 4 100\n0 0 1\n0 1 1\n0 2 50\n0 3 200\n1 0 1\n1 1 1\n1 2 1\n2 0 200\n2 1 200\n3 0 200\n```\n\nOutput:\n```\n355\n```",
+    "input": "The first line of the input contains three integers n, k and A (1≤ n,k≤ 2·10^5, 1≤ A≤ 10^4) — the number of points, the coefficient describing the hypotenuse of the triangle and the coefficient describing the cost of drawing a triangle.\n\nThe following n lines of the input the i-th line contains three integers x_i,y_i,c_i (0≤ x_i,y_i,x_i+y_i < k, 1≤ c_i≤ 10^4) — the coordinate of the i-th points and the cost of erasing it using the second operation. It is guaranteed that the coordinates are pairwise distinct.",
+    "output": "Output a single integer —the minimum cost needed to erase all of the points.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "geometry",
+        "greedy",
+        "math",
+        "*2300"
+    ],
+    "rating": 2300
+}

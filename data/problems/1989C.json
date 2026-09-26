@@ -1,0 +1,17 @@
+{
+    "id": "1989C",
+    "contest_id": 1989,
+    "problem_letter": "C",
+    "title": "C. Two Movies",
+    "statement": "A movie company has released 2 movies. These 2 movies were watched by n people. For each person, we know their attitude towards the first movie (liked it, neutral, or disliked it) and towards the second movie.\n\nIf a person is asked to leave a review for the movie, then:\n\nEvery person will review exactly one movie — and for every person, you can choose which movie they will review.\n\nThe company's rating is the minimum of the ratings of the two movies. Your task is to calculate the maximum possible rating of the company.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (-1 ≤ a_i ≤ 1), where a_i is equal to -1 if the first movie was disliked by the i-th viewer; equal to 1 if the first movie was liked; and 0 if the attitude is neutral.\n\nThe third line contains n integers b_1, b_2, …, b_n (-1 ≤ b_i ≤ 1), where b_i is equal to -1 if the second movie was disliked by the i-th viewer; equal to 1 if the second movie was liked; and 0 if the attitude is neutral.\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum possible rating of the company, if for each person, choose which movie to leave a review on.\n\nInput:\n```\n42-1 1-1 -11-1-150 -1 1 0 1-1 1 0 0 14-1 -1 -1 1-1 1 1 1\n```\n\nOutput:\n```\n0\n-1\n1\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (-1 ≤ a_i ≤ 1), where a_i is equal to -1 if the first movie was disliked by the i-th viewer; equal to 1 if the first movie was liked; and 0 if the attitude is neutral.\n\nThe third line contains n integers b_1, b_2, …, b_n (-1 ≤ b_i ≤ 1), where b_i is equal to -1 if the second movie was disliked by the i-th viewer; equal to 1 if the second movie was liked; and 0 if the attitude is neutral.\n\nAdditional constraint on the input: the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum possible rating of the company, if for each person, choose which movie to leave a review on.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1154A",
+    "contest_id": 1154,
+    "problem_letter": "A",
+    "title": "A. Restoring Three Numbers",
+    "statement": "Polycarp has guessed three positive integers a, b and c. He keeps these numbers in secret, but he writes down four numbers on a board in arbitrary order — their pairwise sums (three numbers) and sum of all three numbers (one number). So, there are four numbers on a board in random order: a+b, a+c, b+c and a+b+c.\n\nYou have to guess three numbers a, b and c using given numbers. Print three guessed integers in any order.\n\nPay attention that some given numbers a, b and c can be equal (it is also possible that a=b=c).\n\nThe only line of the input contains four positive integers x_1, x_2, x_3, x_4 (2 ≤ x_i ≤ 10^9) — numbers written on a board in random order. It is guaranteed that the answer exists for the given number x_1, x_2, x_3, x_4.\n\nPrint such positive integers a, b and c that four numbers written on a board are values a+b, a+c, b+c and a+b+c written in some order. Print a, b and c in any order. If there are several answers, you can print any. It is guaranteed that the answer exists.\n\nInput:\n```\n3 6 5 4\n```\n\nOutput:\n```\n2 1 3\n```\n\nInput:\n```\n40 40 40 60\n```\n\nOutput:\n```\n20 20 20\n```\n\nInput:\n```\n201 101 101 200\n```\n\nOutput:\n```\n1 100 100\n```",
+    "input": "The only line of the input contains four positive integers x_1, x_2, x_3, x_4 (2 ≤ x_i ≤ 10^9) — numbers written on a board in random order. It is guaranteed that the answer exists for the given number x_1, x_2, x_3, x_4.",
+    "output": "Print such positive integers a, b and c that four numbers written on a board are values a+b, a+c, b+c and a+b+c written in some order. Print a, b and c in any order. If there are several answers, you can print any. It is guaranteed that the answer exists.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

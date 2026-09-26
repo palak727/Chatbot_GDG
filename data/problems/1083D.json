@@ -1,0 +1,17 @@
+{
+    "id": "1083D",
+    "contest_id": 1083,
+    "problem_letter": "D",
+    "title": "D. The Fair Nut's getting crazy",
+    "statement": "The Fair Nut has found an array a of n integers. We call subarray l … r a sequence of consecutive elements of an array with indexes from l to r, i.e. a_l, a_{l+1}, a_{l+2}, …, a_{r-1}, a_r.\n\nNo one knows the reason, but he calls a pair of subsegments good if and only if the following conditions are satisfied:\n\nFor example a=[1, 2, 3, 5, 5]. Pairs (1 … 3; 2 … 5) and (1 … 2; 2 … 3)) — are good, but (1 … 3; 2 … 3) and (3 … 4; 4 … 5) — are not (subsegment 1 … 3 contains subsegment 2 … 3, integer 5 belongs both segments, but occurs twice in subsegment 4 … 5).\n\nHelp the Fair Nut to find out the number of pairs of good subsegments! The answer can be rather big so print it modulo 10^9+7.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the array elements.\n\nPrint single integer — the number of pairs of good subsegments modulo 10^9+7.\n\nIn the first example, there is only one pair of good subsegments: (1 … 2, 2 … 3).\n\nIn the second example, there are four pairs of good subsegments:\n\nInput:\n```\n3\n1 2 3\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n1 2 1 2 3\n```\n\nOutput:\n```\n4\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9) — the array elements.",
+    "output": "Print single integer — the number of pairs of good subsegments modulo 10^9+7.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*3500"
+    ],
+    "rating": 3500
+}

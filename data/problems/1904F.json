@@ -1,0 +1,20 @@
+{
+    "id": "1904F",
+    "contest_id": 1904,
+    "problem_letter": "F",
+    "title": "F. Beautiful Tree",
+    "statement": "Lunchbox has a tree of size n rooted at node 1. Each node is then assigned a value. Lunchbox considers the tree to be beautiful if each value is distinct and ranges from 1 to n. In addition, a beautiful tree must also satisfy m requirements of 2 types:\n\nNow, you must assign values to each node such that the resulting tree is beautiful. If it is impossible to do so, output -1.\n\nThe first line contains two integers n and m (2 ≤ n, m ≤ 2·10^5).\n\nThe next n - 1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nThe next m lines each contain four integers t, a, b, and c (t ∈ {1,2}, 1 ≤ a, b, c ≤ n). It is guaranteed that node c is on the path between nodes a and b.\n\nIf it is impossible to assign values such that the tree is beautiful, output -1. Otherwise, output n integers, the i-th of which denotes the value of node i.\n\nInput:\n```\n7 5\n1 2\n1 3\n1 4\n3 5\n4 6\n3 7\n1 6 5 1\n2 6 7 3\n1 2 7 1\n1 7 5 7\n2 4 2 2\n```\n\nOutput:\n```\n1 6 7 5 3 4 2 \n```\n\nInput:\n```\n2 2\n1 2\n1 1 2 1\n1 1 2 2\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and m (2 ≤ n, m ≤ 2·10^5).\n\nThe next n - 1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nThe next m lines each contain four integers t, a, b, and c (t ∈ {1,2}, 1 ≤ a, b, c ≤ n). It is guaranteed that node c is on the path between nodes a and b.",
+    "output": "If it is impossible to assign values such that the tree is beautiful, output -1. Otherwise, output n integers, the i-th of which denotes the value of node i.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "implementation",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

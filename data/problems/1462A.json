@@ -1,0 +1,17 @@
+{
+    "id": "1462A",
+    "contest_id": 1462,
+    "problem_letter": "A",
+    "title": "A. Favorite Sequence",
+    "statement": "Polycarp has a favorite sequence a[1 … n] consisting of n integers. He wrote it out on the whiteboard as follows:\n\nFor example, if n=7 and a=[3, 1, 4, 1, 5, 9, 2], then Polycarp will write a sequence on the whiteboard [3, 4, 5, 2, 9, 1, 1].\n\nYou saw the sequence written on the whiteboard and now you want to restore Polycarp's favorite sequence.\n\nThe first line contains a single positive integer t (1 ≤ t ≤ 300) — the number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 300) — the length of the sequence written on the whiteboard.\n\nThe next line contains n integers b_1, b_2,…, b_n (1 ≤ b_i ≤ 10^9) — the sequence written on the whiteboard.\n\nOutput t answers to the test cases. Each answer — is a sequence a that Polycarp wrote out on the whiteboard.\n\nIn the first test case, the sequence a matches the sequence from the statement. The whiteboard states after each step look like this:\n\n[3] Rightarrow [3, 1] Rightarrow [3, 4, 1] Rightarrow [3, 4, 1, 1] Rightarrow [3, 4, 5, 1, 1] Rightarrow [3, 4, 5, 9, 1, 1] Rightarrow [3, 4, 5, 2, 9, 1, 1].\n\nInput:\n```\n6\n7\n3 4 5 2 9 1 1\n4\n9 2 7 1\n11\n8 4 3 1 2 7 8 7 9 4 2\n1\n42\n2\n11 7\n8\n1 1 1 1 1 1 1 1\n```\n\nOutput:\n```\n3 1 4 1 5 9 2 \n9 1 2 7 \n8 2 4 4 3 9 1 7 2 8 7 \n42 \n11 7 \n1 1 1 1 1 1 1 1 \n```",
+    "input": "The first line contains a single positive integer t (1 ≤ t ≤ 300) — the number of test cases in the test. Then t test cases follow.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 300) — the length of the sequence written on the whiteboard.\n\nThe next line contains n integers b_1, b_2,…, b_n (1 ≤ b_i ≤ 10^9) — the sequence written on the whiteboard.",
+    "output": "Output t answers to the test cases. Each answer — is a sequence a that Polycarp wrote out on the whiteboard.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "two pointers",
+        "*800"
+    ],
+    "rating": 800
+}

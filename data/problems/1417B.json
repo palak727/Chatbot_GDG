@@ -1,0 +1,18 @@
+{
+    "id": "1417B",
+    "contest_id": 1417,
+    "problem_letter": "B",
+    "title": "B. Two Arrays",
+    "statement": "RedDreamer has an array a consisting of n non-negative integers, and an unlucky integer T.\n\nLet's denote the misfortune of array b having length m as f(b) — the number of pairs of integers (i, j) such that 1 ≤ i < j ≤ m and b_i + b_j = T. RedDreamer has to paint each element of a into one of two colors, white and black (for each element, the color is chosen independently), and then create two arrays c and d so that all white elements belong to c, and all black elements belong to d (it is possible that one of these two arrays becomes empty). RedDreamer wants to paint the elements in such a way that f(c) + f(d) is minimum possible.\n\nFor example:\n\nHelp RedDreamer to paint the array optimally!\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains two integers n and T (1 ≤ n ≤ 10^5, 0 ≤ T ≤ 10^9) — the number of elements in the array and the unlucky integer, respectively.\n\nThe second line contains n integers a_1, a_2, ..., a_n (0 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case print n integers: p_1, p_2, ..., p_n (each p_i is either 0 or 1) denoting the colors. If p_i is 0, then a_i is white and belongs to the array c, otherwise it is black and belongs to the array d.\n\nIf there are multiple answers that minimize the value of f(c) + f(d), print any of them.\n\nInput:\n```\n2\n6 7\n1 2 3 4 5 6\n3 6\n3 3 3\n```\n\nOutput:\n```\n1 0 0 1 1 0 \n1 0 0\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains two integers n and T (1 ≤ n ≤ 10^5, 0 ≤ T ≤ 10^9) — the number of elements in the array and the unlucky integer, respectively.\n\nThe second line contains n integers a_1, a_2, ..., a_n (0 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print n integers: p_1, p_2, ..., p_n (each p_i is either 0 or 1) denoting the colors. If p_i is 0, then a_i is white and belongs to the array c, otherwise it is black and belongs to the array d.\n\nIf there are multiple answers that minimize the value of f(c) + f(d), print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

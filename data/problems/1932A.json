@@ -1,0 +1,18 @@
+{
+    "id": "1932A",
+    "contest_id": 1932,
+    "problem_letter": "A",
+    "title": "A. Thorns and Coins",
+    "statement": "During your journey through computer universes, you stumbled upon a very interesting world. It is a path with n consecutive cells, each of which can either be empty, contain thorns, or a coin. In one move, you can move one or two cells along the path, provided that the destination cell does not contain thorns (and belongs to the path). If you move to the cell with a coin, you pick it up.\n\nYou want to collect as many coins as possible. Find the maximum number of coins you can collect in the discovered world if you start in the leftmost cell of the path.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the path.\n\nThe second line of each test case contains a string of n characters, the description of the path. The character '.' denotes an empty cell, '@' denotes a cell with a coin, and '*' denotes a cell with thorns. It is guaranteed that the first cell is empty.\n\nFor each test case, output a single integer, the maximum number of coins you can collect.\n\nThe picture for the first example is in the problem statement.\n\nHere is the picture for the second example:\n\nAnd here is the picture for the third example:\n\nInput:\n```\n310.@@*@.**@@5.@@@@15.@@..@***..@@@*\n```\n\nOutput:\n```\n3\n4\n3\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Then the descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the length of the path.\n\nThe second line of each test case contains a string of n characters, the description of the path. The character '.' denotes an empty cell, '@' denotes a cell with a coin, and '*' denotes a cell with thorns. It is guaranteed that the first cell is empty.",
+    "output": "For each test case, output a single integer, the maximum number of coins you can collect.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

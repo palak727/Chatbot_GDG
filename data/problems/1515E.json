@@ -1,0 +1,18 @@
+{
+    "id": "1515E",
+    "contest_id": 1515,
+    "problem_letter": "E",
+    "title": "E. Phoenix and Computers",
+    "statement": "There are n computers in a row, all originally off, and Phoenix wants to turn all of them on. He will manually turn on computers one at a time. At any point, if computer i-1 and computer i+1 are both on, computer i (2 ≤ i ≤ n-1) will turn on automatically if it is not already on. Note that Phoenix cannot manually turn on a computer that already turned on automatically.\n\nIf we only consider the sequence of computers that Phoenix turns on manually, how many ways can he turn on all the computers? Two sequences are distinct if either the set of computers turned on manually is distinct, or the order of computers turned on manually is distinct. Since this number may be large, please print it modulo M.\n\nThe first line contains two integers n and M (3 ≤ n ≤ 400; 10^8 ≤ M ≤ 10^9) — the number of computers and the modulo. It is guaranteed that M is prime.\n\nPrint one integer — the number of ways to turn on the computers modulo M.\n\nIn the first example, these are the 6 orders in which Phoenix can turn on all computers:\n\nInput:\n```\n3 100000007\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n4 100000007\n```\n\nOutput:\n```\n20\n```\n\nInput:\n```\n400 234567899\n```\n\nOutput:\n```\n20914007\n```",
+    "input": "The first line contains two integers n and M (3 ≤ n ≤ 400; 10^8 ≤ M ≤ 10^9) — the number of computers and the modulo. It is guaranteed that M is prime.",
+    "output": "Print one integer — the number of ways to turn on the computers modulo M.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

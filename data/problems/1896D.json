@@ -1,0 +1,20 @@
+{
+    "id": "1896D",
+    "contest_id": 1896,
+    "problem_letter": "D",
+    "title": "D. Ones and Twos",
+    "statement": "You are given a 1-indexed array a of length n where each element is 1 or 2.\n\nProcess q queries of the following two types:\n\n^dagger An array b is a subarray of an array a if b can be obtained from a by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end. In particular, an array is a subarray of itself.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n,q≤ 10^5) — the length of array a and the number of queries.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (a_i is 1 or 2) — the elements of array a.\n\nEach of the following q lines of each test case contains some integers. The first integer op is either 1 or 2.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases both do not exceed 10^5.\n\nFor each query with op=1, output \"YES\" in one line if there exists a subarray of a whose sum is equals to s, otherwise output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nConsider the first example:\n\nInput:\n```\n25 52 1 2 1 21 51 61 72 4 21 73 22 2 21 61 5\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1≤ n,q≤ 10^5) — the length of array a and the number of queries.\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (a_i is 1 or 2) — the elements of array a.\n\nEach of the following q lines of each test case contains some integers. The first integer op is either 1 or 2.\n\nIt is guaranteed that the sum of n and the sum of q over all test cases both do not exceed 10^5.",
+    "output": "For each query with op=1, output \"YES\" in one line if there exists a subarray of a whose sum is equals to s, otherwise output \"NO\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "math",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1795G",
+    "contest_id": 1795,
+    "problem_letter": "G",
+    "title": "G. Removal Sequences",
+    "statement": "You are given a simple undirected graph, consisting of n vertices and m edges. The vertices are numbered from 1 to n. The i-th vertex has a value a_i written on it.\n\nYou will be removing vertices from that graph. You are allowed to remove vertex i only if its degree is equal to a_i. When a vertex is removed, all edges incident to it are also removed, thus, decreasing the degree of adjacent non-removed vertices.\n\nA valid sequence of removals is a permutation p_1, p_2, …, p_n (1 ≤ p_i ≤ n) such that the i-th vertex to be removed is p_i, and every removal is allowed.\n\nA pair (x, y) of vertices is nice if there exist two valid sequences of removals such that x is removed before y in one of them and y is removed before x in the other one.\n\nCount the number of nice pairs (x, y) such that x < y.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n ≤ 10^5; 0 ≤ m ≤ min(10^5, (n·(n - 1))/2)) — the number of vertices and the number of edges of the graph.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n - 1) — the degree requirements for each removal.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the description of an edge.\n\nThe graph doesn't contain any self-loops or multiple edges.\n\nThe sum of n over all testcases doesn't exceed 10^5. The sum of m over all testcases doesn't exceed 10^5.\n\nAdditional constraint on the input: there always exists at least one valid sequence of removals.\n\nFor each testcase, print a single integer — the number of nice pairs of vertices.\n\nInput:\n```\n43 21 0 12 31 23 31 2 01 22 31 35 63 0 2 1 01 24 14 23 42 35 11 00\n```\n\nOutput:\n```\n1\n0\n4\n0\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n ≤ 10^5; 0 ≤ m ≤ min(10^5, (n·(n - 1))/2)) — the number of vertices and the number of edges of the graph.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ n - 1) — the degree requirements for each removal.\n\nEach of the next m lines contains two integers v and u (1 ≤ v, u ≤ n; v ≠ u) — the description of an edge.\n\nThe graph doesn't contain any self-loops or multiple edges.\n\nThe sum of n over all testcases doesn't exceed 10^5. The sum of m over all testcases doesn't exceed 10^5.\n\nAdditional constraint on the input: there always exists at least one valid sequence of removals.",
+    "output": "For each testcase, print a single integer — the number of nice pairs of vertices.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "graphs",
+        "*2700"
+    ],
+    "rating": 2700
+}

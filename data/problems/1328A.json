@@ -1,0 +1,16 @@
+{
+    "id": "1328A",
+    "contest_id": 1328,
+    "problem_letter": "A",
+    "title": "A. Divisibility Problem",
+    "statement": "You are given two positive integers a and b. In one move you can increase a by 1 (replace a with a+1). Your task is to find the minimum number of moves you need to do in order to make a divisible by b. It is possible, that you have to make 0 moves, as a is already divisible by b. You have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers a and b (1 ≤ a, b ≤ 10^9).\n\nFor each test case print the answer — the minimum number of moves you need to do in order to make a divisible by b.\n\nInput:\n```\n5\n10 4\n13 9\n100 13\n123 456\n92 46\n```\n\nOutput:\n```\n2\n5\n4\n333\n0\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers a and b (1 ≤ a, b ≤ 10^9).",
+    "output": "For each test case print the answer — the minimum number of moves you need to do in order to make a divisible by b.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

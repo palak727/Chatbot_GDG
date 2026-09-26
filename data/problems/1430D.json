@@ -1,0 +1,19 @@
+{
+    "id": "1430D",
+    "contest_id": 1430,
+    "problem_letter": "D",
+    "title": "D. String Deletion",
+    "statement": "You have a string s consisting of n characters. Each character is either 0 or 1.\n\nYou can perform operations on the string. Each operation consists of two steps:\n\nNote that both steps are mandatory in each operation, and their order cannot be changed.\n\nFor example, if you have a string s = 111010, the first operation can be one of the following:\n\nYou finish performing operations when the string s becomes empty. What is the maximum number of operations you can perform?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains string s of n characters. Each character is either 0 or 1.\n\nIt's guaranteed that the total sum of n over test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the maximum number of operations you can perform.\n\nIn the first test case, you can, for example, select i = 2 and get string 010 after the first operation. After that, you can select i = 3 and get string 1. Finally, you can only select i = 1 and get empty string.\n\nInput:\n```\n5\n6\n111010\n1\n0\n1\n1\n2\n11\n6\n101010\n```\n\nOutput:\n```\n3\n1\n1\n1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the length of the string s.\n\nThe second line contains string s of n characters. Each character is either 0 or 1.\n\nIt's guaranteed that the total sum of n over test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the maximum number of operations you can perform.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "greedy",
+        "two pointers",
+        "*1700"
+    ],
+    "rating": 1700
+}

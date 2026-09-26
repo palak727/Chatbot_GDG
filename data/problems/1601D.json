@@ -1,0 +1,19 @@
+{
+    "id": "1601D",
+    "contest_id": 1601,
+    "problem_letter": "D",
+    "title": "D. Difficult Mountain",
+    "statement": "A group of n alpinists has just reached the foot of the mountain. The initial difficulty of climbing this mountain can be described as an integer d.\n\nEach alpinist can be described by two integers s and a, where s is his skill of climbing mountains and a is his neatness.\n\nAn alpinist of skill level s is able to climb a mountain of difficulty p only if p ≤ s. As an alpinist climbs a mountain, they affect the path and thus may change mountain difficulty. Specifically, if an alpinist of neatness a climbs a mountain of difficulty p the difficulty of this mountain becomes max(p, a).\n\nAlpinists will climb the mountain one by one. And before the start, they wonder, what is the maximum number of alpinists who will be able to climb the mountain if they choose the right order. As you are the only person in the group who does programming, you are to answer the question.\n\nNote that after the order is chosen, each alpinist who can climb the mountain, must climb the mountain at that time.\n\nThe first line contains two integers n and d (1 ≤ n ≤ 500,000; 0 ≤ d ≤ 10^9) — the number of alpinists and the initial difficulty of the mountain.\n\nEach of the next n lines contains two integers s_i and a_i (0 ≤ s_i, a_i ≤ 10^9) that define the skill of climbing and the neatness of the i-th alpinist.\n\nPrint one integer equal to the maximum number of alpinists who can climb the mountain if they choose the right order to do so.\n\nIn the first example, alpinists 2 and 3 can climb the mountain if they go in this order. There is no other way to achieve the answer of 2.\n\nIn the second example, alpinist 1 is not able to climb because of the initial difficulty of the mountain, while alpinists 2 and 3 can go up in any order.\n\nIn the third example, the mountain can be climbed by alpinists 5, 3 and 4 in this particular order. There is no other way to achieve optimal answer.\n\nInput:\n```\n3 2\n2 6\n3 5\n5 7\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 3\n2 4\n6 4\n4 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n5 0\n1 5\n4 8\n2 7\n7 6\n3 2\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains two integers n and d (1 ≤ n ≤ 500,000; 0 ≤ d ≤ 10^9) — the number of alpinists and the initial difficulty of the mountain.\n\nEach of the next n lines contains two integers s_i and a_i (0 ≤ s_i, a_i ≤ 10^9) that define the skill of climbing and the neatness of the i-th alpinist.",
+    "output": "Print one integer equal to the maximum number of alpinists who can climb the mountain if they choose the right order to do so.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings",
+        "*2700"
+    ],
+    "rating": 2700
+}

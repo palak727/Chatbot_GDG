@@ -1,0 +1,22 @@
+{
+    "id": "1975F",
+    "contest_id": 1975,
+    "problem_letter": "F",
+    "title": "F. Set",
+    "statement": "Define the binary encoding of a finite set of natural numbers T ⊆ {0,1,2,…} as f(T) = ∑limits_{i ∈ T} 2^i. For example, f({0,2}) = 2^0 + 2^2 = 5 and f({}) = 0. Notice that f is a bijection from all such sets to all non-negative integers. As such, f^{-1} is also defined.\n\nYou are given an integer n along with 2^n-1 sets V_1,V_2,…,V_{2^n-1}.\n\nFind all sets S that satisfy the following constraint:\n\nDue to the large input and output, both input and output will be given in terms of binary encodings of the sets.\n\nThe first line of input contains a single integer n (1 ≤ n ≤ 20).\n\nThe second line of input contains 2^n-1 integers v_1,v_2,…,v_{2^n-1} (0 ≤ v_i < 2^{n+1}) — the sets V_i given in their binary encoding where V_i = f^{-1}(v_i).\n\nThe first line of output should contain an integer k indicating the number of possible S.\n\nIn the following k lines, you should output f(S) for all possible S in increasing order.\n\nIn the first test case, one possible S is f^{-1}(3) = {0,1}. All the non-empty subsets T ⊆ {0,1,2} and the corresponding |S ∩ T|, f(T) and V_f(T) are as follows:\n\nInput:\n```\n315 15 15 15 15 15 12\n```\n\nOutput:\n```\n4\n3\n5\n6\n7\n```\n\nInput:\n```\n563 63 63 63 6 63 63 63 63 63 63 5 63 63 63 63 63 63 8 63 63 63 63 2 63 63 63 63 63 63 63\n```\n\nOutput:\n```\n1\n19\n```",
+    "input": "The first line of input contains a single integer n (1 ≤ n ≤ 20).\n\nThe second line of input contains 2^n-1 integers v_1,v_2,…,v_{2^n-1} (0 ≤ v_i < 2^{n+1}) — the sets V_i given in their binary encoding where V_i = f^{-1}(v_i).",
+    "output": "The first line of output should contain an integer k indicating the number of possible S.\n\nIn the following k lines, you should output f(S) for all possible S in increasing order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "dfs and similar",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*2600"
+    ],
+    "rating": 2600
+}

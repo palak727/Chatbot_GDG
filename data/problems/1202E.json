@@ -1,0 +1,18 @@
+{
+    "id": "1202E",
+    "contest_id": 1202,
+    "problem_letter": "E",
+    "title": "E. You Are Given Some Strings...",
+    "statement": "You are given a string t and n strings s_1, s_2, …, s_n. All strings consist of lowercase Latin letters.\n\nLet f(t, s) be the number of occurences of string s in string t. For example, f('aaabacaa', 'aa') = 3, and f('ababa', 'aba') = 2.\n\nCalculate the value of ∑limits_{i=1}^n ∑limits_{j=1}^n f(t, s_i + s_j), where s + t is the concatenation of strings s and t. Note that if there are two pairs i_1, j_1 and i_2, j_2 such that s_i_1 + s_j_1 = s_i_2 + s_j_2, you should include both f(t, s_i_1 + s_j_1) and f(t, s_i_2 + s_j_2) in answer.\n\nThe first line contains string t (1 ≤ |t| ≤ 2·10^5).\n\nThe second line contains integer n (1 ≤ n ≤ 2·10^5).\n\nEach of next n lines contains string s_i (1 ≤ |s_i| ≤ 2·10^5).\n\nIt is guaranteed that ∑limits_{i=1}^n |s_i| ≤ 2·10^5. All strings consist of lowercase English letters.\n\nPrint one integer — the value of ∑limits_{i=1}^n ∑limits_{j=1}^n f(t, s_i + s_j).\n\nInput:\n```\naaabacaa\n2\na\naa\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\naaabacaa\n4\na\na\na\nb\n```\n\nOutput:\n```\n33\n```",
+    "input": "The first line contains string t (1 ≤ |t| ≤ 2·10^5).\n\nThe second line contains integer n (1 ≤ n ≤ 2·10^5).\n\nEach of next n lines contains string s_i (1 ≤ |s_i| ≤ 2·10^5).\n\nIt is guaranteed that ∑limits_{i=1}^n |s_i| ≤ 2·10^5. All strings consist of lowercase English letters.",
+    "output": "Print one integer — the value of ∑limits_{i=1}^n ∑limits_{j=1}^n f(t, s_i + s_j).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "string suffix structures",
+        "strings",
+        "*2400"
+    ],
+    "rating": 2400
+}

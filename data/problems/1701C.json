@@ -1,0 +1,19 @@
+{
+    "id": "1701C",
+    "contest_id": 1701,
+    "problem_letter": "C",
+    "title": "C. Schedule Management",
+    "statement": "There are n workers and m tasks. The workers are numbered from 1 to n. Each task i has a value a_i — the index of worker who is proficient in this task.\n\nEvery task should have a worker assigned to it. If a worker is proficient in the task, they complete it in 1 hour. Otherwise, it takes them 2 hours.\n\nThe workers work in parallel, independently of each other. Each worker can only work on one task at once.\n\nAssign the workers to all tasks in such a way that the tasks are completed as early as possible. The work starts at time 0. What's the minimum time all tasks can be completed by?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n ≤ m ≤ 2·10^5) — the number of workers and the number of tasks.\n\nThe second line contains m integers a_1, a_2, …, a_m (1 ≤ a_i ≤ n) — the index of the worker proficient in the i-th task.\n\nThe sum of m over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the minimum time all tasks can be completed by.\n\nIn the first testcase, the first worker works on tasks 1 and 3, and the second worker works on tasks 2 and 4. Since they both are proficient in the corresponding tasks, they take 1 hour on each. Both of them complete 2 tasks in 2 hours. Thus, all tasks are completed by 2 hours.\n\nIn the second testcase, it's optimal to assign the first worker to tasks 1, 2 and 3 and the second worker to task 4. The first worker spends 3 hours, the second worker spends 2 hours (since they are not proficient in the taken task).\n\nIn the third example, each worker can be assigned to the task they are proficient at. Thus, each of them complete their task in 1 hour.\n\nInput:\n```\n42 41 2 1 22 41 1 1 15 55 1 3 2 41 11\n```\n\nOutput:\n```\n2\n3\n1\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers n and m (1 ≤ n ≤ m ≤ 2·10^5) — the number of workers and the number of tasks.\n\nThe second line contains m integers a_1, a_2, …, a_m (1 ≤ a_i ≤ n) — the index of the worker proficient in the i-th task.\n\nThe sum of m over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the minimum time all tasks can be completed by.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1800D",
+    "contest_id": 1800,
+    "problem_letter": "D",
+    "title": "D. Remove Two Letters",
+    "statement": "Dmitry has a string s, consisting of lowercase Latin letters.\n\nDmitry decided to remove two consecutive characters from the string s and you are wondering how many different strings can be obtained after such an operation.\n\nFor example, Dmitry has a string \"aaabcc\". You can get the following different strings: \"abcc\"(by deleting the first two or second and third characters), \"aacc\"(by deleting the third and fourth characters),\"aaac\"(by deleting the fourth and the fifth character) and \"aaab\" (by deleting the last two).\n\nThe first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of the description of each test case contains an integer n (3 ≤ n ≤ 2·10^5).\n\nThe second line of the description of each test case contains a string s of length n consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case print one integer — the number of distinct strings that can be obtained by removing two consecutive letters.\n\nThe first example is explained in the statement.\n\nIn the third example, the following strings are obtained: \"cdef\", \"adef\", \"abef\", \"abcf\", \"abcd\".\n\nIn the seventh example, any deletion will result in the string \"aba\".\n\nInput:\n```\n76aaabcc10aaaaaaaaaa6abcdef7abacaba6cccfff4abba5ababa\n```\n\nOutput:\n```\n4\n1\n5\n3\n3\n3\n1\n```",
+    "input": "The first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line of the description of each test case contains an integer n (3 ≤ n ≤ 2·10^5).\n\nThe second line of the description of each test case contains a string s of length n consisting of lowercase Latin letters.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case print one integer — the number of distinct strings that can be obtained by removing two consecutive letters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "hashing",
+        "strings",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1245A",
+    "contest_id": 1245,
+    "problem_letter": "A",
+    "title": "A. Good ol' Numbers Coloring",
+    "statement": "Consider the set of all nonnegative integers: 0, 1, 2, …. Given two integers a and b (1 ≤ a, b ≤ 10^4). We paint all the numbers in increasing number first we paint 0, then we paint 1, then 2 and so on.\n\nEach number is painted white or black. We paint a number i according to the following rules:\n\nIn this way, each nonnegative integer gets one of two colors.\n\nFor example, if a=3, b=5, then the colors of the numbers (in the order from 0) are: white (0), black (1), black (2), white (3), black (4), white (5), white (6), black (7), white (8), white (9), ...\n\nNote that:\n\nYour task is to determine whether or not the number of nonnegative integers colored black is infinite.\n\nIf there are infinitely many nonnegative integers colored black, simply print a line containing \"Infinite\" (without the quotes). Otherwise, print \"Finite\" (without the quotes).\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases in the input. Then t lines follow, each line contains two space-separated integers a and b (1 ≤ a, b ≤ 10^4).\n\nFor each test case, print one line containing either \"Infinite\" or \"Finite\" (without the quotes). Output is case-insensitive (i.e. \"infinite\", \"inFiNite\" or \"finiTE\" are all valid answers).\n\nInput:\n```\n4\n10 10\n1 10\n6 9\n7 3\n```\n\nOutput:\n```\nInfinite\nFinite\nInfinite\nFinite\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases in the input. Then t lines follow, each line contains two space-separated integers a and b (1 ≤ a, b ≤ 10^4).",
+    "output": "For each test case, print one line containing either \"Infinite\" or \"Finite\" (without the quotes). Output is case-insensitive (i.e. \"infinite\", \"inFiNite\" or \"finiTE\" are all valid answers).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1000"
+    ],
+    "rating": 1000
+}

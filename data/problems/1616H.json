@@ -1,0 +1,21 @@
+{
+    "id": "1616H",
+    "contest_id": 1616,
+    "problem_letter": "H",
+    "title": "H. Keep XOR Low",
+    "statement": "You are given an array a_1, a_2, …, a_n and an integer x.\n\nFind the number of non-empty subsets of indices of this array 1 ≤ b_1 < b_2 < … < b_k ≤ n, such that for all pairs (i, j) where 1 ≤ i < j ≤ k, the inequality a_b_i oplus a_b_j ≤ x is held. Here, oplus denotes the bitwise XOR operation. As the answer may be very large, output it modulo 998,244,353.\n\nThe first line of the input contains two integers n and x (1 ≤ n ≤ 150,000, 0 ≤ x < 2^30). Here, n is the size of the array.\n\nThe next line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30): the array itself.\n\nPrint one integer: the number of non-empty subsets such that the bitwise XOR of every pair of elements is at most x, modulo 998,244,353.\n\nInput:\n```\n4 2\n0 1 2 3\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n3 6\n4 2 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n4 0\n1 1 2 2\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line of the input contains two integers n and x (1 ≤ n ≤ 150,000, 0 ≤ x < 2^30). Here, n is the size of the array.\n\nThe next line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^30): the array itself.",
+    "output": "Print one integer: the number of non-empty subsets such that the bitwise XOR of every pair of elements is at most x, modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "math",
+        "*3000"
+    ],
+    "rating": 3000
+}

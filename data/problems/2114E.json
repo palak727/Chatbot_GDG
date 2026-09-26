@@ -1,0 +1,19 @@
+{
+    "id": "2114E",
+    "contest_id": 2114,
+    "problem_letter": "E",
+    "title": "E. Kirei Attacks the Estate",
+    "statement": "Once, Kirei stealthily infiltrated the trap-filled estate of the Ainzbern family but was discovered by Kiritugu's familiar. Assessing his strength, Kirei decided to retreat. The estate is represented as a tree with n vertices, with the root at vertex 1. Each vertex of the tree has a number a_i recorded, which represents the danger of vertex i. Recall that a tree is a connected undirected graph without cycles.\n\nFor a successful retreat, Kirei must compute the threat value for each vertex. The threat of a vertex is equal to the maximum alternating sum along the vertical path starting from that vertex. The alternating sum along the vertical path starting from vertex i is defined as a_i - a_p_i + a_p_p_i - …, where p_i is the parent of vertex i on the path to the root (to vertex 1).\n\nFor example, in the tree below, vertex 4 has the following vertical paths:\n\nHelp Kirei compute the threat values for all vertices and escape the estate.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe following describes the test cases.\n\nThe first line contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the dangers of the vertices.\n\nThe next n - 1 lines contain the numbers v, u (1 ≤ v, u ≤ n, v ≠ u) — the description of the edges of the tree.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5. It is also guaranteed that the given set of edges forms a tree.\n\nFor each test case, output n integers — the threat of each vertex.\n\nThe tree from the first test case is depicted in the statement, and the maximum variable-sign sums are achieved as follows:\n\nInput:\n```\n254 5 2 6 71 23 24 35 161000000000 500500500 900900900 9 404 8008008003 45 12 51 66 4\n```\n\nOutput:\n```\n4 5 2 9 7 \n1000000000 1500500096 1701701691 199199209 404 800800800 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe following describes the test cases.\n\nThe first line contains an integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the dangers of the vertices.\n\nThe next n - 1 lines contain the numbers v, u (1 ≤ v, u ≤ n, v ≠ u) — the description of the edges of the tree.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5. It is also guaranteed that the given set of edges forms a tree.",
+    "output": "For each test case, output n integers — the threat of each vertex.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*1400"
+    ],
+    "rating": 1400
+}

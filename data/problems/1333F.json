@@ -1,0 +1,21 @@
+{
+    "id": "1333F",
+    "contest_id": 1333,
+    "problem_letter": "F",
+    "title": "F. Kate and imperfection",
+    "statement": "Kate has a set S of n integers {1, …, n} .\n\nShe thinks that imperfection of a subset M ⊆ S is equal to the maximum of gcd(a, b) over all pairs (a, b) such that both a and b are in M and a ≠ b.\n\nKate is a very neat girl and for each k ∈ {2, …, n} she wants to find a subset that has the smallest imperfection among all subsets in S of size k. There can be more than one subset with the smallest imperfection and the same size, but you don't need to worry about it. Kate wants to find all the subsets herself, but she needs your help to find the smallest possible imperfection for each size k, will name it I_k.\n\nPlease, help Kate to find I_2, I_3, ..., I_n.\n\nThe first and only line in the input consists of only one integer n (2≤ n ≤ 5·10^5) — the size of the given set S.\n\nOutput contains only one line that includes n - 1 integers: I_2, I_3, ..., I_n.\n\nFirst sample: answer is 1, because gcd(1, 2) = 1.\n\nSecond sample: there are subsets of S with sizes 2, 3 with imperfection equal to 1. For example, {2,3} and {1, 2, 3}.\n\nInput:\n```\n2\n```\n\nOutput:\n```\n1 \n```\n\nInput:\n```\n3\n```\n\nOutput:\n```\n1 1 \n```",
+    "input": "The first and only line in the input consists of only one integer n (2≤ n ≤ 5·10^5) — the size of the given set S.",
+    "output": "Output contains only one line that includes n - 1 integers: I_2, I_3, ..., I_n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "sortings",
+        "two pointers",
+        "*2200"
+    ],
+    "rating": 2200
+}

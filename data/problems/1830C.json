@@ -1,0 +1,21 @@
+{
+    "id": "1830C",
+    "contest_id": 1830,
+    "problem_letter": "C",
+    "title": "C. Hyperregular Bracket Strings",
+    "statement": "You are given an integer n and k intervals. The i-th interval is [l_i,r_i] where 1 ≤ l_i ≤ r_i ≤ n.\n\nLet us call a regular bracket sequence^{dagger,ddagger} of length n hyperregular if for each i such that 1 ≤ i ≤ k, the substring overlines_l_i s_{l_i+1} … s_r_i is also a regular bracket sequence.\n\nYour task is to count the number of hyperregular bracket sequences. Since this number can be really large, you are only required to find it modulo 998,244,353.\n\n^dagger A bracket sequence is a string containing only the characters \"(\" and \")\".\n\n^ddagger A bracket sequence is called regular if one can turn it into a valid math expression by adding characters + and 1. For example, sequences (())(), (), (()(())) and the empty string are regular, while )(, ((), and (()))( are not.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 3·10^5, 0 ≤ k ≤ 3·10^5) — the length of the hyperregular bracket sequences and the number of intervals respectively.\n\nThe following k lines of each test case contains two integers l_i and r_i (1 ≤ l ≤ r ≤ n).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 3·10^5 and the sum of k across all test cases does not exceed 3·10^5.\n\nFor each test case, output the number of hyperregular bracket sequences modulo 998,244,353.\n\nInput:\n```\n76 05 08 11 310 23 46 91000 3100 701200 801300 90128 51 123 2011 144 918 194 31 41 41 4\n```\n\nOutput:\n```\n5\n0\n0\n4\n839415253\n140\n2\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 3·10^5, 0 ≤ k ≤ 3·10^5) — the length of the hyperregular bracket sequences and the number of intervals respectively.\n\nThe following k lines of each test case contains two integers l_i and r_i (1 ≤ l ≤ r ≤ n).\n\nIt is guaranteed that the sum of n across all test cases does not exceed 3·10^5 and the sum of k across all test cases does not exceed 3·10^5.",
+    "output": "For each test case, output the number of hyperregular bracket sequences modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "greedy",
+        "hashing",
+        "math",
+        "number theory",
+        "sortings",
+        "*2400"
+    ],
+    "rating": 2400
+}

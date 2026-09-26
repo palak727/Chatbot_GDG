@@ -1,0 +1,16 @@
+{
+    "id": "1132C",
+    "contest_id": 1132,
+    "problem_letter": "C",
+    "title": "C. Painting the Fence",
+    "statement": "You have a long fence which consists of n sections. Unfortunately, it is not painted, so you decided to hire q painters to paint it. i-th painter will paint all sections x such that l_i ≤ x ≤ r_i.\n\nUnfortunately, you are on a tight budget, so you may hire only q - 2 painters. Obviously, only painters you hire will do their work.\n\nYou want to maximize the number of painted sections if you choose q - 2 painters optimally. A section is considered painted if at least one painter paints it.\n\nThe first line contains two integers n and q (3 ≤ n, q ≤ 5000) — the number of sections and the number of painters availible for hire, respectively.\n\nThen q lines follow, each describing one of the painters: i-th line contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nPrint one integer — maximum number of painted sections if you hire q - 2 painters.\n\nInput:\n```\n7 5\n1 4\n4 5\n5 6\n6 7\n3 5\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n4 3\n1 1\n2 2\n3 4\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4 4\n1 1\n2 2\n2 3\n3 4\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line contains two integers n and q (3 ≤ n, q ≤ 5000) — the number of sections and the number of painters availible for hire, respectively.\n\nThen q lines follow, each describing one of the painters: i-th line contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).",
+    "output": "Print one integer — maximum number of painted sections if you hire q - 2 painters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "*1700"
+    ],
+    "rating": 1700
+}

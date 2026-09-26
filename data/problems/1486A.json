@@ -1,0 +1,17 @@
+{
+    "id": "1486A",
+    "contest_id": 1486,
+    "problem_letter": "A",
+    "title": "A. Shifting Stacks",
+    "statement": "You have n stacks of blocks. The i-th stack contains h_i blocks and it's height is the number of blocks in it. In one move you can take a block from the i-th stack (if there is at least one block) and put it to the i + 1-th stack. Can you make the sequence of heights strictly increasing?\n\nNote that the number of stacks always remains n: stacks don't disappear when they have 0 blocks.\n\nFirst line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100). The second line of each test case contains n integers h_i (0 ≤ h_i ≤ 10^9) — starting heights of the stacks.\n\nIt's guaranteed that the sum of all n does not exceed 10^4.\n\nFor each test case output YES if you can make the sequence of heights strictly increasing and NO otherwise.\n\nYou may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answer).\n\nIn the first test case there is no need to make any moves, the sequence of heights is already increasing.\n\nIn the second test case we need to move one block from the first stack to the second. Then the heights become 0 1.\n\nIn the third test case we could move one block from the first stack to the second and then from the second to the third, which would make the heights 3 4 5.\n\nIn the fourth test case we can't make a move, but the sequence is not increasing, so the answer is NO.\n\nIn the fifth test case we can only make one move (from the second to the third stack), which would make the heights 0 0 1. Both 0 1 0 and 0 0 1 are not increasing sequences, so the answer is NO.\n\nInput:\n```\n6\n2\n1 2\n2\n1 0\n3\n4 4 4\n2\n0 0\n3\n0 1 0\n4\n1000000000 1000000000 1000000000 1000000000\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "First line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100). The second line of each test case contains n integers h_i (0 ≤ h_i ≤ 10^9) — starting heights of the stacks.\n\nIt's guaranteed that the sum of all n does not exceed 10^4.",
+    "output": "For each test case output YES if you can make the sequence of heights strictly increasing and NO otherwise.\n\nYou may print each letter in any case (for example, YES, Yes, yes, yEs will all be recognized as positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1496A",
+    "contest_id": 1496,
+    "problem_letter": "A",
+    "title": "A. Split it!",
+    "statement": "Kawashiro Nitori is a girl who loves competitive programming.\n\nOne day she found a string and an integer. As an advanced problem setter, she quickly thought of a problem.\n\nGiven a string s and a parameter k, you need to check if there exist k+1 non-empty strings a_1,a_2...,a_{k+1}, such that s=a_1+a_2+… +a_k+a_{k+1}+R(a_k)+R(a_{k-1})+…+R(a_1).\n\nHere + represents concatenation. We define R(x) as a reversed string x. For example R(abcd) = dcba. Note that in the formula above the part R(a_{k+1}) is intentionally skipped.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case description contains two integers n, k (1≤ n≤ 100, 0≤ k≤ lfloor n/2 rfloor) — the length of the string s and the parameter k.\n\nThe second line of each test case description contains a single string s of length n, consisting of lowercase English letters.\n\nFor each test case, print \"YES\" (without quotes), if it is possible to find a_1,a_2,…,a_{k+1}, and \"NO\" (without quotes) otherwise.\n\nYou can print letters in any case (upper or lower).\n\nIn the first test case, one possible solution is a_1=qw and a_2=q.\n\nIn the third test case, one possible solution is a_1=i and a_2=o.\n\nIn the fifth test case, one possible solution is a_1=dokidokiliteratureclub.\n\nInput:\n```\n7\n5 1\nqwqwq\n2 1\nab\n3 1\nioi\n4 2\nicpc\n22 0\ndokidokiliteratureclub\n19 8\nimteamshanghaialice\n6 3\naaaaaa\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nNO\nNO\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 100) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case description contains two integers n, k (1≤ n≤ 100, 0≤ k≤ lfloor n/2 rfloor) — the length of the string s and the parameter k.\n\nThe second line of each test case description contains a single string s of length n, consisting of lowercase English letters.",
+    "output": "For each test case, print \"YES\" (without quotes), if it is possible to find a_1,a_2,…,a_{k+1}, and \"NO\" (without quotes) otherwise.\n\nYou can print letters in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "strings",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1705D",
+    "contest_id": 1705,
+    "problem_letter": "D",
+    "title": "D. Mark and Lightbulbs",
+    "statement": "Mark has just purchased a rack of n lightbulbs. The state of the lightbulbs can be described with binary string s = s_1s_2… s_n, where s_i=texttt1 means that the i-th lightbulb is turned on, while s_i=texttt0 means that the i-th lightbulb is turned off.\n\nUnfortunately, the lightbulbs are broken, and the only operation he can perform to change the state of the lightbulbs is the following:\n\nMark wants the state of the lightbulbs to be another binary string t. Help Mark determine the minimum number of operations to do so.\n\nThe first line of the input contains a single integer q (1≤ q≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3≤ n≤ 2·10^5) — the number of lightbulbs.\n\nThe second line of each test case contains a binary string s of length n — the initial state of the lightbulbs.\n\nThe third line of each test case contains a binary string t of length n — the final state of the lightbulbs.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, print a line containing the minimum number of operations Mark needs to perform to transform s to t. If there is no such sequence of operations, print -1.\n\nIn the first test case, one sequence of operations that achieves the minimum number of operations is the following.\n\nIn the third test case, even though the first digits of s and t are the same and the last digits of s and t are the same, it can be shown that there is no sequence of operations that satisfies the condition.\n\nIn the fourth test case, one sequence that achieves the minimum number of operations is the following:\n\nInput:\n```\n4401000010410100100501001000116000101010011\n```\n\nOutput:\n```\n2\n-1\n-1\n5\n```",
+    "input": "The first line of the input contains a single integer q (1≤ q≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (3≤ n≤ 2·10^5) — the number of lightbulbs.\n\nThe second line of each test case contains a binary string s of length n — the initial state of the lightbulbs.\n\nThe third line of each test case contains a binary string t of length n — the final state of the lightbulbs.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a line containing the minimum number of operations Mark needs to perform to transform s to t. If there is no such sequence of operations, print -1.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

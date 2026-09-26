@@ -1,0 +1,17 @@
+{
+    "id": "1337A",
+    "contest_id": 1337,
+    "problem_letter": "A",
+    "title": "A. Ichihime and Triangle",
+    "statement": "Ichihime is the current priestess of the Mahjong Soul Temple. She claims to be human, despite her cat ears.\n\nThese days the temple is holding a math contest. Usually, Ichihime lacks interest in these things, but this time the prize for the winner is her favorite — cookies. Ichihime decides to attend the contest. Now she is solving the following problem.\n\nYou are given four positive integers a, b, c, d, such that a ≤ b ≤ c ≤ d.\n\nYour task is to find three integers x, y, z, satisfying the following conditions:\n\nIchihime desires to get the cookie, but the problem seems too hard for her. Can you help her?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe next t lines describe test cases. Each test case is given as four space-separated integers a, b, c, d (1 ≤ a ≤ b ≤ c ≤ d ≤ 10^9).\n\nFor each test case, print three integers x, y, z — the integers you found satisfying the conditions given in the statement.\n\nIt is guaranteed that the answer always exists. If there are multiple answers, print any.\n\nOne of the possible solutions to the first test case:\n\nOne of the possible solutions to the second test case:\n\nInput:\n```\n4\n1 3 5 7\n1 5 5 7\n100000 200000 300000 400000\n1 1 977539810 977539810\n```\n\nOutput:\n```\n3 4 5\n5 5 5\n182690 214748 300999\n1 977539810 977539810\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe next t lines describe test cases. Each test case is given as four space-separated integers a, b, c, d (1 ≤ a ≤ b ≤ c ≤ d ≤ 10^9).",
+    "output": "For each test case, print three integers x, y, z — the integers you found satisfying the conditions given in the statement.\n\nIt is guaranteed that the answer always exists. If there are multiple answers, print any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

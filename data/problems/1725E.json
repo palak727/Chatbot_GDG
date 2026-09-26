@@ -1,0 +1,21 @@
+{
+    "id": "1725E",
+    "contest_id": 1725,
+    "problem_letter": "E",
+    "title": "E. Electrical Efficiency",
+    "statement": "In the country of Dengkleknesia, there are N factories numbered from 1 to N. Factory i has an electrical coefficient of A_i. There are also N-1 power lines with the j-th power line connecting factory U_j and factory V_j. It can be guaranteed that each factory in Dengkleknesia is connected to all other factories in Dengkleknesia through one or more power lines. In other words, the collection of factories forms a tree. Each pair of different factories in Dengkleknesia can use one or more existing power lines to transfer electricity to each other. However, each power line needs to be turned on first so that electricity can pass through it.\n\nDefine f(x, y, z) as the minimum number of power lines that need to be turned on so that factory x can make electrical transfers to factory y and factory z. Also define g(x, y, z) as the number of distinct prime factors of GCD(A_x, A_y, A_z).\n\nTo measure the electrical efficiency, you must find the sum of f(x, y, z) × g(x, y, z) for all combinations of (x, y, z) such that 1 ≤ x < y < z ≤ N. Because the answer can be very large, you just need to output the answer modulo 998,244,353.\n\nNote: GCD(k_1, k_2, k_3) is the greatest common divisor of k_1, k_2, and k_3, which is the biggest integer that simultaneously divides k_1, k_2, and k_3.\n\nThe first line contains a single integer N (1 ≤ N ≤ 2·10^5) — the number of factories in Dengkleknesia.\n\nThe second line contains N integers A_1, A_2, …, A_N (1 ≤ A_i ≤ 2·10^5) — the electrical coefficients of the factories.\n\nThe j-th of the next N-1 lines contains two integers U_j and V_j (1 ≤ U_j, V_j ≤ N) — a power line that connects cities U_j and V_j. The collection of factories forms a tree.\n\nAn integer representing the sum of f(x, y, z) × g(x, y, z) for all combinations of (x, y, z) such that 1 ≤ x < y < z ≤ N, modulo 998,244,353\n\nIn the first example, the only (x, y, z) possible is (1, 2, 3). Because GCD(A_1, A_2, A_3) = GCD(1, 2, 3) = 1 has 0 distinct prime factors, therefore f(x, y, z) × g(x, y, z) = 2 × 0 = 0.\n\nIn the second example, all triples (x, y, z) that satisfy the condition are as follows:\n\nSo the electrical efficiency is 2 + 2 + 6 + 2 = 12.\n\nInput:\n```\n3\n1 2 3\n1 2\n2 3\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n4\n6 14 6 6\n1 2\n2 3\n2 4\n```\n\nOutput:\n```\n12\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 2·10^5) — the number of factories in Dengkleknesia.\n\nThe second line contains N integers A_1, A_2, …, A_N (1 ≤ A_i ≤ 2·10^5) — the electrical coefficients of the factories.\n\nThe j-th of the next N-1 lines contains two integers U_j and V_j (1 ≤ U_j, V_j ≤ N) — a power line that connects cities U_j and V_j. The collection of factories forms a tree.",
+    "output": "An integer representing the sum of f(x, y, z) × g(x, y, z) for all combinations of (x, y, z) such that 1 ≤ x < y < z ≤ N, modulo 998,244,353",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "math",
+        "number theory",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

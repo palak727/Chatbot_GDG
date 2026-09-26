@@ -1,0 +1,18 @@
+{
+    "id": "1746F",
+    "contest_id": 1746,
+    "problem_letter": "F",
+    "title": "F. Kazaee",
+    "statement": "You have an array a consisting of n positive integers and you have to handle q queries of the following types:\n\nThe first line of the input contains two integers n and q (1 ≤ n , q ≤ 3·10^5), the length of a and the number of queries.\n\nNext line contains n integers a_1, a_2, … a_n (1 ≤ a_i ≤ 10^9) — the elements of a.\n\nEach of the next q lines describes a query. It has one of the following forms.\n\nFor each query of the second type, if answer of the query is yes, print \"YES\", otherwise print \"NO\".\n\nIn the first query, requested subarray is [1234, 2, 3, 3, 2, 1], and it's obvious that the number of occurrence of 1 isn't divisible by k = 2. So the answer is \"NO\".\n\nIn the third query, requested subarray is [1, 2, 3, 3, 2, 1], and it can be seen that the number of occurrence of every integer in this sub array is divisible by k = 2. So the answer is \"YES\".\n\nIn the sixth query, requested subarray is [1, 2, 3, 3, 2, 1, 1, 2, 3], and it can be seen that the number of occurrence of every integer in this sub array is divisible by k = 3. So the answer is \"YES\".\n\nInput:\n```\n10 8\n1234 2 3 3 2 1 1 2 3 4\n2 1 6 2\n1 1 1\n2 1 6 2\n2 1 9 2\n1 10 5\n2 1 9 3\n1 3 5\n2 3 10 2\n```\n\nOutput:\n```\nNO\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line of the input contains two integers n and q (1 ≤ n , q ≤ 3·10^5), the length of a and the number of queries.\n\nNext line contains n integers a_1, a_2, … a_n (1 ≤ a_i ≤ 10^9) — the elements of a.\n\nEach of the next q lines describes a query. It has one of the following forms.",
+    "output": "For each query of the second type, if answer of the query is yes, print \"YES\", otherwise print \"NO\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "hashing",
+        "probabilities",
+        "*2800"
+    ],
+    "rating": 2800
+}

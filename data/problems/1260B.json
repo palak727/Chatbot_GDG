@@ -1,0 +1,17 @@
+{
+    "id": "1260B",
+    "contest_id": 1260,
+    "problem_letter": "B",
+    "title": "B. Obtain Two Zeroes",
+    "statement": "You are given two integers a and b. You may perform any number of operations on them (possibly zero).\n\nDuring each operation you should choose any positive integer x and set a := a - x, b := b - 2x or a := a - 2x, b := b - x. Note that you may choose different values of x in different operations.\n\nIs it possible to make a and b equal to 0 simultaneously?\n\nYour program should answer t independent test cases.\n\nThe first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen the test cases follow, each test case is represented by one line containing two integers a and b for this test case (0 ≤ a, b ≤ 10^9).\n\nFor each test case print the answer to it — YES if it is possible to make a and b equal to 0 simultaneously, and NO otherwise.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).\n\nIn the first test case of the example two operations can be used to make both a and b equal to zero:\n\nInput:\n```\n3\n6 9\n1 1\n1 2\n```\n\nOutput:\n```\nYES\nNO\nYES\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThen the test cases follow, each test case is represented by one line containing two integers a and b for this test case (0 ≤ a, b ≤ 10^9).",
+    "output": "For each test case print the answer to it — YES if it is possible to make a and b equal to 0 simultaneously, and NO otherwise.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

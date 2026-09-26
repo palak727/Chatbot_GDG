@@ -1,0 +1,19 @@
+{
+    "id": "2063B",
+    "contest_id": 2063,
+    "problem_letter": "B",
+    "title": "B. Subsequence Update",
+    "statement": "But as they are a crucial part of home design, Little John decides to hide some in the most unreachable places — under the eco-friendly wood veneers.\n\nYou are given an integer sequence a_1, a_2, …, a_n, and a segment [l,r] (1 ≤ l ≤ r ≤ n).\n\nYou must perform the following operation on the sequence exactly once.\n\nFormally, choose any number of indices i_1,i_2,…,i_k such that 1 ≤ i_1 < i_2 < … < i_k ≤ n. Then, change the i_x-th element to the original value of the i_{k-x+1}-th element simultaneously for all 1 ≤ x ≤ k.\n\nFind the minimum value of a_l+a_{l+1}+…+a_{r-1}+a_r after performing the operation.\n\n^{∗}A sequence b is a subsequence of a sequence a if b can be obtained from a by the deletion of several (possibly, zero or all) element from arbitrary positions.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, l, r (1 ≤ l ≤ r ≤ n ≤ 10^5) — the length of a, and the segment [l,r].\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output the minimum value of a_l+a_{l+1}+…+a_{r-1}+a_r on a separate line.\n\nOn the second test case, the array is a=[1,2,3] and the segment is [2,3].\n\nAfter choosing the subsequence a_1,a_3 and reversing it, the sequence becomes [3,2,1]. Then, the sum a_2+a_3 becomes 3. It can be shown that the minimum possible value of the sum is 3.\n\nInput:\n```\n62 1 12 13 2 31 2 33 1 33 1 24 2 31 2 2 25 2 53 3 2 3 56 1 33 6 6 4 3 2\n```\n\nOutput:\n```\n1\n3\n6\n3\n11\n8\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains three integers n, l, r (1 ≤ l ≤ r ≤ n ≤ 10^5) — the length of a, and the segment [l,r].\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output the minimum value of a_l+a_{l+1}+…+a_{r-1}+a_r on a separate line.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1721E",
+    "contest_id": 1721,
+    "problem_letter": "E",
+    "title": "E. Prefix Function Queries",
+    "statement": "You are given a string s, consisting of lowercase Latin letters.\n\nYou are asked q queries about it: given another string t, consisting of lowercase Latin letters, perform the following steps:\n\nThe prefix function of a string a is a sequence p_1, p_2, …, p_{|a|}, where p_i is the maximum value of k such that k < i and a[1..k]=a[i-k+1..i] (a[l..r] denotes a contiguous substring of a string a from a position l to a position r, inclusive). In other words, it's the longest proper prefix of the string a[1..i] that is equal to its suffix of the same length.\n\nThe first line contains a non-empty string s (1 ≤ |s| ≤ 10^6), consisting of lowercase Latin letters.\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the next q lines contains a query: a non-empty string t (1 ≤ |t| ≤ 10), consisting of lowercase Latin letters.\n\nFor each query, print the values of the prefix function of a string s+t on positions |s|+1, |s|+2, …, |s|+|t|.\n\nInput:\n```\naba\n6\ncaba\naba\nbababa\naaaa\nb\nforces\n```\n\nOutput:\n```\n0 1 2 3 \n1 2 3 \n2 3 4 5 6 7 \n1 1 1 1 \n2 \n0 0 0 0 0 0 \n```\n\nInput:\n```\naacba\n4\naaca\ncbbb\naab\nccaca\n```\n\nOutput:\n```\n2 2 3 1 \n0 0 0 0 \n2 2 0 \n0 0 1 0 1 \n```",
+    "input": "The first line contains a non-empty string s (1 ≤ |s| ≤ 10^6), consisting of lowercase Latin letters.\n\nThe second line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nEach of the next q lines contains a query: a non-empty string t (1 ≤ |t| ≤ 10), consisting of lowercase Latin letters.",
+    "output": "For each query, print the values of the prefix function of a string s+t on positions |s|+1, |s|+2, …, |s|+|t|.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "hashing",
+        "string suffix structures",
+        "strings",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

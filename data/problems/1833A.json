@@ -1,0 +1,17 @@
+{
+    "id": "1833A",
+    "contest_id": 1833,
+    "problem_letter": "A",
+    "title": "A. Musical Puzzle",
+    "statement": "Vlad decided to compose a melody on his guitar. Let's represent the melody as a sequence of notes corresponding to the characters 'a', 'b', 'c', 'd', 'e', 'f', and 'g'.\n\nHowever, Vlad is not very experienced in playing the guitar and can only record exactly two notes at a time. Vlad wants to obtain the melody s, and to do this, he can merge the recorded melodies together. In this case, the last sound of the first melody must match the first sound of the second melody.\n\nFor example, if Vlad recorded the melodies \"ab\" and \"ba\", he can merge them together and obtain the melody \"aba\", and then merge the result with \"ab\" to get \"abab\".\n\nHelp Vlad determine the minimum number of melodies consisting of two notes that he needs to record in order to obtain the melody s.\n\nThe first line of input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFollowing that are the descriptions of the test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 50) — the length of the melody s.\n\nThe second line of each test case contains a string s of length n, consisting of characters 'a', 'b', 'c', 'd', 'e', 'f', 'g'.\n\nOutput t integers, each representing the answer for the corresponding test case. As the answer output minimum number of melodies consisting of two notes that Vlad needs to record.\n\nIn the first sample, you need to record the melodies \"ab\" and \"ba\", as described in the problem statement.\n\nIn the second sample, you need to record the melodies \"ab\", \"ba\", \"ac\", and \"ca\".\n\nIn the third sample, the only necessary melody is \"aa\".\n\nInput:\n```\n54abab7abacaba6aaaaaa7abcdefg5babdd\n```\n\nOutput:\n```\n2\n4\n1\n6\n4\n```",
+    "input": "The first line of input contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nFollowing that are the descriptions of the test cases.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 50) — the length of the melody s.\n\nThe second line of each test case contains a string s of length n, consisting of characters 'a', 'b', 'c', 'd', 'e', 'f', 'g'.",
+    "output": "Output t integers, each representing the answer for the corresponding test case. As the answer output minimum number of melodies consisting of two notes that Vlad needs to record.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

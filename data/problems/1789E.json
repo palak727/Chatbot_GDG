@@ -1,0 +1,20 @@
+{
+    "id": "1789E",
+    "contest_id": 1789,
+    "problem_letter": "E",
+    "title": "E. Serval and Music Game",
+    "statement": "Serval loves playing music games. He meets a problem when playing music games, and he leaves it for you to solve.\n\nYou are given n positive integers s_1 < s_2 < … < s_n. f(x) is defined as the number of i (1≤ i≤ n) that exist non-negative integers p_i, q_i such that:\n\ns_i=p_ileftlfloors_nover xrightrfloor + q_ileftlceils_nover xrightrceil\n\nFind out ∑_{x=1}^s_n x·f(x) modulo 998,244,353.\n\nAs a reminder, lfloor xrfloor denotes the maximal integer that is no greater than x, and lceil xrceil denotes the minimal integer that is no less than x.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test cases contains a single integer n (1≤ n≤ 10^6).\n\nThe second line of each test case contains n positive integers s_1,s_2,…,s_n (1≤ s_1 < s_2 < … < s_n ≤ 10^7).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6, and the sum of s_n does not exceed 10^7.\n\nFor each test case, print a single integer in a single line — the sum of x·f(x) over all possible x modulo 998,244,353.\n\nFor the first test case, s_n=4, f(x) are calculated as followings:\n\nTherefore, the answer is ∑_{x=1}^4 x·f(x) = 1·1 + 2·2 + 3·3 + 4·3 = 26.\n\nFor the second test case:\n\nFor example, when x=3 we have f(3)=1 because there exist p_4 and q_4:\n\n9 = 1·leftlfloor9over 3rightrfloor + 2·leftlceil9over 3rightrceil\n\nIt can be shown that it is impossible to find p_1,p_2,p_3 and q_1,q_2,q_3 that satisfy the conditions.\n\nWhen x=5 we have f(5)=4 because there exist p_i and q_i as followings:\n\n1 = 1·leftlfloor9over 5rightrfloor + 0·leftlceil9over 5rightrceil 2 = 0·leftlfloor9over 5rightrfloor + 1·leftlceil9over 5rightrceil 7 = 3·leftlfloor9over 5rightrfloor + 2·leftlceil9over 5rightrceil 9 = 3·leftlfloor9over 5rightrfloor + 3·leftlceil9over 5rightrceil\n\nTherefore, the answer is ∑_{x=1}^9 x·f(x) = 158.\n\nInput:\n```\n431 2 441 2 7 94344208 591000 4779956 540342951633 1661 1741 2134 2221\n```\n\nOutput:\n```\n26\n158\n758737625\n12334970\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤ 10^4). The description of the test cases follows.\n\nThe first line of each test cases contains a single integer n (1≤ n≤ 10^6).\n\nThe second line of each test case contains n positive integers s_1,s_2,…,s_n (1≤ s_1 < s_2 < … < s_n ≤ 10^7).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6, and the sum of s_n does not exceed 10^7.",
+    "output": "For each test case, print a single integer in a single line — the sum of x·f(x) over all possible x modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "math",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

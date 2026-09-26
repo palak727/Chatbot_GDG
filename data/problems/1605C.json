@@ -1,0 +1,19 @@
+{
+    "id": "1605C",
+    "contest_id": 1605,
+    "problem_letter": "C",
+    "title": "C. Dominant Character",
+    "statement": "Ashish has a string s of length n containing only characters 'a', 'b' and 'c'.\n\nHe wants to find the length of the smallest substring, which satisfies the following conditions:\n\nAshish is busy planning his next Codeforces round. Help him solve the problem.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the length of the string s.\n\nThe second line of each test case contains a string s consisting only of characters 'a', 'b' and 'c'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output the length of the smallest substring which satisfies the given conditions or print -1 if there is no such substring.\n\nConsider the first test case. In the substring \"aa\", 'a' occurs twice, while 'b' and 'c' occur zero times. Since 'a' occurs strictly more times than 'b' and 'c', the substring \"aa\" satisfies the condition and the answer is 2. The substring \"a\" also satisfies this condition, however its length is not at least 2.\n\nIn the second test case, it can be shown that in none of the substrings of \"cbabb\" does 'a' occur strictly more times than 'b' and 'c' each.\n\nIn the third test case, \"cacabccc\", the length of the smallest substring that satisfies the conditions is 3.\n\nInput:\n```\n3\n2\naa\n5\ncbabb\n8\ncacabccc\n```\n\nOutput:\n```\n2\n-1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^6) — the length of the string s.\n\nThe second line of each test case contains a string s consisting only of characters 'a', 'b' and 'c'.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output the length of the smallest substring which satisfies the given conditions or print -1 if there is no such substring.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

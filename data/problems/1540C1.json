@@ -1,0 +1,17 @@
+{
+    "id": "1540C1",
+    "contest_id": 1540,
+    "problem_letter": "C1",
+    "title": "C1. Converging Array (Easy Version)",
+    "statement": "This is the easy version of the problem. The only difference is that in this version q = 1. You can make hacks only if both versions of the problem are solved.\n\nThere is a process that takes place on arrays a and b of length n and length n-1 respectively.\n\nThe process is an infinite sequence of operations. Each operation is as follows:\n\nIt can be proven that array a converges, i. e. for each i there exists a limit a_i converges to. Let function F(a, b) return the value a_1 converges to after a process on a and b.\n\nYou are given array b, but not array a. However, you are given a third array c. Array a is good if it contains only integers and satisfies 0 ≤ a_i ≤ c_i for 1 ≤ i ≤ n.\n\nYour task is to count the number of good arrays a where F(a, b) ≥ x for q values of x. Since the number of arrays can be very large, print it modulo 10^9+7.\n\nThe first line contains a single integer n (2 ≤ n ≤ 100).\n\nThe second line contains n integers c_1, c_2 …, c_n (0 ≤ c_i ≤ 100).\n\nThe third line contains n-1 integers b_1, b_2, …, b_{n-1} (0 ≤ b_i ≤ 100).\n\nThe fourth line contains a single integer q (q=1).\n\nThe fifth line contains q space separated integers x_1, x_2, …, x_q (-10^5 ≤ x_i ≤ 10^5).\n\nOutput q integers, where the i-th integer is the answer to the i-th query, i. e. the number of good arrays a where F(a, b) ≥ x_i modulo 10^9+7.\n\nThe following explanation assumes b = [2, 1] and c=[2, 3, 4] (as in the sample).\n\nExamples of arrays a that are not good:\n\nOne possible good array a is [0, 2, 4]. We can show that no operation has any effect on this array, so F(a, b) = a_1 = 0.\n\nAnother possible good array a is [0, 1, 4]. In a single operation with i = 1, we set a_1 = min((0+1-2)/2, 0) and a_2 = max((0+1+2)/2, 1). So, after a single operation with i = 1, a becomes equal to [-1/2, 3/2, 4]. We can show that no operation has any effect on this array, so F(a, b) = -1/2.\n\nInput:\n```\n3\n2 3 4\n2 1\n1\n-1\n```\n\nOutput:\n```\n56\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 100).\n\nThe second line contains n integers c_1, c_2 …, c_n (0 ≤ c_i ≤ 100).\n\nThe third line contains n-1 integers b_1, b_2, …, b_{n-1} (0 ≤ b_i ≤ 100).\n\nThe fourth line contains a single integer q (q=1).\n\nThe fifth line contains q space separated integers x_1, x_2, …, x_q (-10^5 ≤ x_i ≤ 10^5).",
+    "output": "Output q integers, where the i-th integer is the answer to the i-th query, i. e. the number of good arrays a where F(a, b) ≥ x_i modulo 10^9+7.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

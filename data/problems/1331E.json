@@ -1,0 +1,18 @@
+{
+    "id": "1331E",
+    "contest_id": 1331,
+    "problem_letter": "E",
+    "title": "E. Jordan Smiley",
+    "statement": "The input contains two integers row, col (0 ≤ row, col ≤ 63), separated by a single space.\n\nOutput \"IN\" or \"OUT\".\n\nInput:\n```\n0 0\n```\n\nOutput:\n```\nOUT\n```\n\nInput:\n```\n27 0\n```\n\nOutput:\n```\nIN\n```\n\nInput:\n```\n0 27\n```\n\nOutput:\n```\nOUT\n```\n\nInput:\n```\n27 27\n```\n\nOutput:\n```\nIN\n```",
+    "input": "The input contains two integers row, col (0 ≤ row, col ≤ 63), separated by a single space.",
+    "output": "Output \"IN\" or \"OUT\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "geometry",
+        "implementation"
+    ],
+    "rating": null
+}

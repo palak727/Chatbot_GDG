@@ -1,0 +1,19 @@
+{
+    "id": "1647D",
+    "contest_id": 1647,
+    "problem_letter": "D",
+    "title": "D. Madoka and the Best School in Russia",
+    "statement": "Madoka is going to enroll in \"TSUNS PTU\". But she stumbled upon a difficult task during the entrance computer science exam:\n\nNotice that a beautiful number must be good.\n\nGiven a good number x, determine whether it can be represented in at least two different ways as a product of several (possibly, one) beautiful numbers. Two ways are different if the sets of numbers used are different.\n\nSolve this problem for Madoka and help her to enroll in the best school in Russia!\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — number of test cases. Below comes their description.\n\nEach test case consists of two integers x and d, separated by a space (2 ≤ x, d ≤ 10^9). It is guaranteed that x is a multiple of d.\n\nFor each set of input data, output \"NO\" if the number cannot be represented in at least two ways. Otherwise, output \"YES\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).\n\nIn the first example, 6 can be represented as 6, 1·6, 2·3. But 3 and 1 are not a good numbers because they are not divisible by 2, so there is only one way.\n\nIn the second example, 12 can be represented as 6·2, 12, 3·4, or 3·2·2. The first option is suitable. The second is— no, because 12 is not beautiful number (12 = 6·2). The third and fourth are also not suitable, because 3 is not good number.\n\nIn the third example, 36 can be represented as 18·2 and 6·6. Therefore it can be decomposed in at least two ways.\n\nInput:\n```\n86 212 236 28 21000 102376 6128 416384 4\n```\n\nOutput:\n```\nNO\nNO\nYES\nNO\nYES\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — number of test cases. Below comes their description.\n\nEach test case consists of two integers x and d, separated by a space (2 ≤ x, d ≤ 10^9). It is guaranteed that x is a multiple of d.",
+    "output": "For each set of input data, output \"NO\" if the number cannot be represented in at least two ways. Otherwise, output \"YES\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "math",
+        "number theory",
+        "*1900"
+    ],
+    "rating": 1900
+}

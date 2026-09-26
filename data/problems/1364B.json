@@ -1,0 +1,17 @@
+{
+    "id": "1364B",
+    "contest_id": 1364,
+    "problem_letter": "B",
+    "title": "B. Most socially-distanced subsequence",
+    "statement": "Given a permutation p of length n, find its subsequence s_1, s_2, …, s_k of length at least 2 such that:\n\nIf multiple subsequences satisfy these conditions, you are allowed to find any of them.\n\nA sequence a is a subsequence of an array b if a can be obtained from b by deleting some (possibly, zero or all) elements.\n\nA permutation of length n is an array of length n in which every element from 1 to n occurs exactly once.\n\nThe first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the length of the permutation p.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, p_i are distinct) — the elements of the permutation p.\n\nThe sum of n across the test cases doesn't exceed 10^5.\n\nFor each test case, the first line should contain the length of the found subsequence, k. The second line should contain s_1, s_2, …, s_k — its elements.\n\nIf multiple subsequences satisfy these conditions, you are allowed to find any of them.\n\nIn the first test case, there are 4 subsequences of length at least 2:\n\nSo the answer is either [3,1] or [3,2,1]. Since we want the subsequence to be as short as possible, the answer is [3,1].\n\nInput:\n```\n2\n3\n3 2 1\n4\n1 3 4 2\n```\n\nOutput:\n```\n2\n3 1 \n3\n1 4 2 \n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 10^5) — the length of the permutation p.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, p_i are distinct) — the elements of the permutation p.\n\nThe sum of n across the test cases doesn't exceed 10^5.",
+    "output": "For each test case, the first line should contain the length of the found subsequence, k. The second line should contain s_1, s_2, …, s_k — its elements.\n\nIf multiple subsequences satisfy these conditions, you are allowed to find any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

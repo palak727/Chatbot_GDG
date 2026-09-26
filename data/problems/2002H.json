@@ -1,0 +1,16 @@
+{
+    "id": "2002H",
+    "contest_id": 2002,
+    "problem_letter": "H",
+    "title": "H. Counting 101",
+    "statement": "It's been a long summer's day, with the constant chirping of cicadas and the heat which never seemed to end. Finally, it has drawn to a close. The showdown has passed, the gates are open, and only a gentle breeze is left behind.\n\nYour predecessors had taken their final bow; it's your turn to take the stage.\n\nSorting through some notes that were left behind, you found a curious statement named Problem 101:\n\nAfter some thought, you decided to propose the following problem, named Counting 101:\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^3). The description of the test cases follows.\n\nThe only line of each test case contains two integers n, m (1≤ n≤ 130, 1≤ m≤ 30).\n\nFor each test case, output leftlfloor(n+1)/2rightrfloor numbers. The i-th number is the number of valid sequences such that when used as input for Problem 101, the answer is i-1, modulo 10^9+7.\n\nIn the first test case, there are 2^3=8 candidate sequences. Among them, you can operate on [1,2,1] and [1,1,1] once; you cannot operate on the other 6 sequences.\n\nInput:\n```\n23 210 10\n```\n\nOutput:\n```\n6 2 \n1590121 23399118 382293180 213020758 379696760 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤10^3). The description of the test cases follows.\n\nThe only line of each test case contains two integers n, m (1≤ n≤ 130, 1≤ m≤ 30).",
+    "output": "For each test case, output leftlfloor(n+1)/2rightrfloor numbers. The i-th number is the number of valid sequences such that when used as input for Problem 101, the answer is i-1, modulo 10^9+7.",
+    "time_limit": "10.1 seconds",
+    "memory_limit": "1010 megabytes",
+    "tags": [
+        "greedy",
+        "*3500"
+    ],
+    "rating": 3500
+}

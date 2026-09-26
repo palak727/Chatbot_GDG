@@ -1,0 +1,22 @@
+{
+    "id": "1935C",
+    "contest_id": 1935,
+    "problem_letter": "C",
+    "title": "C. Messenger in MAC",
+    "statement": "In the new messenger for the students of the Master's Assistance Center, Keftemerum, an update is planned, in which developers want to optimize the set of messages shown to the user. There are a total of n messages. Each message is characterized by two integers a_i and b_i. The time spent reading the set of messages with numbers p_1, p_2, …, p_k (1 ≤ p_i ≤ n, all p_i are distinct) is calculated by the formula:\n\nLarge ∑_{i=1}^k a_p_i + ∑_{i=1}^{k - 1} |b_p_i - b_{p_{i+1}}|\n\nNote that the time to read a set of messages consisting of one message with number p_1 is equal to a_p_1. Also, the time to read an empty set of messages is considered to be 0.\n\nThe user can determine the time l that he is willing to spend in the messenger. The messenger must inform the user of the maximum possible size of the set of messages, the reading time of which does not exceed l. Note that the maximum size of the set of messages can be equal to 0.\n\nThe developers of the popular messenger failed to implement this function, so they asked you to solve this problem.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and l (1 ≤ n ≤ 2000, 1 ≤ l ≤ 10^9) — the number of messages and the time the user is willing to spend in the messenger.\n\nThe i-th of the next n lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^9) — characteristics of the i-th message.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 4·10^6.\n\nFor each test case, output a single integer — the maximum possible size of a set of messages, the reading time of which does not exceed l.\n\nIn the first test case, you can take a set of three messages with numbers p_1 = 3, p_2 = 2, and p_3 = 5. The time spent reading this set is equal to a_3 + a_2 + a_5 + |b_3 - b_2| + |b_2 - b_5| = 2 + 1 + 2 + |4 - 5| + |5 - 3| = 8.\n\nIn the second test case, you can take a set of one message with number p_1 = 1. The time spent reading this set is equal to a_1 = 4.\n\nIn the fifth test case, it can be shown that there is no such non-empty set of messages, the reading time of which does not exceed l.\n\nInput:\n```\n55 84 31 52 44 32 31 64 103 124 82 12 125 2624 78 2830 223 817 175 1415 31000000000 998244353179 239228 1337993 1007\n```\n\nOutput:\n```\n3\n1\n2\n1\n0\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and l (1 ≤ n ≤ 2000, 1 ≤ l ≤ 10^9) — the number of messages and the time the user is willing to spend in the messenger.\n\nThe i-th of the next n lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^9) — characteristics of the i-th message.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 4·10^6.",
+    "output": "For each test case, output a single integer — the maximum possible size of a set of messages, the reading time of which does not exceed l.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

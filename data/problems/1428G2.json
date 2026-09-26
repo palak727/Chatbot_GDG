@@ -1,0 +1,17 @@
+{
+    "id": "1428G2",
+    "contest_id": 1428,
+    "problem_letter": "G2",
+    "title": "G2. Lucky Numbers (Hard Version)",
+    "statement": "This is the hard version of the problem. The only difference is in the constraint on q. You can make hacks only if all versions of the problem are solved.\n\nZookeeper has been teaching his q sheep how to write and how to add. The i-th sheep has to write exactly k non-negative integers with the sum n_i.\n\nStrangely, sheep have superstitions about digits and believe that the digits 3, 6, and 9 are lucky. To them, the fortune of a number depends on the decimal representation of the number; the fortune of a number is equal to the sum of fortunes of its digits, and the fortune of a digit depends on its value and position and can be described by the following table. For example, the number 319 has fortune F_2 + 3F_0.\n\nEach sheep wants to maximize the sum of fortune among all its k written integers. Can you help them?\n\nThe first line contains a single integer k (1 ≤ k ≤ 999999): the number of numbers each sheep has to write.\n\nThe next line contains six integers F_0, F_1, F_2, F_3, F_4, F_5 (1 ≤ F_i ≤ 10^9): the fortune assigned to each digit.\n\nThe next line contains a single integer q (1 ≤ q ≤ 100,000): the number of sheep.\n\nEach of the next q lines contains a single integer n_i (1 ≤ n_i ≤ 999999): the sum of numbers that i-th sheep has to write.\n\nPrint q lines, where the i-th line contains the maximum sum of fortune of all numbers of the i-th sheep.\n\nIn the first test case, 57 = 9 + 9 + 39. The three 9's contribute 1·3 and 3 at the tens position contributes 2·1. Hence the sum of fortune is 11.\n\nIn the second test case, 63 = 35 + 19 + 9. The sum of fortune is 8.\n\nInput:\n```\n3\n1 2 3 4 5 6\n2\n57\n63\n```\n\nOutput:\n```\n11\n8\n```",
+    "input": "The first line contains a single integer k (1 ≤ k ≤ 999999): the number of numbers each sheep has to write.\n\nThe next line contains six integers F_0, F_1, F_2, F_3, F_4, F_5 (1 ≤ F_i ≤ 10^9): the fortune assigned to each digit.\n\nThe next line contains a single integer q (1 ≤ q ≤ 100,000): the number of sheep.\n\nEach of the next q lines contains a single integer n_i (1 ≤ n_i ≤ 999999): the sum of numbers that i-th sheep has to write.",
+    "output": "Print q lines, where the i-th line contains the maximum sum of fortune of all numbers of the i-th sheep.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*3000"
+    ],
+    "rating": 3000
+}

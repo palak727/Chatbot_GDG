@@ -1,0 +1,16 @@
+{
+    "id": "1177A",
+    "contest_id": 1177,
+    "problem_letter": "A",
+    "title": "A. Digits Sequence (Easy Edition)",
+    "statement": "Let's write all the positive integer numbers one after another from 1 without any delimiters (i.e. as a single string). It will be the infinite sequence starting with 123456789101112131415161718192021222324252627282930313233343536...\n\nYour task is to print the k-th digit of this sequence.\n\nThe first and only line contains integer k (1 ≤ k ≤ 10000) — the position to process (1-based index).\n\nPrint the k-th digit of the resulting infinite sequence.\n\nInput:\n```\n7\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n21\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first and only line contains integer k (1 ≤ k ≤ 10000) — the position to process (1-based index).",
+    "output": "Print the k-th digit of the resulting infinite sequence.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

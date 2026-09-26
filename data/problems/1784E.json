@@ -1,0 +1,20 @@
+{
+    "id": "1784E",
+    "contest_id": 1784,
+    "problem_letter": "E",
+    "title": "E. Infinite Game",
+    "statement": "Alice and Bob are playing an infinite game consisting of sets. Each set consists of rounds. In each round, one of the players wins. The first player to win two rounds in a set wins this set. Thus, a set always ends with the score of 2:0 or 2:1 in favor of one of the players.\n\nLet's call a game scenario a finite string s consisting of characters 'a' and 'b'. Consider an infinite string formed with repetitions of string s: sss … Suppose that Alice and Bob play rounds according to this infinite string, left to right. If a character of the string sss … is 'a', then Alice wins the round; if it's 'b', Bob wins the round. As soon as one of the players wins two rounds, the set ends in their favor, and a new set starts from the next round.\n\nLet's define a_i as the number of sets won by Alice among the first i sets while playing according to the given scenario. Let's also define r as the limit of ratio a_i/i as i → ∞. If r > 1/2, we'll say that scenario s is winning for Alice. If r = 1/2, we'll say that scenario s is tied. If r < 1/2, we'll say that scenario s is winning for Bob.\n\nYou are given a string s consisting of characters 'a', 'b', and '?'. Consider all possible ways of replacing every '?' with 'a' or 'b' to obtain a string consisting only of characters 'a' and 'b'. Count how many of them result in a scenario winning for Alice, how many result in a tied scenario, and how many result in a scenario winning for Bob. Print these three numbers modulo 998,244,353.\n\nThe only line contains a single string s (1 ≤ |s| ≤ 200), consisting of characters 'a', 'b', and '?'.\n\nPrint three integers: how many ways result in a scenario winning for Alice, how many result in a tied scenario, and how many result in a scenario winning for Bob, modulo 998,244,353.\n\nIn the first example, there are four ways to replace the question marks:\n\nInput:\n```\n??\n```\n\nOutput:\n```\n1\n2\n1\n```\n\nInput:\n```\n?aa?b\n```\n\nOutput:\n```\n1\n3\n0\n```\n\nInput:\n```\na???ba\n```\n\nOutput:\n```\n4\n3\n1\n```\n\nInput:\n```\n????????\n```\n\nOutput:\n```\n121\n14\n121\n```\n\nInput:\n```\nba????a?a???abbb?\n```\n\nOutput:\n```\n216\n57\n239\n```\n\nInput:\n```\na????a??????b??abbababbbb?a?aaa????bb\n```\n\nOutput:\n```\n97833\n28387\n135924\n```\n\nInput:\n```\n??????????????a????????????????b?????\n```\n\nOutput:\n```\n484121060\n448940322\n484613337\n```",
+    "input": "The only line contains a single string s (1 ≤ |s| ≤ 200), consisting of characters 'a', 'b', and '?'.",
+    "output": "Print three integers: how many ways result in a scenario winning for Alice, how many result in a tied scenario, and how many result in a scenario winning for Bob, modulo 998,244,353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "games",
+        "probabilities",
+        "*3100"
+    ],
+    "rating": 3100
+}

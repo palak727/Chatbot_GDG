@@ -1,0 +1,19 @@
+{
+    "id": "1612G",
+    "contest_id": 1612,
+    "problem_letter": "G",
+    "title": "G. Max Sum Array",
+    "statement": "You are given an array c = [c_1, c_2, …, c_m]. An array a = [a_1, a_2, …, a_n] is constructed in such a way that it consists of integers 1, 2, …, m, and for each i ∈ [1,m], there are exactly c_i occurrences of integer i in a. So, the number of elements in a is exactly ∑limits_{i=1}^m c_i.\n\nLet's define for such array a the value f(a) as f(a) = ∑_{substack1 ≤ i < j ≤ n a_i = a_j}j - i.\n\nIn other words, f(a) is the total sum of distances between all pairs of equal elements.\n\nYour task is to calculate the maximum possible value of f(a) and the number of arrays yielding the maximum possible value of f(a). Two arrays are considered different, if elements at some position differ.\n\nThe first line contains a single integer m (1 ≤ m ≤ 5·10^5) — the size of the array c.\n\nThe second line contains m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ 10^6) — the array c.\n\nPrint two integers — the maximum possible value of f(a) and the number of arrays a with such value. Since both answers may be too large, print them modulo 10^9 + 7.\n\nIn the first example, all possible arrays a are permutations of [1, 2, 3, 4, 5, 6]. Since each array a will have f(a) = 0, so maximum value is f(a) = 0 and there are 6! = 720 such arrays.\n\nIn the second example, the only possible array consists of 10^6 ones and its f(a) = ∑limits_{1 ≤ i < j ≤ 10^6}j - i = 166,666,666,666,500,000 and 166,666,666,666,500,000 bmod10^9 + 7 = 499,833,345.\n\nInput:\n```\n6\n1 1 1 1 1 1\n```\n\nOutput:\n```\n0 720\n```\n\nInput:\n```\n1\n1000000\n```\n\nOutput:\n```\n499833345 1\n```\n\nInput:\n```\n7\n123 451 234 512 345 123 451\n```\n\nOutput:\n```\n339854850 882811119\n```",
+    "input": "The first line contains a single integer m (1 ≤ m ≤ 5·10^5) — the size of the array c.\n\nThe second line contains m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ 10^6) — the array c.",
+    "output": "Print two integers — the maximum possible value of f(a) and the number of arrays a with such value. Since both answers may be too large, print them modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

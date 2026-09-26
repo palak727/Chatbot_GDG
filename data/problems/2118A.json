@@ -1,0 +1,17 @@
+{
+    "id": "2118A",
+    "contest_id": 2118,
+    "problem_letter": "A",
+    "title": "A. Equal Subsequences",
+    "statement": "We call a bitstring^{∗} perfect if it has the same number of mathtt101 and mathtt010 subsequences^{†}. Construct a perfect bitstring of length n where the number of mathtt1 characters it contains is exactly k.\n\nIt can be proven that the construction is always possible. If there are multiple solutions, output any of them.\n\n^{∗}A bitstring is a string consisting only of the characters mathtt0 and mathtt1.\n\n^{†}A sequence a is a subsequence of a string b if a can be obtained from b by the deletion of several (possibly zero or all) characters.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 0 ≤ k ≤ n) — the size of the bitstring and the number of mathtt1 characters in the bitstring.\n\nFor each test case, output the constructed bitstring. If there are multiple solutions, output any of them.\n\nIn the first test case, the number of mathtt101 and mathtt010 subsequences is the same, both being 1, and the sequence contains exactly two mathtt1 characters.\n\nIn the second test case, the number of mathtt101 and mathtt010 subsequences is the same, both being 2, and the sequence contains exactly three mathtt1 characters.\n\nIn the third test case, the number of mathtt101 and mathtt010 subsequences is the same, both being 0, and the sequence contains exactly five mathtt1 characters.\n\nInput:\n```\n54 25 35 56 21 1\n```\n\nOutput:\n```\n1010\n10110\n11111\n100010\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 100, 0 ≤ k ≤ n) — the size of the bitstring and the number of mathtt1 characters in the bitstring.",
+    "output": "For each test case, output the constructed bitstring. If there are multiple solutions, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

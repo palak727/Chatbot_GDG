@@ -1,0 +1,17 @@
+{
+    "id": "2061B",
+    "contest_id": 2061,
+    "problem_letter": "B",
+    "title": "B. Kevin and Geometry",
+    "statement": "Kevin has n sticks with length a_1,a_2,…,a_n.\n\nKevin wants to select 4 sticks from these to form an isosceles trapezoid^{∗} with a positive area. Note that rectangles and squares are also considered isosceles trapezoids. Help Kevin find a solution. If no solution exists, output -1.\n\n^{∗}An isosceles trapezoid is a convex quadrilateral with a line of symmetry bisecting one pair of opposite sides. In any isosceles trapezoid, two opposite sides (the bases) are parallel, and the two other sides (the legs) are of equal length.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^8).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output 4 integers — the lengths of sticks. If no solution exists, output -1.\n\nIf there are multiple solutions, print any of them.\n\nIn the first test case, you can form an isosceles trapezoid with bases of length 5 and 10, and two legs of length 5.\n\nIn the second test case, you can form an isosceles trapezoid with two bases of length 5 and two legs of length 10. A rectangle is considered an isosceles trapezoid here.\n\nIn the third test case, there are no sticks with the same length. It's impossible to form an isosceles trapezoid.\n\nIn the fourth test case, it's impossible to form an isosceles trapezoid with a positive area.\n\nInput:\n```\n745 5 5 10410 5 10 541 2 3 441 1 1 364 2 1 5 7 1610 200 30 300 30 1004100000000 100000000 1 2\n```\n\nOutput:\n```\n5 5 5 10\n5 5 10 10\n-1\n-1\n1 1 4 5\n-1\n100000000 100000000 1 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (4 ≤ n ≤ 2·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^8).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output 4 integers — the lengths of sticks. If no solution exists, output -1.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "geometry",
+        "*1100"
+    ],
+    "rating": 1100
+}

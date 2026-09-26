@@ -1,0 +1,19 @@
+{
+    "id": "1933E",
+    "contest_id": 1933,
+    "problem_letter": "E",
+    "title": "E. Turtle vs. Rabbit Race: Optimal Trainings",
+    "statement": "Isaac begins his training. There are n running tracks available, and the i-th track (1 ≤ i ≤ n) consists of a_i equal-length sections.\n\nGiven an integer u (1 ≤ u ≤ 10^9), finishing each section can increase Isaac's ability by a certain value, described as follows:\n\nYou are also given an integer l. You must choose an integer r such that l ≤ r ≤ n and Isaac will finish each section of each track l, l + 1, …, r (that is, a total of ∑_{i=l}^r a_i = a_l + a_{l+1} + … + a_r sections).\n\nAnswer the following question: what is the optimal r you can choose that the increase in Isaac's performance is maximum possible?\n\nIf there are multiple r that maximize the increase in Isaac's performance, output the smallest r.\n\nTo increase the difficulty, you need to answer the question for q different values of l and u.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4).\n\nThe third line contains a single integer q (1 ≤ q ≤ 10^5).\n\nThe next q lines each contain two integers l and u (1 ≤ l ≤ n, 1 ≤ u ≤ 10^9) — the descriptions to each query.\n\nThe sum of n over all test cases does not exceed 2·10^5. The sum of q over all test cases does not exceed 2·10^5.\n\nFor each test case, output q integers: the i-th integer contains the optimal r for the i-th query. If there are multiple solutions, output the smallest one.\n\nFor the 1-st query in the first test case:\n\nBoth choices yield the optimal increase in performance, however we want to choose the smallest r. So we choose r = 3.\n\nFor the 2-nd query in the first test case, by choosing r = 4, Isaac finishes a_2 + a_3 + a_4 = 1 + 4 + 1 = 6 sections in total, hence his increase in performance is u+(u-1)+…+(u-5)=7+6+5+4+3+2 = 27. This is the optimal increase in performance.\n\nFor the 3-rd query in the first test case:\n\nBoth choices yield the optimal increase in performance, however we want to choose the smallest r. So we choose r = 5.\n\nHence the output for the first test case is [3, 4, 5].\n\nInput:\n```\n563 1 4 1 5 931 82 75 911011 195 10 9 6 8 3 10 7 358 561 129 31 275 4557 9 2 5 2101 372 93 334 324 152 24 22 193 72 7109 1 6 7 6 3 10 7 3 10510 433 239 36 85 14\n```\n\nOutput:\n```\n3 4 5 \n1 \n9 2 9 4 9 \n5 2 5 5 5 2 4 5 4 2 \n10 6 9 7 7 \n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe descriptions of the test cases follow.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^4).\n\nThe third line contains a single integer q (1 ≤ q ≤ 10^5).\n\nThe next q lines each contain two integers l and u (1 ≤ l ≤ n, 1 ≤ u ≤ 10^9) — the descriptions to each query.\n\nThe sum of n over all test cases does not exceed 2·10^5. The sum of q over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output q integers: the i-th integer contains the optimal r for the i-th query. If there are multiple solutions, output the smallest one.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "implementation",
+        "math",
+        "ternary search",
+        "*1500"
+    ],
+    "rating": 1500
+}

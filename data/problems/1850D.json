@@ -1,0 +1,19 @@
+{
+    "id": "1850D",
+    "contest_id": 1850,
+    "problem_letter": "D",
+    "title": "D. Balanced Round",
+    "statement": "You are the author of a Codeforces round and have prepared n problems you are going to set, problem i having difficulty a_i. You will do the following process:\n\nA round is considered balanced if and only if the absolute difference between the difficulty of any two consecutive problems is at most k (less or equal than k).\n\nWhat is the minimum number of problems you have to remove so that an arrangement of problems is balanced?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 10^9) — the number of problems, and the maximum allowed absolute difference between consecutive problems.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^9) — the difficulty of each problem.\n\nNote that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, output a single integer — the minimum number of problems you have to remove so that an arrangement of problems is balanced.\n\nFor the first test case, we can remove the first 2 problems and construct a set using problems with the difficulties [4, 5, 6], with difficulties between adjacent problems equal to |5 - 4| = 1 ≤ 1 and |6 - 5| = 1 ≤ 1.\n\nFor the second test case, we can take the single problem and compose a round using the problem with difficulty 10.\n\nInput:\n```\n75 11 2 4 5 61 2108 317 3 1 20 12 5 17 124 22 4 6 85 32 3 19 10 83 41 10 58 18 3 1 4 5 10 7 3\n```\n\nOutput:\n```\n2\n0\n5\n0\n3\n1\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two positive integers n (1 ≤ n ≤ 2·10^5) and k (1 ≤ k ≤ 10^9) — the number of problems, and the maximum allowed absolute difference between consecutive problems.\n\nThe second line of each test case contains n space-separated integers a_i (1 ≤ a_i ≤ 10^9) — the difficulty of each problem.\n\nNote that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the minimum number of problems you have to remove so that an arrangement of problems is balanced.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

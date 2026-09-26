@@ -1,0 +1,17 @@
+{
+    "id": "1832C",
+    "contest_id": 1832,
+    "problem_letter": "C",
+    "title": "C. Contrast Value",
+    "statement": "For an array of integers [a_1, a_2, …, a_n], let's call the value |a_1-a_2|+|a_2-a_3|+⋯+|a_{n-1}-a_n| the contrast of the array. Note that the contrast of an array of size 1 is equal to 0.\n\nYou are given an array of integers a. Your task is to build an array of b in such a way that all the following conditions are met:\n\nWhat is the minimum possible size of the array b?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5) — the size of the array a.\n\nThe second line contains n integers a_1, a_2,·, a_n (0 ≤ a_i ≤ 10^9) — elements of the array itself.\n\nThe sum of n over all test cases doesn't exceed 3·10^5.\n\nFor each test case, print a single integer — the minimum possible size of the array b.\n\nInput:\n```\n451 3 3 3 724 241 1 1 175 4 2 1 0 0 4\n```\n\nOutput:\n```\n2\n2\n1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5) — the size of the array a.\n\nThe second line contains n integers a_1, a_2,·, a_n (0 ≤ a_i ≤ 10^9) — elements of the array itself.\n\nThe sum of n over all test cases doesn't exceed 3·10^5.",
+    "output": "For each test case, print a single integer — the minimum possible size of the array b.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

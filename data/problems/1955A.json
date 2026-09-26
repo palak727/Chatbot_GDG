@@ -1,0 +1,16 @@
+{
+    "id": "1955A",
+    "contest_id": 1955,
+    "problem_letter": "A",
+    "title": "A. Yogurt Sale",
+    "statement": "The price of one yogurt at the \"Vosmiorochka\" store is a burles, but there is a promotion where you can buy two yogurts for b burles.\n\nMaxim needs to buy exactly n yogurts. When buying two yogurts, he can choose to buy them at the regular price or at the promotion price.\n\nWhat is the minimum amount of burles Maxim should spend to buy n yogurts?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains three integers n, a, and b (1 ≤ n ≤ 100, 1 ≤ a, b ≤ 30) — the number of yogurts Maxim wants to buy, the price for one yogurt, and the price for two yogurts on promotion.\n\nFor each test case, print in a separate line the minimum cost of buying n yogurts at \"Vosmiorochka\".\n\nIn the third test case of the example, it is more advantageous to buy three yogurts for 15 burles than two for 11 and one for 5.\n\nIn the fourth test case of the example, you need to buy four yogurts, each for 5 burles.\n\nInput:\n```\n42 5 93 5 93 5 114 5 11\n```\n\nOutput:\n```\n9\n14\n15\n20\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains three integers n, a, and b (1 ≤ n ≤ 100, 1 ≤ a, b ≤ 30) — the number of yogurts Maxim wants to buy, the price for one yogurt, and the price for two yogurts on promotion.",
+    "output": "For each test case, print in a separate line the minimum cost of buying n yogurts at \"Vosmiorochka\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

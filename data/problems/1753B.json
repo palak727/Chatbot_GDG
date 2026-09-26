@@ -1,0 +1,17 @@
+{
+    "id": "1753B",
+    "contest_id": 1753,
+    "problem_letter": "B",
+    "title": "B. Factorial Divisibility",
+    "statement": "You are given an integer x and an array of integers a_1, a_2, …, a_n. You have to determine if the number a_1! + a_2! + … + a_n! is divisible by x!.\n\nHere k! is a factorial of k — the product of all positive integers less than or equal to k. For example, 3! = 1·2·3 = 6, and 5! = 1·2·3·4·5 = 120.\n\nThe first line contains two integers n and x (1 ≤ n ≤ 500,000, 1 ≤ x ≤ 500,000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ x) — elements of given array.\n\nIn the only line print \"Yes\" (without quotes) if a_1! + a_2! + … + a_n! is divisible by x!, and \"No\" (without quotes) otherwise.\n\nIn the first example 3! + 2! + 2! + 2! + 3! + 3! = 6 + 2 + 2 + 2 + 6 + 6 = 24. Number 24 is divisible by 4! = 24.\n\nIn the second example 3! + 2! + 2! + 2! + 2! + 2! + 1! + 1! = 18, is divisible by 3! = 6.\n\nIn the third example 7! + 7! + 7! + 7! + 7! + 7! + 7! = 7·7!. It is easy to prove that this number is not divisible by 8!.\n\nInput:\n```\n6 4\n3 2 2 2 3 3\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n8 3\n3 2 2 2 2 2 1 1\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\n7 8\n7 7 7 7 7 7 7\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n10 5\n4 3 2 1 4 3 2 4 3 4\n```\n\nOutput:\n```\nNo\n```\n\nInput:\n```\n2 500000\n499999 499999\n```\n\nOutput:\n```\nNo\n```",
+    "input": "The first line contains two integers n and x (1 ≤ n ≤ 500,000, 1 ≤ x ≤ 500,000).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ x) — elements of given array.",
+    "output": "In the only line print \"Yes\" (without quotes) if a_1! + a_2! + … + a_n! is divisible by x!, and \"No\" (without quotes) otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1474A",
+    "contest_id": 1474,
+    "problem_letter": "A",
+    "title": "A. Puzzle From the Future",
+    "statement": "In the 2022 year, Mike found two binary integers a and b of length n (both of them are written only by digits 0 and 1) that can have leading zeroes. In order not to forget them, he wanted to construct integer d in the following way:\n\nUnfortunately, Mike lost integer a before he could calculate d himself. Now, to cheer him up, you want to find any binary integer a of length n such that d will be maximum possible as integer.\n\nMaximum possible as integer means that 102 > 21, 012 < 101, 021 = 21 and so on.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains the integer n (1 ≤ n ≤ 10^5) — the length of a and b.\n\nThe second line of each test case contains binary integer b of length n. The integer b consists only of digits 0 and 1.\n\nIt is guaranteed that the total sum of n over all t test cases doesn't exceed 10^5.\n\nFor each test case output one binary integer a of length n. Note, that a or b may have leading zeroes but must have the same length n.\n\nIn the first test case, b = 0 and choosing a = 1 gives d = 1 as a result.\n\nIn the second test case, b = 011 so:\n\nIn the third test case, b = 110. If you choose a = 100, you'll get d = 210 and it's the maximum possible d.\n\nIn the fourth test case, b = 111000. If you choose a = 101101, you'll get d = 212101 and it's maximum possible d.\n\nIn the fifth test case, b = 001011. If you choose a = 101110, you'll get d = 102121 and it's maximum possible d.\n\nInput:\n```\n5\n1\n0\n3\n011\n3\n110\n6\n111000\n6\n001011\n```\n\nOutput:\n```\n1\n110\n100\n101101\n101110\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains the integer n (1 ≤ n ≤ 10^5) — the length of a and b.\n\nThe second line of each test case contains binary integer b of length n. The integer b consists only of digits 0 and 1.\n\nIt is guaranteed that the total sum of n over all t test cases doesn't exceed 10^5.",
+    "output": "For each test case output one binary integer a of length n. Note, that a or b may have leading zeroes but must have the same length n.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

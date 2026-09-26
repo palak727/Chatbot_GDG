@@ -1,0 +1,17 @@
+{
+    "id": "1656A",
+    "contest_id": 1656,
+    "problem_letter": "A",
+    "title": "A. Good Pairs",
+    "statement": "You are given an array a_1, a_2, …, a_n of positive integers. A good pair is a pair of indices (i, j) with 1 ≤ i, j ≤ n such that, for all 1 ≤ k ≤ n, the following equality holds:\n\n|a_i - a_k| + |a_k - a_j| = |a_i - a_j|, where |x| denotes the absolute value of x.\n\nFind a good pair. Note that i can be equal to j.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) where a_i is the i-th element of the array.\n\nThe sum of n for all test cases is at most 2·10^5.\n\nFor each test case, print a single line with two space-separated indices i and j which form a good pair of the array. The case i=j is allowed. It can be shown that such a pair always exists. If there are multiple good pairs, print any of them.\n\nIn the first case, for i = 2 and j = 3 the equality holds true for all k:\n\nInput:\n```\n335 2 751 4 2 2 312\n```\n\nOutput:\n```\n2 3\n1 2\n1 1\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) where a_i is the i-th element of the array.\n\nThe sum of n for all test cases is at most 2·10^5.",
+    "output": "For each test case, print a single line with two space-separated indices i and j which form a good pair of the array. The case i=j is allowed. It can be shown that such a pair always exists. If there are multiple good pairs, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2067B",
+    "contest_id": 2067,
+    "problem_letter": "B",
+    "title": "B. Two Large Bags",
+    "statement": "You have two large bags of numbers. Initially, the first bag contains n numbers: a_1, a_2, …, a_n, while the second bag is empty. You are allowed to perform the following operations:\n\nYou can perform an unlimited number of operations of both types, in any order. Is it possible to make the contents of the first and second bags identical?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 1000) — the length of the array a. It is guaranteed that n is an even number.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^6.\n\nFor each test case, print \"YES\" if it is possible to equalize the contents of the bags. Otherwise, output \"NO\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).\n\nLet's analyze the sixth test case: we will show the sequence of operations that leads to the equality of the bags. Initially, the first bag consists of the numbers (3, 3, 4, 5, 3, 3), and the second bag is empty.\n\nAs we can see, as a result of these operations, it is possible to make the contents of the bags equal, so the answer exists.\n\nInput:\n```\n921 122 141 1 4 443 4 3 342 3 4 463 3 4 5 3 362 2 2 4 4 481 1 1 1 1 1 1 4109 9 9 10 10 10 10 10 10 10\n```\n\nOutput:\n```\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nYes\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 1000) — the length of the array a. It is guaranteed that n is an even number.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^6.",
+    "output": "For each test case, print \"YES\" if it is possible to equalize the contents of the bags. Otherwise, output \"NO\".\n\nYou can output each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\", \"yEs\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

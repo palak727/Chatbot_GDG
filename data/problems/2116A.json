@@ -1,0 +1,17 @@
+{
+    "id": "2116A",
+    "contest_id": 2116,
+    "problem_letter": "A",
+    "title": "A. Gellyfish and Tricolor Pansy",
+    "statement": "Gellyfish and Flower are playing a game called \"Duel\".\n\nGellyfish has a HP, while Flower has b HP.\n\nEach of them has a knight. Gellyfish's knight has c HP, while Flower's knight has d HP.\n\nThey will play a game in rounds until one of the players wins. For k = 1, 2, … in this order, they will perform the following actions:\n\nAs one of the smartest people in the world, you want to tell them who will win before the game. Assume both players play optimally.\n\nIt can be proven that the game will never end in a draw. That is, one player has a strategy to end the game in a finite number of moves.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains four integers a, b, c, d (1 ≤ a, b, c, d ≤ 10^9) — the HP of Gellyfish, the HP of Flower, the HP of Gellyfish's knight, and the HP of Flower's knight, respectively.\n\nFor each test case, if Flower will win, output \"Flower\", otherwise output \"Gellyfish\".\n\nIn the first test case, Gellyfish has only 1 HP. Therefore, no matter what Gellyfish does in the first round, Flower's knight will attack Gellyfish in the second round, allowing Flower to win.\n\nIn the second test case, Flower's knight has only 1 HP. Gellyfish will attack Flower's knight in the first round. Then Flower's knight will no longer be able to attack, allowing Gellyfish to win.\n\nInput:\n```\n51 2 3 4100 999 1 110 20 10 3012 14 13 11998 244 353 107\n```\n\nOutput:\n```\nFlower\nGellyfish\nFlower\nGellyfish\nGellyfish\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first and only line of each test case contains four integers a, b, c, d (1 ≤ a, b, c, d ≤ 10^9) — the HP of Gellyfish, the HP of Flower, the HP of Gellyfish's knight, and the HP of Flower's knight, respectively.",
+    "output": "For each test case, if Flower will win, output \"Flower\", otherwise output \"Gellyfish\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1808D",
+    "contest_id": 1808,
+    "problem_letter": "D",
+    "title": "D. Petya, Petya, Petr, and Palindromes",
+    "statement": "Petya and his friend, the robot Petya++, have a common friend — the cyborg Petr#. Sometimes Petr# comes to the friends for a cup of tea and tells them interesting problems.\n\nToday, Petr# told them the following problem.\n\nA palindrome is a sequence that reads the same from left to right as from right to left. For example, [38, 12, 8, 12, 38], [1], and [3, 8, 8, 3] are palindromes.\n\nLet's call the palindromicity of a sequence a_1, a_2, …, a_n the minimum count of elements that need to be replaced to make this sequence a palindrome. For example, the palindromicity of the sequence [38, 12, 8, 38, 38] is 1 since it is sufficient to replace the number 38 at the fourth position with the number 12. And the palindromicity of the sequence [3, 3, 5, 5, 5] is two since you can replace the first two threes with fives, and the resulting sequence [5, 5, 5, 5, 5] is a palindrome.\n\nGiven a sequence a of length n, and an odd integer k, you need to find the sum of palindromicity of all subarrays of length k, i. e., the sum of the palindromicity values for the sequences a_i, a_{i+1}, …, a_{i+k-1} for all i from 1 to n-k+1.\n\nThe students quickly solved the problem. Can you do it too?\n\nThe first line of the input contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n, k is odd) — the length of the sequence and the length of subarrays for which it is necessary to determine whether they are palindromes.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the sequence itself.\n\nOutput a single integer — the total palindromicity of all subarrays of length k.\n\nIn the first example, the palindromicity of the subarray [1, 2, 8, 2, 5] is 1, the palindromicity of the string [2, 8, 2, 5, 2] is also 1, the palindromicity of the string [8, 2, 5, 2, 8] is 0, and the palindromicity of the string [2, 5, 2, 8, 6] is 2. The total palindromicity is 1+1+0+2 = 4.\n\nIn the second example, the only substring of length 9 coincides with the entire string, and its palindromicity is 0, so the answer is also 0.\n\nInput:\n```\n8 5\n1 2 8 2 5 2 8 6\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n9 9\n1 2 3 4 5 4 3 2 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line of the input contains two integers n and k (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ n, k is odd) — the length of the sequence and the length of subarrays for which it is necessary to determine whether they are palindromes.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5) — the sequence itself.",
+    "output": "Output a single integer — the total palindromicity of all subarrays of length k.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

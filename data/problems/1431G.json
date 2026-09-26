@@ -1,0 +1,19 @@
+{
+    "id": "1431G",
+    "contest_id": 1431,
+    "problem_letter": "G",
+    "title": "G. Number Deletion Game",
+    "statement": "Alice and Bob play a game. They have a set that initially consists of n integers. The game is played in k turns. During each turn, the following events happen:\n\nInitially, the score is 0. Alice wants to maximize the resulting score, Bob wants to minimize it. Assuming that both Alice and Bob play optimally, calculate the resulting score of the game.\n\nThe first line contains two integers n and k (2 ≤ n ≤ 400, 1 ≤ k ≤ lfloorn/2rfloor) — the initial size of the set and the number of turns in the game.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the initial contents of the set. These integers are pairwise distinct.\n\nPrint one integer — the resulting score of the game (assuming that both Alice and Bob play optimally).\n\nInput:\n```\n5 2\n3 4 1 5 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n7 3\n101 108 200 1 201 109 100\n```\n\nOutput:\n```\n283\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 400, 1 ≤ k ≤ lfloorn/2rfloor) — the initial size of the set and the number of turns in the game.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^6) — the initial contents of the set. These integers are pairwise distinct.",
+    "output": "Print one integer — the resulting score of the game (assuming that both Alice and Bob play optimally).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "dp",
+        "games",
+        "greedy",
+        "*2100"
+    ],
+    "rating": 2100
+}

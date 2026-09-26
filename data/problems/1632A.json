@@ -1,0 +1,16 @@
+{
+    "id": "1632A",
+    "contest_id": 1632,
+    "problem_letter": "A",
+    "title": "A. ABC",
+    "statement": "Recently, the students of School 179 have developed a unique algorithm, which takes in a binary string s as input. However, they soon found out that if some substring t of s is a palindrome of length greater than 1, the algorithm will work incorrectly. Can the students somehow reorder the characters of s so that the algorithm will work correctly on the string?\n\nA binary string is a string where each character is either 0 or 1.\n\nA string a is a substring of a string b if a can be obtained from b by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.\n\nA palindrome is a string that reads the same backwards as forwards.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the string s.\n\nThe second line of each test case contains the string s of length n consisting only of the characters 0 and 1.\n\nFor each test case, print YES (case-insensitive) if it is possible to reorder the characters of s so that there are no substrings that are a palindrome of length greater than 1, or NO (case-insensitive) otherwise.\n\nIn the first three test cases, the given strings do not contain palindromes of length greater than 1, so the answers are YES.\n\nIn the last test case, it is impossible to reorder the characters so that the string does not contain palindromes of length greater than 1, so the answer is NO.\n\nInput:\n```\n41121020141010\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 100). Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the string s.\n\nThe second line of each test case contains the string s of length n consisting only of the characters 0 and 1.",
+    "output": "For each test case, print YES (case-insensitive) if it is possible to reorder the characters of s so that there are no substrings that are a palindrome of length greater than 1, or NO (case-insensitive) otherwise.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1884D",
+    "contest_id": 1884,
+    "problem_letter": "D",
+    "title": "D. Counting Rhyme",
+    "statement": "You are given an array of integers a_1, a_2, …, a_n.\n\nA pair of integers (i, j), such that 1 ≤ i < j ≤ n, is called good, if there does not exist an integer k (1 ≤ k ≤ n) such that a_i is divisible by a_k and a_j is divisible by a_k at the same time.\n\nPlease, find the number of good pairs.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output the number of good pairs.\n\nIn the first test case, there are no good pairs.\n\nIn the second test case, here are all the good pairs: (1, 2), (2, 3), and (2, 4).\n\nInput:\n```\n642 4 4 442 3 4 496 8 9 4 6 8 9 4 997 7 4 4 9 9 6 2 91810 18 18 15 14 4 5 6 8 9 10 12 15 16 18 17 13 112112 19 19 18 18 12 2 18 19 12 12 3 12 12 12 18 19 16 18 19 12\n```\n\nOutput:\n```\n0\n3\n26\n26\n124\n82\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output the number of good pairs.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "math",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

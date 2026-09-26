@@ -1,0 +1,19 @@
+{
+    "id": "1633F",
+    "contest_id": 1633,
+    "problem_letter": "F",
+    "title": "F. Perfect Matching",
+    "statement": "You are given a tree consisting of n vertices (numbered from 1 to n) and n-1 edges (numbered from 1 to n-1). Initially, all vertices except vertex 1 are inactive.\n\nYou have to process queries of three types:\n\nNote that you should solve the problem in online mode. It means that you can't read the whole input at once. You can read each query only after writing the answer for the last query. Use functions fflush in C++ and BufferedWriter.flush in Java languages after each writing in your program.\n\nThe first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of vertices of the tree.\n\nThen n-1 lines follow. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the endpoints of the i-th edge. These edges form a tree.\n\nThen the queries follow in the format described in the statement, one line per query. There will be at least 2 and at most n+10 queries. The last query (and only the last one) will be of type 3. Note that you can read the i-th query only if you have already given the answer for the query i-1 (except for i = 1).\n\nIf your answer for one of the queries is incorrect and the judging program recognizes it, instead of the next query, you may receive the integer 0 on a separate line. After receiving it, your program should terminate gracefully, and you will receive \"Wrong Answer\" verdict. If your program doesn't terminate, your solution may receive some other verdict, like \"Time Limit Exceeded\", \"Idleness Limit Exceeded\", etc. Note that the fact that your solution doesn't receive the integer 0, it does not mean that all your answers are correct, some of them will be checked only after your program is terminated.\n\nFor each query of type 1 or 2, print the answer on a separate line as described in the statement. Don't forget to flush the output.\n\nInput:\n```\n6\n1 4\n6 1\n3 2\n1 2\n5 1\n1 4\n2\n1 2\n2\n1 3\n2\n1 5\n1 6\n2\n3\n```\n\nOutput:\n```\n1\n1 1\n0\n0\n4\n2 1 3\n0\n0\n0\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 2·10^5) — the number of vertices of the tree.\n\nThen n-1 lines follow. The i-th line contains two integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the endpoints of the i-th edge. These edges form a tree.\n\nThen the queries follow in the format described in the statement, one line per query. There will be at least 2 and at most n+10 queries. The last query (and only the last one) will be of type 3. Note that you can read the i-th query only if you have already given the answer for the query i-1 (except for i = 1).\n\nIf your answer for one of the queries is incorrect and the judging program recognizes it, instead of the next query, you may receive the integer 0 on a separate line. After receiving it, your program should terminate gracefully, and you will receive \"Wrong Answer\" verdict. If your program doesn't terminate, your solution may receive some other verdict, like \"Time Limit Exceeded\", \"Idleness Limit Exceeded\", etc. Note that the fact that your solution doesn't receive the integer 0, it does not mean that all your answers are correct, some of them will be checked only after your program is terminated.",
+    "output": "For each query of type 1 or 2, print the answer on a separate line as described in the statement. Don't forget to flush the output.",
+    "time_limit": "12 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "interactive",
+        "trees",
+        "*2800"
+    ],
+    "rating": 2800
+}

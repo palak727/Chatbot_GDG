@@ -1,0 +1,20 @@
+{
+    "id": "1703G",
+    "contest_id": 1703,
+    "problem_letter": "G",
+    "title": "G. Good Key, Bad Key",
+    "statement": "There are n chests. The i-th chest contains a_i coins. You need to open all n chests in order from chest 1 to chest n.\n\nThere are two types of keys you can use to open a chest:\n\nYou need to use in total n keys, one for each chest. Initially, you have no coins and no keys. If you want to use a good key, then you need to buy it.\n\nDuring the process, you are allowed to go into debt; for example, if you have 1 coin, you are allowed to buy a good key worth k=3 coins, and your balance will become -2 coins.\n\nFind the maximum number of coins you can have after opening all n chests in order from chest 1 to chest n.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5; 0 ≤ k ≤ 10^9) — the number of chests and the cost of a good key respectively.\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 10^9) — the amount of coins in each chest.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case output a single integer — the maximum number of coins you can obtain after opening the chests in order from chest 1 to chest n.\n\nPlease note, that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).\n\nIn the first test case, one possible strategy is as follows:\n\nInput:\n```\n54 510 10 3 11 213 1210 10 2912 515 74 89 45 18 69 67 67 11 96 23 592 5785 60\n```\n\nOutput:\n```\n11\n0\n13\n60\n58\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5; 0 ≤ k ≤ 10^9) — the number of chests and the cost of a good key respectively.\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 10^9) — the amount of coins in each chest.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case output a single integer — the maximum number of coins you can obtain after opening the chests in order from chest 1 to chest n.\n\nPlease note, that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "*1600"
+    ],
+    "rating": 1600
+}

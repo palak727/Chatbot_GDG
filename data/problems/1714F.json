@@ -1,0 +1,18 @@
+{
+    "id": "1714F",
+    "contest_id": 1714,
+    "problem_letter": "F",
+    "title": "F. Build a Tree and That Is It",
+    "statement": "A tree is a connected undirected graph without cycles. Note that in this problem, we are talking about not rooted trees.\n\nYou are given four positive integers n, d_12, d_23 and d_31. Construct a tree such that:\n\nOutput any tree that satisfies all the requirements above, or determine that no such tree exists.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThis is followed by t test cases, each written on a separate line.\n\nEach test case consists of four positive integers n, d_12, d_23 and d_31 (3 ≤ n ≤ 2·10^5; 1 ≤ d_12, d_23, d_31 ≤ n-1).\n\nIt is guaranteed that the sum of n values for all test cases does not exceed 2·10^5.\n\nFor each test case, print YES if the suitable tree exists, and NO otherwise.\n\nIf the answer is positive, print another n-1 line each containing a description of an edge of the tree — a pair of positive integers x_i, y_i, which means that the ith edge connects vertices x_i and y_i.\n\nThe edges and vertices of the edges can be printed in any order. If there are several suitable trees, output any of them.\n\nInput:\n```\n95 1 2 15 2 2 25 2 2 35 2 2 45 3 2 34 2 1 14 3 1 14 1 2 37 1 4 1\n```\n\nOutput:\n```\nYES\n1 2\n4 1\n3 1\n2 5\nYES\n4 3\n2 5\n1 5\n5 3\nNO\nYES\n2 4\n4 1\n2 5\n5 3\nYES\n5 4\n4 1\n2 5\n3 5\nYES\n2 3\n3 4\n1 3\nNO\nYES\n4 3\n1 2\n2 4\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThis is followed by t test cases, each written on a separate line.\n\nEach test case consists of four positive integers n, d_12, d_23 and d_31 (3 ≤ n ≤ 2·10^5; 1 ≤ d_12, d_23, d_31 ≤ n-1).\n\nIt is guaranteed that the sum of n values for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print YES if the suitable tree exists, and NO otherwise.\n\nIf the answer is positive, print another n-1 line each containing a description of an edge of the tree — a pair of positive integers x_i, y_i, which means that the ith edge connects vertices x_i and y_i.\n\nThe edges and vertices of the edges can be printed in any order. If there are several suitable trees, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "trees",
+        "*1900"
+    ],
+    "rating": 1900
+}

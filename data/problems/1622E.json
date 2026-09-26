@@ -1,0 +1,18 @@
+{
+    "id": "1622E",
+    "contest_id": 1622,
+    "problem_letter": "E",
+    "title": "E. Math Test",
+    "statement": "Petya is a math teacher. n of his students has written a test consisting of m questions. For each student, it is known which questions he has answered correctly and which he has not.\n\nIf the student answers the j-th question correctly, he gets p_j points (otherwise, he gets 0 points). Moreover, the points for the questions are distributed in such a way that the array p is a permutation of numbers from 1 to m.\n\nFor the i-th student, Petya knows that he expects to get x_i points for the test. Petya wonders how unexpected the results could be. Petya believes that the surprise value of the results for students is equal to ∑limits_{i=1}^n |x_i - r_i|, where r_i is the number of points that the i-th student has got for the test.\n\nYour task is to help Petya find such a permutation p for which the surprise value of the results is maximum possible. If there are multiple answers, print any of them.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10; 1 ≤ m ≤ 10^4) — the number of students and the number of questions, respectively.\n\nThe second line contains n integers x_1, x_2, …, x_n (0 ≤ x_i ≤ (m(m+1))/2), where x_i is the number of points that the i-th student expects to get.\n\nThis is followed by n lines, the i-th line contains the string s_i (|s_i| = m; s_{i, j} ∈ {0, 1}), where s_{i, j} is 1 if the i-th student has answered the j-th question correctly, and 0 otherwise.\n\nThe sum of m for all test cases does not exceed 10^4.\n\nFor each test case, print m integers — a permutation p for which the surprise value of the results is maximum possible. If there are multiple answers, print any of them.\n\nInput:\n```\n3\n4 3\n5 1 2 2\n110\n100\n101\n100\n4 4\n6 2 0 10\n1001\n0010\n0110\n0101\n3 6\n20 3 15\n010110\n000101\n111111\n```\n\nOutput:\n```\n3 1 2 \n2 3 4 1 \n3 1 4 5 2 6 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 10; 1 ≤ m ≤ 10^4) — the number of students and the number of questions, respectively.\n\nThe second line contains n integers x_1, x_2, …, x_n (0 ≤ x_i ≤ (m(m+1))/2), where x_i is the number of points that the i-th student expects to get.\n\nThis is followed by n lines, the i-th line contains the string s_i (|s_i| = m; s_{i, j} ∈ {0, 1}), where s_{i, j} is 1 if the i-th student has answered the j-th question correctly, and 0 otherwise.\n\nThe sum of m for all test cases does not exceed 10^4.",
+    "output": "For each test case, print m integers — a permutation p for which the surprise value of the results is maximum possible. If there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "greedy",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1316B",
+    "contest_id": 1316,
+    "problem_letter": "B",
+    "title": "B. String Modification",
+    "statement": "Vasya has a string s of length n. He decides to make the following modification to the string:\n\nVasya wants to choose a k such that the string obtained after the above-mentioned modification is lexicographically smallest possible among all choices of k. Among all such k, he wants to choose the smallest one. Since he is busy attending Felicity 2020, he asks for your help.\n\nA string a is lexicographically smaller than a string b if and only if one of the following holds:\n\nEach test contains multiple test cases.\n\nThe first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the length of the string s.\n\nThe second line of each test case contains the string s of n lowercase latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.\n\nFor each testcase output two lines:\n\nIn the first line output the lexicographically smallest string s' achievable after the above-mentioned modification.\n\nIn the second line output the appropriate value of k (1 ≤ k ≤ n) that you chose for performing the modification. If there are multiple values of k that give the lexicographically smallest string, output the smallest value of k among them.\n\nIn the first testcase of the first sample, the string modification results for the sample abab are as follows :\n\nThe lexicographically smallest string achievable through modification is abab for k = 1 and 3. Smallest value of k needed to achieve is hence 1.\n\nInput:\n```\n6\n4\nabab\n6\nqwerty\n5\naaaaa\n6\nalaska\n9\nlfpbavjsm\n1\np\n```\n\nOutput:\n```\nabab\n1\nertyqw\n3\naaaaa\n1\naksala\n6\navjsmbpfl\n5\np\n1\n```",
+    "input": "Each test contains multiple test cases.\n\nThe first line contains the number of test cases t (1 ≤ t ≤ 5000). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5000) — the length of the string s.\n\nThe second line of each test case contains the string s of n lowercase latin letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5000.",
+    "output": "For each testcase output two lines:\n\nIn the first line output the lexicographically smallest string s' achievable after the above-mentioned modification.\n\nIn the second line output the appropriate value of k (1 ≤ k ≤ n) that you chose for performing the modification. If there are multiple values of k that give the lexicographically smallest string, output the smallest value of k among them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "implementation",
+        "sortings",
+        "strings",
+        "*1400"
+    ],
+    "rating": 1400
+}

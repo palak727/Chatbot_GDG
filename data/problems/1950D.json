@@ -1,0 +1,19 @@
+{
+    "id": "1950D",
+    "contest_id": 1950,
+    "problem_letter": "D",
+    "title": "D. Product of Binary Decimals",
+    "statement": "Let's call a number a binary decimal if it is a positive integer and all digits in its decimal notation are either 0 or 1. For example, 1,010,111 is a binary decimal, while 10,201 and 787,788 are not.\n\nGiven a number n, you are asked whether or not it is possible to represent n as a product of some (not necessarily distinct) binary decimals.\n\nThe first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nFor each test case, output \"YES\" (without quotes) if n can be represented as a product of binary decimals, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\", and \"Yes\" will be recognized as a positive response).\n\nThe first five test cases can be represented as a product of binary decimals as follows:\n\nInput:\n```\n111211146411222110110100000991122024124211001\n```\n\nOutput:\n```\nYES\nYES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 10^5).",
+    "output": "For each test case, output \"YES\" (without quotes) if n can be represented as a product of binary decimals, and \"NO\" (without quotes) otherwise.\n\nYou can output \"YES\" and \"NO\" in any case (for example, strings \"yES\", \"yes\", and \"Yes\" will be recognized as a positive response).",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "implementation",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

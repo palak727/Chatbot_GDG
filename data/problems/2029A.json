@@ -1,0 +1,17 @@
+{
+    "id": "2029A",
+    "contest_id": 2029,
+    "problem_letter": "A",
+    "title": "A. Set",
+    "statement": "You are given a positive integer k and a set S of all integers from l to r (inclusive).\n\nYou can perform the following two-step operation any number of times (possibly zero):\n\nFind the maximum possible number of operations that can be performed.\n\nEach test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains three integers l, r, and k (1≤ l≤ r≤ 10^9, 1≤ k≤ r-l+1) — the minimum integer in S, the maximum integer in S, and the parameter k.\n\nFor each test case, output a single integer — the maximum possible number of operations that can be performed.\n\nIn the first test case, initially, S = {3,4,5,6,7,8,9}. One possible optimal sequence of operations is:\n\nIn the second test case, initially, S={4,5,6,7,8,9}. One possible optimal sequence of operations is:\n\nIn the third test case, initially, S={7,8,9}. For each x in S, no multiple of x other than x itself can be found in S. Since k = 2, you can perform no operations.\n\nIn the fourth test case, initially, S={2,3,4,5,6,7,8,9,10}. One possible optimal sequence of operations is:\n\nInput:\n```\n83 9 24 9 17 9 22 10 2154 220 2147 294 2998 24435 31 1000000000 2\n```\n\nOutput:\n```\n2\n6\n0\n4\n0\n1\n7148\n500000000\n```",
+    "input": "Each test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains three integers l, r, and k (1≤ l≤ r≤ 10^9, 1≤ k≤ r-l+1) — the minimum integer in S, the maximum integer in S, and the parameter k.",
+    "output": "For each test case, output a single integer — the maximum possible number of operations that can be performed.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

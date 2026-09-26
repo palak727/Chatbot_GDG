@@ -1,0 +1,17 @@
+{
+    "id": "1472C",
+    "contest_id": 1472,
+    "problem_letter": "C",
+    "title": "C. Long Jumps",
+    "statement": "Polycarp found under the Christmas tree an array a of n elements and instructions for playing with it:\n\nFor example, if n = 5 and a = [7, 3, 1, 2, 3], then the following game options are possible:\n\nHelp Polycarp to find out the maximum score he can get if he chooses the starting index in an optimal way.\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output on a separate line one number — the maximum score that Polycarp can get by playing the game on the corresponding array according to the instruction from the statement. Note that Polycarp chooses any starting position from 1 to n in such a way as to maximize his result.\n\nThe first test case is explained in the statement.\n\nIn the second test case, the maximum score can be achieved by choosing i = 1.\n\nIn the third test case, the maximum score can be achieved by choosing i = 2.\n\nIn the fourth test case, the maximum score can be achieved by choosing i = 1.\n\nInput:\n```\n4\n5\n7 3 1 2 3\n3\n2 1 4\n6\n2 1000 2 3 995 1\n5\n1 1 1 1 1\n```\n\nOutput:\n```\n7\n6\n1000\n5\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nThe first line of each test case contains one integer n (1 ≤ n ≤ 2·10^5) — the length of the array a.\n\nThe next line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output on a separate line one number — the maximum score that Polycarp can get by playing the game on the corresponding array according to the instruction from the statement. Note that Polycarp chooses any starting position from 1 to n in such a way as to maximize his result.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "graphs",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1789D",
+    "contest_id": 1789,
+    "problem_letter": "D",
+    "title": "D. Serval and Shift-Shift-Shift",
+    "statement": "Serval has two n-bit binary integer numbers a and b. He wants to share those numbers with Toxel.\n\nSince Toxel likes the number b more, Serval decides to change a into b by some (possibly zero) operations. In an operation, Serval can choose any positive integer k between 1 and n, and change a into one of the following number:\n\nIn other words, the operation moves every bit of a left or right by k positions, where the overflowed bits are removed, and the missing bits are padded with 0. The bitwise XOR of the shift result and the original a is assigned back to a.\n\nServal does not have much time. He wants to perform no more than n operations to change a into b. Please help him to find out an operation sequence, or determine that it is impossible to change a into b in at most n operations. You do not need to minimize the number of operations.\n\nIn this problem, xoplus y denotes the bitwise XOR operation of x and y. all k and agg k denote the logical left shift and logical right shift.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤2·10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤2·10^3) — the number of bits in numbers a and b.\n\nThe second and the third line of each test case contain a binary string of length n, representing a and b, respectively. The strings contain only characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^3.\n\nFor each test case, if it is impossible to change a into b in at most n operations, print a single integer -1.\n\nOtherwise, in the first line, print the number of operations m (0≤ m≤ n).\n\nIf m > 0, in the second line, print m integers k_1,k_2,…,k_m representing the operations. If 1≤ k_i≤ n, it means logical left shift a by k_i positions. If -n≤ k_i≤-1, it means logical right shift a by -k_i positions.\n\nIf there are multiple solutions, print any of them.\n\nIn the first test case:\n\nThe first operation changes a into requirecancel00111opluscancel00111underline000=11111.\n\nThe second operation changes a into requirecancel11111oplusunderline00111cancel11=11000.\n\nThe bits with strikethroughs are overflowed bits that are removed. The bits with underline are padded bits.\n\nIn the second test case, a is already equal to b, so no operations are needed.\n\nIn the third test case, it can be shown that a cannot be changed into b.\n\nInput:\n```\n3500111110001113001000\n```\n\nOutput:\n```\n2\n3 -2\n0\n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1≤ t≤2·10^3). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤2·10^3) — the number of bits in numbers a and b.\n\nThe second and the third line of each test case contain a binary string of length n, representing a and b, respectively. The strings contain only characters 0 and 1.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^3.",
+    "output": "For each test case, if it is impossible to change a into b in at most n operations, print a single integer -1.\n\nOtherwise, in the first line, print the number of operations m (0≤ m≤ n).\n\nIf m > 0, in the second line, print m integers k_1,k_2,…,k_m representing the operations. If 1≤ k_i≤ n, it means logical left shift a by k_i positions. If -n≤ k_i≤-1, it means logical right shift a by -k_i positions.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

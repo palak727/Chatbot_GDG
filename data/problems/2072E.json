@@ -1,0 +1,22 @@
+{
+    "id": "2072E",
+    "contest_id": 2072,
+    "problem_letter": "E",
+    "title": "E. Do You Love Your Hero and His Two-Hit Multi-Target Attacks?",
+    "statement": "Akito decided to study a new powerful spell. Since it possesses immeasurable strength, it certainly requires a lot of space and careful preparation. For this, Akito went out into the field. Let's represent the field as a Cartesian coordinate system.\n\nFor the spell, Akito needs to place 0 ≤ n ≤ 500 staffs at distinct integer coordinates in the field such that there will be exactly k pairs (i, j) such that 1 ≤ i < j ≤ n and ρ(i, j) = d(i, j).\n\nHere, for two points with integer coordinates a = (x_a, y_a) and b = (x_b, y_b), ρ(a, b) = √((x_a - x_b)^2 + (y_a - y_b)^2) and d(a, b) = |x_a - x_b| + |y_a - y_b|.\n\nThe first line of input contains a single number t (1 ≤ t ≤ 1000) — the number of test cases.\n\nIn the only line of each test case, there is a single number k (0 ≤ k ≤ 10^5) — the number of pairs of staffs for which the equality ρ(i, j) = d(i, j) must hold.\n\nFor each test case, the first line of output should print the number n (0 ≤ n ≤ 500) — the number of placed staffs.\n\nIn the following n lines, pairs of integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) should be printed — the coordinates of the i-th staff. The points in which staffs stand must be distinct.\n\nInput:\n```\n3025\n```\n\nOutput:\n```\n6\n69 52\n4 20\n789 9308706\n1337 1337\n-1234 -5678\n23456178 707\n10\n-236 -346262358\n273568 6435267\n2365437 31441367\n246574 -45642372\n-236 56\n4743623 -192892 \n10408080 -8173135\n-237415357 31441367\n-78125638 278\n56 143231\n5\n1 1\n2 1\n1 5\n3 5\n1 10\n```",
+    "input": "The first line of input contains a single number t (1 ≤ t ≤ 1000) — the number of test cases.\n\nIn the only line of each test case, there is a single number k (0 ≤ k ≤ 10^5) — the number of pairs of staffs for which the equality ρ(i, j) = d(i, j) must hold.",
+    "output": "For each test case, the first line of output should print the number n (0 ≤ n ≤ 500) — the number of placed staffs.\n\nIn the following n lines, pairs of integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) should be printed — the coordinates of the i-th staff. The points in which staffs stand must be distinct.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "constructive algorithms",
+        "dp",
+        "geometry",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

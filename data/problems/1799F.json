@@ -1,0 +1,20 @@
+{
+    "id": "1799F",
+    "contest_id": 1799,
+    "problem_letter": "F",
+    "title": "F. Halve or Subtract",
+    "statement": "You have an array of positive integers a_1, a_2, …, a_n, of length n. You are also given a positive integer b.\n\nYou are allowed to perform the following operations (possibly several) times in any order:\n\nHowever, you must also follow these rules:\n\nThe cost of an array is the sum of its elements. Find the minimum cost of a you can achieve by performing these operations.\n\nInput consists of multiple test cases. The first line contains a single integer t, the number of test cases (1 ≤ t ≤ 5000).\n\nThe first line of each test case contains n, b, k_1, and k_2 (1 ≤ n ≤ 5000, 1 ≤ b ≤ 10^9, 0 ≤ k_1, k_2 ≤ n).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n describing the array a (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed the sum of n over all test cases does not exceed 5000.\n\nFor each test case, print the minimum cost of a you can achieve by performing the operations.\n\nIn the first test case, you can do the following:\n\nAfter these operations, the array is a = [5, 3, 3] has a cost 5 + 3 + 3 = 11. We can show that this is the minimum achievable cost.\n\nIn the second test case, note that we are not allowed to perform operation 1 more than once on a_1. So it is optimal to apply operation 1 once to each a_1 and a_2. Alternatively we could apply operation 1 only once to a_1, since it has no effect on a_2.\n\nIn the third test case, here is one way to achieve a cost of 23:\n\nAfter these operations, a = [2, 8, 3, 7, 3]. The cost of a is 2 + 8 + 3 + 7 + 3 = 23. We can show that this is the minimum achievable cost.\n\nInput:\n```\n73 2 1 19 3 52 1 2 01000000000 15 3 1 12 8 3 19 36 9 4 21 2 3 4 5 63 10 3 31 2 35 1 0 0999999999 999999999 999999999 999999999 9999999995 5 4 35 9 10 7 4\n```\n\nOutput:\n```\n11\n500000001\n23\n6\n0\n4999999995\n6\n```",
+    "input": "Input consists of multiple test cases. The first line contains a single integer t, the number of test cases (1 ≤ t ≤ 5000).\n\nThe first line of each test case contains n, b, k_1, and k_2 (1 ≤ n ≤ 5000, 1 ≤ b ≤ 10^9, 0 ≤ k_1, k_2 ≤ n).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n describing the array a (1 ≤ a_i ≤ 10^9).\n\nIt is guaranteed the sum of n over all test cases does not exceed 5000.",
+    "output": "For each test case, print the minimum cost of a you can achieve by performing the operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "dp",
+        "greedy",
+        "sortings",
+        "*2700"
+    ],
+    "rating": 2700
+}

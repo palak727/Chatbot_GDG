@@ -1,0 +1,17 @@
+{
+    "id": "1238A",
+    "contest_id": 1238,
+    "problem_letter": "A",
+    "title": "A. Prime Subtraction",
+    "statement": "You are given two integers x and y (it is guaranteed that x > y). You may choose any prime integer p and subtract it any number of times from x. Is it possible to make x equal to y?\n\nRecall that a prime number is a positive integer that has exactly two positive divisors: 1 and this integer itself. The sequence of prime numbers starts with 2, 3, 5, 7, 11.\n\nYour program should solve t independent test cases.\n\nThe first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThen t lines follow, each describing a test case. Each line contains two integers x and y (1 ≤ y < x ≤ 10^18).\n\nFor each test case, print YES if it is possible to choose a prime number p and subtract it any number of times from x so that x becomes equal to y. Otherwise, print NO.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes, and YES will all be recognized as positive answer).\n\nIn the first test of the example you may choose p = 2 and subtract it once.\n\nIn the second test of the example you may choose p = 5 and subtract it twice. Note that you cannot choose p = 7, subtract it, then choose p = 3 and subtract it again.\n\nIn the third test of the example you may choose p = 3 and subtract it 333333333333333333 times.\n\nInput:\n```\n4\n100 98\n42 32\n1000000000000000000 1\n41 40\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThen t lines follow, each describing a test case. Each line contains two integers x and y (1 ≤ y < x ≤ 10^18).",
+    "output": "For each test case, print YES if it is possible to choose a prime number p and subtract it any number of times from x so that x becomes equal to y. Otherwise, print NO.\n\nYou may print every letter in any case you want (so, for example, the strings yEs, yes, Yes, and YES will all be recognized as positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1481B",
+    "contest_id": 1481,
+    "problem_letter": "B",
+    "title": "B. New Colony",
+    "statement": "After reaching your destination, you want to build a new colony on the new planet. Since this planet has many mountains and the colony must be built on a flat surface you decided to flatten the mountains using boulders (you are still dreaming so this makes sense to you).\n\nYou are given an array h_1, h_2, …, h_n, where h_i is the height of the i-th mountain, and k — the number of boulders you have.\n\nYou will start throwing boulders from the top of the first mountain one by one and they will roll as follows (let's assume that the height of the current mountain is h_i):\n\nYou want to find the position of the k-th boulder or determine that it will fall into the waste collection system.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of two lines. The first line in each test case contains two integers n and k (1 ≤ n ≤ 100; 1 ≤ k ≤ 10^9) — the number of mountains and the number of boulders.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 100) — the height of the mountains.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 100.\n\nFor each test case, print -1 if the k-th boulder will fall into the collection system. Otherwise, print the position of the k-th boulder.\n\nLet's simulate the first case:\n\nThe positions where each boulder stopped are the following: [2,3,2].\n\nIn the second case, all 7 boulders will stop right at the first mountain rising its height from 1 to 8.\n\nThe third case is similar to the first one but now you'll throw 5 boulders. The first three will roll in the same way as in the first test case. After that, mountain heights will be equal to [4, 3, 3, 3], that's why the other two boulders will fall into the collection system.\n\nIn the fourth case, the first and only boulders will fall straight into the collection system.\n\nInput:\n```\n4\n4 3\n4 1 2 3\n2 7\n1 8\n4 5\n4 1 2 3\n3 1\n5 3 1\n```\n\nOutput:\n```\n2\n1\n-1\n-1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nEach test case consists of two lines. The first line in each test case contains two integers n and k (1 ≤ n ≤ 100; 1 ≤ k ≤ 10^9) — the number of mountains and the number of boulders.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 100) — the height of the mountains.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 100.",
+    "output": "For each test case, print -1 if the k-th boulder will fall into the collection system. Otherwise, print the position of the k-th boulder.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

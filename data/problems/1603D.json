@@ -1,0 +1,18 @@
+{
+    "id": "1603D",
+    "contest_id": 1603,
+    "problem_letter": "D",
+    "title": "D. Artistic Partition",
+    "statement": "For two positive integers l and r (l ≤ r) let c(l, r) denote the number of integer pairs (i, j) such that l ≤ i ≤ j ≤ r and gcd(i, j) ≥ l. Here, gcd(i, j) is the greatest common divisor (GCD) of integers i and j.\n\nYouKn0wWho has two integers n and k where 1 ≤ k ≤ n. Let f(n, k) denote the minimum of ∑limits_{i=1}^kc(x_i+1,x_{i+1}) over all integer sequences 0=x_1 < x_2 < … < x_k < x_{k+1}=n.\n\nHelp YouKn0wWho find f(n, k).\n\nThe first line contains a single integer t (1 ≤ t ≤ 3·10^5) — the number of test cases.\n\nThe first and only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).\n\nFor each test case, print a single integer — f(n, k).\n\nIn the first test case, YouKn0wWho can select the sequence [0, 2, 6]. So f(6, 2) = c(1, 2) + c(3, 6) = 3 + 5 = 8 which is the minimum possible.\n\nInput:\n```\n4\n6 2\n4 4\n3 1\n10 3\n```\n\nOutput:\n```\n8\n4\n6\n11\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 3·10^5) — the number of test cases.\n\nThe first and only line of each test case contains two integers n and k (1 ≤ k ≤ n ≤ 10^5).",
+    "output": "For each test case, print a single integer — f(n, k).",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "divide and conquer",
+        "dp",
+        "number theory",
+        "*3000"
+    ],
+    "rating": 3000
+}

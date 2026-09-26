@@ -1,0 +1,17 @@
+{
+    "id": "1987C",
+    "contest_id": 1987,
+    "problem_letter": "C",
+    "title": "C. Basil's Garden",
+    "statement": "There are n flowers in a row, the i-th of them initially has a positive height of h_i meters.\n\nEvery second, the wind will blow from the left, causing the height of some flowers to decrease.\n\nSpecifically, every second, for each i from 1 to n, in this order, the following happens:\n\nHow many seconds will pass before h_i=0 for all 1 ≤ i ≤ n for the first time?\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of flowers.\n\nThe second line of each test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10 ^ 9) — the heights of the flowers.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the number of seconds that will pass before h_i=0 for all 1 ≤ i ≤ n.\n\nIn the first test case, the flower heights change as follows: [1, 1, 2] → [1, 1, 1] → [1, 1, 0] → [1, 0, 0] → [0, 0, 0].\n\nIn the second test case, the flower heights change as follows: [3, 1] → [2, 0] → [1, 0] → [0, 0].\n\nInput:\n```\n431 1 223 11957 4 4 3 2\n```\n\nOutput:\n```\n4\n3\n9\n7\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of flowers.\n\nThe second line of each test case contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 10 ^ 9) — the heights of the flowers.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the number of seconds that will pass before h_i=0 for all 1 ≤ i ≤ n.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

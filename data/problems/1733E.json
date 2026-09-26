@@ -1,0 +1,18 @@
+{
+    "id": "1733E",
+    "contest_id": 1733,
+    "problem_letter": "E",
+    "title": "E. Conveyor",
+    "statement": "There is a conveyor with 120 rows and 120 columns. Each row and column is numbered from 0 to 119, and the cell in i-th row and j-th column is denoted as (i, j). The top leftmost cell is (0, 0). Each cell has a belt, and all belts are initially facing to the right.\n\nInitially, a slime ball is on the belt of (0, 0), and other belts are empty. Every second, the state of the conveyor changes as follows:\n\nThere are q queries, each being three integers t, x, and y. You have to find out if there is a slime at the cell (x, y) after t seconds from the start. Can you do it?\n\nThe first line contains one integer q (1 ≤ q ≤ 10^4) — the number of queries.\n\nThe only line of each query contains three integers t, x, and y (0 ≤ t ≤ 10^18, 0 ≤ x, y < 120).\n\nPrint the answer for each test case, one per line. If there is a slime ball in the cell (x, y) after t seconds from the initial state, print \"YES\". Otherwise, print \"NO\".\n\nThe state of conveyor with t = 0. Red arrow represents the direction of each belt, and blue figure represents slime.\n\nThe state of conveyor with t = 1.\n\nThe state of conveyor with t = 2.\n\nInput:\n```\n61 1 05 1 30 0 02 4 52 0 21547748756 100 111\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains one integer q (1 ≤ q ≤ 10^4) — the number of queries.\n\nThe only line of each query contains three integers t, x, and y (0 ≤ t ≤ 10^18, 0 ≤ x, y < 120).",
+    "output": "Print the answer for each test case, one per line. If there is a slime ball in the cell (x, y) after t seconds from the initial state, print \"YES\". Otherwise, print \"NO\".",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

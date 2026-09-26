@@ -1,0 +1,21 @@
+{
+    "id": "1479D",
+    "contest_id": 1479,
+    "problem_letter": "D",
+    "title": "D. Odd Mineral Resource",
+    "statement": "In Homer's country, there are n cities numbered 1 to n and they form a tree. That is, there are (n-1) undirected roads between these n cities and every two cities can reach each other through these roads.\n\nHomer's country is an industrial country, and each of the n cities in it contains some mineral resource. The mineral resource of city i is labeled a_i.\n\nHomer is given the plans of the country in the following q years. The plan of the i-th year is described by four parameters u_i, v_i, l_i and r_i, and he is asked to find any mineral resource c_i such that the following two conditions hold:\n\nAs the best friend of Homer, he asks you for help. For every plan, find any such mineral resource c_i, or tell him that there doesn't exist one.\n\nThe first line contains two integers n (1 ≤ n ≤ 3·10^5) and q (1 ≤ q ≤ 3·10^5), indicating the number of cities and the number of plans.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThen the i-th line of the following (n-1) lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n) with x_i ≠ y_i, indicating that there is a bidirectional road between city x_i and city y_i. It is guaranteed that the given roads form a tree.\n\nThen the i-th line of the following q lines contains four integers u_i, v_i, l_i, r_i (1 ≤ u_i ≤ n, 1 ≤ v_i ≤ n, 1 ≤ l_i ≤ r_i ≤ n), indicating the plan of the i-th year.\n\nPrint q lines, the i-th of which contains an integer c_i such that\n\nIn the first three queries, there are four cities between city 3 and city 5, which are city 1, city 2, city 3 and city 5. The mineral resources appear in them are mineral resources 1 (appears in city 3 and city 5), 2 (appears in city 2) and 3 (appears in city 1). It is noted that\n\nInput:\n```\n6 8\n3 2 1 3 1 3\n1 2\n1 3\n2 4\n2 5\n4 6\n3 5 1 1\n3 5 1 3\n3 5 1 3\n1 1 2 2\n1 1 3 3\n1 4 1 5\n1 6 1 3\n1 6 1 3\n```\n\nOutput:\n```\n-1\n2\n3\n-1\n3\n2\n2\n3\n```",
+    "input": "The first line contains two integers n (1 ≤ n ≤ 3·10^5) and q (1 ≤ q ≤ 3·10^5), indicating the number of cities and the number of plans.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nThen the i-th line of the following (n-1) lines contains two integers x_i and y_i (1 ≤ x_i, y_i ≤ n) with x_i ≠ y_i, indicating that there is a bidirectional road between city x_i and city y_i. It is guaranteed that the given roads form a tree.\n\nThen the i-th line of the following q lines contains four integers u_i, v_i, l_i, r_i (1 ≤ u_i ≤ n, 1 ≤ v_i ≤ n, 1 ≤ l_i ≤ r_i ≤ n), indicating the plan of the i-th year.",
+    "output": "Print q lines, the i-th of which contains an integer c_i such that",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "binary search",
+        "bitmasks",
+        "brute force",
+        "data structures",
+        "probabilities",
+        "trees",
+        "*2900"
+    ],
+    "rating": 2900
+}

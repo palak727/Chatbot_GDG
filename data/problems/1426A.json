@@ -1,0 +1,17 @@
+{
+    "id": "1426A",
+    "contest_id": 1426,
+    "problem_letter": "A",
+    "title": "A. Floor Number",
+    "statement": "Vasya goes to visit his classmate Petya. Vasya knows that Petya's apartment number is n.\n\nThere is only one entrance in Petya's house and the distribution of apartments is the following: the first floor contains 2 apartments, every other floor contains x apartments each. Apartments are numbered starting from one, from the first floor. I.e. apartments on the first floor have numbers 1 and 2, apartments on the second floor have numbers from 3 to (x + 2), apartments on the third floor have numbers from (x + 3) to (2·x + 2), and so on.\n\nYour task is to find the number of floor on which Petya lives. Assume that the house is always high enough to fit at least n apartments.\n\nYou have to answer t independent test cases.\n\nThe first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers n and x (1 ≤ n, x ≤ 1000) — the number of Petya's apartment and the number of apartments on each floor of the house except the first one (there are two apartments on the first floor).\n\nFor each test case, print the answer: the number of floor on which Petya lives.\n\nConsider the first test case of the example: the first floor contains apartments with numbers 1 and 2, the second one contains apartments with numbers 3, 4 and 5, the third one contains apartments with numbers 6, 7 and 8. Therefore, Petya lives on the third floor.\n\nIn the second test case of the example, Petya lives in the apartment 1 which is on the first floor.\n\nInput:\n```\n4\n7 3\n1 5\n22 5\n987 13\n```\n\nOutput:\n```\n3\n1\n5\n77\n```",
+    "input": "The first line of the input contains one integer t (1 ≤ t ≤ 1000) — the number of test cases. Then t test cases follow.\n\nThe only line of the test case contains two integers n and x (1 ≤ n, x ≤ 1000) — the number of Petya's apartment and the number of apartments on each floor of the house except the first one (there are two apartments on the first floor).",
+    "output": "For each test case, print the answer: the number of floor on which Petya lives.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

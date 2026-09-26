@@ -1,0 +1,18 @@
+{
+    "id": "2004G",
+    "contest_id": 2004,
+    "problem_letter": "G",
+    "title": "G. Substring Compression",
+    "statement": "Let's define the operation of compressing a string t, consisting of at least 2 digits from 1 to 9, as follows:\n\nFor example, for a string \"12345\", one could do the following: split it into (\"1\", \"23\", \"4\", \"5\"), and write \"235555\".\n\nLet the function f(t) for a string t return the minimum length of the string that can be obtained as a result of that process.\n\nYou are given a string s, consisting of n digits from 1 to 9, and an integer k. Calculate the value of the function f for all contiguous substrings of s of length exactly k.\n\nThe first line contains two integers n and k (2 ≤ k ≤ n ≤ 2·10^5).\n\nThe second line contains the string s (|s| = n), consisting only of digits from 1 to 9.\n\nOutput n - k + 1 integers — f(s_{1,k}), f(s_{2,k+1}), …, f(s_{n - k + 1, n}).\n\nInput:\n```\n4 45999\n```\n\nOutput:\n```\n14 \n```\n\nInput:\n```\n10 31111111111\n```\n\nOutput:\n```\n2 2 2 2 2 2 2 2 \n```\n\nInput:\n```\n11 449998641312\n```\n\nOutput:\n```\n12 18 17 15 12 7 7 2 \n```",
+    "input": "The first line contains two integers n and k (2 ≤ k ≤ n ≤ 2·10^5).\n\nThe second line contains the string s (|s| = n), consisting only of digits from 1 to 9.",
+    "output": "Output n - k + 1 integers — f(s_{1,k}), f(s_{2,k+1}), …, f(s_{n - k + 1, n}).",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "matrices",
+        "*3200"
+    ],
+    "rating": 3200
+}

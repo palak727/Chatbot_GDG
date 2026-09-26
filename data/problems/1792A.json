@@ -1,0 +1,17 @@
+{
+    "id": "1792A",
+    "contest_id": 1792,
+    "problem_letter": "A",
+    "title": "A. GamingForces",
+    "statement": "Monocarp is playing a computer game. He's going to kill n monsters, the i-th of them has h_i health.\n\nMonocarp's character has two spells, either of which he can cast an arbitrary number of times (possibly, zero) and in an arbitrary order:\n\nWhen a monster's health becomes 0, it dies.\n\nWhat's the minimum number of spell casts Monocarp should perform in order to kill all monsters?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 100) — the number of monsters.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 100) — the health of each monster.\n\nThe sum of n over all testcases doesn't exceed 2·10^4.\n\nFor each testcase, print a single integer — the minimum number of spell casts Monocarp should perform in order to kill all monsters.\n\nIn the first testcase, the initial health list is [1, 2, 1, 2]. Three spells are casted:\n\nIn the second testcase, the initial health list is [2, 4, 2]. Three spells are casted:\n\nIn the third testcase, the initial health list is [1, 2, 3, 4, 5]. Five spells are casted. The i-th of them kills the i-th monster with the second spell. Health list sequence: [1, 2, 3, 4, 5] → [0, 2, 3, 4, 5] → [0, 0, 3, 4, 5] → [0, 0, 0, 4, 5] → [0, 0, 0, 0, 5] → [0, 0, 0, 0, 0].\n\nInput:\n```\n341 2 1 232 4 251 2 3 4 5\n```\n\nOutput:\n```\n3\n3\n5\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 100) — the number of monsters.\n\nThe second line contains n integers h_1, h_2, …, h_n (1 ≤ h_i ≤ 100) — the health of each monster.\n\nThe sum of n over all testcases doesn't exceed 2·10^4.",
+    "output": "For each testcase, print a single integer — the minimum number of spell casts Monocarp should perform in order to kill all monsters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

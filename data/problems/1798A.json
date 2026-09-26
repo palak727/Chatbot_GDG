@@ -1,0 +1,18 @@
+{
+    "id": "1798A",
+    "contest_id": 1798,
+    "problem_letter": "A",
+    "title": "A. Showstopper",
+    "statement": "You are given two arrays a_1, a_2, …, a_n and b_1, b_2, …, b_n.\n\nIn one operation, you can choose any integer i from 1 to n and swap the numbers a_i and b_i.\n\nDetermine whether, after using any (possibly zero) number of operations, the following two conditions can be satisfied simultaneously:\n\nHere max(c_1, c_2, …, c_k) denotes the maximum number among c_1, c_2, …, c_k. For example, max(3, 5, 4) = 5, max(1, 7, 7) = 7, max(6, 2) = 6.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — elements of the first array.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100) — elements of the second array.\n\nFor each test case, print \"Yes\" if after using any (possibly zero) number of operations the conditions described above are satisfied. Otherwise, print \"No\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, you can swap the numbers a_3 and b_3, after which the array a becomes equal to [7, 9, 9], and the array b becomes equal to [7, 6, 7], and both conditions are met.\n\nIn the second test case, it can be proved that it is impossible to satisfy both conditions.\n\nIn the third test case, you can swap the numbers a_1 and b_1, after which the array a becomes equal to [99, 99], and the array b becomes equal to [100, 100], and both conditions are satisfied.\n\nIn fifth test case, you can swap a_7 and b_7, a_8 and b_8, a_9 and b_9, after which the array a becomes equal to [1, 2, 3, 4, 5, 6, 6, 6, 6], and the array b becomes equal to [9, 9, 9, 9, 9, 9, 7, 8, 9], and both conditions are satisfied.\n\nInput:\n```\n737 9 77 6 9410 10 15 1510 16 15 152100 9999 10011191 2 3 4 5 6 7 8 99 9 9 9 9 9 6 6 671 1 2 2 1 1 21 2 1 2 1 2 1230 45 30\n```\n\nOutput:\n```\nYes\nNo\nYes\nYes\nYes\nNo\nNo\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — elements of the first array.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100) — elements of the second array.",
+    "output": "For each test case, print \"Yes\" if after using any (possibly zero) number of operations the conditions described above are satisfied. Otherwise, print \"No\".\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

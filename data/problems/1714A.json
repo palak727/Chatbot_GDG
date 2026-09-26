@@ -1,0 +1,17 @@
+{
+    "id": "1714A",
+    "contest_id": 1714,
+    "problem_letter": "A",
+    "title": "A. Everyone Loves to Sleep",
+    "statement": "Vlad, like everyone else, loves to sleep very much.\n\nEvery day Vlad has to do n things, each at a certain time. For each of these things, he has an alarm clock set, the i-th of them is triggered on h_i hours m_i minutes every day (0 ≤ h_i < 24, 0 ≤ m_i < 60). Vlad uses the 24-hour time format, so after h=12, m=59 comes h=13, m=0 and after h=23, m=59 comes h=0, m=0.\n\nThis time Vlad went to bed at H hours M minutes (0 ≤ H < 24, 0 ≤ M < 60) and asks you to answer: how much he will be able to sleep until the next alarm clock.\n\nIf any alarm clock rings at the time when he went to bed, then he will sleep for a period of time of length 0.\n\nThe first line of input data contains an integer t (1 ≤ t ≤ 100) — the number of test cases in the test.\n\nThe first line of the case contains three integers n, H and M (1 ≤ n ≤ 10, 0 ≤ H < 24, 0 ≤ M < 60) — the number of alarms and the time Vlad went to bed.\n\nThe following n lines contain two numbers each h_i and m_i (0 ≤ h_i < 24, 0 ≤ m_i < 60) — the time of the i alarm. It is acceptable that two or more alarms will trigger at the same time.\n\nNumbers describing time do not contain leading zeros.\n\nOutput t lines, each containing the answer to the corresponding test case. As an answer, output two numbers — the number of hours and minutes that Vlad will sleep, respectively. If any alarm clock rings at the time when he went to bed, the answer will be 0 0.\n\nInput:\n```\n31 6 138 03 6 012 3014 456 02 23 3520 1510 30\n```\n\nOutput:\n```\n1 47\n0 0\n10 55\n```",
+    "input": "The first line of input data contains an integer t (1 ≤ t ≤ 100) — the number of test cases in the test.\n\nThe first line of the case contains three integers n, H and M (1 ≤ n ≤ 10, 0 ≤ H < 24, 0 ≤ M < 60) — the number of alarms and the time Vlad went to bed.\n\nThe following n lines contain two numbers each h_i and m_i (0 ≤ h_i < 24, 0 ≤ m_i < 60) — the time of the i alarm. It is acceptable that two or more alarms will trigger at the same time.\n\nNumbers describing time do not contain leading zeros.",
+    "output": "Output t lines, each containing the answer to the corresponding test case. As an answer, output two numbers — the number of hours and minutes that Vlad will sleep, respectively. If any alarm clock rings at the time when he went to bed, the answer will be 0 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1463F",
+    "contest_id": 1463,
+    "problem_letter": "F",
+    "title": "F. Max Correct Set",
+    "statement": "Let's call the set of positive integers S correct if the following two conditions are met:\n\nFor the given values n, x, and y, you have to find the maximum size of the correct set.\n\nA single line contains three integers n, x and y (1 ≤ n ≤ 10^9; 1 ≤ x, y ≤ 22).\n\nPrint one integer — the maximum size of the correct set.\n\nInput:\n```\n10 2 5\n```\n\nOutput:\n```\n5\n```\n\nInput:\n```\n21 4 6\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n1337 7 7\n```\n\nOutput:\n```\n672\n```\n\nInput:\n```\n455678451 22 17\n```\n\nOutput:\n```\n221997195\n```",
+    "input": "A single line contains three integers n, x and y (1 ≤ n ≤ 10^9; 1 ≤ x, y ≤ 22).",
+    "output": "Print one integer — the maximum size of the correct set.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

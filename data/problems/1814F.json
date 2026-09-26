@@ -1,0 +1,18 @@
+{
+    "id": "1814F",
+    "contest_id": 1814,
+    "problem_letter": "F",
+    "title": "F. Communication Towers",
+    "statement": "There are n communication towers, numbered from 1 to n, and m bidirectional wires between them. Each tower has a certain set of frequencies that it accepts, the i-th of them accepts frequencies from l_i to r_i.\n\nLet's say that a tower b is accessible from a tower a, if there exists a frequency x and a sequence of towers a=v_1, v_2, …, v_k=b, where consecutive towers in the sequence are directly connected by a wire, and each of them accepts frequency x. Note that accessibility is not transitive, i. e if b is accessible from a and c is accessible from b, then c may not be accessible from a.\n\nYour task is to determine the towers that are accessible from the 1-st tower.\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 0 ≤ m ≤ 4·10^5) — the number of communication towers and the number of wires, respectively.\n\nThen n lines follows, the i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 2·10^5) — the boundaries of the acceptable frequencies for the i-th tower.\n\nThen m lines follows, the i-th of them contains two integers v_i and u_i (1 ≤ v_i, u_i ≤ n; v_i ≠ u_i) — the i-th wire that connects towers v_i and u_i. There are no two wires connecting the same pair of towers.\n\nIn a single line, print distinct integers from 1 to n in ascending order — the indices of the communication towers that are accessible from the 1-st tower.\n\nInput:\n```\n6 5\n3 5\n1 2\n2 4\n2 3\n3 3\n4 6\n1 3\n6 1\n3 5\n3 6\n2 3\n```\n\nOutput:\n```\n1 3 5 6 \n```\n\nInput:\n```\n3 1\n2 3\n1 4\n1 1\n1 3\n```\n\nOutput:\n```\n1 \n```\n\nInput:\n```\n5 5\n1 3\n2 3\n2 2\n3 5\n2 4\n1 2\n2 3\n3 4\n4 1\n4 5\n```\n\nOutput:\n```\n1 2 3 4 5 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 0 ≤ m ≤ 4·10^5) — the number of communication towers and the number of wires, respectively.\n\nThen n lines follows, the i-th of them contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ 2·10^5) — the boundaries of the acceptable frequencies for the i-th tower.\n\nThen m lines follows, the i-th of them contains two integers v_i and u_i (1 ≤ v_i, u_i ≤ n; v_i ≠ u_i) — the i-th wire that connects towers v_i and u_i. There are no two wires connecting the same pair of towers.",
+    "output": "In a single line, print distinct integers from 1 to n in ascending order — the indices of the communication towers that are accessible from the 1-st tower.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "divide and conquer",
+        "dsu",
+        "*2700"
+    ],
+    "rating": 2700
+}

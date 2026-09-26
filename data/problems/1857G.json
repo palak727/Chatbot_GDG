@@ -1,0 +1,22 @@
+{
+    "id": "1857G",
+    "contest_id": 1857,
+    "problem_letter": "G",
+    "title": "G. Counting Graphs",
+    "statement": "Given a tree consisting of n vertices. A tree is a connected undirected graph without cycles. Each edge of the tree has its weight, w_i.\n\nYour task is to count the number of different graphs that satisfy all four conditions:\n\nTwo graphs are considered different if their sets of edges are different, taking into account the weights of the edges.\n\nThe answer can be large, output it modulo 998244353.\n\nThe first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and S (2 ≤ n ≤ 2·10^5, 1≤ S≤ 10^9) — the number of vertices and the upper bound of the weights.\n\nThen follow n-1 lines describing the tree, the i-th line contains three integers u_i, v_i, and w_i (1≤ u_i,v_i≤ n, u_i ≠ v_i, 1≤ w_i≤ S) — an edge in the tree with weight w_i.\n\nIt is guaranteed that the sum of n for all tests does not exceed 2·10^5.\n\nFor each test, output the number of different graphs that satisfy the conditions, modulo 998244353.\n\nIn the first sample, there is only one graph, which is the given tree.\n\nIn the second samle, the given tree looks like this:\n\nInput:\n```\n42 51 2 44 51 2 22 3 43 4 35 61 2 31 3 23 4 63 5 110 2001 2 32 3 333 4 2001 5 1325 6 15 7 297 8 1877 9 207 10 4\n```\n\nOutput:\n```\n1\n8\n80\n650867886\n```",
+    "input": "The first line contains an integer t (1≤ t≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n and S (2 ≤ n ≤ 2·10^5, 1≤ S≤ 10^9) — the number of vertices and the upper bound of the weights.\n\nThen follow n-1 lines describing the tree, the i-th line contains three integers u_i, v_i, and w_i (1≤ u_i,v_i≤ n, u_i ≠ v_i, 1≤ w_i≤ S) — an edge in the tree with weight w_i.\n\nIt is guaranteed that the sum of n for all tests does not exceed 2·10^5.",
+    "output": "For each test, output the number of different graphs that satisfy the conditions, modulo 998244353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "divide and conquer",
+        "dsu",
+        "graphs",
+        "greedy",
+        "sortings",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

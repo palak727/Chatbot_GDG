@@ -1,0 +1,20 @@
+{
+    "id": "1731F",
+    "contest_id": 1731,
+    "problem_letter": "F",
+    "title": "F. Function Sum",
+    "statement": "Suppose you have an integer array a_1, a_2, …, a_n.\n\nLet lsl(i) be the number of indices j (1 ≤ j < i) such that a_j < a_i.\n\nAnalogically, let grr(i) be the number of indices j (i < j ≤ n) such that a_j > a_i.\n\nLet's name position i good in the array a if lsl(i) < grr(i).\n\nFinally, let's define a function f on array a f(a) as the sum of all a_i such that i is good in a.\n\nGiven two integers n and k, find the sum of f(a) over all arrays a of size n such that 1 ≤ a_i ≤ k for all 1 ≤ i ≤ n modulo 998,244,353.\n\nThe first and only line contains two integers n and k (1 ≤ n ≤ 50; 2 ≤ k < 998,244,353).\n\nOutput a single integer — the sum of f over all arrays a of size n modulo 998,244,353.\n\nIn the first test case:\n\nAdding up all of these values, we get 28 as the answer.\n\nInput:\n```\n3 3\n```\n\nOutput:\n```\n28\n```\n\nInput:\n```\n5 6\n```\n\nOutput:\n```\n34475\n```\n\nInput:\n```\n12 30\n```\n\nOutput:\n```\n920711694\n```",
+    "input": "The first and only line contains two integers n and k (1 ≤ n ≤ 50; 2 ≤ k < 998,244,353).",
+    "output": "Output a single integer — the sum of f over all arrays a of size n modulo 998,244,353.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*2500"
+    ],
+    "rating": 2500
+}

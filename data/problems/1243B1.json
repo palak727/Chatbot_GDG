@@ -1,0 +1,16 @@
+{
+    "id": "1243B1",
+    "contest_id": 1243,
+    "problem_letter": "B1",
+    "title": "B1. Character Swap (Easy Version)",
+    "statement": "This problem is different from the hard version. In this version Ujan makes exactly one exchange. You can hack this problem only if you solve both problems.\n\nAfter struggling and failing many times, Ujan decided to try to clean up his house again. He decided to get his strings in order first.\n\nUjan has two distinct strings s and t of length n consisting of only of lowercase English characters. He wants to make them equal. Since Ujan is lazy, he will perform the following operation exactly once: he takes two positions i and j (1 ≤ i,j ≤ n, the values i and j can be equal or different), and swaps the characters s_i and t_j. Can he succeed?\n\nNote that he has to perform this operation exactly once. He has to perform this operation.\n\nThe first line contains a single integer k (1 ≤ k ≤ 10), the number of test cases.\n\nFor each of the test cases, the first line contains a single integer n (2 ≤ n ≤ 10^4), the length of the strings s and t.\n\nEach of the next two lines contains the strings s and t, each having length exactly n. The strings consist only of lowercase English letters. It is guaranteed that strings are different.\n\nFor each test case, output \"Yes\" if Ujan can make the two strings equal and \"No\" otherwise.\n\nYou can print each letter in any case (upper or lower).\n\nIn the first test case, Ujan can swap characters s_1 and t_4, obtaining the word \"house\".\n\nIn the second test case, it is not possible to make the strings equal using exactly one swap of s_i and t_j.\n\nInput:\n```\n4\n5\nsouse\nhouhe\n3\ncat\ndog\n2\naa\naz\n3\nabc\nbca\n```\n\nOutput:\n```\nYes\nNo\nNo\nNo\n```",
+    "input": "The first line contains a single integer k (1 ≤ k ≤ 10), the number of test cases.\n\nFor each of the test cases, the first line contains a single integer n (2 ≤ n ≤ 10^4), the length of the strings s and t.\n\nEach of the next two lines contains the strings s and t, each having length exactly n. The strings consist only of lowercase English letters. It is guaranteed that strings are different.",
+    "output": "For each test case, output \"Yes\" if Ujan can make the two strings equal and \"No\" otherwise.\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

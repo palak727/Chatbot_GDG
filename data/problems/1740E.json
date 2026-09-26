@@ -1,0 +1,21 @@
+{
+    "id": "1740E",
+    "contest_id": 1740,
+    "problem_letter": "E",
+    "title": "E. Hanging Hearts",
+    "statement": "Pak Chanek has n blank heart-shaped cards. Card 1 is attached directly to the wall while each of the other cards is hanging onto exactly one other card by a piece of string. Specifically, card i (i > 1) is hanging onto card p_i (p_i < i).\n\nIn the very beginning, Pak Chanek must write one integer number on each card. He does this by choosing any permutation a of [1, 2, …, n]. Then, the number written on card i is a_i.\n\nAfter that, Pak Chanek must do the following operation n times while maintaining a sequence s (which is initially empty):\n\nAfter that, Pak Chanek will have a sequence s with n elements. What is the maximum length of the longest non-decreasing subsequence^dagger of s at the end if Pak Chanek does all the steps optimally?\n\n^dagger A sequence b is a subsequence of a sequence c if b can be obtained from c by deletion of several (possibly, zero or all) elements. For example, [3,1] is a subsequence of [3,2,1], [4,3,1] and [3,1], but not [1,3,3,7] and [3,10,4].\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5) — the number of heart-shaped cards.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) describing which card that each card hangs onto.\n\nPrint a single integer — the maximum length of the longest non-decreasing subsequence of s at the end if Pak Chanek does all the steps optimally.\n\nThe following is the structure of the cards in the first example.\n\nPak Chanek can choose the permutation a = [1, 5, 4, 3, 2, 6].\n\nLet w_i be the number written on card i. Initially, w_i = a_i. Pak Chanek can do the following operations in order:\n\nOne of the longest non-decreasing subsequences of s = [2, 6, 2, 4, 4, 1] is [2, 2, 4, 4]. Thus, the length of the longest non-decreasing subsequence of s is 4. It can be proven that this is indeed the maximum possible length.\n\nInput:\n```\n6\n1 2 1 4 2\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2\n1\n```\n\nOutput:\n```\n2\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 10^5) — the number of heart-shaped cards.\n\nThe second line contains n - 1 integers p_2, p_3, …, p_n (1 ≤ p_i < i) describing which card that each card hangs onto.",
+    "output": "Print a single integer — the maximum length of the longest non-decreasing subsequence of s at the end if Pak Chanek does all the steps optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*1800"
+    ],
+    "rating": 1800
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1535C",
+    "contest_id": 1535,
+    "problem_letter": "C",
+    "title": "C. Unstable String",
+    "statement": "You are given a string s consisting of the characters 0, 1, and ?.\n\nLet's call a string unstable if it consists of the characters 0 and 1 and any two adjacent characters are different (i. e. it has the form 010101... or 101010...).\n\nLet's call a string beautiful if it consists of the characters 0, 1, and ?, and you can replace the characters ? to 0 or 1 (for each character, the choice is independent), so that the string becomes unstable.\n\nFor example, the strings 0??10, 0, and ??? are beautiful, and the strings 00 and ?1??1 are not.\n\nCalculate the number of beautiful contiguous substrings of the string s.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe first and only line of each test case contains the string s (1 ≤ |s| ≤ 2·10^5) consisting of characters 0, 1, and ?.\n\nIt is guaranteed that the sum of the string lengths over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of beautiful substrings of the string s.\n\nInput:\n```\n3\n0?10\n???\n?10??1100\n```\n\nOutput:\n```\n8\n6\n25\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe first and only line of each test case contains the string s (1 ≤ |s| ≤ 2·10^5) consisting of characters 0, 1, and ?.\n\nIt is guaranteed that the sum of the string lengths over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of beautiful substrings of the string s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "implementation",
+        "strings",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1686B",
+    "contest_id": 1686,
+    "problem_letter": "B",
+    "title": "B. Odd Subarrays",
+    "statement": "For an array [b_1, b_2, …, b_m] define its number of inversions as the number of pairs (i, j) of integers such that 1 ≤ i < j ≤ m and b_i > b_j. Let's call array b odd if its number of inversions is odd.\n\nFor example, array [4, 2, 7] is odd, as its number of inversions is 1, while array [2, 1, 4, 3] isn't, as its number of inversions is 2.\n\nYou are given a permutation [p_1, p_2, …, p_n] of integers from 1 to n (each of them appears exactly once in the permutation). You want to split it into several consecutive subarrays (maybe just one), so that the number of the odd subarrays among them is as large as possible.\n\nWhat largest number of these subarrays may be odd?\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the size of the permutation.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, all p_i are distinct) — the elements of the permutation.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case output a single integer — the largest possible number of odd subarrays that you can get after splitting the permutation into several consecutive subarrays.\n\nIn the first and third test cases, no matter how we split our permutation, there won't be any odd subarrays.\n\nIn the second test case, we can split our permutation into subarrays [4, 3], [2, 1], both of which are odd since their numbers of inversions are 1.\n\nIn the fourth test case, we can split our permutation into a single subarray [2, 1], which is odd.\n\nIn the fifth test case, we can split our permutation into subarrays [4, 5], [6, 1, 2, 3]. The first subarray has 0 inversions, and the second has 3, so it is odd.\n\nInput:\n```\n531 2 344 3 2 121 222 164 5 6 1 2 3\n```\n\nOutput:\n```\n0\n2\n0\n1\n1\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the size of the permutation.\n\nThe second line of each test case contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, all p_i are distinct) — the elements of the permutation.\n\nThe sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case output a single integer — the largest possible number of odd subarrays that you can get after splitting the permutation into several consecutive subarrays.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

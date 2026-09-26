@@ -1,0 +1,18 @@
+{
+    "id": "1770G",
+    "contest_id": 1770,
+    "problem_letter": "G",
+    "title": "G. Koxia and Bracket",
+    "statement": "Chiyuu has a bracket sequence^dagger s of length n. Let k be the minimum number of characters that Chiyuu has to remove from s to make s balanced^ddagger.\n\nNow, Koxia wants you to count the number of ways to remove k characters from s so that s becomes balanced, modulo 998,244,353.\n\nNote that two ways of removing characters are considered distinct if and only if the set of indices removed is different.\n\n^dagger A bracket sequence is a string containing only the characters \"(\" and \")\".\n\n^ddagger A bracket sequence is called balanced if one can turn it into a valid math expression by adding characters + and 1. For example, sequences (())(), (), (()(())) and the empty string are balanced, while )(, ((), and (()))( are not.\n\nThe first line of input contains a string s (1 ≤ |s| ≤ 5·10^5) — the bracket sequence.\n\nIt is guaranteed that s only contains the characters \"(\" and \")\".\n\nOutput a single integer — the number of ways to remove k characters from s so that s becomes balanced, modulo 998,244,353.\n\nIn the first test case, it can be proved that the minimum number of characters that Chiyuu has to remove is 2. There are 4 ways to remove 2 characters to make s balanced as follows. Deleted characters are noted as red.\n\nIn the second test case, the only way to make s balanced is by deleting the only character to get an empty bracket sequence, which is considered balanced.\n\nInput:\n```\n())(()\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n(\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line of input contains a string s (1 ≤ |s| ≤ 5·10^5) — the bracket sequence.\n\nIt is guaranteed that s only contains the characters \"(\" and \")\".",
+    "output": "Output a single integer — the number of ways to remove k characters from s so that s becomes balanced, modulo 998,244,353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "divide and conquer",
+        "fft",
+        "math",
+        "*3400"
+    ],
+    "rating": 3400
+}

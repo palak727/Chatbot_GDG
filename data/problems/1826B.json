@@ -1,0 +1,17 @@
+{
+    "id": "1826B",
+    "contest_id": 1826,
+    "problem_letter": "B",
+    "title": "B. Lunatic Never Content",
+    "statement": "You have an array a of n non-negative integers. Let's define f(a, x) = [a_1 bmod x, a_2 bmod x, …, a_n bmod x] for some positive integer x. Find the biggest x, such that f(a, x) is a palindrome.\n\nHere, a bmod x is the remainder of the integer division of a by x.\n\nAn array is a palindrome if it reads the same backward as forward. More formally, an array a of length n is a palindrome if for every i (1 ≤ i ≤ n) a_i = a_{n - i + 1}.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 10^9).\n\nIt's guaranteed that the sum of all n does not exceed 10^5.\n\nFor each test case output the biggest x, such that f(a, x) is a palindrome. If x can be infinitely large, output 0 instead.\n\nIn the first example, f(a, x = 1) = [0, 0] which is a palindrome.\n\nIn the second example, f(a, x = 2) = [1, 0, 1, 0, 0, 1, 0, 1] which is a palindrome.\n\nIt can be proven that in the first two examples, no larger x satisfies the condition.\n\nIn the third example, f(a, x) = [0] for any x, so we can choose it infinitely large, so the answer is 0.\n\nInput:\n```\n421 283 0 1 2 0 3 2 1103100 1 1000000000\n```\n\nOutput:\n```\n1\n2\n0\n999999900\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5).\n\nThe second line of each test case contains n integers a_i (0 ≤ a_i ≤ 10^9).\n\nIt's guaranteed that the sum of all n does not exceed 10^5.",
+    "output": "For each test case output the biggest x, such that f(a, x) is a palindrome. If x can be infinitely large, output 0 instead.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1100"
+    ],
+    "rating": 1100
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1690B",
+    "contest_id": 1690,
+    "problem_letter": "B",
+    "title": "B. Array Decrements",
+    "statement": "Kristina has two arrays a and b, each containing n non-negative integers. She can perform the following operation on array a any number of times:\n\nDetermine whether Kristina can get an array b from an array a in some number of operations (probably zero). In other words, can she make a_i = b_i after some number of operations for each 1 ≤ i ≤ n?\n\nFor example, let n = 4, a = [3, 5, 4, 1] and b = [1, 3, 2, 0]. In this case, she can apply the operation twice:\n\nThus, in two operations, she can get an array b from an array a.\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^4).\n\nThe second line of each test case contains exactly n non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains exactly n non-negative integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n values over all test cases in the test does not exceed 2·10^5.\n\nFor each test case, output on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).\n\nThe first test case is analyzed in the statement.\n\nIn the second test case, it is enough to apply the operation to array a once.\n\nIn the third test case, it is impossible to get array b from array a.\n\nInput:\n```\n643 5 4 11 3 2 031 2 10 1 045 3 7 21 1 1 151 2 3 4 51 2 3 4 6180146\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nNO\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 10^4) —the number of test cases in the test.\n\nThe descriptions of the test cases follow.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 5·10^4).\n\nThe second line of each test case contains exactly n non-negative integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9).\n\nThe third line of each test case contains exactly n non-negative integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^9).\n\nIt is guaranteed that the sum of n values over all test cases in the test does not exceed 2·10^5.",
+    "output": "For each test case, output on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

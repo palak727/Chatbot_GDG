@@ -1,0 +1,21 @@
+{
+    "id": "1929F",
+    "contest_id": 1929,
+    "problem_letter": "F",
+    "title": "F. Sasha and the Wedding Binary Search Tree",
+    "statement": "Having overcome all the difficulties and hardships, Sasha finally decided to marry his girlfriend. To do this, he needs to give her an engagement ring. However, his girlfriend does not like such romantic gestures, but she does like binary search trees^dagger. So Sasha decided to give her such a tree.\n\nAfter spending a lot of time on wedding websites for programmers, he found the perfect binary search tree with the root at vertex 1. In this tree, the value at vertex v is equal to val_v.\n\nBut after some time, he forgot the values in some vertices. Trying to remember the found tree, Sasha wondered — how many binary search trees could he have found on the website, if it is known that the values in all vertices are integers in the segment [1, C]. Since this number can be very large, output it modulo 998,244,353.\n\n^daggerA binary search tree is a rooted binary tree in which for any vertex x, the following property holds: the values of all vertices in the left subtree of vertex x (if it exists) are less than or equal to the value at vertex x, and the values of all vertices in the right subtree of vertex x (if it exists) are greater than or equal to the value at vertex x.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and C (2 ≤ n ≤ 5·10^5, 1 ≤ C ≤ 10^9) — the number of vertices in the tree and the maximum allowed value at the vertex.\n\nThe next n lines describe the vertices of the tree. The i-th line contains three integers L_i, R_i and val_i (-1 ≤ L_i, R_i ≤ n, -1 ≤ val_i ≤ C, L_i, R_i, val_i ≠ 0) — the number of the left child, the number of the right child, and the value at the i-th vertex, respectively. If L_i = -1, then the i-th vertex has no left son. If R_i = -1, then the i-th vertex has no right son. If val_i = -1, then the value at the i-th vertex is unknown.\n\nIt is guaranteed that at least one suitable binary search tree exists.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.\n\nFor each test case, output a single integer — the number of suitable binary search trees modulo 998,244,353.\n\nIn the first test case, the binary search tree has the following form:\n\nThen the possible values at the vertices are: [2, 2, 3, 2, 2], [2, 2, 3, 2, 3], [2, 2, 3, 3, 3], and [3, 2, 3, 3, 3].\n\nIn the second test case, the values at all vertices are known, so there is only one suitable binary search tree.\n\nInput:\n```\n35 52 3 -1-1 -1 24 -1 3-1 5 -1-1 -1 -13 692 3 47-1 -1 13-1 -1 693 32 3 -1-1 -1 -1-1 -1 -1\n```\n\nOutput:\n```\n4\n1\n10\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and C (2 ≤ n ≤ 5·10^5, 1 ≤ C ≤ 10^9) — the number of vertices in the tree and the maximum allowed value at the vertex.\n\nThe next n lines describe the vertices of the tree. The i-th line contains three integers L_i, R_i and val_i (-1 ≤ L_i, R_i ≤ n, -1 ≤ val_i ≤ C, L_i, R_i, val_i ≠ 0) — the number of the left child, the number of the right child, and the value at the i-th vertex, respectively. If L_i = -1, then the i-th vertex has no left son. If R_i = -1, then the i-th vertex has no right son. If val_i = -1, then the value at the i-th vertex is unknown.\n\nIt is guaranteed that at least one suitable binary search tree exists.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 5·10^5.",
+    "output": "For each test case, output a single integer — the number of suitable binary search trees modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "dfs and similar",
+        "math",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

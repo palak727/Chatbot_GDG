@@ -1,0 +1,18 @@
+{
+    "id": "1672C",
+    "contest_id": 1672,
+    "problem_letter": "C",
+    "title": "C. Unequal Array",
+    "statement": "You are given an array a of length n. We define the equality of the array as the number of indices 1 ≤ i ≤ n - 1 such that a_i = a_{i + 1}. We are allowed to do the following operation:\n\nFind the minimum number of operations needed such that the equality of the array is less than or equal to 1.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10 ^ 5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10 ^ 5\n\nFor each test case, print the minimum number of operations needed.\n\nIn the first test case, we can select i=2 and x=2 to form [1, 2, 2, 1, 1]. Then, we can select i=3 and x=3 to form [1, 2, 3, 3, 1].\n\nIn the second test case, we can select i=3 and x=100 to form [2, 1, 100, 100, 2].\n\nInput:\n```\n451 1 1 1 152 1 1 1 261 1 2 3 3 461 2 1 4 5 4\n```\n\nOutput:\n```\n2\n1\n2\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 2·10 ^ 5) — the length of array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10 ^ 5",
+    "output": "For each test case, print the minimum number of operations needed.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1100"
+    ],
+    "rating": 1100
+}

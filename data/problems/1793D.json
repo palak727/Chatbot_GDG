@@ -1,0 +1,21 @@
+{
+    "id": "1793D",
+    "contest_id": 1793,
+    "problem_letter": "D",
+    "title": "D. Moscow Gorillas",
+    "statement": "In winter, the inhabitants of the Moscow Zoo are very bored, in particular, it concerns gorillas. You decided to entertain them and brought a permutation p of length n to the zoo.\n\nA permutation of length n is an array consisting of n distinct integers from 1 to n in any order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 occurs twice in the array) and [1,3,4] is also not a permutation (n=3, but 4 is present in the array).\n\nThe gorillas had their own permutation q of length n. They suggested that you count the number of pairs of integers l, r (1 ≤ l ≤ r ≤ n) such that MEX([p_l, p_{l+1}, …, p_r])=MEX([q_l, q_{l+1}, …, q_r]).\n\nThe MEX of the sequence is the minimum integer positive number missing from this sequence. For example, MEX([1, 3]) = 2, MEX([5]) = 1, MEX([3, 1, 2, 6]) = 4.\n\nYou do not want to risk your health, so you will not dare to refuse the gorillas.\n\nThe first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the permutations length.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the elements of the permutation p.\n\nThe third line contains n integers q_1, q_2, …, q_n (1 ≤ q_i ≤ n) — the elements of the permutation q.\n\nPrint a single integer — the number of suitable pairs l and r.\n\nIn the first example, two segments are correct – [1, 3] with MEX equal to 4 in both arrays and [3, 3] with MEX equal to 1 in both of arrays.\n\nIn the second example, for example, the segment [1, 4] is correct, and the segment [6, 7] isn't correct, because MEX(5, 4) ≠ MEX(1, 4).\n\nInput:\n```\n31 3 22 1 3\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n77 3 6 2 1 5 46 7 2 5 3 1 4\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n61 2 3 4 5 66 5 4 3 2 1\n```\n\nOutput:\n```\n11\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the permutations length.\n\nThe second line contains n integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the elements of the permutation p.\n\nThe third line contains n integers q_1, q_2, …, q_n (1 ≤ q_i ≤ n) — the elements of the permutation q.",
+    "output": "Print a single integer — the number of suitable pairs l and r.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "two pointers",
+        "*1800"
+    ],
+    "rating": 1800
+}

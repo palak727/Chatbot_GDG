@@ -1,0 +1,21 @@
+{
+    "id": "1986G1",
+    "contest_id": 1986,
+    "problem_letter": "G1",
+    "title": "G1. Permutation Problem (Simple Version)",
+    "statement": "This is a simple version of the problem. The only difference is that in this version n ≤ 10^5 and the sum of n for all sets of input data does not exceed 10^5.\n\nYou are given a permutation p of length n. Calculate the number of index pairs 1 ≤ i < j ≤ n such that p_i·p_j is divisible by i·j without remainder.\n\nA permutation is a sequence of n integers, where each integer from 1 to n occurs exactly once. For example, [1], [3,5,2,1,4], [1,3,2] are permutations, while [2,3,2], [4,3,1], [0] are not.\n\nEach test consists of multiple sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of input data. Then follows their description.\n\nThe first line of each set of input data contains a single integer n (1 ≤ n ≤ 10^5) — the length of the permutation p.\n\nThe second line of each set of input data contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the permutation p.\n\nIt is guaranteed that the sum of n for all sets of input data does not exceed 10^5.\n\nFor each set of input data, output the number of index pairs 1 ≤ i < j ≤ n such that p_i·p_j is divisible by i·j without remainder.\n\nIn the first set of input data, there are no index pairs, as the size of the permutation is 1.\n\nIn the second set of input data, there is one index pair (1, 2) and it is valid.\n\nIn the third set of input data, the index pair (1, 2) is valid.\n\nIn the fourth set of input data, the index pairs (1, 2), (1, 5), and (2, 5) are valid.\n\nInput:\n```\n61121 232 3 152 4 1 3 5128 9 7 12 1 10 6 3 2 4 11 5151 2 4 6 8 10 12 14 3 9 15 5 7 11 13\n```\n\nOutput:\n```\n0\n1\n1\n3\n9\n3\n```",
+    "input": "Each test consists of multiple sets of input data. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of sets of input data. Then follows their description.\n\nThe first line of each set of input data contains a single integer n (1 ≤ n ≤ 10^5) — the length of the permutation p.\n\nThe second line of each set of input data contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the permutation p.\n\nIt is guaranteed that the sum of n for all sets of input data does not exceed 10^5.",
+    "output": "For each set of input data, output the number of index pairs 1 ≤ i < j ≤ n such that p_i·p_j is divisible by i·j without remainder.",
+    "time_limit": "3 seconds",
+    "memory_limit": "128 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "math",
+        "number theory",
+        "*2200"
+    ],
+    "rating": 2200
+}

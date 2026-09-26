@@ -1,0 +1,19 @@
+{
+    "id": "1732E",
+    "contest_id": 1732,
+    "problem_letter": "E",
+    "title": "E. Location",
+    "statement": "You are given two arrays of integers a_1, a_2, …, a_n and b_1, b_2, …, b_n. You need to handle q queries of the following two types:\n\nIn this problem gcd(x, y) denotes the greatest common divisor of x and y, and lcm(x, y) denotes the least common multiple of x and y.\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 5·10^4) — the number of numbers in the arrays a and b and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^4) — the elements of the array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 5·10^4) — the elements of the array b.\n\nThen q lines follow, j-th of which starts with an integer t_j (1 ≤ t_j ≤ 2) and means that the j-th query has type t_j.\n\nIf t_j = 1, it is followed by three integers l_j, r_j, and x_j (1 ≤ l_j ≤ r_j ≤ n, 1 ≤ x_j ≤ 5·10^4).\n\nIf t_j = 2, it is followed by two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n).\n\nIt is guaranteed that there is at least one query of type 2.\n\nFor each query of the second type, output the minimum value of the expression.\n\nIn the first example:\n\nIn the second:\n\nInput:\n```\n10 106 10 15 4 9 25 2 3 5 301 2 3 4 6 9 12 15 18 302 1 101 7 10 92 5 101 1 6 142 4 72 3 91 2 9 302 1 42 3 72 5 10\n```\n\nOutput:\n```\n1\n2\n12\n2\n10\n5\n2\n```\n\nInput:\n```\n4 410 2 12 51 12 16 12 2 41 2 3 181 2 2 102 2 3\n```\n\nOutput:\n```\n5\n30\n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 5·10^4) — the number of numbers in the arrays a and b and the number of queries.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 5·10^4) — the elements of the array a.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 5·10^4) — the elements of the array b.\n\nThen q lines follow, j-th of which starts with an integer t_j (1 ≤ t_j ≤ 2) and means that the j-th query has type t_j.\n\nIf t_j = 1, it is followed by three integers l_j, r_j, and x_j (1 ≤ l_j ≤ r_j ≤ n, 1 ≤ x_j ≤ 5·10^4).\n\nIf t_j = 2, it is followed by two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n).\n\nIt is guaranteed that there is at least one query of type 2.",
+    "output": "For each query of the second type, output the minimum value of the expression.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "math",
+        "number theory",
+        "*2800"
+    ],
+    "rating": 2800
+}

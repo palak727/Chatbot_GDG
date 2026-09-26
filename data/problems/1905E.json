@@ -1,0 +1,20 @@
+{
+    "id": "1905E",
+    "contest_id": 1905,
+    "problem_letter": "E",
+    "title": "E. One-X",
+    "statement": "In this sad world full of imperfections, ugly segment trees exist.\n\nA segment tree is a tree where each node represents a segment and has its number. A segment tree for an array of n elements can be built in a recursive manner. Let's say function build(v,l,r) builds the segment tree rooted in the node with number v and it corresponds to the segment [l,r].\n\nNow let's define build(v,l,r):\n\nSo, the whole tree is built by calling build(1,1,n).\n\nNow Ibti will construct a segment tree for an array with n elements. He wants to find the sum of lca^dagger(S), where S is a non-empty subset of leaves. Notice that there are exactly 2^n - 1 possible subsets. Since this sum can be very large, output it modulo 998,244,353.\n\n^daggerlca(S) is the number of the least common ancestor for the nodes that are in S.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^18) — the length of the array for which the segment tree is built.\n\nFor each test case, output a single integer — the required sum modulo 998,244,353.\n\nIn the first test case:\n\nLet's look at all subsets of leaves.\n\nThus, the answer is 2+3+1=6.\n\nIn the second test case:\n\nLet's look at all subsets of leaves.\n\nThus, the answer is 4+5+3+2+1+1+1=17.\n\nInput:\n```\n5234553278\n```\n\nOutput:\n```\n6\n17\n36\n69\n593324855\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 10^18) — the length of the array for which the segment tree is built.",
+    "output": "For each test case, output a single integer — the required sum modulo 998,244,353.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dfs and similar",
+        "dp",
+        "math",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

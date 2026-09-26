@@ -1,0 +1,18 @@
+{
+    "id": "1948F",
+    "contest_id": 1948,
+    "problem_letter": "F",
+    "title": "F. Rare Coins",
+    "statement": "There are n bags numbered from 1 to n, the i-th bag contains a_i golden coins and b_i silver coins.\n\nThe value of a gold coin is 1. The value of a silver coin is either 0 or 1, determined for each silver coin independently (0 with probability 1/2, 1 with probability 1/2).\n\nYou have to answer q independent queries. Each query is the following:\n\nThe first line contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the number of bags and the number of queries, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^6) — the number of gold coins in the i-th bag.\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^6) — the number of silver coins in the i-th bag.\n\nNext q lines contain queries. The j-th of the next q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the description of the j-th query.\n\nAdditional constraints on the input:\n\nFor each query, print one integer — the probability that the total value of coins in bags from l to r is strictly greater than the total value in all other bags, taken modulo 998244353.\n\nFormally, the probability can be expressed as an irreducible fraction x/y. You have to print the value of x·y^{-1} bmod 998244353, where y^{-1} is an integer such that y·y^{-1} bmod 998244353 = 1.\n\nIn both queries from the first example, the answer is 1/4.\n\nInput:\n```\n2 21 00 22 21 1\n```\n\nOutput:\n```\n748683265 748683265 \n```\n\nInput:\n```\n4 32 3 4 51 0 7 33 32 31 4\n```\n\nOutput:\n```\n997756929 273932289 1 \n```",
+    "input": "The first line contains two integers n and q (1 ≤ n, q ≤ 3·10^5) — the number of bags and the number of queries, respectively.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^6) — the number of gold coins in the i-th bag.\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i ≤ 10^6) — the number of silver coins in the i-th bag.\n\nNext q lines contain queries. The j-th of the next q lines contains two integers l_j and r_j (1 ≤ l_j ≤ r_j ≤ n) — the description of the j-th query.\n\nAdditional constraints on the input:",
+    "output": "For each query, print one integer — the probability that the total value of coins in bags from l to r is strictly greater than the total value in all other bags, taken modulo 998244353.\n\nFormally, the probability can be expressed as an irreducible fraction x/y. You have to print the value of x·y^{-1} bmod 998244353, where y^{-1} is an integer such that y·y^{-1} bmod 998244353 = 1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "probabilities",
+        "*2500"
+    ],
+    "rating": 2500
+}

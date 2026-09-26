@@ -1,0 +1,18 @@
+{
+    "id": "1714B",
+    "contest_id": 1714,
+    "problem_letter": "B",
+    "title": "B. Remove Prefix",
+    "statement": "Polycarp was presented with some sequence of integers a of length n (1 ≤ a_i ≤ n). A sequence can make Polycarp happy only if it consists of different numbers (i.e. distinct numbers).\n\nIn order to make his sequence like this, Polycarp is going to make some (possibly zero) number of moves.\n\nIn one move, he can:\n\nFor example, in one move, the sequence [3, 1, 4, 3] will produce the sequence [1, 4, 3], which consists of different numbers.\n\nDetermine the minimum number of moves he needs to make so that in the remaining sequence all elements are different. In other words, find the length of the smallest prefix of the given sequence a, after removing which all values in the sequence will be unique.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the given sequence a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — elements of the given sequence a.\n\nIt is guaranteed that the sum of n values over all test cases does not exceed 2·10^5.\n\nFor each test case print your answer on a separate line — the minimum number of elements that must be removed from the beginning of the sequence so that all remaining elements are different.\n\nThe following are the sequences that will remain after the removal of prefixes:\n\nIt is easy to see that all the remaining sequences contain only distinct elements. In each test case, the shortest matching prefix was removed.\n\nInput:\n```\n543 1 4 351 1 1 1 11166 5 4 3 2 171 2 1 7 1 2 1\n```\n\nOutput:\n```\n1\n4\n0\n0\n5\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of two lines.\n\nThe first line contains an integer n (1 ≤ n ≤ 2·10^5) — the length of the given sequence a.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — elements of the given sequence a.\n\nIt is guaranteed that the sum of n values over all test cases does not exceed 2·10^5.",
+    "output": "For each test case print your answer on a separate line — the minimum number of elements that must be removed from the beginning of the sequence so that all remaining elements are different.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

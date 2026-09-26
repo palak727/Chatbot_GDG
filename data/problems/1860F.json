@@ -1,0 +1,20 @@
+{
+    "id": "1860F",
+    "contest_id": 1860,
+    "problem_letter": "F",
+    "title": "F. Evaluate RBS",
+    "statement": "You are given 2n tuples of values (a, b, c), where a and b are positive integers and c is a bracket '(' or ')'. Exactly n tuples have c = '(' and the other n tuples have c = ')'.\n\nYou are asked to choose two positive values x and y (x > 0 and y > 0; not necessarily integers) and sort the tuples in the increasing value of a·x + b·y. If several tuples have the same value, you can place them in any order among themselves.\n\nIs it possible to choose such x and y that taking brackets c from the tuples in the resulting order produces a regular bracket sequence?\n\nA regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters \"1\" and \"+\" between the original characters of the sequence.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1500) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 1500).\n\nThe i-th of the next 2n lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^6) and a character c_i (c_i = '(' or c_i = ')'). Exactly n tuples have c_i = '(' and the other n tuples have c_i = ')'.\n\nThe sum of n over all testcases doesn't exceed 1500.\n\nFor each testcase, print \"YES\" if it's possible to choose such x and y that taking brackets c from the tuples in the resulting order produces a regular bracket sequence. Otherwise, print \"NO\".\n\nIn the first testcase, you can choose x = 10, y = 0.1. The values for tuples will be 10·1 + 0.1·4 = 10.4 and 10·2 + 0.1·3 = 20.3. Thus, the first tuple will go first, then the second one, making the bracket sequence \"()\", which is regular.\n\nIn the second testcase, you can't choose positive x and y such that the opening brackets gets assigned a value less or equal to the value of the closing bracket.\n\nIn the fourth testcase, you can choose x = 0.6, y = 0.55. The bracket sequence is \"(()(()))\".\n\nInput:\n```\n411 4 (2 3 )11 2 )3 4 (416 5 (12 3 (19 6 )4 10 )3 10 )19 11 (19 7 )7 14 (416 8 (11 9 )20 10 )20 19 )2 13 (18 7 (15 19 )5 6 (\n```\n\nOutput:\n```\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1500) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 1500).\n\nThe i-th of the next 2n lines contains two integers a_i and b_i (1 ≤ a_i, b_i ≤ 10^6) and a character c_i (c_i = '(' or c_i = ')'). Exactly n tuples have c_i = '(' and the other n tuples have c_i = ')'.\n\nThe sum of n over all testcases doesn't exceed 1500.",
+    "output": "For each testcase, print \"YES\" if it's possible to choose such x and y that taking brackets c from the tuples in the resulting order produces a regular bracket sequence. Otherwise, print \"NO\".",
+    "time_limit": "10 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "geometry",
+        "implementation",
+        "math",
+        "sortings",
+        "*2900"
+    ],
+    "rating": 2900
+}

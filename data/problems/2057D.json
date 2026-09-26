@@ -1,0 +1,20 @@
+{
+    "id": "2057D",
+    "contest_id": 2057,
+    "problem_letter": "D",
+    "title": "D. Gifts Order",
+    "statement": "\"T-Generation\" has decided to purchase gifts for various needs; thus, they have n different sweaters numbered from 1 to n. The i-th sweater has a size of a_i. Now they need to send some subsegment of sweaters to an olympiad. It is necessary that the sweaters fit as many people as possible, but without having to take too many of them.\n\nThey need to choose two indices l and r (1 ≤ l ≤ r ≤ n) to maximize the convenience equal to max (a_l, a_{l + 1}, …, a_r) - min (a_l, a_{l + 1}, …, a_r) - (r - l), that is, the range of sizes minus the number of sweaters.\n\nSometimes the sizes of the sweaters change; it is known that there have been q changes, in each change, the size of the p-th sweater becomes x.\n\nHelp the \"T-Generation\" team and determine the maximum convenience among all possible pairs (l, r) initially, as well as after each size change.\n\nEach test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of sweaters and the number of size changes.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the sizes of the sweaters.\n\nEach of the following q lines of each test case contains two integers p and x (1 ≤ p ≤ n, 1 ≤ x ≤ 10^9) — the next size change.\n\nIt is guaranteed that the sum of the values of n and the sum of the values of q across all test cases do not exceed 2·10^5.\n\nFor each test case, output the maximum value of convenience among all possible pairs (l, r) before any actions, as well as after each size change.\n\nConsider the first test case.\n\nInput:\n```\n32 21 101 102 25 31 2 3 4 53 71 45 28 57 4 2 4 8 2 1 45 41 103 28 117 7\n```\n\nOutput:\n```\n8\n0\n7\n0\n4\n4\n4\n5\n3\n6\n6\n9\n7\n```",
+    "input": "Each test consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains two integers n and q (1 ≤ n, q ≤ 2·10^5) — the number of sweaters and the number of size changes.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the sizes of the sweaters.\n\nEach of the following q lines of each test case contains two integers p and x (1 ≤ p ≤ n, 1 ≤ x ≤ 10^9) — the next size change.\n\nIt is guaranteed that the sum of the values of n and the sum of the values of q across all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output the maximum value of convenience among all possible pairs (l, r) before any actions, as well as after each size change.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "implementation",
+        "math",
+        "matrices",
+        "*2000"
+    ],
+    "rating": 2000
+}

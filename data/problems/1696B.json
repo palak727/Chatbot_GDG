@@ -1,0 +1,16 @@
+{
+    "id": "1696B",
+    "contest_id": 1696,
+    "problem_letter": "B",
+    "title": "B. NIT Destroys the Universe",
+    "statement": "For a collection of integers S, define mex(S) as the smallest non-negative integer that does not appear in S.\n\nNIT, the cleaver, decides to destroy the universe. He is not so powerful as Thanos, so he can only destroy the universe by snapping his fingers several times.\n\nThe universe can be represented as a 1-indexed array a of length n. When NIT snaps his fingers, he does the following operation on the array:\n\nWe say the universe is destroyed if and only if for all 1≤ i≤ n, a_i=0 holds.\n\nFind the minimum number of times NIT needs to snap his fingers to destroy the universe. That is, find the minimum number of operations NIT needs to perform to make all elements in the array equal to 0.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1≤ n≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print one integer — the answer to the problem.\n\nIn the first test case, we do 0 operations and all elements in the array are already equal to 0.\n\nIn the second test case, one optimal way is doing the operation with l=2, r=5.\n\nIn the third test case, one optimal way is doing the operation twice, respectively with l=4, r=4 and l=2, r=6.\n\nIn the fourth test case, one optimal way is doing the operation with l=1, r=1.\n\nInput:\n```\n440 0 0 050 1 2 3 470 2 3 0 1 2 011000000000\n```\n\nOutput:\n```\n0\n1\n2\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains one integer n (1≤ n≤ 10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0≤ a_i≤ 10^9).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print one integer — the answer to the problem.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1909C",
+    "contest_id": 1909,
+    "problem_letter": "C",
+    "title": "C. Heavy Intervals",
+    "statement": "You have n intervals [l_1, r_1], [l_2, r_2], …, [l_n, r_n], such that l_i < r_i for each i, and all the endpoints of the intervals are distinct.\n\nThe i-th interval has weight c_i per unit length. Therefore, the weight of the i-th interval is c_i·(r_i - l_i).\n\nYou don't like large weights, so you want to make the sum of weights of the intervals as small as possible. It turns out you can perform all the following three operations:\n\nHowever, after performing all of the operations, the intervals must still be valid (i.e., for each i, l_i < r_i must hold).\n\nWhat's the minimum possible sum of weights of the intervals after performing the operations?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of intervals.\n\nThe second line of each test case contains n integers l_1, l_2, …, l_n (1 ≤ l_i ≤ 2·10^5) — the left endpoints of the initial intervals.\n\nThe third line of each test case contains n integers r_1, r_2, …, r_n (l_i < r_i ≤ 2·10^5) — the right endpoints of the initial intervals.\n\nIt is guaranteed that {l_1, l_2, …, l_n, r_1, r_2, …, r_n} are all distinct.\n\nThe fourth line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^7) — the initial weights of the intervals per unit length.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer: the minimum possible sum of weights of the intervals after your operations.\n\nIn the first test case, you can make\n\nIn that case, there are two intervals:\n\nThe sum of the weights is 2400. It can be shown that there is no configuration of final intervals whose sum of weights is less than 2400.\n\nIn the second test case, you can make\n\nIn that case, there are four intervals:\n\nThe sum of the weights is 42. It can be shown that there is no configuration of final intervals whose sum of weights is less than 42.\n\nInput:\n```\n228 312 23100 100420 1 2 530 4 3 102 3 2 3\n```\n\nOutput:\n```\n2400\n42\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of intervals.\n\nThe second line of each test case contains n integers l_1, l_2, …, l_n (1 ≤ l_i ≤ 2·10^5) — the left endpoints of the initial intervals.\n\nThe third line of each test case contains n integers r_1, r_2, …, r_n (l_i < r_i ≤ 2·10^5) — the right endpoints of the initial intervals.\n\nIt is guaranteed that {l_1, l_2, …, l_n, r_1, r_2, …, r_n} are all distinct.\n\nThe fourth line of each test case contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ 10^7) — the initial weights of the intervals per unit length.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer: the minimum possible sum of weights of the intervals after your operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "dsu",
+        "greedy",
+        "math",
+        "sortings",
+        "*1400"
+    ],
+    "rating": 1400
+}

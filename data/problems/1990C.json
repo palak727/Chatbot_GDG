@@ -1,0 +1,18 @@
+{
+    "id": "1990C",
+    "contest_id": 1990,
+    "problem_letter": "C",
+    "title": "C. Mad MAD Sum",
+    "statement": "We define the MAD (Maximum Appearing Duplicate) in an array as the largest number that appears at least twice in the array. Specifically, if there is no number that appears at least twice, the MAD value is 0.\n\nFor example, MAD([1, 2, 1]) = 1, MAD([2, 2, 3, 3]) = 3, MAD([1, 2, 3, 4]) = 0.\n\nYou are given an array a of size n. Initially, a variable sum is set to 0.\n\nThe following process will be executed in a sequential loop until all numbers in a become 0:\n\nFind the value of sum after the process.\n\nThe first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nFor each test case:\n\nIt is guaranteed that the sum of n over all test cases will not exceed 2·10^5.\n\nFor each test case, output the value of sum in a new line.\n\nIn the first test case, a=[1] initially.\n\nIn the first loop:\n\nAfter the first loop, a=[0] and the process ends. The value of sum after the process is 1.\n\nIn the second test case, a=[2,2,3] initially.\n\nAfter the first loop, a=[0,2,2] and sum=7.\n\nAfter the second loop, a=[0,0,2] and sum=11.\n\nAfter the third loop, a=[0,0,0] and sum=13. Then the process ends.\n\nThe value of sum after the process is 13.\n\nInput:\n```\n41132 2 342 1 1 244 4 4 4\n```\n\nOutput:\n```\n1\n13\n9\n40\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nFor each test case:\n\nIt is guaranteed that the sum of n over all test cases will not exceed 2·10^5.",
+    "output": "For each test case, output the value of sum in a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

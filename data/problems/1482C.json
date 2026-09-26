@@ -1,0 +1,19 @@
+{
+    "id": "1482C",
+    "contest_id": 1482,
+    "problem_letter": "C",
+    "title": "C. Basic Diplomacy",
+    "statement": "Aleksey has n friends. He is also on a vacation right now, so he has m days to play this new viral cooperative game! But since it's cooperative, Aleksey will need one teammate in each of these m days.\n\nOn each of these days some friends will be available for playing, and all others will not. On each day Aleksey must choose one of his available friends to offer him playing the game (and they, of course, always agree). However, if any of them happens to be chosen strictly more than leftlceilm/2rightrceil times, then all other friends are offended. Of course, Aleksey doesn't want to offend anyone.\n\nHelp him to choose teammates so that nobody is chosen strictly more than leftlceilm/2rightrceil times.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1≤ n, m≤ 100,000) standing for the number of friends and the number of days to play, respectively.\n\nThe i-th of the following m lines contains an integer k_i (1≤ k_i≤ n), followed by k_i distinct integers f_i1, ..., f_ik_i (1≤ f_ij≤ n), separated by spaces — indices of available friends on the day i.\n\nIt is guaranteed that the sums of n and m over all test cases do not exceed 100,000. It's guaranteed that the sum of all k_i over all days of all test cases doesn't exceed 200,000.\n\nPrint an answer for each test case. If there is no way to achieve the goal, print \"NO\".\n\nOtherwise, in the first line print \"YES\", and in the second line print m space separated integers c_1, ..., c_m. Each c_i must denote the chosen friend on day i (and therefore must be one of f_ij).\n\nNo value must occur more than leftlceilm/2rightrceil times. If there is more than one possible answer, print any of them.\n\nInput:\n```\n2\n4 6\n1 1\n2 1 2\n3 1 2 3\n4 1 2 3 4\n2 2 3\n1 3\n2 2\n1 1\n1 1\n```\n\nOutput:\n```\nYES\n1 2 1 1 2 3 \nNO\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). Description of the test cases follows.\n\nThe first line of each test case contains two integers n and m (1≤ n, m≤ 100,000) standing for the number of friends and the number of days to play, respectively.\n\nThe i-th of the following m lines contains an integer k_i (1≤ k_i≤ n), followed by k_i distinct integers f_i1, ..., f_ik_i (1≤ f_ij≤ n), separated by spaces — indices of available friends on the day i.\n\nIt is guaranteed that the sums of n and m over all test cases do not exceed 100,000. It's guaranteed that the sum of all k_i over all days of all test cases doesn't exceed 200,000.",
+    "output": "Print an answer for each test case. If there is no way to achieve the goal, print \"NO\".\n\nOtherwise, in the first line print \"YES\", and in the second line print m space separated integers c_1, ..., c_m. Each c_i must denote the chosen friend on day i (and therefore must be one of f_ij).\n\nNo value must occur more than leftlceilm/2rightrceil times. If there is more than one possible answer, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

@@ -1,0 +1,21 @@
+{
+    "id": "1593E",
+    "contest_id": 1593,
+    "problem_letter": "E",
+    "title": "E. Gardener and Tree",
+    "statement": "A tree is an undirected connected graph in which there are no cycles. This problem is about non-rooted trees. A leaf of a tree is a vertex that is connected to at most one vertex.\n\nThe gardener Vitaly grew a tree from n vertices. He decided to trim the tree. To do this, he performs a number of operations. In one operation, he removes all leaves of the tree.\n\nFor example, consider the tree shown in the figure above. The figure below shows the result of applying exactly one operation to the tree.\n\nNote the special cases of the operation:\n\nVitaly applied k operations sequentially to the tree. How many vertices remain?\n\nThe first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is preceded by an empty line.\n\nEach test case consists of several lines. The first line of the test case contains two integers n and k (1 ≤ n ≤ 4·10^5, 1 ≤ k ≤ 2·10^5) — the number of vertices in the tree and the number of operations, respectively. Then n - 1 lines follow, each of them contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v) which describe a pair of vertices connected by an edge. It is guaranteed that the given graph is a tree and has no loops or multiple edges.\n\nIt is guaranteed that the sum of n from all test cases does not exceed 4·10^5.\n\nFor each test case output on a separate line a single integer — the number of vertices that remain in the tree after applying k operations.\n\nThe first test case is considered in the statement.\n\nThe second test case contains a tree of two vertices. 200000 operations are applied to it. The first one removes all two vertices, the other operations do not change the tree.\n\nIn the third test case, a tree of three vertices is given. As a result of the first operation, only 1 vertex remains in it (with the index 2), the second operation makes the tree empty.\n\nInput:\n```\n6\n\n14 1\n1 2\n2 3\n2 4\n4 5\n4 6\n2 7\n7 8\n8 9\n8 10\n3 11\n3 12\n1 13\n13 14\n\n2 200000\n1 2\n\n3 2\n1 2\n2 3\n\n5 1\n5 1\n3 2\n2 1\n5 4\n\n6 2\n5 1\n2 5\n5 6\n4 2\n3 4\n\n7 1\n4 3\n5 1\n1 3\n6 1\n1 7\n2 1\n```\n\nOutput:\n```\n7\n0\n0\n3\n1\n2\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. Then t test cases follow.\n\nEach test case is preceded by an empty line.\n\nEach test case consists of several lines. The first line of the test case contains two integers n and k (1 ≤ n ≤ 4·10^5, 1 ≤ k ≤ 2·10^5) — the number of vertices in the tree and the number of operations, respectively. Then n - 1 lines follow, each of them contains two integers u and v (1 ≤ u, v ≤ n, u ≠ v) which describe a pair of vertices connected by an edge. It is guaranteed that the given graph is a tree and has no loops or multiple edges.\n\nIt is guaranteed that the sum of n from all test cases does not exceed 4·10^5.",
+    "output": "For each test case output on a separate line a single integer — the number of vertices that remain in the tree after applying k operations.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dfs and similar",
+        "greedy",
+        "implementation",
+        "trees",
+        "*1600"
+    ],
+    "rating": 1600
+}

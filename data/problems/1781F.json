@@ -1,0 +1,19 @@
+{
+    "id": "1781F",
+    "contest_id": 1781,
+    "problem_letter": "F",
+    "title": "F. Bracket Insertion",
+    "statement": "Vika likes playing with bracket sequences. Today she wants to create a new bracket sequence using the following algorithm. Initially, Vika's sequence is an empty string, and then she will repeat the following actions n times:\n\nA bracket sequence is called regular if it is possible to obtain a correct arithmetic expression by inserting characters '+' and '1' into it. For example, sequences \"(())()\", \"()\", and \"(()(()))\" are regular, while \")(\", \"(()\", and \"(()))(\" are not.\n\nVika wants to know the probability that her bracket sequence will be a regular one at the end. Help her and find this probability modulo 998,244,353 (see Output section).\n\nThe only line contains two integers n and q (1 ≤ n ≤ 500; 0 ≤ q ≤ 10^4). Here n is equal to the number of bracket insertion operations, and the probability that Vika chooses string \"()\" on every step of the algorithm is equal to p = q·10^{-4}.\n\nPrint the probability that Vika's final bracket sequence will be regular, modulo 998,244,353.\n\nFormally, let M = 998,244,353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.\n\nIn the first example, Vika will get a regular bracket sequence () with probability p = 3/4, and she will get an irregular bracket sequence )( with probability 1 - p = 1/4. The sought probability is 3/4, and 249,561,089·4 ≡ 3 pmod998,244,353.\n\nIn the second example, the sought probability is 11/25.\n\nInput:\n```\n1 7500\n```\n\nOutput:\n```\n249561089\n```\n\nInput:\n```\n2 6000\n```\n\nOutput:\n```\n519087064\n```\n\nInput:\n```\n5 4000\n```\n\nOutput:\n```\n119387743\n```",
+    "input": "The only line contains two integers n and q (1 ≤ n ≤ 500; 0 ≤ q ≤ 10^4). Here n is equal to the number of bracket insertion operations, and the probability that Vika chooses string \"()\" on every step of the algorithm is equal to p = q·10^{-4}.",
+    "output": "Print the probability that Vika's final bracket sequence will be regular, modulo 998,244,353.\n\nFormally, let M = 998,244,353. It can be shown that the answer can be expressed as an irreducible fraction p/q, where p and q are integers and q not ≡ 0 pmodM. Output the integer equal to p·q^{-1} bmod M. In other words, output such an integer x that 0 ≤ x < M and x·q ≡ p pmodM.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "trees",
+        "*2700"
+    ],
+    "rating": 2700
+}

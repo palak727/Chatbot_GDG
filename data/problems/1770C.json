@@ -1,0 +1,19 @@
+{
+    "id": "1770C",
+    "contest_id": 1770,
+    "problem_letter": "C",
+    "title": "C. Koxia and Number Theory",
+    "statement": "Joi has an array a of n positive integers. Koxia wants you to determine whether there exists a positive integer x > 0 such that gcd(a_i+x,a_j+x)=1 for all 1 ≤ i < j ≤ n.\n\nHere gcd(y, z) denotes the greatest common divisor (GCD) of integers y and z.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 100) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^18).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.\n\nFor each test case, output \"YES\" (without quotes) if there exists a positive integer x such that gcd(a_i+x,a_j+x)=1 for all 1 ≤ i < j ≤ n, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, we can set x = 4. This is valid because:\n\nIn the second test case, any choice of x makes gcd(a_1 + x, a_2 + x) = gcd(3+x,3+x)=3+x. Therefore, no such x exists.\n\nInput:\n```\n235 7 1033 3 4\n```\n\nOutput:\n```\nYES\nNO\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains an integer n (2 ≤ n ≤ 100) — the size of the array.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^18).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.",
+    "output": "For each test case, output \"YES\" (without quotes) if there exists a positive integer x such that gcd(a_i+x,a_j+x)=1 for all 1 ≤ i < j ≤ n, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "chinese remainder theorem",
+        "math",
+        "number theory",
+        "*1700"
+    ],
+    "rating": 1700
+}

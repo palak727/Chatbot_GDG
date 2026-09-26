@@ -1,0 +1,19 @@
+{
+    "id": "1419E",
+    "contest_id": 1419,
+    "problem_letter": "E",
+    "title": "E. Decryption",
+    "statement": "An agent called Cypher is decrypting a message, that contains a composite number n. All divisors of n, which are greater than 1, are placed in a circle. Cypher can choose the initial order of numbers in the circle.\n\nIn one move Cypher can choose two adjacent numbers in a circle and insert their least common multiple between them. He can do that move as many times as needed.\n\nA message is decrypted, if every two adjacent numbers are not coprime. Note that for such constraints it's always possible to decrypt the message.\n\nFind the minimal number of moves that Cypher should do to decrypt the message, and show the initial order of numbers in the circle for that.\n\nThe first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Next t lines describe each test case.\n\nIn a single line of each test case description, there is a single composite number n (4 ≤ n ≤ 10^9) — the number from the message.\n\nIt's guaranteed that the total number of divisors of n for all test cases does not exceed 2·10^5.\n\nFor each test case in the first line output the initial order of divisors, which are greater than 1, in the circle. In the second line output, the minimal number of moves needed to decrypt the message.\n\nIf there are different possible orders with a correct answer, print any of them.\n\nIn the first test case 6 has three divisors, which are greater than 1: 2, 3, 6. Regardless of the initial order, numbers 2 and 3 are adjacent, so it's needed to place their least common multiple between them. After that the circle becomes 2, 6, 3, 6, and every two adjacent numbers are not coprime.\n\nIn the second test case 4 has two divisors greater than 1: 2, 4, and they are not coprime, so any initial order is correct, and it's not needed to place any least common multiples.\n\nIn the third test case all divisors of 30 greater than 1 can be placed in some order so that there are no two adjacent numbers that are coprime.\n\nInput:\n```\n3\n6\n4\n30\n```\n\nOutput:\n```\n2 3 6 \n1\n2 4 \n0\n2 30 6 3 15 5 10 \n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Next t lines describe each test case.\n\nIn a single line of each test case description, there is a single composite number n (4 ≤ n ≤ 10^9) — the number from the message.\n\nIt's guaranteed that the total number of divisors of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case in the first line output the initial order of divisors, which are greater than 1, in the circle. In the second line output, the minimal number of moves needed to decrypt the message.\n\nIf there are different possible orders with a correct answer, print any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

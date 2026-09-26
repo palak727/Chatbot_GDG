@@ -1,0 +1,20 @@
+{
+    "id": "2033G",
+    "contest_id": 2033,
+    "problem_letter": "G",
+    "title": "G. Sakurako and Chefir",
+    "statement": "Given a tree with n vertices rooted at vertex 1. While walking through it with her cat Chefir, Sakurako got distracted, and Chefir ran away.\n\nTo help Sakurako, Kosuke recorded his q guesses. In the i-th guess, he assumes that Chefir got lost at vertex v_i and had k_i stamina.\n\nAlso, for each guess, Kosuke assumes that Chefir could move along the edges an arbitrary number of times:\n\nIf Chefir's stamina is 0, he cannot make a move of the second type.\n\nFor each assumption, your task is to find the distance to the farthest vertex that Chefir could reach from vertex v_i, having k_i stamina.\n\n^{∗}Vertex a is an ancestor of vertex b if the shortest path from b to the root passes through a.\n\nThe first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case is described as follows:\n\nIt is guaranteed that the sum of n and the sum of q across all test cases does not exceed 2·10^5.\n\nFor each test case and for each guess, output the maximum distance to the farthest vertex that Chefir could reach from the starting point v_i having k_i stamina.\n\nIn the first example:\n\nInput:\n```\n351 22 33 43 535 13 12 098 11 71 47 34 93 21 53 676 02 36 28 22 49 26 362 12 52 45 64 333 11 36 5\n```\n\nOutput:\n```\n2 1 2 \n0 5 2 4 5 5 5 \n1 3 4 \n```",
+    "input": "The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases.\n\nEach test case is described as follows:\n\nIt is guaranteed that the sum of n and the sum of q across all test cases does not exceed 2·10^5.",
+    "output": "For each test case and for each guess, output the maximum distance to the farthest vertex that Chefir could reach from the starting point v_i having k_i stamina.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

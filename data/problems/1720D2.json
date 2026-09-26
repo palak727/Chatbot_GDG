@@ -1,0 +1,20 @@
+{
+    "id": "1720D2",
+    "contest_id": 1720,
+    "problem_letter": "D2",
+    "title": "D2. Xor-Subsequence (hard version)",
+    "statement": "It is the hard version of the problem. The only difference is that in this version a_i ≤ 10^9.\n\nYou are given an array of n integers a_0, a_1, a_2, … a_{n - 1}. Bryap wants to find the longest beautiful subsequence in the array.\n\nAn array b = [b_0, b_1, …, b_{m-1}], where 0 ≤ b_0 < b_1 < … < b_{m - 1} < n, is a subsequence of length m of the array a.\n\nSubsequence b = [b_0, b_1, …, b_{m-1}] of length m is called beautiful, if the following condition holds:\n\nHere a oplus b denotes the bitwise XOR of a and b. For example, 2 oplus 4 = 6 and 3 oplus 1=2.\n\nBryap is a simple person so he only wants to know the length of the longest such subsequence. Help Bryap and find the answer to his question.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_0,a_1,...,a_{n-1} (0 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.\n\nFor each test case print a single integer — the length of the longest beautiful subsequence.\n\nIn the first test case, we can pick the whole array as a beautiful subsequence because 1 oplus 1 < 2 oplus 0.\n\nIn the second test case, we can pick elements with indexes 1, 2 and 4 (in 0 indexation). For this elements holds: 2 oplus 2 < 4 oplus 1 and 4 oplus 4 < 1 oplus 2.\n\nInput:\n```\n321 255 2 4 3 1103 8 8 2 9 1 6 2 8 3\n```\n\nOutput:\n```\n2\n3\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 3·10^5) — the length of the array.\n\nThe second line of each test case contains n integers a_0,a_1,...,a_{n-1} (0 ≤ a_i ≤ 10^9) — the elements of the array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3·10^5.",
+    "output": "For each test case print a single integer — the length of the longest beautiful subsequence.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "dp",
+        "strings",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

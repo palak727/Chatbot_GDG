@@ -1,0 +1,21 @@
+{
+    "id": "1781C",
+    "contest_id": 1781,
+    "problem_letter": "C",
+    "title": "C. Equal Frequencies",
+    "statement": "Let's call a string balanced if all characters that are present in it appear the same number of times. For example, \"coder\", \"appall\", and \"ttttttt\" are balanced, while \"wowwow\" and \"codeforces\" are not.\n\nYou are given a string s of length n consisting of lowercase English letters. Find a balanced string t of the same length n consisting of lowercase English letters that is different from the string s in as few positions as possible. In other words, the number of indices i such that s_i ≠ t_i should be as small as possible.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the string s.\n\nThe second line contains the string s of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print the smallest number of positions where string s and a balanced string t can differ, followed by such a string t.\n\nIf there are multiple solutions, print any. It can be shown that at least one balanced string always exists.\n\nIn the first test case, the given string \"hello\" is not balanced: letters 'h', 'e', and 'o' appear in it once, while letter 'l' appears twice. On the other hand, string \"helno\" is balanced: five distinct letters are present in it, and each of them appears exactly once. Strings \"hello\" and \"helno\" differ in just one position: the fourth character. Other solutions are possible too.\n\nIn the second test case, string \"codefofced\" is balanced since only letters 'c', 'o', 'd', 'e', and 'f' are present in it, and each of them appears exactly twice.\n\nIn the third test case, string \"eeeee\" is balanced since only letter 'e' is present in it.\n\nIn the fourth test case, the given string \"appall\" is already balanced.\n\nInput:\n```\n45hello10codeforces5eevee6appall\n```\n\nOutput:\n```\n1\nhelno\n2\ncodefofced\n1\neeeee\n0\nappall\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the string s.\n\nThe second line contains the string s of length n consisting of lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print the smallest number of positions where string s and a balanced string t can differ, followed by such a string t.\n\nIf there are multiple solutions, print any. It can be shown that at least one balanced string always exists.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "sortings",
+        "strings",
+        "*1600"
+    ],
+    "rating": 1600
+}

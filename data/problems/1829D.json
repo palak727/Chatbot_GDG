@@ -1,0 +1,19 @@
+{
+    "id": "1829D",
+    "contest_id": 1829,
+    "problem_letter": "D",
+    "title": "D. Gold Rush",
+    "statement": "Initially you have a single pile with n gold nuggets. In an operation you can do the following:\n\nOne possible move is to take a pile of size 6 and split it into piles of sizes 2 and 4, which is valid since 4 is twice as large as 2.\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 10^7) — the starting and target pile sizes, respectively.\n\nFor each test case, output \"YES\" if you can make a pile of size exactly m, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nThe first test case is pictured in the statement. We can make a pile of size 4.\n\nIn the second test case, we can perform the following operations: {colorred9} → {colorred6,3} → {4,2,3}. The pile that is split apart is colored red before each operation.\n\nIn the third test case, we can't perform a single operation.\n\nIn the fourth test case, we can't end up with a larger pile than we started with.\n\nInput:\n```\n116 49 44 218 2727 427 227 101 13 15 1746001 2984004\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nYES\nNO\nYES\nYES\nNO\nNO\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe only line of each test case contains two integers n and m (1 ≤ n, m ≤ 10^7) — the starting and target pile sizes, respectively.",
+    "output": "For each test case, output \"YES\" if you can make a pile of size exactly m, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

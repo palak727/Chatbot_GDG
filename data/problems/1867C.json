@@ -1,0 +1,20 @@
+{
+    "id": "1867C",
+    "contest_id": 1867,
+    "problem_letter": "C",
+    "title": "C. Salyg1n and the MEX Game",
+    "statement": "This is an interactive problem!\n\nsalyg1n gave Alice a set S of n distinct integers s_1, s_2, …, s_n (0 ≤ s_i ≤ 10^9). Alice decided to play a game with this set against Bob. The rules of the game are as follows:\n\nLet R be the result when both players play optimally. In this problem, you play as Alice against the jury program playing as Bob. Your task is to implement a strategy for Alice such that the result of the game is always at least R.\n\ndagger MEX of a set of integers c_1, c_2, …, c_k is defined as the smallest non-negative integer x which does not occur in the set c. For example, MEX({0, 1, 2, 4}) = 3.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^5) - the number of test cases.\n\nThe interaction between your program and the jury program begins with reading an integer n (1 ≤ n ≤ 10^5) - the size of the set S before the start of the game.\n\nThen, read one line - n distinct integers s_i (0 ≤ s_1 < s_2 < … < s_n ≤ 10^9) - the set S given to Alice.\n\nTo make a move, output an integer x (0 ≤ x ≤ 10^9) - the number you want to add to the set S. S must not contain x at the time of the move. Then, read one integer y (-2 ≤ y ≤ 10^9).\n\nAfter printing a query do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nDo not attempt to hack this problem.\n\nIn the first test case, the set S changed as follows:\n\n1, 2, 3, 5, 7 → 1, 2, 3, 5, 7, 8 → 1, 2, 3, 5, 8 → 1, 2, 3, 5, 8, 57 → 1, 2, 3, 8, 57 → 0, 1, 2, 3, 8, 57. In the end of the game, MEX(S) = 4, R = 4.\n\nIn the second test case, the set S changed as follows:\n\n0, 1, 2 → 0, 1, 2, 3 → 1, 2, 3 → 0, 1, 2, 3. In the end of the game, MEX(S) = 4, R = 4.\n\nIn the third test case, the set S changed as follows:\n\n5, 7, 57 → 0, 5, 7, 57. In the end of the game, MEX(S) = 1, R = 1.\n\nInput:\n```\n3\n5\n1 2 3 5 7\n\n7\n\n5\n\n-1\n\n3\n0 1 2\n\n0\n\n-1\n\n3\n5 7 57\n\n-1\n```\n\nOutput:\n```\n8\n\n57\n\n0\n\n3\n\n0\n\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^5) - the number of test cases.",
+    "output": "",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "games",
+        "greedy",
+        "interactive",
+        "*1300"
+    ],
+    "rating": 1300
+}

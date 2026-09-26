@@ -1,0 +1,16 @@
+{
+    "id": "1822C",
+    "contest_id": 1822,
+    "problem_letter": "C",
+    "title": "C. Bun Lover",
+    "statement": "Tema loves cinnabon rolls — buns with cinnabon and chocolate in the shape of a \"snail\".\n\nCinnabon rolls come in different sizes and are square when viewed from above. The most delicious part of a roll is the chocolate, which is poured in a thin layer over the cinnabon roll in the form of a spiral and around the bun, as in the following picture:\n\nCinnabon rolls of sizes 4, 5, 6\n\nFor a cinnabon roll of size n, the length of the outer side of the square is n, and the length of the shortest vertical chocolate segment in the central part is one.\n\nFormally, the bun consists of two dough spirals separated by chocolate. A cinnabon roll of size n + 1 is obtained from a cinnabon roll of size n by wrapping each of the dough spirals around the cinnabon roll for another layer.\n\nIt is important that a cinnabon roll of size n is defined in a unique way.\n\nTema is interested in how much chocolate is in his cinnabon roll of size n. Since Tema has long stopped buying small cinnabon rolls, it is guaranteed that n ≥ 4.\n\nAnswer this non-obvious question by calculating the total length of the chocolate layer.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe following t lines describe the test cases.\n\nEach test case is described by a single integer n (4 ≤ n ≤ 10^9) — the size of the cinnabon roll.\n\nOutput t integers. The i-th of them should be equal to the total length of the chocolate layer in the i-th test case.\n\nInput:\n```\n4456179179179\n```\n\nOutput:\n```\n26\n37\n50\n32105178545472401\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases.\n\nThe following t lines describe the test cases.\n\nEach test case is described by a single integer n (4 ≤ n ≤ 10^9) — the size of the cinnabon roll.",
+    "output": "Output t integers. The i-th of them should be equal to the total length of the chocolate layer in the i-th test case.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

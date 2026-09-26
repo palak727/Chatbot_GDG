@@ -1,0 +1,21 @@
+{
+    "id": "1388D",
+    "contest_id": 1388,
+    "problem_letter": "D",
+    "title": "D. Captain Flint and Treasure",
+    "statement": "Captain Fint is involved in another treasure hunt, but have found only one strange problem. The problem may be connected to the treasure's location or may not. That's why captain Flint decided to leave the solving the problem to his crew and offered an absurdly high reward: one day off. The problem itself sounds like this...\n\nThere are two arrays a and b of length n. Initially, an ans is equal to 0 and the following operation is defined:\n\nWhat is the maximum ans you can get by performing the operation on each i (1 ≤ i ≤ n) exactly once?\n\nUncle Bogdan is eager to get the reward, so he is asking your help to find the optimal order of positions to perform the operation on them.\n\nThe first line contains the integer n (1 ≤ n ≤ 2·10^5) — the length of arrays a and b.\n\nThe second line contains n integers a_1, a_2, …, a_n (−10^6 ≤ a_i ≤ 10^6).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n or b_i = -1).\n\nAdditional constraint: it's guaranteed that for any i (1 ≤ i ≤ n) the sequence b_i, b_b_i, b_b_b_i, … is not cyclic, in other words it will always end with -1.\n\nIn the first line, print the maximum ans you can get.\n\nIn the second line, print the order of operations: n different integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). The p_i is the position which should be chosen at the i-th step. If there are multiple orders, print any of them.\n\nInput:\n```\n3\n1 2 3\n2 3 -1\n```\n\nOutput:\n```\n10\n1 2 3 \n```\n\nInput:\n```\n2\n-1 100\n2 -1\n```\n\nOutput:\n```\n99\n2 1 \n```\n\nInput:\n```\n10\n-10 -1 2 2 5 -2 -3 -4 2 -6\n-1 -1 2 2 -1 5 5 7 7 9\n```\n\nOutput:\n```\n-9\n3 5 6 1 9 4 10 7 8 2\n```",
+    "input": "The first line contains the integer n (1 ≤ n ≤ 2·10^5) — the length of arrays a and b.\n\nThe second line contains n integers a_1, a_2, …, a_n (−10^6 ≤ a_i ≤ 10^6).\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n or b_i = -1).\n\nAdditional constraint: it's guaranteed that for any i (1 ≤ i ≤ n) the sequence b_i, b_b_i, b_b_b_i, … is not cyclic, in other words it will always end with -1.",
+    "output": "In the first line, print the maximum ans you can get.\n\nIn the second line, print the order of operations: n different integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n). The p_i is the position which should be chosen at the i-th step. If there are multiple orders, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "graphs",
+        "greedy",
+        "implementation",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1681C",
+    "contest_id": 1681,
+    "problem_letter": "C",
+    "title": "C. Double Sort",
+    "statement": "You are given two arrays a and b, both consisting of n integers.\n\nIn one move, you can choose two indices i and j (1 ≤ i, j ≤ n; i ≠ j) and swap a_i with a_j and b_i with b_j. You have to perform the swap in both arrays.\n\nYou are allowed to perform at most 10^4 moves (possibly, zero). Can you make both arrays sorted in a non-decreasing order at the end? If you can, print any sequence of moves that makes both arrays sorted.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the number of elements in both arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the first array.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the second array.\n\nFor each testcase, print the answer. If it's impossible to make both arrays sorted in a non-decreasing order in at most 10^4 moves, print -1. Otherwise, first, print the number of moves k (0 ≤ k ≤ 10^4). Then print i and j for each move (1 ≤ i, j ≤ n; i ≠ j).\n\nIf there are multiple answers, then print any of them. You don't have to minimize the number of moves.\n\nInput:\n```\n321 21 222 11 242 3 1 22 3 2 3\n```\n\nOutput:\n```\n0\n-1\n3\n3 1\n3 2\n4 3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the number of elements in both arrays.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — the first array.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n) — the second array.",
+    "output": "For each testcase, print the answer. If it's impossible to make both arrays sorted in a non-decreasing order in at most 10^4 moves, print -1. Otherwise, first, print the number of moves k (0 ≤ k ≤ 10^4). Then print i and j for each move (1 ≤ i, j ≤ n; i ≠ j).\n\nIf there are multiple answers, then print any of them. You don't have to minimize the number of moves.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "*1200"
+    ],
+    "rating": 1200
+}

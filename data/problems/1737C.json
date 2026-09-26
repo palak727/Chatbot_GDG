@@ -1,0 +1,19 @@
+{
+    "id": "1737C",
+    "contest_id": 1737,
+    "problem_letter": "C",
+    "title": "C. Ela and Crickets",
+    "statement": "The problem, which involves a non-standard chess pieces type that is described below, reads: given 3 white crickets on a n·n board, arranged in an \"L\" shape next to each other, there are no other pieces on the board. Ela wants to know with a finite number of moves, can she put any white cricket on the square on row x, column y?\n\nAn \"L\"-shape piece arrangement can only be one of the below:\n\nFor simplicity, we describe the rules for crickets on the board where only three white crickets are. It can move horizontally, vertically, or diagonally, but only to a square in some direction that is immediately after another cricket piece (so that it must jump over it). If the square immediately behind the piece is unoccupied, the cricket will occupy the square. Otherwise (when the square is occupied by another cricket, or does not exist), the cricket isn't allowed to make such a move.\n\nSee an example of valid crickets' moves on the pictures in the Note section.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains n (4 ≤ n ≤ 10^5) — denotes the size of the chessboard.\n\nThe second line of each test case contains 6 numbers: r_1, c_1, r_2, c_2, r_3, c_3 (1 ≤ r_1, c_1, r_2, c_2, r_3, c_3 ≤ n) — coordinates of the crickets. The input ensures that the three crickets are arranged in an \"L\" shape that the legend stated.\n\nThe third line of each test case contains 2 numbers: x, y (1 ≤ x, y ≤ n) — coordinates of the target square.\n\nFor each test case, print \"YES\" or \"NO\" to denotes whether Ela can put a cricket on the target square.\n\nHere's the solution for the first test case. The red square denotes where the crickets need to reach. Note that in chess horizontals are counted from bottom to top, as well as on this picture.\n\nInput:\n```\n687 2 8 2 7 15 182 2 1 2 2 15 582 2 1 2 2 16 681 1 1 2 2 15 582 2 1 2 2 18 888 8 8 7 7 84 8\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nYES\nYES\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains n (4 ≤ n ≤ 10^5) — denotes the size of the chessboard.\n\nThe second line of each test case contains 6 numbers: r_1, c_1, r_2, c_2, r_3, c_3 (1 ≤ r_1, c_1, r_2, c_2, r_3, c_3 ≤ n) — coordinates of the crickets. The input ensures that the three crickets are arranged in an \"L\" shape that the legend stated.\n\nThe third line of each test case contains 2 numbers: x, y (1 ≤ x, y ≤ n) — coordinates of the target square.",
+    "output": "For each test case, print \"YES\" or \"NO\" to denotes whether Ela can put a cricket on the target square.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "implementation",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1609F",
+    "contest_id": 1609,
+    "problem_letter": "F",
+    "title": "F. Interesting Sections",
+    "statement": "William has an array of non-negative numbers a_1, a_2, …, a_n. He wants you to find out how many segments l ≤ r pass the check. The check is performed in the following manner:\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6), the size of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18), the contents of array a.\n\nOutput a single number — the total number of segments that passed the check.\n\nInput:\n```\n5\n1 2 3 4 5\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n10\n0 5 7 3 9 10 1 6 13 7\n```\n\nOutput:\n```\n18\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6), the size of array a.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18), the contents of array a.",
+    "output": "Output a single number — the total number of segments that passed the check.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "meet-in-the-middle",
+        "two pointers",
+        "*2800"
+    ],
+    "rating": 2800
+}

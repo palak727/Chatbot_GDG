@@ -1,0 +1,17 @@
+{
+    "id": "1704A",
+    "contest_id": 1704,
+    "problem_letter": "A",
+    "title": "A. Two 0-1 Sequences",
+    "statement": "AquaMoon has two binary sequences a and b, which contain only 0 and 1. AquaMoon can perform the following two operations any number of times (a_1 is the first element of a, a_2 is the second element of a, and so on):\n\nNote that after a removal of the first element of a, the former a_2 becomes the first element of a, the former a_3 becomes the second element of a and so on, and the length of a reduces by one.\n\nDetermine if AquaMoon can make a equal to b by using these operations.\n\nThe first line contains a single integer t (1 ≤ t ≤ 2,000) — the number of test cases. Description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n,m ≤ 50, m ≤ n) — the lengths of a and b respectively.\n\nThe second line of each test case contains a string a of length n, consisting only 0 and 1.\n\nThe third line of each test case contains a string b of length m, consisting only 0 and 1.\n\nFor each test case, output \"YES\" if AquaMoon can change a to b by using these options; otherwise, output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as a positive answer).\n\nIn the first test case, you can use Operation 2 four times to make a equals to b.\n\nIn the second test case, you can use Operation 1 four times to make a equals to b.\n\nIn the third test case, it can be proved that no matter how we use the operations, it is impossible to make a equal to b.\n\nIn the fourth test case, it can be proved that no matter how we use the operations, it is impossible to make a equal to b.\n\nIn the fifth test case, you can use Operation 2 three times to make a become 10101, so the first element of a equals to the first element of b, but it can be proved that no matter how to operate, the second to the fifth elements of a can't be the same as b.\n\nInput:\n```\n106 2001001116 2110111016 2000001116 2111111018 510000101110107 4101000110018 6010100100100108 40101010110018 41010101001107 5101110011100\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nNO\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2,000) — the number of test cases. Description of test cases follows.\n\nThe first line of each test case contains two integers n, m (1 ≤ n,m ≤ 50, m ≤ n) — the lengths of a and b respectively.\n\nThe second line of each test case contains a string a of length n, consisting only 0 and 1.\n\nThe third line of each test case contains a string b of length m, consisting only 0 and 1.",
+    "output": "For each test case, output \"YES\" if AquaMoon can change a to b by using these options; otherwise, output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", \"yEs\" will all be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1866A",
+    "contest_id": 1866,
+    "problem_letter": "A",
+    "title": "A. Ambitious Kid",
+    "statement": "Chaneka, Pak Chanek's child, is an ambitious kid, so Pak Chanek gives her the following problem to test her ambition.\n\nGiven an array of integers [A_1, A_2, A_3, …, A_N]. In one operation, Chaneka can choose one element, then increase or decrease the element's value by 1. Chaneka can do that operation multiple times, even for different elements.\n\nWhat is the minimum number of operations that must be done to make it such that A_1 × A_2 × A_3 × … × A_N = 0?\n\nThe first line contains a single integer N (1 ≤ N ≤ 10^5).\n\nThe second line contains N integers A_1, A_2, A_3, …, A_N (-10^5 ≤ A_i ≤ 10^5).\n\nAn integer representing the minimum number of operations that must be done to make it such that A_1 × A_2 × A_3 × … × A_N = 0.\n\nIn the first example, initially, A_1× A_2× A_3=2×(-6)×5=-60. Chaneka can do the following sequence of operations:\n\nIn the third example, Chaneka does not have to do any operations, because from the start, it already holds that A_1× A_2× A_3× A_4× A_5=0×(-1)×0×1×0=0\n\nInput:\n```\n3\n2 -6 5\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1\n-3\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5\n0 -1 0 1 0\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer N (1 ≤ N ≤ 10^5).\n\nThe second line contains N integers A_1, A_2, A_3, …, A_N (-10^5 ≤ A_i ≤ 10^5).",
+    "output": "An integer representing the minimum number of operations that must be done to make it such that A_1 × A_2 × A_3 × … × A_N = 0.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

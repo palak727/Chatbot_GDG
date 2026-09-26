@@ -1,0 +1,23 @@
+{
+    "id": "1658E",
+    "contest_id": 1658,
+    "problem_letter": "E",
+    "title": "E. Gojou and Matrix Game",
+    "statement": "Marin feels exhausted after a long day of cosplay, so Gojou invites her to play a game!\n\nMarin and Gojou take turns to place one of their tokens on an n × n grid with Marin starting first. There are some restrictions and allowances on where to place tokens:\n\nWhenever a player places a token on cell (x, y), that player gets v_{x, y} points. All values of v on the grid are distinct. You still get points from a cell even if tokens were already placed onto the cell. The game finishes when each player makes 10^100 moves.\n\nMarin and Gojou will play n^2 games. For each cell of the grid, there will be exactly one game where Marin places a token on that cell on her first move. Please answer for each game, if Marin and Gojou play optimally (after Marin's first move), who will have more points at the end? Or will the game end in a draw (both players have the same points at the end)?\n\nThe first line contains two integers n, k (3 ≤ n ≤ 2000, 1 ≤ k ≤ n - 2). Note that under these constraints it is always possible to make a move.\n\nThe following n lines contains n integers each. The j-th integer in the i-th line is v_{i,j} (1 ≤ v_{i,j} ≤ n^2). All elements in v are distinct.\n\nYou should print n lines. In the i-th line, print n characters, where the j-th character is the result of the game in which Marin places her first token in the cell (i, j). Print 'M' if Marin wins, 'G' if Gojou wins, and 'D' if the game ends in a draw. Do not print spaces between the characters in one line.\n\nInput:\n```\n3 1\n1 2 4\n6 8 3\n9 5 7\n```\n\nOutput:\n```\nGGG\nMGG\nMGG\n```",
+    "input": "The first line contains two integers n, k (3 ≤ n ≤ 2000, 1 ≤ k ≤ n - 2). Note that under these constraints it is always possible to make a move.\n\nThe following n lines contains n integers each. The j-th integer in the i-th line is v_{i,j} (1 ≤ v_{i,j} ≤ n^2). All elements in v are distinct.",
+    "output": "You should print n lines. In the i-th line, print n characters, where the j-th character is the result of the game in which Marin places her first token in the cell (i, j). Print 'M' if Marin wins, 'G' if Gojou wins, and 'D' if the game ends in a draw. Do not print spaces between the characters in one line.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "games",
+        "hashing",
+        "implementation",
+        "math",
+        "number theory",
+        "sortings",
+        "*2500"
+    ],
+    "rating": 2500
+}

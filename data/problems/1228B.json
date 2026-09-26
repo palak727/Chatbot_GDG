@@ -1,0 +1,17 @@
+{
+    "id": "1228B",
+    "contest_id": 1228,
+    "problem_letter": "B",
+    "title": "B. Filling the Grid",
+    "statement": "Suppose there is a h × w grid consisting of empty or full cells. Let's make some definitions:\n\nIn other words, the i-th row starts exactly with r_i full cells. Similarly, the j-th column starts exactly with c_j full cells.\n\nYou have values of r and c. Initially, all cells are empty. Find the number of ways to fill grid cells to satisfy values of r and c. Since the answer can be very large, find the answer modulo 1000000007,(10^9 + 7). In other words, find the remainder after division of the answer by 1000000007,(10^9 + 7).\n\nThe first line contains two integers h and w (1 ≤ h, w ≤ 10^3) — the height and width of the grid.\n\nThe second line contains h integers r_1, r_2, …, r_h (0 ≤ r_i ≤ w) — the values of r.\n\nThe third line contains w integers c_1, c_2, …, c_w (0 ≤ c_j ≤ h) — the values of c.\n\nPrint the answer modulo 1000000007,(10^9 + 7).\n\nIn the first example, this is the other possible case.\n\nIn the second example, it's impossible to make a grid to satisfy such r, c values.\n\nIn the third example, make sure to print answer modulo (10^9 + 7).\n\nInput:\n```\n3 4\n0 3 1\n0 2 3 0\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n1 1\n0\n1\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n19 16\n16 16 16 16 15 15 0 5 0 4 9 9 1 4 4 0 8 16 12\n6 12 19 15 8 6 19 19 14 6 9 16 10 11 15 4\n```\n\nOutput:\n```\n797922655\n```",
+    "input": "The first line contains two integers h and w (1 ≤ h, w ≤ 10^3) — the height and width of the grid.\n\nThe second line contains h integers r_1, r_2, …, r_h (0 ≤ r_i ≤ w) — the values of r.\n\nThe third line contains w integers c_1, c_2, …, c_w (0 ≤ c_j ≤ h) — the values of c.",
+    "output": "Print the answer modulo 1000000007,(10^9 + 7).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

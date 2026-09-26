@@ -1,0 +1,17 @@
+{
+    "id": "1280A",
+    "contest_id": 1280,
+    "problem_letter": "A",
+    "title": "A. Cut and Paste",
+    "statement": "We start with a string s consisting only of the digits 1, 2, or 3. The length of s is denoted by |s|. For each i from 1 to |s|, the i-th character of s is denoted by s_i.\n\nThere is one cursor. The cursor's location ell is denoted by an integer in {0, …, |s|}, with the following meaning:\n\nWe denote by s_left the string to the left of the cursor and s_right the string to the right of the cursor.\n\nWe also have a string c, which we call our clipboard, which starts out as empty. There are three types of actions:\n\nThe cursor initially starts at ell = 0. Then, we perform the following procedure:\n\nYou're given the initial string s and the integer x. What is the length of s when the procedure stops? Since this value may be very large, only find it modulo 10^9 + 7.\n\nIt is guaranteed that ell ≤ |s| at any time.\n\nThe first line of input contains a single integer t (1 ≤ t ≤ 1000) denoting the number of test cases. The next lines contain descriptions of the test cases.\n\nThe first line of each test case contains a single integer x (1 ≤ x ≤ 10^6). The second line of each test case consists of the initial string s (1 ≤ |s| ≤ 500). It is guaranteed, that s consists of the characters \"1\", \"2\", \"3\".\n\nIt is guaranteed that the sum of x in a single file is at most 10^6. It is guaranteed that in each test case before the procedure will stop it will be true that ell ≤ |s| at any time.\n\nFor each test case, output a single line containing a single integer denoting the answer for that test case modulo 10^9 + 7.\n\nLet's illustrate what happens with the first test case. Initially, we have s = 231. Initially, ell = 0 and c = ϵ (the empty string). The following things happen if we follow the procedure above:\n\nAt the end of the procedure, s has length 25.\n\nInput:\n```\n4\n5\n231\n7\n2323\n6\n333\n24\n133321333\n```\n\nOutput:\n```\n25\n1438\n1101\n686531475\n```",
+    "input": "The first line of input contains a single integer t (1 ≤ t ≤ 1000) denoting the number of test cases. The next lines contain descriptions of the test cases.\n\nThe first line of each test case contains a single integer x (1 ≤ x ≤ 10^6). The second line of each test case consists of the initial string s (1 ≤ |s| ≤ 500). It is guaranteed, that s consists of the characters \"1\", \"2\", \"3\".\n\nIt is guaranteed that the sum of x in a single file is at most 10^6. It is guaranteed that in each test case before the procedure will stop it will be true that ell ≤ |s| at any time.",
+    "output": "For each test case, output a single line containing a single integer denoting the answer for that test case modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*1700"
+    ],
+    "rating": 1700
+}

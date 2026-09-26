@@ -1,0 +1,20 @@
+{
+    "id": "1779E",
+    "contest_id": 1779,
+    "problem_letter": "E",
+    "title": "E. Anya's Simultaneous Exhibition",
+    "statement": "This is an interactive problem.\n\nAnya has gathered n chess experts numbered from 1 to n for which the following properties hold:\n\nTo organize a tournament, Anya hosts n-1 games. In each game, she chooses two players. One of them wins and stays, while the other one is disqualified. After all the games are hosted only one player will remain. A player is said to be a candidate master if they can win a tournament (notice that the winner of a tournament may depend on the players selected by Anya in the n-1 games).\n\nSince Anya is a curious girl, she is interested in finding the candidate masters. Unfortunately, she does not have much time. To speed up the process, she will organize up to 2n simuls (short for \"simultaneous exhibition\", in which one player plays against many).\n\nIn one simul, Anya chooses exactly one player who will play against some (at least one) of the other players. The chosen player wins all games they would win in a regular game, and the same holds for losses. After the simul finishes, Anya is only told the total number of games won by the chosen player (but not which ones). Nobody is disqualified during a simul.\n\nCan you help Anya host simuls and determine the candidate masters?\n\nThe winning players in each pair could be changed between the simuls, but only in a way that preserves the results of all previous simuls. These changes may depend on your queries.\n\nFirstly, the jury sends one integer n (3 ≤ n ≤ 250) which should be read — the number of players. After that, your program may ask queries or report an answer.\n\nTo ask a query, print \"? i ; s_1 s_2 … s_n\" (without quotes), where i is the index of the player who will play against some of the other players in the simul. s is a binary string that denotes the players they play against. i plays against every player j for which s_j = 1 holds (and s_j = 1 should hold for at least one 1 ≤ j ≤ n). Please note that s_i = 0 must hold since a player cannot play against themselves, otherwise, the query is considered to be incorrect.\n\nAfter this, you should read an integer — the number of games player i has won.\n\nWhen you have identified the answer, you must print \"! c_1 c_2 … c_n\" (without quotes) and terminate your program. c is a binary string which represents the candidate masters. Player i is a candidate master if c_i=1 holds, otherwise, they are not.\n\nIf you ask more than 2n queries or if one of the queries is malformed, the interaction terminates immediately and your program receives verdict Wrong Answer.\n\nAfter printing a query do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks are disabled in this problem.\n\nIn the first example, the first query describes a simul in which player 1 plays against player 2 (and no one else). The answer to the query is 1, meaning that player 1 won the only game they played. We can conclude that 1 beats 2. Similarly, the second query tells us that 2 beats 3 and the third query tells us that 3 beats 1. All players are candidate masters in this case as\n\nIn the second example, the third query describes a simul in which player 1 plays against every other player. The answer to the query is 4, meaning that they won every game they played. It can be concluded that player 1 also beats every other player. They can never lose, hence they are the only player who can remain at the end of every possible tournament, and the only possible candidate master.\n\nInput:\n```\n3\n\n1\n\n1\n\n1\n```\n\nOutput:\n```\n? 1 010\n\n? 2 001\n\n? 3 100\n\n! 111\n```\n\nInput:\n```\n5\n\n0\n\n3\n\n4\n```\n\nOutput:\n```\n? 5 10110\n\n? 2 10111\n\n? 1 01111\n\n! 10000\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "interactive",
+        "sortings",
+        "*2400"
+    ],
+    "rating": 2400
+}

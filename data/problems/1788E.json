@@ -1,0 +1,18 @@
+{
+    "id": "1788E",
+    "contest_id": 1788,
+    "problem_letter": "E",
+    "title": "E. Sum Over Zero",
+    "statement": "You are given an array a_1, a_2, …, a_n of n integers. Consider S as a set of segments satisfying the following conditions.\n\nThe length of the segment [x, y] is defined as y-x+1. f(S) is defined as the sum of the lengths of every element in S. In a formal way, f(S) = ∑_{[x, y] ∈ S} (y - x + 1). Note that if S is empty, f(S) is 0.\n\nWhat is the maximum f(S) among all possible S?\n\nThe first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe next line is followed by n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).\n\nPrint a single integer, the maximum f(S) among every possible S.\n\nIn the first example, S={[1, 2], [4, 5]} can be a possible S because a_1+a_2=0 and a_4+a_5=1. S={[1, 4]} can also be a possible solution.\n\nSince there does not exist any S that satisfies f(S) > 4, the answer is 4.\n\nIn the second example, S={[1, 9]} is the only set that satisfies f(S)=9. Since every possible S satisfies f(S) ≤ 9, the answer is 9.\n\nIn the third example, S can only be an empty set, so the answer is 0.\n\nInput:\n```\n5\n3 -3 -2 5 -4\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n10\n5 -2 -4 -6 2 3 -6 5 3 -2\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n4\n-1 -2 -3 -4\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 2·10^5).\n\nThe next line is followed by n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9).",
+    "output": "Print a single integer, the maximum f(S) among every possible S.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2060E",
+    "contest_id": 2060,
+    "problem_letter": "E",
+    "title": "E. Graph Composition",
+    "statement": "You are given two simple undirected graphs F and G with n vertices. F has m_1 edges while G has m_2 edges. You may perform one of the following two types of operations any number of times:\n\nDetermine the minimum number of operations required such that for all integers u and v (1 ≤ u,v ≤ n), there is a path from u to v in F if and only if there is a path from u to v in G.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of independent test cases.\n\nThe first line of each test case contains three integers n, m_1, and m_2 (1 ≤ n ≤ 2·10^5, 0 ≤ m_1,m_2 ≤ 2·10^5) — the number of vertices, the number of edges in F, and the number of edges in G.\n\nThe following m_1 lines each contain two integers u and v (1 ≤ u, v≤ n) — there is an edge between u and v in F. It is guaranteed that there are no repeated edges or self loops.\n\nThe following m_2 lines each contain two integers u and v (1 ≤ u,v≤ n) — there is an edge between u and v in G. It is guaranteed that there are no repeated edges or self loops.\n\nIt is guaranteed that the sum of n, the sum of m_1, and the sum of m_2 over all test cases do not exceed 2·10^5.\n\nFor each test case, output a single integer denoting the minimum operations required on a new line.\n\nIn the first test case you can perform the following three operations:\n\nIn the second test case, F and G already fulfill the condition in the beginning.\n\nIn the fifth test case, the edges from 1 to 3 and from 2 to 3 must both be removed.\n\nInput:\n```\n53 2 11 22 31 32 1 11 21 23 2 03 21 21 0 03 3 11 21 32 31 2\n```\n\nOutput:\n```\n3\n0\n2\n0\n2\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of independent test cases.\n\nThe first line of each test case contains three integers n, m_1, and m_2 (1 ≤ n ≤ 2·10^5, 0 ≤ m_1,m_2 ≤ 2·10^5) — the number of vertices, the number of edges in F, and the number of edges in G.\n\nThe following m_1 lines each contain two integers u and v (1 ≤ u, v≤ n) — there is an edge between u and v in F. It is guaranteed that there are no repeated edges or self loops.\n\nThe following m_2 lines each contain two integers u and v (1 ≤ u,v≤ n) — there is an edge between u and v in G. It is guaranteed that there are no repeated edges or self loops.\n\nIt is guaranteed that the sum of n, the sum of m_1, and the sum of m_2 over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output a single integer denoting the minimum operations required on a new line.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "greedy",
+        "*1500"
+    ],
+    "rating": 1500
+}

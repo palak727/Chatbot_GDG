@@ -1,0 +1,20 @@
+{
+    "id": "1644E",
+    "contest_id": 1644,
+    "problem_letter": "E",
+    "title": "E. Expand the Path",
+    "statement": "Consider a grid of size n × n. The rows are numbered top to bottom from 1 to n, the columns are numbered left to right from 1 to n.\n\nThe robot is positioned in a cell (1, 1). It can perform two types of moves:\n\nThe robot is not allowed to move outside the grid.\n\nYou are given a sequence of moves s — the initial path of the robot. This path doesn't lead the robot outside the grid.\n\nYou are allowed to perform an arbitrary number of modifications to it (possibly, zero). With one modification, you can duplicate one move in the sequence. That is, replace a single occurrence of D with DD or a single occurrence of R with RR.\n\nCount the number of cells such that there exists at least one sequence of modifications that the robot visits this cell on the modified path and doesn't move outside the grid.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains the single integer n (2 ≤ n ≤ 10^8) — the number of rows and columns in the grid.\n\nThe second line of each testcase contains a non-empty string s, consisting only of characters D and R, — the initial path of the robot. This path doesn't lead the robot outside the grid.\n\nThe total length of strings s over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the number of cells such that there exists at least one sequence of modifications that the robot visits this cell on the modified path and doesn't move outside the grid.\n\nIn the first testcase, it's enough to consider the following modified paths:\n\nThus, the cells that are visited on at least one modified path are: (1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4), (4, 2), (4, 3) and (4, 4).\n\nIn the second testcase, there is no way to modify the sequence without moving the robot outside the grid. So the only visited cells are the ones that are visited on the path DRDRDRDR.\n\nIn the third testcase, the cells that are visited on at least one modified path are: (1, 1), (2, 1) and (3, 1).\n\nHere are the cells for all testcases:\n\nInput:\n```\n34RD5DRDRDRDR3D\n```\n\nOutput:\n```\n13\n9\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains the single integer n (2 ≤ n ≤ 10^8) — the number of rows and columns in the grid.\n\nThe second line of each testcase contains a non-empty string s, consisting only of characters D and R, — the initial path of the robot. This path doesn't lead the robot outside the grid.\n\nThe total length of strings s over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the number of cells such that there exists at least one sequence of modifications that the robot visits this cell on the modified path and doesn't move outside the grid.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "data structures",
+        "implementation",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

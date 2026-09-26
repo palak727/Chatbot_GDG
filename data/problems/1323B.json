@@ -1,0 +1,18 @@
+{
+    "id": "1323B",
+    "contest_id": 1323,
+    "problem_letter": "B",
+    "title": "B. Count Subrectangles",
+    "statement": "You are given an array a of length n and array b of length m both consisting of only integers 0 and 1. Consider a matrix c of size n × m formed by following rule: c_{i, j} = a_i·b_j (i.e. a_i multiplied by b_j). It's easy to see that c consists of only zeroes and ones too.\n\nHow many subrectangles of size (area) k consisting only of ones are there in c?\n\nA subrectangle is an intersection of a consecutive (subsequent) segment of rows and a consecutive (subsequent) segment of columns. I.e. consider four integers x_1, x_2, y_1, y_2 (1 ≤ x_1 ≤ x_2 ≤ n, 1 ≤ y_1 ≤ y_2 ≤ m) a subrectangle c[x_1 … x_2][y_1 … y_2] is an intersection of the rows x_1, x_1+1, x_1+2, …, x_2 and the columns y_1, y_1+1, y_1+2, …, y_2.\n\nThe size (area) of a subrectangle is the total number of cells in it.\n\nThe first line contains three integers n, m and k (1 ≤ n, m ≤ 40,000, 1 ≤ k ≤ n·m), length of array a, length of array b and required size of subrectangles.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1), elements of a.\n\nThe third line contains m integers b_1, b_2, …, b_m (0 ≤ b_i ≤ 1), elements of b.\n\nOutput single integer — the number of subrectangles of c with size (area) k consisting only of ones.\n\nIn first example matrix c is:\n\nThere are 4 subrectangles of size 2 consisting of only ones in it:\n\nIn second example matrix c is:\n\nInput:\n```\n3 3 2\n1 0 1\n1 1 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n3 5 4\n1 1 1\n1 1 1 1 1\n```\n\nOutput:\n```\n14\n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ n, m ≤ 40,000, 1 ≤ k ≤ n·m), length of array a, length of array b and required size of subrectangles.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 1), elements of a.\n\nThe third line contains m integers b_1, b_2, …, b_m (0 ≤ b_i ≤ 1), elements of b.",
+    "output": "Output single integer — the number of subrectangles of c with size (area) k consisting only of ones.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "implementation",
+        "*1500"
+    ],
+    "rating": 1500
+}

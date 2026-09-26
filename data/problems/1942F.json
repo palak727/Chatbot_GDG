@@ -1,0 +1,19 @@
+{
+    "id": "1942F",
+    "contest_id": 1942,
+    "problem_letter": "F",
+    "title": "F. Farmer John's Favorite Function",
+    "statement": "Farmer John has an array a of length n. He also has a function f with the following recurrence:\n\nNote that f(i) is not necessarily an integer.\n\nHe plans to do q updates to the array. Each update, he gives you two integers k and x and he wants you to set a_k = x. After each update, he wants to know lfloor f(n) rfloor, where lfloor t rfloor denotes the value of t rounded down to the nearest integer.\n\nThe first line contains n and q (1 ≤ n, q ≤ 2·10^5), the length of a and the number of updates he will perform.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18).\n\nThe next q lines each contain two integers k and x (1 ≤ k ≤ n, 0 ≤ x ≤ 10^18), the index of the update and the element he will replace a_k with.\n\nFor each update, output an integer, lfloor f(n) rfloor, on a new line.\n\nIn the first test case, the array after the first update is [4, 14, 0, 7, 6]. The values of f are:\n\nSince lfloor f(5) rfloor = 3, we output 3.\n\nThe array after the second update is [3, 14, 0, 7, 6]. The values of f, rounded to 6 decimal places, are:\n\nSince lfloor f(5) rfloor = 2, we output 2.\n\nInput:\n```\n5 60 14 0 7 61 41 32 154 15 25 8\n```\n\nOutput:\n```\n3\n2\n3\n2\n1\n3\n```\n\nInput:\n```\n15 103364 1623 5435 7 6232 245 7903 3880 9738 577 4598 1868 1112 8066 19914 428414 80666 926 2452 9252 16235 1765 62323 11573 5435\n```\n\nOutput:\n```\n16\n17\n16\n17\n16\n17\n16\n17\n16\n17\n```\n\nInput:\n```\n2 2386056082462833225 9239510854080434211 3860560824628332251 386056082462833224\n```\n\nOutput:\n```\n961223744\n961223743\n```\n\nInput:\n```\n13 1031487697732100 446330174221392699 283918145228010533 619870471872432389 11918456891794188 247842810542459080 140542974216802552 698742782599365547 533363381213535498 92488084424940128 401887157851719898 128798321287952855 1373768483581840693 2839181452280105323 2839181452280105331 218372893031213 100000000000000000010 10000000000000000009 10000000000000000008 10000000000000000007 10000000000000000006 10000000000000000005 1000000000000000000\n```\n\nOutput:\n```\n370643829\n370643830\n370643829\n1000000000\n1000000000\n1000000000\n1000000000\n1000000000\n1000000000\n1000000000\n```",
+    "input": "The first line contains n and q (1 ≤ n, q ≤ 2·10^5), the length of a and the number of updates he will perform.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^18).\n\nThe next q lines each contain two integers k and x (1 ≤ k ≤ n, 0 ≤ x ≤ 10^18), the index of the update and the element he will replace a_k with.",
+    "output": "For each update, output an integer, lfloor f(n) rfloor, on a new line.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "implementation",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

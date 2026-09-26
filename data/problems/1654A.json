@@ -1,0 +1,19 @@
+{
+    "id": "1654A",
+    "contest_id": 1654,
+    "problem_letter": "A",
+    "title": "A. Maximum Cake Tastiness",
+    "statement": "There are n pieces of cake on a line. The i-th piece of cake has weight a_i (1 ≤ i ≤ n).\n\nThe tastiness of the cake is the maximum total weight of two adjacent pieces of cake (i. e., max(a_1+a_2,, a_2+a_3,, …,, a_{n-1} + a_n)).\n\nYou want to maximize the tastiness of the cake. You are allowed to do the following operation at most once (doing more operations would ruin the cake):\n\nThe subsegment a[l, r] of the array a is the sequence a_l, a_{l+1}, …, a_r.\n\nIf you reverse it, the array will become a_1, a_2, …, a_{l-2}, a_{l-1}, underlinea_r, underlinea_{r-1}, underline…, underlinea_{l+1}, underlinea_l, a_{r+1}, a_{r+2}, …, a_{n-1}, a_n.\n\nFor example, if the weights are initially [5, 2, 1, 4, 7, 3], you can reverse the subsegment a[2, 5], getting [5, underline7, underline4, underline1, underline2, 3]. The tastiness of the cake is now 5 + 7 = 12 (while before the operation the tastiness was 4+7=11).\n\nFind the maximum tastiness of the cake after doing the operation at most once.\n\nThe first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the number of pieces of cake.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — a_i is the weight of the i-th piece of cake.\n\nFor each test case, print a single integer: the maximum tastiness of the cake after doing the operation at most once.\n\nIn the first test case, after reversing the subsegment a[2, 5], you get a cake with weights [5, underline7, underline4, underline1, underline2, 3]. The tastiness of the cake is now max(5+7, 7+4, 4+1, 1+2, 2+3) = 12. This is the maximum possible tastiness of the cake one can obtain by performing the operation at most once.\n\nIn the second test case, it's optimal not to do any operation. The tastiness is 78+78 = 156.\n\nIn the third test case, after reversing the subsegment a[1, 2], you get a cake with weights [underline54, underline69, 91]. The tastiness of the cake is now max(54+69, 69+91) = 160. There is no way to make the tastiness of the cake greater than 160 by performing at most one operation.\n\nInput:\n```\n565 2 1 4 7 3332 78 78369 54 918999021 999021 999021 999021 999652 999021 999021 99902121000000000 1000000000\n```\n\nOutput:\n```\n12\n156\n160\n1998673\n2000000000\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 50) — the number of test cases.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 1000) — the number of pieces of cake.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — a_i is the weight of the i-th piece of cake.",
+    "output": "For each test case, print a single integer: the maximum tastiness of the cake after doing the operation at most once.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

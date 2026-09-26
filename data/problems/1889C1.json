@@ -1,0 +1,20 @@
+{
+    "id": "1889C1",
+    "contest_id": 1889,
+    "problem_letter": "C1",
+    "title": "C1. Doremy's Drying Plan (Easy Version)",
+    "statement": "The only differences between the two versions of this problem are the constraint on k, the time limit and the memory limit. You can make hacks only if all versions of the problem are solved.\n\nDoremy lives in a rainy country consisting of n cities numbered from 1 to n.\n\nThe weather broadcast predicted the distribution of rain in the next m days. In the i-th day, it will rain in the cities in the interval [l_i, r_i]. A city is called dry if it will never rain in that city in the next m days.\n\nIt turns out that Doremy has a special power. She can choose k days (in the easy version, k = 2), and during these days it will not rain. Doremy wants to calculate the maximum number of dry cities after using the special power.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains three integers n, m and k (1≤ n≤ 2·10^5, 2 ≤ m ≤ 2·10^5, k = 2) — the number of cities, the number of days, and the number of days of rain that Doremy can prevent.\n\nThen, m lines follow. The i-th line contains two integers l_i, r_i (1≤ l_i≤ r_i≤ n) — the rain coverage on day i.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.\n\nFor each test case, output one integer — the maximum number of dry cities.\n\nIn the first test case, if Doremy prevents\n\nSo there is at most 1 dry city.\n\nIn the second test case, if Doremy prevents\n\nSo there are at most 2 dry cities.\n\nIn the third test case, it is optimal to prevent rain 2,5.\n\nIn the forth test case, there is always 4 days of rain that wets all the cities and cannot be prevented.\n\nInput:\n```\n62 3 21 21 21 15 3 21 32 43 510 6 21 56 102 23 75 81 4100 6 21 1001 1001 1001 1001 1001 1001000 2 21 11 120 5 29 203 310 1111 136 18\n```\n\nOutput:\n```\n1\n2\n3\n0\n1000\n15\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains three integers n, m and k (1≤ n≤ 2·10^5, 2 ≤ m ≤ 2·10^5, k = 2) — the number of cities, the number of days, and the number of days of rain that Doremy can prevent.\n\nThen, m lines follow. The i-th line contains two integers l_i, r_i (1≤ l_i≤ r_i≤ n) — the rain coverage on day i.\n\nIt is guaranteed that the sum of n and the sum of m over all test cases do not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the maximum number of dry cities.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "greedy",
+        "sortings",
+        "*2000"
+    ],
+    "rating": 2000
+}

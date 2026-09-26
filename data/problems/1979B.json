@@ -1,0 +1,17 @@
+{
+    "id": "1979B",
+    "contest_id": 1979,
+    "problem_letter": "B",
+    "title": "B. XOR Sequences",
+    "statement": "You are given two distinct non-negative integers x and y. Consider two infinite sequences a_1, a_2, a_3, … and b_1, b_2, b_3, …, where\n\nHere, x oplus y denotes the bitwise XOR operation of integers x and y.\n\nFor example, with x = 6, the first 8 elements of sequence a will look as follows: [7, 4, 5, 2, 3, 0, 1, 14, …]. Note that the indices of elements start with 1.\n\nYour task is to find the length of the longest common subsegment^dagger of sequences a and b. In other words, find the maximum integer m such that a_i = b_j, a_{i + 1} = b_{j + 1}, …, a_{i + m - 1} = b_{j + m - 1} for some i, j ≥ 1.\n\n^daggerA subsegment of sequence p is a sequence p_l,p_{l+1},…,p_r, where 1 ≤ l ≤ r.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers x and y (0 ≤ x, y ≤ 10^9, x ≠ y) — the parameters of the sequences.\n\nFor each test case, output a single integer — the length of the longest common subsegment.\n\nIn the first test case, the first 7 elements of sequences a and b are as follows:\n\na = [1, 2, 3, 4, 5, 6, 7,…]\n\nb = [0, 3, 2, 5, 4, 7, 6,…]\n\nIt can be shown that there isn't a positive integer k such that the sequence [k, k + 1] occurs in b as a subsegment. So the answer is 1.\n\nIn the third test case, the first 20 elements of sequences a and b are as follows:\n\na = [56, 59, 58, 61, 60, 63, 62, 49, 48, 51, 50, 53, 52, 55, 54, textbf41, 40, 43, 42, 45, …]\n\nb = [36, 39, 38, 33, 32, 35, 34, 45, 44, 47, 46, textbf41, 40, 43, 42, 53, 52, 55, 54, 49, …]\n\nIt can be shown that one of the longest common subsegments is the subsegment [41, 40, 43, 42] with a length of 4.\n\nInput:\n```\n40 112 457 37316560849 14570961\n```\n\nOutput:\n```\n1\n8\n4\n33554432\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers x and y (0 ≤ x, y ≤ 10^9, x ≠ y) — the parameters of the sequences.",
+    "output": "For each test case, output a single integer — the length of the longest common subsegment.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

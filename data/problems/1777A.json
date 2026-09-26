@@ -1,0 +1,17 @@
+{
+    "id": "1777A",
+    "contest_id": 1777,
+    "problem_letter": "A",
+    "title": "A. Everybody Likes Good Arrays!",
+    "statement": "An array a is good if for all pairs of adjacent elements, a_i and a_{i+1} (1≤ i < n) are of different parity. Note that an array of size 1 is trivially good.\n\nYou are given an array of size n.\n\nIn one operation you can select any pair of adjacent elements in which both elements are of the same parity, delete them, and insert their product in the same position.\n\nFind the minimum number of operations to form a good array.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).\n\nFor each test case print an integer, the minimum number of operations required to form a good array.\n\nConsider the first test case. Select the 2-nd and the 3-rd integers and apply the operation on them. The array changes from [1, colorred7, colorred11, 2, 13] to [1, colorred77, 2, 13]. Next, select the 1-st and the 2-nd integers, array changes from [colorred1, colorred77, 2, 13] to [colorred77, 2, 13]. Thus we require 2 operations. It can be proved that this is the minimum number of operations.\n\nIn the second test case, the given array is already good. So we require 0 operations.\n\nInput:\n```\n351 7 11 2 1341 2 3 461 1 1 2 2 3\n```\n\nOutput:\n```\n2\n0\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ 10^9).",
+    "output": "For each test case print an integer, the minimum number of operations required to form a good array.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

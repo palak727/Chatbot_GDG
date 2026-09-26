@@ -1,0 +1,17 @@
+{
+    "id": "1898B",
+    "contest_id": 1898,
+    "problem_letter": "B",
+    "title": "B. Milena and Admirer",
+    "statement": "Milena has received an array of integers a_1, a_2, …, a_n of length n from a secret admirer. She thinks that making it non-decreasing should help her identify the secret admirer.\n\nShe can use the following operation to make this array non-decreasing:\n\nMore formally, let a_1, a_2, …, a_i, …, a_k be an array a before the operation. After the operation, it becomes equal to a_1, a_2, …, a_{i-1}, x, a_i - x, a_{i+1}, …, a_k. Note that the length of a increases by 1 on each operation.\n\nMilena can perform this operation multiple times (possibly zero). She wants you to determine the minimum number of times she should perform this operation to make array a non-decreasing.\n\nAn array x_1, x_2, …, x_k of length k is called non-decreasing if x_i ≤ x_{i+1} for all 1 ≤ i < k.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 10^9) – the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the minimum number of operations required to make the array non-decreasing.\n\nIt can be shown that it is always possible to make the array a non-decreasing in the finite number of operations.\n\nIn the first test case, Milena can replace the second element of array a by integers 1 and 2, so the array would become [, 1, , underline1, , underline2, , 2 ,]. Only 1 operation is required.\n\nIn the second test case, the array a is already non-decreasing, so the answer is 0.\n\nIn the third test case, Milena can make array a non-decreasing in 3 operations as follows.\n\nIt can be shown that it is impossible to make it non-decreasing in 2 or less operations, so the answer is 3.\n\nInput:\n```\n431 3 241 2 3 433 2 171 4 4 3 5 7 6\n```\n\nOutput:\n```\n1\n0\n3\n9\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of test cases follows.\n\nThe first line of each test case contains a single integer n (1≤ n≤ 2·10^5) — the length of the array a.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 10^9) – the array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the minimum number of operations required to make the array non-decreasing.\n\nIt can be shown that it is always possible to make the array a non-decreasing in the finite number of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

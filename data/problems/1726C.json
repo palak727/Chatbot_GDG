@@ -1,0 +1,19 @@
+{
+    "id": "1726C",
+    "contest_id": 1726,
+    "problem_letter": "C",
+    "title": "C. Jatayu's Balanced Bracket Sequence",
+    "statement": "Last summer, Feluda gifted Lalmohan-Babu a balanced bracket sequence s of length 2 n.\n\nTopshe was bored during his summer vacations, and hence he decided to draw an undirected graph of 2 n vertices using the balanced bracket sequence s. For any two distinct vertices i and j (1 ≤ i < j ≤ 2 n), Topshe draws an edge (undirected and unweighted) between these two nodes if and only if the subsegment s[i … j] forms a balanced bracket sequence.\n\nDetermine the number of connected components in Topshe's graph.\n\nSee the Notes section for definitions of the underlined terms.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of opening brackets in string s.\n\nThe second line of each test case contains a string s of length 2 n — a balanced bracket sequence consisting of n opening brackets \"(\", and n closing brackets \")\".\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single integer — the number of connected components in Topshe's graph.\n\nSample explanation:\n\nIn the first test case, the graph constructed from the bracket sequence (), is just a graph containing nodes 1 and 2 connected by a single edge.\n\nIn the second test case, the graph constructed from the bracket sequence ()(()) would be the following (containing two connected components):\n\nDefinition of Underlined Terms:\n\nInput:\n```\n41()3()(())3((()))4(())(())\n```\n\nOutput:\n```\n1\n2\n3\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. Description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of opening brackets in string s.\n\nThe second line of each test case contains a string s of length 2 n — a balanced bracket sequence consisting of n opening brackets \"(\", and n closing brackets \")\".\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single integer — the number of connected components in Topshe's graph.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "graphs",
+        "greedy",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1952I",
+    "contest_id": 1952,
+    "problem_letter": "I",
+    "title": "I. Dark Matter",
+    "statement": "View the statement as a PDF.\n\nInput:\n```\n1 + 1\n```\n\nOutput:\n```\n3\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "bitmasks",
+        "geometry"
+    ],
+    "rating": null
+}

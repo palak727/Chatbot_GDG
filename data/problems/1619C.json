@@ -1,0 +1,16 @@
+{
+    "id": "1619C",
+    "contest_id": 1619,
+    "problem_letter": "C",
+    "title": "C. Wrong Addition",
+    "statement": "Tanya is learning how to add numbers, but so far she is not doing it correctly. She is adding two numbers a and b using the following algorithm:\n\nFor example, the numbers a = 17236 and b = 3465 Tanya adds up as follows:\n\nlarge beginarrayr + beginarrayr 17236 03465 endarray hline beginarrayr 1106911 endarray endarray\n\nAs a result, she gets 1106911.\n\nYou are given two positive integers a and s. Find the number b such that by adding a and b as described above, Tanya will get s. Or determine that no suitable b exists.\n\nThe first line of input data contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line containing two positive integers a and s (1 ≤ a < s ≤ 10^18) separated by a space.\n\nFor each test case print the answer on a separate line.\n\nIf the solution exists, print a single positive integer b. The answer must be written without leading zeros. If multiple answers exist, print any of them.\n\nIf no suitable number b exists, output -1.\n\nThe first test case is explained in the main part of the statement.\n\nIn the third test case, we cannot choose b that satisfies the problem statement.\n\nInput:\n```\n6\n17236 1106911\n1 5\n108 112\n12345 1023412\n1 11\n1 20\n```\n\nOutput:\n```\n3465\n4\n-1\n90007\n10\n-1\n```",
+    "input": "The first line of input data contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of a single line containing two positive integers a and s (1 ≤ a < s ≤ 10^18) separated by a space.",
+    "output": "For each test case print the answer on a separate line.\n\nIf the solution exists, print a single positive integer b. The answer must be written without leading zeros. If multiple answers exist, print any of them.\n\nIf no suitable number b exists, output -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*1200"
+    ],
+    "rating": 1200
+}

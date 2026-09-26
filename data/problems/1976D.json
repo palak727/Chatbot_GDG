@@ -1,0 +1,21 @@
+{
+    "id": "1976D",
+    "contest_id": 1976,
+    "problem_letter": "D",
+    "title": "D. Invertible Bracket Sequences",
+    "statement": "A regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters '1' and '+' between the original characters of the sequence. For example:\n\nLet's define the inverse of the bracket sequence as follows: replace all brackets '(' with ')', and vice versa (all brackets ')' with '('). For example, strings \"()((\" and \")())\" are inverses of each other.\n\nYou are given a regular bracket sequence s. Calculate the number of pairs of integers (l,r) (1 ≤ l ≤ r ≤ |s|) such that if you replace the substring of s from the l-th character to the r-th character (inclusive) with its inverse, s will still be a regular bracket sequence.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a non-empty regular bracket sequence; it consists only of characters '(' and/or ')'.\n\nAdditional constraint on the input: the total length of the regular bracket sequences over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print a single integer — the number of pairs (l,r) meeting the conditions from the statement.\n\nIn the first example, there is only one pair:\n\nIn the second example, there are no pairs.\n\nIn the third example, there are three pairs:\n\nInput:\n```\n4(())()()()()(()())(())\n```\n\nOutput:\n```\n1\n0\n3\n13\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains a non-empty regular bracket sequence; it consists only of characters '(' and/or ')'.\n\nAdditional constraint on the input: the total length of the regular bracket sequences over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the number of pairs (l,r) meeting the conditions from the statement.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "data structures",
+        "divide and conquer",
+        "implementation",
+        "two pointers",
+        "*2000"
+    ],
+    "rating": 2000
+}

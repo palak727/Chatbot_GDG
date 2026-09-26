@@ -1,0 +1,19 @@
+{
+    "id": "1811E",
+    "contest_id": 1811,
+    "problem_letter": "E",
+    "title": "E. Living Sequence",
+    "statement": "In Japan, the number 4 reads like death, so Bob decided to build a live sequence. Living sequence a contains all natural numbers that do not contain the digit 4. a = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, …].\n\nFor example, the number 1235 is part of the sequence a, but the numbers 4321, 443 are not part of the sequence a.\n\nBob realized that he does not know how to quickly search for a particular number by the position k in the sequence, so he asks for your help.\n\nFor example, if Bob wants to find the number at position k = 4 (indexing from 1), you need to answer a_k = 5.\n\nThe first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nIn the only line of each test case, there is a single integer k (1 ≤ k ≤ 10^12) — the position Bob is interested in.\n\nFor each test case, print on a separate line the number a_k in indexing with 1.\n\nInput:\n```\n735221010012345827264634912\n```\n\nOutput:\n```\n3\n6\n25\n11\n121\n18937\n2932285320890\n```",
+    "input": "The first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nIn the only line of each test case, there is a single integer k (1 ≤ k ≤ 10^12) — the position Bob is interested in.",
+    "output": "For each test case, print on a separate line the number a_k in indexing with 1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1884A",
+    "contest_id": 1884,
+    "problem_letter": "A",
+    "title": "A. Simple Design",
+    "statement": "A positive integer is called k-beautiful, if the digit sum of the decimal representation of this number is divisible by k^dagger. For example, 9272 is 5-beautiful, since the digit sum of 9272 is 9 + 2 + 7 + 2 = 20.\n\nYou are given two integers x and k. Please find the smallest integer y ≥ x which is k-beautiful.\n\n^dagger An integer n is divisible by k if there exists an integer m such that n = k·m.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains two integers x and k (1 ≤ x ≤ 10^9, 1 ≤ k ≤ 10).\n\nFor each test case, output the smallest integer y ≥ x which is k-beautiful.\n\nIn the first test case, numbers from 1 to 4 consist of a single digit, thus the digit sum is equal to the number itself. None of the integers from 1 to 4 are divisible by 5.\n\nIn the fourth test case, the digit sum of 777 is 7 + 7 + 7 = 21 which is already divisible by 3.\n\nInput:\n```\n61 510 837 9777 31235 101 10\n```\n\nOutput:\n```\n5\n17\n45\n777\n1243\n19\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains two integers x and k (1 ≤ x ≤ 10^9, 1 ≤ k ≤ 10).",
+    "output": "For each test case, output the smallest integer y ≥ x which is k-beautiful.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

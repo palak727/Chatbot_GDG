@@ -1,0 +1,19 @@
+{
+    "id": "2113D",
+    "contest_id": 2113,
+    "problem_letter": "D",
+    "title": "D. Cheater",
+    "statement": "You are playing a new card game in a casino with the following rules:\n\nNote that the game always lasts exactly n rounds.\n\nYou have tracked the shuffling of the cards and know the order of the cards in the dealer's hand (from top to bottom). You want to maximize your score, so you can swap any two cards in your hand no more than once (to avoid raising suspicion).\n\nDetermine the maximum number of points you can achieve.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of cards in the player's hand.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n) — the values of the cards in the player's hand from top to bottom.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n) — the values of the cards in the dealer's hand from top to bottom.\n\nIt is guaranteed that the values of all cards are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum number of points you can achieve.\n\nIn the first test case, the cards can remain unchanged. The gameplay will be organized as follows:\n\nIn the second test case, the cards with values 1 and 5 can be swapped, then the player's hand looks as follows [5, 6, 1]. The gameplay will be organized as follows:\n\nIn the third test case, the cards with values 3 and 10 can be swapped, then the player's hand looks as follows [8, 6, 10, 3, 1]. The gameplay will be organized as follows:\n\nInput:\n```\n3713 7 4 9 12 10 26 1 14 3 8 5 1131 6 52 3 458 6 3 10 17 9 5 2 4\n```\n\nOutput:\n```\n6\n2\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 5·10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of cards in the player's hand.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2n) — the values of the cards in the player's hand from top to bottom.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 2n) — the values of the cards in the dealer's hand from top to bottom.\n\nIt is guaranteed that the values of all cards are distinct.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum number of points you can achieve.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1139C",
+    "contest_id": 1139,
+    "problem_letter": "C",
+    "title": "C. Edgy Trees",
+    "statement": "You are given a tree (a connected undirected graph without cycles) of n vertices. Each of the n - 1 edges of the tree is colored in either black or red.\n\nYou are also given an integer k. Consider sequences of k vertices. Let's call a sequence [a_1, a_2, …, a_k] good if it satisfies the following criterion:\n\nConsider the tree on the picture. If k=3 then the following sequences are good: [1, 4, 7], [5, 5, 3] and [2, 3, 7]. The following sequences are not good: [1, 4, 6], [5, 5, 5], [3, 7, 3].\n\nThere are n^k sequences of vertices, count how many of them are good. Since this number can be quite large, print it modulo 10^9+7.\n\nThe first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 100), the size of the tree and the length of the vertex sequence.\n\nEach of the next n - 1 lines contains three integers u_i, v_i and x_i (1 ≤ u_i, v_i ≤ n, x_i ∈ {0, 1}), where u_i and v_i denote the endpoints of the corresponding edge and x_i is the color of this edge (0 denotes red edge and 1 denotes black edge).\n\nPrint the number of good sequences modulo 10^9 + 7.\n\nIn the first example, all sequences (4^4) of length 4 except the following are good:\n\nIn the second example, all edges are red, hence there aren't any good sequences.\n\nInput:\n```\n4 4\n1 2 1\n2 3 1\n3 4 1\n```\n\nOutput:\n```\n252\n```\n\nInput:\n```\n4 6\n1 2 0\n1 3 0\n1 4 0\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n3 5\n1 2 1\n2 3 0\n```\n\nOutput:\n```\n210\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 100), the size of the tree and the length of the vertex sequence.\n\nEach of the next n - 1 lines contains three integers u_i, v_i and x_i (1 ≤ u_i, v_i ≤ n, x_i ∈ {0, 1}), where u_i and v_i denote the endpoints of the corresponding edge and x_i is the color of this edge (0 denotes red edge and 1 denotes black edge).",
+    "output": "Print the number of good sequences modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "math",
+        "trees",
+        "*1500"
+    ],
+    "rating": 1500
+}

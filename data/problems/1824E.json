@@ -1,0 +1,17 @@
+{
+    "id": "1824E",
+    "contest_id": 1824,
+    "problem_letter": "E",
+    "title": "E. LuoTianyi and Cartridge",
+    "statement": "LuoTianyi is watching the anime Made in Abyss. She finds that making a Cartridge is interesting. To describe the process of making a Cartridge more clearly, she abstracts the original problem and gives you the following problem.\n\nYou are given a tree T consisting of n vertices. Each vertex has values a_i and b_i and each edge has values c_j and d_j.\n\nNow you are aim to build a tree T' as follows:\n\nLet A be the minimum of values a_i in T' and C be the minimum of values c_i in T'. Let B be the sum of b_i in T' and D be the sum of values d_i in T'. Let min(A, C)·(B + D) be the cost of T'. You need to find the maximum possible cost of T'.\n\nThe first line contains one integer n (3≤ n ≤ 2·10^5) — the number of vertices in the tree T.\n\nThe second line contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 2·10^5), where the i-th integer represents the a_i value of the i-th vertex.\n\nThe third line contains n integers b_1, b_2, …, b_n (1≤ b_i≤ 2·10^5), where the i-th integer represents the b_i value of the i-th vertex.\n\nThen n-1 lines follow, the j-th of them contains four integers x_j,y_j,c_j,d_j (1≤ x_j,y_j≤ n,1≤ c_j,d_j≤ 2·10^5) representing the edge (x_j,y_j) and its values c_j and d_j respectively. It's guaranteed that edges form a tree.\n\nPrint a single integer — the maximum possible cost of T'.\n\nThe tree from the first example is shown in the statement.\n\nThe tree from the second example is shown below:\n\nA = 1, B = 18, C = 1, D = 17, so the cost is min(1,1)·(18 + 17) = 35.\n\nInput:\n```\n3\n1 2 2\n1 1 2\n1 2 2 1\n1 3 1 2\n```\n\nOutput:\n```\n8\n```\n\nInput:\n```\n5\n2 4 2 1 1\n2 4 4 4 4\n2 5 3 3\n3 5 2 4\n4 2 5 5\n5 1 1 5\n```\n\nOutput:\n```\n35\n```\n\nInput:\n```\n6\n5 7 10 7 9 4\n6 9 7 9 8 5\n2 1 5 1\n3 2 2 4\n4 3 6 3\n5 1 7 4\n6 5 6 8\n```\n\nOutput:\n```\n216\n```\n\nInput:\n```\n5\n1000 1000 1 1000 1000\n1000 1000 1 1000 1000\n1 2 1 1\n2 3 1000 1000\n3 4 1000 1000\n3 5 1000 1000\n```\n\nOutput:\n```\n7000000\n```",
+    "input": "The first line contains one integer n (3≤ n ≤ 2·10^5) — the number of vertices in the tree T.\n\nThe second line contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 2·10^5), where the i-th integer represents the a_i value of the i-th vertex.\n\nThe third line contains n integers b_1, b_2, …, b_n (1≤ b_i≤ 2·10^5), where the i-th integer represents the b_i value of the i-th vertex.\n\nThen n-1 lines follow, the j-th of them contains four integers x_j,y_j,c_j,d_j (1≤ x_j,y_j≤ n,1≤ c_j,d_j≤ 2·10^5) representing the edge (x_j,y_j) and its values c_j and d_j respectively. It's guaranteed that edges form a tree.",
+    "output": "Print a single integer — the maximum possible cost of T'.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

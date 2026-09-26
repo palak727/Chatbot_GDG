@@ -1,0 +1,18 @@
+{
+    "id": "1551D2",
+    "contest_id": 1551,
+    "problem_letter": "D2",
+    "title": "D2. Domino (hard version)",
+    "statement": "The only difference between this problem and D1 is that you don't have to provide the way to construct the answer in D1, but you have to do it in this problem.\n\nThere's a table of n × m cells (n rows and m columns). The value of n·m is even.\n\nA domino is a figure that consists of two cells having a common side. It may be horizontal (one of the cells is to the right of the other) or vertical (one of the cells is above the other).\n\nYou need to place nm/2 dominoes on the table so that exactly k of them are horizontal and all the other dominoes are vertical. The dominoes cannot overlap and must fill the whole table.\n\nThe first line contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.\n\nEach test case consists of a single line. The line contains three integers n, m, k (1 ≤ n,m ≤ 100, 0 ≤ k ≤ nm/2, n·m is even) — the count of rows, columns and horizontal dominoes, respectively.\n\nFor each test case:\n\nInput:\n```\n8\n4 4 2\n2 3 0\n3 2 3\n1 2 0\n2 4 2\n5 2 2\n2 17 16\n2 1 1\n```\n\nOutput:\n```\nYES\naccx\naegx\nbega\nbdda\nYES\naha\naha\nYES\nzz\naa\nzz\nNO\nYES\naaza\nbbza\nNO\nYES\nbbaabbaabbaabbaay\nddccddccddccddccy\nNO\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.\n\nEach test case consists of a single line. The line contains three integers n, m, k (1 ≤ n,m ≤ 100, 0 ≤ k ≤ nm/2, n·m is even) — the count of rows, columns and horizontal dominoes, respectively.",
+    "output": "For each test case:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1437G",
+    "contest_id": 1437,
+    "problem_letter": "G",
+    "title": "G. Death DBMS",
+    "statement": "For the simplicity, let's say that the \"Death Note\" is a notebook that kills a person when their name is written in it.\n\nIt's easy to kill with it, but it's pretty hard to keep track of people you haven't killed and still plan to. You decided to make a \"Death Database Management System\" — a computer program that provides the easy access to the database of possible victims. Let me describe its specifications to you.\n\nLet's define a victim entity: a victim has a name (not necessarily unique) that consists only of lowercase Latin letters and an integer suspicion value.\n\nAt the start of the program the user enters a list of n victim names into a database, each suspicion value is set to 0.\n\nThen the user makes queries of two types:\n\nJust to remind you, this program doesn't kill people, it only helps to search for the names to write down in an actual notebook. Thus, the list of the victims in the database doesn't change throughout the queries.\n\nWhat are you waiting for? Write that program now!\n\nThe first line contains two integers n and m (1 ≤ n, m ≤ 3·10^5) — the number of victims and the number of queries, respectively.\n\nEach of the next n lines contains a single string s_i — the name of the i-th victim. Each name consists only of lowercase Latin letters.\n\nEach of the next m lines contains a query of one of two types:\n\nThere is at least one query of the second type. The total length of the strings s_i doesn't exceed 3·10^5. The total length of the strings q doesn't exceed 3·10^5.\n\nFor each query of the second type print an integer value. If there is no victim name that is a contiguous substring of q, then print -1. Otherwise, print the maximum suspicion value of a victim whose name is a contiguous substring of q.\n\nInput:\n```\n5 8\nkurou\ntakuo\ntakeshi\nnaomi\nshingo\n2 nakiraomi\n2 abanaomicaba\n1 3 943\n2 takuotakeshishingo\n1 5 135832\n2 shingotakeshi\n1 5 0\n2 shingotakeshi\n```\n\nOutput:\n```\n-1\n0\n943\n135832\n943\n```\n\nInput:\n```\n6 15\na\nab\nba\nb\na\nba\n2 aa\n1 4 4\n2 bbb\n1 2 1\n1 2 18\n2 b\n2 c\n1 6 10\n2 aba\n2 abbbba\n1 2 12\n2 bbaaab\n1 1 11\n1 5 5\n2 baa\n```\n\nOutput:\n```\n0\n4\n4\n-1\n18\n18\n12\n11\n```",
+    "input": "The first line contains two integers n and m (1 ≤ n, m ≤ 3·10^5) — the number of victims and the number of queries, respectively.\n\nEach of the next n lines contains a single string s_i — the name of the i-th victim. Each name consists only of lowercase Latin letters.\n\nEach of the next m lines contains a query of one of two types:\n\nThere is at least one query of the second type. The total length of the strings s_i doesn't exceed 3·10^5. The total length of the strings q doesn't exceed 3·10^5.",
+    "output": "For each query of the second type print an integer value. If there is no victim name that is a contiguous substring of q, then print -1. Otherwise, print the maximum suspicion value of a victim whose name is a contiguous substring of q.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "string suffix structures",
+        "strings",
+        "trees",
+        "*2600"
+    ],
+    "rating": 2600
+}

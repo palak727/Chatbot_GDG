@@ -1,0 +1,20 @@
+{
+    "id": "2056F1",
+    "contest_id": 2056,
+    "problem_letter": "F1",
+    "title": "F1. Xor of Median (Easy Version)",
+    "statement": "This is the easy version of the problem. The difference between the versions is that in this version, the constraints on t, k, and m are lower. You can hack only if you solved all versions of this problem.\n\nA sequence a of n integers is called good if the following condition holds:\n\nYou are given integers n and m. Calculate the value of the bitwise XOR of the median^{∗} of all good sequences a of length n with 0≤ a_i < m.\n\nNote that the value of n can be very large, so you are given its binary representation instead.\n\n^{∗}The median of a sequence a of length n is defined as the leftlfloor(n + 1)/2rightrfloor-th smallest value in the sequence.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains two integers k and m (1 ≤ k ≤ 200, 1 ≤ m ≤ 500) — the number of bits in n and the upper bound on the elements in sequence a.\n\nThe second line of each test case contains a binary string of length k — the binary representation of n with no leading zeros.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 200.\n\nFor each test case, output a single integer representing the bitwise XOR of the median of all good sequences a of length n where 0≤ a_i < m.\n\nIn the first example, n = 10_2 = 2 and m = 3. All possible sequences with elements less than m are: [0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]. All of them are good, so the answer is: 0 oplus 0 oplus 0 oplus 0 oplus 1 oplus 1 oplus 0 oplus 1 oplus 2 = 3.\n\nIn the second example, n = 11_2 = 3 and m = 3. Some good sequences are [2, 2, 2], [1, 0, 1], and [2, 0, 1]. However, a sequence [2, 0, 0] is not good, because cnt_0 = 2, cnt_2 = 1. Therefore, if we set i = 0 and j = 2, i < j holds, but cnt_i ≤ cnt_j does not.\n\nInput:\n```\n62 3102 3115 1111017 9110101117 34110010100010100101 5001\n```\n\nOutput:\n```\n3\n2\n0\n8\n32\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains two integers k and m (1 ≤ k ≤ 200, 1 ≤ m ≤ 500) — the number of bits in n and the upper bound on the elements in sequence a.\n\nThe second line of each test case contains a binary string of length k — the binary representation of n with no leading zeros.\n\nIt is guaranteed that the sum of k over all test cases does not exceed 200.",
+    "output": "For each test case, output a single integer representing the bitwise XOR of the median of all good sequences a of length n where 0≤ a_i < m.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "combinatorics",
+        "dp",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

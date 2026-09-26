@@ -1,0 +1,17 @@
+{
+    "id": "1690D",
+    "contest_id": 1690,
+    "problem_letter": "D",
+    "title": "D. Black and White Stripe",
+    "statement": "You have a stripe of checkered paper of length n. Each cell is either white or black.\n\nWhat is the minimum number of cells that must be recolored from white to black in order to have a segment of k consecutive black cells on the stripe?\n\nIf the input data is such that a segment of k consecutive black cells already exists, then print 0.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nNext, descriptions of t test cases follow.\n\nThe first line of the input contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5). The second line consists of the letters 'W' (white) and 'B' (black). The line length is n.\n\nIt is guaranteed that the sum of values n does not exceed 2·10^5.\n\nFor each of t test cases print an integer — the minimum number of cells that need to be repainted from white to black in order to have a segment of k consecutive black cells.\n\nIn the first test case, s=\"BBWBW\" and k=3. It is enough to recolor s_3 and get s=\"BBBBW\". This string contains a segment of length k=3 consisting of the letters 'B'.\n\nIn the second test case of the example s=\"BBWBW\" and k=5. It is enough to recolor s_3 and s_5 and get s=\"BBBBB\". This string contains a segment of length k=5 consisting of the letters 'B'.\n\nIn the third test case of the example s=\"BBWBW\" and k=1. The string s already contains a segment of length k=1 consisting of the letters 'B'.\n\nInput:\n```\n45 3BBWBW5 5BBWBW5 1BBWBW1 1W\n```\n\nOutput:\n```\n1\n2\n0\n1\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nNext, descriptions of t test cases follow.\n\nThe first line of the input contains two integers n and k (1 ≤ k ≤ n ≤ 2·10^5). The second line consists of the letters 'W' (white) and 'B' (black). The line length is n.\n\nIt is guaranteed that the sum of values n does not exceed 2·10^5.",
+    "output": "For each of t test cases print an integer — the minimum number of cells that need to be repainted from white to black in order to have a segment of k consecutive black cells.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "two pointers",
+        "*1000"
+    ],
+    "rating": 1000
+}

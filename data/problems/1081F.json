@@ -1,0 +1,18 @@
+{
+    "id": "1081F",
+    "contest_id": 1081,
+    "problem_letter": "F",
+    "title": "F. Tricky Interactor",
+    "statement": "This is an interactive problem.\n\nChouti was tired of studying, so he opened the computer and started playing a puzzle game.\n\nLong long ago, the boy found a sequence s_1, s_2, …, s_n of length n, kept by a tricky interactor. It consisted of 0s and 1s only and the number of 1s is t. The boy knows nothing about this sequence except n and t, but he can try to find it out with some queries with the interactor.\n\nWe define an operation called flipping. Flipping [l,r] (1 ≤ l ≤ r ≤ n) means for each x ∈ [l,r], changing s_x to 1-s_x.\n\nIn each query, the boy can give the interactor two integers l,r satisfying 1 ≤ l ≤ r ≤ n and the interactor will either flip [1,r] or [l,n] (both outcomes have the same probability and all decisions made by interactor are independent from each other, see Notes section for more details). The interactor will tell the current number of 1s after each operation. Note, that the sequence won't be restored after each operation.\n\nHelp the boy to find the original sequence in no more than 10000 interactions.\n\n\"Weird legend, dumb game.\" he thought. However, after several tries, he is still stuck with it. Can you help him beat this game?\n\nThe interaction starts with a line containing two integers n and t (1 ≤ n ≤ 300, 0 ≤ t ≤ n) — the length of the sequence and the number of 1s in it.\n\nAfter that, you can make queries.\n\nTo make a query, print a line \"? l r\" (1 ≤ l ≤ r ≤ n), then flush the output.\n\nAfter each query, read a single integer t (-1 ≤ t ≤ n).\n\nWhen you found the original sequence, print a line \"! s\", flush the output and terminate. Print s_1, s_2, …, s_n as a binary string and do not print spaces in between.\n\nYour solution will get Idleness Limit Exceeded if you don't print anything or forget to flush the output.\n\nTo flush you need to do the following right after printing a query and a line end:\n\nHacks\n\nFor hacks, use the following format:\n\nIn the first and only line, print a non-empty binary string. Its length will be n and it will be treated as s_1, s_2, …, s_n.\n\nFor example, the the test corresponding to the example contains a line \"0011\".\n\nFor first query 1,1, the interactor should flip [1,1] or [1,4]. It chose to flip [1,4], so the sequence became 1100.\n\nFor second query 1,1, the interactor should flip [1,1] or [1,4]. It again chose to flip [1,4], so the sequence became 0011.\n\nFor third query 3,4, the interactor should flip [1,4] or [3,4]. It chose to flip [3,4], so the sequence became 0000.\n\nQ: How does interactor choose between [1,r] and [l,n]? Is it really random?\n\nA: The interactor will use a secret pseudorandom number generator. Only s and your queries will be hashed and used as the seed. So if you give the same sequence of queries twice for the same secret string, you will get the same results. Except this, you can consider the choices fully random, like flipping a fair coin. You needn't (and shouldn't) exploit the exact generator to pass this problem.\n\nInput:\n```\n4 2\n2\n2\n0\n```\n\nOutput:\n```\n? 1 1\n? 1 1\n? 3 4\n! 0011\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "*2600"
+    ],
+    "rating": 2600
+}

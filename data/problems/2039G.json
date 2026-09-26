@@ -1,0 +1,17 @@
+{
+    "id": "2039G",
+    "contest_id": 2039,
+    "problem_letter": "G",
+    "title": "G. Shohag Loves Pebae",
+    "statement": "Shohag has a tree with n nodes.\n\nPebae has an integer m. She wants to assign each node a value — an integer from 1 to m. So she asks Shohag to count the number, modulo 998,244,353, of assignments such that following conditions are satisfied:\n\nBut this problem is too hard for Shohag to solve. As Shohag loves Pebae, he has to solve the problem. Please save Shohag!\n\nThe first line contains two space-separated integers n and m (2 ≤ n ≤ 10^6, 1 ≤ m ≤ 10^9).\n\nEach of the next n - 1 lines contains two integers u and v (1 ≤ u, v ≤ n) indicating there is an edge between vertices u and v. It is guaranteed that the given edges form a tree.\n\nPrint a single integer — the number of valid ways to assign each vertex a value, modulo 998,244,353.\n\nIn the first test case, the valid assignments are [1, 1, 1, 1, 1, 1] and [1, 1, 1, 1, 1, 5].\n\nIn the second test case, the valid assignments are [1, 1], [1, 3], [1, 5], [3, 1], [3, 5], [5, 1] and [5, 3].\n\nInput:\n```\n6 61 22 33 44 53 6\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2 51 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n12 693 51 42 34 55 68 97 34 89 101 1112 1\n```\n\nOutput:\n```\n444144548\n```",
+    "input": "The first line contains two space-separated integers n and m (2 ≤ n ≤ 10^6, 1 ≤ m ≤ 10^9).\n\nEach of the next n - 1 lines contains two integers u and v (1 ≤ u, v ≤ n) indicating there is an edge between vertices u and v. It is guaranteed that the given edges form a tree.",
+    "output": "Print a single integer — the number of valid ways to assign each vertex a value, modulo 998,244,353.",
+    "time_limit": "5 seconds",
+    "memory_limit": "768 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2005A",
+    "contest_id": 2005,
+    "problem_letter": "A",
+    "title": "A. Simple Palindrome",
+    "statement": "Narek has to spend 2 hours with some 2-year-old kids at the kindergarten. He wants to teach them competitive programming, and their first lesson is about palindromes.\n\nNarek found out that the kids only know the vowels of the English alphabet (the letters mathtta, mathtte, mathtti, mathtto, and mathttu), so Narek needs to make a string that consists of vowels only. After making the string, he'll ask the kids to count the number of subsequences that are palindromes. Narek wants to keep it simple, so he's looking for a string such that the amount of palindrome subsequences is minimal.\n\nHelp Narek find a string of length n, consisting of lowercase English vowels only (letters mathtta, mathtte, mathtti, mathtto, and mathttu), which minimizes the amount of palindrome^dagger subsequences^ddagger in it.\n\n^dagger A string is called a palindrome if it reads the same from left to right and from right to left.\n\n^ddagger String t is a subsequence of string s if t can be obtained from s by removing several (possibly, zero or all) characters from s and concatenating the remaining ones, without changing their order. For example, mathttodocs is a subsequence of textttccolorredtextttodtextttefcolorredtextttotextttrcolorredtextttctextttecolorredtexttts.\n\nThe first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Subsequently, the description of each test case follows.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 100) — the size of the string.\n\nFor each test case, output any string of length n that satisfies the above conditions.\n\nIn the first example, textttuo has only three palindrome subsequences: textttu, texttto, and the empty string. It can be shown that there is no better answer.\n\nIn the third example, textttoeiiua has only eight palindrome subsequences: texttto, texttte, texttti, texttti, textttu, texttta, textttii, and the empty string. It can be shown that there is no better answer.\n\nInput:\n```\n3236\n```\n\nOutput:\n```\nuo\niae\noeiiua\n```",
+    "input": "The first line of the input contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Subsequently, the description of each test case follows.\n\nThe only line of each test case contains a single integer n (1 ≤ n ≤ 100) — the size of the string.",
+    "output": "For each test case, output any string of length n that satisfies the above conditions.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1873A",
+    "contest_id": 1873,
+    "problem_letter": "A",
+    "title": "A. Short Sort",
+    "statement": "There are three cards with letters texttta, textttb, textttc placed in a row in some order. You can do the following operation at most once:\n\nThe first line contains a single integer t (1 ≤ t ≤ 6) — the number of test cases.\n\nThe only line of each test case contains a single string consisting of each of the three characters texttta, textttb, and textttc exactly once, representing the cards.\n\nFor each test case, output \"YES\" if you can make the row textttabc with at most one operation, or \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, we don't need to do any operations, since the row is already textttabc.\n\nIn the second test case, we can swap textttc and textttb: textttacb → textttabc.\n\nIn the third test case, we can swap textttb and texttta: textttbac → textttabc.\n\nIn the fourth test case, it is impossible to make textttabc using at most one operation.\n\nInput:\n```\n6abcacbbacbcacabcba\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 6) — the number of test cases.\n\nThe only line of each test case contains a single string consisting of each of the three characters texttta, textttb, and textttc exactly once, representing the cards.",
+    "output": "For each test case, output \"YES\" if you can make the row textttabc with at most one operation, or \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

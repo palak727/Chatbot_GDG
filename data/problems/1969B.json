@@ -1,0 +1,17 @@
+{
+    "id": "1969B",
+    "contest_id": 1969,
+    "problem_letter": "B",
+    "title": "B. Shifts and Sorting",
+    "statement": "Let's define a cyclic shift of some string s as a transformation from s_1 s_2 … s_{n-1} s_n into s_n s_1 s_2 … s_{n-1}. In other words, you take one last character s_n and place it before the first character while moving all other characters to the right.\n\nYou are given a binary string s (a string consisting of only 0-s and/or 1-s).\n\nIn one operation, you can choose any substring s_l s_{l+1} … s_r (1 ≤ l < r ≤ |s|) and cyclically shift it. The cost of such operation is equal to r - l + 1 (or the length of the chosen substring).\n\nYou can perform the given operation any number of times. What is the minimum total cost to make s sorted in non-descending order?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains a binary string s (2 ≤ |s| ≤ 2·10^5; s_i ∈ 0, 1) — the string you need to sort.\n\nAdditional constraint on the input: the sum of lengths of strings over all test cases doesn't exceed 2·10^5.\n\nFor each test case, print the single integer — the minimum total cost to make string sorted using operation above any number of times.\n\nIn the first test case, you can choose the whole string and perform a cyclic shift: 10 → 01. The length of the substring is 2, so the cost is 2.\n\nIn the second test case, the string is already sorted, so you don't need to perform any operations.\n\nIn the third test case, one of the optimal strategies is the next:\n\nInput:\n```\n51000001100010101101101001\n```\n\nOutput:\n```\n2\n0\n9\n5\n11\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first and only line of each test case contains a binary string s (2 ≤ |s| ≤ 2·10^5; s_i ∈ 0, 1) — the string you need to sort.\n\nAdditional constraint on the input: the sum of lengths of strings over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, print the single integer — the minimum total cost to make string sorted using operation above any number of times.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

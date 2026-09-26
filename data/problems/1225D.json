@@ -1,0 +1,18 @@
+{
+    "id": "1225D",
+    "contest_id": 1225,
+    "problem_letter": "D",
+    "title": "D. Power Products",
+    "statement": "You are given n positive integers a_1, …, a_n, and an integer k ≥ 2. Count the number of pairs i, j such that 1 ≤ i < j ≤ n, and there exists an integer x such that a_i·a_j = x^k.\n\nThe first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 100).\n\nThe second line contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^5).\n\nPrint a single integer — the number of suitable pairs.\n\nIn the sample case, the suitable pairs are:\n\nInput:\n```\n6 3\n1 3 9 8 24 1\n```\n\nOutput:\n```\n5\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 10^5, 2 ≤ k ≤ 100).\n\nThe second line contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^5).",
+    "output": "Print a single integer — the number of suitable pairs.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "hashing",
+        "math",
+        "number theory",
+        "*1800"
+    ],
+    "rating": 1800
+}

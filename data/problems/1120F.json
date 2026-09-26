@@ -1,0 +1,18 @@
+{
+    "id": "1120F",
+    "contest_id": 1120,
+    "problem_letter": "F",
+    "title": "F. Secret Letters",
+    "statement": "Little W and Little P decided to send letters to each other regarding the most important events during a day. There are n events during a day: at time moment t_i something happens to the person p_i (p_i is either W or P, denoting Little W and Little P, respectively), so he needs to immediately send a letter to the other person. They can send a letter using one of the two ways:\n\nHelp the friends determine the minimum possible total cost of sending all letters.\n\nThe first line contains three integers n, c, d (1 ≤ n ≤ 10^5, 1 ≤ c ≤ 10^2, 1 ≤ d ≤ 10^8) — the number of letters, the cost of storing a letter for one time unit at Wise R's den and the cost of delivering a letter via Friendly O.\n\nThe next n describe the events. The i-th of them contains an integer t_i and a character p_i (0 ≤ t_i ≤ 10^6, p_i is either W or P) — the time the i-th event happens and the person the event happens to.\n\nThe last line contains a single integer t_{n + 1} (0 ≤ t_{n+1} ≤ 10^6) — the time when everybody comes to Wise R for a tea and takes all remaining letters.\n\nIt is guaranteed that t_i < t_{i + 1} for all i from 1 to n.\n\nPrint a single integer — the minimum possible cost of delivery of all letters.\n\nOne of optimal solutions in the first example:\n\nThe total cost of delivery is thus 1 + 4 + 4 + 5 + 2 = 16 acorns.\n\nInput:\n```\n5 1 4\n0 P\n1 W\n3 P\n5 P\n8 P\n10\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n10 10 94\n17 W\n20 W\n28 W\n48 W\n51 P\n52 W\n56 W\n62 P\n75 P\n78 P\n87\n```\n\nOutput:\n```\n916\n```",
+    "input": "The first line contains three integers n, c, d (1 ≤ n ≤ 10^5, 1 ≤ c ≤ 10^2, 1 ≤ d ≤ 10^8) — the number of letters, the cost of storing a letter for one time unit at Wise R's den and the cost of delivering a letter via Friendly O.\n\nThe next n describe the events. The i-th of them contains an integer t_i and a character p_i (0 ≤ t_i ≤ 10^6, p_i is either W or P) — the time the i-th event happens and the person the event happens to.\n\nThe last line contains a single integer t_{n + 1} (0 ≤ t_{n+1} ≤ 10^6) — the time when everybody comes to Wise R for a tea and takes all remaining letters.\n\nIt is guaranteed that t_i < t_{i + 1} for all i from 1 to n.",
+    "output": "Print a single integer — the minimum possible cost of delivery of all letters.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "greedy",
+        "*3100"
+    ],
+    "rating": 3100
+}

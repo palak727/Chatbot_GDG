@@ -1,0 +1,18 @@
+{
+    "id": "1812E",
+    "contest_id": 1812,
+    "problem_letter": "E",
+    "title": "E. Not a Geometry Problem",
+    "statement": "The only line of input contains three integers x, y, z (-1000 ≤ x, y, z ≤ 1000).\n\nOutput one real number — the answer.\n\nYour answer is considered correct if its absolute or relative error does not exceed 10^6. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^6.\n\nInput:\n```\n1 1 1\n```\n\nOutput:\n```\n1.7320508075688772\n```\n\nInput:\n```\n1 -2 -2\n```\n\nOutput:\n```\n21.727922061357855\n```\n\nInput:\n```\n998 244 353\n```\n\nOutput:\n```\n-0.0006269592476489029\n```\n\nInput:\n```\n0 0 0\n```\n\nOutput:\n```\n1792283455048516.3\n```",
+    "input": "The only line of input contains three integers x, y, z (-1000 ≤ x, y, z ≤ 1000).",
+    "output": "Output one real number — the answer.\n\nYour answer is considered correct if its absolute or relative error does not exceed 10^6. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if (|a-b|)/(max(1,|b|)) ≤ 10^6.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "geometry",
+        "math"
+    ],
+    "rating": null
+}

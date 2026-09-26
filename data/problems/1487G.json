@@ -1,0 +1,19 @@
+{
+    "id": "1487G",
+    "contest_id": 1487,
+    "problem_letter": "G",
+    "title": "G. String Counting",
+    "statement": "You have c_1 letters 'a', c_2 letters 'b', ..., c_26 letters 'z'. You want to build a beautiful string of length n from them (obviously, you cannot use the i-th letter more than c_i times). Each c_i is greater than n/3.\n\nA string is called beautiful if there are no palindromic contiguous substrings of odd length greater than 1 in it. For example, the string \"abacaba\" is not beautiful, it has several palindromic substrings of odd length greater than 1 (for example, \"aca\"). Another example: the string \"abcaa\" is beautiful.\n\nCalculate the number of different strings you can build, and print the answer modulo 998244353.\n\nThe first line contains one integer n (3 ≤ n ≤ 400).\n\nThe second line contains 26 integers c_1, c_2, ..., c_26 (n/3 < c_i ≤ n).\n\nPrint one integer — the number of strings you can build, taken modulo 998244353.\n\nInput:\n```\n4\n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n```\n\nOutput:\n```\n422500\n```\n\nInput:\n```\n3\n2 2 2 2 2 2 3 3 3 2 2 2 2 2 2 3 3 3 2 2 3 2 2 3 2 2\n```\n\nOutput:\n```\n16900\n```\n\nInput:\n```\n400\n348 322 247 158 209 134 151 267 268 176 214 379 372 291 388 135 147 304 169 149 193 351 380 368 181 340\n```\n\nOutput:\n```\n287489790\n```",
+    "input": "The first line contains one integer n (3 ≤ n ≤ 400).\n\nThe second line contains 26 integers c_1, c_2, ..., c_26 (n/3 < c_i ≤ n).",
+    "output": "Print one integer — the number of strings you can build, taken modulo 998244353.",
+    "time_limit": "10 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "fft",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

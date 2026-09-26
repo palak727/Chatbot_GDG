@@ -1,0 +1,19 @@
+{
+    "id": "1715F",
+    "contest_id": 1715,
+    "problem_letter": "F",
+    "title": "F. Crop Squares",
+    "statement": "This is an interactive problem.\n\nFarmer Stanley grows corn on a rectangular field of size n × m meters with corners in points (0, 0), (0, m), (n, 0), (n, m). This year the harvest was plentiful and corn covered the whole field.\n\nThe night before harvest aliens arrived and poisoned the corn in a single 1 × 1 square with sides parallel to field borders. The corn inside the square must not be eaten, but you cannot distinguish it from ordinary corn by sight. Stanley can only collect a sample of corn from an arbitrary polygon and bring it to the laboratory, where it will be analyzed and Stanley will be told the amount of corn in the sample that was poisoned. Since the harvest will soon deteriorate, such a study can be carried out no more than 5 times.\n\nMore formally, it is allowed to make no more than 5 queries, each of them calculates the area of intersection of a chosen polygon with a square of poisoned corn. It is necessary to find out the coordinates of the lower-left corner of the drawn square (the vertex of the square with the smallest x and y coordinates).\n\nFirst line contains two integers n and m (1 ≤ n, m ≤ 100) — field sizes.\n\nIn order to query the area of intersection of a polygon with k (3 ≤ k ≤ 1000) vertices at points with coordinates (x_1, y_1),; … ,;(x_k, y_k) with a square of poisoned corn print k+1 lines. In the first of these lines print \"? k\". In the i-th of the next k lines print two real numbers x_i and y_i (|x_i|, |y_i| ≤ 10^4) with at most 15 digits after decimal place.\n\nThe polygon must have strictly positive area and contain no self-intersections.\n\nIn response to this query you will receive a real number s (0 ≤ s ≤ 1) with 15 digits after decimal place — the area of intersection of the square with the given polygon. If the polygon is invalid, there is no guarantee on the valid response.\n\nWhen you have identified the drawn square, print on a separate line \"! x y\", where x and y are real numbers with at most 15 digits after decimal place representing the coordinates of its lower-left corner (0 ≤ x ≤ n - 1, 0 ≤ y ≤ m - 1), and then you have to terminate your program.\n\nYour answer will be considered correct if its absolute or relative error on both coordinates does not exceed 10^{-6}. Formally let your answer be a, jury answer be b. Your answer will be considered correct if (|a-b|)/(max(1,|b|)) ≤ 10^{-6}.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks\n\nTo make a hack, use the following test format.\n\nThe first line of the input should contain two integers n and m (1 ≤ n,m ≤ 100) — field sizes.\n\nThe second line should contain two real numbers x (0 ≤ x ≤ n - 1) and y (0 ≤ y ≤ m - 1) — coordinates of the lower-left corner of the square of poisoned corn.\n\nIn the first test from the statement, the aliens poisoned a square of corn with vertices at points with coordinates (1.5, 0.5), (1.5, 1.5), (2.5, 1.5), (2.5, 0.5). In the picture, it is red, the polygon selected in the query is blue, and their intersection is green.\n\nPicture for the first query:\n\nPicture for the second query:\n\nInput:\n```\n3 3\n\n\n\n\n\n0.5\n\n\n\n\n\n0.5\n```\n\nOutput:\n```\n? 4\n0 0\n2 0\n2 3\n0 3\n\n? 4\n0 0\n0 1\n3 1\n3 0\n\n! 1.5 0.5\n```",
+    "input": "First line contains two integers n and m (1 ≤ n, m ≤ 100) — field sizes.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "geometry",
+        "interactive",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

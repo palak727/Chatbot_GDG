@@ -1,0 +1,18 @@
+{
+    "id": "1106F",
+    "contest_id": 1106,
+    "problem_letter": "F",
+    "title": "F. Lunar New Year and a Recursive Sequence",
+    "statement": "Lunar New Year is approaching, and Bob received a gift from his friend recently — a recursive sequence! He loves this sequence very much and wants to play with it.\n\nLet f_1, f_2, …, f_i, … be an infinite sequence of positive integers. Bob knows that for i > k, f_i can be obtained by the following recursive equation:\n\nf_i = left(f_{i - 1} ^ b_1·f_{i - 2} ^ b_2·⋯·f_{i - k} ^ b_kright) bmod p,\n\nwhich in short is\n\nf_i = left(∏_{j = 1}^k f_{i - j}^b_jright) bmod p,\n\nwhere p = 998,244,353 (a widely-used prime), b_1, b_2, …, b_k are known integer constants, and x bmod y denotes the remainder of x divided by y.\n\nBob lost the values of f_1, f_2, …, f_k, which is extremely troublesome – these are the basis of the sequence! Luckily, Bob remembers the first k - 1 elements of the sequence: f_1 = f_2 = … = f_{k - 1} = 1 and the n-th element: f_n = m. Please find any possible value of f_k. If no solution exists, just tell Bob that it is impossible to recover his favorite sequence, regardless of Bob's sadness.\n\nThe first line contains a positive integer k (1 ≤ k ≤ 100), denoting the length of the sequence b_1, b_2, …, b_k.\n\nThe second line contains k positive integers b_1, b_2, …, b_k (1 ≤ b_i < p).\n\nThe third line contains two positive integers n and m (k < n ≤ 10^9, 1 ≤ m < p), which implies f_n = m.\n\nOutput a possible value of f_k, where f_k is a positive integer satisfying 1 ≤ f_k < p. If there are multiple answers, print any of them. If no such f_k makes f_n = m, output -1 instead.\n\nIt is easy to show that if there are some possible values of f_k, there must be at least one satisfying 1 ≤ f_k < p.\n\nIn the first sample, we have f_4 = f_3^2·f_2^3·f_1^5. Therefore, applying f_3 = 4, we have f_4 = 16. Note that there can be multiple answers.\n\nIn the third sample, applying f_7 = 1 makes f_23333 = 1.\n\nIn the fourth sample, no such f_1 makes f_88888 = 66666. Therefore, we output -1 instead.\n\nInput:\n```\n3\n2 3 5\n4 16\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5\n4 7 1 5 6\n7 14187219\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n8\n2 3 5 6 1 7 9 10\n23333 1\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n1\n2\n88888 66666\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n3\n998244352 998244352 998244352\n4 2\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n10\n283 463 213 777 346 201 463 283 102 999\n2333333 6263423\n```\n\nOutput:\n```\n382480067\n```",
+    "input": "The first line contains a positive integer k (1 ≤ k ≤ 100), denoting the length of the sequence b_1, b_2, …, b_k.\n\nThe second line contains k positive integers b_1, b_2, …, b_k (1 ≤ b_i < p).\n\nThe third line contains two positive integers n and m (k < n ≤ 10^9, 1 ≤ m < p), which implies f_n = m.",
+    "output": "Output a possible value of f_k, where f_k is a positive integer satisfying 1 ≤ f_k < p. If there are multiple answers, print any of them. If no such f_k makes f_n = m, output -1 instead.\n\nIt is easy to show that if there are some possible values of f_k, there must be at least one satisfying 1 ≤ f_k < p.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "matrices",
+        "number theory",
+        "*2400"
+    ],
+    "rating": 2400
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1538F",
+    "contest_id": 1538,
+    "problem_letter": "F",
+    "title": "F. Interesting Function",
+    "statement": "You are given two integers l and r, where l < r. We will add 1 to l until the result is equal to r. Thus, there will be exactly r-l additions performed. For each such addition, let's look at the number of digits that will be changed after it.\n\nFor example:\n\nChanged digits always form a suffix of the result written in the decimal system.\n\nOutput the total number of changed digits, if you want to get r from l, adding 1 each time.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nEach test case is characterized by two integers l and r (1 ≤ l < r ≤ 10^9).\n\nFor each test case, calculate the total number of changed digits if you want to get r from l, adding one each time.\n\nInput:\n```\n4\n1 9\n9 10\n10 20\n1 1000000000\n```\n\nOutput:\n```\n8\n2\n11\n1111111110\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4). Then t test cases follow.\n\nEach test case is characterized by two integers l and r (1 ≤ l < r ≤ 10^9).",
+    "output": "For each test case, calculate the total number of changed digits if you want to get r from l, adding one each time.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "dp",
+        "math",
+        "number theory",
+        "*1500"
+    ],
+    "rating": 1500
+}

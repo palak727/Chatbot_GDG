@@ -1,0 +1,16 @@
+{
+    "id": "1452C",
+    "contest_id": 1452,
+    "problem_letter": "C",
+    "title": "C. Two Brackets",
+    "statement": "You are given a string s, consisting of brackets of two types: '(', ')', '[' and ']'.\n\nA string is called a regular bracket sequence (RBS) if it's of one of the following types:\n\nwhere plus is a concatenation of two strings.\n\nIn one move you can choose a non-empty subsequence of the string s (not necessarily consecutive) that is an RBS, remove it from the string and concatenate the remaining parts without changing the order.\n\nWhat is the maximum number of moves you can perform?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nEach of the next t lines contains a non-empty string, consisting only of characters '(', ')', '[' and ']'. The total length of the strings over all testcases doesn't exceed 2·10^5.\n\nFor each testcase print a single integer — the maximum number of moves you can perform on a given string s.\n\nIn the first example you can just erase the whole string.\n\nIn the second example you can first erase the brackets on positions 1 and 2: \"[]()\", then \"()\" is left. After that you can erase it whole. You could erase the whole string from the beginning but you would get one move instead of two.\n\nIn the third example you can first erase the brackets on positions 1 and 3: \"([)]\". They form an RBS \"()\". Then \"[]\" is left, so you can erase it whole.\n\nIn the fourth example there is no subsequence that is an RBS, so you can't perform a move at all.\n\nIn the fifth example you can erase the brackets on positions 2 and 4: \")[(]\" and get \")(\" as a result. You can erase nothing from it.\n\nInput:\n```\n5\n()\n[]()\n([)]\n)]([\n)[(]\n```\n\nOutput:\n```\n1\n2\n2\n0\n1\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nEach of the next t lines contains a non-empty string, consisting only of characters '(', ')', '[' and ']'. The total length of the strings over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase print a single integer — the maximum number of moves you can perform on a given string s.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

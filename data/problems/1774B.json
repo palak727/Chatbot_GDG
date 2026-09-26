@@ -1,0 +1,18 @@
+{
+    "id": "1774B",
+    "contest_id": 1774,
+    "problem_letter": "B",
+    "title": "B. Coloring",
+    "statement": "Cirno_9baka has a paper tape with n cells in a row on it. As he thinks that the blank paper tape is too dull, he wants to paint these cells with m kinds of colors. For some aesthetic reasons, he thinks that the i-th color must be used exactly a_i times, and for every k consecutive cells, their colors have to be distinct.\n\nHelp Cirno_9baka to figure out if there is such a way to paint the cells.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains three integers n, m, k (1 ≤ k ≤ n ≤ 10^9, 1 ≤ m ≤ 10^5, m ≤ n). Here n denotes the number of cells, m denotes the number of colors, and k means that for every k consecutive cells, their colors have to be distinct.\n\nThe second line of each test case contains m integers a_1, a_2, ⋯ , a_m (1 ≤ a_i ≤ n) — the numbers of times that colors have to be used. It's guaranteed that a_1 + a_2 + … + a_m = n.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.\n\nFor each test case, output \"YES\" if there is at least one possible coloring scheme; otherwise, output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", and \"yEs\" will all be recognized as positive answers).\n\nIn the first test case, there is no way to color the cells satisfying all the conditions.\n\nIn the second test case, we can color the cells as follows: (1, 2, 1, 2, 3, 4, 3, 4, 5, 6, 5, 6). For any 2 consecutive cells, their colors are distinct.\n\nInput:\n```\n212 6 21 1 1 1 1 712 6 22 2 2 2 2 2\n```\n\nOutput:\n```\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10,000) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains three integers n, m, k (1 ≤ k ≤ n ≤ 10^9, 1 ≤ m ≤ 10^5, m ≤ n). Here n denotes the number of cells, m denotes the number of colors, and k means that for every k consecutive cells, their colors have to be distinct.\n\nThe second line of each test case contains m integers a_1, a_2, ⋯ , a_m (1 ≤ a_i ≤ n) — the numbers of times that colors have to be used. It's guaranteed that a_1 + a_2 + … + a_m = n.\n\nIt is guaranteed that the sum of m over all test cases does not exceed 10^5.",
+    "output": "For each test case, output \"YES\" if there is at least one possible coloring scheme; otherwise, output \"NO\".\n\nYou may print each letter in any case (for example, \"YES\", \"Yes\", \"yes\", and \"yEs\" will all be recognized as positive answers).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

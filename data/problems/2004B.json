@@ -1,0 +1,17 @@
+{
+    "id": "2004B",
+    "contest_id": 2004,
+    "problem_letter": "B",
+    "title": "B. Game with Doors",
+    "statement": "There are 100 rooms arranged in a row and 99 doors between them; the i-th door connects rooms i and i+1. Each door can be either locked or unlocked. Initially, all doors are unlocked.\n\nWe say that room x is reachable from room y if all doors between them are unlocked.\n\nYou know that:\n\nHowever, you don't know the exact rooms they are in.\n\nYou don't want Alice and Bob to be able to reach each other, so you are going to lock some doors to prevent that. What's the smallest number of doors you have to lock so that Alice and Bob cannot meet, regardless of their starting positions inside the given segments?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers l and r (1 ≤ l < r ≤ 100) — the bounds of the segment of rooms where Alice is located.\n\nThe second line of each test case contains two integers L and R (1 ≤ L < R ≤ 100) — the bounds of the segment of rooms where Bob is located.\n\nFor each test case, print a single integer — the smallest number of doors you have to lock so that Alice and Bob cannot meet, regardless of their starting positions inside the given segments.\n\nIn the first test case, it is sufficient to lock the door between rooms 2 and 3.\n\nIn the second test case, the following doors have to be locked: (2,3), (3,4), (4,5).\n\nIn the third test case, the following doors have to be locked: (5, 6) and (6,7).\n\nInput:\n```\n41 23 42 52 53 76 74 52 8\n```\n\nOutput:\n```\n1\n3\n2\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers l and r (1 ≤ l < r ≤ 100) — the bounds of the segment of rooms where Alice is located.\n\nThe second line of each test case contains two integers L and R (1 ≤ L < R ≤ 100) — the bounds of the segment of rooms where Bob is located.",
+    "output": "For each test case, print a single integer — the smallest number of doors you have to lock so that Alice and Bob cannot meet, regardless of their starting positions inside the given segments.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

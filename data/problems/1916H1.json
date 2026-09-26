@@ -1,0 +1,20 @@
+{
+    "id": "1916H1",
+    "contest_id": 1916,
+    "problem_letter": "H1",
+    "title": "H1. Matrix Rank (Easy Version)",
+    "statement": "This is the easy version of the problem. The only differences between the two versions of this problem are the constraints on k. You can make hacks only if all versions of the problem are solved.\n\nYou are given integers n, p and k. p is guaranteed to be a prime number.\n\nFor each r from 0 to k, find the number of n × n matrices A of the field^dagger of integers modulo p such that the rank^ddagger of A is exactly r. Since these values are big, you are only required to output them modulo 998,244,353.\n\n^dagger https://en.wikipedia.org/wiki/Field_(mathematics)\n\n^ddagger https://en.wikipedia.org/wiki/Rank_(linear_algebra)\n\nThe first line of input contains three integers n, p and k (1 ≤ n ≤ 10^18, 2 ≤ p < 998,244,353, 0 ≤ k ≤ 5000).\n\nIt is guaranteed that p is a prime number.\n\nOutput k+1 integers, the answers for each r from 0 to k.\n\nInput:\n```\n3 2 3\n```\n\nOutput:\n```\n1 49 294 168 \n```\n\nInput:\n```\n1 51549919 2\n```\n\nOutput:\n```\n1 51549918 0 \n```",
+    "input": "The first line of input contains three integers n, p and k (1 ≤ n ≤ 10^18, 2 ≤ p < 998,244,353, 0 ≤ k ≤ 5000).\n\nIt is guaranteed that p is a prime number.",
+    "output": "Output k+1 integers, the answers for each r from 0 to k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "math",
+        "matrices",
+        "*2700"
+    ],
+    "rating": 2700
+}

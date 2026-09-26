@@ -1,0 +1,17 @@
+{
+    "id": "1466B",
+    "contest_id": 1466,
+    "problem_letter": "B",
+    "title": "B. Last minute enhancements",
+    "statement": "Athenaeus has just finished creating his latest musical composition and will present it tomorrow to the people of Athens. Unfortunately, the melody is rather dull and highly likely won't be met with a warm reception.\n\nHis song consists of n notes, which we will treat as positive integers. The diversity of a song is the number of different notes it contains. As a patron of music, Euterpe watches over composers and guides them throughout the process of creating new melodies. She decided to help Athenaeus by changing his song to make it more diverse.\n\nBeing a minor goddess, she cannot arbitrarily change the song. Instead, for each of the n notes in the song, she can either leave it as it is or increase it by 1.\n\nGiven the song as a sequence of integers describing the notes, find out the maximal, achievable diversity.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10,000) — the number of test cases. Then t test cases follow, each one is described in two lines.\n\nIn the first line of each test case there is a single integer n (1 ≤ n ≤ 10^5) denoting the length of the song. The next line contains a sequence of n integers x_1, x_2, …, x_n (1 ≤ x_1 ≤ x_2 ≤ … ≤ x_n ≤ 2·n), describing the song.\n\nThe sum of n over all test cases does not exceed 10^5.\n\nFor each test case, you should output a single line containing precisely one integer, the maximal diversity of the song, i.e. the maximal possible number of different elements in the final sequence.\n\nIn the first test case, Euterpe can increase the second, fifth and sixth element to obtain the sequence 1, underline3, 2, 2, underline6, underline7, which has 5 different elements (increased elements are underlined).\n\nIn the second test case, Euterpe can increase the first element to obtain the sequence underline5, 4, which has 2 different elements.\n\nIn the third test case, Euterpe can increase the second, fifth and sixth element to obtain the sequence 1, underline2, 3, 4, underline5, underline6, which has 6 different elements.\n\nInput:\n```\n5\n6\n1 2 2 2 5 6\n2\n4 4\n6\n1 1 3 4 4 5\n1\n1\n6\n1 1 1 2 2 2\n```\n\nOutput:\n```\n5\n2\n6\n1\n3\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 10,000) — the number of test cases. Then t test cases follow, each one is described in two lines.\n\nIn the first line of each test case there is a single integer n (1 ≤ n ≤ 10^5) denoting the length of the song. The next line contains a sequence of n integers x_1, x_2, …, x_n (1 ≤ x_1 ≤ x_2 ≤ … ≤ x_n ≤ 2·n), describing the song.\n\nThe sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, you should output a single line containing precisely one integer, the maximal diversity of the song, i.e. the maximal possible number of different elements in the final sequence.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1864G",
+    "contest_id": 1864,
+    "problem_letter": "G",
+    "title": "G. Magic Square",
+    "statement": "Aquamoon has a Rubik's Square which can be seen as an n × n matrix, the elements of the matrix constitute a permutation of numbers 1, …, n^2.\n\nAquamoon can perform two operations on the matrix:\n\nThe rows are numbered from 1 to n from top to bottom, the columns are numbered from 1 to n from left to right. The cell at the intersection of the x-th row and the y-th column is denoted as (x, y).\n\nAquamoon can perform several (possibly, zero) operations, but she has to obey the following restrictions:\n\nAquamoon wonders in how many ways she can transform the Rubik's Square from the given initial state to a given target state. Two ways are considered different if the sequences of applied operations are different. Since the answer can be very large, print the result modulo 998,244,353.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n ≤ 500).\n\nThe i-th of the following n lines contains n integers a_i1, …, a_in, representing the i-th row of the initial matrix (1 ≤ a_ij ≤ n^2).\n\nThe i-th of the following n lines contains n integers b_i1, …, b_in, representing the i-th row of the target matrix (1 ≤ b_ij ≤ n^2).\n\nIt is guaranteed that both the elements of the initial matrix and the elements of the target matrix constitute a permutation of numbers 1, …, n^2.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 250,000.\n\nFor each test case, if it is possible to convert the initial state to the target state respecting all the restrictions, output one integer — the number of ways to do so, modulo 998,244,353.\n\nIf there is no solution, print a single integer 0.\n\nIn the first test case, the only way to transform the initial matrix to the target one is to shift the second row by 1 position to the right, and then shift the first column by 1 position downwards.\n\nIn the second test case, it can be shown that there is no correct way to transform the matrix, thus, the answer is 0.\n\nInput:\n```\n431 2 34 5 67 8 97 2 31 4 56 8 931 2 34 5 67 8 93 2 16 5 49 7 831 2 34 5 67 8 97 8 12 3 45 6 931 2 34 5 67 8 93 8 45 1 97 6 2\n```\n\nOutput:\n```\n1\n0\n0\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 2·10^4). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (3≤ n ≤ 500).\n\nThe i-th of the following n lines contains n integers a_i1, …, a_in, representing the i-th row of the initial matrix (1 ≤ a_ij ≤ n^2).\n\nThe i-th of the following n lines contains n integers b_i1, …, b_in, representing the i-th row of the target matrix (1 ≤ b_ij ≤ n^2).\n\nIt is guaranteed that both the elements of the initial matrix and the elements of the target matrix constitute a permutation of numbers 1, …, n^2.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 250,000.",
+    "output": "For each test case, if it is possible to convert the initial state to the target state respecting all the restrictions, output one integer — the number of ways to do so, modulo 998,244,353.\n\nIf there is no solution, print a single integer 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "implementation",
+        "*3100"
+    ],
+    "rating": 3100
+}

@@ -1,0 +1,19 @@
+{
+    "id": "1103C",
+    "contest_id": 1103,
+    "problem_letter": "C",
+    "title": "C. Johnny Solving",
+    "statement": "Today is tuesday, that means there is a dispute in JOHNNY SOLVING team again: they try to understand who is Johnny and who is Solving. That's why guys asked Umnik to help them. Umnik gave guys a connected graph with n vertices without loops and multiedges, such that a degree of any vertex is at least 3, and also he gave a number 1 ≤ k ≤ n. Because Johnny is not too smart, he promised to find a simple path with length at least n/k in the graph. In reply, Solving promised to find k simple by vertices cycles with representatives, such that:\n\nYou need to help guys resolve the dispute, for that you need to find a solution for Johnny: a simple path with length at least n/k (n is not necessarily divided by k), or solution for Solving: k cycles that satisfy all the conditions above. If there is no any solution - print -1.\n\nThe first line contains three integers n, m and k (1 ≤ k ≤ n ≤ 2.5·10^5, 1 ≤ m ≤ 5·10^5)\n\nNext m lines describe edges of the graph in format v, u (1 ≤ v, u ≤ n). It's guaranteed that v ≠ u and all m pairs are distinct.\n\nIt's guaranteed that a degree of each vertex is at least 3.\n\nPrint PATH in the first line, if you solve problem for Johnny. In the second line print the number of vertices in the path c (c ≥ n/k). And in the third line print vertices describing the path in route order.\n\nPrint CYCLES in the first line, if you solve problem for Solving. In the following lines describe exactly k cycles in the following format: in the first line print the size of the cycle c (c ≥ 3). In the second line print the cycle in route order. Also, the first vertex in the cycle must be a representative.\n\nPrint -1 if there is no any solution. The total amount of printed numbers in the output must be at most 10^6. It's guaranteed, that if exists any solution then there is a correct output satisfies this restriction.\n\nInput:\n```\n4 6 2\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n```\n\nOutput:\n```\nPATH\n4\n1 2 3 4 \n```\n\nInput:\n```\n10 18 2\n1 2\n1 3\n1 4\n1 5\n1 6\n1 7\n1 8\n1 9\n1 10\n2 3\n3 4\n2 4\n5 6\n6 7\n5 7\n8 9\n9 10\n8 10\n```\n\nOutput:\n```\nCYCLES\n4\n4 1 2 3 \n4\n7 1 5 6 \n```",
+    "input": "The first line contains three integers n, m and k (1 ≤ k ≤ n ≤ 2.5·10^5, 1 ≤ m ≤ 5·10^5)\n\nNext m lines describe edges of the graph in format v, u (1 ≤ v, u ≤ n). It's guaranteed that v ≠ u and all m pairs are distinct.\n\nIt's guaranteed that a degree of each vertex is at least 3.",
+    "output": "Print PATH in the first line, if you solve problem for Johnny. In the second line print the number of vertices in the path c (c ≥ n/k). And in the third line print vertices describing the path in route order.\n\nPrint CYCLES in the first line, if you solve problem for Solving. In the following lines describe exactly k cycles in the following format: in the first line print the size of the cycle c (c ≥ 3). In the second line print the cycle in route order. Also, the first vertex in the cycle must be a representative.\n\nPrint -1 if there is no any solution. The total amount of printed numbers in the output must be at most 10^6. It's guaranteed, that if exists any solution then there is a correct output satisfies this restriction.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "math",
+        "*2700"
+    ],
+    "rating": 2700
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1620B",
+    "contest_id": 1620,
+    "problem_letter": "B",
+    "title": "B. Triangles on a Rectangle",
+    "statement": "A rectangle with its opposite corners in (0, 0) and (w, h) and sides parallel to the axes is drawn on a plane.\n\nYou are given a list of lattice points such that each point lies on a side of a rectangle but not in its corner. Also, there are at least two points on every side of a rectangle.\n\nYour task is to choose three points in such a way that:\n\nPrint the doubled area of this triangle. It can be shown that the doubled area of any triangle formed by lattice points is always an integer.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers w and h (3 ≤ w, h ≤ 10^6) — the coordinates of the corner of a rectangle.\n\nThe next two lines contain the description of the points on two horizontal sides. First, an integer k (2 ≤ k ≤ 2·10^5) — the number of points. Then, k integers x_1 < x_2 < … < x_k (0 < x_i < w) — the x coordinates of the points in the ascending order. The y coordinate for the first line is 0 and for the second line is h.\n\nThe next two lines contain the description of the points on two vertical sides. First, an integer k (2 ≤ k ≤ 2·10^5) — the number of points. Then, k integers y_1 < y_2 < … < y_k (0 < y_i < h) — the y coordinates of the points in the ascending order. The x coordinate for the first line is 0 and for the second line is w.\n\nThe total number of points on all sides in all testcases doesn't exceed 2·10^5.\n\nFor each testcase print a single integer — the doubled maximum area of a triangle formed by such three points that exactly two of them belong to the same side.\n\nThe points in the first testcase of the example:\n\nThe largest triangle is formed by points (0, 1), (0, 6) and (5, 4) — its area is 25/2. Thus, the doubled area is 25. Two points that are on the same side are: (0, 1) and (0, 6).\n\nInput:\n```\n3\n5 8\n2 1 2\n3 2 3 4\n3 1 4 6\n2 4 5\n10 7\n2 3 9\n2 1 7\n3 1 3 4\n3 4 5 6\n11 5\n3 1 6 8\n3 3 6 8\n3 1 3 4\n2 2 4\n```\n\nOutput:\n```\n25\n42\n35\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains two integers w and h (3 ≤ w, h ≤ 10^6) — the coordinates of the corner of a rectangle.\n\nThe next two lines contain the description of the points on two horizontal sides. First, an integer k (2 ≤ k ≤ 2·10^5) — the number of points. Then, k integers x_1 < x_2 < … < x_k (0 < x_i < w) — the x coordinates of the points in the ascending order. The y coordinate for the first line is 0 and for the second line is h.\n\nThe next two lines contain the description of the points on two vertical sides. First, an integer k (2 ≤ k ≤ 2·10^5) — the number of points. Then, k integers y_1 < y_2 < … < y_k (0 < y_i < h) — the y coordinates of the points in the ascending order. The x coordinate for the first line is 0 and for the second line is w.\n\nThe total number of points on all sides in all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase print a single integer — the doubled maximum area of a triangle formed by such three points that exactly two of them belong to the same side.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "geometry",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

@@ -1,0 +1,24 @@
+{
+    "id": "1844G",
+    "contest_id": 1844,
+    "problem_letter": "G",
+    "title": "G. Tree Weights",
+    "statement": "You are given a tree with n nodes labelled 1,2,…,n. The i-th edge connects nodes u_i and v_i and has an unknown positive integer weight w_i. To help you figure out these weights, you are also given the distance d_i between the nodes i and i+1 for all 1 ≤ i ≤ n-1 (the sum of the weights of the edges on the simple path between the nodes i and i+1 in the tree).\n\nFind the weight of each edge. If there are multiple solutions, print any of them. If there are no weights w_i consistent with the information, print a single integer -1.\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5).\n\nThe i-th of the next n-1 lines contains two integers u_i and v_i (1 ≤ u_i,v_i ≤ n, u_i ≠ v_i).\n\nThe last line contains n-1 integers d_1,…,d_{n-1} (1 ≤ d_i ≤ 10^12).\n\nIt is guaranteed that the given edges form a tree.\n\nIf there is no solution, print a single integer -1. Otherwise, output n-1 lines containing the weights w_1,…,w_{n-1}.\n\nIf there are multiple solutions, print any of them.\n\nIn the first sample, the tree is as follows:\n\nIn the second sample, note that w_2 is not allowed to be 0 because it must be a positive integer, so there is no solution.\n\nIn the third sample, the tree is as follows:\n\nInput:\n```\n5\n1 2\n1 3\n2 4\n2 5\n31 41 59 26\n```\n\nOutput:\n```\n31\n10\n18\n8\n```\n\nInput:\n```\n3\n1 2\n1 3\n18 18\n```\n\nOutput:\n```\n-1\n```\n\nInput:\n```\n9\n3 1\n4 1\n5 9\n2 6\n5 3\n5 8\n9 7\n9 2\n236 205 72 125 178 216 214 117\n```\n\nOutput:\n```\n31\n41\n59\n26\n53\n58\n97\n93\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 10^5).\n\nThe i-th of the next n-1 lines contains two integers u_i and v_i (1 ≤ u_i,v_i ≤ n, u_i ≠ v_i).\n\nThe last line contains n-1 integers d_1,…,d_{n-1} (1 ≤ d_i ≤ 10^12).\n\nIt is guaranteed that the given edges form a tree.",
+    "output": "If there is no solution, print a single integer -1. Otherwise, output n-1 lines containing the weights w_1,…,w_{n-1}.\n\nIf there are multiple solutions, print any of them.",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "data structures",
+        "dfs and similar",
+        "implementation",
+        "math",
+        "matrices",
+        "number theory",
+        "trees",
+        "*3000"
+    ],
+    "rating": 3000
+}

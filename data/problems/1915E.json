@@ -1,0 +1,18 @@
+{
+    "id": "1915E",
+    "contest_id": 1915,
+    "problem_letter": "E",
+    "title": "E. Romantic Glasses",
+    "statement": "Iulia has n glasses arranged in a line. The i-th glass has a_i units of juice in it. Iulia drinks only from odd-numbered glasses, while her date drinks only from even-numbered glasses.\n\nTo impress her date, Iulia wants to find a contiguous subarray of these glasses such that both Iulia and her date will have the same amount of juice in total if only the glasses in this subarray are considered. Please help her to do that.\n\nMore formally, find out if there exists two indices l, r such that 1 ≤ l ≤ r ≤ n, and a_l + a_{l + 2} + a_{l + 4} + … + a_r = a_{l + 1} + a_{l + 3} + … + a_{r-1} if l and r have the same parity and a_l + a_{l + 2} + a_{l + 4} + … + a_{r - 1} = a_{l + 1} + a_{l + 3} + … + a_r otherwise.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the total number of glasses.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) — the amount of juice in each glass.\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output \"YES\" if there exists a subarray satisfying the condition, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nIn the first test case, Iulia can pick l=1 and r=3. Then she drinks a_1+a_3=1+2=3 units and her date drinks a_2=3 units of juice.\n\nIn the second test case, Iulia can pick l=2 and r=5. Then she drinks a_3+a_5=1+1=2 units and her date drinks a_2+a_4=1+1=2 units of juice.\n\nIn the third test case no such contiguous subarray works.\n\nIn the fourth test case, Iulia can pick l=2 and r=8. Then she drinks a_3+a_5+a_7=11+1+1=13 units and her date drinks a_2+a_4+a_6+a_8=2+4+5+2=13 units of juice.\n\nInput:\n```\n631 3 261 1 1 1 1 1101 6 9 8 55 3 14 2 7 281 2 11 4 1 5 1 262 6 1 5 7 892 5 10 4 4 9 6 7 8\n```\n\nOutput:\n```\nYES\nYES\nNO\nYES\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 2·10^5) — the total number of glasses.\n\nThe second line of each test case contains n integers a_1, …, a_n (1 ≤ a_i ≤ 10^9) — the amount of juice in each glass.\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output \"YES\" if there exists a subarray satisfying the condition, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "greedy",
+        "math",
+        "*1300"
+    ],
+    "rating": 1300
+}

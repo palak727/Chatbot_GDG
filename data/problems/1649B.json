@@ -1,0 +1,17 @@
+{
+    "id": "1649B",
+    "contest_id": 1649,
+    "problem_letter": "B",
+    "title": "B. Game of Ball Passing",
+    "statement": "Daniel is watching a football team playing a game during their training session. They want to improve their passing skills during that session.\n\nThe game involves n players, making multiple passes towards each other. Unfortunately, since the balls were moving too fast, after the session Daniel is unable to know how many balls were involved during the game. The only thing he knows is the number of passes delivered by each player during all the session.\n\nFind the minimum possible amount of balls that were involved in the game.\n\nThere are several test cases in the input data. The first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 10^5) — the number of players.\n\nThe second line of the test case contains a sequence of integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i is the number of passes delivered by the i-th player.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.\n\nFor each test case print a single integer — the answer to the problem.\n\nIn the first test case, with the only ball, the game can go like this:\n\n2 → 1 → 3 → 4 → 1 → 2 → 3 → 4 → 2 → 3 → 2.\n\nIn the second test case, there is no possible way to play the game with only one ball. One possible way to play with two balls:\n\n2 → 1 → 2 → 3 → 2 → 1.\n\n2 → 3 → 2 → 1\n\nIn the third example, there were no passes, so 0 balls are possible.\n\nInput:\n```\n442 3 3 231 5 220 041000000000 1000000000 1000000000 1000000000\n```\n\nOutput:\n```\n1\n2\n0\n1\n```",
+    "input": "There are several test cases in the input data. The first line contains a single integer t (1 ≤ t ≤ 5·10^4) — the number of test cases. This is followed by the test cases description.\n\nThe first line of each test case contains one integer n (2 ≤ n ≤ 10^5) — the number of players.\n\nThe second line of the test case contains a sequence of integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9), where a_i is the number of passes delivered by the i-th player.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 10^5.",
+    "output": "For each test case print a single integer — the answer to the problem.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

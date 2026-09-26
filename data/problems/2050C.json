@@ -1,0 +1,18 @@
+{
+    "id": "2050C",
+    "contest_id": 2050,
+    "problem_letter": "C",
+    "title": "C. Uninteresting Number",
+    "statement": "You are given a number n with a length of no more than 10^5.\n\nYou can perform the following operation any number of times: choose one of its digits, square it, and replace the original digit with the result. The result must be a digit (that is, if you choose the digit x, then the value of x^2 must be less than 10).\n\nIs it possible to obtain a number that is divisible by 9 through these operations?\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains the number n, without leading zeros. The length of the number does not exceed 10^5.\n\nIt is guaranteed that the sum of the lengths of the numbers across all test cases does not exceed 10^5.\n\nFor each test case, output \"YES\" if it is possible to obtain a number divisible by 9 using the described operations, and \"NO\" otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.\n\nIn the first example, from the integer 123, it is possible to obtain only 123, 143, 129, and 149, none of which are divisible by 9.\n\nIn the second example, you need to replace the second digit with its square; then n will equal 342 = 38·9.\n\nIn the third example, the integer is already divisible by 9.\n\nInput:\n```\n9123322333333333333999754727789127731234567890233352254522632\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nNO\nYES\nNO\nYES\nYES\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe only line of each test case contains the number n, without leading zeros. The length of the number does not exceed 10^5.\n\nIt is guaranteed that the sum of the lengths of the numbers across all test cases does not exceed 10^5.",
+    "output": "For each test case, output \"YES\" if it is possible to obtain a number divisible by 9 using the described operations, and \"NO\" otherwise.\n\nYou can output each letter in any case (lowercase or uppercase). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be accepted as a positive answer.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

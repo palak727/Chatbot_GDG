@@ -1,0 +1,23 @@
+{
+    "id": "1968G2",
+    "contest_id": 1968,
+    "problem_letter": "G2",
+    "title": "G2. Division + LCP (hard version)",
+    "statement": "This is the hard version of the problem. In this version l≤ r.\n\nYou are given a string s. For a fixed k, consider a division of s into exactly k continuous substrings w_1,…,w_k. Let f_k be the maximal possible LCP(w_1,…,w_k) among all divisions.\n\nLCP(w_1,…,w_m) is the length of the Longest Common Prefix of the strings w_1,…,w_m.\n\nFor example, if s=abababcab and k=4, a possible division is colorredabcolorblueabcolororangeabccolorgreenab. The LCP(colorredab,colorblueab,colororangeabc,colorgreenab) is 2, since ab is the Longest Common Prefix of those four strings. Note that each substring consists of a continuous segment of characters and each character belongs to exactly one substring.\n\nYour task is to find f_l,f_{l+1},…,f_r.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, l, r (1 ≤ l ≤ r ≤ n ≤ 2·10^5) — the length of the string and the given range.\n\nThe second line of each test case contains string s of length n, all characters are lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output r-l+1 values: f_l,…,f_r.\n\nInput:\n```\n73 1 3aba3 2 3aaa7 1 5abacaba9 1 6abababcab10 1 10aaaaaaawac9 1 9abafababa7 2 7vvzvvvv\n```\n\nOutput:\n```\n3 1 0 \n1 1 \n7 3 1 1 0 \n9 2 2 2 0 0 \n10 3 2 1 1 1 1 1 0 0 \n9 3 2 1 1 0 0 0 0 \n2 2 1 1 1 0 \n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains two integers n, l, r (1 ≤ l ≤ r ≤ n ≤ 2·10^5) — the length of the string and the given range.\n\nThe second line of each test case contains string s of length n, all characters are lowercase English letters.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output r-l+1 values: f_l,…,f_r.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "data structures",
+        "dp",
+        "hashing",
+        "math",
+        "string suffix structures",
+        "strings",
+        "*2200"
+    ],
+    "rating": 2200
+}

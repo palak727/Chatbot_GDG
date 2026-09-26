@@ -1,0 +1,20 @@
+{
+    "id": "2026E",
+    "contest_id": 2026,
+    "problem_letter": "E",
+    "title": "E. Best Subsequence",
+    "statement": "Given an integer array a of size n.\n\nLet's define the value of the array as its size minus the number of set bits in the bitwise OR of all elements of the array.\n\nFor example, for the array [1, 0, 1, 2], the bitwise OR is 3 (which contains 2 set bits), and the value of the array is 4-2=2.\n\nYour task is to calculate the maximum possible value of some subsequence of the given array.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^60).\n\nFor each test case, print the maximum possible value of some subsequence of the given array.\n\nInput:\n```\n430 0 041 0 1 21587 1 48 14 13 8 7 6\n```\n\nOutput:\n```\n3\n2\n0\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 2^60).",
+    "output": "For each test case, print the maximum possible value of some subsequence of the given array.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dfs and similar",
+        "flows",
+        "graph matchings",
+        "graphs",
+        "*2500"
+    ],
+    "rating": 2500
+}

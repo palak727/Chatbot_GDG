@@ -1,0 +1,20 @@
+{
+    "id": "1844H",
+    "contest_id": 1844,
+    "problem_letter": "H",
+    "title": "H. Multiple of Three Cycles",
+    "statement": "An array a_1,…,a_n of length n is initially all blank. There are n updates where one entry of a is updated to some number, such that a becomes a permutation of 1,2,…,n after all the updates.\n\nAfter each update, find the number of ways (modulo 998,244,353) to fill in the remaining blank entries of a so that a becomes a permutation of 1,2,…,n and all cycle lengths in a are multiples of 3.\n\nA permutation of 1,2,…,n is an array of length n consisting of n distinct integers from 1 to n in arbitrary order. A cycle in a permutation a is a sequence of pairwise distinct integers (i_1,…,i_k) such that i_2 = a_i_1,i_3 = a_i_2,…,i_k = a_{i_{k-1}},i_1 = a_i_k. The length of this cycle is the number k, which is a multiple of 3 if and only if k ≡ 0 pmod 3.\n\nThe first line contains a single integer n (3 ≤ n ≤ 3·10^5, n ≡ 0 pmod 3).\n\nThe i-th of the next n lines contains two integers x_i and y_i, representing that the i-th update changes a_x_i to y_i.\n\nIt is guaranteed that x_1,…,x_n and y_1,…,y_n are permutations of 1,2,…,n, i.e. a becomes a permutation of 1,2,…,n after all the updates.\n\nOutput n lines: the number of ways (modulo 998,244,353) after the first 1,2,…,n updates.\n\nIn the first sample, for example, after the 3rd update the 3 ways to complete the permutation a = [4,_,2,5,_,_] are as follows:\n\nIn the second sample, the first update creates a cycle of length 1, so there are no ways to make all cycle lengths a multiple of 3.\n\nInput:\n```\n6\n3 2\n1 4\n4 5\n2 6\n5 1\n6 3\n```\n\nOutput:\n```\n32\n8\n3\n2\n1\n1\n```\n\nInput:\n```\n3\n1 1\n2 3\n3 2\n```\n\nOutput:\n```\n0\n0\n0\n```\n\nInput:\n```\n18\n1 2\n2 3\n3 4\n4 5\n5 6\n6 7\n7 8\n8 9\n9 10\n10 11\n11 12\n12 13\n13 14\n14 15\n15 16\n16 17\n17 18\n18 1\n```\n\nOutput:\n```\n671571067\n353924552\n521242461\n678960117\n896896000\n68992000\n6272000\n627200\n62720\n7840\n1120\n160\n32\n8\n2\n1\n1\n1\n```",
+    "input": "The first line contains a single integer n (3 ≤ n ≤ 3·10^5, n ≡ 0 pmod 3).\n\nThe i-th of the next n lines contains two integers x_i and y_i, representing that the i-th update changes a_x_i to y_i.\n\nIt is guaranteed that x_1,…,x_n and y_1,…,y_n are permutations of 1,2,…,n, i.e. a becomes a permutation of 1,2,…,n after all the updates.",
+    "output": "Output n lines: the number of ways (modulo 998,244,353) after the first 1,2,…,n updates.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "dp",
+        "dsu",
+        "math",
+        "*3400"
+    ],
+    "rating": 3400
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1297G",
+    "contest_id": 1297,
+    "problem_letter": "G",
+    "title": "G. M-numbers",
+    "statement": "For a given positive integer m, a positive number is called a m-number if the product of its digits is m. For example, the beginning of a series of 24-numbers are as follows: 38, 46, 64, 83, 138, 146, 164, 183, 226 ...\n\nYou are given a positive integer m and k. Print k-th among m-numbers if all m-numbers are sorted in ascending order.\n\nA single line of input contains two integers m and k (2 ≤ m ≤ 10^9, 1 ≤ k ≤ 10^9).\n\nPrint the desired number — k-th among all m-numbers if m-numbers are sorted in ascending order. If the answer does not exist, print -1.\n\nInput:\n```\n24 9\n```\n\nOutput:\n```\n226\n```\n\nInput:\n```\n24 1\n```\n\nOutput:\n```\n38\n```\n\nInput:\n```\n5040 1000000000\n```\n\nOutput:\n```\n111121111315213227111\n```\n\nInput:\n```\n2020 2020\n```\n\nOutput:\n```\n-1\n```",
+    "input": "A single line of input contains two integers m and k (2 ≤ m ≤ 10^9, 1 ≤ k ≤ 10^9).",
+    "output": "Print the desired number — k-th among all m-numbers if m-numbers are sorted in ascending order. If the answer does not exist, print -1.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "dp",
+        "math"
+    ],
+    "rating": null
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2110C",
+    "contest_id": 2110,
+    "problem_letter": "C",
+    "title": "C. Racing",
+    "statement": "In 2077, a sport called hobby-droning is gaining popularity among robots.\n\nYou already have a drone, and you want to win. For this, your drone needs to fly through a course with n obstacles.\n\nThe i-th obstacle is defined by two numbers l_i, r_i. Let the height of your drone at the i-th obstacle be h_i. Then the drone passes through this obstacle if l_i ≤ h_i ≤ r_i. Initially, the drone is on the ground, meaning h_0 = 0.\n\nThe flight program for the drone is represented by an array d_1, d_2, …, d_n, where h_i - h_{i-1} = d_i, and 0 ≤ d_i ≤ 1. This means that your drone either does not change height between obstacles or rises by 1. You already have a flight program, but some d_i in it are unknown and marked as -1. Replace the unknown d_i with numbers 0 and 1 to create a flight program that passes through the entire obstacle course, or report that it is impossible.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nIn the first line of each test case, an integer n (1 ≤ n ≤ 2·10^5) is given — the size of the array d.\n\nIn the second line of each test case, there are n integers d_1, d_2, …, d_n (-1 ≤ d_i ≤ 1) — the elements of the array d. d_i = -1 means that this d_i is unknown to you.\n\nNext, there are n lines containing 2 integers l_i,r_i (0≤ l_i≤ r_i≤ n) — descriptions of the obstacles.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output n integers d_1,d_2,…,d_n, if it is possible to correctly restore the array d, or -1 if it is not possible.\n\nIn the first test case, one possible answer is d=[0,1,1,1]. The array h will be [0,0+1,0+1+1,0+1+1+1]=[0,1,2,3]. This array meets the conditions of the problem.\n\nIn the second test case, it can be proven that there is no suitable array d, so the answer is -1.\n\nInput:\n```\n540 -1 -1 10 41 22 41 430 -1 -10 12 20 32-1 -10 02 28-1 -1 1 -1 -1 0 0 -10 00 10 20 21 30 42 54 5101 1\n```\n\nOutput:\n```\n0 1 1 1 \n-1\n-1\n0 1 1 0 1 0 0 1 \n-1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nIn the first line of each test case, an integer n (1 ≤ n ≤ 2·10^5) is given — the size of the array d.\n\nIn the second line of each test case, there are n integers d_1, d_2, …, d_n (-1 ≤ d_i ≤ 1) — the elements of the array d. d_i = -1 means that this d_i is unknown to you.\n\nNext, there are n lines containing 2 integers l_i,r_i (0≤ l_i≤ r_i≤ n) — descriptions of the obstacles.\n\nIt is guaranteed that the sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output n integers d_1,d_2,…,d_n, if it is possible to correctly restore the array d, or -1 if it is not possible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*1400"
+    ],
+    "rating": 1400
+}

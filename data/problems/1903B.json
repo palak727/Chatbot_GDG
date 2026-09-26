@@ -1,0 +1,19 @@
+{
+    "id": "1903B",
+    "contest_id": 1903,
+    "problem_letter": "B",
+    "title": "B. StORage room",
+    "statement": "In Cyprus, the weather is pretty hot. Thus, Theofanis saw this as an opportunity to create an ice cream company.\n\nHe keeps the ice cream safe from other ice cream producers by locking it inside big storage rooms. However, he forgot the password. Luckily, the lock has a special feature for forgetful people!\n\nIt gives you a table M with n rows and n columns of non-negative integers, and to open the lock, you need to find an array a of n elements such that:\n\nThe lock has a bug, and sometimes it gives tables without any solutions. In that case, the ice cream will remain frozen for the rest of eternity.\n\nCan you find an array to open the lock?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^3) — the size of the hidden array.\n\nThe next n lines describe the rows of M, line i contains the table values M_{i,1}, M_{i,2}, …, M_{i,n} (0 ≤ M_{i,j} < 2^30).\n\nIt is guaranteed that M_{i,i} = 0 and M_{i,j} = M_{j,i} for all 1 ≤ i,j ≤ n.\n\nIt is also guaranteed that the sum of n over all test cases does not exceed 10^3.\n\nFor each test case, if there is a solution print YES and an array that satisfies the property, otherwise print NO.\n\nIf there are multiple solutions, print any of them.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nInput:\n```\n41040 3 3 53 0 3 73 3 0 75 7 7 050 7 7 5 57 0 3 2 67 3 0 3 75 2 3 0 45 6 7 4 030 0 10 0 01 0 0\n```\n\nOutput:\n```\nYES\n7\nYES\n1 3 2 5 \nYES\n5 2 3 0 4\nNO\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^3) — the size of the hidden array.\n\nThe next n lines describe the rows of M, line i contains the table values M_{i,1}, M_{i,2}, …, M_{i,n} (0 ≤ M_{i,j} < 2^30).\n\nIt is guaranteed that M_{i,i} = 0 and M_{i,j} = M_{j,i} for all 1 ≤ i,j ≤ n.\n\nIt is also guaranteed that the sum of n over all test cases does not exceed 10^3.",
+    "output": "For each test case, if there is a solution print YES and an array that satisfies the property, otherwise print NO.\n\nIf there are multiple solutions, print any of them.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "greedy",
+        "*1200"
+    ],
+    "rating": 1200
+}

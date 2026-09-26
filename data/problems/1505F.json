@@ -1,0 +1,17 @@
+{
+    "id": "1505F",
+    "contest_id": 1505,
+    "problem_letter": "F",
+    "title": "F. Math",
+    "statement": "*The two images are equivalent, feel free to use either one.\n\nThe input contains a single integer a (-100 ≤ a ≤ 100).\n\nOutput the result – an integer number.\n\nInput:\n```\n1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The input contains a single integer a (-100 ≤ a ≤ 100).",
+    "output": "Output the result – an integer number.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "math",
+        "*2200"
+    ],
+    "rating": 2200
+}

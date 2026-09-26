@@ -1,0 +1,18 @@
+{
+    "id": "1931C",
+    "contest_id": 1931,
+    "problem_letter": "C",
+    "title": "C. Make Equal Again",
+    "statement": "You have an array a of n integers.\n\nYou can no more than once apply the following operation: select three integers i, j, x (1 ≤ i ≤ j ≤ n) and assign all elements of the array with indexes from i to j the value x. The price of this operation depends on the selected indices and is equal to (j - i + 1) burles.\n\nFor example, the array is equal to [1, 2, 3, 4, 5, 1]. If we choose i = 2, j = 4, x = 8, then after applying this operation, the array will be equal to [1, 8, 8, 8, 5, 1].\n\nWhat is the least amount of burles you need to spend to make all the elements of the array equal?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of input test cases. The descriptions of the test cases follow.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 2·10 ^ 5) — the size of the array.\n\nThe second line of the description of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — array elements.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the minimum number of burles that will have to be spent to make all the elements of the array equal. It can be shown that this can always be done.\n\nInput:\n```\n861 2 3 4 5 171 1 1 1 1 1 188 8 8 1 2 8 8 81121 231 2 374 3 2 7 1 1 399 9 2 9 2 5 5 5 3\n```\n\nOutput:\n```\n4\n0\n2\n0\n1\n2\n6\n7\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of input test cases. The descriptions of the test cases follow.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 2·10 ^ 5) — the size of the array.\n\nThe second line of the description of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — array elements.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the minimum number of burles that will have to be spent to make all the elements of the array equal. It can be shown that this can always be done.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*1000"
+    ],
+    "rating": 1000
+}

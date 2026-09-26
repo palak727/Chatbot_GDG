@@ -1,0 +1,21 @@
+{
+    "id": "1923E",
+    "contest_id": 1923,
+    "problem_letter": "E",
+    "title": "E. Count Paths",
+    "statement": "You are given a tree, consisting of n vertices, numbered from 1 to n. Every vertex is colored in some color, denoted by an integer from 1 to n.\n\nA simple path of the tree is called beautiful if:\n\nCount the number of the beautiful simple paths of the tree. Note that paths are considered undirected (i. e. the path from x to y is the same as the path from y to x).\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ n) — the color of each vertex.\n\nThe i-th of the next n - 1 lines contains two integers v_i and u_i (1 ≤ v_i, u_i ≤ n; v_i ≠ u_i) — the i-th edge of the tree.\n\nThe given edges form a valid tree. The sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase, print a single integer — the number of the beautiful simple paths of the tree.\n\nInput:\n```\n431 2 11 22 352 1 2 1 21 21 33 44 551 2 3 4 51 21 33 44 542 2 2 23 13 23 4\n```\n\nOutput:\n```\n1\n3\n0\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe second line contains n integers c_1, c_2, …, c_n (1 ≤ c_i ≤ n) — the color of each vertex.\n\nThe i-th of the next n - 1 lines contains two integers v_i and u_i (1 ≤ v_i, u_i ≤ n; v_i ≠ u_i) — the i-th edge of the tree.\n\nThe given edges form a valid tree. The sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase, print a single integer — the number of the beautiful simple paths of the tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "dp",
+        "dsu",
+        "graphs",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

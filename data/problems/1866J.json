@@ -1,0 +1,16 @@
+{
+    "id": "1866J",
+    "contest_id": 1866,
+    "problem_letter": "J",
+    "title": "J. Jackets and Packets",
+    "statement": "Pak Chanek has N jackets that are stored in a wardrobe. Pak Chanek's wardrobe has enough room for two stacks of jackets, namely the left stack and the right stack. Initially, all N jackets are in the left stack, while the right stack is empty. Initially, the i-th jacket from the top of the left stack has colour C_i.\n\nPak Chanek wants to pack all of those jackets into some packets, such that the jackets in the same packet has the same colour. However, it is possible for two jackets with the same colour to be in different packets.\n\nPak Chanek can do two kinds of operations:\n\nDetermine the minimum time to pack all jackets!\n\nThe first line contains three integers N, X, and Y (1 ≤ N ≤ 400; 1≤ X,Y≤10^9) — the number of jackets, the time to do a packing operation, and the time to do a movement operation.\n\nThe second line contains N integers C_1, C_2, C_3, …, C_N (1 ≤ C_i ≤ N) — the colour of each jacket.\n\nAn integer representing the minimum time to pack all jackets.\n\nLet's denote the contents of the two stacks using arrays that represent the colours of the jackets in the stack from top to bottom. Initially, the two stacks form [4, 4, 2, 4, 1, 2, 2, 1] and [].\n\nPak Chanek can do the following sequence of operations:\n\nIn total, it requires a time of 2+2+7+2+2+7+2+7+7=38 minutes to pack all jackets. It can be proven that there are no other ways that are faster.\n\nInput:\n```\n8 7 2\n4 4 2 4 1 2 2 1\n```\n\nOutput:\n```\n38\n```",
+    "input": "The first line contains three integers N, X, and Y (1 ≤ N ≤ 400; 1≤ X,Y≤10^9) — the number of jackets, the time to do a packing operation, and the time to do a movement operation.\n\nThe second line contains N integers C_1, C_2, C_3, …, C_N (1 ≤ C_i ≤ N) — the colour of each jacket.",
+    "output": "An integer representing the minimum time to pack all jackets.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "dp",
+        "*2800"
+    ],
+    "rating": 2800
+}

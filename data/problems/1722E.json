@@ -1,0 +1,19 @@
+{
+    "id": "1722E",
+    "contest_id": 1722,
+    "problem_letter": "E",
+    "title": "E. Counting Rectangles",
+    "statement": "You have n rectangles, the i-th rectangle has height h_i and width w_i.\n\nYou are asked q queries of the form h_s w_s h_b w_b.\n\nFor each query output, the total area of rectangles you own that can fit a rectangle of height h_s and width w_s while also fitting in a rectangle of height h_b and width w_b. In other words, print ∑ h_i·w_i for i such that h_s < h_i < h_b and w_s < w_i < w_b.\n\nPlease note, that if two rectangles have the same height or the same width, then they cannot fit inside each other. Also note that you cannot rotate rectangles.\n\nPlease note that the answer for some test cases won't fit into 32-bit integer type, so you should use at least 64-bit integer type in your programming language (like long long for C++).\n\nThe first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case two integers n, q (1 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5) — the number of rectangles you own and the number of queries.\n\nThen n lines follow, each containing two integers h_i, w_i (1 ≤ h_i, w_i ≤ 1000) — the height and width of the i-th rectangle.\n\nThen q lines follow, each containing four integers h_s, w_s, h_b, w_b (1 ≤ h_s < h_b, w_s < w_b ≤ 1000) — the description of each query.\n\nThe sum of q over all test cases does not exceed 10^5, and the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output q lines, the i-th line containing the answer to the i-th query.\n\nIn the first test case, there is only one query. We need to find the sum of areas of all rectangles that can fit a 1 × 1 rectangle inside of it and fit into a 3 × 4 rectangle.\n\nOnly the 2 × 3 rectangle works, because 1 < 2 (comparing heights) and 1 < 3 (comparing widths), so the 1 × 1 rectangle fits inside, and 2 < 3 (comparing heights) and 3 < 4 (comparing widths), so it fits inside the 3 × 4 rectangle. The 3 × 2 rectangle is too tall to fit in a 3 × 4 rectangle. The total area is 2·3 = 6.\n\nInput:\n```\n32 12 33 21 1 3 45 51 12 23 34 45 53 3 6 62 1 4 51 1 2 101 1 100 1001 1 3 33 1999 999999 999999 9981 1 1000 1000\n```\n\nOutput:\n```\n6\n41\n9\n0\n54\n4\n2993004\n```",
+    "input": "The first line of the input contains an integer t (1 ≤ t ≤ 100) — the number of test cases.\n\nThe first line of each test case two integers n, q (1 ≤ n ≤ 10^5; 1 ≤ q ≤ 10^5) — the number of rectangles you own and the number of queries.\n\nThen n lines follow, each containing two integers h_i, w_i (1 ≤ h_i, w_i ≤ 1000) — the height and width of the i-th rectangle.\n\nThen q lines follow, each containing four integers h_s, w_s, h_b, w_b (1 ≤ h_s < h_b, w_s < w_b ≤ 1000) — the description of each query.\n\nThe sum of q over all test cases does not exceed 10^5, and the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output q lines, the i-th line containing the answer to the i-th query.",
+    "time_limit": "6 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "data structures",
+        "dp",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

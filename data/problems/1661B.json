@@ -1,0 +1,22 @@
+{
+    "id": "1661B",
+    "contest_id": 1661,
+    "problem_letter": "B",
+    "title": "B. Getting Zero",
+    "statement": "Suppose you have an integer v. In one operation, you can:\n\nYou are given n integers a_1, a_2, …, a_n. What is the minimum number of operations you need to make each a_i equal to 0?\n\nThe first line contains the single integer n (1 ≤ n ≤ 32768) — the number of integers.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 32768).\n\nPrint n integers. The i-th integer should be equal to the minimum number of operations required to make a_i equal to 0.\n\nLet's consider each a_i:\n\nInput:\n```\n4\n19 32764 10240 49\n```\n\nOutput:\n```\n14 4 4 15 \n```",
+    "input": "The first line contains the single integer n (1 ≤ n ≤ 32768) — the number of integers.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i < 32768).",
+    "output": "Print n integers. The i-th integer should be equal to the minimum number of operations required to make a_i equal to 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dfs and similar",
+        "dp",
+        "graphs",
+        "greedy",
+        "shortest paths",
+        "*1300"
+    ],
+    "rating": 1300
+}

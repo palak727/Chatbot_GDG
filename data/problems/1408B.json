@@ -1,0 +1,18 @@
+{
+    "id": "1408B",
+    "contest_id": 1408,
+    "problem_letter": "B",
+    "title": "B. Arrays Sum",
+    "statement": "You are given a non-decreasing array of non-negative integers a_1, a_2, …, a_n. Also you are given a positive integer k.\n\nYou want to find m non-decreasing arrays of non-negative integers b_1, b_2, …, b_m, such that:\n\nFind the minimum possible value of m, or report that there is no possible m.\n\nThe first line contains one integer t (1 ≤ t ≤ 100): the number of test cases.\n\nThe first line of each test case contains two integers n, k (1 ≤ n ≤ 100, 1 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 100, a_n > 0).\n\nFor each test case print a single integer: the minimum possible value of m. If there is no such m, print -1.\n\nIn the first test case, there is no possible m, because all elements of all arrays should be equal to 0. But in this case, it is impossible to get a_4 = 1 as the sum of zeros.\n\nIn the second test case, we can take b_1 = [3, 3, 3]. 1 is the smallest possible value of m.\n\nIn the third test case, we can take b_1 = [0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2] and b_2 = [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2]. It's easy to see, that a_i = b_{1, i} + b_{2, i} for all i and the number of different elements in b_1 and in b_2 is equal to 3 (so it is at most 3). It can be proven that 2 is the smallest possible value of m.\n\nInput:\n```\n6\n4 1\n0 0 0 1\n3 1\n3 3 3\n11 3\n0 1 2 2 3 3 3 4 4 4 4\n5 3\n1 2 3 4 5\n9 4\n2 2 3 5 7 11 13 13 17\n10 7\n0 1 1 2 3 3 4 5 5 6\n```\n\nOutput:\n```\n-1\n1\n2\n2\n2\n1\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 100): the number of test cases.\n\nThe first line of each test case contains two integers n, k (1 ≤ n ≤ 100, 1 ≤ k ≤ n).\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_1 ≤ a_2 ≤ … ≤ a_n ≤ 100, a_n > 0).",
+    "output": "For each test case print a single integer: the minimum possible value of m. If there is no such m, print -1.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1400"
+    ],
+    "rating": 1400
+}

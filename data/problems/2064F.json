@@ -1,0 +1,19 @@
+{
+    "id": "2064F",
+    "contest_id": 2064,
+    "problem_letter": "F",
+    "title": "F. We Be Summing",
+    "statement": "You are given an array a of length n and an integer k.\n\nCall a non-empty array b of length m epic if there exists an integer i where 1 ≤ i < m and min(b_1,…,b_i) + max(b_{i + 1},…,b_m) = k.\n\nCount the number of epic subarrays^{∗} of a.\n\n^{∗}An array a is a subarray of an array b if a can be obtained from b by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains integers n and k (2 ≤ n ≤ 2·10^5; n < k < 2·n) — the length of the array a and k.\n\nThe second line of each testcase contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ n).\n\nThe sum of n across all testcases does not exceed 2·10^5.\n\nFor each testcase, output the number of epic contiguous subarrays of a.\n\nThese are all the epic subarrays in the first testcase:\n\nIn the second test case, every subarray that contains at least one 6 and at least one 7 is epic.\n\nInput:\n```\n65 71 2 3 4 57 136 6 6 6 7 7 76 94 5 6 6 5 15 95 5 4 5 55 63 3 3 3 36 84 5 4 5 4 5\n```\n\nOutput:\n```\n2\n12\n3\n8\n10\n4\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains integers n and k (2 ≤ n ≤ 2·10^5; n < k < 2·n) — the length of the array a and k.\n\nThe second line of each testcase contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ n).\n\nThe sum of n across all testcases does not exceed 2·10^5.",
+    "output": "For each testcase, output the number of epic contiguous subarrays of a.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "dp",
+        "two pointers",
+        "*2600"
+    ],
+    "rating": 2600
+}

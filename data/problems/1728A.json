@@ -1,0 +1,19 @@
+{
+    "id": "1728A",
+    "contest_id": 1728,
+    "problem_letter": "A",
+    "title": "A. Colored Balls: Revisited",
+    "statement": "The title is a reference to the very first Educational Round from our writers team, Educational Round 18.\n\nThere is a bag, containing colored balls. There are n different colors of balls, numbered from 1 to n. There are cnt_i balls of color i in the bag. The total amount of balls in the bag is odd (e. g. cnt_1 + cnt_2 + … + cnt_n is odd).\n\nIn one move, you can choose two balls with different colors and take them out of the bag.\n\nAt some point, all the remaining balls in the bag will have the same color. That's when you can't make moves anymore.\n\nFind any possible color of the remaining balls.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 20) — the number of colors.\n\nThe second line contains n integers cnt_1, cnt_2, …, cnt_n (1 ≤ cnt_i ≤ 100) — the amount of balls of each color in the bag.\n\nThe total amount of balls in the bag is odd (e. g. cnt_1 + cnt_2 + … + cnt_n is odd).\n\nFor each testcase, print a single integer — any possible color of the remaining balls, after you made some moves and can't make moves anymore.\n\nIn the first testcase, your first and only move can be one of the following:\n\nAfter the move, exactly one ball will remain. Its color can be 3, 2 or 1 depending on the move.\n\nIn the second testcase, you can't make moves at all — there is only color of balls already. This color is 1.\n\nIn the third testcase, you can keep removing one ball of color 1 and one ball of color 2 until there are no more balls of color 1. At the end, three balls of color 2 remain.\n\nInput:\n```\n331 1 11924 7\n```\n\nOutput:\n```\n3\n1\n2\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (1 ≤ n ≤ 20) — the number of colors.\n\nThe second line contains n integers cnt_1, cnt_2, …, cnt_n (1 ≤ cnt_i ≤ 100) — the amount of balls of each color in the bag.\n\nThe total amount of balls in the bag is odd (e. g. cnt_1 + cnt_2 + … + cnt_n is odd).",
+    "output": "For each testcase, print a single integer — any possible color of the remaining balls, after you made some moves and can't make moves anymore.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1578F",
+    "contest_id": 1578,
+    "problem_letter": "F",
+    "title": "F. Framing Pictures",
+    "statement": "Life has been discovered on Venus! What is more, the life forms appear to be convex polygons. An international consortium is designing a probe to send to Venus to take pictures, but they need to estimate the bandwidth needed to send back pictures.\n\nWhen the probe takes a picture of a life form and wishes to send it back to Earth, the bandwidth required is proportional to the area of the bounding box (in other words, the smallest axis-aligned rectangle that contains the life-form). The shape and size of the life forms are known, but the orientation relative to the camera is random. You must thus determine the expected (average) area of the bounding box across all orientations.\n\nThe input describes the shape of a life form as a convex polygon in two dimensions.\n\nThe first line of input contains an integer n (3 ≤ n ≤ 200,000) — the number of vertices. The remaining n lines each contain two integers x and y (-10^9 ≤ x, y ≤ 10^9) — the coordinates of a vertex. The vertices are given in counterclockwise order, and no three vertices lie on a straight line.\n\nOutput a single line containing the expected area of the bounding box of the polygon. Your answer should have an absolute or relative error of at most 10^{-6}.\n\nThe pictures show example life forms and various camera orientations.\n\nInput:\n```\n4\n0 0\n10 0\n10 10\n0 10\n```\n\nOutput:\n```\n163.661977237\n```\n\nInput:\n```\n5\n0 0\n10 0\n15 8\n5 20\n-5 7\n```\n\nOutput:\n```\n365.666028588\n```",
+    "input": "The input describes the shape of a life form as a convex polygon in two dimensions.\n\nThe first line of input contains an integer n (3 ≤ n ≤ 200,000) — the number of vertices. The remaining n lines each contain two integers x and y (-10^9 ≤ x, y ≤ 10^9) — the coordinates of a vertex. The vertices are given in counterclockwise order, and no three vertices lie on a straight line.",
+    "output": "Output a single line containing the expected area of the bounding box of the polygon. Your answer should have an absolute or relative error of at most 10^{-6}.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "geometry",
+        "*2900"
+    ],
+    "rating": 2900
+}

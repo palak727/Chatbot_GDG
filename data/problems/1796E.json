@@ -1,0 +1,20 @@
+{
+    "id": "1796E",
+    "contest_id": 1796,
+    "problem_letter": "E",
+    "title": "E. Colored Subgraphs",
+    "statement": "Monocarp has a tree, consisting of n vertices.\n\nHe is going to select some vertex r and perform the following operations on each vertex v from 1 to n:\n\nA nice coloring satisfies two conditions:\n\nNote that Monocarp can choose any amount of different colors he wants to use.\n\nFor each used color, he then counts the number of vertices of this color. The cost of the tree is the minimum of these numbers.\n\nWhat can be the maximum cost of the tree?\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nEach of the next n-1 lines contains two integers v and u (1 ≤ v, u ≤ n) — the description of an edge.\n\nThe given edges form a tree. The sum of n over all testcases doesn't exceed 2·10^5.\n\nFor each testcase print a single integer — the maximum possible cost of the tree.\n\nInput:\n```\n441 22 33 451 21 31 41 531 33 273 22 57 53 11 61 4\n```\n\nOutput:\n```\n4\n1\n3\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (3 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nEach of the next n-1 lines contains two integers v and u (1 ≤ v, u ≤ n) — the description of an edge.\n\nThe given edges form a tree. The sum of n over all testcases doesn't exceed 2·10^5.",
+    "output": "For each testcase print a single integer — the maximum possible cost of the tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "games",
+        "greedy",
+        "trees",
+        "*2500"
+    ],
+    "rating": 2500
+}

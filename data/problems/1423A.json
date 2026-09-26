@@ -1,0 +1,15 @@
+{
+    "id": "1423A",
+    "contest_id": 1423,
+    "problem_letter": "A",
+    "title": "A. Wakanda Forever",
+    "statement": "In the Kingdom of Wakanda, the 2020 economic crisis has made a great impact on each city and its surrounding area. Cities have made a plan to build a fast train rail between them to boost the economy, but because of the insufficient funds, each city can only build a rail with one other city, and they want to do it together.\n\nCities which are paired up in the plan will share the cost of building the rail between them, and one city might need to pay more than the other. Each city knows the estimated cost of building their part of the rail to every other city. One city can not have the same cost of building the rail with two different cities.\n\nIf in a plan, there are two cities that are not connected, but the cost to create a rail between them is lower for each of them than the cost to build the rail with their current pairs, then that plan is not acceptable and the collaboration won't go on. Your task is to create a suitable plan for the cities (pairing of the cities) or say that such plan doesn't exist.\n\nFirst line contains one integer N ;(2 ≤ N ≤ 10^3), — the number of cities.\n\nEach of the next N lines contains N-1 integers A_{i,1}, A_{i,2}, ..., A_{i,i-1}, A_{i,i+1}, ..., A_{i,N}; (1 ≤ A_{i,j} ≤ 10^9), — where A_{i,j} represents the cost for city i to build the rail to city j. Note that in each line A_{i,i} is skipped.\n\nOutput should contain N integers O_1, O_2, ..., O_N, where O_i represents the city with which city i should build the rail with, or -1 if it is not possible to find the stable pairing.\n\nInput:\n```\n4\n35 19 20\n76 14 75\n23 43 78\n14 76 98\n```\n\nOutput:\n```\n3\n4\n1\n2\n```\n\nInput:\n```\n4\n2 5 8\n7 1 12\n4 6 7\n8 4 5\n```\n\nOutput:\n```\n-1\n```",
+    "input": "First line contains one integer N ;(2 ≤ N ≤ 10^3), — the number of cities.\n\nEach of the next N lines contains N-1 integers A_{i,1}, A_{i,2}, ..., A_{i,i-1}, A_{i,i+1}, ..., A_{i,N}; (1 ≤ A_{i,j} ≤ 10^9), — where A_{i,j} represents the cost for city i to build the rail to city j. Note that in each line A_{i,i} is skipped.",
+    "output": "Output should contain N integers O_1, O_2, ..., O_N, where O_i represents the city with which city i should build the rail with, or -1 if it is not possible to find the stable pairing.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*3500"
+    ],
+    "rating": 3500
+}

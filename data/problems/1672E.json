@@ -1,0 +1,19 @@
+{
+    "id": "1672E",
+    "contest_id": 1672,
+    "problem_letter": "E",
+    "title": "E. notepad.exe",
+    "statement": "This is an interactive problem.\n\nThere are n words in a text editor. The i-th word has length l_i (1 ≤ l_i ≤ 2000). The array l is hidden and only known by the grader.\n\nThe text editor displays words in lines, splitting each two words in a line with at least one space. Note that a line does not have to end with a space. Let the height of the text editor refer to the number of lines used. For the given width, the text editor will display words in such a way that the height is minimized.\n\nMore formally, suppose that the text editor has width w. Let a be an array of length k+1 where 1=a_1 < a_2 < … < a_{k+1}=n+1. a is a valid array if for all 1 ≤ i ≤ k, l_a_i+1+l_{a_i+1}+1+…+1+l_{a_{i+1}-1} ≤ w. Then the height of the text editor is the minimum k over all valid arrays.\n\nNote that if w < max(l_i), the text editor cannot display all the words properly and will crash, and the height of the text editor will be 0 instead.\n\nYou can ask n+30 queries. In one query, you provide a width w. Then, the grader will return the height h_w of the text editor when its width is w.\n\nFind the minimum area of the text editor, which is the minimum value of w·h_w over all w for which h_w ≠ 0.\n\nThe lengths are fixed in advance. In other words, the interactor is not adaptive.\n\nThe first and only line of input contains a single integer n (1 ≤ n ≤ 2000) — the number of words on the text editor.\n\nIt is guaranteed that the hidden lengths l_i satisfy 1 ≤ l_i ≤ 2000.\n\nBegin the interaction by reading n.\n\nTo make a query, print \"? w\" (without quotes, 1 ≤ w ≤ 10^9). Then you should read our response from standard input, that is, h_w.\n\nIf your program has made an invalid query or has run out of tries, the interactor will terminate immediately and your program will get a verdict Wrong answer.\n\nTo give the final answer, print \"! area\" (without the quotes). Note that giving this answer is not counted towards the limit of n+30 queries.\n\nAfter printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHacks\n\nThe first line of input must contain a single integer n (1 ≤ n ≤ 2000) — the number of words in the text editor.\n\nThe second line of input must contain exactly n space-separated integers l_1,l_2,…,l_n (1 ≤ l_i ≤ 2000).\n\nIn the first test case, the words are {textttglory,textttto,textttukraine,textttand,textttanton,texttttrygub}, so l={5,2,7,3,5,6}.\n\nIf w=1, then the text editor is not able to display all words properly and will crash. The height of the text editor is h_1=0, so the grader will return 0.\n\nIf w=9, then a possible way that the words will be displayed on the text editor is:\n\nThe height of the text editor is h_9=4, so the grader will return 4.\n\nIf w=16, then a possible way that the words will be displayed on the text editor is:\n\nThe height of the text editor is h_16=2, so the grader will return 2.\n\nWe have somehow figured out that the minimum area of the text editor is 32, so we answer it.\n\nInput:\n```\n6\n\n0\n\n4\n\n2\n```\n\nOutput:\n```\n? 1\n\n? 9\n\n? 16\n\n! 32\n```",
+    "input": "The first and only line of input contains a single integer n (1 ≤ n ≤ 2000) — the number of words on the text editor.\n\nIt is guaranteed that the hidden lengths l_i satisfy 1 ≤ l_i ≤ 2000.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "interactive",
+        "*2200"
+    ],
+    "rating": 2200
+}

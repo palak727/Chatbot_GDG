@@ -1,0 +1,18 @@
+{
+    "id": "1954F",
+    "contest_id": 1954,
+    "problem_letter": "F",
+    "title": "F. Unique Strings",
+    "statement": "Let's say that two strings a and b are equal if you can get the string b by cyclically shifting string a. For example, the strings 0100110 and 1100100 are equal, while 1010 and 1100 are not.\n\nYou are given a binary string s of length n. Its first c characters are 1-s, and its last n - c characters are 0-s.\n\nIn one operation, you can replace one 0 with 1.\n\nCalculate the number of unique strings you can get using no more than k operations. Since the answer may be too large, print it modulo 10^9 + 7.\n\nThe first and only line contains three integers n, c and k (1 ≤ n ≤ 3000; 1 ≤ c ≤ n; 0 ≤ k ≤ n - c) — the length of string s, the length of prefix of 1-s and the maximum number of operations.\n\nPrint the single integer — the number of unique strings you can achieve performing no more than k operations, modulo 10^9 + 7.\n\nIn the first test case, the only possible string is 1.\n\nIn the second test case, the possible strings are: 100, 110, and 111. String 101 is equal to 110, so we don't count it.\n\nIn the third test case, the possible strings are: 10000, 11000, 10100. String 10010 is equal to 10100, and 10001 is equal to 11000.\n\nInput:\n```\n1 1 0\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 1 2\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5 1 1\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n6 2 2\n```\n\nOutput:\n```\n7\n```\n\nInput:\n```\n24 3 11\n```\n\nOutput:\n```\n498062\n```",
+    "input": "The first and only line contains three integers n, c and k (1 ≤ n ≤ 3000; 1 ≤ c ≤ n; 0 ≤ k ≤ n - c) — the length of string s, the length of prefix of 1-s and the maximum number of operations.",
+    "output": "Print the single integer — the number of unique strings you can achieve performing no more than k operations, modulo 10^9 + 7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "math",
+        "*3100"
+    ],
+    "rating": 3100
+}

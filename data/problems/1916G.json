@@ -1,0 +1,19 @@
+{
+    "id": "1916G",
+    "contest_id": 1916,
+    "problem_letter": "G",
+    "title": "G. Optimizations From Chelsu",
+    "statement": "You are given a tree with n vertices, whose vertices are numbered from 1 to n. Each edge is labeled with some integer w_i.\n\nDefine len(u, v) as the number of edges in the simple path between vertices u and v, and gcd(u, v) as the Greatest Common Divisor of all numbers written on the edges of the simple path between vertices u and v. For example, len(u, u) = 0 and gcd(u, u) = 0 for any 1 ≤ u ≤ n.\n\nYou need to find the maximum value of len(u, v)·gcd(u, v) over all pairs of vertices in the tree.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by their description.\n\nThe first line of each test case contains the number n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nThe next n-1 lines specify the edges in the format u, v, w (1 ≤ u, v ≤ n, 1 ≤ w ≤ 10^12).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output a single number equal to the maximum value of len(u, v)·gcd(u, v) over all pairs of vertices in the tree.\n\nInput:\n```\n421 2 100000000000043 2 62 1 102 4 681 2 122 3 93 4 94 5 65 6 126 7 47 8 9121 2 122 3 122 4 62 5 95 6 61 7 44 8 128 9 48 10 122 11 97 12 9\n```\n\nOutput:\n```\n1000000000000\n12\n18\n24\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. This is followed by their description.\n\nThe first line of each test case contains the number n (2 ≤ n ≤ 10^5) — the number of vertices in the tree.\n\nThe next n-1 lines specify the edges in the format u, v, w (1 ≤ u, v ≤ n, 1 ≤ w ≤ 10^12).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output a single number equal to the maximum value of len(u, v)·gcd(u, v) over all pairs of vertices in the tree.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "divide and conquer",
+        "dp",
+        "number theory",
+        "trees",
+        "*3500"
+    ],
+    "rating": 3500
+}

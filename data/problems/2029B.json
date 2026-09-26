@@ -1,0 +1,18 @@
+{
+    "id": "2029B",
+    "contest_id": 2029,
+    "problem_letter": "B",
+    "title": "B. Replacement",
+    "statement": "You have a binary string^{∗} s of length n, and Iris gives you another binary string r of length n-1.\n\nIris is going to play a game with you. During the game, you will perform n-1 operations on s. In the i-th operation (1 ≤ i ≤ n-1):\n\nIf all the n-1 operations are performed successfully, you win.\n\nDetermine whether it is possible for you to win this game.\n\n^{∗}A binary string is a string where each character is either mathtt0 or mathtt1.\n\nEach test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^5) — the length of s.\n\nThe second line contains the binary string s of length n (s_i=mathtt0 or mathtt1).\n\nThe third line contains the binary string r of length n-1 (r_i=mathtt0 or mathtt1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, print \"YES\" (without quotes) if you can win the game, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.\n\nIn the first test case, you cannot perform the first operation. Thus, you lose the game.\n\nIn the second test case, you can choose k=1 in the only operation, and after that, s becomes equal to mathtt1. Thus, you win the game.\n\nIn the third test case, you can perform the following operations: mathtt1underlinemathtt10mathtt1xrightarrowr_1=mathtt0 mathtt1underlinemathtt01 xrightarrowr_2=mathtt0 underlinemathtt10 xrightarrowr_3=mathtt1 mathtt1.\n\nInput:\n```\n621102011411010016111110100006010010110108100100100010010\n```\n\nOutput:\n```\nNO\nYES\nYES\nNO\nYES\nNO\n```",
+    "input": "Each test contains multiple test cases. The first line of the input contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 10^5) — the length of s.\n\nThe second line contains the binary string s of length n (s_i=mathtt0 or mathtt1).\n\nThe third line contains the binary string r of length n-1 (r_i=mathtt0 or mathtt1).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, print \"YES\" (without quotes) if you can win the game, and \"NO\" (without quotes) otherwise.\n\nYou can output the answer in any case (upper or lower). For example, the strings \"yEs\", \"yes\", \"Yes\", and \"YES\" will be recognized as positive responses.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "games",
+        "strings",
+        "*1100"
+    ],
+    "rating": 1100
+}

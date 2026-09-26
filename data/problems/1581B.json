@@ -1,0 +1,19 @@
+{
+    "id": "1581B",
+    "contest_id": 1581,
+    "problem_letter": "B",
+    "title": "B. Diameter of Graph",
+    "statement": "CQXYM wants to create a connected undirected graph with n nodes and m edges, and the diameter of the graph must be strictly less than k-1. Also, CQXYM doesn't want a graph that contains self-loops or multiple edges (i.e. each edge connects two different vertices and between each pair of vertices there is at most one edge).\n\nThe diameter of a graph is the maximum distance between any two nodes.\n\nThe distance between two nodes is the minimum number of the edges on the path which endpoints are the two nodes.\n\nCQXYM wonders whether it is possible to create such a graph.\n\nThe input consists of multiple test cases.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nOnly one line of each test case contains three integers n(1 ≤ n ≤ 10^9), m, k (0 ≤ m,k ≤ 10^9).\n\nFor each test case, print YES if it is possible to create the graph, or print NO if it is impossible. You can print each letter in any case (upper or lower).\n\nIn the first test case, the graph's diameter equal to 0.\n\nIn the second test case, the graph's diameter can only be 2.\n\nIn the third test case, the graph's diameter can only be 1.\n\nInput:\n```\n5\n1 0 3\n4 5 3\n4 6 3\n5 4 1\n2 1 1\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\n```",
+    "input": "The input consists of multiple test cases.\n\nThe first line contains an integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nOnly one line of each test case contains three integers n(1 ≤ n ≤ 10^9), m, k (0 ≤ m,k ≤ 10^9).",
+    "output": "For each test case, print YES if it is possible to create the graph, or print NO if it is impossible. You can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "greedy",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

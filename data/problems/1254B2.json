@@ -1,0 +1,21 @@
+{
+    "id": "1254B2",
+    "contest_id": 1254,
+    "problem_letter": "B2",
+    "title": "B2. Send Boxes to Alice (Hard Version)",
+    "statement": "This is the harder version of the problem. In this version, 1 ≤ n ≤ 10^6 and 0 ≤ a_i ≤ 10^6. You can hack this problem if you locked it. But you can hack the previous problem only if you locked both problems\n\nChristmas is coming, and our protagonist, Bob, is preparing a spectacular present for his long-time best friend Alice. This year, he decides to prepare n boxes of chocolate, numbered from 1 to n. Initially, the i-th box contains a_i chocolate pieces.\n\nSince Bob is a typical nice guy, he will not send Alice n empty boxes. In other words, at least one of a_1, a_2, …, a_n is positive. Since Alice dislikes coprime sets, she will be happy only if there exists some integer k > 1 such that the number of pieces in each box is divisible by k. Note that Alice won't mind if there exists some empty boxes.\n\nCharlie, Alice's boyfriend, also is Bob's second best friend, so he decides to help Bob by rearranging the chocolate pieces. In one second, Charlie can pick up a piece in box i and put it into either box i-1 or box i+1 (if such boxes exist). Of course, he wants to help his friend as quickly as possible. Therefore, he asks you to calculate the minimum number of seconds he would need to make Alice happy.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of chocolate boxes.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^6) — the number of chocolate pieces in the i-th box.\n\nIt is guaranteed that at least one of a_1, a_2, …, a_n is positive.\n\nIf there is no way for Charlie to make Alice happy, print -1.\n\nOtherwise, print a single integer x — the minimum number of seconds for Charlie to help Bob make Alice happy.\n\nIn the first example, Charlie can move all chocolate pieces to the second box. Each box will be divisible by 17.\n\nIn the second example, Charlie can move a piece from box 2 to box 3 and a piece from box 4 to box 5. Each box will be divisible by 3.\n\nIn the third example, each box is already divisible by 5.\n\nIn the fourth example, since Charlie has no available move, he cannot help Bob make Alice happy.\n\nInput:\n```\n3\n4 8 5\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n5\n3 10 2 1 5\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n0 5 15 10\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n1\n1\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of chocolate boxes.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^6) — the number of chocolate pieces in the i-th box.\n\nIt is guaranteed that at least one of a_1, a_2, …, a_n is positive.",
+    "output": "If there is no way for Charlie to make Alice happy, print -1.\n\nOtherwise, print a single integer x — the minimum number of seconds for Charlie to help Bob make Alice happy.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "number theory",
+        "ternary search",
+        "two pointers",
+        "*2100"
+    ],
+    "rating": 2100
+}

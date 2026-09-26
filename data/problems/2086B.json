@@ -1,0 +1,18 @@
+{
+    "id": "2086B",
+    "contest_id": 2086,
+    "problem_letter": "B",
+    "title": "B. Large Array and Segments",
+    "statement": "There is an array a consisting of n positive integers, and a positive integer k. An array b is created from array a according to the following rules:\n\nFor example, if a = [2, 3, 1, 4] and k = 3, then b = [2, 3, 1, 4, 2, 3, 1, 4, 2, 3, 1, 4].\n\nGiven a number x, it is required to count the number of such positions l (1 ≤ l ≤ n·k), for which there exists a position r ≥ l, such that the sum of the elements of array b on the segment [l, r] is at least x (in other words, b_l + b_{l+1} + … + b_r ≥ x).\n\nEach test consists of several test cases. The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n, k, x (1 ≤ n, k ≤ 10^5; 1 ≤ x ≤ 10^18).\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^8).\n\nAdditional constraints on the input:\n\nFor each test case, output one integer — the number of suitable positions l in the array b.\n\nIn the first test case, the array b looks like this:\n\n[3, 4, 2, 1, 5, 3, 4, 2, 1, 5, 3, 4, 2, 1, 5]\n\nThere are 12 positions l for which there exists a suitable position r. Here are some (not all) of them:\n\nInput:\n```\n75 3 103 4 2 1 515 97623 1300111105 95 108 111 118 101 95 118 97 108 111 114 97 110 1161 100000 123456789101111 1 111 1 122 1 21 12 1 52 1\n```\n\nOutput:\n```\n12\n1452188\n0\n1\n1\n1\n0\n```",
+    "input": "Each test consists of several test cases. The first line contains one integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains three integers n, k, x (1 ≤ n, k ≤ 10^5; 1 ≤ x ≤ 10^18).\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^8).\n\nAdditional constraints on the input:",
+    "output": "For each test case, output one integer — the number of suitable positions l in the array b.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "brute force",
+        "greedy",
+        "*1100"
+    ],
+    "rating": 1100
+}

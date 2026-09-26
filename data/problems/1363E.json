@@ -1,0 +1,19 @@
+{
+    "id": "1363E",
+    "contest_id": 1363,
+    "problem_letter": "E",
+    "title": "E. Tree Shuffling",
+    "statement": "Ashish has a tree consisting of n nodes numbered 1 to n rooted at node 1. The i-th node in the tree has a cost a_i, and binary digit b_i is written in it. He wants to have binary digit c_i written in the i-th node in the end.\n\nTo achieve this, he can perform the following operation any number of times:\n\nHe wants to perform the operations in such a way that every node finally has the digit corresponding to its target.\n\nHelp him find the minimum total cost he needs to spend so that after all the operations, every node u has digit c_u written in it, or determine that it is impossible.\n\nFirst line contains a single integer n (1 ≤ n ≤ 2·10^5) denoting the number of nodes in the tree.\n\ni-th line of the next n lines contains 3 space-separated integers a_i, b_i, c_i (1 ≤ a_i ≤ 10^9, 0 ≤ b_i, c_i ≤ 1) — the cost of the i-th node, its initial digit and its goal digit.\n\nEach of the next n - 1 lines contain two integers u, v (1 ≤ u, v ≤ n, u ≠ v), meaning that there is an edge between nodes u and v in the tree.\n\nPrint the minimum total cost to make every node reach its target digit, and -1 if it is impossible.\n\nThe tree corresponding to samples 1 and 2 are:\n\nIn sample 1, we can choose node 1 and k = 4 for a cost of 4·1 = 4 and select nodes 1, 2, 3, 5, shuffle their digits and get the desired digits in every node.\n\nIn sample 2, we can choose node 1 and k = 2 for a cost of 10000·2, select nodes 1, 5 and exchange their digits, and similarly, choose node 2 and k = 2 for a cost of 2000·2, select nodes 2, 3 and exchange their digits to get the desired digits in every node.\n\nIn sample 3, it is impossible to get the desired digits, because there is no node with digit 1 initially.\n\nInput:\n```\n5\n1 0 1\n20 1 0\n300 0 1\n4000 0 0\n50000 1 0\n1 2\n2 3\n2 4\n1 5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5\n10000 0 1\n2000 1 0\n300 0 1\n40 0 0\n1 1 0\n1 2\n2 3\n2 4\n1 5\n```\n\nOutput:\n```\n24000\n```\n\nInput:\n```\n2\n109 0 1\n205 0 1\n1 2\n```\n\nOutput:\n```\n-1\n```",
+    "input": "First line contains a single integer n (1 ≤ n ≤ 2·10^5) denoting the number of nodes in the tree.\n\ni-th line of the next n lines contains 3 space-separated integers a_i, b_i, c_i (1 ≤ a_i ≤ 10^9, 0 ≤ b_i, c_i ≤ 1) — the cost of the i-th node, its initial digit and its goal digit.\n\nEach of the next n - 1 lines contain two integers u, v (1 ≤ u, v ≤ n, u ≠ v), meaning that there is an edge between nodes u and v in the tree.",
+    "output": "Print the minimum total cost to make every node reach its target digit, and -1 if it is impossible.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "dp",
+        "greedy",
+        "trees",
+        "*2000"
+    ],
+    "rating": 2000
+}

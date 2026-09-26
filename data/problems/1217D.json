@@ -1,0 +1,18 @@
+{
+    "id": "1217D",
+    "contest_id": 1217,
+    "problem_letter": "D",
+    "title": "D. Coloring Edges",
+    "statement": "You are given a directed graph with n vertices and m directed edges without self-loops or multiple edges.\n\nLet's denote the k-coloring of a digraph as following: you color each edge in one of k colors. The k-coloring is good if and only if there no cycle formed by edges of same color.\n\nFind a good k-coloring of given digraph with minimum possible k.\n\nThe first line contains two integers n and m (2 ≤ n ≤ 5000, 1 ≤ m ≤ 5000) — the number of vertices and edges in the digraph, respectively.\n\nNext m lines contain description of edges — one per line. Each edge is a pair of integers u and v (1 ≤ u, v ≤ n, u ≠ v) — there is directed edge from u to v in the graph.\n\nIt is guaranteed that each ordered pair (u, v) appears in the list of edges at most once.\n\nIn the first line print single integer k — the number of used colors in a good k-coloring of given graph.\n\nIn the second line print m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ k), where c_i is a color of the i-th edge (in order as they are given in the input).\n\nIf there are multiple answers print any of them (you still have to minimize k).\n\nInput:\n```\n4 5\n1 2\n1 3\n3 4\n2 4\n1 4\n```\n\nOutput:\n```\n1\n1 1 1 1 1 \n```\n\nInput:\n```\n3 3\n1 2\n2 3\n3 1\n```\n\nOutput:\n```\n2\n1 1 2 \n```",
+    "input": "The first line contains two integers n and m (2 ≤ n ≤ 5000, 1 ≤ m ≤ 5000) — the number of vertices and edges in the digraph, respectively.\n\nNext m lines contain description of edges — one per line. Each edge is a pair of integers u and v (1 ≤ u, v ≤ n, u ≠ v) — there is directed edge from u to v in the graph.\n\nIt is guaranteed that each ordered pair (u, v) appears in the list of edges at most once.",
+    "output": "In the first line print single integer k — the number of used colors in a good k-coloring of given graph.\n\nIn the second line print m integers c_1, c_2, …, c_m (1 ≤ c_i ≤ k), where c_i is a color of the i-th edge (in order as they are given in the input).\n\nIf there are multiple answers print any of them (you still have to minimize k).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "graphs",
+        "*2100"
+    ],
+    "rating": 2100
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1861B",
+    "contest_id": 1861,
+    "problem_letter": "B",
+    "title": "B. Two Binary Strings",
+    "statement": "You are given two strings a and b of equal length, consisting of only characters 0 and/or 1; both strings start with character 0 and end with character 1.\n\nYou can perform the following operation any number of times (possibly zero):\n\nFormally, you choose one of these two strings (let the chosen string be s), then pick two integers l and r such that 1 ≤ l < r ≤ |s| and s_l = s_r, then replace every character s_i such that l < i < r with s_l.\n\nFor example, if the chosen string is 010101, you can transform it into one of the following strings by applying one operation:\n\nYou have to determine if it's possible to make the given strings equal by applying this operation any number of times.\n\nThe first line contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraints on the input:\n\nFor each test case, print YES if it is possible to make the strings equal. Otherwise, print NO. You can print each letter in any register.\n\nIn the first test case, we can perform the following operations:\n\nIn the second test case, the strings are already equal.\n\nIn the third test case, we can perform the following operations:\n\nIn the fourth and fifth test cases, it's impossible to make the given strings equal.\n\nInput:\n```\n7010100010111010101001010010001010101110000101111011001001001011011010001011011\n```\n\nOutput:\n```\nYES\nYES\nYES\nNO\nNO\nNO\nYES\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 2000) — the number of test cases.\n\nEach test case consists of two lines:\n\nAdditional constraints on the input:",
+    "output": "For each test case, print YES if it is possible to make the strings equal. Otherwise, print NO. You can print each letter in any register.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

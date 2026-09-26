@@ -92,7 +92,7 @@ Fetch problem metadata and statements:
 python -m src.scraper
 ```
 
-This uses the official Codeforces API for metadata and Codeforces HTML pages for problem statements. The current dataset contains 1,061 valid problems.
+This uses the official Codeforces API for metadata and Codeforces HTML pages for problem statements. The current dataset contains 7000+ valid problems.
 
 Rebuild the index after changing the problem JSON files:
 

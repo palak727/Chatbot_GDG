@@ -1,0 +1,20 @@
+{
+    "id": "2103F",
+    "contest_id": 2103,
+    "problem_letter": "F",
+    "title": "F. Maximize Nor",
+    "statement": "The bitwise nor^{∗} of an array of k-bit integers b_1, b_2, …, b_m can be computed by calculating the bitwise nor cumulatively from left to right. More formally, nor(b_1, b_2, …, b_m) = nor(nor(b_1, b_2, …, b_{m - 1}), b_m) for m≥ 2, and nor(b_1) = b_1.\n\nYou are given an array of k-bit integers a_1, a_2, …, a_n. For each index i (1≤ i≤ n), find the maximum bitwise nor among all subarrays^{†} of a containing index i. In other words, for each index i, find the maximum value of nor(a_l, a_{l+1}, …, a_r) among all 1 ≤ l ≤ i ≤ r ≤ n.\n\n^{∗} The logical nor of two boolean values is 1 if both values are 0, and 0 otherwise. The bitwise nor of two k-bit integers is calculated by performing the logical nor operation on each pair of the corresponding bits.\n\nFor example, let us compute nor(2, 6) when they are represented as 4-bit numbers. In binary, 2=0010_2 and 6=0110_2. Therefore, nor(2,6) = 1001_2 = 9 as by performing the logical nor operations from left to right, we have:\n\nNote that if 2 and 6 were represented as 3-bit integers instead, then nor(2,6) = 1.\n\n^{†}An array x is a subarray of an array y if x can be obtained from y by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 17) — the number of elements in the array and the number of bits of the array elements.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^k - 1) — the elements of array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, output n integers, the i-th of which is the maximum bitwise nor among all subarrays of a containing index i.\n\nIn the first test case, subarrays that have index 1 are [1] and [1, 3]. The values of their bitwise nor are 1 and 0 respectively. Hence, the answer for index 1 is 1. Subarrays that have index 2 are [3] and [1, 3]. The values of their bitwise nor are 3 and 0 respectively. Hence, the answer for index 2 is 3.\n\nIn the second test case:\n\nInput:\n```\n22 21 35 31 7 4 6 2\n```\n\nOutput:\n```\n1 3\n5 7 5 6 5\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 17) — the number of elements in the array and the number of bits of the array elements.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 2^k - 1) — the elements of array a.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, output n integers, the i-th of which is the maximum bitwise nor among all subarrays of a containing index i.",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "bitmasks",
+        "data structures",
+        "dp",
+        "implementation",
+        "sortings",
+        "*2600"
+    ],
+    "rating": 2600
+}

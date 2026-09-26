@@ -1,0 +1,19 @@
+{
+    "id": "1800G",
+    "contest_id": 1800,
+    "problem_letter": "G",
+    "title": "G. Symmetree",
+    "statement": "Kid was gifted a tree of n vertices with the root in the vertex 1. Since he really like symmetrical objects, Kid wants to find out if this tree is symmetrical.\n\nFormally, a tree is symmetrical if there exists an order of children such that:\n\nThe first line of input data contains single integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe first line of each case contains an integer n (1 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe following n-1 lines contain two integers each u and v (1 ≤ u, v ≤ n, u ≠ v) — indices of vertices connected by an edge.\n\nIt is guaranteed that the sum of n over all cases does not exceed 2·10^5.\n\nOutput t strings, each of which is the answer to the corresponding test case. As an answer, output \"YES\" if this tree is symmetrical, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).\n\nInput:\n```\n661 51 61 22 32 471 51 33 61 44 74 291 22 42 33 51 77 67 88 9102 99 102 36 74 31 23 82 56 5103 28 109 74 28 22 14 56 55 71\n```\n\nOutput:\n```\nYES\nNO\nYES\nNO\nNO\nYES\n```",
+    "input": "The first line of input data contains single integer t (1 ≤ t ≤ 10^4) — the number of test cases in the test.\n\nThe first line of each case contains an integer n (1 ≤ n ≤ 2·10^5) — the number of vertices in the tree.\n\nThe following n-1 lines contain two integers each u and v (1 ≤ u, v ≤ n, u ≠ v) — indices of vertices connected by an edge.\n\nIt is guaranteed that the sum of n over all cases does not exceed 2·10^5.",
+    "output": "Output t strings, each of which is the answer to the corresponding test case. As an answer, output \"YES\" if this tree is symmetrical, and \"NO\" otherwise.\n\nYou can output the answer in any case (for example, the strings \"yEs\", \"yes\", \"Yes\" and \"YES\" will be recognized as a positive answer).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dfs and similar",
+        "hashing",
+        "implementation",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

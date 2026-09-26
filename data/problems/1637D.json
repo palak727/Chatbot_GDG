@@ -1,0 +1,18 @@
+{
+    "id": "1637D",
+    "contest_id": 1637,
+    "problem_letter": "D",
+    "title": "D. Yet Another Minimization Problem",
+    "statement": "You are given two arrays a and b, both of length n.\n\nYou can perform the following operation any number of times (possibly zero): select an index i (1 ≤ i ≤ n) and swap a_i and b_i.\n\nLet's define the cost of the array a as ∑_{i=1}^n ∑_{j=i + 1}^n (a_i + a_j)^2. Similarly, the cost of the array b is ∑_{i=1}^n ∑_{j=i + 1}^n (b_i + b_j)^2.\n\nYour task is to minimize the total cost of two arrays.\n\nEach test case consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 40) — the number of test cases. The following is a description of the input data sets.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the length of both arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — elements of the first array.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100) — elements of the second array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 100.\n\nFor each test case, print the minimum possible total cost.\n\nIn the second test case, in one of the optimal answers after all operations a = [2, 6, 4, 6], b = [3, 7, 6, 1].\n\nThe cost of the array a equals to (2 + 6)^2 + (2 + 4)^2 + (2 + 6)^2 + (6 + 4)^2 + (6 + 6)^2 + (4 + 6)^2 = 508.\n\nThe cost of the array b equals to (3 + 7)^2 + (3 + 6)^2 + (3 + 1)^2 + (7 + 6)^2 + (7 + 1)^2 + (6 + 1)^2 = 479.\n\nThe total cost of two arrays equals to 508 + 479 = 987.\n\nInput:\n```\n313643 6 6 62 7 4 146 7 2 42 5 3 5\n```\n\nOutput:\n```\n0\n987\n914\n```",
+    "input": "Each test case consists of several test cases. The first line contains a single integer t (1 ≤ t ≤ 40) — the number of test cases. The following is a description of the input data sets.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 100) — the length of both arrays.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 100) — elements of the first array.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ 100) — elements of the second array.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 100.",
+    "output": "For each test case, print the minimum possible total cost.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "dp",
+        "greedy",
+        "math",
+        "*1800"
+    ],
+    "rating": 1800
+}

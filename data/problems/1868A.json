@@ -1,0 +1,17 @@
+{
+    "id": "1868A",
+    "contest_id": 1868,
+    "problem_letter": "A",
+    "title": "A. Fill in the Matrix",
+    "statement": "There is an empty matrix M of size n× m.\n\nZhongkao examination is over, and Daniel would like to do some puzzle games. He is going to fill in the matrix M using permutations of length m. That is, each row of M must be a permutation of length m^dagger.\n\nDefine the value of the i-th column in M as v_i=MEX(M_{1,i},M_{2,i},…,M_{n,i})^ddagger. Since Daniel likes diversity, the beauty of M is s=MEX(v_1,v_2,⋯,v_m).\n\nYou have to help Daniel fill in the matrix M and maximize its beauty.\n\n^dagger A permutation of length m is an array consisting of m distinct integers from 0 to m-1 in arbitrary order. For example, [1,2,0,4,3] is a permutation, but [0,1,1] is not a permutation (1 appears twice in the array), and [0,1,3] is also not a permutation (m-1=2 but there is 3 in the array).\n\n^ddagger The MEX of an array is the smallest non-negative integer that does not belong to the array. For example, MEX(2,2,1)=0 because 0 does not belong to the array, and MEX(0,3,1,2)=4 because 0, 1, 2 and 3 appear in the array, but 4 does not.\n\nThe first line of input contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (1≤ n,m≤ 2·10^5) — the size of the matrix.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.\n\nFor each test case, in the first line output a single integer — the maximum beauty of M.\n\nThen output the matrix M of size n× m — the matrix you find.\n\nIf there are multiple solutions, you may output any of them.\n\nIn the first test case:\n\nTherefore, s=MEX(2,1,0)=3.\n\nIt can be shown that 3 is the maximum possible beauty of M.\n\nIn the second test case, any permutation will make s=2.\n\nIn the third test case:\n\nTherefore, s=MEX(0,5,4,1,3,2)=6.\n\nInput:\n```\n44 31 166 62 1\n```\n\nOutput:\n```\n3\n1 0 2\n0 2 1\n1 0 2\n0 2 1\n2\n14 7 15 4 10 0 8 6 1 2 3 5 9 11 12 13 \n6\n3 0 1 4 2 5 \n5 2 1 0 4 3 \n1 3 2 4 5 0 \n4 1 3 2 5 0 \n4 2 5 3 0 1 \n2 4 0 5 1 3\n0\n0\n0\n```",
+    "input": "The first line of input contains a single integer t (1≤ t≤ 1000) — the number of test cases. The description of test cases follows.\n\nThe only line of each test case contains two integers n and m (1≤ n,m≤ 2·10^5) — the size of the matrix.\n\nIt is guaranteed that the sum of n·m over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, in the first line output a single integer — the maximum beauty of M.\n\nThen output the matrix M of size n× m — the matrix you find.\n\nIf there are multiple solutions, you may output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "*1300"
+    ],
+    "rating": 1300
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1097B",
+    "contest_id": 1097,
+    "problem_letter": "B",
+    "title": "B. Petr and a Combination Lock",
+    "statement": "Petr has just bought a new car. He's just arrived at the most known Petersburg's petrol station to refuel it when he suddenly discovered that the petrol tank is secured with a combination lock! The lock has a scale of 360 degrees and a pointer which initially points at zero:\n\nPetr called his car dealer, who instructed him to rotate the lock's wheel exactly n times. The i-th rotation should be a_i degrees, either clockwise or counterclockwise, and after all n rotations the pointer should again point at zero.\n\nThis confused Petr a little bit as he isn't sure which rotations should be done clockwise and which should be done counterclockwise. As there are many possible ways of rotating the lock, help him and find out whether there exists at least one, such that after all n rotations the pointer will point at zero again.\n\nThe first line contains one integer n (1 ≤ n ≤ 15) — the number of rotations.\n\nEach of the following n lines contains one integer a_i (1 ≤ a_i ≤ 180) — the angle of the i-th rotation in degrees.\n\nIf it is possible to do all the rotations so that the pointer will point at zero after all of them are performed, print a single word \"YES\". Otherwise, print \"NO\". Petr will probably buy a new car in this case.\n\nYou can print each letter in any case (upper or lower).\n\nIn the first example, we can achieve our goal by applying the first and the second rotation clockwise, and performing the third rotation counterclockwise.\n\nIn the second example, it's impossible to perform the rotations in order to make the pointer point at zero in the end.\n\nIn the third example, Petr can do all three rotations clockwise. In this case, the whole wheel will be rotated by 360 degrees clockwise and the pointer will point at zero again.\n\nInput:\n```\n3\n10\n20\n30\n```\n\nOutput:\n```\nYES\n```\n\nInput:\n```\n3\n10\n10\n10\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n3\n120\n120\n120\n```\n\nOutput:\n```\nYES\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 15) — the number of rotations.\n\nEach of the following n lines contains one integer a_i (1 ≤ a_i ≤ 180) — the angle of the i-th rotation in degrees.",
+    "output": "If it is possible to do all the rotations so that the pointer will point at zero after all of them are performed, print a single word \"YES\". Otherwise, print \"NO\". Petr will probably buy a new car in this case.\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "dp",
+        "*1200"
+    ],
+    "rating": 1200
+}

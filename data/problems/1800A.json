@@ -1,0 +1,17 @@
+{
+    "id": "1800A",
+    "contest_id": 1800,
+    "problem_letter": "A",
+    "title": "A. Is It a Cat?",
+    "statement": "You were walking down the street and heard a sound. The sound was described by the string s consisting of lowercase and uppercase Latin characters. Now you want to find out if the sound was a cat meowing.\n\nFor the sound to be a meowing, the string can only contain the letters 'm', 'e', 'o' and 'w', in either uppercase or lowercase. Also:\n\nFor example, strings \"meow\", \"mmmEeOWww\", \"MeOooOw\" describe a meowing, but strings \"Mweo\", \"MeO\", \"moew\", \"MmEW\", \"meowmeow\" do not.\n\nDetermine whether the sound you heard was a cat meowing or something else.\n\nThe first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the length of the string describing the sound.\n\nThe second line of each test case contains a string s of n characters. The string describes the sound you heard and consists only of lowercase and uppercase Latin letters.\n\nFor each test case, output on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as positive response).\n\nIn the first test case, the string consists of a sequence of characters 'm', 'e', 'O', 'w', which satisfies the definition of meowing.\n\nIn the second test case, the string consists of a sequence of 3 characters 'm' and 'M', one 'e', a sequence of 3 characters 'o' and 'O' and a sequence of 7 characters 'w' and 'W', which satisfies the definition of meowing.\n\nIn the third test case, the string does not describe a meowing because it lacks a sequence of 'o' or 'O' characters between 'e' and 'w'.\n\nIn the fourth test case, the string contains the character 'U', so it does not describe a meowing.\n\nInput:\n```\n74meOw14mMmeoOoWWWwwwW3mew7MmeEeUw4MEOW6MmyaVW5meowA\n```\n\nOutput:\n```\nYES\nYES\nNO\nNO\nYES\nNO\nNO\n```",
+    "input": "The first line of input data contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 50) — the length of the string describing the sound.\n\nThe second line of each test case contains a string s of n characters. The string describes the sound you heard and consists only of lowercase and uppercase Latin letters.",
+    "output": "For each test case, output on a separate line:\n\nYou can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as positive response).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

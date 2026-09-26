@@ -1,0 +1,19 @@
+{
+    "id": "1707A",
+    "contest_id": 1707,
+    "problem_letter": "A",
+    "title": "A. Doremy's IQ",
+    "statement": "Doremy is asked to test n contests. Contest i can only be tested on day i. The difficulty of contest i is a_i. Initially, Doremy's IQ is q. On day i Doremy will choose whether to test contest i or not. She can only test a contest if her current IQ is strictly greater than 0.\n\nIf Doremy chooses to test contest i on day i, the following happens:\n\nDoremy wants to test as many contests as possible. Please give Doremy a solution.\n\nThe input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^9) — the number of contests and Doremy's IQ in the beginning.\n\nThe second line contains n integers a_1,a_2,⋯,a_n (1 ≤ a_i ≤ 10^9) — the difficulty of each contest.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case, you need to output a binary string s, where s_i=1 if Doremy should choose to test contest i, and s_i=0 otherwise. The number of ones in the string should be maximum possible, and she should never test a contest when her IQ is zero or less.\n\nIf there are multiple solutions, you may output any.\n\nIn the first test case, Doremy tests the only contest. Her IQ doesn't decrease.\n\nIn the second test case, Doremy tests both contests. Her IQ decreases by 1 after testing contest 2.\n\nIn the third test case, Doremy tests contest 1 and 2. Her IQ decreases to 0 after testing contest 2, so she can't test contest 3.\n\nInput:\n```\n51 112 11 23 11 2 14 21 4 3 15 25 1 2 4 3\n```\n\nOutput:\n```\n1\n11\n110\n1110\n01111\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1≤ t≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 10^5, 1 ≤ q ≤ 10^9) — the number of contests and Doremy's IQ in the beginning.\n\nThe second line contains n integers a_1,a_2,⋯,a_n (1 ≤ a_i ≤ 10^9) — the difficulty of each contest.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case, you need to output a binary string s, where s_i=1 if Doremy should choose to test contest i, and s_i=0 otherwise. The number of ones in the string should be maximum possible, and she should never test a contest when her IQ is zero or less.\n\nIf there are multiple solutions, you may output any.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "constructive algorithms",
+        "greedy",
+        "implementation",
+        "*1600"
+    ],
+    "rating": 1600
+}

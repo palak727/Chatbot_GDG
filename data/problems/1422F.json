@@ -1,0 +1,18 @@
+{
+    "id": "1422F",
+    "contest_id": 1422,
+    "problem_letter": "F",
+    "title": "F. Boring Queries",
+    "statement": "Yura owns a quite ordinary and boring array a of length n. You think there is nothing more boring than that, but Vladik doesn't agree!\n\nIn order to make Yura's array even more boring, Vladik makes q boring queries. Each query consists of two integers x and y. Before answering a query, the bounds l and r for this query are calculated: l = (last + x) bmod n + 1, r = (last + y) bmod n + 1, where last is the answer on the previous query (zero initially), and bmod is the remainder operation. Whenever l > r, they are swapped.\n\nAfter Vladik computes l and r for a query, he is to compute the least common multiple (LCM) on the segment [l; r] of the initial array a modulo 10^9 + 7. LCM of a multiset of integers is the smallest positive integer that is divisible by all the elements of the multiset. The obtained LCM is the answer for this query.\n\nHelp Vladik and compute the answer for each query!\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains n integers a_i (1 ≤ a_i ≤ 2·10^5) — the elements of the array.\n\nThe third line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThe next q lines contain two integers x and y each (1 ≤ x, y ≤ n) — the description of the corresponding query.\n\nPrint q integers — the answers for the queries.\n\nConsider the example:\n\nInput:\n```\n3\n2 3 5\n4\n1 3\n3 3\n2 3\n2 3\n```\n\nOutput:\n```\n6\n2\n15\n30\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^5) — the length of the array.\n\nThe second line contains n integers a_i (1 ≤ a_i ≤ 2·10^5) — the elements of the array.\n\nThe third line contains a single integer q (1 ≤ q ≤ 10^5) — the number of queries.\n\nThe next q lines contain two integers x and y each (1 ≤ x, y ≤ n) — the description of the corresponding query.",
+    "output": "Print q integers — the answers for the queries.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "math",
+        "number theory",
+        "*2700"
+    ],
+    "rating": 2700
+}

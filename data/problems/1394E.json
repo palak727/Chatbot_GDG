@@ -1,0 +1,16 @@
+{
+    "id": "1394E",
+    "contest_id": 1394,
+    "problem_letter": "E",
+    "title": "E. Boboniu and Banknote Collection",
+    "statement": "No matter what trouble you're in, don't be afraid, but face it with a smile.\n\nI've made another billion dollars!\n\n— Boboniu\n\nBoboniu has issued his currencies, named Bobo Yuan. Bobo Yuan (BBY) is a series of currencies. Boboniu gives each of them a positive integer identifier, such as BBY-1, BBY-2, etc.\n\nBoboniu has a BBY collection. His collection looks like a sequence. For example:\n\nWe can use sequence a=[1,2,3,3,2,1,4,4,1] of length n=9 to denote it.\n\nNow Boboniu wants to fold his collection. You can imagine that Boboniu stick his collection to a long piece of paper and fold it between currencies:\n\nBoboniu will only fold the same identifier of currencies together. In other words, if a_i is folded over a_j (1≤ i,j≤ n), then a_i=a_j must hold. Boboniu doesn't care if you follow this rule in the process of folding. But once it is finished, the rule should be obeyed.\n\nA formal definition of fold is described in notes.\n\nAccording to the picture above, you can fold a two times. In fact, you can fold a=[1,2,3,3,2,1,4,4,1] at most two times. So the maximum number of folds of it is 2.\n\nAs an international fan of Boboniu, you're asked to calculate the maximum number of folds.\n\nYou're given a sequence a of length n, for each i (1≤ i≤ n), you need to calculate the maximum number of folds of [a_1,a_2,…,a_i].\n\nThe first line contains an integer n (1≤ n≤ 10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n).\n\nPrint n integers. The i-th of them should be equal to the maximum number of folds of [a_1,a_2,…,a_i].\n\nFormally, for a sequence a of length n, let's define the folding sequence as a sequence b of length n such that:\n\n([A] is the value of boolean expression A. i. e. [A]=1 if A is true, else [A]=0).\n\nNow we define the number of folds of b as f(b)=∑_{i=1}^{n-1}[b_i≠ b_{i+1}].\n\nThe maximum number of folds of a is F(a)=max{ f(b)mid b is a folding sequence ofa }.\n\nInput:\n```\n9\n1 2 3 3 2 1 4 4 1\n```\n\nOutput:\n```\n0 0 0 1 1 1 1 2 2\n```\n\nInput:\n```\n9\n1 2 2 2 2 1 1 2 2\n```\n\nOutput:\n```\n0 0 1 2 3 3 4 4 5\n```\n\nInput:\n```\n15\n1 2 3 4 5 5 4 3 2 2 3 4 4 3 6\n```\n\nOutput:\n```\n0 0 0 0 0 1 1 1 1 2 2 2 3 3 0\n```\n\nInput:\n```\n50\n1 2 4 6 6 4 2 1 3 5 5 3 1 2 4 4 2 1 3 3 1 2 2 1 1 1 2 4 6 6 4 2 1 3 5 5 3 1 2 4 4 2 1 3 3 1 2 2 1 1\n```\n\nOutput:\n```\n0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 3 3 3 3 4 4 4 5 5 6 7 3 3 3 4 4 4 4 3 3 4 4 4 4 4 5 5 5 5 6 6 6 7 7 8\n```",
+    "input": "The first line contains an integer n (1≤ n≤ 10^5).\n\nThe second line contains n integers a_1,a_2,…,a_n (1≤ a_i≤ n).",
+    "output": "Print n integers. The i-th of them should be equal to the maximum number of folds of [a_1,a_2,…,a_i].",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "strings",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1954B",
+    "contest_id": 1954,
+    "problem_letter": "B",
+    "title": "B. Make It Ugly",
+    "statement": "Let's call an array a beautiful if you can make all its elements the same by using the following operation an arbitrary number of times (possibly, zero):\n\nYou are given a beautiful array a_1, a_2, …, a_n. What is the minimum number of elements you have to remove from it in order for it to stop being beautiful? Swapping elements is prohibited. If it is impossible to do so, then output -1.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nAdditional constraints on the input:\n\nFor each test case, output a single integer — the minimum number of elements you have to remove from the array a in order for it to stop being beautiful. If it is impossible, then output -1.\n\nIn the first testcase, it is impossible to modify the array in such a way that it stops being beautiful. An array consisting of identical numbers will remain beautiful no matter how many numbers we remove from it.\n\nIn the second testcase, you can remove the number at the index 5, for example.\n\nThe resulting array will be [1, 2, 1, 2]. Let's check if it is beautiful. Two operations are available:\n\nThus, the array [1, 2, 1, 2] is not beautiful.\n\nIn the fourth testcase, you can remove the first three elements, for example. The resulting array [5, 3, 3, 3] is not beautiful.\n\nInput:\n```\n432 2 251 2 1 2 11173 3 3 5 3 3 3\n```\n\nOutput:\n```\n-1\n1\n-1\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 3·10^5).\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n).\n\nAdditional constraints on the input:",
+    "output": "For each test case, output a single integer — the minimum number of elements you have to remove from the array a in order for it to stop being beautiful. If it is impossible, then output -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1615E",
+    "contest_id": 1615,
+    "problem_letter": "E",
+    "title": "E. Purple Crayon",
+    "statement": "Two players, Red and Blue, are at it again, and this time they're playing with crayons! The mischievous duo is now vandalizing a rooted tree, by coloring the nodes while playing their favorite game.\n\nThe game works as follows: there is a tree of size n, rooted at node 1, where each node is initially white. Red and Blue get one turn each. Red goes first.\n\nIn Red's turn, he can do the following operation any number of times:\n\nThen, it's Blue's turn. Blue can do the following operation any number of times:\n\nAfter the two turns, the score of the game is determined as follows: let w be the number of white nodes, r be the number of red nodes, and b be the number of blue nodes. The score of the game is w·(r - b).\n\nRed wants to maximize this score, and Blue wants to minimize it. If both players play optimally, what will the final score of the game be?\n\nThe first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the number of vertices in the tree and the maximum number of red nodes.\n\nNext n - 1 lines contains description of edges. The i-th line contains two space separated integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the i-th edge of the tree.\n\nIt's guaranteed that given edges form a tree.\n\nPrint one integer — the resulting score if both Red and Blue play optimally.\n\nIn the first test case, the optimal strategy is as follows:\n\nIn the second test case, the optimal strategy is as follows:\n\nFor the third test case:\n\nThe score of the game is 4·(2 - 1) = 4.\n\nInput:\n```\n4 2\n1 2\n1 3\n1 4\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5 2\n1 2\n2 3\n3 4\n4 5\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n7 2\n1 2\n1 3\n4 2\n3 5\n6 3\n6 7\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n4 1\n1 2\n1 3\n1 4\n```\n\nOutput:\n```\n-1\n```",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 2·10^5; 1 ≤ k ≤ n) — the number of vertices in the tree and the maximum number of red nodes.\n\nNext n - 1 lines contains description of edges. The i-th line contains two space separated integers u_i and v_i (1 ≤ u_i, v_i ≤ n; u_i ≠ v_i) — the i-th edge of the tree.\n\nIt's guaranteed that given edges form a tree.",
+    "output": "Print one integer — the resulting score if both Red and Blue play optimally.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dfs and similar",
+        "games",
+        "graphs",
+        "greedy",
+        "math",
+        "sortings",
+        "trees",
+        "*2400"
+    ],
+    "rating": 2400
+}

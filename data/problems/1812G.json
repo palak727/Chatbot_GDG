@@ -1,0 +1,16 @@
+{
+    "id": "1812G",
+    "contest_id": 1812,
+    "problem_letter": "G",
+    "title": "G. Colour Vision",
+    "statement": "G. Colour Visiontime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard output ExampleInput 11RROutput YES\n\nInput:\n```\n11RR\n```\n\nOutput:\n```\nYES\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "implementation"
+    ],
+    "rating": null
+}

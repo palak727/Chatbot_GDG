@@ -1,0 +1,17 @@
+{
+    "id": "1263E",
+    "contest_id": 1263,
+    "problem_letter": "E",
+    "title": "E. Editor",
+    "statement": "The development of a text editor is a hard problem. You need to implement an extra module for brackets coloring in text.\n\nYour editor consists of a line with infinite length and cursor, which points to the current character. Please note that it points to only one of the characters (and not between a pair of characters). Thus, it points to an index character. The user can move the cursor left or right one position. If the cursor is already at the first (leftmost) position, then it does not move left.\n\nInitially, the cursor is in the first (leftmost) character.\n\nAlso, the user can write a letter or brackets (either (, or )) to the position that the cursor is currently pointing at. A new character always overwrites the old value at that position.\n\nYour editor must check, whether the current line is the correct text. Text is correct if the brackets in them form the correct bracket sequence.\n\nFormally, correct text (CT) must satisfy the following rules:\n\nExamples of correct texts: hello(codeforces), round, ((i)(write))edi(tor)s, ( me). Examples of incorrect texts: hello)oops(, round), ((me).\n\nThe user uses special commands to work with your editor. Each command has its symbol, which must be written to execute this command.\n\nThe correspondence of commands and characters is as follows:\n\nFor a complete understanding, take a look at the first example and its illustrations in the note below.\n\nYou are given a string containing the characters that the user entered. For the brackets coloring module's work, after each command you need to:\n\nIf two pairs of brackets are nested (the first in the second or vice versa), then these pairs of brackets should be painted in different colors. If two pairs of brackets are not nested, then they can be painted in different or the same colors. For example, for the bracket sequence ()(())()() the least number of colors is 2, and for the bracket sequence (()(()())())(()) — is 3.\n\nWrite a program that prints the minimal number of colors after processing each command.\n\nThe first line contains an integer n (1 ≤ n ≤ 10^6) — the number of commands.\n\nThe second line contains s — a sequence of commands. The string s consists of n characters. It is guaranteed that all characters in a string are valid commands.\n\nIn a single line print n integers, where the i-th number is:\n\nIn the first example, the text in the editor will take the following form:\n\n```\n(\n^\n```\n\n```\n(\n ^\n```\n\n```\n(a\n ^\n```\n\n```\n(a\n  ^\n```\n\n```\n(ab\n  ^\n```\n\n```\n(ab\n   ^\n```\n\n```\n(ab)\n   ^\n```\n\n```\n(ab)\n  ^\n```\n\n```\n(a))\n  ^\n```\n\n```\n(a))\n ^\n```\n\n```\n(())\n ^\n```\n\nInput:\n```\n11\n(RaRbR)L)L(\n```\n\nOutput:\n```\n-1 -1 -1 -1 -1 -1 1 1 -1 -1 2 \n```\n\nInput:\n```\n11\n(R)R(R)Ra)c\n```\n\nOutput:\n```\n-1 -1 1 1 -1 -1 1 1 1 -1 1 \n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 10^6) — the number of commands.\n\nThe second line contains s — a sequence of commands. The string s consists of n characters. It is guaranteed that all characters in a string are valid commands.",
+    "output": "In a single line print n integers, where the i-th number is:",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "implementation",
+        "*2100"
+    ],
+    "rating": 2100
+}

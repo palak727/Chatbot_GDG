@@ -1,0 +1,17 @@
+{
+    "id": "1250J",
+    "contest_id": 1250,
+    "problem_letter": "J",
+    "title": "J. The Parade",
+    "statement": "The Berland Army is preparing for a large military parade. It is already decided that the soldiers participating in it will be divided into k rows, and all rows will contain the same number of soldiers.\n\nOf course, not every arrangement of soldiers into k rows is suitable. Heights of all soldiers in the same row should not differ by more than 1. The height of each soldier is an integer between 1 and n.\n\nFor each possible height, you know the number of soldiers having this height. To conduct a parade, you have to choose the soldiers participating in it, and then arrange all of the chosen soldiers into k rows so that both of the following conditions are met:\n\nCalculate the maximum number of soldiers who can participate in the parade.\n\nThe first line contains one integer t (1 ≤ t ≤ 10000) — the number of test cases. Then the test cases follow.\n\nEach test case begins with a line containing two integers n and k (1 ≤ n ≤ 30000, 1 ≤ k ≤ 10^12) — the number of different heights of soldiers and the number of rows of soldiers in the parade, respectively.\n\nThe second (and final) line of each test case contains n integers c_1, c_2, ..., c_n (0 ≤ c_i ≤ 10^12), where c_i is the number of soldiers having height i in the Berland Army.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 30000.\n\nFor each test case, print one integer — the maximum number of soldiers that can participate in the parade.\n\nExplanations for the example test cases:\n\nInput:\n```\n5\n3 4\n7 1 13\n1 1\n100\n1 3\n100\n2 1\n1000000000000 1000000000000\n4 1\n10 2 11 1\n```\n\nOutput:\n```\n16\n100\n99\n2000000000000\n13\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 10000) — the number of test cases. Then the test cases follow.\n\nEach test case begins with a line containing two integers n and k (1 ≤ n ≤ 30000, 1 ≤ k ≤ 10^12) — the number of different heights of soldiers and the number of rows of soldiers in the parade, respectively.\n\nThe second (and final) line of each test case contains n integers c_1, c_2, ..., c_n (0 ≤ c_i ≤ 10^12), where c_i is the number of soldiers having height i in the Berland Army.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 30000.",
+    "output": "For each test case, print one integer — the maximum number of soldiers that can participate in the parade.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*1800"
+    ],
+    "rating": 1800
+}

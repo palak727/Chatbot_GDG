@@ -1,0 +1,19 @@
+{
+    "id": "1114E",
+    "contest_id": 1114,
+    "problem_letter": "E",
+    "title": "E. Arithmetic Progression",
+    "statement": "This is an interactive problem!\n\nAn arithmetic progression or arithmetic sequence is a sequence of integers such that the subtraction of element with its previous element (x_i - x_{i - 1}, where i ≥ 2) is constant — such difference is called a common difference of the sequence.\n\nThat is, an arithmetic progression is a sequence of form x_i = x_1 + (i - 1) d, where d is a common difference of the sequence.\n\nThere is a secret list of n integers a_1, a_2, …, a_n.\n\nIt is guaranteed that all elements a_1, a_2, …, a_n are between 0 and 10^9, inclusive.\n\nThis list is special: if sorted in increasing order, it will form an arithmetic progression with positive common difference (d > 0). For example, the list [14, 24, 9, 19] satisfies this requirement, after sorting it makes a list [9, 14, 19, 24], which can be produced as x_n = 9 + 5·(n - 1).\n\nAlso you are also given a device, which has a quite discharged battery, thus you can only use it to perform at most 60 queries of following two types:\n\nYour can use this special device for at most 60 queries. Could you please find out the smallest element and the common difference of the sequence? That is, values x_1 and d in the definition of the arithmetic progression. Note that the array a is not sorted.\n\nThe interaction starts with a single integer n (2 ≤ n ≤ 10^6), the size of the list of integers.\n\nThen you can make queries of two types:\n\nAfter the query read its result r as an integer.\n\nWhen you find out what the smallest element x_1 and common difference d, print\n\nAnd quit after that. This query is not counted towards the 60 queries limit.\n\nAfter printing any query do not forget to output end of line and flush the output. Otherwise you will get Idleness limit exceeded. To do this, use:\n\nHacks\n\nFor hack, use the following format:\n\nThe first line should contain an integer n (2 ≤ n ≤ 10^6) — the list's size.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the list.\n\nAlso, after the sorting the list must form an arithmetic progression with positive common difference.\n\nNote that the example interaction contains extra empty lines so that it's easier to read. The real interaction doesn't contain any empty lines and you shouldn't print any extra empty lines as well.\n\nThe list in the example test is [14, 24, 9, 19].\n\nInput:\n```\n4\n\n0\n\n1\n\n14\n\n24\n\n9\n\n19\n```\n\nOutput:\n```\n> 25\n\n> 15\n\n? 1\n\n? 2\n\n? 3\n\n? 4\n\n! 9 5\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "interactive",
+        "number theory",
+        "probabilities",
+        "*2200"
+    ],
+    "rating": 2200
+}

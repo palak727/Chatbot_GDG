@@ -1,0 +1,17 @@
+{
+    "id": "1468B",
+    "contest_id": 1468,
+    "problem_letter": "B",
+    "title": "B. Bakery",
+    "statement": "Monocarp would like to open a bakery in his local area. But, at first, he should figure out whether he can compete with other shops.\n\nMonocarp plans that the bakery will work for n days. On the i-th day, a_i loaves of bread will be baked in the morning before the opening. At the end of the n-th day, Monocarp will sell all the remaining bread that wasn't sold earlier with a huge discount.\n\nBecause of how bread is stored, the bakery seller sells the bread in the following order: firstly, he sells the loaves that were baked that morning; secondly, he sells the loaves that were baked the day before and weren't sold yet; then the loaves that were baked two days before and weren't sold yet, and so on. That's why some customers may buy a rather stale bread and will definitely spread negative rumors.\n\nLet's define loaf spoilage as the difference between the day it was baked and the day it was sold. Then the unattractiveness of the bakery will be equal to the maximum spoilage among all loaves of bread baked at the bakery.\n\nSuppose Monocarp's local area has consumer demand equal to k, it means that each day k customers will come to the bakery and each of them will ask for one loaf of bread (the loaves are sold according to the aforementioned order). If there is no bread left, then the person just doesn't buy anything. During the last day sale, all the remaining loaves will be sold (and they will still count in the calculation of the unattractiveness).\n\nMonocarp analyzed his competitors' data and came up with m possible consumer demand values k_1, k_2, …, k_m, and now he'd like to calculate the unattractiveness of the bakery for each value of demand. Can you help him?\n\nThe first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 2·10^5) — the number of days the bakery is open and the number of possible values of consumer demand.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of bread loaves that will be baked each day.\n\nThe third line contains m integers k_1, k_2, …, k_m (1 ≤ k_1 < k_2 < … < k_m ≤ 10^9) — the possible consumer demand values in the ascending order.\n\nPrint m integers: for each consumer demand, print the unattractiveness of the bakery.\n\nIn the first example, let's describe what happens for couple consumer demands:\n\nIf consumer demand is equal to 1:\n\nIf consumer demand is equal to 10 then all baked bread will be sold in the day it was baked and will have spoilage equal to 0.\n\nInput:\n```\n5 4\n5 2 1 3 7\n1 3 4 10\n```\n\nOutput:\n```\n4 2 1 0 \n```\n\nInput:\n```\n8 9\n3 1 4 1 5 9 2 6\n1 2 3 4 5 6 7 8 9\n```\n\nOutput:\n```\n7 5 3 3 2 1 1 1 0 \n```",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 2·10^5; 1 ≤ m ≤ 2·10^5) — the number of days the bakery is open and the number of possible values of consumer demand.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number of bread loaves that will be baked each day.\n\nThe third line contains m integers k_1, k_2, …, k_m (1 ≤ k_1 < k_2 < … < k_m ≤ 10^9) — the possible consumer demand values in the ascending order.",
+    "output": "Print m integers: for each consumer demand, print the unattractiveness of the bakery.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dsu",
+        "*2900"
+    ],
+    "rating": 2900
+}

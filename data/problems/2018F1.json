@@ -1,0 +1,19 @@
+{
+    "id": "2018F1",
+    "contest_id": 2018,
+    "problem_letter": "F1",
+    "title": "F1. Speedbreaker Counting (Easy Version)",
+    "statement": "This is the easy version of the problem. In the three versions, the constraints on n and the time limit are different. You can make hacks only if all the versions of the problem are solved.\n\nThis is the statement of Problem D1B:\n\nYou win if, for each i, you conquer city i at a time no later than a_i. A winning strategy may or may not exist, also depending on the starting city. How many starting cities allow you to win?\n\nFor each 0 ≤ k ≤ n, count the number of arrays of positive integers a_1, a_2, …, a_n such that\n\nThe answer can be very large, so you have to calculate it modulo a given prime p.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 80). The description of the test cases follows.\n\nThe only line of each test case contains two integers n, p (1 ≤ n ≤ 80, 10^8 ≤ p ≤ 10^9, p is prime) — the number of cities and the modulo.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 80.\n\nFor each test case, output n+1 integers: the i-th integer should be the number of arrays that satisfy the conditions for k = i-1.\n\nIn the first test case,\n\nIn the second test case,\n\nIn the third test case,\n\nInput:\n```\n111 9982443532 9982443533 9982443534 9982443535 9982443536 9982443537 9982443538 9982443539 99824435310 10227585710 999662017\n```\n\nOutput:\n```\n0 1 \n1 2 1 \n14 7 4 2 \n183 34 19 16 4 \n2624 209 112 120 48 12 \n42605 1546 793 992 468 216 36 \n785910 13327 6556 9190 4672 2880 864 144 \n16382863 130922 61939 94992 50100 36960 14256 4608 576 \n382823936 1441729 657784 1086596 583344 488700 216000 96480 23040 2880 \n20300780 17572114 7751377 13641280 7376068 6810552 3269700 1785600 576000 144000 14400 \n944100756 17572114 7751377 13641280 7376068 6810552 3269700 1785600 576000 144000 14400 \n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 80). The description of the test cases follows.\n\nThe only line of each test case contains two integers n, p (1 ≤ n ≤ 80, 10^8 ≤ p ≤ 10^9, p is prime) — the number of cities and the modulo.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 80.",
+    "output": "For each test case, output n+1 integers: the i-th integer should be the number of arrays that satisfy the conditions for k = i-1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "greedy",
+        "math",
+        "*2900"
+    ],
+    "rating": 2900
+}

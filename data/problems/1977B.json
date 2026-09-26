@@ -1,0 +1,19 @@
+{
+    "id": "1977B",
+    "contest_id": 1977,
+    "problem_letter": "B",
+    "title": "B. Binary Colouring",
+    "statement": "You are given a positive integer x. Find any array of integers a_0, a_1, …, a_{n-1} for which the following holds:\n\nIt can be proven that under the constraints of the problem, a valid array always exists.\n\nEach test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains a single positive integer x (1 ≤ x < 2^30).\n\nFor each test case, output two lines.\n\nOn the first line, output an integer n (1 ≤ n ≤ 32) — the length of the array a_0, a_1, …, a_{n-1}.\n\nOn the second line, output the array a_0, a_1, …, a_{n-1}.\n\nIf there are multiple valid arrays, you can output any of them.\n\nIn the first test case, one valid array is [1], since (1)·2^0 = 1.\n\nIn the second test case, one possible valid array is [0,-1,0,0,1], since (0)·2^0 + (-1)·2^1 + (0)·2^2 + (0)·2^3 + (1)·2^4 = -2 + 16 = 14.\n\nInput:\n```\n71142415271119\n```\n\nOutput:\n```\n1\n1\n5\n0 -1 0 0 1\n6\n0 0 0 -1 0 1\n5\n-1 0 0 0 1\n6\n-1 0 -1 0 0 1\n5\n-1 0 -1 0 1\n5\n-1 0 1 0 1\n```",
+    "input": "Each test contains multiple test cases. The first line of input contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains a single positive integer x (1 ≤ x < 2^30).",
+    "output": "For each test case, output two lines.\n\nOn the first line, output an integer n (1 ≤ n ≤ 32) — the length of the array a_0, a_1, …, a_{n-1}.\n\nOn the second line, output the array a_0, a_1, …, a_{n-1}.\n\nIf there are multiple valid arrays, you can output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*1100"
+    ],
+    "rating": 1100
+}

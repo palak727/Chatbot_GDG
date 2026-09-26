@@ -1,0 +1,19 @@
+{
+    "id": "1979C",
+    "contest_id": 1979,
+    "problem_letter": "C",
+    "title": "C. Earning on Bets",
+    "statement": "You have been offered to play a game. In this game, there are n possible outcomes, and for each of them, you must bet a certain integer amount of coins. In the event that the i-th outcome turns out to be winning, you will receive back the amount of coins equal to your bet on that outcome, multiplied by k_i. Note that exactly one of the n outcomes will be winning.\n\nYour task is to determine how to distribute the coins in such a way that you will come out ahead in the event of any winning outcome. More formally, the total amount of coins you bet on all outcomes must be strictly less than the number of coins received back for each possible winning outcome.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of outcomes.\n\nThe second line of each test case contains n integers k_1,k_2,…,k_n (2 ≤ k_i ≤ 20) — the multiplier for the amount of coins if the i-th outcome turns out to be winning.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output -1 if there is no way to distribute the coins as required. Otherwise, output n integers x_1, x_2,…, x_n (1 ≤ x_i ≤ 10^9) — your bets on the outcomes.\n\nIt can be shown that if a solution exists, there is always a solution that satisfies these constraints.\n\nIf there are multiple suitable solutions, output any of them.\n\nIn the first test case, the coins can be distributed as follows: 27 coins on the first outcome, 41 coins on the second outcome, 12 coins on the third outcome. Then the total amount of coins bet on all outcomes is 27 + 41 + 12 = 80 coins. If the first outcome turns out to be winning, you will receive back 3·27 = 81 coins, if the second outcome turns out to be winning, you will receive back 2·41 = 82 coins, if the third outcome turns out to be winning, you will receive back 7·12 = 84 coins. All these values are strictly greater than 80.\n\nIn the second test case, one way is to bet one coin on each of the outcomes.\n\nInput:\n```\n633 2 723 355 5 5 5 567 9 3 17 9 1336 3 259 4 6 8 3\n```\n\nOutput:\n```\n27 41 12 \n1 1 \n-1\n1989 1547 4641 819 1547 1071 \n-1\n8 18 12 9 24\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50) — the number of outcomes.\n\nThe second line of each test case contains n integers k_1,k_2,…,k_n (2 ≤ k_i ≤ 20) — the multiplier for the amount of coins if the i-th outcome turns out to be winning.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output -1 if there is no way to distribute the coins as required. Otherwise, output n integers x_1, x_2,…, x_n (1 ≤ x_i ≤ 10^9) — your bets on the outcomes.\n\nIt can be shown that if a solution exists, there is always a solution that satisfies these constraints.\n\nIf there are multiple suitable solutions, output any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "combinatorics",
+        "constructive algorithms",
+        "number theory",
+        "*1200"
+    ],
+    "rating": 1200
+}

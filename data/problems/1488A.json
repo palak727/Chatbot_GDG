@@ -1,0 +1,17 @@
+{
+    "id": "1488A",
+    "contest_id": 1488,
+    "problem_letter": "A",
+    "title": "A. From Zero To Y",
+    "statement": "You are given two positive (greater than zero) integers x and y. There is a variable k initially set to 0.\n\nYou can perform the following two types of operations:\n\nFind the minimum number of operations described above to set the value of k to y.\n\nThe first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing two integer x and y (1 ≤ x, y ≤ 10^9).\n\nFor each test case, print one integer — the minimum number of operations to set the value of k to y.\n\nIn the first test case you can use the following sequence of operations:\n\nIn the second test case you can use the following sequence of operations:\n\nInput:\n```\n3\n2 7\n3 42\n25 1337\n```\n\nOutput:\n```\n4\n5\n20\n```",
+    "input": "The first line contains one integer t (1 ≤ t ≤ 2·10^4) — the number of test cases.\n\nEach test case consists of one line containing two integer x and y (1 ≤ x, y ≤ 10^9).",
+    "output": "For each test case, print one integer — the minimum number of operations to set the value of k to y.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1455B",
+    "contest_id": 1455,
+    "problem_letter": "B",
+    "title": "B. Jumps",
+    "statement": "You are standing on the OX-axis at point 0 and you want to move to an integer point x > 0.\n\nYou can make several jumps. Suppose you're currently at point y (y may be negative) and jump for the k-th time. You can:\n\nWhat is the minimum number of jumps you need to reach the point x?\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains the single integer x (1 ≤ x ≤ 10^6) — the destination point.\n\nFor each test case, print the single integer — the minimum number of jumps to reach x. It can be proved that we can reach any integer point x.\n\nIn the first test case x = 1, so you need only one jump: the 1-st jump from 0 to 0 + 1 = 1.\n\nIn the second test case x = 2. You need at least three jumps:\n\nTwo jumps are not enough because these are the only possible variants:\n\nIn the third test case, you need two jumps: the 1-st one as +1 and the 2-nd one as +2, so 0 + 1 + 2 = 3.\n\nIn the fourth test case, you need three jumps: the 1-st one as -1, the 2-nd one as +2 and the 3-rd one as +3, so 0 - 1 + 2 + 3 = 4.\n\nInput:\n```\n5\n1\n2\n3\n4\n5\n```\n\nOutput:\n```\n1\n3\n2\n3\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first and only line of each test case contains the single integer x (1 ≤ x ≤ 10^6) — the destination point.",
+    "output": "For each test case, print the single integer — the minimum number of jumps to reach x. It can be proved that we can reach any integer point x.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*1200"
+    ],
+    "rating": 1200
+}

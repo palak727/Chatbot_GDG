@@ -1,0 +1,20 @@
+{
+    "id": "2038K",
+    "contest_id": 2038,
+    "problem_letter": "K",
+    "title": "K. Grid Walk",
+    "statement": "You have an n × n grid and two integers a and b. Both the rows and the columns are numbered from 1 to n. Let's denote the cell at the intersection of the i-th row and the j-th column as (i, j).\n\nYou are standing in the cell (1, 1) and want to move into the cell (n, n).\n\nSuppose you are in the cell (i, j); in one step, you can move either into the cell (i, j + 1) or into the cell (i + 1, j) if the corresponding cells exist.\n\nLet's define the cost of the cell (i, j) as c(i, j) = gcd(i, a) + gcd(j, b) (here, gcd(x,y) denotes the greatest common divisor of x and y). The cost of the route from (1, 1) to (n, n) is the sum of costs of the visited cells (including the starting cell and the finishing cell).\n\nFind the route with minimum possible cost and print its cost.\n\nThe only line contains three integers n, a, and b (2 ≤ n ≤ 10^6; 1 ≤ a, b ≤ 10^6).\n\nPrint one integer — the cost of the cheapest route from (1, 1) to (n, n).\n\nThe first example is described in the picture above.\n\nInput:\n```\n4 2 4\n```\n\nOutput:\n```\n21\n```\n\nInput:\n```\n10 210 420\n```\n\nOutput:\n```\n125\n```",
+    "input": "The only line contains three integers n, a, and b (2 ≤ n ≤ 10^6; 1 ≤ a, b ≤ 10^6).",
+    "output": "Print one integer — the cost of the cheapest route from (1, 1) to (n, n).",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "math",
+        "number theory",
+        "*2100"
+    ],
+    "rating": 2100
+}

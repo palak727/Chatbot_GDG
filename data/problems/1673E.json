@@ -1,0 +1,19 @@
+{
+    "id": "1673E",
+    "contest_id": 1673,
+    "problem_letter": "E",
+    "title": "E. Power or XOR?",
+    "statement": "The symbol wedge is quite ambiguous, especially when used without context. Sometimes it is used to denote a power (awedge b = a^b) and sometimes it is used to denote the XOR operation (awedge b=aoplus b).\n\nYou have an ambiguous expression E=A_1wedge A_2wedge A_3wedge…wedge A_n. You can replace each wedge symbol with either a textttPower operation or a textttXOR operation to get an unambiguous expression E'.\n\nThe value of this expression E' is determined according to the following rules:\n\nYou are given an array B of length n and an integer k. The array A is given by A_i=2^B_i and the expression E is given by E=A_1wedge A_2wedge A_3wedge…wedge A_n. You need to find the XOR of the values of all possible unambiguous expressions E' which can be obtained from E and has at least k wedge symbols used as textttXOR operation. Since the answer can be very large, you need to find it modulo 2^{2^20}. Since this number can also be very large, you need to print its binary representation without leading zeroes. If the answer is equal to 0, print 0.\n\nThe first line of input contains two integers n and k (1≤ n≤ 2^20, 0≤ k < n).\n\nThe second line of input contains n integers B_1,B_2,…,B_n (1≤ B_i < 2^20).\n\nPrint a single line containing a binary string without leading zeroes denoting the answer to the problem. If the answer is equal to 0, print 0.\n\nFor each of the testcases 1 to 3, A = {2^3,2^1,2^2} = {8,2,4} and E=8wedge 2wedge 4.\n\nFor the first testcase, there is only one possible valid unambiguous expression E' = 8oplus 2oplus 4 = 14 = (1110)_2.\n\nFor the second testcase, there are three possible valid unambiguous expressions E':\n\nFor the third testcase, there are four possible valid unambiguous expressions E':\n\nFor the fourth testcase, A={2,2} and E=2wedge 2. The only possible valid unambiguous expression E' = 2oplus 2 = 0 = (0)_2.\n\nInput:\n```\n3 2\n3 1 2\n```\n\nOutput:\n```\n1110\n```\n\nInput:\n```\n3 1\n3 1 2\n```\n\nOutput:\n```\n1010010\n```\n\nInput:\n```\n3 0\n3 1 2\n```\n\nOutput:\n```\n1000000000000000001010010\n```\n\nInput:\n```\n2 1\n1 1\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line of input contains two integers n and k (1≤ n≤ 2^20, 0≤ k < n).\n\nThe second line of input contains n integers B_1,B_2,…,B_n (1≤ B_i < 2^20).",
+    "output": "Print a single line containing a binary string without leading zeroes denoting the answer to the problem. If the answer is equal to 0, print 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "bitmasks",
+        "combinatorics",
+        "math",
+        "number theory",
+        "*2500"
+    ],
+    "rating": 2500
+}

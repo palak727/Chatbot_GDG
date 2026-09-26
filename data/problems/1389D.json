@@ -1,0 +1,19 @@
+{
+    "id": "1389D",
+    "contest_id": 1389,
+    "problem_letter": "D",
+    "title": "D. Segment Intersections",
+    "statement": "You are given two lists of segments [al_1, ar_1], [al_2, ar_2], …, [al_n, ar_n] and [bl_1, br_1], [bl_2, br_2], …, [bl_n, br_n].\n\nInitially, all segments [al_i, ar_i] are equal to [l_1, r_1] and all segments [bl_i, br_i] are equal to [l_2, r_2].\n\nIn one step, you can choose one segment (either from the first or from the second list) and extend it by 1. In other words, suppose you've chosen segment [x, y] then you can transform it either into [x - 1, y] or into [x, y + 1].\n\nLet's define a total intersection I as the sum of lengths of intersections of the corresponding pairs of segments, i.e. ∑limits_{i=1}^nintersection_length([al_i, ar_i], [bl_i, br_i]). Empty intersection has length 0 and length of a segment [x, y] is equal to y - x.\n\nWhat is the minimum number of steps you need to make I greater or equal to k?\n\nThe first line contains the single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 10^9) — the length of lists and the minimum required total intersection.\n\nThe second line of each test case contains two integers l_1 and r_1 (1 ≤ l_1 ≤ r_1 ≤ 10^9) — the segment all [al_i, ar_i] are equal to initially.\n\nThe third line of each test case contains two integers l_2 and r_2 (1 ≤ l_2 ≤ r_2 ≤ 10^9) — the segment all [bl_i, br_i] are equal to initially.\n\nIt's guaranteed that the sum of n doesn't exceed 2·10^5.\n\nPrint t integers — one per test case. For each test case, print the minimum number of step you need to make I greater or equal to k.\n\nIn the first test case, we can achieve total intersection 5, for example, using next strategy:\n\nIn the second test case, we can make [al_1, ar_1] = [0, 1000000000] in 1000000000 steps and [bl_1, br_1] = [0, 1000000000] in 1000000000 steps.\n\nIn the third test case, the total intersection I is already equal to 10 > 3, so we don't need to do any steps.\n\nInput:\n```\n3\n3 5\n1 2\n3 4\n2 1000000000\n1 1\n999999999 999999999\n10 3\n5 10\n7 8\n```\n\nOutput:\n```\n7\n2000000000\n0\n```",
+    "input": "The first line contains the single integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n and k (1 ≤ n ≤ 2·10^5; 1 ≤ k ≤ 10^9) — the length of lists and the minimum required total intersection.\n\nThe second line of each test case contains two integers l_1 and r_1 (1 ≤ l_1 ≤ r_1 ≤ 10^9) — the segment all [al_i, ar_i] are equal to initially.\n\nThe third line of each test case contains two integers l_2 and r_2 (1 ≤ l_2 ≤ r_2 ≤ 10^9) — the segment all [bl_i, br_i] are equal to initially.\n\nIt's guaranteed that the sum of n doesn't exceed 2·10^5.",
+    "output": "Print t integers — one per test case. For each test case, print the minimum number of step you need to make I greater or equal to k.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "implementation",
+        "math",
+        "*2100"
+    ],
+    "rating": 2100
+}

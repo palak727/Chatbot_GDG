@@ -1,0 +1,18 @@
+{
+    "id": "1396E",
+    "contest_id": 1396,
+    "problem_letter": "E",
+    "title": "E. Distance Matching",
+    "statement": "You are given an integer k and a tree T with n nodes (n is even).\n\nLet dist(u, v) be the number of edges on the shortest path from node u to node v in T.\n\nLet us define a undirected weighted complete graph G = (V, E) as following:\n\nYour task is simple, find a perfect matching in G with total edge weight k (1 ≤ k ≤ n^2).\n\nThe first line of input contains two integers n, k (2 ≤ n ≤ 100,000, n is even, 1 ≤ k ≤ n^2): number of nodes and the total edge weight of the perfect matching you need to find.\n\nThe i-th of the following n - 1 lines contains two integers v_i, u_i (1 ≤ v_i, u_i ≤ n) denoting an edge between v_i and u_i in T. It is guaranteed that the given graph is a tree.\n\nIf there are no matchings that satisfy the above condition, output \"NO\" (without quotes) on a single line.\n\nOtherwise, you should output \"YES\" (without quotes) on the first line of output.\n\nYou should then output n/2 lines, the i-th line containing p_i, q_i (1 ≤ p_i, q_i ≤ n): the i-th pair of the matching.\n\nA tree is a connected acyclic undirected graph.\n\nA matching is set of pairwise non-adjacent edges, none of which are loops; that is, no two edges share a common vertex.\n\nA perfect matching is a matching which matches all vertices of the graph; that is, every vertex of the graph is incident to exactly one edge of the matching.\n\nInput:\n```\n4 2\n1 2\n2 3\n3 4\n```\n\nOutput:\n```\nYES\n2 1\n3 4\n```\n\nInput:\n```\n4 4\n1 2\n2 3\n3 4\n```\n\nOutput:\n```\nYES\n3 1\n2 4\n```",
+    "input": "The first line of input contains two integers n, k (2 ≤ n ≤ 100,000, n is even, 1 ≤ k ≤ n^2): number of nodes and the total edge weight of the perfect matching you need to find.\n\nThe i-th of the following n - 1 lines contains two integers v_i, u_i (1 ≤ v_i, u_i ≤ n) denoting an edge between v_i and u_i in T. It is guaranteed that the given graph is a tree.",
+    "output": "If there are no matchings that satisfy the above condition, output \"NO\" (without quotes) on a single line.\n\nOtherwise, you should output \"YES\" (without quotes) on the first line of output.\n\nYou should then output n/2 lines, the i-th line containing p_i, q_i (1 ≤ p_i, q_i ≤ n): the i-th pair of the matching.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "dfs and similar",
+        "trees",
+        "*3200"
+    ],
+    "rating": 3200
+}

@@ -1,0 +1,23 @@
+{
+    "id": "1956D",
+    "contest_id": 1956,
+    "problem_letter": "D",
+    "title": "D. Nene and the Mex Operator",
+    "statement": "Nene gave you an array of integers a_1, a_2, …, a_n of length n.\n\nYou can perform the following operation no more than 5·10^5 times (possibly zero):\n\nHere, MEX of a set of integers {c_1, c_2, …, c_k} is defined as the smallest non-negative integer m which does not occur in the set c.\n\nYour goal is to maximize the sum of the elements of the array a. Find the maximum sum and construct a sequence of operations that achieves this sum. Note that you don't need to minimize the number of operations in this sequence, you only should use no more than 5·10^5 operations in your solution.\n\nThe first line contains an integer n (1 ≤ n ≤ 18) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (0≤ a_i ≤ 10^7) — the array a.\n\nIn the first line, output two integers s and m (0≤ m≤ 5·10^5) — the maximum sum of elements of the array a and the number of operations in your solution.\n\nIn the i-th of the following m lines, output two integers l and r (1 ≤ l ≤ r ≤ n), representing the parameters of the i-th operation.\n\nIt can be shown that the maximum sum of elements of the array a can always be obtained in no more than 5·10^5 operations.\n\nIn the first example, after the operation with l=1 and r=2 the array a becomes equal to [2,2]. It can be shown that it is impossible to achieve a larger sum of the elements of a, so the answer is 4.\n\nIn the second example, the initial sum of elements is 13 which can be shown to be the largest.\n\nIn the third example, the array a changes as follows:\n\nIt can be shown that it is impossible to achieve a larger sum of the elements of a, so the answer is 105.\n\nInput:\n```\n20 1\n```\n\nOutput:\n```\n4 1\n1 2\n```\n\nInput:\n```\n31 3 9\n```\n\nOutput:\n```\n13 0\n```\n\nInput:\n```\n41 100 2 1\n```\n\nOutput:\n```\n105 2\n3 3\n3 4\n```\n\nInput:\n```\n10\n```\n\nOutput:\n```\n1 1\n1 1\n```",
+    "input": "The first line contains an integer n (1 ≤ n ≤ 18) — the length of the array a.\n\nThe second line contains n integers a_1,a_2,…,a_n (0≤ a_i ≤ 10^7) — the array a.",
+    "output": "In the first line, output two integers s and m (0≤ m≤ 5·10^5) — the maximum sum of elements of the array a and the number of operations in your solution.\n\nIn the i-th of the following m lines, output two integers l and r (1 ≤ l ≤ r ≤ n), representing the parameters of the i-th operation.\n\nIt can be shown that the maximum sum of elements of the array a can always be obtained in no more than 5·10^5 operations.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "brute force",
+        "constructive algorithms",
+        "divide and conquer",
+        "dp",
+        "greedy",
+        "implementation",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

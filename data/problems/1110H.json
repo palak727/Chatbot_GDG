@@ -1,0 +1,17 @@
+{
+    "id": "1110H",
+    "contest_id": 1110,
+    "problem_letter": "H",
+    "title": "H. Modest Substrings",
+    "statement": "You are given two integers l and r.\n\nLet's call an integer x modest, if l ≤ x ≤ r.\n\nFind a string of length n, consisting of digits, which has the largest possible number of substrings, which make a modest integer. Substring having leading zeros are not counted. If there are many answers, find lexicographically smallest one.\n\nIf some number occurs multiple times as a substring, then in the counting of the number of modest substrings it is counted multiple times as well.\n\nThe first line contains one integer l (1 ≤ l ≤ 10^800).\n\nThe second line contains one integer r (l ≤ r ≤ 10^800).\n\nThe third line contains one integer n (1 ≤ n ≤ 2,000).\n\nIn the first line, print the maximum possible number of modest substrings.\n\nIn the second line, print a string of length n having exactly that number of modest substrings.\n\nIf there are multiple such strings, print the lexicographically smallest of them.\n\nIn the first example, string «101» has modest substrings «1», «10», «1».\n\nIn the second example, string «111» has modest substrings «1» (3 times) and «11» (2 times).\n\nInput:\n```\n1\n10\n3\n```\n\nOutput:\n```\n3\n101\n```\n\nInput:\n```\n1\n11\n3\n```\n\nOutput:\n```\n5\n111\n```\n\nInput:\n```\n12345\n12346\n6\n```\n\nOutput:\n```\n1\n012345\n```",
+    "input": "The first line contains one integer l (1 ≤ l ≤ 10^800).\n\nThe second line contains one integer r (l ≤ r ≤ 10^800).\n\nThe third line contains one integer n (1 ≤ n ≤ 2,000).",
+    "output": "In the first line, print the maximum possible number of modest substrings.\n\nIn the second line, print a string of length n having exactly that number of modest substrings.\n\nIf there are multiple such strings, print the lexicographically smallest of them.",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "dp",
+        "strings",
+        "*3500"
+    ],
+    "rating": 3500
+}

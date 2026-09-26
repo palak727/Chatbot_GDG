@@ -1,0 +1,21 @@
+{
+    "id": "2059C",
+    "contest_id": 2059,
+    "problem_letter": "C",
+    "title": "C. Customer Service",
+    "statement": "Nikyr has started working as a queue manager at the company \"Black Contour.\" He needs to choose the order of servicing customers. There are a total of n queues, each initially containing 0 people. In each of the next n moments of time, there are two sequential events:\n\nLet the number of people in the i-th queue after all events be x_i. Nikyr wants MEX^dagger of the collection x_1, x_2, …, x_n to be as large as possible. Help him determine the maximum value he can achieve with an optimal order of servicing the queues.\n\n^daggerThe minimum excluded (MEX) of a collection of integers c_1, c_2, …, c_k is defined as the smallest non-negative integer y which does not occur in the collection c.\n\nFor example:\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 300) — the number of queues and moments of time.\n\nThe i-th of the next n lines contains n integers a_{i,1}, a_{i,2}, …, a_{i,n} (1 ≤ a_{i,j} ≤ 10^9) — the number of new customers in the i-th queue at each moment of time.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the maximum value of MEX([x_1, x_2, …, x_n]) that can be achieved.\n\nIn the first test case, the second queue can be served at time 1, and the first queue at time 2. There will be x_1 = 0 people left in the first queue and x_2 = 1 person left in the second queue. Therefore, the answer is MEX([0, 1]) = 2.\n\nIn the second test case, the first queue can be served both times. There will be x_1 = 0 people left in the first queue and x_2 = 20 people left in the second queue. Therefore, the answer is MEX([0, 20]) = 1.\n\nIn the third test case, the third queue can be served at time 1, the second queue at time 2, and the first queue at time 3. There will be x_1 = 0 people left in the first queue, x_2 = 1 person left in the second queue, and x_3 = 2 people left in the third queue. Therefore, the answer is MEX([0, 1, 2]) = 3.\n\nInput:\n```\n421 22 1210 1010 1032 3 34 4 12 1 144 2 2 171 9 3 15 5 5 111 2 1 1\n```\n\nOutput:\n```\n2\n1\n3\n3\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 2·10^4) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 300) — the number of queues and moments of time.\n\nThe i-th of the next n lines contains n integers a_{i,1}, a_{i,2}, …, a_{i,n} (1 ≤ a_{i,j} ≤ 10^9) — the number of new customers in the i-th queue at each moment of time.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the maximum value of MEX([x_1, x_2, …, x_n]) that can be achieved.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "graph matchings",
+        "greedy",
+        "math",
+        "sortings",
+        "*1600"
+    ],
+    "rating": 1600
+}

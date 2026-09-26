@@ -1,0 +1,17 @@
+{
+    "id": "1837E",
+    "contest_id": 1837,
+    "problem_letter": "E",
+    "title": "E. Playoff Fixing",
+    "statement": "2^k teams participate in a playoff tournament. The teams are numbered from 1 to 2^k, in order of decreasing strength. So, team 1 is the strongest one, team 2^k is the weakest one. A team with a smaller number always defeats a team with a larger number.\n\nFirst of all, the teams are arranged in some order during a procedure called seeding. Each team is assigned another unique value from 1 to 2^k, called a seed, that represents its starting position in the playoff.\n\nThe tournament consists of 2^k - 1 games. They are held as follows: the teams are split into pairs: team with seed 1 plays against team with seed 2, team with seed 3 plays against team with seed 4 (exactly in this order), and so on (so, 2^{k-1} games are played in that phase). When a team loses a game, it is eliminated.\n\nAfter that, only 2^{k-1} teams remain. If only one team remains, it is declared the champion; otherwise, 2^{k-2} games are played: in the first one of them, the winner of the game \"seed 1 vs seed 2\" plays against the winner of the game \"seed 3 vs seed 4\", then the winner of the game \"seed 5 vs seed 6\" plays against the winner of the game \"seed 7 vs seed 8\", and so on. This process repeats until only one team remains.\n\nAfter the tournament ends, the teams are assigned places according to the tournament phase when they were eliminated. In particular:\n\nNow that we established the rules, we do a little rigging. In particular, we want:\n\nFor example, this picture describes one of the possible ways the tournament can go with k = 3, and the resulting places of the teams:\n\nSome seeds are already reserved for some teams (we are not the only ones rigging the tournament, apparently). We have to fill the rest of the seeds with the remaining teams to achieve the desired placements. How many ways are there to do that? Since that value might be large, print it modulo 998,244,353.\n\nThe first line contains a single integer k (0 ≤ k ≤ 19) — there are 2^k teams.\n\nThe second line contains 2^k integers a_1, a_2, …, a_{2^k} (a_i = -1 or 1 ≤ a_i ≤ 2^k). If a_i ≠ -1, then team a_i has seed i. Otherwise, the seed i is not reserved for any team.\n\nAll values, that are not -1, are distinct.\n\nPrint a single integer — the number of ways to fill the non-reserved seeds so that the tournament goes as planned, modulo 998,244,353.\n\nInput:\n```\n2\n1 2 3 4\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n2\n1 3 4 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n1\n-1 -1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n2\n-1 -1 -1 -1\n```\n\nOutput:\n```\n16\n```\n\nInput:\n```\n3\n-1 -1 -1 -1 2 -1 -1 -1\n```\n\nOutput:\n```\n768\n```\n\nInput:\n```\n0\n1\n```\n\nOutput:\n```\n1\n```",
+    "input": "The first line contains a single integer k (0 ≤ k ≤ 19) — there are 2^k teams.\n\nThe second line contains 2^k integers a_1, a_2, …, a_{2^k} (a_i = -1 or 1 ≤ a_i ≤ 2^k). If a_i ≠ -1, then team a_i has seed i. Otherwise, the seed i is not reserved for any team.\n\nAll values, that are not -1, are distinct.",
+    "output": "Print a single integer — the number of ways to fill the non-reserved seeds so that the tournament goes as planned, modulo 998,244,353.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "trees",
+        "*2200"
+    ],
+    "rating": 2200
+}

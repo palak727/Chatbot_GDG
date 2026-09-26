@@ -1,0 +1,16 @@
+{
+    "id": "1764H",
+    "contest_id": 1764,
+    "problem_letter": "H",
+    "title": "H. Doremy's Paint 2",
+    "statement": "Doremy has n buckets of paint which is represented by an array a of length n. Bucket i contains paint with color a_i. Initially, a_i=i.\n\nDoremy has m segments [l_i,r_i] (1 ≤ l_i ≤ r_i ≤ n). Each segment describes an operation. Operation i is performed as follows:\n\nDoremy also selects an integer k. She wants to know for each integer x from 0 to m-1, the number of distinct colors in the array after performing operations x bmod m +1, (x+1) bmod m + 1, …, (x+k-1) bmod m +1. Can you help her calculate these values? Note that for each x individually we start from the initial array and perform only the given k operations in the given order.\n\nThe first line of input contains three integers n, m, and k (1≤ n,m≤ 2·10^5, 1 ≤ k ≤ m) — the length of the array a, the total number of operations, and the integer that Doremy selects.\n\nThe i-th line of the following m lines contains two integers l_i, r_i (1≤ l_i≤ r_i≤ n) — the bounds of the i-th segment.\n\nOutput m integers. The (x+1)-th integer should be the number of distinct colors in the array if we start from the initial array and perform operations x bmod m +1, (x+1) bmod m + 1, …, (x+k-1) bmod m +1.\n\nIn the first test case, the picture below shows the resulting array for the values of x=0,1,2 respectively.\n\nInput:\n```\n7 5 5\n3 5\n2 3\n4 6\n5 7\n1 2\n```\n\nOutput:\n```\n3 3 3 3 2 \n```\n\nInput:\n```\n10 9 4\n1 1\n2 3\n3 4\n7 9\n6 8\n5 7\n2 4\n9 10\n1 3\n```\n\nOutput:\n```\n6 6 7 6 5 5 7 7 7 \n```",
+    "input": "The first line of input contains three integers n, m, and k (1≤ n,m≤ 2·10^5, 1 ≤ k ≤ m) — the length of the array a, the total number of operations, and the integer that Doremy selects.\n\nThe i-th line of the following m lines contains two integers l_i, r_i (1≤ l_i≤ r_i≤ n) — the bounds of the i-th segment.",
+    "output": "Output m integers. The (x+1)-th integer should be the number of distinct colors in the array if we start from the initial array and perform operations x bmod m +1, (x+1) bmod m + 1, …, (x+k-1) bmod m +1.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*3400"
+    ],
+    "rating": 3400
+}

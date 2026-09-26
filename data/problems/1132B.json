@@ -1,0 +1,17 @@
+{
+    "id": "1132B",
+    "contest_id": 1132,
+    "problem_letter": "B",
+    "title": "B. Discounts",
+    "statement": "You came to a local shop and want to buy some chocolate bars. There are n bars in the shop, i-th of them costs a_i coins (and you want to buy all of them).\n\nYou have m different coupons that allow you to buy chocolate bars. i-th coupon allows you to buy q_i chocolate bars while you have to pay only for the q_i - 1 most expensive ones (so, the cheapest bar of those q_i bars is for free).\n\nYou can use only one coupon; if you use coupon i, you have to choose q_i bars and buy them using the coupon, and buy all the remaining n - q_i bars without any discounts.\n\nTo decide which coupon to choose, you want to know what will be the minimum total amount of money you have to pay if you use one of the coupons optimally.\n\nThe first line contains one integer n (2 ≤ n ≤ 3·10^5) — the number of chocolate bars in the shop.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9), where a_i is the cost of i-th chocolate bar.\n\nThe third line contains one integer m (1 ≤ m ≤ n - 1) — the number of coupons you have.\n\nThe fourth line contains m integers q_1, q_2, ..., q_m (2 ≤ q_i ≤ n), where q_i is the number of chocolate bars you have to buy using i-th coupon so that the least expensive of them will be for free. All values of q_i are pairwise distinct.\n\nPrint m integers, i-th of them should be the minimum amount of money you have to pay if you buy q_i bars with i-th coupon, and all the remaining bars one by one for their full price.\n\nConsider the first example.\n\nIf we use the first coupon, we may choose chocolate bars having indices 1, 6 and 7, and we pay 18 coins for them and 9 coins for all other bars.\n\nIf we use the second coupon, we may choose chocolate bars having indices 1, 5, 6 and 7, and we pay 25 coins for them and 5 coins for all other bars.\n\nInput:\n```\n7\n7 1 3 1 4 10 8\n2\n3 4\n```\n\nOutput:\n```\n27\n30\n```",
+    "input": "The first line contains one integer n (2 ≤ n ≤ 3·10^5) — the number of chocolate bars in the shop.\n\nThe second line contains n integers a_1, a_2, ..., a_n (1 ≤ a_i ≤ 10^9), where a_i is the cost of i-th chocolate bar.\n\nThe third line contains one integer m (1 ≤ m ≤ n - 1) — the number of coupons you have.\n\nThe fourth line contains m integers q_1, q_2, ..., q_m (2 ≤ q_i ≤ n), where q_i is the number of chocolate bars you have to buy using i-th coupon so that the least expensive of them will be for free. All values of q_i are pairwise distinct.",
+    "output": "Print m integers, i-th of them should be the minimum amount of money you have to pay if you buy q_i bars with i-th coupon, and all the remaining bars one by one for their full price.",
+    "time_limit": "2.5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "sortings",
+        "*900"
+    ],
+    "rating": 900
+}

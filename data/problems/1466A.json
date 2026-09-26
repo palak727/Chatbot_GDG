@@ -1,0 +1,18 @@
+{
+    "id": "1466A",
+    "contest_id": 1466,
+    "problem_letter": "A",
+    "title": "A. Bovine Dilemma",
+    "statement": "Argus was charged with guarding Io, which is not an ordinary cow. Io is quite an explorer, and she wanders off rather frequently, making Argus' life stressful. So the cowherd decided to construct an enclosed pasture for Io.\n\nThere are n trees growing along the river, where Argus tends Io. For this problem, the river can be viewed as the OX axis of the Cartesian coordinate system, and the n trees as points with the y-coordinate equal 0. There is also another tree growing in the point (0, 1).\n\nArgus will tie a rope around three of the trees, creating a triangular pasture. Its exact shape doesn't matter to Io, but its area is crucial to her. There may be many ways for Argus to arrange the fence, but only the ones which result in different areas of the pasture are interesting for Io. Calculate the number of different areas that her pasture may have. Note that the pasture must have nonzero area.\n\nThe input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Then t test cases follow, each one is described in two lines.\n\nIn the first line of each test case there is a single integer n (1 ≤ n ≤ 50) denoting the number of trees growing along the river. Next line contains n distinct integers x_1 < x_2 < … < x_{n - 1} < x_n (1 ≤ x_i ≤ 50), the x-coordinates of trees growing along the river.\n\nIn a single line output an integer, the number of different nonzero areas that triangles with trees as vertices may have.\n\nIn the first test case, we have 6 non-degenerate triangles with the following areas: 0.5, 0.5, 1, 1.5, 1.5 and 2. The pasture can have 4 different areas, and thus 4 is the answer.\n\nIn the second test case, we have 3 non-degenerate triangles with the following areas: 1, 1 and 2. The pasture can have 2 different areas, so 2 is the answer.\n\nThe following two drawings present the situation in the second test case. The blue triangles in the first drawing have area 1. The red triangle in the second drawing has area 2.\n\nInput:\n```\n8\n4\n1 2 4 5\n3\n1 3 5\n3\n2 6 8\n2\n1 2\n1\n50\n5\n3 4 5 6 8\n3\n1 25 26\n6\n1 2 4 8 16 32\n```\n\nOutput:\n```\n4\n2\n3\n1\n0\n5\n3\n15\n```",
+    "input": "The input consists of multiple test cases. The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases. Then t test cases follow, each one is described in two lines.\n\nIn the first line of each test case there is a single integer n (1 ≤ n ≤ 50) denoting the number of trees growing along the river. Next line contains n distinct integers x_1 < x_2 < … < x_{n - 1} < x_n (1 ≤ x_i ≤ 50), the x-coordinates of trees growing along the river.",
+    "output": "In a single line output an integer, the number of different nonzero areas that triangles with trees as vertices may have.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "geometry",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

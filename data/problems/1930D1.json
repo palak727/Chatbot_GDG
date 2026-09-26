@@ -1,0 +1,19 @@
+{
+    "id": "1930D1",
+    "contest_id": 1930,
+    "problem_letter": "D1",
+    "title": "D1. Sum over all Substrings (Easy Version)",
+    "statement": "This is the easy version of the problem. The only difference between the two versions is the constraint on t and n. You can make hacks only if both versions of the problem are solved.\n\nFor a binary^dagger pattern p and a binary string q, both of length m, q is called p-good if for every i (1 ≤ i ≤ m), there exist indices l and r such that:\n\nFor a pattern p, let f(p) be the minimum possible number of mathtt1s in a p-good binary string (of the same length as the pattern).\n\nYou are given a binary string s of size n. Find ∑_{i=1}^n ∑_{j=i}^n f(s_i s_{i+1} … s_j). In other words, you need to sum the values of f over all (n(n+1))/2 substrings of s.\n\n^dagger A binary pattern is a string that only consists of characters mathtt0 and mathtt1.\n\n^ddagger Character c is a mode of string t of length m if the number of occurrences of c in t is at least lceil m/2 rceil. For example, mathtt0 is a mode of mathtt010, mathtt1 is not a mode of mathtt010, and both mathtt0 and mathtt1 are modes of mathtt011010.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the binary string s.\n\nThe second line of each test case contains a binary string s of length n consisting of only characters mathtt0 and mathtt1.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^4.\n\nFor each test case, output the sum of values of f over all substrings of s.\n\nIn the first test case, the only mathtt1-good string is mathtt1. Thus, f(mathtt1)=1.\n\nIn the second test case, f(mathtt10)=1 because mathtt01 is mathtt10-good, and mathtt00 is not mathtt10-good. Thus, the answer is f(mathtt1)+f(mathtt10)+f(mathtt0) = 1 + 1 + 0 = 2.\n\nIn the third test case, f equals to 0 for all 1 ≤ i ≤ j ≤ 5. Thus, the answer is 0.\n\nInput:\n```\n4112105000002011110110000000111111\n```\n\nOutput:\n```\n1\n2\n0\n346\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the length of the binary string s.\n\nThe second line of each test case contains a binary string s of length n consisting of only characters mathtt0 and mathtt1.\n\nIt is guaranteed that the sum of n^2 over all test cases does not exceed 10^4.",
+    "output": "For each test case, output the sum of values of f over all substrings of s.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "greedy",
+        "strings",
+        "*1800"
+    ],
+    "rating": 1800
+}

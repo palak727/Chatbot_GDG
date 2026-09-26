@@ -1,0 +1,15 @@
+{
+    "id": "2045K",
+    "contest_id": 2045,
+    "problem_letter": "K",
+    "title": "K. GCDDCG",
+    "statement": "You are playing the Greatest Common Divisor Deck-Building Card Game (GCDDCG). There are N cards (numbered from 1 to N). Card i has the value of A_i, which is an integer between 1 and N (inclusive).\n\nThe game consists of N rounds (numbered from 1 to N). Within each round, you need to build two non-empty decks, deck 1 and deck 2. A card cannot be inside both decks, and it is allowed to not use all N cards. In round i, the greatest common divisor (GCD) of the card values in each deck must equal i.\n\nYour creativity point during round i is the product of i and the number of ways to build two valid decks. Two ways are considered different if one of the decks contains different cards.\n\nFind the sum of creativity points across all N rounds. Since the sum can be very large, calculate the sum modulo 998,244,353.\n\nThe first line consists of an integer N (2 ≤ N ≤ 200,000).\n\nThe second line consists of N integers A_i (1 ≤ A_i ≤ N).\n\nOutput a single integer representing the sum of creativity points across all N rounds modulo 998,244,353.\n\nExplanation for the sample input/output #1\n\nThe creativity point during each of rounds 1 and 2 is 0.\n\nDuring round 3, there are 12 ways to build both decks. Denote B and C as the set of card numbers within deck 1 and deck 2, respectively. The 12 ways to build both decks are:\n\nExplanation for the sample input/output #2\n\nFor rounds 1, 2, 3 and 4, there are 0, 18, 0, and 2 ways to build both decks, respectively.\n\nInput:\n```\n3\n3 3 3\n```\n\nOutput:\n```\n36\n```\n\nInput:\n```\n4\n2 2 4 4\n```\n\nOutput:\n```\n44\n```\n\nInput:\n```\n9\n4 2 6 9 7 7 7 3 3\n```\n\nOutput:\n```\n10858\n```",
+    "input": "The first line consists of an integer N (2 ≤ N ≤ 200,000).\n\nThe second line consists of N integers A_i (1 ≤ A_i ≤ N).",
+    "output": "Output a single integer representing the sum of creativity points across all N rounds modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2900"
+    ],
+    "rating": 2900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1582B",
+    "contest_id": 1582,
+    "problem_letter": "B",
+    "title": "B. Luntik and Subsequences",
+    "statement": "Luntik came out for a morning stroll and found an array a of length n. He calculated the sum s of the elements of the array (s= ∑_{i=1}^n a_i). Luntik calls a subsequence of the array a nearly full if the sum of the numbers in that subsequence is equal to s-1.\n\nLuntik really wants to know the number of nearly full subsequences of the array a. But he needs to come home so he asks you to solve that problem!\n\nA sequence x is a subsequence of a sequence y if x can be obtained from y by deletion of several (possibly, zero or all) elements.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The next 2·t lines contain descriptions of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 60) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the array a.\n\nFor each test case print the number of nearly full subsequences of the array.\n\nIn the first test case, s=1+2+3+4+5=15, only (2,3,4,5) is a nearly full subsequence among all subsequences, the sum in it is equal to 2+3+4+5=14=15-1.\n\nIn the second test case, there are no nearly full subsequences.\n\nIn the third test case, s=1+0=1, the nearly full subsequences are (0) and () (the sum of an empty subsequence is 0).\n\nInput:\n```\n5\n5\n1 2 3 4 5\n2\n1000 1000\n2\n1 0\n5\n3 0 2 1 1\n5\n2 1 0 3 0\n```\n\nOutput:\n```\n1\n0\n2\n4\n4\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1000) — the number of test cases. The next 2·t lines contain descriptions of test cases. The description of each test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 60) — the length of the array.\n\nThe second line contains n integers a_1, a_2, …, a_n (0 ≤ a_i ≤ 10^9) — the elements of the array a.",
+    "output": "For each test case print the number of nearly full subsequences of the array.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "math",
+        "*900"
+    ],
+    "rating": 900
+}

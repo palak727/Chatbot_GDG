@@ -1,0 +1,18 @@
+{
+    "id": "2119E",
+    "contest_id": 2119,
+    "problem_letter": "E",
+    "title": "E. And Constraint",
+    "statement": "You are given a sequence a of length n-1 and a sequence b of length n.\n\nYou can perform the following operation any number of times (possibly zero):\n\nYour goal is to perform the minimum number of operations such that for every 1 ≤ i ≤ n-1, the condition b_i , & , b_{i+1} = a_i holds, where & denotes the bitwise AND operation. If it is impossible to satisfy the condition, report it as well.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5).\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (0 ≤ a_i < 2^29).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i < 2^29).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, you need to output only one integer.\n\nIf the goal can be achieved, output one integer — the minimum number of operations required. Otherwise, output -1.\n\nIn the first test case, one of the optimal strategies is to use 4 operations to make b = [1,5,4,4], which satisfies all the conditions. We can prove that it is impossible to use fewer than 4 operations.\n\nIn the second test case, since b_1 , & , b_2 = 4 and b_2 , & , b_3 =0, then b_3 , & , 4 =0. However, we require that b_3 , & , b_4 =4, which means it is impossible to satisfy all the conditions.\n\nInput:\n```\n741 4 41 2 3 444 0 41 1 1 1210 031 10 1 261 2 3 4 51 1 4 5 1 4200 040 1 0536870911 536870911 536870911 536870911\n```\n\nOutput:\n```\n4\n-1\n2\n2\n-1\n0\n536870916\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5).\n\nThe second line contains n-1 integers a_1, a_2, …, a_{n-1} (0 ≤ a_i < 2^29).\n\nThe third line contains n integers b_1, b_2, …, b_n (0 ≤ b_i < 2^29).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, you need to output only one integer.\n\nIf the goal can be achieved, output one integer — the minimum number of operations required. Otherwise, output -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "dp",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

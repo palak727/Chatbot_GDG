@@ -1,0 +1,18 @@
+{
+    "id": "1152A",
+    "contest_id": 1152,
+    "problem_letter": "A",
+    "title": "A. Neko Finds Grapes",
+    "statement": "On a random day, Neko found n treasure chests and m keys. The i-th chest has an integer a_i written on it and the j-th key has an integer b_j on it. Neko knows those chests contain the powerful mysterious green Grapes, thus Neko wants to open as many treasure chests as possible.\n\nThe j-th key can be used to unlock the i-th chest if and only if the sum of the key number and the chest number is an odd number. Formally, a_i + b_j ≡ 1 pmod2. One key can be used to open at most one chest, and one chest can be opened at most once.\n\nFind the maximum number of chests Neko can open.\n\nThe first line contains integers n and m (1 ≤ n, m ≤ 10^5) — the number of chests and the number of keys.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the numbers written on the treasure chests.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the numbers written on the keys.\n\nPrint the maximum number of chests you can open.\n\nIn the first example, one possible way to unlock 3 chests is as follows:\n\nIn the second example, you can use the only key to unlock any single chest (note that one key can't be used twice).\n\nIn the third example, no key can unlock the given chest.\n\nInput:\n```\n5 4\n9 14 6 2 11\n8 4 7 20\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n5 1\n2 4 6 8 10\n5\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n1 4\n10\n20 30 40 50\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains integers n and m (1 ≤ n, m ≤ 10^5) — the number of chests and the number of keys.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the numbers written on the treasure chests.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_i ≤ 10^9) — the numbers written on the keys.",
+    "output": "Print the maximum number of chests you can open.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

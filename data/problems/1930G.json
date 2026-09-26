@@ -1,0 +1,18 @@
+{
+    "id": "1930G",
+    "contest_id": 1930,
+    "problem_letter": "G",
+    "title": "G. Prefix Max Set Counting",
+    "statement": "Define a function f such that for an array b, f(b) returns the array of prefix maxima of b. In other words, f(b) is an array containing only those elements b_i, for which b_i=max(b_1,b_2,…,b_i), without changing their order. For example, f([3,10,4,10,15,1])=[3,10,10,15].\n\nYou are given a tree consisting of n nodes rooted at 1.\n\nA permutation^dagger p of is considered a pre-order of the tree if for all i the following condition holds:\n\nFind the number of distinct values of f(a) over all possible pre-orders a. Since this value might be large, you only need to find it modulo 998,244,353.\n\n^dagger A permutation of length n is an array consisting of n distinct integers from 1 to n in arbitrary order. For example, [2,3,1,5,4] is a permutation, but [1,2,2] is not a permutation (2 appears twice in the array), and [1,3,4] is also not a permutation (n=3 but there is 4 in the array).\n\n^ddagger Node t is a proper descendant of node s if s ≠ t and s is on the unique simple path from t to 1.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the number of vertices.\n\nThe following next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.\n\nFor each test case, output the number of distinct values of f(a) modulo 998,244,353 that you can get.\n\nIn the first test case, the only valid pre-order is a=[1]. So the only possible value of f(a) is [1].\n\nIn the second test case, the only valid pre-order is a=[1,2]. So the only possible value f(a) is [1,2].\n\nIn the third test case, the two valid pre-orders are a=[1,2,3] and a=[1,3,2]. So the possible values of f(a) are [1,2,3] and [1,3].\n\nIn the fifth test case, the possible values of f(a) are:\n\nInput:\n```\n6121 231 21 331 22 351 21 31 41 5101 22 31 42 52 64 75 84 99 10\n```\n\nOutput:\n```\n1\n1\n2\n1\n8\n6\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^5) — the number of test cases. The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 10^6) — the number of vertices.\n\nThe following next n-1 lines contain two integers u and v (1 ≤ u, v ≤ n, u ≠ v) — denoting an edge between nodes u and v. It is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 10^6.",
+    "output": "For each test case, output the number of distinct values of f(a) modulo 998,244,353 that you can get.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "trees",
+        "*3100"
+    ],
+    "rating": 3100
+}

@@ -3,9 +3,9 @@
     "contest_id": 1037,
     "problem_letter": "A",
     "title": "A. Packets",
-    "statement": "You have $$n$$ coins, each of the same value of $$1$$.\n\nDistribute them into packets such that any amount $$x$$ ($$1 $\\leq x \\leq n$$$) can be formed using some (possibly one or all) number of these packets.\n\nEach packet may only be used entirely or not used at all. No packet may be used more than once in the formation of the single $$x$$, however it may be reused for the formation of other $$x$$'s.\n\nFind the minimum number of packets in such a distribution.\n\nThe only line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^9$$$) — the number of coins you have.\n\nOutput a single integer — the minimum possible number of packets, satisfying the condition above.\n\nIn the first example, three packets with $$1$$, $$2$$ and $$3$$ coins can be made to get any amount $$x$$ ($$1$\\leq x\\leq 6$$$).\n\nIn the second example, two packets with $$1$$ and $$1$$ coins can be made to get any amount $$x$$ ($$1$\\leq x\\leq 2$$$).",
-    "input": "Input The only line contains a single integer $$n$$ ($$1 $\\leq n \\leq 10^9$$$) — the number of coins you have.",
-    "output": "Output Output a single integer — the minimum possible number of packets, satisfying the condition above.",
+    "statement": "You have n coins, each of the same value of 1.\n\nDistribute them into packets such that any amount x (1 ≤ x ≤ n) can be formed using some (possibly one or all) number of these packets.\n\nEach packet may only be used entirely or not used at all. No packet may be used more than once in the formation of the single x, however it may be reused for the formation of other x's.\n\nFind the minimum number of packets in such a distribution.\n\nThe only line contains a single integer n (1 ≤ n ≤ 10^9) — the number of coins you have.\n\nOutput a single integer — the minimum possible number of packets, satisfying the condition above.\n\nIn the first example, three packets with 1, 2 and 3 coins can be made to get any amount x (1≤ x≤ 6).\n\nIn the second example, two packets with 1 and 1 coins can be made to get any amount x (1≤ x≤ 2).\n\nInput:\n```\n6\n```\n\nOutput:\n```\n3\n```\n\nInput:\n```\n2\n```\n\nOutput:\n```\n2\n```",
+    "input": "The only line contains a single integer n (1 ≤ n ≤ 10^9) — the number of coins you have.",
+    "output": "Output a single integer — the minimum possible number of packets, satisfying the condition above.",
     "time_limit": "1 second",
     "memory_limit": "256 megabytes",
     "tags": [

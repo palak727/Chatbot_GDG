@@ -1,0 +1,17 @@
+{
+    "id": "1148C",
+    "contest_id": 1148,
+    "problem_letter": "C",
+    "title": "C. Crazy Diamond",
+    "statement": "You are given a permutation p of integers from 1 to n, where n is an even number.\n\nYour goal is to sort the permutation. To do so, you can perform zero or more operations of the following type:\n\nThere is no need to minimize the number of operations, however you should use no more than 5·n operations. One can show that it is always possible to do that.\n\nThe first line contains a single integer n (2 ≤ n ≤ 3·10^5, n is even) — the length of the permutation.\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the given permutation.\n\nOn the first line print m (0 ≤ m ≤ 5·n) — the number of swaps to perform.\n\nEach of the following m lines should contain integers a_i, b_i (1 ≤ a_i, b_i ≤ n, |a_i - b_i| ≥ n/2) — the indices that should be swapped in the corresponding swap.\n\nNote that there is no need to minimize the number of operations. We can show that an answer always exists.\n\nIn the first example, when one swap elements on positions 1 and 2, the array becomes sorted.\n\nIn the second example, pay attention that there is no need to minimize number of swaps.\n\nIn the third example, after swapping elements on positions 1 and 5 the array becomes: [4, 5, 3, 1, 2, 6]. After swapping elements on positions 2 and 5 the array becomes [4, 2, 3, 1, 5, 6] and finally after swapping elements on positions 1 and 4 the array becomes sorted: [1, 2, 3, 4, 5, 6].\n\nInput:\n```\n2\n2 1\n```\n\nOutput:\n```\n1\n1 2\n```\n\nInput:\n```\n4\n3 4 1 2\n```\n\nOutput:\n```\n4\n1 4\n1 4\n1 3\n2 4\n```\n\nInput:\n```\n6\n2 5 3 1 4 6\n```\n\nOutput:\n```\n3\n1 5\n2 5\n1 4\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 3·10^5, n is even) — the length of the permutation.\n\nThe second line contains n distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n) — the given permutation.",
+    "output": "On the first line print m (0 ≤ m ≤ 5·n) — the number of swaps to perform.\n\nEach of the following m lines should contain integers a_i, b_i (1 ≤ a_i, b_i ≤ n, |a_i - b_i| ≥ n/2) — the indices that should be swapped in the corresponding swap.\n\nNote that there is no need to minimize the number of operations. We can show that an answer always exists.",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "sortings",
+        "*1700"
+    ],
+    "rating": 1700
+}

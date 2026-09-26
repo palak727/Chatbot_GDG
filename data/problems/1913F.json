@@ -1,0 +1,20 @@
+{
+    "id": "1913F",
+    "contest_id": 1913,
+    "problem_letter": "F",
+    "title": "F. Palindromic Problem",
+    "statement": "You are given a string s of length n, consisting of lowercase Latin letters.\n\nYou are allowed to replace at most one character in the string with an arbitrary lowercase Latin letter.\n\nPrint the lexicographically minimal string that can be obtained from the original string and contains the maximum number of palindromes as substrings. Note that if a palindrome appears more than once as a substring, it is counted the same number of times it appears.\n\nThe string a is lexicographically smaller than the string b if and only if one of the following holds:\n\nThe first line contains one integer n (1 ≤ n ≤ 3·10^5) — the number of characters in the string.\n\nThe second line contains the string s itself, consisting of exactly n lowercase Latin letters.\n\nIn the first line, print one integer — the maximum number of palindromic substrings that can be obtained using the operation described in the statement at most once.\n\nIn the second line, print the string that can be obtained from s and has the maximum possible number of palindromic substrings. If there are multiple answers, print the lexicographically smallest one.\n\nInput:\n```\n5aabaa\n```\n\nOutput:\n```\n15\naaaaa\n```\n\nInput:\n```\n5aaaaa\n```\n\nOutput:\n```\n15\naaaaa\n```\n\nInput:\n```\n4awoo\n```\n\nOutput:\n```\n7\naooo\n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 3·10^5) — the number of characters in the string.\n\nThe second line contains the string s itself, consisting of exactly n lowercase Latin letters.",
+    "output": "In the first line, print one integer — the maximum number of palindromic substrings that can be obtained using the operation described in the statement at most once.\n\nIn the second line, print the string that can be obtained from s and has the maximum possible number of palindromic substrings. If there are multiple answers, print the lexicographically smallest one.",
+    "time_limit": "5 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "hashing",
+        "string suffix structures",
+        "strings",
+        "*2800"
+    ],
+    "rating": 2800
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1906H",
+    "contest_id": 1906,
+    "problem_letter": "H",
+    "title": "H. Twin Friends",
+    "statement": "You meet two new friends who are twins. The name of the elder twin is A, which consists of N characters. While the name of the younger twin is B, which consists of M characters. It is known that N ≤ M.\n\nYou want to call each of them with a nickname. For the elder twin, you want to pick any permutation of A as the nickname. For the younger twin, you want to remove exactly M - N characters from any permutation of B. Denote the nicknames of the elder twin and the younger twin as A' and B', respectively.\n\nYou want the nicknames to satisfy the following requirement. For each i that satisfies 1 ≤ i ≤ N, B'_i must be equal to either A'_i or the next letter that follows alphabetically after A'_i (if such a next letter exists).\n\nDetermine the number of different pairs of nicknames (A', B') that satisfy the requirement. Two pairs of nicknames are considered different if at least one of the nicknames are different. As the result might be large, find the answer modulo 998,244,353.\n\nThe first line consists of two integers N M (1 ≤ N ≤ M ≤ 200,000).\n\nThe second line consists of a string A of length N.\n\nThe third line consists of a string B of length M.\n\nAll strings consist of only upper-case letters.\n\nOutput a single integer representing number of different pairs (A', B') that satisfy the requirement, modulo 998,244,353.\n\nExplanation for the sample input/output #1\n\nThe 9 pairs are:\n\nExplanation for the sample input/output #2\n\nThe 120 pairs are the pairs where A' is a permutation of BINUS and B' = A'.\n\nInput:\n```\n3 4\nAMA\nANAB\n```\n\nOutput:\n```\n9\n```\n\nInput:\n```\n5 8\nBINUS\nBINANUSA\n```\n\nOutput:\n```\n120\n```\n\nInput:\n```\n15 30\nBINUSUNIVERSITY\nBINANUSANTARAUNIVERSITYJAKARTA\n```\n\nOutput:\n```\n151362308\n```\n\nInput:\n```\n4 4\nUDIN\nASEP\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line consists of two integers N M (1 ≤ N ≤ M ≤ 200,000).\n\nThe second line consists of a string A of length N.\n\nThe third line consists of a string B of length M.\n\nAll strings consist of only upper-case letters.",
+    "output": "Output a single integer representing number of different pairs (A', B') that satisfy the requirement, modulo 998,244,353.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "*2200"
+    ],
+    "rating": 2200
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1286C2",
+    "contest_id": 1286,
+    "problem_letter": "C2",
+    "title": "C2. Madhouse (Hard version)",
+    "statement": "This problem is different with easy version only by constraints on total answers length\n\nIt is an interactive problem\n\nVenya joined a tour to the madhouse, in which orderlies play with patients the following game. Orderlies pick a string s of length n, consisting only of lowercase English letters. The player can ask two types of queries:\n\nThe player can ask no more than 3 queries of the first type.\n\nTo make it easier for the orderlies, there is an additional limitation: the total number of returned substrings in all queries of the first type must not exceed leftlceil 0.777(n+1)^2 rightrceil (lceil x rceil is x rounded up).\n\nVenya asked you to write a program, which will guess the string by interacting with the orderlies' program and acting by the game's rules.\n\nYour program should immediately terminate after guessing the string using a query of the second type. In case your program guessed the string incorrectly, or it violated the game rules, it will receive verdict Wrong answer.\n\nNote that in every test case the string is fixed beforehand and will not change during the game, which means that the interactor is not adaptive.\n\nFirst line contains number n (1 ≤ n ≤ 100) — the length of the picked string.\n\nYou start the interaction by reading the number n.\n\nTo ask a query about a substring from l to r inclusively (1 ≤ l ≤ r ≤ n), you should output\n\n? l r\n\non a separate line. After this, all substrings of s[l..r] will be returned in random order, each substring exactly once. In every returned substring all characters will be randomly shuffled.\n\nIn the case, if you ask an incorrect query, ask more than 3 queries of the first type or there will be more than leftlceil 0.777(n+1)^2 rightrceil substrings returned in total, you will receive verdict Wrong answer.\n\nTo guess the string s, you should output\n\n! s\n\non a separate line.\n\nAfter printing each query, do not forget to flush the output. Otherwise, you will get Idleness limit exceeded. To flush the output, you can use:\n\nIf you received - (dash) as an answer to any query, you need to terminate your program with exit code 0 (for example, by calling exit(0)). This means that there was an error in the interaction protocol. If you don't terminate with exit code 0, you can receive any unsuccessful verdict.\n\nHack format\n\nTo hack a solution, use the following format:\n\nThe first line should contain one integer n (1 ≤ n ≤ 100) — the length of the string, and the following line should contain the string s.\n\nInput:\n```\n4\n\na\naa\na\n\ncb\nb\nc\n\nc\n```\n\nOutput:\n```\n? 1 2\n\n? 3 4\n\n? 4 4\n\n! aabc\n```",
+    "input": "First line contains number n (1 ≤ n ≤ 100) — the length of the picked string.",
+    "output": "",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "constructive algorithms",
+        "hashing",
+        "interactive",
+        "math",
+        "*2800"
+    ],
+    "rating": 2800
+}

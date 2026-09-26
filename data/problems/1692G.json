@@ -1,0 +1,19 @@
+{
+    "id": "1692G",
+    "contest_id": 1692,
+    "problem_letter": "G",
+    "title": "G. 2^Sort",
+    "statement": "Given an array a of length n and an integer k, find the number of indices 1 ≤ i ≤ n - k such that the subarray [a_i, …, a_{i+k}] with length k+1 (not with length k) has the following property:\n\nThe first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n, k (3 ≤ n ≤ 2·10^5, 1 ≤ k < n) — the length of the array and the number of inequalities.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer — the number of indices satisfying the condition in the statement.\n\nIn the first test case, both subarrays satisfy the condition:\n\nInput:\n```\n64 220 22 19 845 19 5 3 2 15 29 5 3 2 17 222 12 16 4 3 22 127 322 12 16 4 3 22 129 33 9 12 3 9 12 3 9 12\n```\n\nOutput:\n```\n2\n3\n2\n3\n1\n0\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases.\n\nThe first line of each test case contains two integers n, k (3 ≤ n ≤ 2·10^5, 1 ≤ k < n) — the length of the array and the number of inequalities.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the elements of the array.\n\nThe sum of n across all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of indices satisfying the condition in the statement.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "dp",
+        "sortings",
+        "two pointers",
+        "*1400"
+    ],
+    "rating": 1400
+}

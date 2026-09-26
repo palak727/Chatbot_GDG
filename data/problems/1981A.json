@@ -1,0 +1,18 @@
+{
+    "id": "1981A",
+    "contest_id": 1981,
+    "problem_letter": "A",
+    "title": "A. Turtle and Piggy Are Playing a Game",
+    "statement": "Turtle and Piggy are playing a number game.\n\nFirst, Turtle will choose an integer x, such that l ≤ x ≤ r, where l, r are given. It's also guaranteed that 2l ≤ r.\n\nThen, Piggy will keep doing the following operation until x becomes 1:\n\nThe score is initially 0. Both Turtle and Piggy want to maximize the score. Please help them to calculate the maximum score.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers l, r (1 ≤ l ≤ r ≤ 10^9, 2l ≤ r) — The range where Turtle can choose the integer from.\n\nFor each test case, output a single integer — the maximum score.\n\nIn the first test case, Turtle can choose an integer x, such that 2 ≤ x ≤ 4. He can choose x = 4. Then Piggy can choose p = 2 for 2 times. After that, x will become 1, and the score will be 2, which is maximized.\n\nIn the second test case, Turtle can choose an integer 3 ≤ x ≤ 6. He can choose x = 6. Then Piggy can choose p = 2, then choose p = 3. After that, x will become 1, and the score will be 2, which is maximum.\n\nIn the third test case, Turtle can choose x = 12.\n\nIn the fourth test case, Turtle can choose x = 16.\n\nInput:\n```\n52 43 62 156 22114514 1919810\n```\n\nOutput:\n```\n2\n2\n3\n4\n20\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains two integers l, r (1 ≤ l ≤ r ≤ 10^9, 2l ≤ r) — The range where Turtle can choose the integer from.",
+    "output": "For each test case, output a single integer — the maximum score.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,16 @@
+{
+    "id": "1809A",
+    "contest_id": 1809,
+    "problem_letter": "A",
+    "title": "A. Garland",
+    "statement": "You have a garland consisting of 4 colored light bulbs, the color of the i-th light bulb is s_i.\n\nInitially, all the light bulbs are turned off. Your task is to turn all the light bulbs on. You can perform the following operation any number of times: select a light bulb and switch its state (turn it on if it was off, and turn it off if it was on). The only restriction on the above operation is that you can apply the operation to a light bulb only if the previous operation was applied to a light bulb of a different color (the first operation can be applied to any light bulb).\n\nCalculate the minimum number of operations to turn all the light bulbs on, or report that this is impossible.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe single line of each test case contains s — a sequence of 4 characters, where each character is a decimal digit. The i-th character denotes the color of the i-th light bulb.\n\nFor each test case, print one integer — the minimum number of operations to turn all the light bulbs on. If it is impossible to turn all the bulbs on, print -1.\n\nIn the first example, all the colors are different, so you can just turn all the bulbs on in 4 operations.\n\nIn the second example, it is impossible to turn all the bulbs on, because after you switch one light bulb, it is impossible to turn the others on.\n\nIn the third example, you can proceed as follows: turn the first light bulb on, turn the third light bulb on, turn the fourth light bulb on, turn the third light bulb off, turn the second light bulb on, turn the third light bulb on.\n\nInput:\n```\n3954600003313\n```\n\nOutput:\n```\n4\n-1\n6\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThe single line of each test case contains s — a sequence of 4 characters, where each character is a decimal digit. The i-th character denotes the color of the i-th light bulb.",
+    "output": "For each test case, print one integer — the minimum number of operations to turn all the light bulbs on. If it is impossible to turn all the bulbs on, print -1.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

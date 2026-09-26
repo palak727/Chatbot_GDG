@@ -3,8 +3,8 @@
     "contest_id": 1000,
     "problem_letter": "D",
     "title": "D. Yet Another Problem On a Subsequence",
-    "statement": "The sequence of integers a_1, a_2, , a_k is called a good array if a_1 = k - 1 and a_1 > 0. For example, the sequences [3, -1, 44, 0], [1, -99] are good arrays, and the sequences [3, 7, 8], [2, 5, 4, 1], [0] — are not.\nA sequence of integers is called good if it can be divided into a positive number of good arrays. Each good array should be a subsegment of sequence and each element of the sequence should belong to exactly one array. For example, the sequences [2, -3, 0, 1, 4], [1, 2, 3, -3, -9, 4] are good, and the sequences [2, -3, 0, 1], [1, 2, 3, -3 -9, 4, 1] — are not.\nFor a given sequence of numbers, count the number of its subsequences that are good sequences, and print the number of such subsequences modulo 998244353.\nThe first line contains the number n~(1  n  10^3) — the length of the initial sequence. The following line contains n integers a_1, a_2, , a_n~(-10^9  a_i  10^9) — the sequence itself.\nIn the single line output one integer — the number of subsequences of the original sequence that are good sequences, taken modulo 998244353.\nIn the first test case, two good subsequences — [a_1, a_2, a_3] and [a_2, a_3].\nIn the second test case, seven good subsequences — [a_1, a_2, a_3, a_4], [a_1, a_2], [a_1, a_3], [a_1, a_4], [a_2, a_3], [a_2, a_4] and [a_3, a_4].",
-    "input": "The first line contains the number n~(1 ≤ n ≤ 10^3) — the length of the initial sequence. The following line contains n integers a_1, a_2, \\dots, a_n~(-10^9 ≤ a_i ≤ 10^9) — the sequence itself.",
+    "statement": "The sequence of integers a_1, a_2, …, a_k is called a good array if a_1 = k - 1 and a_1 > 0. For example, the sequences [3, -1, 44, 0], [1, -99] are good arrays, and the sequences [3, 7, 8], [2, 5, 4, 1], [0] — are not.\n\nA sequence of integers is called good if it can be divided into a positive number of good arrays. Each good array should be a subsegment of sequence and each element of the sequence should belong to exactly one array. For example, the sequences [2, -3, 0, 1, 4], [1, 2, 3, -3, -9, 4] are good, and the sequences [2, -3, 0, 1], [1, 2, 3, -3 -9, 4, 1] — are not.\n\nFor a given sequence of numbers, count the number of its subsequences that are good sequences, and print the number of such subsequences modulo 998244353.\n\nThe first line contains the number n~(1 ≤ n ≤ 10^3) — the length of the initial sequence. The following line contains n integers a_1, a_2, …, a_n~(-10^9 ≤ a_i ≤ 10^9) — the sequence itself.\n\nIn the single line output one integer — the number of subsequences of the original sequence that are good sequences, taken modulo 998244353.\n\nIn the first test case, two good subsequences — [a_1, a_2, a_3] and [a_2, a_3].\n\nIn the second test case, seven good subsequences — [a_1, a_2, a_3, a_4], [a_1, a_2], [a_1, a_3], [a_1, a_4], [a_2, a_3], [a_2, a_4] and [a_3, a_4].\n\nInput:\n```\n3\n2 1 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n4\n1 1 1 1\n```\n\nOutput:\n```\n7\n```",
+    "input": "The first line contains the number n~(1 ≤ n ≤ 10^3) — the length of the initial sequence. The following line contains n integers a_1, a_2, …, a_n~(-10^9 ≤ a_i ≤ 10^9) — the sequence itself.",
     "output": "In the single line output one integer — the number of subsequences of the original sequence that are good sequences, taken modulo 998244353.",
     "time_limit": "2 seconds",
     "memory_limit": "256 megabytes",
@@ -12,5 +12,6 @@
         "combinatorics",
         "dp",
         "*1900"
-    ]
+    ],
+    "rating": 1900
 }

@@ -1,0 +1,19 @@
+{
+    "id": "1426D",
+    "contest_id": 1426,
+    "problem_letter": "D",
+    "title": "D. Non-zero Segments",
+    "statement": "Kolya got an integer array a_1, a_2, …, a_n. The array can contain both positive and negative integers, but Kolya doesn't like 0, so the array doesn't contain any zeros.\n\nKolya doesn't like that the sum of some subsegments of his array can be 0. The subsegment is some consecutive segment of elements of the array.\n\nYou have to help Kolya and change his array in such a way that it doesn't contain any subsegments with the sum 0. To reach this goal, you can insert any integers between any pair of adjacent elements of the array (integers can be really any: positive, negative, 0, any by absolute value, even such a huge that they can't be represented in most standard programming languages).\n\nYour task is to find the minimum number of integers you have to insert into Kolya's array in such a way that the resulting array doesn't contain any subsegments with the sum 0.\n\nThe first line of the input contains one integer n (2 ≤ n ≤ 200,000) — the number of elements in Kolya's array.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9, a_i ≠ 0) — the description of Kolya's array.\n\nPrint the minimum number of integers you have to insert into Kolya's array in such a way that the resulting array doesn't contain any subsegments with the sum 0.\n\nConsider the first example. There is only one subsegment with the sum 0. It starts in the second element and ends in the fourth element. It's enough to insert one element so the array doesn't contain any subsegments with the sum equal to zero. For example, it is possible to insert the integer 1 between second and third elements of the array.\n\nThere are no subsegments having sum 0 in the second example so you don't need to do anything.\n\nInput:\n```\n4\n1 -5 3 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n5\n4 -2 3 -9 2\n```\n\nOutput:\n```\n0\n```\n\nInput:\n```\n9\n-1 1 -1 1 -1 1 1 -1 -1\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n8\n16 -5 -11 -15 10 5 4 -4\n```\n\nOutput:\n```\n3\n```",
+    "input": "The first line of the input contains one integer n (2 ≤ n ≤ 200,000) — the number of elements in Kolya's array.\n\nThe second line of the input contains n integers a_1, a_2, …, a_n (-10^9 ≤ a_i ≤ 10^9, a_i ≠ 0) — the description of Kolya's array.",
+    "output": "Print the minimum number of integers you have to insert into Kolya's array in such a way that the resulting array doesn't contain any subsegments with the sum 0.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "data structures",
+        "greedy",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

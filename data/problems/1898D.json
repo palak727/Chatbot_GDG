@@ -1,0 +1,17 @@
+{
+    "id": "1898D",
+    "contest_id": 1898,
+    "problem_letter": "D",
+    "title": "D. Absolute Beauty",
+    "statement": "Kirill has two integer arrays a_1,a_2,…,a_n and b_1,b_2,…,b_n of length n. He defines the absolute beauty of the array b as ∑_{i=1}^n |a_i - b_i|. Here, |x| denotes the absolute value of x.\n\nKirill can perform the following operation at most once:\n\nHelp him find the maximum possible absolute beauty of the array b after performing at most one swap.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of the arrays a and b.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 10^9) — the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1≤ b_i≤ 10^9) — the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output one integer — the maximum possible absolute beauty of the array b after no more than one swap.\n\nIn the first test case, each of the possible swaps does not change the array b.\n\nIn the second test case, the absolute beauty of the array b without performing the swap is |1-1| + |2-2| = 0. After swapping the first and the second element in the array b, the absolute beauty becomes |1-2| + |2-1| = 2. These are all the possible outcomes, hence the answer is 2.\n\nIn the third test case, it is optimal for Kirill to not perform the swap. Similarly to the previous test case, the answer is 2.\n\nIn the fourth test case, no matter what Kirill does, the absolute beauty of b remains equal to 16.\n\nInput:\n```\n631 3 53 3 321 21 221 22 141 2 3 45 6 7 8101 8 2 5 3 5 3 1 1 32 9 2 4 8 2 3 5 3 1347326 6958 3586533587 35863 59474\n```\n\nOutput:\n```\n4\n2\n2\n16\n31\n419045\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10,000). The description of test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 2·10^5) — the length of the arrays a and b.\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1≤ a_i≤ 10^9) — the array a.\n\nThe third line of each test case contains n integers b_1, b_2, …, b_n (1≤ b_i≤ 10^9) — the array b.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output one integer — the maximum possible absolute beauty of the array b after no more than one swap.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*1900"
+    ],
+    "rating": 1900
+}

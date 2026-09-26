@@ -1,0 +1,18 @@
+{
+    "id": "1951D",
+    "contest_id": 1951,
+    "problem_letter": "D",
+    "title": "D. Buying Jewels",
+    "statement": "Alice has n coins and wants to shop at Bob's jewelry store. Today, although Bob has not set up the store yet, Bob wants to make sure Alice will buy exactly k jewels. To set up the store, Bob can erect at most 60 stalls (each containing an unlimited amount of jewels) and set the price per jewel for each stall to be an integer number of coins between 1 and 10^18.\n\nFortunately, Bob knows that Alice buys greedily: and she will go to stall 1, buy as many jewels as possible, then go to stall 2, buy as many jewels as possible, and so on until the last stall. Knowing this, Bob can choose the number of stalls to set up, as well as set the price for each stall so that Alice buys exactly k jewels. Help Bob fulfill the task, or determine if it is impossible to do so.\n\nNote that Alice does not need to spend all her coins.\n\nEach test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nEach test case contains two positive integers n and k (1 ≤ n, k ≤ 10^18) — the number of coins Alice has and the number of jewels Bob wants Alice to have bought at the end.\n\nFor each test case, print on one line \"YES\" if Bob can erect at most 60 stalls and set the prices for the stalls such that Alice buys exactly k jewels, or \"NO\" if it is impossible to do so.\n\nIf the answer is \"YES\", on the second line, print an integer s (1 ≤ s ≤ 60) — the number of stalls to be set up by Bob. On the third line, print s positive integers p_1, p_2, …, p_s (1 ≤ p_i ≤ 10^18) that represent such a satisfactory pricing p, where p_i is the price per jewel for stall i. If there are multiple such p's, print any of them.\n\nIn the first test case, at the first stall, Alice buys 3 jewels and is left with 1 coin. This is not enough to buy any jewels for any of the remaining stalls, so Alice buys exactly 3 jewels at the end.\n\nIn the third test case,\n\nInput:\n```\n37 36 4255 8\n```\n\nOutput:\n```\nYES\n10\n2 3 4 5 6 7 8 9 10 11\nNO\nYES\n8\n128 64 32 16 8 4 2 1\n```",
+    "input": "Each test contains multiple test cases. The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. The description of the test cases follows.\n\nEach test case contains two positive integers n and k (1 ≤ n, k ≤ 10^18) — the number of coins Alice has and the number of jewels Bob wants Alice to have bought at the end.",
+    "output": "For each test case, print on one line \"YES\" if Bob can erect at most 60 stalls and set the prices for the stalls such that Alice buys exactly k jewels, or \"NO\" if it is impossible to do so.\n\nIf the answer is \"YES\", on the second line, print an integer s (1 ≤ s ≤ 60) — the number of stalls to be set up by Bob. On the third line, print s positive integers p_1, p_2, …, p_s (1 ≤ p_i ≤ 10^18) that represent such a satisfactory pricing p, where p_i is the price per jewel for stall i. If there are multiple such p's, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

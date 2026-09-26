@@ -1,0 +1,18 @@
+{
+    "id": "1895B",
+    "contest_id": 1895,
+    "problem_letter": "B",
+    "title": "B. Points and Minimum Distance",
+    "statement": "You are given a sequence of integers a of length 2n. You have to split these 2n integers into n pairs; each pair will represent the coordinates of a point on a plane. Each number from the sequence a should become the x or y coordinate of exactly one point. Note that some points can be equal.\n\nAfter the points are formed, you have to choose a path s that starts from one of these points, ends at one of these points, and visits all n points at least once.\n\nThe length of path s is the sum of distances between all adjacent points on the path. In this problem, the distance between two points (x_1, y_1) and (x_2, y_2) is defined as |x_1-x_2| + |y_1-y_2|.\n\nYour task is to form n points and choose a path s in such a way that the length of path s is minimized.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the number of points to be formed.\n\nThe next line contains 2n integers a_1, a_2, …, a_2n (0 ≤ a_i ≤ 1,000) — the description of the sequence a.\n\nFor each testcase, print the minimum possible length of path s in the first line.\n\nIn the i-th of the following n lines, print two integers x_i and y_i — the coordinates of the point that needs to be visited at the i-th position.\n\nIf there are multiple answers, print any of them.\n\nIn the first testcase, for instance, you can form points (10, 1) and (15, 5) and start the path s from the first point and end it at the second point. Then the length of the path will be |10 - 15| + |1 - 5| = 5 + 4 = 9.\n\nIn the second testcase, you can form points (20, 20), (10, 30), and (10, 30), and visit them in that exact order. Then the length of the path will be |20 - 10| + |20 - 30| + |10 - 10| + |30 - 30| = 10 + 10 + 0 + 0 = 20.\n\nInput:\n```\n2215 1 10 5310 30 20 20 30 10\n```\n\nOutput:\n```\n9\n10 1\n15 5\n20\n20 20\n10 30\n10 30\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of testcases.\n\nThe first line of each testcase contains a single integer n (2 ≤ n ≤ 100) — the number of points to be formed.\n\nThe next line contains 2n integers a_1, a_2, …, a_2n (0 ≤ a_i ≤ 1,000) — the description of the sequence a.",
+    "output": "For each testcase, print the minimum possible length of path s in the first line.\n\nIn the i-th of the following n lines, print two integers x_i and y_i — the coordinates of the point that needs to be visited at the i-th position.\n\nIf there are multiple answers, print any of them.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "sortings",
+        "*800"
+    ],
+    "rating": 800
+}

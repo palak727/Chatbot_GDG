@@ -1,0 +1,17 @@
+{
+    "id": "1808A",
+    "contest_id": 1808,
+    "problem_letter": "A",
+    "title": "A. Lucky Numbers",
+    "statement": "Olympus City recently launched the production of personal starships. Now everyone on Mars can buy one and fly to other planets inexpensively.\n\nEach starship has a number —some positive integer x. Let's define the luckiness of a number x as the difference between the largest and smallest digits of that number. For example, 142857 has 8 as its largest digit and 1 as its smallest digit, so its luckiness is 8-1=7. And the number 111 has all digits equal to 1, so its luckiness is zero.\n\nHateehc is a famous Martian blogger who often flies to different corners of the solar system. To release interesting videos even faster, he decided to buy himself a starship. When he came to the store, he saw starships with numbers from l to r inclusively. While in the store, Hateehc wanted to find a starship with the luckiest number.\n\nSince there are a lot of starships in the store, and Hateehc can't program, you have to help the blogger and write a program that answers his question.\n\nThe first line contains an integer t (1 ≤ t ≤ 10,000) —the number of test cases.\n\nEach of the following t lines contains a description of the test case. The description consists of two integers l and r (1 ≤ l ≤ r ≤ 10^6) — the largest and smallest numbers of the starships in the store.\n\nPrint t lines, one line for each test case, containing the luckiest starship number in the store.\n\nIf there are several ways to choose the luckiest number, output any of them.\n\nLet's look at two test examples:\n\nIn the fifth test example, the luckiest number is 90.\n\nInput:\n```\n559 6342 4915 1553 571 100\n```\n\nOutput:\n```\n60\n49\n15\n57\n90\n```",
+    "input": "The first line contains an integer t (1 ≤ t ≤ 10,000) —the number of test cases.\n\nEach of the following t lines contains a description of the test case. The description consists of two integers l and r (1 ≤ l ≤ r ≤ 10^6) — the largest and smallest numbers of the starships in the store.",
+    "output": "Print t lines, one line for each test case, containing the luckiest starship number in the store.\n\nIf there are several ways to choose the luckiest number, output any of them.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*900"
+    ],
+    "rating": 900
+}

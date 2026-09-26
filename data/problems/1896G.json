@@ -1,0 +1,19 @@
+{
+    "id": "1896G",
+    "contest_id": 1896,
+    "problem_letter": "G",
+    "title": "G. Pepe Racing",
+    "statement": "This is an interactive problem.\n\nThere are n^2 pepes labeled 1, 2, …, n^2 with pairwise distinct speeds. You would like to set up some races to find out the relative speed of these pepes.\n\nIn one race, you can choose exactly n distinct pepes and make them race against each other. After each race, you will only know the fastest pepe of these n pepes.\n\nCan you order the n^2-n+1 fastest pepes in at most 2n^2 - 2n + 1 races? Note that the slowest n - 1 pepes are indistinguishable from each other.\n\nNote that the interactor is adaptive. That is, the relative speeds of the pepes are not fixed in the beginning and may depend on your queries. But it is guaranteed that at any moment there is at least one initial configuration of pepes such that all the answers to the queries are consistent.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 20) — the number of pepes in one race.\n\nAfter reading the integer n for each test case, you should begin the interaction.\n\nIt is guaranteed that the sum of n^3 over all test cases does not exceed 3·10^5.\n\nTo set up a race, print a line with the following format:\n\nAfter each race, you should read a line containing a single integer p (1≤ p≤ n^2) — the label of the fastest pepe in the race.\n\nWhen you know the n^2-n+1 fastest pepes, print one line in the following format:\n\nAfter that, move on to the next test case, or terminate the program if no more test cases are remaining.\n\nIf your program performs more than 2n^2 - 2n + 1 races for one test case or makes an invalid race, you may receive a Wrong Answer verdict.\n\nAfter printing a query do not forget to output the end of the line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nHack format\n\nFor hacks, use the following format.\n\nThe first line should contain t — the number of test cases.\n\nThe first line of each test case should contain an integer n followed by the string manual.\n\nThe second line of each test case should contain a permutation a_1,a_2,…,a_{n^2} of the integers from 1 to n^2. a_i > a_j if and only if pepe i has a faster speed than pepe j.\n\nAs an example, the hack format for the example input is: mathtt1 mathtt2~mathttmanual mathtt1~mathtt2~mathtt3~mathtt4\n\nInput:\n```\n1\n2\n\n2\n\n4\n\n4\n\n3\n\n2\n```\n\nOutput:\n```\n? 1 2\n\n? 3 4\n\n? 2 4\n\n? 2 3\n\n? 2 1\n\n! 4 3 2\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe only line of each test case contains a single integer n (2 ≤ n ≤ 20) — the number of pepes in one race.\n\nAfter reading the integer n for each test case, you should begin the interaction.\n\nIt is guaranteed that the sum of n^3 over all test cases does not exceed 3·10^5.",
+    "output": "",
+    "time_limit": "5 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "implementation",
+        "interactive",
+        "sortings",
+        "*3200"
+    ],
+    "rating": 3200
+}

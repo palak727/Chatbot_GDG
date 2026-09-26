@@ -1,0 +1,19 @@
+{
+    "id": "1609A",
+    "contest_id": 1609,
+    "problem_letter": "A",
+    "title": "A. Divide and Multiply",
+    "statement": "William has array of n numbers a_1, a_2, …, a_n. He can perform the following sequence of operations any number of times:\n\nHelp William find the maximal sum of array elements, which he can get by performing the sequence of operations described above.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 15), the number of elements in William's array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 16), the contents of William's array.\n\nFor each test case output the maximal sum of array elements after performing an optimal sequence of operations.\n\nIn the first example test case the optimal sequence would be:\n\nThe final answer 48 + 1 + 1 = 50.\n\nIn the third example test case there is no way to change the sum of elements, so the answer is 10.\n\nInput:\n```\n5\n3\n6 4 2\n5\n1 2 3 4 5\n1\n10\n3\n2 3 4\n15\n8 8 8 8 8 8 8 8 8 8 8 8 8 8 8\n```\n\nOutput:\n```\n50\n46\n10\n26\n35184372088846\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). Description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 15), the number of elements in William's array.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i < 16), the contents of William's array.",
+    "output": "For each test case output the maximal sum of array elements after performing an optimal sequence of operations.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "math",
+        "number theory",
+        "*900"
+    ],
+    "rating": 900
+}

@@ -1,0 +1,20 @@
+{
+    "id": "1548E",
+    "contest_id": 1548,
+    "problem_letter": "E",
+    "title": "E. Gregor and the Two Painters",
+    "statement": "Two painters, Amin and Benj, are repainting Gregor's living room ceiling! The ceiling can be modeled as an n × m grid.\n\nFor each i between 1 and n, inclusive, painter Amin applies a_i layers of paint to the entire i-th row. For each j between 1 and m, inclusive, painter Benj applies b_j layers of paint to the entire j-th column. Therefore, the cell (i,j) ends up with a_i+b_j layers of paint.\n\nGregor considers the cell (i,j) to be badly painted if a_i+b_j ≤ x. Define a badly painted region to be a maximal connected component of badly painted cells, i. e. a connected component of badly painted cells such that all adjacent to the component cells are not badly painted. Two cells are considered adjacent if they share a side.\n\nGregor is appalled by the state of the finished ceiling, and wants to know the number of badly painted regions.\n\nThe first line contains three integers n, m and x (1 ≤ n,m ≤ 2·10^5, 1 ≤ x ≤ 2·10^5) — the dimensions of Gregor's ceiling, and the maximum number of paint layers in a badly painted cell.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5), the number of paint layers Amin applies to each row.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_j ≤ 2·10^5), the number of paint layers Benj applies to each column.\n\nPrint a single integer, the number of badly painted regions.\n\nThe diagram below represents the first example. The numbers to the left of each row represent the list a, and the numbers above each column represent the list b. The numbers inside each cell represent the number of paint layers in that cell.\n\nThe colored cells correspond to badly painted cells. The red and blue cells respectively form 2 badly painted regions.\n\nInput:\n```\n3 4 11\n9 8 5\n10 6 7 2\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n3 4 12\n9 8 5\n10 6 7 2\n```\n\nOutput:\n```\n1\n```\n\nInput:\n```\n3 3 2\n1 2 1\n1 2 1\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n5 23 6\n1 4 3 5 2\n2 3 1 6 1 5 5 6 1 3 2 6 2 3 1 6 1 4 1 6 1 5 5\n```\n\nOutput:\n```\n6\n```",
+    "input": "The first line contains three integers n, m and x (1 ≤ n,m ≤ 2·10^5, 1 ≤ x ≤ 2·10^5) — the dimensions of Gregor's ceiling, and the maximum number of paint layers in a badly painted cell.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 2·10^5), the number of paint layers Amin applies to each row.\n\nThe third line contains m integers b_1, b_2, …, b_m (1 ≤ b_j ≤ 2·10^5), the number of paint layers Benj applies to each column.",
+    "output": "Print a single integer, the number of badly painted regions.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "divide and conquer",
+        "graphs",
+        "greedy",
+        "math",
+        "*3400"
+    ],
+    "rating": 3400
+}

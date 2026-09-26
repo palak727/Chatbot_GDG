@@ -1,0 +1,18 @@
+{
+    "id": "1858A",
+    "contest_id": 1858,
+    "problem_letter": "A",
+    "title": "A. Buttons",
+    "statement": "Anna and Katie ended up in a secret laboratory.\n\nThere are a+b+c buttons in the laboratory. It turned out that a buttons can only be pressed by Anna, b buttons can only be pressed by Katie, and c buttons can be pressed by either of them. Anna and Katie decided to play a game, taking turns pressing these buttons. Anna makes the first turn. Each button can be pressed at most once, so at some point, one of the girls will not be able to make her turn.\n\nThe girl who cannot press a button loses. Determine who will win if both girls play optimally.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three integers a, b, and c (1 ≤ a, b, c ≤ 10^9) — the number of buttons that can only be pressed by Anna, the number of buttons that can only be pressed by Katie, and the number of buttons that can be pressed by either of them, respectively.\n\nFor each test case, output First if Anna wins, or Second if Katie wins.\n\nFor the simplicity of the explanation, we will numerate the buttons by the numbers from 1 to a+b+c: the first a buttons can only be pressed by Anna, the next b buttons can only be pressed by Katie, and the last c buttons can be pressed by either of them.\n\nIn the first test case, Anna can press the 3-rd button on the first turn. Then Katie will press the 2-nd button (since it is the only possible turn for her). Then Anna will press the 1-st button. Katie won't have a button to press, so Anna will win.\n\nIn the second test case, Anna can press the first nine buttons in some order on her turns. No matter what buttons Katie will press, all the buttons from the 10-th to the 15-th will be pressed after 12 turns. On the 13-th turn, Anna will press one of the first nine buttons and Katie will not have a button to press on her turn. Thus, Anna will win.\n\nIn the third test case, the game can proceed as follows:\n\nIt can be shown that Katie can win no matter what moves Anna takes.\n\nInput:\n```\n51 1 19 3 31 2 36 6 92 2 8\n```\n\nOutput:\n```\nFirst\nFirst\nSecond\nFirst\nSecond\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nEach test case consists of three integers a, b, and c (1 ≤ a, b, c ≤ 10^9) — the number of buttons that can only be pressed by Anna, the number of buttons that can only be pressed by Katie, and the number of buttons that can be pressed by either of them, respectively.",
+    "output": "For each test case, output First if Anna wins, or Second if Katie wins.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

@@ -1,0 +1,22 @@
+{
+    "id": "1748E",
+    "contest_id": 1748,
+    "problem_letter": "E",
+    "title": "E. Yet Another Array Counting Problem",
+    "statement": "The position of the leftmost maximum on the segment [l; r] of array x = [x_1, x_2, …, x_n] is the smallest integer i such that l ≤ i ≤ r and x_i = max(x_l, x_{l+1}, …, x_r).\n\nYou are given an array a = [a_1, a_2, …, a_n] of length n. Find the number of integer arrays b = [b_1, b_2, …, b_n] of length n that satisfy the following conditions:\n\nSince the answer might be very large, print its remainder modulo 10^9+7.\n\nEach test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n,m ≤ 2·10^5, n·m ≤ 10^6).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ m) — the array a.\n\nIt is guaranteed that the sum of n·m over all test cases doesn't exceed 10^6.\n\nFor each test case print one integer — the number of arrays b that satisfy the conditions from the statement, modulo 10^9+7.\n\nIn the first test case, the following 8 arrays satisfy the conditions from the statement:\n\nIn the second test case, the following 5 arrays satisfy the conditions from the statement:\n\nInput:\n```\n43 31 3 24 22 2 2 26 96 9 6 9 6 99 10010 40 20 20 100 60 80 60 60\n```\n\nOutput:\n```\n8\n5\n11880\n351025663\n```",
+    "input": "Each test contains multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^3) — the number of test cases.\n\nThe first line of each test case contains two integers n and m (2 ≤ n,m ≤ 2·10^5, n·m ≤ 10^6).\n\nThe second line of each test case contains n integers a_1,a_2,…,a_n (1 ≤ a_i ≤ m) — the array a.\n\nIt is guaranteed that the sum of n·m over all test cases doesn't exceed 10^6.",
+    "output": "For each test case print one integer — the number of arrays b that satisfy the conditions from the statement, modulo 10^9+7.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "binary search",
+        "data structures",
+        "divide and conquer",
+        "dp",
+        "flows",
+        "math",
+        "trees",
+        "*2300"
+    ],
+    "rating": 2300
+}

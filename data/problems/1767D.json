@@ -1,0 +1,20 @@
+{
+    "id": "1767D",
+    "contest_id": 1767,
+    "problem_letter": "D",
+    "title": "D. Playoff",
+    "statement": "2^n teams participate in a playoff tournament. The tournament consists of 2^n - 1 games. They are held as follows: in the first phase of the tournament, the teams are split into pairs: team 1 plays against team 2, team 3 plays against team 4, and so on (so, 2^{n-1} games are played in that phase). When a team loses a game, it is eliminated, and each game results in elimination of one team (there are no ties). After that, only 2^{n-1} teams remain. If only one team remains, it is declared the champion; otherwise, the second phase begins, where 2^{n-2} games are played: in the first one of them, the winner of the game \"1 vs 2\" plays against the winner of the game \"3 vs 4\", then the winner of the game \"5 vs 6\" plays against the winner of the game \"7 vs 8\", and so on. This process repeats until only one team remains.\n\nThe skill level of the i-th team is p_i, where p is a permutation of integers 1, 2, ..., 2^n (a permutation is an array where each element from 1 to 2^n occurs exactly once).\n\nYou are given a string s which consists of n characters. These characters denote the results of games in each phase of the tournament as follows:\n\nLet's say that an integer x is winning if it is possible to find a permutation p such that the team with skill x wins the tournament. Find all winning integers.\n\nThe first line contains one integer n (1 ≤ n ≤ 18).\n\nThe second line contains the string s of length n consisting of the characters 0 and/or 1.\n\nPrint all the winning integers x in ascending order.\n\nInput:\n```\n3\n101\n```\n\nOutput:\n```\n4 5 6 7 \n```\n\nInput:\n```\n1\n1\n```\n\nOutput:\n```\n2 \n```\n\nInput:\n```\n2\n01\n```\n\nOutput:\n```\n2 3 \n```",
+    "input": "The first line contains one integer n (1 ≤ n ≤ 18).\n\nThe second line contains the string s of length n consisting of the characters 0 and/or 1.",
+    "output": "Print all the winning integers x in ascending order.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "math",
+        "*1500"
+    ],
+    "rating": 1500
+}

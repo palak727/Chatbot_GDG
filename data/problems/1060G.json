@@ -1,0 +1,16 @@
+{
+    "id": "1060G",
+    "contest_id": 1060,
+    "problem_letter": "G",
+    "title": "G. Balls and Pockets",
+    "statement": "There is a strip with an infinite number of cells. Cells are numbered starting with 0. Initially the cell i contains a ball with the number i.\n\nThere are n pockets located at cells a_1, …, a_n. Each cell contains at most one pocket.\n\nFiltering is the following sequence of operations:\n\nNote that after each filtering operation each cell will still contain exactly one ball.\n\nFor example, let the cells 1, 3 and 4 contain pockets. The initial configuration of balls is shown below (underscores display the cells with pockets):\n\nAfter opening and closing the pockets, balls 1, 3 and 4 disappear:\n\nAfter moving all the balls to the left, the configuration looks like this:\n\nAnother filtering repetition results in the following:\n\nYou have to answer m questions. The i-th of these questions is \"what is the number of the ball located at the cell x_i after k_i repetitions of the filtering operation?\"\n\nThe first line contains two integers n and m — the number of pockets and questions respectively (1 ≤ n, m ≤ 10^5).\n\nThe following line contains n integers a_1, …, a_n — the numbers of cells containing pockets (0 ≤ a_1 < … < a_n ≤ 10^9).\n\nThe following m lines describe questions. The i-th of these lines contains two integers x_i and k_i (0 ≤ x_i, k_i ≤ 10^9).\n\nPrint m numbers — answers to the questions, in the same order as given in the input.\n\nInput:\n```\n3 15\n1 3 4\n0 0\n1 0\n2 0\n3 0\n4 0\n0 1\n1 1\n2 1\n3 1\n4 1\n0 2\n1 2\n2 2\n3 2\n4 2\n```\n\nOutput:\n```\n0\n1\n2\n3\n4\n0\n2\n5\n6\n7\n0\n5\n8\n9\n10\n```",
+    "input": "The first line contains two integers n and m — the number of pockets and questions respectively (1 ≤ n, m ≤ 10^5).\n\nThe following line contains n integers a_1, …, a_n — the numbers of cells containing pockets (0 ≤ a_1 < … < a_n ≤ 10^9).\n\nThe following m lines describe questions. The i-th of these lines contains two integers x_i and k_i (0 ≤ x_i, k_i ≤ 10^9).",
+    "output": "Print m numbers — answers to the questions, in the same order as given in the input.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "*3400"
+    ],
+    "rating": 3400
+}

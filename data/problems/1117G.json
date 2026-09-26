@@ -1,0 +1,16 @@
+{
+    "id": "1117G",
+    "contest_id": 1117,
+    "problem_letter": "G",
+    "title": "G. Recursive Queries",
+    "statement": "You are given a permutation p_1, p_2, …, p_n. You should answer q queries. Each query is a pair (l_i, r_i), and you should calculate f(l_i, r_i).\n\nLet's denote m_{l, r} as the position of the maximum in subsegment p_l, p_{l+1}, …, p_r.\n\nThen f(l, r) = (r - l + 1) + f(l, m_{l,r} - 1) + f(m_{l,r} + 1, r) if l ≤ r or 0 otherwise.\n\nThe first line contains two integers n and q (1 ≤ n ≤ 10^6, 1 ≤ q ≤ 10^6) — the size of the permutation p and the number of queries.\n\nThe second line contains n pairwise distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, p_i ≠ p_j for i ≠ j) — permutation p.\n\nThe third line contains q integers l_1, l_2, …, l_q — the first parts of the queries.\n\nThe fourth line contains q integers r_1, r_2, …, r_q — the second parts of the queries.\n\nIt's guaranteed that 1 ≤ l_i ≤ r_i ≤ n for all queries.\n\nPrint q integers — the values f(l_i, r_i) for the corresponding queries.\n\nDescription of the queries:\n\nInput:\n```\n4 5\n3 1 4 2\n2 1 1 2 1\n2 3 4 4 1\n```\n\nOutput:\n```\n1 6 8 5 1 \n```",
+    "input": "The first line contains two integers n and q (1 ≤ n ≤ 10^6, 1 ≤ q ≤ 10^6) — the size of the permutation p and the number of queries.\n\nThe second line contains n pairwise distinct integers p_1, p_2, …, p_n (1 ≤ p_i ≤ n, p_i ≠ p_j for i ≠ j) — permutation p.\n\nThe third line contains q integers l_1, l_2, …, l_q — the first parts of the queries.\n\nThe fourth line contains q integers r_1, r_2, …, r_q — the second parts of the queries.\n\nIt's guaranteed that 1 ≤ l_i ≤ r_i ≤ n for all queries.",
+    "output": "Print q integers — the values f(l_i, r_i) for the corresponding queries.",
+    "time_limit": "4 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "data structures",
+        "*2500"
+    ],
+    "rating": 2500
+}

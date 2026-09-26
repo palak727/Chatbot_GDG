@@ -1,0 +1,21 @@
+{
+    "id": "1567F",
+    "contest_id": 1567,
+    "problem_letter": "F",
+    "title": "F. One-Four Overload",
+    "statement": "Alice has an empty grid with n rows and m columns. Some of the cells are marked, and no marked cells are adjacent to the edge of the grid. (Two squares are adjacent if they share a side.)\n\nAlice wants to fill each cell with a number such that the following statements are true:\n\nThe first line of input contains two integers n and m (1 ≤ n, m ≤ 500) — the number of rows and the number of columns in the grid, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either '.' or 'X' — an unmarked and a marked cell, respectively. No marked cells are adjacent to the edge of the grid.\n\nOutput \"'NO\" if no suitable grid exists. Otherwise, output \"'YES\"'. Then output n lines of m space-separated integers — the integers in the grid.\n\nIt can be shown that no such grid exists for the second test.\n\nInput:\n```\n5 5\n.....\n.XXX.\n.X.X.\n.XXX.\n.....\n```\n\nOutput:\n```\nYES\n4 1 4 4 1\n4 5 5 5 1\n4 5 1 5 4\n1 5 5 5 4\n1 4 4 1 4\n```\n\nInput:\n```\n5 5\n.....\n.XXX.\n.XXX.\n.XXX.\n.....\n```\n\nOutput:\n```\nNO\n```\n\nInput:\n```\n3 2\n..\n..\n..\n```\n\nOutput:\n```\nYES\n4 1\n4 1\n1 4\n```\n\nInput:\n```\n9 9\n.........\n.XXXXX.X.\n.X...X...\n.X.XXXXX.\n.X.X.X.X.\n.X.XXX.X.\n.X.....X.\n.XXXXXXX.\n.........\n```\n\nOutput:\n```\nYES\n4 4 4 1 4 1 4 1 4\n1 5 5 5 5 5 4 10 1\n4 5 1 4 1 5 4 4 4\n4 5 1 5 5 0 5 5 1\n4 5 1 5 4 5 1 5 4\n4 5 1 5 5 5 4 5 1\n1 5 4 4 1 1 4 5 1\n4 5 5 5 5 5 5 5 4\n1 1 1 1 4 4 1 1 4\n```",
+    "input": "The first line of input contains two integers n and m (1 ≤ n, m ≤ 500) — the number of rows and the number of columns in the grid, respectively.\n\nThen n lines follow, each containing m characters. Each of these characters is either '.' or 'X' — an unmarked and a marked cell, respectively. No marked cells are adjacent to the edge of the grid.",
+    "output": "Output \"'NO\" if no suitable grid exists. Otherwise, output \"'YES\"'. Then output n lines of m space-separated integers — the integers in the grid.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "2-sat",
+        "constructive algorithms",
+        "dfs and similar",
+        "dsu",
+        "graphs",
+        "implementation",
+        "*2700"
+    ],
+    "rating": 2700
+}

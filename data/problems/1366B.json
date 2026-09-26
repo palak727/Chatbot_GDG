@@ -1,0 +1,17 @@
+{
+    "id": "1366B",
+    "contest_id": 1366,
+    "problem_letter": "B",
+    "title": "B. Shuffle",
+    "statement": "You are given an array consisting of n integers a_1, a_2, ..., a_n. Initially a_x = 1, all other elements are equal to 0.\n\nYou have to perform m operations. During the i-th operation, you choose two indices c and d such that l_i ≤ c, d ≤ r_i, and swap a_c and a_d.\n\nCalculate the number of indices k such that it is possible to choose the operations so that a_k = 1 in the end.\n\nThe first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then the description of t testcases follow.\n\nThe first line of each test case contains three integers n, x and m (1 ≤ n ≤ 10^9; 1 ≤ m ≤ 100; 1 ≤ x ≤ n).\n\nEach of next m lines contains the descriptions of the operations; the i-th line contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).\n\nFor each test case print one integer — the number of indices k such that it is possible to choose the operations so that a_k = 1 in the end.\n\nIn the first test case, it is possible to achieve a_k = 1 for every k. To do so, you may use the following operations:\n\nIn the second test case, only k = 1 and k = 2 are possible answers. To achieve a_1 = 1, you have to swap a_1 and a_1 during the second operation. To achieve a_2 = 1, you have to swap a_1 and a_2 during the second operation.\n\nInput:\n```\n3\n6 4 3\n1 6\n2 3\n5 5\n4 1 2\n2 4\n1 2\n3 3 2\n2 3\n1 2\n```\n\nOutput:\n```\n6\n2\n3\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases. Then the description of t testcases follow.\n\nThe first line of each test case contains three integers n, x and m (1 ≤ n ≤ 10^9; 1 ≤ m ≤ 100; 1 ≤ x ≤ n).\n\nEach of next m lines contains the descriptions of the operations; the i-th line contains two integers l_i and r_i (1 ≤ l_i ≤ r_i ≤ n).",
+    "output": "For each test case print one integer — the number of indices k such that it is possible to choose the operations so that a_k = 1 in the end.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "math",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

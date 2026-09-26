@@ -1,0 +1,17 @@
+{
+    "id": "2095H",
+    "contest_id": 2095,
+    "problem_letter": "H",
+    "title": "H. Blurry Vision",
+    "statement": "Please direct your vision to line number x.\n\nNow, read the word you see on that line.\n\nIf you struggle, I might have to prescribe eyeglasses.\n\nThe only line contains one integer x (1 ≤ x ≤ 11) — the line number.\n\nOutput the word on line number x.\n\nIf you fail to read the first line, even glasses won't save you.\n\nInput:\n```\n1\n```\n\nOutput:\n```\nCODEFORCES\n```",
+    "input": "The only line contains one integer x (1 ≤ x ≤ 11) — the line number.",
+    "output": "Output the word on line number x.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "fft",
+        "math"
+    ],
+    "rating": null
+}

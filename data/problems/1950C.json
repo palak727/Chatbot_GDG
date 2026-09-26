@@ -1,0 +1,17 @@
+{
+    "id": "1950C",
+    "contest_id": 1950,
+    "problem_letter": "C",
+    "title": "C. Clock Conversion",
+    "statement": "Given the time in 24-hour format, output the equivalent time in 12-hour format.\n\nThe first line contains a single integer t (1 ≤ t ≤ 1440) — the number of test cases.\n\nThe only line of each test case contains a string s of length 5 with format hh:mm representing a valid time in the 24-hour format. hh represents the hour from 00 to 23, and mm represents the minute from 00 to 59.\n\nThe input will always be a valid time in 24-hour format.\n\nFor each test case, output two strings separated by a space (\"hh:mm AM\" or \"hh:mm PM\"), which are the 12-hour equivalent to the time provided in the test case (without quotes).\n\nYou should output the time exactly as indicated; in particular, you should not remove leading zeroes.\n\nInput:\n```\n1109:4118:0612:1400:5900:0014:3401:0119:0711:5912:0021:37\n```\n\nOutput:\n```\n09:41 AM\n06:06 PM\n12:14 PM\n12:59 AM\n12:00 AM\n02:34 PM\n01:01 AM\n07:07 PM\n11:59 AM\n12:00 PM\n09:37 PM\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 1440) — the number of test cases.\n\nThe only line of each test case contains a string s of length 5 with format hh:mm representing a valid time in the 24-hour format. hh represents the hour from 00 to 23, and mm represents the minute from 00 to 59.\n\nThe input will always be a valid time in 24-hour format.",
+    "output": "For each test case, output two strings separated by a space (\"hh:mm AM\" or \"hh:mm PM\"), which are the 12-hour equivalent to the time provided in the test case (without quotes).\n\nYou should output the time exactly as indicated; in particular, you should not remove leading zeroes.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

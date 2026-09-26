@@ -1,0 +1,18 @@
+{
+    "id": "1600E",
+    "contest_id": 1600,
+    "problem_letter": "E",
+    "title": "E. Array Game",
+    "statement": "Alice and Bob are playing a game. They are given an array A of length N. The array consists of integers. They are building a sequence together. In the beginning, the sequence is empty. In one turn a player can remove a number from the left or right side of the array and append it to the sequence. The rule is that the sequence they are building must be strictly increasing. The winner is the player that makes the last move. Alice is playing first. Given the starting array, under the assumption that they both play optimally, who wins the game?\n\nThe first line contains one integer N (1 ≤ N ≤ 2*10^5) - the length of the array A.\n\nThe second line contains N integers A_1, A_2,...,A_N (0 ≤ A_i ≤ 10^9)\n\nThe first and only line of output consists of one string, the name of the winner. If Alice won, print \"Alice\", otherwise, print \"Bob\".\n\nInput:\n```\n1\n5\n```\n\nOutput:\n```\nAlice\n```\n\nInput:\n```\n3\n5 4 5\n```\n\nOutput:\n```\nAlice\n```\n\nInput:\n```\n6\n5 8 2 1 10 9\n```\n\nOutput:\n```\nBob\n```",
+    "input": "The first line contains one integer N (1 ≤ N ≤ 2*10^5) - the length of the array A.\n\nThe second line contains N integers A_1, A_2,...,A_N (0 ≤ A_i ≤ 10^9)",
+    "output": "The first and only line of output consists of one string, the name of the winner. If Alice won, print \"Alice\", otherwise, print \"Bob\".",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "games",
+        "greedy",
+        "two pointers",
+        "*1900"
+    ],
+    "rating": 1900
+}

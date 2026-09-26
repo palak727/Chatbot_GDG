@@ -1,0 +1,18 @@
+{
+    "id": "2101F",
+    "contest_id": 2101,
+    "problem_letter": "F",
+    "title": "F. Shoo Shatters the Sunshine",
+    "statement": "You are given a tree with n vertices, where each vertex can be colored red, blue, or white. The coolness of a coloring is defined as the maximum distance^{∗} between a red and a blue vertex.\n\nFormally, if we denote the color of the i-th vertex as c_i, the coolness of a coloring is max d(u, v) over all pairs of vertices 1≤ u, v≤ n where c_u is red and c_v is blue. If there are no red or no blue vertices, the coolness is zero.\n\nYour task is to calculate the sum of coolness over all 3^n possible colorings of the tree, modulo 998,244,353.\n\n^{∗}The distance between two vertices a and b in a tree is equal to the number of edges on the unique simple path between vertex a and vertex b.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 3000) — the number of vertices in the tree.\n\nEach of the next n - 1 lines contains two integers u and v (1≤ u, v≤ n) — the endpoints of the edges of the tree.\n\nIt is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3000.\n\nFor each test case, output the sum of coolness over all 3^n possible colorings of the tree, modulo 998,244,353.\n\nIn the first test case, there are 12 colorings that have at least one blue and one red node. The following pictures show their coloring and their coolness:\n\nTherefore, the sum of coolness over all possible colorings is 6·2 + 6·1 = 18.\n\nIn the second test case, the following are some examples of colorings with a coolness of 3:\n\nInput:\n```\n331 22 361 21 31 43 55 6171 21 31 41 52 62 72 83 93 107 117 1211 1313 1414 1510 1616 17\n```\n\nOutput:\n```\n18\n1920\n78555509\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 50). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2≤ n≤ 3000) — the number of vertices in the tree.\n\nEach of the next n - 1 lines contains two integers u and v (1≤ u, v≤ n) — the endpoints of the edges of the tree.\n\nIt is guaranteed that the given edges form a tree.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 3000.",
+    "output": "For each test case, output the sum of coolness over all 3^n possible colorings of the tree, modulo 998,244,353.",
+    "time_limit": "7 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "dp",
+        "trees",
+        "*3300"
+    ],
+    "rating": 3300
+}

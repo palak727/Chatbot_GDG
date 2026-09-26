@@ -1,0 +1,16 @@
+{
+    "id": "1807A",
+    "contest_id": 1807,
+    "problem_letter": "A",
+    "title": "A. Plus or Minus",
+    "statement": "You are given three integers a, b, and c such that exactly one of these two equations is true:\n\nThe first line contains a single integer t (1 ≤ t ≤ 162) — the number of test cases.\n\nThe description of each test case consists of three integers a, b, c (1 ≤ a, b ≤ 9, -8 ≤ c ≤ 18). The additional constraint on the input: it will be generated so that exactly one of the two equations will be true.\n\nFor each test case, output either + or - on a new line, representing the correct equation.\n\nIn the first test case, 1+2=3.\n\nIn the second test case, 3-2=1.\n\nIn the third test case, 2-9=-7. Note that c can be negative.\n\nInput:\n```\n111 2 33 2 12 9 -73 4 71 1 21 1 03 3 69 9 189 9 01 9 -81 9 10\n```\n\nOutput:\n```\n+\n-\n-\n+\n+\n-\n+\n+\n-\n-\n+\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 162) — the number of test cases.\n\nThe description of each test case consists of three integers a, b, c (1 ≤ a, b ≤ 9, -8 ≤ c ≤ 18). The additional constraint on the input: it will be generated so that exactly one of the two equations will be true.",
+    "output": "For each test case, output either + or - on a new line, representing the correct equation.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

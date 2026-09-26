@@ -1,0 +1,17 @@
+{
+    "id": "1905A",
+    "contest_id": 1905,
+    "problem_letter": "A",
+    "title": "A. Constructive Problems",
+    "statement": "Gridlandia has been hit by flooding and now has to reconstruct all of it's cities. Gridlandia can be described by an n × m matrix.\n\nInitially, all of its cities are in economic collapse. The government can choose to rebuild certain cities. Additionally, any collapsed city which has at least one vertically neighboring rebuilt city and at least one horizontally neighboring rebuilt city can ask for aid from them and become rebuilt without help from the government. More formally, collapsed city positioned in (i, j) can become rebuilt if both of the following conditions are satisfied:\n\nIf the city is located on the border of the matrix and has only one horizontally or vertically neighbouring city, then we consider only that city.\n\nThe government wants to know the minimum number of cities it has to rebuild such that after some time all the cities can be rebuild.\n\nEach test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (2 ≤ n, m ≤ 100) — the sizes of Gridlandia.\n\nFor each test case, output a single integer — the minimum number of cities the government needs to rebuild.\n\nIn the first test case, it's enough for the government to rebuild cities (1, 2) and (2, 1).\n\nIn the second test case, it's enough for the government to rebuild cities (1, 4), (2, 2), (3, 1), (3, 6), (4, 3), (5, 5), (5, 7).\n\nInput:\n```\n32 25 73 2\n```\n\nOutput:\n```\n2\n7\n3\n```",
+    "input": "Each test consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. The description of the test cases follows.\n\nThe only line of each test case contains two integers n and m (2 ≤ n, m ≤ 100) — the sizes of Gridlandia.",
+    "output": "For each test case, output a single integer — the minimum number of cities the government needs to rebuild.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}

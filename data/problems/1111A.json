@@ -1,0 +1,17 @@
+{
+    "id": "1111A",
+    "contest_id": 1111,
+    "problem_letter": "A",
+    "title": "A. Superhero Transformation",
+    "statement": "We all know that a superhero can transform to certain other superheroes. But not all Superheroes can transform to any other superhero. A superhero with name s can transform to another superhero with name t if s can be made equal to t by changing any vowel in s to any other vowel and any consonant in s to any other consonant. Multiple changes can be made.\n\nIn this problem, we consider the letters 'a', 'e', 'i', 'o' and 'u' to be vowels and all the other letters to be consonants.\n\nGiven the names of two superheroes, determine if the superhero with name s can be transformed to the Superhero with name t.\n\nThe first line contains the string s having length between 1 and 1000, inclusive.\n\nThe second line contains the string t having length between 1 and 1000, inclusive.\n\nBoth strings s and t are guaranteed to be different and consist of lowercase English letters only.\n\nOutput \"Yes\" (without quotes) if the superhero with name s can be transformed to the superhero with name t and \"No\" (without quotes) otherwise.\n\nYou can print each letter in any case (upper or lower).\n\nIn the first sample, since both 'a' and 'u' are vowels, it is possible to convert string s to t.\n\nIn the third sample, 'k' is a consonant, whereas 'a' is a vowel, so it is not possible to convert string s to t.\n\nInput:\n```\na\nu\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\nabc\nukm\n```\n\nOutput:\n```\nYes\n```\n\nInput:\n```\nakm\nua\n```\n\nOutput:\n```\nNo\n```",
+    "input": "The first line contains the string s having length between 1 and 1000, inclusive.\n\nThe second line contains the string t having length between 1 and 1000, inclusive.\n\nBoth strings s and t are guaranteed to be different and consist of lowercase English letters only.",
+    "output": "Output \"Yes\" (without quotes) if the superhero with name s can be transformed to the superhero with name t and \"No\" (without quotes) otherwise.\n\nYou can print each letter in any case (upper or lower).",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "implementation",
+        "strings",
+        "*1000"
+    ],
+    "rating": 1000
+}

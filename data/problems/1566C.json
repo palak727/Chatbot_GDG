@@ -1,0 +1,19 @@
+{
+    "id": "1566C",
+    "contest_id": 1566,
+    "problem_letter": "C",
+    "title": "C. MAX-MEX Cut",
+    "statement": "A binary string is a string that consists of characters 0 and 1. A bi-table is a table that has exactly two rows of equal length, each being a binary string.\n\nLet MEX of a bi-table be the smallest digit among 0, 1, or 2 that does not occur in the bi-table. For example, MEX for beginbmatrix 0011 1010 endbmatrix is 2, because 0 and 1 occur in the bi-table at least once. MEX for beginbmatrix 111 111 endbmatrix is 0, because 0 and 2 do not occur in the bi-table, and 0 < 2.\n\nYou are given a bi-table with n columns. You should cut it into any number of bi-tables (each consisting of consecutive columns) so that each column is in exactly one bi-table. It is possible to cut the bi-table into a single bi-table — the whole bi-table.\n\nWhat is the maximal sum of MEX of all resulting bi-tables can be?\n\nThe input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of columns in the bi-table.\n\nEach of the next two lines contains a binary string of length n — the rows of the bi-table.\n\nIt's guaranteed that the sum of n over all test cases does not exceed 10^5.\n\nFor each test case print a single integer — the maximal sum of MEX of all bi-tables that it is possible to get by cutting the given bi-table optimally.\n\nIn the first test case you can cut the bi-table as follows:\n\nThe sum of MEX is 8.\n\nInput:\n```\n4\n7\n0101000\n1101100\n5\n01100\n10101\n2\n01\n01\n6\n000000\n111111\n```\n\nOutput:\n```\n8\n8\n2\n12\n```",
+    "input": "The input consists of multiple test cases. The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases. Description of the test cases follows.\n\nThe first line of the description of each test case contains a single integer n (1 ≤ n ≤ 10^5) — the number of columns in the bi-table.\n\nEach of the next two lines contains a binary string of length n — the rows of the bi-table.\n\nIt's guaranteed that the sum of n over all test cases does not exceed 10^5.",
+    "output": "For each test case print a single integer — the maximal sum of MEX of all bi-tables that it is possible to get by cutting the given bi-table optimally.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "dp",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}

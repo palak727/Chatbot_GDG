@@ -1,0 +1,21 @@
+{
+    "id": "1850G",
+    "contest_id": 1850,
+    "problem_letter": "G",
+    "title": "G. The Morning Star",
+    "statement": "A compass points directly toward the morning star. It can only point in one of eight directions: the four cardinal directions (N, S, E, W) or some combination (NW, NE, SW, SE). Otherwise, it will break.\n\nThere are n distinct points with integer coordinates on a plane. How many ways can you put a compass at one point and the morning star at another so that the compass does not break?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThen n lines follow, each line containing two integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) — the coordinates of each point, all points have distinct coordinates.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.\n\nFor each test case, output a single integer — the number of pairs of points that don't break the compass.\n\nIn the first test case, any pair of points won't break the compass:\n\nIn the second test case, only two pairs of points won't break the compass:\n\nInput:\n```\n530 0-1 -11 144 55 76 910 133-1000000000 10000000000 01000000000 -100000000050 02 2-1 5-1 102 1130 0-1 21 -2\n```\n\nOutput:\n```\n6\n2\n6\n8\n0\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (2 ≤ n ≤ 2·10^5) — the number of points.\n\nThen n lines follow, each line containing two integers x_i, y_i (-10^9 ≤ x_i, y_i ≤ 10^9) — the coordinates of each point, all points have distinct coordinates.\n\nIt is guaranteed that the sum of n over all test cases doesn't exceed 2·10^5.",
+    "output": "For each test case, output a single integer — the number of pairs of points that don't break the compass.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "combinatorics",
+        "data structures",
+        "geometry",
+        "implementation",
+        "math",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

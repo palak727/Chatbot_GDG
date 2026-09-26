@@ -1,0 +1,18 @@
+{
+    "id": "1237B",
+    "contest_id": 1237,
+    "problem_letter": "B",
+    "title": "B. Balanced Tunnel",
+    "statement": "Consider a tunnel on a one-way road. During a particular day, n cars numbered from 1 to n entered and exited the tunnel exactly once. All the cars passed through the tunnel at constant speeds.\n\nA traffic enforcement camera is mounted at the tunnel entrance. Another traffic enforcement camera is mounted at the tunnel exit. Perfectly balanced.\n\nThanks to the cameras, the order in which the cars entered and exited the tunnel is known. No two cars entered or exited at the same time.\n\nTraffic regulations prohibit overtaking inside the tunnel. If car i overtakes any other car j inside the tunnel, car i must be fined. However, each car can be fined at most once.\n\nFormally, let's say that car i definitely overtook car j if car i entered the tunnel later than car j and exited the tunnel earlier than car j. Then, car i must be fined if and only if it definitely overtook at least one other car.\n\nFind the number of cars that must be fined.\n\nThe first line contains a single integer n (2 ≤ n ≤ 10^5), denoting the number of cars.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), denoting the ids of cars in order of entering the tunnel. All a_i are pairwise distinct.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n), denoting the ids of cars in order of exiting the tunnel. All b_i are pairwise distinct.\n\nOutput the number of cars to be fined.\n\nThe first example is depicted below:\n\nCar 2 definitely overtook car 5, while car 4 definitely overtook cars 1, 2, 3 and 5. Cars 2 and 4 must be fined.\n\nIn the second example car 5 was definitely overtaken by all other cars.\n\nIn the third example no car must be fined.\n\nInput:\n```\n5\n3 5 2 1 4\n4 3 2 5 1\n```\n\nOutput:\n```\n2\n```\n\nInput:\n```\n7\n5 2 3 6 7 1 4\n2 3 6 7 1 4 5\n```\n\nOutput:\n```\n6\n```\n\nInput:\n```\n2\n1 2\n1 2\n```\n\nOutput:\n```\n0\n```",
+    "input": "The first line contains a single integer n (2 ≤ n ≤ 10^5), denoting the number of cars.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n), denoting the ids of cars in order of entering the tunnel. All a_i are pairwise distinct.\n\nThe third line contains n integers b_1, b_2, …, b_n (1 ≤ b_i ≤ n), denoting the ids of cars in order of exiting the tunnel. All b_i are pairwise distinct.",
+    "output": "Output the number of cars to be fined.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "data structures",
+        "sortings",
+        "two pointers",
+        "*1300"
+    ],
+    "rating": 1300
+}

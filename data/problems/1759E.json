@@ -1,0 +1,18 @@
+{
+    "id": "1759E",
+    "contest_id": 1759,
+    "problem_letter": "E",
+    "title": "E. The Humanoid",
+    "statement": "There are n astronauts working on some space station. An astronaut with the number i (1 ≤ i ≤ n) has power a_i.\n\nAn evil humanoid has made his way to this space station. The power of this humanoid is equal to h. Also, the humanoid took with him two green serums and one blue serum.\n\nIn one second , a humanoid can do any of three actions:\n\nWhen an astronaut with power a_i is absorbed, this astronaut disappears, and power of the humanoid increases by lfloor a_i/2 rfloor, that is, an integer part of a_i/2. For example, if a humanoid absorbs an astronaut with power 4, its power increases by 2, and if a humanoid absorbs an astronaut with power 7, its power increases by 3.\n\nAfter using the green serum, this serum disappears, and the power of the humanoid doubles, so it increases by 2 times.\n\nAfter using the blue serum, this serum disappears, and the power of the humanoid triples, so it increases by 3 times.\n\nThe humanoid is wondering what the maximum number of astronauts he will be able to absorb if he acts optimally.\n\nThe first line of each test contains an integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe first line of each test case contains integers n (1 ≤ n ≤ 2·10^5) — number of astronauts and h (1 ≤ h ≤ 10^6) — the initial power of the humanoid.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^8) — powers of astronauts.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.\n\nFor each test case, in a separate line, print the maximum number of astronauts that a humanoid can absorb.\n\nIn the first case, you can proceed as follows:\n\nInput:\n```\n84 12 1 8 93 36 2 604 55 1 100 53 238 6 31 1124 612 12 36 1004 12 1 1 153 515 1 13\n```\n\nOutput:\n```\n4\n3\n3\n3\n0\n4\n4\n3\n```",
+    "input": "The first line of each test contains an integer t (1 ≤ t ≤ 10^4) — number of test cases.\n\nThe first line of each test case contains integers n (1 ≤ n ≤ 2·10^5) — number of astronauts and h (1 ≤ h ≤ 10^6) — the initial power of the humanoid.\n\nThe second line of each test case contains n integers a_i (1 ≤ a_i ≤ 10^8) — powers of astronauts.\n\nIt is guaranteed that the sum of n for all test cases does not exceed 2·10^5.",
+    "output": "For each test case, in a separate line, print the maximum number of astronauts that a humanoid can absorb.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "dp",
+        "sortings",
+        "*1500"
+    ],
+    "rating": 1500
+}

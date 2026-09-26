@@ -1,0 +1,23 @@
+{
+    "id": "1403A",
+    "contest_id": 1403,
+    "problem_letter": "A",
+    "title": "A. The Potion of Great Power",
+    "statement": "Once upon a time, in the Land of the Shamans, everyone lived on the Sky-High Beanstalk. Each shaman had a unique identifying number i between 0 and N-1, and an altitude value H_i, representing how high he lived above ground level. The distance between two altitudes is the absolute value of their difference.\n\nAll shamans lived together in peace, until one of them stole the formula of the world-famous Potion of Great Power. To cover his/her tracks, the Thief has put a Curse on the land: most inhabitants could no longer trust each other...\n\nDespite the very difficult circumstances, the Order of Good Investigators have gained the following information about the Curse:\n\nThey believe the Thief has whispered the formula to an Evil Shaman. To avoid detection, both of them visited the home of one of their (respective) trusted friends. During the visit, the Thief whispered the formula to the Evil Shaman through the window. (Note: this trusted friend did not have to be home at the time. In fact, it's even possible that they visited each other's houses – shamans are weird.)\n\nFortunately, whispers only travel short distances, so the Order knows the two trusted friends visited (by the Thief and the Evil Shaman) must live very close to each other.\n\nThey ask you to help with their investigation. They would like to test their suspicions: what if the Thief was x, the Evil Shaman was y, and the formula was whispered on day v? What is the smallest distance the whispered formula had to travel? That is, what is the minimum distance between the apartments of some shamans x' and y' (i.e. minleft(left|H_{x'} - H_{y'}right|right)), such that x' was a trusted friend of x and y' was a trusted friend of y on day v?\n\nThey will share all their information with you, then ask you a number of questions. You need to answer each question immediately, before receiving the next one.\n\nThe interaction will begin with a line containing N, D, U and Q (2 ≤ N ≤ 100000, 1 ≤ D ≤ 500, 0 ≤ U ≤ 200000, 1 ≤ Q ≤ 50000) – the number of shamans, the maximum number of trusted friends a shaman can have at any given point, the number of days, and the number of questions.\n\nOn the next line N space separated integers will follow, the ith (1≤ i ≤ N) of which being H_{i-1} (0≤ H_{i-1} ≤ 10^9), the altitude of shaman i-1.\n\nOn the next U lines there will be two integers each, on the ith (1 ≤ i ≤ U) A_i and B_i (0 ≤ A_i, B_i < N and A_i ≠ B_i), which represents a pair of shamans who started or stopped trusting each other at the end of day i-1. That is, if A_i and B_i trusted each other on day i-1, they did not trust each other on day i, or vice versa. Read all of these integers.\n\nThe interactor now will ask you Q question, so the following interaction should happen Q times:\n\nAfter printing each line do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:\n\nExample queries:\n\nEvolution of friendships:\n\nInput:\n```\n6 5 11 4\n2 42 1000 54 68 234\n0 1\n2 0\n3 4\n3 5\n3 5\n1 3\n5 3\n0 5\n3 0\n1 3\n3 5\n0 3 4\n3 0 8\n0 5 5\n3 0 11\n```\n\nOutput:\n```\n26\n0\n1000000000\n14\n```",
+    "input": "",
+    "output": "",
+    "time_limit": "3 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "2-sat",
+        "binary search",
+        "data structures",
+        "graphs",
+        "interactive",
+        "sortings",
+        "two pointers",
+        "*2400"
+    ],
+    "rating": 2400
+}

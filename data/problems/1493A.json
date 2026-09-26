@@ -1,0 +1,17 @@
+{
+    "id": "1493A",
+    "contest_id": 1493,
+    "problem_letter": "A",
+    "title": "A. Anti-knapsack",
+    "statement": "You are given two integers n and k. You are asked to choose maximum number of distinct integers from 1 to n so that there is no subset of chosen numbers with sum equal to k.\n\nA subset of a set is a set that can be obtained from initial one by removing some (possibly all or none) elements of it.\n\nThe first line contains the number of test cases T (1 ≤ T ≤ 100).\n\nEach of the next T lines contains two integers n and k (1 ≤ k ≤ n ≤ 1000) — the description of test cases.\n\nFor each test case output two lines. In the first line output a single integer m — the number of chosen integers.\n\nIn the second line output m distinct integers from 1 to n — the chosen numbers.\n\nIf there are multiple answers, print any. You can print the numbers in any order.\n\nInput:\n```\n3\n3 2\n5 3\n1 1\n```\n\nOutput:\n```\n2\n3 1 \n3\n4 5 2 \n0\n```",
+    "input": "The first line contains the number of test cases T (1 ≤ T ≤ 100).\n\nEach of the next T lines contains two integers n and k (1 ≤ k ≤ n ≤ 1000) — the description of test cases.",
+    "output": "For each test case output two lines. In the first line output a single integer m — the number of chosen integers.\n\nIn the second line output m distinct integers from 1 to n — the chosen numbers.\n\nIf there are multiple answers, print any. You can print the numbers in any order.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "greedy",
+        "*800"
+    ],
+    "rating": 800
+}

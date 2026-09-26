@@ -1,0 +1,16 @@
+{
+    "id": "1654B",
+    "contest_id": 1654,
+    "problem_letter": "B",
+    "title": "B. Prefix Removals",
+    "statement": "You are given a string s consisting of lowercase letters of the English alphabet. You must perform the following algorithm on s:\n\nA prefix is a string consisting of several first letters of a given string, without any reorders. An empty prefix is also a valid prefix. For example, the string \"abcd\" has 5 prefixes: empty string, \"a\", \"ab\", \"abc\" and \"abcd\".\n\nFor instance, if we perform the algorithm on s = \"abcabdc\",\n\nFind the final state of the string after performing the algorithm.\n\nThe first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThis is followed by t lines, each containing a description of one test case. Each line contains a string s. The given strings consist only of lowercase letters of the English alphabet and have lengths between 1 and 2·10^5 inclusive.\n\nIt is guaranteed that the sum of the lengths of s over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single line containing the string s after executing the algorithm. It can be shown that such string is non-empty.\n\nThe first test case is explained in the statement.\n\nIn the second test case, no operations can be performed on s.\n\nIn the third test case,\n\nIn the fourth test case,\n\nInput:\n```\n6abcabdcabbbbbbbbbbcodeforcescffcfccffccfcffcfccfcffccffcfccfzyzyzwxxyyxxyyzzyzzxxwzxwywxwzxxyzzw\n```\n\nOutput:\n```\nabdc\na\nb\ndeforces\ncf\nxyzzw\n```",
+    "input": "The first line contains a single integer t (1 ≤ t ≤ 10^4) — the number of test cases.\n\nThis is followed by t lines, each containing a description of one test case. Each line contains a string s. The given strings consist only of lowercase letters of the English alphabet and have lengths between 1 and 2·10^5 inclusive.\n\nIt is guaranteed that the sum of the lengths of s over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single line containing the string s after executing the algorithm. It can be shown that such string is non-empty.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "strings",
+        "*800"
+    ],
+    "rating": 800
+}

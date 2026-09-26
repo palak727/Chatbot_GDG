@@ -1,0 +1,17 @@
+{
+    "id": "2013D",
+    "contest_id": 2013,
+    "problem_letter": "D",
+    "title": "D. Minimize the Difference",
+    "statement": "Zhan, tired after the contest, gave the only task that he did not solve during the contest to his friend, Sungat. However, he could not solve it either, so we ask you to try to solve this problem.\n\nYou are given an array a_1, a_2, …, a_n of length n. We can perform any number (possibly, zero) of operations on the array.\n\nIn one operation, we choose a position i (1 ≤ i ≤ n - 1) and perform the following action:\n\nFind the minimum possible value of max(a_1, a_2, …, a_n) - min(a_1, a_2, …, a_n).\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12).\n\nThe sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, output a single integer: the minimum possible value of max(a_1, a_2, …, a_n) - min(a_1, a_2, …, a_n).\n\nIn the third testcase, you can perform the operation twice with i = 1.\n\nAfter that, the array is a = [2, 3, 2, 3], and max(2, 3, 2, 3) - min(2, 3, 2, 3) = 3 - 2 = 1.\n\nInput:\n```\n51131 2 344 1 2 344 2 3 155 14 4 10 2\n```\n\nOutput:\n```\n0\n2\n1\n1\n3\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^5). The description of the test cases follows.\n\nThe first line of each test case contains an integer n (1 ≤ n ≤ 2·10^5).\n\nThe second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^12).\n\nThe sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, output a single integer: the minimum possible value of max(a_1, a_2, …, a_n) - min(a_1, a_2, …, a_n).",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "binary search",
+        "greedy",
+        "*1900"
+    ],
+    "rating": 1900
+}

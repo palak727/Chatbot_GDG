@@ -1,0 +1,17 @@
+{
+    "id": "2041A",
+    "contest_id": 2041,
+    "problem_letter": "A",
+    "title": "A. The Bento Box Adventure",
+    "statement": "Boxed meals in Taiwan are very common, offering convenient and affordable nutrition-balanced choices for students and office workers. These meals typically include a variety of vegetables, protein, and rice, providing a well-rounded diet. With numerous options available at local self-service restaurants, they are a popular choice for those looking for a quick, healthy lunch.\n\nThere are five Taiwanese self-service restaurants numbered from 1 to 5. You plan to visit a different restaurant each day from Monday to Friday to pack a boxed meal for lunch. You've already visited one restaurant from Monday to Thursday, each time visiting a different one. Now, it's Friday, and you want to visit the last remaining restaurant that you haven't been to yet this week.\n\nWrite a program that takes as input the four restaurants you've already visited (one for each day from Monday to Thursday) and outputs the restaurant you should visit on Friday.\n\nA single line of input containing four integers a, b, c, d, each between 1 and 5 (inclusive), representing the restaurant numbers you visited from Monday to Thursday, in order.\n\nOutput the restaurant number you should visit on Friday.\n\nInput:\n```\n1 3 2 5\n```\n\nOutput:\n```\n4\n```\n\nInput:\n```\n2 5 4 3\n```\n\nOutput:\n```\n1\n```",
+    "input": "A single line of input containing four integers a, b, c, d, each between 1 and 5 (inclusive), representing the restaurant numbers you visited from Monday to Thursday, in order.",
+    "output": "Output the restaurant number you should visit on Friday.",
+    "time_limit": "1 second",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "implementation",
+        "sortings",
+        "*1300"
+    ],
+    "rating": 1300
+}

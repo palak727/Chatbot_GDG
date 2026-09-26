@@ -1,0 +1,17 @@
+{
+    "id": "2049A",
+    "contest_id": 2049,
+    "problem_letter": "A",
+    "title": "A. MEX Destruction",
+    "statement": "Evirir the dragon snuck into a wizard's castle and found a mysterious contraption, and their playful instincts caused them to play with (destroy) it...\n\nEvirir the dragon found an array a_1, a_2, …, a_n of n non-negative integers.\n\nIn one operation, they can choose a non-empty subarray^{∗} b of a and replace it with the integer mex(b)^{†}. They want to use this operation any number of times to make a only contain zeros. It can be proven that this is always possible under the problem constraints.\n\nWhat is the minimum number of operations needed?\n\n^{∗}An array c is a subarray of an array d if c can be obtained from d by the deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.\n\n^{†}The minimum excluded (MEX) of a collection of integers f_1, f_2, …, f_k is defined as the smallest non-negative integer x which does not occur in the collection f.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50), the length of a.\n\nThe second line of each test case contains n space-separated integers, a_1, a_2, …, a_n (0 ≤ a_i ≤ 100).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.\n\nFor each test case, output a single integer on a line, the minimum number of operations needed to make a contain only zeros.\n\nIn the first test case, Evirir can choose the subarray b = [1, 2, 3] and replace it with mex(1, 2, 3) = 0, changing a from [0, underline1, 2, 3] to [0, 0] (where the chosen subarray is underlined). Therefore, the answer is 1.\n\nIn the second test case, a already contains only 0s, so no operation is needed.\n\nIn the third test case, Evirir can change a as follows: [1, underline0, 1, 0, 1] → [underline1, 2] → [0]. Here, mex(0, 1, 0, 1) = 2 and mex(1, 2) = 0.\n\nIn the fourth test case, Evirir can choose b to be the entire array a, changing a from [underline3, 1, 4, 1, 5] to [0].\n\nInput:\n```\n1040 1 2 360 0 0 0 0 051 0 1 0 153 1 4 1 543 2 1 079 100 0 89 12 2 340 3 9 070 7 0 2 0 7 01020 1\n```\n\nOutput:\n```\n1\n0\n2\n1\n1\n2\n1\n2\n0\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 200). The description of the test cases follows.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 50), the length of a.\n\nThe second line of each test case contains n space-separated integers, a_1, a_2, …, a_n (0 ≤ a_i ≤ 100).\n\nIt is guaranteed that the sum of n over all test cases does not exceed 500.",
+    "output": "For each test case, output a single integer on a line, the minimum number of operations needed to make a contain only zeros.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "implementation",
+        "*800"
+    ],
+    "rating": 800
+}

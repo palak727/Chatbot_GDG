@@ -1,0 +1,17 @@
+{
+    "id": "1766D",
+    "contest_id": 1766,
+    "problem_letter": "D",
+    "title": "D. Lucky Chains",
+    "statement": "Let's name a pair of positive integers (x, y) lucky if the greatest common divisor of them is equal to 1 (gcd(x, y) = 1).\n\nLet's define a chain induced by (x, y) as a sequence of pairs (x, y), (x + 1, y + 1), (x + 2, y + 2), …, (x + k, y + k) for some integer k ≥ 0. The length of the chain is the number of pairs it consists of, or (k + 1).\n\nLet's name such chain lucky if all pairs in the chain are lucky.\n\nYou are given n pairs (x_i, y_i). Calculate for each pair the length of the longest lucky chain induced by this pair. Note that if (x_i, y_i) is not lucky itself, the chain will have the length 0.\n\nThe first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of pairs.\n\nNext n lines contains n pairs — one per line. The i-th line contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ 10^7) — the corresponding pair.\n\nPrint n integers, where the i-th integer is the length of the longest lucky chain induced by (x_i, y_i) or -1 if the chain can be infinitely long.\n\nIn the first test case, gcd(5, 15) = 5 > 1, so it's already not lucky, so the length of the lucky chain is 0.\n\nIn the second test case, gcd(13 + 1, 37 + 1) = gcd(14, 38) = 2. So, the lucky chain consists of the single pair (13, 37).\n\nInput:\n```\n4\n5 15\n13 37\n8 9\n10009 20000\n```\n\nOutput:\n```\n0\n1\n-1\n79\n```",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 10^6) — the number of pairs.\n\nNext n lines contains n pairs — one per line. The i-th line contains two integers x_i and y_i (1 ≤ x_i < y_i ≤ 10^7) — the corresponding pair.",
+    "output": "Print n integers, where the i-th integer is the length of the longest lucky chain induced by (x_i, y_i) or -1 if the chain can be infinitely long.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "number theory",
+        "*1600"
+    ],
+    "rating": 1600
+}

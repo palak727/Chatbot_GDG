@@ -1,0 +1,17 @@
+{
+    "id": "1784A",
+    "contest_id": 1784,
+    "problem_letter": "A",
+    "title": "A. Monsters (easy version)",
+    "statement": "This is the easy version of the problem. In this version, you only need to find the answer once. In this version, hacks are not allowed.\n\nIn a computer game, you are fighting against n monsters. Monster number i has a_i health points, all a_i are integers. A monster is alive while it has at least 1 health point.\n\nYou can cast spells of two types:\n\nDealing 1 damage to a monster reduces its health by 1.\n\nSpells of type 1 can be cast any number of times, while a spell of type 2 can be cast at most once during the game.\n\nWhat is the smallest number of times you need to cast spells of type 1 to kill all monsters?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — monsters' health points.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.\n\nFor each test case, print a single integer — the smallest number of times you need to cast spells of type 1 to kill all monsters.\n\nIn the first test case, the initial health points of the monsters are [3, 1, 2]. It is enough to cast a spell of type 2:\n\nSince it is possible to use no spells of type 1 at all, the answer is 0.\n\nIn the second test case, the initial health points of the monsters are [4, 1, 5, 4, 1, 1]. Here is one of the optimal action sequences:\n\nSpells of type 1 are cast 4 times in total. It can be shown that this is the smallest possible number.\n\nInput:\n```\n233 1 264 1 5 4 1 1\n```\n\nOutput:\n```\n0\n4\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 10^4). The description of the test cases follows.\n\nEach test case consists of two lines. The first line contains a single integer n (1 ≤ n ≤ 2·10^5) — the number of monsters.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ n) — monsters' health points.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 2·10^5.",
+    "output": "For each test case, print a single integer — the smallest number of times you need to cast spells of type 1 to kill all monsters.",
+    "time_limit": "4 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "greedy",
+        "*1000"
+    ],
+    "rating": 1000
+}
