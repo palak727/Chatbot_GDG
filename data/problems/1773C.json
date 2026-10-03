@@ -1,0 +1,15 @@
+{
+    "id": "1773C",
+    "contest_id": 1773,
+    "problem_letter": "C",
+    "title": "Cactus Meets Torus",
+    "statement": "Alice has a nice cactus graph that she wanted to place on a sheet of paper. Eve threatens to take one\ncycle of this cactus and cut the paper along all edge s on this cycle. This way, the sheet of paper will be\ndivided in two parts, and Alice will be upset. Luckily, Barbara just gave Alice a paper torus - a sheet of\npaper where top and bottom edge s are connected as well as left and right edge s are connected with out\ntwisting. On torus, you can sometimes cut paper along all edge s on a cycle, but it would still remain in\none piece. Help Alice to determine if she can place her cactus on a torus such that Eve cannot cut paper\nalong one cycle dividing the torus into two unconnected pieces.\nCactus is a connected undirected graph in which every edge lies on at most one simple cycle. Intuitively,\ncactus is a generalization of a tree where some cycles are allowed. Multiedges (multiple edge s between a\npair of vertices) and loops (edge s that connect a vertex to itself) are not allowed in a cactus.\nWe say that a graph is placed on a sheet of paper if each vertex is a point on this sheet, each edge is a\nsegment between points corresponding to its vertices, and these segments only intersect at their ends. On\ntorus segments can go through sheet edge s any number of times.\nExample\nstandard input standard output picture\n6 1\n8 1 2 3 1 4 5 6 4\n10 2\n9 1 2 3 1 10 4 5 6 4\n5 7 8 9 7 10\n0 0\nYes\nNo\n1\n2\n3\n4\n5\n6\nNote\nOne way to place the cactus from the first case on a torus is shown on the picture.",
+    "input": "The input consists of one or more independent test cases.\nThe first line of each test case contains two integers n and m (1 ≤ n ≤ 105; 0 ≤ m ≤ 105), where n\nis the number of vertices in the graph. Vertices are number ed from 1 to n. The edge s of the graph are\nrepresented by a set of edge-distinct paths, wherem is the number of such paths.\nEach of the followingm lines contains a path in the graph. Apath starts with an integers i (2 ≤ si ≤ 1000)\nfollowed by si integers from 1 to n. These si integers represent vertices of a path. Adjacent vertices in a\npath are distinct. The path can go through the same vertex multiple times, but every edge is traversed\nexactly once in the whole test case. There are no multiedges in the graph (there is at most one edge\nbetween any two vertices).\nThe last line of the input after all test cases contains two zeros. It doesnot define a test case. It just\nmarks the end of the input and does not require any output.\nAll graphs in the input are cacti. The total sum of all values ofn and the total sum of all values ofm\nthroughout the input both do not exceed105.",
+    "output": "Print the answer for each test case in the same order the cases appear in the input. For each test case,\nprint a single line with “Yes” if you can place this cactus on a torus or print “No” otherwise.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3500"
+    ],
+    "rating": 3500
+}

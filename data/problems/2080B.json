@@ -1,0 +1,16 @@
+{
+    "id": "2080B",
+    "contest_id": 2080,
+    "problem_letter": "B",
+    "title": "Best Runner",
+    "statement": "There are n running tracks in the stadium with lengthsa1, a2, . . ., an. There are alsom runners, with\nthe i-th runner starting at the beginning of trackbi.\nAll runners will train forT seconds. The training of a runner proceeds as follows:\nLet the runner currently be at the beginning of tracki. They will run to the end of the current track in\nai seconds. After that, they can either instantly return to the beginning of the current track, or move to\nthe beginning of track(i − 1) (if i > 1), or to the beginning of track(i + 1) (if i < n ). After this, they\ncontinue running from the track they moved to. Once the training duration reachesT seconds, they finish\ntheir training.\nWe define the best runner as the one who runs the most number offull tracks during the training time\n(there may be several such runners). Determine how many tracks the best runner will run.\nNote\nIn the first example, the runner starting on track4 can run the most tracks: they should run track4, then\nmove to track5 and run it3 times.\nIn the second example, the runner starting on track2 can run the second track2 times.\nScoring\nThe tests for this problem consist of six groups. Points for each group are given only if all tests of the\ngroup and all tests of the required groups are passed.\nPage 1 of 2",
+    "input": "The first line contains three integersn, m, and T (1 ≤ m ≤ n ≤ 300 000, 1 ≤ T ≤ 109) - the number of\ntracks, the number of runners, and the duration of the training.\nThe second line containsn integers a1, a2, . . ., an (1 ≤ ai ≤ 109) - the lengths of the tracks.\nThe third line containsm integers b1, b2, . . ., bm (1 ≤ b1 < b 2 < . . . < b m ≤ n) - the track numbers from\nwhich the runners start.",
+    "output": "Output a single integer - the maximum number of full tracks that one of the runners can run during the\ntraining time.\nExamples\nstandard input standard output\n5 3 10\n4 5 2 7 1\n1 2 4\n4\n4 2 11\n4 5 7 10\n2 3\n2",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*1700"
+    ],
+    "rating": 1700
+}

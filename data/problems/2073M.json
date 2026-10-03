@@ -1,0 +1,15 @@
+{
+    "id": "2073M",
+    "contest_id": 2073,
+    "problem_letter": "M",
+    "title": "Can Y ou Reach There?",
+    "statement": "You are given n distinct marked points on a 2D plane, numbered from 1 to n. Marked point i has\ncoordinates (xi, yi).\nIn this problem, you are givenq scenarios, numbered from1 to q. In each scenariok, four integersak, bk,\nck, and dk are given, indicating that you initially stand at(ak, bk) and aim to reach(ck, dk) by repeating\nthe steps described below any number of times.\nIn a single step, you choose two marked pointsP and Q, which may be identical. LetS denote the point\nwhere you are currently standing, and define a pointT by\n−→P T =−→SQ.\nIn other words,T is chosen so that the vector fromP to T has the same direction and length as the vector\nfrom S to Q. You may then move toany point on the segmentST, including the pointT itself, and you\nwill stand at that new point.\nFor each scenario, determine whether the objective can be achieved using the described steps. Note that\nall scenarios are independent of each other.\nExample\nstandard input standard output\n2 4\n10 0\n0 10\n3 4 6 5\n4 0 7 0\n4 0 16 0\n123 456 789 0\nyes\nyes\nyes\nno\nNote\nExplanation for the sample input/output #1\nThere are two marked points(10, 0)and (0, 10). In scenario1, starting from the pointS = (a1, b1) = (3 , 4),\nthe objective is achieved as follows:\n• In the first step, choose(10, 0) as P and (0, 10) as Q. A point T is determined with coordinates\n(7, 6). Move to a point(40/7, 75/14), which lies on the segmentST. (Figure 1 (a))\nPage 1 of 2\n• In the next step, choose (10, 0) as both P and Q. A point T is determined with coordinates\n(100/7,−75/14). From there, you can reach the point(c1, d1) = (6 , 5). (Figure 1 (b))\nIn scenario 2, you start from S = ( a2, b2) = (4 , 0). Choose (10, 0) as both P and Q. A point T is\ndetermined with coordinates (16, 0). The point (c2, d2) = (7 , 0) is on the segmentST, allowing you to\nreach there in a single step. (Figure 1 (c))\nIn scenario 3, the objective is similarly achievable.\nIn scenario 4, it can be shown that reaching the point(c4, d4) = (789 , 0) from (a4, b4) = (123 , 456) is\nimpossible.\n0 2 4 6 8 10\n0\n2\n4\n6\n8\n10\nS = (a1, b1)\nT\n(a)\n0 2 4 6 8 10\n0\n2\n4\n6\n8\n10\nS\n(c1, d1) (b)\n0 2 4 6 8 10 12 14 16\n0\n2\n4\n6\n8\n10\n12\n14\n16\nS T(c2, d2) (c)\nFigure 1: Illustrations of the scenarios in Sample Input #1.",
+    "input": "The first line of input contains two integers n and q (1≤ n≤ 100 000, 1≤ q≤ 100 000). The i-th of the\nnext n lines contains two integersxi and yi (0≤ xi, yi≤ 109). The input guarantees that no two marked\npoints have the same coordinates.\nThe next q lines represent the scenarios. Thek-th of these lines contains four integersak, bk, ck, and dk\n(0≤ ak, bk, ck, dk≤ 109; (ak, bk)⁄= (ck, dk)).",
+    "output": "Output q lines. The k-th line should contain yes if the objective of scenario k is achievable, or no\notherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3300"
+    ],
+    "rating": 3300
+}

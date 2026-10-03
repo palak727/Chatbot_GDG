@@ -1,0 +1,15 @@
+{
+    "id": "2073G",
+    "contest_id": 2073,
+    "problem_letter": "G",
+    "title": "Corrupted File",
+    "statement": "The WannaLaugh malware is a new computer malware that is spreading on the internet. If a computer\nis infected by this malware, then the malware will corrupt all files in the computer. Afile in a computer\ncontains zero or more bits. The malware corrupts a file by performing zero or more operations. In one\noperation, the malware randomly picks two consecutive bits and replaces them with a single bit. The new\nbit is 1 if both of the replaced bits are1, or 0 otherwise.\nFor example, the malware might corrupt a file with bits11011011 as follows:\n1. The malware picks the first and second bits:11011011 → 1011011.\n2. The malware picks the second and third bits:1011011 → 101011.\n3. The malware picks the third and fourth bits:101011 → 10011.\nAlternatively, the malware might first pick the third and fourth bits:11011011 → 1101011.\nAt the start of the day, you have a file containingn bits, denoted by B. You spend the day surfing\nthe internet, including checking on your favorite programming contest website, just like many ICPC\ncontestants would do. At the end of the day, the same file contains m bits, denoted byC. You want to\ndetermine whether this file could have been corrupted by the WannaLaugh malware, or if it must have\nchanged for other reasons.\nExample\nstandard input standard output\n3\n8 5\n11011011\n10011\n3 3\n101\n101\n3 2\n101\n00\nyes\nyes\nno\nPage 1 of 2\nNote\nExplanation for the sample input/output #1\nThe first test case corresponds to the example from the problem description.\nFor the second test case, it is possible that the malware performs zero operations.\nFor the third test case, it is impossible for the malware to corrupt a file with bits101 so that it has bits\n00.",
+    "input": "The first line of input contains one integer t (1≤ t≤ 10 000) representing the number of test cases. After\nthat, t test cases follow. Each of them is presented as follows.\nThe first line of input contains two integers n and m (1≤ m≤ n≤ 100 000). The second line contains a\nstring with n characters, each is either0 or 1, representing the bitsB. The third line contains a string\nwith m characters, each is either0 or 1, representing the bitsC.\nThe sum ofn across all test cases in one input file does not exceed100 000.",
+    "output": "For each test case, output yes if the file with bitsB could have been corrupted by the WannaLaugh\nmalware into bitsC, or no otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2200"
+    ],
+    "rating": 2200
+}

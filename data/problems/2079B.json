@@ -1,0 +1,19 @@
+{
+    "id": "2079B",
+    "contest_id": 2079,
+    "problem_letter": "B",
+    "title": "Arithmetic Exercise",
+    "statement": "Oleg and Dasha participated in a team olympiad, but unfortunately, they were unable to solve any\nproblems. Oleg immediately realized that their team was not training enough. Then their mutual friend\nsuggested an interesting exercise. The exercise was not diﬃcult at all; to solve it, one only needed to know\nthe rules of addition and subtraction of integers.\nYou are given an array a of length n, where all value s are initially equal to zero. You are also givenm\nnumber s x1, x 2, . . . x m. Then, for eachi from 1 to m, you sequentially choose some indexji and make\nthe change aji = xi − aji.\nHelp Oleg and Dasha find out what the maximum sum of the elements of the array a can be after all\nchanges, if the choices are made optimally.\nExample\nstandard input standard output\n4\n1 4\n1 2 3 4\n2 7\n10 3 7 1 4 6 3\n4 10\n103 354 1 227 179 189 142 201 165 140\n5 3\n-10 11 -4\n2\n18\n1085\n17\nNote\nInthefirstsetofinputdata,alloperationsareappliedtothefirstelementofthearray a,whichsequentially\nbecomes 1 − 0 = 1, 2 − 1 = 1, 3 − 1 = 2, 4 − 2 = 2, so the answer is2.\nIn the second set of input data, the following sequence of changes can be performed:\n1. Apply the change to the first elementa1 = 10 − a1 = 10 − 0 = 10, a = [10, 0].\n2. Apply the change to the first elementa1 = 3 − a1 = 3 − 10 = −7, a = [−7, 0].\nPage 1 of 2\n3. Apply the change to the first elementa1 = 7 − a1 = 7 − (−7) = 14, a = [14, 0].\n4. Apply the change to the first elementa1 = 1 − a1 = 1 − 14 = −13, a = [−13, 0].\n5. Apply the change to the second elementa2 = 4 − a2 = 4 − 0 = 4, a = [−13, 4].\n6. Apply the change to the first elementa1 = 6 − a1 = 6 − (−13) = 19, a = [19, 4].\n7. Apply the change to the second elementa2 = 3 − a2 = 3 − 4 = −1, a = [19, −1].\nIn the end, we havea = [19, −1], so the final sum is18.\nIt can be shown that a better answer cannot be achieved.\nScoring\nThe tests for this problem consist of ten groups. Points for each group are awarded only if all tests in\nthe group and all tests in some of the previous groups are passed. Note that passing the tests from the\nstatement is not required for some groups.Oﬄine-evaluationmeans that the results of testing your\nsolution on this group will only be available after the competition ends. The final score for each group is\nthe maximum score obtained for this group of tests across all submitted solutions.",
+    "input": "Each test consists of several test cases. The first line contains a single integert (1 ≤ t ≤ 10 000) - the\nnumber of test cases. The description of the test cases follows.\nThe first line of each test case set contains two integers n and m (1 ≤ n, m ≤ 300 000) - the length of\nthe array a and the number of valuesxi, respectively.\nThe second line of each test case contains m integers x1, x2, . . ., xm (−109 ≤ xi ≤ 109) - the description\nof the value s.\nLet N be the sum ofn across all test cases, and letM be the sum ofm across all test cases.\nIt is guaranteed thatN and M do not exceed300 000.",
+    "output": "For each test case, output a single number on a separate line - the maximum sum of the array a that\ncan be obtained.",
+    "time_limit": "2 seconds",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "data structures",
+        "dp",
+        "greedy",
+        "*2600"
+    ],
+    "rating": 2600
+}

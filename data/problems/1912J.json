@@ -1,0 +1,15 @@
+{
+    "id": "1912J",
+    "contest_id": 1912,
+    "problem_letter": "J",
+    "title": "Joy of Pok´ emon Observation",
+    "statement": "The Pok´ emon Conservation Society protects Pok´ emon and their habitats all around the globe. In recent\nresearch, data abouth habitats was collected.\nEach habitat may be inhabited by several Pok´ emon species. Researchers know how many limbs each\nspecies has. Pok´ emon are swift and extremely good at hiding, so researchers were only able to detect the\ntotal number of limbs in each of the habitats.\nResearchers understand that it might not be possible to find the population of each species, but would\nlike to understand how much uncertainty is left. How many diﬀerent combinations of Pok´ emon would\nhave the observed number of limbs?\nNote\nFor the sake of example we will use LATEX Pok´ emon: ¸ Ohas one limb,∠ has two limbs,∃ has three limbs.\nIn the first example all three habitats have6 limbs.\nIn the first examplethe first habitat has only one Pok´ emon species -∃. So it is likely the young family\ncontaining∃∃.\nIn the second habitat there are two Pok´ emon species:∠ and∃. So it is either∠∠∠ or∃∃.\nThe third habitat may contain any of the three Pok´ emon species: ¸ O,∠ and∃. There are seven possible\ncombinations:∃∃, ∠∠∠, ¸ O∠∃, ¸ O¸ O∠∠, ¸ O¸ O¸ O∃, ¸ O¸ O¸ O¸ O∠, ¸ O¸ O¸ O¸ O¸ O¸ O.\nIn the second examplethe first habitat has three Pok´ emon species, but all of them have only one limb:\n∂, ¸ Oandρ. There are109 limbs and ∑i≤109\ni=0 (i + 1) combinations.\nIn the second habitat no limbs were detected. So there are unfortunately no Pok´ emon left in the area.\nIn the third habitat all Pok´ emon have an even number of limbs, so it is not possible to have 17 limbs.",
+    "input": "The first line contains a single integer h (1≤ h≤ 1 024) - the number of habitats. The nexth lines\ncontain the description of each habitat.\nEach line starts with two integers t and s (0≤t≤ 109, 1≤s≤ 3), wheret is the total number of limbs,\nand s is the number of species in the habitat. They are followed bys integers li (1≤ li≤ 16) - the\nnumber of limbs for each species.",
+    "output": "Output the number of possible combinations of Pok´ emon in each habitat. Output should containh lines\nwith a single integer.\nExamples\nstandard input standard output\n3\n6 1 3\n6 2 2 3\n6 3 1 2 3\n1\n2\n7\n4\n1000000000 3 1 1 1\n0 3 2 4 5\n17 2 2 4\n34 3 5 3 2\n500000001500000001\n1\n0\n25",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2300"
+    ],
+    "rating": 2300
+}

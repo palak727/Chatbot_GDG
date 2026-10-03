@@ -1,0 +1,15 @@
+{
+    "id": "2073K",
+    "contest_id": 2073,
+    "problem_letter": "K",
+    "title": "Book Sorting",
+    "statement": "You have n books arranged from left to right on a bookshelf. These books are uniquely labeled from 1\nto n. The i-th book from the left is labeledpi. You want to sort the books so that their labels are in\nascending order from left to right.\nIn one step, you can perform one of the following actions:\n• Choose two adjacent books and swap them.\n• Choose one book and move it to the leftmost position.\n• Choose one book and move it to the rightmost position.\nCompute the minimum number of steps required to sort the books.\nNote\nExplanation for the sample input/output #1\nYou can do the following three steps in order: swap the books labeled2 and 1, swap the books labeled4\nand 3, and move the book labeled6 to the rightmost position.\n6 2 1 4 3 5 → 6 1 2 4 3 5 → 6 1 2 3 4 5 → 1 2 3 4 5 6\nIt can be shown that two or fewer steps are insuﬃcient to sort the books.\nPage 1 of 2\nThis page is intentionally left blank.",
+    "input": "The first line of input contains an integer n (2≤ n≤ 500 000). The second line contains n pairwise\ndistinct integers p1, p2, . . . , pn (1≤ pi≤ n).",
+    "output": "Output the minimum number of steps to sort the books in ascending order from left to right by their\nlabels.\nExamples\nstandard input standard output\n6\n6 2 1 4 3 5\n3\n9\n9 2 4 3 7 5 1 8 6\n5",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2900"
+    ],
+    "rating": 2900
+}

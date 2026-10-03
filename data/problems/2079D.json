@@ -1,0 +1,17 @@
+{
+    "id": "2079D",
+    "contest_id": 2079,
+    "problem_letter": "D",
+    "title": "Cute Subsequences",
+    "statement": "You are given an array ofn positive integers a1, a2, . . ., an, as well as a positive integerk. You need to\ndivide the array intok non-empty subsequences such that each element of the array belongs to exactly\none subsequence. A subsequence is a sequence that can be obtained from another sequence by deleting\nsome elements without changing the order of the remaining elements.\nLet the i-th subsequence contain elements with indicesj1 < . . . < j l. The value of this subsequence is\ndefined as the maximum value ofajm + m for all m from 1 to l.\nThe cost of dividing the array intok subsequences is the sum of thevalues of these subsequences.\nFind the maximumcost of the division.\nExample\nstandard input standard output\n5 3\n3 7 10 1 2\n24\nNote\nIn the sample test, the array can be divided into [3, 10], [7], [1, 2]. Then the answer will be\n(10 + 2) + (7 + 1) + (2 + 2) = 12 + 8 + 4 = 24 .\nScoring\nThe tests for this problem consist of six groups. Points for each group are given only if all tests of the\ngroup and all tests of the required groups are passed.",
+    "input": "The first line contains two positive integersn and k (1 ≤ k ≤ n ≤ 500 000) - the size of the array and\nthe number of subsequences to divide it into.\nThe second line containsn positive integers a1, a2, . . ., an (1 ≤ ai ≤ 109) - the elements of the array.",
+    "output": "Output the maximumcost of dividing the given array intok non-empty subsequences.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "sortings",
+        "*1800"
+    ],
+    "rating": 1800
+}

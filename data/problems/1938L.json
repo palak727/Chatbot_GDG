@@ -1,0 +1,15 @@
+{
+    "id": "1938L",
+    "contest_id": 1938,
+    "problem_letter": "L",
+    "title": "XOR Operations",
+    "statement": "You are given n integers a1, a2, . . . , an. You have a sequence of n integers B = ( b1, b2, . . . , bn) which\ninitially are all zeroes.\nIn one operation, you choose two diﬀerent indicesi and j, then simultaneously\n• replace bi with bi ⊕ ai ⊕ aj, and\n• replace bj with bj ⊕ ai ⊕ aj.\nNote that ⊕ represents the bitwise XOR operation, which returns an integer whose binary representation\nhas a 1 in each bit position for which the corresponding bits of either but not both operands are1. For\nexample, 3 ⊕ 10 = 9 because (0011)2 ⊕ (1010)2 = (1001) 2.\nYou want to compute the number of diﬀerent possible sequencesB you can obtain after performing zero\nor more operations. Since this number might be huge, calculate this number modulo 998 244 353.\nTwo sequences of lengthn are considered diﬀerent if and only if there exists an indexi (1 ≤ i ≤ n) such\nthat the i-th element of one sequence diﬀers from thei-th element of the other sequence.\nNote\nExplanation for the sample input/output #1\nStarting from B = (0, 0, 0), we can obtain the following two sequencesB:\n• Perform the operation with i = 1 and j = 2. We will haveB = (3, 3, 0).\n• After that, perform the operation with i = 2 and j = 3. We will haveB = (3, 0, 3).\nStarting from B = (0, 0, 0), we can also obtain the following sequenceB:\n• Perform the operation with i = 2 and j = 3. We will haveB = (0, 3, 3).\nIt can be shown that(0, 0, 0), (3, 3, 0), (3, 0, 3), and (0, 3, 3) are the only possible sequencesB you can\nobtain. Therefore, the answer is4.\nPage 1 of 2\nThis page is intentionally left blank.",
+    "input": "The first line of input contains one integer n (2 ≤ n ≤ 200 000). The second line contains n integers\na1, a2, . . . , an (0 ≤ ai < 230 for all i).",
+    "output": "Output an integer representing the number of diﬀerent possible sequences Byou can obtain after\nperforming zero or more operations modulo 998 244 353.\nExamples\nstandard input standard output\n3\n1 2 1\n4\n4\n852415 852415 852415 852415\n1",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2800"
+    ],
+    "rating": 2800
+}

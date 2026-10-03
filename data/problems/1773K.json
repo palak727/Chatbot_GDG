@@ -1,0 +1,16 @@
+{
+    "id": "1773K",
+    "contest_id": 1773,
+    "problem_letter": "K",
+    "title": "King’s Puzzle",
+    "statement": "King Kendrick is a sovereign ruler of Kotlin Kingdom. He is getting ready for the next session of the\ngovernment. Kotlin Kingdom consists ofn cities. These cities need to be connected by several bidirectional\nroads. Since ministries are responsible for aspects of safety and comfort of the kingdom’s residents, some\nof them have made the following requirements:\n• “All the cities should be connected by new roads, i.e. there should be a path from any city to any\nother city via the roads” - Ministry of Transport and Digital Infrastructure.\n• “There may not be a loop road - a road that connects a city with itself” - Ministry of Environment.\n• “There should be at most one road between a pair of cities” - Treasury Department.\n• “Ifai is the number of roads connected toi-th city, then the set{a1, . . . , an} should consist of exactly\nk distinct number s” - Ministry of ICPC.\nKing Kendrick has issues with the requirements from the Ministry of ICPC. He asks you to help him.\nFind any set of roads that suits all the requirements above or say that it is impossible.",
+    "input": "The only line of the input consists of two integers n and k (1≤ k≤ n≤ 500).",
+    "output": "If it is impossible to satisfy all the requirements, output “NO” in the only line.\nOtherwise, output “YES” in the first line.\nOutput m - the number of roads (0≤ m≤ n·(n−1)\n2 ) in the second line.\nNext m lines should contain pairs of integers a and b - the cities to connect by a road (1≤ a, b≤ n).\nExamples\nstandard input standard output notes\n5 2 YES\n4\n1 2\n1 3\n1 4\n1 5\nCity 1 has four roads\nconnected to it while other\ncities have exactly one.\n4 1 YES\n4\n1 2\n2 3\n3 4\n4 1\nEvery city has exactly two\nroads connected to it.",
+    "time_limit": "3 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*1900"
+    ],
+    "rating": 1900
+}

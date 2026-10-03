@@ -1,0 +1,16 @@
+{
+    "id": "1912G",
+    "contest_id": 1912,
+    "problem_letter": "G",
+    "title": "Great City Saint Petersburg",
+    "statement": "Saint Petersburg is the most beautiful city in the world unless it is raining. For the sake of this problem,\nwe will assume it is raining every single day.\nOne of the streets in Saint Petersburg has an unusual shape - it is a narrow stripe of n sections 1 meter\nlong each, where section i is at the height ai meters from the ground. The stripe is 1 meter deep and\nbounded on the front and on the back by incredibly high buildings. Because of this, when it is raining,\na certain amount of rain will accumulate, unable to flow out of the street from either its leftmost or\nrightmost end. Given the heights a1, a2, . . . , an, you need to determine the amount of rain (in cubic\nmeters) which will accumulate on the street.\nMoreover, your colleagues from the metropolitan construction company will be visiting for q days and on\nday i they will be laying asphalt on all sections from li to ri inclusive, thus increasing the height of each\nsection li, li + 1, . . . , ri by 1 meter. You need to determine the total amount of water which accumulates\non the street before the construction works, and also after every single day of the construction works.\nNote\nThe picture illustrates the amount of water accumulating on the street in the first example.",
+    "input": "The first line contains the number of blocks n and the number of construction events q (1 ≤ n, q ≤ 2 · 105).\nThe second line contains n integers a1, a2, . . . , an (1 ≤ ai ≤ 109) - the height of each section before all\nthe events. Each of the following q lines contains a pair of integers li, ri (1 ≤ li ≤ ri ≤ n), denoting the\nconstruction work from li to ri inclusive.",
+    "output": "Print q + 1 integers - the amount of water on the street before all updates, and also after every update.\nExamples\nstandard input standard output\n5 4\n3 2 1 2 3\n1 5\n2 4\n1 2\n5 5\n4\n4\n1\n1\n3\n7 3\n1 1000000000 1 1 1 1000000000 1\n1 3\n4 5\n5 7\n2999999997\n2999999996\n2999999994\n2999999996",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "data structures",
+        "*2400"
+    ],
+    "rating": 2400
+}

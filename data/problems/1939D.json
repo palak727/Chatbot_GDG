@@ -1,0 +1,17 @@
+{
+    "id": "1939D",
+    "contest_id": 1939,
+    "problem_letter": "D",
+    "title": "Big Persimmon",
+    "statement": "Alice and Bob bought a big persimmon, cut it inton pieces with size sw1, . . . , wn, and immediately started\neating it. The kids will eat the pieces simultaneously, and for each of them, the eating process is as follows:\nAs soon as someone finishes eating their previous piece (and at the beginning of the meal), they choose\nthe next piece and start eating it. If a piece of size w is taken, it will take exactly w seconds to eat it, and\nthen it will be time to choose a new piece. If both finish eating their previous piece at the same time (or\nif the eating just started), Alice will choose the first piece, but they will start eating at the same time.\nChoosing a new piece does not take time.\nSince both Alice and Bob are perfectionists, when they choose a piece, they will take either the smallest\n(with the smallestwi) or the largest (with the largestwi) from all the remaining pieces.\nThe eating process ends when the last person finishes eating and there are no more pieces left.\nBoth Alice and Bob are interested in eating as much as possible. Find the total size of the pieces that\nAlice will eat and the total size of the pieces that Bob will eat, if they both choose the pieces optimally.\nNote\nIn the first example, Alice should first take a piece of size 1. Immediately after that, Bob should also take\na piece of size 1. After a second, Alice will take a piece of size 3, and then Bob will take a piece of size 6.\n3 seconds later, Alice will take a piece of size 4. 3 seconds later, Bob will finish eating, and a second later\nthe process will finish. At this point, Alice will eat pieces of size s1 + 3 + 4 = 8, and Bob:1 + 6 = 7.\nIn the third example, Alice should take a piece of size 1, and Bob should take a piece of size 7. After a\nsecond, Alice will take a piece of size 9, and 6 seconds later, Bob will take a piece of size 7.\nScoring\nThe tests for this problem consist of six groups. Points for each group are awarded only when all the tests\nPage 1 of 2\nof the group and some of the tests of the previous groups are passed. Note that passing the example tests\nis not required for some groups.Oﬄine-evaluationmeans that the results of test ing your solution on\nthis group will only be available after the competition.",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 2000) - the number of persimmon pieces.\nThe second line contains n integers w1, w 2, . . . , w n (1 ≤ wi ≤ 20 000, wi ≤ wi+1) - the size s of the\npersimmon pieces.\nLet Wdenote the sum of the size s of all the pieces. It is guaranteed thatW ≤ 20 000.",
+    "output": "In a single line, output two number s - the total size of the pieces that Alice will eat and the total size of\nthe pieces that Bob will eat, if they both choose the pieces optimally.\nExamples\nstandard input standard output\n5\n1 1 3 4 6\n8 7\n4\n1 1 2 2\n3 3\n4\n1 7 7 9\n10 14",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*special",
+        "dp",
+        "games"
+    ],
+    "rating": null
+}

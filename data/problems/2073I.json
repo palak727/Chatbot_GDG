@@ -1,0 +1,15 @@
+{
+    "id": "2073I",
+    "contest_id": 2073,
+    "problem_letter": "I",
+    "title": "Squares on Grid Lines",
+    "statement": "You have a square of side lengthn on a 2D plane, partitioned into a grid of 1 × 1 square cells, totalingn2\ncells.\nYour task is to answerq queries, number ed from 1 to q, described below. In queryi, you are given a real\nnumber si, and you must count the number of ways to place four points on the plane such that\n• each point lies on the boundary of a cell (not necessarily the same), and\n• the four points form the vertices of a square with areasi.\nHere, the edge s of the square formed by these points donot need to be parallel to the edge s of the cells.\nIf there are infinitely many valid placements, you must report that as your answer.\nTwo placements are considered diﬀerent if there exists a point that appears in one placement but not in\nthe other.\nNote\nExplanation for the sample input/output #1\nFor queries1 and 2, the valid placements are illustrated in Figure 1. The top two placements correspond\nto query 1, and the bottom four correspond to query2. In each placement, the shaded region represents\na square formed by the points.\nPage 1 of 2\nFigure 1: Illustrations of Sample Input #1.",
+    "input": "The first line of input contains two integers n and q (1 ≤ n ≤ 2000, 1 ≤ q ≤ 100 000). The i-th of the\nnext q lines contains a real numbers i (0.01 ≤ si ≤ n2), given with exactly two digits after the decimal\npoint.",
+    "output": "Output q lines. The i-th line should contain the number of valid placements for queryi. If infinitely many\nexist, output -1 instead.\nExamples\nstandard input standard output\n3 4\n6.90\n0.26\n2.65\n1.00\n2\n4\n10\n-1\n1 5\n0.49\n0.50\n0.51\n0.99\n1.00\n0\n1\n2\n2\n1",
+    "time_limit": "4 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3100"
+    ],
+    "rating": 3100
+}

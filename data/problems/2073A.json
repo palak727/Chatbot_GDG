@@ -1,0 +1,15 @@
+{
+    "id": "2073A",
+    "contest_id": 2073,
+    "problem_letter": "A",
+    "title": "Control Towers",
+    "statement": "You are an architect tasked with designing the new airport in your city. After you have completed your\ndesign, you just realize you forgot to allocate spaces for the control towers.\nThe layout of the new airport can be represented by a 2D grid ofr rows and c columns, with the rows\nnumber ed from 1 to r (top to bottom) and the columns number ed from 1 to c (left to right). The cell in\nrow i and column j is denoted by(i, j). Each cell can either be occupied or empty.\nYou need to place four control towers (number ed from 1 to 4), each in a diﬀerent empty cell. To allow\neasier communication between diﬀerent towers, for allk = 1, 2, 3, you want towerk and towerk + 1 to be\nplaced either in the same row or in the same column.\nYou want to calculate the number of ways to place the control towers to satisfy the requirements above.\nTwo ways are considered diﬀerent if there existsk where control towerk is placed in diﬀerent cells.\nNote\nExplanation for the sample input/output #1\nFigure 1 illustrates all10 possible ways to place the control towers, where the cells number ed1, 2, 3, and\n4 represent control towers1, 2, 3, and 4 respectively.\nExplanation for the sample input/output #2\nIt is impossible for any control tower in row 2 to be in the same column as any control tower in row 3.\nSince there are not enough empty cells to place all four control towers in the same row, there is no way\nto place the control towers to satisfy the requirements above.\nPage 1 of 2\n1 # 2 #\n# 4 3 .\n. # # #\n1 # 2 #\n# . 3 4\n. # # #\n. # 1 #\n# 3 2 4\n. # # #\n. # 1 #\n# 4 2 3\n. # # #\n4 # 3 #\n# 1 2 .\n. # # #\n. # 4 #\n# 1 3 2\n. # # #\n3 # 2 #\n# . 1 .\n4 # # #\n. # 4 #\n# 2 3 1\n. # # #\n4 # 3 #\n# . 2 1\n. # # #\n2 # 3 #\n# . 4 .\n1 # # #\nFigure 1: All 10 possible ways to place the control towers.\nExplanation for the sample input/output #3\nAll 10 × 9 × 8 × 7 = 5040 ways of control tower positions satisfy the requirements above.\nExplanation for the sample input/output #4\nThere is no empty cell to place any control tower.",
+    "input": "The first line of input contains two integers r and c (1 ≤ r, c ≤ 2000). Each of the nextr lines contains\na string ofc characters. The j-th character in thei-th line is# if cell (i, j) is occupied; otherwise, it is.\n(dot).",
+    "output": "Output the number of ways to place the control towers to satisfy the requirements above.\nExamples\nstandard input standard output\n3 4\n.#.#\n#...\n.###\n10\n4 6\n######\n#.#.#.\n.#.#.#\n######\n0\n1 10\n..........\n5040\n1 10\n##########\n0",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*1900"
+    ],
+    "rating": 1900
+}

@@ -1,0 +1,17 @@
+{
+    "id": "1939C",
+    "contest_id": 1939,
+    "problem_letter": "C",
+    "title": "More Gifts",
+    "statement": "The organizers of the Closed Olympiad in Informatics decided to prepare gifts for the participants of the\nOlympiad. Atotal ofk same gift boxes were prepared, each box contains a stack ofn gifts. At the top of\neach stack there is a gift of typea1, below it there is a gift of typea2, and so on, at the bottom of the\nstack there is a gift of typean.\nThe distribution of gifts will be as follows: at the beginning, gifts from the first stack will be given out\nfrom top to bottom. After there are no more gifts left in the first stack, gifts from the second stack will\nbe given from top to bottom, and so on, in the end gifts from thek-th stack will be given.\nAparticipant can receive several gifts at once, so at the beginning gifts will be given to the first participant,\nthen to the second, and so on. It is known that if a participant receives more thant diﬀerent types of\ngifts, the participant will be too happy and will write the Olympiad poorly. In order for the participants\nto write the Olympiad well, it was decided to give each participant no more thant diﬀerent types of gifts\n(note that a participant may receive several gifts of the same type).\nThe organizers of the Closed Olympiad in Informatics decided to make the Olympiad exclusive and invite\nas few participants as possible. Help the organizers find out the minimum number of participants they\ncan invite so that all the gifts are distributed to the participants, and each participant receives no more\nthan t diﬀerent types of gifts.\nNote\nIn the first example, the stack contains the following types of gifts (in order from top to bottom). Diﬀerent\ncolors denote diﬀerent positions in the stack.\nPage 1 of 2\nThere are a total of 4 stacks of gifts, so the gifts will be given out in the following order:\nSince t = 1, each participant in this case can only receive gifts of one type:\nIn the second example, the order of gift distribution and the final sets of gifts are following:\nIn the third example, the order of gift distribution is as follows:\nIn this case, one of the possible optimal distribution of gifts into sets is the following:\nScoring\nThe tests for this problem consist of six groups. Points for each group are given only if all tests of the\ngroup and all tests of the required groups are passed. Note that passing the example tests is not required\nfor some groups.",
+    "input": "The first line of the input contains three integers n, k, and t (1 ≤ n ≤ 300 000, 1 ≤ k, t ≤ 109) - the\nnumber of gifts in one stack, the number of stacks of gifts, and the maximum number of diﬀerent types\nof gifts that can be received by one participant.\nThe second line contains n integers a1, a 2, . . . , a n (1 ≤ ai ≤ 109) - the types of gifts, in the order from\ntop to bottom of the stack.",
+    "output": "Output a single number - the minimum number of participants, such that all the gifts will be distributed\nto them, and each participant receives no more thant diﬀerent types of gifts.\nExamples\nstandard input standard output\n2 4 1\n1 2\n8\n4 3 1\n1 1 2 1\n7\n7 2 3\n1 2 3 4 5 6 7\n5",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "dfs and similar",
+        "two pointers"
+    ],
+    "rating": null
+}

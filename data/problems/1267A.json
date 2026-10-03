@@ -1,0 +1,15 @@
+{
+    "id": "1267A",
+    "contest_id": 1267,
+    "problem_letter": "A",
+    "title": ",",
+    "statement": "Abigail is an apprentice studying to become a blacksmith. She wants to plan her learning trajectory and\nmake as many swords as possible on her way to becoming a famous expert.\nThere are n masters willing to host her as their apprentice. Thei-th master will start working at the\nminute ai and end working at the minutebi, working for a total ofbi − ai minutes. During this interval\nof time, Abigail can work at this master’s forge. She can enter and leave the forge several times and\nproduce one or several swords upon each arrival. However, in order to produce a sword under supervision\nof the i-th master she has to work there forti minutes in a row. She can’t leave the sword unfinished and\ncontinue working on it upon her next arrival to this forge.\nHelp Abigail make an optimal plan and calculate the maximum number of swords she can produce under\nthe supervision ofn masters.",
+    "input": "The first line contains integer n (1 ≤ n ≤ 200 000) - the number of masters.\nEach of the nextn lines contains three integers ai, bi, ti (1 ≤ ai < a i + ti ≤ bi ≤ 1018) - the start and the\nend time of master’s work, and the time needed to make one sword in their forge.",
+    "output": "Output the maximum number of swords Abigail can produce using the optimal learning trajectory.\nExamples\nstandard input standard output Illustration\n2\n5 7 1\n1 9 2\n5\n1\n2\n0 1 2 3 4 5 6 7 8 9 10\n3\n1 10 4\n6 12 3\n9 13 2\n4\n1\n2\n3\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14\n3\n1 13 4\n6 11 2\n9 13 3\n4\n1\n2\n3\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*2400"
+    ],
+    "rating": 2400
+}

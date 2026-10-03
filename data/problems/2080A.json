@@ -1,0 +1,18 @@
+{
+    "id": "2080A",
+    "contest_id": 2080,
+    "problem_letter": "A",
+    "title": "Strong Connectivity Strikes Back",
+    "statement": "Vertices u and v of a directed graph are called strongly connected if there exists a path fromu to v and\na path fromv to u in the graph. Note that ifu and v are strongly connected, andv and w are strongly\nconnected, thenu and w are also strongly connected. Therefore, the vertices of the graph are divided into\nsets-strongly connected components. A vertex belonging to a strongly connected component is strongly\nconnected to all vertices in the component (including itself) and is not strongly connected to any vertices\noutside the component.\nDuring a graph class, Alice drew a directed graph withn vertices on the board and highlighted its strongly\nconnected components. During the break, Bob decided to play a trick on Alice and erase the directions\non some edges of the graph. He wants Alice to be able to uniquely restore the erased directions based on\nthe remaining edges and the partition into strongly connected components after the break.\nHelp Bob by determining the maximum number of edges in the graph whose directions he can erase, as\nwell as the number of ways he can do this.\nMore formally, find the maximum size of a subset of edgesA that has the following property: if the\ndirections of the edges in the setA are erased, then based on the information about the old strongly\nconnected components and the directions of the edges not in the setA, the directions of the edges in the\nset A can be uniquely restored in such a way that the strongly connected components remain unchanged.\nSince the number of such maximum subsets can be very large, output it modulo109 + 7.\nExample\nstandard input standard output\n5 6 0\n1 2\n1 5\n2 3\n3 4\n3 5\n4 2\n3\n3\nNote\nThe graph from the example with strongly connected components highlighted:\nPage 1 of 2\n1 2\n3\n4\n5\nThe directions on the dashed edges can be removed. Indeed, the edge(1, 5) cannot be oriented in the\nopposite direction, because otherwise, vertices1, 2, 3, and5 would belong to the same strongly connected\ncomponent. The edges (3, 4) and (4, 2) cannot be oriented diﬀerently either, because then vertices2, 3,\nand 4 would not belong to the same strongly connected component.\nNow, let’s consider an incorrect way of selecting a subset of edges:\n1 2\n3\n4\n5\nHere,thedirectionsonthebolddashededgescannotberemoved.Forexample,ifwereversetheorientation\nof edges(1, 2)and (1, 5), we get a graph with the same decomposition into strongly connected components.\nIt can be shown that the directions on exactly4 edges cannot be removed, so the answer is3.\nScoring\nThe tests for this problem consist of seven groups. The rules for scoring the subgroups are described\nbelow.",
+    "input": "The first line contains three integersn, m, and g (2≤ n≤ 2000, 1≤ m≤ 2000, 0≤ g≤ 7)-the number\nof vertices and edges in the graph, respectively, as well as the test group number.\nThe next m lines contain two integersui and vi (1≤ ui, vi≤ n, ui⁄= vi)-the numbers of the vertices\nthat are the start and end of thei-th edge.\nIt is guaranteed that for any1≤ i, j≤ n (ui, vi)⁄= (uj, vj) and (ui, vi)⁄= (vj, uj), meaning that any two\nvertices are connected by at most one edge, regardless of direction.",
+    "output": "In the first line, output a single number-the size of the maximum subset of edges whose directions can\nbe erased.\nIn the second line, output a single number-the number of such subsets modulo109 + 7.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "graphs",
+        "*3200"
+    ],
+    "rating": 3200
+}

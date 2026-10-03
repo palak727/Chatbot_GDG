@@ -1,0 +1,15 @@
+{
+    "id": "1510G",
+    "contest_id": 1510,
+    "problem_letter": "G",
+    "title": "Guide",
+    "statement": "Mister Gooti is the world-famous guide of The Freezing Isles. The topology of the Isles can be represented\nas a tree with cities at the vertices and two-way roads between them. Gooti prepares a new sightseeing\ntour over the Isles. He wants to find the shortest path that starts in the capital and visitsk diﬀerent\ncities, including the capital. Please, help him.\nExample\nstandard input standard output\n3\n6 2\n1 1 2 2 3\n6 6\n1 1 2 2 3\n6 4\n1 2 3 4 5\n1\n1 2\n8\n1 3 6 3 1 2 5 2 4\n3\n1 2 3 4\nNote\nThe following pictures illustrate all the three tests from the example.\n1\n2 3\n4 5 6\n1\n2 3\n4 5 6\n1\n2\n3\n4\n5",
+    "input": "The first line of the input contains the number of tests T (1 ≤ T ≤ 100). Each test consists of two lines.\nThe first line contains the overall number of citiesn in the Isles and the requested number of citiesk for\nthe tour (1 ≤ k ≤ n ≤ 100). The second line contains the description of the tree in a rooted manner:n − 1\nintegers where thei-th integer, pi, is the parent of the cityi + 1 (1 ≤ pi ≤ i). The capital is the city with\nthe number 1 - the root of the tree.",
+    "output": "For each test, the first line of the output shall contain the length of the pathl. The second line shall\ncontain l + 1 integers - the cities that lie on the path in the order of the traversal.",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*2100"
+    ],
+    "rating": 2100
+}

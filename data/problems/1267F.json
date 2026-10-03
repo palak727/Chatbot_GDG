@@ -1,0 +1,16 @@
+{
+    "id": "1267F",
+    "contest_id": 1267,
+    "problem_letter": "F",
+    "title": ",",
+    "statement": "Alice and Bob obtained a map of the secret underground facility. The facility consists ofn security units\nand m chemical labs, connected by bidirectional tunnels. The map of this facility forms atree: there are\nexactly n + m − 1 tunnels, and there are no cycles. Vertices corresponding to security units have number s\nfrom 1 to n, chemical labs have number s from n + 1 to n + m. Each tunnel connects a security unit to a\nchemical lab; there are no tunnels between two security units or two chemical labs.\nIn case Alice or Bob gets captured, they decided to split the map into two pieces. To do that, they\ncalculated thePr¨ ufer codeof the tree. Alice then saved some of the number s between 1 and n to her data\nstorage in the same order as they go in the original code, and Bob saved some of the number s from n + 1\nto n + m to his storage in the same way.\nA Pr¨ ufer code of a tree onk vertices is a sequence ofk − 2 integers from 1 to k, constructed as follows.\nFind the leaf (a vertex with degree one) with the smallest label, remove it from the tree, then print the\nlabel of its only neighbor. Repeat thisk − 3 more times, until only one edge remains. The printed sequence\nof k − 2 vertex labels is the Pr¨ ufer code.\nAlice and Bob safely returned and they are ready to combine their data to restore the original map. They\ncould make a mistake during the backup, meaning no such map exists. Alice and Bob need your help to\nrestore any possible map of the facility consistent with the collected data, so that both Alice’s and Bob’s\nparts are subsequences of the Pr¨ ufer code of the map.\nNote\nThe Pr¨ ufer code of the tree in the first example is(7, 1, 6, 3, 3, 8, 4).",
+    "input": "The first line of the input contains four integers n, m, ka, and kb (2 ≤ n, m ≤ 105; 1 ≤ ka, kb;\nka + kb ≤ n + m − 2). The second line contains ka integers a1, a2, . . . , aka (1 ≤ ai ≤ n) - Alice’s\npart of the map. The third line contains kb integers b1, b2, . . . , bkb (n + 1 ≤ bi ≤ n + m) - Bob’s part of\nthe map.",
+    "output": "If there’s no such map, print “No”.\nOtherwise, print “Yes” on the first line, followed byn + m − 1 lines describing the possible facility map.\nEach line should contain two integers ui and vi - the security unit and the chemical lab connected by\nthe i-th tunnel of the facility.\nExamples\nstandard input standard output Illustration\n4 5 4 2\n1 3 3 4\n7 8\nYes\n1 5\n1 6\n2 7\n6 3\n3 7\n9 4\n3 8\n4 8\n1\n5 6\n2\n7\n3\n8\n4\n9\n4 3 3 1\n3 2 2\n6\nNo\nPage 1 of 2\n,",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "graphs",
+        "*2600"
+    ],
+    "rating": 2600
+}

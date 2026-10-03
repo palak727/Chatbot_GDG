@@ -1,0 +1,16 @@
+{
+    "id": "1090K",
+    "contest_id": 1090,
+    "problem_letter": "K",
+    "title": ",",
+    "statement": "One day n people decided to expand their mind.\nInitially, the mind of the i-th person is two strings si and ti consisting of lowercase English letters. After\nthe expansion, the mind of the person becomes an infinite to the right string wi = si + ti + ti + \u0001 \u0001 \u0001 . That\nis, wi is a concatenation of si and the infinite number of ti. For example, if si = mi and ti = nd, the\ncorresponding wi = mindndndnd : : : .\nTwo persons with expanded mind are interested in each other, if the mind of the first person forms a\nsubsequence of the mind of the second person, and the mind of the second person forms a subsequence of\nthe mind of the first person. The infinite string a is called a subsequence of the infinite string b if there is\nan infinite sequence of indices 1 \u0014 i1 < i 2 < i 3 < : : :, such that for each j it is aj = bij . For example, the\ninfinite string “ baaa. . . ” is a subsequence of an infinite string “ cabababab. . . ”.\nAfter having the mind expanded, people decided to split into groups in such way, that any two persons\nin one group are interested in each other. Your task is to split them into the groups, so that the number\nof groups is minimal possible.\nNote\nIn the first example the expanded minds of the people look as follows:\n\u000f “abababab...”\n\u000f “abababab...”\n\u000f “aabbabbabb...”\n\u000f “xyyyyyy...”\n\u000f “zwwwwww...”\nNeither person 4 nor 5 are interested in any body else. However, the first three people show pairwise\ninterest in each other. Hence it is possible to have the groups f1; 2; 3g, f4g, f5g.",
+    "input": "The first line contains one integer n - the number of people that have decided to get their mind expanded\n(1 \u0014 n \u0014 100 000).\nEach of the following n lines contains two non-empty strings si and ti, consisting of lowercase English\nletters. They represent the minds of every person before the mind expansion.\nIt is guaranteed that the total length of all strings doesn’t exceed 1 000 000.",
+    "output": "The first line must contain one integer - the minimum number of groups.\nThen print each group in the following way: first print the number of people in this group and then the\nindices of them.\nEach of the indices must be printed exactly once. The groups and indices of the people in the group can\nbe printed in any order. If there are multiple ways to split the people, you can print any of them.\nExamples\nstandard input standard output\n5\nab ab\nababab ab\na abb\nx y\nz w\n3\n3 1 2 3\n1 4\n1 5\n3\nkokoko tlin\nkoko kotlin\nko kokotlin\n2\n1 1\n2 2 3\nPage 1 of 2\n,",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "math",
+        "*2000"
+    ],
+    "rating": 2000
+}

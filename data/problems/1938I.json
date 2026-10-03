@@ -1,0 +1,15 @@
+{
+    "id": "1938I",
+    "contest_id": 1938,
+    "problem_letter": "I",
+    "title": "Symmetric Boundary",
+    "statement": "Symmetrical figures are beautiful-and they are the subject of this task. Aregion in a 2D plane isconvex\nif, for every pair of points p and q in the region, the segment connectingp and q is entirely included in\nthe region. Also, a region in a 2D plane ispoint-symmetric if, when you rotate the region by 180 degrees\naround a certain point, the rotated region exactly matches the original region.\nYou are given a convex polygon in a 2D plane with n vertices, number ed from 1 to n in counterclockwise\norder. Vertex i has coordinates (xi, yi). No three vertices are collinear. Determine whether there exists\na convex, point-symmetric region containing all of then vertices on its boundary. If one or more such\nregions exist, compute the minimum area among all of them.\nNote\nExplanation for the sample input/output\nFigure 1 illustrates the vertices in the sample input as black dots. For sample input s #1 and #3, the\nshaded regions represent the regions with the minimum possible area.\n0 2 4 6 8 10\n0\n2\n4\n6\n8\n10\n0 2 4 6 8 10\n0\n2\n4\n6\n8\n10\n0 200 400 600 800 1000\n0\n200\n400\n600\n800\n1000\nРис. 1: Illustrations of the sample input s (from left to right).",
+    "input": "The first line of input contains one integer n (3 ≤ n ≤ 30). Each of the nextn lines contains two integers.\nThe i-th line contains xi and yi (0 ≤ xi, yi ≤ 1000).\nIt is guaranteed that the given polygon is convex, its vertices are given in counterclockwise order, and no\nthree of its vertices are collinear.",
+    "output": "If one or more such regions exist, output the minimum area among all of them. The relative error of the\noutput must be with in10−9.\nIf such a region does not exist, output-1 instead.\nExamples\nstandard input standard output\n4\n0 0\n10 0\n8 9\n4 9\n90.0\n8\n8 10\n2 9\n0 8\n0 2\n2 0\n8 0\n10 2\n10 8\n-1\n6\n231 77\n359 20\n829 124\n998 461\n941 735\n879 825\n486567.9669655848\nPage 1 of 2",
+    "time_limit": "11 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2800"
+    ],
+    "rating": 2800
+}

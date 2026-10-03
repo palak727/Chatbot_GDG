@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import re
-from typing import Any
+from typing import TYPE_CHECKING, Any
+
+if TYPE_CHECKING:
+    from transformers import PreTrainedTokenizerBase
 
 
 def extract_rating(tags: list[str]) -> int | None:
@@ -48,17 +51,122 @@ def format_latex(text: str) -> str:
     return text.strip()
 
 
-def build_embedding_text(problem: dict[str, Any]) -> str:
-    """Build rich text for embedding a problem."""
-    tags = ", ".join(problem.get("tags", []))
-    parts = [
-        problem.get("title", ""),
-        problem.get("statement", ""),
-        problem.get("input", ""),
-        problem.get("output", ""),
-        tags,
-    ]
-    return " ".join(p for p in parts if p)
+def build_embedding_text(
+    problem: dict[str, Any],
+    tokenizer: PreTrainedTokenizerBase,
+    max_tokens: int = 256,
+) -> str:
+    """Build title/tag-first text capped to the embedding model's token budget."""
+
+    title_value = problem.get("title", "")
+    title = str(title_value).strip() if title_value is not None else ""
+
+    raw_tags = problem.get("tags", [])
+    if isinstance(raw_tags, list):
+        tags = ", ".join(
+            str(tag).strip()
+            for tag in raw_tags
+            if isinstance(tag, str) and not tag.startswith("*")
+        )
+    else:
+        tags = ""
+
+    header_parts: list[str] = []
+
+    if title:
+        header_parts.append(f"Title: {title}")
+
+    if tags:
+        header_parts.append(f"Tags: {tags}")
+
+    header = " ".join(header_parts)
+
+    header_ids = tokenizer.encode(
+        header,
+        add_special_tokens=True,
+    )
+
+    if len(header_ids) > max_tokens:
+        raise ValueError(
+            "Problem title and tags exceed the embedding token budget."
+        )
+
+    body_parts: list[str] = []
+
+    for label, key in (
+        ("Statement", "statement"),
+        ("Input", "input"),
+        ("Output", "output"),
+    ):
+        value = problem.get(key, "")
+
+        if value is None:
+            continue
+
+        value_str = str(value).strip()
+
+        if value_str:
+            body_parts.append(f"{label}: {value_str}")
+
+    body = " ".join(body_parts)
+
+    body_budget = max_tokens - len(header_ids)
+
+    if body and body_budget > 0:
+        body_ids = tokenizer.encode(
+            body,
+            add_special_tokens=False,
+            truncation=True,
+            max_length=body_budget,
+        )
+    else:
+        body_ids = []
+
+    body_text: str = str(
+    tokenizer.decode(
+        body_ids,
+        skip_special_tokens=True,
+    )
+)
+
+    text_parts: list[str] = []
+
+    if header:
+        text_parts.append(header)
+
+    if body_text:
+        text_parts.append(body_text)
+
+    text = " ".join(text_parts)
+
+    # Decoding token IDs can slightly change tokenization/spacing.
+    # Make sure the final text still fits the embedding model limit.
+    while len(tokenizer.encode(text, add_special_tokens=True)) > max_tokens:
+        if not body_ids:
+            raise ValueError(
+                "Embedding text exceeds the token budget after decoding."
+            )
+
+        body_ids = body_ids[:-1]
+
+        body_text = str(
+    tokenizer.decode(
+        body_ids,
+        skip_special_tokens=True,
+    )
+)
+
+        text_parts = []
+
+        if header:
+            text_parts.append(header)
+
+        if body_text:
+            text_parts.append(body_text)
+
+        text = " ".join(text_parts)
+
+    return text
 
 
 def render_problem_markdown(problem: dict[str, Any]) -> str:

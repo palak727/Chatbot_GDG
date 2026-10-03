@@ -1,0 +1,15 @@
+{
+    "id": "1090I",
+    "contest_id": 1090,
+    "problem_letter": "I",
+    "title": ",",
+    "statement": "You are given an array of integers a1; : : : ; an. Find two indices i and j such that i < j , ai < a j, and the\nproduct ai \u0001 aj is as small as possible.\nExample\nstandard input standard output\n2\n4 -5 5 11 13 17 0 3\n5 0 100 0 1 0 42 42\n-15\nIMPOSSIBLE\nNote\nLet us consider the generation of the array in the first test.\nFirst, the sequence b is generated.\n\u000f b1 = 0\n\u000f b2 = 3\n\u000f b3 = (11 \u0001 0 + 13 \u0001 3 + 17) mod 2 32 = 56\n\u000f b4 = (11 \u0001 3 + 13 \u0001 56 + 17) mod 2 32 = 778\nThen it is used to generate a.\n\u000f a1 = (0 mod (5 \u0000 (\u00005) + 1)) + (\u00005) = (0 mod 11) \u0000 5 = \u00005\n\u000f a2 = (3 mod 11) \u0000 5 = \u00002\n\u000f a3 = (56 mod 11) \u0000 5 = \u00004\n\u000f a4 = (778 mod 11) \u0000 5 = 3\nThus, a = [\u00005; \u00002; \u00004; 3]. The answer is \u00005 \u0001 3 = \u000015.\nIn the second test the array is [42; 42; 42; 42; 42].",
+    "input": "The input consists of several tests. The first line contains a single integer t - the number of tests\n(1 \u0014 t \u0014 104). Each of the following t lines describes one test.\nEach test is generated using the following algorithm. The test is described by integers n, l, r, x, y, z, b1,\nb2 (2 \u0014 n \u0014 107, \u00002 \u0001 109 \u0014 l \u0014 r \u0014 2 \u0001 109, 0 \u0014 x; y; z; b1; b2 < 232), where n is the length of the array.\nFirst, the sequence bi of length n is generated. Elements b1 and b2 are given. For i > 2 let\nbi = ( bi\u00002x + bi\u00001y + z) mod 2 32. For each i between 1 and n, ai = ( bi mod ( r \u0000 l + 1)) + l (thus,\n\u00002 \u0001 109 \u0014 ai \u0014 2 \u0001 109).\nIt is recommended to use 64-bit integers to generate the sequence to avoid integer overflow.\nThe sum of n in all tests does not exceed 2 \u0001 107.",
+    "output": "For each test, print the smallest possible product ai \u0001 aj in a separate line. If there are no such i and j\nthat i < j and ai < a j, print “ IMPOSSIBLE”.",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*2000"
+    ],
+    "rating": 2000
+}

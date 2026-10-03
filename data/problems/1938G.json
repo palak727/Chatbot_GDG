@@ -1,0 +1,15 @@
+{
+    "id": "1938G",
+    "contest_id": 1938,
+    "problem_letter": "G",
+    "title": "Personality Test",
+    "statement": "There aren students taking a personality test consisting ofm questions. The students are number ed from\n1 to n and the questions are number ed from 1 to m. For each question, each student can either answer\nit with a single uppercase Latin character (A-Z) or not answer it. Let Si be a string of m characters\nrepresenting the answers of studenti, where the j-th character of Si is an uppercase Latin character if\nthey answered questionj, or a period (.) if they did not.\nTwo students are consideredsimilar if there is a set of at leastk questions where both students answered\nall questions in the set, and for each question in the set, they answered it with the same answer.\nFor example, letn = 3, m = 3, k = 2, S1 = BBC, S2 = ..C, and S3 = .BC. In this example, students1\nand 3 are similar since they answered questions2 and 3 with the same answer, while students2 and 3 are\nnot similar since they answered only question3 with the same answer.\nYou want to find a pair of integers(a, b) such that a < b and students a and b are similar, or determine\nif there is no such pair. If there is more than one pair, find the one with thesmallest b. If there is still\nmore than one pair, find the one with thelargest a.\nNote\nExplanation for the sample input/output #1\nThis is the example in the problem statement.\nExplanation for the sample input/output #2\nStudents 1 and 2 are similar.\nExplanation for the sample input/output #3\nThere is no pair of similar students.",
+    "input": "The first line of input contains three integers n, m, and k (2 ≤ n ≤ 5000; 1 ≤ m ≤ 3000; 1 ≤ k ≤ 5). Each\nof the nextn lines contains a string ofm characters. The i-th line contains the stringSi.",
+    "output": "Output one line containing the integers a and b representing the pair of similar students as mentioned in\nthe problem statement, or just the integer-1 if there is no such pair.\nExamples\nstandard input standard output\n3 3 2\nBBC\n..C\n.BC\n1 3\n3 3 1\nBBC\n..C\n.BC\n1 2\n3 3 3\nBBC\n..C\n.BC\n-1\n4 12 2\nGOOD.LUCK.IN\nWINNING.ICPC\nASIA.PACIFIC\nCHAMPIONSHIP\n2 3\nPage 1 of 2",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2300"
+    ],
+    "rating": 2300
+}

@@ -1,0 +1,18 @@
+{
+    "id": "1089H",
+    "contest_id": 1089,
+    "problem_letter": "H",
+    "title": ",",
+    "statement": ",\nProblem A. Harder Satisfiability\nTime limit: 2 seconds\nAfully quantified boolean 2-CNF formula is a formula in the following form: Q1x1 : : : Qnxn F (x1; : : : ; xn).\nEach Qi is one of two quantifiers: a universal quantifier 8 (“for all”), or anexistential quantifier 9 (“exists”);\nand Fis a conjunction (boolean AND) of m clauses s _ t (boolean OR), where s and t are some variables\n(not necessarily diﬀerent) with or with out negation. This formula has no free variables, so it evaluates to\neither true or false. We can evaluate a given fully quantified formula with a simple recursive algorithm:\n1. If there are no quantifiers, return the remaining expression’s value of true or false.\n2. Otherwise, recursively evaluate formulas: Fz = Q2x2 : : : Qnxn F (z; x2; : : : ; xn) for z = 0; 1.\n3. If Q1 = 9 return F0 _ F1; otherwise if Q1 = 8 return F0 ^ F1.\nYou are given some fully quantified boolean 2-CNF formulas. Find out if they are true or not.\nExample\nstandard input standard output\n3\n2 2\nAE\n1 -2\n-1 2\n2 2\nEA\n1 -2\n-1 2\n3 2\nAEA\n1 -2\n-1 -3\nTRUE\nFALSE\nFALSE\nNote\nThe first sample corresponds to a formula 8x1 9x2 (x1 _ x2) ^ (x1 _ x2) = 8x1 9x2 x1 \b x2. For any x1 we\ncan choose x2 = x1 making it true, hence the formula is true.\nThe second sample changes the order of quantifiers. Now the answer is “ FALSE”, because for any value of\nx1 we can choose x2 = x1 and the formula becomes false.\nThe third formula is 8x1 9x2 8x3 (x1 _ x2) ^ (x1 _ x3). If we substitute x1 = 1, x3 = 1 then no assignment\nof x2 can make the second clause true, so the formula is false.",
+    "input": "The first line of the input contains a single integer t (1 \u0014 t \u0014 105) - the number of test cases.\nThe first line of a test case contains two integers n and m (1 \u0014 n; m \u0014 105) - the number of variables and\nthe number of clauses in F . The next line contains a string s with n characters describing the quantifiers.\nIf si = ‘A’ then Qi is a universal quantifier 8, otherwise if si = ‘E’ then si is an existential quantifier 9.\nNext m lines describe clauses in F . Each line contains two integers ui and vi (\u0000n \u0014 ui; vi \u0014 n; ui; vi ̸= 0).\nIf ui \u0015 1 then the first variable in the i-th clause is xui. Otherwise, if ui \u0014 \u0000 1 then the first variable is\nx\u0000ui (negation of x\u0000ui). The second variable in the i-th clause is similarly described by vi.\nThe sum of values of n for all test cases does not exceed 105; the sum of values of m does not exceed 105.",
+    "output": "For each test case output “ TRUE” if the given formula is true or “ FALSE” otherwise.",
+    "time_limit": "2 seconds",
+    "memory_limit": "",
+    "tags": [
+        "2-sat",
+        "dfs and similar",
+        "graphs",
+        "*3400"
+    ],
+    "rating": 3400
+}

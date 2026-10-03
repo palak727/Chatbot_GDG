@@ -1,0 +1,18 @@
+{
+    "id": "1940B",
+    "contest_id": 1940,
+    "problem_letter": "B",
+    "title": "Three Array s",
+    "statement": "You are given three array sD, L, and Rof length n, with elements indexed from 1, as well as the integers\na0 and b0. You construct two array sA and Bof length n + 1 according to the following rules:\n1. A0 = a0, B0 = b0\n2. For alli from 1 to n, perform the following actions:\n(a) Set the elements asAi = Ai−1 + Di and Bi = Bi−1 + Di.\n(b) Choose exactly one of the following operations and apply it:\n• Ai = min(Ai, Li)\n• Bi = min(Bi, Ri)\nYou want to construct array sA and Bto maximize the value ofAn + Bn. Find the maximum value of\nAn + Bn that can be obtained by performing the described actions.\nScoring\nThe tests for this problem consist of six groups. Points for each group are given only if all tests of the\ngroup and all tests of the required groups are passed. Please note that passing the example tests is not\nrequired for some groups.Oﬄine-evaluationmeans that the results of test ing your solution on this\ngroup will only be available after the end of the competition.",
+    "input": "The first line contains a single integer n (1 ≤ n ≤ 100 000) - the length of array sD, L, and R.\nThe second line contains n integers D1, D 2, . . . , Dn (0 ≤ Di ≤ 109) - the array D.\nThe third line contains n integers L1, L 2, . . . , Ln (0 ≤ Li ≤ 109) - the array L.\nThe fourth line contains n integers R1, R 2, . . . , Rn (0 ≤ Ri ≤ 109) - the array R.\nThe fifth line contains two integers a0 and b0 (0 ≤ a0, b0 ≤ 109).",
+    "output": "Output a single integer - the maximum possible value ofAn + Bn among all possible ways to construct\narray s Aand B.",
+    "time_limit": "1 second",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "*special",
+        "constructive algorithms",
+        "implementation",
+        "sortings"
+    ],
+    "rating": null
+}

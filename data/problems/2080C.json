@@ -1,0 +1,16 @@
+{
+    "id": "2080C",
+    "contest_id": 2080,
+    "problem_letter": "C",
+    "title": "Card Flip",
+    "statement": "Petya and Vasya bought a new card game called ”Flip”. The game containsn double-sided cards andm\nsingle-sided cards:\n1. Double-sided card. The front side of the card has the numberai, and the back side has the\nnumber bi.\n2. Single-sided card.The front side of the card has a single numberci.\nAll numbers written on the cards on all sides are distinct. Initially, all cards are placed on the table with\nthe front side up. On his turn, a player can perform exactly one of two actions:\n1. Remove from the table the card with the smallest number among the remaining cards.\n2. If the card with the smallest number is double-sided and facing up, it can be flipped.\nThe player who removes the last card from the table wins. Determine the winner of the game if Petya\ngoes first.\nNote\nIn the first example, initially, the cards 3, 4, and 5 are on the table. To win, Petya discards card 3 on his\nturn, after which Vasya must discard card 4, as it is single-sided. Finally, Petya discards card 5, meaning\nthere will be no cards left for Vasya, and Petya wins.\nIn the second example, initially, the cards 1, 2, and 4 are on the table. Petya must discard the first card,\nas it is single-sided. Then, to win, Vasya flips card 2, so there will be cards 3 and 4 on the table. Petya\nmust discard the flipped card number 3, after which Vasya will discard card 4. Since the cards will run\nout, Vasya will win.\nScoring\nThe tests for this problem consist of nine groups. Points for each group are given only if all tests of the\ngroup and all tests of the required groups are passed. Please note that passing the example tests is not\nrequired for some groups.Oﬄine-evaluationmeans that the results of testing your solution on this\ngroup will only be available after the end of the competition.",
+    "input": "The first line contains two integersn and m (1 ≤ n, m ≤ 500 000) - the number of double-sided and\nsingle-sided cards, respectively.\nThe second line containsn integers a1, a2, . . ., an (1 ≤ ai ≤ 2 · n + m) - the numbers written on the\nfront side of the double-sided cards.\nThe third line containsn integers b1, b2, . . ., bn (1 ≤ bi ≤ 2 · n + m) - the numbers written on the back\nside of the double-sided cards.\nThe fourth line containsm integers c1, c2, . . ., cm (1 ≤ ci ≤ 2 · n + m) - the numbers written on the\nsingle-sided cards.\nIt is guaranteed that each number from1 to 2 · n + m appears exactly once in one of the arraysa, b, or c.",
+    "output": "Print ”First” (without quotes) if Petya wins in this game, and ”Second” (without quotes) if Vasya wins.\nExamples\nstandard input standard output\n2 1\n5 3\n1 2\n4\nFirst\n1 2\n2\n3\n4 1\nSecond\nPage 1 of 2",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "*special",
+        "*2300"
+    ],
+    "rating": 2300
+}

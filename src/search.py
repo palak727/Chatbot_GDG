@@ -67,7 +67,7 @@ def filter_problems(
 
 def semantic_search(
     query: str,
-    index: faiss.IndexFlatL2,
+    index: faiss.IndexFlatIP,
     problems: list[dict],
     model: SentenceTransformer,
     k: int = 5,
@@ -76,6 +76,7 @@ def semantic_search(
     """Perform semantic search using FAISS."""
     query_vec = model.encode([query], convert_to_numpy=True)
     query_vec = np.asarray(query_vec, dtype=np.float32)
+    faiss.normalize_L2(query_vec)
 
     if candidate_indices is not None:
         if not candidate_indices:
@@ -104,7 +105,7 @@ def semantic_search(
 
 def find_similar_problems(
     problem: dict[str, Any],
-    index: faiss.IndexFlatL2,
+    index: faiss.IndexFlatIP,
     problems: list[dict],
     vectors: np.ndarray,
     model: SentenceTransformer,
@@ -154,7 +155,7 @@ class SearchEngine:
     """Loads persisted indices and exposes hybrid search methods."""
 
     def __init__(self) -> None:
-        self.index: faiss.IndexFlatL2 | None = None
+        self.index: faiss.IndexFlatIP | None = None
         self.problems: list[dict] = []
         self.problem_id_to_index: dict[str, int] = {}
         self.vectors: np.ndarray | None = None

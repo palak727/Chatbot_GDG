@@ -1,0 +1,15 @@
+{
+    "id": "2073J",
+    "contest_id": 2073,
+    "problem_letter": "J",
+    "title": "Gathering Sharks",
+    "statement": "You are the leader of a swarm ofn sharks living in a one-dimensional ocean. The sharks are positioned\nfrom left to right, with each adjacent pair separated by a distance of one unit.\nAs the leader, you want all the sharks to gather at a common point to form a single group. Initially, no\ntwo sharks belong to the same group; for each i = 1 , . . . , n, the i-th shark from the left forms its own\ngroup, uniquely number edai, consisting of only itself.\nTo achieve your goal, you can command the sharks to perform the following actionsn − 1 times.\n1. You shout out an integer b that meets both conditions:\n• There exists a group number edb.\n• There exists at least one group number ed strictly smaller thanb.\n2. After ward, lettingc be the largest existing group number strictly smaller thanb, all the sharks in\nthe group number edb simultaneously move to the position of the group number edc, and the two\ngroups merge.\n3. The merged group is number edb, and the group number edc ceases to exist.\nAll sharks move at a constant speed of one unit distance per unit time. Commands must be executed\nsequentially, with no overlap in execution. Once a command is completed, the next one can begin\nimmediately.\nCompute the minimum time required for all the sharks to gather at a common point by commanding the\nsharks n − 1 times optimally.\nNote\nExplanation for the sample input/output #1\nYou can command the sharks to perform the following actions:\n1. You shout out3. The leftmost shark moves to the position of the second-leftmost shark, and they\nform a group number ed3. This takes1 unit of time.\nPage 1 of 2\n2. You shout out4. The second rightmost shark moves to the position of the group number ed3, and\nthey form a group number ed4. This takes1 unit of time.\n3. You shout out4. The sharks in the group number ed4 move to the rightmost position, forming a\ngroup of four sharks. This takes2 units of time.\nThe total time is1 + 1 + 2 = 4. It can be shown that4 units of time is optimal.",
+    "input": "The first line of input contains an integer n (2 ≤ n ≤ 500). The second line contains n pairwise distinct\nintegers a1, a2, . . . , an (1 ≤ ai ≤ n).",
+    "output": "Output the minimum time required for all the sharks to gather at a common point.\nExamples\nstandard input standard output\n4\n3 2 4 1\n4\n9\n1 2 4 5 7 8 3 6 9\n17",
+    "time_limit": "2 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2000"
+    ],
+    "rating": 2000
+}

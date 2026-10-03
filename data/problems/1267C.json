@@ -1,0 +1,16 @@
+{
+    "id": "1267C",
+    "contest_id": 1267,
+    "problem_letter": "C",
+    "title": ",",
+    "statement": "NE(E)RC featured a number of problems in previous years about cactuses - connected undirected graphs\nin which every edge belongs to at most one simple cycle. Intuitively, a cactus is a generalization of a tree\nwhere some cycles are allowed. The traditional cactus that was initially used in NEERC 2005 problem is\ngiven on the second picture in the Examples section.\nYou are given n integers d1; d2; : : : ; dn. Construct any cactus with n vertices such that vertex i has degree di\n(i. e. exactly di incident edge s), or determine that no such cactus exists. Parallel edge s and loops are not\nallowed.\nNote\nBoth in the second and the third example, there exist graphs that satisfy the given conditions but none\nof them are cactuses.",
+    "input": "The first line contains a single integer n (2 \u0014 n \u0014 2 000) - the number of vertices in the cactus.\nThe second line contains n integers d1; d2; : : : ; dn (1 \u0014 di \u0014 n \u0000 1) - the desired vertex degrees.",
+    "output": "If it’s impossible to construct a cactus satisfying the conditions, output a single integer \u00001.\nOtherwise, by tradition, output the constructed cactus as a set of edge-distinct paths.\nIn the first line output an integer m - the number of such paths. Each of the following m lines should\ncontain a path in the graph. Apath should start with an integer ki (ki \u0015 2) followed by ki integers from\n1 to n. These ki integers should represent consecutive vertices of this path. Adjacent vertices in the path\nshould be distinct. The path can visit the same vertex multiple times, but every edge of the cactus should\nbe traversed exactly once in the whole output.\nExamples\nstandard input standard output Illustration\n5\n2 2 3 2 1\n4\n2 1 2\n2 2 3\n2 3 1\n3 3 4 5\n1\n2\n3 4 5\n4\n3 3 2 2\n-1\n6\n1 2 1 1 2 1\n-1\n15\n1 4 3 2 2 2 2 2 4 4 2 2 2 2 2\n3\n9 1 2 3 4 5 6 7 8 3\n7 2 9 10 11 12 13 10\n5 2 14 9 15 10\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10 11\n1213\n14\n15\nPage 1 of 2\n,",
+    "time_limit": "3 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "constructive algorithms",
+        "*3500"
+    ],
+    "rating": 3500
+}

@@ -1,0 +1,15 @@
+{
+    "id": "1938M",
+    "contest_id": 1938,
+    "problem_letter": "M",
+    "title": "Zig-zag",
+    "statement": "Zack’s Zergonomics Zegree has taught him that the optimal way to display items in a store is to stack\nthem into a zig-zag pattern.\nZack needs to display n boxes lined up on the storefront, each one containing an action figure. These\nboxes can be stacked on top of one another, and they are identical and indistinguishable from each other.\nHis goal is to decide the number of stacks, and then stack up the boxes such that each stack is non-empty,\nand the number s of boxes in the stacks form azig-zag sequence.\nFormally, if there ares (s ≥ 1) stacks number ed1 to s from left to right, and stacki contains ai boxes,\nthen the following conditions must be satisfied:\n• ai ≥ 1 for each i from 1 to s,\n• a1 + a2 + . . . + as = n, and\n• at least one of the following is true:\n• a1 < a 2 > a 3 < a 4 > . . ., or\n• a1 > a 2 < a 3 > a 4 < . . .\nFor example, forn = 6, there are12 ways as illustrated by Figure 1.\n1 2 3 4 5 6 7 8 9 10 11 12\nРис. 1: All12 possible ways forn = 6.\nFind the number of diﬀerent ways Zack can stackn boxes modulo 998 244 353.\nTwo ways are considered the same if and only if the number of stacks is the same, and pairs of stacks at\nthe same positions have the same number of boxes.\nExample\nstandard input standard output\n4\n5\n6\n7\n890\n7\n12\n19\n502674609\nNote\nExplanation for the sample input/output #1\nThe value ofn on the second test case is6, and the12 ways are illustrated in the problem description.",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 300 000) representing the number of test cases. After\nthat, t test cases follow. Each of them consists of a single line containing one integer n (1 ≤ n ≤ 300 000).",
+    "output": "For each test case, output an integer representing the number of diﬀerent ways to stackn boxes modulo\n998 244 353.\nPage 1 of 2",
+    "time_limit": "15 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3500"
+    ],
+    "rating": 3500
+}

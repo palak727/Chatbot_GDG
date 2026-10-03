@@ -1,0 +1,15 @@
+{
+    "id": "1938F",
+    "contest_id": 1938,
+    "problem_letter": "F",
+    "title": "Forming Groups",
+    "statement": "There are n students, number ed from 1 to n, who need to form groups for the upcoming hackathon. You\nare student 1, the captain of the students. Studenti has skill level ai.\nStudents 2 to n are standing in a line from left to right in order. You can choose to stand in between any\ntwo students, to the left of student2, or to the right of studentn. You cannot change the order of the\nn − 1 students.\nYou can also choose the number of groupsk (k > 1 and k must be a divisor ofn) to participate in the\nhackathon. The groups will be number ed from 1 to k. After you have chosen your position and the value\nof k, the students will be grouped as follows:\n• The first student from the left will be assigned to group1.\n• The second student from the left will be assigned to group2.\n• . . .\n• The k-th student from the left will be assigned to groupk.\n• The (k + 1)-th student from the left will be assigned to group1.\n• The (k + 2)-th student from the left will be assigned to group2.\n• . . .\n• The n-th student from the left will be assigned to groupk.\nFormally, for each j (1 ≤ j ≤ k) and for each i (0 ≤ i < n/k), the (i × k + j)-th student from the left will\nbe assigned to groupj. It can be shown that each student will be assigned to exactly one group and all\nthe groups have the same number of students.\nThe skill level of a group is the sum of the skill levels of the students inside the group. By choosing where\nyou stand as well as the number of groupsk optimally, you want to minimize the ratioxmax/xmin where\n• xmax is the skill level of the group with the largest skill level, and\n• xmin is the skill level of the group with the smallest skill level.\nExample\nstandard input standard output\n2\n4 1\n2 1 2\n3 10\n4 3\n1 1\n10 3\nNote\nExplanation for the sample input/output #1\nIn the first test case, by standing between students2 and 3 (or between students3 and 4) and choosing\nk = 2, group 1 will have the skill level2 + 1 and group 2 will have the skill level1 + 2, thus the ratio is\n1/1.\nIn the second test case, the only choice for the value ofk is 3.",
+    "input": "The first line of input contains one integer t (1 ≤ t ≤ 100 000) representing the number of test cases. After\nthat, t test cases follow. Each of them is presented as follows.\nThe first line of a test case contains two integers n and a1 (2 ≤ n ≤ 106; 1 ≤ a1 ≤ 1000). The next line\ncontains n − 1 integers a2, a3, . . . , an (1 ≤ ai ≤ 1000 for all i).\nThe sum ofn across all test cases in one input file does not exceed106.",
+    "output": "For each test case, output one line containing two positive integers p and q such that the minimum ratio\nis p/q. The fractionp/q should be irreducible. In other words,p and q should be coprime.\nPage 1 of 2",
+    "time_limit": "5 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*2400"
+    ],
+    "rating": 2400
+}

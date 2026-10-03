@@ -1,0 +1,15 @@
+{
+    "id": "1938D",
+    "contest_id": 1938,
+    "problem_letter": "D",
+    "title": "B´ anh B` o",
+    "statement": "Ever since the Earth got destroyed, Trillian has been missing some Earth delicacies. Today, she had the\nspaceship’s food machine generate for her a Vietnamese delicacy she once enjoyed: bánh bò hấp (steamed\nchewy sponge cake).\nTrillian has an unlimited number ofbánh bò hấp pieces. Each piece of bánh bò hấp is either red or white.\nShe wants to assemble rc pieces of bánh bò hấp into a grid with dimensions r × c, where each cell contains\na single piece of bánh bò hấp . Thus, there are exactly 2 rc distinct ways to assemble bánh bò hấp into an\nr × c grid, since we consider pieces of the same color to be identical.\nWe say an assembly of bánh bò hấp is uniform if all 6 × 7 subgrids have the same number of red pieces.\nConsequently, in a uniform bánh bò hấp assembly, all 6 × 7 subgrids have the same number of white pieces\nas well. Note that an r × c grid has ( r − 5)(c − 6) subgrids of dimensions 6 × 7.\nFor example, Figure 1 illustrates a uniform assembly of 7 × 8 pieces of bánh bò hấp , where shaded cells\nrepresent red bánh bò hấp pieces and unshaded cells represent white bánh bò hấp pieces. Figure 2 shows\nthat all four 6 × 7 subgrids have 6 red pieces and 36 white pieces.\nFigure 1: An example of uniform bánh bò hấp assembly.\nFigure 2: All four 6 × 7 subgrids of the uniform bánh bò hấp assembly illustrated in Figure 1.\nGiven r and c, where r is a multiple of 6 and c is a multiple of 7, Trillian would like to calculate the\nnumber of possible uniform bánh bò hấp assemblies modulo 998 244 353.\nNote\nExplanation for the sample input/output #1\nThe output is 2 42 modulo 998 244 353.",
+    "input": "Input consists of a single line containing two integers r and c (6 ≤ r ≤ 66 666; r is a multiple of 6;\n7 ≤ c ≤ 77 777; c is a multiple of 7).",
+    "output": "Output the number of possible uniform bánh bò hấp assemblies modulo 998 244 353.\nPage 1 of 2\nExamples\nstandard input standard output\n6 7 780136139\n12 14 22889737\n12 42 96403614\n42 14 94940316",
+    "time_limit": "15 seconds",
+    "memory_limit": "1024 megabytes",
+    "tags": [
+        "*3300"
+    ],
+    "rating": 3300
+}

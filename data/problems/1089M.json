@@ -1,0 +1,17 @@
+{
+    "id": "1089M",
+    "contest_id": 1089,
+    "problem_letter": "M",
+    "title": ",",
+    "statement": ",\nProblem A. Minegraphed\nTime limit: 1.5 seconds\nMarika is developing a game called “Minegraphed” that involves moving around a 3D rectangular world.\nEach cell of a parallelepiped game field is either an empty cell or an obstacle cell. You are always standing\ninside an empty cell, located either in the bottommost layer or on top of an obstacle cell. Each move can\nbe made in one of four directions: north, east, south, or west. You make a move according to these rules:\n\u000f If you try to move outside of the parallelepiped, then you can’t make this move.\n\u000f Otherwise, if the cell in front of you is empty, then you move one cell forward and then fall towards\nthe bottom until you reach the bottommost layer or an obstacle cell.\n\u000f Otherwise, if you are in non-topmost layer, the cell in front of you is an obstacle, the cell above you\nand the cell above that obstacle are both empty, then you move (climb up) on top of that obstacle.\n\u000f Otherwise, you can’t make this move.\nMarika prepared a directed graph with n vertices. Now she wants to lay out the field and label n diﬀerent\npossible standing positions with number s from 1 to n, so that it is possible to get from the cell labeled i\nto the cell labeled j by making valid moves if and only if in Marika’s graph it is possible to get from\nvertex i to vertex j along the edge s of the graph. Help Marika design a field satisfying this property.\nExample\nstandard input standard output Illustration\n4\n0 1 0 1\n0 0 1 0\n0 1 0 0\n1 0 0 0\n4 2 3\n..#.\n.4..\n####\n1#.#\n..3.\n#2..\n1\n2 3\n4\n1 2\n4 3\nNote\nNote that you can climb up from cell 1 to cell 4, but you cannot climb up from cell 2 to cell 1 because of\na “ceiling” obstacle.",
+    "input": "The first line contains a single integer n (1 \u0014 n \u0014 9) - the number of vertices. Each of the next n lines\ncontains n integers equal to 0 or 1. The j-th number in the i-th line is 1 if there is an edge from vertex i\nto vertex j and 0 otherwise. The i-th number in the i-th line is always zero.",
+    "output": "Output a layer-by-layer description of a field that has the same reachability as the given graph.\nThe first line should contain three positive integers x, y, and z, the west-east, north-south, and top-bottom\nsize s of the designed parallelepiped. Blocks describing z layers should follow, from the topmost layer to\nthe bottommost layer, separated by single empty lines. Each block should contain y lines of length x,\nconsisting of dots (‘.’), hashes (‘#’), and digits from 1 to n. Ahash denotes an obstacle cell. Adot denotes\nan unlabeled empty cell. Adigit denotes a labeled empty cell. Each digit from 1 to n should appear\nexactly once. Each digit should be located either in the bottommost layer or on top of an obstacle cell. It\nis okay for obstacles to be “hanging in the air” (there is no gravity for them).\nThe volume of the field x \u0002 y \u0002 z should not exceed 106. It is guaranteed that there is a correct field fitting\ninto this limit for any possible graph in the input.",
+    "time_limit": "1.5 seconds",
+    "memory_limit": "",
+    "tags": [
+        "constructive algorithms",
+        "graphs",
+        "*2400"
+    ],
+    "rating": 2400
+}

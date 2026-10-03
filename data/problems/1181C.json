@@ -1,0 +1,19 @@
+{
+    "id": "1181C",
+    "contest_id": 1181,
+    "problem_letter": "C",
+    "title": ",",
+    "statement": "Innokenty works at a flea market and sells some random stuﬀ rare items. Recently he found an old\nrectangular blanket. It turned out that the blanket is split in n \u0001 m colored pieces that form a rectangle\nwith n rows and m columns.\nThe colored pieces attracted Innokenty’s attention so he immediately came up with the following business\nplan. If he cuts out a subrectangle consisting of three colored stripes, he can sell it as a flag of some\ncountry. Innokenty decided that a subrectangle is similar enough to a flag of some country if it consists of\nthree stripes of equal heights placed one above another, where each stripe consists of cells of equal color.\nOf course, the color of the top stripe must be diﬀerent from the color of the middle stripe; and the color\nof the middle stripe must be diﬀerent from the color of the bottom stripe.\nInnokenty has not yet decided what part he will cut out, but he is sure that the flag’s boundaries should\ngo along grid lines. Also, Innokenty won’t rotate the blanket. Please help Innokenty and count the number\nof diﬀerent subrectangles Innokenty can cut out and sell as a flag. Two subrectangles located in diﬀerent\nplaces but forming the same flag are still considered diﬀerent.\nThese subrectangles are flags.\nThese subrectangles are not flags.\nNote\nd d d\nc c b\nb b b\na a a\nd d d\nc c b\nb b b\na a a\nThe selected subrectangles are flags in the first example.",
+    "input": "The first line contains two integers n and m (1 \u0014 n; m \u0014 1 000) - the number of rows and the number of\ncolumns on the blanket.\nEach of the next n lines contains m lowercase English letters from ‘ a’ to ‘z’ and describes a row of the\nblanket. Equal letters correspond to equal colors, diﬀerent letters correspond to diﬀerent colors.",
+    "output": "In the only line print the number of subrectangles which form valid flags.\nPage 1 of 2\n,\nExamples\nstandard input standard output\n4 3\naaa\nbbb\nccb\nddd\n6\n6 1\na\na\nb\nb\nc\nc\n1",
+    "time_limit": "2 seconds",
+    "memory_limit": "512 megabytes",
+    "tags": [
+        "brute force",
+        "combinatorics",
+        "dp",
+        "implementation",
+        "*1900"
+    ],
+    "rating": 1900
+}
