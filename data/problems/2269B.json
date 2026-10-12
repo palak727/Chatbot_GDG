@@ -1,0 +1,17 @@
+{
+    "id": "2269B",
+    "contest_id": 2269,
+    "problem_letter": "B",
+    "title": "B. KiaKio and Squared Numbers",
+    "statement": "Kia and Kio spent the summer at the port of Mehragan, where n lighthouses stand on the cliffs facing the dark sea.\n\nThe lighthouses of Mehragan do not give light. Every night a number is written in fire on each of them, and the sailors read their way from those numbers.\n\nThe law of the lighthouses is this: if a lighthouse shows x tonight, then tomorrow night it shows the sum of the squares of the decimal digits of x.\n\nFor example, a lighthouse showing 23 will show 2^2+3^2=13 tomorrow, then 1^2+3^2=10, and then 1.\n\nOn night 0 of the season, lighthouse i shows the number a_i. From that night on, the law is applied once every night, forever.\n\nKio calls two lighthouses i and j in tune if there exists a night after which, forever, both of them show exactly the same number on every single night.\n\nKia asks: how many pairs (i, j) with i < j are in tune?\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nEach test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 1000) — the number of lighthouses.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number shown by each lighthouse on night 0.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.\n\nFor each test case, print a single integer — the number of pairs (i, j) with i < j such that lighthouses i and j are in tune.\n\nIn the first test case:\n\nLighthouse 1 starts at 7: 7 → 49 → 97 → 130 → 10 → 1, and it stays at 1 forever.\n\nLighthouses 2 and 4 both start at 4, so they show the same number on every night.\n\nLighthouse 3 starts at 16 and lighthouse 5 starts at 2; each of them is at a different point of the cycle Kio found, and never matches anybody.\n\nSo the only pair in tune is (2, 4), and the answer is 1.\n\nIn the second test case, every lighthouse sooner or later reaches 1 and stays there, so all of them are pairwise in tune, which gives 6 pairs.\n\nIn the fourth test case, on night 1, lighthouse 2 shows 2^2+0^2 = 4, and lighthouse 1 shows 2^2 = 4. From night 1 on, they are identical forever. Lighthouse 3 starts at 4, so it is one night ahead of both of them and is in tune with neither.\n\nInput:\n```\n4\n5\n7 4 16 4 2\n4\n1 7 10 100\n3\n4 16 37\n3\n2 20 4\n```\n\nOutput:\n```\n1\n6\n0\n1\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 1000). The description of the test cases follows.\n\nEach test case consists of two lines.\n\nThe first line of each test case contains a single integer n (1 ≤ n ≤ 1000) — the number of lighthouses.\n\nThe second line contains n integers a_1, a_2, …, a_n (1 ≤ a_i ≤ 10^9) — the number shown by each lighthouse on night 0.\n\nIt is guaranteed that the sum of n over all test cases does not exceed 1000.",
+    "output": "For each test case, print a single integer — the number of pairs (i, j) with i < j such that lighthouses i and j are in tune.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "brute force",
+        "implementation",
+        "*1000"
+    ],
+    "rating": 1000
+}

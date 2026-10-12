@@ -1,4 +1,4 @@
-"""Search and retrieval logic for the CP chatbot with BM25 + FAISS Hybrid Search."""
+"""Hybrid search for the CP chatbot: FAISS semantic search + BM25."""
 
 from __future__ import annotations
 
@@ -17,31 +17,42 @@ from src.utils import extract_rating
 
 
 def tokenize(text: str) -> list[str]:
-    """Tokenize text into lowercase alphanumeric words."""
     return re.findall(r"\w+", text.lower())
 
-
 def match_by_id(problems: list[dict], query: str) -> dict | None:
-    """Exact match by problem ID (e.g. 1000A)."""
-    match = re.search(r"(\d+[A-Z]\d*)", query.strip(), re.IGNORECASE)
+    match = re.search(r"(\d+[A-Z]\d*)", query.strip(), re.I)
     if not match:
         return None
     pid = match.group(1).upper()
-    return next((p for p in problems if p.get("id", "").upper() == pid), None)
-
+    return next((p for p in problems if str(p.get("id", "")).upper() == pid), None)
 
 def is_problem_id_query(query: str) -> bool:
-    """Return whether the complete query is a Codeforces problem ID."""
-    return bool(re.fullmatch(r"\d+[A-Z]\d*", query.strip(), re.IGNORECASE))
-
+    return bool(re.fullmatch(r"\d+[A-Z]\d*", query.strip(), re.I))
 
 def match_by_title(problems: list[dict], query: str) -> dict | None:
-    """Substring match on problem title."""
     q = query.lower().strip()
     if len(q) < 3:
         return None
-    return next((p for p in problems if q in p.get("title", "").lower()), None)
+    return next((p for p in problems if q in str(p.get("title", "")).lower()), None)
 
+def _get_rating(problem: dict) -> int | None:
+    rating = problem.get("rating")
+    if rating is not None:
+        try:
+            return int(rating)
+        except (TypeError, ValueError):
+            pass
+
+    tags = problem.get("tags", [])
+    if isinstance(tags, list):
+        return extract_rating([t for t in tags if isinstance(t, str)])
+    return None
+
+def _get_tags(problem: dict) -> set[str]:
+    tags = problem.get("tags", [])
+    if not isinstance(tags, list):
+        return set()
+    return {t.lower() for t in tags if isinstance(t, str) and not t.startswith("*")}
 
 def filter_problems(
     problems: list[dict],
@@ -49,21 +60,27 @@ def filter_problems(
     rating_min: int = 800,
     rating_max: int = 3500,
 ) -> list[dict]:
-    """Filter problems by all selected tags and an inclusive rating range."""
-    filtered = []
-    for p in problems:
-        rating = p.get("rating") or extract_rating(p.get("tags", []))
-        if rating is None:
+    result = []
+    wanted = {t.lower() for t in tags or []}
+    for problem in problems:
+        rating = _get_rating(problem)
+        if rating is None or not rating_min <= rating <= rating_max:
             continue
-        if not (rating_min <= rating <= rating_max):
+        if wanted and not wanted.issubset(_get_tags(problem)):
             continue
-        if tags:
-            problem_tags = {t.lower() for t in p.get("tags", [])}
-            if not all(t.lower() in problem_tags for t in tags):
-                continue
-        filtered.append(p)
-    return filtered
+        result.append(problem)
+    return result
 
+def _default_chunk_metadata(problems: list[dict], ntotal: int) -> list[dict]:
+    return [
+        {
+            "problem_index": i,
+            "problem_id": problems[i].get("id"),
+            "chunk_id": 0,
+            "total_chunks": 1,
+        }
+        for i in range(min(ntotal, len(problems)))
+    ]
 
 def semantic_search(
     query: str,
@@ -72,35 +89,36 @@ def semantic_search(
     model: SentenceTransformer,
     k: int = 5,
     candidate_indices: list[int] | None = None,
+    chunk_metadata: list[dict] | None = None,
 ) -> list[tuple[dict, float]]:
-    """Perform semantic search using FAISS."""
-    query_vec = model.encode([query], convert_to_numpy=True)
-    query_vec = np.asarray(query_vec, dtype=np.float32)
+    if not problems or index.ntotal == 0:
+        return []
+
+    query_vec = np.asarray(model.encode([query], convert_to_numpy=True), dtype=np.float32)
     faiss.normalize_L2(query_vec)
 
-    if candidate_indices is not None:
-        if not candidate_indices:
-            return []
-        target_count = min(k, len(candidate_indices))
-        candidate_ids = np.asarray(candidate_indices, dtype=np.int64)
-        selector = faiss.IDSelectorBatch(
-            len(candidate_ids), faiss.swig_ptr(candidate_ids)
-        )
-        search_params = faiss.SearchParameters()
-        search_params.sel = selector
-        distances, indices = index.search(query_vec, target_count, params=search_params)
-        return [
-            (problems[idx], float(dist))
-            for dist, idx in zip(distances[0], indices[0])
-            if idx >= 0
-        ]
+    candidates = set(range(len(problems))) if candidate_indices is None else set(candidate_indices)
+    if not candidates:
+        return []
 
-    distances, indices = index.search(query_vec, min(k, len(problems)))
-    results = []
-    for dist, idx in zip(distances[0], indices[0]):
-        if idx >= 0:
-            results.append((problems[idx], float(dist)))
-    return results
+    metadata = chunk_metadata or _default_chunk_metadata(problems, index.ntotal)
+    search_k = min(index.ntotal, max(k * 20, 50))
+    distances, indices = index.search(query_vec, search_k)
+
+    best: dict[int, float] = {}
+    for score, vector_idx in zip(distances[0], indices[0]):
+        if vector_idx < 0 or vector_idx >= len(metadata):
+            continue
+        problem_idx = metadata[vector_idx].get("problem_index")
+        if not isinstance(problem_idx, int) or problem_idx not in candidates:
+            continue
+        if problem_idx >= len(problems):
+            continue
+        score = float(score)
+        best[problem_idx] = max(score, best.get(problem_idx, -np.inf))
+
+    ranked = sorted(best.items(), key=lambda x: (-x[1], x[0]))[:k]
+    return [(problems[i], score) for i, score in ranked]
 
 
 def find_similar_problems(
@@ -112,53 +130,72 @@ def find_similar_problems(
     k: int = 3,
     rating_tolerance: int = 200,
     problem_id_to_index: dict[str, int] | None = None,
+    chunk_metadata: list[dict] | None = None,
 ) -> list[dict]:
-    """Find similar problems with comparable difficulty ratings."""
+    problem_id = problem.get("id")
+    if not isinstance(problem_id, str):
+        return []
+
     if problem_id_to_index is None:
-        try:
-            idx = next(i for i, p in enumerate(problems) if p["id"] == problem["id"])
-        except StopIteration:
-            return []
+        problem_idx = next((i for i, p in enumerate(problems) if p.get("id") == problem_id), None)
     else:
-        problem_id = problem.get("id")
-        if not isinstance(problem_id, str):
-            return []
-        idx = problem_id_to_index.get(problem_id)
-        if idx is None:
-            return []
+        problem_idx = problem_id_to_index.get(problem_id)
+    if problem_idx is None:
+        return []
 
-    source_rating = problem.get("rating") or extract_rating(problem.get("tags", []))
-    query_vec = vectors[idx : idx + 1].astype(np.float32)
+    source_rating = _get_rating(problem)
+    metadata = chunk_metadata or _default_chunk_metadata(problems, index.ntotal)
+    source_vectors = [
+        i for i, m in enumerate(metadata)
+        if m.get("problem_index") == problem_idx
+    ]
 
-    search_k = min(len(problems), k + 15)
+    if source_vectors:
+        query_vec = vectors[source_vectors].astype(np.float32).mean(axis=0, keepdims=True)
+        faiss.normalize_L2(query_vec)
+    elif problem_idx < len(vectors):
+        query_vec = vectors[problem_idx:problem_idx + 1].astype(np.float32)
+        faiss.normalize_L2(query_vec)
+    else:
+        return []
+
+    search_k = min(index.ntotal, max(k * 50, 100))
     distances, indices = index.search(query_vec, search_k)
 
-    similar: list[dict] = []
-    for dist, i in zip(distances[0], indices[0]):
-        if i < 0 or i == idx:
+    best: dict[int, float] = {}
+    for score, vector_idx in zip(distances[0], indices[0]):
+        if vector_idx < 0 or vector_idx >= len(metadata):
             continue
-        candidate = problems[i]
-        cand_rating = candidate.get("rating") or extract_rating(candidate.get("tags", []))
+        candidate_idx = metadata[vector_idx].get("problem_index")
+        if not isinstance(candidate_idx, int) or candidate_idx == problem_idx:
+            continue
+        if candidate_idx >= len(problems):
+            continue
+        best[candidate_idx] = max(float(score), best.get(candidate_idx, -np.inf))
 
-        if source_rating is not None and cand_rating is not None:
-            if abs(source_rating - cand_rating) > rating_tolerance:
-                continue
-
-        similar.append(candidate)
-        if len(similar) >= k:
+    result = []
+    for candidate_idx, _ in sorted(best.items(), key=lambda x: -x[1]):
+        candidate = problems[candidate_idx]
+        candidate_rating = _get_rating(candidate)
+        if (
+            source_rating is not None
+            and candidate_rating is not None
+            and abs(source_rating - candidate_rating) > rating_tolerance
+        ):
+            continue
+        result.append(candidate)
+        if len(result) == k:
             break
-
-    return similar
+    return result
 
 
 class SearchEngine:
-    """Loads persisted indices and exposes hybrid search methods."""
-
     def __init__(self) -> None:
         self.index: faiss.IndexFlatIP | None = None
         self.problems: list[dict] = []
         self.problem_id_to_index: dict[str, int] = {}
         self.vectors: np.ndarray | None = None
+        self.chunk_metadata: list[dict] = []
         self.model: SentenceTransformer | None = None
         self.bm25: BM25Okapi | None = None
         self._loaded = False
@@ -166,23 +203,30 @@ class SearchEngine:
     def load(self) -> None:
         if self._loaded:
             return
-        self.index, self.problems, self.vectors, model_name = load_index_from_disk(
-            FAISS_INDEX_PATH, METADATA_PATH
-        )
+        (
+            self.index,
+            self.problems,
+            self.vectors,
+            self.chunk_metadata,
+            model_name,
+        ) = load_index_from_disk(FAISS_INDEX_PATH, METADATA_PATH)
+
         self.problem_id_to_index = {
-            problem["id"]: index for index, problem in enumerate(self.problems)
+            str(p["id"]): i for i, p in enumerate(self.problems) if "id" in p
         }
         self.model = SentenceTransformer(model_name)
 
-        # Repeat short topic fields so BM25 does not dilute them in long statements.
-        corpus = [
-            tokenize(
-                f"{p.get('title', '')} {p.get('title', '')} {p.get('title', '')} "
-                f"{' '.join(p.get('tags', []))} {' '.join(p.get('tags', []))} "
+        corpus = []
+        for p in self.problems:
+            title = str(p.get("title", ""))
+            tags = p.get("tags", [])
+            tags_text = " ".join(str(t) for t in tags) if isinstance(tags, list) else ""
+            text = (
+                f"{title} {title} {title} "
+                f"{tags_text} {tags_text} "
                 f"{p.get('statement', '')} {p.get('input', '')} {p.get('output', '')}"
             )
-            for p in self.problems
-        ]
+            corpus.append(tokenize(text))
         self.bm25 = BM25Okapi(corpus)
         self._loaded = True
 
@@ -193,48 +237,33 @@ class SearchEngine:
         k: int = 5,
         rrf_k: int = 60,
     ) -> list[dict]:
-        """Combine BM25 and FAISS results using Reciprocal Rank Fusion (RRF)."""
         if not candidate_indices or self.bm25 is None or self.index is None or self.model is None:
             return []
 
         retrieval_k = min(len(candidate_indices), max(k * 20, 50))
-
-        # 1. FAISS Dense Retrieval. Fuse only the useful head of each list;
-        dense_results = semantic_search(
-            query,
-            self.index,
-            self.problems,
-            self.model,
-            k=retrieval_k,
-            candidate_indices=candidate_indices,
+        dense = semantic_search(
+            query, self.index, self.problems, self.model,
+            retrieval_k, candidate_indices, self.chunk_metadata,
         )
 
-        # 2. BM25 Sparse Retrieval
-        query_tokens = tokenize(query)
-        bm25_scores = self.bm25.get_scores(query_tokens)
-
-        # Filter BM25 scores for candidates only
-        candidate_bm25 = heapq.nlargest(
+        bm25_scores = self.bm25.get_scores(tokenize(query))
+        sparse = heapq.nlargest(
             retrieval_k,
-            ((idx, bm25_scores[idx]) for idx in candidate_indices),
-            key=lambda item: item[1],
+            ((i, bm25_scores[i]) for i in candidate_indices if 0 <= i < len(bm25_scores)),
+            key=lambda x: x[1],
         )
 
-        # 3. Reciprocal Rank Fusion (RRF)
-        rrf_scores: dict[int, float] = {}
+        rrf: dict[int, float] = {}
+        for rank, (problem, _) in enumerate(dense):
+            idx = self.problem_id_to_index.get(str(problem.get("id")))
+            if idx is not None:
+                rrf[idx] = rrf.get(idx, 0.0) + 1 / (rrf_k + rank + 1)
 
-        for rank, (problem, _) in enumerate(dense_results):
-            p_idx = self.problem_id_to_index[problem["id"]]
-            rrf_scores[p_idx] = rrf_scores.get(p_idx, 0.0) + 1.0 / (rrf_k + rank + 1)
+        for rank, (idx, _) in enumerate(sparse):
+            rrf[idx] = rrf.get(idx, 0.0) + 1 / (rrf_k + rank + 1)
 
-        for rank, (p_idx, _) in enumerate(candidate_bm25):
-            rrf_scores[p_idx] = rrf_scores.get(p_idx, 0.0) + 1.0 / (rrf_k + rank + 1)
-
-        # Sort candidate indices by fused score
-        sorted_indices = sorted(
-            rrf_scores.keys(), key=lambda idx: (-rrf_scores[idx], idx)
-        )
-        return [self.problems[i] for i in sorted_indices[:k]]
+        ranked = sorted(rrf, key=lambda i: (-rrf[i], i))
+        return [self.problems[i] for i in ranked[:k]]
 
     def search(
         self,
@@ -246,32 +275,30 @@ class SearchEngine:
         k: int = 5,
     ) -> list[dict]:
         self.load()
-        assert self.index is not None and self.model is not None
-
         pool = filter_problems(self.problems, tags, rating_min, rating_max)
 
-        # An empty query is an intentional browse request, not a semantic query.
         if not query.strip():
             return pool[:k]
-
         if is_problem_id_query(query):
             result = match_by_id(pool, query)
             return [result] if result else []
 
-        # Exact ID and Title match priority
-        id_match = match_by_id(pool, query)
-        if id_match:
-            return [id_match]
+        result = match_by_id(pool, query)
+        if result:
+            return [result]
 
-        title_match = match_by_title(pool, query)
-        if title_match:
-            return [title_match]
+        result = match_by_title(pool, query)
+        if result:
+            return [result]
 
-        candidate_indices = [self.problem_id_to_index[p["id"]] for p in pool]
-        return self.hybrid_search(query, candidate_indices, k=k)
+        candidate_indices = [
+            self.problem_id_to_index[p["id"]]
+            for p in pool
+            if p.get("id") in self.problem_id_to_index
+        ]
+        return self.hybrid_search(query, candidate_indices, k)
 
     def find_problem_by_id(self, query: str) -> dict | None:
-        """Find an ID in the complete index, independent of active filters."""
         self.load()
         return match_by_id(self.problems, query)
 
@@ -281,29 +308,25 @@ class SearchEngine:
         rating_min: int = 800,
         rating_max: int = 3500,
     ) -> int:
-        """Return the number of problems matching the active filters."""
         self.load()
         return len(filter_problems(self.problems, tags, rating_min, rating_max))
 
     def get_similar(self, problem: dict, k: int = 3) -> list[dict]:
         self.load()
-        assert self.index is not None and self.vectors is not None and self.model is not None
+        if self.index is None or self.vectors is None or self.model is None:
+            return []
         return find_similar_problems(
-            problem,
-            self.index,
-            self.problems,
-            self.vectors,
-            self.model,
-            k=k,
-            problem_id_to_index=self.problem_id_to_index,
+            problem, self.index, self.problems, self.vectors, self.model,
+            k=k, problem_id_to_index=self.problem_id_to_index,
+            chunk_metadata=self.chunk_metadata,
         )
 
     @property
     def all_tags(self) -> list[str]:
         self.load()
-        tag_set: set[str] = set()
-        for p in self.problems:
-            for t in p.get("tags", []):
-                if not t.startswith("*"):
-                    tag_set.add(t)
-        return sorted(tag_set)
+        return sorted({
+            tag
+            for p in self.problems
+            for tag in p.get("tags", [])
+            if isinstance(tag, str) and not tag.startswith("*")
+        })

@@ -1,4 +1,4 @@
-"""Build and persist FAISS index + metadata for offline use."""
+"""Build and persist a FAISS index for Codeforces problems."""
 
 from __future__ import annotations
 
@@ -23,12 +23,12 @@ from src.utils import build_embedding_text
 
 
 def load_problems(problems_dir: str | None = None) -> list[dict]:
-    """Load all problem JSON files from disk."""
+    """Load all valid problem JSON files."""
     directory = problems_dir or PROBLEMS_DIR
-    problems: list[dict] = []
-
     if not os.path.isdir(directory):
-        return problems
+        return []
+
+    problems = []
 
     for fname in sorted(os.listdir(directory)):
         if not fname.endswith(".json"):
@@ -40,10 +40,7 @@ def load_problems(problems_dir: str | None = None) -> list[dict]:
             with open(path, encoding="utf-8") as f:
                 problems.append(json.load(f))
         except (json.JSONDecodeError, OSError) as exc:
-            print(
-                f"Warning: skipping {fname}: {exc}",
-                file=sys.stderr,
-            )
+            print(f"Warning: skipping {fname}: {exc}", file=sys.stderr)
 
     return problems
 
@@ -52,47 +49,40 @@ def build_index(
     problems_dir: str | None = None,
     model_name: str = EMBEDDING_MODEL,
     show_progress: bool = True,
-) -> tuple[faiss.IndexFlatIP, list[dict], np.ndarray]:
-    """Embed problems and build an in-memory FAISS cosine-similarity index."""
+) -> tuple[faiss.IndexFlatIP, list[dict], np.ndarray, list[dict]]:
+    """Load problems, create embeddings, and build a cosine FAISS index."""
 
     problems = load_problems(problems_dir)
 
     if not problems:
         raise FileNotFoundError(
-            f"No problem JSON files found in "
-            f"{problems_dir or PROBLEMS_DIR}. "
-            "Run `python -m src.scraper` first."
+            f"No problem JSON files found in {problems_dir or PROBLEMS_DIR}. Run `python -m src.scraper` first."
         )
 
     print(f"Loaded {len(problems)} problems.")
 
-    # Load the sentence-transformer model.
     model = SentenceTransformer(model_name)
-
-    max_seq_len = (
-        model.max_seq_length
-        if model.max_seq_length is not None
-        else 256
-    )
+    max_seq_len = model.max_seq_length or 256
 
     print(f"Embedding model: {model_name}")
     print(f"Maximum sequence length: {max_seq_len}")
 
-    # Build the text used for embeddings.
-    #
-    # IMPORTANT:
-    # build_embedding_text() should put high-value information such as
-    # title and tags before the long problem statement so that important
-    # topic information is less likely to be truncated.
-    texts = [
-        build_embedding_text(
-            problem,
-            model.tokenizer,
-            max_seq_len,
-        )
-        for problem in problems
-    ]
+    texts = []
+    chunk_metadata = []
 
+    for problem_index, problem in enumerate(problems):
+        chunks = build_embedding_text(problem,model.tokenizer,max_seq_len)
+
+        for chunk in chunks:
+            texts.append(chunk["text"])
+            chunk_metadata.append({
+                "problem_index": problem_index,
+                "problem_id": problem.get("id"),
+                "chunk_id": chunk["chunk_id"],
+                "total_chunks": chunk["total_chunks"],
+            })
+
+    print(f"Created {len(texts)} embedding chunks from {len(problems)} problems.")
     print("Generating embeddings...")
 
     vectors = model.encode(
@@ -101,70 +91,50 @@ def build_index(
         convert_to_numpy=True,
     )
 
-    vectors = np.asarray(
-        vectors,
-        dtype=np.float32,
-    )
+    vectors = np.asarray(vectors, dtype=np.float32)
 
     if vectors.ndim != 2:
-        raise ValueError(
-            f"Expected a 2D embedding matrix, got shape {vectors.shape}."
-        )
+        raise ValueError(f"Expected a 2D embedding matrix, got {vectors.shape}.")
 
-    # Normalize every vector to unit length.
-    #
-    # After L2 normalization:
-    #
-    #       dot(x, y) == cosine_similarity(x, y)
-    #
-    # Therefore IndexFlatIP below performs cosine similarity search.
+    if len(vectors) != len(chunk_metadata):
+        raise ValueError("Number of embeddings does not match chunk metadata.")
+
+    # Normalize so inner product = cosine similarity.
     faiss.normalize_L2(vectors)
 
     dimension = vectors.shape[1]
-
-    # Inner Product on normalized vectors is equivalent to
-    # cosine similarity.
     index = faiss.IndexFlatIP(dimension)
-
     index.add(vectors)
 
-    print(
-        f"Built cosine-similarity FAISS index "
-        f"with {index.ntotal} vectors of dimension {dimension}."
-    )
-
-    return index, problems, vectors
+    print(f"Built cosine-similarity FAISS index with {index.ntotal} vectors of dimension {dimension}.")
+    return index, problems, vectors, chunk_metadata
 
 
 def save_index(
     index: faiss.IndexFlatIP,
     problems: list[dict],
     vectors: np.ndarray,
+    chunk_metadata: list[dict],
     index_path: str = FAISS_INDEX_PATH,
     metadata_path: str = METADATA_PATH,
     model_name: str = EMBEDDING_MODEL,
 ) -> None:
-    """Persist FAISS index and metadata mapping to disk."""
+    """Save FAISS index and metadata."""
 
-    index_directory = os.path.dirname(index_path)
+    for path in (index_path, metadata_path):
+        directory = os.path.dirname(path)
+        if directory:
+            os.makedirs(directory, exist_ok=True)
 
-    if index_directory:
-        os.makedirs(index_directory, exist_ok=True)
-
-    metadata_directory = os.path.dirname(metadata_path)
-
-    if metadata_directory:
-        os.makedirs(metadata_directory, exist_ok=True)
-
-    # Save FAISS index.
     faiss.write_index(index, index_path)
 
-    # Save metadata and normalized vectors.
     metadata = {
         "problems": problems,
         "vectors": vectors,
+        "chunk_metadata": chunk_metadata,
         "model_name": model_name,
-        "count": len(problems),
+        "problem_count": len(problems),
+        "vector_count": len(chunk_metadata),
         "similarity": "cosine",
         "faiss_metric": "inner_product",
         "normalized": True,
@@ -173,120 +143,70 @@ def save_index(
     with open(metadata_path, "wb") as f:
         pickle.dump(metadata, f)
 
-    print(
-        f"Saved FAISS index ({len(problems)} problems) "
-        f"-> {index_path}"
-    )
+    print(f"Saved FAISS index ({len(problems)} problems, {len(chunk_metadata)} vectors) -> {index_path}")
     print(f"Saved metadata -> {metadata_path}")
 
 
-def load_index_from_disk(
-    index_path: str = FAISS_INDEX_PATH,
-    metadata_path: str = METADATA_PATH,
-) -> tuple[faiss.IndexFlatIP, list[dict], np.ndarray, str]:
-    """Load a pre-built cosine-similarity FAISS index from disk."""
+def load_index_from_disk(index_path: str = FAISS_INDEX_PATH, metadata_path: str = METADATA_PATH,
+) -> tuple[
+    faiss.IndexFlatIP,
+    list[dict],
+    np.ndarray,
+    list[dict],
+    str,
+]:
+    """Load and validate a stored FAISS cosine-similarity index."""
 
     if not os.path.isfile(index_path) or not os.path.isfile(metadata_path):
-        raise FileNotFoundError(
-            "Index not found. Run `python -m src.indexer` "
-            f"to build {index_path} and {metadata_path}."
-        )
+        raise FileNotFoundError(f"Index not found. Run `python -m src.indexer` to build {index_path} and {metadata_path}.")
 
     index = faiss.read_index(index_path)
 
-    # Ensure the loaded index is an IndexFlatIP index.
-    if isinstance(index, faiss.IndexFlatIP):
-        flat_index = index
-    else:
-        raise TypeError(
-            "The stored FAISS index is not an IndexFlatIP "
-            "cosine-similarity index. Rebuild the index with "
-            "`python -m src.indexer`."
-        )
+    if not isinstance(index, faiss.IndexFlatIP):
+        raise TypeError("Stored index is not an IndexFlatIP cosine-similarity index. Rebuild the index.")
 
     with open(metadata_path, "rb") as f:
         metadata = pickle.load(f)
 
-    # Validate metadata when available.
-    similarity = metadata.get("similarity")
-
-    if similarity is not None and similarity != "cosine":
-        raise ValueError(
-            f"Expected cosine similarity metadata, got {similarity!r}. "
-            "Rebuild the FAISS index."
-        )
+    if metadata.get("similarity") not in (None, "cosine"):
+        raise ValueError(f"Expected cosine similarity metadata, got {metadata.get('similarity')!r}. Rebuild the index.")
 
     if metadata.get("normalized") is False:
-        raise ValueError(
-            "Stored vectors are not normalized. "
-            "Rebuild the FAISS index."
-        )
+        raise ValueError(f"Stored vectors are not normalized. Rebuild the index.")
 
     problems = metadata["problems"]
     vectors = metadata["vectors"]
-    model_name = metadata.get(
-        "model_name",
-        EMBEDDING_MODEL,
-    )
+    chunk_metadata = metadata["chunk_metadata"]
+    model_name = metadata.get("model_name", EMBEDDING_MODEL)
 
-    return (
-        flat_index,
-        problems,
-        vectors,
-        model_name,
-    )
+    if len(chunk_metadata) != index.ntotal:
+        raise ValueError( f"FAISS index contains {index.ntotal} vectors, but metadata contains {len(chunk_metadata)} chunks. Rebuild the index.")
+
+    if len(vectors) != index.ntotal:
+        raise ValueError(f"Stored vector count does not match FAISS index count. Rebuild the index.")
+
+    return index, problems, vectors, chunk_metadata, model_name
 
 
 def main(argv: list[str] | None = None) -> None:
-    """CLI entry point: build and save the FAISS index."""
-
-    parser = argparse.ArgumentParser(
-        description="Build the CP Chatbot FAISS index."
-    )
-
-    parser.add_argument(
-        "--problems-dir",
-        default=PROBLEMS_DIR,
-        help="Directory containing problem JSON files.",
-    )
-
-    parser.add_argument(
-        "--model-name",
-        default=EMBEDDING_MODEL,
-        help="Sentence-transformers model used for embeddings.",
-    )
-
-    parser.add_argument(
-        "--no-progress",
-        action="store_true",
-        help="Disable embedding progress output.",
-    )
-
+    parser = argparse.ArgumentParser(description="Build the CP Chatbot FAISS index.")
+    parser.add_argument("--problems-dir",default=PROBLEMS_DIR,help="Directory containing problem JSON files.")
+    parser.add_argument("--model-name",default=EMBEDDING_MODEL,help="Sentence-transformer model used for embeddings.")
+    parser.add_argument("--no-progress",action="store_true",help="Disable embedding progress output.",)
     args = parser.parse_args(argv)
 
-    print(
-        f"Building cosine-similarity index "
-        f"from {args.problems_dir} ..."
-    )
+    print(f"Building cosine-similarity index from {args.problems_dir} ...")
 
-    index, problems, vectors = build_index(
+    index, problems, vectors, chunk_metadata = build_index(
         problems_dir=args.problems_dir,
         model_name=args.model_name,
         show_progress=not args.no_progress,
     )
 
-    save_index(
-        index,
-        problems,
-        vectors,
-        model_name=args.model_name,
-    )
+    save_index(index,problems,vectors,chunk_metadata,model_name=args.model_name)
 
-    print(
-        f"Done. Indexed {len(problems)} problems "
-        f"into {INDEX_DIR}"
-    )
-
+    print(f"Done. Indexed {len(problems)} problems into {INDEX_DIR}.")
+    print(f"FAISS vectors: {index.ntotal}")
 
 if __name__ == "__main__":
     main()

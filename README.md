@@ -2,7 +2,7 @@
 
 A simple Streamlit app for exploring Codeforces problems. It helps students search for problems, filter by tags and rating, browse related material, and get guidance or code feedback through Groq.
 
-## What this project does
+## Objective
 
 - Search Codeforces problems by topic, title, or exact problem ID
 - Combine FAISS and BM25 search for hybrid retrieval

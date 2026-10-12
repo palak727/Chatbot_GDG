@@ -1,0 +1,17 @@
+{
+    "id": "2269A",
+    "contest_id": 2269,
+    "problem_letter": "A",
+    "title": "A. SauSaGe Bank",
+    "statement": "Everyone in SauSaGe City is talking about its famous bank that offers a seemingly impossible deal:\n\n\"Leave your money with us, and we'll double it every single day!\"\n\nHamed decides to give it a try, so he deposits 1 dollar into his account.\n\nSuppose that at the beginning of a day, his bank balance is x dollars. Every day, the following events happen in order:\n\nIn the morning, the bank magically doubles his balance, so it becomes 2x dollars.\n\nAt night, Hamed may choose to withdraw all of the money from his bank account. If he does, the withdrawn amount is added to his card, and his bank account is immediately reset to 1 dollar so that the doubling process can begin again the next day. Otherwise, he leaves the money in the bank.\n\nUnfortunately, this incredible bank will remain open for exactly n days before shutting down forever.\n\nHamed wants to withdraw money on exactly k different days before the bank closes. Determine the maximum amount of money that can be on Hamed's card after the n-th day.\n\nEach test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe only line of each test case contains the two integers n and k (1≤ k≤ n≤30).\n\nFor each test case, print a single integer — the maximum amount of money that can be on Hamed's card after the n-th day.\n\nIn the first test case, his bank balance becomes 2 on the first day, and he chooses to withdraw it.\n\nIn the second test case, he can withdraw his money on the 2-nd day.\n\nIn the third test case, he can withdraw his money on the 1-st, 3-rd, and 4-th days. He receives 2, 4, and 2, respectively.\n\nInput:\n```\n5\n1 1\n2 1\n4 3\n5 5\n10 2\n```\n\nOutput:\n```\n2\n4\n8\n10\n514\n```",
+    "input": "Each test contains multiple test cases. The first line contains the number of test cases t (1 ≤ t ≤ 500). The description of the test cases follows.\n\nThe only line of each test case contains the two integers n and k (1≤ k≤ n≤30).",
+    "output": "For each test case, print a single integer — the maximum amount of money that can be on Hamed's card after the n-th day.",
+    "time_limit": "1 second",
+    "memory_limit": "256 megabytes",
+    "tags": [
+        "greedy",
+        "math",
+        "*800"
+    ],
+    "rating": 800
+}
